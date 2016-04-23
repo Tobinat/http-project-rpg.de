@@ -93,7 +93,7 @@ switch(_shop) do
 							["RH_M6X","RH Flashlight",10],
 							["A3L_M4Flashlight","M4A3 Flashlight",10],
 							["Radar_Gun","Radar Gun",25], 
-							["ToolKit",nil,2500], 
+							//["ToolKit",nil,2500], 
 							["ItemCompass",nil,50],  
 							["ItemWatch",nil,10],                                          
 							["Taser_26","Taser",5],
@@ -232,6 +232,7 @@ switch(_shop) do
         {
 			switch(true) do
 			{
+				case (life_karma < 500): {"Dein Karma-Level ist nicht hoch genug!"};
 				case (rebelshipment getVariable["notCaptured",FALSE]): {"Supplies have been taken by Police..!"};
 				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
 				case (!license_civ_rebel): {"You want some, I'll give it YA! You don't have a license you pleb!"};
@@ -260,7 +261,9 @@ switch(_shop) do
 							//Glock 18
 							["RH_g18",nil,15500],
 							["RH_33Rnd_9x19_g18",nil,250],
-
+							
+							["RH_g19t",nil,4500],
+							["RH_17Rnd_9x19_g17",nil,150],
 
 							["RH_Deagleg",nil,31500],
 
@@ -279,6 +282,7 @@ switch(_shop) do
         {
 			switch(true) do
 			{
+				case (life_karma < 1000): {"Dein Karma-Level ist nicht hoch genug!"};
 				case (rebelshipment getVariable["notCaptured",FALSE]): {"Supplies have been taken by Police..!"};
 				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
 				case (!license_civ_rebel): {"You need Rifle Training!"};
@@ -305,7 +309,7 @@ switch(_shop) do
 
 							["SG553_CQB",nil,40550],
 							["30Rnd_556x45_Stanag",nil,300],
-
+							
 							["hlc_rifle_aks74u",nil,30550],
 							["hlc_30Rnd_545x39_B_AK",nil,300],
 
@@ -367,6 +371,19 @@ switch(_shop) do
 							["RH_20Rnd_762x51_M80A1",nil,250],
 							["RH_20Rnd_762x51_Mk316LR",nil,250],
 							
+							["hlc_rifle_RU556",nil,70000],
+							["hlc_rifle_bcmjack",nil,75000],
+							["hlc_30rnd_556x45_EPR",nil,1100],
+							
+							["RH_M4_moe",nil,62000],
+							["RH_30Rnd_556x45_M855A1",nil,920],
+							
+							["hlc_rifle_ak12",nil,85000],
+							["hlc_30Rnd_545x39_B_AK",nil,950],
+							
+							["KPFS_G36C",nil,65000],
+							["KPFS_30Rnd_556x45_G36",nil,400],
+								
 							["RH_Hk416s",nil,30000],
 							["RH_30Rnd_556x45_M855A1",nil,250],
 							["RH_30Rnd_556x45_Mk262",nil,250],
