@@ -55,3 +55,4 @@ player createDiarySubject ["controls","Steuerung"];
 				"
 		]
 	];
+	
