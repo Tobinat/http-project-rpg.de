@@ -1,0 +1,1 @@
+[] execVM "AdminTool\AdminToolMenu.sqf";
