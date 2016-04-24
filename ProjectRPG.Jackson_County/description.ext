@@ -6,7 +6,7 @@ joinUnassigned = 1;
 onLoadIntro = "PRPG Life ist am Laden...";
 respawn = BASE;
 respawndelay = 1;
-disabledAI = 1;
+disabledAI = true;
 disableChannels[]={0,1,2,3,4,5};
 enableDebugConsole = 1;
 respawnDialog = 0;
@@ -16,7 +16,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 200;
+	maxPlayers = 80;
 };
 
 wreckLimit = 3;
