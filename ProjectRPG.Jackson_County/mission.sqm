@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8948.166,102.51505,6527.0229};
-		dir[]={0.78888267,-0.5565812,-0.2607688};
-		up[]={0.5285058,0.83075297,-0.17470157};
-		aside[]={-0.31387162,2.3929897e-007,-0.94952601};
+		pos[]={7502.874,158.09993,83.474838};
+		dir[]={0.50986081,-0.49405918,0.70434326};
+		up[]={0.28974795,0.86938,0.40026546};
+		aside[]={0.81009459,2.1822052e-007,-0.5864194};
 	};
 };
 binarizationWanted=0;
@@ -16213,14 +16213,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7594.1816,123.11166,120.15303};
-						angles[]={6.1128521,0,0.16644555};
+						position[]={7594.1821,123.11176,120.153};
+						angles[]={6.1128583,0,0.16645205};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_10";
 						description="Mafia 10";
 						isPlayable=1;
@@ -17333,26 +17334,29 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7594.5957,124.13217,125.79715};
-						angles[]={6.1696754,0,0.10955941};
+						position[]={7594.5962,124.13222,125.797};
+						angles[]={6.1696692,0,0.10955431};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_3";
 						description="Mafia 03";
 						isPlayable=1;
 					};
 					id=1777;
 					type="O_soldier_PG_F";
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1828;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item881
 		{
@@ -17366,26 +17370,29 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7589.749,123.37033,125.90894};
-						angles[]={6.1128521,0,0.11449705};
+						position[]={7589.749,123.37035,125.909};
+						angles[]={6.1128583,0,0.11449359};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_5";
 						description="Mafia 05";
 						isPlayable=1;
 					};
 					id=1779;
 					type="O_soldier_PG_F";
+					atlOffset=7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1829;
+			atlOffset=7.6293945e-006;
 		};
 		class Item882
 		{
@@ -17399,26 +17406,29 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7585.5464,122.82152,125.5282};
-						angles[]={6.1128521,0,0.11449705};
+						position[]={7585.5459,122.82149,125.528};
+						angles[]={6.1128583,0,0.11449359};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_7";
 						description="Mafia 07";
 						isPlayable=1;
 					};
 					id=1781;
 					type="O_soldier_PG_F";
+					atlOffset=7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1830;
+			atlOffset=7.6293945e-006;
 		};
 		class Item883
 		{
@@ -17432,14 +17442,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7581.5645,122.2441,125.48005};
-						angles[]={6.0771518,0,0.15084518};
+						position[]={7581.564,122.24409,125.48};
+						angles[]={6.0771494,0,0.15084881};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_9";
 						description="Mafia 09";
 						isPlayable=1;
@@ -17465,26 +17476,29 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7577.2134,121.43377,125.60681};
-						angles[]={6.0771518,0,0.21177648};
+						position[]={7577.2129,121.43368,125.607};
+						angles[]={6.0771494,0,0.21177825};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_11";
 						description="Mafia 11";
 						isPlayable=1;
 					};
 					id=1785;
 					type="O_soldier_PG_F";
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1832;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item885
 		{
@@ -17498,28 +17512,27 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7598.7476,123.83457,119.87827};
-						angles[]={6.1303859,0,0.16644593};
+						position[]={7598.748,123.83465,119.87801};
+						angles[]={6.1303816,0,0.16645205};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_12";
 						description="Mafia 12";
 						isPlayable=1;
 					};
 					id=1786;
 					type="O_soldier_PG_F";
-					atlOffset=-1.5258789e-005;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1833;
-			atlOffset=-1.5258789e-005;
 		};
 		class Item886
 		{
@@ -17533,14 +17546,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7588.2227,122.3043,120.92565};
-						angles[]={6.0771518,0,0.15084518};
+						position[]={7588.2231,122.30446,120.926};
+						angles[]={6.0771494,0,0.15084881};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_8";
 						description="Mafia 08";
 						isPlayable=1;
@@ -17566,28 +17580,27 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7584.1006,121.74509,121.24764};
-						angles[]={6.0771518,0,0.15084518};
+						position[]={7584.1011,121.74517,121.248};
+						angles[]={6.0771494,0,0.15084881};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_6";
 						description="Mafia 06";
 						isPlayable=1;
 					};
 					id=1780;
 					type="O_soldier_PG_F";
-					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1835;
-			atlOffset=-7.6293945e-006;
 		};
 		class Item888
 		{
@@ -17601,26 +17614,29 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7579.0332,121.13685,122.31444};
-						angles[]={6.0771518,0,0.21177648};
+						position[]={7579.0332,121.13675,122.314};
+						angles[]={6.0771494,0,0.21177825};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_4";
 						description="Mafia 04";
 						isPlayable=1;
 					};
 					id=1778;
 					type="O_soldier_PG_F";
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1836;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item889
 		{
@@ -17634,14 +17650,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7574.4072,120.11589,122.89744};
-						angles[]={6.0260096,0,0.26277986};
+						position[]={7574.4072,120.11578,122.897};
+						angles[]={6.0260115,0,0.26277676};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
 						name="Mafia_2";
 						description="Mafia 02";
 						isPlayable=1;
