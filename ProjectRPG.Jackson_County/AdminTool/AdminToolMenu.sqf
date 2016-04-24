@@ -170,7 +170,7 @@ FlugzeugMenu =
 		["I_Plane_Fighter_03_AA_F", [2],  "", -5, [["expression", format[_EXECscript7,"I_Plane_Fighter_03_AA_F.sqf"]]], "1", "1"],
 		["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
-/*PanzerMenu = 
+PanzerMenu = 
 [
 	["Panzer",true],
 		["O_MBT_02_cannon_F", [2],  "", -5, [["expression", format[_EXECscript5,"O_MBT_02_cannon_F.sqf"]]], "1", "1"],
@@ -178,5 +178,5 @@ FlugzeugMenu =
 		["", [3],  "", -5, [["expression", format[_EXECscript5,"system.abl"]]], "1", "1"],
 		["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
-*/
+
 showCommandingMenu "#USER:adminmenu";
