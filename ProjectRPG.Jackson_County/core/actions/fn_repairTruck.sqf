@@ -38,7 +38,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 			uiSleep 0.75;
 			if(animationState player != "Acts_carFixingWheel") then {
 				player playmovenow "Acts_carFixingWheel";  
-				player disableAI "anim"; 
+//				player disableAI "anim"; 
 			};
 			if (player distance _veh > 4) exitwith {life_interrupted = true};
 			_cP = _cP + 0.05;
@@ -75,7 +75,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 			uiSleep 1.5;
 			if(animationState player != "Acts_carFixingWheel") then {
 				player playmovenow "Acts_carFixingWheel";  
-				player disableAI "anim"; 
+//				player disableAI "anim"; 
 			};
 			if (player distance _veh > 4) exitwith {life_interrupted = true};
 			_cP = _cP + 0.01;

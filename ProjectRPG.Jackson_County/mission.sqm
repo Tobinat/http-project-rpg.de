@@ -17527,12 +17527,14 @@ class Mission
 					};
 					id=1786;
 					type="O_soldier_PG_F";
+					atlOffset=-1.5258789e-005;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1833;
+			atlOffset=-1.5258789e-005;
 		};
 		class Item886
 		{
@@ -17595,12 +17597,14 @@ class Mission
 					};
 					id=1780;
 					type="O_soldier_PG_F";
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1835;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item888
 		{
