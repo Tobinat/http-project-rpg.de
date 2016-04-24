@@ -3,6 +3,7 @@ tf_west_radio_code = "";
 tf_east_radio_code = tf_west_radio_code;
 tf_guer_radio_code = tf_west_radio_code;
 tf_civ_radio_code = tf_west_radio_code;
+
 enableSaving [false, false];
 
 X_Server = false;
@@ -11,6 +12,7 @@ X_JIP = false;
 StartProgress = false;
 
 if(!isDedicated) then { X_Client = true;};
+enableSaving[false,false];
 
 [] execVM "briefing.sqf";
 [] execVM "KRON_Strings.sqf";
