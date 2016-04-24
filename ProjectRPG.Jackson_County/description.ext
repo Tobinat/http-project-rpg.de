@@ -4,12 +4,12 @@ onLoadMission = "Webseite: http://project-rpg.de";
 //loadScreen = "a3l_client2\bg\cgbg.paa";
 joinUnassigned = 1;
 onLoadIntro = "PRPG Life ist am Laden...";
-//respawn = BASE;
-//respawndelay = 1;
+respawn = BASE;
+respawndelay = 1;
 disabledAI = true;
 disableChannels[]={0,1,2,3,4,5};
 enableDebugConsole = 1;
-//respawnDialog = 0;
+respawnDialog = 0;
 allowFunctionsLog = 0;
 
 class Header
