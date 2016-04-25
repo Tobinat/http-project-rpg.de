@@ -1,20 +1,18 @@
 /*
 	File: fn_jumpFnc.sqf
-	Author: Bryan "Tonic" Boardwine
+	
 	
 	Description:
 	Makes the target jump.
-   Fixed to work after 1.58 update.
-   by coresync
 */
-private["_unit","_vel","_dir","_v1","_v2","_anim","_oldpos"];
-_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-_run = [_this,1,true,[false]] call BIS_fnc_param;
-_oldpos = getPosATL _unit;
 
+params [["_unit", objNull, [objNull]], ["_run", true, [false]], "_vel", "_dir", "_v1", "_v2", "_anim"];
 if(isNull _unit) exitWith {}; //Bad data
-if(local _unit && !_run) exitWith {};
-if(animationState _unit == "AovrPercMrunSrasWrflDf") exitWith {};
+if(local _unit && !_run) exitWith {}; //Ahh
+if(animationState _unit isEqualTo "AovrPercMrunSrasWrflDf_amovpercmsprsnonwnondf_amovppnemstpsnonwnondnon") exitWith {};
+if(animationState _unit isEqualTo "amovpercmsprsnonwnondf_amovppnemstpsnonwnondnon") exitWith {};
+if(animationState _unit isEqualTo "AovrPercMrunSrasWrflDf") exitWith {};
+_velocity = velocity _unit;
 
 if(local _unit) then {
 	_v1 = 3.82;
@@ -26,17 +24,7 @@ if(local _unit) then {
 
 _anim = animationState _unit;
 _unit switchMove "AovrPercMrunSrasWrflDf";
-player addWeapon "hgun_ACPC2_F";
-
-
 if(local _unit) then {
-	waitUntil {
-		if((getpos _unit select 2) > 4) then {
-			_unit setposATL _oldpos;
-			_unit setVelocity [0, 0, 0];
-		};
-		animationState _unit != "AovrPercMrunSrasWrflDf"
-	};
+	waitUntil{animationState _unit != "AovrPercMrunSrasWrflDf"};
 	_unit switchMove _anim;
-	player removeWeapon "hgun_ACPC2_F";
 };
