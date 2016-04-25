@@ -46,18 +46,20 @@ if(playerSide == independent) then
 	
 	switch (_mediclevel) do
 	{	//Medic NEU RFA?!?
+		/*
 		case 1: { _rank = "Paramedic Candidate";};
         case 2: { _rank = "Paramedic";};
         case 3: { _rank = "Ambulance Commander";};
         case 4: { _rank = "Head of Medicdepartement";};
-		//R.F.A
-		case 10: { _rank = "Candidate";};
-        case 11: { _rank = "Employee";};
-        case 12: { _rank = "Honorary Member";};
-        case 13: { _rank = "Chief Learning Officer";};
-        case 14: { _rank = "Chief Technical Officer";};
-        case 15: { _rank = "Assistant Chief";};
-        case 16: { _rank = "Chief";};
+		*/
+		//R.F.A + Medic
+		case 1: { _rank = "Candidate";};
+        case 2: { _rank = "Employee";};
+        case 3: { _rank = "Lieutenant";};
+        case 4: { _rank = "Chief Learning Officer";};
+        case 5: { _rank = "Chief Technical Officer";};
+        case 6: { _rank = "Assistant Chief";};
+        case 7: { _rank = "Chief";};
 	
 	};
 

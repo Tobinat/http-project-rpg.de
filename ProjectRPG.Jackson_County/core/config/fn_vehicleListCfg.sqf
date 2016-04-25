@@ -68,23 +68,33 @@ switch (_shop) do
 	};
 	case "med_shop":
 	{
-		_return = 
-		[
-			["ivory_wrx_med_ems",95500],
-			["cg_merc_atego_firetruck_reg",25000],
-			["cg_mercedes_sprinter_ems",25000],
-			["IVORY_PRIUS",25000],
-			["cg_evoems1",20000],
-			["cg_evoems2",20000],
-			["cg_evoems3",20000],
-			["A3L_CVPILBFD",2300],
-			["cg_ambulanceexpansion",20000],
-			["DAR_TahoeEMS",22500],
-			["AM_Holden_EMS",25000],
-			["pop_grua",25000],
-			["A3L_TowTruck_ADAC",25000]
+		
+			_return pushBack ["cg_merc_atego_firetruck_reg",25000];
+			_return pushBack ["A3L_TowTruck_ADAC",25000];
+			_return pushBack ["cg_ambulanceexpansion",20000];
 			
-		];
+			if(__GETC__(life_mediclevel) > 1) then
+		       {
+		       _return pushBack ["DAR_TahoeEMS",22500];
+               _return pushBack ["pop_grua",25000];
+		       };
+			
+			if(__GETC__(life_mediclevel) > 2) then
+		       {
+			    _return pushBack ["A3L_CVPILBFD",2300];
+				_return pushBack ["cg_mercedes_sprinter_ems",25000];
+
+		        };
+				
+			if(__GETC__(life_mediclevel) > 3) then
+		       {
+		        _return pushBack ["ivory_wrx_med_ems",95500];
+           		_return pushBack ["IVORY_PRIUS",25000];
+			    _return pushBack ["cg_evoems1",20000];
+			    _return pushBack ["cg_evoems2",20000];
+			    _return pushBack ["cg_evoems3",20000];
+				_return pushBack ["AM_Holden_EMS",25000];
+		        };
 	};
 	case "med_air_hs": {
 		_return = 

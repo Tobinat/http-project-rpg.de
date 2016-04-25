@@ -37,6 +37,7 @@ case "coke": {1500};
 	case "copper": {800};
 	case "cement": {650};
 	case "mair": {1500};
+	case "mdive": {1500};
 	case "home": {7500};
 	
 	case "rifle": {300};
