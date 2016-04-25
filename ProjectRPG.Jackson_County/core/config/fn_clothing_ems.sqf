@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_clothing_bruce.sqf
 	
