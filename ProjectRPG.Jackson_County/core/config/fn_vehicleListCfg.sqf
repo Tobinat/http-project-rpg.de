@@ -77,6 +77,7 @@ switch (_shop) do
 		       {
 		       _return pushBack ["DAR_TahoeEMS",22500];
                _return pushBack ["pop_grua",25000];
+			   _return pushBack ["RR_Firetruck",25000];
 		       };
 			
 			if(__GETC__(life_mediclevel) > 2) then
