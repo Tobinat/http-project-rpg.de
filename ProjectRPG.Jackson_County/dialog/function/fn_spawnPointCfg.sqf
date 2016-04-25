@@ -186,7 +186,7 @@ switch (_side) do
 	case independent: {
 		_return = [
 			["medic_spawn_2","LS Main","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_4","R.F.A Baustelle","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],			
+			//["medic_spawn_4","R.F.A Baustelle","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],			
 			["medic_spawn_3","Los D","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_1","Morrison","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["RFA_car_1","R.F.A","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
