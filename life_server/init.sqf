@@ -23,7 +23,7 @@ publicVariable "life_server_isReady";
 		_cops = (west countSide playableUnits);
 		_meds = (independent countSide playableUnits);
  		if(_cops > 9 || _meds > 3) then { 
- 			_chance = round (random 30);
+ 			_chance = round (random 60);
 			if(_chance == 1) then {
 				remoteExec ["fnc_police_fire", -2];
 			};
