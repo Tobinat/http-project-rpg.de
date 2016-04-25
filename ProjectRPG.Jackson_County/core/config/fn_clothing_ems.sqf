@@ -7,7 +7,7 @@
 	Master configuration file for Bruce's Outback Outfits.
 */
 private["_filter","_ret"];
-_filter = param [0,0,[0]];
+_filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
@@ -166,3 +166,5 @@ switch (_filter) do
 		];
 	};
 };
+
+_ret;
