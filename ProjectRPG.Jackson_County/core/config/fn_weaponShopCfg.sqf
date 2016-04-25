@@ -339,55 +339,55 @@ switch(_shop) do
 				{
 					["Rebel Awesome Weapons",
 						[
-							["RH_ta648",nil,500],
-							["RH_SFM952V",nil,500],
-							["RH_compM2l",nil,500],
-							["RH_t1","Aimpoint",500],
-							["RH_peq2","Laser (All Rifles)",500],
-							["RH_leu_mk4",nil,500],
-							["RH_barska_rds","Barska Red Dot",500],
-							["RH_cmore","C-more Red Dot",500],
-							["optic_MRCO",nil,500],
-							["RH_compM2l","Rifle Aimpoint Low",500],
-							["RH_compM2","Rifle Aimpoint",500],
-							["RH_M6X",nil,500],
+							["RH_ta648",nil,2000],
+							["RH_SFM952V",nil,2000],
+							["RH_compM2l",nil,2000],
+							["RH_t1","Aimpoint",2000],
+							["RH_peq2","Laser (All Rifles)",2000],
+							["RH_leu_mk4",nil,2000],
+							["RH_barska_rds","Barska Red Dot",2000],
+							["RH_cmore","C-more Red Dot",2000],
+							["optic_MRCO",nil,2000],
+							["RH_compM2l","Rifle Aimpoint Low",2000],
+							["RH_compM2","Rifle Aimpoint",2000],
+							["RH_M6X",nil,2000],
 							
-							["RH_bull",nil,10000],
+							["RH_bull",nil,20000],
 							["RH_6Rnd_454_Mag",nil,500],
 
-							["RH_fn57",nil,10000],
+							["RH_fn57",nil,15000],
 							["RH_20Rnd_57x28_FN",nil,250],
 							
-							["hlc_rifle_auga3_b",nil,30000],
-							["hlc_30Rnd_556x45_B_AUG",nil,250],
+							["hlc_rifle_auga3_b",nil,70000],
+							["hlc_30Rnd_556x45_B_AUG",nil,600],
 							
-							["RH_M4A1_ris",nil,30000],
-							["RH_30Rnd_556x45_M855A1",nil,250],
+							["RH_M4A1_ris",nil,80000],
+							["RH_30Rnd_556x45_M855A1",nil,600],
 							
-							["RH_M4A6",nil,30000],
-							["RH_30Rnd_68x43_FMJ",nil,250],
+							["RH_M4A6",nil,80000],
+							["RH_30Rnd_68x43_FMJ",nil,600],
 
-							["RH_Mk11",nil,30000],
-							["RH_20Rnd_762x51_M80A1",nil,250],
-							["RH_20Rnd_762x51_Mk316LR",nil,250],
+							["RH_Mk11",nil,90000],
+							["RH_20Rnd_762x51_M80A1",nil,600],
+							["RH_20Rnd_762x51_Mk316LR",nil,600],
 							
 							["hlc_rifle_RU556",nil,70000],
 							["hlc_rifle_bcmjack",nil,75000],
-							["hlc_30rnd_556x45_EPR",nil,1100],
+							["hlc_30rnd_556x45_EPR",nil,600],
 							
 							["RH_M4_moe",nil,62000],
-							["RH_30Rnd_556x45_M855A1",nil,920],
+							["RH_30Rnd_556x45_M855A1",nil,600],
 							
 							["hlc_rifle_ak12",nil,85000],
-							["hlc_30Rnd_545x39_B_AK",nil,950],
+							["hlc_30Rnd_545x39_B_AK",nil,600],
 							
-							["KPFS_G36C",nil,65000],
-							["KPFS_30Rnd_556x45_G36",nil,400],
+							["KPFS_G36C",nil,80000],
+							["KPFS_30Rnd_556x45_G36",nil,600],
 								
-							["RH_Hk416s",nil,30000],
-							["RH_30Rnd_556x45_M855A1",nil,250],
-							["RH_30Rnd_556x45_Mk262",nil,250],
-							["RH_30Rnd_556x45_Mk318",nil,250]
+							["RH_Hk416s",nil,85000],
+							["RH_30Rnd_556x45_M855A1",nil,600],
+							["RH_30Rnd_556x45_Mk262",nil,600],
+							["RH_30Rnd_556x45_Mk318",nil,600]
 						]
 					];
 				};

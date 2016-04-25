@@ -17,7 +17,7 @@ case "coke": {1500};
 	case "driver": {300}; //Drivers License cost
 	case "boat": {1500}; //Boating license cost
 	case "pilot": {1500}; //Pilot/air license cost
-	case "gun": {2000}; //Firearm/gun license cost
+	case "gun": {5000}; //Firearm/gun license cost
 	case "dive": {400}; //Diving license cost
 	case "oil": {1000}; //Oil processing license cost
 	case "cair": {1500}; //Cop Pilot License cost
@@ -27,7 +27,7 @@ case "coke": {1500};
 	case "marijuana": {1150}; //Marijuana processing license cost
 	case "medmarijuana": {150}; //Medical Marijuana processing license cost
 	case "gang": {1000}; //Gang license cost
-	case "rebel": {5000}; //Rebel license cost
+	case "rebel": {15000}; //Rebel license cost
 	case "truck": {5000}; //Truck license cost
 	case "diamond": {3500};
 	case "salt": {1200};
@@ -40,5 +40,5 @@ case "coke": {1500};
 	case "mdive": {1500};
 	case "home": {7500};
 	
-	case "rifle": {300};
+	case "rifle": {2000};
 };
