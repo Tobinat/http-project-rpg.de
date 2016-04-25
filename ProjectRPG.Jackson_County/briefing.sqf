@@ -18,8 +18,6 @@ player createDiarySubject ["controls","Steuerung"];
 		]
 	];
 
-	
-	
 	player createDiaryRecord["werbung1",
 		[
 			" ",
@@ -55,4 +53,3 @@ player createDiarySubject ["controls","Steuerung"];
 				"
 		]
 	];
-	

@@ -1244,13 +1244,13 @@ fnc_startfire = {
 
 fnc_police_fire = {
 	["NEWS: Lakeside PD steht unter Flammen!", false] spawn domsg; 
-	fire_loc1 = [8696.41,7222.15,0.1];
+	fire_loc1 = [8732.3,7233.77,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_bank_fire = {
 ["NEWS: Lakeside Bank steht unter Flammen!", false] spawn domsg; 
-	fire_loc1 = [8528.58,6623.8,0.1];
+	fire_loc1 = [8528.42,6618.23,0.1];
 	[] spawn fnc_startfire;
 };
 
@@ -1302,6 +1302,39 @@ fnc_truckjob_fire = {
 	[] spawn fnc_startfire;	
 };
 
+
+
+
+fnc_bedford_fire = {
+["NEWS: Old Bedford Waffenladen steht unter Flammen!", false] spawn domsg; 
+	fire_loc1 = [6554.71,3813.25,0.1];
+	[] spawn fnc_startfire;	
+};
+
+fnc_diablos_fire = {
+["NEWS: Los Diablos PD steht unter Flammen!", false] spawn domsg; 
+	fire_loc1 = [3425.52,7590.8,0.1];
+	[] spawn fnc_startfire;	
+};
+
+fnc_jagd_fire = {
+["NEWS: Das Jagdgebiet steht unter Flammen!", false] spawn domsg; 
+	fire_loc1 = [6594.68,6015.15,0.1];
+	[] spawn fnc_startfire;	
+};
+
+fnc_mais_fire = {
+["NEWS: Die Mais Farm steht unter Flammen!", false] spawn domsg; 
+	fire_loc1 = [3013.25,8445.73,0.1];
+	[] spawn fnc_startfire;	
+};
+
+
+fnc_chop_fire = {
+["NEWS: Der Chop Shop steht unter Flammen!", false] spawn domsg; 
+	fire_loc1 = [6118,9388.23,0.1];
+	[] spawn fnc_startfire;	
+};
 
 
 
