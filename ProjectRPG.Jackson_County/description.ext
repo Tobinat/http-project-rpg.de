@@ -26,7 +26,7 @@ corpseLimit = 10;
 corpseRemovalMinTime = 600;
 corpseRemovalMaxTime = 800;
 
-//#include "infiSTAR_AdminMenu.hpp"
+
 #include "dialog\MasterHandler.h"
 #include "slot_machine.hpp"
 #include "dialog\pickup.hpp"
