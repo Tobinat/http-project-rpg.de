@@ -483,12 +483,14 @@ switch(_shop) do
        
         case "genstore":
         {
-			["General and Fishing",
+			["General und Fishing",
 				[
 					["CG_Pro_Item_i","CG GoPro",350],
 					["CG_tabletd","CG Tablet Phone",50],
 					["CG_battery_i","ZL Battery",5],
 					["TRYK_Shemagh_G_NV","NV",5],
+					["vvv_fishing_rod","Angel",500],
+					["cebos","Köder",50],
 					["CG_ATF_Pizza_Box_i","Take Away Pizza",1400],
 					["CG_ATF_Donut_Box_i","Take Away Donuts",1600],
 					["cg_torch",nil,550], 
