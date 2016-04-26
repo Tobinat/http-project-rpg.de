@@ -172,7 +172,10 @@ switch (_filter) do
 			["usms_vests_usms1_Fix",nil,15],
 			["usms_vests_usms2_Fix",nil,15],
 			["usms_vests_usms4_Fix",nil,15],
-			["TRYK_V_Bulletproof","Ride Along Vest",15]
+			["A3L_fbivest1","FBI Vest",15],
+			["TRYK_V_tacv1_FBI_BK","FBI Low Threat",15],
+			["TRYK_V_tacv1LC_FBI_BK","FBI High Threat",15],
+			["TRYK_V_Bulletproof_BLK","Ride Along Vest",15]
 		];
 	};
 	
