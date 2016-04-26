@@ -436,7 +436,6 @@ class Life_Client_Core
 		class fastRope {};
 		class removeWeaponAction {};
 		class removeWeaponActionCiv {};	
-		class teargas {};
 		class soundloop {};
 		class copOpener {};
 	};

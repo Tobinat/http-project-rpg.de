@@ -17,7 +17,7 @@ if(_ammo isEqualTo "GrenadeHand_stone") exitwith {
 		[_position] remoteExec ["life_fnc_flashbang"];
 	};
 };
-
+/*
 if(_ammo isEqualTo "SmokeShellYellow") exitwith {
 	[_projectile] spawn {
 		params ["_projectile"];
@@ -28,6 +28,7 @@ if(_ammo isEqualTo "SmokeShellYellow") exitwith {
 		_enemies = _enemies - _nonUnits;
 		_projectile remoteExec ["life_fnc_teargas",_enemies];
 	};
+*/
 };
 
 if(_ammo isKindOf "Melee") exitwith {
