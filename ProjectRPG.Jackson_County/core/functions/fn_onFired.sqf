@@ -29,7 +29,6 @@ if(_ammo isEqualTo "SmokeShellYellow") exitwith {
 		_projectile remoteExec ["life_fnc_teargas",_enemies];
 	};
 */
-};
 
 if(_ammo isKindOf "Melee") exitwith {
 	_cfg = (configFile>>"CfgAmmo">>_ammo>>"Melee");
