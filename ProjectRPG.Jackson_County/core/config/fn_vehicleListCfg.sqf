@@ -84,7 +84,7 @@ switch (_shop) do
 		       {
 			    _return pushBack ["A3L_CVPILBFD",2300];
 				_return pushBack ["cg_mercedes_sprinter_ems",25000];
-				_return pushBack ["Ark_Ambulance1 ",25000];
+				_return pushBack ["Ark_Ambulance1",25000];
 
 		        };
 				
