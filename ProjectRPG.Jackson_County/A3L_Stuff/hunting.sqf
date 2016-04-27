@@ -1,4 +1,4 @@
-/*	animalArray =
+	animalArray =
     [
             "Goat_random_F",
             "Sheep_random_F",
@@ -56,4 +56,3 @@ fnc_gutanimal = {
 	[_gotitem,10,"green"] spawn domsg;
 	life_action_inUse = false;
 };
-*/

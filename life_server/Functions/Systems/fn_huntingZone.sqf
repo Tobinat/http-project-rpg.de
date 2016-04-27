@@ -5,6 +5,7 @@
 	Description:
 	Main functionality for the hunting zone.
 
+*/
 private["_bool","_total","_animals"];
 _bool = param [0,false,[false]];
 if(!_bool && count life_animals_array == 0) exitWith {};
@@ -38,4 +39,3 @@ deleteVehicle _x;
 life_animals_array = [];
 life_animals_spawned = false;
 };
-*/

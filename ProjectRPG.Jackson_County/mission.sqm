@@ -54853,7 +54853,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-//				init="this allowDamage false; this enableSimulation false; this addaction [""Sign In"",life_fnc_spawnanimal];";
+				init="this allowDamage false; this enableSimulation false; this addaction [""Sign In"",life_fnc_spawnanimal];";
 			};
 			id=8122;
 			type="CamoNet_INDP_F";

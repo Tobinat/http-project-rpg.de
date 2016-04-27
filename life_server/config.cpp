@@ -89,6 +89,7 @@ class CfgFunctions
 			class vehicleIsDead {};
 			class getChopCar {};
 			class spikeStrip {};
+			class huntingZone {};
 			class logIt {};
 			class chopShopSell {};
 			class clientDisconnect {};
