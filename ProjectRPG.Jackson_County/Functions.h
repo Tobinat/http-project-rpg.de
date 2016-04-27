@@ -115,7 +115,7 @@ class Life_Client_Core
 		class packupRoadblock {};
 		class packupBarGate {};
 		class buyLicense {};
-		class spawnAnimal {};
+//		class spawnAnimal {};
 		class doubleCharge {};
 		class rechargePhone {};
 		class standardPhone {};

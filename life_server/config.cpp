@@ -80,7 +80,6 @@ class CfgFunctions
 			class startRace {};
 			class managesc {};
 			class cleanup {};
-			class huntingZone {};
 			class vehicleCreate {};
 			class vehicleDead {};
 			class spawnVehicle {};

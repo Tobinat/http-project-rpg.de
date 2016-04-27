@@ -171,9 +171,9 @@ fnc_cleananimals = {
 _huntarray = ["Sheep_random_F","Cock_random_F","Hen_random_F","Goat_random_F"];
 _civScumLords = ["C_man_polo_1_F","C_man_polo_2_F","C_man_polo_6_F","C_man_polo_4_F","C_man_polo_3_F","C_man_polo_5_F","C_man_1_2_F","C_man_1_3_F"];
 //check if players are around if so, exit.
-_checkPlayer = (getmarkerpos "hunting_area") nearEntities [_civScumLords, 200];
-if(count _checkPlayer > 0) exitwith {};
-_animalsFound = (getmarkerpos "hunting_area") nearEntities [_huntarray, 350];
+//_checkPlayer = (getmarkerpos "hunting_area") nearEntities [_civScumLords, 200];
+//if(count _checkPlayer > 0) exitwith {};
+//_animalsFound = (getmarkerpos "hunting_area") nearEntities [_huntarray, 350];
 
 //delete if no players are around
 	{		
