@@ -422,6 +422,8 @@ switch (_className) do
 	case "A3L_F350Red": {85};
 	case "A3L_F350White": {85};
 	case "A3L_Dumptruck": {180};
+	
+	case "cg_mercedes_sprinter_pol_base_reg": {150};
 
 	// default
 	case "B_G_Offroad_01_F": {65};
