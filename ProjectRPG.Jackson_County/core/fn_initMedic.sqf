@@ -42,5 +42,6 @@ if(karma_level > 80) then {
 [format["Dein Karma-Level beträgt: %1",karma_level], false] spawn domsg;
 
 uiSleep 2;
+["R.F.A FREQ: 59.1 - Leitung FREQ: 38.8", false] spawn domsg;
 
 playsound "medicalintro";
