@@ -249,9 +249,11 @@
  		</Key>
  		<Key ID="STR_ATM_SentMoneyFail">
  			<Original>LAKESIDE BANK: You do not have enough money, you will need $%2 as tax.</Original>
+			<German>LAKESIDE BANK: Du hast nicht genug Geld, du brauchst $%2 als Steuer.</German>
  		</Key>
  		<Key ID="STR_ATM_SentMoneySuccess">
  			<Original>LAKESIDE BANK: You have transfered $%1 to %2. Tax fee: $%3</Original>
+			<German>LAKESIDE BANK: Du hast $%1 an %2 überwiesen. Steuer: $%3</German>
  		</Key>
  		<Key ID="STR_ATM_WithdrawMax">
  			<Original>LAKESIDE BANK: You can't withdraw more then $999,999</Original>
@@ -4444,7 +4446,7 @@
 		<Key ID="STR_vInAct_Unflip">
 			<Original>Unflip Vehicle</Original>
 			<English>Unflip Vehicle</English>
-			<German>Fahrzeug umdrehen</German>
+			<German>Umdrehen</German>
 			<French>Retourner Véhicule</French>
 			<Italian>Raddrizza veicolo</Italian>
 			<Portuguese>Desvirar Veículo</Portuguese>
@@ -4480,7 +4482,7 @@
 		<Key ID="STR_vInAct_SearchVehicle">
 			<Original>Search Vehicle</Original>
 			<English>Search Vehicle</English>
-			<German>Fahrzeug durchsuchen</German>
+			<German>Durchsuchen</German>
 			<French>Fouiller Véhicule</French>
 			<Italian>Cerca Veicolo</Italian>
 			<Portuguese>Vasculhar Veículo</Portuguese>
@@ -4494,7 +4496,7 @@
 		<Key ID="STR_vInAct_PullOut">
 			<Original>Pullout Players</Original>
 			<English>Pullout Players</English>
-			<German>Aus Fahrzeug ziehen</German>
+			<German>Rausziehen</German>
 			<French>Sortir Personnes</French>
 			<Italian>Estrai Giocatore</Italian>
 			<Portuguese>Retirar Jogadores</Portuguese>
@@ -4502,7 +4504,7 @@
 		<Key ID="STR_vInAct_Impound">
 			<Original>Impound Vehicle</Original>
 			<English>Impound Vehicle</English>
-			<German>Fahrzeug beschlagnahmen</German>
+			<German>Beschlagnahmen</German>
 			<French>Mise en fourrière</French>
 			<Italian>Sequestra Veicolo</Italian>
 			<Portuguese>Apreender Veículo</Portuguese>
