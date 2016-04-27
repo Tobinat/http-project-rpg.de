@@ -969,6 +969,7 @@ switch (_shop) do
 			["B_Heli_Light_01_F",45000],
 			["C_Heli_Light_01_civil_F",45000],
 			["EC635_SAR",20000],
+			["EC635_PRPG_SERT",20000],
 			["melb_h6m",85000]
 		];
 	};
