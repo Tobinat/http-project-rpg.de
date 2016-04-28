@@ -184,7 +184,8 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["AM_PoliceBelt","Police Utility Belt",80]
+			["AM_PoliceBelt","Police Utility Belt",80],
+            ["cg_invisbp","Invisi-Backpack 2.0",5]
 		];
 	};
 };

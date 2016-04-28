@@ -733,8 +733,9 @@ switch (_filter) do
 			["koilbp_15",nil,550],	
 			["koilbp_16",nil,550],	
 			["koilbp_17",nil,550],	
-			["koilbp_18",nil,550]
+			["koilbp_18",nil,550],
 			//koil addedd
+	        ["cg_invisbp","Invisi-Backpack 2.0",10000]			
 		];
 	};
 };
