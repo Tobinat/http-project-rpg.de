@@ -653,17 +653,17 @@ switch (_shop) do
 			["critgamin_vangmcc_civ_violet",18000],
 			["critgamin_vangmcc_civ_orange",18000],
 
-			["cg_mercedes_sprint_van_noir",25000],
-			["cg_mercedes_sprint_van_violet",25000],
-			["cg_mercedes_sprint_van_rose",25000],
-			["cg_mercedes_sprint_van_orange",25000],
-			["cg_mercedes_sprint_van_grise",25000],
-			["cg_mercedes_sprint_van_vert",25000],
-			["cg_mercedes_sprint_van_bleufonce",25000],
-			["cg_mercedes_sprint_van_bleu",25000],
-			["cg_mercedes_sprint_van_white",25000],
-			["cg_mercedes_sprint_van_jaune",25000],
-			["cg_mercedes_sprint_van_rouge",25000],
+			["cg_mercedes_sprinter_van_noir",25000],
+			["cg_mercedes_sprinter_van_violet",25000],
+			["cg_mercedes_sprinter_van_rose",25000],
+			["cg_mercedes_sprinter_van_orange",25000],
+			["cg_mercedes_sprinter_van_grise",25000],
+			["cg_mercedes_sprinter_van_vert",25000],
+			["cg_mercedes_sprinter_van_bleufonce",25000],
+			["cg_mercedes_sprinter_van_bleu",25000],
+			["cg_mercedes_sprinter_van_white",25000],
+			["cg_mercedes_sprinter_van_jaune",25000],
+			["cg_mercedes_sprinter_van_rouge",25000],
 
 
 
@@ -1012,6 +1012,129 @@ switch (_shop) do
   			
 		];
 	};
+	
+	case "udc_car":
+	{
+		_return =
+		[
+			["ivory_wrx_cop_marked",200000],
+			["ivory_wrx_cop_unmarked",200000],
+			["ivory_wrx_cop_slicktop",200000],
+			["A3L_CVPIFPBDOC",20000],
+			["A3L_TaurusCO2",25000],
+			["cg_cvpifpblbpd",20000],	
+			["cg_TaurusPD1",25000],	
+			["DAR_ExplorerPolice",40000],
+			["charger_pd_skinned",90000],
+			["cg_ss2",25000],
+			["DAR_ExplorerSheriff",40000],
+			["charger_sh_skinned",90000],			
+			["cg_suburban_sert_pol",40000],					
+			["cg_evoSERT1",70000],
+			["charger_sert",90000],
+			["cg_h2_sert",110000],	
+			["AM_Holden_SO",40000],		
+			["A3L_CVPIUC",20000],
+			["A3L_CVPIUCBlack",20000],
+			["A3L_CVPIUCBlue",20000],
+			["cg_mercedes_sprinter_pol_base_reg",25000],
+			["cg_ducati_pol_reg",25000],			
+			["DAR_ExplorerPoliceStealth",30000],
+			["DRPG_06Suburban_P_LVPD",30000],
+			["DRPG_06Victoria_P_LVPD",30000],
+			["DRPG_06Victoria_P_R",30000],
+			["DRPG_09Tahoe_P_LVPD",30000],
+			["DRPG_12M5_P_LVPD",30000],
+			["DRPG_12Charger_P_LVPD",30000],
+			["DRPG_15Charger_P_LVPD",30000],
+			["PRPG_ChargerLB ",30000],
+			["PRPG_TaurusLB",30000],
+			["DRPG_06Suburban_P_Sheriff ",30000],
+			["DRPG_06Victoria_P_Sheriff",30000],
+			["DRPG_09Tahoe_P_Sheriff",30000],
+			["DRPG_12M5_P_SHERIFF",30000],
+			["DRPG_12Charger_P_Sheriff",30000],
+			["DRPG_15Charger_P_Sheriff",30000],
+			["PRPG_ChargerSDLB",30000],
+			["PRPG_TaurusSDLB",30000],
+			["DRPG_06Victoria_P_STATE",30000],
+			["DRPG_06Suburban_P_State",30000],	
+			["DRPG_09Tahoe_P_State",30000],	
+			["DRPG_12M5_P_STATE",30000],	
+			["DRPG_12Charger_P_STATE",30000],			
+			["DRPG_08Suburban_P_U",20000],
+			["DRPG_12Charger_P_U_Black",20000],
+			["DRPG_15Charger_P_U",20000],
+			["Ark_CTSVUCred",20000],
+			["Ark_CTSVUCblack",20000],
+			["Ark_CTSVUCwhite",20000],
+			["Ark_CTSVUCblue",20000],
+			["Ark_CTSVUCpurple",20000],
+			["Ark_CTSVUCgreen",20000],
+			["Ark_CTSVUCyellow",20000],
+			["Ark_CTSVUCorange",20000],
+			["Ark_CTSVUCdarkred",20000],
+			["Ark_CTSVUCpink",20000],
+			["DRPG_06Suburban_P_FBI",20000],
+			["DRPG_06Victoria_P_FBI",20000],
+			["DRPG_09Tahoe_P_FBI",20000],
+			["DRPG_12M5_P_FBI",20000],
+			["DRPG_12Charger_P_FBI",20000],
+			["DRPG_15Charger_P_FBI",20000]
+		];
+	};
+
+	case "udc_air":
+	{
+		_return =
+		[
+			
+			["Sab_af_An2",300000],
+			["Sab_tk_An2",300000],
+			["Sab_ca_An2",300000],
+			["Sab_ana_An2",300000],
+			["Sab_yel_An2",300000],
+			["Sab_fd_An2",300000],
+
+			["Sab_Sea2_An2",300000],
+			["Sab_Sea4_An2",300000],
+			["Sab_Amphi_An2",300000],
+
+			["IVORY_T6A_1",300000],
+			["bwi_a3_t6a",300000],
+            ["bwi_a3_t6a_1",300000],
+            ["bwi_a3_t6a_2",300000],
+            ["bwi_a3_t6a_3",300000],
+            ["bwi_a3_t6a_4",300000],
+            ["bwi_a3_t6a_5",300000],
+            ["bwi_a3_t6a_6",300000],
+			["bwi_a3_t6a_7",300000],
+            ["bwi_a3_t6a_8",300000],
+            ["bwi_a3_t6a_9",300000],
+            ["bwi_a3_t6c",300000],
+			["B_Heli_Light_01_F",350000],
+			["ivory_b206",350000],
+			["ivory_b206_news",400000],
+			["CUP_C_DC3_CIV",800000],
+			["CUP_C_C47_CIV",1000000],			
+			["GNT_C185",1000000],
+			["IVORY_CRJ200_1",1000000],
+			["IVORY_ERJ135_1",1000000],
+
+			["B_Heli_Light_01_F",45000],
+			["C_Heli_Light_01_civil_F",45000],
+			["EC635_SAR",20000],
+			["EC635_PRPG_SERT",20000],
+			["melb_h6m",85000],
+			
+			["B_Heli_Light_01_F",45000],
+			["EC635_SAR",20000],
+			["EC635_PRPG_SERT",20000],
+			["C_Heli_Light_01_civil_F",45000]
+		];
+	};
+
+	
 	case "civ_air":
 	{
 		_return =
@@ -1052,6 +1175,7 @@ switch (_shop) do
 			["IVORY_ERJ135_1",1000000]
 		];
 	};
+	
 	case "civ_cop_car":
 	{
 		_return =

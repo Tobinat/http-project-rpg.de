@@ -100,7 +100,7 @@ if((_curTarget getVariable["dead",FALSE]) && playerSide != independent && !dialo
 	};
 };
 
-if(!dialog && playerSide == civilian && _curTarget isKindOf "Man" && isPlayer _curtarget && !(_curTarget getVariable["dead",FALSE])) exitwith {
+if(!dialog && playerSide == civilian && (!license_civ_udc) && _curTarget isKindOf "Man" && isPlayer _curtarget && !(_curTarget getVariable["dead",FALSE])) exitwith {
 		[_curTarget] call life_fnc_civInteractionMenu;
 };
 
@@ -120,7 +120,7 @@ if(playerSide != independent && !dialog && typeOf _curTarget == "Land_Suitcase_F
 
 //If target is a player then check if we can use the cop menu.
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-	if(_curTarget distance player < 5 && !dialog && playerSide == west) then {
+	if((_curTarget distance player < 5 && !dialog && playerSide == west) || (_curTarget distance player < 5 && !dialog && license_civ_udc)) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
 } else {

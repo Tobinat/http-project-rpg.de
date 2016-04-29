@@ -49,7 +49,7 @@ if(life_is_arrested) then
 };
 
 
-if(side player == civilian) then {
+if((side player == civilian) && (!license_civ_udc)) then {
 	[] spawn fnc_resetCallSpawn;
 	[] call fnc_checkphone;
 };

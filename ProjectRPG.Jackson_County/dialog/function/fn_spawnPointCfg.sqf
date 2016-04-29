@@ -107,8 +107,21 @@ switch (_side) do
 	
 	case civilian:
 	{
+	
+		if(license_civ_udc) then {
+			_return = [
+				["civ_spawn_1","LS OldTown","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["lakeside_spawn_2","LS McDonalds","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["fbi_lvsf_spawn","F.B.I. - L.V. Special Force","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			];
+		};
 
-		if(!license_civ_rebel) then {
+		if((!license_civ_rebel) && (!license_civ_udc)) then {
 			_return = [
 				["civ_spawn_1","LS OldTown","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["lakeside_spawn_2","LS McDonalds","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -130,7 +143,7 @@ switch (_side) do
 				} foreach life_houses;
 			};	
 		};
-
+		
 		if(license_civ_rebel && !(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE]) ) then {
 
 			_return = [

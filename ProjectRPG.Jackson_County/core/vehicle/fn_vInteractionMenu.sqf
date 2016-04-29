@@ -70,7 +70,7 @@ _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck; close
 if( damage _curTarget < 1 ) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
 
-if(playerSide == west) then {
+if(playerSide == west || (license_civ_udc)) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
 	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 	
@@ -234,7 +234,6 @@ if(playerSide == west) then {
 	_Btn18 ctrlShow false;
 	}
 	else {
-	
 		if(_curTarget isKindOf "Ship") then {
 			_Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
 			_Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";

@@ -902,7 +902,7 @@ fnc_delivery = {
 
 [] spawn
 {
-	if(side player == civilian) then {
+	if((side player == civilian) && (!license_civ_udc)) then {
 		while {true} do {
 			uiSleep 2;
 			_radios = player call TFAR_fnc_radiosList;
@@ -1409,7 +1409,7 @@ fnc_CallMenu = {
 		};
 	} foreach playableUnits;
 
-	if(side player != civilian) then {
+	if((side player != civilian) || (license_civ_udc)) then {
 			player setvariable["PhoneCallNumber",0,true];
 			player setvariable["PhoneID",0,true];
 			callInProgress = false;
@@ -1575,7 +1575,7 @@ fnc_dVol = {
 };
 
 fnc_resetCall = {
-	if(side player == west) exitwith { [] call fnc_ChangePolice; };
+	if((side player == west) || (license_civ_udc)) exitwith { [] call fnc_ChangePolice; };
 	if(side player == independent) exitwith { [] call fnc_ChangeEMS; };
 	playSound "cgphone_hangup";
 	player setvariable["PhoneCallNumber",0,true];
@@ -1583,7 +1583,7 @@ fnc_resetCall = {
 	callInProgress = false;
 	myCallOwner = player;
 	_mynumber = getPlayerUID player;
-	if(side player == civilian) then {
+	if((side player == civilian) && (!license_civ_udc)) then {
 		player setVariable ["tf_unable_to_use_radio", true];
 	};
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
@@ -1703,7 +1703,7 @@ fnc_ChangeDOC = {
 	["Du befindest dich auf der DOC Freq!", false] spawn domsg;
 };
 fnc_ChangePolice = {
-	if(side player == civilian || side player == east) exitwith {};
+	if(((side player == civilian) && (!license_civ_udc)) || (side player == east)) exitwith {};
 	player setvariable["PhoneCallNumber",33.3,true];
 	player setvariable["PhoneID",33.3,true];
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;

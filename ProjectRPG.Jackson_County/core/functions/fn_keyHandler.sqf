@@ -285,7 +285,7 @@ switch (_code) do
 			};
 		};
 
-        if( playerSide == west && vehicle player != player && ((driver vehicle player) == player) && _ctrlKey ) then
+        if((playerSide == west || license_civ_udc) && vehicle player != player && ((driver vehicle player) == player) && _ctrlKey ) then
 		{
 			_veh = vehicle player;
 			if( _veh isKindOf "Car" || _veh isKindOf "Motorcycle" || _veh isKindOf "Motorbike" ) then {
@@ -299,7 +299,7 @@ switch (_code) do
 			};
 		};
 
-        if( playerSide == west && vehicle player != player && ((driver vehicle player) == player) && !_ctrlKey ) then
+        if((playerSide == west || license_civ_udc) && vehicle player != player && ((driver vehicle player) == player) && !_ctrlKey ) then
 		{
 			_veh = vehicle player;
 			if( _veh isKindOf "Car" || _veh isKindOf "Motorcycle" || _veh isKindOf "Motorbike" ) then {

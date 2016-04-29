@@ -25,7 +25,7 @@ _id_houses = _ui displayCtrl 44450;
 _id_licenses  = _ui displayCtrl 44451;
 skip_all = false;
 
-if(side player == west) then {
+if(side player == west || license_civ_udc) then {
 	player remoteExec ["fnc_pull_ID",_civ];
 	life_gather_info = false;
 	["Überprüfe Informationen - Bitte warten!", false] spawn domsg; 

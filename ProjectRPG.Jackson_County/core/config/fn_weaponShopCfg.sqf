@@ -227,6 +227,125 @@ switch(_shop) do
 			};
 			["Police Weapon Shop", _ret select 0];
 		};
+
+        case "udc_basic":
+        {
+			switch(true) do
+			{
+				case (!license_civ_udc): {"Sie sind nicht befugt auf diesen Shop zuzugreifen."};
+				default
+				{
+					["Police Utility Shop",								
+						[
+							["CG_ATF_Handcuffs_i","Hand Cuffs",10],
+							["TRYK_SPgear_PHC1_NV","NV",10],
+							["cg_torch",nil,250], 
+							["ItemGPS",nil,25],
+							["CG_Spikes_Collapsed",nil,250], 
+							["cg_torchbattery",nil,250], 
+							["gign_shield","Riot Shield",10],
+							["CG_BATON","Police Baton",10],
+							["CG_TELBAT","Police TelBat",10],
+							["acc_flashlight","ACC Flashlight",10],
+							["RH_M6X","RH Flashlight",10],
+							["A3L_M4Flashlight","M4A3 Flashlight",10],
+							["Radar_Gun","Radar Gun",25], 
+							["ItemCompass",nil,50],  
+							["ItemWatch",nil,10],                                          
+							["Taser_26","Taser",5],
+							["26_cartridge",nil,2],
+							["Binocular",nil,15],
+							["Rangefinder","Rangefinder SERT ONLY",500],
+							["ItemGPS",nil,10],  
+							["tf_anprc152",nil,10],
+							["TRYK_Shemagh_TAN_NV",nil,200],
+							["TRYK_US_ESS_Glasses_H",nil,200],
+							["TRYK_G_Shades_Black_NV",nil,200],
+							["TRYK_G_bala_ess_NV",nil,200],
+							["NVGoggles_OPFOR",nil,200]
+						]
+					];
+				};
+			};
+        };
+		
+		case "udc_weaponShop": 
+		{
+			switch(true) do
+			{
+				case (!license_civ_udc): {"Sie sind nicht befugt auf diesen Shop zuzugreifen."};
+				default
+				{
+					["Weapon Shop",								
+						[
+							["RH_m9",nil,240],
+							["RH_15Rnd_9x19_M9",nil,5],
+							
+							["RH_fnp45",nil,240],
+							["RH_15Rnd_45cal_fnp",nil,4],
+							
+							["hgun_Pistol_heavy_01_F",nil,240],
+							["11Rnd_45ACP_Mag",nil,5],
+							
+							["hlc_smg_mp5a4",nil,3100],
+							["hlc_30Rnd_9x19_GD_MP5",nil,25],
+							
+							["RH_compM2l","Rifle Aimpoint Low",25],
+							["RH_compM2","Rifle Aimpoint",25],
+							
+							["RH_M4A1_ris",nil,4222],
+							["RH_30Rnd_556x45_M855A1",nil,20],
+							["RH_barska_rds","Barska Red Dot",25],
+							["RH_cmore","C-more Red Dot",25],
+							["optic_NVS",nil,25],
+							["RH_m4covers_f",nil,25],
+							["RH_PDW",nil,4220],
+							["RH_30Rnd_6x35_mag",nil,220],
+							["RH_uspm",nil,240],
+							["RH_16Rnd_40cal_usp",nil,5],					
+							["RH_M4A6",nil,12220],
+							["optic_MRCO",nil,220],
+							["RH_30Rnd_68x43_FMJ",nil,220],
+							["RH_SFM952V",nil,80],
+							["RH_compM2l",nil,80],
+							["RH_t1","Aimpoint",10],
+							["RH_ta648",nil,222],
+							["RH_bull",nil,240],
+							["RH_6Rnd_454_Mag",nil,4],
+							["RH_bullb",nil,240],
+							["RH_6Rnd_454_Mag",nil,4],		
+							["HandGrenade_Stone","Flashbang",300],
+							["RH_m110sd","MK 11 Silencer",220],
+							["RH_qdss_nt4","M4A6 Silencer",220],
+							["muzzle_snds_H","KAC Silencer",220],
+							["RH_peq2","Laser (All Rifles)",220],
+							["RH_Mk11",nil,6220],
+							["RH_20Rnd_762x51_M80A1",nil,220],
+							["RH_20Rnd_762x51_Mk316LR",nil,220],
+							["RH_Hk416s",nil,12220],
+							["RH_30Rnd_556x45_M855A1",nil,220],
+							["RH_30Rnd_556x45_Mk262",nil,220],
+							["RH_30Rnd_556x45_Mk318",nil,220],					
+							["hlc_rifle_auga3_b",nil,15000],
+							["hlc_30Rnd_556x45_B_AUG",nil,220],
+							["KPFS_G36C",nil,300],
+							["KPFS_30Rnd_556x45_G36",nil,600],
+							["hlc_rifle_bcmjack",nil,300],
+							["hlc_30rnd_556x45_EPR",nil,600],
+							["RH_M4_moe",nil,200],
+							["RH_30Rnd_556x45_M855A1",nil,200],							
+							["RH_leu_mk4",nil,100],
+							["RH_fn57",nil,1120],
+							["RH_sfn57",nil,20],
+							["RH_M6X",nil,20],
+							["RH_fa556",nil,20],
+							["RH_m110sd",nil,20],
+							["RH_20Rnd_57x28_FN",nil,20]
+						]
+					];
+				};				
+			};
+		};
 		
         case "rebel_low":
         {

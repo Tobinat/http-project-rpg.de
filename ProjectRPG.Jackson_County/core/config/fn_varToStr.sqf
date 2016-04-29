@@ -156,4 +156,5 @@ switch (_var) do
 	case "license_civ_MDMA": {(localize "STR_License_MDMA")};
 	case "license_civ_meth": {(localize "STR_License_Meth")};
 	case "license_civ_rifle": {"Hunt and Rifle License"};
+	case "license_civ_udc": {"Undercover"};
 };
