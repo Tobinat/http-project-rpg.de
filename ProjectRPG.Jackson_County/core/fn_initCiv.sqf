@@ -9,7 +9,7 @@
 // TFR Variables API
 tf_no_auto_long_range_radio = true; 
 
-TF_terrain_interception_coefficient = 1;
+TF_terrain_interception_coefficient = 0;
 
 private["_spawnPos"];
 

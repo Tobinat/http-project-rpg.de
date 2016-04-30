@@ -577,6 +577,7 @@ switch (_shop) do
 			["AM_2015C_Black",210000],
 			["AM_2015C_blue",210000],
 			["AM_2015C_white",210000],
+			["ADM_General_Lee",210000],
 
 			["cg_dodge_charger_2015_noir",259000],
 			["cg_dodge_charger_2015_violet",259000],
@@ -1121,15 +1122,12 @@ switch (_shop) do
 			["IVORY_CRJ200_1",1000000],
 			["IVORY_ERJ135_1",1000000],
 
-			["B_Heli_Light_01_F",45000],
-			["C_Heli_Light_01_civil_F",45000],
-			["EC635_SAR",20000],
-			["EC635_PRPG_SERT",20000],
-			["melb_h6m",85000],
-			
+			["melb_h6m",85000],			
 			["B_Heli_Light_01_F",45000],
 			["EC635_SAR",20000],
 			["EC635_PRPG_SERT",20000],
+			["EC635_prpg_lvsf",20000],
+			["EC635_prpg_presidental",20000],
 			["C_Heli_Light_01_civil_F",45000]
 		];
 	};

@@ -640,7 +640,7 @@ life_garage_prices =
 
 
 
-
+			["ADM_General_Lee",0],
 			["tcg_hrly",0],
 			["tcg_hrly_white",0],	
 			["tcg_hrly_red",0],
@@ -1575,7 +1575,9 @@ life_garage_prices =
 	["B_Heli_Light_01_F",0],
 	["EC635_SAR",0],
 	["EC635_PRPG_SERT",0],
-	["C_Heli_Light_01_civil_F",0]
+	["C_Heli_Light_01_civil_F",0],
+	["EC635_prpg_lvsf",0],
+	["EC635_prpg_presidental",0]
 	
 	
 ];
@@ -1585,7 +1587,9 @@ life_garage_sell =
 [
 
 
-
+			["EC635_prpg_lvsf",20000],
+			["EC635_prpg_presidental",20000],
+			["ADM_General_Lee",210000],
              //MaxRacing
 			["IVORY_PRIUS",3750],
 			["ivory_supra",4500],
