@@ -1332,7 +1332,7 @@ fnc_mais_fire = {
 
 fnc_chop_fire = {
 ["NEWS: Der Chop Shop steht unter Flammen!", false] spawn domsg; 
-	fire_loc1 = [6118,9388.23,0.1];
+	fire_loc1 = [9827.6221,233.10063,0.1];
 	[] spawn fnc_startfire;	
 };
 
