@@ -654,6 +654,17 @@ switch (_shop) do
 			["critgamin_vangmcc_civ_violet",18000],
 			["critgamin_vangmcc_civ_orange",18000],
 
+			["cg_mercedes_sprinter_van_noir",85000],
+			["cg_mercedes_sprinter_van_violet",85000],
+			["cg_mercedes_sprinter_van_rose",85000],
+			["cg_mercedes_sprinter_van_orange",85000],
+			["cg_mercedes_sprinter_van_grise",85000],
+			["cg_mercedes_sprinter_van_vert",85000],
+			["cg_mercedes_sprinter_van_bleufonce",85000],
+			["cg_mercedes_sprinter_van_bleu",85000],
+			["cg_mercedes_sprinter_van_white",85000],
+			["cg_mercedes_sprinter_van_jaune",85000],
+			["cg_mercedes_sprinter_van_rouge",85000],
 
 
 
