@@ -6,8 +6,8 @@
 // Run Some Client Stuff
 [] execVM "A3L_Stuff\bank.sqf";
 
-player setVariable["tf_receivingDistanceMultiplicator", 20];
-player setVariable["tf_sendingDistanceMultiplicator", 20];
+player setVariable["tf_receivingDistanceMultiplicator", 10];
+player setVariable["tf_sendingDistanceMultiplicator", 10];
 deadPlayer = false;
 candy = 0;
 scarylevel = 0;

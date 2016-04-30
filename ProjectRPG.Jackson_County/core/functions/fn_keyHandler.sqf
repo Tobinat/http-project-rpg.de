@@ -107,6 +107,7 @@ switch (_code) do
 		switch (playerSide) do 
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
+			case civilian: {if(!visibleMap && license_civ_udc) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers}};
 		};
 	};

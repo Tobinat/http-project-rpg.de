@@ -10,7 +10,7 @@
 // TFR Variables API
 tf_no_auto_long_range_radio = true; 
 player setVariable ["copLevel",1,true]; 
-TF_terrain_interception_coefficient = 0;
+TF_terrain_interception_coefficient = 1;
 
 private["_end"];
 player addRating 9999999;

@@ -31,7 +31,7 @@ while{_fkit > 0 && life_bankteller } do {
 			["Du wurdest extra bezahlt: $600", false] spawn domsg; 
 		};
 	};
-	if((player distance (getMarkerPos "fed_reserve") > 30) && (player distance (getMarkerPos "fed_reserve_morrison") > 30)) ( exitwith {
+	if((player distance (getMarkerPos "fed_reserve") > 30) && (player distance (getMarkerPos "fed_reserve_morrison") > 30)) exitwith {
 
 	};
 	_fkit = _fkit - 1;

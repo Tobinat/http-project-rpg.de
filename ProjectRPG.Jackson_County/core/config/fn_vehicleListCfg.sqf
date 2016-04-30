@@ -223,7 +223,7 @@ switch (_shop) do
 			["cg_bmw_m6_violet",390000],
 			["cg_bmw_m6_rose",390000],
 			["cg_bmw_m6_orange",390000],
-			["cg_bmw_m6_bleufonce",390000],
+			//["cg_bmw_m6_bleufonce",390000], - Eventuell Config überprüfen - Ziehen von Informationen nicht möglich
 			["cg_bmw_m6_bleu",390000],
 			["cg_bmw_m6_white",390000],
 			["cg_bmw_m6_jaune",390000],			

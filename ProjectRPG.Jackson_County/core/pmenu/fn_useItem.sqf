@@ -7,7 +7,7 @@
 */
 
 
-private["_item"];
+private["_item", "_pos"];
 disableSerialization;
 if((lbCurSel 2005) == -1) exitWith {[localize "STR_ISTR_SelectItemFirst", false] spawn domsg;};
 _item = lbData[2005,(lbCurSel 2005)];
@@ -41,13 +41,19 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
+			_pos = mapGridPosition player;
 			if( side player == west && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
-				[1,format["911 DISPATCH: PANIC BUTTON USED BY %1",name player]] remoteExecCall ["life_fnc_broadcast", west];
+				[1,format["POLICE DISPATCH: PANIC BUTTON USED BY %1 - Coords: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", west];
 				[player,"panicbutton"] spawn life_fnc_nearestSound;
 				["dpanic", false] remoteExec ["fnc_dispatch",west];
 			};
 			if( side player == independent && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
-				[1,format["911 DISPATCH: EMS IN TROUBLE %1",name player]] remoteExecCall ["life_fnc_broadcast", west];
+				[1,format["EMS DISPATCH: PANIC BUTTON USED BY %1 - Coords: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", west];
+				["dpanic", false] remoteExec ["fnc_dispatch",west];
+			};
+			if( license_civ_udc && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
+				[1,format["F.B.I / L.V. Special Force DISPATCH: PANIC BUTTON USED BY %1 - Coords: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", west];
+				[player,"panicbutton"] spawn life_fnc_nearestSound;
 				["dpanic", false] remoteExec ["fnc_dispatch",west];
 			};
 		};
