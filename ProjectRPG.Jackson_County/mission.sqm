@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=14480;
+		nextID=14476;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4820.8765,71.867073,2920.5491};
-		dir[]={-0.41772431,-0.4740462,-0.77511179};
-		up[]={-0.22491194,0.8804794,-0.41733828};
-		aside[]={-0.88030839,3.8649887e-007,0.47441673};
+		pos[]={4781.6211,64.834396,2890.0452};
+		dir[]={0.84809226,-0.52846044,-0.04145759};
+		up[]={0.5281238,0.84865361,-0.025813816};
+		aside[]={-0.048823278,5.4564598e-006,-0.99884921};
 	};
 };
 binarizationWanted=0;
@@ -10337,13 +10337,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8519.3643,34.685364,6634.2241};
-				angles[]={0,5.6162252,0};
+				angles[]={0,5.616221,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addaction [""Mitarbeiter Anmeldung"",life_fnc_bankteller,' license_civ_bank && playerSide == civilian'];";
+				init="this enableSimulation false; this allowDamage false; this addaction [""Mitarbeiter Anmeldung"",life_fnc_bankteller];";
 			};
 			id=1192;
 			type="Land_InfoStand_V1_F";
@@ -61964,19 +61964,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4811.4131,55.765366,2895.0901};
-				angles[]={0,4.4703994,0};
+				position[]={4811.4126,55.765736,2895.0898};
+				angles[]={0,4.4703989,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addaction [""Mitarbeiter Anmeldung"",life_fnc_bankteller,' license_civ_bank && playerSide == civilian'];";
+				init="this enableSimulation false; this allowDamage false; this addaction [""Mitarbeiter Anmeldung"",life_fnc_bankteller];";
 			};
 			id=14365;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.016765594;
+			atlOffset=0.01713562;
 		};
 		class Item3402
 		{
