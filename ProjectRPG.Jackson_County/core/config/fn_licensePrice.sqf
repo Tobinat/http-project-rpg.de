@@ -41,4 +41,5 @@ case "coke": {1500};
 	case "home": {7500};
 	
 	case "rifle": {2000};
+	case "bank": {1500};
 };

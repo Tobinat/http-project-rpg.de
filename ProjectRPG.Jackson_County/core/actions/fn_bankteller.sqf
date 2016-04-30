@@ -3,6 +3,7 @@ File: bank teller payments
 */
 
 if(has_job) exitwith { ["Du hast bereits einen Job! Drücke Shift + 4 um diesen zu beenden!", false] spawn domsg;};
+if(!license_civ_bank) exitwith { ["Du bis kein Bank angestellter!", false] spawn domsg;};
 
 if(side player != civilian) exitwith { ["Nur für Zivilisten!", false] spawn domsg;  };
 if(life_bankteller) exitWith {
@@ -23,14 +24,14 @@ player setVariable["ATM_MAN", true, true];
 while{_fkit > 0 && life_bankteller } do {
 	uiSleep 60;
 
-	if(isNull objectParent player && (player distance (getMarkerPos "bank_signup")) < 21) then {
+	if(isNull objectParent player && (player distance (getMarkerPos "bank_signup")) < 30000) then {
 		if(uniform player find "KAEL_SUITS" != -1) then
 		{
 			["bank","add", 600] call life_fnc_handleCash;
 			["Du wurdest extra bezahlt: $600", false] spawn domsg; 
 		};
 	};
-	if((player distance (getMarkerPos "fed_reserve")) > 30) exitwith {
+	if((player distance (getMarkerPos "fed_reserve") > 30) && (player distance (getMarkerPos "fed_reserve_morrison") > 30)) ( exitwith {
 
 	};
 	_fkit = _fkit - 1;

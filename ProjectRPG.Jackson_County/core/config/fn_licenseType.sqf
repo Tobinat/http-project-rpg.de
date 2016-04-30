@@ -46,6 +46,7 @@ switch (_mode) do
 			case "udc": {_var = "license_civ_udc"};
 			
 			case "rifle": {_var = "license_civ_rifle"};
+			case "bank": {_var = "license_civ_bank"};
 			default {_var = ""};
 		};
 	};
@@ -84,6 +85,7 @@ switch (_mode) do
 			case "license_civ_udc": {_var = "udc"};
 			
 			case "license_civ_rifle": {_var = "rifle"};
+			case "license_civ_bank": {_var = "bank"};
 			default {_var = ""};
 		};
 	};
