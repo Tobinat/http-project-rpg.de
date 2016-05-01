@@ -384,8 +384,7 @@ switch (true) do
 	case (_item == "BarGate"):
 	{
 		if(!isNull life_bargate) exitWith {["You already have a BarGate active in deployment", false] spawn domsg;};
-		if(playerSide == west || playerSide == independent) then 
-		{
+		if(playerSide == west || playerSide == independent || license_civ_udc) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[] spawn life_fnc_BarGate;
@@ -397,7 +396,7 @@ switch (true) do
 	{
 		if(!isNull life_roadcone) exitWith {["You already have a Roadcone active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide == west || playerSide == independent || license_civ_udc) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[] spawn life_fnc_RoadCone;
@@ -409,7 +408,7 @@ switch (true) do
 	{
 		if(!isNull life_roadcone) exitWith {["You already have a Blinking Roadcone active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide == west || playerSide == independent || license_civ_udc) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[true] spawn life_fnc_RoadCone;
@@ -420,7 +419,7 @@ switch (true) do
 	{
 		if(!isNull life_roadcone) exitWith {["You already have a Roadcone Strip active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide == west || playerSide == independent || license_civ_udc) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[] spawn life_fnc_RoadConeStrip;
@@ -431,7 +430,7 @@ switch (true) do
 	{
 		if(!isNull life_roadcone) exitWith {["You already have a Blinking Roadcone Strip active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide == west || playerSide == independent || license_civ_udc) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[true] spawn life_fnc_RoadConeStrip;
@@ -452,7 +451,7 @@ switch (true) do
 	{
 		if(!isNull life_roadblock) exitWith {["You already have a Road Block active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide == west || playerSide == independent ||license_civ_udc) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[] spawn life_fnc_RoadBlockWood;

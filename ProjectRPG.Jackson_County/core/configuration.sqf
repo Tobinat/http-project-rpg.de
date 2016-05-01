@@ -1589,7 +1589,7 @@ life_garage_sell =
 
 			["EC635_prpg_lvsf",20000],
 			["EC635_prpg_presidental",20000],
-			["ADM_General_Lee",210000],
+			["ADM_General_Lee",20000],
              //MaxRacing
 			["IVORY_PRIUS",3750],
 			["ivory_supra",4500],

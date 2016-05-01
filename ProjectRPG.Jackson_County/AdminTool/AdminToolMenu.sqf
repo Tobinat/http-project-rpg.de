@@ -21,7 +21,7 @@ _EXECscript10 = 'player execVM "'+_pathtovehiclesSniper+'%1"';
 _EXECscript11 = 'player execVM "'+_pathtovehiclesPistolen+'%1"';
 _EXECscript12 = 'player execVM "'+_pathtovehiclesMG+'%1"';
 
-if ((getPlayerUID player) in ["76561198068135912","76561198239530068","76561198055304738", "76561198124376194", "76561198046249740","76561198071339388","76561198136174074"]) then { // Admin PlayerID Eintragen <--- Hier Bitte Alle Admins eintragen!
+if ((getPlayerUID player) in ["76561198068135912","76561198239530068", "76561198124376194", "76561198046249740", "76561198136174074"]) then {
 	if ((getPlayerUID player) in ["PlayerID","PlayerID"]) then { // Mod PlayerID Eintragen
         adminmenu =
         [
@@ -30,7 +30,7 @@ if ((getPlayerUID player) in ["76561198068135912","76561198239530068","765611980
 				["", [-1], "", -5, [["expression", ""]], "1", "0"],
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]	
         ];};
-	if ((getPlayerUID player) in ["76561198068135912","76561198239530068","76561198055304738", "76561198124376194", "76561198046249740","76561198071339388","76561198136174074"]) then { // Admin PlayerID Eintragen
+	if ((getPlayerUID player) in ["76561198068135912","76561198239530068", "76561198124376194", "76561198046249740", "76561198136174074"]) then {
         adminmenu =
         [
 			["",true],
@@ -38,7 +38,7 @@ if ((getPlayerUID player) in ["76561198068135912","76561198239530068","765611980
 				["", [-1], "", -5, [["expression", ""]], "1", "0"],
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]	
         ];};
-	if ((getPlayerUID player) in ["76561198068135912","76561198239530068","76561198055304738", "76561198124376194", "76561198046249740","76561198071339388","76561198136174074"]) then { // Super Admin PlayerID Eintragen
+	if ((getPlayerUID player) in ["76561198068135912","76561198239530068", "76561198124376194", "76561198046249740", "76561198136174074"]) then {
 		adminmenu =
 		[
 			["",true],

@@ -1361,8 +1361,8 @@ fnc_spikeStrip_cg = {
 	};
 	_spikeStrip = createVehicle ["CG_Spikes_Extended", _obj,[], 0, "CAN_COLLIDE"];
 	_spot = getPos _spikeStrip;
-	_spikestrip setdir (_myDir - 180);
-	_spikeStrip setVectorUp surfaceNormal _spot;
+	_spikeStrip attachTo[player,[0,2.5,0]];
+	_spikeStrip setDir 90;
 
 	waitUntil { uiSleep 0.05; _nearVehicles = nearestObjects[getPos _spikeStrip,["Car"],7]; ( count _nearVehicles > 0 || isNull _spikeStrip || player distance _spikestrip > 250 || deadPlayer ) };
 	deletevehicle _spikestrip;

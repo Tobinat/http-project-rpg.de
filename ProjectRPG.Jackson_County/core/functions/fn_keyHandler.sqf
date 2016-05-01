@@ -97,7 +97,16 @@ switch (_code) do
 	
 	case 201:	
 	{
-		if (!_shift && !_alt && !_ctrlKey && (playerSide in [west,independent]) && (vehicle player != player)) then {[] call life_fnc_copOpener;};
+		if (!_shift && !_alt && !_ctrlKey && (playerSide in [west,independent] || license_civ_udc)) then {[] call life_fnc_copOpener;};
+	};
+	
+	case 209:	
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide in [west,independent] || license_civ_udc)) then {
+			{
+				detach _x;
+			} forEach attachedObjects player;
+		};
 	};
 	
 	

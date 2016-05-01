@@ -1,5 +1,5 @@
 author = "Tonic | Edited by PRPG";
-onLoadName = "Project-Rpg v1.1";
+onLoadName = "Project-Rpg v1.2";
 onLoadMission = "Webseite: http://project-rpg.de";
 //loadScreen = "a3l_client2\bg\cgbg.paa";
 joinUnassigned = 1;
@@ -523,6 +523,13 @@ class CfgSounds
 	{
 		name = "vomit";
 		sound[] = {"\sounds\vomit.ogg", 1, 1};
+		titles[] = {};
+	};
+	
+	class spikesound
+	{
+		name = "spikesound";
+		sound[] = {"\sounds\spikes.ogg", 1, 1};
 		titles[] = {};
 	};	
 };

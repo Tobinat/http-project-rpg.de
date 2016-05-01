@@ -19,7 +19,6 @@ if(side player == east) then {
 	uiSleep 35;
 };
 
-
 if(life_karma > 999) then {
 	karma_level = life_karma / 400;
 	karma_level = floor (karma_level);
