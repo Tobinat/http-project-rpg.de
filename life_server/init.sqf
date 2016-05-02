@@ -5,6 +5,8 @@ life_server_isReady = false;
 life_chopShopInUse = false;
 life_restartTime = 10800;
 publicVariable "life_server_isReady";
+life_Hunting_Version = "Hunting_Version_Server_1.2";
+publicVariable "life_Hunting_Version";
 
 
 [] spawn
@@ -87,7 +89,7 @@ else
 	__CONST__(life_sql_id,life_sql_id);
 };
 
-[] spawn DB_fnc_RCON_Restart;
+//[] spawn DB_fnc_RCON_Restart;
 [] call DB_fnc_serverTime;
 ["CALL resetLifeVehicles",1] call DB_fnc_asyncCall;
 ["CALL deleteDeadVehicles",1] call DB_fnc_asyncCall;

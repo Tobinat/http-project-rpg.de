@@ -150,6 +150,7 @@ life_carSalesman = false;
 life_onTestDrive = false;
 life_requestingTestDrive = false;
 life_testDriveRequests = [];
+
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
 __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for civs and cops? (Medics excluded for now)
@@ -1623,11 +1624,11 @@ life_garage_sell =
 			["Jonzie_VE",9000],
 			["Jonzie_Ute",9000],
 	         //kart_shop
-			["A3L_Karts",3000],
-			["C_Kart_01_Blu_F",4500],
-			["C_Kart_01_Fuel_F",4500],
-			["C_Kart_01_Red_F",4500],
-			["C_Kart_01_Vrana_F",4500],
+			["A3L_Karts",500],
+			["C_Kart_01_Blu_F",500],
+			["C_Kart_01_Fuel_F",500],
+			["C_Kart_01_Red_F",500],
+			["C_Kart_01_Vrana_F",500],
 	         //exo_car
 			["cg_peugeot_207_rc_noir",1200],
 			["cg_peugeot_207_rc_violet",1200],

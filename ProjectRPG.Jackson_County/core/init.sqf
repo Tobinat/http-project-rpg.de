@@ -23,11 +23,6 @@ _timeStamp = diag_tickTime;
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
 
-
-
-
-
-
 [] call life_fnc_setupEVH;
 waitUntil {(!isNil {clientGangLeader})};
 
@@ -152,7 +147,6 @@ HatList = ["kio_vfv_mask","cg_dinomask","cg_dinomask_p","cg_dinomask_r","cg_hors
 "kio_skl_msk_adc","kio_skl_msk_blood","kio_skl_msk_redranger","kio_skl_msk_UK","kio_skl_msk_US","kio_skl_msk_black","kio_skl_msk_can","kio_skl_msk_german",
 "kio_skl_msk_GOW","kio_skl_msk_grey","kio_skl_msk_irish","kio_skl_msk_nirish","kio_skl_msk_o","kio_skl_msk_p","kio_skl_msk_scot","kio_skl_msk_fran"];
 
-
 LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
 //LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObjects"] call BIS_fnc_addStackedEventHandler;
 [] call life_fnc_settingsInit;
@@ -162,6 +156,23 @@ life_fnc_moveIn = compileFinal
 "
 	player moveInCargo (_this select 0);
 ";
+
+//Credits goes to VariatoX - Firma dankt! #HateIsReal
+PRPG_Hunting_Version = getText (configFile >> "CfgPatches" >> "maa_Uniform" >> "hunting_version");
+_Hunting_Version = PRPG_Hunting_Version;
+_life_Hunting_Version = life_Hunting_Version;
+
+if(_Hunting_Version != _life_Hunting_Version) then {
+	disableUserInput true;
+	titleText ["!!! ACHTUNG !!! Du verwendest eine veraltete Version der Mod-Dateien! Bitte A3Sync starten und die Mods aktualisieren. !!! ACHTUNG !!!","BLACK_IN"];
+	hint "!!! ACHTUNG !!! Du verwendest eine veraltete Version der Mod-Dateien! Bitte A3Sync starten und die Mods aktualisieren. !!! ACHTUNG !!!"; 
+	systemChat "!!! ACHTUNG !!! Du verwendest eine veraltete Version der Mod-Dateien! Bitte A3Sync starten und die Mods aktualisieren. !!! ACHTUNG !!!";
+	sleep 5;
+	disableUserInput false;
+	sleep 0.5;
+	["PRPGwrongVersion",false,false] call BIS_fnc_endMission;
+	sleep 10;
+};
 
 KK_fnc_forceRagdoll = compileFinal
 "

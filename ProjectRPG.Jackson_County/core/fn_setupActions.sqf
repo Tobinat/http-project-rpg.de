@@ -24,11 +24,6 @@ switch (playerSide) do
 
 		life_actions pushBack (player addAction["<t color='#ADFF2F'>Bank Teller ATM</t>",life_fnc_atmMenu,"",7,false,false,"",' (cursorTarget getVariable ["ATM_MAN", false]) && cgbankvault animationPhase "d_l_Anim" == 0 && (player distance (getMarkerPos "bank_signup")) < 21 ']);
 
-
-		life_actions pushBack (player addAction["<t color = '#D660D6'>Anschnallen</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
-
-		life_actions pushBack (player addAction["<t color = '#D660D6'>Abschnallen</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
-
 		//Unblindfold person
 		life_actions pushBack (player addAction["Remove blindfold",life_fnc_untieb,"",0,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 2.5 && isPlayer cursorTarget && (cursorTarget getVariable ["blindfolded", false]) ']);
@@ -129,8 +124,6 @@ switch (playerSide) do
 	{		
 		if(license_civ_udc) then
 		{
-			life_actions pushBack (player addAction["<t color = '#d02b2b'>Emergency Eject</t>",life_fnc_EmergencyEject,"",0,false,false,"",' (driver vehicle player) == player && (vehicle player) isKindOf "Air" ']);
-
 			//Ungag person
 			life_actions pushBack (player addAction["<t color = '#d02b2b'>Remove Gag</t>",life_fnc_ungag,"",0,false,false,"",'
 			!isNull cursorTarget && player distance cursorTarget < 4 && isPlayer cursorTarget && (cursorTarget getVariable ["gagged", false])  && (!life_action_inUse) ']);

@@ -23,7 +23,7 @@ class CfgFunctions
 			class mresArray {};
 			class queryRequest{};
 			class asyncCall{};
-			class RCON_Restart {};
+			//class RCON_Restart {};
 			class insertRequest{};
 			class updateRequest{};
 			class mresToArray {};
