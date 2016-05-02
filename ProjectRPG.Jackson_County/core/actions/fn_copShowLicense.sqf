@@ -15,7 +15,7 @@ if(!(alive _target)) exitWith {};
 if(playerSide == west) then
 {
 	_coplevel = call life_coplevel;
-	_id = "";
+	_id = "<img image='\textures\license\police_license.paa' size='8'/>";
 	
 	switch (_coplevel) do
     {
@@ -37,15 +37,14 @@ if(playerSide == west) then
         //case 15: { _rank = "";};
     };
 
-//	_message = format["<t>%1<t/><br/><color='#FFFFFF'/><t size='1.5'>%2</t><br/><t size='2.5' color='#0000ff'>%3</t>", _id, name player, _rank];
-	_message = format["<t>%1<t/><br/><color='#FFFFFF'/><t size='1.5'>%2</t><br/><t size='2.5' color='#0000ff'>%3</t>",_id, name player, _rank];
+	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#0000ff'>%3</t>", _id, name player, _rank];
 	[_message] remoteExec ["life_fnc_copLicenseShown",_target];
 };
 
 if(playerSide == independent) then
 {
 	_mediclevel = call life_mediclevel;
-	_id = "";
+	_id = "<img image='\textures\license\rfa_license.paa' size='8'/>";
 	
 	switch (_mediclevel) do
 	{	//Medic NEU RFA?!?
@@ -66,7 +65,7 @@ if(playerSide == independent) then
 	
 	};
 
-	_message = format["<t>%1<t/><br/><color='#FFFFFF'/><t size='1.5'>%2</t><br/><t size='2.5' color='#ff0000'>%3</t>", _id, name player, _rank];
+	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#ff0000'>%3</t>", _id, name player, _rank];
 	[_message] remoteExec ["life_fnc_copLicenseShown",_target];
 	
 	

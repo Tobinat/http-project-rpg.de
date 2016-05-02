@@ -1332,7 +1332,7 @@ fnc_mais_fire = {
 
 fnc_chop_fire = {
 ["NEWS: Der Chop Shop steht unter Flammen!", false] spawn domsg; 
-	fire_loc1 = [9827.6221,233.10063,0.1];
+	fire_loc1 = [6118,9388.23,0.1];
 	[] spawn fnc_startfire;	
 };
 
@@ -1361,8 +1361,8 @@ fnc_spikeStrip_cg = {
 	};
 	_spikeStrip = createVehicle ["CG_Spikes_Extended", _obj,[], 0, "CAN_COLLIDE"];
 	_spot = getPos _spikeStrip;
-	_spikeStrip attachTo[player,[0,2.5,0]];
-	_spikeStrip setDir 90;
+	_spikestrip setdir (_myDir - 180);
+	_spikeStrip setVectorUp surfaceNormal _spot;
 
 	waitUntil { uiSleep 0.05; _nearVehicles = nearestObjects[getPos _spikeStrip,["Car"],7]; ( count _nearVehicles > 0 || isNull _spikeStrip || player distance _spikestrip > 250 || deadPlayer ) };
 	deletevehicle _spikestrip;
@@ -2385,7 +2385,7 @@ fnc_maintstart = {
 	_success = true;
 
 	if(farm) then {
-		airvehspawned = createVehicle ["ivory_tractor", position player, [], 0, "NONE"];
+		airvehspawned = createVehicle ["ivory_tractor", (getmarkerPos "oil_spawn_1"), [], 0, "NONE"];
 		[airvehspawned] spawn life_fnc_clearVehicleAmmo;
 		oiljobs = [(getpos wheat1),(getpos wheat2),(getpos wheat3),(getpos wheat4),(getpos wheat5),(getpos wheat6),(getpos wheat7),(getpos wheat8),(getpos wheat9),(getpos wheat10),(getpos wheat11),(getpos wheat12),(getpos wheat13),(getpos wheat14),(getpos wheat15),(getpos wheat16),(getpos wheat17)];
 		bullshit_story = [

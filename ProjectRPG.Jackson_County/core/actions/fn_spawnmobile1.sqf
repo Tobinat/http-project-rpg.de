@@ -10,7 +10,8 @@ switch(_this select 3) do {
 	case "truck": {
 			 _towtrucks = nearestObjects [player, ["Jonzie_Log_Truck","Jonzie_Superliner","Jonzie_Flatbed_Roadtrain","Jonzie_Flatbed"], 20]; 
 	  		 if(count _towtrucks > 0) exitWith { ["Warte bis der Truck wegbewegt wurde", false] spawn domsg; };
-			vehspawned = createVehicle ["Jonzie_Log_Truck", position player, [], 0, "NONE"];
+//			vehspawned = createVehicle ["Jonzie_Log_Truck", position player, [], 0, "NONE"];
+			vehspawned = createVehicle ["Jonzie_Log_Truck", (getmarkerPos "truck_spawn_1"), [], 0, "NONE"];
 			trucking = true;
 			[] spawn fnc_trucking;
 	};
