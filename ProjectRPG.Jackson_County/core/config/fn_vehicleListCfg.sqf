@@ -654,20 +654,6 @@ switch (_shop) do
 			["critgamin_vangmcc_civ_violet",18000],
 			["critgamin_vangmcc_civ_orange",18000],
 
-			["cg_mercedes_sprinter_van_noir",85000],
-			["cg_mercedes_sprinter_van_violet",85000],
-			["cg_mercedes_sprinter_van_rose",85000],
-			["cg_mercedes_sprinter_van_orange",85000],
-			["cg_mercedes_sprinter_van_grise",85000],
-			["cg_mercedes_sprinter_van_vert",85000],
-			["cg_mercedes_sprinter_van_bleufonce",85000],
-			["cg_mercedes_sprinter_van_bleu",85000],
-			["cg_mercedes_sprinter_van_white",85000],
-			["cg_mercedes_sprinter_van_jaune",85000],
-			["cg_mercedes_sprinter_van_rouge",85000],
-
-
-
 			["cg_citroen_c4_noir",49000],
 			["cg_citroen_c4_violet",49000],
 			["cg_citroen_c4_rose",49000],
@@ -895,10 +881,6 @@ switch (_shop) do
 			["Jonzie_Box_Truck",375000],
 			["Jonzie_Tanker_Truck",375000],
 
-
-
-
-
 			["cg_renault_magnum_truck_f_noir",459000],
 			["cg_renault_magnum_truck_f_violet",459000],
 			["cg_renault_magnum_truck_f_rose",459000],
@@ -908,8 +890,6 @@ switch (_shop) do
 			["cg_renault_magnum_truck_f_white",459000],
 			["cg_renault_magnum_truck_f_jaune",459000],
 
-
-
 			["shounka_avalanche_bleufonce",700000],
 			["shounka_avalanche_grise",700000],
 			["shounka_avalanche_jaune",700000],
@@ -918,7 +898,6 @@ switch (_shop) do
 			["shounka_avalanche_rose",700000],
 			["shounka_avalanche_rouge",700000],
 			["shounka_avalanche_violet",700000],
-
 
 			["shounka_ivceco_bleufonce",1000000],
 			["shounka_ivceco_grise",1000000],
@@ -1090,29 +1069,6 @@ switch (_shop) do
 		_return =
 		[
 			
-			["Sab_af_An2",300000],
-			["Sab_tk_An2",300000],
-			["Sab_ca_An2",300000],
-			["Sab_ana_An2",300000],
-			["Sab_yel_An2",300000],
-			["Sab_fd_An2",300000],
-
-			["Sab_Sea2_An2",300000],
-			["Sab_Sea4_An2",300000],
-			["Sab_Amphi_An2",300000],
-
-			["IVORY_T6A_1",300000],
-			["bwi_a3_t6a",300000],
-            ["bwi_a3_t6a_1",300000],
-            ["bwi_a3_t6a_2",300000],
-            ["bwi_a3_t6a_3",300000],
-            ["bwi_a3_t6a_4",300000],
-            ["bwi_a3_t6a_5",300000],
-            ["bwi_a3_t6a_6",300000],
-			["bwi_a3_t6a_7",300000],
-            ["bwi_a3_t6a_8",300000],
-            ["bwi_a3_t6a_9",300000],
-            ["bwi_a3_t6c",300000],
 			["B_Heli_Light_01_F",350000],
 			["ivory_b206",350000],
 			["ivory_b206_news",400000],

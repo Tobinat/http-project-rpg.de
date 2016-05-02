@@ -2385,7 +2385,7 @@ fnc_maintstart = {
 	_success = true;
 
 	if(farm) then {
-		airvehspawned = createVehicle ["ivory_tractor", (getmarkerPos "oil_spawn_1"), [], 0, "NONE"];
+		airvehspawned = createVehicle ["ivory_tractor", position player, [], 0, "NONE"];
 		[airvehspawned] spawn life_fnc_clearVehicleAmmo;
 		oiljobs = [(getpos wheat1),(getpos wheat2),(getpos wheat3),(getpos wheat4),(getpos wheat5),(getpos wheat6),(getpos wheat7),(getpos wheat8),(getpos wheat9),(getpos wheat10),(getpos wheat11),(getpos wheat12),(getpos wheat13),(getpos wheat14),(getpos wheat15),(getpos wheat16),(getpos wheat17)];
 		bullshit_story = [
@@ -2399,7 +2399,7 @@ fnc_maintstart = {
 		];	
 	};
 	if (oil) then {
-		airvehspawned = createVehicle ["ivory_b206", position player, [], 0, "NONE"];
+		airvehspawned = createVehicle ["ivory_b206", (getmarkerPos "oil_spawn_1"), [], 0, "NONE"];
 		[airvehspawned] spawn life_fnc_clearVehicleAmmo;
 		oiljobs = [(getpos oilrig1),(getpos oilrig2),(getpos oilrig3)];
 		bullshit_story = [
