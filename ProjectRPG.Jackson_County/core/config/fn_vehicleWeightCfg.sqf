@@ -122,18 +122,6 @@ switch (_className) do
 	case "shounka_ivceco_rouge": {390};
 	case "shounka_ivceco_violet": {390};
 	
-	case "cg_mercedes_sprinter_van_noir": {140};
-    case "cg_mercedes_sprinter_van_violet": {140};
-    case "cg_mercedes_sprinter_van_rose": {140};
-    case "cg_mercedes_sprinter_van_orange": {140};
-    case "cg_mercedes_sprinter_van_grise": {140};
-    case "cg_mercedes_sprinter_van_vert": {140};
-    case "cg_mercedes_sprinter_van_bleufonce": {140};
-    case "cg_mercedes_sprinter_van_bleu": {140};
-    case "cg_mercedes_sprinter_van_white": {140};
-    case "cg_mercedes_sprinter_van_jaune": {140};
-    case "cg_mercedes_sprinter_van_rouge": {140};
-
 	case "Nhz_audia8limo": {24};
 
 	case "Sab_af_An2": {200};
@@ -433,8 +421,6 @@ switch (_className) do
 	case "A3L_F350White": {85};
 	case "A3L_Dumptruck": {180};
 	
-	case "cg_mercedes_sprinter_pol_base_reg": {150};
-
 	// default
 	case "B_G_Offroad_01_F": {65};
 	case "B_Quadbike_01_F": {25};

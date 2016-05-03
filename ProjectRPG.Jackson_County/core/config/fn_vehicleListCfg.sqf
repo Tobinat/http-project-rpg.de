@@ -26,7 +26,7 @@ switch (_shop) do
 			["ivory_lp560",2130000],
 			["IVORY_R8",830000],
 			["IVORY_R8SPYDER",730000],
-			["IVORY_REV",690000],	
+			//["IVORY_REV",690000],	
 			["ivory_lfa",1390000],
 			["ivory_c",1260000],
 			["ivory_gt500",800000]
@@ -83,7 +83,6 @@ switch (_shop) do
 			if(__GETC__(life_mediclevel) > 2) then
 		       {
 			    _return pushBack ["A3L_CVPILBFD",2300];
-				_return pushBack ["cg_mercedes_sprinter_ems",25000];
 				_return pushBack ["Ark_Ambulance1",25000];
 
 		        };
@@ -963,7 +962,6 @@ switch (_shop) do
 			["A3L_CVPIUC",20000],
 			["A3L_CVPIUCBlack",20000],
 			["A3L_CVPIUCBlue",20000],
-			["cg_mercedes_sprinter_pol_base_reg",25000],
 			["cg_ducati_pol_reg",25000],			
 			["DAR_ExplorerPoliceStealth",30000],
 			["DRPG_06Suburban_P_LVPD",30000],
@@ -1017,7 +1015,6 @@ switch (_shop) do
 			["A3L_CVPIUC",20000],
 			["A3L_CVPIUCBlack",20000],
 			["A3L_CVPIUCBlue",20000],
-			["cg_mercedes_sprinter_pol_base_reg",25000],
 			["cg_ducati_pol_reg",25000],			
 			["DAR_ExplorerPoliceStealth",30000],
 			["DRPG_06Suburban_P_LVPD",30000],
@@ -1072,11 +1069,6 @@ switch (_shop) do
 			["B_Heli_Light_01_F",350000],
 			["ivory_b206",350000],
 			["ivory_b206_news",400000],
-			["CUP_C_DC3_CIV",800000],
-			["CUP_C_C47_CIV",1000000],			
-			["GNT_C185",1000000],
-			["IVORY_CRJ200_1",1000000],
-			["IVORY_ERJ135_1",1000000],
 
 			["melb_h6m",85000],			
 			["B_Heli_Light_01_F",45000],

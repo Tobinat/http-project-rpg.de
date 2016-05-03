@@ -106,7 +106,6 @@ switch (_item) do
 	case "RoadBlockWood": {5};
 	case "RoadBlockConc": {5};
 	case "RoadBlockRebel": {26};
-	case "BarGate": {23};
 	case "Rax's Rum" : {1};
 	case "zoobeer": {1}; // Duff Beer
 	case "zoobeer2": {1}; // Duff Beer

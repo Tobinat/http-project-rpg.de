@@ -37,15 +37,15 @@ _button = (findDisplay 17500) displayCtrl 17506;
 
 if(_mode) then {
 	if(_preview) then {
-		_button ctrlSetText "Preview";
-		_button ctrlSetToolTip "Preview the vehicle with selected color";
+		_button ctrlSetText "Vorschau";
+		_button ctrlSetToolTip "Vorschau der gewählten Farbe.";
 	} else {
-		_button ctrlSetText "Buy";
-		_button ctrlSetToolTip "Buy the vehicle with selected color";		
+		_button ctrlSetText "Kaufen";
+		_button ctrlSetToolTip "Das Fahrzeug mit der gewünschten Farbe kaufen.";		
 	};
 } else {
-	_button ctrlSetText "Rent";
-	_button ctrlSetToolTip "Rent the vehicle with selected color";			
+	_button ctrlSetText "Mieten";
+	_button ctrlSetToolTip "Das Fahrzeug mit der gewünschten Farbe mieten.";			
 };
 
 life_truckShopClassName = _className;
