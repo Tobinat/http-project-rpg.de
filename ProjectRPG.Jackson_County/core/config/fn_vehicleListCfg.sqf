@@ -94,9 +94,6 @@ switch (_shop) do
 			    _return pushBack ["cg_evoems1",20000];
 			    _return pushBack ["cg_evoems2",20000];
 			    _return pushBack ["cg_evoems3",20000];
-			    _return pushBack ["DRPG_06Victoria_P_EMS",23000];
-				_return pushBack ["DRPG_12M5_P_FDLV",25000];
-			    _return pushBack ["DRPG_12Charger_P_FDLV",23000];
 				_return pushBack ["AM_Holden_EMS",25000];
 		        };
 	};
@@ -163,16 +160,6 @@ switch (_shop) do
 			["cg_jeep_cherokee_bleu",139000],
 			["cg_jeep_cherokee_white",139000],
 			["cg_jeep_cherokee_jaune",139000],
-
-			["DRPG_11RS3_Black",550000],
-			["DRPG_11RS3_White",550000],
-			["DRPG_11RS3_Red",550000],
-			["DRPG_11RS3_blue",550000],
-			["DRPG_11RS3_Green",550000],
-			["DRPG_11RS3_Orange",550000],
-			["DRPG_11RS3_Pink",550000],
-			["DRPG_11RS3_Purple",550000],
-			["DRPG_11RS3_Yellow",550000],
 			
 			["cg_audi_rs4_noir",600000],
 			["cg_audi_rs4_violet",600000],
@@ -484,31 +471,6 @@ switch (_shop) do
 			["A3L_SuburbanBlack",190000],
 			["A3L_SuburbanGrey",190000],
 			["A3L_SuburbanOrange",190000],
-			["DRPG_06Suburban_Black",190000],
-			["DRPG_06Suburban_Red",190000],
-			["DRPG_06Suburban_blue",190000],
-			["DRPG_06Suburban_Green",190000],
-			["DRPG_06Suburban_Orange",190000],
-			["DRPG_06Suburban_Pink",190000],
-			["DRPG_06Suburban_Purple",190000],
-			["DRPG_06Suburban_Yellow",190000],
-			["DRPG_08Suburban_Black",190000],
-			["DRPG_08Suburban_Red",190000],
-			["DRPG_08Suburban_blue",190000],
-			["DRPG_08Suburban_Green",190000],
-			["DRPG_08Suburban_Orange",190000],
-			["DRPG_08Suburban_Pink",190000],
-			["DRPG_08Suburban_Purple",190000],
-			["DRPG_08Suburban_Yellow",190000],
-			["DRPG_09Tahoe_Black",190000],
-			["DRPG_09Tahoe_White",190000],
-			["DRPG_09Tahoe_Red",190000],
-			["DRPG_09Tahoe_blue",190000],
-			["DRPG_09Tahoe_Green",190000],
-			["DRPG_09Tahoe_Orange",190000],
-			["DRPG_09Tahoe_Pink",190000],
-			["DRPG_09Tahoe_Purple",190000],
-			["DRPG_09Tahoe_Yellow",190000],
 			["A3L_Camaro",195000]
 		];
 	};
@@ -537,24 +499,6 @@ switch (_shop) do
 			["cg_raptor_truck_va_bleu",390000],
 			["cg_raptor_truck_va_white",390000],
 			["cg_raptor_truck_va_jaune",390000],
-			["DRPG_10F150_Black",390000],
-			["DRPG_10F150_White",390000],
-			["DRPG_10F150_Red",390000],
-			["DRPG_10F150_blue",390000],
-			["DRPG_10F150_Green",390000],
-			["DRPG_10F150_Orange",390000],
-			["DRPG_10F150_Pink",390000],
-			["DRPG_10F150_Purple",390000],
-			["DRPG_10F150_Yellow",390000],
-			["DRPG_06Victoria_Black",159000],
-			["DRPG_06Victoria_White",159000],
-			["DRPG_06Victoria_Red",159000],
-			["DRPG_06Victoria_blue",159000],
-			["DRPG_06Victoria_Green",159000],
-			["DRPG_06Victoria_Orange",159000],
-			["DRPG_06Victoria_Pink",159000],
-			["DRPG_06Victoria_Purple",159000],
-			["DRPG_06Victoria_Yellow",159000],
 			
 			["cg_ford_mustang_noir",559000],
 			["cg_ford_mustang_violet",559000],
@@ -589,15 +533,6 @@ switch (_shop) do
 			["cg_dodge_charger_2015_white",259000],
 			["cg_dodge_charger_2015_jaune",259000],
 			["cg_dodge_charger_2015_rouge",259000],
-			["DRPG_08Viper_Black",700000],
-			["DRPG_08Viper_White",700000],
-			["DRPG_08Viper_Red",700000],
-			["DRPG_08Viper_blue",700000],
-			["DRPG_08Viper_Green",700000],
-			["DRPG_08Viper_Orange",700000],
-			["DRPG_08Viper_Pink",700000],
-			["DRPG_08Viper_Purple",700000],
-			["DRPG_08Viper_Yellow",700000],
 			["cg_dodge_charger_2015_jaune",259000],
 			["cg_dodge_charger_2015_rouge",259000],
 			
@@ -964,30 +899,8 @@ switch (_shop) do
 			["A3L_CVPIUCBlue",20000],
 			["cg_ducati_pol_reg",25000],			
 			["DAR_ExplorerPoliceStealth",30000],
-			["DRPG_06Suburban_P_LVPD",30000],
-			["DRPG_06Victoria_P_LVPD",30000],
-			["DRPG_06Victoria_P_R",30000],
-			["DRPG_09Tahoe_P_LVPD",30000],
-			["DRPG_12M5_P_LVPD",30000],
-			["DRPG_12Charger_P_LVPD",30000],
-			["DRPG_15Charger_P_LVPD",30000],
-			["PRPG_ChargerLB ",30000],
-			["PRPG_TaurusLB",30000],
-			["DRPG_06Suburban_P_Sheriff ",30000],
-			["DRPG_06Victoria_P_Sheriff",30000],
-			["DRPG_09Tahoe_P_Sheriff",30000],
-			["DRPG_12M5_P_SHERIFF",30000],
-			["DRPG_12Charger_P_Sheriff",30000],
-			["DRPG_15Charger_P_Sheriff",30000],
-			["PRPG_ChargerSDLB",30000],
-			["PRPG_TaurusSDLB",30000],
-			["DRPG_06Victoria_P_STATE",30000],
-			["DRPG_06Suburban_P_State",30000],	
-			["DRPG_09Tahoe_P_State",30000],	
-			["DRPG_12M5_P_STATE",30000],	
-			["DRPG_12Charger_P_STATE",30000],			
-			["A3L_jailBus",50000]		
-  			
+			["DAR_ExplorerPoliceStealth",30000],
+			["A3L_jailBus",50000]	
 		];
 	};
 	
@@ -1017,31 +930,6 @@ switch (_shop) do
 			["A3L_CVPIUCBlue",20000],
 			["cg_ducati_pol_reg",25000],			
 			["DAR_ExplorerPoliceStealth",30000],
-			["DRPG_06Suburban_P_LVPD",30000],
-			["DRPG_06Victoria_P_LVPD",30000],
-			["DRPG_06Victoria_P_R",30000],
-			["DRPG_09Tahoe_P_LVPD",30000],
-			["DRPG_12M5_P_LVPD",30000],
-			["DRPG_12Charger_P_LVPD",30000],
-			["DRPG_15Charger_P_LVPD",30000],
-			["PRPG_ChargerLB ",30000],
-			["PRPG_TaurusLB",30000],
-			["DRPG_06Suburban_P_Sheriff ",30000],
-			["DRPG_06Victoria_P_Sheriff",30000],
-			["DRPG_09Tahoe_P_Sheriff",30000],
-			["DRPG_12M5_P_SHERIFF",30000],
-			["DRPG_12Charger_P_Sheriff",30000],
-			["DRPG_15Charger_P_Sheriff",30000],
-			["PRPG_ChargerSDLB",30000],
-			["PRPG_TaurusSDLB",30000],
-			["DRPG_06Victoria_P_STATE",30000],
-			["DRPG_06Suburban_P_State",30000],	
-			["DRPG_09Tahoe_P_State",30000],	
-			["DRPG_12M5_P_STATE",30000],	
-			["DRPG_12Charger_P_STATE",30000],			
-			["DRPG_08Suburban_P_U",20000],
-			["DRPG_12Charger_P_U_Black",20000],
-			["DRPG_15Charger_P_U",20000],
 			["Ark_CTSVUCred",20000],
 			["Ark_CTSVUCblack",20000],
 			["Ark_CTSVUCwhite",20000],
@@ -1051,13 +939,7 @@ switch (_shop) do
 			["Ark_CTSVUCyellow",20000],
 			["Ark_CTSVUCorange",20000],
 			["Ark_CTSVUCdarkred",20000],
-			["Ark_CTSVUCpink",20000],
-			["DRPG_06Suburban_P_FBI",20000],
-			["DRPG_06Victoria_P_FBI",20000],
-			["DRPG_09Tahoe_P_FBI",20000],
-			["DRPG_12M5_P_FBI",20000],
-			["DRPG_12Charger_P_FBI",20000],
-			["DRPG_15Charger_P_FBI",20000]
+			["Ark_CTSVUCpink",20000]
 		];
 	};
 
@@ -1126,9 +1008,6 @@ switch (_shop) do
 	{
 		_return =
 		[			
-			["DRPG_08Suburban_P_U",20000],
-			["DRPG_12Charger_P_U_Black",20000],
-			["DRPG_15Charger_P_U",20000],
 			["Ark_CTSVUCred",20000],
 			["Ark_CTSVUCblack",20000],
 			["Ark_CTSVUCwhite",20000],
@@ -1138,13 +1017,7 @@ switch (_shop) do
 			["Ark_CTSVUCyellow",20000],
 			["Ark_CTSVUCorange",20000],
 			["Ark_CTSVUCdarkred",20000],
-			["Ark_CTSVUCpink",20000],
-			["DRPG_06Suburban_P_FBI",20000],
-			["DRPG_06Victoria_P_FBI",20000],
-			["DRPG_09Tahoe_P_FBI",20000],
-			["DRPG_12M5_P_FBI",20000],
-			["DRPG_12Charger_P_FBI",20000],
-			["DRPG_15Charger_P_FBI",20000]		
+			["Ark_CTSVUCpink",20000]
 		];
 	};	
 	case "cop_air":

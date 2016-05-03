@@ -34,14 +34,12 @@ if(_isWater) then {
 	};
 };
 
-_spikeStrips = (nearestObjects[getPos player,["CG_Spikes_Extended"],3]) select 0;
+_spikeStrips = (nearestObjects[getPos player,["CG_Spikes_Extended"],3]);
 if !(_spikeStrips isEqualTo []) then {
-	deletevehicle _spikeStrips;
+	deletevehicle (_spikeStrips select 0);
 	["Du hast die Nagelbänder aufgehoben", false] spawn domsg; 
 	player additem "CG_Spikes_Collapsed";
 };
-
-
 
 
 if(isNull _curTarget) exitWith {

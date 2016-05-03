@@ -444,13 +444,8 @@ switch (_code) do
 			{
 				if(side player == west) then {
 					_curWep = currentWeapon player;
-					if(_curWep != "CG_Torch") then {
-						[cursorTarget] spawn life_fnc_tackleAction;
-						[] spawn life_fnc_AntiSpam2;
-					} else {
-						[cursorTarget] spawn life_fnc_knockoutAction;
-						[] spawn life_fnc_AntiSpam2;
-					};
+					[cursorTarget] spawn life_fnc_knockoutAction;
+					[] spawn life_fnc_AntiSpam2;
 				} else {
 					if(time - life_knockOutCD < 2) exitWith {["Du hast nicht genug Grip um jemanden jetzt umzuhauen...",false] spawn domsg};
 					if(currentWeapon player != "" && currentWeapon player != "Binocular" && currentWeapon player != "Rangefinder") then {

@@ -6,7 +6,7 @@
 	Functionality for filtering clothing types in the menu.
 */
 disableSerialization;
-private["_control","_selection","_list","_filter"];
+private["_control","_selection","_list","_filter", "_detailscount"];
 _control = _this select 0;
 _selection = _this select 1;
 life_clothing_filter = _selection;
@@ -46,16 +46,21 @@ _clothes = switch (life_clothing_store) do
 if(count _clothes == 0) exitWith {};
 {
 	_details = [_x select 0] call life_fnc_fetchCfgDetails;
-	if(isNil {_x select 1}) then
+	_detailscount = count _details;
+	
+	if(_detailscount >= 6) then
 	{
-		_list lbAdd format["%1",(getText(configFile >> (_details select 6) >> (_x select 0) >> "DisplayName"))];
-	}
+		if(isNil {_x select 1}) then
+		{
+			_list lbAdd format["%1",(getText(configFile >> (_details select 6) >> (_x select 0) >> "DisplayName"))];
+		}
 		else
-	{
-		_list lbAdd format["%1", _x select 1];
+		{
+			_list lbAdd format["%1", _x select 1];
+		};
+		_pic = getText(configFile >> (_details select 6) >> (_x select 0) >> "picture");
+		_list lbSetData [(lbSize _list)-1,_x select 0];
+		_list lbSetValue [(lbSize _list)-1,_x select 2];
+		_list lbSetPicture [(lbSize _list)-1,_pic];
 	};
-	_pic = getText(configFile >> (_details select 6) >> (_x select 0) >> "picture");
-	_list lbSetData [(lbSize _list)-1,_x select 0];
-	_list lbSetValue [(lbSize _list)-1,_x select 2];
-	_list lbSetPicture [(lbSize _list)-1,_pic];
 } foreach _clothes;

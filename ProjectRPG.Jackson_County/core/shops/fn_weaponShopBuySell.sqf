@@ -8,19 +8,23 @@
 */
 disableSerialization;
 
-private["_price","_item","_itemInfo","_bad"];
+private["_price","_item","_itemInfo","_bad", "_itemcount"];
 if((lbCurSel 38403) isEqualTo -1) exitWith {[localize "STR_Shop_Weapon_NoSelect", false] spawn domsg;};
 _price = lbValue[38403,(lbCurSel 38403)]; if(isNil "_price") then {_price = 0;};
 _item = lbData[38403,(lbCurSel 38403)];
 _itemInfo = [_item] call life_fnc_fetchCfgDetails;
 _curTarget = cursorTarget;
 _bad = "";
+_itemcount = count _itemInfo;
 
-if((_itemInfo select 6) != "CfgVehicles") then
+if(_itemcount >= 6) then
 {
-	if((_itemInfo select 4) in [4096,131072]) then
+	if((_itemInfo select 6) != "CfgVehicles") then
 	{
-		if(!(player canAdd _item) && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = (localize "STR_NOTF_NoRoom")};
+		if((_itemInfo select 4) in [4096,131072]) then
+		{
+			if(!(player canAdd _item) && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = (localize "STR_NOTF_NoRoom")};
+		};
 	};
 };
 
