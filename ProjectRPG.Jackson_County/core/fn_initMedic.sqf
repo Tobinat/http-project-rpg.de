@@ -13,11 +13,8 @@ tf_no_auto_long_range_radio = true;
 TF_terrain_interception_coefficient = 1;
 player setVariable ["copLevel",1,true];
 
-private["_end"];
 player addRating 99999999;
 waitUntil {!(isNull (findDisplay 46))};
-
-
 
 if((__GETC__(life_medicLevel)) < 1) exitWith {
 	["Notwhitelisted",FALSE,TRUE] call BIS_fnc_endMission;
