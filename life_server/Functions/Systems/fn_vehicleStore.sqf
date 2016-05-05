@@ -9,6 +9,7 @@ private["_vehicle","_impound","_vInfo","_vInfo","_plate","_uid","_query","_sql",
 _vehicle = param [0,ObjNull,[ObjNull]];
 _impound = param [1,false,[true]];
 _unit = param [2,ObjNull,[ObjNull]];
+private _fuel = fuel _vehicle;
 
 if(isNull _vehicle OR isNull _unit) exitWith {
 	["life_impound_inuse",false] remoteExecCall ["life_fnc_netSetVar", _unit];				
@@ -39,7 +40,7 @@ if(_impound) then
 	} 
 	else
 	{
-		_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+		_query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate,_fuel];
 
 		_thread = [_query,1] call DB_fnc_asyncCall;
 
@@ -69,7 +70,7 @@ else
 		["life_garage_store",false] remoteExecCall ["life_fnc_netSetVar", _unit];				
 	};
 
-	_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+	_query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate,_fuel];
 
 	_thread = [_query,1] call DB_fnc_asyncCall;
 

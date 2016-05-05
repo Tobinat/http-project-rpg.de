@@ -236,6 +236,7 @@ class Life_Client_Core
 		class vehicleWeightCfg {};
 		class houseConfig {};
 		class insurance {};
+		class sert {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};
@@ -397,6 +398,8 @@ class Life_Client_Core
 		class vehicleWeight {};
 		class addVehicle2Chain {};
 		class animateJonzies {};
+		class cleanStation {};
+		class useStation {};
 	};
 	
 	class Cop

@@ -44,6 +44,8 @@ switch (_mode) do
 			case "mdive": {_var = "license_med_dive"};
 			case "home": {_var = "license_civ_home"};
 			case "udc": {_var = "license_civ_udc"};
+			case "sert": {_var = "license_cop_sert"};
+			
 			
 			case "rifle": {_var = "license_civ_rifle"};
 			case "bank": {_var = "license_civ_bank"};
@@ -83,6 +85,7 @@ switch (_mode) do
 			case "license_med_dive": {_var = "mdive"};
 			case "license_civ_home": {_var = "home"};
 			case "license_civ_udc": {_var = "udc"};
+			case "license_cop_sert": {_var = "sert"};
 			
 			case "license_civ_rifle": {_var = "rifle"};
 			case "license_civ_bank": {_var = "bank"};

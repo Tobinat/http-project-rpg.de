@@ -199,6 +199,8 @@ player addEventHandler ["AnimStateChanged", {
 	};
 }];
 
+
+
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 
 if!(getRemoteSensorsDisabled)then
@@ -212,3 +214,6 @@ if!(getRemoteSensorsDisabled)then
 	sleep 600;
 	life_canrob = true;	
 };
+
+[] spawn life_fnc_cleanStation;
+[] spawn life_fnc_useStation;

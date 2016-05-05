@@ -17,7 +17,7 @@ if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 publicVariable "serv_sv_use";
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, fuel FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
@@ -72,6 +72,9 @@ _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid
 [_query,1] spawn DB_fnc_asyncCall;
 _color = _vInfo select 8;
 
+_fuel = parseNumber(_queryResult select 9);
+diag_log format ["Fuel-Wert: %1",_fuel];
+
 if(typeName _sp isEqualTo "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
@@ -95,6 +98,7 @@ if(typeName _sp isEqualTo "STRING") then {
 	_vehicle setPos _sp;
 	_vehicle setVectorUp (surfaceNormal _sp);
 	_vehicle setDir _dir;
+	_vehicle setFuel _fuel;
 };
 _vehicle allowDamage true;
 

@@ -113,8 +113,22 @@ switch (_shop) do
 	case "exo_car":
 	{
 		_return = 
-		[	
-
+		[
+		
+			["Urbanized_LaFerrari_red",14000000],
+			["Urbanized_LaFerrari_black",14000000],
+			["Urbanized_LaFerrari_white",14000000],
+			["Urbanized_LaFerrari_blue",14000000],
+			["Urbanized_LaFerrari_purple",14000000],
+			["Urbanized_LaFerrari_pink",14000000],
+			["Urbanized_LaFerrari_orange",14000000],
+			["Urbanized_LaFerrari_darkred",14000000],
+			["Urbanized_LaFerrari_hotpink",14000000],
+			["Urbanized_LaFerrari_yellow",14000000],
+			["Urbanized_LaFerrari_lime",14000000],
+			["Urbanized_LaFerrari_Black_Special",18000000],
+			["Urbanized_LaFerrari_Blue_Special",18000000],
+			["Urbanized_LaFerrari_Lime_Special",18000000],
 
 			["cg_peugeot_207_rc_noir",40000],
 			["cg_peugeot_207_rc_violet",40000],
@@ -877,9 +891,9 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["ivory_wrx_cop_marked",200000],
-			["ivory_wrx_cop_unmarked",200000],
-			["ivory_wrx_cop_slicktop",200000],
+			["ivory_wrx_cop_marked",20000],
+			["ivory_wrx_cop_unmarked",20000],
+			["ivory_wrx_cop_slicktop",20000],
 			["A3L_CVPIFPBDOC",20000],
 			["A3L_TaurusCO2",25000],
 			["cg_cvpifpblbpd",20000],	
@@ -892,7 +906,7 @@ switch (_shop) do
 			["cg_suburban_sert_pol",40000],					
 			["cg_evoSERT1",70000],
 			["charger_sert",90000],
-			["cg_h2_sert",110000],	
+			["cg_h2_sert",11000],	
 			["AM_Holden_SO",40000],		
 			["A3L_CVPIUC",20000],
 			["A3L_CVPIUCBlack",20000],
@@ -900,7 +914,8 @@ switch (_shop) do
 			["cg_ducati_pol_reg",25000],			
 			["DAR_ExplorerPoliceStealth",30000],
 			["DAR_ExplorerPoliceStealth",30000],
-			["A3L_jailBus",50000]	
+			["A3L_jailBus",50000]
+			
 		];
 	};
 	
@@ -908,9 +923,9 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["ivory_wrx_cop_marked",200000],
-			["ivory_wrx_cop_unmarked",200000],
-			["ivory_wrx_cop_slicktop",200000],
+			["ivory_wrx_cop_marked",20000],
+			["ivory_wrx_cop_unmarked",20000],
+			["ivory_wrx_cop_slicktop",20000],
 			["A3L_CVPIFPBDOC",20000],
 			["A3L_TaurusCO2",25000],
 			["cg_cvpifpblbpd",20000],	
@@ -923,7 +938,7 @@ switch (_shop) do
 			["cg_suburban_sert_pol",40000],					
 			["cg_evoSERT1",70000],
 			["charger_sert",90000],
-			["cg_h2_sert",110000],	
+			["cg_h2_sert",11000],	
 			["AM_Holden_SO",40000],		
 			["A3L_CVPIUC",20000],
 			["A3L_CVPIUCBlack",20000],
@@ -951,7 +966,7 @@ switch (_shop) do
 			["B_Heli_Light_01_F",350000],
 			["ivory_b206",350000],
 			["ivory_b206_news",400000],
-
+			["MELB_MH6M",45000],
 			["melb_h6m",85000],			
 			["B_Heli_Light_01_F",45000],
 			["EC635_SAR",20000],
@@ -1026,6 +1041,7 @@ switch (_shop) do
 		[			
 			["B_Heli_Light_01_F",45000],
 			["C_Heli_Light_01_civil_F",45000],
+			["MELB_MH6M",45000],
 			["EC635_SAR",20000],
 			["EC635_PRPG_SERT",20000],
 			["melb_h6m",85000]

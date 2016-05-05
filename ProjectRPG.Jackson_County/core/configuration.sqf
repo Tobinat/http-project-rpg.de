@@ -8,6 +8,7 @@
 *****************************
 */
 player setVariable["playerHealth", 0, true];
+player setVariable ["udcLevel",false,true];
 myHealth = 0;
 Fishing_Active = false;
 shooting_death = false;
@@ -368,26 +369,15 @@ life_inv_items =
 
 
 
-
-
-
-
-
-
-
-
-
 //Setup variable inv vars.
 {missionNamespace setVariable[_x,0];} foreach life_inv_items;
 //Licenses [license var, civ/cop]
 life_licenses =
 [
-["license_civ_MDMA","civ"],
-["license_civ_meth","civ"],
-["license_civ_coke","civ"],
-	["license_cop_air","cop"],
-	["license_cop_swat","cop"],
-	["license_cop_cg","cop"],
+	//Civilian Licenses
+	["license_civ_MDMA","civ"],
+	["license_civ_meth","civ"],
+	["license_civ_coke","civ"],
 	["license_civ_driver","civ"],
 	["license_civ_air","civ"],
 	["license_civ_heroin","civ"],
@@ -405,11 +395,18 @@ life_licenses =
 	["license_civ_sand","civ"],
 	["license_civ_salt","civ"],
 	["license_civ_cement","civ"],
-	["license_med_air","med"],
 	["license_civ_home","civ"],
 	["license_civ_udc","civ"],
+	["license_civ_rifle","civ"],
 	
-	["license_civ_rifle","civ"]
+	//RFA Licenses
+	["license_med_air","med"],
+	
+	//Cop Licenses
+	["license_cop_air","cop"],
+	["license_cop_swat","cop"],
+	["license_cop_cg","cop"],
+	["license_cop_sert","cop"]
 ];
 
 //Setup License Variables

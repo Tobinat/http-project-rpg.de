@@ -72,14 +72,14 @@ switch (_className) do
 	case "cg_bowler_offroad_rogue": {100};
 
 
-	case "shounka_avalanche_bleufonce": {160};
-	case "shounka_avalanche_grise": {160};
-	case "shounka_avalanche_jaune": {160};
-	case "shounka_avalanche_noir": {160};
-	case "shounka_avalanche_orange": {160};
-	case "shounka_avalanche_rose": {160};
-	case "shounka_avalanche_rouge": {160};
-	case "shounka_avalanche_violet": {160};
+	case "shounka_avalanche_bleufonce": {100};
+	case "shounka_avalanche_grise": {100};
+	case "shounka_avalanche_jaune": {100};
+	case "shounka_avalanche_noir": {100};
+	case "shounka_avalanche_orange": {100};
+	case "shounka_avalanche_rose": {100};
+	case "shounka_avalanche_rouge": {100};
+	case "shounka_avalanche_violet": {100};
 
 
 	case "cg_daf_xf_euro6_noir": {200};

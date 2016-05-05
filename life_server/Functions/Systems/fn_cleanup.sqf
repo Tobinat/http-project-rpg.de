@@ -22,7 +22,7 @@ while {true} do {
 		[] remoteExec ["TON_fnc_cleanup",hc_1];
 	};
 
-	private["_veh","_units"];
+	private["_veh","_units","_fuel"];
 	sleep (5 * 60);
 	{
 		_veh = _x;
@@ -58,16 +58,18 @@ while {true} do {
 				_deleted = false;
 			};
 			
+			_fuel = fuel _veh;
+			
 			if(isNull _veh) then {
 				if(count _dbInfo > 0) then {
 					_uid = _dbInfo select 0;
 					_plate = _dbInfo select 1;
 
-					_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+					_query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate,_fuel];
 					
 					[_query,1] call DB_fnc_asyncCall;
 					
-					diag_log "Angeblicher query";
+					diag_log "Angeblicher query"; //danny stinkt. mfg variatox
 				};
 			};
 		}; */

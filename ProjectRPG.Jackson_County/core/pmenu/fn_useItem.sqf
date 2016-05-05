@@ -43,18 +43,37 @@ switch (true) do
 		{
 			_pos = mapGridPosition player;
 			if( side player == west && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
-				[1,format["POLICE DISPATCH: PANIC BUTTON USED BY %1 - Coords: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", west];
+				{
+					if((side _x == west) || (_x getVariable "udcLevel")) then
+					{
+						[1,format["911 NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
+						["dpanic", false] remoteExec ["fnc_dispatch",_x];
+					};
+				}forEach playableUnits;
+				
 				[player,"panicbutton"] spawn life_fnc_nearestSound;
-				["dpanic", false] remoteExec ["fnc_dispatch",west];
 			};
 			if( side player == independent && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
-				[1,format["EMS DISPATCH: PANIC BUTTON USED BY %1 - Coords: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", west];
-				["dpanic", false] remoteExec ["fnc_dispatch",west];
+				{
+					if((side _x == west) || (_x getVariable "udcLevel")) then
+					{
+						[1,format["RFA NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
+						["dpanic", false] remoteExec ["fnc_dispatch",_x];
+					};
+				}forEach playableUnits;
+				
+				[player,"panicbutton"] spawn life_fnc_nearestSound;
 			};
 			if( license_civ_udc && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
-				[1,format["F.B.I / L.V. Special Force DISPATCH: PANIC BUTTON USED BY %1 - Coords: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", west];
+				{
+					if((side _x == west) || (_x getVariable "udcLevel")) then
+					{
+						[1,format["F.B.I / L.V. SPECIAL FORCE NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
+						["dpanic", false] remoteExec ["fnc_dispatch",_x];
+					};
+				}forEach playableUnits;
+				
 				[player,"panicbutton"] spawn life_fnc_nearestSound;
-				["dpanic", false] remoteExec ["fnc_dispatch",west];
 			};
 		};
 	};
@@ -65,19 +84,19 @@ switch (true) do
 		{
 			if(([false,_item,1] call life_fnc_handleInv)) then
 			{
-				["Awesome! Someone wants to marry you! All the best!", false] spawn domsg;
+				["Cool! Jemand will dich heiraten.", false] spawn domsg;
 				if(life_married == "-1") then {
 					life_married = "someone";
 				};
 				if(life_married != "") then {
-				[0,format["%1 just married %2! We wish you good luck!",profileName, life_married]] remoteExecCall ["life_fnc_broadcast", -2];
+				[0,format["%1 und %2 haben geheiratet! Wir wünschen dem Paar alles Gute!",profileName, life_married]] remoteExecCall ["life_fnc_broadcast", -2];
 				life_married = "-2";
 				};
 			};
 		}
 		else
 		{
-			["You can't marry twice!", false] spawn domsg;
+			["Fremdgeher.", false] spawn domsg;
 		};
 	};
 
@@ -121,7 +140,7 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 
-			["You have consumed a Cigarette", false] spawn domsg;
+			["Du rauchst eine Zigarette.", false] spawn domsg;
 			[] spawn life_fnc_useCigarette;	
 		};
 	};
@@ -131,7 +150,7 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
-			["You have consumed a Light Beer", false] spawn domsg;
+			["Du hast eine Dose Bier (Vol. 3,5‰) getrunken.", false] spawn domsg;
 			life_intox = life_intox + 0.01;
 			[] spawn fnc_intox;
 		};
@@ -144,7 +163,7 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 		playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
-			["You have consumed a Heavy Beer", false] spawn domsg;
+			["Du hast eine Dose Bier (Vol. 8,5‰) getrunken.", false] spawn domsg;
 			life_intox = life_intox + 0.02;
 			[] spawn fnc_intox;
 		};
@@ -157,7 +176,7 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
-			["You have consumed a Vodka Shot", false] spawn domsg;
+			["Du trinkst einen Shot Vodka.", false] spawn domsg;
 			life_intox = life_intox + 0.05;
 			[] spawn fnc_intox;
 		};
@@ -172,7 +191,7 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
-			["You have consumed a Jack Daniels Shot", false] spawn domsg;
+			["Du trinkst einen Shot Jack Daniels.", false] spawn domsg;
 			life_intox = life_intox + 0.05;
 			[] spawn fnc_intox;
 		};
@@ -184,7 +203,7 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
-			["You have consumed a Jager Bomb", false] spawn domsg;
+			["Du hast eine Jager Bomb getrunken.", false] spawn domsg;
 			life_intox = life_intox + 0.05;
 			[] spawn fnc_intox;
 		};

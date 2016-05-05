@@ -48,11 +48,12 @@ if(life_is_arrested) then
 };
 
 
-if((side player == civilian) && (!license_civ_udc)) then {
+if(!license_civ_udc) then { //Sollte so funktionieren
 	[] spawn fnc_resetCallSpawn;
 	[] call fnc_checkphone;
 }else{
 	player setVariable ["copLevel",1,true];
+	player setVariable ["udcLevel",true,true];
 };
 
 player setUnitRecoilCoefficient 2.8;
