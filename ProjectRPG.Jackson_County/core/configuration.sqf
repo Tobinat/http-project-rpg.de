@@ -223,11 +223,6 @@ switch (playerSide) do
 		life_paycheck = 400; //Paycheck Amount
 	};
 	
-	case (license_civ_udc && playerSide == civilian): 
-	{
-		life_paycheck = 1500; //Paycheck Amount
-	};
-	
 	case independent: {
 		cash_in_bank = 12000;
 		life_paycheck = 1000;

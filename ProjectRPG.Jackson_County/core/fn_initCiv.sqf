@@ -11,8 +11,6 @@ tf_no_auto_long_range_radio = true;
 
 TF_terrain_interception_coefficient = 1;
 
-private["_spawnPos"];
-
 
 if(side player == east) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
@@ -51,6 +49,7 @@ if(life_is_arrested) then
 if(!license_civ_udc) then { //Sollte so funktionieren
 	[] spawn fnc_resetCallSpawn;
 	[] call fnc_checkphone;
+	life_paycheck = 1500;
 }else{
 	player setVariable ["copLevel",1,true];
 	player setVariable ["udcLevel",true,true];
