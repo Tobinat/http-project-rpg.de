@@ -69,15 +69,14 @@ switch (_shop) do
 	case "med_shop":
 	{
 		
-			_return pushBack ["cg_merc_atego_firetruck_reg",25000];
 			_return pushBack ["A3L_TowTruck_ADAC",25000];
 			_return pushBack ["cg_ambulanceexpansion",20000];
+			_return pushBack ["RR_Firetruck",25000];
 			
 			if(__GETC__(life_mediclevel) > 1) then
 		       {
 		       _return pushBack ["DAR_TahoeEMS",22500];
                _return pushBack ["pop_grua",25000];
-			   _return pushBack ["RR_Firetruck",25000];
 		       };
 			
 			if(__GETC__(life_mediclevel) > 2) then
