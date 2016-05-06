@@ -35,10 +35,16 @@ player setVariable ["tf_voiceVolume", 0, true];
 life_gear = [];
 player setVariable["gear",life_gear,true];
 
-_length = 15 - _length;
+_length = 0;
+if((independent countSide playableUnits) == 0) then {_length = 5} else {_length = 15};
+/*_length = 15 - _length;
 _length = round(_length);
 if(_length > 15) then { _length = 15; };
-if(_length < 8) then { _length = 8; };
+if(_length < 8) then { _length = 8; };*/
+
+if(_length <= 5) then {_length = 5};
+if(_length >= 15) then {_length = 15};
+
 life_respawn_timer = _length;
 player setVariable["severity", _length, true];
 

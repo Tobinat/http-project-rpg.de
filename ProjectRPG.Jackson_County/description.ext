@@ -540,9 +540,9 @@ class CfgDebriefing
 {
 	class NotWhitelisted
 	{
-		title = "Mission Failed";
-		subtitle = "You are not white-listed to use this slot";
-		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		title = "White-Listed Slot";
+		subtitle = "Du bist nicht für diesen Slot freigeschalten";
+		description = "Du kannst diesen Slot nicht spielen, da du nicht für diesen freigeschalten wurdest.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -550,11 +550,20 @@ class CfgDebriefing
 	
 	class Blacklisted
 	{
-		title = "Mission Failed";
-		subtitle = "You are blacklisted from cops";
-		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		title = "Blacklisted";
+		subtitle = "Du stehst auf der Blacklist";
+		description = "Du kannst diesen Slot nicht spielen, da du auf die Blacklist geschrieben wurdest. Für weitere Informationen melde dich bei einem Supporter.";
 		pictureBackground = "";
 		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class PRPGwrongVersion {
+		title="Falsche Mod-Dateien";
+		subtitle="Alte Mod-Dateien entdeckt!";
+		description="Bitte starte ArmA3Sync und aktualisiere deine Mod-Dateien! Weitere Informationen findest du unter www.project-rpg.de";
+		pictureBackground="KIA";
+		picture="KIA";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 };
@@ -563,7 +572,7 @@ class CfgNotifications
 {
 	class MedicalRequestEmerg
 	{
-		title = "EMS Requested";
+		title = "RFA Notruf";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%1";
 		duration = 5;
@@ -572,7 +581,7 @@ class CfgNotifications
 	
 	class DeliveryAssigned
 	{
-		title = "Delivery Job Accepted";
+		title = "Lieferauftrag Angenommen";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%1";
 		duration = 10;
@@ -581,7 +590,7 @@ class CfgNotifications
 	
 	class DeliveryFailed
 	{
-		title = "Delivery Job Failed";
+		title = "Lieferung Fehlgeschlagen";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
 		description = "%1";
 		duration = 7;
@@ -590,7 +599,7 @@ class CfgNotifications
 	
 	class DeliverySucceeded
 	{
-		title = "Delivery Job Completed";
+		title = "Lieferung Abgeschlossen";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
 		description = "%1";
 		duration = 6;
@@ -599,7 +608,7 @@ class CfgNotifications
 	
 	class TextMessage
 	{
-		title = "Received A Text Message";
+		title = "Textnachricht Empfangen";
 		iconPicture = "\cg_sndimg\icons\messagenew.paa";
 		description = "%1";
 		duration = 10;
@@ -608,7 +617,7 @@ class CfgNotifications
 	
 	class PoliceDispatch
 	{
-		title = "911 Dispatch Center";
+		title = "911 Notruf";
 		iconPicture = "\cg_sndimg\icons\messagepolice.paa";
 		description = "%1";
 		duration = 10;
@@ -617,7 +626,7 @@ class CfgNotifications
 	
 	class AdminDispatch
 	{
-		title = "Admin Dispatch Center";
+		title = "Admin Anfrage";
 		iconPicture = "\cg_sndimg\icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
@@ -626,7 +635,7 @@ class CfgNotifications
 	
 	class AdminMessage
 	{
-		title = "Admin Message";
+		title = "Administrative Nachricht";
 		iconPicture = "\cg_sndimg\icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
