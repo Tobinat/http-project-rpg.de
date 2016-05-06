@@ -48,7 +48,7 @@ while {true} do
 {
 	waitUntil{!isNull (findDisplay 49)};
 	_abortButton = (findDisplay 49) displayCtrl 104;
-	_abortButton buttonSetAction "[player] remoteExec [""TON_fnc_cleanupRequest"",2]";
+	_abortButton buttonSetAction "[player] remoteExec [""TON_fnc_cleanupRequest"",2]; [8] call SOCK_fnc_updatePartial;"; 
 	_respawnButton = (findDisplay 49) displayCtrl 1010;
 	_fieldManual = (findDisplay 49) displayCtrl 122;
 	
