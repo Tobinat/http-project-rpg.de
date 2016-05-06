@@ -4244,8 +4244,9 @@ PersonWhomMadeThisCorroded_SpawnWeapon = {
                     sleep 2;
                 };
                 _veh_type_LPMENIGGA = _this;
+				_pos_LP = getPos vehicle player;
                 hint format["spawning %1", _veh_type_LPMENIGGA];
-                _dir = getdir vehicle player;
+                /* _dir = getdir vehicle player;
                 _pos_LP = getPos vehicle player;
                 _pos_LP = [(_pos_LP select 0) + 8 * sin(_dir), (_pos_LP select 1) + 8 * cos(_dir), 0];
                 _xpos = _pos_LP select 0;
@@ -4253,7 +4254,8 @@ PersonWhomMadeThisCorroded_SpawnWeapon = {
                 _zpos = _pos_LP select 2;
                 [
                     [_veh_type_LPMENIGGA, [_xpos, _ypos, _zpos], _dir], "Publish_Vehicle", false, false
-                ] call BIS_fnc_MP;
+                ] call BIS_fnc_MP; */
+				createVehicle[_veh_type_LPMENIGGA, [_xpos, _ypos, _zpos], [], 0, 'CAN_COLLIDE'];
                 cutText[format["%1 spawned", _veh_type_LPMENIGGA], "PLAIN DOWN"];
             };
 };

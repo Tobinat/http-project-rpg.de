@@ -49,7 +49,6 @@ if(life_is_arrested) then
 if(!license_civ_udc) then { //Sollte so funktionieren
 	[] spawn fnc_resetCallSpawn;
 	[] call fnc_checkphone;
-	life_paycheck = 1500;
 }else{
 	player setVariable ["copLevel",1,true];
 	player setVariable ["udcLevel",true,true];
