@@ -52,6 +52,7 @@ if(!license_civ_udc) then { //Sollte so funktionieren
 }else{
 	player setVariable ["copLevel",1,true];
 	player setVariable ["udcLevel",true,true];
+	life_paycheck = 1500;
 };
 
 player setUnitRecoilCoefficient 2.8;
