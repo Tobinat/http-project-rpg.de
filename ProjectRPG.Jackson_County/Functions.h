@@ -338,6 +338,7 @@ class Life_Client_Core
 		class requestTestDrive {};
 		class testDrive {};
 		class broadcastCheck {};
+		class vehSetColorMP {};
 	};
 	
 	class Network
