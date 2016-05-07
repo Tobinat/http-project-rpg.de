@@ -8,8 +8,6 @@
 
 params [["_uid", "", [""]], ["_side", sideUnknown, [west]], ["_vehicle", objNull, [objNull]], ["_color", -1], "_type", "_classname", "_plate"];
 
-diag_log "Vehicle Create Start";
-
 if(_uid isEqualTo "" OR _side isEqualTo sideUnknown OR isNull _vehicle) exitWith {};
 if(!alive _vehicle) exitWith {};
 _className = typeOf _vehicle;
@@ -36,9 +34,5 @@ _side = switch(_side) do
 _plate = round(random(1000000));
 [_uid,_side,_type,_classname,_color,_plate] call DB_fnc_insertVehicle;
 
-diag_log "Vehicle Create Gekauft";
-
 _vehicle setVariable["dbInfo",[_uid,_plate],true];
 _vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"];
-
-diag_log "Vehicle Create Ende";

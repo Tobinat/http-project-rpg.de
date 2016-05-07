@@ -237,8 +237,9 @@ switch (playerSide) do
 /*
 	Master Array of items?
 */
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","Jonzie_Quattroporte","Jonzie_30CSL","Jonzie_Viper","Jonzie_Datsun_Z432","Jonzie_STI","Jonzie_Escalade","Jonzie_Datsun_510","Jonzie_Ceed","Jonzie_Raptor","Jonzie_Galant","Jonzie_Corolla","Jonzie_Mini_Cooper","Jonzie_Mini_Cooper_R_spec","Jonzie_XB","Jonzie_VE","Jonzie_Ute","Jonzie_Transit","Jonzie_Flat_Bed","Jonzie_Log_Truck","Jonzie_Box_Truck","Jonzie_Tanker_Truck"];
-__CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
+life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","Jonzie_Quattroporte","Jonzie_30CSL","Jonzie_Viper","Jonzie_Datsun_Z432","Jonzie_STI","Jonzie_Escalade","Jonzie_Datsun_510","Jonzie_Ceed","Jonzie_Raptor","Jonzie_Galant","Jonzie_Corolla","Jonzie_Mini_Cooper","Jonzie_Mini_Cooper_R_spec","Jonzie_XB","Jonzie_VE","Jonzie_Ute"];
+//,"Jonzie_Transit","Jonzie_Flat_Bed","Jonzie_Log_Truck","Jonzie_Box_Truck","Jonzie_Tanker_Truck"
+__CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can neve%r be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items = 
 [

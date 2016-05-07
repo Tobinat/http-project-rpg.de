@@ -6,8 +6,8 @@
 	Master configuration for color strings depending on their index location.
 */
 private["_vehicle","_color","_index"];
-_vehicle = param [0,"",[""]];
-_index = param [1,-1,[0]];
+_vehicle = [_this,0,"",[""]] call BIS_fnc_param;
+_index = [_this,1,-1,[0]] call BIS_fnc_param;
 _color = "";
 
 switch (_vehicle) do

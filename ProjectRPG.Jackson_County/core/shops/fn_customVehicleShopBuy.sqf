@@ -82,12 +82,10 @@ _vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],t
 
 _vehicle allowDamage true;
 _color = [parseNumber(_red),parseNumber(_green),parseNumber(_blue)];
-if!(_currentAnims isEqualTo []) then {
+/* if!(_currentAnims isEqualTo []) then {
 	_color pushBack _currentAnims;
-};
-diag_log format ["Ausserhalb habe ich es gefickt (?????) : %1",_color];	
+}; */
 life_vehicles pushBack _vehicle; //Add err to the chain.
 
 [(getPlayerUID player),playerSide,_vehicle,_color] remoteExecCall ["TON_fnc_vehicleCreate",(call life_fnc_HCC)];
-
 true;
