@@ -131,6 +131,7 @@ if(!(_curTarget in life_vehicles) OR isNil {_curTarget getVariable "house_owner"
 		_Btn8 buttonSetAction "[life_pInact_curTarget] call life_fnc_wipekeys; closeDialog 0;";
 		_Btn8 ctrlShow true;
 */
+
 		if(((_curTarget getVariable "house_owner") select 0) != (getPlayerUID player)) then {
 			_Btn1 ctrlEnable false;
 			_Btn4 ctrlEnable false;

@@ -4255,7 +4255,7 @@ PersonWhomMadeThisCorroded_SpawnWeapon = {
                 [
                     [_veh_type_LPMENIGGA, [_xpos, _ypos, _zpos], _dir], "Publish_Vehicle", false, false
                 ] call BIS_fnc_MP; */
-				createVehicle[_veh_type_LPMENIGGA, [_xpos, _ypos, _zpos], [], 0, 'CAN_COLLIDE'];
+				createVehicle[_veh_type_LPMENIGGA, _pos_LP, [], 0, 'NONE'];
                 cutText[format["%1 spawned", _veh_type_LPMENIGGA], "PLAIN DOWN"];
             };
 };
