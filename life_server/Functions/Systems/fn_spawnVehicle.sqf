@@ -7,6 +7,8 @@
 	the vehicle if it's not in use or dead.
 */
 
+private ["_color", "_red", "_green", "_blue", "_obj", "_fuel", "_vInfo", "_queryResult"];
+
 params [["_vid", -1, [0]], ["_pid", "",[""]], ["_sp", [], [[], ""]], ["_unit", objNull, [objNull]], ["_price", 0, [0]], ["_dir", 0, [0]],
 "_query", "_sql", "_vehicle", "_nearVehicles", "_name", "_side", "_tickTime"];
 _name = name _unit;
@@ -70,8 +72,15 @@ if(count _nearVehicles > 0) exitWith
 _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
 [_query,1] spawn DB_fnc_asyncCall;
-_color = _vInfo select 8;
-diag_log format ["Color of veh: %1",_color]
+_color = toArray(_vInfo select 8);
+_red = parseNumber(_color select 0);
+_green = parseNumber(_color select 1);
+_blue = parseNumber(_color select 2);
+
+diag_log format ["Color of veh: %1",_color];
+diag_log format ["Red: %1",_red];
+diag_log format ["Green: %1",_green];
+diag_log format ["Blue: %1",_blue];
 
 _fuel = parseNumber(_queryResult select 9);
 
@@ -88,9 +97,9 @@ if(typeName _sp isEqualTo "STRING") then {
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};	
 	if(count _color > 0) then {
 		/*[(_color select 0), (_color select 1), (_color select 2),_vehicle] remoteExecCall ["life_fnc_vehSetColorMP",-2];*/
-		_vehicle setVariable ["Red",_color select 0,true];
-		_vehicle setVariable ["Green",_color select 1,true];
-		_vehicle setVariable ["Blue",_color select 2,true];
+		_vehicle setVariable ["Red",_red,true];
+		_vehicle setVariable ["Green",_green,true];
+		_vehicle setVariable ["Blue",_blue,true];
 		if(count _color > 3) then {
 			[2,_vehicle,_color select 3] call life_fnc_animateJonzies;
 		};
