@@ -11,8 +11,8 @@ _salesman = _salesmanList lbData (lbCurSel _salesmanList);
 _salesman = call compile _salesman;
 
 if(isNil "life_showRoomVehicle" || isNull life_showRoomVehicle) exitWith {};
-if(!(playerSide isEqualTo civilian) && !(playerSide isEqualTo east)) exitWith {["You cannot purchase while on duty.", false] spawn domsg};
-if(!isNil "_salesman" && {_salesman isEqualTo player}) exitWith {["You cannot purchase a vehicle from yourself.", false] spawn domsg};
+if(!(playerSide isEqualTo civilian) && !(playerSide isEqualTo east)) exitWith {["Du kannst kein Fahrzeug kaufen, während du im Dienst bist.", false] spawn domsg};
+if(!isNil "_salesman" && {_salesman isEqualTo player}) exitWith {["Du kannst kein Fahrzeug für dich selbst kaufen.", false] spawn domsg};
 _className = typeOf life_showRoomVehicle;
 
 _list = ["showroom_car"] call life_fnc_vehicleListCfg;
@@ -46,7 +46,7 @@ if(_spawnPoint isEqualTo "") exitWith {[localize "STR_Shop_Veh_Block", false] sp
 if!(isNil "_salesman") then {
 	_salesmanCut = _price * (1/9);
 	["cash","bank",_salesmanCut] remoteExecCall ["life_fnc_handleCash",_salesman];
-	[format["You received $%1 for assisting %2 in their purchase of a %3.",_salesmanCut,profileName,getText(configFile >> "CfgVehicles" >> _className >> "displayName")], false] remoteExec ["domsg",_salesman];
+	[format["Du hast $%1 für deine Mitarbeit an dem Fahrzeug %3 von %2 bekommen.",_salesmanCut,profileName,getText(configFile >> "CfgVehicles" >> _className >> "displayName")], false] remoteExec ["domsg",_salesman];
 };
 [format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_price] call life_fnc_numberText], false] spawn domsg;
 
@@ -85,7 +85,7 @@ _color = [parseNumber(_red),parseNumber(_green),parseNumber(_blue)];
 if!(_currentAnims isEqualTo []) then {
 	_color pushBack _currentAnims;
 };
-diag_log format ["Outside I fucked it: %1",_color];	
+diag_log format ["Ausserhalb habe ich es gefickt (?????) : %1",_color];	
 life_vehicles pushBack _vehicle; //Add err to the chain.
 
 [(getPlayerUID player),playerSide,_vehicle,_color] remoteExecCall ["TON_fnc_vehicleCreate",(call life_fnc_HCC)];

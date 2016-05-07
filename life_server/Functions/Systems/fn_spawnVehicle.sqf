@@ -73,7 +73,6 @@ _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid
 _color = _vInfo select 8;
 
 _fuel = parseNumber(_queryResult select 9);
-diag_log format ["Fuel-Wert: %1",_fuel];
 
 if(typeName _sp isEqualTo "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
@@ -87,18 +86,19 @@ if(typeName _sp isEqualTo "STRING") then {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};	
 	if(_color isEqualType []) then {
-		_vehicle setVariable ["Red",str(_color select 0),true];
+		[(_color select 0), (_color select 1), (_color select 2),_vehicle] remoteExecCall ["life_fnc_vehSetColorMP",-2];
+		/*_vehicle setVariable ["Red",str(_color select 0),true];
 		_vehicle setVariable ["Green",str(_color select 1),true];
-		_vehicle setVariable ["Blue",str(_color select 2),true];
-		if(count _color > 3) then {
+		_vehicle setVariable ["Blue",str(_color select 2),true];*/
+		if(count _color >= 3) then {
 			[2,_vehicle,_color select 3] call life_fnc_animateJonzies;
 		};
 	};
-	_vehicle allowDamage false;
 	_vehicle setPos _sp;
 	_vehicle setVectorUp (surfaceNormal _sp);
 	_vehicle setDir _dir;
 	_vehicle setFuel _fuel;
+	_vehicle allowDamage false;
 };
 _vehicle allowDamage true;
 
@@ -141,6 +141,6 @@ if((_vInfo select 1) isEqualTo "cop" && (_vInfo select 2) isEqualTo "IVORY_REV")
 	[_vehicle,"cop_rev",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-[1,"Your vehicle is ready!"] remoteExecCall ["life_fnc_broadcast", _unit];
+[1,"Dein Fahrzeug steht bereit!"] remoteExecCall ["life_fnc_broadcast", _unit];
 serv_sv_use = serv_sv_use - [_vid];
 publicVariable "serv_sv_use";
