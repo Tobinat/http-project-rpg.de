@@ -86,19 +86,19 @@ if(typeName _sp isEqualTo "STRING") then {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};	
 	if(_color isEqualType []) then {
-		[(_color select 0), (_color select 1), (_color select 2),_vehicle] remoteExecCall ["life_fnc_vehSetColorMP",-2];
-		/*_vehicle setVariable ["Red",_color select 0,true];
+		/*[(_color select 0), (_color select 1), (_color select 2),_vehicle] remoteExecCall ["life_fnc_vehSetColorMP",-2];*/
+		_vehicle setVariable ["Red",_color select 0,true];
 		_vehicle setVariable ["Green",_color select 1,true];
-		_vehicle setVariable ["Blue",_color select 2,true];*/
+		_vehicle setVariable ["Blue",_color select 2,true];
 		if(count _color > 3) then {
 			[2,_vehicle,_color select 3] call life_fnc_animateJonzies;
 		};
 	};
-	_vehicle allowDamage false;
 	_vehicle setPos _sp;
 	_vehicle setVectorUp (surfaceNormal _sp);
 	_vehicle setDir _dir;
 	_vehicle setFuel _fuel;
+	_vehicle allowDamage false;
 };
 _vehicle allowDamage true;
 
