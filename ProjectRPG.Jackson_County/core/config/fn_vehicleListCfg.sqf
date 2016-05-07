@@ -125,7 +125,6 @@ switch (_shop) do
 			["Urbanized_LaFerrari_hotpink",14000000],
 			["Urbanized_LaFerrari_yellow",14000000],
 			["Urbanized_LaFerrari_lime",14000000],
-			["Urbanized_LaFerrari_Black_Special",18000000],
 			["Urbanized_LaFerrari_Blue_Special",18000000],
 			["Urbanized_LaFerrari_Lime_Special",18000000],
 
