@@ -921,9 +921,9 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["ivory_wrx_cop_marked",20000],
-			["ivory_wrx_cop_unmarked",20000],
-			["ivory_wrx_cop_slicktop",20000],
+			["ivory_wrx_marked",20000],
+			["ivory_wrx_unmarked",20000],
+			["ivory_wrx_slicktop",20000],
 			["A3L_CVPIFPBDOC",20000],
 			["A3L_TaurusCO2",25000],
 			["cg_cvpifpblbpd",20000],	
