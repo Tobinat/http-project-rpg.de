@@ -71,6 +71,7 @@ _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid
 
 [_query,1] spawn DB_fnc_asyncCall;
 _color = _vInfo select 8;
+diag_log format ["Color of veh: %1",_color]
 
 _fuel = parseNumber(_queryResult select 9);
 
@@ -85,7 +86,7 @@ if(typeName _sp isEqualTo "STRING") then {
 } else {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};	
-	if(_color isEqualType []) then {
+	if(count _color > 0) then {
 		/*[(_color select 0), (_color select 1), (_color select 2),_vehicle] remoteExecCall ["life_fnc_vehSetColorMP",-2];*/
 		_vehicle setVariable ["Red",_color select 0,true];
 		_vehicle setVariable ["Green",_color select 1,true];
