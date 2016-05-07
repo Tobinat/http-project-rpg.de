@@ -119,6 +119,16 @@ switch (_side) do
 				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["fbi_lvsf_spawn","F.B.I. - L.V. Special Force","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
+			
+			if(count life_houses > 0) then {
+				{
+					_pos = call compile format["%1",_x select 0];
+					_house = nearestBuilding _pos;
+					_houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
+					
+					_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
+				} foreach life_houses;
+			};	
 		};
 
 		if((!license_civ_rebel) && (!license_civ_udc)) then {
