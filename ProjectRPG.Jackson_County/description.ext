@@ -28,15 +28,15 @@ corpseRemovalMaxTime = 800;
 
 
 #include "dialog\MasterHandler.h"
-#include "slot_machine.hpp"
+#include "dialog\slot_machine.hpp"
 #include "dialog\pickup.hpp"
-#include "blackjack.hpp"
+#include "dialog\blackjack.hpp"
 #include "dialog\openboard.hpp"
 class RscTitles
 {
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
-	#include "statusBar.hpp"
+	#include "dialog\statusBar.hpp"
 	#include "dialog\hud_nameTags.h"
 	#include "dialog\a3lmsgsys.hpp"
 	#include "dialog\a3ljailhud.hpp"
