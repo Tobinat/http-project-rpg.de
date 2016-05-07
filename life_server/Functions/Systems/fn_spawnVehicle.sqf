@@ -72,10 +72,19 @@ if(count _nearVehicles > 0) exitWith
 _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
 [_query,1] spawn DB_fnc_asyncCall;
-_color = toArray(_vInfo select 8);
-_red = parseNumber(_color select 0);
-_green = parseNumber(_color select 1);
-_blue = parseNumber(_color select 2);
+if(count (_vInfo select 8) > 1) then
+{
+	_color = (_vInfo select 8) splitString "[,]";
+	_red = parseNumber(_color select 0);
+	_green = parseNumber(_color select 1);
+	_blue = parseNumber(_color select 2);
+}else
+{
+	_color = _vInfo select 8;
+	_red = 0;
+	_green = 0;
+	_blue = 0;
+};
 
 diag_log format ["Color of veh: %1",_color];
 diag_log format ["Red: %1",_red];
