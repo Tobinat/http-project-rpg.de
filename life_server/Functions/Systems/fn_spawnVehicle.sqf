@@ -72,18 +72,16 @@ if(count _nearVehicles > 0) exitWith
 _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
 [_query,1] spawn DB_fnc_asyncCall;
-if((_vInfo select 8) find "[" == 0) then
-{
+if((_vInfo select 8) find "[" == 0) then {
 	_color = (_vInfo select 8) splitString "[,]";
 	_red = parseNumber(_color select 0);
 	_green = parseNumber(_color select 1);
 	_blue = parseNumber(_color select 2);
-}else
-{
+} else {
 	_color = parseNumber (_vInfo select 8);
-	_red = 0;
-	_green = 0;
-	_blue = 0;
+	_red = -1;
+	_green = -1;
+	_blue = -1;
 };
 
 diag_log format ["Color of veh: %1",_color];
@@ -104,8 +102,7 @@ if(typeName _sp isEqualTo "STRING") then {
 } else {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};	
-	if(_red > 0 || _blue > 0 || _green > 0) then {
-		/*[(_color select 0), (_color select 1), (_color select 2),_vehicle] remoteExecCall ["life_fnc_vehSetColorMP",-2];*/
+	if(_red != -1 && _blue != -1 && _green != -1) then {
 		_vehicle setVariable ["Red",_red,true];
 		_vehicle setVariable ["Green",_green,true];
 		_vehicle setVariable ["Blue",_blue,true];
