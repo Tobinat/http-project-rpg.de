@@ -34,6 +34,7 @@ switch (_filter) do
 			["RF_EMSWING_4", nil, 2]
 			*/
 			
+			_ret pushBack ["cg_ems7",nil,2];
 			_ret pushBack ["cg_ems1",nil,2];
 			_ret pushBack ["RF_EMSWING_4",nil,2];
 		    if(__GETC__(life_mediclevel) > 1) then
@@ -126,10 +127,7 @@ switch (_filter) do
 			_ret pushBack ["G_Combat",nil,5];
 			_ret pushBack ["Mask_M40","Gas Mask",5];
 			
-			if(license_med_dive) then
-		    {
 			_ret pushBack ["G_Diving",nil,50];
-		    };
 	};
 	
 	//Vest
@@ -137,11 +135,7 @@ switch (_filter) do
 	{
 	
 			_ret pushBack ["SERTvest2","Invisi-Vest 2.0",5];
-			
-			if(license_med_dive) then
-		    {
-			    _ret pushBack ["V_RebreatherB",nil,550];
-		    };
+			_ret pushBack ["V_RebreatherB",nil,550];
 	};
 	
 	//Backpacks
