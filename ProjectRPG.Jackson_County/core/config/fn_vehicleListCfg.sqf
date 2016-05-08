@@ -977,9 +977,6 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["ivory_wrx_marked",20000],
-			["ivory_wrx_unmarked",20000],
-			["ivory_wrx_slicktop",20000],
 			["A3L_CVPIFPBDOC",20000],
 			["A3L_TaurusCO2",25000],
 			["cg_cvpifpblbpd",20000],	
@@ -994,21 +991,7 @@ switch (_shop) do
 			["charger_sert",90000],
 			["cg_h2_sert",11000],	
 			["AM_Holden_SO",40000],		
-			["A3L_CVPIUC",20000],
-			["A3L_CVPIUCBlack",20000],
-			["A3L_CVPIUCBlue",20000],
-			["cg_ducati_pol_reg",25000],			
-			["DAR_ExplorerPoliceStealth",30000],
-			["DAR_TahoePoliceDet",20000],
-			["Ark_CTSVUCblack",20000],
-			["Ark_CTSVUCwhite",20000],
-			["Ark_CTSVUCblue",20000],
-			["Ark_CTSVUCpurple",20000],
-			["Ark_CTSVUCgreen",20000],
-			["Ark_CTSVUCyellow",20000],
-			["Ark_CTSVUCorange",20000],
-			["Ark_CTSVUCdarkred",20000],
-			["Ark_CTSVUCpink",20000]
+			["cg_ducati_pol_reg",25000]
 		];
 	};
 
@@ -1077,16 +1060,14 @@ switch (_shop) do
 	{
 		_return =
 		[			
-			["Ark_CTSVUCred",20000],
-			["Ark_CTSVUCblack",20000],
-			["Ark_CTSVUCwhite",20000],
-			["Ark_CTSVUCblue",20000],
-			["Ark_CTSVUCpurple",20000],
-			["Ark_CTSVUCgreen",20000],
-			["Ark_CTSVUCyellow",20000],
-			["Ark_CTSVUCorange",20000],
-			["Ark_CTSVUCdarkred",20000],
-			["Ark_CTSVUCpink",20000]
+			["ivory_wrx_marked",20000],
+			["ivory_wrx_unmarked",20000],
+			["ivory_wrx_slicktop",20000],
+		    ["A3L_CVPIUC",20000],
+			["A3L_CVPIUCBlack",20000],
+			["A3L_CVPIUCBlue",20000],			
+			["DAR_ExplorerPoliceStealth",30000],
+			["DAR_TahoePoliceDet",20000]
 		];
 	};	
 	case "cop_air":
