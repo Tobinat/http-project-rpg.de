@@ -23,14 +23,14 @@ fnc_stopsound = {
 A3L_fnc_AlarmHint = {
 if (isDedicated) exitwith {};
 	if (side player == west) then {
-		["911 Automatic Dispatch: The bank in Lakeside is being robbed!",false] spawn domsg;
+		["911 NOTRUF: Die Bank in Lakeside wird ausgeraubt!",false] spawn domsg;
 	};
 };
 
 A3L_fnc_AlarmPHint = {
 if (isDedicated) exitwith {};
 	if (side player isEqualTo west) then {
-		["911 Automatic Dispatch: Jailbreak in progress, all units respond!",false] spawn domsg;
+		["911 NOTRUF: Gefängnisausbruch, alle Einheiten zum Gefängnis!",false] spawn domsg;
 	};
 };
 
