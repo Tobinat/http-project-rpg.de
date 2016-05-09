@@ -495,7 +495,7 @@ switch (_code) do
 	//L Key?
 	case 38: 
 	{
-		if(!_alt && !_ctrlKey) then {  [] call life_fnc_radar; };
+		if(!_alt && !_ctrlKey && _veh == player) then {  [] call life_fnc_radar; _handled = true};
 		
 		if(_veh != player) then {
 			if(_shift && !_ctrlKey && (license_civ_udc)) exitWith {
