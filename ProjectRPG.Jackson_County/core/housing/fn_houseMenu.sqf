@@ -170,27 +170,27 @@ if(!(_curTarget in life_vehicles) OR isNil {_curTarget getVariable "house_owner"
 		_Btn2 ctrlShow true;
 
 		
-		_Btn3 ctrlSetText "Give Key 1";
+		_Btn3 ctrlSetText "Schluessel 1";
 		_Btn3 buttonSetAction "[life_pInact_curTarget,1] call life_fnc_givekey1; closeDialog 0;";
 		_Btn3 ctrlShow true;
 
-		_Btn4 ctrlSetText "Give Key 2";
+		_Btn4 ctrlSetText "Schluessel 2";
 		_Btn4 buttonSetAction "[life_pInact_curTarget,2] call life_fnc_givekey2; closeDialog 0;";
 		_Btn4 ctrlShow true;
 
-		_Btn5 ctrlSetText "Give Key 3";
+		_Btn5 ctrlSetText "Schluessel 3";
 		_Btn5 buttonSetAction "[life_pInact_curTarget,3] call life_fnc_givekey3; closeDialog 0;";
 		_Btn5 ctrlShow true;
 
-		_Btn6 ctrlSetText "Give Key 4";
+		_Btn6 ctrlSetText "Schluessel 4";
 		_Btn6 buttonSetAction "[life_pInact_curTarget,4] call life_fnc_givekey4; closeDialog 0;";
 		_Btn6 ctrlShow true;
 
-		_Btn7 ctrlSetText "Give Key 5";
+		_Btn7 ctrlSetText "Schluessel 5";
 		_Btn7 buttonSetAction "[life_pInact_curTarget,5] call life_fnc_givekey5; closeDialog 0;";
 		_Btn7 ctrlShow true;
 
-		_Btn8 ctrlSetText "Change Locks";
+		_Btn8 ctrlSetText "Schloss Tauschen";
 		_Btn8 buttonSetAction "[life_pInact_curTarget] call life_fnc_wipekeys; closeDialog 0;";
 		_Btn8 ctrlShow true;
 
