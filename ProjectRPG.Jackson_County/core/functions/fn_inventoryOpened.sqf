@@ -29,6 +29,8 @@ if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
 			handle = true;
 			handle;
 		};
+	};
+};
 
 if(_container isKindOf "LandVehicle" OR _container isKindOf "Ship" OR _container isKindOf "Air") exitWith {
 	if(!(_container in life_vehicles) && {(locked _container) == 2}) exitWith {
