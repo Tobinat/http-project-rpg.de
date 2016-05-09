@@ -495,18 +495,19 @@ switch (_code) do
 	//L Key?
 	case 38: 
 	{
-		if(!_alt && !_ctrlKey && _veh == player) then {  [] call life_fnc_radar; _handled = true};
+		private _kartoffel = vehicle player;
+		if(!_alt && !_ctrlKey && _kartoffel == player) exitWith {  [] call life_fnc_radar; _handled = true};
 		
-		if(_veh != player) then {
+		if(_kartoffel != player) then {
 			if(_shift && !_ctrlKey && (license_civ_udc)) exitWith {
 				true;
-				if((driver _veh) == player) then {
-					if!(isNil{_veh getVariable "xcar"}) then {
-						[_veh] spawn life_fnc_EinsatzLicht;
+				if((driver _kartoffel) == player) then {
+					if!(isNil{_kartoffel getVariable "xcar"}) then {
+						[_kartoffel] spawn life_fnc_EinsatzLicht;
 					} else {
 						if(life_inv_blaulicht != 0 ) then {
 							[false,"blaulicht",1] call life_fnc_handleInv;
-							_veh setVariable["xcar",["BL_car",false,nil],true];
+							_kartoffel setVariable["xcar",["BL_car",false,nil],true];
 						};
 					};
 				};
@@ -514,16 +515,16 @@ switch (_code) do
 			
 			if(_ctrlKey && !_shift && (license_civ_udc)) exitWith {
 				true;
-				if((driver _veh) == player) then {
-					if!(isNil {_veh getVariable "xcar"}) then {
+				if((driver _kartoffel) == player) then {
+					if!(isNil {_kartoffel getVariable "xcar"}) then {
 						private["_xcar"];
-						_xcar =_veh getVariable "xcar";
+						_xcar =_kartoffel getVariable "xcar";
 						if!(isNil{_xcar select 2}) then {
 							if(_xcar select 0 == "BL_car") then {
 								[true,"blaulicht",1] call life_fnc_handleInv;
-								_veh setVariable["xcar",nil,true];
+								_kartoffel setVariable["xcar",nil,true];
 							} else {
-								_veh setVariable["xcar",[_xcar select 0,false,nil],true];
+								_kartoffel setVariable["xcar",[_xcar select 0,false,nil],true];
 							};
 							
 							{
@@ -531,7 +532,7 @@ switch (_code) do
 									detach _x;
 									deleteVehicle _x;
 								};
-							} forEach attachedObjects _veh;
+							} forEach attachedObjects _kartoffel;
 						};
 					};
 				};
