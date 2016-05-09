@@ -8,7 +8,6 @@ A3L_fnc_serverexec = [
 A3L_fnc_PVList = [
 "\Core\fn_messagesystem.sqf",
 "\Core\fn_tablet.sqf",
-//"\Core\Farming\fn_client.sqf",
 "\Core\Network\fn_sounds.sqf",
 "\Core\Functions\bank.sqf",
 "\Core\Functions\message.sqf"
@@ -37,9 +36,9 @@ A3L_fnc_Zep6EvEd = Nil;
 
 [] spawn {
 	while{true} do {
-		[1,format["JOB SEARCH: Mobile Vehicles are despawning in 1 minute!"]] remoteExecCall ["life_fnc_broadcast", civilian];
+		[1,format["Job Suche: Arbeitsfahrzeuge werden in 1 Minute verschwinden!"]] remoteExecCall ["life_fnc_broadcast", civilian];
 		uiSleep 30;
-		[1,format["JOB SEARCH: Mobile Vehicles are despawning in 30 seconds!"]] remoteExecCall ["life_fnc_broadcast", civilian];
+		[1,format["Job Suche: Arbeitsfahrzeuge werden in 30 Sekunden verschwinden!"]] remoteExecCall ["life_fnc_broadcast", civilian];
 		uiSleep 30;
 		{
 			if (typeOf _x IN ["critgamin_vangmcc_clothing","critgamin_vangmcc_fedex","critgamin_vangmcc_food","critgamin_vangmcc_general","critgamin_vangmcc_fixit","critgamin_vangmcc_pizza"]) then
@@ -50,7 +49,7 @@ A3L_fnc_Zep6EvEd = Nil;
 			};
 		} foreach vehicles;
 
-		[1,format["JOB SEARCH: New jobs have been added to the job list!"]] remoteExecCall ["life_fnc_broadcast", civilian];
+		[1,format["Job Suche: Neue Jobs wurden in den Jobcenter hinzugefügt!"]] remoteExecCall ["life_fnc_broadcast", civilian];
 
 	   	jobstand setvariable ["job1",true,true];
 		jobstand setvariable ["job2",true,true];

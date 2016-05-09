@@ -44,15 +44,15 @@ A3L_Fnc_SellSuitcase = {
 			_money = 100000;
 			cash_in_hand = cash_in_hand + _money;
 			if (side player == east) then {
-				[format ["You sold your suitcase and received %1",_money],30,"green"] spawn domsg;
+				[format ["Du verkaufst einen Geldkoffer und erhälst %1",_money],30,"green"] spawn domsg;
 			};
 
 			if (side player == civilian) then {
-				[format ["You sold your suitcase and received %1",_money],30,"green"] spawn domsg;
+				[format ["Du verkaufst einen Geldkoffer und erhälst %1",_money],30,"green"] spawn domsg;
 			};
 
 			if (side player == west) then {
-				[format ["You recovered a suitcase and received %1",_money],30,"green"] spawn domsg;
+				[format ["Du stellst einen Geldkoffer sicher und erhälst %1",_money],30,"green"] spawn domsg;
 			};			
 		};		
 	} foreach (attachedobjects player);
