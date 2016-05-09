@@ -30,7 +30,7 @@ switch(_shop) do
 				default {
 					["EMS Supplies Shop",
 						[
-							["ToolKit",nil,2500],
+							["ToolKit",nil,1000],
 							["ItemCompass",nil,50],
 							["tf_anprc152",nil,10],
 							["ItemWatch",nil,10]
@@ -93,7 +93,7 @@ switch(_shop) do
 							["RH_M6X","RH Flashlight",10],
 							["A3L_M4Flashlight","M4A3 Flashlight",10],
 							["Radar_Gun","Radar Gun",25], 
-							//["ToolKit",nil,2500], 
+							["ToolKit",nil,1000], 
 							["ItemCompass",nil,50],  
 							["ItemWatch",nil,10],                                          
 							["Taser_26","Taser",5],
@@ -608,6 +608,7 @@ switch(_shop) do
 					["CG_tabletd","CG Tablet Phone",50],
 					["CG_battery_i","ZL Battery",5],
 					["TRYK_Shemagh_G_NV","NV",5],
+					["ToolKit",nil,1000],
 					["vvv_fishing_rod","Angel",500],
 					["cebos","Köder",50],
 					["CG_ATF_Pizza_Box_i","Take Away Pizza",1400],
