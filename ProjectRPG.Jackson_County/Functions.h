@@ -195,6 +195,10 @@ class Life_Client_Core
 		class sellHouse {};
 		class prostitute {};
 		class givekey1 {};
+		class givekey2 {};
+		class givekey3 {};
+		class givekey4 {};
+		class givekey5 {};
 		class wipekeys {};
 		class initHouses {};
 		class copBreakDoor {};

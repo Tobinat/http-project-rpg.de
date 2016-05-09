@@ -4316,7 +4316,7 @@
 		<Key ID="STR_pInAct_Repair">
 			<Original>Repair Door</Original>
 			<English>Repair Door</English>
-			<German>Tür reparieren</German>
+			<German>Reparieren</German>
 			<French>Réparer la porte</French>
 			<Italian>Ripara porta</Italian>
 			<Portuguese>Consertar Porta</Portuguese>
@@ -4332,7 +4332,7 @@
 		<Key ID="STR_pInAct_BreakDown">
 			<Original>Break down door</Original>
 			<English>Break down door</English>
-			<German>Tür aufbrechen</German>
+			<German>Aufbrechen</German>
 			<French>Forcer la porte</French>
 			<Italian>Sfonda Porta</Italian>
 			<Portuguese>Quebrar Porta</Portuguese>
@@ -4340,7 +4340,7 @@
 		<Key ID="STR_pInAct_SearchHouse">
 			<Original>Search house</Original>
 			<English>Search house</English>
-			<German>Haus durchsuchen</German>
+			<German>Durchsuchen</German>
 			<French>Fouiller la maison</French>
 			<Italian>Cerca Casa</Italian>
 			<Portuguese>Vasculhar a Casa</Portuguese>
@@ -4348,7 +4348,7 @@
 		<Key ID="STR_pInAct_LockHouse">
 			<Original>Lock up house</Original>
 			<English>Lock up house</English>
-			<German>Haus abschließen</German>
+			<German>Abschließen</German>
 			<French>Fermer la maison</French>
 			<Italian>Chiudi Casa</Italian>
 			<Portuguese>Trancar a Casa</Portuguese>
@@ -4356,7 +4356,7 @@
 		<Key ID="STR_pInAct_BuyHouse">
 			<Original>Buy House</Original>
 			<English>Buy House</English>
-			<German>Haus kaufen</German>
+			<German>Kaufen</German>
 			<French>Acheter la maison</French>
 			<Italian>Compra Casa</Italian>
 			<Portuguese>Comprar a Casa</Portuguese>
@@ -4364,7 +4364,7 @@
 		<Key ID="STR_pInAct_SellGarage">
 			<Original>Sell Garage</Original>
 			<English>Sell Garage</English>
-			<German>Garage verkaufen</German>
+			<German>Verkaufen</German>
 			<French>Vendre le garage</French>
 			<Italian>Vendi Garage</Italian>
 			<Portuguese>Vender Garagem</Portuguese>
@@ -4380,7 +4380,7 @@
 		<Key ID="STR_pInAct_StoreVeh">
 			<Original>Store Vehicle</Original>
 			<English>Store Vehicle</English>
-			<German>Fahrzeug parken</German>
+			<German>Einparken</German>
 			<French>Ranger le vehicule</French>
 			<Italian>Parcheggia Veicolo</Italian>
 			<Portuguese>Guardar Veículo</Portuguese>
@@ -4388,7 +4388,7 @@
 		<Key ID="STR_pInAct_SellHouse">
 			<Original>Sell House</Original>
 			<English>Sell House</English>
-			<German>Haus verkaufen</German>
+			<German>Verkaufen</German>
 			<French>Vendre la maison</French>
 			<Italian>Vendi Casa</Italian>
 			<Portuguese>Vender casa</Portuguese>
@@ -4396,7 +4396,7 @@
 		<Key ID="STR_pInAct_UnlockStorage">
 			<Original>Unlock Storage</Original>
 			<English>Unlock Storage</English>
-			<German>Lagerplatz aufsperren</German>
+			<German>L. Aufsperren</German>
 			<French>Déverrouiller l'inventaire</French>
 			<Italian>Sblocca contenitori</Italian>
 			<Portuguese>Destrancar Caixa</Portuguese>
@@ -4404,7 +4404,7 @@
 		<Key ID="STR_pInAct_LockStorage">
 			<Original>Lock Storage</Original>
 			<English>Lock Storage</English>
-			<German>Lagerplatz absperren</German>
+			<German>L. Absperren</German>
 			<French>Verrouiller l'inventaire</French>
 			<Italian>Blocca contenitori</Italian>
 			<Portuguese>Trancar Caixa</Portuguese>
