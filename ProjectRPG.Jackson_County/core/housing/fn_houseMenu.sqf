@@ -42,7 +42,7 @@ _Btn8 ctrlShow false;
 
 life_pInact_curTarget = _curTarget;
 //if(_curTarget isKindOf "House_F" && playerSide == west) exitWith {
-if((_curTarget isKindOf "House_F" && (playerSide == west || license_civ_udc))) exitWith {
+if((_curTarget isKindOf "House_F" && (playerSide == west || license_civ_udc) && !(_curTarget in life_vehicles))) exitWith {
 	if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget) then {
 		
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
