@@ -359,7 +359,8 @@ life_inv_items =
 	"life_inv_sexonthebeach",
 	"life_inv_tequila",
 	"life_inv_jackdanielsandcoke",
-	"life_inv_raxsrum"	
+	"life_inv_raxsrum",
+	"life_inv_blaulicht"	
 ];
 
 
@@ -516,7 +517,8 @@ sell_array =
 	["RoadConeB",1],
 	["RoadConeStripB",5],
 	["cigarette",1],
-	["Rax's Rum",1]
+	["Rax's Rum",1],
+	["Blaulicht",10]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -610,7 +612,8 @@ buy_array =
         ["RoadConeB",10],
         ["RoadConeStripB",50],
         ["cigarette",925],
-        ["Rax's Rum",5]
+        ["Rax's Rum",5],
+        ["Blaulicht",50]
 ];
 __CONST__(buy_array,buy_array);
 

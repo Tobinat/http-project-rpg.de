@@ -496,6 +496,47 @@ switch (_code) do
 	case 38: 
 	{
 		if(!_alt && !_ctrlKey) then {  [] call life_fnc_radar; };
+		
+		if(_veh != player) then {
+			if(_shift && !_ctrlKey && (license_civ_udc)) exitWith {
+				true;
+				if((driver _veh) == player) then {
+					if!(isNil{_veh getVariable "xcar"}) then {
+						[_veh] spawn life_fnc_EinsatzLicht;
+					} else {
+						if(life_inv_blaulicht != 0 ) then {
+							[false,"blaulicht",1] call life_fnc_handleInv;
+							_veh setVariable["xcar",["BL_car",false,nil],true];
+						};
+					};
+				};
+			};
+			
+			if(_ctrlKey && !_shift && (license_civ_udc)) exitWith {
+				true;
+				if((driver _veh) == player) then {
+					if!(isNil {_veh getVariable "xcar"}) then {
+						private["_xcar"];
+						_xcar =_veh getVariable "xcar";
+						if!(isNil{_xcar select 2}) then {
+							if(_xcar select 0 == "BL_car") then {
+								[true,"blaulicht",1] call life_fnc_handleInv;
+								_veh setVariable["xcar",nil,true];
+							} else {
+								_veh setVariable["xcar",[_xcar select 0,false,nil],true];
+							};
+							
+							{
+								if(typeOf _x == "Land_Camping_Light_off_F")then{
+									detach _x;
+									deleteVehicle _x;
+								};
+							} forEach attachedObjects _veh;
+						};
+					};
+				};
+			};
+		};
 	};
 
 	//CAPSLOCK CHECK

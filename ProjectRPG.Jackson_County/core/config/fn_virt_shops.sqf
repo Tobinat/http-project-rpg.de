@@ -27,7 +27,7 @@ switch (_shop) do
 	case "diamond": {["Diamond Dealer",["weddingring","diamond","diamondc"]]};
 	case "salt": {["Salt Dealer",["salt_r"]]};
 	case "cop": {["Cop Item Shop",["coffee","donuts","medkit","panicbutton","bandage","fuelF","defusekit","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
-	case "udc": {["UDC Item Shop",["coffee","donuts","medkit","panicbutton","bandage","fuelF","defusekit","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
+	case "udc": {["UDC Item Shop",["coffee","donuts","medkit","panicbutton","bandage","fuelF","defusekit","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB","Blaulicht"]]};
 	case "donuts": {["Dunkin's Bronuts",["donuts","coffee","water","redgull"]]};
 	case "cement": {["Cement Dealer",["cement"]]};
 	case "gold": {["Gold Buyer",["goldbar"]]};

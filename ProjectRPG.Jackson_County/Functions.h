@@ -446,6 +446,8 @@ class Life_Client_Core
 		class removeWeaponActionCiv {};	
 		class soundloop {};
 		class copOpener {};
+		class EinsatzLicht {};
+		class ULights {};
 	};
 	
 	class Gangs

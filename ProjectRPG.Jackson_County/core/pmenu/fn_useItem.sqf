@@ -516,6 +516,11 @@ switch (true) do
 		[] spawn life_fnc_lockpick;
 	};
 	
+	case (_item == "Blaulicht"):
+	{
+		["Drücke bitte SHIFT + L zum Aufsetzen des Blaulichts und STRG + L zum Abnehmen.", false] spawn domsg;
+	};
+	
 	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach"]):
 	{
 		life_eattotal = life_eattotal + 10;

@@ -133,6 +133,7 @@ switch (_mode) do
 			case "tequila": {"life_inv_tequila"};
 			case "jackdanielsandcoke": {"life_inv_jackdanielsandcoke"};
 			case "Rax's Rum": {"life_inv_raxsrum"};
+			case "Blaulicht": {"life_inv_blaulicht"};
 		};
 	};
 	
@@ -266,6 +267,7 @@ switch (_mode) do
 			case "life_inv_BarGate": {"BarGate"};
 			case "life_inv_cigarette": {"cigarette"};
 			case "life_inv_raxsrum": {"Rax's Rum"};
+			case "life_inv_blaulicht": {"Blaulicht"};
 		};
 	};
 };

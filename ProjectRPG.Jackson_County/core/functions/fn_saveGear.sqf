@@ -189,7 +189,8 @@ if(playerSide != civilian && playerSide != east) then {
 		["life_inv_RoadCone", life_inv_RoadCone],
 		["life_inv_RoadConeStrip", life_inv_RoadConeStrip],
 		["life_inv_RoadConeB", life_inv_RoadConeB],
-		["life_inv_RoadConeStripB", life_inv_RoadConeStripB]
+		["life_inv_RoadConeStripB", life_inv_RoadConeStripB],
+		["life_inv_blaulicht",life_inv_blaulicht]
 	];
 	if(playerSide == west) then {
 		_saveGear pushBack ["life_inv_BarGate", life_inv_BarGate];
