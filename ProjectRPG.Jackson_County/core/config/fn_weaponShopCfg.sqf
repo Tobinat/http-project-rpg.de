@@ -208,7 +208,7 @@ switch(_shop) do
 					["RH_30Rnd_556x45_Mk262",nil,220],
 					["RH_30Rnd_556x45_Mk318",nil,220],
 					
-					["hlc_rifle_auga3_b",nil,15000],
+					["hlc_rifle_auga2_b",nil,15000],
 					["hlc_30Rnd_556x45_B_AUG",nil,220],
 					
                     ["RH_leu_mk4",nil,100],
@@ -238,8 +238,9 @@ switch(_shop) do
 					["Police Utility Shop",								
 						[
 							["CG_ATF_Handcuffs_i","Hand Cuffs",10],
+							["ToolKit",nil,1000],
 							["TRYK_SPgear_PHC1_NV","NV",10],
-							["cg_torch",nil,250], 
+							["cg_torch",nil,250],
 							["ItemGPS",nil,25],
 							["CG_Spikes_Collapsed",nil,250], 
 							["cg_torchbattery",nil,250], 
@@ -278,6 +279,7 @@ switch(_shop) do
 				{
 					["Weapon Shop",								
 						[
+						//Handfeuerwafen
 							["RH_m9",nil,240],
 							["RH_15Rnd_9x19_M9",nil,5],
 							
@@ -287,6 +289,28 @@ switch(_shop) do
 							["hgun_Pistol_heavy_01_F",nil,240],
 							["11Rnd_45ACP_Mag",nil,5],
 							
+							["RH_fn57",nil,1120],
+							["RH_sfn57",nil,20],
+
+							["RH_ta648",nil,222],
+							["RH_bull",nil,240],
+							["RH_6Rnd_454_Mag",nil,4],
+							
+							["RH_bullb",nil,240],
+							["RH_6Rnd_454_Mag",nil,4],	
+							
+							["RH_usp",nil,240],
+							["RH_12Rnd_45cal_usp",nil,4],
+							
+							["RH_uspm",nil,240],
+							["RH_16Rnd_40cal_usp",nil,5],	
+                        //Langwaffen
+							["RH_PDW",nil,4220],
+							["RH_30Rnd_6x35_mag",nil,220],							
+							
+							["RH_M4A6",nil,12220],
+							["RH_30Rnd_68x43_FMJ",nil,220],
+							
 							["hlc_smg_mp5a4",nil,3100],
 							["hlc_30Rnd_9x19_GD_MP5",nil,25],
 							
@@ -295,52 +319,70 @@ switch(_shop) do
 							
 							["RH_M4A1_ris",nil,4222],
 							["RH_30Rnd_556x45_M855A1",nil,20],
-							["RH_barska_rds","Barska Red Dot",25],
-							["RH_cmore","C-more Red Dot",25],
-							["optic_NVS",nil,25],
-							["RH_m4covers_f",nil,25],
+
 							["RH_PDW",nil,4220],
 							["RH_30Rnd_6x35_mag",nil,220],
-							["RH_uspm",nil,240],
-							["RH_16Rnd_40cal_usp",nil,5],					
+
+	                        ["RH_Mk11",nil,6220],
+							["RH_20Rnd_762x51_M80A1",nil,220],
+							["RH_20Rnd_762x51_Mk316LR",nil,220],
+							
+							["RH_Hk416s",nil,12220],
+							["RH_30Rnd_556x45_M855A1",nil,220],
+							["RH_30Rnd_556x45_Mk262",nil,220],
+							["RH_30Rnd_556x45_Mk318",nil,220],	
+							
+							["hlc_rifle_auga2_b",nil,15000],
+							["hlc_30Rnd_556x45_B_AUG",nil,220],
+							
+							["KPFS_G36C",nil,300],
+						    ["KPFS_30Rnd_556x45_G36",nil,600],
+							
+							["hlc_rifle_bcmjack",nil,300],
+							["hlc_30rnd_556x45_EPR",nil,600],
+							
+							["RH_M4_moe",nil,200],					
+							["RH_30Rnd_556x45_M855A1",nil,200],	
+							
 							["RH_M4A6",nil,12220],
-							["optic_MRCO",nil,220],
 							["RH_30Rnd_68x43_FMJ",nil,220],
+							
+							["RH_m110sd",nil,20],
+							["RH_20Rnd_57x28_FN",nil,20]
+							
+							["optic_MRCO",nil,220],
 							["RH_SFM952V",nil,80],
 							["RH_compM2l",nil,80],
 							["RH_t1","Aimpoint",10],
 							["RH_ta648",nil,222],
-							["RH_bull",nil,240],
-							["RH_6Rnd_454_Mag",nil,4],
-							["RH_bullb",nil,240],
-							["RH_6Rnd_454_Mag",nil,4],		
-							["HandGrenade_Stone","Flashbang",300],
+						//Flashbang	
+							["HandGrenade_Stone","Flashbang",300],						
+						//visire/aufsätze	
+						    ["RH_matchsd",nil,220],
+							["RH_barska_rds","Barska Red Dot",25],									
+							["RH_cmore","C-more Red Dot",25],							
+							["optic_NVS",nil,25],							
+							["RH_m4covers_f",nil,25],							
+							["optic_MRCO",nil,220],							
+							["RH_SFM952V",nil,80],							
+							["RH_compM2l",nil,80],							
+							["RH_t1","Aimpoint",10],							
+							["RH_ta648",nil,222],							
 							["RH_m110sd","MK 11 Silencer",220],
 							["RH_qdss_nt4","M4A6 Silencer",220],
 							["muzzle_snds_H","KAC Silencer",220],
-							["RH_peq2","Laser (All Rifles)",220],
-							["RH_Mk11",nil,6220],
-							["RH_20Rnd_762x51_M80A1",nil,220],
-							["RH_20Rnd_762x51_Mk316LR",nil,220],
-							["RH_Hk416s",nil,12220],
-							["RH_30Rnd_556x45_M855A1",nil,220],
-							["RH_30Rnd_556x45_Mk262",nil,220],
-							["RH_30Rnd_556x45_Mk318",nil,220],					
-							["hlc_rifle_auga3_b",nil,15000],
-							["hlc_30Rnd_556x45_B_AUG",nil,220],
-							["KPFS_G36C",nil,300],
-							["KPFS_30Rnd_556x45_G36",nil,600],
-							["hlc_rifle_bcmjack",nil,300],
-							["hlc_30rnd_556x45_EPR",nil,600],
-							["RH_M4_moe",nil,200],
-							["RH_30Rnd_556x45_M855A1",nil,200],							
+							["RH_peq2","Laser (All Rifles)",220],												
 							["RH_leu_mk4",nil,100],
-							["RH_fn57",nil,1120],
-							["RH_sfn57",nil,20],
 							["RH_M6X",nil,20],
 							["RH_fa556",nil,20],
 							["RH_m110sd",nil,20],
-							["RH_20Rnd_57x28_FN",nil,20]
+							["RH_20Rnd_57x28_FN",nil,20],
+							["optic_MRCO",nil,220],
+							["RH_SFM952V",nil,80],
+							["RH_compM2l",nil,80],
+							["RH_t1","Aimpoint",10],
+							["RH_ta648",nil,222]
+						
 						]
 					];
 				};				
@@ -359,18 +401,11 @@ switch(_shop) do
 				{
 					["Rebel Pistols",
 						[
+							["TRYK_balaclava_NV",nil,125],		
+							
 							["RH_vp70",nil,9850],
 							["RH_18Rnd_9x19_VP",nil,125],  
 							
-							["TRYK_balaclava_NV",nil,125],
-							//Micro Uzi
-							["RH_muzi",nil,9500],
-							["RH_30Rnd_9x19_UZI",nil,250],
-
-							//Tec9
-							["RH_tec9",nil,9800],
-							["RH_32Rnd_9x19_tec",nil,260],
-
 							["RH_vz61",nil,11800],
 							["RH_20Rnd_32cal_vz61",nil,280],
 
@@ -390,7 +425,16 @@ switch(_shop) do
 							["RH_demz",nil,1500],
 							["RH_M6X",nil,1500],
 
-							["RH_7Rnd_50_AE",nil,250]
+							["RH_7Rnd_50_AE",nil,250],
+							
+							//Micro Uzi
+							["RH_muzi",nil,9500],
+							["RH_30Rnd_9x19_UZI",nil,250],
+
+							//Tec9
+							["RH_tec9",nil,9800],
+							["RH_32Rnd_9x19_tec",nil,260]
+							
 						]
 					];
 				};
@@ -409,9 +453,7 @@ switch(_shop) do
 				{
 					["Rebel Primarys",
 						[
-							["optic_MRCO",nil,1220],
-							["RH_Delft",nil,550],
-							["hlc_optic_kobra",nil,550],
+
 
 							["RH_compM2","Rifle Aimpoint",425],
 							["RH_compM2l","Rifle Aimpoint Low",425],
@@ -440,7 +482,11 @@ switch(_shop) do
 							["chakFNP90_57x28_B_skin1",nil,332],
 
 							["SMG_01_F",nil,15000],
-							["30Rnd_45ACP_Mag_SMG_01",nil,232]
+							["30Rnd_45ACP_Mag_SMG_01",nil,232],
+							
+							["optic_MRCO",nil,1220],
+							["RH_Delft",nil,550],
+							["hlc_optic_kobra",nil,550]							
 						]
 					];
 				};
@@ -458,25 +504,14 @@ switch(_shop) do
 				{
 					["Rebel Awesome Weapons",
 						[
-							["RH_ta648",nil,2000],
-							["RH_SFM952V",nil,2000],
-							["RH_compM2l",nil,2000],
-							["RH_t1","Aimpoint",2000],
-							["RH_peq2","Laser (All Rifles)",2000],
-							["RH_leu_mk4",nil,2000],
-							["RH_barska_rds","Barska Red Dot",2000],
-							["RH_cmore","C-more Red Dot",2000],
-							["optic_MRCO",nil,2000],
-							["RH_compM2l","Rifle Aimpoint Low",2000],
-							["RH_compM2","Rifle Aimpoint",2000],
-							["RH_M6X",nil,2000],
-							
+						     //kurzwaffen
 							["RH_bull",nil,20000],
 							["RH_6Rnd_454_Mag",nil,500],
 
 							["RH_fn57",nil,15000],
 							["RH_20Rnd_57x28_FN",nil,250],
 							
+							//langwaffen
 							["hlc_rifle_auga3_b",nil,70000],
 							["hlc_30Rnd_556x45_B_AUG",nil,600],
 							
@@ -491,6 +526,7 @@ switch(_shop) do
 							["RH_20Rnd_762x51_Mk316LR",nil,600],
 							
 							["hlc_rifle_RU556",nil,70000],
+							
 							["hlc_rifle_bcmjack",nil,75000],
 							["hlc_30rnd_556x45_EPR",nil,600],
 							
@@ -506,7 +542,22 @@ switch(_shop) do
 							["RH_Hk416s",nil,85000],
 							["RH_30Rnd_556x45_M855A1",nil,600],
 							["RH_30Rnd_556x45_Mk262",nil,600],
-							["RH_30Rnd_556x45_Mk318",nil,600]
+							["RH_30Rnd_556x45_Mk318",nil,600],
+							
+	                        //visire/aufsätze
+							["RH_M6X",nil,2000],							
+							["RH_ta648",nil,2000],
+							["RH_SFM952V",nil,2000],
+							["RH_compM2l",nil,2000],
+							["RH_t1","Aimpoint",2000],
+							["RH_peq2","Laser (All Rifles)",2000],
+							["RH_leu_mk4",nil,2000],
+							["RH_barska_rds","Barska Red Dot",2000],
+							["RH_cmore","C-more Red Dot",2000],
+							["optic_MRCO",nil,2000],
+							["RH_compM2l","Rifle Aimpoint Low",2000],
+							["RH_compM2","Rifle Aimpoint",2000]
+							
 						]
 					];
 				};
@@ -552,8 +603,10 @@ switch(_shop) do
 							
 							["hgun_P07_F",nil,3350],
 							["16Rnd_9x21_Mag",nil,125],
+							
 							["RH_gsh18",nil,5150],
 							["RH_18Rnd_9x19_gsh",nil,195],
+							
 							["RH_kimber",nil,30500],
 							["RH_7Rnd_45cal_m1911",nil,275]                                            
 						]
@@ -608,7 +661,6 @@ switch(_shop) do
 					["CG_tabletd","CG Tablet Phone",50],
 					["CG_battery_i","ZL Battery",5],
 					["TRYK_Shemagh_G_NV","NV",5],
-					["ToolKit",nil,1000],
 					["vvv_fishing_rod","Angel",500],
 					["cebos","Köder",50],
 					["CG_ATF_Pizza_Box_i","Take Away Pizza",1400],
