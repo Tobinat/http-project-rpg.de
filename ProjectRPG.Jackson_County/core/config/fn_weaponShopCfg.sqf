@@ -663,6 +663,7 @@ switch(_shop) do
 					["TRYK_Shemagh_G_NV","NV",5],
 					["vvv_fishing_rod","Angel",500],
 					["cebos","Köder",50],
+					["ToolKit",nil,1000],
 					["CG_ATF_Pizza_Box_i","Take Away Pizza",1400],
 					["CG_ATF_Donut_Box_i","Take Away Donuts",1600],
 					["cg_torch",nil,550], 
