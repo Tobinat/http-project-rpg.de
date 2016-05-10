@@ -54,7 +54,7 @@ player removeItem _backpackName;
 removeBackpack player;
 player addBackpack "B_Parachute"; 
 if(_lakeside) then {
-	player setPos [getMarkerPos "civ_air_2_2" select 0, getMarkerPos "civ_air_2_2" select 1, 600];
+	player setPos [getMarkerPos "air_g_1" select 0, getMarkerPos "air_g_1" select 1, 600];
 } else {
 	player setPos [getMarkerPos "air_g_8" select 0, getMarkerPos "air_g_8" select 1, 600];
 };
