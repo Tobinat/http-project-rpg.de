@@ -74,13 +74,6 @@ if(playerSide == independent) then
 
 if(playerSide == civilian) then
 {
-	if(license_civ_udc) then
-	{
-		_message = format["<t size='1.5'>%1</t><br/><br/>F.B.I. / L.V. Special Force<br/>%3<br/>%4<br/>%5<br/>",name player];
-		[_message] remoteExec ["life_fnc_copLicenseShown",_target];
-	}else
-	{
-		_message = format["<t size='1.5'>%1</t><br/><br/>%2<br/>%3<br/>%4<br/>%5<br/>",name player];
-		[_message] remoteExec ["life_fnc_copLicenseShown",_target];
-	}
+	_message = format["<t size='1.5'>%1</t><br/>",name player];
+	[_message] remoteExec ["life_fnc_copLicenseShown",_target];
 };

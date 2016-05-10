@@ -171,6 +171,7 @@ class Life_Client_Core
 		class carSalesman {};
 		class stealVehicle {};
 		class copShowLicense {};
+		class copUdcLicense {};
 		class copLicenseShown {};
 		
 	};	
