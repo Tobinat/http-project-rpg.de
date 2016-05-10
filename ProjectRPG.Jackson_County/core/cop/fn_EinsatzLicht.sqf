@@ -24,7 +24,8 @@ if(_state) then {
 
 		case "geheim_car":{
 			if(isNil{_xcar select 2})then{
-				_light = "Land_Camping_Light_off_F" createVehicle getPosATL player;
+//				_light = "Land_Camping_Light_off_F" createVehicle getPosATL player;
+				_light = "PortableHelipadLight_01_blue_F" createVehicle getPosATL player;
 				switch(typeOf _veh)do{
 					case "A3L_CVBlack":{				_light attachTo[_veh,[-0.45, -0.1, 0.17]];};
 					case "A3L_CVGrey":{					_light attachTo[_veh,[-0.45, -0.1, 0.17]];};
@@ -312,7 +313,8 @@ if(_state) then {
 		};
 		case "BL_car":{
 			if(isNil{_xcar select 2})then{
-				_light = "Land_Camping_Light_off_F" createVehicle getPosATL player;
+//				_light = "Land_Camping_Light_off_F" createVehicle getPosATL player;
+				_light = "PortableHelipadLight_01_blue_F" createVehicle getPosATL player;
 				switch(typeOf _veh)do{
 					case "A3L_CVBlack":{				_light attachTo[_veh,[-0.45, -0.1, 0.17]];};
 					case "A3L_CVGrey":{					_light attachTo[_veh,[-0.45, -0.1, 0.17]];};

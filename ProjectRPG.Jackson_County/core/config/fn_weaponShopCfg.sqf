@@ -348,7 +348,7 @@ switch(_shop) do
 							["RH_30Rnd_68x43_FMJ",nil,220],
 							
 							["RH_m110sd",nil,20],
-							["RH_20Rnd_57x28_FN",nil,20]
+							["RH_20Rnd_57x28_FN",nil,20],
 							
 							["optic_MRCO",nil,220],
 							["RH_SFM952V",nil,80],

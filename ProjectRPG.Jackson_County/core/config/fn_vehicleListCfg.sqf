@@ -110,8 +110,7 @@ switch (_shop) do
 		];
 	};
 	
-	case "ferrari_car":
-	{
+	case "ferrari_car":	{
 		_return = 
 		[			
 			["A3L_Ferrari458red",2250000],

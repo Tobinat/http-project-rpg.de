@@ -110,9 +110,40 @@ switch (_filter) do
 			["TRYK_H_PASGT_OD","SERT Helmet OD",5],
 			["LSMS_cap_blk",nil,5],
 			["LSMS_cap_blue",nil,5],
-			["TRYK_H_Helmet_ACU",nil,200],
-			["TRYK_H_Helmet_MARPAT_Desert",nil,200],
-			["TRYK_H_Helmet_CC",nil,200]
+			["TRYK_H_Helmet_ACU",nil,5],
+			["TRYK_H_Helmet_MARPAT_Desert",nil,5],
+			["TRYK_H_Helmet_CC",nil,5],
+			["TRYK_H_Booniehat_AOR2",nil,5],
+			["TRYK_H_Booniehat_MARPAT_WOOD",nil,5],
+			["TRYK_H_Booniehat_AOR1",nil,5],
+			["TRYK_H_Booniehat_JSDF",nil,5],
+			["H_Bandanna_camo",nil,5],
+			["jokermask","Joker Mask",5],
+			["TRYK_Kio_Balaclava","Ghost Balaclava",5],
+			["A3L_Halloween_JigSaw","JigSaw Mask",5],
+			["kio_skl_msk","Black Skull Mask",5],
+			["kio_skl_msk_grn","Green Skull Mask",5],
+			["kio_skl_msk_red","Red Skull Mask",5],
+			["kio_skl_msk_fire",nil,5],
+			["kio_skl_msk_weed",nil,5],
+			["kio_skl_msk_frost",nil,5],
+			["kio_skl_msk_pun",nil,5],
+			["kio_skl_msk_adc",nil,5],
+			["kio_skl_msk_blood",nil,5],
+			["kio_skl_msk_redranger",nil,5],
+			["kio_skl_msk_UK",nil,5],
+			["kio_skl_msk_US",nil,5],
+			["kio_skl_msk_black",nil,5],
+			["kio_skl_msk_can",nil,5],
+			["kio_skl_msk_german",nil,5],
+			["kio_skl_msk_GOW",nil,5],
+			["kio_skl_msk_grey",nil,5],
+			["kio_skl_msk_irish",nil,5],
+			["kio_skl_msk_nirish",nil,5],
+			["kio_skl_msk_o",nil,5],
+			["kio_skl_msk_p",nil,5],
+			["kio_skl_msk_scot",nil,5],
+			["kio_skl_msk_fran",nil,5]
 		];
 	};
 	//Glasses
@@ -140,7 +171,20 @@ switch (_filter) do
 			["A3L_Balaclava",nil,6],
 			["TRYK_SPGEAR_Glasses","Negotiator Glasses",6],
 			["Mask_M40","Gas Mask",5],
-			["Mask_M40_OD",nil,200]			
+			["Mask_M40_OD",nil,200],
+			["G_Shades_Black",nil,2],
+			["G_Shades_Blue",nil,2],
+			["G_Sport_Blackred",nil,2],
+			["G_Sport_Checkered",nil,2],
+			["G_Sport_Blackyellow",nil,2],
+			["G_Sport_BlackWhite",nil,2],
+			["G_Squares",nil,1],
+			["G_Lowprofile",nil,3],
+			["G_Combat",nil,5],
+			["G_Balaclava_blk",nil,137],
+			["G_Balaclava_combat",nil,137],
+			["G_Balaclava_lowprofile",nil,137],
+			["A3L_Balaclava",nil,137]			
 		];
 	};
 
@@ -196,7 +240,44 @@ switch (_filter) do
 			["TRYK_V_PlateCarrier_ACU_L",nil,200],
 			["prpg_specialf_usms2",nil,200],
 			["prpg_specialf_usms4",nil,200],
-			["prpg_specialf_usms1",nil,200]
+			["prpg_specialf_usms1",nil,200],
+			["k_rebel_1",nil,300],
+			["k_rebel_2",nil,300],
+			["k_rebel_3",nil,300],
+			["k_rebel_4",nil,300],
+			["k_rebel_5",nil,300],
+			["k_hrebel_1",nil,500],
+			["k_hrebel_2",nil,500],
+			["k_hrebel_3",nil,500],
+			["k_hrebel_4",nil,500],
+			["k_hrebel_5",nil,500],
+			["k_hrebel_6",nil,500],
+			["k_hrebel_7",nil,500],
+			["k_hrebel_8",nil,500],
+			["k_hrebel_9",nil,500],
+			["k_hrebel_10",nil,500],	
+			["k_nhrebel_3",nil,500],
+			["k_nhrebel_5",nil,500],
+			["k_nhrebel_6",nil,500],
+			["k_nhrebel_7",nil,500],
+			["k_nhrebel_8",nil,500],
+			["k_nhrebel_9",nil,500],
+			["k_nhrebel_10",nil,500],
+			["hk_rebel_1",nil,900],
+			["hk_rebel_2",nil,900],
+			["hk_rebel_5",nil,900],
+			["hk_rebel_7",nil,900],
+			["hk_rebel_9",nil,900],
+			["hk_rebel_11",nil,900], 
+			["hk_rebel_12",nil,900],
+			["hk_rebel_13",nil,900], 
+			["hk_rebel_14",nil,900],
+			["hk_rebel_15",nil,900],
+			["hk_rebel_16",nil,900],
+			["hk_rebel_17",nil,900],
+			["hk_rebel_18",nil,900],
+			["hk_rebel_19",nil,900],
+			["hk_rebel_20",nil,900]
 		];
 	};
 	
@@ -206,7 +287,23 @@ switch (_filter) do
 		_ret =
 		[
 			["AM_PoliceBelt","Police Utility Belt",80],
-            ["cg_invisbp","Invisi-Backpack 2.0",5]
+            ["cg_invisbp","Invisi-Backpack 2.0",5],
+			["B_AssaultPack_cbr",nil,250],
+			["B_FieldPack_ocamo",nil,300],
+			["B_TacticalPack_oli","Olive Bergen",350],
+			["B_Bergen_sgg","Sage Bergen",450],
+			["B_Carryall_oli","Olive Carryall",500],
+			["B_Carryall_khk","Khaki Carryall",500],
+			//Camo Packs
+			["B_AssaultPack_mcamo","MTP Assault Pack",400],
+			["TRYK_B_AssaultPack_MARPAT_Wood","MARPAT Assault Pack",550],
+			["TRYK_B_AssaultPack_Type2camo","Jungle Assault Pack",550],
+			["TRYK_B_Kitbag_Base_JSDF","Jungle Kitbag",550],
+			["B_Kitbag_mcamo","MTP Kitbag",550],
+			//Belts
+			["TRYK_B_Belt_AOR2",nil,300],
+			["TRYK_B_Belt_CYT",nil,300],
+			["TRYK_B_Belt_GR",nil,300]
 		];
 	};
 };

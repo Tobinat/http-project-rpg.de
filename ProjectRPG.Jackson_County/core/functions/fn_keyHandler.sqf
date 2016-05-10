@@ -526,9 +526,9 @@ switch (_code) do
 							} else {
 								_kartoffel setVariable["xcar",[_xcar select 0,false,nil],true];
 							};
-							
+				
 							{
-								if(typeOf _x == "Land_Camping_Light_off_F")then{
+								if(typeOf _x == "PortableHelipadLight_01_blue_F")then{
 									detach _x;
 									deleteVehicle _x;
 								};
