@@ -493,28 +493,21 @@ switch (_code) do
 		};
 	};
 	//L Key?
-/*	case 38: 
+	case 38: 
 	{
 		private _kartoffel = vehicle player;
 		if(!_alt && !_ctrlKey && _kartoffel == player) exitWith {  [] call life_fnc_radar; _handled = true};
-		systemchat format ["Error 1"];
 		
 		if(_kartoffel != player) then {
-		systemchat format ["Error 11"];
 			if(_shift && !_ctrlKey && (license_civ_udc)) exitWith {
-			systemchat format ["Error 111"];
 				true;
 				if((driver _kartoffel) == player) then {
-				systemchat format ["Error 1111"];
 					if!(isNil{_kartoffel getVariable "xcar"}) then {
-					systemchat format ["Error 11111"];
 						[_kartoffel] spawn life_fnc_EinsatzLicht;
 					} else {
 						if(life_inv_blaulicht != 0 ) then {
-						systemchat format ["Error 111111"];
-							[false,"blaulicht",1] call life_fnc_handleInv;
+							[false,"Blaulicht",1] call life_fnc_handleInv;
 							_kartoffel setVariable["xcar",["BL_car",false,nil],true];
-							systemchat format ["Error 1111111"];
 						};
 					};
 				};
@@ -528,7 +521,7 @@ switch (_code) do
 						_xcar =_kartoffel getVariable "xcar";
 						if!(isNil{_xcar select 2}) then {
 							if(_xcar select 0 == "BL_car") then {
-								[true,"blaulicht",1] call life_fnc_handleInv;
+								[true,"Blaulicht",1] call life_fnc_handleInv;
 								_kartoffel setVariable["xcar",nil,true];
 							} else {
 								_kartoffel setVariable["xcar",[_xcar select 0,false,nil],true];
@@ -546,7 +539,7 @@ switch (_code) do
 			};
 		};
 	};
-*/
+
 	//CAPSLOCK CHECK
 	case 58:
 	{
