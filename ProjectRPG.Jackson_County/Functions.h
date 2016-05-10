@@ -520,6 +520,7 @@ class Life_Client_Core
 		class RoadBlockRebel {};
 		class RoadCone {};
 		class RoadConeStrip {};
+		class panicButton {};
 	};
 	
 	class Jail

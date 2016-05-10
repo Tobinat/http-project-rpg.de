@@ -37,45 +37,8 @@ switch (true) do
 	};
 	
 
-	case (_item == "panicbutton"):
-	{
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			_pos = mapGridPosition player;
-			if( side player == west && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
-				{
-					if((side _x == west) || (_x getVariable "udcLevel")) then
-					{
-						[1,format["911 NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
-						["dpanic", false] remoteExec ["fnc_dispatch",_x];
-					};
-				}forEach playableUnits;
-				
-				[player,"panicbutton"] spawn life_fnc_nearestSound;
-			};
-			if( side player == independent && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
-				{
-					if((side _x == west) || (_x getVariable "udcLevel")) then
-					{
-						[1,format["RFA NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
-						["dpanic", false] remoteExec ["fnc_dispatch",_x];
-					};
-				}forEach playableUnits;
-				
-				[player,"panicbutton"] spawn life_fnc_nearestSound;
-			};
-			if( license_civ_udc && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
-				{
-					if((side _x == west) || (_x getVariable "udcLevel")) then
-					{
-						[1,format["F.B.I / L.V. SPECIAL FORCE NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
-						["dpanic", false] remoteExec ["fnc_dispatch",_x];
-					};
-				}forEach playableUnits;
-				
-				[player,"panicbutton"] spawn life_fnc_nearestSound;
-			};
-		};
+	case (_item == "panicbutton"): {
+		[] spawn life_fnc_panicButton;
 	};
 
 	case (_item == "weddingring"):
@@ -96,16 +59,16 @@ switch (true) do
 		}
 		else
 		{
-			["Fremdgeher.", false] spawn domsg;
+			["Fremdgeher du!", false] spawn domsg;
 		};
 	};
 
 	case (_item == "condom"):
 	{
-			if(([false,_item,1] call life_fnc_handleInv)) then
-			{
-				[] spawn life_fnc_prostitute;
-			};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_prostitute;
+		};
 	};
 
 

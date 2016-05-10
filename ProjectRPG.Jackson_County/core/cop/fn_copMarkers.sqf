@@ -5,13 +5,23 @@
 	Description:
 	Marks cops on the map for other cops. Only initializes when the actual map is open.
 */
-private["_markers","_cops"];
-_markers = [];
-_cops = [];
+
+private _markers = [];
+private _cops = [];
+private _sos = [];
+private _sosms = [];
 
 uiSleep 0.25;
 if(visibleMap) then {
 	{if(side _x == west || side _x == independent) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
+	{
+		if(side _x == civilian) then {
+			if(_x getVariable  "sosActive") then {
+				_sos pushback _x;
+			};
+		};
+	} forEach playableUnits;
+	
 	//Create markers
 	{
 		if ("ItemGPS" in assignedItems _x) then {
@@ -29,6 +39,15 @@ if(visibleMap) then {
 			_markers pushBack [_marker,_x];
 		};
 	} foreach _cops;
+	
+	{
+		if(license_civ_udc) then {
+			_sosm = createMarkerlocal [format["sos_marker_%1",_x],visiblePosition _x];
+			_sosm = setMarkerTypelocal "";
+			_sosm = setMarkerTextLocal format["!!!SOS - %1 - SOS!!!", name _x];
+			_sosms pushBack [_sosm,_x];
+		};
+	} forEach _sos;
 		
 	while {visibleMap} do
 	{
@@ -49,9 +68,15 @@ if(visibleMap) then {
 			};
 			
 		} foreach _markers;
+
 		if(!visibleMap) exitWith {};
 		uiSleep 0.05;
 	};
 
 	{deleteMarkerLocal (_x select 0);} foreach _markers;
+	{deleteMarkerLocal (_x select 0);} foreach _sosms;
+	_markers = [];
+	_cops = [];
+	_sos = [];
+	_sosms = [];
 }; 
