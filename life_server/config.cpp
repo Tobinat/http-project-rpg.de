@@ -129,34 +129,6 @@ class CfgFunctions
 			class updateGang {};
 		};
 	};
-	
-	class Life_System
-	{
-		tag = "life";
-		class Wanted_Sys
-		{
-			file = "\life_server\Functions\WantedSystem";
-			class wantedFetch {};
-			class wantedPerson {};
-			class wantedBounty {};
-			class wantedTicket {};
-			class wantedPardon {};
-			class wantedRemove {};
-			class wantedAdd {};
-			class wantedPunish {};
-			class getWantedList {};
-		};
-
-		class Jail_Sys
-		{
-			file = "\life_server\Functions\Jail";
-			class jailSys {};
-			class svr_arrestButton {};
-			class svr_jailToDB {};
-			class svr_releasePrison {};
-			class svr_sendToJail {};
-		};
-	};
 
 	class ProjectRPG
 	{
