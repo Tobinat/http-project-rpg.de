@@ -291,8 +291,8 @@ switch(_shop) do
 							
 							["RH_fn57",nil,1120],
 							["RH_sfn57",nil,20],
+							["RH_20Rnd_57x28_FN",nil,20],
 
-							["RH_ta648",nil,222],
 							["RH_bull",nil,240],
 							["RH_6Rnd_454_Mag",nil,4],
 							
@@ -347,18 +347,14 @@ switch(_shop) do
 							["RH_M4A6",nil,12220],
 							["RH_30Rnd_68x43_FMJ",nil,220],
 							
-							["RH_m110sd",nil,20],
-							["RH_20Rnd_57x28_FN",nil,20],
+
+
 							
-							["optic_MRCO",nil,220],
-							["RH_SFM952V",nil,80],
-							["RH_compM2l",nil,80],
-							["RH_t1","Aimpoint",10],
-							["RH_ta648",nil,222],
 						//Flashbang	
 							["HandGrenade_Stone","Flashbang",300],						
 						//visire/aufsätze	
 						    ["RH_matchsd",nil,220],
+							["RH_aacusp",nil,220],
 							["RH_barska_rds","Barska Red Dot",25],									
 							["RH_cmore","C-more Red Dot",25],							
 							["optic_NVS",nil,25],							
@@ -366,8 +362,7 @@ switch(_shop) do
 							["optic_MRCO",nil,220],							
 							["RH_SFM952V",nil,80],							
 							["RH_compM2l",nil,80],							
-							["RH_t1","Aimpoint",10],							
-							["RH_ta648",nil,222],							
+							["RH_t1","Aimpoint",10],														
 							["RH_m110sd","MK 11 Silencer",220],
 							["RH_qdss_nt4","M4A6 Silencer",220],
 							["muzzle_snds_H","KAC Silencer",220],
@@ -375,12 +370,6 @@ switch(_shop) do
 							["RH_leu_mk4",nil,100],
 							["RH_M6X",nil,20],
 							["RH_fa556",nil,20],
-							["RH_m110sd",nil,20],
-							["RH_20Rnd_57x28_FN",nil,20],
-							["optic_MRCO",nil,220],
-							["RH_SFM952V",nil,80],
-							["RH_compM2l",nil,80],
-							["RH_t1","Aimpoint",10],
 							["RH_ta648",nil,222]
 						
 						]
@@ -509,7 +498,10 @@ switch(_shop) do
 							["RH_6Rnd_454_Mag",nil,500],
 
 							["RH_fn57",nil,15000],
-							["RH_20Rnd_57x28_FN",nil,250],
+							["RH_20Rnd_57x28_FN",nil,300],
+							
+							["RH_uspm",nil,21000],
+							["RH_16Rnd_40cal_usp",nil,300],	
 							
 							//langwaffen
 							["hlc_rifle_auga3_b",nil,70000],
@@ -597,6 +589,9 @@ switch(_shop) do
 
 							["RH_sw659",nil,1950],
 							["RH_14Rnd_9x19_sw",nil,150],
+							
+							["RH_usp",nil,15000],
+							["RH_12Rnd_45cal_usp",nil,200],							
 
 							["hgun_Rook40_F",nil,3350],
 							["16Rnd_9x21_Mag",nil,125],
