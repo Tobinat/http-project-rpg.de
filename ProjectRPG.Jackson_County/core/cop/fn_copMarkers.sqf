@@ -43,8 +43,8 @@ if(visibleMap) then {
 	{
 		if(license_civ_udc) then {
 			_sosm = createMarkerlocal [format["sos_marker_%1",_x],visiblePosition _x];
-			_sosm = setMarkerTypelocal "selector_selectedMission";
-			_sosm = setMarkerTextLocal format["!!!SOS - %1 - SOS!!!", name _x];
+			_sosm setMarkerTypelocal "selector_selectedMission";
+			_sosm setMarkerTextLocal format["!!!SOS - %1 - SOS!!!", name _x];
 			_sosms pushBack [_sosm,_x];
 		};
 	} forEach _sos;
