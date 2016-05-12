@@ -9,17 +9,16 @@
 
 _allowed = param [0,false,[false]];
 
-if(!_allowed) exitWith {systemChat "invalid call"}; //Invalid call
+if(!_allowed) exitWith {}; //Invalid call
 if(isNull player) exitWith {};
-if(player getVariable "restrained") exitWith {systemChat "isRestrained"};
-if(player getVariable "tied") exitWith {systemChat "isTied"};
+if(player getVariable "restrained") exitWith {};
+if(player getVariable "tied") exitWith {};
 if(playerSide == civilian && !license_civ_udc) exitWith {["Authentifizierung fehlgeschlagen! Sie sind kein Polizist.", false] spawn domsg;};
-if(life_istazed OR life_knockout) exitWith {systemChat "knockout or tazed"};
+if(life_istazed OR life_knockout) exitWith {};
 
 private _pos = mapGridPosition player;
 private _side = 0;
 
-systemChat "== STARTING _side CHECK";
 
 //Cops
 if(side player == west) then {
@@ -36,8 +35,6 @@ if(license_civ_udc) then {
 	_side = 3;
 };
 
-systemChat format ["Side = ",_side]
-
 { //Abfrage der Hurensöhne
 	if((side _x == west) || (_x getVariable "udcLevel")) then {
 		switch(_side) do {
@@ -53,7 +50,7 @@ systemChat format ["Side = ",_side]
 			};
 
 			case 3: {
-				[1,format["FBI / LV SF NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
+				[1,format["FBI NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
 				["dpanic", false] remoteExec ["fnc_dispatch",_x];
 			};
 			default {};
@@ -66,6 +63,5 @@ systemChat format ["Side = ",_side]
 	sleep 60;
 	player setVariable ["sosActive",false,true];
 };
-systemChat "== EXECUTED SUCCESSFULLY";
 
 [player,"panicbutton"] spawn life_fnc_nearestSound;
