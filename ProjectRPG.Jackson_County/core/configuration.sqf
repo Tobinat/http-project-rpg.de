@@ -362,7 +362,8 @@ life_inv_items =
 	"life_inv_tequila",
 	"life_inv_jackdanielsandcoke",
 	"life_inv_raxsrum",
-	"life_inv_blaulicht"	
+	"life_inv_blaulicht",
+	"life_inv_tracker"	
 ];
 
 
