@@ -1530,9 +1530,9 @@ life_garage_prices =
 	["B_G_Offroad_01_F",0],
 	["O_Heli_Light_02_unarmed_F",0],
 	 //cop_car
-	["ivory_wrx_cop_marked",0],
-	["ivory_wrx_cop_unmarked",0],
-	["ivory_wrx_cop_slicktop",0],
+	["ivory_wrx_marked",0],
+	["ivory_wrx_unmarked",0],
+	["ivory_wrx_slicktop",0],
 	["A3L_CVPIFPBDOC",0],
 	["A3L_TaurusCO2",0],
 	["cg_cvpifpblbpd",0],	
