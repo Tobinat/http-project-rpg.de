@@ -110,9 +110,8 @@ switch (true) do
 		};
 	};
 	
-	case (_item == "tracker"):
-	{
-		[] spawn life_fnc_gpsTracker;	
+	case (_item == "tracker"): {
+		[cursorTarget] spawn life_fnc_gpsTracker
 	};
 
 	case (_item == "zoobeer"):
