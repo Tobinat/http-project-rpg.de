@@ -618,7 +618,8 @@ buy_array =
         ["cigarette",925],
         ["Rax's Rum",5],
         ["Blaulicht",50],
-        ["Blaulicht",10000]
+        ["Blaulicht",10000],
+		["tracker",1000]
 ];
 __CONST__(buy_array,buy_array);
 
