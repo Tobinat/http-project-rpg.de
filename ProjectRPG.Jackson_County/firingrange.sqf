@@ -19,7 +19,7 @@ uiSleep 3;
 "chromAberration" ppEffectCommit 1; 
 
 uiSleep 2;
-
+_spawnedunit = ObjNull;
 life_firing_range = true;
 while {_count > 0} do {
 
