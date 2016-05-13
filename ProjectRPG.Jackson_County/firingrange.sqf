@@ -175,7 +175,7 @@ if(_myscore > 48) then {
 life_firing_range = false;
 "chromAberration" ppEffectEnable false;
 
-//[format ["Score: %1 - Bonus Cash: %2",_myscore, _bonuscash], false] spawn domsg;
-[0,format["Score: %1 - Bonus Cash: %2 - %3",_myscore, _bonuscash,name player]] remoteExecCall ["life_fnc_broadcast", -2]; 
+[format ["Score: %1 - Bonus Cash: %2",_myscore, _bonuscash], false] spawn domsg;
+//[0,format["Score: %1 - Bonus Cash: %2 - %3",_myscore, _bonuscash,name player]] remoteExecCall ["life_fnc_broadcast", -2]; 
 
 ["cash","add",round(_bonuscash)] call life_fnc_handleCash; 
