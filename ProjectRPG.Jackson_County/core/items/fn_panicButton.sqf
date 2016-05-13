@@ -58,7 +58,7 @@ if(license_civ_udc) then {
 	};
 } forEach playableUnits;
 [] spawn {
-	if(player getVariable ["sosActive",true]) exitWith {};
+	if(player getVariable "sosActive") exitWith {};
 	player setVariable ["sosActive",true,true];
 	sleep 60;
 	player setVariable ["sosActive",false,true];
