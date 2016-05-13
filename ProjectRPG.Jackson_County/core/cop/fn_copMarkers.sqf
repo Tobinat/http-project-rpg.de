@@ -11,14 +11,12 @@ private _cops = [];
 private _sos = [];
 private _sosms = [];
 
-uiSleep 0.25;
+uiSleep 0.5;
 if(visibleMap) then {
 	{if(side _x == west || side _x == independent) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
 	{
-		if(side _x == civilian) then {
-			if(_x getVariable  "sosActive") then {
-				_sos pushback _x;
-			};
+		if(_x getVariable "sosActive") then {
+			_sos pushback _x;
 		};
 	} forEach playableUnits;
 	
@@ -41,7 +39,7 @@ if(visibleMap) then {
 	} foreach _cops;
 	
 	{
-		if(license_civ_udc) then {
+		if(license_civ_udc OR playerSide == west) then {
 			_sosm = createMarkerlocal [format["sos_marker_%1",_x],visiblePosition _x];
 			_sosm setMarkerTypelocal "selector_selectedMission";
 			_sosm setMarkerTextLocal format["!!!SOS - %1 - SOS!!!", name _x];
@@ -70,7 +68,7 @@ if(visibleMap) then {
 		} foreach _markers;
 
 		if(!visibleMap) exitWith {};
-		uiSleep 0.05;
+		uiSleep 0.2;	//Client FPS purposes
 	};
 
 	{deleteMarkerLocal (_x select 0);} foreach _markers;
