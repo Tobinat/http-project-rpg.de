@@ -109,6 +109,11 @@ switch (true) do
 			[] spawn life_fnc_useCigarette;	
 		};
 	};
+	
+	case (_item == "tracker"):
+	{
+		[] spawn life_fnc_gpsTracker;	
+	};
 
 	case (_item == "zoobeer"):
 	{

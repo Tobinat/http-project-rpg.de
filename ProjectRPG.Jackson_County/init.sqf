@@ -24,7 +24,7 @@ if(!isDedicated && {!hasInterface}) then
 };
 player setVariable["loaded", false, true];
 
-
+PRPG_MissionPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;
 
 
 0 setWaves 0.00;

@@ -152,6 +152,7 @@ life_carSalesman = false;
 life_onTestDrive = false;
 life_requestingTestDrive = false;
 life_testDriveRequests = [];
+PRPG_trackedVeh = 0;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
@@ -519,13 +520,14 @@ sell_array =
 	["RoadConeStripB",5],
 	["cigarette",1],
 	["Rax's Rum",1],
-	["Blaulicht",10]
+	["Blaulicht",10],
+	["tracker",1000]
 ];
 __CONST__(sell_array,sell_array);
 
 buy_array =
 [
-       ["cleankit",100],
+        ["cleankit",100],
         ["medkit",1200],
         ["condom",100],
         ["weddingring",10000],
@@ -614,7 +616,8 @@ buy_array =
         ["RoadConeStripB",50],
         ["cigarette",925],
         ["Rax's Rum",5],
-        ["Blaulicht",50]
+        ["Blaulicht",50],
+        ["Blaulicht",10000]
 ];
 __CONST__(buy_array,buy_array);
 
@@ -632,11 +635,6 @@ __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
 life_garage_prices =
 [
-
-
-
-
-
 
 			["ADM_General_Lee",0],
 			["tcg_hrly",0],

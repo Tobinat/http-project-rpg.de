@@ -129,6 +129,7 @@ switch (_var) do
 	case "life_inv_cigarette": {"Cigarette"};
 	case "life_inv_raxsrum": {"Rax's Rum"};
 	case "life_inv_blaulicht": {"Blaulicht"};
+	case "life_inv_tracker": {"GPS-Tracker"};
 	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};

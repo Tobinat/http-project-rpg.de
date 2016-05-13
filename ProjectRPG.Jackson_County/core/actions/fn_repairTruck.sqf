@@ -9,7 +9,7 @@ private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName"];
 _veh = cursorTarget;
 life_interrupted = false;
 if(isNull _veh) exitwith {};
-if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst das Auto nicht ohne deine Hände reparieren.", false] spawn domsg};
+if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst das Auto nicht reparieren.", false] spawn domsg};
 if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") OR (_veh isKindOf "Motorbike") OR (_veh isKindOf "Motorcycle") OR (_veh isKindOf "Air") OR (_veh isKindOf "A3L_Tahoe_Base")) then
 {
 	_cP = 0;
@@ -45,14 +45,15 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 			if(_cP >= 1 || deadPlayer || player != vehicle player || life_interrupted) exitWith {};
-			if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst das Auto nicht ohne deine Hände reparieren.", false] spawn domsg};
+			if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst das Auto nicht reparieren.", false] spawn domsg};
 		};
 		player switchmove "";
 		life_action_inUse = false;
 		5 cutText ["","PLAIN"];
 		if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_ActionCancel", false] spawn domsg; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {[localize "STR_NOTF_RepairingInVehicle", false] spawn domsg;};
-		if (side player != resistance) then {player removeItem "ToolKit";};
+		if(side player != resistance) then {player removeItem "ToolKit";};
+		if(_veh getVariable "trackedveh") then {_veh setVariable ["trackedveh",false,true]; ["An diesem Fahrzeug befand sich ein GPS-Tracker, der entfernt wurde."] spawn domsg;};
 		_veh setDamage 0;
 		[localize "STR_NOTF_RepairedVehicle", false] spawn domsg;
 	} else {
@@ -82,13 +83,14 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 			if(_cP >= 1 || deadPlayer || player != vehicle player || life_interrupted) exitWith {};
-			if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst das Auto nicht ohne deine Hände reparieren.", false] spawn domsg};			
+			if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst das Auto nicht reparieren.", false] spawn domsg};			
 		};
 		player switchmove "";
 		life_action_inUse = false;
 		5 cutText ["","PLAIN"];
 		if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_ActionCancel", false] spawn domsg; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {[localize "STR_NOTF_RepairingInVehicle", false] spawn domsg;};
+		if(_veh getVariable "trackedveh") then {_veh setVariable ["trackedveh",false,true]; ["An diesem Fahrzeug befand sich ein GPS-Tracker, der entfernt wurde."] spawn domsg;};
 		_veh setDamage 0;
 		[localize "STR_NOTF_RepairedVehicle", false] spawn domsg;
 	};

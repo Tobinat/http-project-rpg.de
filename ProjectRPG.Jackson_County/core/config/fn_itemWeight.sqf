@@ -121,6 +121,7 @@ switch (_item) do
 	case "tequila": {1};
 	case "jackdanielsandcoke": {1};
 	case "Blaulicht": {2.5};
+	case "tracker": {1.5};
 
 	default {1};
 };

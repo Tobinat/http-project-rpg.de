@@ -343,6 +343,7 @@ class Life_Client_Core
 		class requestTestDrive {};
 		class testDrive {};
 		class broadcastCheck {};
+		class gpsMarker {};
 	};
 	
 	class Network
@@ -521,6 +522,7 @@ class Life_Client_Core
 		class RoadCone {};
 		class RoadConeStrip {};
 		class panicButton {};
+		class gpsTracker {};
 	};
 	
 	class Jail

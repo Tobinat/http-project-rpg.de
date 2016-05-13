@@ -173,7 +173,8 @@ _saveGear =
     ["life_inv_methp",life_inv_methp],
     ["life_inv_MDMAp",life_inv_MDMAp],
     ["life_inv_marijuana",life_inv_marijuana],
-	["life_inv_cleankit",life_inv_cleankit]
+	["life_inv_cleankit",life_inv_cleankit],
+	["life_inv_tracker",life_inv_cleankit]
 ];
 
 
