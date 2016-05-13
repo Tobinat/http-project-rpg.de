@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=514;
+	toggles=513;
 	class ItemIDProvider
 	{
 		nextID=15146;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8368.0742,92.537178,5141.7227};
-		dir[]={-0.84941697,-0.52733171,-0.02354167};
-		up[]={-0.52721882,0.84959817,-0.014613544};
-		aside[]={-0.027705085,-1.0152708e-006,0.99968457};
+		pos[]={3603.7009,93.891052,7147.4434};
+		dir[]={-0.89437467,-0.43075323,0.1209745};
+		up[]={-0.42690071,0.90245038,0.057745233};
+		aside[]={0.13404749,3.0739466e-007,0.9910146};
 	};
 };
 binarizationWanted=0;
@@ -762,7 +762,6 @@ class Mission
 			type="Empty";
 			angle=32.261948;
 			id=45;
-			atlOffset=0.12722015;
 		};
 		class Item37
 		{
@@ -912,7 +911,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=66;
-			atlOffset=0.050003052;
 		};
 		class Item51
 		{
@@ -1089,7 +1087,7 @@ class Mission
 			type="Empty";
 			angle=49.999992;
 			id=85;
-			atlOffset=0.026725769;
+			atlOffset=0.0001449585;
 		};
 		class Item66
 		{
@@ -1397,7 +1395,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=121;
-			atlOffset=0.099998474;
 		};
 		class Item93
 		{
@@ -2232,7 +2229,7 @@ class Mission
 		class Item167
 		{
 			dataType="Marker";
-			position[]={4671.2432,140.32016,334.94531};
+			position[]={3595.4116,176.1203,7145.5889};
 			name="FF_1";
 			text="Live Schießplatz";
 			type="A3L_FD_Icon";
@@ -2240,12 +2237,12 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=215;
-			atlOffset=85.173004;
+			atlOffset=84.878708;
 		};
 		class Item168
 		{
 			dataType="Marker";
-			position[]={4671.5483,140.58594,334.90527};
+			position[]={3595.7168,176.38492,7145.5488};
 			name="HH_Zone_1_1";
 			text="Haunted House";
 			markerType="ELLIPSE";
@@ -2254,7 +2251,7 @@ class Mission
 			a=100;
 			b=100;
 			id=216;
-			atlOffset=85.438782;
+			atlOffset=85.143478;
 		};
 		class Item169
 		{
@@ -4158,7 +4155,6 @@ class Mission
 			};
 			id=443;
 			type="Land_Atm_02_F";
-			atlOffset=0.099998474;
 		};
 		class Item341
 		{
@@ -5609,17 +5605,16 @@ class Mission
 			};
 			id=617;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=0.050003052;
 		};
 		class Item414
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4632.5298,55.665638,368.22839};
+				position[]={3599.6343,92.097404,7146.082};
+				angles[]={0,4.7345724,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5627,17 +5622,17 @@ class Mission
 			};
 			id=625;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.056884766;
+			atlOffset=0.28250885;
 		};
 		class Item415
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4632.3779,55.68961,282.71704};
+				position[]={3599.6677,92.110832,7147.9878};
+				angles[]={0,0.083822891,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5645,7 +5640,7 @@ class Mission
 			};
 			id=633;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.032913208;
+			atlOffset=0.29595947;
 		};
 		class Item416
 		{
@@ -6889,6 +6884,7 @@ class Mission
 			};
 			id=729;
 			type="cg_bench1";
+			atlOffset=2.2888184e-005;
 		};
 		class Item483
 		{
@@ -54901,13 +54897,13 @@ class Mission
 				angles[]={0,5.4378033,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false; this allowDamage false; this addAction[""Flug nach Lakeside"",life_fnc_skyDive,true]; this addAction[""Catch a Taxi"",life_fnc_taxi];";
 			};
 			id=8717;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.84564209;
 		};
 		class Item2987
 		{
@@ -54976,7 +54972,6 @@ class Mission
 			};
 			id=8722;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.026565552;
 		};
 		class Item2991
 		{
@@ -55045,7 +55040,7 @@ class Mission
 			};
 			id=8779;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.79799652;
+			atlOffset=0.74799347;
 		};
 		class Item2995
 		{
@@ -58482,13 +58477,14 @@ class Mission
 				angles[]={0,1.8299079,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false; this addAction[""Geldwäscher"",{ if (side player == civilian) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 			};
 			id=12332;
 			type="Land_InfoStand_V2_F";
-			atlOffset=2.2226868;
+			atlOffset=1.5258789e-005;
 		};
 		class Item3201
 		{
@@ -58700,6 +58696,7 @@ class Mission
 			};
 			id=12347;
 			type="Land_InfoStand_V2_F";
+			atlOffset=4.9591064e-005;
 		};
 		class Item3213
 		{
@@ -64795,7 +64792,7 @@ class Mission
 			position[]={6731.1538,54.980225,4713.5107};
 			name="udc_air_2";
 			type="Empty";
-			angle=104.15994;
+			angle=104.15992;
 			id=15062;
 			atlOffset=0.76721573;
 		};
@@ -64955,10 +64952,10 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4705.4116,55.722523,287.46521};
+				position[]={3599.5059,92.07943,7141.8027};
+				angles[]={0,4.7529135,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -64966,16 +64963,17 @@ class Mission
 			};
 			id=15105;
 			type="Land_InfoStand_V1_F";
+			atlOffset=0.26447296;
 		};
 		class Item3548
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4702.5073,55.722523,365.45715};
+				position[]={3599.573,92.089127,7143.8662};
+				angles[]={0,4.7458963,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -64983,6 +64981,7 @@ class Mission
 			};
 			id=15106;
 			type="Land_InfoStand_V1_F";
+			atlOffset=0.27420044;
 		};
 		class Item3549
 		{

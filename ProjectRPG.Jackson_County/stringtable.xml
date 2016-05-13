@@ -2792,7 +2792,7 @@
 		<Key ID="STR_House_Raid_NOTF">
 			<Original>%1 your house is being raided by the cops!</Original>
 			<English>%1 your house is being raided by the cops!</English>
-			<German>%1 dein Haus wird von der Polizei durchsucht!</German>
+			<German>%1 dein Haus wird von den Behörden durchsucht!</German>
 			<French>%1 votre maison est perquisitionnée par les flics!</French>
 			<Italian>%1 la Polizia si sta introducendo in casa tua!</Italian>
 			<Portuguese>%1 Sua casa está sendo vasculhada pela Policia!</Portuguese>

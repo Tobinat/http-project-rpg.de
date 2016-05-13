@@ -26,7 +26,7 @@ while {_count > 0} do {
 	if((player ammo (currentWeapon player)) < 2) then {
 		["Lade nach!", false] spawn domsg;
 		_unit say3D "reloadnow";
-		uiSleep 6;
+		uiSleep 10;
 		if((player ammo (currentWeapon player)) < 2) exitwith {
 			_myscore = 0;
   			["Du warst zu langsam.", false] spawn domsg;
@@ -37,7 +37,7 @@ while {_count > 0} do {
 		["Nachladen abgeschlossen!", false] spawn domsg;
 	};
 
-	player setDir 180;
+	player setDir 270;
 
 	["Gegner werden erstellt!", false] spawn doquickmsg;
 	uiSleep 0.5;
@@ -49,7 +49,7 @@ while {_count > 0} do {
 
 	if(_lmfaolol == 1) then {
 		_spawnedunit = "C_man_polo_2_F" createVehicleLocal (player modelToWorld [0 - round (random 3), 15 + round (random 10), 0]);
-
+			
 		_spawnedunit setDamage 0.98;
 
 	if( player distance _myposy > 5 || (deadPlayer) || vehicle player != player ) exitwith { 
@@ -96,7 +96,7 @@ while {_count > 0} do {
 
 	if(_lmfaolol == 2) then {
 		_spawnedunit = "C_man_polo_2_F" createVehicleLocal (player modelToWorld [0 + round (random 3), 15 + round (random 10), 0]);
-
+			
 		_spawnedunit setDamage 0.98;
 
 	if( player distance _myposy > 3 || (deadPlayer) ) exitwith { 
@@ -175,6 +175,7 @@ if(_myscore > 48) then {
 life_firing_range = false;
 "chromAberration" ppEffectEnable false;
 
-[format ["Score: %1 - Bonus Cash: %2",_myscore, _bonuscash], false] spawn domsg;
+//[format ["Score: %1 - Bonus Cash: %2",_myscore, _bonuscash], false] spawn domsg;
+[0,format["Score: %1 - Bonus Cash: %2 - %3",_myscore, _bonuscash,name player]] remoteExecCall ["life_fnc_broadcast", -2]; 
 
 ["cash","add",round(_bonuscash)] call life_fnc_handleCash; 

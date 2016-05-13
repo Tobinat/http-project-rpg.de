@@ -71,7 +71,6 @@ switch (_shop) do
 		
 			_return pushBack ["A3L_TowTruck_ADAC",25000];
 			_return pushBack ["cg_ambulanceexpansion",20000];
-            _return pushBack ["Ark_Ambulance1",25000];
 			_return pushBack ["RR_Firetruck",25000];
 			
 			if(__GETC__(life_mediclevel) > 1) then
@@ -83,17 +82,17 @@ switch (_shop) do
 			if(__GETC__(life_mediclevel) > 2) then
 		       {
 			    _return pushBack ["A3L_CVPILBFD",2300];
-			    _return pushBack ["A3L_CVPILBFD",2300];
+				_return pushBack ["Ark_Ambulance1",25000];
+
 		        };
 				
 			if(__GETC__(life_mediclevel) > 3) then
 		       {
+		        _return pushBack ["ivory_wrx_med_ems",95500];
+           		_return pushBack ["IVORY_PRIUS",25000];
 			    _return pushBack ["cg_evoems1",20000];
 			    _return pushBack ["cg_evoems2",20000];
 			    _return pushBack ["cg_evoems3",20000];
-		        };
-			if(__GETC__(life_mediclevel) > 4) then
-		       {
 				_return pushBack ["AM_Holden_EMS",25000];
 		        };
 	};
