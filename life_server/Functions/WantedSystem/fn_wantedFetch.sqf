@@ -1,20 +1,18 @@
 /*
 	File: fn_wantedFetch.sqf
-	Author: Bryan "Tonic" Boardwine"
+	"
 	
 	Description:
 	Displays wanted list information sent from the server.
 */
 
-_ret = param [0,ObjNull,[ObjNull]];
-
+params [["_ret", objNull, [objNull]], "_list", "_jailedUnits"];
 if(isNull _ret) exitWith {};
 
-_ret = owner _ret;
-private _jailedUnits = [];
-{if(_x distance (getMarkerPos "jail_marker") < 120) then {_jailedUnits pushBack getPlayerUID _x}} forEach playableUnits;
+_jailedUnits = [];
+{if(_x distance (getMarkerPos "jail_marker") < 120) then {_jailedUnits pushBack getPlayerUID _x}} foreach playableUnits;
 
-private _list = [];
+_list = [];
 {
 	_uid = _x select 1;
 	if([_uid] call life_fnc_isUIDActive) then
@@ -24,5 +22,4 @@ private _list = [];
 		};
 	};
 } foreach life_wanted_list;
-
-[_list] remoteExec ["life_fnc_wantedList",_ret];
+[_list] remoteExecCall ["life_fnc_wantedList",_ret];
