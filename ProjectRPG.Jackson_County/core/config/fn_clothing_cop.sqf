@@ -132,6 +132,7 @@ switch (_filter) do
 			["TRYK_V_Sheriff_BA_TB",nil,20],
 			["TRYK_V_Sheriff_BA_T",nil,20],
 			["TRYK_V_Sheriff_BA_OD",nil,20],
+			["DOC_Vest_CO",nil,20],
 			["crt_vest_Fix",nil,20],
 			["SCommand_Vest_Fix",nil,20],
 			["cg_policevest1_fix","Police Vest 2",20],
