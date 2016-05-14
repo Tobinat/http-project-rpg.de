@@ -162,9 +162,9 @@ switch(_type) do
 };
 
 if(count _type == 0) exitWith {}; //Not our information being passed...
-//Is there a custom bounty being sent? Set that as the pricing.
+
 if(_customBounty != -1) then {_type set[1,_customBounty];};
-//Search the wanted list to make sure they are not on it.
+
 _index = [_uid,life_wanted_list] call TON_fnc_index;
 
 if(_index != -1) then
@@ -182,7 +182,7 @@ if(_index != -1) then
 diag_log format["WANTED_LIST = %1", life_wanted_list];
 _gesuchter = [life_wanted_list] call DB_fnc_mresArray;
 _query = format["UPDATE wanted set list = '%1'", _gesuchter];
-waitUntil {sleep (random 0.3); !DB_Async_Active};
+
 _queryResult = [_query,1] call DB_fnc_asyncCall;
 
 

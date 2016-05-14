@@ -21,4 +21,5 @@ if(_index != -1) then
 diag_log format["WANTED_LIST = %1", life_wanted_list];
 _wantedlist = [life_wanted_list] call DB_fnc_mresArray;
 _query = format["UPDATE wanted set list = '%1'", _wantedlist];
-waitUntil {sleep (random 0.3); !DB_Async_Active};_queryResult = [_query,1] call DB_fnc_asyncCall;
+
+_queryResult = [_query,1] call DB_fnc_asyncCall;
