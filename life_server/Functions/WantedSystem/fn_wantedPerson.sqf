@@ -5,11 +5,11 @@
 	Description:
 	Fetches a specific person from the wanted array.
 */
-private["_unit","_index"];
-_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+_unit = param [0,ObjNull,[ObjNull]];
+
 if(isNull _unit) exitWith {[]};
 
-_index = [getPlayerUID _unit,life_wanted_list] call TON_fnc_index;
+private _index = [getPlayerUID _unit,life_wanted_list] call TON_fnc_index;
 
 if(_index != -1) then
 {

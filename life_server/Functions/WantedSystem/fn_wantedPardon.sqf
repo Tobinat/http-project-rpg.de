@@ -5,8 +5,9 @@
 	Description:
 	Unwants / pardons a person from the wanted list.
 */
-private["_uid"];
-_uid = [_this,0,"",[""]] call BIS_fnc_param;
+
+_uid = param [0,"",[""]];
+
 if(_uid == "") exitWith {};
 
 _index = [_uid,life_wanted_list] call TON_fnc_index;

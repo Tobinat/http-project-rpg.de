@@ -5,12 +5,15 @@
 	Description:
 	Adds or appends a unit to the wanted list.
 */
-private["_uid","_type","_index","_data","_crimes","_val","_customBounty","_name", "_text"];
-_uid = [_this,0,"",[""]] call BIS_fnc_param;
-_name = [_this,1,"",[""]] call BIS_fnc_param;
-_type = [_this,2,"",[""]] call BIS_fnc_param;
-_customBounty = [_this,3,-1,[0]] call BIS_fnc_param;
-_text = [_this,4,"Vergehen",[""]] call BIS_fnc_param;
+private["_index","_data","_crimes","_val"];
+params[
+	["_uid","",[""]],
+	["_name","",[""]],
+	["_type","",[""]],
+	["_customBounty","",[""]],
+	["_text","Vergehen",[""]]
+];
+
 if(_uid == "" OR _type == "" OR _name == "") exitWith {}; //Bad data passed.
 
 //What is the crime?
