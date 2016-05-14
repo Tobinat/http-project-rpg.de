@@ -22,7 +22,7 @@ while {alive _vehicle} do {
 	if(!alive _vehicle) exitWith {deleteMarkerLocal _m1;};
 	if(!alive player) exitWith {deleteMarkerLocal _m1; _vehicle setVariable ["trackedveh",false,true]};
 	if(!(_vehicle getVariable "trackedveh")) exitWith {deleteMarkerLocal _m1;};
-	if((round(random(50))) <= 3) then {playSound3D [PRPG_MissionPath + "Sounds\beep.ogg",_vehicle,false,getPosASL _vehicle, 10,1,20];};
+	if((round(random(50))) <= 3) then {playSound3D [PRPG_MissionPath + "Sounds\beep.ogg",_vehicle,false,getPosASL _vehicle, 5,1,20];};
 	_marker setMarkerPosLocal getPos _vehicle;
 	sleep 4;
 };
