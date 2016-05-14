@@ -991,7 +991,14 @@ switch (_shop) do
 			["charger_sert",90000],
 			["cg_h2_sert",11000],	
 			["AM_Holden_SO",40000],		
-			["cg_ducati_pol_reg",25000]
+			["cg_ducati_pol_reg",25000],
+			["ivory_wrx_marked",20000],
+			["ivory_wrx_unmarked",20000],
+			["ivory_wrx_slicktop",20000],
+			["ivory_isf_unmarked",20000],
+			["ivory_isf_slicktop",20000],
+			["ivory_m3_unmarked",20000],
+			["ivory_m3_slicktop",20000]
 		];
 	};
 
