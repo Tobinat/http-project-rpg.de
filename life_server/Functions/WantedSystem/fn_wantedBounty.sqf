@@ -9,7 +9,7 @@
 params [
 	["_civ",Objnull,[ObjNull]],
 	["_cop",ObjNull,[ObjNull]],
-	["_half",false[false]]
+	["_half",false,[false]]
 ];
 
 if(isNull _civ OR isNull _cop) exitWith {};
