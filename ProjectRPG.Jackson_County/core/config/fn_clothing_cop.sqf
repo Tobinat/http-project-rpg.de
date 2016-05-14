@@ -124,6 +124,14 @@ switch (_filter) do
 			["DOC_Vest_Tac_Fix",nil,20],
 			["DOC_Vest_Threat_Fix",nil,20],
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
+			["police_belt_biker",nil,20],
+			["police_belt_pistol",nil,20],
+			["police_belt_Without_pistol",nil,20],
+			["police_belt_pistol_patrolman",nil,20],
+			["TRYK_V_Bulletproof_BLK",nil,20],
+			["TRYK_V_Sheriff_BA_TB",nil,20],
+			["TRYK_V_Sheriff_BA_T",nil,20],
+			["TRYK_V_Sheriff_BA_OD",nil,20],
 			["crt_vest_Fix",nil,20],
 			["SCommand_Vest_Fix",nil,20],
 			["cg_policevest1_fix","Police Vest 2",20],
@@ -160,8 +168,7 @@ switch (_filter) do
 			["usms_vests_usms4_Fix",nil,15],
 			["A3L_fbivest1","FBI Vest",15],
 			["TRYK_V_tacv1_FBI_BK","FBI Low Threat",15],
-			["TRYK_V_tacv1LC_FBI_BK","FBI High Threat",15],
-			["TRYK_V_Bulletproof_BLK","Ride Along Vest",15]
+			["TRYK_V_tacv1LC_FBI_BK","FBI High Threat",15]
 		];
 	};
 	
