@@ -73,7 +73,8 @@ switch (_filter) do
 			["TRYK_U_B_BLKTAN_CombatUniform",nil,25],
 			["TRYK_U_B_ACUTshirt",nil,25],
 			["TRYK_U_B_ACU",nil,25],
-			["TRYK_B_TRYK_UCP_T",nil,25]
+			["TRYK_B_TRYK_UCP_T",nil,25],
+			["TRYK_U_B_OD_OD_R_CombatUniform",nil,25]
 		];
 	};
 
@@ -84,6 +85,7 @@ switch (_filter) do
 		_ret =
 		[
 			["firehat",nil,5],
+			["TRYK_R_CAP_BLK",nil,5],
 			["corrections_cap",nil,5],
 			["H_007_policecap","Police Hat",5],
 			["max_police_Hat","Police Hat",5],
@@ -197,12 +199,14 @@ switch (_filter) do
 			["DOC_Vest_Tac_Fix",nil,20],
 			["DOC_Vest_Threat_Fix",nil,20],
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
+			["TRYK_V_ArmorVest_HRT_OD",nil,20],
 			["crt_vest_Fix",nil,20],
 			["SCommand_Vest_Fix",nil,20],
 			["cg_policevest1_fix","Police Vest 2",20],
 			["cg_policevest2_fix","Police Vest",20],	
 			["HighThreatVestPolice1_Fix",nil,15],	
-			["HighThreatVestPolice2_Fix",nil,15],	
+			["HighThreatVestPolice2_Fix",nil,15],
+			["TRYK_V_Sheriff_BA_TBL",nil,15],
 			["TCG_troopervest1_Fix","Trooper Black Vest",20],	
 			["TCG_troopervest2_Fix","Trooper Blue Vest",20],	
 			["HighThreatVestTrooper1_Fix",nil,15],	
@@ -235,6 +239,7 @@ switch (_filter) do
 			["TRYK_V_tacv1_FBI_BK","FBI Low Threat",15],
 			["TRYK_V_tacv1LC_FBI_BK","FBI High Threat",15],
 			["TRYK_V_Bulletproof_BLK","Ride Along Vest",15],
+			["TRYK_V_tacv1LC_FBI2_BK",nil,15],
 			["TRYK_V_PlateCarrier_ACU",nil,200],
 			["TRYK_V_ArmorVest_tan2",nil,200],
 			["TRYK_V_PlateCarrier_ACU_L",nil,200],
