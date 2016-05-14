@@ -48,3 +48,11 @@ else
 {
 	life_wanted_list pushBack [_name,_uid,[(_type select 0)],(_type select 1)];
 };
+
+diag_log format["WANTED_LIST = %1", life_wanted_list];
+
+_gesuchter = [life_wanted_list] call DB_fnc_mresArray;
+_query = format["UPDATE wanted set list = '%1'", _gesuchter];
+
+waitUntil {sleep (random 0.3); !DB_Async_Active};
+_queryResult = [_query,1] call DB_fnc_asyncCall;

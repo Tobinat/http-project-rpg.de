@@ -128,6 +128,7 @@ life_lastChopperFlagged = ["",0];
 } foreach allUnits;
 
 [] call TON_fnc_initHouses;
+[] spawn life_fnc_initWanted;
 
 life_server_isReady = true;
 publicVariable "life_server_isReady";

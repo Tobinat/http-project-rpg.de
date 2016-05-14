@@ -51,6 +51,7 @@ class CfgFunctions
 			class wantedAdd {};
 			class wantedPunish {};
 			class getWantedList {};
+			class initWanted {};
 		};
 
 		class Jail_Sys
