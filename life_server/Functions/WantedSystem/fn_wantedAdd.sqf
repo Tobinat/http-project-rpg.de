@@ -6,13 +6,12 @@
 	Adds or appends a unit to the wanted list.
 */
 private["_index","_data","_crimes","_val"];
-params[
-	["_uid","",[""]],
-	["_name","",[""]],
-	["_type","",[""]],
-	["_customBounty","",[""]],
-	["_text","Vergehen",[""]]
-];
+
+_uid 			= param [0,"",[""]];
+_name 			= param [1,"",[""]];
+_type 			= param [2,"",[""]];
+_customBounty 	= param [3,"",[""]];
+_text 			= param [4,"Vergehen",[""]];
 
 if(_uid == "" OR _type == "" OR _name == "") exitWith {}; //Bad data passed.
 
