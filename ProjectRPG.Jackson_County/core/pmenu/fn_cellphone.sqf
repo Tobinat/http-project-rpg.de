@@ -17,22 +17,15 @@ if(player getVariable["restrained",false] || player getVariable["tied",false]) e
 
 	ctrlSetText [3003, ""];
 	lbClear _units;
-	_units lbAdd format [" "]
+	_units lbAdd format [" "];
 	_units lbAdd format["EMS Units"];
 	_units lbAdd format["The Police"];
 	_units lbAdd format["The Admins"];
-	if((__GETC__(life_adminlevel) > 1)) then
+	if((__GETC__(life_adminlevel,life_coplevel,life_mediclevel) > 1)) then
 	{
 		_units lbAdd format["EVERYONE"];
 	};
-	if((__GETC__(life_coplevel) > 1)) then
 	{
-		_units lbAdd format["EVERYONE"];
-	};
-	if((__GETC__(life_mediclevel) > 1)) then
-	{
-		_units lbAdd format["EVERYONE"];
-	};
 		if(!(_x getVariable["dead",FALSE]) && _x != player) then
 		{
 			switch (side _x) do
