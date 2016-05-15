@@ -276,8 +276,6 @@ class Life_Client_Core
 		class settingsInit {};
 		class revokeLicense {};
 		class wantedAddP {};
-		class wantedInfo {};
-		class wantedMenu {};
 		class wantedCheck {};
 		class wantedCheckFeedback {};
 		class wantedCheckPredefinition {};
