@@ -2,7 +2,7 @@
 
 	File: fn_wantedCheckPredefinition.sqf
 	Author: Marcel "Variatox" Koch
-	Server: lakeside-reallife.de
+	Server: project-rpg.de
 	
 	Description:
 	Gibt Werte der geprüften Person zurück.
@@ -18,7 +18,7 @@ if(isNil "_target") exitWith {};
 if(isNull _caller) exitWith {};
 if(!alive _caller) exitWith {};
 
-_bankRaw = c00l3_b4Nck3h13R;
+_bankRaw = cash_in_bank;
 _nameT = name _target;
 _bank = [_bankRaw] call life_fnc_numberText;
 

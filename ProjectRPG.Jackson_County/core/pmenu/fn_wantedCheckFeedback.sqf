@@ -2,7 +2,7 @@
 
 	File: fn_wantedCheckFeedback.sqf
 	Author: Marcel "Variatox" Koch
-	Server: lakeside-reallife.de
+	Server: project-rpg.de
 	
 	Description:
 	Gibt Werte der geprüften Person zurück.

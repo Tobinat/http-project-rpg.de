@@ -2,7 +2,7 @@
 
 	File: fn_wantedCheck.sqf
 	Author: Marcel "Variatox" Koch
-	Server: lakeside-reallife.de
+	Server: project-rpg.de
 	
 	Description:
 	Standard file um Werte zu prüfen (wanted list sel person).
