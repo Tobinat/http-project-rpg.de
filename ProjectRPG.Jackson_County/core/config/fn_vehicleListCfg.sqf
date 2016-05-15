@@ -945,9 +945,6 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["ivory_wrx_cop_marked",20000],
-			["ivory_wrx_cop_unmarked",20000],
-			["ivory_wrx_cop_slicktop",20000],
 			["A3L_CVPIFPBDOC",20000],
 			["A3L_TaurusCO2",25000],
 			["cg_cvpifpblbpd",20000],	
@@ -966,7 +963,6 @@ switch (_shop) do
 			["A3L_CVPIUCBlack",20000],
 			["A3L_CVPIUCBlue",20000],
 			["cg_ducati_pol_reg",25000],			
-			["DAR_ExplorerPoliceStealth",30000],
 			["DAR_ExplorerPoliceStealth",30000],
 			["A3L_jailBus",50000]
 			
@@ -991,14 +987,7 @@ switch (_shop) do
 			["charger_sert",90000],
 			["cg_h2_sert",11000],	
 			["AM_Holden_SO",40000],		
-			["cg_ducati_pol_reg",25000],
-			["ivory_wrx_marked",20000],
-			["ivory_wrx_unmarked",20000],
-			["ivory_wrx_slicktop",20000],
-			["ivory_isf_unmarked",20000],
-			["ivory_isf_slicktop",20000],
-			["ivory_m3_unmarked",20000],
-			["ivory_m3_slicktop",20000]
+			["cg_ducati_pol_reg",25000]
 		];
 	};
 
@@ -1067,7 +1056,6 @@ switch (_shop) do
 	{
 		_return =
 		[			
-			["ivory_wrx_marked",20000],
 			["ivory_wrx_unmarked",20000],
 			["ivory_wrx_slicktop",20000],
 			["ivory_isf_unmarked",20000],
