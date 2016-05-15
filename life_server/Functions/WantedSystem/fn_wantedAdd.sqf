@@ -139,10 +139,18 @@ if(count _queryResult != 0) then
 	_pastCrimes = [(_queryResult select 1)] call DB_fnc_mresToArray;
 	_pastCrimes pushBack (_type select 0);
 	_pastCrimes = [_pastCrimes] call DB_fnc_mresArray;
-	_query = format["UPDATE wanted SET wantedCrimes = '%1', wantedBounty = wantedBounty + '%2', active = '1' WHERE wantedID='%3'",_pastCrimes,_val,_uid];
+	_query = format["UPDATE wanted SET wantedCrimes = '%1', wantedBounty = wantedBounty + '%2', active = '1' WHERE wantedID LIKE '%3'",_pastCrimes,_val,_uid];
 } else {
 	_crimes = [[(_type select 0)]] call DB_fnc_mresArray;
+	
+	diag_log format["ID: %1", _uid];
+	diag_log format["NAME: %1", _name];
+	diag_log format["CRIMES: %1", _crimes];
+	diag_log format["BOUNTY: %1", _val];
+	
 	_query = format["INSERT INTO wanted (wantedID, wantedName, wantedCrimes, wantedBounty, active) VALUES ('%1','%2','%3','%4', '1')",_uid,_name,_crimes,_val];
+	
+	diag_log format["QUERY: %1", _query];
 };
 
 if(!isNil "_query") then {

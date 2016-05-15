@@ -30,4 +30,4 @@ _bounty = _data select 1;
 	};
 } foreach _crimes;
 
-ctrlSetText[2403,format["Bußgeld: %1$",[_bounty] call life_fnc_numberText]]; 
+ctrlSetText[2403,format["Bußgeld: %1$",_bounty]];
