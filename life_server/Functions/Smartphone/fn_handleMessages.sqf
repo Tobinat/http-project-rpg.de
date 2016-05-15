@@ -5,7 +5,11 @@
 
 */	
 	
-params [["_target", objNull, [objNull]], ["_msg", "", [""]], ["_player", objNull, [objNull]], ["_type", -1], "_to"];
+private["_msg","_to","_target","_player","_type"];
+_target = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+_msg = [_this,1,"",[""]] call BIS_fnc_param;
+_player = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
+_type = [_this,3,-1] call BIS_fnc_param;
 
 switch(_type) do
 {
@@ -23,7 +27,7 @@ switch(_type) do
 		_fromName = name _player;
 		_toName = name _target;
 		_query = format["INSERT INTO messages (fromID, toID, message, fromName, toName) VALUES('%1', '%2', '""%3""', '%4', '%5')",_pid,_toID,_msg,_fromName,_toName];
-		
+		diag_log format["Query: %1",_query];
 		[_query,1] call DB_fnc_asyncCall;
 	};
 	//message to cops
