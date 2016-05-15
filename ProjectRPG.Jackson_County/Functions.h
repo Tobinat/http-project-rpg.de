@@ -275,6 +275,13 @@ class Life_Client_Core
 		class settingsMenu {};
 		class settingsInit {};
 		class revokeLicense {};
+		class wantedAddP {};
+		class wantedList {};
+		class wantedInfo {};
+		class wantedMenu {};
+		class wantedCheck {};
+		class wantedCheckFeedback {};
+		class wantedCheckPredefinition {};
 	};
 	
 	class Functions
@@ -450,6 +457,7 @@ class Life_Client_Core
 		class copOpener {};
 		class EinsatzLicht {};
 		class ULights {};
+		class wantedGrab {};
 	};
 	
 	class Gangs

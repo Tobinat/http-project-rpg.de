@@ -1,21 +1,20 @@
 /*
 	File: fn_wantedPerson.sqf
-	"
+	Author: Bryan "Tonic" Boardwine"
+	Database Persistence By: ColinM
+	Assistance by: Paronity
+	Stress Tests by: Midgetgrimm
 	
 	Description:
 	Fetches a specific person from the wanted array.
 */
-private["_unit","_index"];
-_unit = param [0,ObjNull,[ObjNull]];
+private["_unit","_index","_queryResult","_result"];
+_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit) exitWith {[]};
+_uid = getPlayerUID player;
 
-_index = [getPlayerUID _unit,life_wanted_list] call fnc_index;
+_result = format["SELECT wantedID, wantedName, wantedBounty FROM wanted WHERE wantedID='%1' AND active='1'",_uid];
 
-if(_index != -1) then
-{
-	life_wanted_list select _index;
-}
-else
-{
-	[];
-};
+_queryResult = [_result,2] call DB_fnc_asyncCall;
+if(count _queryResult == 0) exitWith {[]};
+_queryResult;
