@@ -47,6 +47,8 @@ class CfgFunctions
 			class wantedTicket {};
 			class wantedPardon {};
 			class wantedRemove {};
+			class wantedCrimes {};
+			class wantedProfUpdate {};
 			class wantedAdd {};
 			class wantedPunish {};
 			class getWantedList {};
