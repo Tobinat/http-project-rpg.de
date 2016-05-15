@@ -83,3 +83,6 @@ if((_disease) > 1) then { _Btn4 ctrlEnable true;} else {_Btn4 ctrlEnable false;}
 _Btn5 ctrlSetText format["Heavy Sedative", life_hunger];
 _Btn5 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_painkillerPlayer; closeDialog 0;";
 if((_disease) > 1) then { _Btn5 ctrlEnable true;} else {_Btn5 ctrlEnable false;};
+
+_Btn11 ctrlSetText localize "STR_pInAct_TicketBtn";
+_Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";

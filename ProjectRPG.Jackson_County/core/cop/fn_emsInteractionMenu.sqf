@@ -11,6 +11,7 @@
 #define Btn8 37558
 #define Btn9 37559
 #define Btn10 37560
+#define Btn11 37561
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_diseaseon","_koildebiiii","_koildebiii","_koildebii","_koildebi","_koildeb"];
 if(!dialog) then {
@@ -33,6 +34,8 @@ _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 _Btn9 = _display displayCtrl Btn9;
 _Btn10 = _display displayCtrl Btn10;
+_Btn11 = _display displayCtrl Btn11;
+
 life_pInact_curTarget = _curTarget;
 
 _Btn1 ctrlSetText localize "STR_pInAct_Escort";
@@ -47,8 +50,8 @@ _Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 _Btn4 ctrlSetText localize "STR_pInAct_ApplyAirKit";
 _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_ApplyAir; [life_pInact_curTarget] call life_fnc_emsInteractionMenu;";
 
-_Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
-_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
+_Btn11 ctrlSetText localize "STR_pInAct_TicketBtn";
+_Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 if(life_inv_airkit > 0) then { _Btn5 ctrlEnable true; } else { _Btn5 ctrlEnable false; };
 
 _diseaseon = "Keine Krankheit";
