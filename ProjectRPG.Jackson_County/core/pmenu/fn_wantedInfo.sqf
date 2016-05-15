@@ -29,5 +29,5 @@ _bounty = _data select 1;
 		_list lbAdd format["%1x %2",{_x == _crime} count _crimes,_crime];
 	};
 } foreach _crimes;
-
+diag_log format ["Crimes: %1 | Bounty: %2",_crimes,_bounty];
 ctrlSetText[2403,format["Bußgeld: %1$",[_bounty] call life_fnc_numberText]]; 
