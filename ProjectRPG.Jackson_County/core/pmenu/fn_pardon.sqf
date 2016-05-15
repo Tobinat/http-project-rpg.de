@@ -1,6 +1,6 @@
 /*
 	File: fn_pardon.sqf
-	
+	Author: Bryan "Tonic" Boardwine
 	
 	Description:
 	Pardons the selected player.
@@ -14,7 +14,7 @@ _data = lbData[2401,(lbCurSel 2401)];
 _data = call compile format["%1", _data];
 if(isNil "_data") exitWith {};
 if(typeName _data != "ARRAY") exitWith {};
-if(count _data isEqualTo 0) exitWith {};
+if(count _data == 0) exitWith {};
 
-_uid = _data select 1;
-[_uid] remoteExec ["life_fnc_wantedPardon",2];
+_uid = _data select 0;
+[_uid] remoteExec ["life_fnc_wantedRemove",2];
