@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8435.8994,319.05356,5907.5933};
-		dir[]={-0.67972922,-0.728145,-0.089509472};
-		up[]={-0.72195774,0.68530041,-0.095067732};
-		aside[]={-0.13057519,1.5368569e-006,0.99155295};
+		pos[]={7738.8042,108.12968,6886.3838};
+		dir[]={-0.42093697,-0.90287048,0.088752903};
+		up[]={-0.88340122,0.42988962,0.18626504};
+		aside[]={0.20633084,5.7797297e-007,0.97860062};
 	};
 };
 binarizationWanted=0;
@@ -764,7 +764,6 @@ class Mission
 			type="Empty";
 			angle=32.261948;
 			id=45;
-			atlOffset=0.12722015;
 		};
 		class Item37
 		{
@@ -914,7 +913,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=66;
-			atlOffset=0.050003052;
 		};
 		class Item51
 		{
@@ -1091,7 +1089,7 @@ class Mission
 			type="Empty";
 			angle=49.999992;
 			id=85;
-			atlOffset=0.026725769;
+			atlOffset=0.0001449585;
 		};
 		class Item66
 		{
@@ -1205,7 +1203,7 @@ class Mission
 			b=0.69999999;
 			angle=0.26100001;
 			id=101;
-			atlOffset=0.15844727;
+			atlOffset=0.010025024;
 		};
 		class Item76
 		{
@@ -1399,7 +1397,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=121;
-			atlOffset=0.099998474;
 		};
 		class Item93
 		{
@@ -2242,7 +2239,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=215;
-			atlOffset=85.173004;
+			atlOffset=84.878708;
 		};
 		class Item168
 		{
@@ -2256,7 +2253,7 @@ class Mission
 			a=100;
 			b=100;
 			id=216;
-			atlOffset=85.438774;
+			atlOffset=85.143478;
 		};
 		class Item169
 		{
@@ -4160,7 +4157,6 @@ class Mission
 			};
 			id=443;
 			type="Land_Atm_02_F";
-			atlOffset=0.099998474;
 		};
 		class Item341
 		{
@@ -5611,7 +5607,6 @@ class Mission
 			};
 			id=617;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=0.050003052;
 		};
 		class Item414
 		{
@@ -5629,7 +5624,7 @@ class Mission
 			};
 			id=625;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.32051086;
+			atlOffset=0.28250885;
 		};
 		class Item415
 		{
@@ -5647,7 +5642,7 @@ class Mission
 			};
 			id=633;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.3339386;
+			atlOffset=0.29595947;
 		};
 		class Item416
 		{
@@ -6891,6 +6886,7 @@ class Mission
 			};
 			id=729;
 			type="cg_bench1";
+			atlOffset=2.2888184e-005;
 		};
 		class Item483
 		{
@@ -8172,7 +8168,7 @@ class Mission
 			};
 			id=1068;
 			type="CG_SpeedCam";
-			atlOffset=43.418701;
+			atlOffset=0.87359619;
 		};
 		class Item552
 		{
@@ -10148,6 +10144,7 @@ class Mission
 			};
 			id=1190;
 			type="Land_InfoStand_V1_F";
+			atlOffset=0.14739799;
 		};
 		class Item660
 		{
@@ -10166,7 +10163,7 @@ class Mission
 			};
 			id=1191;
 			type="Land_InfoStand_V1_F";
-			atlOffset=44.900005;
+			atlOffset=44.900002;
 		};
 		class Item661
 		{
@@ -13187,7 +13184,7 @@ class Mission
 					};
 					id=1645;
 					type="C_man_polo_2_F";
-					atlOffset=45.043007;
+					atlOffset=45.042999;
 				};
 				class Item11
 				{
@@ -15354,7 +15351,7 @@ class Mission
 			};
 			id=2024;
 			type="CG_SpeedCam";
-			atlOffset=39.239594;
+			atlOffset=0.91952515;
 		};
 		class Item829
 		{
@@ -54868,13 +54865,13 @@ class Mission
 				angles[]={0,5.4378033,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false; this allowDamage false; this addAction[""Flug nach Lakeside"",life_fnc_skyDive,true]; this addAction[""Catch a Taxi"",life_fnc_taxi];";
 			};
 			id=8717;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.84564209;
 		};
 		class Item2985
 		{
@@ -54943,7 +54940,6 @@ class Mission
 			};
 			id=8722;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.026565552;
 		};
 		class Item2989
 		{
@@ -55012,7 +55008,7 @@ class Mission
 			};
 			id=8779;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.79799652;
+			atlOffset=0.74799347;
 		};
 		class Item2993
 		{
@@ -58449,13 +58445,14 @@ class Mission
 				angles[]={0,1.8299079,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false; this addAction[""Geldwäscher"",{ if (side player == civilian) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 			};
 			id=12332;
 			type="Land_InfoStand_V2_F";
-			atlOffset=2.2226868;
+			atlOffset=1.5258789e-005;
 		};
 		class Item3199
 		{
@@ -58667,6 +58664,7 @@ class Mission
 			};
 			id=12347;
 			type="Land_InfoStand_V2_F";
+			atlOffset=4.9591064e-005;
 		};
 		class Item3211
 		{
@@ -64077,7 +64075,7 @@ class Mission
 			position[]={6731.1538,54.980225,4713.5107};
 			name="udc_air_2";
 			type="Empty";
-			angle=104.15985;
+			angle=104.15984;
 			id=15062;
 			atlOffset=0.76721573;
 		};
@@ -64249,7 +64247,7 @@ class Mission
 			};
 			id=15105;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.30253601;
+			atlOffset=0.26447296;
 		};
 		class Item3505
 		{
@@ -64267,7 +64265,7 @@ class Mission
 			};
 			id=15106;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.31223297;
+			atlOffset=0.27420044;
 		};
 		class Item3506
 		{
@@ -64539,7 +64537,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Fahrzeug Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_1"";  }];  " \n "this addAction[""Parke Fahrzeug in der Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {[""There isn't a vehicle near this NPC."", false] spawn domsg;};   [_nearVehicle,false,(_this select 1)] remoteExec [""TON_fnc_vehicleStore"",(call life_fnc_HCC)];   [""The server is trying to store the vehicle please wait...."", false] spawn domsg;   life_garage_store = true;  },"""",0,false,false,"""",''];";
+				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Fahrzeug Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""PZ_1"";  }];  " \n "this addAction[""Parke Fahrzeug in der Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {[""There isn't a vehicle near this NPC."", false] spawn domsg;};   [_nearVehicle,false,(_this select 1)] remoteExec [""TON_fnc_vehicleStore"",(call life_fnc_HCC)];   [""The server is trying to store the vehicle please wait...."", false] spawn domsg;   life_garage_store = true;  },"""",0,false,false,"""",''];";
 			};
 			id=15117;
 			type="Land_Noticeboard_F";
@@ -64562,13 +64560,14 @@ class Mission
 				angles[]={0,1.9923631,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init=" this allowDamage false; this enableSimulation false; " \n " this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && license_civ_udc && !life_action_inUse '];";
 			};
 			id=15128;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.2019997;
+			atlOffset=0.00032424927;
 		};
 		class Item3516
 		{
@@ -67729,7 +67728,6 @@ class Mission
 			};
 			id=15518;
 			type="Flag_US_F";
-			atlOffset=3.8146973e-006;
 		};
 		class Item3686
 		{
