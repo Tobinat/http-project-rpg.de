@@ -27,8 +27,8 @@ while{_fkit > 0 && life_bankteller } do {
 	if(isNull objectParent player && (player distance (getMarkerPos "bank_signup")) < 30000) then {
 		if(uniform player find "KAEL_SUITS" != -1) then
 		{
-			["bank","add", 600] call life_fnc_handleCash;
-			["Du wurdest extra bezahlt: $600", false] spawn domsg; 
+			["bank","add", 300] call life_fnc_handleCash;
+			["Du wurdest extra bezahlt: $300", false] spawn domsg; 
 		};
 	};
 	if((player distance (getMarkerPos "fed_reserve") > 30) && (player distance (getMarkerPos "fed_reserve_morrison") > 30)) exitwith {
