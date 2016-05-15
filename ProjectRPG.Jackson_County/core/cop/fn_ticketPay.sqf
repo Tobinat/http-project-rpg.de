@@ -6,7 +6,7 @@
 	Pays the ticket.
 */
 if(isnil {life_ticket_val} OR isNil {life_ticket_cop}) exitWith {};
-if(playerSide == west) then {
+if(side life_ticket_cop == west OR life_ticket_cop getVariable "udcLevel") then {	//Cop or FBI
 	if(cash_in_hand < life_ticket_val) exitWith
 	{
 		if(cash_in_bank < life_ticket_val) exitWith 
@@ -31,9 +31,7 @@ if(playerSide == west) then {
 	closeDialog 0;
 	[1,format[localize "STR_Cop_Ticket_PaidNOTF_2",profileName]] remoteExecCall ["life_fnc_broadcast", -2];
 	[life_ticket_val,player,life_ticket_cop] remoteExecCall ["life_fnc_ticketPaid",life_ticket_cop];
-} else {
-	if(playerSide != independent) exitWith {};
-	
+} else {	//Medic
 	if(cash_in_hand < life_ticket_val) exitWith
 	{
 		if(cash_in_bank < life_ticket_val) exitWith 

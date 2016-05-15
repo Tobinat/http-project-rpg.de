@@ -19,9 +19,9 @@ life_ticket_paid = false;
 life_ticket_val = _val;
 life_ticket_cop = _cop;
 
-if(side _cop == WEST) then {
+if(side _cop == WEST OR _cop getVariable "udcLevel") then {	//COP or FBI
 	_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>" +(localize "STR_Cop_Ticket_GUI_Given"),_cop getVariable["realname",name _cop],_val];
-} else {
+} else {	//EMS
 	_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>" +(localize "STR_EMS_Ticket_GUI_Given"),_cop getVariable["realname",name _cop],_val];
 };
 [] spawn

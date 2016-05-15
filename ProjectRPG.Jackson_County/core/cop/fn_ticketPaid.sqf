@@ -12,7 +12,7 @@ if(isNull _cop OR {_cop != player}) exitWith {}; //Double NO
 
 private _hurensohn = _value;
 
-if(playerSide == west) then {
+if(playerSide == west OR player getVariable "udcLevel") then {
 	_hurensohn = round(_hurensohn * .25);
 };
 
