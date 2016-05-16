@@ -138,14 +138,14 @@ _unit spawn
 	life_deathCamera cameraEffect ["TERMINATE","BACK"];
 	camDestroy life_deathCamera;
 };
-
+/*
 if(!isNull _killer && {_killer != _unit}) then {
 	if(side _killer != west) then {
 		_reason = "187";
 		[_killer,_unit,_reason] spawn life_fnc_createEvidence;
 	};
 };
-
+*/
 ["Add","Food",100] spawn fnc_sustain;
 ["Add","Drink",100] spawn fnc_sustain;
 player setdamage 0; 

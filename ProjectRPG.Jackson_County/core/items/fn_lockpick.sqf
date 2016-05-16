@@ -95,7 +95,7 @@ if(!_isVehicle) then {
 		if(count _towtrucks == 0) then { 
 		_reason = "487";
 		if(side player == civilian || side player == east) then {
-			[player,player,_reason] spawn life_fnc_createEvidence;
+			//[player,player,_reason] spawn life_fnc_createEvidence;
 		};
 		};
 	} else {
