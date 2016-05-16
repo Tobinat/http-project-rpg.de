@@ -21,4 +21,4 @@ _reason = "212";
 
 ["Remove",10] call fnc_karma;
 _target setVariable["robbed",TRUE,TRUE];
-//[player,player,_reason] spawn life_fnc_createEvidence;
+[player,player,_reason] spawn life_fnc_createEvidence;
