@@ -7,7 +7,6 @@
 	Opens the players virtual inventory menu
 */
 closedialog 0;
-[] call life_fnc_p_updateMenu;
 if(deadPlayer) exitWith {}; //Prevent them from opening this for exploits while dead.
 
 disableSerialization;
@@ -42,3 +41,5 @@ if(__GETC__(life_adminlevel) < 1) then
 	ctrlShow[2020,false];
 	ctrlShow[2021,false];
 };
+
+[] call life_fnc_p_updateMenu;
