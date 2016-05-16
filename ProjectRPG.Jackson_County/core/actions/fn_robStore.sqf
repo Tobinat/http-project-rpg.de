@@ -67,8 +67,8 @@ if (!(_robber getVariable["dead",FALSE]) && {currentWeapon _robber != "" && curr
 	life_canrob = true;
 	["cash","add",_funds] call life_fnc_handleCash; 
 	hint format["Du hast $%1 gestohlen!",_funds];
-	_reason = "211";
-	[_robber,_robber,_reason] spawn life_fnc_createEvidence;
+//	_reason = "211";
+//	[_robber,_robber,_reason] spawn life_fnc_createEvidence;
 	[1,format["LAKESIDE NEWS: Ein Shop wurde über $%2 ausgeraubt", _shop, [_funds] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast", civilian];
 	_funds = 0;
 	["Remove",10] call fnc_karma;
