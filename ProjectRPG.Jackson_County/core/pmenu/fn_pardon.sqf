@@ -6,6 +6,7 @@
 	Pardons the selected player.
 */
 private["_display","_list","_uid"];
+if(call(life_coplevel) < 6) exitWith {["Du bist dazu nicht berechtigt dies zu tun.",false] spawn domsg};
 disableSerialization;
 
 _display = findDisplay 2400;
