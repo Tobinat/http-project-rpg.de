@@ -1,5 +1,5 @@
 private["_amount"];
-if(playerSide != west) exitWith {hint "Du bist kein Polizist."};
+if(playerSide != west && !(player getVariable "udcLevel")) exitWith {hint "Du bist kein Polizist."};
 if((lbCurSel 2406) == -1) exitWith {hint "Du musst eine Person auswählen."};
 if((lbCurSel 2407) == -1) exitWith {hint "Du musst eine Straftat auswählen."};
 _unit = lbData [2406,lbCurSel 2406];

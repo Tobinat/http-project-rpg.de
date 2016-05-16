@@ -10,7 +10,7 @@
 
 private["_unit"];
 
-if(playerSide != west) exitWith {};
+if(playerSide != west OR !(player getVariable "udcLevel")) exitWith {};
 if(!PRPG_leitstelle) exitWith {["Nur die Leitstelle kann eine Bonitätsprüfung durchführen!",false] spawn domsg;};
 
 _unit = lbData [2406,lbCurSel 2406];

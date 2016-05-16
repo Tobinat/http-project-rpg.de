@@ -151,7 +151,7 @@ switch (_code) do
 			_handled = true;
 		};
 		if(!_shift && !_ctrlkey && playerSide == west) then {
-			createDialog "Life_Charge_Menu";
+			[] call life_fnc_wantedMenu;
 		};
 		if(_shift) then
 		{
