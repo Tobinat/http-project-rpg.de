@@ -47,7 +47,7 @@ _near_units = [];
 
 _mstatus ctrlSetStructuredText parseText format["<t size='1.2px'>$%1</t>",[cash_in_bank] call life_fnc_numberText];
 _mstatus2 ctrlSetStructuredText parseText format["<t size='1.2'>$%1</t>",[cash_in_hand] call life_fnc_numberText];
-ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
+ctrlSetText[2009,format["Gewicht: %1 / %2", life_carryWeight, life_maxWeight]];
 {
 	_str = [_x] call life_fnc_varToStr;
 	_shrt = [_x,1] call life_fnc_varHandle;
@@ -72,7 +72,7 @@ ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
 
 if(_struct == "") then
 {
-	_struct = "No Licenses";
+	_struct = " - Keine Lizenzen - ";
 };
 
 _lic ctrlSetStructuredText parseText format["
