@@ -52,7 +52,6 @@ class CfgFunctions
 			class wantedAdd {};
 			class wantedPunish {};
 			class getWantedList {};
-			class initWanted {};
 		};
 
 		class Jail_Sys
@@ -138,6 +137,8 @@ class CfgFunctions
 		class Systems
 		{
 			file = "\life_server\Functions\PRPG";
+			class msgRequest {};
+			class handleMessages {};
 			class toMaster {};
 		};
 	};
