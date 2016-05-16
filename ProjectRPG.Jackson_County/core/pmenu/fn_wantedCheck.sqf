@@ -10,8 +10,8 @@
 
 private["_unit"];
 
-if(playerSide != west) exitWith {hint "Du bist kein Polizist."};
-if(!lrl_copLeitstelle) exitWith {hint "Nur die Leitstelle kann dies tun.";};
+if(playerSide != west) exitWith {};
+if(!PRPG_leitstelle) exitWith {["Nur die Leitstelle kann eine Bonitätsprüfung durchführen!",false] spawn domsg;};
 
 _unit = lbData [2406,lbCurSel 2406];
 _unit = call compile format["%1",_unit];

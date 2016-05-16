@@ -28,6 +28,15 @@ command = false;
 if(__GETC__(life_coplevel) > 5) then {
 	command = true;
 };
+
+if((str(player) in ["cop_4"])) then {
+	if((__GETC__(life_coplevel) < 2)) then {
+		["NotWhitelisted",false,true] call BIS_fnc_endMission;
+		uiSleep 30;
+	};
+	PRPG_leitstelle = true;
+};
+
 player setVariable["rank",(__GETC__(life_coplevel)),true];
 
 if(life_is_arrested) then

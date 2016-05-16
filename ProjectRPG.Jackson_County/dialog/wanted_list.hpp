@@ -143,7 +143,7 @@ class life_wanted_menu {
 		
 		class ButtonCheckPlayer : life_RscButtonMenu {
 			idc = 9802;
-			text = "Check";
+			text = "Bonität";
 			onButtonClick = "[] call life_fnc_wantedCheck; closeDialog 0;";
 			x = 0.3 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.9 - (1 / 25);

@@ -8,7 +8,7 @@
 */
 private["_display","_list","_name","_crimes","_bounty","_units"];
 
-if( !lrl_copLeitstelle && vehicle player == player) exitWith {hint "Du kannst auf den Fahndungscomputer nur vom Fahrzeug aus zugreifen!"};
+if(!PRPG_leitstelle && vehicle player == player) exitWith {["Du kannst nur von einem Fahrzeug aus auf den Fahndungscomputer zugreifen!",false] spawn domsg;};
 
 disableSerialization;
 
@@ -131,10 +131,7 @@ _crimes =
 
 ctrlSetText[2404,"Verbinde mit Rechenzentrum..."];
 
-/*if(__GETC__(life_coplevel) < 3 && __GETC__(life_adminlevel) == 0) then
-{
-	ctrlShow[2405,false];
-	ctrlShow[9800,false];
-};*/
+if(__GETC__(life_coplevel) < 6) then {ctrlEnable[2405,false];};
+if(!PRPG_leitstelle) then {ctrlEnable[9802,false];};
 
 [player] remoteExec ["life_fnc_wantedFetch",2];
