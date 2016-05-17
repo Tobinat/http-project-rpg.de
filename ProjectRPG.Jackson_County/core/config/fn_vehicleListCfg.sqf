@@ -69,11 +69,7 @@ switch (_shop) do
 	case "med_shop":
 	{
 		
-			_return pushBack ["DRPG_09Tahoe_EMS",25000];
-			_return pushBack ["DRPG_06Suburban_EMS",25000];
-			_return pushBack ["DRPG_12Charger_EMS",25000];
-			_return pushBack ["DRPG_06VICTORIA_EMS",25000];
-			_return pushBack ["DRPG_12M5_EMS",25000];
+			
 			_return pushBack ["A3L_TowTruck_ADAC",25000];
 			_return pushBack ["cg_ambulanceexpansion",20000];
 			_return pushBack ["RR_Firetruck",25000];
@@ -949,12 +945,7 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["DRPG_12M5_P_LVPD",20000],
-			["DRPG_15Charger_P_LVPD",20000],
-			["DRPG_15Charger_P_P",20000],
-			["DRPG_06Victoria_P_Sheriff",20000],
-			["DRPG_06Victoria_P_R",20000],
-			["DRPG_06Victoria_P_P",20000],
+			
 			["A3L_CVPIFPBDOC",20000],
 			["A3L_TaurusCO2",25000],
 			["cg_cvpifpblbpd",20000],	
