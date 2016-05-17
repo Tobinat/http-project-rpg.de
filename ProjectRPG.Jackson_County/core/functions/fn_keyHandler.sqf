@@ -150,9 +150,11 @@ switch (_code) do
 		if((vehicle player) == player && !dialog) then {
 			_handled = true;
 		};
-		if(!_shift && !_ctrlkey && playerSide == west) then {
-			[] call life_fnc_wantedMenu;
+		
+		if(!_shift && !_ctrlkey) then {
+			if(playerSide == west OR player getVariable "udcLevel") then {call life_fnc_wantedMenu;};
 		};
+		
 		if(_shift) then
 		{
 			if (vehicle player != player && side player == west) then {
@@ -634,9 +636,12 @@ switch (_code) do
 			};
 	    };
 	};
-
-
-
+	
+	case 210: {
+		_handled = true;
+		[player,2] remoteExecCall ["PRPG_fnc_toMaster",2];
+		[] spawn life_fnc_AntiSpam2;
+	};
 
 	//8 - Resync Option
 	case 9:
