@@ -20,6 +20,6 @@ private _cops = [];
 
 _np = player getVariable["realname",name player];
 
-{hint parseText format ["<t size='1.65' color='#00CD00'>LVPD-Fahndungsliste</t><br/><br/><t size='1.1' align='center'>=<br/>Eine Person wurde zur<br/>Fahndung ausgeschrieben<br/>=</t><br/><br/><br/><t size='0.95' align='left' color='#79CdCd'>Verbrecher:</t><t size='1.05' align='right'><br/>%1</t><br/><br/><t size='0.95' align='left' color='#79CDCD'>Ausgeschrieben Von:</t><t size='1.05' align='right'><br/>%2</t>",_unit getVariable["realname",name _unit],_np]} remoteExec ["BIS_fnc_spawn",_cops];
+//{hint parseText format ["<t size='1.65' color='#00CD00'>LVPD-Fahndungsliste</t><br/><br/><t size='1.1' align='center'>=<br/>Eine Person wurde zur<br/>Fahndung ausgeschrieben<br/>=</t><br/><br/><br/><t size='0.95' align='left' color='#79CdCd'>Verbrecher:</t><t size='1.05' align='right'><br/>%1</t><br/><br/><t size='0.95' align='left' color='#79CDCD'>Ausgeschrieben Von:</t><t size='1.05' align='right'><br/>%2</t>",_unit getVariable["realname",name _unit],_np]} remoteExec ["BIS_fnc_spawn",_cops];
 
 [getPlayerUID _unit,_unit getVariable["realname",name _unit],_amount] remoteExec ["life_fnc_wantedAdd",2]; 
