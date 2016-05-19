@@ -22,7 +22,7 @@ if ( side _nearestPlayer == west && side player != west) then {
 		_cm = _cm + 1;
 		if(_cm == 300) then {
 			_cm = 1;
-			["cash","add",1150] call life_fnc_handleCash;
+			["bank","add",1150] call life_fnc_handleCash;
 			["Du wurdest bezahlt: $1150", false] spawn domsg;
 		};
 		if( player distance _myposy > 100 ) exitwith {

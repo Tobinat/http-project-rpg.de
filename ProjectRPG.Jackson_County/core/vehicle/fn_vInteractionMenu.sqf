@@ -119,10 +119,11 @@ if(playerSide == west || (license_civ_udc)) then {
 	_Btn10 ctrlSetText "Destroy Vehicle";
 	_Btn10 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_checkdefect;";
 
-
+/*
 	if(!command) then {
 		_Btn10 ctrlEnable false;	
 	};
+*/
 
 
 	_Btn11 ctrlSetText "Check Licence";

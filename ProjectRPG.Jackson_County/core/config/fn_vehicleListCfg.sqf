@@ -858,13 +858,13 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["Jonzie_Transit",25000],
+			["Jonzie_Transit",250000],
 			
-			["C_Van_01_fuel_F",70000],
+			["C_Van_01_fuel_F",700000],
 			
-			["C_Van_01_box_F",90000],
+			["C_Van_01_box_F",900000],
 			
-			["C_Van_01_transport_F",75000],
+			["C_Van_01_transport_F",750000],
 
 			["cg_hummer_h1_noir",190000],
 			["cg_hummer_h1_violet",190000],
@@ -954,7 +954,7 @@ switch (_shop) do
 			["charger_pd_skinned",90000],
 			["cg_ss2",25000],
 			["DAR_ExplorerSheriff",40000],
-			["charger_sh_skinned",90000],							
+			["charger_sh_skinned",90000],
 			["AM_Holden_SO",40000],		
 			["A3L_CVPIUC",20000],
 			["A3L_CVPIUCBlack",20000],
