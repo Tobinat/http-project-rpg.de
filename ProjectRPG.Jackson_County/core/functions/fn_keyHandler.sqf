@@ -153,6 +153,7 @@ switch (_code) do
 		
 		if(!_shift && !_ctrlkey) then {
 			if(playerSide == west OR player getVariable "udcLevel") then {call life_fnc_wantedMenu;};
+			if(playerSide == independent) then {[cursortarget] call life_fnc_ticketAction};
 		};
 		
 		if(_shift) then
