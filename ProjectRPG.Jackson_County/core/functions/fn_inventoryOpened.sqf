@@ -22,7 +22,7 @@ if(_isPack == 1) exitWith {
 };
 
 if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith { 
-	if(playerSide != west OR !license_civ_udc) then { 
+	if(playerSide == civilian && !license_civ_udc) then {
 		_house = nearestBuilding (getPosATL player);
 		if(!(_house in life_vehicles) && {(_house getVariable ["locked",false])}) then {
 			[localize "STR_House_ContainerDeny", false] spawn domsg;
