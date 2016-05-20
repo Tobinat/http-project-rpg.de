@@ -18,6 +18,7 @@
 			sleep 0.1;
 			[true] call life_fnc_sessionUpdate;
 			[] call life_fnc_hudUpdate;
+			[] call life_fnc_healself;
 			hint "Healed";
 			break;
 			};

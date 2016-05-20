@@ -21,9 +21,13 @@ if(player getVariable["restrained",false] || player getVariable["tied",false]) e
 	_units lbAdd format["EMS Units"];
 	_units lbAdd format["The Police"];
 	_units lbAdd format["The Admins"];
-	if((__GETC__(life_adminlevel) > 1)) then
+	/* if((__GETC__(life_adminlevel) > 1)) then
 	{
 		_units lbAdd format["EVERYONE"];
+	}; */
+	if((__GETC__(life_coplevel) >= 1)) then
+	{
+		_units lbAdd format["The Zivis"];
 	};
 	{
 		if(!(_x getVariable["dead",FALSE]) && _x != player) then
