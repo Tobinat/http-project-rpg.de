@@ -10,7 +10,7 @@ params ["_cop", "_val", "_display", "_control"];
 if(!isNull (findDisplay 51655)) exitwith {}; //Already at the ticket menu, block for abuse?
 if(isNull _cop) exitWith {};
 
-createDialog "life_ticket_pay";
+createDialog "life_rechnung_pay";
 disableSerialization;
 waitUntil {!isnull (findDisplay 51655)};
 _display = findDisplay 51655;
