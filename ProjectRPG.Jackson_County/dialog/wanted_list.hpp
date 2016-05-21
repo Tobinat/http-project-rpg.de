@@ -151,16 +151,6 @@ class life_wanted_menu {
 			h = (1 / 25);
 		};
 		
-		class ButtonMsgToAll : life_RscButtonMenu {
-			idc = 9803;
-			text = "Nachricht an Alle";
-			onButtonClick = "createDialog ""Life_cop_msg_all"";";
-			x = 0.3 + (6.25 / 100) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.9 - (1 / 25); 
-			w = (10 / 40);
-			h = (1 / 25);
-		};
-		
 		class wantedText: Life_RscText
 		{
 			idc = 1000;

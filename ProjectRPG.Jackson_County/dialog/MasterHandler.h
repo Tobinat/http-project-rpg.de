@@ -40,4 +40,3 @@
 #include "selectTestDrive.hpp"
 #include "truckColorSelectorUI.hpp"
 #include "rechnung.hpp"
-#include "copToAll.hpp"

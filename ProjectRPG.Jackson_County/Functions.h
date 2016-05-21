@@ -178,7 +178,6 @@ class Life_Client_Core
 		class copUdcLicense {};
 		class copLicenseShown {};
 		class rechnungAction {};
-		class copMsgToAll {};
 	};	
 
 	class Paintball
