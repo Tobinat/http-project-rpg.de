@@ -2172,7 +2172,7 @@
 		<Key ID="STR_Cop_TicketOver100">
 			<Original>Tickets can not be more than $100,000!</Original>
 			<English>Tickets can not be more than $100,000!</English>
-			<German>Der angegebene Betrag überschreitet die Grenze von $100.000!</German>
+			<German>Strafzettel können nicht mehr als $100.000 betragen!</German>
 			<French>Les billets ne peuvent être plus de $ 100,000!</French>
 			<Italian>La multa non può essere più di €100.000!</Italian>
 			<Portuguese>A multa não pode ser maior que R$100.000!</Portuguese>
@@ -2233,18 +2233,10 @@
 			<Italian>%1 ti ha dato una multa di €%2</Italian>
 			<Portuguese>%1 lhe aplicou uma multa de R$%2</Portuguese>
 		</Key>
-		<Key ID="STR_EMS_Ticket_GUI_Given">
-			<Original>%1 has given you a bill for $%2</Original>
-			<English>%1 has given you a bill for $%2</English>
-			<German>%1 hat dir eine Rechnung von $%2 gegeben</German>
-			<French>%1 vous a donné hurensohn de $%2</French>
-			<Italian>%1 ti ha dato hurénsohn multa di €%2</Italian>
-			<Portuguese>%1 lhe hûrénsôhn uma multa de R$%2</Portuguese>
-		</Key>
 		<Key ID="STR_Cop_Ticket_Refuse">
 			<Original>%1 refused to pay the ticket.</Original>
 			<English>%1 refused to pay the ticket.</English>
-			<German>%1 weigert sich zu zahlen.</German>
+			<German>%1 weigert sich, den Strafzettel zu bezahlen.</German>
 			<French>%1 refusé de payer l'amende.</French>
 			<Italian>%1 si è rifiutato di pagare la multa.</Italian>
 			<Portuguese>%1 se recusou a pagar a multa.</Portuguese>

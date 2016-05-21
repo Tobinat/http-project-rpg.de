@@ -11,13 +11,7 @@ if(isNull life_ticket_unit) exitWith {[localize "STR_Cop_TicketExist", false] sp
 _val = ctrlText 2652;
 if(!([_val] call fnc_isnumber)) exitWith {[localize "STR_Cop_TicketNum", false] spawn domsg;};
 if((parseNumber _val) > 100000) exitWith {[localize "STR_Cop_TicketOver100", false] spawn domsg;};
-
-if(playerSide == west) then {
-	[0,format[localize "STR_Cop_TicketGive",profileName,[(parseNumber _val)] call life_fnc_numberText,life_ticket_unit getVariable["realname",name life_ticket_unit]]] remoteExecCall ["life_fnc_broadcast", -2];
-} else {
-	if(playerSide != independent) exitWith {};
-	[0,format["%1 hat %3 eine Rechnung von $%2 ausgestellt",profileName,[(parseNumber _val)] call life_fnc_numberText,life_ticket_unit getVariable["realname",name life_ticket_unit]]] remoteExecCall ["life_fnc_broadcast", -2];	
-};
+[0,format[localize "STR_Cop_TicketGive",profileName,[(parseNumber _val)] call life_fnc_numberText,life_ticket_unit getVariable["realname",name life_ticket_unit]]] remoteExecCall ["life_fnc_broadcast", -2];
 [player,(parseNumber _val)] remoteExec ["life_fnc_ticketPrompt",life_ticket_unit];
 
 closeDialog 0;
