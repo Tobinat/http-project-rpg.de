@@ -38,7 +38,7 @@ if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
 };
 
 
-if(_spawnPoint isEqualTo "") exitWith {[localize "STR_Shop_Veh_Block", false] spawn domsg;};
+if(_spawnPoint isEqualTo "") exitWith {[localize "STR_Shop_Veh_Block", false] spawn domsg; previewing_on = false;};
 _obj = ObjNull;
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
