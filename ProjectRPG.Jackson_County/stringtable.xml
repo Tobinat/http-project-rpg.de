@@ -1255,28 +1255,16 @@
 	</Package>
 	<Package name="Ticket_Menu">
 		<Key ID="STR_Ticket_GiveTicket">
-			<Original>Give Ticket</Original>
-			<English>Give Ticket</English>
-			<German>Geldstrafe</German>
-			<French>Verbaliser</French>
-			<Italian>Dai Multa</Italian>
-			<Portuguese>Dar Multa</Portuguese>
+			<Original>Strafzettel</Original>
+		</Key>
+		<Key ID="STR_Ticket_GiveRechnung">
+			<Original>Rechnung</Original>
 		</Key>
 		<Key ID="STR_Ticket_PayTicket">
-			<Original>Pay Ticket</Original>
-			<English>Pay Ticket</English>
-			<German>Bezahlen</German>
-			<French>Payer l'amende</French>
-			<Italian>Paga Multa</Italian>
-			<Portuguese>Pagar Multa</Portuguese>
+			<Original>Unterzeichnen</Original>
 		</Key>
 		<Key ID="STR_Ticket_RefuseTicket">
-			<Original>Refuse Ticket</Original>
-			<English>Refuse Ticket</English>
-			<German>Ablehnen</German>
-			<French>Contester l'amende</French>
-			<Italian>Rifiuta Multa</Italian>
-			<Portuguese>Recusar Multa</Portuguese>
+			<Original>Verweigern</Original>
 		</Key>
 	</Package>
 	<Package name="Trunk_Menu">
