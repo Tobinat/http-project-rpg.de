@@ -161,4 +161,5 @@ switch (_var) do
 	case "license_civ_udc": {"Undercover"};
 	case "license_cop_sert": {"S.E.R.T"};
 	case "license_civ_bank": {"Bank Angestellter"};
+	case "license_civ_doj": {"Dept. of Justice"};
 };

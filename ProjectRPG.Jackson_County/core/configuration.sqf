@@ -399,6 +399,7 @@ life_licenses =
 	["license_civ_home","civ"],
 	["license_civ_udc","civ"],
 	["license_civ_rifle","civ"],
+	["license_civ_doj","civ"],
 	
 	//RFA Licenses
 	["license_med_air","med"],
