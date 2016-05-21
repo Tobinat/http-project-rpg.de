@@ -154,7 +154,7 @@ switch (_side) do
 			};	
 		};
 
-		if((!license_civ_rebel) && (!license_civ_udc)) then {
+		if((!license_civ_rebel) && (!license_civ_udc) && (!license_civ_doj)) then {
 			_return = [
 				["civ_spawn_1","LS OldTown","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["lakeside_spawn_2","LS McDonalds","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
