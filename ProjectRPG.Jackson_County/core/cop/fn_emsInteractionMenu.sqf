@@ -51,7 +51,7 @@ _Btn4 ctrlSetText localize "STR_pInAct_ApplyAirKit";
 _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_ApplyAir; [life_pInact_curTarget] call life_fnc_emsInteractionMenu;";
 
 _Btn11 ctrlSetText localize "STR_pInAct_TicketBtn";
-_Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
+_Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_rechnungAction;";
 if(life_inv_airkit > 0) then { _Btn5 ctrlEnable true; } else { _Btn5 ctrlEnable false; };
 
 _diseaseon = "Keine Krankheit";

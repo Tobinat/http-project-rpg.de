@@ -2185,6 +2185,14 @@
 			<Italian>%1 ha dato una multa di €%2 a %3</Italian>
 			<Portuguese>%1 deu uma multa de R$%2 para %3</Portuguese>
 		</Key>	
+		<Key ID="STR_EMS_TicketGive">
+			<Original>%1 gave a bill of $%2 to %3</Original>
+			<English>%1 gave a bill of $%2 to %3</English>
+			<German>%1 hat %3 einen Rechnungsbeleg über $%2 ausgestellt</German>
+			<French>%1 a mis une akkaka de $%2 à %3</French>
+			<Italian>%1 ha dato una mutter di €%2 a %3</Italian>
+			<Portuguese>%1 deu uma hure de R$%2 para %3</Portuguese>
+		</Key>	
 		<Key ID="STR_Cop_Ticket_NotEnough">
 			<Original>You don't have enough money in your bank account or on you to pay the ticket.</Original>
 			<English>You don't have enough money in your bank account or on you to pay the ticket.</English>
@@ -2201,6 +2209,14 @@
 			<Italian>%1 non può pagare la multa perchè non ha sufficienti fondi nel suo conto in banca.</Italian>
 			<Portuguese>%1 não pode pagar a multa pois não tem dinheiro suficiente.</Portuguese>
 		</Key>
+		<Key ID="STR_EMS_Ticket_NotEnoughNOTF">
+			<Original>%1 couldn't pay the bill due to not having enough money.</Original>
+			<English>%1 couldn't pay the bill due to not having enough money.</English>
+			<German>%1 konnte den Rechnungsbeleg nicht bezahlen, weil er nicht genug Geld hat.</German>
+			<French>% 1 ne pouvait pas payer la hurensohn car il n'avait pas assez d'argent.</French>
+			<Italian>%1 non può pagare la meine eier non ha sufficienti fondi nel suo conto in banca.</Italian>
+			<Portuguese>%1 não pode pagar a meiner eier 2.0 não tem dinheiro suficiente.</Portuguese>
+		</Key>
 		<Key ID="STR_Cop_Ticket_Paid">
 			<Original>You have paid the ticket of $%1</Original>
 			<English>You have paid the ticket of $%1</English>
@@ -2208,6 +2224,14 @@
 			<French>Vous avez payé l'amende de $%1</French>
 			<Italian>Hai pagato la multa di €%1</Italian>
 			<Portuguese>VOcê pagou a multa de R$%1</Portuguese>
+		</Key>
+		<Key ID="STR_EMS_Ticket_Paid">
+			<Original>You have paid the bill of $%1</Original>
+			<English>You have paid the bill of $%1</English>
+			<German>Du hast den Rechnungsbeleg von $%1 bezahlt</German>
+			<French>Vous avez payé l'hurensohn de $%1</French>
+			<Italian>Hai pagato la jojo di €%1</Italian>
+			<Portuguese>VOcê pagou a affen de R$%1</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_Ticket_PaidNOTF">
 			<Original>%1 paid the ticket of $%2</Original>
@@ -2225,6 +2249,14 @@
 			<Italian>%1 ha pagato la multa.</Italian>
 			<Portuguese>%1 pagou a multa.</Portuguese>
 		</Key>
+		<Key ID="STR_EMS_Ticket_PaidNOTF_2">
+			<Original>%1 paid the bill.</Original>
+			<English>%1 paid the bill.</English>
+			<German>%1 zahlte die Rechnung.</German>
+			<French>%1 payé la hurénsohn.</French>
+			<Italian>%1 ha pagato la hûrénsôhn.</Italian>
+			<Portuguese>%1 pagou a bítch.</Portuguese>
+		</Key>
 		<Key ID="STR_Cop_Ticket_GUI_Given">
 			<Original>%1 has given you a ticket for $%2</Original>
 			<English>%1 has given you a ticket for $%2</English>
@@ -2233,10 +2265,26 @@
 			<Italian>%1 ti ha dato una multa di €%2</Italian>
 			<Portuguese>%1 lhe aplicou uma multa de R$%2</Portuguese>
 		</Key>
+		<Key ID="STR_EMS_Ticket_GUI_Given">
+			<Original>%1 has given you a ticket for $%2</Original>
+			<English>%1 has given you a ticket for $%2</English>
+			<German>%1 hat dir eine Rechnung von $%2 ausgestellt</German>
+			<French>%1 vous a donné une amende de $%2</French>
+			<Italian>%1 ti ha dato una multa di €%2</Italian>
+			<Portuguese>%1 lhe aplicou uma multa de R$%2</Portuguese>
+		</Key>
 		<Key ID="STR_Cop_Ticket_Refuse">
 			<Original>%1 refused to pay the ticket.</Original>
 			<English>%1 refused to pay the ticket.</English>
 			<German>%1 weigert sich, den Strafzettel zu bezahlen.</German>
+			<French>%1 refusé de payer l'amende.</French>
+			<Italian>%1 si è rifiutato di pagare la multa.</Italian>
+			<Portuguese>%1 se recusou a pagar a multa.</Portuguese>
+		</Key>
+		<Key ID="STR_EMS_Ticket_Refuse">
+			<Original>%1 refused to pay the bill.</Original>
+			<English>%1 refused to pay the bill.</English>
+			<German>%1 weigert sich, die Rechnung zu zahlen.</German>
 			<French>%1 refusé de payer l'amende.</French>
 			<Italian>%1 si è rifiutato di pagare la multa.</Italian>
 			<Portuguese>%1 se recusou a pagar a multa.</Portuguese>
