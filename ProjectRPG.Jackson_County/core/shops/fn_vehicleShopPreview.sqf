@@ -112,7 +112,7 @@ _vh setPos _sp;
 hint "Das Vorschau-Fahrzeug wird mit einer Roten Markierung versehen.";
 closeDialog 0; //Exit the menu.
 
-uiSleep 10;
+uiSleep 6;
 
 hint "Vorschau des Fahrzeuges abgeschlossen!";
 deleteVehicle _vehicle;
