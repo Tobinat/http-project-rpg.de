@@ -18,7 +18,6 @@ _control = _display displayCtrl 51656;
 life_ticket_paid = false;
 life_ticket_val = _val;
 life_ticket_cop = _cop;
-
 _control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>" +(localize "STR_EMS_Ticket_GUI_Given"),_cop getVariable["realname",name _cop],_val];
 
 [] spawn
@@ -30,6 +29,3 @@ _control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px
 		[0,format[localize "STR_EMS_Ticket_Refuse",profileName]] remoteExecCall ["life_fnc_broadcast", independent];
 	};
 };
-
-systemChat "Geld Value:";
-systemChat str(_val);
