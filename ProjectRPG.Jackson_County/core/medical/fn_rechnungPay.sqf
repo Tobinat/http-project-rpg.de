@@ -11,7 +11,7 @@ if(cash_in_hand < life_ticket_val) exitWith
 	if(cash_in_bank < life_ticket_val) exitWith 
 	{
 		hint localize "STR_EMS_Ticket_NotEnough";
-		[1,format[localize "STR_EMS_Ticket_NotEnoughNOTF",profileName]] remoteExecCall ["life_fnc_broadcast", -2];
+		[1,format[localize "STR_EMS_Ticket_NotEnoughNOTF",profileName]] remoteExecCall ["life_fnc_broadcast", independent];
 		closeDialog 0;
 	};
 	hint format[localize "STR_EMS_Ticket_Paid",[life_ticket_val] call life_fnc_numberText];
@@ -19,7 +19,7 @@ if(cash_in_hand < life_ticket_val) exitWith
 	life_ticket_paid = true;
 	
 	closeDialog 0;
-	[1,format[localize "STR_EMS_Ticket_PaidNOTF_2",profileName]] remoteExecCall ["life_fnc_broadcast", -2];
+	[1,format[localize "STR_EMS_Ticket_PaidNOTF_2",profileName]] remoteExecCall ["life_fnc_broadcast", independent];
 	[life_ticket_val,player,life_ticket_cop] remoteExecCall ["life_fnc_rechnungPaid",life_ticket_cop];
 };
 

@@ -7,14 +7,14 @@
 */
 
 params ["_cop", "_val", "_display", "_control"];
-if(!isNull (findDisplay 2600)) exitwith {}; //Already at the ticket menu, block for abuse?
+if(!isNull (findDisplay 51655)) exitwith {}; //Already at the ticket menu, block for abuse?
 if(isNull _cop) exitWith {};
 
 createDialog "life_ticket_pay";
 disableSerialization;
-waitUntil {!isnull (findDisplay 2600)};
-_display = findDisplay 2600;
-_control = _display displayCtrl 2601;
+waitUntil {!isnull (findDisplay 51655)};
+_display = findDisplay 51655;
+_control = _display displayCtrl 51656;
 life_ticket_paid = false;
 life_ticket_val = _val;
 life_ticket_cop = _cop;
@@ -23,8 +23,8 @@ _control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px
 [] spawn
 {
 	disableSerialization;
-	waitUntil {life_ticket_paid OR (isNull (findDisplay 2600))};
-	if(isNull (findDisplay 2600) && !life_ticket_paid) then
+	waitUntil {life_ticket_paid OR (isNull (findDisplay 51655))};
+	if(isNull (findDisplay 51655) && !life_ticket_paid) then
 	{
 		[0,format[localize "STR_EMS_Ticket_Refuse",profileName]] remoteExecCall ["life_fnc_broadcast", independent];
 	};
