@@ -71,6 +71,13 @@
 	};
 };
 
+[] spawn
+{
+     if (viewDistance > 2000) then {
+	     setViewDistance 2000
+	};
+};
+
 
 [] spawn
 {
