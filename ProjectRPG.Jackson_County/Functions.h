@@ -72,6 +72,10 @@ class Life_Client_Core
 		class medicRequest {};
 		class deathScreen {};
 		class medicLoadout {};
+		class rechnungGive {};
+		class rechnungPay {};
+		class rechnungPaid {};
+		class rechnungPrompt {};
 	};
 	
 	class Actions
@@ -173,7 +177,7 @@ class Life_Client_Core
 		class copShowLicense {};
 		class copUdcLicense {};
 		class copLicenseShown {};
-		
+		class rechnungAction {};
 	};	
 
 	class Paintball
