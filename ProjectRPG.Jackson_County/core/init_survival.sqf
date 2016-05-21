@@ -81,7 +81,7 @@
 
 [] spawn
 {
-	if(side player != civilian) exitWith {};
+	if(side player != civilian || (player getVariable "udcLevel")) exitWith {};
 	while{true} do
 	{
 		_vehicle = vehicle player;
