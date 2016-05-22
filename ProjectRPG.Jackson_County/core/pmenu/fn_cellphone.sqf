@@ -17,7 +17,6 @@ if(player getVariable["restrained",false] || player getVariable["tied",false]) e
 
 	ctrlSetText [3003, ""];
 	lbClear _units;
-	_units lbAdd format [" "];
 	_units lbAdd format["EMS Units"];
 	_units lbAdd format["The Police"];
 	_units lbAdd format["The Admins"];
