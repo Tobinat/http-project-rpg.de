@@ -21,6 +21,14 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 	uiSleep 35;
 };
 
+if((str(player) in ["ems_1"])) then {
+	if((__GETC__(life_medicLevel) < 2)) then {
+		["NotWhitelisted",false,true] call BIS_fnc_endMission;
+		uiSleep 30;
+	};
+	life_paycheck = 4000;
+};
+
 [] call life_fnc_spawnMenu;
 //[] execVM "core\welcomemedic.sqf";
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.

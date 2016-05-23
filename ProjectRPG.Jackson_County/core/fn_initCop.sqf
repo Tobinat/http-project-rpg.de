@@ -35,7 +35,7 @@ if((str(player) in ["cop_4"])) then {
 		uiSleep 30;
 	};
 	PRPG_leitstelle = true;
-	life_paycheck = 2000;
+	life_paycheck = 4000;
 };
 
 player setVariable["rank",(__GETC__(life_coplevel)),true];
