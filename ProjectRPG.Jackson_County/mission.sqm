@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6637.813,107.32098,4638.9048};
-		dir[]={0.34323347,-0.73884964,0.58011103};
-		up[]={0.37632442,0.67356348,0.63604248};
-		aside[]={0.86067474,1.8782448e-006,-0.50925094};
+		pos[]={7681.9238,440.33078,2892.1016};
+		dir[]={-0.20958816,-0.41428328,0.88570613};
+		up[]={-0.095402919,0.91013712,0.40316927};
+		aside[]={0.97313839,-4.6505011e-007,0.23027612};
 	};
 };
 binarizationWanted=0;
@@ -390,7 +390,7 @@ class Mission
 			b=0.69999999;
 			angle=359.91684;
 			id=3;
-			atlOffset=0.21007156;
+			atlOffset=0.23811531;
 		};
 		class Item4
 		{
@@ -6804,6 +6804,7 @@ class Mission
 			};
 			id=721;
 			type="cg_bench1";
+			atlOffset=0.10000038;
 		};
 		class Item478
 		{
@@ -10131,6 +10132,7 @@ class Mission
 			};
 			id=1190;
 			type="Land_InfoStand_V1_F";
+			atlOffset=0.14739799;
 		};
 		class Item659
 		{
@@ -10149,7 +10151,7 @@ class Mission
 			};
 			id=1191;
 			type="Land_InfoStand_V1_F";
-			atlOffset=44.900005;
+			atlOffset=45.047401;
 		};
 		class Item660
 		{
@@ -14571,7 +14573,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_4";
-						description="Sanitäter 04";
+						description="Leitstelle";
 						isPlayable=1;
 					};
 					id=1709;
@@ -30499,7 +30501,7 @@ class Mission
 			};
 			id=3975;
 			type="Mattaust_50";
-			atlOffset=0.00096130371;
+			atlOffset=0.078639984;
 		};
 		class Item1687
 		{
@@ -48052,7 +48054,7 @@ class Mission
 			};
 			id=6082;
 			type="A3L_Fence_Large";
-			atlOffset=1.7683773;
+			atlOffset=1.9250202;
 		};
 		class Item2640
 		{
@@ -48063,14 +48065,13 @@ class Mission
 				angles[]={6.2802353,1.7307732,0.00048828125};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6083;
 			type="A3L_Fence_Large";
-			atlOffset=2.2888184e-005;
+			atlOffset=1.9250202;
 		};
 		class Item2641
 		{
@@ -48081,13 +48082,13 @@ class Mission
 				angles[]={6.2802353,1.7307732,0.00048828125};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6084;
 			type="A3L_Fence_Large";
+			atlOffset=1.9250202;
 		};
 		class Item2642
 		{
@@ -48098,14 +48099,13 @@ class Mission
 				angles[]={0,1.7307732,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6085;
 			type="A3L_Fence_Large";
-			atlOffset=7.0571899e-005;
+			atlOffset=1.9250202;
 		};
 		class Item2643
 		{
@@ -48122,7 +48122,7 @@ class Mission
 			};
 			id=6086;
 			type="A3L_Fence_Large";
-			atlOffset=1.7683773;
+			atlOffset=1.9250202;
 		};
 		class Item2644
 		{
@@ -48133,13 +48133,13 @@ class Mission
 				angles[]={6.2826972,3.3175235,6.2802353};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6087;
 			type="A3L_Fence_Large";
+			atlOffset=1.925745;
 		};
 		class Item2645
 		{
@@ -48174,7 +48174,7 @@ class Mission
 			};
 			id=6089;
 			type="A3L_Fence_Large";
-			atlOffset=1.742878;
+			atlOffset=1.8995209;
 		};
 		class Item2647
 		{
@@ -48191,7 +48191,7 @@ class Mission
 			};
 			id=6090;
 			type="A3L_Fence_Large";
-			atlOffset=1.7429237;
+			atlOffset=1.8995667;
 		};
 		class Item2648
 		{
@@ -55264,7 +55264,7 @@ class Mission
 			};
 			id=12243;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.3595314;
+			atlOffset=0.49799919;
 		};
 		class Item3015
 		{
@@ -55294,14 +55294,13 @@ class Mission
 				angles[]={0,4.608891,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init=" this allowDamage false; this enableSimulation false; this addAction[""Iron / Copper Trader"",life_fnc_virt_menu,""iron""];";
 			};
 			id=12245;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.22053146;
+			atlOffset=0.35899925;
 		};
 		class Item3017
 		{
@@ -85235,7 +85234,7 @@ class Mission
 			};
 			id=17681;
 			type="cg_chair1";
-			atlOffset=0.064533234;
+			atlOffset=0.064535141;
 			class CustomAttributes
 			{
 				class Attribute0
