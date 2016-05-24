@@ -54,7 +54,7 @@ if(!license_civ_udc) then { //Sollte so funktionieren
 	player setVariable ["udcLevel",true,true];
 	player setVariable ["sosActive",false,true];
 	PRPG_leitstelle = true;
-	life_paycheck = 1500;
+	life_paycheck = 4000;
 };
 
 player setUnitRecoilCoefficient 2.8;

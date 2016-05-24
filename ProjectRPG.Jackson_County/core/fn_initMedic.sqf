@@ -21,7 +21,7 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 	uiSleep 35;
 };
 
-if((str(player) in ["ems_1"])) then {
+if((str(player) in ["medic_4"])) then {
 	if((__GETC__(life_medicLevel) < 2)) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
 		uiSleep 30;
