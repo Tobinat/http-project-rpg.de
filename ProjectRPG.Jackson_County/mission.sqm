@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=18066;
+		nextID=18068;
 	};
 	class MarkerIDProvider
 	{
-		nextID=457;
+		nextID=458;
 	};
 	class Camera
 	{
-		pos[]={8758.3594,143.35208,6639.3706};
-		dir[]={-0.68864965,-0.71325916,-0.13089259};
-		up[]={-0.70076519,0.70083547,-0.13319553};
-		aside[]={-0.18673971,2.7661736e-007,0.98246008};
+		pos[]={9297.1582,94.68998,6628.1973};
+		dir[]={0.66238379,-0.74774909,0.047600053};
+		up[]={0.74589509,0.66389281,0.053601269};
+		aside[]={0.07168413,-1.1045267e-007,-0.99749482};
 	};
 };
 binarizationWanted=0;
@@ -352,7 +352,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4752;
+		items=4754;
 		class Item0
 		{
 			dataType="Marker";
@@ -766,6 +766,7 @@ class Mission
 			type="Empty";
 			angle=32.261948;
 			id=45;
+			atlOffset=0.12722015;
 		};
 		class Item37
 		{
@@ -916,6 +917,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=66;
+			atlOffset=0.050003052;
 		};
 		class Item51
 		{
@@ -1052,7 +1054,7 @@ class Mission
 			b=0.69999999;
 			angle=359.49695;
 			id=81;
-			atlOffset=0.57342529;
+			atlOffset=0.57409286;
 		};
 		class Item62
 		{
@@ -1092,7 +1094,7 @@ class Mission
 			type="Empty";
 			angle=49.999992;
 			id=85;
-			atlOffset=0.0001449585;
+			atlOffset=0.026725769;
 		};
 		class Item66
 		{
@@ -1206,7 +1208,7 @@ class Mission
 			b=0.69999999;
 			angle=0.26100001;
 			id=101;
-			atlOffset=0.010025024;
+			atlOffset=0.15844727;
 		};
 		class Item76
 		{
@@ -1400,6 +1402,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=121;
+			atlOffset=0.099998474;
 		};
 		class Item93
 		{
@@ -2242,7 +2245,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=215;
-			atlOffset=84.878708;
+			atlOffset=85.173004;
 		};
 		class Item168
 		{
@@ -2256,7 +2259,7 @@ class Mission
 			a=100;
 			b=100;
 			id=216;
-			atlOffset=85.143478;
+			atlOffset=85.438774;
 		};
 		class Item169
 		{
@@ -4160,6 +4163,7 @@ class Mission
 			};
 			id=443;
 			type="Land_Atm_02_F";
+			atlOffset=0.099998474;
 		};
 		class Item341
 		{
@@ -4248,7 +4252,7 @@ class Mission
 			};
 			id=449;
 			type="Land_CashDesk_F";
-			atlOffset=0.25828171;
+			atlOffset=0.57409286;
 		};
 		class Item346
 		{
@@ -5610,6 +5614,7 @@ class Mission
 			};
 			id=617;
 			type="Land_WaterCooler_01_new_F";
+			atlOffset=0.050003052;
 		};
 		class Item414
 		{
@@ -5627,7 +5632,7 @@ class Mission
 			};
 			id=625;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.28250885;
+			atlOffset=0.32051086;
 		};
 		class Item415
 		{
@@ -5645,7 +5650,7 @@ class Mission
 			};
 			id=633;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.29595947;
+			atlOffset=0.3339386;
 		};
 		class Item416
 		{
@@ -6889,7 +6894,6 @@ class Mission
 			};
 			id=729;
 			type="cg_bench1";
-			atlOffset=2.2888184e-005;
 		};
 		class Item483
 		{
@@ -8171,7 +8175,7 @@ class Mission
 			};
 			id=1068;
 			type="CG_SpeedCam";
-			atlOffset=0.87359619;
+			atlOffset=43.418701;
 		};
 		class Item552
 		{
@@ -15274,7 +15278,7 @@ class Mission
 			};
 			id=2024;
 			type="CG_SpeedCam";
-			atlOffset=0.91952515;
+			atlOffset=39.239594;
 		};
 		class Item826
 		{
@@ -52455,13 +52459,13 @@ class Mission
 				angles[]={0,5.4378033,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false; this allowDamage false; this addAction[""Flug nach Lakeside"",life_fnc_skyDive,true]; this addAction[""Catch a Taxi"",life_fnc_taxi];";
 			};
 			id=8717;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.84564209;
 		};
 		class Item2848
 		{
@@ -52530,6 +52534,7 @@ class Mission
 			};
 			id=8722;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.026565552;
 		};
 		class Item2852
 		{
@@ -52598,7 +52603,7 @@ class Mission
 			};
 			id=8779;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.74799347;
+			atlOffset=0.79799652;
 		};
 		class Item2856
 		{
@@ -55954,7 +55959,7 @@ class Mission
 			};
 			id=12327;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.26264954;
+			atlOffset=1.0289993;
 		};
 		class Item3057
 		{
@@ -56037,14 +56042,13 @@ class Mission
 				angles[]={0,1.8299079,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false; this addAction[""Geldwäscher"",{ if (side player == civilian) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 			};
 			id=12332;
 			type="Land_InfoStand_V2_F";
-			atlOffset=1.5258789e-005;
+			atlOffset=2.2226868;
 		};
 		class Item3062
 		{
@@ -56256,7 +56260,6 @@ class Mission
 			};
 			id=12347;
 			type="Land_InfoStand_V2_F";
-			atlOffset=4.9591064e-005;
 		};
 		class Item3074
 		{
@@ -60924,7 +60927,7 @@ class Mission
 			};
 			id=15105;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.26447296;
+			atlOffset=0.30253601;
 		};
 		class Item3329
 		{
@@ -60942,7 +60945,7 @@ class Mission
 			};
 			id=15106;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.27420044;
+			atlOffset=0.31223297;
 		};
 		class Item3330
 		{
@@ -61237,14 +61240,13 @@ class Mission
 				angles[]={0,1.9923631,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init=" this allowDamage false; this enableSimulation false; " \n " this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && license_civ_udc && !life_action_inUse '];";
 			};
 			id=15128;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.00032424927;
+			atlOffset=3.2019997;
 		};
 		class Item3340
 		{
@@ -88707,6 +88709,31 @@ class Mission
 			id=18063;
 			type="Land_ClutterCutter_small_F";
 			atlOffset=4.8701267;
+		};
+		class Item4752
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9325.457,55.751427,6623.603};
+				angles[]={0,1.4957821,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false;this addAction[""Verwahrungsstelle"", { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getimpoundedVehicles"",false,false]; createDialog ""Life_impounded_menu""; disableSerialization; ctrlSetText[28020,""Suche verwarte Fahrzeuge""]; life_garage_sp = ""impound_spawn_1""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide == west,civ,ind,opf'];";
+			};
+			id=18066;
+			type="Land_Noticeboard_F";
+		};
+		class Item4753
+		{
+			dataType="Marker";
+			position[]={9320.0127,54.961994,6622.2939};
+			name="impound_spawn_1";
+			type="Empty";
+			id=18067;
 		};
 	};
 };
