@@ -24,7 +24,6 @@ switch (_filter) do
 		_ret =
 		[
 			["U_B_Wetsuit","Taucheranzug",50],
-			["cg_sert_3",nil,20],
 			["prpg_recruit1",nil,15],
 			["prpg_traffic1",nil,15],
 			["prpg_officer1",nil,15],
