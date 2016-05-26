@@ -24,6 +24,7 @@ switch (_filter) do
 		_ret =
 		[
 			["U_B_Wetsuit","Taucheranzug",50],
+			["cg_sert_3",nil,20],
 			["prpg_recruit1",nil,15],
 			["prpg_traffic1",nil,15],
 			["prpg_officer1",nil,15],
@@ -201,6 +202,11 @@ switch (_filter) do
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
 			["TRYK_V_ArmorVest_HRT_OD",nil,20],
 			["crt_vest_Fix",nil,20],
+			["kaelvest_sert4_Fix",nil,20],
+			["TRYK_V_Bulletproof_FBI",nil,20],
+			["kaelvest_sert3_Fix",nil,20],
+			["kaelvest_sert2_Fix",nil,20],
+			["kaelvest_sert1_Fix",nil,20],
 			["SCommand_Vest_Fix",nil,20],
 			["cg_policevest1_fix","Police Vest 2",20],
 			["cg_policevest2_fix","Police Vest",20],	
