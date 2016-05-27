@@ -25,6 +25,7 @@ lbClear _control;
 
 {
 	_vehicleInfo = [_x select 2] call life_fnc_fetchVehInfo;
+	systemChat toString _vehicleInfo;
 	_control lbAdd (_vehicleInfo select 3);
 	_tmp = [_x select 2,_x select 8];
 	_tmp = str(_tmp);

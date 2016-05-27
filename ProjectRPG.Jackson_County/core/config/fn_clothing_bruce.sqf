@@ -290,17 +290,6 @@ switch (_filter) do
 			["A3L_Farmer_Outfit","Farmer Outfit",200],
 			["A3L_Worker_Outfit","Worker Outfit",200],
 			["A3L_SpookyMummy","Mummy",4000],
-			["I_FEM_AAF_long",nil,1400],
-			["B_FEM_AAF_Rolled",nil,1400],
-			["I_FEM_AAF",nil,1400],
-			["O_FEM_CSAT_Long",nil,1400],
-			["O_FEM_CSAT_Rolled",nil,1400],
-			["O_FEM_CSAT",nil,1400],
-			["B_FEM_FIA",nil,1400],
-			["B_FEM_NATO_long",nil,1400],
-			["B_FEM_NATO_Collar",nil,1400],
-			["B_FEM_NATO_Rolled",nil,1400],
-			["B_FEM_NATO",nil,1400],
 			["A3L_Bikini_Girl","Bikini",4000]	
 		];
 		if(__GETC__(life_adminlevel) > 0) then {

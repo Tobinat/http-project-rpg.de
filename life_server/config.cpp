@@ -100,6 +100,8 @@ class CfgFunctions
 			class loops {};
 			class simDisableGlobal {};
 			class vehicleInsurance {};
+			class getImpoundedvehicles {};
+			class vehicleImpound {};
 		};
 		class Paintball
 		{

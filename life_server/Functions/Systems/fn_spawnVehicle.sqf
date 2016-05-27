@@ -19,7 +19,7 @@ if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 publicVariable "serv_sv_use";
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, fuel FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, fuel, impound FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
@@ -69,7 +69,7 @@ if(count _nearVehicles > 0) exitWith
 	[1,(localize "STR_Garage_SpawnPointError")] remoteExecCall ["life_fnc_broadcast", _unit];
 };
 
-_query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
+_query = format["UPDATE vehicles SET active='1', impound='0' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
 [_query,1] spawn DB_fnc_asyncCall;
 if((_vInfo select 8) find "[" == 0) then {

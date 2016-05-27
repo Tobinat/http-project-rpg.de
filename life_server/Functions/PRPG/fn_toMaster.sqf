@@ -19,7 +19,6 @@ private _tolog = "";
 
 switch (_type) do {
 	case 1: {_tolog = format["ANTI-CHEAT | SCRIPT EXECUTION > %1 (%2) startete fn_panicButton mit ungültigen Parameter!",name _player,getPlayerUID _player]};
-	case 2: {_tolog = format["ANTI-CHEAT | KEY-PRESS DETECTION > %1 (%2) drückte die Einfügen (Insert) Taste!",name _player,getPlayerUID _player]};
 };
 
 diag_log _tolog;

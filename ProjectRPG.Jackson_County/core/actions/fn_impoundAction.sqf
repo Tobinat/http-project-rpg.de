@@ -70,7 +70,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	};
 	life_impound_inuse = true;
 	life_action_inUse = false;
-	[_vehicle,true,player] remoteExec ["TON_fnc_vehicleStore",(call life_fnc_HCC)];
+	[_vehicle,true,player] remoteExec ["TON_fnc_vehicleImpound",(call life_fnc_HCC)];
 
 	_price = _price + 150;
 	[format[localize "STR_NOTF_Impounded",_vehicleName,round(_price)], false] spawn domsg;

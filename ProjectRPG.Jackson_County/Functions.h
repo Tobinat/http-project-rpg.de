@@ -577,6 +577,9 @@ class Life_Client_Core
 		class updateVehicleColor {};
 		class updateUI {};
 		class populateSalesCredit {};
-		class populateTestDrive {};		
+		class populateTestDrive {};
+		class impoundedMenu {};
+        class willswieder {};
+        class impoundLBChange {};		
 	};
 };

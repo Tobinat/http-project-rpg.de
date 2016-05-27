@@ -5190,7 +5190,27 @@
 		</Key>
 		<Key ID="STR_pAct_NoEpiPenPlayer">
 			<Original>&lt;t color='#FF0000'&gt;&lt;t size='1'&gt;Hat Wunden am Bein&lt;/t&gt;&lt;/t&gt;</Original>
-		</Key>	
+		</Key>
+		
+		<Key ID="STR_Garage_NoImpVehicles">
+            <German>Keine beschlagnahmten Fahrzeuge gefunden.</German>
+        </Key>
+		<Key ID="STR_GUI_ImpGarage">
+            <Original>Verwahrungsstelle</Original>
+            <German>Verwahrungsstelle</German>
+        </Key>
+		<Key ID="STR_GUI_YourImpVeh">
+            <Original>Beschlagnahmte Fahrzeuge</Original>
+            <German>Beschlagnahmte Fahrzeuge</German>
+        </Key>
+        <Key ID="STR_GUI_VehInfo">
+            <Original>Und nun?!</Original>
+            <German>Und nun?!</German>
+        </Key>
+        <Key ID="STR_Shop_IMPVEH">
+            <Original>Um dein Beschlagnahmtes Fahrzeug wieder zu bekommen verlangen wir eine Gebühr von</Original>
+            <German>Um dein Beschlagnahmtes Fahrzeug wieder zu bekommen verlangen wir eine Gebühr von</German>
+        </Key>
 
 		<Key ID="STR_pAct_DropFishingNet">
 			<Original>Drop Fishing Net</Original>
