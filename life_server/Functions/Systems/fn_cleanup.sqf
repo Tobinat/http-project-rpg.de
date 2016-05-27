@@ -35,7 +35,7 @@ while {true} do {
 			diag_log "Spikes und so n müll";
 		};
 
-		/* if(_vehicleClass in ["Car","Air","Ship"]) then {
+		if(_vehicleClass in ["Car","Air","Ship"]) then {
 			_dbInfo = _veh getVariable["dbInfo",[]];
 			_units = {(_x distance _veh > 300)} count allPlayers;
 			
@@ -72,7 +72,7 @@ while {true} do {
 					diag_log "Angeblicher query"; //danny stinkt. mfg variatox
 				};
 			};
-		}; */
+		};
 	} foreach vehicles;
 	
 	sleep (4 * 60);
