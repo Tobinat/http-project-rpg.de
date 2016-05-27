@@ -37,6 +37,7 @@ switch (_filter) do
 			_ret pushBack ["cg_ems9",nil,2];
 			_ret pushBack ["cg_ems1",nil,2];
 			_ret pushBack ["RF_EMSWING_4",nil,2];
+			_ret pushBack ["RF_EMS_1",nil,2];
 		    if(__GETC__(life_mediclevel) > 0) then
 		    {
 		        _ret pushBack ["cg_ems4",nil,2];
@@ -58,11 +59,6 @@ switch (_filter) do
 		        _ret pushBack ["cg_ems6",nil,2];
 				_ret pushBack ["cg_ems8",nil,2];
             };
-			
-			if(license_med_air) then
-		    {
-			_ret pushBack ["RF_EMS_1",nil,2];
-		    };
 	};
 	
 	//Hats
