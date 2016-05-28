@@ -16,7 +16,7 @@ _retrievePrice = if(_vehSel == -1) then {1000} else {(__GETC__(life_impound_pric
     (localize "STR_Shop_IMPVEH")+ " <t color='#8cff9b'>$%1</t><br/>
     ",
 	_retrievePrice];
-//[_retrievePrice] call life_fnc_numberText];
+[_retrievePrice] call life_fnc_numberText];
 
 ctrlShow [28030,true];
 ctrlShow [28300,true];
