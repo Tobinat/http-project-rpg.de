@@ -57,9 +57,9 @@ switch (_item) do
 	case "money": {0};
 	case "pickaxe": {2};
 	case "copperore": {4};
-	case "ironore": {5};
+	case "ironore": {2};
 	case "copper_r": {3};
-	case "iron_r": {5};
+	case "iron_r": {2};
 	case "sand": {3};
 	case "salt": {3};
 	case "salt_r": {1};
@@ -67,8 +67,8 @@ switch (_item) do
 	case "diamond": {2};
 	case "diamondc": {1};
 	case "spikeStrip": {5};
-	case "rock": {6};
-	case "cement": {5};
+	case "rock": {3};
+	case "cement": {2};
 	case "goldbar": {12};
 	case "blastingcharge": {15};
 	case "hackingtool": {15};
