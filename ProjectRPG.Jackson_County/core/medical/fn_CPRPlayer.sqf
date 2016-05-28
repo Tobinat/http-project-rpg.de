@@ -10,6 +10,7 @@ _target = param [0,ObjNull,[ObjNull]];
 if(isNull _target) exitWith {};
 if(player distance _target > 4) exitWith {};
 if(!(_target isKindOf "man")) exitWith {};
+if(_target getVariable "isHirntod") exitWith {["Diese Person ist Hirntod.",false] spawn domsg;};
  if(koil_antispam == 1) exitWith {};
 
 [] spawn life_fnc_AntiSpam;
