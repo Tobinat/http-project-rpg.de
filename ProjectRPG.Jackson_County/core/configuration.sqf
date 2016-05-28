@@ -10,6 +10,7 @@
 player setVariable["playerHealth", 0, true];
 player setVariable ["udcLevel",false,true];
 player setVariable ["sosActive",false,true];
+player setVariable ["isHirntod",false,true];
 myHealth = 0;
 Fishing_Active = false;
 shooting_death = false;
