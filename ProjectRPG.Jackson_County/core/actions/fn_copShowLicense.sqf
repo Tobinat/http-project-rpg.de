@@ -15,7 +15,7 @@ if(!(alive _target)) exitWith {};
 if(playerSide == west) then
 {
 	_coplevel = call life_coplevel;
-	_id = "<img image='textures\license\police_license.paa' size='8'/>";
+	_id = "<img image='\textures\license\police_license.paa' size='8'/>";
 	
 	switch (_coplevel) do
     {
@@ -44,7 +44,7 @@ if(playerSide == west) then
 if(playerSide == independent) then
 {
 	_mediclevel = call life_mediclevel;
-	_id = "<img image='textures\license\rfa_license.paa' size='8'/>";
+	_id = "<img image='\textures\license\rfa_license.paa' size='8'/>";
 	
 	switch (_mediclevel) do
 	{	//Medic NEU RFA?!?
