@@ -59,7 +59,7 @@ _unit setVariable ["EMSON", 1, true];
 
 if(_unit getHit "head" == 1) then {
 	_unit setVariable ["isHirntod",true,true];
-	systemChat "MEDICAL-STATUS > Du bist Hirntod."
+	systemChat "MEDICAL-STATUS > Du bist Hirntod.";
 };
 
 _playerkill = false;
