@@ -57,15 +57,9 @@ _unit setVariable["name",profileName, true]; //Set my name so they can say my na
 _unit setVariable["steam64id",(getPlayerUID player), true]; //Set the UID.
 _unit setVariable ["EMSON", 1, true];
 
-systemChat "Damage of    _unit>>";
-systemChat str(_unit getHit "head");
-systemChat "Damage of    player>>";
-systemChat str(player getHit "head");
-
-if(_unit getHit "head" == 1 OR player getHit "head" == 1) then {
+if(_unit getHit "head" >= 0.8 OR player getHit "head" >= 0.8) then {
 	_unit setVariable ["isHirntod",true,true];
-	player setVariable ["isHirntod",true,true]; // Scheiss auf Korrektheit
-	systemChat "MEDICAL-STATUS > Du bist Hirntod.";
+	player setVariable ["isHirntod",true,true];
 };
 
 _playerkill = false;
