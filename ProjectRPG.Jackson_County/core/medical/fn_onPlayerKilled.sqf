@@ -121,7 +121,7 @@ _unit spawn
 	_maxTime = time + (life_respawn_timer * 60);
 	_RespawnBtn ctrlEnable false;
 	
-	if(_unit getVariable "isHirntod") then {	//Request Button deaktivieren, wenn Hirntod
+	if(_this getVariable "isHirntod") then {	//Request Button deaktivieren, wenn Hirntod
 		((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
 	};
 	
