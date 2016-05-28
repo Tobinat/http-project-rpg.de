@@ -24,6 +24,7 @@ switch (_filter) do
 		_ret =
 		[
 			["U_B_Wetsuit","Taucheranzug",50],
+			["EOD_Uniform",nil,15],
 			["prpg_recruit1",nil,15],
 			["prpg_officer1",nil,15],
 			["prpg_Detective1",nil,15],
@@ -55,6 +56,7 @@ switch (_filter) do
 		_ret =
 		[
 			["corrections_cap",nil,5],
+			["EOD9_HELMET",nil,5],
 			["H_007_policecap","Police Hat",5],
 			["max_police_Hat","Police Hat",5],
 			["Campaign_Hat_Light",nil,5],
@@ -103,6 +105,7 @@ switch (_filter) do
 		_ret =
 		[
 			["V_RebreatherB","Rebreather",20],
+			["EOD_SUIT_vest",nil,20],
 			["DOC_Vest_Tac_Fix",nil,20],
 			["DOC_Vest_Threat_Fix",nil,20],
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
