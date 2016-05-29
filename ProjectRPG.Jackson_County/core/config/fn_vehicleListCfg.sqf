@@ -86,13 +86,13 @@ switch (_shop) do
 			    _return pushBack ["A3L_CVPILBFD",2300];
 		        };
 				
-			if(__GETC__(life_mediclevel) > 3) then
+			if(__GETC__(life_mediclevel) > 0) then
 		       {
 			    _return pushBack ["cg_evoems1",20000];
 			    _return pushBack ["cg_evoems2",20000];
 			    _return pushBack ["cg_evoems3",20000];
 		        };
-			if(__GETC__(life_mediclevel) > 5) then
+			if(__GETC__(life_mediclevel) > 0) then
 		       {
 				_return pushBack ["AM_Holden_EMS",25000];
 		        };
