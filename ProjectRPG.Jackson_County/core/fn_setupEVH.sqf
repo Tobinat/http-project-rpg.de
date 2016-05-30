@@ -40,6 +40,17 @@ false
 
 player setVariable["life_is_arrested", nil ,true];
 
+/* player addEventHandler ["hitpart", {(_this select 0) call checkHitPart}];
+
+checkHitPart = {
+	_bodyParts = _this select 5;
+	call {
+		if ("head" in _bodyParts) exitWith {
+			systemChat "Hurensohn!";
+		};
+	};	
+};
+ */
 
 // will move this to seperate function when im not lazy and its working 100%
 

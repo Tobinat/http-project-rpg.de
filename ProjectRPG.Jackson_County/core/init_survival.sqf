@@ -1685,11 +1685,11 @@ fnc_stereoRotation = {
 
 fnc_ChangeEMS = {
 	if(side player == civilian || side player == east) exitwith {};
-	player setvariable["PhoneCallNumber",33.1,true];
-	player setvariable["PhoneID",33.1,true];
+	player setvariable["PhoneCallNumber",59.1,true];
+	player setvariable["PhoneID",59.1,true];
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
 	_channel = _channel + 1;
-	[(call TFAR_fnc_activeSwRadio), _channel, 33.1] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeSwRadio), _channel, 59.1] call TFAR_fnc_SetChannelFrequency;
 	callInProgress = false;
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];

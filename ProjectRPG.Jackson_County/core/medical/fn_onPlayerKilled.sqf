@@ -57,10 +57,15 @@ _unit setVariable["name",profileName, true]; //Set my name so they can say my na
 _unit setVariable["steam64id",(getPlayerUID player), true]; //Set the UID.
 _unit setVariable ["EMSON", 1, true];
 
-if(_unit getHit "head" >= 0.8 OR player getHit "head" >= 0.8) then {
+/* _getDamageHead = parseNumber (_unit getHit "head");
+
+systemChat format["Head: %1", _getDamageHead];
+
+if((_getDamageHead > 0)) then {
 	_unit setVariable ["isHirntod",true,true];
-	player setVariable ["isHirntod",true,true];
-};
+}else{
+	_unit setVariable ["isHirntod",false,true];
+}; */
 
 _playerkill = false;
 _killdistance = round ((_unit distance _killer) * 10) / 10;

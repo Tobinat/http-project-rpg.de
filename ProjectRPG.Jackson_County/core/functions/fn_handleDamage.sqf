@@ -6,6 +6,10 @@ params ["_unit","_selectionName","_damage","_source","_projectile","_hitPartInde
 if(!isNull _source) then {
 
 	_damage = _damage / 3;
+	
+	/* systemChat format["Schaden: %1", _damage];
+	systemChat format["Kopfschaden: %1", (player getHit "head")];
+	systemChat format["AllHitPoints: %1", (getAllHitPointsDamage player)]; */
 
 	if(_source != _unit) then {
 
