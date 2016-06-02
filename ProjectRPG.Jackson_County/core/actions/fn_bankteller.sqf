@@ -36,8 +36,7 @@ while{_fkit > 0 && life_bankteller } do {
 	};
 	_fkit = _fkit - 1;
 	if(_fkit == 5) then {
-		["Deine Bankzahlungen stoppen in 5 Minuten.", false] spawn domsg;
-		life_bankteller = false;		
+		["Deine Bankzahlungen stoppen in 5 Minuten.", false] spawn domsg;		
 	};
 };
 life_bankteller = false;
