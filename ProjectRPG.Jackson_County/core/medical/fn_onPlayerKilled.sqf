@@ -37,10 +37,6 @@ player setVariable["gear",life_gear,true];
 
 _length = 0;
 if((independent countSide playableUnits) == 0) then {_length = 5} else {_length = 15};
-/*_length = 15 - _length;
-_length = round(_length);
-if(_length > 15) then { _length = 15; };
-if(_length < 8) then { _length = 8; };*/
 
 if(_length <= 5) then {_length = 5};
 if(_length >= 15) then {_length = 15};
@@ -61,6 +57,16 @@ _unit setVariable["name",profileName, true]; //Set my name so they can say my na
 _unit setVariable["steam64id",(getPlayerUID player), true]; //Set the UID.
 _unit setVariable ["EMSON", 1, true];
 
+/* _getDamageHead = parseNumber (_unit getHit "head");
+
+systemChat format["Head: %1", _getDamageHead];
+
+if((_getDamageHead > 0)) then {
+	_unit setVariable ["isHirntod",true,true];
+}else{
+	_unit setVariable ["isHirntod",false,true];
+}; */
+
 _playerkill = false;
 _killdistance = round ((_unit distance _killer) * 10) / 10;
 _killweapon = (configfile >> "CfgWeapons" >> currentWeapon _killer >> "displayName") call BIS_fnc_getCfgData;
@@ -69,11 +75,11 @@ _you = name _unit;
 
 if(_fuck != _you) then {
 	if(_fuck find "Error: " != -1) then {
-		[format["%1 is severely hurt!", _you], false] spawn domsg; 
+		[format["%1 ist schwer verletzt!", _you], false] spawn domsg; 
 		[player,"pain2"] spawn life_fnc_nearestSound;
 		shooting_death = false;
 	} else {
-		[format["%1 downed %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg; 
+		[format["%1 erschoss %2 auf eine Distanz von %3 mit der Waffe %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg; 
 		life_kcCamera  = "CAMERA" camCreate (getPosATL _killer); 
 		showCinemaBorder true;    
 		life_kcCamera cameraEffect ["EXTERNAL", "BACK"];  
@@ -88,15 +94,13 @@ if(_fuck != _you) then {
 	};
 } else {
 	shooting_death = false;
-	[format["%1 is bleeding out!", _fuck], false] spawn domsg; 
+	[format["%1 verblutet!", _fuck], false] spawn domsg; 
 	[player,"pain2"] spawn life_fnc_nearestSound;
 };
 
 if(_playerkill) then { 
 	sleep 7;
-
 	life_kcCamera cameraEffect ["TERMINATE","BACK"];
-
 	camDestroy life_kcCamera;
 };
 
@@ -110,8 +114,8 @@ life_deathCamera camSetRelPos [0,22,22];
 life_deathCamera camSetFOV .5;
 life_deathCamera camSetFocus [50,0];
 life_deathCamera camCommit 0;
+
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == (_this select 1)) then {true}"]; //Block the ESC menu
-//Create a thread for something?
 
 _unit spawn
 {
@@ -121,9 +125,15 @@ _unit spawn
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
 	_maxTime = time + (life_respawn_timer * 60);
 	_RespawnBtn ctrlEnable false;
+	
+	if(_this getVariable "isHirntod") then {	//Request Button deaktivieren, wenn Hirntod
+		((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
+	};
+	
 	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(_maxTime - time) <= 0 OR isNull _this};
 	_RespawnBtn ctrlEnable true;
 	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
+
 //	if(shooting_death && round(_maxTime - time) <= 0) exitwith { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; };			
 };
 
@@ -138,14 +148,7 @@ _unit spawn
 	life_deathCamera cameraEffect ["TERMINATE","BACK"];
 	camDestroy life_deathCamera;
 };
-/*
-if(!isNull _killer && {_killer != _unit}) then {
-	if(side _killer != west) then {
-		_reason = "187";
-		[_killer,_unit,_reason] spawn life_fnc_createEvidence;
-	};
-};
-*/
+
 ["Add","Food",100] spawn fnc_sustain;
 ["Add","Drink",100] spawn fnc_sustain;
 player setdamage 0; 

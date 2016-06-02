@@ -12,6 +12,7 @@ if(isNull _target) exitWith {};
 if(player distance _target > 4) exitWith {};
 
 if(_target getVariable ["Reviving",ObjNull] == player) exitWith {[localize "STR_Medic_AlreadyReviving", false] spawn domsg;};
+if(_target getVariable "isHirntod") exitWith {["Diese Person ist komplett verstorben da sie Hirntod ist.",false] spawn domsg;};
 
 
 //Fetch their name so we can shout it.

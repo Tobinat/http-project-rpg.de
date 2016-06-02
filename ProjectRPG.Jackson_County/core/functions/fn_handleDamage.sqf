@@ -6,15 +6,12 @@ params ["_unit","_selectionName","_damage","_source","_projectile","_hitPartInde
 if(!isNull _source) then {
 
 	_damage = _damage / 3;
+	
+	/* systemChat format["Schaden: %1", _damage];
+	systemChat format["Kopfschaden: %1", (player getHit "head")];
+	systemChat format["AllHitPoints: %1", (getAllHitPointsDamage player)]; */
 
 	if(_source != _unit) then {
-	
-/* 		if(_projectile == "26_taser") then {
-			_damage = false;
-			if(!life_istazed) then {
-				[_unit,_source] spawn life_fnc_tazed;
-			};
-		}; */
 
 		if (vehicle _unit == _unit) then
 		{
@@ -54,15 +51,6 @@ if(!isNull _source) then {
 			};
 			_damage = 0;
 		};
-		
-/*
-		if(_curWep in ["Taser_26"]) exitwith {
-			if(side _source == west || license_civ_udc) then {
-				[_unit,_source] call life_fnc_tazed;
-			};
-			_damage = 0;	
-		};
-*/
 	} else {
 		_damage = _damage / 8; 
 		_isWater = surfaceIsWater (getPosASL player);

@@ -14,7 +14,7 @@ class DeathScreen
 		class MedicsOnline : Life_RscButtonMenu
 		{
 			idc = 7304;
-			text = "Medics: 1";
+			text = "RFA: 1";
 			x = 0.000874975 * safezoneW + safezoneX;
 			y = 0.0556 * safezoneH + safezoneY;
 			w = (20 / 40);
@@ -30,7 +30,7 @@ class DeathScreen
 		class MedicsNearby : Life_RscButtonMenu
 		{
 			idc = 7305;
-			text = "Nearby: No";
+			text = "RFA i.d. Nähe: Nein";
 			x = 0.000874975 * safezoneW + safezoneX;
 			y = 0.0776 * safezoneH + safezoneY;
 			w = (20 / 40);
@@ -67,7 +67,7 @@ class DeathScreen
 			w = (20 / 40);
 			h = (1 / 25);
 			onButtonClick = "[] call life_fnc_requestMedic;";
-			text = "Request Medic";
+			text = "RFA Rufen";
 			colorBackground[] = {0, 0, 0, 1};
 			class Attributes 
 			{

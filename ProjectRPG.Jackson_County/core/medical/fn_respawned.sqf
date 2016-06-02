@@ -6,19 +6,26 @@
 	Sets the player up if he/she used the respawn option.
 */
 private["_handle"];
+
 life_death = 2;
-//Reset our weight and other stuff
+
 player setVariable["dead",nil,TRUE];
 player setVariable["mapVisible",nil,true];
+player setVariable ["isHirntod",false,true];
+
 life_use_atm = TRUE;
 life_show_actions = false;
+
 ["Add","Food",100] spawn fnc_sustain;
 ["Add","Drink",100] spawn fnc_sustain;
 ["cash","set",0] call life_fnc_handleCash;  //Make sure we don't get our cash back.
+
 life_carryWeight = 0;
+
 player playMove "amovpercmstpsnonwnondnon";
 player allowdamage true;
 player setVariable ["tf_unable_to_use_radio", false];
+
 while{true} do {
 	if(dialog) then {closeDialog 0;};
 	if(!dialog) exitwith {};

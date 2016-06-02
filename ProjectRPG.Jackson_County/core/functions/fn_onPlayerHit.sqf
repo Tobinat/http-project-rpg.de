@@ -6,6 +6,8 @@ _source = _this select 1;
 _damage = _this select 2;
 _penis = false;
 
+systemChat "Moin, moin";
+
 if(!isNull _source) then {
 
 	if(_source != _unit) then {

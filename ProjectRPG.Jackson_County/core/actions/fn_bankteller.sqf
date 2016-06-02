@@ -3,7 +3,7 @@ File: bank teller payments
 */
 
 if(has_job) exitwith { ["Du hast bereits einen Job! Drücke Shift + 4 um diesen zu beenden!", false] spawn domsg;};
-if(!license_civ_bank) exitwith { ["Du bis kein Bank angestellter!", false] spawn domsg;};
+//if(!license_civ_bank) exitwith { ["Du bis kein Bank angestellter!", false] spawn domsg;};
 
 if(side player != civilian) exitwith { ["Nur für Zivilisten!", false] spawn domsg;  };
 if(life_bankteller) exitWith {
@@ -36,7 +36,7 @@ while{_fkit > 0 && life_bankteller } do {
 	};
 	_fkit = _fkit - 1;
 	if(_fkit == 5) then {
-		["Deine Bankzahlungen stoppen in 5 Minuten.", false] spawn domsg; 
+		["Deine Bankzahlungen stoppen in 5 Minuten.", false] spawn domsg;		
 	};
 };
 life_bankteller = false;
