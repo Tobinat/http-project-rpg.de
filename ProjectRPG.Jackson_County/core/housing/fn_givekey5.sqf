@@ -7,7 +7,7 @@
 params [["_house", objNull, [objNull]], ["_key", 0, [0]]]; 
 
 if(cash_in_hand < 5000) exitWith { ["Du brauchst $5000 Dollar um einen permanenten Schlüssel zu erstellen.", false] spawn domsg; };
-if(life_karma < 5000) exitWith { ["Dein Karma-Level ist nicht hoch genug! Du brauchst Karma-Level 5", false] spawn domsg; };
+if(life_karma < 5000) exitWith { ["Dein Karma-Level ist nicht hoch genug! Du brauchst 5000 Karma", false] spawn domsg; };
 
 
 if(isNull _house) exitWith {};
