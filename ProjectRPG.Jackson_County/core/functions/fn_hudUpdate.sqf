@@ -20,12 +20,6 @@ hud_fnc_ui_check =
 };
 
 
-
-
-
-
-
-
 hud_fnc_loop =
 {
 	if(phone_s_2) exitwith {};
@@ -68,14 +62,6 @@ hud_fnc_loop =
 	_gunmode = currentWeaponMode player;
 	if(vehicle player != player || currentweapon player == "") then { _gunmode = "No"; };
 	_select ctrlSetText format["%1 Firemode", format["%1",_gunmode]];
-
-
-
-
-
-
-
-
 
 
 		_mylife = _ui displayCtrl 444440;

@@ -44,7 +44,6 @@ waitUntil {life_session_completed};
 [] spawn life_fnc_escInterupt;
 
 
-
 fnc_checkPhone = {
 
 	_radios = player call TFAR_fnc_radiosList;
