@@ -353,6 +353,7 @@ class Life_Client_Core
 		class testDrive {};
 		class broadcastCheck {};
 		class gpsMarker {};
+		class prpgFunctionInit {};
 	};
 	
 	class Network
