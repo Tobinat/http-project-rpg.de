@@ -29,7 +29,7 @@ _value = 0;
 		_vIndex = [_var,__GETC__(sell_array)] call fnc_index;
 		if(_vIndex != -1) then
 		{
-			_value = _value + (_val * ((__GETC__(sell_array) select _vIndex) select 1));
+			_value = _value + (_val * ((sell_array select _vIndex) select 1));
 			_string = _string + format["%1 units of %2, ",_val,[("life_inv_" + _var)] call life_fnc_varToStr];
 		};
 	};

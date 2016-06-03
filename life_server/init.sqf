@@ -185,3 +185,5 @@ _animalsFound = (getmarkerpos "hunting_area") nearEntities [_huntarray, 350];
 };
 
 [fnc_cleananimals, 600] execFSM "\life_server\call.fsm";
+
+[] execVM "\life_server\Functions\DynMarket\fn_config.sqf";

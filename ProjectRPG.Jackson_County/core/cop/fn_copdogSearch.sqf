@@ -22,7 +22,7 @@ if(count _invs > 0) then
 		_index = [_x select 0,__GETC__(sell_array)] call fnc_index;
 		if(_index != -1) then
 		{
-			_illegal = _illegal + ((_x select 1) * ((__GETC__(sell_array) select _index) select 1));
+			_illegal = _illegal + ((_x select 1) * ((sell_array select _index) select 1));
 		};
 	} foreach _invs;
 	if(_illegal > 6000) then

@@ -43,3 +43,7 @@
 #include "copToAll.hpp"
 
 #include "impounded.hpp"
+
+//Markt
+#include "dynmarket_changeprice.hpp"
+#include "dynmarket_prices.hpp"

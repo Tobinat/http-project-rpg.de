@@ -529,7 +529,6 @@ sell_array =
 	["Blaulicht",10],
 	["tracker",1000]
 ];
-__CONST__(sell_array,sell_array);
 
 buy_array =
 [

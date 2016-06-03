@@ -62,7 +62,7 @@ _value = 0;
 			_houseInvData set[_forEachIndex,-1];
 			_houseInvData = _houseInvData - [-1];
 			_houseInvVal = _houseInvVal - (([_var] call life_fnc_itemWeight) * _val);
-			_value = _value + (_val * ((__GETC__(sell_array) select _vIndex) select 1));
+			_value = _value + (_val * ((sell_array select _vIndex) select 1));
 		};
 	};
 } foreach (_houseInv select 0);
