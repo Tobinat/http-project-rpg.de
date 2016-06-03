@@ -57,6 +57,11 @@ if(!license_civ_udc) then { //Sollte so funktionieren
 	life_paycheck = 4000;
 };
 
+if(license_civ_doj) then {
+	player setVariable ["dojLevel",true,true];
+	life_paycheck = 3000;
+};
+
 player setUnitRecoilCoefficient 2.8;
 player addRating 9999999;
 playsound "civintro";

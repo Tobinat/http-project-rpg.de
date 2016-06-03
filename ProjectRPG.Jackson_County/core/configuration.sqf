@@ -9,6 +9,7 @@
 */
 player setVariable["playerHealth", 0, true];
 player setVariable ["udcLevel",false,true];
+player setVariable ["dojLevel",false,true];
 player setVariable ["sosActive",false,true];
 player setVariable ["isHirntod",false,true];
 myHealth = 0;

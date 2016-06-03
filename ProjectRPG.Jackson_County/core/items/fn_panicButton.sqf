@@ -13,7 +13,7 @@ if(!_allowed) exitWith {[player,1] remoteExecCall ["PRPG_fnc_toMaster",2]}; //In
 if(isNull player) exitWith {};
 if(player getVariable "restrained") exitWith {};
 if(player getVariable "tied") exitWith {};
-if(playerSide == civilian && !license_civ_udc) exitWith {["Authentifizierung fehlgeschlagen! Sie sind kein Polizist.", false] spawn domsg;};
+if((playerSide == civilian && !license_civ_udc) && (playerSide == civilian && !license_civ_doj)) exitWith {["Authentifizierung fehlgeschlagen! Sie sind kein Polizist.", false] spawn domsg;};
 if(life_istazed OR life_knockout) exitWith {};
 
 private _pos = mapGridPosition player;
@@ -35,8 +35,13 @@ if(license_civ_udc) then {
 	_side = 3;
 };
 
+//
+if(license_civ_doj) then {
+	_side = 4;
+};
+
 { //Abfrage der Hurensöhne
-	if((side _x == west) || (_x getVariable "udcLevel")) then {
+	if((side _x == west) || (_x getVariable "udcLevel") || (_x getVariable "dojLevel")) then {
 		switch(_side) do {
 			case 0: {};
 			case 1: {
@@ -51,6 +56,11 @@ if(license_civ_udc) then {
 
 			case 3: {
 				[1,format["FBI NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
+				["dpanic", false] remoteExec ["fnc_dispatch",_x];
+			};
+			
+			case 4: {
+				[1,format["D.O.J. - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
 				["dpanic", false] remoteExec ["fnc_dispatch",_x];
 			};
 			default {};
