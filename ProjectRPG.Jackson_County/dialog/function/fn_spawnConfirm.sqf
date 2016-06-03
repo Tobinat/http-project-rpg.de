@@ -90,8 +90,8 @@ else
 		(findDisplay 46) displayAddEventHandler ["MouseZchanged", "_this spawn life_fnc_enableActions"];
 		[] execVM "core\init_survival.sqf";
 		[] execVM "core\fn_addKey.sqf";
+		[] execVM "core\functions\fn_prpgFunctionInit.sqf";
 		[] call life_fnc_hudSetup;
-		[] spawn life_fnc_prpgFunctionInit;
 		player setVariable ["loaded", true, true];
 	};
 	if(life_respawned) then {
