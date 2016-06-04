@@ -216,3 +216,6 @@ if!(getRemoteSensorsDisabled)then
 
 [] spawn life_fnc_cleanStation;
 [] spawn life_fnc_useStation;
+
+DYNAMICMARKET_boughtItems = [];
+[getPlayerUID player] remoteExec ["TON_fnc_playerLogged",2];

@@ -41,5 +41,6 @@
 #include "truckColorSelectorUI.hpp"
 #include "rechnung.hpp"
 #include "copToAll.hpp"
-
 #include "impounded.hpp"
+#include "dynmarket_changeprice.hpp"
+#include "dynmarket_prices.hpp"

@@ -7,7 +7,7 @@
 ****** Backend Variables *****
 *****************************
 */
-player setVariable["playerHealth", 0, true];
+player setVariable ["playerHealth", 0, true];
 player setVariable ["udcLevel",false,true];
 player setVariable ["dojLevel",false,true];
 player setVariable ["sosActive",false,true];
@@ -529,7 +529,6 @@ sell_array =
 	["Blaulicht",10],
 	["tracker",1000]
 ];
-__CONST__(sell_array,sell_array);
 
 buy_array =
 [
