@@ -18,9 +18,9 @@ _index = lbCurSel _listbox;
 _type = _listbox lbData _index;
 _itemArrayOld = [];
 
-if (!isNil "DYNMARKET_pricesOld") then {_itemArrayOld = DYNMARKET_pricesOld select (([_type,DYNMARKET_prices] call TON_fnc_index))} else {_itemArrayOld=["",0];};
+if (!isNil "DYNMARKET_pricesOld") then {_itemArrayOld = DYNMARKET_pricesOld select (([_type,DYNMARKET_prices] call fnc_index))} else {_itemArrayOld=["",0];};
 
-_index = [_type,DYNMARKET_prices] call TON_fnc_index;
+_index = [_type,DYNMARKET_prices] call fnc_index;
 
 _costOld = 0;
 
