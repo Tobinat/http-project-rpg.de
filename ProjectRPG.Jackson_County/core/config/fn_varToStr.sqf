@@ -131,6 +131,13 @@ switch (_var) do
 	case "life_inv_blaulicht": {"Blaulicht"};
 	case "life_inv_tracker": {"GPS-Tracker"};
 	
+	case "life_inv_silberu": {"Silbererz"};
+	case "life_inv_silberp": {"Silberbarren"};
+	case "life_inv_titanu": {"Titanerz"};
+	case "life_inv_titanp": {"Titanbarren"};
+	case "life_inv_gummiu": {"Kautschuk"};
+	case "life_inv_gummip": {"Gummi"};
+	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
 	case "license_civ_air": {(localize "STR_License_Pilot")};
@@ -162,4 +169,9 @@ switch (_var) do
 	case "license_cop_sert": {"S.E.R.T"};
 	case "license_civ_bank": {"Bank Angestellter"};
 	case "license_civ_doj": {"Dept. of Justice"};
+	case "license_civ_silber": {"Silber Verarbeitung"};
+	case "license_civ_titan": {"Titan Verarbeitung"};
+	case "license_civ_gummi": {"Kautschuk Verarbeitung"};
+	case "life_inv_kroku": {"Krokodil Zutaten"};
+	case "life_inv_krokp": {"Krokodil"};
 };

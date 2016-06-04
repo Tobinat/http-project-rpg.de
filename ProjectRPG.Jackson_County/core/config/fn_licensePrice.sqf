@@ -42,4 +42,9 @@ switch (_type) do
 	
 	case "rifle": {2000};
 	case "bank": {1500};
+	
+	case "silber": {1500};
+	case "titan": {2000};
+	case "gummi": {1000};
+	case "krok": {15000};
 };

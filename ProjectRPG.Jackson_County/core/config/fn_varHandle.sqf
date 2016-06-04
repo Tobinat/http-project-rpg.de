@@ -135,6 +135,15 @@ switch (_mode) do
 			case "Rax's Rum": {"life_inv_raxsrum"};
 			case "Blaulicht": {"life_inv_blaulicht"};
 			case "tracker": {"life_inv_tracker"};
+			
+			case "silberu": {"life_inv_silberu"};
+			case "silberp": {"life_inv_silberp"};
+			case "titanu": {"life_inv_titanu"};
+			case "titanp": {"life_inv_titanp"};
+			case "gummiu": {"life_inv_gummiu"};
+			case "gummip": {"life_inv_gummip"};
+			case "kroku": {"life_inv_kroku"};
+			case "krokp": {"life_inv_krokp"};
 		};
 	};
 	
@@ -270,6 +279,15 @@ switch (_mode) do
 			case "life_inv_raxsrum": {"Rax's Rum"};
 			case "life_inv_blaulicht": {"Blaulicht"};
 			case "life_inv_tracker": {"tracker"};
+			
+			case "life_inv_silberu": {"silberu"};
+			case "life_inv_silberp": {"silberp"};
+			case "life_inv_titanu": {"titanu"};
+			case "life_inv_titanp": {"titanp"};
+			case "life_inv_gummiu": {"gummiu"};
+			case "life_inv_gummip": {"gummip"};
+			case "life_inv_kroku": {"kroku"};
+			case "life_inv_krokp": {"krokp"};
 		};
 	};
 };

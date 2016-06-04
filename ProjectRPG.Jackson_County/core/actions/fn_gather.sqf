@@ -50,6 +50,8 @@ if(!isNil "_this" && {count _this != 0}) then {
 		case (_zone in ["meth_1"]): {_gather = "methu"; _val = 1;};
 		case (_zone in ["MDMA_zone_1"]): {_gather = "MDMAu"; _val = 1;};
 		case (_zone in ["SHANK_1"]): {_gather = "shank"; _val = 1;};
+		case (_zone in ["gummi_1"]): {_gather = "gummiu"; _val = 2;};
+		case (_zone in ["krok_1"]): {_gather = "kroku"; _val = 1;};
 		default {""};
 	};
 };

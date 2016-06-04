@@ -367,7 +367,16 @@ life_inv_items =
 	"life_inv_jackdanielsandcoke",
 	"life_inv_raxsrum",
 	"life_inv_blaulicht",
-	"life_inv_tracker"	
+	"life_inv_tracker",
+	
+	"life_inv_silberu",
+	"life_inv_silberp",
+	"live_inv_titanu",
+	"life_inv_titanp",
+	"life_inv_gummiu",
+	"life_inv_gummip",
+	"life_inv_kroku",
+	"life_inv_krokp"
 ];
 
 
@@ -403,6 +412,10 @@ life_licenses =
 	["license_civ_udc","civ"],
 	["license_civ_rifle","civ"],
 	["license_civ_doj","civ"],
+	["license_civ_silber","civ"],
+	["license_civ_titan","civ"],
+	["license_civ_gummi","civ"],
+	["license_civ_krok","civ"],
 	
 	//RFA Licenses
 	["license_med_air","med"],
@@ -527,8 +540,13 @@ sell_array =
 	["cigarette",1],
 	["Rax's Rum",1],
 	["Blaulicht",10],
-	["tracker",1000]
+	["tracker",1000],
+	["silberp",300],
+	["titanp",450],
+	["gummip",180],
+	["krokp",550]
 ];
+
 
 buy_array =
 [
@@ -622,7 +640,8 @@ buy_array =
         ["cigarette",925],
         ["Rax's Rum",5],
         ["Blaulicht",50],
-		["tracker",10000]
+		["tracker",10000],
+		["krokp",700]
 ];
 __CONST__(buy_array,buy_array);
 

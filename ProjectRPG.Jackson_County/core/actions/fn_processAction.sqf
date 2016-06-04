@@ -26,6 +26,10 @@ _itemInfo = switch (_type) do
 	case "meth": {["methu","methp",50,"Verpacke Methproben"];};
 	case "MDMA": {["MDMAu","MDMAp",50,"Presse MDMA zu Pillen"];};
 	case "coke": {["cokeu","cokep",50,"Verpacke Kokain"];};
+	case "silber": {["silberu","silberp",11,"Schmelze Silber"];};
+	case "titan": {["titanu","titanp",11,"Schmelze Titan"];};
+	case "gummi": {["gummiu","gummip",7,"Erhitze Kautschuk"];};
+	case "krok": {["kroku","krokp",50,"Koche Krokodil"];};
 	default {[];};
 };
 
@@ -56,7 +60,7 @@ _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _cP = 0.01;
 
-if (life_karma < 0 && _type in ["heroin","marijuana","meth","MDMA","coke"]) then {
+if (life_karma < 0 && _type in ["heroin","marijuana","meth","MDMA","coke","krok"]) then {
 	_cP = 0.2;	
 };
 _progress progressSetPosition _cp;

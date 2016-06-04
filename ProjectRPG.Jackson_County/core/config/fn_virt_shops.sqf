@@ -17,13 +17,13 @@ switch (_shop) do
 	case "gang": {["Gang Market", ["bandage","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
 	case "coffee": {["Stratis Coffee Club",["coffee","donuts"]]};
-	case "heroin": {["Drug Dealer",["marijuana","cokep","cokeu","methp","methu","MDMAp","MDMAu"]]};
+	case "heroin": {["Drug Dealer",["marijuana","cokep","cokeu","methp","methu","MDMAp","MDMAu","krokp"]]};
 	case "gems": {["Gem Dealer",["sapphire","ruby","emerald"]]};
 	case "oil": {["Oil Trader",["oilp","pickaxe","fuelF"]]};
 	case "fishmarket": {["Fish Market",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "farmingmarket": {["Market",["wheat","sunflower","corn","bean","cotton","olive","opium","cannabis","pumpkin"]]};	
 	case "glass": {["Glass Dealer",["glass"]]};
-	case "iron": {["Industrial Trader",["iron_r","copper_r"]]};
+	case "iron": {["Industrial Trader",["iron_r","copper_r","silberp","titanp"]]};
 	case "diamond": {["Diamond Dealer",["weddingring","diamond","diamondc"]]};
 	case "salt": {["Salt Dealer",["salt_r"]]};
 	case "cop": {["Cop Item Shop",["coffee","donuts","medkit","panicbutton","bandage","fuelF","defusekit","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB","tracker"]]};
@@ -33,6 +33,7 @@ switch (_shop) do
 	case "gold": {["Gold Buyer",["goldbar"]]};
 	case "ems": {["EMS Item Shop",["airkit","panicbutton","condom","bec","water","rabbit","apple","redgull","tbacon","peach","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "butcher": {["Bob's Flesh'n Besh",["Raw Meat"]]};
+	case "gummi": {["Gummi Händler",["gummip"]]};
 };
 
 

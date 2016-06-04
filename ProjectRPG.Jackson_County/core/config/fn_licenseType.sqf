@@ -50,6 +50,10 @@ switch (_mode) do
 			case "rifle": {_var = "license_civ_rifle"};
 			case "doj": {_var = "license_civ_doj"};
 			case "bank": {_var = "license_civ_bank"};
+			case "silber": {_var = "license_civ_silber"};
+			case "titan": {_var = "license_civ_titan"};
+			case "gummi": {_var = "license_civ_gummi"};
+			case "krok": {_var = "license_civ_krok"};
 			default {_var = ""};
 		};
 	};
@@ -91,6 +95,10 @@ switch (_mode) do
 			case "license_civ_rifle": {_var = "rifle"};
 			case "license_civ_bank": {_var = "bank"};
 			case "license_civ_doj": {_var = "doj"};
+			case "license_civ_silber": {_var = "silber"};
+			case "license_civ_titan": {_var = "titan"};
+			case "license_civ_gummi": {_var = "gummi"};
+			case "license_civ_krok": {_var = "krok"};
 			default {_var = ""};
 		};
 	};

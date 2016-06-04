@@ -224,6 +224,7 @@ class Life_Client_Core
 		class useHeroin {};
 		class useCigarette {};
 		class useBEC {};
+		class usekrok {};
 	};
 
 	class Config

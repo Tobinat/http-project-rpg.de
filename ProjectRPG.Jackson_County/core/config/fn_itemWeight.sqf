@@ -122,6 +122,15 @@ switch (_item) do
 	case "jackdanielsandcoke": {1};
 	case "Blaulicht": {2.5};
 	case "tracker": {1.5};
+	
+	case "silberu": {3};
+	case "silberp": {2};
+	case "titanu": {4};
+	case "titanp": {3};
+	case "gummiu": {2};
+	case "gummip": {1};
+	case "kroku": {4};
+	case "krokp": {2};
 
 	default {1};
 };
