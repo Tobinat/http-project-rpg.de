@@ -51,5 +51,3 @@ if(life_shop_type == "heroin") then
 	};
 };
 
-[0] call SOCK_fnc_updatePartial;
-[3] call SOCK_fnc_updatePartial;
