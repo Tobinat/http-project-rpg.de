@@ -27,18 +27,6 @@ class KBWFiles
 class Life_Client_Core
 {
 	tag = "life";
-	class DynMarket
-    {
-        file = "core\DynMarket";
-        class bought {};
-        class update {};
-        class DisplayPrices {};
-        class LoadIntoListbox {};
-        class ForcePrice {};
-        class DYNMARKET_getPrice {};
-	    class DYNMARKET_getIcon {};
-    };
-	
 	class Master_Directory
 	{
 		file = "core";
