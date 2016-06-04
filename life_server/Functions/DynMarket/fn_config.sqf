@@ -16,7 +16,7 @@ DYNMARKET_Serveruptime         = 04;   // Serveruptime after restart in hours
 DYNMARKET_UseExternalDatabase  = true; // Should the script use the External Database?
 DYNMARKET_PriceUpdateInterval  = 02;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = true; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
-DYNMARKET_CreateBackupInterval = 05;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
+DYNMARKET_CreateBackupInterval = 03;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
 DYNMARKET_UserNotification     = false; // Should the user be informed with a hint whenever the prices got updated?
 
 // █████████████████ USER NOTIFICATION TEXTS  █████████████████
@@ -32,15 +32,39 @@ DYNMARKET_UserNotification_Text =
 DYNMARKET_Items_Groups =
 [
 	["Legal",
-		[
-			["apple",-1,10,50],
-			["peach",-1,30,100]
+		[	
+		    ["wheat",-1,15,40],
+        	["sunflower",-1,25,75],
+        	["corn",-1,40,150],
+        	["bean",-1,40,120],
+        	["cotton",-1,15,40],
+        	["olive",-1,200,320],
+			["pumpkin",-1,50,170],
+			["Raw Meat",-1,400,700],
+			["oilp",-1,400,700],
+			["diamond",-1,40,120],
+	        ["diamondc",-1,80,240],
+	        ["iron_r",-1,150,350],
+	        ["copper_r",-1,200,400],
+	        ["salt_r",-1,100,240],
+	        ["glass",-1,50,150],
+			["cement",-1,190,300]
 		],
 		0.5
 	],
 	["Illegal", 
 		[
-			/*["peach",1,30,100]*/
+			["MDMAu",-1,50,150],
+	        ["MDMAp",-1,550,700],
+		    ["emerald",-1,930,1130],
+	        ["sapphire",-1,930,1130],
+	        ["ruby",-1,950,1150],
+			["methu",-1,60,170],
+	        ["methp",-1,500,900],
+	        ["cokeu",-1,160,260],
+	        ["cokep",-1,600,1000],
+			["marijuana",-1,60,160],
+			["turtle",-1,300,500]
 		],
 		0.5
 	]
