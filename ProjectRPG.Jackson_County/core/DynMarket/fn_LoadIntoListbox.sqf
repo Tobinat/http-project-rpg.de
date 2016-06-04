@@ -9,7 +9,7 @@
 */
 
 if (isNil "DYNMARKET_prices") then {
-	[getPlayerUID player] remoteExec ["TON_fnc_playerLogged",2];
+	[player] remoteExec ["TON_fnc_playerLogged",2];
 	hint "Erhalte die Börse...";
 	sleep 1;
 };

@@ -8,5 +8,6 @@
 #################################################################
 */
 
-_playerUID = _this select 0;
-[1,DYNMARKET_Items_CurrentPriceArr] remoteExec ["life_fnc_update",_playerUID];
+_player = param[0,ObjNull,[ObjNull]];
+
+[1,DYNMARKET_Items_CurrentPriceArr] remoteExec ["life_fnc_update",(owner _player)];
