@@ -131,6 +131,17 @@ class CfgFunctions
 			class removeGang {};
 			class updateGang {};
 		};
+		
+        class DynMarket
+        {
+            file = "\life_server\Functions\DynMarket";
+            class calculatePrices {};
+            class config {};
+            class getUpdate {};
+            class HandleDB {};
+            class playerLogged {};
+            class sleeper {};
+        };
 	};
 
 	class ProjectRPG
