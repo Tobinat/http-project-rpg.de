@@ -582,4 +582,16 @@ class Life_Client_Core
         class willswieder {};
         class impoundLBChange {};		
 	};
+	
+	class Markt_System
+	{
+		file = "core\DynMarket";
+		class bought {};
+		class DisplayPrices {};
+		class DYNMARKET_getIcon {};
+		class DYNMARKET_getPrice {};
+		class ForcePrice {};
+		class LoadIntoListbox {};
+		class update {};
+	};
 };

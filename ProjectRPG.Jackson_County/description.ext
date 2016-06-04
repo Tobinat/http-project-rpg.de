@@ -1,9 +1,9 @@
-author = "Tonic | Edited by PRPG";
-onLoadName = "Project-Rpg v1.5";
+author = "Tonic | Edited by PRPG.de";
+onLoadName = "Project-RPG v1.5";
 onLoadMission = "Webseite: http://project-rpg.de";
 //loadScreen = "a3l_client2\bg\cgbg.paa";
 joinUnassigned = 1;
-onLoadIntro = "PRPG Life ist am Laden...";
+onLoadIntro = "PRPG Life ist am laden...";
 respawn = BASE;
 respawndelay = 1;
 disabledAI = 1;
@@ -70,7 +70,7 @@ class introLife
 
 class CfgFunctions
 {
-	#include "Functions.h"
+	#include "Functions.hpp"
 };
 class CfgSounds
 {
