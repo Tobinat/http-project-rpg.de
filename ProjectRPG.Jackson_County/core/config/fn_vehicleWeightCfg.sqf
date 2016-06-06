@@ -311,7 +311,7 @@ switch (_className) do
 	case "A3L_SuburbanCSO": {65};
 	case "A3L_SuburbanFG": {65};
 	
-	case "A3L_AmberLamps": {25};
+	
 	case "A3L_Laddertruck": {25};
 	
 	case "A3L_Karts": {5};	
