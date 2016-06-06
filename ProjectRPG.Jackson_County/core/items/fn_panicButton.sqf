@@ -7,13 +7,13 @@
 	Startet entsprechende Aktionen des Panikknopfes.
 */
 
-_allowed = param [0,false,[false]];
+_allowed = param [3,false,[false]];	//Index 3, wegen addAction
 
 if(!_allowed) exitWith {[player,1] remoteExecCall ["PRPG_fnc_toMaster",2]}; //Invalid call
 if(isNull player) exitWith {};
 if(player getVariable "restrained") exitWith {};
 if(player getVariable "tied") exitWith {};
-if((playerSide == civilian && !license_civ_udc) && (playerSide == civilian && !license_civ_doj)) exitWith {["Authentifizierung fehlgeschlagen! Sie sind kein Polizist.", false] spawn domsg;};
+if(playerSide == civilian && !license_civ_udc && !license_civ_doj) exitWith {["Authentifizierung fehlgeschlagen!", false] spawn domsg;};
 if(life_istazed OR life_knockout) exitWith {};
 
 private _pos = mapGridPosition player;

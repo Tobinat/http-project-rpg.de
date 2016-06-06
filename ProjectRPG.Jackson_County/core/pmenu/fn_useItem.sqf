@@ -39,7 +39,7 @@ switch (true) do
 
 	case (_item == "panicbutton"): {
 		if(([false,_item,1] call life_fnc_handleInv)) then {
-			[true] spawn life_fnc_panicButton;
+			[nil,nil,nil,true] spawn life_fnc_panicButton;
 		};
 	};
 
