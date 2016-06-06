@@ -678,7 +678,11 @@ switch (_shop) do
 			["Mrshounka_lykan_c_rose",2000000],
 			["Mrshounka_lykan_c_rouge",2000000],
 			["Mrshounka_lykan_c_violet",2000000],
-	
+			
+			["A3L_EvoXRed",3000000],
+			["A3L_EvoXBlack",3000000],
+			["A3L_EvoXWhite",3000000],
+			
 			["A3L_EvoXrally_green",3999999],
 			["A3L_EvoXrally_white",3999999],
 			["A3L_EvoXrally_red",3999999],
