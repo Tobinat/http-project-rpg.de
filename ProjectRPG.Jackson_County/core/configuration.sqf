@@ -547,6 +547,8 @@ sell_array =
 	["krokp",550]
 ];
 
+__CONST__(sell_array,sell_array);
+
 
 buy_array =
 [
