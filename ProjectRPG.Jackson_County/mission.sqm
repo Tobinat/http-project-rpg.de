@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=18343;
+		nextID=18356;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7814.5962,19.866936,5228.5181};
-		dir[]={0.81941843,-0.49806169,-0.2840741};
-		up[]={0.47073817,0.86703598,-0.16319409};
-		aside[]={-0.32758817,-1.6391277e-007,-0.94492573};
+		pos[]={8771.7412,104.83118,6681.8462};
+		dir[]={-0.74276829,-0.38698906,-0.54642862};
+		up[]={-0.31172517,0.92208189,-0.22932513};
+		aside[]={-0.59259826,-5.4296106e-007,0.80552512};
 	};
 };
 binarizationWanted=0;
@@ -933,7 +933,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4519;
+		items=4528;
 		class Item0
 		{
 			dataType="Marker";
@@ -1347,6 +1347,7 @@ class Mission
 			type="Empty";
 			angle=32.261948;
 			id=45;
+			atlOffset=0.12722015;
 		};
 		class Item37
 		{
@@ -1497,6 +1498,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=66;
+			atlOffset=0.050003052;
 		};
 		class Item51
 		{
@@ -1673,7 +1675,7 @@ class Mission
 			type="Empty";
 			angle=49.999992;
 			id=85;
-			atlOffset=0.0001449585;
+			atlOffset=0.026725769;
 		};
 		class Item66
 		{
@@ -1981,6 +1983,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=121;
+			atlOffset=0.099998474;
 		};
 		class Item93
 		{
@@ -2823,7 +2826,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=215;
-			atlOffset=84.878708;
+			atlOffset=85.173004;
 		};
 		class Item168
 		{
@@ -2837,7 +2840,7 @@ class Mission
 			a=100;
 			b=100;
 			id=216;
-			atlOffset=85.143478;
+			atlOffset=85.438774;
 		};
 		class Item169
 		{
@@ -4742,6 +4745,7 @@ class Mission
 			};
 			id=443;
 			type="Land_Atm_02_F";
+			atlOffset=0.099998474;
 		};
 		class Item341
 		{
@@ -6192,6 +6196,7 @@ class Mission
 			};
 			id=617;
 			type="Land_WaterCooler_01_new_F";
+			atlOffset=0.050003052;
 		};
 		class Item414
 		{
@@ -6209,7 +6214,7 @@ class Mission
 			};
 			id=625;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.28250885;
+			atlOffset=0.32051086;
 		};
 		class Item415
 		{
@@ -6227,7 +6232,7 @@ class Mission
 			};
 			id=633;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.29595947;
+			atlOffset=0.3339386;
 		};
 		class Item416
 		{
@@ -7471,7 +7476,6 @@ class Mission
 			};
 			id=729;
 			type="cg_bench1";
-			atlOffset=2.2888184e-005;
 		};
 		class Item483
 		{
@@ -9593,7 +9597,6 @@ class Mission
 			};
 			id=1190;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.14739799;
 		};
 		class Item597
 		{
@@ -9612,7 +9615,7 @@ class Mission
 			};
 			id=1191;
 			type="Land_InfoStand_V1_F";
-			atlOffset=44.900002;
+			atlOffset=44.900005;
 		};
 		class Item598
 		{
@@ -12575,7 +12578,7 @@ class Mission
 					};
 					id=1645;
 					type="C_man_polo_2_F";
-					atlOffset=45.042999;
+					atlOffset=45.043007;
 				};
 				class Item10
 				{
@@ -49444,13 +49447,13 @@ class Mission
 				angles[]={0,5.4378033,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false; this allowDamage false; this addAction[""Flug nach Lakeside"",life_fnc_skyDive,true]; this addAction[""Catch a Taxi"",life_fnc_taxi];";
 			};
 			id=8717;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.84564209;
 		};
 		class Item2650
 		{
@@ -49519,6 +49522,7 @@ class Mission
 			};
 			id=8722;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.026565552;
 		};
 		class Item2654
 		{
@@ -49587,7 +49591,7 @@ class Mission
 			};
 			id=8779;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.74799347;
+			atlOffset=0.79799652;
 		};
 		class Item2658
 		{
@@ -52490,7 +52494,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Farm Markt"",life_fnc_virt_menu,""farmingmarket""]; this addAction[""Ausrauben"",life_fnc_robStore,""Farming""];this addAction[""Markt"",life_fnc_virt_menu,""market""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Farm Markt"",life_fnc_virt_menu,""farmingmarket""]; this addAction[""Ausrauben"",life_fnc_robStore,""Farming""];this addAction[""Markt"",life_fnc_virt_menu,""market""]; this addAction[""Gummi Händler"",life_fnc_virt_menu,""gummi""];";
 			};
 			id=12292;
 			type="Land_InfoStand_V2_F";
@@ -53026,14 +53030,13 @@ class Mission
 				angles[]={0,1.8299079,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false; this addAction[""Geldwäscher"",{ if (side player == civilian) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 			};
 			id=12332;
 			type="Land_InfoStand_V2_F";
-			atlOffset=1.5258789e-005;
+			atlOffset=2.2226868;
 		};
 		class Item2864
 		{
@@ -56094,20 +56097,20 @@ class Mission
 		class Item3024
 		{
 			dataType="Marker";
-			position[]={6547.9067,35.150204,3797.9519};
+			position[]={6560.8413,35.150204,3787.676};
 			name="peugeot_car_1";
 			type="Empty";
-			angle=42.754002;
+			angle=88.077774;
 			id=14554;
 			atlOffset=20.150204;
 		};
 		class Item3025
 		{
 			dataType="Marker";
-			position[]={6547.7236,35.133762,3794.1479};
+			position[]={6550.7417,35.133762,3787.2502};
 			name="peugeot_car_1_1";
 			type="Empty";
-			angle=46.703976;
+			angle=86.868553;
 			id=14555;
 			atlOffset=20.133762;
 		};
@@ -57896,7 +57899,7 @@ class Mission
 			};
 			id=15105;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.26447296;
+			atlOffset=0.30253601;
 		};
 		class Item3130
 		{
@@ -57914,7 +57917,7 @@ class Mission
 			};
 			id=15106;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.27420044;
+			atlOffset=0.31223297;
 		};
 		class Item3131
 		{
@@ -58209,14 +58212,13 @@ class Mission
 				angles[]={0,1.9923631,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init=" this allowDamage false; this enableSimulation false; " \n " this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && license_civ_udc && !life_action_inUse '];";
 			};
 			id=15128;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.00032424927;
+			atlOffset=3.2019997;
 		};
 		class Item3141
 		{
@@ -75275,13 +75277,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8680.2246,21.322403,6727.583};
-				angles[]={0,3.3559773,0};
+				angles[]={0,3.3559716,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;";
+				init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton,"""",0,false,false,"""",'license_civ_doj && playerSide == civilian'];   " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
 			};
 			id=17244;
 			type="OfficeTable_01_new_F";
@@ -75789,7 +75791,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Fahrzeug Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)]; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""doj_car_spawn"";  }];   " \n "this addAction[""Parke Fahrzeug in der Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",''];";
+				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Fahrzeug Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)]; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""doj_car_spawn"";  }];   " \n "this addAction[""Parke Fahrzeug in der Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'']; this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton,"""",0,false,false,"""",'license_civ_doj && playerSide == civilian'];   " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
 			};
 			id=17343;
 			type="A3L_Savepoint";
@@ -77738,17 +77740,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8690.1055,21.585079,6708.0327};
-				angles[]={0,3.3520572,0};
+				position[]={8690.1045,21.585295,6708.0332};
+				angles[]={0,3.352062,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton,"""",0,false,false,"""",'license_civ_doj && playerSide == civilian'];   " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
 			};
 			id=17447;
 			type="Land_WoodenTable_large_F";
-			atlOffset=0.14204025;
+			atlOffset=0.14225578;
 		};
 		class Item4172
 		{
@@ -78091,17 +78094,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8675.3623,21.607836,6725.4395};
-				angles[]={0,3.3520572,6.2816415};
+				position[]={8675.3623,21.608294,6725.439};
+				angles[]={0,3.352062,6.2816491};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton,"""",0,false,false,"""",'license_civ_doj && playerSide == civilian'];   " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
 			};
 			id=17456;
 			type="Land_WoodenTable_large_F";
-			atlOffset=0.16479683;
+			atlOffset=6.2942505e-005;
 		};
 		class Item4181
 		{
@@ -81735,18 +81739,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8685.8643,21.406338,6709.0659};
-				angles[]={0,4.8966007,6.2816415};
+				position[]={8685.8643,21.406403,6709.0659};
+				angles[]={0,4.8966084,6.2816491};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;";
+				init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton,"""",0,false,false,"""",'license_civ_doj && playerSide == civilian'];   " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
 			};
 			id=17676;
 			type="OfficeTable_01_new_F";
-			atlOffset=0.083934784;
+			atlOffset=0.083999634;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -82025,18 +82029,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8683.2793,21.406204,6722.2104};
-				angles[]={0,3.3176398,6.2816415};
+				position[]={8683.2793,21.406403,6722.21};
+				angles[]={0,3.3176441,6.2816491};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;";
+				init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton,"""",0,false,false,"""",'license_civ_doj && playerSide == civilian'];   " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
 			};
 			id=17696;
 			type="OfficeTable_01_new_F";
-			atlOffset=0.08380127;
+			atlOffset=0.083999634;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -85244,7 +85248,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""Krokodil Küche"",life_fnc_processAction,""krok"",0,false,false,"""",' life_inv_kroku > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_krok""] call life_fnc_varToStr,[([""krok""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""krok"",0,false,false,"""",' !license_civ_krok && playerSide == civilian '];";
+				init="this addAction[""Krokodil Küche"",life_fnc_processAction,""krok"",0,false,false,"""",' life_inv_kroku > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_krok""] call life_fnc_varToStr,[([""krok""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""krok"",0,false,false,"""",' !license_civ_krok && playerSide == civilian '];";
 			};
 			id=18337;
 			type="Land_InfoStand_V1_F";
@@ -85261,6 +85265,135 @@ class Mission
 			b=0.69999999;
 			id=18338;
 			atlOffset=30.684914;
+		};
+		class Item4519
+		{
+			dataType="Marker";
+			position[]={8510.0332,54.970001,9582.2275};
+			name="titan_1";
+			text="Titanmine";
+			type="A3L_Pickaxe_Icon";
+			colorName="ColorBrown";
+			a=0.69999999;
+			b=0.69999999;
+			id=18343;
+		};
+		class Item4520
+		{
+			dataType="Marker";
+			position[]={6196.25,15,3713.6536};
+			name="Titan_2";
+			text="Titan Verarbeitung";
+			type="A3L_Factory_Green_Icon";
+			colorName="ColorBrown";
+			a=0.69999999;
+			b=0.69999999;
+			angle=358.39828;
+			id=18344;
+		};
+		class Item4521
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6196.251,15.580258,3713.52};
+				angles[]={0,5.616138,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[format[""%1 ($%2)"",[""license_civ_titan""] call life_fnc_varToStr,[([""titan""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""titan"""",0,false,false,"",' !license_civ_titan && playerSide == civilian ']; " \n "this addAction[""Titanverarbeitung"",life_fnc_processAction,""titan"",0,false,false,"""",' life_inv_titanu > 0 && !life_is_processing'];";
+			};
+			id=18345;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item4522
+		{
+			dataType="Marker";
+			position[]={8947.4766,473.72217,1678.092};
+			name="gummi_1";
+			text="Natur Kautschuk Bäume";
+			type="A3L_Factory_Red_Icon";
+			colorName="ColorBlack";
+			a=0.69999999;
+			b=0.69999999;
+			id=18348;
+			atlOffset=-0.82522583;
+		};
+		class Item4523
+		{
+			dataType="Marker";
+			position[]={3529.9382,62.549255,4452.5684};
+			name="Titan_3";
+			text="Kautschuk Verarbeitung";
+			type="A3L_Factory_Green_Icon";
+			colorName="ColorBrown";
+			a=0.69999999;
+			b=0.69999999;
+			angle=358.39798;
+			id=18349;
+			atlOffset=0.0017318726;
+		};
+		class Item4524
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3529.9392,63.127392,4452.4351};
+				angles[]={6.280201,1.7529039,0.0029845131};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""Kautschukverarbeitung"",life_fnc_processAction,""gummi"",0,false,false,"""",' life_inv_gummiu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_gummi""] call life_fnc_varToStr,[([""gummi""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""gummi"",0,false,false,"""",' !license_civ_gummi && playerSide == civilian '];";
+			};
+			id=18350;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item4525
+		{
+			dataType="Marker";
+			position[]={5294.1416,278.80966,9572.8965};
+			name="silber_1";
+			text="Silbermine";
+			type="A3L_Pickaxe_Icon";
+			colorName="ColorBrown";
+			a=0.69999999;
+			b=0.69999999;
+			id=18351;
+			atlOffset=-0.098480225;
+		};
+		class Item4526
+		{
+			dataType="Marker";
+			position[]={7685.1157,54.970001,4824.2603};
+			name="silber_2";
+			text="Silber Verarbeitung";
+			type="A3L_Factory_Green_Icon";
+			colorName="ColorBrown";
+			a=0.69999999;
+			b=0.69999999;
+			angle=359.92545;
+			id=18352;
+		};
+		class Item4527
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7685.2461,55.550259,4824.231};
+				angles[]={0,4.2728629,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[format[""%1 ($%2)"",[""license_civ_silber""] call life_fnc_varToStr,[([""silber""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""silber"",0,false,false,"""",' !license_civ_silber && playerSide == civilian ']; " \n "this addAction[""Silberverarbeitung"",life_fnc_processAction,""silber"",0,false,false,"""",' life_inv_silberu > 0 && !life_is_processing'];";
+			};
+			id=18353;
+			type="Land_InfoStand_V2_F";
 		};
 	};
 };
