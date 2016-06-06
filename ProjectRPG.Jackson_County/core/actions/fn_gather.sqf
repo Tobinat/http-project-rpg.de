@@ -7,7 +7,7 @@
 */
 closeDialog 0;
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
-_resourceZones = ["coke_zone_1_1","coke_zone_1_2","coke_zone_1","meth_1","MDMA_zone_1","SHANK_1","HH_1"];
+_resourceZones = ["coke_zone_1_1","coke_zone_1_2","coke_zone_1","meth_1","MDMA_zone_1","gummi_1","krok_1","SHANK_1","HH_1"];
 _zone = "";
 _gather = "";
 _val = 1;

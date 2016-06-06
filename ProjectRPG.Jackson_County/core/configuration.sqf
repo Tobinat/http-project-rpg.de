@@ -371,7 +371,7 @@ life_inv_items =
 	
 	"life_inv_silberu",
 	"life_inv_silberp",
-	"live_inv_titanu",
+	"life_inv_titanu",
 	"life_inv_titanp",
 	"life_inv_gummiu",
 	"life_inv_gummip",
