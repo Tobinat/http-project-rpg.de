@@ -84,6 +84,6 @@ if(handgunWeapon player != "") then
 	}forEach _items;
 }forEach [_hgItems, _pwItems, _swItems];
 
-player say3D "Patdown";
+//player say3D "Patdown";
 //--Save the player's updated gear.
 call life_fnc_saveGear;

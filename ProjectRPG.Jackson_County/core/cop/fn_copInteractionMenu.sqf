@@ -141,7 +141,7 @@ _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
 _Btn8 ctrlSetText localize "STR_pInAct_PatDown";
-_Btn8 buttonSetAction "[] remoteExecCall [""life_fnc_removeWeaponActionCiv"",life_pInact_curTarget]; closeDialog 0;";
+_Btn8 buttonSetAction "[] remoteExec [""life_fnc_removeWeaponActionCiv"",life_pInact_curTarget]; closeDialog 0;";
 
 _Btn9 ctrlSetText localize "STR_pInAct_TestIntox";
 _Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_testIntox;";
