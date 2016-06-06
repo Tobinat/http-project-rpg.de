@@ -85335,7 +85335,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""DoJ Kleidung"",life_fnc_clothingMenu,""doj"",0,false,false,"""",' license_civ_doj && playerSide == civilian'];" \n "this addAction[""Markt"",life_fnc_virt_menu,""market"",0,false,false,"""",' license_civ_doj && playerSide == civilian'];   " \n "this addAction[""Medizinische Hilfe"",life_fnc_healHospital,"""",0,false,false,"""",' license_civ_doj && playerSide == civilian'];";
+				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""DoJ Kleidung"",life_fnc_clothingMenu,""doj"",0,false,false,"""",'license_civ_doj && playerSide == civilian'];" \n "this addAction[""Markt"",life_fnc_virt_menu,""market"",0,false,false,"""",'license_civ_doj && playerSide == civilian'];   " \n "this addAction[""Medizinische Hilfe"",life_fnc_healHospital,"""",0,false,false,"""",'license_civ_doj && playerSide == civilian'];";
 			};
 			id=18360;
 			type="Land_Noticeboard_F";
