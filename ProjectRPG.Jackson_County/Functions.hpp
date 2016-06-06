@@ -257,6 +257,7 @@ class Life_Client_Core
 		class clothing_dive {};
 		class clothing_kart {};
 		class clothing_udc {};
+		class clothing_doj {};
 	};
 
 	class Player_Menu
