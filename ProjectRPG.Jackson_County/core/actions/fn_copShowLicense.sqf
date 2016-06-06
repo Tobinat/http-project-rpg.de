@@ -34,7 +34,8 @@ if(playerSide == west) then
         case 12: { _rank = "Agent Anwärter";};
         case 13: { _rank = "Agent";};
         case 14: { _rank = "Special Agent";};
-        //case 15: { _rank = "";};
+		//LVPD Spezialrang
+        case 15: { _rank = "Commissioner";};
     };
 
 	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#0000ff'>%3</t>", _id, name player, _rank];
