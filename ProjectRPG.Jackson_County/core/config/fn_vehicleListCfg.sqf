@@ -730,7 +730,6 @@ switch (_shop) do
 		[
 			["CG_Taxi",11110],
 
-
 			["critgamin_smart_civ",18000],
 			["critgamin_smart_bleu",18000],
 			["critgamin_smart_noir",18000],
@@ -768,7 +767,6 @@ switch (_shop) do
 			["critgamin_vangmcc_civ_orange",18000],
 
 
-
 			["cg_renault_twingo_noir",49000],
 			["cg_renault_twingo_violet",49000],
 			["cg_renault_twingo_rose",49000],
@@ -780,7 +778,6 @@ switch (_shop) do
 			["cg_renault_twingo_white",49000],
 			["cg_renault_twingo_jaune",49000],
 			["cg_renault_twingo_rouge",49000],
-
 
 
 			["Mrshounka_Alfa_Romeo_bleufonce",85000],
@@ -825,6 +822,7 @@ switch (_shop) do
 	{
 		_return =
 		[
+/*
 			["tcg_hrly",25000],
 			["tcg_hrly_white",25000],	
 			["tcg_hrly_red",25000],
@@ -837,6 +835,7 @@ switch (_shop) do
 			["tcg_hrly_orig2",45000],
 			["tcg_hrly_skeleton",55000],
 			["tcg_hrly_gay",65000],
+*/
 
 			["cg_ducati_civ_noir",159000],
 			["cg_ducati_civ_violet",159000],
