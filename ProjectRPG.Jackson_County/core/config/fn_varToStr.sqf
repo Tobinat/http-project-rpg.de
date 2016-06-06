@@ -130,7 +130,8 @@ switch (_var) do
 	case "life_inv_raxsrum": {"Rax's Rum"};
 	case "life_inv_blaulicht": {"Blaulicht"};
 	case "life_inv_tracker": {"GPS-Tracker"};
-	
+	case "life_inv_kroku": {"Krokodil Zutaten"};
+	case "life_inv_krokp": {"Krokodil"};
 	case "life_inv_silberu": {"Silbererz"};
 	case "life_inv_silberp": {"Silberbarren"};
 	case "life_inv_titanu": {"Titanerz"};
@@ -172,6 +173,6 @@ switch (_var) do
 	case "license_civ_silber": {"Silber Verarbeitung"};
 	case "license_civ_titan": {"Titan Verarbeitung"};
 	case "license_civ_gummi": {"Kautschuk Verarbeitung"};
-	case "life_inv_kroku": {"Krokodil Zutaten"};
-	case "life_inv_krokp": {"Krokodil"};
+	case "license_civ_krok": {"Krokodil Verarbeitung"};
+	
 };
