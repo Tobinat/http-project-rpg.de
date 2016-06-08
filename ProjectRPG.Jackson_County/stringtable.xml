@@ -4317,8 +4317,8 @@
 			<Portuguese>Buscar por Jogador</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_PatDown">
-			<Original>Taschen entleeren</Original>
-			<English>Taschen entleeren</English>
+			<Original>Ausziehen</Original>
+			<English>Ausziehen</English>
 		</Key>
 		<Key ID="STR_pInAct_Strip">
 			<Original>Ausziehen</Original>
