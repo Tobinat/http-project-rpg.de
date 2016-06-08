@@ -19,46 +19,45 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-			["KAEL_SUITS_BR_F12",nil,800],
-			["KAEL_SUITS_BLK_F",nil,800],
-			["KAEL_SUITS_BR_F",nil,800],
-			["KAEL_SUITS_BR_F3",nil,800],
-			["KAEL_SUITS_BR_F4",nil,800],
-			["KAEL_SUITS_BR_F5",nil,800],
-			["KAEL_SUITS_BR_F6",nil,800],
-			["KAEL_SUITS_BR_F7",nil,800],
-			["KAEL_SUITS_BR_F8",nil,800],
-			["KAEL_SUITS_BR_F9",nil,800],
-			["KAEL_SUITS_BR_F10",nil,800],
-			["KAEL_SUITS_BR_F11",nil,800],
-			["KAEL_SUITS_BR_F13",nil,800],
-			["KAEL_SUITS_BR_F14",nil,800],
-			["KAEL_SUITS_BR_F24",nil,800],
-			["KAEL_SUITS_BR_F25",nil,800],
-			["KAEL_SUITS_BR_F16",nil,800],
-			["KAEL_SUITS_BR_F17",nil,800],
-			["KAEL_SUITS_BR_F18",nil,800],
-			["KAEL_SUITS_BR_F19",nil,800],
-			["KAEL_SUITS_BR_F20",nil,800],
-			["KAEL_SUITS_BR_F21",nil,800],
-			["KAEL_SUITS_BR_F22",nil,800],
-			["KAEL_SUITS_BR_F23",nil,800],
-			["KAEL_SUITS_BR_F15",nil,800],
-			["KAEL_SUITS_BR_F26",nil,800],
-			["KAEL_SUITS_BR_F27",nil,800],
-			["KAEL_SUITS_BR_F28",nil,800],
-			["KAEL_SUITS_BR_F29",nil,800],
-			["KAEL_SUITS_BR_F30",nil,800],
-			["KAEL_SUITS_BR_F31",nil,800],
-			["KAEL_SUITS_BR_F32",nil,800],
-			["KAEL_SUITS_BR_F33",nil,800],
-			["KAEL_SUITS_BR_F34",nil,800],
-			["KAEL_SUITS_BR_F35",nil,800],
-			
-			_ret pushBack ["cg_ems9",nil,2];
-			_ret pushBack ["cg_ems1",nil,2];
-			_ret pushBack ["RF_EMSWING_4",nil,2];
-			_ret pushBack ["RF_EMS_1",nil,2];
+		_ret pushBack ["KAEL_SUITS_BR_F12",nil,800];
+		_ret pushBack ["KAEL_SUITS_BLK_F",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F3",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F4",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F5",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F6",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F7",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F8",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F9",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F10",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F11",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F13",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F14",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F24",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F25",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F16",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F17",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F18",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F19",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F20",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F21",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F22",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F23",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F15",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F26",nil,800]:
+		_ret pushBack ["KAEL_SUITS_BR_F27",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F28",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F29",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F30",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F31",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F32",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F33",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F34",nil,800];
+		_ret pushBack ["KAEL_SUITS_BR_F35",nil,800];
+		_ret pushBack ["cg_ems9",nil,2];
+		_ret pushBack ["cg_ems1",nil,2];
+		_ret pushBack ["RF_EMSWING_4",nil,2];
+		_ret pushBack ["RF_EMS_1",nil,2];
 		    if(__GETC__(life_mediclevel) > 0) then
 		    {
 		        _ret pushBack ["cg_ems4",nil,2];
