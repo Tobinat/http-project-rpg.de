@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=649;
+	toggles=521;
 	class ItemIDProvider
 	{
 		nextID=18372;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8683.2158,29.834549,6704.9146};
-		dir[]={0.020054802,-0.65147394,0.7584064};
-		up[]={0.017221121,0.75867063,0.65124625};
-		aside[]={0.99965066,-2.0227162e-009,-0.026434097};
+		pos[]={8608.9834,428.35184,6221.6846};
+		dir[]={-0.22096398,-0.65312243,0.72438771};
+		up[]={-0.19057757,0.75719982,0.62477589};
+		aside[]={0.95655459,-1.5560072e-006,0.29178202};
 	};
 };
 binarizationWanted=0;
@@ -190,7 +190,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=104;
+		items=103;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -364,8 +364,10 @@ class AddonsMetaData
 		};
 		class Item29
 		{
-			className="cba_xeh";
-			name="cba_xeh";
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
 		};
 		class Item30
 		{
@@ -451,304 +453,297 @@ class AddonsMetaData
 		};
 		class Item46
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item47
-		{
 			className="Unlocked_Uniforms";
 			name="Unlocked_Uniforms";
 		};
-		class Item48
+		class Item47
 		{
 			className="CG_EMS";
 			name="CG_EMS";
 		};
-		class Item49
+		class Item48
 		{
 			className="task_force_radio_items";
 			name="task_force_radio_items";
 		};
-		class Item50
+		class Item49
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 Alpha - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item51
+		class Item50
 		{
 			className="A3L_ObjectsOnSteroids";
 			name="A3L_ObjectsOnSteroids";
 		};
-		class Item52
+		class Item51
 		{
 			className="mbg_african_buildings";
 			name="mbg_african_buildings";
 		};
-		class Item53
+		class Item52
 		{
 			className="A3L_Factory";
 			name="A3L_Factory";
 		};
-		class Item54
+		class Item53
 		{
 			className="Pub_C";
 			name="Pub_C";
 		};
-		class Item55
+		class Item54
 		{
 			className="A3L_Store";
 			name="A3L_Store";
 		};
-		class Item56
+		class Item55
 		{
 			className="A3L_WorkBench";
 			name="A3L_WorkBench";
 		};
-		class Item57
+		class Item56
 		{
 			className="cl_Police_Sub";
 			name="cl_Police_Sub";
 		};
-		class Item58
+		class Item57
 		{
 			className="cl3_policeMarkers";
 			name="cl3_policeMarkers";
 		};
-		class Item59
+		class Item58
 		{
 			className="Pub_A";
 			name="Pub_A";
 		};
-		class Item60
+		class Item59
 		{
 			className="A3L_Nightclub";
 			name="A3L_Nightclub";
 		};
-		class Item61
+		class Item60
 		{
 			className="Centrelink";
 			name="Centrelink";
 		};
-		class Item62
+		class Item61
 		{
 			className="DED_Simple_01";
 			name="DED_Simple_01";
 		};
-		class Item63
+		class Item62
 		{
 			className="DED_Fence_01";
 			name="DED_Fence_01";
 		};
-		class Item64
+		class Item63
 		{
 			className="A3L_MoneyPile";
 			name="A3L_MoneyPile";
 		};
-		class Item65
+		class Item64
 		{
 			className="cl3_carshop_jwinters";
 			name="cl3_carshop_jwinters";
 		};
-		class Item66
+		class Item65
 		{
 			className="DED_Shop_01";
 			name="DED_Shop_01";
 		};
-		class Item67
+		class Item66
 		{
 			className="E76_BuildingsHouse";
 			name="E76_BuildingsHouse";
 		};
-		class Item68
+		class Item67
 		{
 			className="pop_carreteras";
 			name="pop_carreteras";
 		};
-		class Item69
+		class Item68
 		{
 			className="Helipad_MapObject";
 			name="Helipad_MapObject";
 		};
-		class Item70
+		class Item69
 		{
 			className="MainSection";
 			name="MainSection";
 		};
-		class Item71
+		class Item70
 		{
 			className="MBG_Buildings_3";
 			name="MBG_Buildings_3";
 		};
-		class Item72
+		class Item71
 		{
 			className="DED_Ranch_01";
 			name="DED_Ranch_01";
 		};
-		class Item73
+		class Item72
 		{
 			className="HouseA";
 			name="HouseA";
 		};
-		class Item74
+		class Item73
 		{
 			className="HouseDoubleAL";
 			name="HouseDoubleAL";
 		};
-		class Item75
+		class Item74
 		{
 			className="DED_Coffee_01";
 			name="DED_Coffee_01";
 		};
-		class Item76
+		class Item75
 		{
 			className="A3L_PrisonWall";
 			name="A3L_PrisonWall";
 		};
-		class Item77
+		class Item76
 		{
 			className="A3L_PoliceHQ";
 			name="A3L_PoliceHQ";
 		};
-		class Item78
+		class Item77
 		{
 			className="A3L_Prison_Gates";
 			name="A3L_Prison_Gates";
 		};
-		class Item79
+		class Item78
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item80
+		class Item79
 		{
 			className="Gate_B";
 			name="Gate_B";
 		};
-		class Item81
+		class Item80
 		{
 			className="Mattaust_Objects";
 			name="Mattaust_Objects";
 		};
-		class Item82
+		class Item81
 		{
 			className="KPFS_WeaponsPack_A3";
 			name="KPFS_WeaponsPack_A3";
 		};
-		class Item83
+		class Item82
 		{
 			className="A3L_Court";
 			name="A3L_Court";
 		};
-		class Item84
+		class Item83
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item85
+		class Item84
 		{
 			className="HouseStudsDouble";
 			name="HouseStudsDouble";
 		};
-		class Item86
+		class Item85
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item87
+		class Item86
 		{
 			className="Gaol_MapObject";
 			name="Gaol_MapObject";
 		};
-		class Item88
+		class Item87
 		{
 			className="Orel_Objects";
 			name="Orel_Objects";
 		};
-		class Item89
+		class Item88
 		{
 			className="MBG_Islandobject";
 			name="MBG_Islandobject";
 		};
-		class Item90
+		class Item89
 		{
 			className="A3_Structures_F_Kart";
 			name="Arma 3 Karts - Buildings and structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item91
+		class Item90
 		{
 			className="slb2k11_chairs";
 			name="slb2k11_chairs";
 		};
-		class Item92
+		class Item91
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 Alpha - Vehicle wrecks";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item93
+		class Item92
 		{
 			className="A3_Props_F_Exp_A";
 			name="Arma 3 Nexus Update - Decorative and mission objects";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item94
+		class Item93
 		{
 			className="Gate_C";
 			name="Gate_C";
 		};
-		class Item95
+		class Item94
 		{
 			className="Test_Character_F";
 			name="Test_Character_F";
 		};
-		class Item96
+		class Item95
 		{
 			className="E76_roadsroadsigns";
 			name="E76_roadsroadsigns";
 		};
-		class Item97
+		class Item96
 		{
 			className="mm_buildings";
 			name="mm_buildings";
 		};
-		class Item98
+		class Item97
 		{
 			className="PoliceStation";
 			name="PoliceStation";
 		};
-		class Item99
+		class Item98
 		{
 			className="E76_BuildingsMisc";
 			name="E76_BuildingsMisc";
 		};
-		class Item100
+		class Item99
 		{
 			className="slb2k11_items";
 			name="SLB2k11_items";
 		};
-		class Item101
+		class Item100
 		{
 			className="mainstation";
 			name="mainstation";
 		};
-		class Item102
+		class Item101
 		{
 			className="slb2k11_city";
 			name="slb2k11_city";
 		};
-		class Item103
+		class Item102
 		{
 			className="E76_BuildingsShops";
 			name="E76_BuildingsShops";
@@ -75705,7 +75700,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[""Fahrzeug Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)]; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""doj_car_spawn"";  }];  this addAction[""Parke Fahrzeug in der Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",''];";
+				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton, TRUE, 0,false,false,"""",'license_civ_doj && playerSide == civilian'];    " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
 			};
 			id=17343;
 			type="A3L_Savepoint";
@@ -77661,7 +77656,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton, TRUE, 0,false,false,"""",'license_civ_doj && playerSide == civilian'];    " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
 			};
 			id=17447;
 			type="Land_WoodenTable_large_F";
@@ -78015,7 +78009,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton, TRUE, 0,false,false,"""",'license_civ_doj && playerSide == civilian'];    " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
 			};
 			id=17456;
 			type="Land_WoodenTable_large_F";
@@ -81660,7 +81653,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton, TRUE, 0,false,false,"""",'license_civ_doj && playerSide == civilian'];    " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
+				health=0.16216226;
 			};
 			id=17676;
 			type="OfficeTable_01_new_F";
@@ -85200,7 +85193,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addAction[format[""%1 ($%2)"",[""license_civ_titan""] call life_fnc_varToStr,[([""titan""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""titan"""",0,false,false,"",' !license_civ_titan && playerSide == civilian ']; " \n "this addAction[""Titanverarbeitung"",life_fnc_processAction,""titan"",0,false,false,"""",' life_inv_titanu > 0 && !life_is_processing'];";
+				init="this addAction[format[""%1 ($%2)"",[""license_civ_titan""] call life_fnc_varToStr,[([""titan""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""titan"",0,false,false,"""",' !license_civ_titan && playerSide == civilian '];  " \n "this addAction[""Titanverarbeitung"",life_fnc_processAction,""titan"",0,false,false,"""",' life_inv_titanu > 0 && !life_is_processing'];";
 			};
 			id=18345;
 			type="Land_InfoStand_V2_F";
@@ -85335,7 +85328,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""DoJ Kleidung"",life_fnc_clothingMenu,""doj"",0,false,false,"""",'license_civ_doj && playerSide == civilian'];" \n "this addAction[""Markt"",life_fnc_virt_menu,""market"",0,false,false,"""",'license_civ_doj && playerSide == civilian'];   " \n "this addAction[""Medizinische Hilfe"",life_fnc_healHospital,"""",0,false,false,"""",'license_civ_doj && playerSide == civilian'];";
+				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""DOJ-Kleidung"",life_fnc_clothingMenu,""doj"",0,false,false,"""",' license_civ_doj && playerSide == civilian'];  " \n "this addAction[""Markt"",life_fnc_virt_menu,""market"",0,false,false,"""",' license_civ_doj && playerSide == civilian'];  " \n "this addAction[""Medizinische Hilfe"",life_fnc_healHospital,"""",0,false,false,"""",' license_civ_doj && playerSide == civilian']; ";
 			};
 			id=18360;
 			type="Land_Noticeboard_F";
