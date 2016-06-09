@@ -44,7 +44,7 @@ switch (_filter) do
 		_ret pushBack ["KAEL_SUITS_BR_F22",nil,800];
 		_ret pushBack ["KAEL_SUITS_BR_F23",nil,800];
 		_ret pushBack ["KAEL_SUITS_BR_F15",nil,800];
-		_ret pushBack ["KAEL_SUITS_BR_F26",nil,800]:
+		_ret pushBack ["KAEL_SUITS_BR_F26",nil,800];
 		_ret pushBack ["KAEL_SUITS_BR_F27",nil,800];
 		_ret pushBack ["KAEL_SUITS_BR_F28",nil,800];
 		_ret pushBack ["KAEL_SUITS_BR_F29",nil,800];
