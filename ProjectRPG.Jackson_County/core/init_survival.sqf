@@ -1308,6 +1308,7 @@ fnc_chop_fire = {
 
 fnc_searched =
 {
+	systemChat "Searched";
 	_handle = [player,false] spawn life_fnc_dropItems;
 	waitUntil {scriptDone _handle};
 	life_carryWeight = 0;

@@ -2153,8 +2153,8 @@
 			<Portuguese>Jogador a ser multado não existe.</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_DrugSearch">
-			<Original>Search Inventory</Original>
-			<German>Durchsuche Inventar</German>
+			<Original>Inventar</Original>
+			<German>Inventar</German>
 		</Key>
 
 		<Key ID="STR_pInAct_TestIntox">

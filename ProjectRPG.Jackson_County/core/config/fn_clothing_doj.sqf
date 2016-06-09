@@ -1,10 +1,10 @@
 #include <macro.h>
 /*
-	File: fn_clothing_cop.sqf
+	File: fn_clothing_doj.sqf
 	
 	
 	Description:
-	Master config file for Cop clothing store.
+	Master config file for a clothing store.
 */
 private["_filter","_ret"];
 _filter = param [0,0,[0]];

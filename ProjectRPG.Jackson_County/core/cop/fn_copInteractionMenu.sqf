@@ -134,7 +134,7 @@ _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 
 
 _Btn6 ctrlSetText localize "STR_pInAct_DrugSearch";
-_Btn6 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_SearchAction;";
+_Btn6 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_SearchAction;systemChat ""Button"";";
 
 
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
