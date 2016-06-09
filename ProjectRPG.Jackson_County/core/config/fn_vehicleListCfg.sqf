@@ -107,6 +107,7 @@ switch (_shop) do
 			["ems_orca",120000],
 			["ems_orca2",120000],
 			["EC635_ADAC",120000],
+			["EC635_RFA",120000],
 			["O_Heli_Transport_04_medevac_F", 120000]
 		];
 	};
