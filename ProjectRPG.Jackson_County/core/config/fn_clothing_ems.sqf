@@ -62,7 +62,17 @@ switch (_filter) do
 		    {
 		        _ret pushBack ["cg_ems4",nil,2];
 				_ret pushBack ["cg_ems7",nil,2];
-            };
+				_ret pushBack ["pRPG_Praktikant",nil,2];
+				_ret pushBack ["pRPG_Candidate",nil,2];
+				_ret pushBack ["pRPG_Employee",nil,2];
+				_ret pushBack ["pRPG_Lieutenant",nil,2];
+				_ret pushBack ["pRPG_Lieutenant_O",nil,2];
+				_ret pushBack ["pRPG_Command",nil,2];
+				_ret pushBack ["pRPG_Command_O",nil,2];
+				_ret pushBack ["pRPG_M_Chief",nil,2];
+				_ret pushBack ["pRPG_M_Chief_O",nil,2];
+			
+			};
 			
 			 if(__GETC__(life_mediclevel) > 0) then
 		    {
