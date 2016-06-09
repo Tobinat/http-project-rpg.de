@@ -60,6 +60,7 @@ switch (_filter) do
 		["KAEL_SUITS_BR_F35",nil,135],
 		["TRYK_SUITS_BLK_F","TRYK Black Suit",135],
 		["TRYK_SUITS_BR_F","TRYK Brown Suit",135],
+		["DOJ_Jacket_2","DoJ Jacke",135],
 		["DOJ_Jacket_1","Schlüter Jacke",100]
 		];
 	};
