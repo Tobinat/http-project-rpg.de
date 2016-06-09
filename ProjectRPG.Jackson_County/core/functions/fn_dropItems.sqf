@@ -3,9 +3,9 @@
 	Pennyworth
 */
 
-systemChat "DropItems";
-
 params ["_unit", ["_dropCash", true, [true]], "_obj", "_item", "_value", ["_dropped", []], ["_items", []]];
+
+//systemChat format ["DropItems: %1", name _unit];
 
 _item_find = 
 {
