@@ -355,6 +355,7 @@ class Life_Client_Core
 		class testDrive {};
 		class broadcastCheck {};
 		class gpsMarker {};
+		class tfarChecks {};
 	};
 	
 	class Network
