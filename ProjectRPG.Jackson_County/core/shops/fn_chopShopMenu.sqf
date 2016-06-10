@@ -8,7 +8,7 @@
 if(life_action_inUse) exitWith {[localize "STR_NOTF_ActionInProc", false] spawn domsg;};
 disableSerialization;
 private["_nearVehicles","_control"];
-_nearVehicles = nearestObjects [getMarkerPos (_this select 3),["Car","Motorbike","Motorcycle","Truck"],25];
+_nearVehicles = nearestObjects [getMarkerPos (_this select 3),["Car","Truck","A3L_Tahoe_Base","Motorcycle","Motorbike","Car_F","LandVehicle"],25];
 
 life_chopShop = (_this select 3);
 //Error check
