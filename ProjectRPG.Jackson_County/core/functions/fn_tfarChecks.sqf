@@ -8,7 +8,7 @@
 
 */
 
-if(call(life_adminlevel) >= 1) exitWith {systemChat "TFAR > Du bist Admin. TFAR Checks sind deaktiviert für dich."};
+if(call(life_adminlevel) >= 1) exitWith {["TFAR > Du bist ein Administrator. Daher wird dein Client nicht auf TFAR geprüft.",false] spawn domsg;};
 
 prpg_fnc_checkTfar = {
 	_serverName = "[GER] Project-RPG.de | ArmA 3 Life";
