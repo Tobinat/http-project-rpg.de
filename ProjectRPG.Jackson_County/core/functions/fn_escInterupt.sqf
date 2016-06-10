@@ -60,14 +60,17 @@ while {true} do
 	//Button Beschriftungen
 	_btnT1 = (findDisplay 49) displayCtrl 2;
 	_btnT1 ctrlEnable false;
-	_btnT1 ctrlSetText "PROJECT-RPG";
+	_btnT1 ctrlSetText "Community mit Zusammenhalt";
+	
+	_respawnButton ctrlSetText " ";
+	_fieldManual ctrlSetText "PRPG.de";
 
 	_btnT2 = (findDisplay 49) displayCtrl 103;
 	_btnT2 ctrlEnable false;
 	_btnT2 ctrlSetText (getPlayerUID player);
 
 	_btnT3 = (findDisplay 49) displayCtrl 523;
-	_btnT3 ctrlSetText "PRPG.de";
+	_btnT3 ctrlSetText "PROJECT-RPG";
 
 	_usebleCtrl = call _canUseControls;
 	_usebleCtrl spawn _escSync;
