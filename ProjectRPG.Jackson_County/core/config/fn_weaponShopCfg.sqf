@@ -171,7 +171,6 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 0) then {
 				_temp =  [
-
 					["RH_M4A6",nil,12220],
 					["optic_MRCO",nil,220],
 					["RH_30Rnd_68x43_FMJ",nil,220],
@@ -192,9 +191,6 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 0) then {
 				_temp =  [
-					["HandGrenade_Stone","Flashbang",300],
-					["SmokeShellYellow","Tränengas",300],
-
 					["RH_m110sd","MK 11 Silencer",220],
 					["RH_qdss_nt4","M4A6 Silencer",220],
 					["muzzle_snds_H","KAC Silencer",220],
@@ -290,7 +286,7 @@ switch(_shop) do
 							["hgun_Pistol_heavy_01_F",nil,240],
 							["11Rnd_45ACP_Mag",nil,5],
 							
-							["RH_fn57",nil,1120],
+							["RH_fn57",nil,112],
 							["RH_sfn57",nil,20],
 							["RH_20Rnd_57x28_FN",nil,20],
 
@@ -306,6 +302,9 @@ switch(_shop) do
 							["RH_uspm",nil,240],
 							["RH_16Rnd_40cal_usp",nil,5],	
                         //Langwaffen
+							["prpl_benelli_14_pgs_rail","Shotgun Rubber",220],
+					        ["prpl_6Rnd_12Gauge_Slug","Rubber Bullets",20],
+						
 							["RH_PDW",nil,4220],
 							["RH_30Rnd_6x35_mag",nil,220],							
 							
@@ -348,11 +347,15 @@ switch(_shop) do
 							["RH_M4A6",nil,12220],
 							["RH_30Rnd_68x43_FMJ",nil,220],
 							
+							["hlc_rifle_awmagnum_BL",nil,4220],
+							["hlc_5rnd_300WM_FMJ_AWM",nil,220],
+							
 
 
 							
 						//Flashbang	
-							["HandGrenade_Stone","Flashbang",300],						
+							["HandGrenade_Stone","Flashbang",300],
+                            ["SmokeShellYellow","Tränengas",300],							
 						//visire/aufsätze	
 						    ["RH_matchsd",nil,220],
 							["RH_aacusp",nil,220],
@@ -370,6 +373,7 @@ switch(_shop) do
 							["RH_peq2","Laser (All Rifles)",220],												
 							["RH_leu_mk4",nil,100],
 							["RH_M6X",nil,20],
+							["optic_KHS_blk",nil,20],
 							["RH_fa556",nil,20],
 							["RH_ta648",nil,222]
 						
