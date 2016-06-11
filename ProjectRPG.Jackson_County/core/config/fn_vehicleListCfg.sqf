@@ -94,7 +94,7 @@ switch (_shop) do
 		        };
 			if(__GETC__(life_mediclevel) > 0) then
 		       {
-				_return pushBack ["AM_Holden_EMS",25000];
+				_return pushBack ["AM_Holden_RFA",25000];
 		        };
 	};
 	case "med_air_hs": {
