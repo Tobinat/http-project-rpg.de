@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=18372;
+		nextID=18373;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9263.3252,97.993332,9159.9746};
-		dir[]={-0.13734837,-0.65989298,0.73880959};
-		up[]={-0.1206293,0.75127393,0.64888597};
-		aside[]={0.98323989,-2.0526932e-006,0.18278757};
+		pos[]={8667.4941,72.509918,6667.2271};
+		dir[]={0.15231457,-0.93501633,0.32052875};
+		up[]={0.40131208,0.35462543,0.8445124};
+		aside[]={0.9032957,-1.8109567e-006,-0.42924646};
 	};
 };
 binarizationWanted=0;
@@ -189,7 +189,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=102;
+		items=103;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -363,10 +363,8 @@ class AddonsMetaData
 		};
 		class Item29
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			className="cba_xeh";
+			name="cba_xeh";
 		};
 		class Item30
 		{
@@ -452,292 +450,299 @@ class AddonsMetaData
 		};
 		class Item46
 		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item47
+		{
 			className="Unlocked_Uniforms";
 			name="Unlocked_Uniforms";
 		};
-		class Item47
+		class Item48
 		{
 			className="CG_EMS";
 			name="CG_EMS";
 		};
-		class Item48
+		class Item49
 		{
 			className="task_force_radio_items";
 			name="task_force_radio_items";
 		};
-		class Item49
+		class Item50
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 Alpha - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item50
+		class Item51
 		{
 			className="A3L_ObjectsOnSteroids";
 			name="A3L_ObjectsOnSteroids";
 		};
-		class Item51
+		class Item52
 		{
 			className="mbg_african_buildings";
 			name="mbg_african_buildings";
 		};
-		class Item52
+		class Item53
 		{
 			className="A3L_Factory";
 			name="A3L_Factory";
 		};
-		class Item53
+		class Item54
 		{
 			className="Pub_C";
 			name="Pub_C";
 		};
-		class Item54
+		class Item55
 		{
 			className="A3L_Store";
 			name="A3L_Store";
 		};
-		class Item55
+		class Item56
 		{
 			className="A3L_WorkBench";
 			name="A3L_WorkBench";
 		};
-		class Item56
+		class Item57
 		{
 			className="cl_Police_Sub";
 			name="cl_Police_Sub";
 		};
-		class Item57
+		class Item58
 		{
 			className="cl3_policeMarkers";
 			name="cl3_policeMarkers";
 		};
-		class Item58
+		class Item59
 		{
 			className="Pub_A";
 			name="Pub_A";
 		};
-		class Item59
+		class Item60
 		{
 			className="A3L_Nightclub";
 			name="A3L_Nightclub";
 		};
-		class Item60
+		class Item61
 		{
 			className="Centrelink";
 			name="Centrelink";
 		};
-		class Item61
+		class Item62
 		{
 			className="DED_Simple_01";
 			name="DED_Simple_01";
 		};
-		class Item62
+		class Item63
 		{
 			className="DED_Fence_01";
 			name="DED_Fence_01";
 		};
-		class Item63
+		class Item64
 		{
 			className="A3L_MoneyPile";
 			name="A3L_MoneyPile";
 		};
-		class Item64
+		class Item65
 		{
 			className="cl3_carshop_jwinters";
 			name="cl3_carshop_jwinters";
 		};
-		class Item65
+		class Item66
 		{
 			className="DED_Shop_01";
 			name="DED_Shop_01";
 		};
-		class Item66
+		class Item67
 		{
 			className="E76_BuildingsHouse";
 			name="E76_BuildingsHouse";
 		};
-		class Item67
+		class Item68
 		{
 			className="pop_carreteras";
 			name="pop_carreteras";
 		};
-		class Item68
+		class Item69
 		{
 			className="Helipad_MapObject";
 			name="Helipad_MapObject";
 		};
-		class Item69
+		class Item70
 		{
 			className="MainSection";
 			name="MainSection";
 		};
-		class Item70
+		class Item71
 		{
 			className="MBG_Buildings_3";
 			name="MBG_Buildings_3";
 		};
-		class Item71
+		class Item72
 		{
 			className="DED_Ranch_01";
 			name="DED_Ranch_01";
 		};
-		class Item72
+		class Item73
 		{
 			className="HouseA";
 			name="HouseA";
 		};
-		class Item73
+		class Item74
 		{
 			className="HouseDoubleAL";
 			name="HouseDoubleAL";
 		};
-		class Item74
+		class Item75
 		{
 			className="DED_Coffee_01";
 			name="DED_Coffee_01";
 		};
-		class Item75
+		class Item76
 		{
 			className="A3L_PrisonWall";
 			name="A3L_PrisonWall";
 		};
-		class Item76
+		class Item77
 		{
 			className="A3L_Prison_Gates";
 			name="A3L_Prison_Gates";
 		};
-		class Item77
+		class Item78
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item78
+		class Item79
 		{
 			className="Mattaust_Objects";
 			name="Mattaust_Objects";
 		};
-		class Item79
+		class Item80
 		{
 			className="KPFS_WeaponsPack_A3";
 			name="KPFS_WeaponsPack_A3";
 		};
-		class Item80
+		class Item81
 		{
 			className="A3L_Court";
 			name="A3L_Court";
 		};
-		class Item81
+		class Item82
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item82
+		class Item83
 		{
 			className="HouseStudsDouble";
 			name="HouseStudsDouble";
 		};
-		class Item83
+		class Item84
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item84
+		class Item85
 		{
 			className="Gaol_MapObject";
 			name="Gaol_MapObject";
 		};
-		class Item85
+		class Item86
 		{
 			className="Orel_Objects";
 			name="Orel_Objects";
 		};
-		class Item86
+		class Item87
 		{
 			className="MBG_Islandobject";
 			name="MBG_Islandobject";
 		};
-		class Item87
+		class Item88
 		{
 			className="A3_Structures_F_Kart";
 			name="Arma 3 Karts - Buildings and structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item88
+		class Item89
 		{
 			className="slb2k11_chairs";
 			name="slb2k11_chairs";
 		};
-		class Item89
+		class Item90
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 Alpha - Vehicle wrecks";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item90
+		class Item91
 		{
 			className="A3_Props_F_Exp_A";
 			name="Arma 3 Nexus Update - Decorative and mission objects";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item91
+		class Item92
 		{
 			className="Gate_C";
 			name="Gate_C";
 		};
-		class Item92
+		class Item93
 		{
 			className="Test_Character_F";
 			name="Test_Character_F";
 		};
-		class Item93
+		class Item94
 		{
 			className="E76_roadsroadsigns";
 			name="E76_roadsroadsigns";
 		};
-		class Item94
+		class Item95
 		{
 			className="Gate_B";
 			name="Gate_B";
 		};
-		class Item95
+		class Item96
 		{
 			className="mm_buildings";
 			name="mm_buildings";
 		};
-		class Item96
+		class Item97
 		{
 			className="PoliceStation";
 			name="PoliceStation";
 		};
-		class Item97
+		class Item98
 		{
 			className="E76_BuildingsMisc";
 			name="E76_BuildingsMisc";
 		};
-		class Item98
+		class Item99
 		{
 			className="slb2k11_items";
 			name="SLB2k11_items";
 		};
-		class Item99
+		class Item100
 		{
 			className="mainstation";
 			name="mainstation";
 		};
-		class Item100
+		class Item101
 		{
 			className="slb2k11_city";
 			name="slb2k11_city";
 		};
-		class Item101
+		class Item102
 		{
 			className="E76_BuildingsShops";
 			name="E76_BuildingsShops";
@@ -1324,7 +1329,6 @@ class Mission
 			type="Empty";
 			angle=32.261948;
 			id=45;
-			atlOffset=0.12722015;
 		};
 		class Item37
 		{
@@ -1475,7 +1479,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=66;
-			atlOffset=0.050003052;
 		};
 		class Item51
 		{
@@ -1612,7 +1615,7 @@ class Mission
 			b=0.69999999;
 			angle=359.49695;
 			id=81;
-			atlOffset=0.57409286;
+			atlOffset=0.57342529;
 		};
 		class Item62
 		{
@@ -1652,7 +1655,7 @@ class Mission
 			type="Empty";
 			angle=49.999992;
 			id=85;
-			atlOffset=0.026725769;
+			atlOffset=0.0001449585;
 		};
 		class Item66
 		{
@@ -1766,7 +1769,7 @@ class Mission
 			b=0.69999999;
 			angle=0.26100001;
 			id=101;
-			atlOffset=0.15844727;
+			atlOffset=0.010025024;
 		};
 		class Item76
 		{
@@ -1960,7 +1963,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=121;
-			atlOffset=0.099998474;
 		};
 		class Item93
 		{
@@ -2803,7 +2805,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=215;
-			atlOffset=85.173004;
+			atlOffset=84.878708;
 		};
 		class Item168
 		{
@@ -2817,7 +2819,7 @@ class Mission
 			a=100;
 			b=100;
 			id=216;
-			atlOffset=85.438774;
+			atlOffset=85.143478;
 		};
 		class Item169
 		{
@@ -4722,7 +4724,6 @@ class Mission
 			};
 			id=443;
 			type="Land_Atm_02_F";
-			atlOffset=0.099998474;
 		};
 		class Item341
 		{
@@ -4811,7 +4812,7 @@ class Mission
 			};
 			id=449;
 			type="Land_CashDesk_F";
-			atlOffset=0.57409286;
+			atlOffset=0.25828171;
 		};
 		class Item346
 		{
@@ -6137,7 +6138,6 @@ class Mission
 			};
 			id=617;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=0.050003052;
 		};
 		class Item412
 		{
@@ -6155,7 +6155,7 @@ class Mission
 			};
 			id=625;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.32051086;
+			atlOffset=0.28250885;
 		};
 		class Item413
 		{
@@ -6173,7 +6173,7 @@ class Mission
 			};
 			id=633;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.3339386;
+			atlOffset=0.29595947;
 		};
 		class Item414
 		{
@@ -7417,6 +7417,7 @@ class Mission
 			};
 			id=729;
 			type="cg_bench1";
+			atlOffset=2.2888184e-005;
 		};
 		class Item481
 		{
@@ -8698,7 +8699,7 @@ class Mission
 			};
 			id=1068;
 			type="CG_SpeedCam";
-			atlOffset=43.418701;
+			atlOffset=0.87359619;
 		};
 		class Item550
 		{
@@ -9538,6 +9539,7 @@ class Mission
 			};
 			id=1190;
 			type="Land_InfoStand_V1_F";
+			atlOffset=0.14739799;
 		};
 		class Item595
 		{
@@ -9556,7 +9558,7 @@ class Mission
 			};
 			id=1191;
 			type="Land_InfoStand_V1_F";
-			atlOffset=44.900005;
+			atlOffset=44.900002;
 		};
 		class Item596
 		{
@@ -12519,7 +12521,7 @@ class Mission
 					};
 					id=1645;
 					type="C_man_polo_2_F";
-					atlOffset=45.043007;
+					atlOffset=45.042999;
 				};
 				class Item10
 				{
@@ -14684,7 +14686,7 @@ class Mission
 			};
 			id=2024;
 			type="CG_SpeedCam";
-			atlOffset=39.239594;
+			atlOffset=0.91952515;
 		};
 		class Item762
 		{
@@ -48558,13 +48560,13 @@ class Mission
 				angles[]={0,5.4378033,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false; this allowDamage false; this addAction[""Flug nach Lakeside"",life_fnc_skyDive,true]; this addAction[""Catch a Taxi"",life_fnc_taxi];";
 			};
 			id=8717;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.84564209;
 		};
 		class Item2603
 		{
@@ -48633,7 +48635,6 @@ class Mission
 			};
 			id=8722;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.026565552;
 		};
 		class Item2607
 		{
@@ -48702,7 +48703,7 @@ class Mission
 			};
 			id=8779;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.79799652;
+			atlOffset=0.74799347;
 		};
 		class Item2611
 		{
@@ -52058,7 +52059,7 @@ class Mission
 			};
 			id=12327;
 			type="Land_InfoStand_V2_F";
-			atlOffset=1.0289993;
+			atlOffset=0.26264954;
 		};
 		class Item2812
 		{
@@ -52141,13 +52142,14 @@ class Mission
 				angles[]={0,1.8299079,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false; this addAction[""Geldwäscher"",{ if (side player == civilian) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 			};
 			id=12332;
 			type="Land_InfoStand_V2_F";
-			atlOffset=2.2226868;
+			atlOffset=1.5258789e-005;
 		};
 		class Item2817
 		{
@@ -52306,6 +52308,7 @@ class Mission
 			};
 			id=12347;
 			type="Land_InfoStand_V2_F";
+			atlOffset=4.9591064e-005;
 		};
 		class Item2826
 		{
@@ -56956,7 +56959,7 @@ class Mission
 			};
 			id=15105;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.30253601;
+			atlOffset=0.26447296;
 		};
 		class Item3080
 		{
@@ -56974,7 +56977,7 @@ class Mission
 			};
 			id=15106;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.31223297;
+			atlOffset=0.27420044;
 		};
 		class Item3081
 		{
@@ -74849,7 +74852,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Panik Knopf</t>"",life_fnc_panicButton, TRUE, 0,false,false,"""",'license_civ_doj && playerSide == civilian'];    " \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_doj'];";
+				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "" \n "this addAction[""Fahrzeuge  Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)]; " \n "createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""]; " \n "life_garage_sp = ""doj_car_spawn""; life_garage_type = ""Car"";   },"""",0,false,false,"""",' license_civ_doj && playerSide == civilian']; " \n " " \n "this addAction[""Parke Fahrzeug in der Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'']; " \n "this setVariable[""realname"",""Vehicle Store""];";
 			};
 			id=17343;
 			type="A3L_Savepoint";
@@ -84470,23 +84473,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8686.9336,21.691425,6722.9678};
-				angles[]={0,0.19292869,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""DOJ-Kleidung"",life_fnc_clothingMenu,""doj"",0,false,false,"""",' license_civ_doj && playerSide == civilian'];  " \n "this addAction[""Markt"",life_fnc_virt_menu,""market"",0,false,false,"""",' license_civ_doj && playerSide == civilian'];  " \n "this addAction[""Medizinische Hilfe"",life_fnc_healHospital,"""",0,false,false,"""",' license_civ_doj && playerSide == civilian']; ";
-			};
-			id=18360;
-			type="Land_Noticeboard_F";
-		};
-		class Item4480
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={8684.6777,21.756716,6716.1338};
 				angles[]={0,3.3201485,6.2816415};
 			};
@@ -84523,7 +84509,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item4481
+		class Item4480
 		{
 			dataType="Object";
 			class PositionInfo
@@ -84564,7 +84550,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item4482
+		class Item4481
 		{
 			dataType="Object";
 			class PositionInfo
@@ -84604,6 +84590,24 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item4482
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8685.8291,21.739258,6722.4321};
+				angles[]={0,0.13267994,6.2816491};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""DOJ-Kleidung"",life_fnc_clothingMenu,""doj"",0,false,false,"""",' license_civ_doj && playerSide == civilian'];  " \n "this addAction[""Markt"",life_fnc_virt_menu,""market"",0,false,false,"""",' license_civ_doj && playerSide == civilian'];  " \n "this addAction[""Medizinische Hilfe"",life_fnc_healHospital,"""",0,false,false,"""",' license_civ_doj && playerSide == civilian']; ";
+			};
+			id=18372;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.14825439;
 		};
 	};
 };
