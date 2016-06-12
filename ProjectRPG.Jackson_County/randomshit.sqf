@@ -156,40 +156,7 @@ _smoke = _color createVehicle position cursortarget;
 _smoke attachTo [vehicle cursortarget, [0,-0.1,-0.3]];
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [] spawn {
-
-
-
-
 
 
 private ["_snowSparse","_snowLight","_snowMedium","_snowHeavy","_snowStorm","_rSnow"];
@@ -253,39 +220,6 @@ deleteVehicle _snowStorm;
 
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
