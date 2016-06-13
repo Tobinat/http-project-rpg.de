@@ -36,7 +36,7 @@ class Life_Client_Core
 		class initCop {};
 		class initMedic {};
 	};
-		
+
 	class Medical_System
 	{
 		file = "core\medical";
@@ -61,7 +61,7 @@ class Life_Client_Core
 		class scoolPlayer {};
 		class santiviralPlayer {};
 		class spainkillerPlayer {};
-		class shydratePlayer {};		
+		class shydratePlayer {};
 		class epipenPlayer {};
 		class revivePlayer {};
 		class ApplyAir {};
@@ -77,7 +77,7 @@ class Life_Client_Core
 		class rechnungPaid {};
 		class rechnungPrompt {};
 	};
-	
+
 	class Actions
 	{
 		file = "core\actions";
@@ -107,7 +107,7 @@ class Life_Client_Core
 		class shank {};
 		class rope {};
 		class race {};
-		class race2 {};		
+		class race2 {};
 		class takeashit {};
 		class middlefinger {};
 		class punchSystem {};
@@ -166,11 +166,11 @@ class Life_Client_Core
 		class robAction {};
 		class captureHideout {};
 		class gather {};
-		class lockvault {}; 
-		class openvault {}; 
-		class closevault {}; 
-		class hackvault {}; 		
-		class robStore {}; 
+		class lockvault {};
+		class openvault {};
+		class closevault {};
+		class hackvault {};
+		class robStore {};
 		class surrender {};
 		class carSalesman {};
 		class stealVehicle {};
@@ -179,7 +179,7 @@ class Life_Client_Core
 		class copLicenseShown {};
 		class rechnungAction {};
 		class copMsgToAll {};
-	};	
+	};
 
 	class Paintball
 	{
@@ -213,7 +213,7 @@ class Life_Client_Core
 		class copHouseOwner {};
 		class lockHouse {};
 	};
-	
+
 	class Drugs
 	{
 		file = "core\drugs";
@@ -248,7 +248,7 @@ class Life_Client_Core
 		class houseConfig {};
 		class insurance {};
 		class sert {};
-		
+
 		//Clothing Store Configs
 		class clothing_cop {};
 		class clothing_ems {};
@@ -287,7 +287,7 @@ class Life_Client_Core
 		class wantedCheckFeedback {};
 		class wantedCheckPredefinition {};
 	};
-	
+
 	class Functions
 	{
 		file = "core\functions";
@@ -357,7 +357,7 @@ class Life_Client_Core
 		class gpsMarker {};
 		class tfarChecks {};
 	};
-	
+
 	class Network
 	{
 		file = "core\functions\network";
@@ -369,9 +369,9 @@ class Life_Client_Core
 		class setTexture {};
 		class say3D {};
 		class HCC {};
-		
+
 	};
-	
+
 	class Civilian
 	{
 		file = "core\civilian";
@@ -379,7 +379,7 @@ class Life_Client_Core
 		class tieing {};
 		class throwcar {};
 		class sprayCar {};
-		class sprayCarFinish {};		
+		class sprayCarFinish {};
 		class NLR {};
 		class civescort {};
 		class civstopescort {};
@@ -401,7 +401,7 @@ class Life_Client_Core
 		class civShowLicense {};
 		class civLicenseShown {};
 	};
-	
+
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -419,7 +419,7 @@ class Life_Client_Core
 		class cleanStation {};
 		class useStation {};
 	};
-	
+
 	class Cop
 	{
 		file = "core\cop";
@@ -452,19 +452,20 @@ class Life_Client_Core
 		class doorAnimate {};
 		class copLoadout {};
 		class ticketPaid {};
-		class testIntox {};	
+		class testIntox {};
 		class testIntoxClient {};
 		class intoxTestReturn {};
 		class fastRope {};
 		class removeWeaponAction {};
-		class removeWeaponActionCiv {};	
+		class removeWeaponActionCiv {};
 		class soundloop {};
 		class copOpener {};
 		class EinsatzLicht {};
 		class ULights {};
 		class wantedGrab {};
+		class giveCards {};
 	};
-	
+
 	class Gangs
 	{
 		file = "core\gangs";
@@ -481,7 +482,7 @@ class Life_Client_Core
 		class gangDisband {};
 		class gangDisbanded {};
 	};
-	
+
 	class Shops
 	{
 		file = "core\shops";
@@ -516,7 +517,7 @@ class Life_Client_Core
 		class blackjack {};
 		class slotSpin {};
 	};
-	
+
 	class Items
 	{
 		file = "core\items";
@@ -537,7 +538,7 @@ class Life_Client_Core
 		class panicButton {};
 		class gpsTracker {};
 	};
-	
+
 	class Jail
 	{
 		file = "core\jail";
@@ -548,7 +549,7 @@ class Life_Client_Core
 		class releasePrison {};
 		class sendToJail {};
 	};
-	
+
 	class Dialog_Controls
 	{
 		file = "dialog\function";
@@ -583,9 +584,9 @@ class Life_Client_Core
 		class populateTestDrive {};
 		class impoundedMenu {};
         class willswieder {};
-        class impoundLBChange {};		
+        class impoundLBChange {};
 	};
-	
+
 	class Markt_System
 	{
 		file = "core\DynMarket";
