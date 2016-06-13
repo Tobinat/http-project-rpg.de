@@ -375,6 +375,7 @@ switch(_shop) do
 							["RH_M6X",nil,20],
 							["optic_KHS_blk",nil,20],
 							["RH_fa556",nil,20],
+							["optic_Hamr",nil,20],
 							["RH_ta648",nil,222]
 						
 						]

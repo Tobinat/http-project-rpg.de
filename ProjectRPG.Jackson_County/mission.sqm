@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=18373;
+		nextID=18374;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8667.4941,72.509918,6667.2271};
-		dir[]={0.15231457,-0.93501633,0.32052875};
-		up[]={0.40131208,0.35462543,0.8445124};
-		aside[]={0.9032957,-1.8109567e-006,-0.42924646};
+		pos[]={5011.8408,514.70978,1209.7439};
+		dir[]={0.060329463,-0.97592437,0.20960309};
+		up[]={0.26993886,0.21810019,0.93785089};
+		aside[]={0.96098596,6.693881e-010,-0.27659807};
 	};
 };
 binarizationWanted=0;
@@ -915,7 +915,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4483;
+		items=4484;
 		class Item0
 		{
 			dataType="Marker";
@@ -8699,7 +8699,7 @@ class Mission
 			};
 			id=1068;
 			type="CG_SpeedCam";
-			atlOffset=0.87359619;
+			atlOffset=43.418701;
 		};
 		class Item550
 		{
@@ -9539,7 +9539,6 @@ class Mission
 			};
 			id=1190;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.14739799;
 		};
 		class Item595
 		{
@@ -9558,7 +9557,7 @@ class Mission
 			};
 			id=1191;
 			type="Land_InfoStand_V1_F";
-			atlOffset=44.900002;
+			atlOffset=44.900005;
 		};
 		class Item596
 		{
@@ -12521,7 +12520,7 @@ class Mission
 					};
 					id=1645;
 					type="C_man_polo_2_F";
-					atlOffset=45.042999;
+					atlOffset=45.043007;
 				};
 				class Item10
 				{
@@ -14686,7 +14685,7 @@ class Mission
 			};
 			id=2024;
 			type="CG_SpeedCam";
-			atlOffset=0.91952515;
+			atlOffset=39.239594;
 		};
 		class Item762
 		{
@@ -51192,7 +51191,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init=" this allowDamage false; this enableSimulation false; " \n " this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && license_civ_udc && !life_action_inUse '];";
+				init="this allowDamage false; this enableSimulation false;  " \n "this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian '];  " \n "this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && license_civ_udc && !life_action_inUse '];";
 			};
 			id=12224;
 			type="Land_InfoStand_V2_F";
@@ -52142,14 +52141,13 @@ class Mission
 				angles[]={0,1.8299079,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false; this addAction[""Geldwäscher"",{ if (side player == civilian) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 			};
 			id=12332;
 			type="Land_InfoStand_V2_F";
-			atlOffset=1.5258789e-005;
+			atlOffset=2.2226868;
 		};
 		class Item2817
 		{
@@ -52308,7 +52306,6 @@ class Mission
 			};
 			id=12347;
 			type="Land_InfoStand_V2_F";
-			atlOffset=4.9591064e-005;
 		};
 		class Item2826
 		{
@@ -57275,7 +57272,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init=" this allowDamage false; this enableSimulation false; " \n " this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; " \n " this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && license_civ_udc && !life_action_inUse '];";
+				init="this allowDamage false; this enableSimulation false;  " \n "this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian '];  " \n "this addAction[""Drogendealer befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && license_civ_udc && !life_action_inUse '];";
 			};
 			id=15128;
 			type="Land_InfoStand_V1_F";
@@ -84608,6 +84605,24 @@ class Mission
 			id=18372;
 			type="Land_InfoStand_V2_F";
 			atlOffset=0.14825439;
+		};
+		class Item4483
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6679.5039,56.079426,4681.814};
+				angles[]={0,4.9719892,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init=" removeallWeapons this;   " \n " this enableSimulation false;  " \n " this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this allowDamage false;   " \n " this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_udc && playerSide == civilian'];   " \n " this addAction[""Low End Rebel Weapons"",life_fnc_weaponShopMenu,""rebel_low"",0,false,false,"""",' license_civ_udc && playerSide == civilian'];   " \n " this addAction[""High End Rebel Weapons"",life_fnc_weaponShopMenu,""rebel_high"",0,false,false,"""",' license_civ_udc && playerSide == civilian'];  " \n " this addAction[""Awesome Rebel Weapons"",life_fnc_weaponShopMenu,""rebel_awesome"",0,false,false,"""",' license_civ_udc && playerSide == civilian'];   " \n " this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 '];";
+			};
+			id=18373;
+			type="Land_Noticeboard_F";
+			atlOffset=0.00015258789;
 		};
 	};
 };
