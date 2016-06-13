@@ -83,9 +83,6 @@ life_action_inUse = true;
 
 _curTarget = cursorTarget;
 if(!dialog && playerSide == independent && _curTarget isKindOf "Man") exitwith {
-	if((_curTarget getVariable["dead",FALSE])) then {
-		[_curTarget] call life_fnc_revivePlayer;
-	} else {
 		[_curTarget] call life_fnc_emsInteractionMenu;
 	};
 };
