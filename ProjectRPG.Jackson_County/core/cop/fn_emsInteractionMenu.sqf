@@ -52,7 +52,7 @@ _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_ApplyAir; [life_pIn
 
 _Btn11 ctrlSetText localize "Revive";
 _Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_revivePlayer;";
-if(_curTarget getVariable["dead",FALSE]) then { _Btn5 ctrlEnable true; } else { _Btn5 ctrlEnable false; };
+if(_curTarget getVariable["dead",FALSE]) then { _Btn11 ctrlEnable true; } else { _Btn11 ctrlEnable false; };
 
 _diseaseon = "Keine Krankheit";
 
