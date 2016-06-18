@@ -15,7 +15,7 @@ closeDialog 0;
 _vehicle = _control lbData (lbCurSel _control);
 _vehicle = call compile format["%1", _vehicle];
 
-_nearVehicles = nearestObjects [getMarkerPos life_chopShop,["Car","Motorbike","Motorcycle","Truck"],25];
+_nearVehicles = nearestObjects [getMarkerPos life_chopShop,["Car","Truck","Air","A3L_Tahoe_Base","Motorcycle","Motorbike","Car_F","LandVehicle"],25];
 _vehicle = _nearVehicles select _vehicle;
 
 if(isNil "_vehicle") exitWith {systemChat "Undefinierte Variable in Ausdruck _vehicle"}; //Debug Msg...
