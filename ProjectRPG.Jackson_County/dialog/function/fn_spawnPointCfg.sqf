@@ -154,7 +154,7 @@ switch (_side) do
 			};	
 		};
 
-		if((!license_civ_rebel) && (!license_civ_udc) && (!license_civ_doj)) then {
+		if((!license_civ_rebel) && (!license_civ_udc) && (!license_civ_doj) && (!license_civ_lcn)) then {
 			_return = [
 				["civ_spawn_1","LS OldTown","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["lakeside_spawn_2","LS McDonalds","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -206,6 +206,59 @@ switch (_side) do
 		if(license_civ_rebel && (rebelshipment getVariable["progress",FALSE]) || license_civ_rebel && (rebelshipment getVariable["notCaptured",FALSE])) then {
 
 			_return = [
+				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_1","LD Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_2","LD Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			];
+
+
+			
+			if(count life_houses > 0) then {
+				{
+					_pos = call compile format["%1",_x select 0];
+					_house = nearestBuilding _pos;
+					_houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
+					
+					_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
+				} foreach life_houses;
+			};	
+		};
+		
+		if(license_civ_rebel && license_civ_lcn && !(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE]) ) then {
+
+			_return = [
+			    ["lcn_spawn_1","LCN","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["reb_spawn_1","Rebel 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["reb_spawn_2","Rebel 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_1","LD Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_2","LD Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			];
+
+
+			
+			if(count life_houses > 0) then {
+				{
+					_pos = call compile format["%1",_x select 0];
+					_house = nearestBuilding _pos;
+					_houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
+					
+					_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
+				} foreach life_houses;
+			};	
+		};
+		if(license_civ_rebel && license_civ_lcn && (rebelshipment getVariable["progress",FALSE]) || license_civ_rebel && license_civ_lcn && (rebelshipment getVariable["notCaptured",FALSE])) then {
+
+			_return = [
+			    ["lcn_spawn_1","LCN","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["ld_spawn_1","LD Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["ld_spawn_2","LD Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
