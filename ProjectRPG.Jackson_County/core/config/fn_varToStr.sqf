@@ -174,5 +174,6 @@ switch (_var) do
 	case "license_civ_titan": {"Titan Verarbeitung"};
 	case "license_civ_gummi": {"Kautschuk Verarbeitung"};
 	case "license_civ_krok": {"Krokodil Verarbeitung"};
+	case "license_civ_lcn": {"La Cosa Nostra"};
 	
 };
