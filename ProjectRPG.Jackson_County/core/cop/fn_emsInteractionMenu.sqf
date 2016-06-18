@@ -50,7 +50,7 @@ _Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 _Btn4 ctrlSetText localize "STR_pInAct_ApplyAirKit";
 _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_ApplyAir; [life_pInact_curTarget] call life_fnc_emsInteractionMenu;";
 
-_Btn11 ctrlSetText localize "Revive";
+_Btn11 ctrlSetText localize "STR_pInAct_RevivePlayer";
 _Btn11 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_revivePlayer;";
 if(_curTarget getVariable["dead",FALSE]) then { _Btn11 ctrlEnable true; } else { _Btn11 ctrlEnable false; };
 

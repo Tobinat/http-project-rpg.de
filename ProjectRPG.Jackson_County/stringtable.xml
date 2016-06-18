@@ -4317,16 +4317,24 @@
 			<Portuguese>Buscar por Jogador</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_PatDown">
-			<Original>Ausziehen</Original>
-			<English>Ausziehen</English>
+			<Original>Strip off</Original>
+			<English>Strip off</English>
+			<German>Ausziehen</German>
 		</Key>
 		<Key ID="STR_pInAct_Strip">
-			<Original>Ausziehen</Original>
-			<English>Ausziehen</English>
+			<Original>Strip off</Original>
+			<English>Strip off</English>
+			<German>Ausziehen</German>
 		</Key>
 		<Key ID="STR_pInAct_ApplyAirKit">
 			<Original>Apply Oxygen (90sec)</Original>
 			<English>Apply Oxygen (90sec)</English>
+			<German>Luft geben (90sec)</German>
+		</Key>
+		<Key ID="STR_pInAct_RevivePlayer">
+			<Original>Revive</Original>
+			<German>Revive</German>
+			<English>Wiederbeleben</English>
 		</Key>
 
 		<Key ID="STR_pInAct_StopEscort">
@@ -4540,6 +4548,7 @@
 		</Key>	
 		<Key ID="STR_vInAct_CIVPullOut">
 			<Original>Smash Windows</Original>
+			<German>Einschlagen</German>
 		</Key>	
 		<Key ID="STR_vInAct_PullOut">
 			<Original>Pullout Players</Original>
