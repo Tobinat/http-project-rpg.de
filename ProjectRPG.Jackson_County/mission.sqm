@@ -83201,7 +83201,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Air Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""LCN_spawn_car_1"";  }];  " \n "this addAction[""Parke Fahrzeug in der Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",''];";
+				init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Car Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];  life_garage_type = ""Car""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""LCN_spawn_car_1"";  }];  " \n "this addAction[""Parke Fahrzeug in der Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",''];";
 			};
 			id=18538;
 			type="Land_InfoStand_V2_F";
