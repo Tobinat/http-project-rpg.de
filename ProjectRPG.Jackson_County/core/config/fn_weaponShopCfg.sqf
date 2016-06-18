@@ -548,7 +548,6 @@ switch(_shop) do
 							["RH_SFM952V",nil,2000],
 							["RH_compM2l",nil,2000],
 							["RH_t1","Aimpoint",2000],
-							["RH_peq2","Laser (All Rifles)",2000],
 							["RH_m110sd","MK 11 Silencer",2200],
 							["RH_qdss_nt4","M4A6 Silencer",2200],
 							["muzzle_snds_H","KAC Silencer",2200],
