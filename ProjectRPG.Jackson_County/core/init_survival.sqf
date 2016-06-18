@@ -16,6 +16,24 @@
 	};
 };
 
+0 spawn {
+	while {true} do {
+		uiSleep (5 + random(5));
+
+		if(playerSide != independent) then {
+			if("ItemCopCard" in (assignedItems player)) then {
+				if(player getVariable "copLevel" != 1) then {
+					player setVariable ["copLevel",1,true];
+				};
+			} else {
+				if(player getVariable "copLevel" != 0) then {
+					player setVariable ["copLevel",0,true];
+				};
+			};
+		};
+	};
+};
+
 [] spawn  {
 	while{true} do
 	{
@@ -88,56 +106,56 @@
 		if(vehicle player != player && driver (vehicle player) == player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike") || (_vehicle isKindOf "A3L_Tahoe_Base"))) then {
 
 			if((player distance (getMarkerPos "speed_cam_1")) < 20 || (player distance (getMarkerPos "speed_cam_2")) < 20 || (player distance (getMarkerPos "speed_cam_3")) < 20 || (player distance (getMarkerPos "speed_cam_4")) < 20 || (player distance (getMarkerPos "speed_cam_10")) < 20 ) then {
-				_vel = speed player; 
+				_vel = speed player;
 				if(_vel > 90 && _vel < 140) then {
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					uiSleep 0.1;
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
-					"colorCorrections" ppEffectEnable false;	
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
+					"colorCorrections" ppEffectEnable false;
 
 					["Du warst zu schnell innerhalb der Stadt! $100 Strafe!.", false] spawn domsg;
 					if(cash_in_bank > 100) then {
-						["bank","take",100] call life_fnc_handleCash; 
+						["bank","take",100] call life_fnc_handleCash;
 					};
 				};
-				
+
 				if(_vel > 139 && _vel < 200) then {
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					uiSleep 0.1;
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
-					"colorCorrections" ppEffectEnable false;		
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
+					"colorCorrections" ppEffectEnable false;
 
 					["Du warst viel zu schnell innerhalb der Stadt! $210 Strafe!", false] spawn domsg;
 					if(cash_in_bank > 210) then {
 						["bank","take",210] call life_fnc_handleCash;
 					};
-				};	
+				};
 				if(_vel > 199) then {
 					["Du warst definitiv zu schnell! $2000 Strafe und dein Führerschein wurde eingezogen!", false] spawn domsg;
 					if(cash_in_bank > 2000) then {
@@ -145,23 +163,23 @@
 					};
 					player setVariable["defect_vehicle",true,true];
 
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					uiSleep 0.1;
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
-					"colorCorrections" ppEffectEnable false;	
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
+					"colorCorrections" ppEffectEnable false;
 
 					if(license_civ_driver OR license_civ_truck OR license_civ_boat) then {
 						license_civ_driver = false;
@@ -169,34 +187,34 @@
 						license_civ_boat = false;
 						[2] call SOCK_fnc_updatePartial;
 					};
-				};		
+				};
 				uiSleep 30;
 			};
 			if((player distance (getMarkerPos "speed_cam_5")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30 || (player distance (getMarkerPos "speed_cam_18")) < 30) then {
-				_vel = speed player; 
+				_vel = speed player;
 				if(_vel > 140 && _vel < 160) then {
 					["Du warst zu schnell! $100 Strafe!", false] spawn domsg;
 					if(cash_in_bank > 100) then {
-						["bank","take",100] call life_fnc_handleCash; 
+						["bank","take",100] call life_fnc_handleCash;
 					};
 
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					uiSleep 0.1;
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
-					"colorCorrections" ppEffectEnable false;	
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
+					"colorCorrections" ppEffectEnable false;
 
 				};
 				if(_vel > 159 && _vel < 224) then {
@@ -205,25 +223,25 @@
 						["bank","take",350] call life_fnc_handleCash;
 					};
 
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					uiSleep 0.1;
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
-					"colorCorrections" ppEffectEnable false;	
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
+					"colorCorrections" ppEffectEnable false;
 
-				};	
+				};
 				if(_vel > 225) then {
 					["Du warst definitiv zu schnell! $1000 Strafe und dein Führerschein wurde eingezogen!", false] spawn domsg;
 					if(cash_in_bank > 1000) then {
@@ -231,23 +249,23 @@
 					};
 					player setVariable["defect_vehicle",true,true];
 
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					uiSleep 0.1;
-					"colorCorrections" ppEffectEnable true;   
-					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
-					"colorCorrections" ppEffectCommit 0;  
-					uiSleep 0;   
-					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
-					"colorCorrections" ppEffectCommit 0.05;   
-					uiSleep 0.05;   
-					"colorCorrections" ppEffectEnable false;						
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
+					"colorCorrections" ppEffectEnable false;
 
 					if(license_civ_driver OR license_civ_truck OR license_civ_boat) then {
 						license_civ_driver = false;
@@ -255,7 +273,7 @@
 						license_civ_boat = false;
 					};
 				};
-				uiSleep 30;	
+				uiSleep 30;
 			};
 			uiSleep 0.5;
 		} else {
@@ -275,40 +293,40 @@
 		_load = round(_cfg / 8);
 		life_maxWeight = life_maxWeightT + _load;
 		waitUntil {uiSleep 1; (backpack player != _bp)};
-		if(backpack player == "") then 
+		if(backpack player == "") then
 		{
 			life_maxWeight = life_maxWeightT;
 		};
 	};
 };
 
-	fnc_water = 
+	fnc_water =
 	{
-		if(life_thirst < 2) exitwith { 
-			["Remove",0.25] call fnc_doHealth; 
+		if(life_thirst < 2) exitwith {
+			["Remove",0.25] call fnc_doHealth;
 			playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
 		};
-		if(life_thirst < 15) then { 
-			[7] spawn life_fnc_HudElements;	
+		if(life_thirst < 15) then {
+			[7] spawn life_fnc_HudElements;
 			playSound3D ["cg_sndimg\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
-		};	
-		if(!life_is_arrested) then { 
+		};
+		if(!life_is_arrested) then {
 			["Remove","Drink",1] call fnc_sustain;
 		};
 	};
 
 
-	fnc_food = 
+	fnc_food =
 	{
-		if(life_hunger < 2) exitwith { 
+		if(life_hunger < 2) exitwith {
 			["Remove",0.25] call fnc_doHealth;
 			playSound3D ["cg_sndimg\sounds\cough4.ogg", player, false, getPosASL player, 3, 1, 45];
 		};
-		if(life_hunger < 15) then { 
+		if(life_hunger < 15) then {
 			playSound3D ["cg_sndimg\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
-			[7] spawn life_fnc_HudElements;	
-		};	
-		if(!life_is_arrested) then { 
+			[7] spawn life_fnc_HudElements;
+		};
+		if(!life_is_arrested) then {
 			["Remove","Food",1] call fnc_sustain;
 		};
 	};
@@ -320,13 +338,13 @@
 		_amount = param [1,0,[0]];
 		if(_adjust == "Reset") then { life_battery = 0; };
 		if(_adjust == "Set") then { life_battery = _amount; };
-		if(_adjust == "Add") then { life_battery = life_battery + _amount; };	
+		if(_adjust == "Add") then { life_battery = life_battery + _amount; };
 		if(_adjust == "Remove") then { life_battery = life_battery - _amount; };
 	};
 
 
 
-	fnc_battery_adjust =   
+	fnc_battery_adjust =
 	{
 		if(life_battery < 2) exitwith {["Dein Smartphone hat keinen Akku mehr!", false] spawn domsg;};
 
@@ -348,9 +366,9 @@
 
 
 
-	fnc_overtime_stats =   
+	fnc_overtime_stats =
 	{
-			if(!life_is_arrested) then { 
+			if(!life_is_arrested) then {
 				_karma = round (random 5);
 				["Add",_karma] call fnc_karma;
 			};
@@ -364,7 +382,7 @@
 		if (life_poop > 80) then {
 			_pooplord = getFatigue player;
 			if (!deadPlayer && _pooplord < 1) then {
-				player setFatigue _pooplord + 0.01; 
+				player setFatigue _pooplord + 0.01;
 				_chance = round (random 95);
    			 	if(_chance == 19) then {
    				  	[player,"fart1"] spawn life_fnc_nearestSound;
@@ -389,7 +407,7 @@
 		if (life_poop > 90) then {
 			_pooplord = getFatigue player;
 			if(!deadPlayer && _pooplord < 1) then {
-				player setFatigue _pooplord + 0.01; 
+				player setFatigue _pooplord + 0.01;
 			};
 		};
 	};
@@ -412,8 +430,8 @@
 				_dir = direction cur_vehicle;
 				_speed = 0.0001;
 				cur_vehicle setVelocity [
-					(_vel select 0) + (sin _dir * _speed), 
-					(_vel select 1) + (cos _dir * _speed), 
+					(_vel select 0) + (sin _dir * _speed),
+					(_vel select 1) + (cos _dir * _speed),
 					(_vel select 2)
 				];
 			};
@@ -423,7 +441,7 @@
 			koil_cruise = false;
 		};
 	};
-	
+
 
 	fnc_sustain =
 	{
@@ -466,10 +484,10 @@
 			karma_level = 80;
 		};
 		if(_oldKarmaLevel < karma_level) then { ["Du hast ein Karma-Level erhalten!", false] spawn domsg; player say "levelup"; };
-		if(_oldKarmaLevel > karma_level) then { ["Du hast ein Karma-Level verloren!", false] spawn domsg; player say "endbeep"; };	
+		if(_oldKarmaLevel > karma_level) then { ["Du hast ein Karma-Level verloren!", false] spawn domsg; player say "endbeep"; };
 	};
 
-	fnc_dirt = 
+	fnc_dirt =
 	{
 		if (life_dirt > 60) then {
 			["Du fühlst dich dreckig und stinkst!", false] spawn domsg;
@@ -483,11 +501,11 @@
 					player setVariable ["diseaseon",(round (random 7)),true];
 				};
 			};
-		};	
+		};
 		if (life_dirt == 100) then {
 			_pooplord = getFatigue player;
 			player setFatigue _pooplord + 0.01;
-		};	
+		};
 	};
 
 
@@ -500,31 +518,31 @@
 			_totalpain = koildeb + koildebi + koildebii + koildebiii + koildebiiii;
 
 			if(_totalpain < 12) then {
-				"colorCorrections" ppEffectEnable true;			
-				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 0.5],  [0, 0, 0, 0.0]]; 
+				"colorCorrections" ppEffectEnable true;
+				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 0.5],  [0, 0, 0, 0.0]];
 				"colorCorrections" ppEffectCommit 3;
 				uiSleep 2;
-				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 
+				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]];
 				"colorCorrections" ppEffectCommit 3;
 				uiSleep 2;
 			};
 
 			if(_totalpain > 11 && _totalpain < 18) then {
-				"colorCorrections" ppEffectEnable true;			
-				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 0.33],  [0, 0, 0, 0.0]]; 
+				"colorCorrections" ppEffectEnable true;
+				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 0.33],  [0, 0, 0, 0.0]];
 				"colorCorrections" ppEffectCommit 3;
 				uiSleep 2;
-				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 
+				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]];
 				"colorCorrections" ppEffectCommit 3;
 				uiSleep 2;
 			};
 
 			if(_totalpain > 17) then {
-				"colorCorrections" ppEffectEnable true;			
-				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 0.1],  [0, 0, 0, 0.0]]; 
+				"colorCorrections" ppEffectEnable true;
+				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 0.1],  [0, 0, 0, 0.0]];
 				"colorCorrections" ppEffectCommit 3;
 				uiSleep 2;
-				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 
+				"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]];
 				"colorCorrections" ppEffectCommit 3;
 				uiSleep 2;
 			};
@@ -587,13 +605,13 @@
 		if(life_bankteller) exitwith { has_job = false; life_bankteller = false; };
 		if(life_carSalesman) exitwith { has_job = false; life_carSalesman = false; };
 		if(maintenance_on) exitwith { has_job = false; maintenance_on = false; };
-		if(trucking) exitwith { 
-			has_job = false; 
+		if(trucking) exitwith {
+			has_job = false;
 			trucking = false;
 			deleteVehicle vehspawned;
 			deleteVehicle vehspawned2;
 		};
-		if(fedex_on) exitwith { 
+		if(fedex_on) exitwith {
 			has_job = false; fedex_on = false;
 			deleteVehicle vehspawned;
 		};
@@ -604,7 +622,7 @@
 	fnc_totalatm =
 	{
 		if(paid_recently) exitwith {
-	
+
 		};
 		myatmbonus = _this;
 		paid_recently = true;
@@ -617,7 +635,7 @@
 			myatmbonus = 420;
 		};
 
-		["bank","add",round(myatmbonus)] call life_fnc_handleCash; 
+		["bank","add",round(myatmbonus)] call life_fnc_handleCash;
 		[format["Du wurdest bezahlt: $%1",myatmbonus], false] spawn domsg;
 		uiSleep 180;
 		paid_recently = false;
@@ -650,7 +668,7 @@
 			mybonus = 120;
 		};
 
-		["cash","add",round(mybonus)] call life_fnc_handleCash; 
+		["cash","add",round(mybonus)] call life_fnc_handleCash;
 		[format["Du wurdest bezahlt: $%1",mybonus], false] spawn domsg;
 		uiSleep 180;
 		buy_off = false;
@@ -665,17 +683,17 @@
 		while{marker_on} do {
 		   	if(player distance posinext < 10 && drawmessage != "Driving Test") exitwith { ["Du hast das Ziel erreicht!",false] spawn domsg; };
 		   	if(player distance posinext < 110 && drawmessage == "Oil") exitwith { };
-		   	if(drawmessage == "Oil Maintenance" && !maintenance_on) exitwith { };	
+		   	if(drawmessage == "Oil Maintenance" && !maintenance_on) exitwith { };
 		   	sleep 0.05;
 	    };
 	    marker_on = false;
 	};
 
-	fnc_fadephone = { 
+	fnc_fadephone = {
 			[] spawn {
-			_fuck = ((uiNamespace getVariable "tabletmenu") displayCtrl 7017); 
+			_fuck = ((uiNamespace getVariable "tabletmenu") displayCtrl 7017);
 			_fuck ctrlsetfade 1;
-			_fuck ctrlcommit 1; 
+			_fuck ctrlcommit 1;
 			sleep 1;
 			_fuck ctrlshow false;
 		};
@@ -695,23 +713,23 @@
 		if(!allow_sat) exitwith { player say "satdisable"; ["kEarth Imaging ist aktuell OFFLINE!",false] spawn domsg; };
 		allow_sat = false;
 		["kEarth Imaging ist aktuell ONLINE!",false] spawn domsg;
-		life_kEarthCamera  = "CAMERA" camCreate (getPosATL player);  
-		showCinemaBorder FALSE;  
-		life_kEarthCamera cameraEffect ["Internal","Back"]; 
-		life_kEarthCamera camSetTarget player; 
-		life_kEarthCamera camSetFOV .9;  
-		life_kEarthCamera camSetFocus [50,0];   
-		life_kEarthCamera camSetRelPos [0,545,545];  
+		life_kEarthCamera  = "CAMERA" camCreate (getPosATL player);
+		showCinemaBorder FALSE;
+		life_kEarthCamera cameraEffect ["Internal","Back"];
+		life_kEarthCamera camSetTarget player;
+		life_kEarthCamera camSetFOV .9;
+		life_kEarthCamera camSetFocus [50,0];
+		life_kEarthCamera camSetRelPos [0,545,545];
 		life_kEarthCamera camCommit 0;
 		player say "satmove";
-		life_kEarthCamera camSetRelPos [0,1,445];  
+		life_kEarthCamera camSetRelPos [0,1,445];
 		life_kEarthCamera camCommit 4.5;
 
-		"colorCorrections" ppEffectEnable true; 
-		"filmGrain" ppEffectEnable true;  
-		"filmGrain" ppEffectAdjust [0.1, -1, 0.1, 0.05, 1, false];  
-		"filmGrain" ppEffectCommit 2;    
-		"colorCorrections" ppEffectAdjust [1, 0.75, 0, [0.3,0.4,1,-0.1], [1,1,1,1], [-0.5,0,-1,3]]; 
+		"colorCorrections" ppEffectEnable true;
+		"filmGrain" ppEffectEnable true;
+		"filmGrain" ppEffectAdjust [0.1, -1, 0.1, 0.05, 1, false];
+		"filmGrain" ppEffectCommit 2;
+		"colorCorrections" ppEffectAdjust [1, 0.75, 0, [0.3,0.4,1,-0.1], [1,1,1,1], [-0.5,0,-1,3]];
 		"colorCorrections" ppEffectCommit 2;
 		_total = 0;
 		while{true} do {
@@ -721,16 +739,16 @@
 			_total = _total + 1;
 		};
 		sleep 2;
-		["kEarth Imaging ist aktuell OFFLINE!",false] spawn domsg; 
-		player say "satdisable"; 
+		["kEarth Imaging ist aktuell OFFLINE!",false] spawn domsg;
+		player say "satdisable";
 		life_kEarthCamera cameraEffect ["TERMINATE","BACK"];
 		camDestroy life_kEarthCamera;
-		"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 
+		"colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]];
 		"colorCorrections" ppEffectCommit 3;
 		"colorCorrections" ppEffectEnable false;
 		"filmGrain" ppEffectAdjust [0, 0, 0, 0, 1, false];
-		"filmGrain" ppEffectCommit 2; 
-		"filmGrain" ppEffectEnable false;  
+		"filmGrain" ppEffectCommit 2;
+		"filmGrain" ppEffectEnable false;
 		sleep 600;
 		["kEarth Imaging ist wieder ONLINE!",false] spawn domsg;
 		allow_sat = true;
@@ -748,7 +766,7 @@ fnc_dispatch = {
 
 
 
-	fnc_phone_settings = { 
+	fnc_phone_settings = {
 		_todo = param [0,"",[""]];
 
 		if(_todo == "tags") then {
@@ -803,12 +821,12 @@ fnc_delivery = {
 			["Add",1] call fnc_karma;
 		};
 		if(_chance isEqualTo 2) then {
-			["cash","add",1250] call life_fnc_handleCash; 
+			["cash","add",1250] call life_fnc_handleCash;
 			["Du hast $7250 bekommen!", false] spawn domsg;
 			["Add",3] call fnc_karma;
 		};
 		if(_chance isEqualTo 3) then {
-			["cash","add",500] call life_fnc_handleCash; 
+			["cash","add",500] call life_fnc_handleCash;
 			["Du hast $500 bekommen!", false] spawn domsg;
 			["Add",2] call fnc_karma;
 		};
@@ -817,14 +835,14 @@ fnc_delivery = {
 			player addItemToBackpack "CG_ATF_Drug_Bottle_01_i";
 			["Jemand hat dir Medizien gegeben! Schaue in deinen Rucksack!", false] spawn domsg;
 			["Add",5] call fnc_karma;
-		};	
+		};
 		if(_chance isEqualTo 7) then {
 			player addItemToBackpack "CG_ATF_Drug_Bottle_01_i";
 			["Jemand hat dir Medizien gegeben! Schaue in deinen Rucksack!", false] spawn domsg;
 			["Add",5] call fnc_karma;
-		};	
+		};
 		if(_chance isEqualTo 4) then {
-			["cash","add",2500] call life_fnc_handleCash; 
+			["cash","add",2500] call life_fnc_handleCash;
 			["Du hast $2500 bekommen!", false] spawn domsg;
 			["Add",15] call fnc_karma;
 		};
@@ -859,10 +877,10 @@ fnc_delivery = {
 			player addmagazine "A3L_Glock17mag";
 			player addmagazine "A3L_Glock17mag";
 			player addmagazine "A3L_Glock17mag";
-			player addmagazine "A3L_Glock17mag";		
+			player addmagazine "A3L_Glock17mag";
 			["Jemand schmuggelt Sachen für dich in den Knast!", false] spawn domsg;
 		};
-	};				
+	};
 };
 
 [] spawn
@@ -874,7 +892,7 @@ fnc_delivery = {
 			if(count _radios < 2) then {
 
 				if(count _radios > 0) then {
-					if(!([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio)) then {  
+					if(!([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio)) then {
 						[] call fnc_checkphone;
 						[] call fnc_resetCall;
 						hint "Dein Funkgerät wurde durch ein Smartphone ersetzt!";
@@ -951,7 +969,7 @@ fnc_airkit =
 			uiSleep 10;
 			_buym = _buym + 1;
 		};
-		life_ApplyAir = false;	
+		life_ApplyAir = false;
 	};
 };
 
@@ -989,7 +1007,7 @@ fnc_airkit =
 	{
 		[] spawn {
 			uiSleep 110;
-			if(life_intox > 0) then 
+			if(life_intox > 0) then
 			{
 				if(life_intox <= 0.02) then {life_intox = 0.00;} else {life_intox = life_intox - 0.02;};
 				switch(true) do {
@@ -1001,7 +1019,7 @@ fnc_airkit =
 		if(life_intox <= 0.08) exitWith {};
 		if(player getVariable["intoxicated",false]) exitWith {};
 		player setVariable["intoxicated",true,true];
-		while{life_intox > 0.08} do 
+		while{life_intox > 0.08} do
 		{
  		    "dynamicBlur" ppEffectEnable true;
     	    "dynamicBlur" ppEffectAdjust [0.5];
@@ -1037,13 +1055,13 @@ fnc_airkit =
 		player setVariable["intoxicated",false,true];
 	};
 
-[] spawn  
+[] spawn
 {
 	private["_walkDis","_myLastPos","_MaxWalk","_runHunger","_runDehydrate"];
 	_walkDis = 0;
 	_myLastPos = (getPos player select 0) + (getPos player select 1);
 	_MaxWalk = 1200;
-	while{true} do 
+	while{true} do
 	{
 		uiSleep 1;
 		if(deadPlayer) then {_walkDis = 0;}
@@ -1076,7 +1094,7 @@ fnc_airkit =
 			uiSleep 0.1;
 			if(handgunWeapon player isEqualTo "" && primaryWeapon player isEqualTo "") exitWith {};
 			[player,"AmovPercMstpSnonWnonDnon"] remoteExecCall ["life_fnc_animSync"];
-			player switchMove "AmovPercMstpSnonWnonDnon"; 
+			player switchMove "AmovPercMstpSnonWnonDnon";
 		};
 		while {_time > time} do {
 			if (currentWeapon player != "") then {
@@ -1088,11 +1106,11 @@ fnc_airkit =
 };
 
 
-fnc_testaids = { 
-	uiSleep 0.05; 
+fnc_testaids = {
+	uiSleep 0.05;
 	if(draggingm) then {
-		closedialog 0; 
-		["Dragging is disabled while in a vehicle Inventory. Use Right Click to move items!", false] spawn doquickmsg; 
+		closedialog 0;
+		["Dragging is disabled while in a vehicle Inventory. Use Right Click to move items!", false] spawn doquickmsg;
 	};
 };
 
@@ -1103,16 +1121,16 @@ fnc_testdupe = {
 	nodrag2 = (findDisplay 602) DisplayAddEventHandler ["MouseButtonUp", "if(_this select 1 == 0) then { draggingm = false; };"];
 	nodrag3 = (findDisplay 602) DisplayAddEventHandler ["MouseMoving", " hint format[""%1"",_this]; if(draggingm) then { [] spawn fnc_testaids; };"];
 	waituntil {(isnull (finddisplay 602)) || handle};
-	(findDisplay 602) displayRemoveEventHandler ["MouseButtonDown",nodrag1];	
-	(findDisplay 602) displayRemoveEventHandler ["MouseButtonUp",nodrag2];	
-	(findDisplay 602) displayRemoveEventHandler ["MouseMoving",nodrag3];	
+	(findDisplay 602) displayRemoveEventHandler ["MouseButtonDown",nodrag1];
+	(findDisplay 602) displayRemoveEventHandler ["MouseButtonUp",nodrag2];
+	(findDisplay 602) displayRemoveEventHandler ["MouseMoving",nodrag3];
 };
 
 fnc_gut_animal = {
 	private["_obj"];
 	_obj = param [0,ObjNull,[ObjNull]];
-	if(isNull _obj) exitWith {}; 
-	if(alive _obj) exitWith {}; 
+	if(isNull _obj) exitWith {};
+	if(alive _obj) exitWith {};
 
 	if(([true,"Raw Meat",1] call life_fnc_handleInv)) then
 	{
@@ -1187,7 +1205,7 @@ if( life_koil_race2 == 1 || life_koil_race == 1 || joinmode == 0 ) exitWith { ["
 
 
 
-fnc_deletefire = { 
+fnc_deletefire = {
 	thefire1 call fnc_deleteFire2;
 	_status = _this select 0;
 	if(_status == "cleaned") then {
@@ -1195,110 +1213,110 @@ fnc_deletefire = {
 	};
 };
 
-//fire 
-fnc_deletefire2 = {  
+//fire
+fnc_deletefire2 = {
  	_unit = _this;
-	{ if (typeOf _x == "#particlesource") then { _x setdamage 1; deleteVehicle _x; } } forEach (_unit nearObjects 10);  
-};  
+	{ if (typeOf _x == "#particlesource") then { _x setdamage 1; deleteVehicle _x; } } forEach (_unit nearObjects 10);
+};
 
-fnc_startfire = {    
+fnc_startfire = {
 	["standard"] spawn fnc_deletefire;
 	sleep 1;
-	thefire1 = "test_EmptyObjectForFireBig" createVehicleLocal fire_loc1;  
+	thefire1 = "test_EmptyObjectForFireBig" createVehicleLocal fire_loc1;
 };
 
 fnc_police_fire = {
-	["NEWS: Lakeside PD steht unter Flammen!", false] spawn domsg; 
+	["NEWS: Lakeside PD steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [8732.3,7233.77,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_bank_fire = {
-["NEWS: Lakeside Bank steht unter Flammen!", false] spawn domsg; 
+["NEWS: Lakeside Bank steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [8528.42,6618.23,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_wheat_fire = {
-["NEWS: Lakeside Weizen Feld steht unter Flammen!", false] spawn domsg; 
+["NEWS: Lakeside Weizen Feld steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [8768.35,6649.88,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_tiki_fire = {
-["NEWS: Lakeside Bar steht unter Flammen!", false] spawn domsg; 
+["NEWS: Lakeside Bar steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [8585.92,6627.52,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_donuts_fire = {
-["NEWS: Lakeside Donuts steht unter Flammen!", false] spawn domsg; 
+["NEWS: Lakeside Donuts steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [8549.27,6732.5,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_pizza_fire = {
-["NEWS: Lakeside Pizza steht unter Flammen!", false] spawn domsg; 
+["NEWS: Lakeside Pizza steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [8520.743,6294.040,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_morrison_fire = {
-["NEWS: Morrison Zementhändler steht unter Flammen!", false] spawn domsg; 
+["NEWS: Morrison Zementhändler steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [4703.18,2606.99,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_prison_fire = {
-["NEWS: Lakeside Prison steht unter Flammen!", false] spawn domsg; 
+["NEWS: Lakeside Prison steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [9212.92,9291.86,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_landmarkt_fire = {
-["NEWS: New Haven Landmarkt steht unter Flammen!", false] spawn domsg; 
+["NEWS: New Haven Landmarkt steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [5994.62,8003.6,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_truckjob_fire = {
-["NEWS: Lakeside Truck Job steht unter Flammen!", false] spawn domsg; 
+["NEWS: Lakeside Truck Job steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [7679.69,6060.14,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 
 
 
 fnc_bedford_fire = {
-["NEWS: Old Bedford Waffenladen steht unter Flammen!", false] spawn domsg; 
+["NEWS: Old Bedford Waffenladen steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [6554.71,3813.25,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_diablos_fire = {
-["NEWS: Los Diablos PD steht unter Flammen!", false] spawn domsg; 
+["NEWS: Los Diablos PD steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [3425.52,7590.8,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_jagd_fire = {
-["NEWS: Das Jagdgebiet steht unter Flammen!", false] spawn domsg; 
+["NEWS: Das Jagdgebiet steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [6594.68,6015.15,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 fnc_mais_fire = {
-["NEWS: Die Mais Farm steht unter Flammen!", false] spawn domsg; 
+["NEWS: Die Mais Farm steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [3013.25,8445.73,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 
 fnc_chop_fire = {
-["NEWS: Der Chop Shop steht unter Flammen!", false] spawn domsg; 
+["NEWS: Der Chop Shop steht unter Flammen!", false] spawn domsg;
 	fire_loc1 = [6118,9388.23,0.1];
-	[] spawn fnc_startfire;	
+	[] spawn fnc_startfire;
 };
 
 
@@ -1313,17 +1331,17 @@ fnc_searched =
 	waitUntil {scriptDone _handle};
 	life_carryWeight = 0;
 };
-	
+
 fnc_spikeStrip_cg = {
 	private["_nearVehicles","_spikeStrip","_Obj"];
 
 	_mydir = (getdir player);
-	_obj = [player, 3.4, _myDir ] call BIS_fnc_relPos; 	
+	_obj = [player, 3.4, _myDir ] call BIS_fnc_relPos;
 	if(_myDir > 30 && _myDir < 181) then {
-		_obj = [player, 4.4, _myDir ] call BIS_fnc_relPos; 
+		_obj = [player, 4.4, _myDir ] call BIS_fnc_relPos;
 	};
 	if(_myDir > 240 && _myDir < 341) then {
-		_obj = [player, 2.2, _myDir ] call BIS_fnc_relPos; 	
+		_obj = [player, 2.2, _myDir ] call BIS_fnc_relPos;
 	};
 	_spikeStrip = createVehicle ["CG_Spikes_Extended", _obj,[], 0, "CAN_COLLIDE"];
 	_spot = getPos _spikeStrip;
@@ -1426,25 +1444,25 @@ fnc_checkCall = {
 			_total = myCallOwner getVariable "PhonecallNumber";
 			if(_total == _newTotal) exitwith { [] call fnc_answered; };
 			if(_endme > 20) exitwith { [] call fnc_noanswer; };
-		};	
+		};
 	};
 	tryingcall = false;
 };
- 
+
 fnc_answered = {
 	playSound "cgphone_click";
-	["Jemand ist in der Leitung!", false] spawn domsg; 
+	["Jemand ist in der Leitung!", false] spawn domsg;
 };
 
 fnc_noanswer = {
 	playSound "cgphone_hangup";
-	["Niemand hat deinen Anruf angenommen!", false] spawn domsg; 
+	["Niemand hat deinen Anruf angenommen!", false] spawn domsg;
 };
 
 fnc_busyAnswer = {
 	tryingcall = false;
 	playSound "cgphone_hangup";
-	["Die Person telefoniert beretis - Schreibe eine SMS!", false] spawn domsg; 
+	["Die Person telefoniert beretis - Schreibe eine SMS!", false] spawn domsg;
 };
 
 
@@ -1452,29 +1470,29 @@ fnc_ringPlayer = {
 	CurrentCaller = _this;
 	_radios = player call TFAR_fnc_radiosList;
 	if(count _radios > 0) then {
-		if( phoneDisabled ) exitwith { currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["Ein Anruf von %1 wurde zu deinen Nachrichten hinzugefügt! (Smartphone ausgeschlatet)",name CurrentCaller], false] spawn domsg; };	
-		if( callInProgress || PhonesRinging ) exitwith { currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["Ein Anruf von %1 wurde zu deinen Nachrichten hinzugefügt! (Bereits am telefonieren) ",name CurrentCaller], false] spawn domsg; };	
+		if( phoneDisabled ) exitwith { currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["Ein Anruf von %1 wurde zu deinen Nachrichten hinzugefügt! (Smartphone ausgeschlatet)",name CurrentCaller], false] spawn domsg; };
+		if( callInProgress || PhonesRinging ) exitwith { currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["Ein Anruf von %1 wurde zu deinen Nachrichten hinzugefügt! (Bereits am telefonieren) ",name CurrentCaller], false] spawn domsg; };
 		if( life_battery < 5 ) exitwith { currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["Ein Anruf von %1 wurde zu deinen Nachrichten hinzugefügt! (Batterie zu schwach) ",name CurrentCaller], false] spawn domsg; };
 
 		PhonesRinging = true;
 		_endme = 0;
 		while{PhonesRinging} do {
 			playSound "cgphone_call";
-			[format["%1 ruft dich gerade an!",name currentcaller], false] spawn domsg; 
+			[format["%1 ruft dich gerade an!",name currentcaller], false] spawn domsg;
 			sleep 5;
 			_endme = _endme + 5;
 			if(_endme > 20) exitwith { ["Du hast einen Anruf verpasst!", false] spawn domsg;  };
 		};
 
-		PhonesRinging = false;		
+		PhonesRinging = false;
 	} else {
 		currentCaller remoteExec ["fnc_busyAnswer",currentCaller];
-		["Du hast einen Anruf verpasst!", false] spawn domsg; 
+		["Du hast einen Anruf verpasst!", false] spawn domsg;
 	};
 };
 
 fnc_answercall = {
-	PhonesRinging = false;	
+	PhonesRinging = false;
 	myCallOwner = _this;
 	myPhoneCall = getPlayerUID myCallOwner;
 	player setvariable["PhoneID",myPhoneCall,true];
@@ -1484,7 +1502,7 @@ fnc_answercall = {
 	[(call TFAR_fnc_activeSwRadio), _channel, myPhoneCall] call TFAR_fnc_SetChannelFrequency;
 	call TFAR_fnc_HideHint;
 	_total = myCallOwner getVariable "PhonecallNumber";
-	_total = _total + 1;	
+	_total = _total + 1;
 	myCallOwner setvariable["PhoneCallNumber",_total,true];
 	[] spawn fnc_callProgress;
 };
@@ -1505,10 +1523,10 @@ fnc_callProgress = {
 		sleep 7;
 		while{callInProgress} do {
 			if( isNull myCallOwner ) exitwith { [] call fnc_resetcall; };
-			_total = myCallOwner getVariable "PhonecallNumber";	
+			_total = myCallOwner getVariable "PhonecallNumber";
 			if( _total < 2 ) exitwith { [] call fnc_resetcall; };
-			if( deadPlayer && myCallOwner != player ) exitwith { ["Anruf wurde beendet (Sie sind verstorben)", false] spawn domsg; [] call fnc_hangup };	
-			if( life_battery < 5 ) exitwith { ["Anruf wurde beendet (Batterie schwach)", false] spawn domsg; [] call fnc_hangup };	
+			if( deadPlayer && myCallOwner != player ) exitwith { ["Anruf wurde beendet (Sie sind verstorben)", false] spawn domsg; [] call fnc_hangup };
+			if( life_battery < 5 ) exitwith { ["Anruf wurde beendet (Batterie schwach)", false] spawn domsg; [] call fnc_hangup };
 			sleep 5;
 		};
 	};
@@ -1577,58 +1595,58 @@ fnc_hangup = {
 fnc_phoneDisabled = {
 	if(PhoneDisabled) then {
 		PhoneDisabled = false;
-		["Anrufe freigeschaltet!", false] spawn domsg; 
+		["Anrufe freigeschaltet!", false] spawn domsg;
 	} else {
 		PhoneDisabled = true;
-		["Anrufe gesperrt!", false] spawn domsg; 
-	};	
+		["Anrufe gesperrt!", false] spawn domsg;
+	};
 };
 
 fnc_trycall = {
-	if(callInProgress) exitwith { 
-		["Du hast jemanden zum aktuellen Gespräch hinzugefügt!", false] spawn domsg; 
-		[] call fnc_callMenu; 
+	if(callInProgress) exitwith {
+		["Du hast jemanden zum aktuellen Gespräch hinzugefügt!", false] spawn domsg;
+		[] call fnc_callMenu;
 	};
-	if(PhonesRinging) exitwith { 
-		["Verbinde zum Gespräch!", false] spawn domsg; 
+	if(PhonesRinging) exitwith {
+		["Verbinde zum Gespräch!", false] spawn domsg;
 		CurrentCaller spawn fnc_answerCall;
 	};
-	if(TryingCall) exitwith { 
-		["Bitte warte bis der aktuelle Anruf beendet ist!", false] spawn domsg; 
+	if(TryingCall) exitwith {
+		["Bitte warte bis der aktuelle Anruf beendet ist!", false] spawn domsg;
 	};
 
-	["Du startest einen Anruf!", false] spawn domsg; 
-	[] call fnc_callMenu; 
+	["Du startest einen Anruf!", false] spawn domsg;
+	[] call fnc_callMenu;
 
 };
 
 
 fnc_tryhangup = {
-	if(PhonesRinging) exitwith { 
+	if(PhonesRinging) exitwith {
 		PhonesRinging = false;
-		["Du hörst einen besetzt Ton.", false] spawn domsg; 
-		[] call fnc_hangup; 
+		["Du hörst einen besetzt Ton.", false] spawn domsg;
+		[] call fnc_hangup;
 	};
 
 	if(tryingCall) exitwith {
 		tryingcall = FALSE;
-		["Verbindung wird getrennt.", false] spawn domsg; 
+		["Verbindung wird getrennt.", false] spawn domsg;
 		[] call fnc_resetcall;
 	};
 
 	if(myCallOwner == player) exitwith {
-		["Verbindung wird getrennt.", false] spawn domsg; 
-		[] call fnc_resetcall;	
+		["Verbindung wird getrennt.", false] spawn domsg;
+		[] call fnc_resetcall;
 	};
 
-	if(callInProgress) exitwith { 
-		["Verlasse aktuelles Gespräch.", false] spawn domsg; 
-		[] call fnc_hangup; 
+	if(callInProgress) exitwith {
+		["Verlasse aktuelles Gespräch.", false] spawn domsg;
+		[] call fnc_hangup;
 	};
 
 
-	["Anrufliste wird zurückgesetzt.", false] spawn domsg; 
-	[] call fnc_resetcall; 
+	["Anrufliste wird zurückgesetzt.", false] spawn domsg;
+	[] call fnc_resetcall;
 
 };
 
@@ -1639,7 +1657,7 @@ fnc_stereoRotation = {
 	[(call TFAR_fnc_ActiveSWRadio), _stereo] call TFAR_fnc_setSwStereo;
 	if(_stereo == 0) exitwith { ["Stereo aktiviert.", false] spawn doquickmsg; };
 	if(_stereo == 1) exitwith { ["Linkes Ohr aktiviert.", false] spawn doquickmsg; };
-	if(_stereo == 2) exitwith { ["Rechtes Ohr aktiviert.", false] spawn doquickmsg; };	
+	if(_stereo == 2) exitwith { ["Rechtes Ohr aktiviert.", false] spawn doquickmsg; };
 };
 
 fnc_ChangeEMS = {
@@ -1688,12 +1706,12 @@ fnc_dynamiteScript = {
 	player playmove "AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthEnd";
 	sleep 1;
 	_dirAdd = (-30) + random(60);
-	_speed = 20; 
-	_Dir = (getdir player) + _dirAdd; 
+	_speed = 20;
+	_Dir = (getdir player) + _dirAdd;
 	_vehicle = createVehicle ["vvv_anzuelo", [getpos player select 0, getpos player select 1, (getpos player select 2) + 3],[], 0, "CAN_COLLIDE"];
 	_vel = velocity _vehicle;
 	_vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + 12];
-	playSound3D ["CG_Jobs\sounds\exp\exp.ogg", player, false, getPosASL player, 11, 1, 35]; 
+	playSound3D ["CG_Jobs\sounds\exp\exp.ogg", player, false, getPosASL player, 11, 1, 35];
 
 
 	sleep 2.5;
@@ -1717,7 +1735,7 @@ fnc_dynamiteScript = {
 
 	hint "Geh nah ran um deinen Fang einzuholen!";
 
-	_timeout = 60; 
+	_timeout = 60;
 	while{true} do {
 		_timeout = _timeout - 1;
 		if(player distance _catchPos < 9) exitwith { _catch = true; };
@@ -1734,48 +1752,48 @@ fnc_dynamiteScript = {
 			{
 				case 0 :
 				{
-					player additem "Fish_1_i"; 
+					player additem "Fish_1_i";
 				};
 				case 1 :
 				{
-					player additem "Fish_1_i"; 
+					player additem "Fish_1_i";
 				};
 				case 2 :
 				{
-					player additem "Fish_2_i"; 
+					player additem "Fish_2_i";
 				};
 				case 3 :
 				{
-					player additem "Fish_3_i"; 
+					player additem "Fish_3_i";
 				};
 				case 4 :
 				{
-					player additem "Fish_4_i"; 
+					player additem "Fish_4_i";
 				};
 				case 5 :
 				{
-					player additem "Fish_5_i"; 
+					player additem "Fish_5_i";
 				};
 
 				default
 				{
 				};
-			};	
-			_amount = _amount - 1;	
-		};		
-	} else { hint "Du warst zu langsam! Der Fang ist weg!";};				
+			};
+			_amount = _amount - 1;
+		};
+	} else { hint "Du warst zu langsam! Der Fang ist weg!";};
 };
 
 fnc_castScript = {
 	player playmove "AwopPercMstpSgthWrflDnon_start1";
 	sleep 1;
 	_dirAdd = (-30) + random(60);
-	_speed = 20; 
-	_Dir = (getdir player) + _dirAdd; 
+	_speed = 20;
+	_Dir = (getdir player) + _dirAdd;
 	_vehicle = createVehicle ["vvv_anzuelo", [getpos player select 0, getpos player select 1, (getpos player select 2) + 3],[], 0, "CAN_COLLIDE"];
 	_vel = velocity _vehicle;
 	_vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + 12];
-	playSound3D ["vvv_fishingrod\sounds\cast2.ogg", player, false, getPosASL player, 5, 1, 35]; 
+	playSound3D ["vvv_fishingrod\sounds\cast2.ogg", player, false, getPosASL player, 5, 1, 35];
 
 
 	sleep 2.5;
@@ -1805,14 +1823,14 @@ fnc_castScript = {
 		deletevehicle _vehicle;
 	};
 
-	_Dir = _Dir - 180; 
+	_Dir = _Dir - 180;
 	_vel = velocity _vehicle;
 	_speed = 22;
 
 	_timeOut = 0;
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL _vehicle, 25, 1, 85];
 	sleep 0.5;
-	playSound3D ["vvv_fishingrod\sounds\wind2.ogg", player, false, getPosASL player, 5, 1, 35]; 
+	playSound3D ["vvv_fishingrod\sounds\wind2.ogg", player, false, getPosASL player, 5, 1, 35];
 
 	player playmove "AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWrflDnon_gear";
 
@@ -1834,57 +1852,57 @@ fnc_castScript = {
 	{
 		case 0 :
 		{
-			player additem "Fish_1_i"; 
+			player additem "Fish_1_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 1 :
 		{
-			player additem "Fish_1_i"; 
+			player additem "Fish_1_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 2 :
 		{
-			player additem "Fish_2_i"; 
+			player additem "Fish_2_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 3 :
 		{
-			player additem "Fish_3_i"; 
+			player additem "Fish_3_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 4 :
 		{
-			player additem "Fish_4_i"; 
+			player additem "Fish_4_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 5 :
 		{
-			player additem "Fish_5_i"; 
+			player additem "Fish_5_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 6 :
 		{
-			player additem "Fish_1_i"; 
+			player additem "Fish_1_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 7 :
 		{
-			player additem "Fish_2_i"; 
+			player additem "Fish_2_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 8 :
 		{
-			player additem "Fish_3_i"; 
+			player additem "Fish_3_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 9 :
 		{
-			player additem "Fish_4_i"; 
+			player additem "Fish_4_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 		case 10 :
 		{
-			player additem "Fish_5_i"; 
+			player additem "Fish_5_i";
 			hint "Du hast einen Fisch gefangen!";
 		};
 
@@ -1893,15 +1911,15 @@ fnc_castScript = {
 			hint "Leider nichts gefangen!";
 		};
 
-	};										
+	};
 };
 
 
 fnc_cutWood = {
-	 trees = [];      
-		 { if (str _x find ": t_" > -1) then { trees pushBack _x; }; } forEach nearestObjects [player, [], 9];     
+	 trees = [];
+		 { if (str _x find ": t_" > -1) then { trees pushBack _x; }; } forEach nearestObjects [player, [], 9];
 
-		 if(count trees > 0) then {   
+		 if(count trees > 0) then {
 		_sound = round(random 5);
 		switch(_sound) do {
 			case 0: {
@@ -1921,8 +1939,8 @@ fnc_cutWood = {
 			};
 			default {
 				playSound3D ["CG_Jobs\sounds\woodchop\woodchop1.ogg", player, false, getPosasl (trees select 0), 31, 1, 15];
-			};		 				 				 		
-		};	
+			};
+		};
 
 		 _treeCutChance = round(random 5);
 		 if(_treeCutChance > 4) then {
@@ -1937,35 +1955,35 @@ fnc_cutWood = {
 			 		};
 			 		default {
 			 			playSound3D ["CG_Jobs\sounds\treefall\treefall1.ogg", player, false, getPosasl (trees select 0), 21, 1, 15];
-			 		};	
-			 	};		
+			 		};
+			 	};
 			 	_tree = (trees select 0);
-			 	sleep 3; 		
-				_tree setdamage 1; sleep 2; [_tree,true] remoteExecCall ["hideobjectglobal",2]; 
+			 	sleep 3;
+				_tree setdamage 1; sleep 2; [_tree,true] remoteExecCall ["hideobjectglobal",2];
 				[] call fnc_packLogs;
 		 	};
 		};
-	};	
+	};
 };
 
 fnc_refineWood = {
-	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; }; 
-	{ 
+	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; };
+	{
 		if(_x distance vehspawned < 11) then {
-			deletevehicle _x; 
+			deletevehicle _x;
 			_sound = round(random 5);
 			playSound3D ["CG_Jobs\sounds\sawing\saw.ogg", player, false, getPosAsl Player, 11, 1, 15];
-			player additem "CG_Refined_Wood";	
+			player additem "CG_Refined_Wood";
 			sleep 1.5;
 			hint "Du verarbeitest dein Holz, warte einen Moment!"
 		};
 	} forEach attachedObjects vehspawned;
-	hint "Du hast dein Holz verarbeitet!";  
+	hint "Du hast dein Holz verarbeitet!";
 	totalLogs = 0;
 };
 
 fnc_packLogs = {
-	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; }; 
+	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; };
 	if(totalLogs == 23) exitwith { hint "Fahrzeug ist voll!"; };
 	mylog = createVehicle ["vvv_tronco", position player, [], 0, "NONE"];
 
@@ -1977,10 +1995,10 @@ fnc_packLogs = {
 	if(totalLogs == 2) exitwith {
 		mylog attachTo [vehspawned, [-0.5, -3.5, 1.3] ]; mylog setdir 90;
 	};
-	if(totalLogs == 3) exitwith {	
+	if(totalLogs == 3) exitwith {
 		mylog attachTo [vehspawned, [0, -3.5, 1.3] ]; mylog setdir 90;
 	};
-	if(totalLogs == 4) exitwith {	
+	if(totalLogs == 4) exitwith {
 		mylog attachTo [vehspawned, [0.5, -3.5, 1.3] ]; mylog setdir 90;
 	};
 	if(totalLogs == 5) exitwith {
@@ -2045,9 +2063,9 @@ fnc_packLogs = {
 
 fnc_mineMetal = {
 
-	 metals = nearestObjects [player, ["a3l_Bits_Rock_L_Iron","a3l_Bits_Rock_L_Coal","a3l_Bits_Rock_L_Diamond"], 5];     
+	 metals = nearestObjects [player, ["a3l_Bits_Rock_L_Iron","a3l_Bits_Rock_L_Coal","a3l_Bits_Rock_L_Diamond"], 5];
 
-	if(count metals > 0) then {   
+	if(count metals > 0) then {
 
 	_vehicle = metals select 0;
 	_sound = round(random 5);
@@ -2070,7 +2088,7 @@ fnc_mineMetal = {
 			};
 			default {
 				playSound3D ["CG_Jobs\sounds\mining\mine1.ogg", player, false, getPosasl (metals select 0), 31, 1, 15];
-			};		 				 				 		
+			};
 		};
 
 		_cutChance = round(random 130);
@@ -2078,34 +2096,34 @@ fnc_mineMetal = {
 			playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl (metals select 0), 25, 1, 15];
 			mybarrow = createVehicle ["land_wheelcart_f", [0,0,0], [], 0, "NONE"];
 			mybarrow attachto [player, [0, 1.3, 0.5] ];
-			myIron = createVehicle ["a3l_Bits_Rock_L_Coal", getpos player, [], 0, "NONE"];  
-			myIron attachTo [myBarrow, [0, 0.8, 0.85] ]; 
+			myIron = createVehicle ["a3l_Bits_Rock_L_Coal", getpos player, [], 0, "NONE"];
+			myIron attachTo [myBarrow, [0, 0.8, 0.85] ];
 		};
 		if(typeOf _vehicle isEqualTo "a3l_Bits_Rock_L_Iron" && _cutChance > 80) then {
 			playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl (metals select 0), 25, 1, 15];
 			mybarrow = createVehicle ["land_wheelcart_f", [0,0,0], [], 0, "NONE"];
 			mybarrow attachto [player, [0, 1.3, 0.5] ];
-			myIron = createVehicle ["a3l_Bits_Rock_L_Iron", getpos player, [], 0, "NONE"];  
-			myIron attachTo [myBarrow, [0, 0.8, 0.85] ]; 
+			myIron = createVehicle ["a3l_Bits_Rock_L_Iron", getpos player, [], 0, "NONE"];
+			myIron attachTo [myBarrow, [0, 0.8, 0.85] ];
 		};
 		if(typeOf _vehicle isEqualTo "a3l_Bits_Rock_L_Diamond" && _cutChance > 1) then {
 			playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl (metals select 0), 25, 1, 15];
 			mybarrow = createVehicle ["land_wheelcart_f", [0,0,0], [], 0, "NONE"];
 			mybarrow attachto [player, [0, 1.3, 0.5] ];
-			myIron = createVehicle ["a3l_Bits_Rock_L_Diamond", getpos player, [], 0, "NONE"];  
-			myIron attachTo [myBarrow, [0, 0.8, 0.85] ]; 
+			myIron = createVehicle ["a3l_Bits_Rock_L_Diamond", getpos player, [], 0, "NONE"];
+			myIron attachTo [myBarrow, [0, 0.8, 0.85] ];
 		};
 
-	};	
+	};
 };
 
 
 fnc_refineMetal1 = {
 	totalLogs = 0;
-	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; }; 
-	{ 
+	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; };
+	{
 		if(_x distance vehspawned < 11) then {
-			deletevehicle _x; 
+			deletevehicle _x;
 			_sound = round(random 5);
 			playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];
 			sleep 1.5;
@@ -2117,10 +2135,10 @@ fnc_refineMetal1 = {
 
 fnc_refineMetal2 = {
 	totalLogs = 0;
-	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; }; 
-	{ 
+	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; };
+	{
 		if(_x distance vehspawned < 11) then {
-			deletevehicle _x; 
+			deletevehicle _x;
 			_sound = round(random 5);
 			playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];
 			sleep 1.5;
@@ -2128,11 +2146,11 @@ fnc_refineMetal2 = {
 			player additem "cg_metalstack";
 		};
 	} forEach attachedObjects vehspawned;
-	hint "Du hast dein Metallerz verarbeitet!";  
+	hint "Du hast dein Metallerz verarbeitet!";
 };
 
 fnc_packMetal2 = {
-	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; }; 
+	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; };
 	if(totalLogs == 6) exitwith { hint "Fahrzeug ist voll!"; };
 	mylog = createVehicle ["Land_Pipes_large_F", position player, [], 0, "NONE"];
 
@@ -2144,10 +2162,10 @@ fnc_packMetal2 = {
 	if(totalLogs == 2) exitwith {
 		mylog attachTo [vehspawned, [0.6, -3.8, 1.1] ]; mylog setdir 90;
 	};
-	if(totalLogs == 3) exitwith {	
+	if(totalLogs == 3) exitwith {
 		mylog attachTo [vehspawned, [-0.6, -3.8, 1.7] ]; mylog setdir 90;
 	};
-	if(totalLogs == 4) exitwith {	
+	if(totalLogs == 4) exitwith {
 		mylog attachTo [vehspawned, [0.6, -3.8, 1.7] ]; mylog setdir 90;
 	};
 	if(totalLogs == 5) exitwith {
@@ -2161,7 +2179,7 @@ fnc_packMetal2 = {
 
 
 fnc_packMetal1 = {
-	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; }; 
+	if(vehSpawned distance player > 15) exitwith { hint "Dein Fahrzeug ist zu weit weg!"; };
 	if(totalLogs == 6) exitwith { hint "Fahrzeug ist voll!"; };
 	mylog = createVehicle ["a3l_Bits_Rock_L_Iron", position player, [], 0, "NONE"];
 
@@ -2173,10 +2191,10 @@ fnc_packMetal1 = {
 	if(totalLogs == 2) exitwith {
 		mylog attachTo [vehspawned, [0.6, -3.8, 1.7] ]; mylog setdir 90;
 	};
-	if(totalLogs == 3) exitwith {	
+	if(totalLogs == 3) exitwith {
 		mylog attachTo [vehspawned, [-0.6, -2.8, 1.7] ]; mylog setdir 90;
 	};
-	if(totalLogs == 4) exitwith {	
+	if(totalLogs == 4) exitwith {
 		mylog attachTo [vehspawned, [0.6, -2.8, 1.7] ]; mylog setdir 90;
 	};
 	if(totalLogs == 5) exitwith {
@@ -2196,7 +2214,7 @@ fnc_trucking = {
 
 	while{trucking} do {
 
-		["Ein LKW Lieferort wird in Kürze angezeigt!", false] spawn domsg; 
+		["Ein LKW Lieferort wird in Kürze angezeigt!", false] spawn domsg;
 		_jail = false;
 
 	    chosen = ["Truck_Stop_1","Truck_Stop_2","Truck_Stop_3","Truck_Stop_4","Truck_Stop_5","Truck_Stop_6","Truck_Stop_7","Truck_Stop_8","Truck_Stop_9","Truck_Stop_10"] call BIS_fnc_selectRandom;
@@ -2206,7 +2224,7 @@ fnc_trucking = {
 		_distance = floor (_distance / 1000);
 
 		if(_distance < 1) then { _distance = 1; };
-		if(_distance > 8) then { _distance = 8; };	
+		if(_distance > 8) then { _distance = 8; };
 		_success = false;
 		_calcT = 0;
 		while {trucking} do {
@@ -2219,7 +2237,7 @@ fnc_trucking = {
 			uisleep 1;
 			hint parsetext format["<img size='1' image='icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>JOB:</t><br/> Du hast %1 von 1200 Sekunden gebraucht. <br/> Deine Job Markierung ist %2",_calcT,chosen2];
 		};
-		["Du bist fast am Ziel, halte an, spring raus und koppel deinen Anhänger ab!", false] spawn domsg; 
+		["Du bist fast am Ziel, halte an, spring raus und koppel deinen Anhänger ab!", false] spawn domsg;
 		sleep 3;
 		_goodT = _distance * 20;
 		_goodT = _goodT - _calcT;
@@ -2292,7 +2310,7 @@ fnc_startGarbage = {
 		_veh = vehicle player;
 
 		if(_veh == player) exitwith {};
-			
+
 		_veh setfuel 0;
 		_veh animate ['contenedor_unhide',1];
 		_veh animate ['contenedor',1];
@@ -2330,7 +2348,7 @@ fnc_startGarbage = {
 
 		} else {
 
-		hint "Es befindet sich sein Müll in deiner Nähe!";	
+		hint "Es befindet sich sein Müll in deiner Nähe!";
 
 	};
 
@@ -2362,7 +2380,7 @@ fnc_maintstart = {
 		"Someone reported a fire on our farm? Surely its a joke, check please!",
 		"We heard our crops have pests, check it out please!",
 		"We have reports of chemical spillage at the marked location, can you check please?"
-		];	
+		];
 	};
 	if (oil) then {
 		airvehspawned = createVehicle ["ivory_b206", (getmarkerPos "oil_spawn_1"), [], 0, "NONE"];
@@ -2385,7 +2403,7 @@ fnc_maintstart = {
 
 		if(player distance airvehspawned > 500 || deadPlayer) exitwith {};
 		chosen = oiljobs call BIS_fnc_selectRandom;
-		[bullshit_story call BIS_fnc_selectRandom, false] spawn domsg; 
+		[bullshit_story call BIS_fnc_selectRandom, false] spawn domsg;
 		playSound "ringing";
 		markerf = createMarkerLocal ["themarker",chosen];
 		markerf setMarkerColorLocal "ColorRed";
@@ -2398,7 +2416,7 @@ fnc_maintstart = {
 		_distance = floor (_distance / 1000);
 
 		if(_distance < 1) then { _distance = 1; };
-		if(_distance > 8) then { _distance = 8; };	
+		if(_distance > 8) then { _distance = 8; };
 
 		_calcT = 0;
 		while {maintenance_on} do {
@@ -2408,11 +2426,11 @@ fnc_maintstart = {
 
 			if(player distance chosen < 100 && oil ) exitwith {
 				_success = true;
-				["Du bist nah, lande sicher und beende deinen Auftrag!", false] spawn domsg; 
+				["Du bist nah, lande sicher und beende deinen Auftrag!", false] spawn domsg;
 			};
 			if(player distance chosen < 5 && farm && typeOf(vehicle player) == "ivory_tractor") exitwith {
 				_success = true;
-				["Nähr an die Markierung um den Auftrag zu beenden!", false] spawn domsg; 
+				["Nähr an die Markierung um den Auftrag zu beenden!", false] spawn domsg;
 			};
 
 			if(_calcT > 360) exitwith { _success = false; ["Du hast deinen Auftrag nicht abgeschlossen!", false] spawn domsg;  };
@@ -2444,7 +2462,7 @@ fnc_maintstart = {
 
 			if(!_success) exitwith { ["Mission fehlgeschlagen, bleibe in deinem Fahrzeug bis du dich nah genug am Ziel befindest!", false] spawn domsg; };
 			if(vehicle player == player && player distance chosen < 55 && oil) exitwith {
-				player playmove "AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthEnd"; 
+				player playmove "AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthEnd";
 				["bank","add", _payment] call life_fnc_handleCash;
 				[format["Du wurdest für deine Hilfe bezahlt: $%1!",_payment], false] spawn domsg;
 				["Add",1] call fnc_karma;
@@ -2453,7 +2471,7 @@ fnc_maintstart = {
 				["bank","add", _payment] call life_fnc_handleCash;
 				[format["Du wurdest für deine Hilfe bezahlt: $%1!",_payment], false] spawn domsg;
 				["Add",1] call fnc_karma;
-			};	
+			};
 			if(_groundPhase > 60) exitwith { ["Du warst zu langsam!", false] spawn domsg;  };
 			uisleep 1;
 		};
@@ -2497,7 +2515,7 @@ fnc_fedex = {
 
 	while{fedex_on} do {
 
-		["Ein neuer Job wird in Kürze erscheinen - Bleibe in deinem Fahrzeug bis eine Person sich nähert!", false] spawn domsg; 
+		["Ein neuer Job wird in Kürze erscheinen - Bleibe in deinem Fahrzeug bis eine Person sich nähert!", false] spawn domsg;
 		sleep 3;
 		_jail = false;
 		while {fedex_on} do
@@ -2514,10 +2532,10 @@ fnc_fedex = {
 		_distance = player distance chosen;
 		_distance = floor (_distance / 1000);
 		if( uniform chosen isEqualTo "A3L_Prisoner_Outfit" && (chosen distance (getMarkerPos "shank_1")) < 200 ) then {
-			["Der Spieler befindet sich im Gefängnis, gehe nah an die Wände um das Packet abzuliefern.", false] spawn domsg; 
+			["Der Spieler befindet sich im Gefängnis, gehe nah an die Wände um das Packet abzuliefern.", false] spawn domsg;
 		};
 		if(_distance < 1) then { _distance = 1; };
-		if(_distance > 8) then { _distance = 8; };	
+		if(_distance > 8) then { _distance = 8; };
 		_success = false;
 		_calcT = 0;
 		while {fedex_on} do {
@@ -2536,7 +2554,7 @@ fnc_fedex = {
 			uisleep 1;
 			hint parsetext format["<img size='1' image='icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>JOB:</t><br/> Du hast %1 Sekunden gebraucht.",_calcT];
 		};
-		["Du bist fast am Ziel, steige aus und beende deinen Auftrag!", false] spawn domsg; 
+		["Du bist fast am Ziel, steige aus und beende deinen Auftrag!", false] spawn domsg;
 		sleep 3;
 		_goodT = _distance * 7;
 		_goodT = _goodT - _calcT;
@@ -2548,15 +2566,15 @@ fnc_fedex = {
 			if(!_success) exitwith {};
 			_groundPhase = _groundPhase + 1;
 			markerf setMarkerPosLocal (visiblePosition chosen);
-			if( _jail && vehicle player isEqualTo player && player distance chosen < 50 ) exitwith { 
+			if( _jail && vehicle player isEqualTo player && player distance chosen < 50 ) exitwith {
 				"jail" remoteExecCall ["fnc_delivery",chosen];
 				["bank","add", _payment] call life_fnc_handleCash;
 				_msg = format["You just got paid %1 your delivery!",_payment];
-				[_msg, false] spawn domsg; 
+				[_msg, false] spawn domsg;
 			 };
 			if(!_success) exitwith { ["Mission fehlgeschlagen, bleibe in deinem Fahrzeug bis du dich nah genug am Ziel befindest!", false] spawn domsg; };
 			if(vehicle player isEqualTo player && _success && player distance chosen < 15 && vehicle chosen isEqualTo chosen) exitwith {
-				player playmove "AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthEnd"; 
+				player playmove "AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthEnd";
 				["bank","add", _payment] call life_fnc_handleCash;
 				_msg = format["Du wurdest für deinen Auftrag bezahlt: $%1!",_payment];
 				[_msg, false] spawn domsg;
@@ -2634,7 +2652,7 @@ fnc_fedex = {
 			if(typeOf(vehicle player) != "CG_Taxi") exitwith { _skip = true; ["Du hast einen Anruf verpasst!"] spawn domsg;  };
 			if (player distance _unit < 10) exitwith { ["Du befindest dich an Ziel, warte, bis dein Passagier einsteigt!"] spawn domsg; };
 
-			if (vehicle _unit != _unit) exitwith { 
+			if (vehicle _unit != _unit) exitwith {
 				_skip = true;
 				if (player distance _unit < 500) then {
 					["Du wurdest dafür bezahlt, dass du zu deinem Ziel gefahren bist!"] spawn domsg;
@@ -2660,7 +2678,7 @@ fnc_fedex = {
 					if(_x == _unit) then
 					{
 						["cash","add",theirTotal] call life_fnc_handleCash;
-						[format["Eine Person in deinem Fahrzeug hat ein Taxi bestellt - Du wurdest bezahlt: $%1 !",theirTotal], false] spawn domsg; 
+						[format["Eine Person in deinem Fahrzeug hat ein Taxi bestellt - Du wurdest bezahlt: $%1 !",theirTotal], false] spawn domsg;
 						life_taxi = false;
 					};
 				} foreach _crew;
@@ -2677,8 +2695,8 @@ fnc_fedex = {
 	{
 		_cop = _this;
 
-		[format["Deine ID wurd von %1 überprüft.",name _cop], false] spawn domsg;		
-		
+		[format["Deine ID wurd von %1 überprüft.",name _cop], false] spawn domsg;
+
 		disableUserInput true;
 		safe_licenses = ["license_civ_driver", "license_civ_air", "license_civ_boat", "license_civ_dive", "license_civ_truck", "license_civ_gun", "license_civ_rifle"];
 
@@ -2744,7 +2762,7 @@ fnc_virt_dupe = {
 		sleep 0.25;
 		_penis = _penis - 1;
 	};
-	life_action_inuse = false;	
+	life_action_inuse = false;
 	//clear variable and end.
 	_curTarget setVariable["vehopen",0,true];
 };
@@ -2752,11 +2770,11 @@ fnc_virt_dupe = {
 
 
 fnc_item_CG = {
-    _idc = ctrlIDC (_this select 0);          
-	_selectedIndex = _this select 1;         
+    _idc = ctrlIDC (_this select 0);
+	_selectedIndex = _this select 1;
     _unit = player;
 	_item = lbData [_idc, _selectedIndex];
-		
+
 	if (_item == "CG_Spikes_Collapsed") then { [true] spawn fnc_spikeStrip_cg; [_item] spawn fnc_removeitem; closeDialog 0; };
 	if (_item == "CG_battery_i") then { life_battery = 200; [_item] spawn fnc_removeitem; playSound3D ["cg_sndimg\sounds\phoneSMS.ogg", player, false, getPosASL player, 1, 1, 25]; closeDialog 0; };
 	if (_item == "CG_ATF_Pizza_Box_i") then { [true] spawn life_fnc_pizza; [_item] spawn fnc_removeitem; closeDialog 0; };
