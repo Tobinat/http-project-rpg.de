@@ -3329,8 +3329,19 @@ life_garage_sell =
 			["B_Heli_Light_01_F",1350],
 			["EC635_SAR",600],
 			["EC635_PRPG_SERT",600],
-			["C_Heli_Light_01_civil_F",1350]
-
+			["C_Heli_Light_01_civil_F",1350],
+			
+			// Medic Cars
+			["cg_ambulanceexpansion",10],
+			["A3L_TowTruck_ADAC",10],
+			["RR_Firetruck",10],
+			["DAR_TahoeEMS",10],
+			["pop_grua",10],
+			["A3L_CVPILBFD",10],
+			["cg_evoems1",10],
+			["cg_evoems2",10],
+			["cg_evoems3",10],
+			["AM_Holden_RFA",10]
 
 ];
 __CONST__(life_garage_sell,life_garage_sell);
