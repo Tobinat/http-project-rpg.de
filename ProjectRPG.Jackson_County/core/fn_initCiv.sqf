@@ -1,13 +1,13 @@
 /*
 	File: fn_initCiv.sqf
-	
-	
+
+
 	Description:
 	Initializes the civilian.
 */
 
 // TFR Variables API
-tf_no_auto_long_range_radio = true; 
+tf_no_auto_long_range_radio = true;
 
 TF_terrain_interception_coefficient = 1;
 
@@ -49,18 +49,20 @@ if(life_is_arrested) then
 if(!license_civ_udc) then { //Sollte so funktionieren
 	[] spawn fnc_resetCallSpawn;
 	[] call fnc_checkphone;
-}else{
-	player setVariable ["copLevel",1,true];
+} else {
 	player setVariable ["udcLevel",true,true];
 	player setVariable ["sosActive",false,true];
 	PRPG_leitstelle = true;
 	life_paycheck = 4000;
+	call life_fnc_giveCards;
 };
 
 if(license_civ_doj) then {
 	player setVariable ["dojLevel",true,true];
 	life_paycheck = 3000;
 };
+
+player setVariable ["copLevel",0,true];
 
 player setUnitRecoilCoefficient 2.8;
 player addRating 9999999;

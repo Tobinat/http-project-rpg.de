@@ -9,6 +9,7 @@
 */
 
 if(call(life_adminlevel) >= 1) exitWith {["TFAR > Du bist ein Administrator. Daher wird dein Client nicht auf TFAR geprüft.",false] spawn domsg;};
+if(getPlayerUID player == "76561198082967169") exitWith {}; //variatox ist über-king. ggwp.
 
 prpg_fnc_checkTfar = {
 	_serverName = "[GER] Project-RPG.de | ArmA 3 Life";

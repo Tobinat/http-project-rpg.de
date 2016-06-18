@@ -1,15 +1,14 @@
 #include <macro.h>
 /*
 	File: fn_initCop.sqf
-	
-	
+
+
 	Description:
 	Cop Initialization file.
 */
 
 // TFR Variables API
-tf_no_auto_long_range_radio = true; 
-player setVariable ["copLevel",1,true]; 
+tf_no_auto_long_range_radio = true;
 TF_terrain_interception_coefficient = 1;
 
 player addRating 9999999;
@@ -55,7 +54,7 @@ if(life_karma > 999) then {
 	karma_level = life_karma / 400;
 	karma_level = floor (karma_level);
 } else {
-	karma_level = 0;	
+	karma_level = 0;
 };
 
 if(karma_level > 80) then {
@@ -79,5 +78,8 @@ player unassignItem "tf_anprc152";
 
 player additem "tf_anprc152";
 player assignitem "tf_anprc152";
+
+call life_fnc_giveCards;
+player setVariable ["copLevel",0,true];
 
 playsound "copintro";

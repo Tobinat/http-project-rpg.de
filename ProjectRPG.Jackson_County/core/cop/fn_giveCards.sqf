@@ -4,6 +4,9 @@
 	Server: project-rpg.de
 
 	Description:
-	Gibt dem Polizisten eine Cop-Card gemäß seinem Rang.
+	Teilt der Polizei die ID-Cards zu.
 
 */
+
+if("ItemCopCard" in (assignedItems player)) exitWith {}; //Hat bereits die ID-Card
+player linkItem "ItemCopCard";
