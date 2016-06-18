@@ -83,7 +83,7 @@ life_action_inUse = true;
 
 _curTarget = cursorTarget;
 if(!dialog && playerSide == independent && _curTarget isKindOf "Man") exitwith {
-	[_curTarget] call life_fnc_emsInteractionMenu;
+	[_curTarget] spawn life_fnc_emsInteractionMenu;
 };
 
 if((_curTarget getVariable["dead",FALSE]) && playerSide != independent && !dialog && _curTarget isKindOf "Man") exitwith {
