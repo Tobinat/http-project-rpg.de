@@ -81,6 +81,7 @@ switch(_shop) do
 					["Police Utility Shop",								
 						[
 							["CG_ATF_Handcuffs_i","Hand Cuffs",10],
+							["ItemCopCard","Zugangskarte",500],
 							["TRYK_SPgear_PHC1_NV","NV",10],
 							["EODS_VMH3CS_Weapon",nil,250], 
 							["cg_torch",nil,250], 
