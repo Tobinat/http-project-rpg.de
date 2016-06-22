@@ -16,7 +16,7 @@ if(isNull _cop) exitWith {};
 	while {true} do
 	{
 		_time = time;
-		waitUntil {uiSleep 10; ((time - _time) > (5 * 60))};
+		waitUntil {uiSleep 10; ((time - _time) > (5 * 60) && !(count (player nearEntities ["Man", 25]) > 2))};
 		
 		if(!(player getVariable["restrained",FALSE])) exitWith {};
 		if(!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable["restrained",FALSE]) && isNull objectParent player) exitWith {

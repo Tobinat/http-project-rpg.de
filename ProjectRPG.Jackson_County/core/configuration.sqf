@@ -433,7 +433,7 @@ life_licenses =
 
 //life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",120],["heroinp",250],["cokeu",150],["cokep",350],["cannabis",250],["opium",250],["marijuana",300],["turtle",500],["hackingtool",1000],["blastingcharge",1000],["boltcutter",350],["methu",40],["methp",400],["kroku",500],["krokp",700],["cokeu",40],["cokep",500],["MDMAu",30],["emerald",1220],["sapphire",1520],["ruby",720],["MDMAp",360]];
+life_illegal_items = [["heroinu",270],["heroinp",435],["cokeu",210],["cokep",800],["cannabis",250],["opium",250],["marijuana",300],["turtle",500],["hackingtool",1000],["blastingcharge",1000],["boltcutter",350],["methu",40],["methp",400],["kroku",500],["krokp",700],["cokeu",40],["cokep",500],["MDMAu",100],["emerald",1220],["sapphire",1520],["ruby",720],["MDMAp",820]];
 
 
 /*
@@ -484,8 +484,8 @@ sell_array =
 	["pickaxe",5],
 	["redgull",1],
 	["peach",1],
-	["diamond",80],
-	["diamondc",160],
+	["diamond",300],
+	["diamondc",550],
 	["iron_r",200],
 	["copper_r",300],
 	["salt_r",165],
@@ -663,44 +663,6 @@ __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 life_garage_prices =
 [
 
-
-			
-			["ivory_wrx_cop_marked",0],
-			["ivory_wrx_cop_unmarked",0],
-			["ivory_wrx_cop_slicktop",0],
-			["cg_evoblack",0],
-
-			//DOC
-			["cg_evocor1",0],
-			["A3L_SuburbanDOC",0],
-			["charger_cor_skinned",0],
-			
-			//PD
-			["cg_cvpifpbpd",0],
-			["cg_TaurusPD2",0],
-			["cg_evopol1",0],
-			["charger_pd",0],
-			["charger_pd_skinned",0],
-			
-			//SO
-			["cg_CVPISH",0],
-			["cg_TaurusSS1",0],
-			["cg_TaurusSS2",0],
-			["cg_evoss1",0],
-			["charger_sh",0],
-			["charger_sh_skinned",0],			
-
-			//ST
-			["cg_cvpitrooper",0],
-			["cg_taurustrooperf",0],		
-			["cg_trooperevo",0],
-			["charger_st",0],
-			["charger_trp_skinned",0],			
-			
-			//SERT					
-			["AM_Holden_UM",0],	
-	
-			
 			["ADM_General_Lee",0],
 			["tcg_hrly",0],
 			["tcg_hrly_white",0],	
@@ -1662,48 +1624,6 @@ __CONST__(life_garage_prices,life_garage_prices);
 
 life_impound_prices =
 [
-
-			["ivory_wrx_cop_marked",10],
-			["ivory_wrx_cop_unmarked",10],
-			["ivory_wrx_cop_slicktop",10],
-			["cg_evoblack",10],
-
-			//DOC
-			["cg_evocor1",10],
-			["A3L_SuburbanDOC",10],
-			["charger_cor_skinned",10],
-			
-			//PD
-			["cg_cvpifpbpd",10],
-			["cg_TaurusPD2",10],
-			["cg_evopol1",10],
-			["charger_pd",10],
-			["charger_pd_skinned",10],
-			
-			//SO
-			["cg_CVPISH",10],
-			["cg_TaurusSS1",10],
-			["cg_TaurusSS2",10],
-			["cg_evoss1",10],
-			["charger_sh",10],
-			["charger_sh_skinned",10],			
-
-			//ST
-			["cg_cvpitrooper",10],
-			["cg_taurustrooperf",10],		
-			["cg_trooperevo",10],
-			["charger_st",10],
-			["charger_trp_skinned",10],			
-			
-			//SERT					
-			["AM_Holden_UM",10],	
-	
-	
-			
-
-
-
-
 			["ADM_General_Lee",10],
 			["tcg_hrly",10],
 			["tcg_hrly_white",10],	
@@ -2665,41 +2585,7 @@ __CONST__(life_impound_prices,life_impound_prices);
 life_garage_sell =
 [
 
-			["ivory_wrx_cop_marked",9000],
-			["ivory_wrx_cop_unmarked",9000],
-			["ivory_wrx_cop_slicktop",9000],
-			["cg_evoblack",9000],
 
-			//DOC
-			["cg_evocor1",9000],
-			["A3L_SuburbanDOC",9000],
-			["charger_cor_skinned",9000],
-			
-			//PD
-			["cg_cvpifpbpd",9000],
-			["cg_TaurusPD2",9000],
-			["cg_evopol1",9000],
-			["charger_pd",9000],
-			["charger_pd_skinned",9000],
-			
-			//SO
-			["cg_CVPISH",9000],
-			["cg_TaurusSS1",9000],
-			["cg_TaurusSS2",9000],
-			["cg_evoss1",9000],
-			["charger_sh",9000],
-			["charger_sh_skinned",9000],			
-
-			//ST
-			["cg_cvpitrooper",9000],
-			["cg_taurustrooperf",9000],		
-			["cg_trooperevo",9000],
-			["charger_st",9000],
-			["charger_trp_skinned",9000],			
-			
-			//SERT					
-			["AM_Holden_UM",9000],
-			
 			["EC635_prpg_lvsf",20000],
 			["EC635_prpg_presidental",20000],
 			["ADM_General_Lee",20000],

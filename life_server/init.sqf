@@ -5,7 +5,7 @@ life_server_isReady = false;
 life_chopShopInUse = false;
 life_restartTime = 10800;
 publicVariable "life_server_isReady";
-life_Hunting_Version = "34063490832sdjhfgdsgh425g23ih5gjdt5";
+life_Hunting_Version = "423h4g0dsf745gnjdstnk65g42504";
 publicVariable "life_Hunting_Version";
 
 

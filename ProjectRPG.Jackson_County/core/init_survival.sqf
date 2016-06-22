@@ -1515,7 +1515,7 @@ fnc_callProgress = {
 			playSound "cgphone_static";
 			_total = _total / 2;
 			["cash","take",_total] call life_fnc_handleCash;
-			[format["Dieser Anruf hat dir $%1 gekostet!",_total], false] spawn domsg;
+			[format["Dieser Anruf hat dich $%1 gekostet!",_total], false] spawn domsg;
 			sleep 140;
 		};
 	};

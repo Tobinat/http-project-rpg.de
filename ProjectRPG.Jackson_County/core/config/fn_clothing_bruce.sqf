@@ -449,6 +449,9 @@ switch (_filter) do
 			["Masque_Hoxton",nil,1112],
 			["Masque_Incendiaire",nil,1112],
 			["Masque_Dallas",nil,1110],
+			
+			//Hurensohn CAP
+			["prpg_twitch_cap",nil,500],
 
 			//koil added
 			["cg_dinomask",nil,1120],

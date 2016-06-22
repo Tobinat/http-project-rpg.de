@@ -14,7 +14,7 @@ if(isNull _civ) exitWith {};
 	while {true} do
 	{
 		_time = time;
-		waitUntil {uiSleep 1; (!(player getVariable ["tied", false]) || (time - _time) > (5 * 60))};
+		waitUntil {uiSleep 1;(!(player getVariable ["tied", false]) || ((time - _time) > (5 * 60) && !(count (player nearEntities ["Man", 25]) > 2)))};
 		
 		if(!(player getVariable["tied", false])) exitWith {};
 		if(!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable["tied", false]) && isNull objectParent player) exitWith {
