@@ -950,22 +950,81 @@ switch (_shop) do
 		_return =
 		[
 			
+			["ivory_wrx_cop_marked",200000],
+			["ivory_wrx_cop_unmarked",200000],
+			["ivory_wrx_cop_slicktop",200000],
+			["cg_evoblack",70000],
+
+			//DOC
 			["A3L_CVPIFPBDOC",20000],
 			["A3L_TaurusCO2",25000],
+			["cg_evocor1",70000],
+			["A3L_SuburbanDOC",40000],
+			["charger_cor_skinned",90000],
+			
+			//PD
+			["cg_cvpifpbpd",20000],
 			["cg_cvpifpblbpd",20000],	
+			["cg_TaurusPD2",25000],
 			["cg_TaurusPD1",25000],	
 			["DAR_ExplorerPolice",40000],
+			["cg_evopol1",70000],
+			["charger_pd",90000],
 			["charger_pd_skinned",90000],
+			
+			//SO
+			["cg_CVPISH",20000],
 			["cg_ss2",25000],
+			["cg_TaurusSS1",25000],
+			["cg_TaurusSS2",25000],
+			["A3L_SuburbanCSO",40000],
 			["DAR_ExplorerSheriff",40000],
-			["charger_sh_skinned",90000],
+			["cg_evoss1",70000],
+			["charger_sh",90000],
+			["charger_sh_skinned",90000],			
+
+			//ST
+			["cg_cvpitrooper",25000],
+			["cg_taurustrooperf",25000],		
+			["cg_trooperevo",70000],
+			["charger_st",90000],
+			["charger_trp_skinned",90000],			
+			
+			//SERT
+			["cg_suburban_sert_pol",40000],					
+			["cg_evoSERT1",70000],
+			["charger_sert",90000],
+			["critgamin_vangmcc_civ_noir",8000],
+			["cg_hummer_h1_noir",5000],
+			["cg_h2_sert",110000],
+			["AM_Holden_UM",40000],	
 			["AM_Holden_SO",40000],		
+	
+			//Misc
 			["A3L_CVPIUC",20000],
 			["A3L_CVPIUCBlack",20000],
 			["A3L_CVPIUCBlue",20000],
+			["A3L_CVPIUCWhite",20000],
+			["A3L_CVPIUCPink",20000],
+			["A3L_CVPIUCRed",20000],
+			["cg_peugeot_508_pol_d",25000],
+			["cg_mercedes_sprinter_pol_base_reg",25000],
 			["cg_ducati_pol_reg",25000],			
+			["A3L_GrandCaravanUC",30000],
+			["A3L_GrandCaravanUCBlack",30000],
+			["DAR_TahoePoliceDet",30000],
 			["DAR_ExplorerPoliceStealth",30000],
-			["A3L_jailBus",50000]
+			["A3L_SuburbanUM",40000],						
+			["AM_Holden_Police",40000],			
+			["A3L_jailBus",50000],		
+  			["A3L_ChargerUC",70000],
+			["A3L_ChargerUCWhite",70000],			
+			["cg_brinks_bank_noir",95000],
+			["A3L_TaurusUC",30000],
+			["A3L_TaurusUCBlue",30000],
+			["A3L_TaurusUCGrey",30000],
+			["A3L_TaurusUCRed",30000],
+			["A3L_TaurusUCWhite",30000]
 			
 		];
 	};
