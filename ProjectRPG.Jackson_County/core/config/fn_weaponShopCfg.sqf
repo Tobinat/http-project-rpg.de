@@ -126,10 +126,20 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 0) then {
 				_temp = [
-					["RH_fnp45",nil,240],
-					["RH_15Rnd_45cal_fnp",nil,4],
-					["hgun_Pistol_heavy_01_F",nil,240],
-					["11Rnd_45ACP_Mag",nil,5],
+	
+					
+					["RH_p226",nil,3100],
+					["RH_17Rnd_9x19_g17",nil,25],
+					
+					["RH_sw659",nil,3100],
+					["RH_14Rnd_9x19_sw",nil,25],
+					
+					["RH_g19",nil,3100],
+					["RH_14Rnd_9x19_sw",nil,25],
+					
+					["RH_usp",nil,3100],
+					["RH_12Rnd_45cal_usp",nil,25],
+					
 					["hlc_smg_mp5a4",nil,3100],
 					["hlc_30Rnd_9x19_GD_MP5",nil,25]
 				];
@@ -161,9 +171,8 @@ switch(_shop) do
 			if(__GETC__(life_coplevel) > 0) then {
 				_temp =  [
 					["RH_PDW",nil,4220],
-					["RH_30Rnd_6x35_mag",nil,220],
-					["RH_uspm",nil,240],
-					["RH_16Rnd_40cal_usp",nil,5]						
+					["RH_30Rnd_6x35_mag",nil,220]
+										
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -283,8 +292,6 @@ switch(_shop) do
 							["RH_fnp45",nil,240],
 							["RH_15Rnd_45cal_fnp",nil,4],
 							
-							["hgun_Pistol_heavy_01_F",nil,240],
-							["11Rnd_45ACP_Mag",nil,5],
 							
 							["RH_fn57",nil,112],
 							["RH_sfn57",nil,20],

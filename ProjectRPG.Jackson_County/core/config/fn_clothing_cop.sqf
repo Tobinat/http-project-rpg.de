@@ -25,6 +25,9 @@ switch (_filter) do
 		[
 			["U_B_Wetsuit","Taucheranzug",50],
 			["EOD_Uniform",nil,15],
+			["max_sheriff_uniform","Highway Patrol",15],
+			["pRPG_Sheriff1",nil,15],
+			["pRPG_Deputy1",nil,15],
 			["prpg_recruit1",nil,15],
 			["prpg_officer1",nil,15],
 			["prpg_Detective1",nil,15],
