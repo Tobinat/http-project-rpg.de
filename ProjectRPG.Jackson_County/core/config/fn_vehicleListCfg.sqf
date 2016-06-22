@@ -1008,7 +1008,6 @@ switch (_shop) do
 			["A3L_CVPIUCPink",20000],
 			["A3L_CVPIUCRed",20000],
 			["cg_peugeot_508_pol_d",25000],
-			["cg_mercedes_sprinter_pol_base_reg",25000],
 			["cg_ducati_pol_reg",25000],			
 			["A3L_GrandCaravanUC",30000],
 			["A3L_GrandCaravanUCBlack",30000],
