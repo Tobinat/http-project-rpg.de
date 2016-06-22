@@ -663,6 +663,44 @@ __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 life_garage_prices =
 [
 
+
+			
+			["ivory_wrx_cop_marked",0],
+			["ivory_wrx_cop_unmarked",0],
+			["ivory_wrx_cop_slicktop",0],
+			["cg_evoblack",0],
+
+			//DOC
+			["cg_evocor1",0],
+			["A3L_SuburbanDOC",0],
+			["charger_cor_skinned",0],
+			
+			//PD
+			["cg_cvpifpbpd",0],
+			["cg_TaurusPD2",0],
+			["cg_evopol1",0],
+			["charger_pd",0],
+			["charger_pd_skinned",0],
+			
+			//SO
+			["cg_CVPISH",0],
+			["cg_TaurusSS1",0],
+			["cg_TaurusSS2",0],
+			["cg_evoss1",0],
+			["charger_sh",0],
+			["charger_sh_skinned",0],			
+
+			//ST
+			["cg_cvpitrooper",0],
+			["cg_taurustrooperf",0],		
+			["cg_trooperevo",0],
+			["charger_st",0],
+			["charger_trp_skinned",0],			
+			
+			//SERT					
+			["AM_Holden_UM",0],	
+	
+			
 			["ADM_General_Lee",0],
 			["tcg_hrly",0],
 			["tcg_hrly_white",0],	
@@ -1624,6 +1662,48 @@ __CONST__(life_garage_prices,life_garage_prices);
 
 life_impound_prices =
 [
+
+			["ivory_wrx_cop_marked",10],
+			["ivory_wrx_cop_unmarked",10],
+			["ivory_wrx_cop_slicktop",10],
+			["cg_evoblack",10],
+
+			//DOC
+			["cg_evocor1",10],
+			["A3L_SuburbanDOC",10],
+			["charger_cor_skinned",10],
+			
+			//PD
+			["cg_cvpifpbpd",10],
+			["cg_TaurusPD2",10],
+			["cg_evopol1",10],
+			["charger_pd",10],
+			["charger_pd_skinned",10],
+			
+			//SO
+			["cg_CVPISH",10],
+			["cg_TaurusSS1",10],
+			["cg_TaurusSS2",10],
+			["cg_evoss1",10],
+			["charger_sh",10],
+			["charger_sh_skinned",10],			
+
+			//ST
+			["cg_cvpitrooper",10],
+			["cg_taurustrooperf",10],		
+			["cg_trooperevo",10],
+			["charger_st",10],
+			["charger_trp_skinned",10],			
+			
+			//SERT					
+			["AM_Holden_UM",10],	
+	
+	
+			
+
+
+
+
 			["ADM_General_Lee",10],
 			["tcg_hrly",10],
 			["tcg_hrly_white",10],	
@@ -2585,7 +2665,41 @@ __CONST__(life_impound_prices,life_impound_prices);
 life_garage_sell =
 [
 
+			["ivory_wrx_cop_marked",9000],
+			["ivory_wrx_cop_unmarked",9000],
+			["ivory_wrx_cop_slicktop",9000],
+			["cg_evoblack",9000],
 
+			//DOC
+			["cg_evocor1",9000],
+			["A3L_SuburbanDOC",9000],
+			["charger_cor_skinned",9000],
+			
+			//PD
+			["cg_cvpifpbpd",9000],
+			["cg_TaurusPD2",9000],
+			["cg_evopol1",9000],
+			["charger_pd",9000],
+			["charger_pd_skinned",9000],
+			
+			//SO
+			["cg_CVPISH",9000],
+			["cg_TaurusSS1",9000],
+			["cg_TaurusSS2",9000],
+			["cg_evoss1",9000],
+			["charger_sh",9000],
+			["charger_sh_skinned",9000],			
+
+			//ST
+			["cg_cvpitrooper",9000],
+			["cg_taurustrooperf",9000],		
+			["cg_trooperevo",9000],
+			["charger_st",9000],
+			["charger_trp_skinned",9000],			
+			
+			//SERT					
+			["AM_Holden_UM",9000],
+			
 			["EC635_prpg_lvsf",20000],
 			["EC635_prpg_presidental",20000],
 			["ADM_General_Lee",20000],
