@@ -173,7 +173,7 @@ switch (_vehicle) do
 			[_path + "graystripe.paa","civ"],
 			[_path + "candy.paa","civ"],
 			[_path + "sportorange.paa","civ"],
-			[_path + "doritos.paa","civ"],
+			[_path + "blackgray.paa","civ"],
 			["#(argb,8,8,3)color(0,0,0.545098,1.0,CO)","civ","#(argb,8,8,3)color(0.501961,0.501961,0,1.0,CO)"],
 			["#(argb,8,8,3)color(0.411765,0.721569,0.819608,1.0,CO)","civ","#(argb,8,8,3)color(0.411765,0.721569,0.819608,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
 			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"]
