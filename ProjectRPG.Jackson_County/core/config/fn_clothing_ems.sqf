@@ -65,7 +65,7 @@ switch (_filter) do
 				_ret pushBack ["pRPG_Praktikant1",nil,2];
 				_ret pushBack ["pRPG_Candidate1",nil,2];
 				_ret pushBack ["pRPG_Employee1",nil,2];
-				_ret pushBack ["pRPG_Lieutenant1",nil,2];
+				_ret pushBack ["pRPG_rfaLieutenant",nil,2];
 				_ret pushBack ["pRPG_Lieutenant2",nil,2];
 				_ret pushBack ["pRPG_Command1",nil,2];
 				_ret pushBack ["pRPG_Command2",nil,2];
