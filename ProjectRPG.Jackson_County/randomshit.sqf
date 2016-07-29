@@ -4,7 +4,7 @@
 //dont use this
 _koil = [8555,6659,0.0];  if(_koil distance (getpos player) < 20) then {   currentuniform = Uniform player;   body = player;   _pos = getpos player;   _grp = creategroup civilian;   "RyanZombieC_scientist_Fslow" createUnit [_pos, _grp,"girl = this", 0.5, "private"];     selectPlayer girl;   deletevehicle body;  };
 
-
+//Test
 
 
 
