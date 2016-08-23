@@ -2,11 +2,11 @@
 /*
 	std / hooker / prostitute
 */
-if(life_std == 1) exitWith { ["You are already ready for sex..", false] spawn domsg; };
+if(life_std == 1) exitWith { ["Na süßer Ich bin günstiger als du denkst.", false] spawn domsg; };
 life_std = 1;
 
-["You are ready for sex for the next 10 minutes.", false] spawn domsg;
+["Du kannst noch ca 10 Minuten dippen", false] spawn domsg;
 uiSleep 600;
 
-["Your sex protection has worn out, damn!", false] spawn domsg;
+["Das Gummi ist geris... oooh Fuck warst du gut Baby!", false] spawn domsg;
 life_std = 0;

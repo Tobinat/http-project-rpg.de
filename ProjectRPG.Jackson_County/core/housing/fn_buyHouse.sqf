@@ -11,7 +11,7 @@ _uid = getPlayerUID player;
 
 if(isNull _house) exitWith {};
 if(!(_house isKindOf "House_F")) exitWith {};
-if((_house getVariable["house_owned",false])) exitWith {["This house is already owned even though you shouldn't be seeing this hint...", false] spawn domsg;};
+if((_house getVariable["house_owned",false])) exitWith {["Dieses Haus gehört schon jemanden schau auf die Klingel!", false] spawn domsg;};
 if(!isNil {(_house getVariable "house_sold")}) exitWith {[localize "STR_House_Sell_Process", false] spawn domsg;};
 if(!license_civ_home) exitWith {[localize "STR_House_License", false] spawn domsg;};
 
@@ -23,7 +23,7 @@ if(count _houseCfg isEqualTo 0) exitWith {};
 
 _cost = (_houseCfg select 0);
 _costs = _cost / 1000000;
-if(cash_in_bank < _cost) exitWith { [format ["You need (%1 Million Dollars) to buy this.", _costs], false] spawn domsg; };
+if(cash_in_bank < _cost) exitWith { [format ["Du benötigst (%1 Millionen Dollar) u.", _costs], false] spawn domsg; };
 
 _action = [
 	format[localize "STR_House_BuyMSG",

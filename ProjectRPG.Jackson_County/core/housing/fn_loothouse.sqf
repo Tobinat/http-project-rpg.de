@@ -47,12 +47,12 @@ if(_looting) then
 		hint format["%1 Zeit verbleiben",_cp];
 
 		if(_cP == 0) exitWith {};
-		if(player distance _loothouse > 8) exitWith {["You must stay close to the building to loot!", false] spawn domsg;};
+		if(player distance _loothouse > 8) exitWith {["Du musst in der Nähe bleiben um die Tür einzutreten!", false] spawn domsg;};
 		if!(!deadPlayer) exitWith {};
 	};
 
 	if!(!deadPlayer) exitWith { _looting = false; };
-	if(player distance _loothouse > 5) exitWith { ["You must stay close to the building to loot!", false] spawn domsg; 5 cutText ["","PLAIN"];_looting = false; };
+	if(player distance _loothouse > 5) exitWith { ["Du musst in der Nähe bleiben um die Tür einzutreten!", false] spawn domsg; 5 cutText ["","PLAIN"];_looting = false; };
 	5 cutText ["","PLAIN"];
 
 			if(_lchance <= 25) then 
@@ -88,7 +88,7 @@ if(_looting) then
 
   			[true,_loot,1] call life_fnc_handleInv;
 			} else {
-			["You found nothing of any value", false] spawn domsg;
+			["Fuck.. nichts Interessantes bis auf paar dreckige Socken", false] spawn domsg;
 			};
 };
 

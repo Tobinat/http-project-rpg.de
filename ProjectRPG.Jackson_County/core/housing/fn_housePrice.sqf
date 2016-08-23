@@ -20,7 +20,7 @@ _costs = (_houseCfg select 0);
 _storage = (_houseCfg select 1);
 _costs = _costs / 1000000;
 
-[format ["Cost: %1 Million ---- Storage: %2 Crates", _costs, _storage], false] spawn domsg;
+[format ["cost: %1 Million ---- storage: %2 Crates", _costs, _storage], false] spawn domsg;
 
 
 
