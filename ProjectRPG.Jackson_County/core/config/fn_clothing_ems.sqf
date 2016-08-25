@@ -55,16 +55,25 @@ switch (_filter) do
 		_ret pushBack ["KAEL_SUITS_BR_F34",nil,800];
 		_ret pushBack ["KAEL_SUITS_BR_F35",nil,800];
 		_ret pushBack ["cg_ems9",nil,2];
+		_ret pushBack ["cg_ems8",nil,2];
+		_ret pushBack ["cg_ems7",nil,2];
+		_ret pushBack ["cg_ems6",nil,2];
+		_ret pushBack ["cg_ems5",nil,2];
+		_ret pushBack ["cg_ems4",nil,2];
+		_ret pushBack ["cg_ems3",nil,2];
+		_ret pushBack ["cg_ems2",nil,2];
 		_ret pushBack ["cg_ems1",nil,2];
-		_ret pushBack ["RF_EMSWING_4",nil,2];
-		_ret pushBack ["RF_EMS_1",nil,2];
+		_ret pushBack ["cg_ems10",nil,2];
+		_ret pushBack ["vvv_traje_bombero",nil,2];
+		_ret pushBack ["vvv_traje_bombero_2",nil,2];
+		_ret pushBack ["vvv_hazmat",nil,2];
 		    if(__GETC__(life_mediclevel) > 0) then
 		    {
-		        _ret pushBack ["cg_ems4",nil,2];
-				_ret pushBack ["cg_ems7",nil,2];
+		        _ret pushBack ["pRPG_SquadCommand1",nil,2];
+				_ret pushBack ["pRPG_DepCommand",nil,2];
 				_ret pushBack ["pRPG_Praktikant1",nil,2];
 				_ret pushBack ["pRPG_Candidate1",nil,2];
-				_ret pushBack ["pRPG_Employee1",nil,2];
+				_ret pushBack ["pRPG_FireCaptain1",nil,2];
 				_ret pushBack ["pRPG_rfaLieutenant",nil,2];
 				_ret pushBack ["pRPG_Lieutenant2",nil,2];
 				_ret pushBack ["pRPG_Command1",nil,2];
@@ -160,7 +169,7 @@ switch (_filter) do
 	case 3:
 	{
 	
-			_ret pushBack ["SERTvest2","Invisi-Vest 2.0",5];
+			_ret pushBack ["V_Firefighter","für Firefighter",5];
 			_ret pushBack ["V_RebreatherB",nil,550];
 	};
 	
