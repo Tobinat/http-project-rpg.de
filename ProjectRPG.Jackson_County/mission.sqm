@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=19105;
+		nextID=19107;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8443.9756,92.172203,6594.8174};
-		dir[]={0.77208942,-0.63538855,0.015614633};
-		up[]={0.63527268,0.7721808,0.012847836};
-		aside[]={0.020221805,1.0148506e-007,-0.99983484};
+		pos[]={8742.0117,128.21118,6616.6123};
+		dir[]={-0.22682688,-0.67730045,0.69995195};
+		up[]={-0.20880996,0.73565978,0.64435536};
+		aside[]={0.95134872,-6.1377796e-007,0.30829161};
 	};
 };
 binarizationWanted=0;
@@ -1275,7 +1275,7 @@ class Mission
 		class Item32
 		{
 			dataType="Marker";
-			position[]={8719.5703,20.9,6389.8857};
+			position[]={8719.5703,21.3225,6389.4595};
 			name="dimond_1";
 			text="Diamanten Verarbeitung";
 			type="A3L_Factory_Green_Icon";
@@ -1859,8 +1859,9 @@ class Mission
 			position[]={8784.5205,21.353092,6636.395};
 			name="medic_spawn_2";
 			type="Empty";
-			angle=191.58582;
+			angle=191.58577;
 			id=113;
+			atlOffset=0.45309258;
 		};
 		class Item84
 		{
@@ -1993,6 +1994,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=126;
+			atlOffset=0.1196022;
 		};
 		class Item96
 		{
@@ -2400,7 +2402,7 @@ class Mission
 			colorName="ColorRed";
 			a=5;
 			b=5;
-			angle=140.99998;
+			angle=140.99994;
 			id=173;
 			atlOffset=2982901;
 		};
@@ -2442,7 +2444,7 @@ class Mission
 			position[]={8470.7646,21.056643,6485.4277};
 			name="med_air_1";
 			type="Empty";
-			angle=279.9487;
+			angle=279.94861;
 			id=178;
 		};
 		class Item137
@@ -2825,7 +2827,7 @@ class Mission
 		class Item169
 		{
 			dataType="Marker";
-			position[]={8520.4561,20.9,6298.7773};
+			position[]={8555.1162,20.900024,6600.6392};
 			name="pizza_shop";
 			text="Pizza ";
 			type="A3L_Store_Green_Icon";
@@ -2833,6 +2835,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=225;
+			atlOffset=2.4795532e-005;
 		};
 		class Item170
 		{
@@ -5860,7 +5863,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8525.3574,21.767107,6311.1377};
+				position[]={8554.5381,21.767149,6600.248};
 				angles[]={0,2.9971023,0};
 			};
 			side="Empty";
@@ -5871,7 +5874,7 @@ class Mission
 			};
 			id=639;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.29174423;
+			atlOffset=0.29178619;
 		};
 		class Item401
 		{
@@ -6692,6 +6695,7 @@ class Mission
 			};
 			id=729;
 			type="cg_bench1";
+			atlOffset=2.2888184e-005;
 		};
 		class Item445
 		{
@@ -7956,6 +7960,7 @@ class Mission
 			};
 			id=1190;
 			type="Land_InfoStand_V1_F";
+			atlOffset=0.14739799;
 		};
 		class Item513
 		{
@@ -7974,7 +7979,7 @@ class Mission
 			};
 			id=1191;
 			type="Land_InfoStand_V1_F";
-			atlOffset=44.900005;
+			atlOffset=44.900002;
 		};
 		class Item514
 		{
@@ -26896,8 +26901,9 @@ class Mission
 			position[]={8793.0137,21.277798,6634.8242};
 			name="RFA_car_1";
 			type="Empty";
-			angle=11.99535;
+			angle=11.995347;
 			id=5858;
+			atlOffset=0.37779808;
 		};
 		class Item1453
 		{
@@ -26905,8 +26911,9 @@ class Mission
 			position[]={8796.3984,21.343628,6588.9351};
 			name="RFA_air_1";
 			type="Empty";
-			angle=15.547864;
+			angle=15.547863;
 			id=5860;
+			atlOffset=0.44362831;
 		};
 		class Item1454
 		{
@@ -26914,8 +26921,9 @@ class Mission
 			position[]={8796.4463,21.343628,6588.9248};
 			name="RFA_air_2";
 			type="Empty";
-			angle=15.547864;
+			angle=15.547863;
 			id=5861;
+			atlOffset=0.44362831;
 		};
 		class Item1455
 		{
@@ -28389,7 +28397,6 @@ class Mission
 			};
 			id=8717;
 			type="Land_InfoStand_V2_F";
-			atlOffset=2.2888184e-005;
 		};
 		class Item1536
 		{
@@ -31858,13 +31865,14 @@ class Mission
 				angles[]={0,1.8299079,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false; this addAction[""Geldwäscher"",{ if (side player == civilian) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 			};
 			id=12332;
 			type="Land_InfoStand_V2_F";
-			atlOffset=2.2226868;
+			atlOffset=1.5258789e-005;
 		};
 		class Item1744
 		{
@@ -31893,13 +31901,13 @@ class Mission
 				angles[]={6.278018,1.7563314,6.2752819};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="   this enableSimulation false;     this allowDamage false;      this addAction[""F.D. Fahrzeuge"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""RFA_car_1"",""med"",""Lakeside Valley Hosptial""]];    this addAction[""Fahrzeug Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];    createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp =  ""RFA_car_1""; life_garage_type = ""Car"";    },"""",0,false,false,"""",'playerSide == independent'];   this addAction[""Parke Fahrzeug in der Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'playerSide == independent'];        this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""RFA_air_2"",""med"",""Lakeside Valley Hosptial""]];   this addAction[""Helicopter Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];    createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""RFA_air_1""; life_garage_type = ""Air"";    },"""",0,false,false,"""",'playerSide == independent '];    this addAction[""Parke Fahrzeug in der Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'playerSide == independent'];    this setVectorUp [0,0,1];    this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 '];";
 			};
 			id=12334;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.41645241;
 		};
 		class Item1746
 		{
@@ -31910,13 +31918,13 @@ class Mission
 				angles[]={6.278018,1.7275734,6.2752819};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false;      " \n "this allowDamage false; " \n "this addAction[""Trage"",life_fnc_stretcherpls];      " \n "this addAction[""Item Shop"",life_fnc_virt_menu,""ems""];     " \n "this addAction[""F.D. Kleidung"",life_fnc_clothingMenu,""ems""];     " \n "this addAction[""Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];     " \n "this addAction[""Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];   " \n "this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 ']; ";
 			};
 			id=12339;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.43690681;
 		};
 		class Item1747
 		{
@@ -32003,6 +32011,7 @@ class Mission
 			};
 			id=12347;
 			type="Land_InfoStand_V2_F";
+			atlOffset=4.9591064e-005;
 		};
 		class Item1752
 		{
@@ -32020,6 +32029,7 @@ class Mission
 			};
 			id=12349;
 			type="Land_InfoStand_V2_F";
+			atlOffset=7.6293945e-006;
 		};
 		class Item1753
 		{
@@ -32391,17 +32401,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8434.5176,40.414268,6419.3345};
-				angles[]={0,4.4507813,0};
+				position[]={8501.0918,21.681152,6430.2476};
+				angles[]={0,1.800474,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false;  this allowDamage false; this addAction[""Trage"",life_fnc_stretcherpls];       this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];   this addAction[""E.M.S Kleidung"",life_fnc_clothingMenu,""ems""];    this addAction[""E.M.S Verbrauchsmaterial"",life_fnc_weaponShopMenu,""med_supplies""];  this addAction[""E.M.S Basisausrüstung"",life_fnc_weaponShopMenu,""med_basic""];     this addAction[""Fahrzeugladen"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_4"",""med"",""Lakeside Valley Hosptial""]];    this addAction[""Helikopterladen"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""med_air_1"",""med"",""Lakeside Valley Hosptial""]];    this addAction[""Auto Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp =  ""med_car_4""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[""Helikopter Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];    this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",''];";
 			};
 			id=5901;
 			type="Land_InfoStand_V1_F";
-			atlOffset=18.938906;
 		};
 		class Item1777
 		{
@@ -34719,7 +34729,7 @@ class Mission
 			position[]={4797.7671,76.018707,2676.0459};
 			name="ferrari_car_1_1";
 			type="Empty";
-			angle=112.5861;
+			angle=112.58609;
 			id=14579;
 			atlOffset=21.048706;
 		};
@@ -34733,7 +34743,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=63.933128;
+			angle=63.933109;
 			id=14580;
 			atlOffset=3.5298843;
 		};
@@ -34753,6 +34763,7 @@ class Mission
 			};
 			id=14581;
 			type="Land_InfoStand_V2_F";
+			atlOffset=3.8146973e-006;
 		};
 		class Item1903
 		{
@@ -36219,7 +36230,7 @@ class Mission
 			};
 			id=15106;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.27420807;
+			atlOffset=0.27420044;
 		};
 		class Item1982
 		{
@@ -46191,7 +46202,7 @@ class Mission
 			position[]={8483.0527,21.056643,6483.1792};
 			name="impound_spawn_1";
 			type="Empty";
-			angle=280.28934;
+			angle=280.28925;
 			id=18067;
 		};
 		class Item2521
@@ -52314,7 +52325,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8778.8682,29.658226,6623.9351};
+				position[]={8778.8682,29.658255,6623.9351};
 				angles[]={0,3.3224437,0};
 			};
 			side="Empty";
@@ -52322,45 +52333,43 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8778.96582,6624.243164,-2.98023e-008];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19016;
 			type="Land_buildingshospital1";
-			atlOffset=-2.8610229e-005;
 		};
 		class Item2844
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8730.9434,25.06995,6705.2778};
-				angles[]={0,0.17559834,0};
+				position[]={8730.9434,25.069929,6705.2778};
+				angles[]={0,0.17559758,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 9.5202;this setposATL [8732.0429688,6705.526855,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19017;
 			type="Land_buildingsfiredept1";
-			atlOffset=2.0980835e-005;
 		};
 		class Item2845
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8580.6328,23.19566,6623.1846};
-				angles[]={0,1.7407771,0};
+				position[]={8580.6328,23.19566,6623.1851};
+				angles[]={0,1.7407739,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8836.571289,6627.355469,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19018;
 			type="Land_buildingCommercial1";
@@ -52370,15 +52379,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8533.3369,23.759127,6733.3545};
-				angles[]={0,4.8872747,0};
+				position[]={8533.3369,23.759127,6733.354};
+				angles[]={0,4.8872709,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8817.300781,6630.878906,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19020;
 			type="Land_buildingGunStore1";
@@ -52388,15 +52397,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8585.0244,21.400475,6628.9736};
-				angles[]={0,0.17194001,0};
+				position[]={8585.0244,21.400475,6628.9741};
+				angles[]={0,0.17193238,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8833.660156,6661.0439453,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19021;
 			type="elementsblackjacktable1";
@@ -52406,51 +52415,51 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8357.7314,31.504066,6311.729};
-				angles[]={0,3.368238,0};
+				position[]={8357.7314,31.504025,6311.729};
+				angles[]={0,3.3682408,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8831.898438,6661.366211,0.315559];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19022;
 			type="Land_buildingApartments2C";
-			atlOffset=2.5775604;
+			atlOffset=2.5776272;
 		};
 		class Item2849
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8357.6699,26.776712,6311.4795};
-				angles[]={0,3.368238,0};
+				position[]={8357.6699,26.776604,6311.48};
+				angles[]={0,3.3682408,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8837.0849609,6689.807617,2.28496];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19023;
 			type="Land_buildingApartments2B";
-			atlOffset=4.2698803;
+			atlOffset=4.2697716;
 		};
 		class Item2850
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8357.9404,23.463127,6312.6187};
-				angles[]={0,3.368238,0};
+				position[]={8357.9404,23.463127,6312.6191};
+				angles[]={0,3.3682408,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8841.844727,6716.567383,2.4021];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19024;
 			type="Land_buildingApartments2A";
@@ -52461,14 +52470,14 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8581.543,22.730999,6630.0181};
-				angles[]={0,1.7504433,0};
+				angles[]={0,1.750443,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8850.71582,6639.992188,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19025;
 			type="Land_buildingBar1";
@@ -52496,7 +52505,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8558.3828,21.175837,6605.4224};
+				position[]={8558.4785,21.175837,6605.7759};
 				angles[]={0,3.3224437,0};
 			};
 			side="Empty";
@@ -52504,7 +52513,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8853.224609,6746.13623,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19046;
 			type="itemsGroceries2";
@@ -52514,7 +52523,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8558.96,21.175339,6605.8267};
+				position[]={8558.96,21.175339,6605.8271};
 				angles[]={0,3.3224437,0};
 			};
 			side="Empty";
@@ -52522,7 +52531,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8853.811523,6746.541016,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19047;
 			type="itemsGroceries1";
@@ -52587,15 +52596,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8501.1182,22.852406,6638.7046};
-				angles[]={0,0.16214678,0};
+				position[]={8501.1182,22.852406,6638.7051};
+				angles[]={0,0.16214108,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8862.299805,6733.916992,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19057;
 			type="Land_CG_BuildingsBarbers1";
@@ -52605,131 +52614,126 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8536.2529,20.917305,6742.0776};
-				angles[]={0,3.3148947,0};
+				position[]={8536.2529,20.917387,6742.0781};
+				angles[]={0,3.3148863,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8833.499023,6741.335449,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19058;
 			type="CG_Roads_parkinglot_6";
-			atlOffset=-8.2015991e-005;
 		};
 		class Item2860
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8582.6836,30.859138,6609.8872};
-				angles[]={0,1.7467748,0};
+				position[]={8582.6836,30.859024,6609.8872};
+				angles[]={0,1.7467779,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8831.898438,6661.366211,0.315559];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19059;
 			type="Land_buildingApartments2C";
-			atlOffset=1.9499207;
+			atlOffset=1.9499302;
 		};
 		class Item2861
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8582.9355,26.127235,6609.8379};
-				angles[]={0,1.7467748,0};
+				position[]={8582.9355,26.127604,6609.8379};
+				angles[]={0,1.7467779,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8837.0849609,6689.807617,2.28496];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19060;
 			type="Land_buildingApartments2B";
-			atlOffset=3.6202793;
+			atlOffset=3.6207714;
 		};
 		class Item2862
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8581.7842,23.463251,6610.0498};
-				angles[]={0,1.7467748,0};
+				position[]={8581.7842,23.463127,6610.0498};
+				angles[]={0,1.7467779,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8841.844727,6716.567383,2.4021];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19061;
 			type="Land_buildingApartments2A";
-			atlOffset=0.00012397766;
 		};
 		class Item2863
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8553.8252,20.917385,6739.3242};
-				angles[]={0,4.8779221,0};
+				position[]={8553.8252,20.917387,6739.3242};
+				angles[]={0,4.8779163,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8833.499023,6741.335449,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19062;
 			type="CG_Roads_parkinglot_6";
-			atlOffset=-1.9073486e-006;
 		};
 		class Item2864
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8552.1641,20.917427,6729.4575};
-				angles[]={0,4.8779221,0};
+				position[]={8552.1641,20.917387,6729.458};
+				angles[]={0,4.8779163,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8833.499023,6741.335449,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19063;
 			type="CG_Roads_parkinglot_6";
-			atlOffset=4.0054321e-005;
 		};
 		class Item2865
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8518.7129,20.917265,6745.9409};
-				angles[]={0,4.894701,0};
+				position[]={8518.7129,20.917387,6745.9409};
+				angles[]={0,4.8947062,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8837.932617,6781.712891,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19064;
 			type="CG_Roads_asphalt";
-			atlOffset=-0.00012207031;
 		};
 		class Item2866
 		{
@@ -52790,55 +52794,54 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8513.5967,30.858467,6640.6631};
-				angles[]={0,0.17438743,0};
+				position[]={8513.5967,30.858025,6640.6631};
+				angles[]={0,0.1743933,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8831.898438,6661.366211,0.315559];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19068;
 			type="Land_buildingApartments2C";
-			atlOffset=1.9493809;
+			atlOffset=1.9489307;
 		};
 		class Item2870
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8513.6455,26.126564,6640.915};
-				angles[]={0,0.17438743,0};
+				position[]={8513.6465,26.126604,6640.915};
+				angles[]={0,0.1743933,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8837.0849609,6689.807617,2.28496];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19069;
 			type="Land_buildingApartments2B";
-			atlOffset=3.6197395;
+			atlOffset=3.619772;
 		};
 		class Item2871
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8513.4346,23.46312,6639.7632};
-				angles[]={0,0.17438743,0};
+				position[]={8513.4346,23.463127,6639.7632};
+				angles[]={0,0.1743933,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8841.844727,6716.567383,2.4021];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19070;
 			type="Land_buildingApartments2A";
-			atlOffset=-7.6293945e-006;
 		};
 		class Item2872
 		{
@@ -52873,6 +52876,7 @@ class Mission
 			};
 			id=19073;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.00012397766;
 		};
 		class Item2874
 		{
@@ -53009,38 +53013,36 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8499.918,20.91732,6622.979};
-				angles[]={0,1.7287809,0};
+				position[]={8499.918,20.917387,6622.979};
+				angles[]={0,1.7287836,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8833.499023,6741.335449,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19084;
 			type="CG_Roads_parkinglot_6";
-			atlOffset=-6.6757202e-005;
 		};
 		class Item2883
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8511.8037,20.917435,6622.873};
-				angles[]={0,4.8712416,0};
+				position[]={8511.8037,20.917387,6622.873};
+				angles[]={0,4.8712487,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8833.499023,6741.335449,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19085;
 			type="CG_Roads_parkinglot_6";
-			atlOffset=4.7683716e-005;
 		};
 		class Item2884
 		{
@@ -53190,15 +53192,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4847.6934,57.527939,2865.9395};
-				angles[]={0,0.71429569,0};
+				position[]={4847.6929,57.527939,2865.939};
+				angles[]={0,0.71429342,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8826.900391,6629.123535,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19088;
 			type="Land_buildingCommercial2";
@@ -53227,7 +53229,7 @@ class Mission
 					};
 					id=19090;
 					type="CG_EMS6_F";
-					atlOffset=0.00045013428;
+					atlOffset=0.0004196167;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -53257,22 +53259,22 @@ class Mission
 			{
 			};
 			id=19089;
-			atlOffset=0.00045013428;
+			atlOffset=0.0004196167;
 		};
 		class Item2894
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3748.4585,55.871246,2749.2292};
-				angles[]={0,2.803683,0};
+				position[]={3748.458,55.871246,2749.229};
+				angles[]={0,2.8036795,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8853.737305,6744.0161133,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19094;
 			type="itemsdruglab1";
@@ -53282,33 +53284,34 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3297.0691,96.97319,7525.4199};
-				angles[]={0,3.9414546,0};
+				position[]={3297.0691,96.973518,7525.4199};
+				angles[]={0,3.9414594,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8853.737305,6744.0161133,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19095;
 			type="itemsdruglab1";
+			atlOffset=0.00032806396;
 		};
 		class Item2896
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3605.5798,98.05912,7542.1416};
-				angles[]={0,0.70097804,0};
+				position[]={3605.5801,98.05912,7542.1421};
+				angles[]={0,0.70097655,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8817.300781,6630.878906,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19096;
 			type="Land_buildingGunStore1";
@@ -53336,15 +53339,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3471.2795,97.757935,7647.0537};
-				angles[]={0,0.69792056,0};
+				position[]={3471.28,97.757935,7647.0542};
+				angles[]={0,0.69792223,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8826.900391,6629.123535,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19098;
 			type="Land_buildingCommercial2";
@@ -53354,15 +53357,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3476.6951,97.030998,7642.9536};
-				angles[]={0,0.69118571,0};
+				position[]={3476.6951,97.030998,7642.9541};
+				angles[]={0,0.6911853,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8850.71582,6639.992188,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19099;
 			type="Land_buildingBar1";
@@ -53406,7 +53409,7 @@ class Mission
 			colorName="ColorGreen";
 			a=0.69999999;
 			b=0.69999999;
-			angle=150.14594;
+			angle=150.14589;
 			id=19102;
 		};
 		class Item2903
@@ -53431,15 +53434,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8518.0195,23.457935,6735.1606};
-				angles[]={0,3.3184617,0};
+				position[]={8518.0195,23.457935,6735.1611};
+				angles[]={0,3.3184643,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 190.362;this setposATL [8826.900391,6629.123535,0];this setVectorUp [0,0,1]";
+				init="this enableSimulation true;";
 			};
 			id=19104;
 			type="Land_buildingCommercial2";
