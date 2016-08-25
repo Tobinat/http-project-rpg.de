@@ -2,7 +2,8 @@ A3L_fnc_Zep6EvEd = [];
 
 A3L_fnc_serverexec = [
 "\Core\Network\fn_sendFunctions.sqf",
-"\Core\Network\fn_sounds.sqf"
+"\Core\Network\fn_sounds.sqf",
+"\Core\Server\fn_buildings.sqf"
 ];
 
 A3L_fnc_PVList = [
