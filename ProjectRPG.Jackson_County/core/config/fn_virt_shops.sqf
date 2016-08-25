@@ -17,7 +17,7 @@ switch (_shop) do
 	case "rebel": {["Rebel Market",["tierope","bandage","RoadBlockConc","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","hackingtool","tracker"]]};
 	case "gang": {["Gang Market", ["bandage","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
-	case "coffee": {["Stratis Coffee Club",["coffee"]]};
+	case "coffee": {["Starbugz Coffee Club",["coffee"]]};
 	case "heroin": {["Drug Dealer",["marijuana","cokep","cokeu","methp","methu","MDMAp","MDMAu","krokp"]]};
 	case "gems": {["Gem Dealer",["sapphire","ruby","emerald"]]};
 	case "oil": {["Oil Trader",["oilp","pickaxe","fuelF"]]};
