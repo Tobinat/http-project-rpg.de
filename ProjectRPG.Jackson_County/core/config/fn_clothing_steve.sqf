@@ -71,7 +71,39 @@ switch (_filter) do
 			["vvv_elena_fisher5",360],
 			["vvv_elena_fisher6",360],
 			["vvv_elena_fisher7",360],
-			["vvv_elena_fisher8",360]
+			["vvv_elena_fisher8",360],
+			["KAEL_SUITS_BR_F24",3800],
+			["KAEL_SUITS_BR_F16",3800],
+			["KAEL_SUITS_BR_F17",3800],
+			["KAEL_SUITS_BR_F18",3800],
+			["KAEL_SUITS_BR_F19",3800],
+			["KAEL_SUITS_BR_F20",3800],
+			["KAEL_SUITS_BR_F21",3800],
+			["KAEL_SUITS_BR_F22",3800],
+			["KAEL_SUITS_BR_F15",3800],
+			["KAEL_SUITS_BR_F26",3800],
+			["KAEL_SUITS_BR_F27",3800],
+			["KAEL_SUITS_BR_F28",3800],
+			["KAEL_SUITS_BR_F3",3800],
+			["KAEL_SUITS_BR_F12",3800],
+			["KAEL_SUITS_BR_F8",3800],
+			["KAEL_SUITS_BLK_F",3800],
+			["KAEL_SUITS_BR_F10",3800],
+			["KAEL_SUITS_BR_F7",3800],
+			["KAEL_SUITS_BR_F6",3800],
+			["KAEL_SUITS_BR_F5",3800],
+			["KAEL_SUITS_BR_F4",3800],
+			["KAEL_SUITS_BR_F",3800],
+			["KAEL_SUITS_BR_F9",3800],
+			["KAEL_SUITS_BR_F13",3800],
+			["KAEL_SUITS_BR_F14",3800],
+			["EF_suit_1",2700],
+			["EF_suit_2",2700],
+			["EF_suit_3",2700],
+			["EF_suit_4",2700],
+			["EF_suit_5",2700],
+			["EF_suit_6",2700]
+	
 					
 		];
 		if(__GETC__(life_adminlevel) > 0) then {
@@ -84,9 +116,8 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["Gorb_Santa_White",nil,112],
-			
-			["H_Cap_blk_ION",nil,12]
+			["ALE_H_Cowboy_Black",nil,45],
+			["ALE_H_Cowboy_White",nil,45]
 		];
 	};
 	
@@ -95,8 +126,23 @@ switch (_filter) do
 	{
 		[
 
-			["A3L_FatHead",nil,2],
-			["G_Combat",nil,5]
+			["G_Sport_Greenblack",nil,90],
+			["G_Sport_Blackred",nil,90],
+			["G_Sport_Checkered",nil,90],
+			["G_Sport_BlackWhite",nil,90],
+			["G_Sport_Blackyellow",nil,90],
+			["G_Sport_Red",nil,90],
+			["G_Shades_Blue",nil,90],
+			["G_Shades_Red",nil,90],
+			["G_Shades_Green",nil,90],
+			["G_Shades_Black",nil,90],
+			["G_Squares",nil,70],
+			["G_Spectacles_Tinted",nil,60],
+			["G_Spectacles",nil,60],
+			["G_Aviator",nil,60],
+			["G_Lady_Blue",nil,120],
+			["G_Spectacles",nil,60],
+			["G_Spectacles",nil,60]
 		];
 	};
 	
@@ -104,17 +150,13 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["A3L_SpiderVest",nil,250],
-			["hk_rebel_20",nil,11000]
 		];
 	};
 	
 	//Backpacks
 	case 4:
 	{
-		[
-			["B_AssaultPack_cbr",nil,250],
-	        ["cg_invisbp","Invisi-Backpack 2.0",10000]			
+		[	
 		];
 	};
 };
