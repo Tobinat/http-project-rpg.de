@@ -11,12 +11,13 @@ _shop = _this select 0;
 switch (_shop) do
 {
 	case "phones": {["Phones",["nos"]]};
-	case "market": {["Market",["medkit","condom","bandage","water","tierope","bec","cigarette","rabbit","apple","redgull","tbacon","lockpick","fuelF","peach","boltcutter","storagesmall","storagebig"]]};
+	case "market": {["Market",["medkit","condom","bandage","tierope","bec","cigarette","lockpick","fuelF","boltcutter","storagesmall","storagebig"]]};
+	case "food": {["Market",["water","rabbit","apple","redgull","tbacon","peach"]]};
 	case "drinks": {["Drinks",["cigarette","zoobeer","zoobeer2","vodka","jagerbomb","absinthe","redwine","whiterussian","sexonthebeach","tequila","jackdanielsandcoke","Rax's Rum","water","redgull"]]};
 	case "rebel": {["Rebel Market",["tierope","bandage","RoadBlockConc","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","hackingtool","tracker"]]};
 	case "gang": {["Gang Market", ["bandage","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
-	case "coffee": {["Stratis Coffee Club",["coffee","donuts"]]};
+	case "coffee": {["Stratis Coffee Club",["coffee"]]};
 	case "heroin": {["Drug Dealer",["marijuana","cokep","cokeu","methp","methu","MDMAp","MDMAu","krokp"]]};
 	case "gems": {["Gem Dealer",["sapphire","ruby","emerald"]]};
 	case "oil": {["Oil Trader",["oilp","pickaxe","fuelF"]]};
