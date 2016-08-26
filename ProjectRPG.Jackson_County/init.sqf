@@ -34,3 +34,7 @@ PRPG_MissionPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;
 0 setRainbow 0.00;
 0 setLightnings 0.00;
 setTerrainGrid 50;
+
+_markername="hospital2"; 
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0]; 
+{hideObjectGlobal _x} foreach _terrainobjects;
