@@ -8,7 +8,7 @@ enableSaving [false, false];
 [] execVM "briefing.sqf";
 [] execVM "KRON_Strings.sqf";
 [] execVM "AdminTool\loop.sqf";
-
+[] execVM "buildings.sqf";
 
 
 if(isServer) then {

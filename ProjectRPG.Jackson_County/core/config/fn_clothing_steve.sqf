@@ -157,6 +157,7 @@ switch (_filter) do
 	case 4:
 	{
 		[	
+		["cg_invisbp","Invisi-Backpack 2.0",15000]
 		];
 	};
 };
