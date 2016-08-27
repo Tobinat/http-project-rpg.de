@@ -23,6 +23,15 @@ switch (_filter) do
 	{
 		_ret =
 		[
+		
+		
+		
+		
+		
+			["silver_lake_fbi","Command Uniform",50],
+			["silver_lake_police","Polizei Uniform",50],
+			["silver_lake_sheriff","Sheriff Uniform",50],
+			["silver_lake_statepolice","State Police Uniform",50],
 			["U_B_Wetsuit","Taucheranzug",50],
 			["EOD_Uniform",nil,15],
 			["max_sheriff_uniform","Highway Patrol",15],
