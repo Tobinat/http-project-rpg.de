@@ -49,7 +49,7 @@ player createDiarySubject ["controls","Steuerung"];
 
 
 
-<font color='#D60000'>Bild Hoch</font><br/>Schranke Öffnen bei der Polizei/Medic/R.F.A<br/><br/>
+<font color='#D60000'>Bild Hoch</font><br/>Schranke Öffnen bei der S.L.P.D/S.L.F.D<br/><br/>
 				"
 		]
 	]; 

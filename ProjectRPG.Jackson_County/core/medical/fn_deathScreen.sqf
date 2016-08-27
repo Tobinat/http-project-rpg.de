@@ -20,9 +20,9 @@ waitUntil {
 			if (_distance < _nearby) then { _nearby = _distance; };
 		};
 	} foreach playableUnits;
-	_medicsOnline ctrlSetText format["RFA: %1",[independent] call life_fnc_playerCount];
-	if (_nearby == 99999) then { _medicsNear ctrlSetText format["RFA i.d. Nähe: Keine",_nearby]; }
-	else { _medicsNear ctrlSetText format["RFA i.d. Nähe: %1m",[(round _nearby)] call life_fnc_numberText]; };
+	_medicsOnline ctrlSetText format["S.L.F.D: %1",[independent] call life_fnc_playerCount];
+	if (_nearby == 99999) then { _medicsNear ctrlSetText format["S.L.F.D i.d. Nähe: Keine",_nearby]; }
+	else { _medicsNear ctrlSetText format["S.L.F.D i.d. Nähe: %1m",[(round _nearby)] call life_fnc_numberText]; };
 	uiSleep 3;
 	(isNull (findDisplay 7300))
 };
