@@ -312,6 +312,7 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
+	    _ret =
 		[
 			["Gorb_Santa_White",nil,112],
 			["Gorb_Santa_Tan",nil,112],
@@ -547,6 +548,7 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
+	    _ret =
 		[
 			//beards
 			["SFG_Tac_smallBeardB",nil,2],
@@ -615,6 +617,7 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
+	     _ret =
 		[
 			["A3L_SpiderVest",nil,250],
 			["A3L_SpookyVest",nil,250],
@@ -673,6 +676,7 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
+	     _ret =
 		[
 			["B_AssaultPack_cbr",nil,250],
 			["B_AssaultPack_rgr",nil,250],

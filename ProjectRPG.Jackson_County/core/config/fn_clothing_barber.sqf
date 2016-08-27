@@ -18,6 +18,7 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
+	    _ret =
 		[
 			];
 	
@@ -26,6 +27,7 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
+	    _ret =
 		[
 			["Kio_Afro_Hat",nil,25],
 			["EF_Long_wig_B",nil,25],
@@ -44,6 +46,7 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
+		_ret =
 		[
 			["EF_ACC1",nil,120],
 			["EF_ACC2",nil,120],
@@ -93,6 +96,7 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
+	     _ret =
 		[
 		];
 	};
@@ -100,6 +104,7 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
+	     _ret =
 		[	
 		];
 	};
