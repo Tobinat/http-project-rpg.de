@@ -50,7 +50,7 @@ if(license_civ_doj) then {
 			};
 
 			case 2: {
-				[1,format["RFA NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
+				[1,format["S.L.F.D NOTRUF - PANIK KNOPF VERWENDET VON %1 - Position: %2",name player, _pos]] remoteExecCall ["life_fnc_broadcast", _x];
 				["dpanic", false] remoteExec ["fnc_dispatch",_x];
 			};
 
