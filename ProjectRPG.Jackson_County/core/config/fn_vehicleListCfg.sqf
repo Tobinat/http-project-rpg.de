@@ -1050,6 +1050,16 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["prpg_cv_slpd",14000],
+			["prpg_cv_slpd_sv",14000],
+			["prpg_chevy_slpd",13000],
+			["prpg_chevy_slpd_sv",13000],
+			["prpg_bmw_slpd",16000],
+			["prpg_bmw_slpd_sv",16000],
+			["prpg_charger_slpd",20000],
+			["prpg_charger_slpd_sv",20000],
+			["prpg_chevy_slpd_sp",20000],
+			["prpg_charger_slpd_sp",20000],
 			["A3L_CVPIFPBDOC",20000],
 			["A3L_TaurusCO2",25000],
 			["cg_cvpifpblbpd",20000],	
@@ -1065,6 +1075,7 @@ switch (_shop) do
 			["cg_h2_sert",11000],	
 			["AM_Holden_SO",40000],		
 			["cg_ducati_pol_reg",25000]
+		
 		];
 	};
 
