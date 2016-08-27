@@ -955,8 +955,16 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["prpg_cv_slpd",14000],
+			["prpg_cv_slpd_sv",14000],
+			["prpg_chevy_slpd",13000],
+			["prpg_chevy_slpd_sv",13000],
+			["prpg_bmw_slpd",16000],
+			["prpg_bmw_slpd_sv",16000],
+			["prpg_charger_slpd",20000],
+			["prpg_charger_slpd_sv",20000]
 			
-			["ivory_wrx_cop_marked",200000],
+			/*["ivory_wrx_cop_marked",200000],
 			["ivory_wrx_cop_unmarked",200000],
 			["ivory_wrx_cop_slicktop",200000],
 			["cg_evoblack",70000],
@@ -1029,7 +1037,7 @@ switch (_shop) do
 			["A3L_TaurusUCBlue",30000],
 			["A3L_TaurusUCGrey",30000],
 			["A3L_TaurusUCRed",30000],
-			["A3L_TaurusUCWhite",30000]
+			["A3L_TaurusUCWhite",30000]*/
 			
 		];
 	};
