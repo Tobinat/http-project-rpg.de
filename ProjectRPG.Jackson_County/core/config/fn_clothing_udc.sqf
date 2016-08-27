@@ -23,15 +23,22 @@ switch (_filter) do
 	{
 		_ret =
 		[
+			["pRPG_State1","Silver Lake State Police",50],
+			["silver_lake_fbi","Command Uniform",50],
+			["silver_lake_police","Polizei Uniform",50],
+			["silver_lake_sheriff","Sheriff Uniform",50],
+			["silver_lake_statepolice","State Police Uniform",50],
 			["U_B_Wetsuit","Taucheranzug",50],
 			["EOD_Uniform",nil,15],
+			["max_sheriff_uniform","Highway Patrol",15],
+			["pRPG_Sheriff1",nil,15],
+			["pRPG_Deputy1",nil,15],
 			["prpg_recruit1",nil,15],
-			["prpg_traffic1",nil,15],
 			["prpg_officer1",nil,15],
 			["prpg_Detective1",nil,15],
 			["TCG_PDDTC","Detective Zivil",50],	
 			["prpg_Sergeant1",nil,15],
-			["prpg_lieutenant1",nil,15],
+			["pPRG_Lieutenant1",nil,15],
 			["prpg_captain1",nil,15],
 			["prpg_commander1",nil,15],
 			["prpg_achief1",nil,15],
@@ -42,11 +49,13 @@ switch (_filter) do
 			["doc_uniform_cmd",nil,15],
 			["prpg_Justice1",nil,15],
 			["prpg_marshal1",nil,15],
-			["LS_Marshal_Jacket",nil,15],
 			["LS_Marshal_Jacket3",nil,15],
-			["CG_SO1",nil,15], 
-			["CG_SO2",nil,15],
-			["CG_SO3",nil,15],
+			["RF_ASU_2",nil,15],
+			["RF_WING_3",nil,15], 
+			["U_007_US_Police_officer","Presse Polizei",50],
+			["KAEL_SUITS_BR_Judge",nil,15]
+			["U_B_Wetsuit","Taucheranzug",50],
+			["EOD_Uniform",nil,15],
 			["vvv_hazmat",nil,15]
 
 		];
@@ -207,7 +216,28 @@ switch (_filter) do
 			["TRYK_V_PlateCarrier_ACU_L",nil,200],
 			["prpg_specialf_usms2",nil,200],
 			["prpg_specialf_usms4",nil,200],
-			["prpg_specialf_usms1",nil,200]
+			["prpg_specialf_usms1",nil,200],
+			["V_RebreatherB","Rebreather",20],
+			["EOD_SUIT_vest",nil,20],
+			["DOC_Vest_Tac_Fix",nil,20],
+			["DOC_Vest_Threat_Fix",nil,20],
+			["DOC_Vest_Threat_Tan_Fix",nil,20],
+			["police_belt_biker",nil,20],
+			["police_belt_pistol",nil,20],
+			["police_belt_Without_pistol",nil,20],
+			["police_belt_pistol_patrolman",nil,20],
+			["TRYK_V_Bulletproof_BLK",nil,20],
+			["TRYK_V_Sheriff_BA_TB",nil,20],
+			["TRYK_V_Sheriff_BA_T",nil,20],
+			["TRYK_V_Sheriff_BA_OD",nil,20],
+			["DOC_Vest_CO",nil,20],
+			["cg_policevest1_fix","Police Vest 2",20],
+			["cg_policevest2_fix","Police Vest",20],	
+			["HighThreatVestPolice1_Fix",nil,15],	
+			["HighThreatVestPolice2_Fix",nil,15],		
+			["usms_vests_usms1_Fix",nil,15],
+			["usms_vests_usms2_Fix",nil,15],
+			["usms_vests_usms4_Fix",nil,15]
 
 		];
 	};

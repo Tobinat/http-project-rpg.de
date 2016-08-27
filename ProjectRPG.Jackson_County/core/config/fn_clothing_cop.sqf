@@ -27,7 +27,7 @@ switch (_filter) do
 		
 		
 		
-		
+			["pRPG_State1","Silver Lake State Police",50],
 			["silver_lake_fbi","Command Uniform",50],
 			["silver_lake_police","Polizei Uniform",50],
 			["silver_lake_sheriff","Sheriff Uniform",50],
