@@ -18,13 +18,9 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret =
 		[
-		];
-		if(__GETC__(life_adminlevel) > 0) then {
-			_ret pushBack ["U_C_Scientist",nil,5];
-		};
-		_ret;
+			];
+	
 	};
 	
 	//Hats
