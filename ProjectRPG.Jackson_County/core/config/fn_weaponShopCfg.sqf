@@ -241,7 +241,7 @@ switch(_shop) do
 				case (!license_civ_udc): {"Sie sind nicht befugt auf diesen Shop zuzugreifen."};
 				default
 				{
-					["Police Utility Shop",								
+					["Ausrüstungskammer",								
 						[
 							["CG_ATF_Handcuffs_i","Hand Cuffs",10],
 							["ToolKit",nil,1000],
@@ -283,7 +283,7 @@ switch(_shop) do
 				case (!license_civ_udc): {"Sie sind nicht befugt auf diesen Shop zuzugreifen."};
 				default
 				{
-					["Weapon Shop",								
+					["Waffenkammer",								
 						[
 						//Handfeuerwafen
 							["RH_m9",nil,240],
@@ -292,73 +292,82 @@ switch(_shop) do
 							["RH_fnp45",nil,240],
 							["RH_15Rnd_45cal_fnp",nil,4],
 							
+							["RH_g17",nil,112],
+							["RH_g19",nil,112],
+							["RH_g19t",nil,112],
+							["RH_17Rnd_9x19_g17",nil,20],
 							
 							["RH_fn57",nil,112],
-							["RH_sfn57",nil,20],
 							["RH_20Rnd_57x28_FN",nil,20],
-
-							["RH_bull",nil,240],
-							["RH_6Rnd_454_Mag",nil,4],
-							
-							["RH_bullb",nil,240],
-							["RH_6Rnd_454_Mag",nil,4],	
 							
 							["RH_usp",nil,240],
 							["RH_12Rnd_45cal_usp",nil,4],
 							
 							["RH_uspm",nil,240],
 							["RH_16Rnd_40cal_usp",nil,5],	
-                        //Langwaffen
-							["prpl_benelli_14_pgs_rail","Shotgun Rubber",220],
-					        ["prpl_6Rnd_12Gauge_Slug","Rubber Bullets",20],
+							
+							["sab_1911_handgun",nil,240],
+							["9Rnd_45ACP_Mag",nil,5],
+							
+							["RH_cz75",nil,240],
+							["RH_16Rnd_9x19_CZ",nil,5],
+							
+							["RH_deagle",nil,240],
+							["RH_Deaglem",nil,240],
+							["RH_7Rnd_50_AE",nil,5],
+							
+							["RH_kimber_nw",nil,240],
+							["RH_m1911",nil,240],
+							["RH_7Rnd_45cal_m1911",nil,5],
+							
+							["RH_p226",nil,240],
+							["RH_15Rnd_9x19_SIG",nil,5],
+							
+							["RH_tt33",nil,240],
+							["RH_8Rnd_762_tt33",nil,5],
+							
+							["RH_mp412",nil,240],
+							["RH_6Rnd_357_Mag",nil,5],
+							
+							["RH_ttracker",nil,240],
+							["RH_6Rnd_45ACP_Mag",nil,5],
+							
+							["RH_bull",nil,240],
+							["RH_6Rnd_454_Mag",nil,4],
 						
-							["RH_PDW",nil,4220],
-							["RH_30Rnd_6x35_mag",nil,220],							
+							["RH_bullb",nil,240],
+							["RH_6Rnd_454_Mag",nil,4],	
+					  
+							["prpl_benelli_14_pgs_rail",nil,220],
+					        ["prpl_6Rnd_12Gauge_Slug",nil,20],
 							
-							["RH_M4A6",nil,12220],
-							["RH_30Rnd_68x43_FMJ",nil,220],
+							["hlc_rifle_vendimus",nil,220],
+					        ["29rnd_300BLK_STANAG",nil,20],
 							
-							["hlc_smg_mp5a4",nil,3100],
-							["hlc_30Rnd_9x19_GD_MP5",nil,25],
+							["hlc_rifle_bcmjack",nil,220],
+							["hlc_rifle_M4",nil,220],
+							["hlc_rifle_CQBR",nil,220],
+					        ["hlc_30rnd_556x45_EPR",nil,20],
 							
-							["RH_compM2l","Rifle Aimpoint Low",25],
-							["RH_compM2","Rifle Aimpoint",25],
+							["KPFS_G36C",nil,220],
+					        ["KPFS_30Rnd_556x45_G36",nil,20],
 							
-							["RH_M4A1_ris",nil,4222],
-							["RH_30Rnd_556x45_M855A1",nil,20],
-
-							["RH_PDW",nil,4220],
-							["RH_30Rnd_6x35_mag",nil,220],
-
-	                        ["RH_Mk11",nil,6220],
-							["RH_20Rnd_762x51_M80A1",nil,220],
-							["RH_20Rnd_762x51_Mk316LR",nil,220],
+							["hlc_smg_mp5k_PDW",nil,220],
+							["hlc_smg_mp5a2",nil,220],
+					        ["hlc_30Rnd_9x19_B_MP5",nil,20],
 							
-							["RH_Hk416s",nil,12220],
-							["RH_30Rnd_556x45_M855A1",nil,220],
-							["RH_30Rnd_556x45_Mk262",nil,220],
-							["RH_30Rnd_556x45_Mk318",nil,220],	
+							["RH_Hk416s",nil,220],
+							["RH_Hk416c",nil,220],
+					        ["RH_30Rnd_556x45_M855A1",nil,20],
 							
-							["hlc_rifle_auga2_b",nil,15000],
-							["hlc_30Rnd_556x45_B_AUG",nil,220],
+							["RH_PDW",nil,220],
+					        ["RH_30Rnd_6x35_mag",nil,20],
 							
-							["KPFS_G36C",nil,300],
-						    ["KPFS_30Rnd_556x45_G36",nil,600],
+							["RH_M4_ris",nil,220],
+							["RH_M4_moe_b",nil,220],
+							["RH_M4sbr_b",nil,220],
+					        ["RH_30Rnd_556x45_M855A1",nil,20],
 							
-							["hlc_rifle_bcmjack",nil,300],
-							["hlc_30rnd_556x45_EPR",nil,600],
-							
-							["RH_M4_moe",nil,200],					
-							["RH_30Rnd_556x45_M855A1",nil,200],	
-							
-							["RH_M4A6",nil,12220],
-							["RH_30Rnd_68x43_FMJ",nil,220],
-							
-							["hlc_rifle_awmagnum_BL",nil,4220],
-							["hlc_5rnd_300WM_FMJ_AWM",nil,220],
-							
-
-
 							
 						//Flashbang	
 							["HandGrenade_Stone","Flashbang",300],
