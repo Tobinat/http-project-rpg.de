@@ -955,6 +955,7 @@ switch (_shop) do
 	{
 		_return =
 		[
+		
 			["prpg_cv_slpd",14000],
 			["prpg_cv_slpd_sv",14000],
 			["prpg_chevy_slpd",13000],
@@ -962,7 +963,10 @@ switch (_shop) do
 			["prpg_bmw_slpd",16000],
 			["prpg_bmw_slpd_sv",16000],
 			["prpg_charger_slpd",20000],
-			["prpg_charger_slpd_sv",20000]
+			["prpg_charger_slpd_sv",20000],
+			["prpg_chevy_slpd_sp",20000],
+			["prpg_charger_slpd_sp",20000]
+			
 			
 			/*["ivory_wrx_cop_marked",200000],
 			["ivory_wrx_cop_unmarked",200000],
