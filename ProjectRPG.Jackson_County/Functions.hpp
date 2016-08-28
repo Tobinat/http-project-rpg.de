@@ -259,7 +259,7 @@ class Life_Client_Core
 		class clothing_udc {};
 		class clothing_doj {};
 		class clothing_steve {};
-		class clothing_barber {};
+		class clothing_bar {};
 	};
 
 	class Player_Menu
