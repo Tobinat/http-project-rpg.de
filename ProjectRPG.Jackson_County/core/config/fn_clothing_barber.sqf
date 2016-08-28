@@ -48,12 +48,6 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["EF_ACC1",nil,120],
-			["EF_ACC2",nil,120],
-			["EF_ACC3",nil,120],
-			["EF_AC1",nil,120],
-			["EF_AC2",nil,120],
-			["EF_AC3",nil,120],
 			["SFG_Tac_smallBeardB",nil,12],
 			["SFG_Tac_smallBeardD",nil,12],
 			["SFG_Tac_smallBeardG",nil,12],
