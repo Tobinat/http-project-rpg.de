@@ -27,39 +27,53 @@ publicVariable "life_Hunting_Version";
  		if(_cops > 9 || _meds > 3) then { 
  			_chance = round (random 60);
 			if(_chance == 1) then {
-				remoteExec ["fnc_police_fire", -2];
+				remoteExec ["fnc_hotel_fire", -2];
 			};
 			if(_chance == 2) then {
 				if (cgbankvault animationPhase "d_o_Anim" == 0 && cgbankvault animationPhase "d_l_Anim" == 1) then {
-					remoteExec ["fnc_bank_fire", -2];	
+					remoteExec ["fnc_air_fire", -2];	
 				} else {
-					remoteExec ["fnc_donuts_fire", -2];
+					remoteExec ["fnc_hafen_fire", -2];
 				};
 			};
 			if(_chance == 3) then {
-				remoteExec ["fnc_wheat_fire", -2];
+				remoteExec ["fnc_büro_fire", -2];
 			};
 			if(_chance == 4) then {
-				remoteExec ["fnc_tiki_fire", -2];
+				remoteExec ["fnc_autoladen_fire", -2];
 			};
 			if(_chance == 5) then {
-				remoteExec ["fnc_donuts_fire", -2];
+				remoteExec ["fnc_rasthof_fire", -2];
 			};
 			if(_chance == 6) then {
-				remoteExec ["fnc_pizza_fire", -2];
+				remoteExec ["fnc_büro_fire", -2];
 			};
 			if(_chance == 7) then {
-				remoteExec ["fnc_morrison_fire", -2];
+				remoteExec ["fnc_industrie_fire", -2];
 			};
 			if(_chance == 8) then {
-				remoteExec ["fnc_prison_fire", -2];
+				remoteExec ["fnc_tanke_fire", -2];
 			};
 			if(_chance == 9) then {
-				remoteExec ["fnc_landmarkt_fire", -2];
+				remoteExec ["fnc_diablos_fire", -2];
 			};
 			if(_chance == 10) then {
-				remoteExec ["fnc_truckjob_fire", -2];
+				remoteExec ["fnc_konti_fire", -2];
 			};
+		
+			if(_chance == 11) then {
+				remoteExec ["fnc_hot_fire", -2];
+			};
+		
+			if(_chance == 12) then {
+				remoteExec ["fnc_park_fire", -2];
+			};
+		
+		
+		
+		
+		
+		
 		};
 		uisleep 300;
 	};
