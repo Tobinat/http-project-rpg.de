@@ -1225,78 +1225,78 @@ fnc_startfire = {
 	thefire1 = "test_EmptyObjectForFireBig" createVehicleLocal fire_loc1;
 };
 
-fnc_police_fire = {
-	["NEWS: Lakeside PD steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [8732.3,7233.77,0.1];
+fnc_hotel_fire = {
+	["NEWS: Brandmelder am Hotel hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [8278.68,6231.54,11.1248];
 	[] spawn fnc_startfire;
 };
 
-fnc_bank_fire = {
-["NEWS: Lakeside Bank steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [8528.42,6618.23,0.1];
+fnc_air_fire = {
+["NEWS: Brandmelder am Flughafen hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [9294.25,9095.79,2.00144];
 	[] spawn fnc_startfire;
 };
 
-fnc_wheat_fire = {
-["NEWS: Lakeside Weizen Feld steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [8768.35,6649.88,0.1];
+fnc_hafen_fire = {
+["NEWS: Brandmelder am Hafen hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [7962.79,5998.06,1.99108];
 	[] spawn fnc_startfire;
 };
 
-fnc_tiki_fire = {
-["NEWS: Lakeside Bar steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [8585.92,6627.52,0.1];
+fnc_büro_fire = {
+["NEWS: Brandmelder im Büro in Morrison hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [5089.76,2539.04,2.00144];
 	[] spawn fnc_startfire;
 };
 
-fnc_donuts_fire = {
-["NEWS: Lakeside Donuts steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [8549.27,6732.5,0.1];
+fnc_autoladen_fire = {
+["NEWS: Brandmelder im Autohaus in Morrison hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [4935.42,2990.08,2.00144];
 	[] spawn fnc_startfire;
 };
 
-fnc_pizza_fire = {
-["NEWS: Lakeside Pizza steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [8520.743,6294.040,0.1];
+fnc_rasthof_fire = {
+["NEWS: Brandmelder am Rasthof hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [3560.32,4499.95,0.1];
 	[] spawn fnc_startfire;
 };
 
-fnc_morrison_fire = {
-["NEWS: Morrison Zementhändler steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [4703.18,2606.99,0.1];
-	[] spawn fnc_startfire;
-};
-
-fnc_prison_fire = {
-["NEWS: Lakeside Prison steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [9212.92,9291.86,0.1];
-	[] spawn fnc_startfire;
-};
-
-fnc_landmarkt_fire = {
-["NEWS: New Haven Landmarkt steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [5994.62,8003.6,0.1];
-	[] spawn fnc_startfire;
-};
-
-fnc_truckjob_fire = {
-["NEWS: Lakeside Truck Job steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [7679.69,6060.14,0.1];
-	[] spawn fnc_startfire;
-};
-
-
-
-
-fnc_bedford_fire = {
-["NEWS: Old Bedford Waffenladen steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [6554.71,3813.25,0.1];
+fnc_tanke_fire = {
+["NEWS: Brandmelder an der Tankstelle hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [4117.38,6504.61,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_diablos_fire = {
-["NEWS: Los Diablos PD steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [3425.52,7590.8,0.1];
+["NEWS: Brandmelder Autohaus in Los Diablos hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [3529.81,7539.86,8.40134];
+	[] spawn fnc_startfire;
+};
+
+fnc_konti_fire = {
+["NEWS: Brandmelder im Industriegebiet in Los Diablos hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [3471.6,7753.09,0.1];
+	[] spawn fnc_startfire;
+};
+
+fnc_industrie_fire = {
+["NEWS: Brandmelder im Industriegebiet in Silver Lake hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [8546.31,6338.99,0.1];
+	[] spawn fnc_startfire;
+};
+
+
+
+
+fnc_park_fire = {
+["NEWS: Brandmelder im Park hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [8600.51,6760.98,0.1];
+	[] spawn fnc_startfire;
+};
+
+fnc_shop_fire = {
+["NEWS: Brandmelder auf der Park Ave hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [8721.76,6829.31,0.1];
 	[] spawn fnc_startfire;
 };
 
@@ -1318,6 +1318,15 @@ fnc_chop_fire = {
 	fire_loc1 = [6118,9388.23,0.1];
 	[] spawn fnc_startfire;
 };
+
+fnc_hot_fire = {
+["NEWS: Brandmelder auf der 8th Street hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [8522.02,6647.4,2.00144];
+	[] spawn fnc_startfire;
+};
+
+
+
 
 
 
