@@ -52,7 +52,6 @@ switch (_filter) do
 			["RF_ASU_2",nil,15],
 			["RF_WING_3",nil,15], 
 			["KAEL_SUITS_BR_Judge",nil,15],
-			["U_B_Wetsuit","Taucheranzug",50],
 			["vvv_hazmat",nil,15]
 
 		];
