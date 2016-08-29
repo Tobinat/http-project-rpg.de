@@ -1059,6 +1059,7 @@ switch (_shop) do
 			["prpg_charger_slpd",20000],
 			["prpg_charger_slpd_sv",20000],
 			["prpg_chevy_slpd_sp",20000],
+			["prpg_chevy09_slpd_sp",13000],	
 			["prpg_charger_slpd_sp",20000],
 			["A3L_CVPIFPBDOC",20000],
 			["A3L_TaurusCO2",25000],
