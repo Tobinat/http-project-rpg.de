@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=19308;
+		nextID=19309;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8631.3193,100.53181,6709.7378};
-		dir[]={0.027856188,-0.95304072,-0.30158222};
-		up[]={0.08765588,0.30283612,-0.94899988};
-		aside[]={-0.99576867,3.4528784e-007,-0.091974914};
+		pos[]={8755.8154,125.21965,6676.4395};
+		dir[]={0.33574435,-0.9277907,-0.16277325};
+		up[]={0.83485198,0.37308964,-0.4047474};
+		aside[]={-0.43625197,2.4703331e-007,-0.89983356};
 	};
 };
 binarizationWanted=0;
@@ -173,13 +173,14 @@ addons[]=
 	"Orel_Objects",
 	"ace_medical",
 	"ace_medical_menu",
-	"ace_repair"
+	"ace_repair",
+	"ace_interaction"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=109;
+		items=110;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -771,6 +772,13 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item109
+		{
+			className="ace_interaction";
+			name="ACE3 - Interaction";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=11367033;
@@ -939,7 +947,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2478;
+		items=2479;
 		class Item0
 		{
 			dataType="Marker";
@@ -45558,7 +45566,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
@@ -45615,7 +45623,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
@@ -46167,6 +46175,39 @@ class Mission
 			};
 			id=19305;
 			type="Land_buildingApartments2A";
+		};
+		class Item2478
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1063.4041,296.01663,9867.7422};
+			};
+			id=19308;
+			type="ACE_ModuleInteraction";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_ModuleInteraction_EnableTeamManagement";
+					expression="_this setVariable ['EnableTeamManagement',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
