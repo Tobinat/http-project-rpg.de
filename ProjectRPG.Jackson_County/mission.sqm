@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=19308;
+		nextID=19310;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8707.583,781.09418,7060.9653};
-		dir[]={-0.038971629,-0.85843563,-0.51145816};
-		up[]={-0.065220721,0.5129143,-0.85595453};
-		aside[]={-0.99711752,-5.280599e-007,0.075974509};
+		pos[]={1611.7799,208.53218,9599.249};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -179,13 +179,15 @@ addons[]=
 	"ace_medical_menu",
 	"ace_medical",
 	"ace_ui",
-	"ace_repair"
+	"ace_repair",
+	"ace_interaction",
+	"ace_nametags"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=114;
+		items=116;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -812,6 +814,20 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item114
+		{
+			className="ace_interaction";
+			name="ACE3 - Interaction";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item115
+		{
+			className="ace_nametags";
+			name="ACE3 - Name Tags";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=11367033;
@@ -984,7 +1000,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2478;
+		items=2480;
 		class Item0
 		{
 			dataType="Marker";
@@ -45381,11 +45397,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1364.229,260.34375,9719.707};
+				position[]={1359.7639,288.37494,9580.8721};
+				angles[]={0.073864385,0,6.0363264};
 			};
 			id=19295;
 			type="ACE_ModuleMap";
-			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45510,7 +45526,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1299.844,304.24152,9577.0225};
+				position[]={1326.4246,297.81403,9581.5898};
+				angles[]={0.027993103,0,6.1118798};
 			};
 			id=19298;
 			type="ACE_moduleMedicalMenuSettings";
@@ -45543,8 +45560,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1357.9709,288.8284,9581.1738};
-				angles[]={0.10164797,0,6.010181};
+				position[]={1342.915,293.66473,9581.5898};
+				angles[]={0.13418654,0,5.9191651};
 			};
 			id=19299;
 			type="ACE_moduleAdvancedMedicalSettings";
@@ -45736,7 +45753,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -45774,7 +45791,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -45805,11 +45822,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1247.5291,312.15063,9563.7363};
+				position[]={1426.8008,267.49258,9581.5898};
+				angles[]={0.34555617,0,6.0278826};
 			};
 			id=19300;
 			type="ACE_moduleReviveSettings";
-			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45865,7 +45882,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=120;
+							value=360;
 						};
 					};
 				};
@@ -45877,7 +45894,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1303.165,291.42007,9521.3867};
+				position[]={1409.9519,272.67322,9581.2305};
+				angles[]={0.33310625,0,5.9069958};
 			};
 			id=19301;
 			type="ACE_moduleMedicalSettings";
@@ -45936,7 +45954,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -46157,7 +46175,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1224.2791,301.20932,9513.9131};
+				position[]={1342.557,292.9921,9544.3066};
+				angles[]={6.0973601,0,6.194418};
 			};
 			id=19303;
 			type="ace_ui_Module";
@@ -46836,7 +46855,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1261.826,283.98044,9482.0693};
+				position[]={1339.6887,287.63297,9520.6465};
+				angles[]={5.8949423,0,6.1598158};
 			};
 			id=19304;
 			type="ACE_moduleAssignRepairFacility";
@@ -46888,8 +46908,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1286.4351,278.27594,9482.9805};
-				angles[]={5.8940878,0,6.0269451};
+				position[]={1356.1791,285.87305,9521.3633};
+				angles[]={6.0129619,0,6.1904526};
 			};
 			id=19306;
 			type="ACE_moduleAddSpareParts";
@@ -46960,7 +46980,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1229.925,293.0231,9482.0693};
+				position[]={1319.9719,289.67285,9521.0049};
+				angles[]={5.9563422,0,6.209321};
 			};
 			id=19307;
 			type="ACE_moduleRepairSettings";
@@ -47138,6 +47159,150 @@ class Mission
 					};
 				};
 				nAttributes=9;
+			};
+		};
+		class Item2478
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1375.1788,284.21057,9581.2305};
+				angles[]={0.17906108,0,5.9509706};
+			};
+			id=19308;
+			type="ACE_ModuleInteraction";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_ModuleInteraction_EnableTeamManagement";
+					expression="_this setVariable ['EnableTeamManagement',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2479
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1392.3862,278.89658,9581.9473};
+				angles[]={0.30697796,0,5.8949447};
+			};
+			id=19309;
+			type="ACE_ModuleNameTags";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_ModuleNameTags_showCursorTagForVehicles";
+					expression="_this setVariable ['showCursorTagForVehicles',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_ModuleNameTags_showNamesForAI";
+					expression="_this setVariable ['showNamesForAI',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ACE_ModuleNameTags_showVehicleCrewInfo";
+					expression="_this setVariable ['showVehicleCrewInfo',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ACE_ModuleNameTags_showPlayerNames";
+					expression="_this setVariable ['showPlayerNames',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ACE_ModuleNameTags_playerNamesViewDistance";
+					expression="_this setVariable ['playerNamesViewDistance',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=5;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};
