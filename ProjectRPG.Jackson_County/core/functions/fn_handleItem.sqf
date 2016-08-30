@@ -15,6 +15,8 @@ _isgun = false;
 _details = [_item] call life_fnc_fetchCfgDetails;
 if(count _details isEqualTo 0) exitWith {};
 
+_acecheck = ["ACE_tourniquet","ACE_quikclot","ACE_elasticBandage","ACE_morphine","ACE_epinephrine","ACE_surgicalKit","ACE_bodyBag","ACE_bloodIV_500","ACE_bloodIV_250","ACE_salineIV_500","ACE_salineIV_250","ACE_plasmaIV_500","ACE_plasmaIV_250","ACE_personalAidKit","ACE_fieldDressing","ACE_atropine"];
+
 if(_bool) then
 {
 	switch((_details select 6)) do
@@ -89,6 +91,10 @@ if(_bool) then
 				{
 					_isgun = true;
 				};
+			
+			
+			if(_item in _acecheck) then{player addItem _item;};
+			
 			};
 
 			if(_isgun) then
