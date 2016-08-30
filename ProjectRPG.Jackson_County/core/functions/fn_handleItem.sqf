@@ -6,7 +6,7 @@
 */
 
 params [["_item", "", [""]], ["_bool", false, [false]], ["_ispack", false, [false]], ["_ongun", false, [false]], ["_override", false, [false]], ["_toUniform", false, [false]], ["_toVest", false, [false]], ["_preview", false, [true]],
-"_details", "_items", "_isgun"];
+"_details", "_items", "_isgun", "_acecheck"];
 
 //Some checks
 if(_item isEqualTo "") exitWith {};
