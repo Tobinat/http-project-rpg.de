@@ -1,140 +1,61 @@
 /*
-	fn_onPlayerKilled.sqf
+	File: fn_onPlayerKilled.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	When the player dies collect various information about that player
+	and pull up the death dialog / camera functionality.
 */
-
+private["_unit"];
 disableSerialization;
+_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+// _killer = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 
-[] spawn {
-	_curWep = currentWeapon player;
-	if(_curWep != "" && vehicle player == player) then {
-		_chance = round (random 5);
-		while{_chance > 0} do {
-			player forceWeaponFire [_curWep, "Single"];
-			_chance = _chance - 1;
-		};
-	};
-};
+// Request medic
+[] call life_fnc_requestMedic;
 
-if(deadplayer) exitwith {};
-deadPlayer = true;
-
-if(vehicle player == player) then {
-	[player,"DeadState"] remoteExecCall ["life_fnc_animsync"];
-};
-
-if(vehicle player != player) then {
-	[player,"KIA_commander_MRAP_03"] remoteExecCall ["life_fnc_animsync"];	
-};
-
-player allowdamage false;
-player setVariable ["tf_unable_to_use_radio", true];
-im_dead = true;
-params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_length", 0, [0]]];
-
-player setVariable ["tf_voiceVolume", 0, true];
-life_gear = [];
-player setVariable["gear",life_gear,true];
-
-_length = 0;
-if((independent countSide playableUnits) == 0) then {_length = 5} else {_length = 15};
-
-if(_length <= 5) then {_length = 5};
-if(_length >= 15) then {_length = 15};
-
-life_respawn_timer = _length;
-player setVariable["severity", _length, true];
-
-[player,"restrained",nil] call life_fnc_broadcastCheck;
-[player,"restrained2",nil] call life_fnc_broadcastCheck;
-[player,"tied",nil] call life_fnc_broadcastCheck;
-
-[_unit,"Revive",nil] call life_fnc_broadcastCheck;
-[_unit,"Escorting",nil] call life_fnc_broadcastCheck;
-[_unit,"transporting",nil] call life_fnc_broadcastCheck;
-
-_unit setVariable["dead",true,true];
-_unit setVariable["name",profileName, true]; //Set my name so they can say my name.
-_unit setVariable["steam64id",(getPlayerUID player), true]; //Set the UID.
-_unit setVariable ["EMSON", 1, true];
-
-/* _getDamageHead = parseNumber (_unit getHit "head");
-
-systemChat format["Head: %1", _getDamageHead];
-
-if((_getDamageHead > 0)) then {
-	_unit setVariable ["isHirntod",true,true];
-}else{
-	_unit setVariable ["isHirntod",false,true];
-}; */
-
-_playerkill = false;
-_killdistance = round ((_unit distance _killer) * 10) / 10;
-_killweapon = (configfile >> "CfgWeapons" >> currentWeapon _killer >> "displayName") call BIS_fnc_getCfgData;
-_fuck = name _killer;
-_you = name _unit;
-
-if(_fuck != _you) then {
-	if(_fuck find "Error: " != -1) then {
-		[format["%1 ist schwer verletzt!", _you], false] spawn domsg; 
-		[player,"pain2"] spawn life_fnc_nearestSound;
-		shooting_death = false;
-	} else {
-		[format["%1 erschoss %2 auf eine Distanz von %3 mit der Waffe %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg; 
-		life_kcCamera  = "CAMERA" camCreate (getPosATL _killer); 
-		showCinemaBorder true;    
-		life_kcCamera cameraEffect ["EXTERNAL", "BACK"];  
-		life_kcCamera camSetTarget _killer;    
-		life_kcCamera camSetRelPos [0,5,1];    
-		life_kcCamera camSetFOV .85;    
-		life_kcCamera camSetFocus [50,1];    
-		life_kcCamera camCommit 0;
-		[player,"pain1"] spawn life_fnc_nearestSound;
-		_playerkill = true;
-		shooting_death = true;
-	};
-} else {
-	shooting_death = false;
-	[format["%1 verblutet!", _fuck], false] spawn domsg; 
-	[player,"pain2"] spawn life_fnc_nearestSound;
-};
-
-if(_playerkill) then { 
-	sleep 7;
-	life_kcCamera cameraEffect ["TERMINATE","BACK"];
-	camDestroy life_kcCamera;
-};
+//Set some vars
+// _unit setVariable["Revive",FALSE,TRUE]; //Set the corpse to a revivable state.
+_unit setVariable["name",profileName,TRUE]; //Set my name so they can say my name.
+_unit setVariable["restrained",FALSE,TRUE];
+_unit setVariable["Escorting",FALSE,TRUE];
+_unit setVariable["transporting",FALSE,TRUE]; //Why the fuck do I have this? Is it used?
+_unit setVariable["steam64id",(getPlayerUID player),true]; //Set the UID.
 
 //Setup our camera view
+/*
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
-showCinemaBorder FALSE;
+showCinemaBorder TRUE;
 life_deathCamera cameraEffect ["Internal","Back"];
 createDialog "DeathScreen";
 life_deathCamera camSetTarget _unit;
-life_deathCamera camSetRelPos [0,22,22];
+life_deathCamera camSetRelPos [0,3.5,4.5];
 life_deathCamera camSetFOV .5;
 life_deathCamera camSetFocus [50,0];
 life_deathCamera camCommit 0;
 
-(findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == (_this select 1)) then {true}"]; //Block the ESC menu
+(findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; //Block the ESC menu
 
+//Create a thread for something?
 _unit spawn
 {
-	private["_maxTime","_RespawnBtn","_Timer"];
+	private["_maxTime","_RespawnBtn","_Timer","_medics"];
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	_maxTime = time + (life_respawn_timer * 60);
-	_RespawnBtn ctrlEnable false;
 	
-	if(_this getVariable "isHirntod") then {	//Request Button deaktivieren, wenn Hirntod
-		((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
+	_medics = [independent] call life_fnc_playerCount;
+	
+	_maxTime = time + (life_respawn_timer * 60);
+	if (_medics > 1) then {
+	_maxtime = time + (10 * 60);
 	};
 	
-	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(_maxTime - time) <= 0 OR isNull _this};
+	_RespawnBtn ctrlEnable false;
+	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
+	round(_maxTime - time) <= 0 OR isNull _this};
 	_RespawnBtn ctrlEnable true;
 	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
-
-//	if(shooting_death && round(_maxTime - time) <= 0) exitwith { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; };			
 };
 
 [] spawn life_fnc_deathScreen;
@@ -142,24 +63,52 @@ _unit spawn
 //Create a thread to follow with some what precision view of the corpse.
 [_unit] spawn
 {
-	params ["_unit"];
-	while { deadPlayer } do { life_deathCamera camSetTarget _unit; life_deathCamera camSetRelPos [0,22,22]; life_deathCamera camCommit 0; uisleep 0.05; };
-	sleep 1;
-	life_deathCamera cameraEffect ["TERMINATE","BACK"];
-	camDestroy life_deathCamera;
+	private["_unit"];
+	_unit = _this select 0;
+	waitUntil {if(speed _unit == 0) exitWith {true}; life_deathCamera camSetTarget _unit; life_deathCamera camSetRelPos [0,3.5,4.5]; life_deathCamera camCommit 0;};
 };
 
-["Add","Food",100] spawn fnc_sustain;
-["Add","Drink",100] spawn fnc_sustain;
-player setdamage 0; 
-[player,life_sidechat,playerSide] remoteExecCall ["TON_fnc_managesc",2];
-
-
-[] spawn {
-	while{true} do {
-		sleep 1;
-		if( vehicle player == player && animationstate player != "deadstate" ) then {  [player,"DeadState"] remoteExecCall ["life_fnc_animsync"]; };
-		player setOxygenRemaining 1;
-		if(!deadPlayer) exitwith {};
+//Make the killer wanted
+if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _killer}) then {
+	if(vehicle _killer isKindOf "LandVehicle") then {
+		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187V"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		//Get rid of this if you don't want automatic vehicle license removal.
+		if(!local _killer) then {
+			[[2],"life_fnc_removeLicenses",_killer,FALSE] spawn life_fnc_MP;
+		};
+	} else {
+		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		
+		if(!local _killer) then {
+			[[3],"life_fnc_removeLicenses",_killer,FALSE] spawn life_fnc_MP;
+		};
 	};
 };
+
+//Killed by cop stuff...
+if(side _killer == west && playerSide != west) then {
+	life_copRecieve = _killer;
+	//Did I rob the federal reserve?
+	if(!life_use_atm && {life_cash > 0}) then {
+		[format[localize "STR_Cop_RobberDead",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		life_cash = 0;
+	};
+};
+
+if(!isNull _killer && {_killer != _unit}) then {
+	life_removeWanted = true;
+};
+*/
+_handle = [_unit] spawn life_fnc_dropItems;
+waitUntil {scriptDone _handle};
+
+life_hunger = 100;
+life_thirst = 100;
+life_carryWeight = 0;
+life_cash = 0;
+
+// [] call life_fnc_hudUpdate; //Get our HUD updated.
+[[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
+
+[0] call SOCK_fnc_updatePartial;
+[3] call SOCK_fnc_updatePartial;
