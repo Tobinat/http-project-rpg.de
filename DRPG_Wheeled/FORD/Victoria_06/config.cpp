@@ -991,6 +991,21 @@ class CfgVehicles
 		displayName = "Ford CV S.L.P.D";
 		hiddenSelectionsTextures[] = {"DRPG_Wheeled\FORD\Victoria_06\LIVERY\06Victoria_POLICE.paa"};
 	};
+	
+	class prpg_cv_slfd: DRPG_06Victoria_P_P
+	{
+		scope = 2;
+		crew = "C_man_1";
+		side = 3;
+		faction = "CIV_F";
+		displayName = "Ford CV S.L.F.D";
+		hiddenSelectionsTextures[] = {"DRPG_Wheeled\FORD\Victoria_06\LIVERY\06Victoria_EMS.paa"};
+	};
+	
+		
+	
+	
+	
 	class DRPG_06Victoria_P_Sheriff: DRPG_06Victoria_P_P
 	{
 		scope = 2;
