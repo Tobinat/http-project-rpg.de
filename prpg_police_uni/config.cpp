@@ -174,15 +174,26 @@ class CfgVehicles
 		displayName = "pRPG U.S. Marshal Uniform";
 		author = "ProjectRPG/PhilippSchlueter";
 	};
-	class pRPG_State: B_Competitor_F
+	class pRPG_State_1: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
 		scope = 2;
 		nakedUniform = "U_BasicBody";
 		uniformClass = "pRPG_State1";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State.paa"};
-		displayName = "pRPG State Police";
+		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_officer.paa"};
+		displayName = "pRPG State Police Officer";
+		author = "ProjectRPG/PhilippSchlueter";
+	};
+	class pRPG_State_2: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "pRPG_State2";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_Sergeant.paa"};
+		displayName = "pRPG State Police Sergeant";
 		author = "ProjectRPG/PhilippSchlueter";
 	};
 };
@@ -399,13 +410,27 @@ class cfgWeapons
 	class pRPG_State1: Uniform_Base
 	{
 		scope = 2;
-		displayName = "pRPG State Police";
+		displayName = "pRPG State Police Officer";
 		picture = "prpg_police_uni\Data\ui\prpg_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "pRPG_State";
+			uniformClass = "pRPG_State_1";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	class pRPG_State2: Uniform_Base
+	{
+		scope = 2;
+		displayName = "pRPG State Police Sergeant";
+		picture = "prpg_police_uni\Data\ui\prpg_logo.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "pRPG_State_2";
 			containerClass = "Supply100";
 			mass = 0;
 		};
