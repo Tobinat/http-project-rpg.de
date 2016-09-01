@@ -264,6 +264,7 @@ switch(_shop) do
 						[
 							["CG_ATF_Handcuffs_i","Hand Cuffs",10],
 							["ToolKit",nil,1000],
+							["ACE_fieldDressing",nil,50],
 							["TRYK_SPgear_PHC1_NV","NV",10],
 							["cg_torch",nil,250],
 							["ItemGPS",nil,25],
@@ -703,6 +704,7 @@ switch(_shop) do
 					["vvv_fishing_rod","Angel",500],
 					["cebos","Köder",50],
 					["ToolKit",nil,1000],
+					["ACE_fieldDressing",nil,50],
 					["CG_ATF_Pizza_Box_i","Take Away Pizza",1400],
 					["CG_ATF_Donut_Box_i","Take Away Donuts",1600],
 					["cg_torch",nil,550], 
