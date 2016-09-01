@@ -940,7 +940,7 @@ class CfgVehicles
 		crew = "C_man_1";
 		side = 3;
 		faction = "CIV_F";
-		displayName = "SLFD Charger";
+		displayName = "2015 Charger SLFD";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\DODGE\Charger_15\LIVERY\15CHARGER_EMS.paa"};
 	};
 	class DRPG_15Charger_P_LVPD: DRPG_15Charger_P_P

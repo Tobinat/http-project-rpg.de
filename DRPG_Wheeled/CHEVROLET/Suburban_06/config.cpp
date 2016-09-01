@@ -936,6 +936,15 @@ class CfgVehicles
 		displayName = "Chevy S.L.P.D Supervisor";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\CHEVROLET\Suburban_06\LIVERY\06SuburbanSupervisor.paa"};
 	};
+	class prpg_chevy_suburban06_slfd: DRPG_06Suburban_P_P
+	{
+		scope = 2;
+		crew = "C_man_1";
+		side = 3;
+		faction = "CIV_F";
+		displayName = "Chevy SLFD";
+		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\CHEVROLET\Suburban_06\LIVERY\06Suburban_EMS.paa"};
+	};
 	class DRPG_06Suburban_P_State: DRPG_06Suburban_P_P
 	{
 		scope = 2;

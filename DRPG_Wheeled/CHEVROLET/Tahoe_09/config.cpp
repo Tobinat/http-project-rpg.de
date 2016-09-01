@@ -927,6 +927,15 @@ class CfgVehicles
 		displayName = "Chevrolet Tahoe (Sheriff)";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\CHEVROLET\Tahoe_09\LIVERY\09TAHOE_Sheriff.paa"};
 	};
+	class prpg_09Tahoe_slfd: DRPG_09Tahoe_P_P
+	{
+		scope = 2;
+		crew = "C_man_1";
+		side = 3;
+		faction = "CIV_F";
+		displayName = "Chevrolet Tahoe SLFD";
+		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\CHEVROLET\Tahoe_09\LIVERY\09TAHOE_EMS.paa"};
+	};
 	class prpg_chevy09_slpd_sp: DRPG_09Tahoe_P_P
 	{
 		scope = 2;

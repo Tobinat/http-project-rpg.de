@@ -73,10 +73,10 @@ switch (_shop) do
 			_return pushBack ["A3L_TowTruck_ADAC",25000];
 			_return pushBack ["cg_ambulanceexpansion",20000];
 			_return pushBack ["RR_Firetruck",25000];
-			_return pushBack ["DRPG_06Suburban_EMS",25000];
+			_return pushBack ["prpg_chevy_suburban06_slfd",25000];
 			_return pushBack ["DRPG_06Victoria_EMS",25000];
-			_return pushBack ["DRPG_09Tahoe_EMS",25000];
-			_return pushBack ["DRPG_12M5_EMS",25000];
+			_return pushBack ["prpg_09Tahoe_slfd",25000];
+			_return pushBack ["prpg_12Charger_slfd",25000];
 			_return pushBack ["prpg_charger_slfd",25000];
 			_return pushBack ["vvv_fire_truck",25000];
 			
