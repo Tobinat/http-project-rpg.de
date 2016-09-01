@@ -296,6 +296,7 @@ class Life_Client_Core
 		class A3L_bankrobbery {};
 		class pettycash {};
 		class handleCash {};
+		class spawnCheck {};
 		class A3L_PlantCharge {};
 		class calWeightDiff {};
 		class seizeObjects {};
