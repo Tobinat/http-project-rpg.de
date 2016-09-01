@@ -77,7 +77,7 @@ switch (_shop) do
 			_return pushBack ["DRPG_06Victoria_EMS",25000];
 			_return pushBack ["DRPG_09Tahoe_EMS",25000];
 			_return pushBack ["DRPG_12M5_EMS",25000];
-			_return pushBack ["DRPG_12Charger_EMS",25000];
+			_return pushBack ["prpg_charger_slfd",25000];
 			_return pushBack ["vvv_fire_truck",25000];
 			
 			if(__GETC__(life_mediclevel) > 0) then
