@@ -934,7 +934,7 @@ class CfgVehicles
 		displayName = "Charger S.L State Police";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\DODGE\Charger_15\LIVERY\CHARGER_PRPG_STATE.paa"};
 	};
-		class prpg_charger_slfd: DRPG_15Charger_P_P
+	class prpg_charger_slfd: DRPG_15Charger_P_P
 	{
 		scope = 2;
 		crew = "C_man_1";
