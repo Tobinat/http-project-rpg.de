@@ -927,13 +927,13 @@ class CfgVehicles
 		displayName = "Chevrolet Tahoe (Sheriff)";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\CHEVROLET\Tahoe_09\LIVERY\09TAHOE_Sheriff.paa"};
 	};
-	class DRPG_09Tahoe_P_State: DRPG_09Tahoe_P_P
+	class prpg_chevy09_slpd_sp: DRPG_09Tahoe_P_P
 	{
 		scope = 2;
 		crew = "C_man_1";
 		side = 3;
 		faction = "CIV_F";
-		displayName = "Chevrolet Tahoe (State)";
+		displayName = "Chevy 09 State Police";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\CHEVROLET\Tahoe_09\LIVERY\09TAHOE_State.paa"};
 	};
 	class DRPG_09Tahoe_EMS: DRPG_09Tahoe_Base
