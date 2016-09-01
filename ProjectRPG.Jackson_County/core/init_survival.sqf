@@ -1243,7 +1243,7 @@ fnc_hafen_fire = {
 	[] spawn fnc_startfire;
 };
 
-fnc_büro_fire = {
+fnc_buro_fire = {
 ["NEWS: Brandmelder im Büro in Morrison hat Alarm geschlagen!", false] spawn domsg;
 	fire_loc1 = [5089.76,2539.04,2.00144];
 	[] spawn fnc_startfire;

@@ -36,9 +36,8 @@ publicVariable "life_Hunting_Version";
 					remoteExec ["fnc_hafen_fire", -2];
 				};
 			};
-			if(_chance == 3) then {
-				remoteExec ["fnc_büro_fire", -2];
-			};
+			
+			
 			if(_chance == 4) then {
 				remoteExec ["fnc_autoladen_fire", -2];
 			};
@@ -46,7 +45,7 @@ publicVariable "life_Hunting_Version";
 				remoteExec ["fnc_rasthof_fire", -2];
 			};
 			if(_chance == 6) then {
-				remoteExec ["fnc_büro_fire", -2];
+				remoteExec ["fnc_buro_fire", -2];
 			};
 			if(_chance == 7) then {
 				remoteExec ["fnc_industrie_fire", -2];
@@ -69,6 +68,10 @@ publicVariable "life_Hunting_Version";
 				remoteExec ["fnc_park_fire", -2];
 			};
 		
+		if(_chance == 13) then {
+				remoteExec ["fnc_shop_fire", -2];
+			};
+			
 		
 		
 		
