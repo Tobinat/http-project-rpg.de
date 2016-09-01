@@ -181,8 +181,8 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "pRPG_State1";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_officer.paa"};
-		displayName = "pRPG State Police Officer";
+		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_trooper.paa"};
+		displayName = "State Police Trooper PRPG";
 		author = "ProjectRPG/PhilippSchlueter";
 	};
 	class pRPG_State_2: B_Competitor_F
@@ -192,8 +192,8 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "pRPG_State2";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_Sergeant.paa"};
-		displayName = "pRPG State Police Sergeant";
+		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_corporal.paa"};
+		displayName = "State Police Corporal PRPG";
 		author = "ProjectRPG/PhilippSchlueter";
 	};
 	class pRPG_State_3: B_Competitor_F
@@ -203,8 +203,8 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "pRPG_State3";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_Lieutenant.paa"};
-		displayName = "pRPG State Police Lieutenant";
+		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_Sergeant.paa"};
+		displayName = "State Police Sergeant PRPG";
 		author = "ProjectRPG/PhilippSchlueter";
 	};
 	class pRPG_State_4: B_Competitor_F
@@ -214,8 +214,8 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "pRPG_State4";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_Captain.paa"};
-		displayName = "pRPG State Police Captain";
+		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_sergeant_first_class.paa"};
+		displayName = "State Police 1st Sergeant PRPG";
 		author = "ProjectRPG/PhilippSchlueter";
 	};
 	class pRPG_State_5: B_Competitor_F
@@ -225,8 +225,30 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "pRPG_State5";
 		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_lieutenant.paa"};
+		displayName = "State Police Lieutenant PRPG";
+		author = "ProjectRPG/PhilippSchlueter";
+	};
+	class pRPG_State_6: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "pRPG_State6";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_Captain.paa"};
+		displayName = "State Police Captain PRPG";
+		author = "ProjectRPG/PhilippSchlueter";
+	};
+	class pRPG_State_7: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "pRPG_State7";
+		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"prpg_police_uni\Data\pRPG_State_Chief.paa"};
-		displayName = "pRPG State Police Chief";
+		displayName = "State Police Commissioner PRPG";
 		author = "ProjectRPG/PhilippSchlueter";
 	};
 };
@@ -443,7 +465,7 @@ class cfgWeapons
 	class pRPG_State1: Uniform_Base
 	{
 		scope = 2;
-		displayName = "pRPG State Police Officer";
+		displayName = "State Police Trooper PRPG";
 		picture = "prpg_police_uni\Data\ui\prpg_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -457,7 +479,7 @@ class cfgWeapons
 	class pRPG_State2: Uniform_Base
 	{
 		scope = 2;
-		displayName = "pRPG State Police Sergeant";
+		displayName = "State Police Corporal PRPG";
 		picture = "prpg_police_uni\Data\ui\prpg_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -471,7 +493,7 @@ class cfgWeapons
 	class pRPG_State3: Uniform_Base
 	{
 		scope = 2;
-		displayName = "pRPG State Police Lieutenant";
+		displayName = "State Police Sergeant PRPG";
 		picture = "prpg_police_uni\Data\ui\prpg_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -485,7 +507,7 @@ class cfgWeapons
 	class pRPG_State4: Uniform_Base
 	{
 		scope = 2;
-		displayName = "pRPG State Police Captain";
+		displayName = "State Police 1st Sergeant PRPG";
 		picture = "prpg_police_uni\Data\ui\prpg_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -499,13 +521,41 @@ class cfgWeapons
 	class pRPG_State5: Uniform_Base
 	{
 		scope = 2;
-		displayName = "pRPG State Police Chief";
+		displayName = "State Police Lieutenant PRPG";
 		picture = "prpg_police_uni\Data\ui\prpg_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
 			uniformClass = "pRPG_State_5";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	class pRPG_State6: Uniform_Base
+	{
+		scope = 2;
+		displayName = "State Police Captain PRPG";
+		picture = "prpg_police_uni\Data\ui\prpg_logo.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "pRPG_State_6";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	class pRPG_State7: Uniform_Base
+	{
+		scope = 2;
+		displayName = "State Police Commissioner PRPG";
+		picture = "prpg_police_uni\Data\ui\prpg_logo.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "pRPG_State_7";
 			containerClass = "Supply100";
 			mass = 0;
 		};
