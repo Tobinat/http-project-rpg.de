@@ -34,3 +34,7 @@ PRPG_MissionPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;
 0 setRainbow 0.00;
 0 setLightnings 0.00;
 setTerrainGrid 50;
+
+
+{hideObjectGlobal _x} foreach _terrainobjects; _markername="cop"; 
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
