@@ -943,6 +943,15 @@ class CfgVehicles
 		displayName = "2015 Charger SLFD";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\DODGE\Charger_15\LIVERY\15CHARGER_EMS.paa"};
 	};
+	class prpg_charger_slso: DRPG_15Charger_P_P
+	{
+		scope = 2;
+		crew = "C_man_1";
+		side = 3;
+		faction = "CIV_F";
+		displayName = "2015 Charger SLSO";
+		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\DODGE\Charger_15\LIVERY\15CHARGER_POLICE_Sheriff.paa"};
+	};
 	class DRPG_15Charger_P_LVPD: DRPG_15Charger_P_P
 	{
 		scope = 2;

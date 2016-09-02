@@ -912,7 +912,7 @@ class CfgVehicles
 		model = "\DRPG_Wheeled\DODGE\Charger_12\DRPG_Charger_12_P_P";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\DODGE\Charger_12\LIVERY\12CHARGER_POLICE_LVPD.paa"};
 	};
-	class DRPG_12Charger_P_Sheriff: DRPG_12Charger_P_P
+	class prpg_12Charger_P_Sheriff: DRPG_12Charger_P_P
 	{
 		scope = 2;
 		displayName = "2012 Charger - Sheriff";

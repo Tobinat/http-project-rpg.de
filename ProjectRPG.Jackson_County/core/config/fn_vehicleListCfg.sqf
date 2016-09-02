@@ -999,7 +999,9 @@ switch (_shop) do
 			["DAR_ExplorerSheriff",40000],
 			["cg_evoss1",70000],
 			["charger_sh",90000],
-			["charger_sh_skinned",90000],			
+			["charger_sh_skinned",90000],
+			["prpg_charger_slso",90000],
+			["prpg_12Charger_P_Sheriff",70000],
 
 			//ST
 			["cg_cvpitrooper",25000],
