@@ -67,7 +67,7 @@ hud_fnc_loop =
 	//	_mylife = _ui displayCtrl 444440;
 
 		//if ( myhealth > 0 ) then
-		{
+		//{
 		//	if(myHealth > 0.8) exitwith {
 		//		_message = "<img size='2.5' image='icons2\health6.paa'/>";
 		//		_mylife ctrlSetStructuredText parseText format["%1",_message];
