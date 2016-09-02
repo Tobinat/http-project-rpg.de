@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=19317;
+		nextID=19318;
 	};
 	class MarkerIDProvider
 	{
-		nextID=464;
+		nextID=465;
 	};
 	class Camera
 	{
-		pos[]={1586.1342,774.82361,9007.6631};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={8678.3203,70.077263,6661.8643};
+		dir[]={0.1089429,-0.68370509,0.72158933};
+		up[]={0.10206736,0.72975367,0.67604941};
+		aside[]={0.98879874,-1.3702083e-007,-0.14928506};
 	};
 };
 binarizationWanted=0;
@@ -1000,7 +1000,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2468;
+		items=2469;
 		class Item0
 		{
 			dataType="Marker";
@@ -2646,6 +2646,7 @@ class Mission
 			colorName="ColorRed";
 			a=0.69999999;
 			b=0.69999999;
+			angle=1.8251629;
 			id=196;
 		};
 		class Item147
@@ -33891,7 +33892,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=63.933109;
+			angle=357.28134;
 			id=14580;
 			atlOffset=3.5298843;
 		};
@@ -41428,7 +41429,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8686.8662,30.859024,6716.7632};
+				position[]={8624.374,30.858988,6724.377};
 				angles[]={0,0.16179202,0};
 			};
 			side="Empty";
@@ -41439,14 +41440,14 @@ class Mission
 			};
 			id=19065;
 			type="Land_buildingApartments2C";
-			atlOffset=1.9499302;
+			atlOffset=1.949894;
 		};
 		class Item2262
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8686.9121,26.126604,6717.0161};
+				position[]={8624.4199,26.126568,6724.6299};
 				angles[]={0,0.16179202,0};
 			};
 			side="Empty";
@@ -41457,14 +41458,14 @@ class Mission
 			};
 			id=19066;
 			type="Land_buildingApartments2B";
-			atlOffset=3.619772;
+			atlOffset=3.6197357;
 		};
 		class Item2263
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8686.7158,23.463127,6715.8618};
+				position[]={8624.2236,23.463127,6723.4756};
 				angles[]={0,0.16179202,0};
 			};
 			side="Empty";
@@ -46905,7 +46906,7 @@ class Mission
 		class Item2467
 		{
 			dataType="Marker";
-			position[]={8715.5635,1.3321576e+014,7180.624};
+			position[]={8718.0996,1.3321576e+014,7183.5083};
 			name="cop1";
 			markerType="ELLIPSE";
 			type="ellipse";
@@ -46913,6 +46914,18 @@ class Mission
 			b=100;
 			id=19314;
 			atlOffset=1.3321576e+014;
+		};
+		class Item2468
+		{
+			dataType="Marker";
+			position[]={8682.0869,4.3147637e+027,6713.9932};
+			name="park1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			a=22;
+			b=22;
+			id=19317;
+			atlOffset=4.3147637e+027;
 		};
 	};
 };
