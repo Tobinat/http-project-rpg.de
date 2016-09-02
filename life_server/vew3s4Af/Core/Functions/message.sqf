@@ -63,7 +63,7 @@ clientsmssys = {
 		};
 		case 1:
 		{
-			if(side player != west) exitWith {};
+			if(!(player getVariable "udcLevel")) exitWith {};
 			tablet_inbox = [_compiled] + tablet_inbox;
 			hint parseText format ["<t color='#FFFFFF'><t size='1'><t align='center'>SMS: %1 <br/><t color='#33CC33'> %2",_from,_msg];
 		};

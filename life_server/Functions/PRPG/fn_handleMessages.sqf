@@ -33,7 +33,7 @@ switch(_type) do
 	//message to cops
 	case 1:
 	{	
-		[_msg,name _player,1] remoteExecCall ["clientMessage",west];
+		[_msg,name _player,1] remoteExecCall ["clientMessage",true];
 	};
 	//to admins
 	case 2:
