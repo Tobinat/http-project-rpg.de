@@ -50,7 +50,7 @@ switch(_shop) do
 							["cg_torch",nil,250], 
 							["cg_torchbattery",nil,250], 
 							["TRYK_Headset_NV",nil,250], 
-							
+							["ACE_EarPlugs",nil,50],
 							["ACE_tourniquet",nil,50], 
 							["ACE_quikclot",nil,50], 
 							["ACE_elasticBandage",nil,50], 
@@ -101,6 +101,7 @@ switch(_shop) do
 						[
 							["CG_ATF_Handcuffs_i","Hand Cuffs",10],
 							["ItemCopCard","Zugangskarte",500],
+							["ACE_EarPlugs",nil,50],
 							["TRYK_SPgear_PHC1_NV","NV",10],
 							["cg_torch",nil,250], 
 							["ItemGPS",nil,25],
@@ -702,6 +703,7 @@ switch(_shop) do
 					["CG_battery_i","ZL Battery",5],
 					["TRYK_Shemagh_G_NV","NV",5],
 					["vvv_fishing_rod","Angel",500],
+					["ACE_EarPlugs",nil,50],
 					["cebos","Köder",50],
 					["ToolKit",nil,1000],
 					["ACE_fieldDressing",nil,50],
