@@ -29,12 +29,13 @@ if(player getVariable["restrained",false] || player getVariable["tied",false]) e
 		_units lbAdd format["The Zivis"];
 	};
 	{
-		if(!(_x getVariable["dead",FALSE]) && _x != player) then
+		if(!(_x getVariable["dead",FALSE]) && _x != player || (_x getVariable "udcLevel") ) then
 		{
 			switch (side _x) do
 			{
 				case west: {_type = "Cop"};
 				case east: {_type = "Civ"};
+				case license_civ_udc: {_type = "Cop"};
 				case civilian: {_type = "Civ"};
 				case independent: {_type = "Med"};
 			};
