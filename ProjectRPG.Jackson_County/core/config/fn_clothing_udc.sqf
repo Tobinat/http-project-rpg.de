@@ -23,7 +23,6 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["pRPG_State1","Silver Lake State Police",50],
 			["silver_lake_fbi","Command Uniform",50],
 			["silver_lake_police","Polizei Uniform",50],
 			["silver_lake_sheriff","Sheriff Uniform",50],
@@ -40,8 +39,15 @@ switch (_filter) do
 			["pPRG_Lieutenant1",nil,15],
 			["prpg_captain1",nil,15],
 			["prpg_commander1",nil,15],
-			["prpg_achief1",nil,15],
-			["prpg_chief1",nil,15],
+			["pRPG_AChief1",nil,15],
+        	["prpg_chief1",nil,15],
+			["pRPG_State1",nil,15],
+			["pRPG_State2",nil,15],
+			["pRPG_State3",nil,15],
+			["pRPG_State4",nil,15],
+			["pRPG_State5",nil,15],
+			["pRPG_State6",nil,15],
+			["pRPG_State7",nil,15],
 			["doc_uniform_co",nil,15],
 			["doc_uniform_sco",nil,15],
 			["doc_uniform_sgt",nil,15],
