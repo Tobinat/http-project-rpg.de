@@ -46918,14 +46918,14 @@ class Mission
 		class Item2468
 		{
 			dataType="Marker";
-			position[]={8682.0869,4.3147637e+027,6713.9932};
+			position[]={8681.375,7.5417922e+024,6715.5459};
 			name="park1";
 			markerType="ELLIPSE";
 			type="ellipse";
-			a=22;
-			b=22;
+			a=15;
+			b=15;
 			id=19317;
-			atlOffset=4.3147637e+027;
+			atlOffset=7.5417922e+024;
 		};
 	};
 };
