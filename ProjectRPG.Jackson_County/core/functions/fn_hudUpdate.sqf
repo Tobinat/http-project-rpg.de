@@ -64,42 +64,42 @@ hud_fnc_loop =
 	_select ctrlSetText format["%1 Firemode", format["%1",_gunmode]];
 
 
-		_mylife = _ui displayCtrl 444440;
+	//	_mylife = _ui displayCtrl 444440;
 
-		if ( myhealth > 0 ) then
+		//if ( myhealth > 0 ) then
 		{
-			if(myHealth > 0.8) exitwith {
-				_message = "<img size='2.5' image='icons2\health6.paa'/>";
-				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};
-			if(myHealth > 0.6) exitwith {
-				_message = "<img size='2.5' image='icons2\health5.paa'/>";
-				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};		
-			if(myHealth > 0.45) exitwith {
-				_message = "<img size='2.5' image='icons2\health4.paa'/>";
-				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};	
+		//	if(myHealth > 0.8) exitwith {
+		//		_message = "<img size='2.5' image='icons2\health6.paa'/>";
+		//		_mylife ctrlSetStructuredText parseText format["%1",_message];
+		//	};
+			//if(myHealth > 0.6) exitwith {
+			//	_message = "<img size='2.5' image='icons2\health5.paa'/>";
+			//	_mylife ctrlSetStructuredText parseText format["%1",_message];
+		//	};		
+		//	if(myHealth > 0.45) exitwith {
+		//		_message = "<img size='2.5' image='icons2\health4.paa'/>";
+		//		_mylife ctrlSetStructuredText parseText format["%1",_message];
+		//	};	
 
-			if(myHealth > 0.3) exitwith {
-				_message = "<img size='2.5' image='icons2\health3.paa'/>";
-				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};
-			if(myHealth > 0.15) exitwith {
-				_message = "<img size='2.5' image='icons2\health2.paa'/>";
-				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};		
-			if(myHealth > 0) exitwith {
-				_message = "<img size='2.5' image='icons2\health1.paa'/>";
-				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};				
-		}
-		else
-		{
-			_message = "";
-			_mylife ctrlSetStructuredText parseText format["%1",_message];
-		};
-		_mylife ctrlCommit 0;
+		//	if(myHealth > 0.3) exitwith {
+		//		_message = "<img size='2.5' image='icons2\health3.paa'/>";
+		//		_mylife ctrlSetStructuredText parseText format["%1",_message];
+		//	};
+		//	if(myHealth > 0.15) exitwith {
+		//		_message = "<img size='2.5' image='icons2\health2.paa'/>";
+		//		_mylife ctrlSetStructuredText parseText format["%1",_message];
+		//	};		
+		//	if(myHealth > 0) exitwith {
+		//		_message = "<img size='2.5' image='icons2\health1.paa'/>";
+		//		_mylife ctrlSetStructuredText parseText format["%1",_message];
+		//	};				
+		//}
+		//else
+		//{
+		//	_message = "";
+		//	_mylife ctrlSetStructuredText parseText format["%1",_message];
+		//};
+		///_mylife ctrlCommit 0;
 
 
 		_myfood = _ui displayCtrl 444441;
