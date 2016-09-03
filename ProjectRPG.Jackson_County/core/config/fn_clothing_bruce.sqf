@@ -372,6 +372,7 @@ switch (_filter) do
 			["Gorb_MrsClaus1",nil,112],
 			["Gorb_MrsClaus2",nil,112],
 			["Gorb_MrsClaus3",nil,112],
+			["prpg_twitch_cap",nil,500],
 			["Gorb_HolidayBaseballHat1",nil,112],
 			["Gorb_HolidayBaseballHat2",nil,112],
 			["Gorb_HolidayBaseballHat3",nil,112],
