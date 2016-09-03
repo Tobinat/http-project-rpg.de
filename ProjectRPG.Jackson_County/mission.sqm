@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5212.4443,135.53123,2946.0569};
+		pos[]={5277.5986,248.21942,3095.4302};
 		dir[]={-0.46209317,-0.59635168,-0.65638608};
 		up[]={-0.34329402,0.8027215,-0.48763618};
 		aside[]={-0.81769735,1.0849908e-007,0.57565558};
@@ -46697,6 +46697,7 @@ class Mission
 			{
 				name="respawntest_1";
 				text="respawntest";
+				condition="this && (local player) && (vehicle player in thisList)";
 				onActivation="[] call life_fnc_spawnCheck;";
 				repeatable=1;
 				activationBy="ANY";
@@ -46854,6 +46855,7 @@ class Mission
 			};
 			id=19361;
 			type="Land_InfoStand_V2_F";
+			atlOffset=-0.00018310547;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47009,7 +47011,7 @@ class Mission
 			};
 			id=19367;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.3646965;
+			atlOffset=0.36468887;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47081,7 +47083,7 @@ class Mission
 			position[]={3546.844,-4.4509351e-031,4358.3892};
 			name="state_spawn2";
 			type="Empty";
-			angle=196.45297;
+			angle=196.45296;
 			id=19369;
 			atlOffset=-62.270466;
 		};
@@ -47091,7 +47093,7 @@ class Mission
 			position[]={3538.27,-9.7980646e-028,4361.2842};
 			name="state_spawn_car2";
 			type="Empty";
-			angle=196.45299;
+			angle=196.45297;
 			id=19370;
 			atlOffset=-62.258659;
 		};
@@ -48934,7 +48936,7 @@ class Mission
 			position[]={3543.8643,62.20229,4324.3232};
 			name="state_spawn_car2_2";
 			type="Empty";
-			angle=288.75369;
+			angle=288.75366;
 			id=19446;
 			atlOffset=0.029144287;
 		};
@@ -48953,7 +48955,7 @@ class Mission
 			};
 			id=19447;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.32300186;
+			atlOffset=0.32291412;
 			class CustomAttributes
 			{
 				class Attribute0
