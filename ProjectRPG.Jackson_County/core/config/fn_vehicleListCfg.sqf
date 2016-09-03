@@ -1053,7 +1053,7 @@ switch (_shop) do
 			["charger_sert",90000],
 			["cg_h2_sert",11000],	
 			["AM_Holden_SO",40000],		
-			["cg_ducati_pol_reg",25000]
+			["cg_ducati_pol_reg",25000],
 			["prpg_charger_slso",90000],
 			["prpg_12Charger_P_Sheriff",70000]
 		
