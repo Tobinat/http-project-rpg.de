@@ -117,7 +117,9 @@ switch (_side) do
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["fbi_lvsf_spawn","F.B.I. - L.V. Special Force","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["fbi_lvsf_spawn","Silver Lake Hauptquartier","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["state_spawn1","State Police Grouse Creek","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["state_spawn2","State Police HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]			
 			];
 			
 			if(count life_houses > 0) then {

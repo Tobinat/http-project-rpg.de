@@ -35,7 +35,28 @@ _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkers
 {hideObjectGlobal _x} foreach _terrainobjects; 
 
 
-_markername="park1";
+_markername="state123";
 _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects; 
+
+_markername="state123_1";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+
+_markername="state123_2";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+
+_markername="state123_3";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+
+_markername="state123_4";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+
+_markername="state123_5";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+
 
