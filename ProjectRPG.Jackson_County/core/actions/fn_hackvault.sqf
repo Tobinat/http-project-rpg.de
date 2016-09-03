@@ -20,7 +20,7 @@ if(life_inv_hackingtool == 0) exitwith {
 
 if (cgbankvault getVariable ["robbed", false]) exitwith {["This bank was recently robbed.",30,"red"] spawn domsg;};
 if (cgbankvault getVariable ["hacking", false]) exitwith {["This is already being hacked...",30,"red"] spawn domsg;};
-if (cgbankvault animationPhase "Vault_Door" <0.5) exitwith {["The bank appears unlocked...",30,"red"] spawn domsg;};
+//if (cgbankvault animationPhase "Vault_Door" <0.5) exitwith {["The bank appears unlocked...",30,"red"] spawn domsg;};
 
 if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "Vault_Door" <0.5 ) then {
 	 ["dbank", false] remoteExec ["fnc_dispatch",west];

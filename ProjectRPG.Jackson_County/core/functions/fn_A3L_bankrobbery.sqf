@@ -1,7 +1,7 @@
 // Give money, check variable 5 minutes or w/e
 private ["_timer"];
 _pile = _this select 0;
-if ( cgbankvault animationPhase "vaultdoor_open" != 1 ) exitWith {
+if ( cgbankvault animationPhase "d_o_Anim" != 1 ) exitWith {
 	["The vault door is closed, you cant grab cash right now...",30,"red"] spawn domsg;
 };
 
