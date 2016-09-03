@@ -965,8 +965,9 @@ switch (_shop) do
 			["prpg_charger_slpd",20000],
 			["prpg_charger_slpd_sv",20000],
 			["prpg_chevy_slpd_sp",20000],
-			["prpg_charger_slpd_sp",20000]
-			
+			["prpg_chevy09_slpd_sp",20000],
+			["prpg_charger_slpd_sp",20000],
+			["prpg_cv_slpd_sp",14000]
 			
 			/*["ivory_wrx_cop_marked",200000],
 			["ivory_wrx_cop_unmarked",200000],
