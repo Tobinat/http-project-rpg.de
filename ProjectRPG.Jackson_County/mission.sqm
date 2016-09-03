@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3716.0447,261.12894,7597.0479};
+		pos[]={3742.4517,276.67639,7597.2124};
 		dir[]={-0.8443023,-0.52163422,0.12272304};
 		up[]={-0.51621121,0.85316944,0.075033836};
 		aside[]={0.14384304,1.4722173e-007,0.98960608};
@@ -2781,7 +2781,7 @@ class Mission
 			position[]={4881.7568,54.970001,2779.6619};
 			name="med_air_morrison";
 			type="Empty";
-			angle=311.13995;
+			angle=311.13992;
 			id=214;
 		};
 		class Item158
@@ -45731,7 +45731,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1342.915,293.66473,9581.5898};
-				angles[]={0.13418654,0,5.9191651};
+				angles[]={0.13418092,0,5.9191618};
 			};
 			id=19299;
 			type="ACE_moduleAdvancedMedicalSettings";
@@ -45828,7 +45828,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -45847,7 +45847,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
@@ -45866,7 +45866,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
@@ -45904,7 +45904,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=0;
 						};
 					};
 				};
@@ -45923,7 +45923,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -49640,7 +49640,7 @@ class Mission
 			position[]={3543.8643,62.20229,4324.3232};
 			name="state_spawn_car2_2";
 			type="Empty";
-			angle=288.75357;
+			angle=288.75354;
 			id=19446;
 			atlOffset=0.029144287;
 		};
@@ -49919,7 +49919,7 @@ class Mission
 			position[]={5088.5088,0,2838.3679};
 			name="cop_air_morisson";
 			type="Empty";
-			angle=132.96596;
+			angle=132.96594;
 			id=19462;
 			atlOffset=-54.970001;
 		};
