@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=19651;
+		nextID=19652;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8777.2207,115.33334,7132.2788};
-		dir[]={-0.58744097,-0.64640629,0.4870691};
-		up[]={-0.4976446,0.76294899,0.41261518};
-		aside[]={0.63832802,9.6007716e-007,0.76987183};
+		pos[]={8307.9141,216.55655,6265.9224};
+		dir[]={0.016188474,-0.61539072,0.78805792};
+		up[]={0.012638618,0.78821808,0.61526632};
+		aside[]={0.9997918,3.5826815e-008,-0.020537719};
 	};
 };
 binarizationWanted=0;
@@ -1001,7 +1001,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2676;
+		items=2677;
 		class Item0
 		{
 			dataType="Marker";
@@ -47020,8 +47020,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1356.1791,285.87305,9521.3633};
-				angles[]={6.0129619,0,6.1904526};
+				position[]={1356.179,285.87305,9521.3633};
+				angles[]={6.0129557,0,6.1904559};
 			};
 			id=19306;
 			type="ACE_moduleAddSpareParts";
@@ -47092,8 +47092,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1319.9719,289.67285,9521.0049};
-				angles[]={5.9563422,0,6.209321};
+				position[]={1319.972,289.67285,9521.0049};
+				angles[]={5.9563375,0,6.2093229};
 			};
 			id=19307;
 			type="ACE_moduleRepairSettings";
@@ -47114,7 +47114,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=2;
+							value=0;
 						};
 					};
 				};
@@ -47171,7 +47171,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -47209,7 +47209,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -50032,7 +50032,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8673.0781,20.968206,6709.4341};
+				position[]={8673.1875,20.972073,6708.6011};
 				angles[]={0,1.740533,0};
 			};
 			side="Empty";
@@ -50043,7 +50043,7 @@ class Mission
 			};
 			id=19468;
 			type="CG_Roads_asphalt";
-			atlOffset=0.050819397;
+			atlOffset=0.054685593;
 		};
 		class Item2503
 		{
@@ -53993,6 +53993,41 @@ class Mission
 			};
 			id=19649;
 			type="Land_Fence2_DED_Fence_02_F";
+		};
+		class Item2676
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1366.6387,289.84778,9561.0947};
+				angles[]={0.17906108,0,5.962635};
+			};
+			presenceCondition="false";
+			id=19651;
+			type="ACE_moduleRefuelSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleRefuelSettings_rate";
+					expression="_this setVariable ['rate',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
