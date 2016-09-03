@@ -13,6 +13,8 @@ player addUniform "A3LShirt";
 /* ITEMS */
 player addItem "ItemMap";
 player assignItem "ItemMap";
+player addItem "CG_tabletd";
+player assignItem "CG_tabletd";
 player addItem "ItemCompass";
 player assignItem "ItemCompass";
 player addBackpack "B_AssaultPack_cbr";
