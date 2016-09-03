@@ -949,7 +949,7 @@ class CfgVehicles
 		model = "\DRPG_Wheeled\BMW\M5_12\DRPG_M5_12_P_P";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\BMW\M5_12\LIVERY\FDLV_M5.paa"};
 	};
-	class DRPG_12M5_EMS: DRPG_12M5_Base
+	class prpg_12M5_EMS: DRPG_12M5_Base
 	{
 		scope = 2;
 		crew = "C_man_1";

@@ -74,11 +74,12 @@ switch (_shop) do
 			_return pushBack ["cg_ambulanceexpansion",20000];
 			_return pushBack ["RR_Firetruck",25000];
 			_return pushBack ["prpg_chevy_suburban06_slfd",25000];
-			_return pushBack ["DRPG_06Victoria_EMS",25000];
+			_return pushBack ["prpg_06Victoria_EMS",25000];
 			_return pushBack ["prpg_09Tahoe_slfd",25000];
 			_return pushBack ["prpg_12Charger_slfd",25000];
 			_return pushBack ["prpg_charger_slfd",25000];
 			_return pushBack ["vvv_fire_truck",25000];
+			_return pushBack ["prpg_12M5_EMS", 25000];
 			
 			if(__GETC__(life_mediclevel) > 0) then
 		       {
@@ -975,8 +976,7 @@ switch (_shop) do
 			["cg_evoss1",70000],
 			["charger_sh",90000],
 			["charger_sh_skinned",90000],
-			["prpg_charger_slso",90000],
-			["prpg_12Charger_P_Sheriff",70000],
+
 
 			//ST
 			["cg_cvpitrooper",25000],
@@ -1054,6 +1054,8 @@ switch (_shop) do
 			["cg_h2_sert",11000],	
 			["AM_Holden_SO",40000],		
 			["cg_ducati_pol_reg",25000]
+			["prpg_charger_slso",90000],
+			["prpg_12Charger_P_Sheriff",70000],
 		
 		];
 	};
