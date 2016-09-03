@@ -257,6 +257,7 @@ class Life_Client_Core
 		class captain {};
 		class commander {};
 		class supervisor {};
+		class sheriff {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};

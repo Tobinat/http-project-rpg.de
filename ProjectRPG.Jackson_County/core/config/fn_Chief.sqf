@@ -16,7 +16,7 @@ removeHeadgear player;
 removeGoggles player;
 
 player forceAddUniform "silver_lake_fbi";
-player addVest "DOC_Vest_CO";
+player addVest "prpg_policevest";
 player addBackpack "AM_PoliceBelt";
 player addHeadgear "AM_PatrolHat";
 player addWeapon "Taser_26";

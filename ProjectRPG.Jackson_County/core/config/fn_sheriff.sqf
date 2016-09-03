@@ -1,6 +1,6 @@
 #include <macro.h>
 /*
-	File: fn_Recruit.sqf
+	File: fn_Chief.sqf
 	
 	
 	Description:
@@ -15,8 +15,8 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-player forceAddUniform "silver_lake_police";
-player addVest "prpg_policevest";
+player forceAddUniform "silver_lake_sheriff";
+player addVest "prpg_sheriffvest";
 player addBackpack "AM_PoliceBelt";
 player addHeadgear "AM_PatrolHat";
 player addWeapon "Taser_26";
@@ -31,4 +31,4 @@ player linkItem "tf_anprc148jem_5";
 player linkItem "ItemGPS";
 player linkItem "BH_ImpNVChip";
 
-["Sie besitzen nun die Grundausrüstung! Besorgen Sie sich eine Waffe, Recruit!", false] spawn doquickmsg;
+["Sie besitzen nun die Grundausrüstung! Erstmal Musik an und Entspanne!", false] spawn doquickmsg;

@@ -16,7 +16,7 @@ removeHeadgear player;
 removeGoggles player;
 
 player forceAddUniform "silver_lake_statepolice";
-player addVest "DOC_Vest_CO";
+player addVest "prpg_statevest";
 player addBackpack "AM_PoliceBelt";
 player addHeadgear "Campaign_Hat_Dark";
 player addWeapon "Taser_26";
