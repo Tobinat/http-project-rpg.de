@@ -32,12 +32,9 @@ switch (_filter) do
 	case 1:
 	{
 		[	
-			["EF_ACC1",nil,120],
-			["EF_ACC2",nil,120],
-			["EF_ACC3",nil,120],
-			["EF_AC1",nil,120],
-			["EF_AC2",nil,120],
-			["EF_AC3",nil,120],
+			
+			
+			
 			["Kio_Afro_Hat",nil,25],
 			["EF_Long_wig_B",nil,25],
 			["EF_Long_wig_BL",nil,25],
@@ -56,7 +53,12 @@ switch (_filter) do
 	case 2:
 	{
 		[	
-			
+			["EF_ACC1",nil,120],
+			["EF_ACC2",nil,120],
+			["EF_ACC3",nil,120],
+			["EF_AC1",nil,120],
+			["EF_AC2",nil,120],
+			["EF_AC3",nil,120],
 			["SFG_Tac_smallBeardB",nil,12],
 			["SFG_Tac_smallBeardD",nil,12],
 			["SFG_Tac_smallBeardG",nil,12],
