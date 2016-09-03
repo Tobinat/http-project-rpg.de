@@ -132,6 +132,10 @@ switch (_filter) do
 	{
 		_ret =
 		[
+			["prpg_policevest","nil",20],
+			["prpg_sheriffvest",nil,20],
+			["prpg_statevest",nil,20],
+			["DOC_Vest_Threat_Fix",nil,20],
 			["V_RebreatherB","Rebreather",20],
 			["EOD_SUIT_vest",nil,20],
 			["DOC_Vest_Tac_Fix",nil,20],
