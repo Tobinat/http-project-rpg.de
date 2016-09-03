@@ -156,14 +156,6 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["CG_Lamborghini_Aventador_Red", 3000000],
-			["CG_Lamborghini_Aventador_Black", 3000000],
-			["CG_Lamborghini_Aventador_Blue", 3000000],
-			["CG_Lamborghini_Aventador_Green", 3000000],
-			["CG_Lamborghini_Aventador_Orange", 3000000],
-			["CG_Lamborghini_Aventador_Purple", 3000000],
-			["CG_Lamborghini_Aventador_White", 3000000],	
-			
 			["cg_lambo_veneno_noir",1590000],
 			["cg_lambo_veneno_violet",1590000],
 			["cg_lambo_veneno_rose",1590000],
@@ -651,24 +643,6 @@ switch (_shop) do
 			["Mrshounka_pagani_c_rose",1590000],
 			["Mrshounka_pagani_c_rouge",1590000],
 			["Mrshounka_pagani_c_violet",1590000],
-			
-			//HOLDENS
-			["AM_Holden_White",785000],
-			["AM_Holden_Black",785000],
-			["AM_Holden_Green",785000],
-			["AM_Holden_DarkGreen",785000],
-			["AM_Holden_OffGreen",785000],
-			["AM_Holden_blue",785000],
-			["AM_Holden_OffYellow",785000],
-			["AM_Holden_Pink",785000],
-			["AM_Holden_Purple",785000],
-			["AM_Holden_Yellow",785000],
-
-			//Holden racing
-			["AM_Holden_RBlue",1985000],			
-			["AM_Holden_RRed",1985000],
-			["AM_Holden_RWhite",1985000],
-			["AM_Holden_RBlack",1985000],
 			
 			["A3L_Veyron_purple",2100000],
             ["A3L_Veyron_orange",2100000],
