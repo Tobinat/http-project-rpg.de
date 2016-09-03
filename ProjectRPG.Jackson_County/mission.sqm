@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8307.9141,216.55655,6265.9224};
-		dir[]={0.016188474,-0.61539072,0.78805792};
-		up[]={0.012638618,0.78821808,0.61526632};
-		aside[]={0.9997918,3.5826815e-008,-0.020537719};
+		pos[]={8358.5439,114.44994,6693.0488};
+		dir[]={-0.33268967,-0.57617933,-0.74656039};
+		up[]={-0.23453215,0.817321,-0.52629149};
+		aside[]={-0.91341943,6.3664629e-008,0.40704733};
 	};
 };
 binarizationWanted=0;
@@ -35465,17 +35465,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8746.9785,30.921764,7263.7114};
-				angles[]={0,3.0535655,0};
+				position[]={8746.9785,29.903782,7263.7114};
+				angles[]={0,3.0535655,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=17519;
 			type="Palm_2";
-			atlOffset=1.0179806;
 		};
 		class Item1870
 		{
@@ -42173,11 +42173,34 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init=" this allowDamage false; this enableSimulation false;  this addAction[""Barber"",life_fnc_clothingMenu,""barber""]; this addAction[""Ausrauben"",life_fnc_robStore,""Clothing""]; ";
+				init=" this allowDamage false; this enableSimulation false;  this addAction[""Barber"",life_fnc_clothingMenu,""bar""]; this addAction[""Ausrauben"",life_fnc_robStore,""Clothing""]; ";
 			};
 			id=19071;
 			type="Land_InfoStand_V2_F";
 			atlOffset=8.5830688e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item2225
 		{
@@ -50032,7 +50055,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8673.1875,20.972073,6708.6011};
+				position[]={8673.3242,20.974085,6710.6328};
 				angles[]={0,1.740533,0};
 			};
 			side="Empty";
@@ -50043,7 +50066,7 @@ class Mission
 			};
 			id=19468;
 			type="CG_Roads_asphalt";
-			atlOffset=0.054685593;
+			atlOffset=0.056697845;
 		};
 		class Item2503
 		{
