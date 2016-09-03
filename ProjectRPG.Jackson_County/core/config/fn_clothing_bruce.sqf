@@ -24,10 +24,46 @@ switch (_filter) do
 
 			["KAEL_SUITS_BR_F12",nil,1750],
 
+			["KAEL_SUITS_BLK_F",nil,1350],
+			["KAEL_SUITS_BR_F",nil,1350],
+			["KAEL_SUITS_BR_F3",nil,1350],
+			["KAEL_SUITS_BR_F4",nil,1350],
+			["KAEL_SUITS_BR_F5",nil,1350],
+			["KAEL_SUITS_BR_F6",nil,1350],
+			["KAEL_SUITS_BR_F7",nil,1350],
+			["KAEL_SUITS_BR_F8",nil,1350],
+			["KAEL_SUITS_BR_F9",nil,1350],
+			["KAEL_SUITS_BR_F10",nil,1350],
+			["KAEL_SUITS_BR_F11",nil,1350],
+			["KAEL_SUITS_BR_F13",nil,1350],
+			["KAEL_SUITS_BR_F14",nil,1350],
+
+			["KAEL_SUITS_BR_F24",nil,1350],
+			["KAEL_SUITS_BR_F25",nil,1350],
+			["KAEL_SUITS_BR_F16",nil,1350],
+			["KAEL_SUITS_BR_F17",nil,1350],
+			["KAEL_SUITS_BR_F18",nil,1350],
+			["KAEL_SUITS_BR_F19",nil,1350],
+			["KAEL_SUITS_BR_F20",nil,1350],
+			["KAEL_SUITS_BR_F21",nil,1350],
+			["KAEL_SUITS_BR_F22",nil,1350],
+			["KAEL_SUITS_BR_F23",nil,1350],
+			["KAEL_SUITS_BR_F15",nil,1350],
+			["KAEL_SUITS_BR_F26",nil,1350],
+			["KAEL_SUITS_BR_F27",nil,1350],
+			["KAEL_SUITS_BR_F28",nil,1350],
+			["KAEL_SUITS_BR_F29",nil,1350],
+			["KAEL_SUITS_BR_F30",nil,1350],
+			["KAEL_SUITS_BR_F31",nil,1350],
+			["KAEL_SUITS_BR_F32",nil,1350],
+			["KAEL_SUITS_BR_F33",nil,1350],
+			["KAEL_SUITS_BR_F34",nil,1350],
+			["KAEL_SUITS_BR_F35",nil,1350],
 
 			["TRYK_SUITS_BLK_F","TRYK Black Suit",1350],
 			["TRYK_SUITS_BR_F","TRYK Brown Suit",1350],
 
+			["A3L_Suit_Uniform","Suit",1350],
 
 			["OrangePlaid_uni","A3L Plaid (Orange)",35],
 			["OrGnGy_uni","A3L Polo (OR-GN-GY)",35],
@@ -276,7 +312,6 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
-	    _ret =
 		[
 			["Gorb_Santa_White",nil,112],
 			["Gorb_Santa_Tan",nil,112],
@@ -414,9 +449,6 @@ switch (_filter) do
 			["Masque_Hoxton",nil,1112],
 			["Masque_Incendiaire",nil,1112],
 			["Masque_Dallas",nil,1110],
-			
-			//Hurensohn CAP
-			["prpg_twitch_cap",nil,500],
 
 			//koil added
 			["cg_dinomask",nil,1120],
@@ -512,9 +544,29 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-	    _ret =
 		[
-		
+			//beards
+			["SFG_Tac_smallBeardB",nil,2],
+			["SFG_Tac_smallBeardD",nil,2],
+			["SFG_Tac_smallBeardG",nil,2],
+			["SFG_Tac_smallBeardO",nil,2],
+			["SFG_Tac_BeardB",nil,2],
+			["SFG_Tac_BeardD",nil,2],
+			["SFG_Tac_BeardG",nil,2],
+			["SFG_Tac_BeardO",nil,2],
+			["SFG_Tac_chinlessbB",nil,2],
+			["SFG_Tac_chinlessbD",nil,2],
+			["SFG_Tac_chinlessbG",nil,2],
+			["SFG_Tac_chinlessbO",nil,2],
+			["SFG_Tac_moustacheB",nil,2],
+			["SFG_Tac_moustacheD",nil,2],
+			["SFG_Tac_moustacheG",nil,2],
+			["SFG_Tac_moustacheO",nil,2],
+			["SFG_Tac_ChopsB",nil,2],
+			["SFG_Tac_ChopsD",nil,2],
+			["SFG_Tac_ChopsG",nil,2],
+			["SFG_Tac_ChopsO",nil,2],
+			//bears end
 
 			["A3L_FatHead",nil,2],
 			["Payday_Cagoule",nil,2],
@@ -523,6 +575,24 @@ switch (_filter) do
 			["G_Spectacles",nil,2],
 			["G_Spectacles_Tinted",nil,2],
 			["G_Goggles_VR",nil,2],
+
+			["TRYK_Beard_BK",nil,15],
+			["TRYK_Beard",nil,15],
+			["TRYK_Beard_BW",nil,15],
+			["TRYK_Beard_Gr",nil,15],
+			["TRYK_Beard_BK2",nil,15],
+			["TRYK_Beard2",nil,15],
+			["TRYK_Beard_BW2",nil,15],
+			["TRYK_Beard_Gr2",nil,15],
+			["TRYK_Beard_BK3",nil,15],
+			["TRYK_Beard3",nil,15],
+			["TRYK_Beard_BW3",nil,15],
+			["TRYK_Beard_Gr3",nil,15],
+			["TRYK_Beard_BK4",nil,15],
+			["TRYK_Beard4",nil,15],
+			["TRYK_Beard_BW4",nil,15],
+			["TRYK_Beard_Gr4",nil,15],
+
 			["G_Shades_Black",nil,2],
 			["G_Shades_Blue",nil,2],
 			["G_Sport_Blackred",nil,2],
@@ -542,7 +612,6 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-	     _ret =
 		[
 			["A3L_SpiderVest",nil,250],
 			["A3L_SpookyVest",nil,250],
@@ -601,7 +670,6 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
-	     _ret =
 		[
 			["B_AssaultPack_cbr",nil,250],
 			["B_AssaultPack_rgr",nil,250],
@@ -678,7 +746,7 @@ switch (_filter) do
 			["koilbp_17",nil,550],	
 			["koilbp_18",nil,550],
 			//koil addedd
-	        ["cg_invisbp","Invisi-Backpack 2.0",15000]			
+	        ["cg_invisbp","Invisi-Backpack 2.0",10000]			
 		];
 	};
 };
