@@ -27,6 +27,26 @@ player setVariable ["tf_voiceVolume", 0, true];
 life_gear = [];
 player setVariable["gear",life_gear,true];
 
+
+
+_unit spawn
+{
+	private["_maxTime","_RespawnBtn","_Timer"];
+	disableSerialization;
+	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
+	_Timer = ((findDisplay 7300) displayCtrl 7301);
+	_maxTime = time + (life_respawn_timer * 60);
+	_RespawnBtn ctrlEnable false;
+	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(_maxTime - time) <= 0 OR isNull _this};
+	_RespawnBtn ctrlEnable true;
+	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
+
+//	if(shooting_death && round(_maxTime - time) <= 0) exitwith { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; };			
+};
+
+[] spawn life_fnc_deathScreen;
+
+
 //Setup our camera view
 /*
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
