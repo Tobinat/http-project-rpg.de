@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8358.5439,114.44994,6693.0488};
-		dir[]={-0.33268967,-0.57617933,-0.74656039};
-		up[]={-0.23453215,0.817321,-0.52629149};
-		aside[]={-0.91341943,6.3664629e-008,0.40704733};
+		pos[]={8660.2197,195.05943,6583.9268};
+		dir[]={-0.62490118,-0.69309437,0.35937065};
+		up[]={-0.60082883,0.72084332,0.34552836};
+		aside[]={0.49853316,-1.7895945e-007,0.8668887};
 	};
 };
 binarizationWanted=0;
@@ -1405,6 +1405,7 @@ class Mission
 			type="Empty";
 			angle=32.261948;
 			id=45;
+			atlOffset=0.12722015;
 		};
 		class Item36
 		{
@@ -1716,7 +1717,7 @@ class Mission
 			type="Empty";
 			angle=49.999992;
 			id=85;
-			atlOffset=0.0001449585;
+			atlOffset=0.026725769;
 		};
 		class Item64
 		{
@@ -1821,7 +1822,7 @@ class Mission
 			b=0.69999999;
 			angle=0.26100001;
 			id=101;
-			atlOffset=0.010025024;
+			atlOffset=0.15844727;
 		};
 		class Item73
 		{
@@ -2016,6 +2017,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=121;
+			atlOffset=0.099998474;
 		};
 		class Item90
 		{
@@ -2795,7 +2797,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=215;
-			atlOffset=84.878708;
+			atlOffset=85.173004;
 		};
 		class Item159
 		{
@@ -2809,7 +2811,7 @@ class Mission
 			a=100;
 			b=100;
 			id=216;
-			atlOffset=85.143478;
+			atlOffset=85.438774;
 		};
 		class Item160
 		{
@@ -3654,7 +3656,7 @@ class Mission
 			b=0.69999999;
 			angle=0.077305675;
 			id=321;
-			atlOffset=0.00032806396;
+			atlOffset=0.17235184;
 		};
 		class Item244
 		{
@@ -4587,6 +4589,7 @@ class Mission
 			};
 			id=443;
 			type="Land_Atm_02_F";
+			atlOffset=0.099998474;
 		};
 		class Item322
 		{
@@ -5784,7 +5787,7 @@ class Mission
 			};
 			id=625;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.28250885;
+			atlOffset=0.32051086;
 		};
 		class Item388
 		{
@@ -5802,7 +5805,7 @@ class Mission
 			};
 			id=633;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.29595947;
+			atlOffset=0.3339386;
 		};
 		class Item389
 		{
@@ -6700,7 +6703,6 @@ class Mission
 			};
 			id=729;
 			type="cg_bench1";
-			atlOffset=2.2888184e-005;
 		};
 		class Item436
 		{
@@ -7249,7 +7251,7 @@ class Mission
 			};
 			id=1068;
 			type="CG_SpeedCam";
-			atlOffset=0.87359619;
+			atlOffset=43.418701;
 		};
 		class Item466
 		{
@@ -7923,7 +7925,6 @@ class Mission
 			};
 			id=1190;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.14739799;
 		};
 		class Item502
 		{
@@ -7942,7 +7943,7 @@ class Mission
 			};
 			id=1191;
 			type="Land_InfoStand_V1_F";
-			atlOffset=44.900002;
+			atlOffset=44.900005;
 		};
 		class Item503
 		{
@@ -13309,7 +13310,7 @@ class Mission
 			};
 			id=2024;
 			type="CG_SpeedCam";
-			atlOffset=0.91952515;
+			atlOffset=39.239594;
 		};
 		class Item653
 		{
@@ -28836,13 +28837,13 @@ class Mission
 				angles[]={0,5.4378033,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false; this allowDamage false; this addAction[""Flug nach Lakeside"",life_fnc_skyDive,true]; this addAction[""Catch a Taxi"",life_fnc_taxi];";
 			};
 			id=8717;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.84564209;
 		};
 		class Item1473
 		{
@@ -28934,6 +28935,7 @@ class Mission
 			};
 			id=8722;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.026565552;
 		};
 		class Item1477
 		{
@@ -32277,14 +32279,13 @@ class Mission
 				angles[]={0,1.8299079,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false; this addAction[""Geldwäscher"",{ if (side player == civilian) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 			};
 			id=12332;
 			type="Land_InfoStand_V2_F";
-			atlOffset=1.5258789e-005;
+			atlOffset=2.2226868;
 		};
 		class Item1675
 		{
@@ -32423,7 +32424,6 @@ class Mission
 			};
 			id=12347;
 			type="Land_InfoStand_V2_F";
-			atlOffset=4.9591064e-005;
 		};
 		class Item1683
 		{
@@ -32441,7 +32441,6 @@ class Mission
 			};
 			id=12349;
 			type="Land_InfoStand_V2_F";
-			atlOffset=7.6293945e-006;
 		};
 		class Item1684
 		{
@@ -34702,7 +34701,7 @@ class Mission
 			};
 			id=15105;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.26447296;
+			atlOffset=0.30253601;
 		};
 		class Item1827
 		{
@@ -34720,7 +34719,7 @@ class Mission
 			};
 			id=15106;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.27420044;
+			atlOffset=0.31223297;
 		};
 		class Item1828
 		{
@@ -35476,6 +35475,7 @@ class Mission
 			};
 			id=17519;
 			type="Palm_2";
+			atlOffset=0.02573967;
 		};
 		class Item1870
 		{
@@ -50202,17 +50202,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8796.8418,21.872158,6732.7749};
-				angles[]={0,2.0352657,0};
+				position[]={8796.8418,21.872257,6732.7749};
+				angles[]={0,2.0352633,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
+				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];  this addAction[""<t color='#FF0000'>Sheriff Loadout!</t>"",life_fnc_sheriff,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
 			};
 			id=19473;
 			type="Land_InfoStand_V2_F";
+			atlOffset=9.9182129e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -50282,17 +50283,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6752.5977,55.840816,5134.1943};
-				angles[]={0,6.0667291,6.2700291};
+				position[]={6752.5977,55.841118,5134.1938};
+				angles[]={0,6.0667295,6.2700257};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
+				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];this addAction[""<t color='#FF0000'>Sheriff Loadout!</t>"",life_fnc_sheriff,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
 			};
 			id=19475;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.00030136108;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -50322,17 +50324,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5117.5044,55.875298,2856.8242};
-				angles[]={0,5.3874903,0};
+				position[]={5117.5039,55.875759,2856.824};
+				angles[]={0,5.3874822,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
+				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];this addAction[""<t color='#FF0000'>Sheriff Loadout!</t>"",life_fnc_sheriff,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
 			};
 			id=19476;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.00046157837;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -50362,17 +50365,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3545.4126,63.164131,4359.0493};
-				angles[]={6.2812324,5.0332241,0.0019531252};
+				position[]={3545.4128,63.164185,4359.0488};
+				angles[]={6.2812304,5.033215,0.0019547688};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
+				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];this addAction[""<t color='#FF0000'>Sheriff Loadout!</t>"",life_fnc_sheriff,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
 			};
 			id=19477;
 			type="Land_InfoStand_V2_F";
+			atlOffset=5.3405762e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -50402,17 +50406,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3436.7986,96.095299,7598.7251};
-				angles[]={0,0.30572256,0};
+				position[]={3436.7991,96.095261,7598.7251};
+				angles[]={0,0.30572933,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
+				init=" this enableSimulation false; this allowDamage false; this addAction[""<t color='#FF0000'>Recruit Loadout!</t>"",life_fnc_recruit,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Officer Loadout!</t>"",life_fnc_officer,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Trooper Loadout!</t>"",life_fnc_Trooper,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Detective Loadout!</t>"",life_fnc_detective,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_Sergeant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Supervisor Loadout!</t>"",life_fnc_Supervisor,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_Lieutenant,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_captain,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian']; " \n "this addAction[""<t color='#FF0000'>Commander Loadout!</t>"",life_fnc_commander,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];this addAction[""<t color='#FF0000'>Sheriff Loadout!</t>"",life_fnc_sheriff,"""",0,false,false,"""",'license_civ_udc && playerSide == civilian'];";
 			};
 			id=19478;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.31500244;
 			class CustomAttributes
 			{
 				class Attribute0
