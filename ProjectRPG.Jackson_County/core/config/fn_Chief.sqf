@@ -30,5 +30,6 @@ player linkItem "ItemCompass";
 player linkItem "tf_anprc148jem_5";
 player linkItem "ItemGPS";
 player linkItem "BH_ImpNVChip";
+player linkItem "ItemCopCard";
 
 ["Sie besitzen nun die Grundausrüstung! Erstmal Musik an und Entspanne!", false] spawn doquickmsg;
