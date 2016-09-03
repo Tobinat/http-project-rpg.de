@@ -1073,7 +1073,7 @@ class Mission
 			position[]={5117.6309,-2.3707341e-032,2855.0891};
 			name="cop_spawn_2";
 			type="Empty";
-			angle=125.79698;
+			angle=125.79697;
 			id=9;
 			atlOffset=-54.977631;
 		};
@@ -1924,7 +1924,7 @@ class Mission
 			position[]={4848.2095,55.557823,2698.6812};
 			name="medic_spawn_1";
 			type="Empty";
-			angle=311.71582;
+			angle=311.71579;
 			id=112;
 		};
 		class Item82
@@ -2781,7 +2781,7 @@ class Mission
 			position[]={4881.7568,54.970001,2779.6619};
 			name="med_air_morrison";
 			type="Empty";
-			angle=311.14001;
+			angle=311.13998;
 			id=214;
 		};
 		class Item158
@@ -45887,6 +45887,7 @@ class Mission
 			{
 				name="respawntest_1";
 				text="respawntest";
+				condition="this && (local player) && (vehicle player in thisList)";
 				onActivation="[] call life_fnc_spawnCheck;";
 				repeatable=1;
 				activationBy="ANY";
@@ -48043,7 +48044,7 @@ class Mission
 			position[]={3543.8643,62.20229,4324.3232};
 			name="state_spawn_car2_2";
 			type="Empty";
-			angle=288.75363;
+			angle=288.7536;
 			id=19446;
 			atlOffset=0.029144287;
 		};
@@ -48322,7 +48323,7 @@ class Mission
 			position[]={5088.5088,0,2838.3679};
 			name="cop_air_morisson";
 			type="Empty";
-			angle=132.96599;
+			angle=132.96597;
 			id=19462;
 			atlOffset=-54.970001;
 		};
@@ -48684,13 +48685,13 @@ class Mission
 				angles[]={0,1.3647439,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false; this addAction[""Item Shop"",life_fnc_virt_menu,""udc"",0,false,false,"""",' license_civ_udc && playerSide == civilian']; " \n " " \n " " \n "this addAction[""Polizei Kleidung"",life_fnc_clothingMenu,""udc"",0,false,false,"""",' license_civ_udc && playerSide == civilian'];   " \n "" \n "" \n "this addAction[""Zivil Kleidung"",life_fnc_clothingMenu,""bruce"",0,false,false,"""",' license_civ_udc && playerSide == civilian'];   " \n "" \n "" \n "this addAction[""Grundausrüstung"",life_fnc_weaponShopMenu,""udc_basic"",0,false,false,"""",' license_civ_udc && playerSide == civilian']; " \n "  " \n "" \n "this addAction[""Dienstwaffen"",life_fnc_weaponShopMenu,""state_weaponShop"",0,false,false,"""",' license_civ_udc && playerSide == civilian'];  " \n " " \n "this addAction[""Markt"",life_fnc_virt_menu,""market"",0,false,false,"""",' license_civ_udc && playerSide == civilian'];   " \n "" \n "this addAction [""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 && license_civ_udc'];";
 			};
 			id=19474;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.3146801;
 			class CustomAttributes
 			{
 				class Attribute0
