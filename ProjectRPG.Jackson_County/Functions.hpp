@@ -248,7 +248,16 @@ class Life_Client_Core
 		class houseConfig {};
 		class insurance {};
 		class sert {};
-
+		class recruit {};
+		class officer {};
+		class trooper		{};
+		class detective {};
+		class sergeant {};
+		class lieutenant {};
+		class captain {};
+		class commander {};
+		class supervisor {};
+		
 		//Clothing Store Configs
 		class clothing_cop {};
 		class clothing_ems {};
