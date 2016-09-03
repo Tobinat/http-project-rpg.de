@@ -29,7 +29,7 @@ player setVariable["gear",life_gear,true];
 
 
 
-_unit spawn
+/* _unit spawn
 {
 	private["_maxTime","_RespawnBtn","_Timer"];
 	disableSerialization;
@@ -45,7 +45,7 @@ _unit spawn
 };
 
 [] spawn life_fnc_deathScreen;
-
+ */
 
 //Setup our camera view
 /*
