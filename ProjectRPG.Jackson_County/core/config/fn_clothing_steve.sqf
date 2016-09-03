@@ -20,6 +20,13 @@ switch (_filter) do
 	{
 		_ret =
 		[
+		
+			["vvv_character_alma","Alma",50000],
+			["vvv_character_batman","Batman",50000],
+			["vvv_traje_dallas","Dallas",20000],
+			["vvv_traje_ejecutivo_1",nil,20000],
+			
+			
 			["NP_traje_test","Schlitchtes Outfit Rot",190],
 			["vvv_traje_jackoy","Outfit Lederjacke",190],
 			["vvv_traje_jackoy7","Outfit Lederjacke 2",190],
