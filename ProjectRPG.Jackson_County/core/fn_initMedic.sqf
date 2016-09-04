@@ -50,3 +50,5 @@ uiSleep 2;
 ["S.L.F.D FREQ: 59.1 - Leitung FREQ: 38.8", false] spawn domsg;
 
 playsound "medicalintro";
+
+life_tasks = [];

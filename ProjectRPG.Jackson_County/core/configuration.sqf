@@ -156,6 +156,7 @@ life_requestingTestDrive = false;
 life_testDriveRequests = [];
 PRPG_trackedVeh = 0;
 PRPG_leitstelle	= false;
+life_unconscious = false;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
