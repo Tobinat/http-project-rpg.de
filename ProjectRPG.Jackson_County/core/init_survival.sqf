@@ -96,39 +96,6 @@
 	};
 };
 
-while {true} do {
-	if(player getVariable  "ACE_isUnconscious" && !life_unconscious) then {
-	
-		_action = [
-			format["Du bist Ohnmächtig. Mit letzter kraft kannst du dein Handy ziehen. Möchtest du das S.L.F.D. über deine Lage informieren?"],
-			"Ohnmächtig",
-			"Ja",
-			"Nein"
-		] call BIS_fnc_guiMessage;
-
-		life_corpse = player;
-		if(!isNil "_action" && {_action}) then {
-
-			[] call life_fnc_requestMedic;
-				
-			_medicsOnline = {_x != player && {side _x == independent} && {alive _x}} count playableUnits > 0;
-			if(!_medicsOnline) then {
-				_action = [
-				format["Kein Notarzt hat auf deine Nachricht geantwortet."],
-				"Niemand da",
-				"Ok"
-				] call BIS_fnc_guiMessage;
-			};
-
-		};
-		life_unconscious = true;
-	};
-
-	if(!(player getVariable "ACE_isUnconscious") && life_unconscious) then {
-		life_unconscious = false;
-	};
-};
-
 [] spawn
 {
 	if(side player != civilian || (player getVariable "udcLevel")) exitWith {};
@@ -2826,7 +2793,38 @@ fnc_item_CG = {
 	false
 };
 
+while {true} do {
+	if(player getVariable  "ACE_isUnconscious" && !life_unconscious) then {
+	
+		_action = [
+			format["Du bist Ohnmächtig. Mit letzter kraft kannst du dein Handy ziehen. Möchtest du das S.L.F.D. über deine Lage informieren?"],
+			"Ohnmächtig",
+			"Ja",
+			"Nein"
+		] call BIS_fnc_guiMessage;
 
+		life_corpse = player;
+		if(!isNil "_action" && {_action}) then {
+
+			[] call life_fnc_requestMedic;
+				
+			_medicsOnline = {_x != player && {side _x == independent} && {alive _x}} count playableUnits > 0;
+			if(!_medicsOnline) then {
+				_action = [
+				format["Kein Notarzt hat auf deine Nachricht geantwortet."],
+				"Niemand da",
+				"Ok"
+				] call BIS_fnc_guiMessage;
+			};
+
+		};
+		life_unconscious = true;
+	};
+
+	if(!(player getVariable "ACE_isUnconscious") && life_unconscious) then {
+		life_unconscious = false;
+	};
+};
 
 
 
