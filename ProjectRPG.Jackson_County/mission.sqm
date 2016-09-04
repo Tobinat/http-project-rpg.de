@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8579.3105,241.64192,6807.7178};
-		dir[]={0.013734443,-0.81738478,0.57593244};
-		up[]={0.019486211,0.57608885,0.81715482};
-		aside[]={0.99971771,-9.4671122e-008,-0.023840534};
+		pos[]={8751.2637,54.688629,7248.7681};
+		dir[]={-0.36814192,-0.71382844,-0.59575826};
+		up[]={-0.37523973,0.7003209,-0.60724533};
+		aside[]={-0.8506887,-8.9639798e-009,0.52567339};
 	};
 };
 binarizationWanted=0;
@@ -3855,7 +3855,7 @@ class Mission
 		class Item262
 		{
 			dataType="Marker";
-			position[]={8723.7783,21.06085,7120.8794};
+			position[]={8702.8838,21.06085,7149.8198};
 			name="wheat_field";
 			text="Weizen Feld (Safe Zone)";
 			type="A3L_Field_Green_Icon";
@@ -3867,7 +3867,7 @@ class Mission
 		class Item263
 		{
 			dataType="Marker";
-			position[]={8722.5361,21.06085,7119.4434};
+			position[]={8705.0469,21.06085,7144.6689};
 			name="gz";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -46975,7 +46975,7 @@ class Mission
 		class Item2343
 		{
 			dataType="Marker";
-			position[]={8791.0313,20.131195,7268.6577};
+			position[]={8624.9844,20.9,6397.0615};
 			name="Gen_6";
 			text="Hannes Fancy Clothing";
 			type="A3L_Store_Green_Icon";
@@ -46984,24 +46984,23 @@ class Mission
 			b=0.69999999;
 			angle=358.9169;
 			id=19482;
-			atlOffset=-0.76880455;
 		};
 		class Item2344
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8791.0713,22.001453,7268.6855};
-				angles[]={0,1.3628167,0};
+				position[]={8629.6543,22.395332,6394.0889};
+				angles[]={0,1.7889693,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init=" this allowDamage false; this enableSimulation false;  this addAction[""Billige Kleidung"",life_fnc_clothingMenu,""bruce""]; this addAction[""Ausrauben"",life_fnc_robStore,""Clothing""];";
 			};
 			id=19483;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.47080231;
 		};
 		class Item2345
 		{
