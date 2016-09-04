@@ -41,7 +41,6 @@ _int = 1;
 _num = 400;
 while{_num > 0} do {
 	uiSleep 7;
-	["Add",0.05] call fnc_doHealth;
 	_num = _num - 1;
 	if(_num == 4) then {
 		["Dein Rausch endet in 30 Sekunden!", false] spawn domsg;

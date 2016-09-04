@@ -302,7 +302,7 @@
 	fnc_water =
 	{
 		if(life_thirst < 2) exitwith {
-			["Remove",0.25] call fnc_doHealth;
+			[player, true, 30] call ace_medical_fnc_setUnconscious;
 			playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
 		};
 		if(life_thirst < 15) then {
@@ -318,7 +318,7 @@
 	fnc_food =
 	{
 		if(life_hunger < 2) exitwith {
-			["Remove",0.25] call fnc_doHealth;
+			[player, true, 30] call ace_medical_fnc_setUnconscious;
 			playSound3D ["cg_sndimg\sounds\cough4.ogg", player, false, getPosASL player, 3, 1, 45];
 		};
 		if(life_hunger < 15) then {
