@@ -1180,11 +1180,11 @@ switch (_shop) do
 		[
 			["C_Rubberboat",20000],
 			["CUP_B_Zodiac_USMC",40000],
-			["C_Boat_Civil_01_F",125000],
 			["CUP_C_Fishing_Boat_Chernarus",150000],
 			["A3L_Ship",400000],
 			["A3L_Jetski",50000],
-			["A3L_Jetski_yellow",50000]
+			["A3L_Jetski_yellow",50000],
+			["A3L_SpeedYacht",1500000]
 		];
 	};
 	case "cop_ship":
