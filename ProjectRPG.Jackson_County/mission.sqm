@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8721.5059,154.202,7225.1284};
-		dir[]={-0.25584725,-0.90394354,-0.342794};
-		up[]={-0.54068696,0.42761728,-0.7244308};
-		aside[]={-0.80143148,5.0931703e-008,0.59815741};
+		pos[]={8750.6299,154.202,6979.4966};
+		dir[]={-0.38140827,-0.84168589,0.38234299};
+		up[]={-0.59446055,0.53990215,0.5959205};
+		aside[]={0.70801002,-1.7748971e-007,0.70627469};
 	};
 };
 binarizationWanted=0;
@@ -3855,7 +3855,7 @@ class Mission
 		class Item262
 		{
 			dataType="Marker";
-			position[]={8702.8838,21.06085,7149.8198};
+			position[]={8704.6465,20.9,7224.7432};
 			name="wheat_field";
 			text="Weizen Feld (Safe Zone)";
 			type="A3L_Field_Green_Icon";
@@ -3867,7 +3867,7 @@ class Mission
 		class Item263
 		{
 			dataType="Marker";
-			position[]={8705.0469,21.06085,7144.6689};
+			position[]={8715.1963,21.215075,7221.8398};
 			name="gz";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -48842,7 +48842,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8710.0059,24.980198,7149.3721};
+				position[]={8709.5205,24.980198,7148.646};
 				angles[]={0,3.4898343,0};
 			};
 			side="Empty";
