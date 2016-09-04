@@ -15,7 +15,7 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-<<<<<<< HEAD
+
 player forceAddUniform "pRPG_Sergeant1";
 =======
 player forceAddUniform "silver_lake_sheriff";
