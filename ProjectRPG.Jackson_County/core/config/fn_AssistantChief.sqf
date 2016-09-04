@@ -15,11 +15,8 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
-<<<<<<< HEAD
+
 player forceAddUniform "pRPG_AChief1";
-=======
-player forceAddUniform "silver_lake_fbi";
->>>>>>> origin/master
 player addVest "prpg_policevest";
 player addBackpack "AM_PoliceBelt";
 player addHeadgear "AM_PatrolHat";

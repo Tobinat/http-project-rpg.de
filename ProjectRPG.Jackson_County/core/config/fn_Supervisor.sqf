@@ -17,9 +17,6 @@ removeGoggles player;
 
 
 player forceAddUniform "pRPG_Sergeant1";
-=======
-player forceAddUniform "silver_lake_sheriff";
->>>>>>> origin/master
 player addVest "prpg_policevest";
 player addBackpack "AM_PoliceBelt";
 player addHeadgear "AM_PatrolHat";
