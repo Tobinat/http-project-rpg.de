@@ -35,7 +35,6 @@ player createDiarySubject ["controls","Steuerung"];
 				"
 <font size='25' color='#ff0000'>• Steuerung •</font><br/><font color='#639C18'>Hier findest du die aktuelle Steuerung die auf unserem Life Server gültig ist. Wir gehen von einer deutschsprachigen Tastatur aus. Um von Deutsch auf Englisch (und umgekehrt) zu wechseln, drücke</font><font color='#D66321'> ALT + SHIFT</font><br/><br/>
 <font color='#D60000'>Z</font><br/>Spieler-Menü öffnen<br/><br/>
-<font color='#D60000'>SHIFT + P</font><br/>Ohropax eingesetzt<br/><br/>
 <font color='#D60000'>U</font><br/>Fahrzeuge auf- und zuschließen<br/><br/>
 <font color='#D60000'>T</font><br/>Kofferraum öffnen (Z-Items / Virtuelle Items)<br/><br/>
 <font color='#D60000'>SHIFT + G</font><br/>Person niederschlagen (MIT WAFFE)<br/><br/>

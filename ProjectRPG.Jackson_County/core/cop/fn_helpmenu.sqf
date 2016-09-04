@@ -55,7 +55,7 @@ _Btn21 = _display displayCtrl Btn21;
 
 
 _Btn1 ctrlSetText "Nahrung & Getränke";
-_Btn1 buttonSetAction "[""Der Standort wurde an Ihr GPS gesendet! "",false] spawn domsg; [""Nahrung % Getränke"",(getmarkerpos ""Donut_Shop"")] spawn fnc_draw3d; closeDialog 0;";
+_Btn1 buttonSetAction "[""Der Standort wurde an Ihr GPS gesendet! "",false] spawn domsg; [""Nahrung % Getränke"",(getmarkerpos ""donuts_capital"")] spawn fnc_draw3d; closeDialog 0;";
 
 _Btn2 ctrlSetText "Die Bank";
 _Btn2 buttonSetAction "[""Der Standort wurde an Ihr GPS gesendet!"",false] spawn domsg; [""Die Bank"",(getmarkerpos ""fed_reserve"")] spawn fnc_draw3d; closeDialog 0;";

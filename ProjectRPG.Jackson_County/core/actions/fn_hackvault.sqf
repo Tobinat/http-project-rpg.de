@@ -7,7 +7,7 @@ cgbankvault is the variable name
 private ["_cops"];
 
 _cops = (west countSide playableUnits);
-if(_cops < 6) exitWith { ["You need atleast 6 cops online to rob the bank...", false] spawn domsg; }; 
+if(_cops < 0) exitWith { ["You need atleast 6 cops online to rob the bank...", false] spawn domsg; }; 
 
 _storename = "hi";
 
@@ -20,9 +20,9 @@ if(life_inv_hackingtool == 0) exitwith {
 
 if (cgbankvault getVariable ["robbed", false]) exitwith {["This bank was recently robbed.",30,"red"] spawn domsg;};
 if (cgbankvault getVariable ["hacking", false]) exitwith {["This is already being hacked...",30,"red"] spawn domsg;};
-if (cgbankvault animationPhase "d_l_Anim" == 1) exitwith {["The bank appears unlocked...",30,"red"] spawn domsg;};
+//if (cgbankvault animationPhase "Vault_Door" <0.5) exitwith {["The bank appears unlocked...",30,"red"] spawn domsg;};
 
-if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "d_l_Anim" == 0 ) then {
+if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "Vault_Door" <0.5 ) then {
 	 ["dbank", false] remoteExec ["fnc_dispatch",west];
 
 	["You set your wireless hacking device to the vault, it should take roughly 5 minutes. You can move while hacking, though, you might make noises.", false] spawn domsg;

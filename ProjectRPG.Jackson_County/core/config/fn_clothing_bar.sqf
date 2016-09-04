@@ -18,17 +18,23 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-	    _ret =
+		_ret =
 		[
-			];
-	
+			
+		];
+		if(__GETC__(life_adminlevel) > 0) then {
+			_ret pushBack ["U_C_Scientist",nil,5];
+		};
+		_ret;
 	};
 	
 	//Hats
 	case 1:
 	{
-	    _ret =
-		[
+		[	
+			
+			
+			
 			["Kio_Afro_Hat",nil,25],
 			["EF_Long_wig_B",nil,25],
 			["EF_Long_wig_BL",nil,25],
@@ -46,8 +52,13 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		_ret =
-		[
+		[	
+			["EF_ACC1",nil,120],
+			["EF_ACC2",nil,120],
+			["EF_ACC3",nil,120],
+			["EF_AC1",nil,120],
+			["EF_AC2",nil,120],
+			["EF_AC3",nil,120],
 			["SFG_Tac_smallBeardB",nil,12],
 			["SFG_Tac_smallBeardD",nil,12],
 			["SFG_Tac_smallBeardG",nil,12],
@@ -68,21 +79,6 @@ switch (_filter) do
 			["SFG_Tac_ChopsD",nil,12],
 			["SFG_Tac_ChopsG",nil,12],
 			["SFG_Tac_ChopsO",nil,12],
-			["TRYK_Beard_BK",nil,15],
-			["TRYK_Beard",nil,15],
-			["TRYK_Beard_BW",nil,15],
-			["TRYK_Beard_Gr",nil,15],
-			["TRYK_Beard_BK2",nil,15],
-			["TRYK_Beard2",nil,15],
-			["TRYK_Beard_BW2",nil,15],
-			["TRYK_Beard_Gr2",nil,15],
-			["TRYK_Beard_BK3",nil,15],
-			["TRYK_Beard3",nil,15],
-			["TRYK_Beard_BW3",nil,15],
-			["TRYK_Beard_Gr3",nil,15],
-			["TRYK_Beard_BK4",nil,15],
-			["TRYK_Beard4",nil,15],
-			["TRYK_Beard_BW4",nil,15],
 			["TRYK_Beard_Gr4",nil,15]
 		];
 	};
@@ -90,7 +86,6 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-	     _ret =
 		[
 		];
 	};
@@ -98,8 +93,8 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
-	     _ret =
-		[	
+		[
+				
 		];
 	};
 };

@@ -15,7 +15,11 @@ removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
 
+<<<<<<< HEAD
 player forceAddUniform "pRPG_State1";
+=======
+player forceAddUniform "silver_lake_statepolice";
+>>>>>>> origin/master
 player addVest "prpg_statevest";
 player addBackpack "AM_PoliceBelt";
 player addHeadgear "Campaign_Hat_Dark";

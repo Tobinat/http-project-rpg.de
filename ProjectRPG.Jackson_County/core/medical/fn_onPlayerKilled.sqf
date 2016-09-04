@@ -12,7 +12,7 @@ _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 // _killer = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 
 // Request medic
-[] call life_fnc_requestMedic;
+//[] call life_fnc_requestMedic;
 
 //Set some vars
 // _unit setVariable["Revive",FALSE,TRUE]; //Set the corpse to a revivable state.
@@ -21,6 +21,31 @@ _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE]; //Why the fuck do I have this? Is it used?
 _unit setVariable["steam64id",(getPlayerUID player),true]; //Set the UID.
+
+
+player setVariable ["tf_voiceVolume", 0, true];
+life_gear = [];
+player setVariable["gear",life_gear,true];
+
+
+
+/* _unit spawn
+{
+	private["_maxTime","_RespawnBtn","_Timer"];
+	disableSerialization;
+	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
+	_Timer = ((findDisplay 7300) displayCtrl 7301);
+	_maxTime = time + (life_respawn_timer * 60);
+	_RespawnBtn ctrlEnable false;
+	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(_maxTime - time) <= 0 OR isNull _this};
+	_RespawnBtn ctrlEnable true;
+	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
+
+//	if(shooting_death && round(_maxTime - time) <= 0) exitwith { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; };			
+};
+
+[] spawn life_fnc_deathScreen;
+ */
 
 //Setup our camera view
 /*
@@ -99,16 +124,18 @@ if(!isNull _killer && {_killer != _unit}) then {
 	life_removeWanted = true;
 };
 */
-_handle = [_unit] spawn life_fnc_dropItems;
-waitUntil {scriptDone _handle};
+//_handle = [_unit] spawn life_fnc_dropItems;
+//waitUntil {scriptDone _handle};
 
-life_hunger = 100;
-life_thirst = 100;
-life_carryWeight = 0;
-life_cash = 0;
-
-// [] call life_fnc_hudUpdate; //Get our HUD updated.
-[[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
-
-[0] call SOCK_fnc_updatePartial;
-[3] call SOCK_fnc_updatePartial;
+["Add","Food",100] spawn fnc_sustain;
+["Add","Drink",100] spawn fnc_sustain;
+player setdamage 0; 
+[player,life_sidechat,playerSide] remoteExecCall ["TON_fnc_managesc",2];
+[] spawn {
+	while{true} do {
+		sleep 1;
+		if( vehicle player == player && animationstate player != "deadstate" ) then {  [player,"DeadState"] remoteExecCall ["life_fnc_animsync"]; };
+		player setOxygenRemaining 1;
+		if(!deadPlayer) exitwith {};
+	};
+};

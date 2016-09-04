@@ -1248,7 +1248,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class DRPG_06Victoria_EMS: DRPG_06Victoria_Base
+	class prpg_06Victoria_EMS: DRPG_06Victoria_Base
 	{
 		scope = 2;
 		crew = "C_man_1";

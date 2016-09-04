@@ -397,7 +397,7 @@ hud_fnc_loop =
 
 
 
-
+	/*
 	// Medical Loop 
 	_bleeding = _ui displayCtrl 23570;
 	_wounded = _ui displayCtrl 23575;
@@ -776,4 +776,5 @@ hud_fnc_loop =
 	};
 	if(isNil "fnc_totalpain") exitWith {};
 	[] spawn fnc_totalpain;
+	*/
 };

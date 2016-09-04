@@ -264,6 +264,7 @@ switch(_shop) do
 					["Ausrüstungskammer",								
 						[
 							["CG_ATF_Handcuffs_i","Hand Cuffs",10],
+							["ItemCopCard",nil,5000],
 							["ToolKit",nil,1000],
 							["ACE_fieldDressing",nil,50],
 							["TRYK_SPgear_PHC1_NV","NV",10],
