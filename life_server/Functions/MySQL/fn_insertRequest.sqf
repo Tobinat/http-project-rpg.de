@@ -7,7 +7,7 @@
 	descriptions... Need to write it...
 */
 
-params [["_uid", "", [""]], ["_name", "", [""]], ["_money", 0, [""]], ["_bank", 2500, [""]], ["_returnToSender", objNull, [objNull]],
+params [["_uid", "", [""]], ["_name", "", [""]], ["_money", 0, [""]], ["_bank", 5000, [""]], ["_returnToSender", objNull, [objNull]],
 "_side", "_licenses", "_handler", "_thread", "_queryResult", "_query", "_alias", "_arrestreason"];
 
 if((_uid isEqualTo "") OR (_name isEqualTo "")) exitWith {systemChat "Bad UID or name";}; 
