@@ -949,7 +949,17 @@ class CfgVehicles
 		model = "\DRPG_Wheeled\BMW\M5_12\DRPG_M5_12_P_P";
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\BMW\M5_12\LIVERY\FDLV_M5.paa"};
 	};
-	class prpg_12M5_EMS: DRPG_12M5_Base
+	class prpg_12M5_EMS: DRPG_12M5_P_P
+	{
+		scope = 2;
+		displayName = "BMW M5 - FDLV";
+		model = "\DRPG_Wheeled\BMW\M5_12\DRPG_M5_12_P_P";
+		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\BMW\M5_12\LIVERY\12M5_EMS.paa"};
+		
+		};
+	
+	
+	class prpg_12M5_EM: DRPG_12M5_Base
 	{
 		scope = 2;
 		crew = "C_man_1";

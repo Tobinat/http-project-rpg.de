@@ -77,7 +77,7 @@ switch (_shop) do
 			_return pushBack ["prpg_06Victoria_EMS",25000];
 			_return pushBack ["prpg_09Tahoe_slfd",25000];
 			_return pushBack ["prpg_12Charger_slfd",25000];
-			_return pushBack ["prpg_charger_slfd",25000];
+			// umskinnen _return pushBack ["prpg_charger_slfd",25000];
 			_return pushBack ["vvv_fire_truck",25000];
 			_return pushBack ["prpg_12M5_EMS", 25000];
 			
@@ -99,10 +99,7 @@ switch (_shop) do
 			    _return pushBack ["cg_evoems2",20000];
 			    _return pushBack ["cg_evoems3",20000];
 		        };
-			if(__GETC__(life_mediclevel) > 0) then
-		       {
-				_return pushBack ["AM_Holden_RFA",25000];
-		        };
+			
 	};
 	case "med_air_hs": {
 		_return = 
@@ -376,9 +373,7 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["AM_2015C_Black",210000],
-			["AM_2015C_blue",210000],
-			["AM_2015C_white",210000],
+			
 			["ADM_General_Lee",210000],
 
 			["cg_dodge_charger_2015_noir",259000],
@@ -393,14 +388,7 @@ switch (_shop) do
 			["cg_dodge_charger_2015_jaune",259000],
 			["cg_dodge_charger_2015_rouge",259000],
 			["cg_dodge_charger_2015_jaune",259000],
-			["cg_dodge_charger_2015_rouge",259000],
-			
-            ["A3L_ChallengerWhite",300000],
-            ["A3L_ChallengerRed",300000],
-            ["A3L_ChallengerBlack",300000],
-            ["A3L_ChallengerBlue",300000],
-            ["A3L_ChallengerGreen",300000],
-            ["A3L_Challenger",300000]
+			["cg_dodge_charger_2015_rouge",259000]
 		   
 		];
 	};
