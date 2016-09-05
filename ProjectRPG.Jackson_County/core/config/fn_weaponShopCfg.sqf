@@ -54,6 +54,7 @@ switch(_shop) do
 							["ACE_tourniquet",nil,5], 
 							["ACE_quikclot",nil,5], 
 							["ACE_elasticBandage",nil,5], 
+							["ACE_packingBandage",nil,5],
 							["ACE_morphine",nil,20], 
 							["ACE_epinephrine",nil,20], 
 							["ACE_surgicalKit",nil,50], 
