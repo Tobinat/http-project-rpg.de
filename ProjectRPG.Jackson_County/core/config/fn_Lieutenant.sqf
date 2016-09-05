@@ -33,7 +33,7 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_anprc148jem_5";
 player linkItem "ItemGPS";
-player linkItem "BH_ImpNVChip";+
+player linkItem "pmc_earpiece";
 player linkItem "ItemCopCard";
 
 ["Sie besitzen nun die Grundausrüstung! Besorgen Sie sich eine Waffe, Lieutenant!", false] spawn doquickmsg;
