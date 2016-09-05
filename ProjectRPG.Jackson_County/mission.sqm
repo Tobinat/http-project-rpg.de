@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8796.001,44.688488,6675.4395};
+		pos[]={8792.6563,67.797356,6696.9092};
 		dir[]={-0.024600672,-0.75877315,-0.65092784};
 		up[]={-0.028658936,0.65128404,-0.7582885};
 		aside[]={-0.99931175,1.0784424e-007,0.037767958};
@@ -26632,7 +26632,7 @@ class Mission
 		class Item1367
 		{
 			dataType="Marker";
-			position[]={8785.249,21.343655,6590.5923};
+			position[]={8775.8154,20.9,6593.5156};
 			name="RFA_air_1";
 			type="Empty";
 			angle=15.547863;
@@ -26641,7 +26641,7 @@ class Mission
 		class Item1368
 		{
 			dataType="Marker";
-			position[]={8785.2969,21.343655,6590.582};
+			position[]={8775.8633,20.9,6593.5054};
 			name="RFA_air_2";
 			type="Empty";
 			angle=15.547863;
