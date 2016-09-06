@@ -13,7 +13,5 @@ if(!life_action_inUse) then {
 		waitUntil{animationState player != "ainvpknlmstpslaywnondnon_medic";};
 	};
 
-	["Set",0] call fnc_doHealth;
-
 };
 life_action_inUse = false;	

@@ -30,7 +30,6 @@ if(_status == "CPR" && shooting_death) then { hint "Ein Spieler versucht dich zu
 
 	player setVariable ["tf_unable_to_use_radio", false];
 	im_dead = false;
-	["Set",0.2] call fnc_doHealth;
 
 	//Take fee for services.
 	if(cash_in_bank > (call life_revive_fee)) then {

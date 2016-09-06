@@ -20,9 +20,6 @@ life_action_inUse = true;
 	if( side player != independent) then {
 		life_inv_bandage = life_inv_bandage - 1;
 		_curTarget setdamage 0.2;
-		["Set",0.2] remoteExecCall ["fnc_doHealth",_curTarget];
-	} else {
-		["Set",0] remoteExecCall ["fnc_doHealth",_curTarget];
 	};
 
 
