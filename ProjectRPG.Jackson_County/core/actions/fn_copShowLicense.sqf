@@ -56,11 +56,11 @@ if(playerSide == independent) then
         case 4: { _rank = "Head of Medicdepartement";};
 		*/
 		//R.F.A + Medic
-		case 1: { _rank = "Candidate";};
-        case 2: { _rank = "Employee";};
+		case 1: { _rank = "Firefighter";};
+        case 2: { _rank = "Sergeant";};
         case 3: { _rank = "Lieutenant";};
-        case 4: { _rank = "Chief Learning Officer";};
-        case 5: { _rank = "Chief Technical Officer";};
+        case 4: { _rank = "Captain";};
+        case 5: { _rank = "Battalion Chief";};
         case 6: { _rank = "Assistant Chief";};
         case 7: { _rank = "Chief";};
 	
