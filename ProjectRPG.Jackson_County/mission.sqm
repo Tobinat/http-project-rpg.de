@@ -434,8 +434,8 @@ class AddonsMetaData
 		};
 		class Item46
 		{
-			className="cl3_policeMarkers";
-			name="cl3_policeMarkers";
+			className="A3L_Nightclub";
+			name="A3L_Nightclub";
 		};
 		class Item47
 		{
@@ -13535,7 +13535,7 @@ class Mission
 			{
 			};
 			id=2351;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=61.69091;
 		};
 		class Item696
@@ -13551,7 +13551,7 @@ class Mission
 			{
 			};
 			id=2352;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=62.738815;
 		};
 		class Item697
@@ -13567,7 +13567,7 @@ class Mission
 			{
 			};
 			id=2354;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=58.079201;
 		};
 		class Item698
@@ -13583,7 +13583,7 @@ class Mission
 			{
 			};
 			id=2355;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=58.712841;
 		};
 		class Item699
@@ -13599,7 +13599,7 @@ class Mission
 			{
 			};
 			id=2356;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=61.873314;
 		};
 		class Item700
@@ -13632,7 +13632,7 @@ class Mission
 			{
 			};
 			id=2368;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=42.614899;
 		};
 		class Item702
@@ -13905,7 +13905,7 @@ class Mission
 			{
 			};
 			id=2397;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=33.925648;
 		};
 		class Item708
@@ -13921,7 +13921,7 @@ class Mission
 			{
 			};
 			id=2400;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=63.643242;
 		};
 		class Item709
@@ -13937,7 +13937,7 @@ class Mission
 			{
 			};
 			id=2401;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=63.522747;
 		};
 		class Item710
@@ -13953,7 +13953,7 @@ class Mission
 			{
 			};
 			id=2402;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=62.14909;
 		};
 		class Item711
@@ -13969,7 +13969,7 @@ class Mission
 			{
 			};
 			id=2410;
-			type="cl3_tarmac";
+			type="Land_buildingGunStore1";
 			atlOffset=63.724236;
 		};
 		class Item712
