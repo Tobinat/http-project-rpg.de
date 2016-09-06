@@ -2823,7 +2823,6 @@ while {true} do {
 
 	if(!(player getVariable "ACE_isUnconscious") && life_unconscious) then {
 		life_unconscious = false;
-		player setVariable["mapVisible",nil,true];
 	};
 };
 
