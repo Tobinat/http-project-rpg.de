@@ -86,8 +86,6 @@ addons[]=
 	"A3L_Factory",
 	"Pub_C",
 	"A3_Structures_F_Civ_Camping",
-	"cl_Police_Sub",
-	
 	"A3L_Nightclub",
 	"Centrelink",
 	"DED_Fence_01",
@@ -429,8 +427,8 @@ class AddonsMetaData
 		};
 		class Item45
 		{
-			className="cl_Police_Sub";
-			name="cl_Police_Sub";
+			className="A3L_Nightclub";
+			name="A3L_Nightclub";
 		};
 		class Item46
 		{
