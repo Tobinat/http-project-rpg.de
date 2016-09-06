@@ -50,23 +50,23 @@ switch(_shop) do
 							["cg_torch",nil,250], 
 							["cg_torchbattery",nil,250], 
 							["TRYK_Headset_NV",nil,250], 
-							["ACE_EarPlugs",nil,50],
-							["ACE_tourniquet",nil,50], 
-							["ACE_quikclot",nil,50], 
-							["ACE_elasticBandage",nil,50], 
-							["ACE_morphine",nil,50], 
-							["ACE_epinephrine",nil,50], 
+							["ACE_EarPlugs",nil,5],
+							["ACE_tourniquet",nil,5], 
+							["ACE_quikclot",nil,5], 
+							["ACE_elasticBandage",nil,5], 
+							["ACE_morphine",nil,20], 
+							["ACE_epinephrine",nil,20], 
 							["ACE_surgicalKit",nil,50], 
 							["ACE_bodyBag",nil,50], 
-							["ACE_bloodIV_500",nil,50], 
-							["ACE_bloodIV_250",nil,50], 
-							["ACE_salineIV_500",nil,50], 
-							["ACE_salineIV_250",nil,50], 
-							["ACE_plasmaIV_500",nil,50], 
-							["ACE_plasmaIV_250",nil,50], 
+							["ACE_bloodIV_500",nil,20], 
+							["ACE_bloodIV_250",nil,20], 
+							["ACE_salineIV_500",nil,20], 
+							["ACE_salineIV_250",nil,20], 
+							["ACE_plasmaIV_500",nil,20], 
+							["ACE_plasmaIV_250",nil,20], 
 							["ACE_personalAidKit",nil,50], 
-							["ACE_fieldDressing",nil,50], 
-							["ACE_atropine",nil,50],
+							["ACE_fieldDressing",nil,5], 
+							["ACE_atropine",nil,20],
 							
 							
 							["acc_flashlight","Extinguisher Flashlight",10],
@@ -308,56 +308,56 @@ switch(_shop) do
 					["Waffenkammer",								
 						[
 						//Handfeuerwafen
-							["RH_m9",nil,240],
+							["RH_m9",nil,2400],
 							["RH_15Rnd_9x19_M9",nil,5],
 							
-							["RH_fnp45",nil,240],
+							["RH_fnp45",nil,2400],
 							["RH_15Rnd_45cal_fnp",nil,4],
 							
-							["RH_g17",nil,112],
-							["RH_g19",nil,112],
-							["RH_g19t",nil,112],
+							["RH_g17",nil,1200],
+							["RH_g19",nil,1600],
+							["RH_g19t",nil,1800],
 							["RH_17Rnd_9x19_g17",nil,20],
 							
-							["RH_fn57",nil,112],
+							["RH_fn57",nil,1120],
 							["RH_20Rnd_57x28_FN",nil,20],
 							
-							["RH_usp",nil,240],
+							["RH_usp",nil,2400],
 							["RH_12Rnd_45cal_usp",nil,4],
 							
-							["RH_uspm",nil,240],
+							["RH_uspm",nil,2400],
 							["RH_16Rnd_40cal_usp",nil,5],	
 							
-							["sab_1911_handgun",nil,240],
+							["sab_1911_handgun",nil,2400],
 							["9Rnd_45ACP_Mag",nil,5],
 							
 							["RH_cz75",nil,240],
 							["RH_16Rnd_9x19_CZ",nil,5],
 							
-							["RH_deagle",nil,240],
-							["RH_Deaglem",nil,240],
+							["RH_deagle",nil,12000],
+							["RH_Deaglem",nil,12000],
 							["RH_7Rnd_50_AE",nil,5],
 							
-							["RH_kimber_nw",nil,240],
-							["RH_m1911",nil,240],
+							["RH_kimber_nw",nil,13000],
+							["RH_m1911",nil,13000],
 							["RH_7Rnd_45cal_m1911",nil,5],
 							
-							["RH_p226",nil,240],
+							["RH_p226",nil,12400],
 							["RH_15Rnd_9x19_SIG",nil,5],
 							
-							["RH_tt33",nil,240],
+							["RH_tt33",nil,12400],
 							["RH_8Rnd_762_tt33",nil,5],
 							
-							["RH_mp412",nil,240],
+							["RH_mp412",nil,22400],
 							["RH_6Rnd_357_Mag",nil,5],
 							
-							["RH_ttracker",nil,240],
+							["RH_ttracker",nil,12400],
 							["RH_6Rnd_45ACP_Mag",nil,5],
 							
-							["RH_bull",nil,240],
+							["RH_bull",nil,22400],
 							["RH_6Rnd_454_Mag",nil,4],
 						
-							["RH_bullb",nil,240],
+							["RH_bullb",nil,22400],
 							["RH_6Rnd_454_Mag",nil,4],	
 					  
 							["prpl_benelli_14_pgs_rail",nil,220],
@@ -366,25 +366,25 @@ switch(_shop) do
 							["hlc_rifle_vendimus",nil,220],
 					        ["29rnd_300BLK_STANAG",nil,20],
 							
-							["hlc_rifle_M4",nil,220],
-							["hlc_rifle_CQBR",nil,220],
-					        ["hlc_30rnd_556x45_EPR",nil,20],
+							["hlc_rifle_M4",nil,35200],
+							["hlc_rifle_CQBR",nil,35200],
+					        ["hlc_30rnd_556x45_EPR",nil,150],
 							
-							["KPFS_G36C",nil,220],
+							["KPFS_G36C",nil,22220],
 					        ["KPFS_30Rnd_556x45_G36",nil,20],
 							
-							["hlc_smg_mp5k_PDW",nil,220],
-							["hlc_smg_mp5a2",nil,220],
+							["hlc_smg_mp5k_PDW",nil,14220],
+							["hlc_smg_mp5a2",nil,15220],
 					        ["hlc_30Rnd_9x19_B_MP5",nil,20],
 							
-							["RH_Hk416s",nil,220],
-							["RH_Hk416c",nil,220],
+							["RH_Hk416s",nil,32220],
+							["RH_Hk416c",nil,36220],
 					        ["RH_30Rnd_556x45_M855A1",nil,20],
 							
-							["RH_PDW",nil,220],
+							["RH_PDW",nil,12220],
 					        ["RH_30Rnd_6x35_mag",nil,20],
 							
-							["RH_M4_ris",nil,220],
+							["RH_M4_ris",nil,28220],
 					        ["RH_30Rnd_556x45_M855A1",nil,20],
 							
 							
@@ -428,86 +428,86 @@ switch(_shop) do
 					["Waffenkammer",								
 						[
 						//Handfeuerwafen
-							["RH_m9",nil,240],
+							["RH_m9",nil,2400],
 							["RH_15Rnd_9x19_M9",nil,5],
 							
-							["RH_fnp45",nil,240],
+							["RH_fnp45",nil,2400],
 							["RH_15Rnd_45cal_fnp",nil,4],
 							
-							["RH_g17",nil,112],
-							["RH_g19",nil,112],
-							["RH_g19t",nil,112],
+							["RH_g17",nil,1120],
+							["RH_g19",nil,1120],
+							["RH_g19t",nil,1120],
 							["RH_17Rnd_9x19_g17",nil,20],
 							
-							["RH_fn57",nil,112],
+							["RH_fn57",nil,1120],
 							["RH_20Rnd_57x28_FN",nil,20],
 							
-							["RH_usp",nil,240],
+							["RH_usp",nil,2400],
 							["RH_12Rnd_45cal_usp",nil,4],
 							
-							["RH_uspm",nil,240],
+							["RH_uspm",nil,12400],
 							["RH_16Rnd_40cal_usp",nil,5],	
 							
-							["sab_1911_handgun",nil,240],
+							["sab_1911_handgun",nil,12400],
 							["9Rnd_45ACP_Mag",nil,5],
 							
-							["RH_cz75",nil,240],
+							["RH_cz75",nil,2400],
 							["RH_16Rnd_9x19_CZ",nil,5],
 							
-							["RH_deagle",nil,240],
-							["RH_Deaglem",nil,240],
+							["RH_deagle",nil,12400],
+							["RH_Deaglem",nil,12400],
 							["RH_7Rnd_50_AE",nil,5],
 							
 							["RH_kimber_nw",nil,240],
 							["RH_m1911",nil,240],
 							["RH_7Rnd_45cal_m1911",nil,5],
 							
-							["RH_p226",nil,240],
+							["RH_p226",nil,12400],
 							["RH_15Rnd_9x19_SIG",nil,5],
 							
-							["RH_tt33",nil,240],
+							["RH_tt33",nil,2400],
 							["RH_8Rnd_762_tt33",nil,5],
 							
 							["RH_mp412",nil,240],
 							["RH_6Rnd_357_Mag",nil,5],
 							
-							["RH_ttracker",nil,240],
+							["RH_ttracker",nil,12400],
 							["RH_6Rnd_45ACP_Mag",nil,5],
 							
-							["RH_bull",nil,240],
+							["RH_bull",nil,12400],
 							["RH_6Rnd_454_Mag",nil,4],
 						
-							["RH_bullb",nil,240],
+							["RH_bullb",nil,12400],
 							["RH_6Rnd_454_Mag",nil,4],	
 					  
-							["prpl_benelli_14_pgs_rail",nil,220],
+							["prpl_benelli_14_pgs_rail",nil,22500],
 					        ["prpl_6Rnd_12Gauge_Slug",nil,20],
 							
-							["hlc_rifle_vendimus",nil,220],
+							["hlc_rifle_vendimus",nil,34220],
 					        ["29rnd_300BLK_STANAG",nil,20],
 							
-							["hlc_rifle_bcmjack",nil,220],
+							["hlc_rifle_bcmjack",nil,35220],
 							["hlc_rifle_M4",nil,220],
 							["hlc_rifle_CQBR",nil,220],
 					        ["hlc_30rnd_556x45_EPR",nil,20],
 							
-							["KPFS_G36C",nil,220],
+							["KPFS_G36C",nil,35220],
 					        ["KPFS_30Rnd_556x45_G36",nil,20],
 							
-							["hlc_smg_mp5k_PDW",nil,220],
-							["hlc_smg_mp5a2",nil,220],
+							["hlc_smg_mp5k_PDW",nil,15220],
+							["hlc_smg_mp5a2",nil,15220],
 					        ["hlc_30Rnd_9x19_B_MP5",nil,20],
 							
-							["RH_Hk416s",nil,220],
-							["RH_Hk416c",nil,220],
+							["RH_Hk416s",nil,35220],
+							["RH_Hk416c",nil,35220],
 					        ["RH_30Rnd_556x45_M855A1",nil,20],
 							
-							["RH_PDW",nil,220],
+							["RH_PDW",nil,15220],
 					        ["RH_30Rnd_6x35_mag",nil,20],
 							
-							["RH_M4_ris",nil,220],
-							["RH_M4_moe_b",nil,220],
-							["RH_M4sbr_b",nil,220],
+							["RH_M4_ris",nil,42220],
+							["RH_M4_moe_b",nil,42220],
+							["RH_M4sbr_b",nil,42220],
 					        ["RH_30Rnd_556x45_M855A1",nil,20],
 							
 							
@@ -609,36 +609,36 @@ switch(_shop) do
 
 
 							["RH_compM2","Rifle Aimpoint",425],
-							["RH_compM2l","Rifle Aimpoint Low",425],
+							["RH_compM2l","Rifle Aimpoint Low",4205],
 
 							["RH_m16a6_des",nil,91550],
 							["RH_30Rnd_68x43_FMJ",nil,1550],
 
-							["RH_ar10",nil,51550],
-							["RH_20Rnd_762x51_AR10",nil,350],
+							["RH_ar10",nil,85550],
+							["RH_20Rnd_762x51_AR10",nil,3500],
 
-							["hlc_rifle_akm",nil,45550],
-							["hlc_rifle_ak47",nil,45550],
-							["hlc_30Rnd_762x39_b_ak",nil,300],
+							["hlc_rifle_akm",nil,65550],
+							["hlc_rifle_ak47",nil,65550],
+							["hlc_30Rnd_762x39_b_ak",nil,3000],
 
 							["SG553_CQB",nil,40550],
 							["30Rnd_556x45_Stanag",nil,300],
 							
-							["hlc_rifle_aks74u",nil,30550],
-							["hlc_30Rnd_545x39_B_AK",nil,300],
+							["hlc_rifle_aks74u",nil,60550],
+							["hlc_30Rnd_545x39_B_AK",nil,3000],
 
 							["hgun_PDW2000_F",nil,15550],
-							["SMG_02_F",nil,21550],
-							["30Rnd_9x21_Mag",nil,255],
+							["SMG_02_F",nil,41550],
+							["30Rnd_9x21_Mag",nil,2550],
 					
 							["chakFNP90_50rnd_skin1",nil,11000],
 							["chakFNP90_57x28_B_skin1",nil,332],
 
-							["SMG_01_F",nil,15000],
-							["30Rnd_45ACP_Mag_SMG_01",nil,232],
+							["SMG_01_F",nil,45000],
+							["30Rnd_45ACP_Mag_SMG_01",nil,2320],
 							
 							["optic_MRCO",nil,1220],
-							["RH_Delft",nil,550],
+							["RH_Delft",nil,5500],
 							["hlc_optic_kobra",nil,550]							
 						]
 					];
@@ -659,46 +659,46 @@ switch(_shop) do
 						[
 						     //kurzwaffen
 							["RH_bull",nil,20000],
-							["RH_6Rnd_454_Mag",nil,500],
+							["RH_6Rnd_454_Mag",nil,5000],
 
 							["RH_fn57",nil,15000],
-							["RH_20Rnd_57x28_FN",nil,300],
+							["RH_20Rnd_57x28_FN",nil,3000],
 							
 							["RH_uspm",nil,21000],
-							["RH_16Rnd_40cal_usp",nil,300],	
+							["RH_16Rnd_40cal_usp",nil,3000],	
 							
 							//langwaffen
 							["hlc_rifle_auga3_b",nil,70000],
-							["hlc_30Rnd_556x45_B_AUG",nil,600],
+							["hlc_30Rnd_556x45_B_AUG",nil,6000],
 							
 							["RH_M4A1_ris",nil,80000],
-							["RH_30Rnd_556x45_M855A1",nil,600],
+							["RH_30Rnd_556x45_M855A1",nil,6000],
 							
 							["RH_M4A6",nil,80000],
-							["RH_30Rnd_68x43_FMJ",nil,600],
+							["RH_30Rnd_68x43_FMJ",nil,6000],
 
-							["RH_Mk11",nil,90000],
+							["RH_Mk11",nil,200000],
 							["RH_20Rnd_762x51_M80A1",nil,600],
-							["RH_20Rnd_762x51_Mk316LR",nil,600],
+							["RH_20Rnd_762x51_Mk316LR",nil,6000],
 							
 							["hlc_rifle_RU556",nil,70000],
 							
-							["hlc_rifle_bcmjack",nil,75000],
-							["hlc_30rnd_556x45_EPR",nil,600],
+							["hlc_rifle_bcmjack",nil,175000],
+							["hlc_30rnd_556x45_EPR",nil,6000],
 							
-							["RH_M4_moe",nil,62000],
-							["RH_30Rnd_556x45_M855A1",nil,600],
+							["RH_M4_moe",nil,162000],
+							["RH_30Rnd_556x45_M855A1",nil,6000],
 							
-							["hlc_rifle_ak12",nil,85000],
-							["hlc_30Rnd_545x39_B_AK",nil,600],
+							["hlc_rifle_ak12",nil,185000],
+							["hlc_30Rnd_545x39_B_AK",nil,6000],
 							
-							["KPFS_G36C",nil,80000],
-							["KPFS_30Rnd_556x45_G36",nil,600],
+							["KPFS_G36C",nil,180000],
+							["KPFS_30Rnd_556x45_G36",nil,6000],
 								
-							["RH_Hk416s",nil,85000],
-							["RH_30Rnd_556x45_M855A1",nil,600],
-							["RH_30Rnd_556x45_Mk262",nil,600],
-							["RH_30Rnd_556x45_Mk318",nil,600],
+							["RH_Hk416s",nil,185000],
+							["RH_30Rnd_556x45_M855A1",nil,6000],
+							["RH_30Rnd_556x45_Mk262",nil,6000],
+							["RH_30Rnd_556x45_Mk318",nil,6000],
 							
 	                        //visire/aufsätze
 							["RH_M6X",nil,2000],							
@@ -734,43 +734,43 @@ switch(_shop) do
 				{
 					["Kaels Firearms",
 						[
-							["KPFS_HKP7",nil,1250],
-							["KPFS_8Rnd_9x19_PARA",nil,120],
+							["KPFS_HKP7",nil,12500],
+							["KPFS_8Rnd_9x19_PARA",nil,1200],
 
-							["KPFS_Mauser_Hsc",nil,1450],
-							["kpfs_8Rnd_765x17_PP",nil,120],
+							["KPFS_Mauser_Hsc",nil,14500],
+							["kpfs_8Rnd_765x17_PP",nil,1200],
 
-							["KPFS_Walther_M9",nil,1550],
-							["kpfs_6Rnd_635x15",nil,120],
+							["KPFS_Walther_M9",nil,15500],
+							["kpfs_6Rnd_635x15",nil,1200],
 
-							["KPFS_P99",nil,1600],
-							["KPFS_15rnd_9x19_P99",nil,125],
+							["KPFS_P99",nil,16000],
+							["KPFS_15rnd_9x19_P99",nil,1250],
 
-							["RH_g17",nil,1750],
-							["RH_g19",nil,1850],
-							["RH_g19t",nil,1850],
-							["RH_17Rnd_9x19_g17",nil,120],
+							["RH_g17",nil,17500],
+							["RH_g19",nil,18500],
+							["RH_g19t",nil,18500],
+							["RH_17Rnd_9x19_g17",nil,1200],
 
-							["RH_m9",nil,1800],
-							["RH_15Rnd_9x19_M9",nil,120],
+							["RH_m9",nil,18000],
+							["RH_15Rnd_9x19_M9",nil,1020],
 
-							["RH_sw659",nil,1950],
-							["RH_14Rnd_9x19_sw",nil,150],
+							["RH_sw659",nil,19500],
+							["RH_14Rnd_9x19_sw",nil,1500],
 							
 							["RH_usp",nil,15000],
-							["RH_12Rnd_45cal_usp",nil,200],							
+							["RH_12Rnd_45cal_usp",nil,1200],							
 
 							["hgun_Rook40_F",nil,3350],
-							["16Rnd_9x21_Mag",nil,125],
+							["16Rnd_9x21_Mag",nil,1025],
 							
 							["hgun_P07_F",nil,3350],
-							["16Rnd_9x21_Mag",nil,125],
+							["16Rnd_9x21_Mag",nil,1025],
 							
 							["RH_gsh18",nil,5150],
-							["RH_18Rnd_9x19_gsh",nil,195],
+							["RH_18Rnd_9x19_gsh",nil,1905],
 							
 							["RH_kimber",nil,30500],
-							["RH_7Rnd_45cal_m1911",nil,275]                                            
+							["RH_7Rnd_45cal_m1911",nil,2750]                                            
 						]
 					];
 				};
@@ -787,11 +787,11 @@ switch(_shop) do
 				{
 					["Hunting Shop",
 						[
-							["A3L_CZ550",nil,17500],
-							["A3L_CZ550mag",nil,5],
+							["A3L_CZ550",nil,27500],
+							["A3L_CZ550mag",nil,150],
 							["A3L_CZ550Scope",nil,12500],
-							["arifle_SDAR_F","Turtle ONLY SDAR",1000],
-							["20Rnd_556x45_UW_mag","Underwater magazine",120]
+							["arifle_SDAR_F","Turtle ONLY SDAR",36000],
+							["20Rnd_556x45_UW_mag","Underwater magazine",1200]
 						]
 					];
 				};
