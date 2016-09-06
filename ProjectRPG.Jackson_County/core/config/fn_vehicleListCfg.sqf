@@ -77,7 +77,7 @@ switch (_shop) do
 			_return pushBack ["prpg_06Victoria_EMS",25000];
 			_return pushBack ["prpg_09Tahoe_slfd",25000];
 			_return pushBack ["prpg_12Charger_slfd",25000];
-			_return pushBack ["prpg_charger_slfd",25000];
+			// umskinnen _return pushBack ["prpg_charger_slfd",25000];
 			_return pushBack ["vvv_fire_truck",25000];
 			_return pushBack ["prpg_12M5_EMS", 25000];
 			
@@ -99,10 +99,7 @@ switch (_shop) do
 			    _return pushBack ["cg_evoems2",20000];
 			    _return pushBack ["cg_evoems3",20000];
 		        };
-			if(__GETC__(life_mediclevel) > 0) then
-		       {
-				_return pushBack ["AM_Holden_RFA",25000];
-		        };
+			
 	};
 	case "med_air_hs": {
 		_return = 
@@ -376,9 +373,7 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["AM_2015C_Black",210000],
-			["AM_2015C_blue",210000],
-			["AM_2015C_white",210000],
+			
 			["ADM_General_Lee",210000],
 
 			["cg_dodge_charger_2015_noir",259000],
@@ -393,14 +388,7 @@ switch (_shop) do
 			["cg_dodge_charger_2015_jaune",259000],
 			["cg_dodge_charger_2015_rouge",259000],
 			["cg_dodge_charger_2015_jaune",259000],
-			["cg_dodge_charger_2015_rouge",259000],
-			
-            ["A3L_ChallengerWhite",300000],
-            ["A3L_ChallengerRed",300000],
-            ["A3L_ChallengerBlack",300000],
-            ["A3L_ChallengerBlue",300000],
-            ["A3L_ChallengerGreen",300000],
-            ["A3L_Challenger",300000]
+			["cg_dodge_charger_2015_rouge",259000]
 		   
 		];
 	};
@@ -557,27 +545,27 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["cg_volkswagen_touareg_noir",60000],
-			["cg_volkswagen_touareg_violet",60000],
-			["cg_volkswagen_touareg_rose",60000],
-			["cg_volkswagen_touareg_orange",60000],
-			["cg_volkswagen_touareg_grise",60000],
-			["cg_volkswagen_touareg_vert",60000],
-			["cg_volkswagen_touareg_bleufonce",60000],
-			["cg_volkswagen_touareg_bleu",60000],
-			["cg_volkswagen_touareg_white",60000],
-			["cg_volkswagen_touareg_jaune",60000],
+			["cg_volkswagen_touareg_noir",300000],
+			["cg_volkswagen_touareg_violet",300000],
+			["cg_volkswagen_touareg_rose",300000],
+			["cg_volkswagen_touareg_orange",300000],
+			["cg_volkswagen_touareg_grise",300000],
+			["cg_volkswagen_touareg_vert",300000],
+			["cg_volkswagen_touareg_bleufonce",300000],
+			["cg_volkswagen_touareg_bleu",300000],
+			["cg_volkswagen_touareg_white",300000],
+			["cg_volkswagen_touareg_jaune",300000],
 
-			["cg_vw_golfvi_noir",60000],
-			["cg_vw_golfvi_violet",60000],
-			["cg_vw_golfvi_rose",60000],
-			["cg_vw_golfvi_orange",60000],
-			["cg_vw_golfvi_grise",60000],
-			["cg_vw_golfvi_vert",60000],
-			["cg_vw_golfvi_bleufonce",60000],
-			["cg_vw_golfvi_bleu",60000],
-			["cg_vw_golfvi_white",60000],
-			["cg_vw_golfvi_jaune",60000]	
+			["cg_vw_golfvi_noir",160000],
+			["cg_vw_golfvi_violet",160000],
+			["cg_vw_golfvi_rose",160000],
+			["cg_vw_golfvi_orange",160000],
+			["cg_vw_golfvi_grise",160000],
+			["cg_vw_golfvi_vert",160000],
+			["cg_vw_golfvi_bleufonce",160000],
+			["cg_vw_golfvi_bleu",160000],
+			["cg_vw_golfvi_white",160000],
+			["cg_vw_golfvi_jaune",160000]	
 			
 		];
 	};
@@ -716,41 +704,41 @@ switch (_shop) do
 		[
 			["CG_Taxi",11110],
 
-			["critgamin_smart_civ",18000],
-			["critgamin_smart_bleu",18000],
-			["critgamin_smart_noir",18000],
-			["critgamin_smart_bleufonce",18000],
-			["critgamin_smart_rouge",18000],
-			["critgamin_smart_jaune",18000],
-			["critgamin_smart_rose",18000],
-			["critgamin_smart_grise",18000],
-			["critgamin_smart_violet",18000],
-			["critgamin_smart_orange",18000],
-			["critgamin_smart_vert",18000],
+			["critgamin_smart_civ",110000],
+			["critgamin_smart_bleu",110000],
+			["critgamin_smart_noir",110000],
+			["critgamin_smart_bleufonce",110000],
+			["critgamin_smart_rouge",110000],
+			["critgamin_smart_jaune",110000],
+			["critgamin_smart_rose",110000],
+			["critgamin_smart_grise",110000],
+			["critgamin_smart_violet",110000],
+			["critgamin_smart_orange",110000],
+			["critgamin_smart_vert",110000],
  
-			["critgamin_contown_civ",18000],
-			["critgamin_contown_bleu",18000],
-			["critgamin_contown_noir",18000],
-			["critgamin_contown_bleufonce",18000],
-			["critgamin_contown_rouge",18000],
-			["critgamin_contown_jaune",18000],
-			["critgamin_contown_rose",18000],
-			["critgamin_contown_grise",18000],
-			["critgamin_contown_violet",18000],
-			["critgamin_contown_jaune",18000],
-			["critgamin_contown_orange",18000],			
-			["critgamin_contown_vert",18000],
+			["critgamin_contown_civ",110000],
+			["critgamin_contown_bleu",110000],
+			["critgamin_contown_noir",110000],
+			["critgamin_contown_bleufonce",110000],
+			["critgamin_contown_rouge",110000],
+			["critgamin_contown_jaune",110000],
+			["critgamin_contown_rose",110000],
+			["critgamin_contown_grise",110000],
+			["critgamin_contown_violet",110000],
+			["critgamin_contown_jaune",110000],
+			["critgamin_contown_orange",110000],			
+			["critgamin_contown_vert",110000],
 
-			["critgamin_vangmcc_civ_noir",18000],
-			["critgamin_vangmcc_civ_bleufonce",18000],
-			["critgamin_vangmcc_civ_bleu",18000],
-			["critgamin_vangmcc_civ_vert",18000],
-			["critgamin_vangmcc_civ_rouge",18000],
-			["critgamin_vangmcc_civ_jaune",18000],
-			["critgamin_vangmcc_civ_rose",18000],
-			["critgamin_vangmcc_civ_grise",18000],
-			["critgamin_vangmcc_civ_violet",18000],
-			["critgamin_vangmcc_civ_orange",18000],
+			["critgamin_vangmcc_civ_noir",250000],
+			["critgamin_vangmcc_civ_bleufonce",250000],
+			["critgamin_vangmcc_civ_bleu",250000],
+			["critgamin_vangmcc_civ_vert",250000],
+			["critgamin_vangmcc_civ_rouge",250000],
+			["critgamin_vangmcc_civ_jaune",250000],
+			["critgamin_vangmcc_civ_rose",250000],
+			["critgamin_vangmcc_civ_grise",250000],
+			["critgamin_vangmcc_civ_violet",250000],
+			["critgamin_vangmcc_civ_orange",250000],
 
 
 			["cg_renault_twingo_noir",49000],
@@ -766,14 +754,14 @@ switch (_shop) do
 			["cg_renault_twingo_rouge",49000],
 
 
-			["Mrshounka_Alfa_Romeo_bleufonce",85000],
-			["Mrshounka_Alfa_Romeo_grise",85000],
-			["Mrshounka_Alfa_Romeo_jaune",85000],
-			["Mrshounka_Alfa_Romeo_noir",85000],
-			["Mrshounka_Alfa_Romeo_orange",85000],
-			["Mrshounka_Alfa_Romeo_rose",85000],
-			["Mrshounka_Alfa_Romeo_rouge",85000],
-			["Mrshounka_Alfa_Romeo_violet",85000],
+			["Mrshounka_Alfa_Romeo_bleufonce",150000],
+			["Mrshounka_Alfa_Romeo_grise",150000],
+			["Mrshounka_Alfa_Romeo_jaune",150000],
+			["Mrshounka_Alfa_Romeo_noir",150000],
+			["Mrshounka_Alfa_Romeo_orange",150000],
+			["Mrshounka_Alfa_Romeo_rose",150000],
+			["Mrshounka_Alfa_Romeo_rouge",150000],
+			["Mrshounka_Alfa_Romeo_violet",150000],
 
 			["S_Rangerover_Black",85000],
 			["S_Rangerover_Red",85000],
@@ -1180,11 +1168,11 @@ switch (_shop) do
 		[
 			["C_Rubberboat",20000],
 			["CUP_B_Zodiac_USMC",40000],
-			["C_Boat_Civil_01_F",125000],
 			["CUP_C_Fishing_Boat_Chernarus",150000],
 			["A3L_Ship",400000],
 			["A3L_Jetski",50000],
-			["A3L_Jetski_yellow",50000]
+			["A3L_Jetski_yellow",50000],
+			["A3L_SpeedYacht",1500000]
 		];
 	};
 	case "cop_ship":
