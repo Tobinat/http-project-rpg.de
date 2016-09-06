@@ -21,7 +21,7 @@ switch (_side) do
 			["cop_spawn_2","HQ Morrison","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
 			["cop_spawn_3","HQ Los Diablos","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
 			["cop_spawn_4","Airbase HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_5","LS County Jail","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["cop_spawn_5","SL County Jail","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
 	};
 
@@ -30,8 +30,8 @@ switch (_side) do
 
 		if(!license_civ_rebel) then {
 			_return = [
-				["civ_spawn_1","LS OldTown","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["lakeside_spawn_2","LS McDonalds","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_1","SL OldTown","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["lakeside_spawn_2","SL McDonalds","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				//["lakeside_spawn_3","LS Race","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -57,8 +57,8 @@ switch (_side) do
 				["reb_spawn_1","Rebel 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["reb_spawn_2","Rebel 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_1","LD Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_2","LD Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_1","SL Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_2","SL Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -81,8 +81,8 @@ switch (_side) do
 
 			_return = [
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_1","LD Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_2","LD Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_1","SL Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_2","SL Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -140,8 +140,8 @@ switch (_side) do
 		
 		if(license_civ_doj) then {
 			_return = [
-				["civ_spawn_1","LS OldTown","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["lakeside_spawn_2","LS McDonalds","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_1","SL OldTown","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["lakeside_spawn_2","SL McDonalds","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -190,8 +190,8 @@ switch (_side) do
 				["reb_spawn_1","Rebel 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["reb_spawn_2","Rebel 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_1","LD Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_2","LD Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_1","SL Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_2","SL Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -214,8 +214,8 @@ switch (_side) do
 
 			_return = [
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_1","LD Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_2","LD Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_1","SL Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_2","SL Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -242,8 +242,8 @@ switch (_side) do
 				["reb_spawn_1","Rebel 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["reb_spawn_2","Rebel 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_1","LD Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["ld_spawn_2","LD Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_1","SL Flughafen","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["ld_spawn_2","SL Hospital","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -291,11 +291,11 @@ switch (_side) do
 	
 	case independent: {
 		_return = [
-			["medic_spawn_2","LS Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_2","SL Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			//["medic_spawn_4","R.F.A Baustelle","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],			
 			["medic_spawn_3","Los Diablos","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_1","Morrison","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["RFA_car_1","R.F.A","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_1","Morrison","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			//["RFA_car_1","R.F.A","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		
 		
 		
