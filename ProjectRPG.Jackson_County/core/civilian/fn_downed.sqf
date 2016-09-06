@@ -10,7 +10,9 @@ params [["_unit", objNull, [objNull]], ["_shooter", objNull, [objNull]], ["_dist
 
 //50% chance of failure
 _chance = round (random 100); 
-if(_chance < 30) exitwith {};
+if(_chance < 30) exitwith {
+ 	["Remove",0.05] call fnc_doHealth;
+};
 
 if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_isdowned = false;};
 _ui = uiNameSpace getVariable ["playerHUD",displayNull];

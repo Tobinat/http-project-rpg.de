@@ -8,7 +8,7 @@
 params [["_item", "", [""]], ["_bool", false, [false]], ["_ispack", false, [false]], ["_ongun", false, [false]], ["_override", false, [false]], ["_toUniform", false, [false]], ["_toVest", false, [false]], ["_preview", false, [true]],
 "_details", "_items", "_isgun", "_acecheck"];
 
-_acecheck = ["ACE_tourniquet","ACE_quikclot","ACE_elasticBandage","ACE_morphine","ACE_epinephrine","ACE_surgicalKit","ACE_bodyBag","ACE_bloodIV_500","ACE_bloodIV_250","ACE_salineIV_500","ACE_salineIV_250","ACE_plasmaIV_500","ACE_plasmaIV_250","ACE_personalAidKit","ACE_fieldDressing","ACE_atropine","ACE_EarPlugs","ACE_packingBandage"];
+_acecheck = ["ACE_tourniquet","ACE_quikclot","ACE_elasticBandage","ACE_morphine","ACE_epinephrine","ACE_surgicalKit","ACE_bodyBag","ACE_bloodIV_500","ACE_bloodIV_250","ACE_salineIV_500","ACE_salineIV_250","ACE_plasmaIV_500","ACE_plasmaIV_250","ACE_personalAidKit","ACE_fieldDressing","ACE_atropine","ACE_EarPlugs"];
 
 
 

@@ -45,6 +45,9 @@ while {life_pizza > 0} do {
 
 	uiSleep 7;
 	life_pizza = life_pizza - 7;
+	if(!im_hurt) then {
+		["Add",0.05] call fnc_doHealth;
+	};
 };
 
 

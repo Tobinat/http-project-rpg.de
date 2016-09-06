@@ -11,4 +11,6 @@ _koildebs = player getVariable ["EMSON", 2];
 if(_koildebs == 1) exitWith {};
 
 if(_shooter isKindOf "Man" && !deadPlayer) then
-{};
+{
+	["Remove",0.015] call fnc_doHealth;
+};

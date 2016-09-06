@@ -11,10 +11,10 @@ _shop = _this select 0;
 switch (_shop) do
 {
 	case "phones": {["Phones",["nos"]]};
-	case "market": {["Market",["medkit","condom","tierope","bec","cigarette","lockpick","fuelF","boltcutter","storagesmall","storagebig"]]};
+	case "market": {["Market",["medkit","condom","bandage","tierope","bec","cigarette","lockpick","fuelF","boltcutter","storagesmall","storagebig"]]};
 	case "food": {["Market",["water","rabbit","apple","redgull","tbacon","peach"]]};
 	case "drinks": {["Drinks",["cigarette","zoobeer","zoobeer2","vodka","jagerbomb","absinthe","redwine","whiterussian","sexonthebeach","tequila","jackdanielsandcoke","Rax's Rum","water","redgull"]]};
-	case "rebel": {["Rebel Market",["tierope","RoadBlockConc","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","hackingtool","tracker"]]};
+	case "rebel": {["Rebel Market",["tierope","bandage","RoadBlockConc","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","hackingtool","tracker"]]};
 	case "gang": {["Gang Market", ["bandage","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
 	case "coffee": {["Starbugz Coffee Club",["coffee"]]};
@@ -32,7 +32,7 @@ switch (_shop) do
 	case "donuts": {["Dunkin's Bronuts",["donuts","coffee","water","redgull"]]};
 	case "cement": {["Cement Dealer",["cement"]]};
 	case "gold": {["Gold Buyer",["goldbar"]]};
-	case "ems": {["EMS Item Shop",["panicbutton","coffee","donuts","bec","water","rabbit","apple","redgull","tbacon","peach","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB","fuelF"]]};
+	case "ems": {["EMS Item Shop",["airkit","panicbutton","coffee","donuts","bec","water","rabbit","apple","redgull","tbacon","peach","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB","bandage","fuelF"]]};
 	case "butcher": {["Bob's Flesh'n Besh",["Raw Meat"]]};
 	case "gummi": {["Gummi Händler",["gummip"]]};
 };

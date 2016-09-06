@@ -572,7 +572,7 @@ class CfgNotifications
 {
 	class MedicalRequestEmerg
 	{
-		title = "SLFD Notruf";
+		title = "RFA Notruf";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%1";
 		duration = 5;

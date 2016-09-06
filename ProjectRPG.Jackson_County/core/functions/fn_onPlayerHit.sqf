@@ -17,6 +17,7 @@ if(!isNull _source) then {
 			};
 			_speed = round speed _source;
 			_speed = _speed / 120;
+			["Remove",_speed] call fnc_doHealth;
 			_penis = true;
 		};
 
@@ -32,6 +33,7 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["prpl_benelli_14_pgs_rail"] && side _source == west) exitwith {
+			["Remove",0.15,_source] call fnc_doHealth;
 			if(!life_isdowned && vehicle player == player) then {
 				_dist = _source distance player;
 				[_unit,_source,_dist] spawn life_fnc_downed;
@@ -40,6 +42,7 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["Taser_26"] && side _source == west) exitwith {
+			["Remove",0.1,_source] call fnc_doHealth;
 			[_unit,_source] spawn life_fnc_tazed;
 			_penis = true;
 		};
@@ -55,5 +58,6 @@ if(_source == _unit) then { _damage = _damage * 10; };
 
 if(_penis) exitwith { false };
 
+["Remove",_damage,_source] call fnc_doHealth;
 
 false

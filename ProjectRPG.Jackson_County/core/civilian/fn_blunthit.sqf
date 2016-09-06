@@ -12,6 +12,9 @@ if(_koildebs == 1) exitWith {};
 
 if(_shooter isKindOf "Man" && !deadPlayer) then
 {
+	
+["Remove",0.005] call fnc_doHealth;
+
 	if(!life_istazed) then
 	{
 		[] spawn KK_fnc_forceRagdoll;

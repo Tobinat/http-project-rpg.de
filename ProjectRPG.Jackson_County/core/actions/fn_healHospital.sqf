@@ -5,15 +5,13 @@
 	Description:
 	Doesn't matter, will be revised later.
 */
-_medicsOnline = {_x != player && {side _x == independent}} count playableUnits > 0;
 
-if(_medicsOnline) exitWith {["Es sind noch andere Ärtzte da! Ich bin aktuell zu beschäftigt", false] spawn domsg;};
 if(cash_in_hand < 10) exitWith {[format[localize "STR_NOTF_HS_NoCash",10], false] spawn domsg;};
 [localize "STR_NOTF_HS_Healing", false] spawn domsg;
 uiSleep 8;
 if(player distance (_this select 0) > 5) exitWith {[localize "STR_NOTF_HS_ToFar", false] spawn domsg;};
 [localize "STR_NOTF_HS_Healed", false] spawn domsg;
-[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
+["Set",0] call fnc_doHealth;
 
 _price = 10;
 
@@ -25,7 +23,16 @@ _price = 10;
 		_discountper = _mydiscount * 100;
 		[format["You received a %%1 discount due to your reputation level!",_discountper], false] spawn domsg;
 	};
-	
+
+
 	["cash","take",_price] call life_fnc_handleCash;
 
+{
+	if(player getVariable [_x, 1] != 1) then
+	{
+		player setVariable [_x, 1, true];
+	};
+} foreach life_injuries;
+
 player forceWalk false;
+player setVariable["severeInjuries", nil, true];

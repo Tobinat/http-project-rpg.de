@@ -60,4 +60,6 @@ if(!isNull _source) then {
 
 if( vehicle player != player && vehicle _source != _source && _source == _unit ) then { _damage = _damage / 5; };
 
+["Remove",_damage,_source] call fnc_doHealth;
+
 false
