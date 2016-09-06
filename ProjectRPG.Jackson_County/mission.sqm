@@ -149,7 +149,6 @@ addons[]=
 	"CG_Roads",
 	"buildingCommercial2_F",
 	"buildingGunStore1_F",
-	"E76_sidewalk",
 	"A3_Structures_F_EPC_Civ_Tourism",
 	"mm_bank",
 	"Orel_Objects",
@@ -35756,7 +35755,7 @@ class Mission
 				init="this enableSimulation true; this allowDamage false;this setdir 9.99665;this setposATL [8768.910156,6751.0625,0];this setVectorUp [0,0,1]";
 			};
 			id=19193;
-			type="sidewalk_city_25S";
+			type="CG_Roads_parkinglot_6";
 			atlOffset=1.0100708;
 		};
 		class Item1888
