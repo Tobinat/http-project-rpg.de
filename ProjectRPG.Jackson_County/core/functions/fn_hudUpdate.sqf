@@ -776,5 +776,5 @@ hud_fnc_loop =
 	};
 	if(isNil "fnc_totalpain") exitWith {};
 	[] spawn fnc_totalpain;
+	*/
 };
-*/
