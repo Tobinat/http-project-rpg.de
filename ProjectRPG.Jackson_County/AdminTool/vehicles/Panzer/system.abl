@@ -26,6 +26,7 @@ if(!(_uid in _admins)) exitWith {hint "Lass das! Du bist nicht berechtigt!";};
 			[true] call life_fnc_sessionUpdate;
 			[] call life_fnc_hudUpdate;
 			[] call life_fnc_healself;
+			[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
 			hint "Healed";
 			break;
 			};

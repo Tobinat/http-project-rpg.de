@@ -15,10 +15,10 @@ if(visibleMap) then {
 
 	{
 		_name = _x getVariable "name";
-		_down = _x getVariable ["Revive",false];
+		_down = _x getVariable ["ACE_isUnconscious",false];
 		_pid = _x getVariable["steam64ID",""];
 		if(side _x == independent || side _x == west) then {_medmark pushBack _x};
-		if(!isNil "_name" && !_down && _pid != "" && (_x getVariable["mapVisible",FALSE])) then {
+		if((_x getVariable["mapVisible",FALSE])) then {
 			_units pushBack _x;
 		};
 	} foreach PlayableUnits;
@@ -39,7 +39,7 @@ if(visibleMap) then {
 		_marker = createMarkerLocal [format["%1_dead_marker",_x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorRed";
 		_marker setMarkerTypeLocal "loc_Hospital";
-		_marker setMarkerTextLocal format["%1 | Injury Priority: %2",(_x getVariable["name","Unknown Player"]), (_x getvariable "severity")];
+		_marker setMarkerTextLocal format["%1 | Injury Priority: %2",(_x getVariable["realname",name _x]), (_x getvariable "severity")];
 		_markers pushBack [_marker,_x];
 	} foreach _units;
 
