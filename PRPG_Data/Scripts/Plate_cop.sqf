@@ -29,8 +29,8 @@ waitUntil {!(isNil {_this getVariable "plate7"})};
 _plate7 = _this getVariable "plate7";
 
 _this setObjectTexture [4, "\PRPG_Data\plates\D.paa"];
-_this setObjectTexture [1, format ["\PRPG_Data\plates\L.paa",_plate1]];
-_this setObjectTexture [2, format ["\PRPG_Data\plates\V.paa",_plate2]];
+_this setObjectTexture [1, format ["\PRPG_Data\plates\S.paa",_plate1]];
+_this setObjectTexture [2, format ["\PRPG_Data\plates\L.paa",_plate2]];
 _this setObjectTexture [3, format ["\PRPG_Data\plates\P.paa",_plate3]];
 _this setObjectTexture [5, format ["\PRPG_Data\plates\-.paa",_plate5]];
 _this setObjectTexture [6, format ["\PRPG_Data\plates\%1.paa",_plate6]];
