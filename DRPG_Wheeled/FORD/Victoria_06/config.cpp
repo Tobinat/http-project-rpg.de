@@ -23,6 +23,23 @@ class WeaponCloudsGun;
 class WeaponFireMGun;
 class WeaponCloudsMGun;
 class CfgVehicles
+class CfgSounds {
+	sounds[] = {"pullover_1"};
+	
+	class pullover_1 {
+		name = "Pullover1";
+		sound[] = {"DRPG_Wheeled\pullover1.ogg", 1, 1};
+		titles[] = {};
+	};
+class cfgWeapons {
+	class SportCarHorn;	// External class reference
+	
+	class pullover_1 : SportCarHorn {
+		displayname = "Pull Over !";
+		reloadTime = 0.891;
+		scope = public;
+		drySound[] = {"DRPG_Wheeled\pullover1.ogg", 1, 1};
+	};
 {
 	class Car;
 	class Car_F: Car
@@ -1029,21 +1046,6 @@ class CfgVehicles
 		model = "\DRPG_Wheeled\FORD\Victoria_06\DRPG_Victoria_06_P_P";
 		hiddenSelectionsTextures[] = {"DRPG_Wheeled\FORD\Victoria_06\LIVERY\06Victoria_Traffic.paa"};
 	};
-	class prpg_06Victoria_EMS: DRPG_06Victoria_P_P
-	{
-		scope = private;
-		crew = "C_man_1";
-		side = 3;
-		faction = "CIV_F";
-		vehicleClass = "DRPG_Police";
-		displayName = "2006 Ford Crown Victoria TPV";
-		model = "\DRPG_Wheeled\FORD\Victoria_06\DRPG_Victoria_06_P_P";
-		hiddenSelectionsTextures[] = {"DRPG_Wheeled\FORD\Victoria_06\LIVERY\06Victoria_EMS.paa"};
-	
-	};
-	
-	
-	
 	class DRPG_06Victoria_P_R: DRPG_06Victoria_Base
 	{
 		scope = 2;
@@ -1263,7 +1265,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class prpg_06Victoria_EM: DRPG_06Victoria_Base
+	class DRPG_06Victoria_EMS: DRPG_06Victoria_Base
 	{
 		scope = 2;
 		crew = "C_man_1";
