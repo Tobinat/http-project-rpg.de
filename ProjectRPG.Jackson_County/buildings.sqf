@@ -1,4 +1,4 @@
-_markername="hospital2";
+/* _markername="hospital2";
 _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects; 
 
@@ -68,3 +68,4 @@ _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkers
 {hideObjectGlobal _x} foreach _terrainobjects; 
 
 
+ */
