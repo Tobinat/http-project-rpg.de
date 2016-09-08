@@ -16,5 +16,13 @@ if(side _caller isEqualTo civilian || side _caller isEqualTo east) then {
 } else {
 	["mdofficer", false] remoteExec ["fnc_dispatch",independent];	
 };
-_caller setVariable["mapVisible",true,true];
+//_caller setVariable["mapVisible",true,true];
+
+_caller = createMarkerLocal [format["%1_dead_marker",_x],visiblePosition _x];
+_caller setMarkerColorLocal "ColorRed";
+_caller setMarkerTypeLocal "loc_Hospital";
+_caller setMarkerTextLocal format["%1 | Injury Priority: %2",(_x getVariable["name","Unknown Player"]), (_x getvariable "severity")];
+_markers pushBack [_caller,_x];
+
+
 ["MedicalRequestEmerg",[format[localize "STR_Medic_Request",_callerName]]] call BIS_fnc_showNotification;

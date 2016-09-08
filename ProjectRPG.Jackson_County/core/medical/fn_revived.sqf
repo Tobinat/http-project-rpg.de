@@ -14,7 +14,7 @@ _status = param [1,"Normal",[""]];
 if(_status == "CPR" && shooting_death) then { hint "Ein Spieler versucht dich zu stabilisieren."; life_respawn_timer = life_respawn_timer + 60; } else {
 
 
-	player setVariable["life_unconscious",nil,TRUE];
+	player setVariable["dead",nil,TRUE];
 	player setVariable["mapVisible",nil,true];
 	player setVariable["playerHealth", 0.2, true];
 	player setVariable["Revive",TRUE,TRUE];
