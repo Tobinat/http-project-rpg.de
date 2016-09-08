@@ -1229,56 +1229,56 @@ fnc_hotel_fire = {
 };
 
 fnc_air_fire = {
-["NEWS: Brandmelder am Flughafen hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [9294.25,9095.79,2.00144];
+["NEWS: Brandmelder am Flughafen in Narkis Airfield hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [3822.85,1044.6,2.00144];
 	[] spawn fnc_startfire;
 };
 
 fnc_hafen_fire = {
-["NEWS: Brandmelder am Hafen hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [7962.79,5998.06,1.99108];
+["NEWS: Brandmelder am Hafen in Kings Watch hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [649.158,732.783,1.99108];
 	[] spawn fnc_startfire;
 };
 
 fnc_buro_fire = {
-["NEWS: Brandmelder im Büro in Morrison hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [5089.76,2539.04,2.00144];
+["NEWS: Brandmelder im Büro in Rajon End hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [956.12,7805.66,2.00144];
 	[] spawn fnc_startfire;
 };
 
 fnc_autoladen_fire = {
-["NEWS: Brandmelder im Autohaus in Morrison hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [4935.42,2990.08,2.00144];
+["NEWS: Brandmelder im Autohaus in Oakheart hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [1403.11,2530.96,2.00144];
 	[] spawn fnc_startfire;
 };
 
 fnc_rasthof_fire = {
-["NEWS: Brandmelder am Rasthof hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [3560.32,4499.95,0.1];
+["NEWS: Brandmelder am Rasthof in Morrison North hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [6698.88,4582.41,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_tanke_fire = {
-["NEWS: Brandmelder an der Tankstelle hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [4117.38,6504.61,0.1];
+["NEWS: Brandmelder an der Tankstelle in Silver Lake North hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [8140.88,2713.52,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_diablos_fire = {
-["NEWS: Brandmelder Autohaus in Los Diablos hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [3529.81,7539.86,8.40134];
+["NEWS: Brandmelder Autohaus in Colchester hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [8741.22,6865.11,8.40134];
 	[] spawn fnc_startfire;
 };
 
 fnc_konti_fire = {
-["NEWS: Brandmelder im Industriegebiet in Los Diablos hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [3471.6,7753.09,0.1];
+["NEWS: Brandmelder im Industriegebiet in Silver Lakes hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [1360.78,9103.78,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_industrie_fire = {
-["NEWS: Brandmelder im Industriegebiet in Silver Lake hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [8546.31,6338.99,0.1];
+["NEWS: Brandmelder im Industriegebiet im Avalon Amusement Park hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [9581.2,8902.56,0.1];
 	[] spawn fnc_startfire;
 };
 
@@ -1286,39 +1286,39 @@ fnc_industrie_fire = {
 
 
 fnc_park_fire = {
-["NEWS: Brandmelder im Park hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [8600.51,6760.98,0.1];
+["NEWS: Ein Bewohner im Kungla Trailer Park hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [6921.4,5954.95,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_shop_fire = {
-["NEWS: Brandmelder auf der Park Ave hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [8721.76,6829.31,0.1];
+["NEWS: Brandmelder bei Deathfall Graveyard hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [2850.19,2172.3,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_jagd_fire = {
-["NEWS: Das Jagdgebiet steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [6594.68,6015.15,0.1];
+["NEWS: Die Deathfall Factory steht unter Flammen!", false] spawn domsg;
+	fire_loc1 = [2876.32,1360.11,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_mais_fire = {
-["NEWS: Die Mais Farm steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [3013.25,8445.73,0.1];
+["NEWS: Der Brandmelder bei Kangs Scrapyard hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [1035.23,3546.53,0.1];
 	[] spawn fnc_startfire;
 };
 
 
 fnc_chop_fire = {
-["NEWS: Der Chop Shop steht unter Flammen!", false] spawn domsg;
-	fire_loc1 = [6118,9388.23,0.1];
+["NEWS: Die Skystead Farm steht unter Flammen!", false] spawn domsg;
+	fire_loc1 = [1092.74,4586.9,0.1];
 	[] spawn fnc_startfire;
 };
 
 fnc_hot_fire = {
-["NEWS: Brandmelder auf der 8th Street hat Alarm geschlagen!", false] spawn domsg;
-	fire_loc1 = [8522.02,6647.4,2.00144];
+["NEWS: Brandmelder in Clover City hat Alarm geschlagen!", false] spawn domsg;
+	fire_loc1 = [2569.55,7563.35,2.00144];
 	[] spawn fnc_startfire;
 };
 
