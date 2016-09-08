@@ -21,6 +21,47 @@ class CfgPatches
 class WeaponFireGun;
 class WeaponCloudsGun;
 class WeaponFireMGun;
+class CfgSounds {
+	sounds[] = {"pullover_1","stopnow_1","cleararea_1"};
+	
+	class pullover_1 {
+		name = "Pullover1";
+		sound[] = {"DRPG_Wheeled\pullover1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class stopnow_1 {
+		name = "stopnow1";
+		sound[] = {"DRPG_Wheeled\pullover1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class cleararea_1 {
+		name = "cleararea1";
+		sound[] = {"DRPG_Wheeled\pullover1.ogg", 1, 1};
+		titles[] = {};
+	};
+}
+class cfgWeapons {
+	class SportCarHorn;	// External class reference
+	
+	class pullover_1 : SportCarHorn {
+		displayname = "Pull Over !";
+		reloadTime = 0.891;
+		scope = public;
+		drySound[] = {"DRPG_Wheeled\pullover1.ogg", 1, 1};
+	};
+	class stopnow_1 : SportCarHorn {
+		displayname = "Stop Now !";
+		reloadTime = 0.891;
+		scope = public;
+		drySound[] = {"DRPG_Wheeled\stopnow1.ogg", 1, 1};
+	};
+	class cleararea_1 : SportCarHorn {
+		displayname = "Clear Area !";
+		reloadTime = 0.891;
+		scope = public;
+		drySound[] = {"DRPG_Wheeled\cleararea1.ogg", 1, 1};
+	};
+}
 class WeaponCloudsMGun;
 class CfgVehicles
 {
@@ -853,7 +894,7 @@ class CfgVehicles
 		displayName = "BMW POLICE";
 		model = "\DRPG_Wheeled\BMW\M5_12\DRPG_M5_12_P_P";
 		vehicleClass = "DRPG_Police";
-		weapons[] = {"airhorn","Yelp","Whelen_Manual","Whelen_Howler","Whelen_Takedown","takedown2"};
+		weapons[] = {"airhorn","Yelp","Whelen_Manual","Whelen_Howler","Whelen_Takedown","pullover_1","stopnow_1","cleararea_1","takedown2"};
 		hiddenSelections[] = {"camo1","plate1","plate2","plate3","plate4","plate5","plate6","plate7","SPD_1","SPD_2","SPD_3","LF_1","LF_2","LF_3","UNIT_1","UNIT_2","UNIT_3"};
 		hiddenSelectionsTextures[] = {"\DRPG_Wheeled\BMW\M5_12\LIVERY\12M5_Police.paa"};
 		class eventhandlers
