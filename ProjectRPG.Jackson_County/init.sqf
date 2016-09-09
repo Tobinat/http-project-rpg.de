@@ -27,12 +27,12 @@ player setVariable["loaded", false, true];
 PRPG_MissionPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;
 
 
-0 setWaves 0.00;
-0 setFog 0.00;
-0 setRain 0.00;
-0 setOvercast 0.00;
-0 setRainbow 0.00;
-0 setLightnings 0.00;
-setTerrainGrid 50;
+// 0 setWaves 0.00;
+// 0 setFog 0.00;
+// 0 setRain 0.00;
+// 0 setOvercast 0.00;
+// 0 setRainbow 0.00;
+// 0 setLightnings 0.00;
+// setTerrainGrid 50;
 
 
