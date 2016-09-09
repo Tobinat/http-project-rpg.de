@@ -40,10 +40,12 @@ player createDiarySubject ["controls","Steuerung"];
 <font color='#D60000'>SHIFT + G</font><br/>Person niederschlagen (MIT WAFFE)<br/><br/>
 <font color='#D60000'>SHIFT + T</font><br/>Boxen<br/><br/>
 <font color='#D60000'>STRG + 8</font><br/>Speichern<br/><br/>
+<font color='#D60000'>SHIFT + 5</font><br/>Fahrzeugtür aus den Angeln treten!<br/><br/>
 <font color='#D60000'>WINDOWSTASTE</font><br/>Interaktionsmenü aufrufen<br/>-- Sollte WINDOWSTASTE bei dir nicht funktionieren, öffne dein ESC-Menü > Konfigurieren > Steuerung > Indiv. Steuerung > Aktionstaste 10 anders belegen.<br/><br/>
 <font color='#D60000'>WINDOWSTASTE + T</font><br/>Sammeln<br/><br/>
 <font color='#D60000'>SHIFT + 6</font><br/>Ergeben<br/><br/>
 <font color='#D60000'>WINDOWSTASTE</font><br/>Abbauen (Spitzhacke)<br/><br/>
+
 
 
 
