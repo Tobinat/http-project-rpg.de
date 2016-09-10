@@ -489,16 +489,7 @@
 		if (life_dirt > 60) then {
 			["Du fühlst dich dreckig und stinkst!", false] spawn domsg;
 		};
-		if (life_dirt > 70) then {
-				_koildebiiii = player getVariable ["diseaseon", 1];
-				if(_koildebiiii == 1) then {
-				_diseasechance =  round (random 100);
-
-				if(_diseasechance > 99) then {
-					player setVariable ["diseaseon",(round (random 7)),true];
-				};
-			};
-		};
+		if (life_dirt > 70) then {};
 		if (life_dirt == 100) then {
 			_pooplord = getFatigue player;
 			player setFatigue _pooplord + 0.01;

@@ -52,7 +52,7 @@ switch (playerSide) do
 
 		// Heli Fast Rope
 		life_actions pushBack (player addAction["Fast Rope",life_fnc_fastRope,"",99,false,false,"", ' (vehicle player) != player && !isNull (vehicle player) && (vehicle player) isKindOf "Air" && driver (vehicle player) != player && (getPos player) select 2 <= 100 && (getPos player) select 2 >= 15 && speed vehicle player < 30 && !(player getVariable["transporting",false]) ']);
-
+		/*
 		life_actions pushBack (player addAction[localize "STR_pAct_sContPlayer","","",0,false,false,"",' (player getVariable ["diseaseon", 1]) > 1 ']);
 
 		life_actions pushBack (player addAction[localize "STR_pAct_sHeatPlayer",life_fnc_sheatPlayer,"",0,false,false,"",' (player getVariable ["diseaseon", 1]) > 1 ']);
@@ -73,7 +73,7 @@ switch (playerSide) do
 		life_actions pushBack (player addAction[localize "STR_pAct_SplintSelf",life_fnc_splintSelf,"",0,false,false,"",' (player getVariable ["fractureon", 1]) > 1 ']);
 
 		life_actions pushBack (player addAction[localize "STR_pAct_EpiPenSelf",life_fnc_epipenSelf,"",0,false,false,"",' (player getVariable ["unconciouson", 1]) > 1 ']);
-
+		*/
 
 		life_actions pushBack (player addAction["<t color = '#f4a84e'>Auf die Toilette gehen</t>",life_fnc_takeashit,"",0,false,false,"",' life_poop > 80 && (isNull objectParent player) ']);
 		//place roadcones
@@ -151,7 +151,7 @@ switch (playerSide) do
 			//Untie person
 			life_actions pushBack (player addAction["Untie Person Person",life_fnc_untie,"",0,false,false,"",'
 			!isNull cursorTarget && player distance cursorTarget < 1.5 && isPlayer cursorTarget && (cursorTarget getVariable ["tied", false]) ']);
-
+/*
 			//heal system
 			life_actions pushBack (player addAction[localize "STR_pAct_NoBandagePlayer","","",0,false,false,"",'
 			!isNull cursorTarget && player distance cursorTarget < 3 && isPlayer cursorTarget && (cursorTarget getVariable ["bleedingon", 1]) == 2 ']);
@@ -164,7 +164,7 @@ switch (playerSide) do
 
 			life_actions pushBack (player addAction[localize "STR_pAct_NoEpiPenPlayer","","",0,false,false,"",'
 			!isNull cursorTarget && player distance cursorTarget < 3 && isPlayer cursorTarget && (cursorTarget getVariable ["unconciouson", 1]) == 2 ']);
-
+*/
 			//Pickup Unprocessed MDMA
 			life_actions pushBack
 			(player addAction["Pickup Unprocessed MDMA",life_fnc_pickupItem,false,0,false,false,"",
@@ -291,13 +291,13 @@ switch (playerSide) do
 		' !isNull nearestObject (screenToWorld [0.5,0.5]) && count (nearestObject (screenToWorld [0.5,0.5]) getVariable ["item",[]]) > 0 && player distance nearestObject (screenToWorld [0.5,0.5]) <= 4 && !life_action_inUse && (isNull objectParent player)']);
 
 		life_actions pushBack (player addAction["<t color='#fdff01'>Search Building</t>",life_fnc_lootHouse,"",0,false,false,"",'isNull objectParent player && (typeOf cursorTarget in["Land_u_House_Small_01_V1_F","Land_i_Stone_HouseBig_V2_F","Land_i_Stone_HouseBig_V1_F","Land_d_House_Small_01_V1_F","Land_u_House_Big_02_V1_F","Land_i_House_Big_02_V1_F","Land_i_House_Big_02_V2_F","Land_i_House_Big_02_V3_F","Land_A_Villa_EP1","Land_e76_us_house02a","Land_e76_us_house01","Land_e76_us_house01a","Land_e76_us_house01a","Land_e76_us_house01b","Land_mbg_ger_pub_1","Land_mbg_ger_pub_2","Land_Offices_01_V1_F","Land_MilOffices_V1_F","Land_Cargo_House_V1_F","Land_Cargo_House_V2_F","Land_Cargo_House_V3_F","Land_Medevac_house_V1_F","Land_Research_house_V1_F","Land_Slum_House01_F","Land_Slum_House03_F","Land_Slum_House02_F","Land_cargo_house_slum_F","Land_i_Addon_02_V1_F","Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F","Land_i_House_Small_03_V1_F","Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F","Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F","Land_i_Garage_V1_F","Land_i_Garage_V2_F","Land_i_House_Big_01_V1_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_01_V3_F"]) && (vehicle player) distance cursorTarget < 3 && !(cursorTarget getVariable ["looted",FALSE]) && playerSide == civilian']);
-
+/*
 		//Person Heilen
 		life_actions pushBack (player addAction["Heal Self",life_fnc_healself,"",0,false,false,"",' (player getVariable "playerHealth") > 0.2 && (life_inv_bandage > 0) && !isdragging ']);
 
 		//Heal Self
 		life_actions pushBack (player addAction["Person Heilen",life_fnc_healperson,"",0,false,false,"",' !isNull cursorTarget && player distance cursorTarget < 2.5 && isPlayer cursorTarget && (cursorTarget getVariable "playerHealth") > 0.2 && (life_inv_bandage > 0) && !isdragging ']);
-
+*/
 		// Heli Fast Rope
 		life_actions pushBack (player addAction["Fast Rope",life_fnc_fastRope,"",99,false,false,"", ' (vehicle player) != player && !isNull (vehicle player) && (vehicle player) isKindOf "Air" && driver (vehicle player) != player && (getPos player) select 2 <= 100 && (getPos player) select 2 >= 15 && speed vehicle player < 30 && !(player getVariable["transporting",false]) ']);
 	
@@ -345,13 +345,13 @@ switch (playerSide) do
 		' !isNull nearestObject (screenToWorld [0.5,0.5]) && count (nearestObject (screenToWorld [0.5,0.5]) getVariable ["item",[]]) > 0 && player distance nearestObject (screenToWorld [0.5,0.5]) <= 4 && !life_action_inUse && (isNull objectParent player)']);
 
 		life_actions pushBack (player addAction["<t color='#fdff01'>Search Building</t>",life_fnc_lootHouse,"",0,false,false,"",'isNull objectParent player && (typeOf cursorTarget in["Land_u_House_Small_01_V1_F","Land_i_Stone_HouseBig_V2_F","Land_i_Stone_HouseBig_V1_F","Land_d_House_Small_01_V1_F","Land_u_House_Big_02_V1_F","Land_i_House_Big_02_V1_F","Land_i_House_Big_02_V2_F","Land_i_House_Big_02_V3_F","Land_A_Villa_EP1","Land_e76_us_house02a","Land_e76_us_house01","Land_e76_us_house01a","Land_e76_us_house01a","Land_e76_us_house01b","Land_mbg_ger_pub_1","Land_mbg_ger_pub_2","Land_Offices_01_V1_F","Land_MilOffices_V1_F","Land_Cargo_House_V1_F","Land_Cargo_House_V2_F","Land_Cargo_House_V3_F","Land_Medevac_house_V1_F","Land_Research_house_V1_F","Land_Slum_House01_F","Land_Slum_House03_F","Land_Slum_House02_F","Land_cargo_house_slum_F","Land_i_Addon_02_V1_F","Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F","Land_i_House_Small_03_V1_F","Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F","Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F","Land_i_Garage_V1_F","Land_i_Garage_V2_F","Land_i_House_Big_01_V1_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_01_V3_F"]) && (vehicle player) distance cursorTarget < 3 && !(cursorTarget getVariable ["looted",FALSE]) && playerSide == civilian']);
-
+/*
 		//Person Heilen
 		life_actions pushBack (player addAction["Heal Self",life_fnc_healself,"",0,false,false,"",' (player getVariable "playerHealth") > 0.2 && (life_inv_bandage > 0) && !isdragging ']);
 
 		//Heal Self
 		life_actions pushBack (player addAction["Person Heilen",life_fnc_healperson,"",0,false,false,"",' !isNull cursorTarget && player distance cursorTarget < 2.5 && isPlayer cursorTarget && (cursorTarget getVariable "playerHealth") > 0.2 && (life_inv_bandage > 0) && !isdragging ']);
-
+*/
 		// Heli Fast Rope
 		life_actions pushBack (player addAction["Fast Rope",life_fnc_fastRope,"",99,false,false,"", ' (vehicle player) != player && !isNull (vehicle player) && (vehicle player) isKindOf "Air" && driver (vehicle player) != player && (getPos player) select 2 <= 100 && (getPos player) select 2 >= 15 && speed vehicle player < 30 && !(player getVariable["transporting",false]) ']);
 	
@@ -395,13 +395,13 @@ switch (playerSide) do
 
 
 		life_actions pushBack (player addAction["<t color = '#f4a84e'>Auf die Toilette gehen</t>",life_fnc_takeashit,"",0,false,false,"",' life_poop > 80 && (isNull objectParent player) ']);
-		
+		/*
 		//Person Heilen
 		life_actions pushBack (player addAction["Heal Self",life_fnc_healself,"",0,false,false,"",' (player getVariable "playerHealth") > 0.2 && (life_inv_bandage > 0) && !isdragging ']);
 
 		//Heal Self
 		life_actions pushBack (player addAction["Person Heilen",life_fnc_healperson,"",0,false,false,"",' !isNull cursorTarget && player distance cursorTarget < 2.5 && isPlayer cursorTarget && (cursorTarget getVariable "playerHealth") > 0.2 && (life_inv_bandage > 0) && !isdragging ']);
-
+*/
 		//Pickup Item
 		life_actions pushBack (player addAction["Pickup Item(s)",{createDialog "life_pickup_items"},"",0,false,false,"",
 		' !isNull nearestObject (screenToWorld [0.5,0.5]) && count (nearestObject (screenToWorld [0.5,0.5]) getVariable ["item",[]]) > 0 && player distance nearestObject (screenToWorld [0.5,0.5]) <= 4 && !life_action_inUse && (isNull objectParent player)']);
@@ -421,7 +421,7 @@ switch (playerSide) do
 		//Untie person
 		life_actions pushBack (player addAction["Untie Person Person",life_fnc_untie,"",0,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 1.5 && isPlayer cursorTarget && (cursorTarget getVariable ["tied", false]) ']);
-
+/*
 		//heal system
 		life_actions pushBack (player addAction[localize "STR_pAct_NoBandagePlayer","","",0,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 3 && isPlayer cursorTarget && (cursorTarget getVariable ["bleedingon", 1]) == 2 ']);
@@ -434,7 +434,7 @@ switch (playerSide) do
 
 		life_actions pushBack (player addAction[localize "STR_pAct_NoEpiPenPlayer","","",0,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 3 && isPlayer cursorTarget && (cursorTarget getVariable ["unconciouson", 1]) == 2 ']);
-
+*/
 		//Pickup Unprocessed MDMA
 		life_actions pushBack
 		(player addAction["Pickup Unprocessed MDMA",life_fnc_pickupItem,false,0,false,false,"",

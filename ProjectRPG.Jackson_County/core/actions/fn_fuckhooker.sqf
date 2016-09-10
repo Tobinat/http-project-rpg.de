@@ -13,17 +13,6 @@ if(life_karma < 0) then {
 	["cash","take",_price] call life_fnc_handleCash;
 };
 
-
-_chance = round (random 100);
-
-if(life_std == 0) then {
-	if(_chance > 96) then {
-		player setVariable ["diseaseon",(round (random 7)),true];
-		["Du fühlst dich krank.", false] spawn domsg;
-		player setfatigue 1;
-	};	
-};
-
 ["Du fühlst dich nach dem Sex super AWESOME - Du kannst deine Waffe nun für 90 Minuten besser kontrollieren.", false] spawn domsg;
 life_num = 0;
 uiSleep 1;
