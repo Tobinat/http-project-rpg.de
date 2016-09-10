@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=21687;
+		nextID=21691;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8224.6221,138.74582,6347.4932};
-		dir[]={0.86603653,-0.47863454,0.14460015};
-		up[]={0.4721086,0.87800729,0.078826234};
-		aside[]={0.16468965,3.732639e-007,-0.98635209};
+		pos[]={4949.5562,184.75713,3188.4392};
+		dir[]={0.75072211,-0.42540935,0.50542748};
+		up[]={0.3528887,0.90499878,0.23758392};
+		aside[]={0.55848175,1.0977965e-007,-0.82952464};
 	};
 };
 binarizationWanted=0;
@@ -809,7 +809,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2166;
+		items=2170;
 		class Item0
 		{
 			dataType="Marker";
@@ -1669,7 +1669,7 @@ class Mission
 			colorName="ColorGreen";
 			a=0.69999999;
 			b=0.69999999;
-			angle=0.79907316;
+			angle=0.7990731;
 			id=168;
 		};
 		class Item75
@@ -2524,7 +2524,7 @@ class Mission
 			position[]={7469.0337,29.631021,2532.178};
 			name="car_g_bed";
 			type="Empty";
-			angle=63.72525;
+			angle=63.725246;
 			id=317;
 			atlOffset=4.5810223;
 		};
@@ -11730,7 +11730,7 @@ class Mission
 			position[]={7468.6572,29.727057,2532.0344};
 			name="civ_gar_bed";
 			type="Empty";
-			angle=64.14901;
+			angle=64.149002;
 			id=4828;
 			atlOffset=4.6770573;
 		};
@@ -11914,6 +11914,7 @@ class Mission
 			};
 			id=8715;
 			type="Land_InfoStand_V2_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13108,17 +13109,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1103.5355,32.586212,7639.6436};
+				position[]={1103.0315,32.588013,7635.7329};
 				angles[]={0,4.1805983,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false;  this allowDamage false; this addAction[""Grab Stretcher"",life_fnc_stretcherpls];   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];   this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];  this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];  this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];   this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Lakeside Valley Hosptial""]]; this addAction[""Fahrzeug Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Helicopter Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_air_morrison""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Parke Fahrzeug in der Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",''];";
 			};
 			id=12350;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.53020668;
 		};
 		class Item553
 		{
@@ -13382,7 +13383,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=3.0556834;
+			angle=3.0556831;
 			id=14547;
 			atlOffset=20.142851;
 		};
@@ -29440,7 +29441,6 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29448,6 +29448,7 @@ class Mission
 			};
 			id=20339;
 			type="Palm_2";
+			atlOffset=0.95476723;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29489,6 +29490,7 @@ class Mission
 			};
 			id=20340;
 			type="Palm_2";
+			atlOffset=0.1526432;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29686,7 +29688,6 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29694,6 +29695,7 @@ class Mission
 			};
 			id=20345;
 			type="Palm_2";
+			atlOffset=0.99685478;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41677,7 +41679,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=3.5300798;
+			angle=3.5300796;
 			id=20861;
 			atlOffset=187.65506;
 		};
@@ -45301,7 +45303,7 @@ class Mission
 			colorName="ColorGreen";
 			a=0.69999999;
 			b=0.69999999;
-			angle=228.75238;
+			angle=228.75237;
 			id=21135;
 			atlOffset=1.8677387;
 		};
@@ -53629,6 +53631,7 @@ class Mission
 			};
 			id=21499;
 			type="Land_InfoStand_V1_F";
+			atlOffset=0.21459389;
 		};
 		class Item1991
 		{
@@ -57172,7 +57175,7 @@ class Mission
 			};
 			id=21666;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.00041770935;
+			atlOffset=0.00025749207;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57213,7 +57216,7 @@ class Mission
 			};
 			id=21668;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.00020599365;
+			atlOffset=4.3869019e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57253,7 +57256,7 @@ class Mission
 			};
 			id=21669;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.56800079;
+			atlOffset=0.56785202;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57294,7 +57297,7 @@ class Mission
 			};
 			id=21670;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.00040626526;
+			atlOffset=0.00024414063;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57328,14 +57331,13 @@ class Mission
 				angles[]={6.2738476,2.9251194,0.0014660766};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21671;
 			type="A3L_HospitalBed2015";
-			atlOffset=1.335144e-005;
+			atlOffset=0.52985191;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57375,7 +57377,7 @@ class Mission
 			};
 			id=21672;
 			type="A3L_HospitalBed";
-			atlOffset=0.39599991;
+			atlOffset=0.39605713;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57415,7 +57417,7 @@ class Mission
 			};
 			id=21673;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.36899948;
+			atlOffset=0.36885071;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57449,13 +57451,13 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21674;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.60153198;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57489,13 +57491,13 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21675;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.58477402;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57529,13 +57531,13 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21676;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.56481361;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57569,13 +57571,13 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21677;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.54712868;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57609,13 +57611,13 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21678;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.5295372;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57649,13 +57651,13 @@ class Mission
 				angles[]={0.0044618365,4.838377,0.0083294781};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21679;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.6036396;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57689,13 +57691,13 @@ class Mission
 				angles[]={0.0044618365,4.838377,0.0083294781};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21680;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.58238411;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57729,13 +57731,13 @@ class Mission
 				angles[]={0.0044618365,4.838377,0.0083294781};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21681;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.56411171;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57769,13 +57771,13 @@ class Mission
 				angles[]={0.0044618365,4.838377,0.0083294781};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21682;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.54633522;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57809,13 +57811,13 @@ class Mission
 				angles[]={0.0044618365,4.838377,0.0083294781};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21683;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.52896309;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57936,6 +57938,167 @@ class Mission
 			};
 			id=21686;
 			type="Land_LampStreet_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2166
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9578.7559,26.018867,4110.4966};
+				angles[]={6.2738566,2.1637828,0.0014648439};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init=" this enableSimulation false; this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Firefighter Loadout!</t>"",life_fnc_MFirefighter,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_MSergeant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_MLieutenant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_MCaptain,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Battalion Chief Loadout!</t>"",life_fnc_MBattalionChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Assistant Chief Loadout!</t>"",life_fnc_MAssistantChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Chief Loadout!</t>"",life_fnc_MChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Seuchenschutz Loadout!</t>"",life_fnc_MSeuche,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Taucher Loadout!</t>"",life_fnc_MTaucher,"""",0,false,false,"""",'playerSide == independent'];   " \n "this addAction[""<t color='#FF0000'>Feuerwehrmann Loadout!</t>"",life_fnc_MFeuerwehr,"""",0,false,false,"""",'playerSide == independent'];";
+			};
+			id=21687;
+			type="Land_InfoStand_V2_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2167
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8436.2373,19.637991,6670.9121};
+				angles[]={6.2756844,1.7667572,0.0057463958};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init=" this enableSimulation false; this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Firefighter Loadout!</t>"",life_fnc_MFirefighter,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_MSergeant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_MLieutenant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_MCaptain,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Battalion Chief Loadout!</t>"",life_fnc_MBattalionChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Assistant Chief Loadout!</t>"",life_fnc_MAssistantChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Chief Loadout!</t>"",life_fnc_MChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Seuchenschutz Loadout!</t>"",life_fnc_MSeuche,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Taucher Loadout!</t>"",life_fnc_MTaucher,"""",0,false,false,"""",'playerSide == independent'];   " \n "this addAction[""<t color='#FF0000'>Feuerwehrmann Loadout!</t>"",life_fnc_MFeuerwehr,"""",0,false,false,"""",'playerSide == independent'];";
+			};
+			id=21688;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.0033130646;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2168
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1491.4591,32.49675,7528.0469};
+				angles[]={0.0044618365,3.7478678,0.0083294781};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init=" this enableSimulation false; this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Firefighter Loadout!</t>"",life_fnc_MFirefighter,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_MSergeant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_MLieutenant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_MCaptain,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Battalion Chief Loadout!</t>"",life_fnc_MBattalionChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Assistant Chief Loadout!</t>"",life_fnc_MAssistantChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Chief Loadout!</t>"",life_fnc_MChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Seuchenschutz Loadout!</t>"",life_fnc_MSeuche,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Taucher Loadout!</t>"",life_fnc_MTaucher,"""",0,false,false,"""",'playerSide == independent'];   " \n "this addAction[""<t color='#FF0000'>Feuerwehrmann Loadout!</t>"",life_fnc_MFeuerwehr,"""",0,false,false,"""",'playerSide == independent'];";
+			};
+			id=21689;
+			type="Land_InfoStand_V2_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2169
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1104.0258,32.588013,7635.5132};
+				angles[]={0,3.3279901,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init=" this enableSimulation false; this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Firefighter Loadout!</t>"",life_fnc_MFirefighter,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_MSergeant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_MLieutenant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_MCaptain,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Battalion Chief Loadout!</t>"",life_fnc_MBattalionChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Assistant Chief Loadout!</t>"",life_fnc_MAssistantChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Chief Loadout!</t>"",life_fnc_MChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Seuchenschutz Loadout!</t>"",life_fnc_MSeuche,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Taucher Loadout!</t>"",life_fnc_MTaucher,"""",0,false,false,"""",'playerSide == independent'];   " \n "this addAction[""<t color='#FF0000'>Feuerwehrmann Loadout!</t>"",life_fnc_MFeuerwehr,"""",0,false,false,"""",'playerSide == independent'];";
+			};
+			id=21690;
+			type="Land_InfoStand_V2_F";
 			class CustomAttributes
 			{
 				class Attribute0

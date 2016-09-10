@@ -77,6 +77,21 @@ class Life_Client_Core
 		class rechnungPaid {};
 		class rechnungPrompt {};
 	};
+	
+	class Medical_Loadouts
+	{
+		file = "core\medical\mloadout";
+		class MFirefighter;
+		class MSergeant;
+		class MLieutenant;
+		class MCaptain;
+		class MBattalionChief;
+		class MAssistantChief;
+		class MChief;
+		class MFeuerwehr;
+		class MSeuche;
+		class MTaucher;
+	};
 
 	class Actions
 	{
