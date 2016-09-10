@@ -16,7 +16,7 @@ removeHeadgear player;
 removeGoggles player;
 
 
-player forceAddUniform "pRPG_Officer1";
+player forceAddUniform "mr_pol_cloth_lvpd_c";
 player addVest "prpg_policevest";
 player addBackpack "AM_PoliceBelt";
 player addHeadgear "AM_PatrolHat";
