@@ -9,15 +9,15 @@ life_Hunting_Version = "423h4g0dsf745gnjdstnk65g42504";
 publicVariable "life_Hunting_Version";
 
 
-[] spawn
-{
-	while {true} do {
-		uisleep 600;
-		if(daytime > 18 && daytime < 23.5) exitwith {
-			skiptime 8;
-		};
-	};
-};
+// [] spawn
+// {
+	// while {true} do {
+		// uisleep 600;
+		// if(daytime > 18 && daytime < 23.5) exitwith {
+			// skiptime 8;
+		// };
+	// };
+// };
 
 [] spawn
 {
