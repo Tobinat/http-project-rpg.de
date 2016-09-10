@@ -6,7 +6,7 @@
 	Opens and initializes the clothing store menu.
 	Started clean, finished messy.
 */
-private["_list","_clothes","_pic","_filter"];
+private["_list","_clothes","_pic","_filter", "_acecheck"];
 createDialog "Life_Clothing";
 disableSerialization;
 
@@ -24,6 +24,8 @@ if(_var select 0 != "") then
 {
 	if(!(missionNamespace getVariable (_var select 0))) exitWith {[format[localize "STR_Shop_YouNeed",[_var select 0] call life_fnc_varToStr], false] spawn domsg; closeDialog 0;};
 };
+
+_acecheck = ["ACE_tourniquet","ACE_quikclot","ACE_elasticBandage","ACE_morphine","ACE_epinephrine","ACE_surgicalKit","ACE_bodyBag","ACE_bloodIV_500","ACE_bloodIV_250","ACE_salineIV_500","ACE_salineIV_250","ACE_plasmaIV_500","ACE_plasmaIV_250","ACE_personalAidKit","ACE_fieldDressing","ACE_atropine","ACE_EarPlugs","ACE_packingBandage"];
 
 //initialize camera view
 life_shop_cam = "CAMERA" camCreate getPos player;
@@ -51,11 +53,32 @@ _filter lbAdd localize "STR_Shop_UI_Backpack";
 _filter lbSetCurSel 0;
 
 life_oldClothes = uniform player;
-life_olduniformItems = uniformItems player;
+life_olduniformItems = [];
+{
+	if(!(_x in _acecheck)) then
+	{
+		life_olduniformItems pushBack _x;
+	};
+}foreach uniformItems player;
+
 life_oldBackpack = backpack player;
 life_oldVest = vest player;
-life_oldVestItems = vestItems player;
-life_oldBackpackItems = backpackItems player;
+life_oldVestItems = [];
+{
+	if(!(_x in _acecheck)) then
+	{
+		life_oldVestItems pushBack _x;
+	};
+}foreach vestItems player;
+
+life_oldBackpackItems = [];
+{
+	if(!(_x in _acecheck)) then
+	{
+		life_oldBackpackItems pushBack _x;
+	};
+}foreach backpackItems player;
+
 life_oldGlasses = goggles player;
 life_oldHat = headgear player;
 

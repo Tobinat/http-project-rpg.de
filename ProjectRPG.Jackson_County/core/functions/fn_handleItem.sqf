@@ -96,7 +96,7 @@ if(_bool) then
 				};
 			
 			
-			if(_item in _acecheck) then{player addItem _item;};
+				if(_item in _acecheck) then{player addItem _item;};
 			
 			};
 
