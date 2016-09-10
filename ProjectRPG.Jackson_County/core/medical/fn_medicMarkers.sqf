@@ -18,6 +18,7 @@ if(visibleMap) then {
 		_down = _x getVariable "ACE_isUnconscious";
 		_pid = _x getVariable["steam64ID",""];
 		if(side _x == independent || side _x == west) then {_medmark pushBack _x};
+		if(_down && (_x getVariable["mapVisible",FALSE])) then {
 			_units pushBack _x;
 		};
 	} foreach PlayableUnits;
