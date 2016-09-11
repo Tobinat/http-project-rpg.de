@@ -330,7 +330,7 @@ switch(_shop) do
 							["RH_16Rnd_40cal_usp",nil,5],	
 
 							["RH_p226",nil,12400],
-							["RH_15Rnd_9x19_SIG",nil,5],
+							["RH_15Rnd_9x19_SIG",nil,5]
 							
 
 						]
