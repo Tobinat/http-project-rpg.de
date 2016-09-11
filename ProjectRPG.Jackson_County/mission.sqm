@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9581.4873,41.130699,4278.9644};
-		dir[]={-0.80927753,-0.58598912,-0.042938363};
-		up[]={-0.58520037,0.81028271,-0.031050432};
-		aside[]={-0.05298657,2.6007501e-006,0.99866968};
+		pos[]={9541.7031,29.115171,4301.1567};
+		dir[]={0.20427488,-0.33043739,-0.92155874};
+		up[]={0.071528874,0.94378853,-0.32268575};
+		aside[]={-0.9763906,2.3004759e-006,-0.2164268};
 	};
 };
 binarizationWanted=0;
@@ -134,8 +134,7 @@ addons[]=
 	"Pub_C",
 	"Test_Character_F",
 	"A3L_HospitalBed2015",
-	"A3L_HospitalBed",
-	"A3_Weapons_F_Ammoboxes"
+	"A3L_HospitalBed"
 };
 class AddonsMetaData
 {
@@ -810,7 +809,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2174;
+		items=2172;
 		class Item0
 		{
 			dataType="Marker";
@@ -41670,7 +41669,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=3.5300777;
+			angle=3.5300775;
 			id=20861;
 			atlOffset=187.65506;
 		};
@@ -58120,86 +58119,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9557.7939,29.401188,4267.7407};
-				angles[]={0,3.098386,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="clearMagazineCargo this; clearItemCargo this; clearWeaponCargo this; this allowDamage false; this enableSimulation true; this addWeaponCargo [""prpl_benelli_14_pgs_rail"",2]; this addMagazineCargo [""prpl_6Rnd_12Gauge_Slug"",4];";
-			};
-			id=21700;
-			type="Box_NATO_Wps_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2171
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9556.1494,29.401188,4267.687};
-				angles[]={0,3.0950606,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="clearMagazineCargo this; clearItemCargo this; clearWeaponCargo this; this allowDamage false; this enableSimulation true;";
-			};
-			id=21704;
-			type="Box_NATO_Wps_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2172
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={9501.8398,31.007797,4283.0532};
 				angles[]={0,3.1082346,0};
 			};
@@ -58235,7 +58154,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2173
+		class Item2171
 		{
 			dataType="Object";
 			class PositionInfo
