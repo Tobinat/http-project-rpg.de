@@ -393,17 +393,17 @@ switch(_shop) do
 							["RH_vp70",nil,9850],
 							["RH_18Rnd_9x19_VP",nil,125],  
 							
-							["RH_vz61",nil,11800],
+							["RH_vz61",nil,15800],
 							["RH_20Rnd_32cal_vz61",nil,280],
 
-							["RH_fn57",nil,11800],
+							["RH_fn57",nil,17800],
 							["RH_20Rnd_57x28_FN",nil,280],
 
 							//Glock 18
 							["RH_g18",nil,15500],
 							["RH_33Rnd_9x19_g18",nil,250],
 							
-							["RH_g19t",nil,4500],
+							["RH_g19t",nil,16500],
 							["RH_17Rnd_9x19_g17",nil,150],
 
 							["RH_Deagleg",nil,31500],
@@ -415,11 +415,11 @@ switch(_shop) do
 							["RH_7Rnd_50_AE",nil,250],
 							
 							//Micro Uzi
-							["RH_muzi",nil,9500],
+							["RH_muzi",nil,31500],
 							["RH_30Rnd_9x19_UZI",nil,250],
 
 							//Tec9
-							["RH_tec9",nil,9800],
+							["RH_tec9",nil,29800],
 							["RH_32Rnd_9x19_tec",nil,260]
 							
 						]
@@ -442,38 +442,38 @@ switch(_shop) do
 						[
 
 
-							["RH_compM2","Rifle Aimpoint",425],
-							["RH_compM2l","Rifle Aimpoint Low",4205],
+							["RH_compM2","Rifle Aimpoint",10000],
+							["RH_compM2l","Rifle Aimpoint Low",10000],
 
-							["RH_m16a6_des",nil,91550],
-							["RH_30Rnd_68x43_FMJ",nil,1550],
+							["RH_m16a6_des",nil,191550],
+							["RH_30Rnd_68x43_FMJ",nil,15500],
 
-							["RH_ar10",nil,85550],
-							["RH_20Rnd_762x51_AR10",nil,3500],
+							["RH_ar10",nil,150000],
+							["RH_20Rnd_762x51_AR10",nil,13500],
 
-							["hlc_rifle_akm",nil,65550],
-							["hlc_rifle_ak47",nil,65550],
-							["hlc_30Rnd_762x39_b_ak",nil,3000],
+							["hlc_rifle_akm",nil,185000],
+							["hlc_rifle_ak47",nil,165000],
+							["hlc_30Rnd_762x39_b_ak",nil,13000],
 
-							["SG553_CQB",nil,40550],
-							["30Rnd_556x45_Stanag",nil,300],
+							["SG553_CQB",nil,140000],
+							["30Rnd_556x45_Stanag",nil,13000],
 							
-							["hlc_rifle_aks74u",nil,60550],
-							["hlc_30Rnd_545x39_B_AK",nil,3000],
+							["hlc_rifle_aks74u",nil,160000],
+							["hlc_30Rnd_545x39_B_AK",nil,13000],
 
-							["hgun_PDW2000_F",nil,15550],
-							["SMG_02_F",nil,41550],
-							["30Rnd_9x21_Mag",nil,2550],
+							["hgun_PDW2000_F",nil,85000],
+							["SMG_02_F",nil,95000],
+							["30Rnd_9x21_Mag",nil,12000],
 					
-							["chakFNP90_50rnd_skin1",nil,11000],
-							["chakFNP90_57x28_B_skin1",nil,332],
+							["chakFNP90_50rnd_skin1",nil,120000],
+							["chakFNP90_57x28_B_skin1",nil,16000],
 
-							["SMG_01_F",nil,45000],
-							["30Rnd_45ACP_Mag_SMG_01",nil,2320],
+							["SMG_01_F",nil,85000],
+							["30Rnd_45ACP_Mag_SMG_01",nil,14000],
 							
-							["optic_MRCO",nil,1220],
-							["RH_Delft",nil,5500],
-							["hlc_optic_kobra",nil,550]							
+							["optic_MRCO",nil,10000],
+							["RH_Delft",nil,12000],
+							["hlc_optic_kobra",nil,7000]							
 						]
 					];
 				};
@@ -484,7 +484,7 @@ switch(_shop) do
 		{
 			switch(true) do
 			{
-				case (life_karma < 2000): {"Dein Karma-Level ist nicht hoch genug!"};
+				case (life_karma < 3000): {"Dein Karma-Level ist nicht hoch genug!"};
 				case (playerSide != civilian && playerSide != east): {"Du bist kein Zivilist!"};
 				case (!license_civ_rebel): {"Du besitzt nicht die benötigte Lizenz!"};
 				default
@@ -502,54 +502,54 @@ switch(_shop) do
 							["RH_16Rnd_40cal_usp",nil,3000],	
 							
 							//langwaffen
-							["hlc_rifle_auga3_b",nil,70000],
-							["hlc_30Rnd_556x45_B_AUG",nil,6000],
+							["hlc_rifle_auga3_b",nil,170000],
+							["hlc_30Rnd_556x45_B_AUG",nil,16000],
 							
-							["RH_M4A1_ris",nil,80000],
-							["RH_30Rnd_556x45_M855A1",nil,6000],
+							["RH_M4A1_ris",nil,180000],
+							["RH_30Rnd_556x45_M855A1",nil,16000],
 							
-							["RH_M4A6",nil,80000],
-							["RH_30Rnd_68x43_FMJ",nil,6000],
+							["RH_M4A6",nil,180000],
+							["RH_30Rnd_68x43_FMJ",nil,16000],
 
-							["RH_Mk11",nil,200000],
-							["RH_20Rnd_762x51_M80A1",nil,600],
-							["RH_20Rnd_762x51_Mk316LR",nil,6000],
+							["RH_Mk11",nil,600000],
+							["RH_20Rnd_762x51_M80A1",nil,16000],
+							["RH_20Rnd_762x51_Mk316LR",nil,16000],
 							
-							["hlc_rifle_RU556",nil,70000],
+							["hlc_rifle_RU556",nil,170000],
 							
-							["hlc_rifle_bcmjack",nil,175000],
-							["hlc_30rnd_556x45_EPR",nil,6000],
+							["hlc_rifle_bcmjack",nil,275000],
+							["hlc_30rnd_556x45_EPR",nil,16000],
 							
-							["RH_M4_moe",nil,162000],
-							["RH_30Rnd_556x45_M855A1",nil,6000],
+							["RH_M4_moe",nil,280000],
+							["RH_30Rnd_556x45_M855A1",nil,16000],
 							
 							["hlc_rifle_ak12",nil,185000],
-							["hlc_30Rnd_545x39_B_AK",nil,6000],
+							["hlc_30Rnd_545x39_B_AK",nil,16000],
 							
 							["KPFS_G36C",nil,180000],
-							["KPFS_30Rnd_556x45_G36",nil,6000],
+							["KPFS_30Rnd_556x45_G36",nil,16000],
 								
 							["RH_Hk416s",nil,185000],
-							["RH_30Rnd_556x45_M855A1",nil,6000],
-							["RH_30Rnd_556x45_Mk262",nil,6000],
-							["RH_30Rnd_556x45_Mk318",nil,6000],
+							["RH_30Rnd_556x45_M855A1",nil,16000],
+							["RH_30Rnd_556x45_Mk262",nil,16000],
+							["RH_30Rnd_556x45_Mk318",nil,16000],
 							
 	                        //visire/aufsätze
-							["RH_M6X",nil,2000],							
-							["RH_ta648",nil,2000],
-							["RH_SFM952V",nil,2000],
-							["RH_compM2l",nil,2000],
-							["RH_t1","Aimpoint",2000],
-							["RH_m110sd","MK 11 Silencer",2200],
-							["RH_qdss_nt4","M4A6 Silencer",2200],
-							["muzzle_snds_H","KAC Silencer",2200],
-							["RH_peq2","Laser (All Rifles)",2200],
-							["RH_leu_mk4",nil,2000],
-							["RH_barska_rds","Barska Red Dot",2000],
-							["RH_cmore","C-more Red Dot",2000],
-							["optic_MRCO",nil,2000],
-							["RH_compM2l","Rifle Aimpoint Low",2000],
-							["RH_compM2","Rifle Aimpoint",2000]
+							["RH_M6X",nil,12000],							
+							["RH_ta648",nil,12000],
+							["RH_SFM952V",nil,12000],
+							["RH_compM2l",nil,12000],
+							["RH_t1","Aimpoint",12000],
+							["RH_m110sd","MK 11 Silencer",12200],
+							["RH_qdss_nt4","M4A6 Silencer",12200],
+							["muzzle_snds_H","KAC Silencer",12200],
+							["RH_peq2","Laser (All Rifles)",12200],
+							["RH_leu_mk4",nil,12000],
+							["RH_barska_rds","Barska Red Dot",12000],
+							["RH_cmore","C-more Red Dot",12000],
+							["optic_MRCO",nil,12000],
+							["RH_compM2l","Rifle Aimpoint Low",12000],
+							["RH_compM2","Rifle Aimpoint",12000]
 							
 						]
 					];
