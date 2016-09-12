@@ -28,11 +28,11 @@ removeAllWeapons player;
 	
 if(life_bail_amount < 12751) then {
 	_lowsecjaillocations = [
-	[9243.17,9283.73,2.00144],
-	[9241.39,9286.06,2.00144]
-	//[9239.83,9302.13,2.00144],
-	//[9283.14,9298.38,0.6143909],
-	//[9289.01,9310.3,0.5143909]
+	[5621.13,6317.65,0.00143433],
+	[5620,6320.4,0.00143433],
+	[5618.66,6322.88,0.00143433],
+	[5616.96,6324.93,0.00143433],
+	[5615.63,6327.47,0.00143433]
 	];
 	_randomer = floor random (count _lowsecjaillocations);
 	_jailpos = _lowsecjaillocations select _randomer;
@@ -40,9 +40,11 @@ if(life_bail_amount < 12751) then {
 	["Sie wurden ins County Jail geschickt.", false] spawn domsg;
 } else {
 	_jaillocations = [
-	[9233.89,9275.98,2.00144],
-	[9232.51,9278.43,2.00144],
-	[9239.83,9288.35,2.00144]
+	[5631.88,6323.71,0.00143433],
+	[5630.63,6326.25,0.00143433],
+	[5629.47,6328.7,0.00143433],
+	[5627.5,6330.88,0.00143433],
+	[5626.37,6333.46,0.00143433]
 	];
 	_randomer = floor random (count _jaillocations);
 	_jailpos = _jaillocations select _randomer;
