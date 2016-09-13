@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=22242;
+		nextID=22244;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9553.959,33.518948,4526.5884};
-		dir[]={0.36499897,-0.33618972,-0.8682602};
-		up[]={0.13029553,0.94177198,-0.30994627};
-		aside[]={-0.92190766,-4.3302134e-007,-0.38755262};
+		pos[]={9619.6846,62.585815,4191.4912};
+		dir[]={-0.06723354,-0.64791965,0.75882};
+		up[]={-0.0571834,0.76169688,0.6453889};
+		aside[]={0.99615467,-8.4349358e-007,0.088262975};
 	};
 };
 binarizationWanted=0;
@@ -143,13 +143,14 @@ addons[]=
 	"mm_buildings",
 	"vvv_vvv_tennis",
 	"Centrelink",
-	"A3_Signs_F_Signs_Ad"
+	"A3_Signs_F_Signs_Ad",
+	"A3L_UniPD"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=95;
+		items=96;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -687,6 +688,11 @@ class AddonsMetaData
 			className="Centrelink";
 			name="Centrelink";
 		};
+		class Item95
+		{
+			className="A3L_UniPD";
+			name="A3L_UniPD";
+		};
 	};
 };
 randomSeed=11367033;
@@ -860,7 +866,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2486;
+		items=2487;
 		class Item0
 		{
 			dataType="Marker";
@@ -1346,7 +1352,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=97;
-			atlOffset=0.31500244;
 		};
 		class Item42
 		{
@@ -1857,7 +1862,7 @@ class Mission
 			type="Empty";
 			angle=223.14673;
 			id=206;
-			atlOffset=2.3859558;
+			atlOffset=2.3551025;
 		};
 		class Item86
 		{
@@ -2346,7 +2351,7 @@ class Mission
 			type="Empty";
 			angle=127.94003;
 			id=280;
-			atlOffset=1.1632996;
+			atlOffset=0.84841919;
 		};
 		class Item131
 		{
@@ -11826,7 +11831,6 @@ class Mission
 			};
 			id=8667;
 			type="Land_Atm_02_F";
-			atlOffset=0.2305069;
 		};
 		class Item484
 		{
@@ -14228,7 +14232,7 @@ class Mission
 			position[]={9513.875,21,4365.979};
 			name="doj_car_spawn";
 			type="Empty";
-			angle=355.76727;
+			angle=355.76718;
 			id=17342;
 			atlOffset=-4;
 		};
@@ -14920,7 +14924,7 @@ class Mission
 			};
 			id=19083;
 			type="Land_InfoStand_V2_F";
-			atlOffset=1.137001;
+			atlOffset=0.66952896;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29186,6 +29190,7 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29193,7 +29198,6 @@ class Mission
 			};
 			id=20331;
 			type="Palm_2";
-			atlOffset=1.0305233;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29235,7 +29239,6 @@ class Mission
 			};
 			id=20332;
 			type="Palm_2";
-			atlOffset=0.1526432;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41304,7 +41307,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=3.5300722;
+			angle=3.5300715;
 			id=20861;
 			atlOffset=187.65506;
 		};
@@ -58906,14 +58909,15 @@ class Mission
 		class Item2186
 		{
 			dataType="Marker";
-			position[]={9630.0166,4.8001106e+010,4211.9404};
+			position[]={9630.0166,-2.0333051e-037,4211.9399};
 			name="crazy1";
 			markerType="ELLIPSE";
 			type="ellipse";
+			alpha=0;
 			a=30;
 			b=30;
 			id=21784;
-			atlOffset=4.8001106e+010;
+			atlOffset=-25;
 		};
 		class Item2187
 		{
@@ -66030,14 +66034,15 @@ class Mission
 		class Item2375
 		{
 			dataType="Marker";
-			position[]={9661.6729,2.2646212e+034,4267.5908};
+			position[]={9661.6729,8.794226e+011,4267.5908};
 			name="crazy1_1";
 			markerType="ELLIPSE";
 			type="ellipse";
+			alpha=0;
 			a=35;
 			b=35;
 			id=22046;
-			atlOffset=2.2646212e+034;
+			atlOffset=8.794226e+011;
 		};
 		class Item2376
 		{
@@ -67422,7 +67427,7 @@ class Mission
 			};
 			id=22147;
 			type="Land_FloodLight_F";
-			atlOffset=2.4462585;
+			atlOffset=2.1311951;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -69556,6 +69561,35 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item2486
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9627.8994,25.001438,4067.8748};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=22243;
+					type="A3L_DoJ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=22242;
 		};
 	};
 };
