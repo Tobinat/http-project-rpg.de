@@ -69,6 +69,8 @@ switch (_filter) do
 		_ret pushBack ["vvv_hazmat",nil,2];
 		    if(__GETC__(life_mediclevel) > 0) then
 		    {
+			
+				_ret pushBack ["vvv_traje_doctor",nil,2];
 		        _ret pushBack ["pRPG_SquadCommand1",nil,2];
 				_ret pushBack ["pRPG_DepCommand",nil,2];
 				_ret pushBack ["pRPG_Praktikant1",nil,2];
