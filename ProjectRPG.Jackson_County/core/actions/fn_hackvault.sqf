@@ -4,7 +4,7 @@ hackvault
 cgbankvault is the variable name
 */
 
-private ["_cops"];
+private ["_cops","_schnitzel"];
 
 _cops = [];
 {
@@ -14,8 +14,8 @@ _cops = [];
 	};
 }forEach playableUnits;
 
-
-//if(_cops < 1) exitWith { ["You need atleast 6 cops online to rob the bank...", false] spawn domsg; }; 
+_schnitzel = (civilian countSide playableUnits);
+if(_schnitzel < 12) exitWith { ["Es müssen mindestens 6 Cops da sein...", false] spawn domsg; }; 
 
 
 _storename = "hi";
