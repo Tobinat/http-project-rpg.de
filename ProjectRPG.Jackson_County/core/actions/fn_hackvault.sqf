@@ -6,8 +6,17 @@ cgbankvault is the variable name
 
 private ["_cops"];
 
-_cops = (west countSide playableUnits);
-if(_cops < 0) exitWith { ["You need atleast 6 cops online to rob the bank...", false] spawn domsg; }; 
+_cops = [];
+{
+	if(_x getVariable "udcLevel") then
+	{
+		_cops pushBack _x;
+	};
+}forEach playableUnits;
+
+
+//if(_cops < 1) exitWith { ["You need atleast 6 cops online to rob the bank...", false] spawn domsg; }; 
+
 
 _storename = "hi";
 
@@ -23,7 +32,7 @@ if (cgbankvault getVariable ["hacking", false]) exitwith {["This is already bein
 //if (cgbankvault animationPhase "Vault_Door" <0.5) exitwith {["The bank appears unlocked...",30,"red"] spawn domsg;};
 
 if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "Vault_Door" <0.5 ) then {
-	 ["dbank", false] remoteExec ["fnc_dispatch",west];
+	 ["dbank", false] remoteExec ["fnc_dispatch",_cops];
 
 	["Rechne mit 5 Minuten für die Überbrückung.. Lauf ruhig herum aber beachte, dass der Jammer in deiner Tasche Geräusche macht", false] spawn domsg;
 	cgbankvault say "bankAlarm";
@@ -41,8 +50,8 @@ if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "Vault_Do
 
 			playSound3D ["cg_sndimg\sounds\starthack.ogg", player, false, getPosASL player, 1, 1, 225];
 
-			[1,format["911 DISPATCH: DIE ZENTRALBANK WIRD AUSGERAUBT!",_storename]] remoteExecCall ["life_fnc_broadcast", west];
-			[1,format["911 EMERGENCY: ZIVILISTEN MELDEN GEISELNAHME AN DER ZENTRALBANK!",_storename]] remoteExecCall ["life_fnc_broadcast", independent];
+			[1,format["911 DISPATCH: DIE ZENTRALBANK WIRD AUSGERAUBT!"]] remoteExecCall ["life_fnc_broadcast", _cops];
+			[1,format["911 EMERGENCY: ZIVILISTEN MELDEN GEISELNAHME AN DER ZENTRALBANK!"]] remoteExecCall ["life_fnc_broadcast", independent];
 		};
 		if(deadPlayer) exitwith {
 		};
