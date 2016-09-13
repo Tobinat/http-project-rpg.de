@@ -11,8 +11,8 @@ if(_isPassenger) then {
 	[format ["Ihre Probefahrt mit %1 hat begonnen sie haben 5min Zeit das Fahrzeug zu fahren und dann das Fahrzeug an den Händler zurückgegeben.",name _person], false] spawn domsg;
 	waitUntil {sleep 1; isNull _vehicle};
 	if!(player getVariable ["restrained",false] && !deadPlayer) then {
-		if(player distance [8649.02,6573.18,2.00144] > 50) then {
-			player setPosATL [8649.02,6573.18,2.00144];
+		if(player distance [7089.5,2427.02,0.00143814] > 50) then {
+			player setPosATL [7089.5,2427.02,0.00143814];
 		};
 	};
 	life_onTestDrive = false;
@@ -102,8 +102,8 @@ if(_isPassenger) then {
 	};			
 	deleteVehicle _vehicle;
 	if!(player getVariable ["restrained",false] && !deadPlayer) then {
-		if(player distance [8649.02,6573.18,2.00144] > 50) then {
-			player setPosATL [8649.02,6573.18,2.00144];
+		if(player distance [7089.5,2427.02,0.00143814] > 50) then {
+			player setPosATL [7089.5,2427.02,0.00143814];
 		};
 	};
 	player removeAction _testDriveAction;
