@@ -2,6 +2,14 @@
 _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects; 
 
+ _markername="crazy1";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+
+ _markername="crazy1_1";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+
 /*
 _markername="gericht1";
 _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
