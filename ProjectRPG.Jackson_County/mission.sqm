@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9498.9766,27.038084,4377.9937};
-		dir[]={-0.66753423,-0.39053458,-0.63409138};
-		up[]={-0.28317705,0.92056227,-0.26899037};
-		aside[]={-0.68877602,-3.1507079e-007,0.72510219};
+		pos[]={9623.3838,45.440113,4100.4009};
+		dir[]={0.14914809,-0.47471899,-0.86753756};
+		up[]={0.080437586,0.88010365,-0.4678877};
+		aside[]={-0.9856447,-7.0547685e-008,-0.16944994};
 	};
 };
 binarizationWanted=0;
@@ -143,14 +143,13 @@ addons[]=
 	"mm_buildings",
 	"vvv_vvv_tennis",
 	"Centrelink",
-	"A3_Signs_F_Signs_Ad",
-	"A3L_UniPD"
+	"A3_Signs_F_Signs_Ad"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=96;
+		items=95;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -688,11 +687,6 @@ class AddonsMetaData
 			className="Centrelink";
 			name="Centrelink";
 		};
-		class Item95
-		{
-			className="A3L_UniPD";
-			name="A3L_UniPD";
-		};
 	};
 };
 randomSeed=11367033;
@@ -866,7 +860,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2481;
+		items=2479;
 		class Item0
 		{
 			dataType="Marker";
@@ -14231,7 +14225,7 @@ class Mission
 			position[]={9513.875,21,4365.979};
 			name="doj_car_spawn";
 			type="Empty";
-			angle=355.76715;
+			angle=355.76712;
 			id=17342;
 			atlOffset=-4;
 		};
@@ -41306,7 +41300,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=3.5300713;
+			angle=3.530071;
 			id=20861;
 			atlOffset=187.65506;
 		};
@@ -45731,7 +45725,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9537.6572,28.245258,4261.6479};
+				position[]={9537.6572,28.666883,4261.6479};
 				angles[]={0,4.6734133,0};
 			};
 			side="Empty";
@@ -45741,7 +45735,7 @@ class Mission
 			};
 			id=21200;
 			type="Land_HeliPad";
-			atlOffset=2.9301834;
+			atlOffset=3.3518085;
 		};
 		class Item1741
 		{
@@ -54733,13 +54727,13 @@ class Mission
 				angles[]={0,4.6564889,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Dunkin Bronuts"",life_fnc_virt_menu,""donuts""]; this addaction [""Fetten Zuckerguß Donat kaufen ($1250) "",life_fnc_bronutsbrah]; this addUniform ""KAEL_SUITS_BLK_F"";";
 			};
 			id=21587;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.40068626;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54776,7 +54770,7 @@ class Mission
 			b=0.69999999;
 			angle=359.53189;
 			id=21588;
-			atlOffset=1.2274837;
+			atlOffset=0.82679749;
 		};
 		class Item2066
 		{
@@ -54787,13 +54781,13 @@ class Mission
 				angles[]={0,4.7503891,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false; this allowDamage false; this addAction[""General and Fishing"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Ausrauben"",life_fnc_robStore,""General""];";
 			};
 			id=21589;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.40068626;
 		};
 		class Item2067
 		{
@@ -66071,7 +66065,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9552.3652,32.815994,4275.271};
+				position[]={9552.5068,32.815994,4275.2534};
 				angles[]={0,3.6298935,0};
 			};
 			side="Empty";
@@ -68774,21 +68768,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9504.1064,25.69953,4370.3203};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=22219;
-			type="nopixel_tools_planta";
-		};
-		class Item2463
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={9509.0029,25.628006,4353.8838};
 				angles[]={0,1.4655181,0};
 			};
@@ -68824,7 +68803,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2464
+		class Item2463
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68864,7 +68843,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2465
+		class Item2464
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68904,7 +68883,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2466
+		class Item2465
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68944,7 +68923,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2467
+		class Item2466
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68984,7 +68963,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2468
+		class Item2467
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69024,7 +69003,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2469
+		class Item2468
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69064,7 +69043,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2470
+		class Item2469
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69104,7 +69083,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2471
+		class Item2470
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69144,7 +69123,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2472
+		class Item2471
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69184,7 +69163,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2473
+		class Item2472
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69224,7 +69203,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2474
+		class Item2473
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69264,7 +69243,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2475
+		class Item2474
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69304,7 +69283,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2476
+		class Item2475
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69345,7 +69324,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2477
+		class Item2476
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69385,7 +69364,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2478
+		class Item2477
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69425,7 +69404,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2479
+		class Item2478
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69464,35 +69443,6 @@ class Mission
 				};
 				nAttributes=1;
 			};
-		};
-		class Item2480
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={9627.8994,25.001438,4067.8748};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=22243;
-					type="A3L_DoJ";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=22242;
 		};
 	};
 };
