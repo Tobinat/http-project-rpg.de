@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=21732;
+		nextID=21742;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8853.9619,78.762054,5696.2505};
-		dir[]={0.13571402,-0.7038278,-0.69732076};
-		up[]={0.13445728,0.71036488,-0.69086838};
-		aside[]={-0.98160052,3.2324169e-007,-0.19103988};
+		pos[]={8442.4375,22.262049,6677.855};
+		dir[]={-0.28097808,-0.75894147,0.58742493};
+		up[]={-0.32748514,0.65115607,0.6846543};
+		aside[]={0.90211749,-5.0407834e-008,0.431503};
 	};
 };
 binarizationWanted=0;
@@ -809,7 +809,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2182;
+		items=2184;
 		class Item0
 		{
 			dataType="Marker";
@@ -1395,7 +1395,7 @@ class Mission
 			type="Empty";
 			angle=187.04633;
 			id=113;
-			atlOffset=1.7744637;
+			atlOffset=1.7754917;
 		};
 		class Item50
 		{
@@ -1893,6 +1893,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=220;
+			atlOffset=0.43110657;
 		};
 		class Item93
 		{
@@ -3135,7 +3136,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=411;
-			atlOffset=2.0709686;
+			atlOffset=1.7847595;
 		};
 		class Item208
 		{
@@ -11769,7 +11770,6 @@ class Mission
 			};
 			id=8667;
 			type="Land_Atm_02_F";
-			atlOffset=0.2305069;
 		};
 		class Item484
 		{
@@ -12587,7 +12587,7 @@ class Mission
 			};
 			id=12265;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.44099426;
+			atlOffset=0.44094086;
 		};
 		class Item528
 		{
@@ -12894,6 +12894,7 @@ class Mission
 			};
 			id=12334;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.0010299683;
 		};
 		class Item543
 		{
@@ -12911,6 +12912,7 @@ class Mission
 			};
 			id=12339;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.0010280609;
 		};
 		class Item544
 		{
@@ -13488,7 +13490,7 @@ class Mission
 			type="Empty";
 			angle=105.93146;
 			id=14562;
-			atlOffset=35.63884;
+			atlOffset=35.724655;
 		};
 		class Item582
 		{
@@ -13498,7 +13500,7 @@ class Mission
 			type="Empty";
 			angle=105.53053;
 			id=14563;
-			atlOffset=36.439003;
+			atlOffset=36.524818;
 		};
 		class Item583
 		{
@@ -13512,7 +13514,7 @@ class Mission
 			b=0.69999999;
 			angle=358.05099;
 			id=14564;
-			atlOffset=36.630241;
+			atlOffset=36.716057;
 		};
 		class Item584
 		{
@@ -13529,7 +13531,7 @@ class Mission
 			};
 			id=14565;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.32485771;
+			atlOffset=0.41067314;
 		};
 		class Item585
 		{
@@ -13715,7 +13717,7 @@ class Mission
 			type="Empty";
 			angle=108.63612;
 			id=14578;
-			atlOffset=38.22366;
+			atlOffset=38.22739;
 		};
 		class Item598
 		{
@@ -13725,7 +13727,7 @@ class Mission
 			type="Empty";
 			angle=112.58609;
 			id=14579;
-			atlOffset=45.143425;
+			atlOffset=45.147156;
 		};
 		class Item599
 		{
@@ -14852,15 +14854,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8438.7354,19.121616,6677.8169};
-						angles[]={6.2756844,1.1010662,0.0057463958};
+						position[]={8438.918,19.126734,6678.4961};
+						angles[]={6.2756844,1.1010584,0.0057463958};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Item Shop"",life_fnc_virt_menu,""ems""];     " \n "this addAction[""F.D. Kleidung"",life_fnc_clothingMenu,""ems""];     " \n "this addAction[""Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];     " \n "this addAction[""Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];   ";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Medizinische Hilfe"",life_fnc_healHospital,"""",0,false,false,"""",'']; this forceAddUniform ""pRPG_Candidate1""; removeGoggles this;";
 					};
 					id=19090;
 					type="CG_EMS6_F";
@@ -17653,7 +17655,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8420.3857,27.349617,6679.0952};
+				position[]={8420.4443,27.349617,6679.1875};
 				angles[]={0,4.9674187,0};
 			};
 			side="Empty";
@@ -29058,6 +29060,7 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29065,7 +29068,6 @@ class Mission
 			};
 			id=20331;
 			type="Palm_2";
-			atlOffset=1.0305233;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29107,7 +29109,6 @@ class Mission
 			};
 			id=20332;
 			type="Palm_2";
-			atlOffset=0.1526432;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29387,6 +29388,7 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29394,7 +29396,6 @@ class Mission
 			};
 			id=20339;
 			type="Palm_2";
-			atlOffset=0.95476723;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29436,7 +29437,6 @@ class Mission
 			};
 			id=20340;
 			type="Palm_2";
-			atlOffset=0.1526432;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29634,6 +29634,7 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29641,7 +29642,6 @@ class Mission
 			};
 			id=20345;
 			type="Palm_2";
-			atlOffset=0.99685478;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41176,7 +41176,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=3.530077;
+			angle=3.5300765;
 			id=20861;
 			atlOffset=187.65506;
 		};
@@ -44800,7 +44800,7 @@ class Mission
 			colorName="ColorGreen";
 			a=0.69999999;
 			b=0.69999999;
-			angle=0.22763789;
+			angle=0.22763787;
 			id=21135;
 			atlOffset=1.8677387;
 		};
@@ -53127,7 +53127,6 @@ class Mission
 			};
 			id=21499;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.21459389;
 		};
 		class Item1977
 		{
@@ -56947,13 +56946,14 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21674;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.60153198;
+			atlOffset=0.00036621094;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56987,13 +56987,14 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21675;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.58477402;
+			atlOffset=0.00036811829;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57027,13 +57028,14 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21676;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.56481361;
+			atlOffset=0.00036811829;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57067,13 +57069,14 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21677;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.54712868;
+			atlOffset=0.00036811829;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57107,13 +57110,14 @@ class Mission
 				angles[]={6.2756844,3.431426,0.0057463958};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=21678;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.5295372;
+			atlOffset=0.00036621094;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57514,7 +57518,7 @@ class Mission
 			};
 			id=21688;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0033130646;
+			atlOffset=0.0043411255;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -58539,6 +58543,190 @@ class Mission
 			id=21731;
 			type="Land_LampDecor_F";
 			atlOffset=-0.00017929077;
+		};
+		class Item2182
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9577.1748,25.53302,4120.7573};
+						angles[]={6.2738566,0.69396329,0.0014648439};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Medizinische Hilfe"",life_fnc_healHospital,"""",0,false,false,"""",'']; this forceAddUniform ""pRPG_Candidate1""; removeGoggles this;";
+					};
+					id=21739;
+					type="CG_EMS6_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=21738;
+		};
+		class Item2183
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1501.5106,32.01083,7526.0342};
+						angles[]={0.0044618365,2.5505729,0.0083294781};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Medizinische Hilfe"",life_fnc_healHospital,"""",0,false,false,"""",'']; this forceAddUniform ""pRPG_Candidate1""; removeGoggles this;";
+					};
+					id=21741;
+					type="CG_EMS6_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=21740;
 		};
 	};
 };

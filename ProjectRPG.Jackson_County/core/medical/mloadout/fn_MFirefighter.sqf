@@ -8,7 +8,6 @@
 */
 removeAllWeapons player;
 removeAllItems player;
-removeAllAssignedItems player;
 removeUniform player;
 removeVest player;
 removeBackpack player;
@@ -30,12 +29,12 @@ for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_tourniquet";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_salineIV_500";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_salineIV_250";};
-for "_i" from 1 to 2 do {player addItemToBackpack "ACE_surgicalKit";};
-for "_i" from 1 to 1 do {player addItemToBackpack "ACE_personalAidKit";};
+for "_i" from 1 to 3 do {player addItemToUniform "ACE_surgicalKit";};
+for "_i" from 1 to 1 do {player addItemToUniform "ACE_personalAidKit";};
+for "_i" from 1 to 1 do {player addItemToBackpack "ToolKit";};
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
-player linkItem "tf_anprc152";
 player linkItem "ItemGPS";
 player linkItem "TRYK_Headset_NV";
 
