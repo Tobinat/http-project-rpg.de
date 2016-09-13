@@ -1352,6 +1352,17 @@ class CfgVehicles
 			};
 		};
 	};
+	class prpg_06Victoria_EMS: DRPG_06Victoria_P_P
+	{
+		scope = private;
+		crew = "C_man_1";
+		side = 3;
+		faction = "CIV_F";
+		displayName = "Ford CV S.L Fire Departmend";
+		model = "\DRPG_Wheeled\FORD\Victoria_06\DRPG_Victoria_06_P_P";
+		hiddenSelectionsTextures[] = {"DRPG_Wheeled\FORD\Victoria_06\LIVERY\06Victoria_EMS.paa"};
+	
+	};
 };
 class cfgMods
 {
