@@ -14,7 +14,7 @@ _storename = "hi";
 
 
 if(life_inv_hackingtool == 0) exitwith {
-	["You need some sort of hacking device to unlock this safe..", false] spawn domsg;	
+	["Du benötigst eine Art Jammer um das Schloss zu überbrücken..", false] spawn domsg;	
 };
 
 
@@ -25,7 +25,7 @@ if (cgbankvault getVariable ["hacking", false]) exitwith {["This is already bein
 if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "Vault_Door" <0.5 ) then {
 	 ["dbank", false] remoteExec ["fnc_dispatch",west];
 
-	["You set your wireless hacking device to the vault, it should take roughly 5 minutes. You can move while hacking, though, you might make noises.", false] spawn domsg;
+	["Rechne mit 5 Minuten für die Überbrückung.. Lauf ruhig herum aber beachte, dass der Jammer in deiner Tasche Geräusche macht", false] spawn domsg;
 	cgbankvault say "bankAlarm";
 	cgbankvault setVariable["hacking", true, true];
 
@@ -41,8 +41,8 @@ if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "Vault_Do
 
 			playSound3D ["cg_sndimg\sounds\starthack.ogg", player, false, getPosASL player, 1, 1, 225];
 
-			[1,format["911 DISPATCH: BANK ROBBERY IN PROGRESS!",_storename]] remoteExecCall ["life_fnc_broadcast", west];
-			[1,format["911 EMERGENCY: HOSTAGE SITUATION AT BANK!",_storename]] remoteExecCall ["life_fnc_broadcast", independent];
+			[1,format["911 DISPATCH: DIE ZENTRALBANK WIRD AUSGERAUBT!",_storename]] remoteExecCall ["life_fnc_broadcast", west];
+			[1,format["911 EMERGENCY: ZIVILISTEN MELDEN GEISELNAHME AN DER ZENTRALBANK!",_storename]] remoteExecCall ["life_fnc_broadcast", independent];
 		};
 		if(deadPlayer) exitwith {
 		};
