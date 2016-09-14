@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=1546;
 	class ItemIDProvider
 	{
-		nextID=22256;
+		nextID=22297;
 	};
 	class MarkerIDProvider
 	{
-		nextID=468;
+		nextID=469;
 	};
 	class Camera
 	{
-		pos[]={7141.8169,28.42779,2458.7622};
-		dir[]={0.82994211,-0.29988736,-0.47064459};
-		up[]={0.26096547,0.95389485,-0.14798707};
-		aside[]={-0.49333584,5.478505e-007,-0.86996114};
+		pos[]={9554.2334,183.9203,4428.1372};
+		dir[]={0.041056823,-0.66906875,-0.74212182};
+		up[]={0.036958829,0.74319929,-0.66804415};
+		aside[]={-0.99851286,-5.5068813e-007,-0.055241924};
 	};
 };
 binarizationWanted=0;
@@ -134,13 +134,8 @@ addons[]=
 	"Pub_C",
 	"Test_Character_F",
 	"A3L_HospitalBed2015",
-	"A3L_HospitalBed",
 	"HouseDoubleAL",
-	"GatedoorA",
-	"Gate_B",
-	"zac_prison_F",
-	"ace_logistics_wirecutter",
-	"mm_buildings",
+	"A3L_HospitalBed",
 	"Centrelink",
 	"A3_Signs_F_Signs_Ad"
 };
@@ -148,7 +143,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=94;
+		items=89;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -641,42 +636,15 @@ class AddonsMetaData
 		};
 		class Item86
 		{
-			className="A3L_HospitalBed";
-			name="A3L_HospitalBed";
-		};
-		class Item87
-		{
 			className="HouseDoubleAL";
 			name="HouseDoubleAL";
 		};
+		class Item87
+		{
+			className="A3L_HospitalBed";
+			name="A3L_HospitalBed";
+		};
 		class Item88
-		{
-			className="GatedoorA";
-			name="GatedoorA";
-		};
-		class Item89
-		{
-			className="Gate_B";
-			name="Gate_B";
-		};
-		class Item90
-		{
-			className="zac_prison_F";
-			name="zac_prison_F";
-		};
-		class Item91
-		{
-			className="ace_logistics_wirecutter";
-			name="ACE3 - Logistics Wire Cutter";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item92
-		{
-			className="mm_buildings";
-			name="mm_buildings";
-		};
-		class Item93
 		{
 			className="Centrelink";
 			name="Centrelink";
@@ -847,14 +815,14 @@ class Mission
 		windForced=1;
 		year=2015;
 		day=11;
-		hour=12;
-		minute=-15;
+		hour=11;
+		minute=28;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
 	class Entities
 	{
-		items=2481;
+		items=2328;
 		class Item0
 		{
 			dataType="Marker";
@@ -1898,7 +1866,7 @@ class Mission
 			b=0.69999999;
 			angle=358.83945;
 			id=215;
-			atlOffset=101.03384;
+			atlOffset=104.37816;
 		};
 		class Item90
 		{
@@ -1913,7 +1881,7 @@ class Mission
 			b=100;
 			angle=18.163382;
 			id=216;
-			atlOffset=101.31543;
+			atlOffset=104.64278;
 		};
 		class Item91
 		{
@@ -29486,7 +29454,6 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29494,6 +29461,7 @@ class Mission
 			};
 			id=20339;
 			type="Palm_2";
+			atlOffset=0.95476723;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29535,6 +29503,7 @@ class Mission
 			};
 			id=20340;
 			type="Palm_2";
+			atlOffset=0.1526432;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29732,7 +29701,6 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29740,6 +29708,7 @@ class Mission
 			};
 			id=20345;
 			type="Palm_2";
+			atlOffset=0.99685478;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41274,7 +41243,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=3.5300705;
+			angle=3.5300698;
 			id=20861;
 			atlOffset=187.65506;
 		};
@@ -49877,7 +49846,7 @@ class Mission
 			position[]={7250.2676,25,2377.3318};
 			name="civ_spawnsilverlake";
 			type="Empty";
-			angle=336.14413;
+			angle=336.14404;
 			id=21372;
 		};
 		class Item1877
@@ -52395,7 +52364,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9612.8398,31.123829,4119.1655};
+				position[]={9613.2773,31.123829,4108.9424};
 				angles[]={0,4.4370637,0};
 			};
 			side="Empty";
@@ -53224,6 +53193,7 @@ class Mission
 			};
 			id=21499;
 			type="Land_InfoStand_V1_F";
+			atlOffset=0.21459389;
 		};
 		class Item1976
 		{
@@ -54699,13 +54669,13 @@ class Mission
 				angles[]={0,4.6564889,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Dunkin Bronuts"",life_fnc_virt_menu,""donuts""]; this addaction [""Fetten Zuckerguß Donat kaufen ($1250) "",life_fnc_bronutsbrah]; this addUniform ""KAEL_SUITS_BLK_F"";";
 			};
 			id=21587;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.40068626;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54742,7 +54712,7 @@ class Mission
 			b=0.69999999;
 			angle=359.53189;
 			id=21588;
-			atlOffset=0.82679749;
+			atlOffset=1.2274837;
 		};
 		class Item2065
 		{
@@ -54753,13 +54723,13 @@ class Mission
 				angles[]={0,4.7503891,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false; this allowDamage false; this addAction[""General and Fishing"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Ausrauben"",life_fnc_robStore,""General""];";
 			};
 			id=21589;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.40068626;
 		};
 		class Item2066
 		{
@@ -56938,47 +56908,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9547.6953,26.667421,4110.855};
-				angles[]={6.2738476,1.3387723,0.0014660766};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation true;";
-			};
-			id=21672;
-			type="A3L_HospitalBed";
-			atlOffset=0.39605713;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2134
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9550.6523,25.526579,4107.521};
+				position[]={9550.7197,25.526579,4107.5649};
 				angles[]={6.2738476,2.8870714,0.0014660766};
 			};
 			side="Empty";
@@ -57013,7 +56943,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2135
+		class Item2134
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57054,7 +56984,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2136
+		class Item2135
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57095,7 +57025,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2137
+		class Item2136
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57136,7 +57066,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2138
+		class Item2137
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57177,7 +57107,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2139
+		class Item2138
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57218,7 +57148,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2140
+		class Item2139
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57258,7 +57188,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2141
+		class Item2140
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57298,7 +57228,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2142
+		class Item2141
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57338,7 +57268,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2143
+		class Item2142
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57378,7 +57308,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2144
+		class Item2143
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57418,7 +57348,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2145
+		class Item2144
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57458,7 +57388,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2146
+		class Item2145
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57498,7 +57428,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2147
+		class Item2146
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57538,22 +57468,23 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2148
+		class Item2147
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9578.7559,26.018867,4110.4966};
-				angles[]={6.2738566,2.1637828,0.0014648439};
+				position[]={9578.7559,26.019232,4110.4966};
+				angles[]={6.2738476,2.1637893,0.0014660766};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init=" this enableSimulation false; this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Firefighter Loadout!</t>"",life_fnc_MFirefighter,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Sergeant Loadout!</t>"",life_fnc_MSergeant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Lieutenant Loadout!</t>"",life_fnc_MLieutenant,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Captain Loadout!</t>"",life_fnc_MCaptain,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Battalion Chief Loadout!</t>"",life_fnc_MBattalionChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Assistant Chief Loadout!</t>"",life_fnc_MAssistantChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Chief Loadout!</t>"",life_fnc_MChief,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Seuchenschutz Loadout!</t>"",life_fnc_MSeuche,"""",0,false,false,"""",'playerSide == independent'];  " \n "this addAction[""<t color='#FF0000'>Taucher Loadout!</t>"",life_fnc_MTaucher,"""",0,false,false,"""",'playerSide == independent'];   " \n "this addAction[""<t color='#FF0000'>Feuerwehrmann Loadout!</t>"",life_fnc_MFeuerwehr,"""",0,false,false,"""",'playerSide == independent'];";
 			};
 			id=21687;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.43863487;
+			atlOffset=0.00033569336;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57578,7 +57509,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2149
+		class Item2148
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57619,7 +57550,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2150
+		class Item2149
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57660,7 +57591,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2151
+		class Item2150
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57700,7 +57631,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2152
+		class Item2151
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57740,7 +57671,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2153
+		class Item2152
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57780,7 +57711,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2154
+		class Item2153
 		{
 			dataType="Marker";
 			position[]={1506.455,3.3768708e+016,7575.2109};
@@ -57790,7 +57721,7 @@ class Mission
 			id=21707;
 			atlOffset=3.3768708e+016;
 		};
-		class Item2155
+		class Item2154
 		{
 			dataType="Marker";
 			position[]={9577.6035,25,4237.2314};
@@ -57799,7 +57730,7 @@ class Mission
 			angle=85.689331;
 			id=21708;
 		};
-		class Item2156
+		class Item2155
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57839,7 +57770,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2157
+		class Item2156
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57880,7 +57811,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2158
+		class Item2157
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57921,7 +57852,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2159
+		class Item2158
 		{
 			dataType="Object";
 			class PositionInfo
@@ -57962,7 +57893,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2160
+		class Item2159
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58003,7 +57934,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2161
+		class Item2160
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58044,7 +57975,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2162
+		class Item2161
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58085,7 +58016,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2163
+		class Item2162
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58126,7 +58057,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2164
+		class Item2163
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58167,7 +58098,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2165
+		class Item2164
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58208,7 +58139,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2166
+		class Item2165
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58226,7 +58157,7 @@ class Mission
 			type="Land_FloodLight_F";
 			atlOffset=7.029665;
 		};
-		class Item2167
+		class Item2166
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58266,7 +58197,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2168
+		class Item2167
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58306,7 +58237,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2169
+		class Item2168
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58346,7 +58277,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2170
+		class Item2169
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58386,7 +58317,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2171
+		class Item2170
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58426,7 +58357,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2172
+		class Item2171
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58466,7 +58397,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2173
+		class Item2172
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58506,7 +58437,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2174
+		class Item2173
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58546,7 +58477,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2175
+		class Item2174
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58586,7 +58517,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2176
+		class Item2175
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58603,7 +58534,7 @@ class Mission
 			type="Land_LampDecor_F";
 			atlOffset=-0.00017929077;
 		};
-		class Item2177
+		class Item2176
 		{
 			dataType="Object";
 			class PositionInfo
@@ -58620,7 +58551,7 @@ class Mission
 			type="Land_LampDecor_F";
 			atlOffset=-0.00017929077;
 		};
-		class Item2178
+		class Item2177
 		{
 			dataType="Group";
 			side="Civilian";
@@ -58712,7 +58643,7 @@ class Mission
 			};
 			id=21738;
 		};
-		class Item2179
+		class Item2178
 		{
 			dataType="Group";
 			side="Civilian";
@@ -58804,7 +58735,7 @@ class Mission
 			};
 			id=21740;
 		};
-		class Item2180
+		class Item2179
 		{
 			dataType="Marker";
 			position[]={7447.9199,5.9157829e-036,2499.0481};
@@ -58817,7 +58748,7 @@ class Mission
 			id=21742;
 			atlOffset=-25;
 		};
-		class Item2181
+		class Item2180
 		{
 			dataType="Marker";
 			position[]={2739.239,6.1448523e+035,7635.167};
@@ -58830,7 +58761,7 @@ class Mission
 			id=21743;
 			atlOffset=6.1448523e+035;
 		};
-		class Item2182
+		class Item2181
 		{
 			dataType="Marker";
 			position[]={8923.5371,6.9474787e-036,7491.061};
@@ -58844,7 +58775,7 @@ class Mission
 			id=21744;
 			atlOffset=-19.109999;
 		};
-		class Item2183
+		class Item2182
 		{
 			dataType="Marker";
 			position[]={1159.979,9.2774884e+013,7569.8491};
@@ -58857,7 +58788,7 @@ class Mission
 			id=21745;
 			atlOffset=9.2774884e+013;
 		};
-		class Item2184
+		class Item2183
 		{
 			dataType="Marker";
 			position[]={1605.391,3.9069551e+018,3085.7839};
@@ -58871,25 +58802,12 @@ class Mission
 			id=21746;
 			atlOffset=3.9069551e+018;
 		};
-		class Item2185
-		{
-			dataType="Marker";
-			position[]={9630.0166,-2.0333051e-037,4211.9399};
-			name="crazy1";
-			markerType="ELLIPSE";
-			type="ellipse";
-			alpha=0;
-			a=30;
-			b=30;
-			id=21784;
-			atlOffset=-25;
-		};
-		class Item2186
+		class Item2184
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9638.6504,25.312073,4200.707};
+				position[]={9622.1963,25.28932,4260.4316};
 				angles[]={0,1.4622052,0};
 			};
 			side="Empty";
@@ -58900,7 +58818,7 @@ class Mission
 			};
 			id=21788;
 			type="Land_HouseDoubleAL";
-			atlOffset=0.31207275;
+			atlOffset=0.28931999;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -58925,1893 +58843,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2187
+		class Item2185
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9638.3018,26.203651,4179.4521};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21796;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2188
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9640.6182,26.203651,4179.6372};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21797;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2189
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9642.9619,26.203651,4179.8252};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21798;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2190
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9645.2617,26.203651,4180.0024};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21799;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2191
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9647.5645,26.203651,4180.1851};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21800;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2192
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9649.8975,26.203651,4180.3501};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21801;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2193
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9652.2109,26.203651,4180.5283};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21802;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2194
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9654.6201,26.203651,4180.7212};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21803;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2195
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9656.9199,26.203651,4180.8984};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21804;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2196
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9659.2227,26.203651,4181.0811};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21805;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2197
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9661.5557,26.203651,4181.2461};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21806;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2198
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9663.8691,26.203651,4181.4243};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21807;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2199
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9666.1924,26.203651,4181.6177};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21808;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2200
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9668.5059,26.203651,4181.7959};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21809;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2201
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9670.915,26.203651,4181.9888};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21810;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2202
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9673.2148,26.203651,4182.166};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21811;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2203
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9675.5176,26.203651,4182.3486};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21812;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2204
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9677.8506,26.203651,4182.5137};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21813;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2205
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9680.1641,26.190996,4182.6919};
-				angles[]={0,3.0661881,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21814;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2206
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9682.5195,26.009438,4182.8711};
-				angles[]={0,3.0661881,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21815;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2207
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9684.8525,25.829573,4183.0361};
-				angles[]={0,3.0661881,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21816;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2208
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9687.166,25.65126,4183.2144};
-				angles[]={0,3.0661881,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21817;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2209
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9689.5752,25.465561,4183.4072};
-				angles[]={0,3.0661881,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21818;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2210
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9691.875,25.288284,4183.5845};
-				angles[]={0,3.0661881,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21819;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2211
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9694.1777,25.110771,4183.7671};
-				angles[]={0,3.0661881,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21820;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2212
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9696.5107,24.930954,4183.9321};
-				angles[]={0,3.0661881,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21821;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2213
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9698.8242,24.752594,4184.1104};
-				angles[]={0,3.0661881,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21822;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2214
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9701.1475,24.66198,4184.3037};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21823;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2215
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9703.4609,24.66198,4184.4819};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21824;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2216
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9705.8701,24.66198,4184.6748};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21825;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2217
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9708.1699,24.66198,4184.8521};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21826;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2218
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9710.4727,24.66198,4185.0347};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21827;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2219
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.8057,24.66198,4185.1997};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21828;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2220
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9715.1191,24.66198,4185.3779};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21829;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2221
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9626.7041,26.203651,4178.5405};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21830;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2222
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9629.0205,26.203651,4178.7256};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21831;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2223
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9631.3643,26.203651,4178.9136};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21832;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2224
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9633.6641,26.203651,4179.0908};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21833;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2225
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9635.9668,26.203651,4179.2734};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21834;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2226
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9619.7334,26.203651,4178.0103};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21836;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2227
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9622.0498,26.203651,4178.1953};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21837;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2228
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9624.3936,26.203651,4178.3833};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21838;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2229
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9608.1357,26.203651,4177.0986};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21839;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2230
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9610.4521,26.203651,4177.2837};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21840;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2231
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9612.7959,26.203651,4177.4717};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21841;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2232
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9615.0957,26.203651,4177.6489};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21842;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2233
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9617.3984,26.203651,4177.8315};
-				angles[]={0,3.0661881,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21843;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2234
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9606.5088,26.203651,4180.293};
-				angles[]={0,4.6294346,0};
+				position[]={9613.9443,26.203651,4249.7974};
+				angles[]={0,3.0791285,0};
 			};
 			side="Empty";
 			flags=4;
@@ -60845,52 +58883,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2235
+		class Item2186
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9606.71,26.203651,4177.978};
-				angles[]={0,4.6294346,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21845;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2236
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9605.5088,26.203651,4191.8833};
+				position[]={9605.4033,26.203651,4252.5181};
 				angles[]={0,4.6294346,0};
 			};
 			side="Empty";
@@ -60925,12 +58923,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2237
+		class Item2187
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9605.7119,26.203651,4189.5679};
+				position[]={9605.6064,26.203651,4250.2026};
 				angles[]={0,4.6294346,0};
 			};
 			side="Empty";
@@ -60965,13 +58963,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2238
+		class Item2188
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9605.917,26.203651,4187.2261};
-				angles[]={0,4.6294346,0};
+				position[]={9607.001,26.203651,4249.3477};
+				angles[]={0,3.0791285,0};
 			};
 			side="Empty";
 			flags=4;
@@ -61005,13 +59003,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2239
+		class Item2189
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9606.1123,26.203651,4184.9272};
-				angles[]={0,4.6294346,0};
+				position[]={9609.3037,26.203651,4249.4956};
+				angles[]={0,3.0791285,0};
 			};
 			side="Empty";
 			flags=4;
@@ -61045,13 +59043,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2240
+		class Item2190
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9606.3125,26.203651,4182.6265};
-				angles[]={0,4.6294346,0};
+				position[]={9611.6074,26.203651,4249.6484};
+				angles[]={0,3.0791285,0};
 			};
 			side="Empty";
 			flags=4;
@@ -61085,12 +59083,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2241
+		class Item2191
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9604.9268,26.203651,4198.8501};
+				position[]={9604.8213,26.203651,4259.4849};
 				angles[]={0,4.6294346,0};
 			};
 			side="Empty";
@@ -61125,12 +59123,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2242
+		class Item2192
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9605.3047,26.203651,4194.6143};
+				position[]={9605.1992,26.203651,4255.249};
 				angles[]={0,1.4957618,0};
 			};
 			side="Empty";
@@ -61165,12 +59163,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2243
+		class Item2193
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9605.335,26.203651,4194.1924};
+				position[]={9605.2295,26.203651,4254.8271};
 				angles[]={0,4.6294346,0};
 			};
 			side="Empty";
@@ -61205,12 +59203,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2244
+		class Item2194
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9603.9268,26.203651,4210.4404};
+				position[]={9603.8213,26.203651,4271.0752};
 				angles[]={0,4.6294346,0};
 			};
 			side="Empty";
@@ -61245,12 +59243,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2245
+		class Item2195
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9604.1289,26.203651,4208.125};
+				position[]={9604.0234,26.203651,4268.7598};
 				angles[]={0,4.6294346,0};
 			};
 			side="Empty";
@@ -61285,12 +59283,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2246
+		class Item2196
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9604.8818,26.203651,4199.2573};
+				position[]={9604.7764,26.203651,4259.8921};
 				angles[]={0,1.4808941,0};
 			};
 			side="Empty";
@@ -61325,3815 +59323,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2247
+		class Item2197
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9639.1768,27.447605,4268.4521};
-				angles[]={0,6.1936498,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21868;
-			type="Land_GatedoorA";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2248
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9653.2832,26.717424,4239.1592};
-				angles[]={0,3.0540295,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21870;
-			type="Land_GateB";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2249
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9715.9824,24.66198,4186.8501};
-				angles[]={0,1.5073537,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21875;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2250
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9715.832,24.66198,4189.1655};
-				angles[]={0,1.5073537,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21876;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2251
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9715.667,24.66198,4191.5771};
-				angles[]={0,1.5073537,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21877;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2252
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9715.5186,24.66198,4193.8794};
-				angles[]={0,1.5073537,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21878;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2253
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9715.3623,24.66198,4196.1836};
-				angles[]={0,1.5073537,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21879;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2254
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9715.2266,24.66198,4198.5186};
-				angles[]={0,1.5073537,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21880;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2255
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9715.0752,24.726271,4200.834};
-				angles[]={6.206254,1.5073537,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21881;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2256
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9714.9238,24.907993,4203.1914};
-				angles[]={6.206254,1.5073537,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21882;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2257
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9714.7881,25.063723,4205.5259};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21883;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2258
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9714.6377,25.075296,4207.8418};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21884;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2259
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9714.4727,25.088047,4210.2534};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21885;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2260
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9714.3232,25.099573,4212.5552};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21886;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2261
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9714.1689,25.111429,4214.8599};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21887;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2262
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9714.0303,25.122156,4217.1943};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21888;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2263
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9713.8809,25.133636,4219.5103};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21889;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2264
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9713.7148,25.146435,4221.835};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21890;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2265
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9713.5635,25.158102,4224.1509};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21891;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2266
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9713.4004,25.170712,4226.5625};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21892;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2267
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9713.251,25.18219,4228.8638};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21893;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2268
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9713.0947,25.194235,4231.1689};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21894;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2269
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.958,25.204773,4233.5034};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21895;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2270
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.8076,25.216394,4235.8188};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21896;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2271
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9638.3428,27.469498,4277.9722};
-				angles[]={0,4.6228108,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21902;
-			type="Land_zac_prison_wall";
-		};
-		class Item2272
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9637.875,27.469498,4283.3442};
-				angles[]={0,4.6228189,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21903;
-			type="Land_zac_prison_wall";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2273
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9640.1445,27.469498,4286.0591};
-				angles[]={0,6.2093091,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21904;
-			type="Land_zac_prison_wall";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2274
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9650.8486,27.469498,4286.8076};
-				angles[]={0,6.2128854,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21906;
-			type="Land_zac_prison_wall";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2275
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9645.4688,27.469498,4286.4434};
-				angles[]={0,6.2128773,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21907;
-			type="Land_zac_prison_wall";
-		};
-		class Item2276
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9656.1465,27.469498,4287.1987};
-				angles[]={0,6.2093091,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21908;
-			type="Land_zac_prison_wall";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2277
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9666.8506,27.469498,4287.9473};
-				angles[]={0,6.2128854,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21909;
-			type="Land_zac_prison_wall";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2278
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9661.4707,27.469498,4287.583};
-				angles[]={0,6.2128773,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21910;
-			type="Land_zac_prison_wall";
-		};
-		class Item2279
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9672.1621,27.469498,4288.3325};
-				angles[]={0,6.2093091,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21911;
-			type="Land_zac_prison_wall";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2280
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9677.3965,27.469498,4288.6499};
-				angles[]={0,6.2128773,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21913;
-			type="Land_zac_prison_wall";
-		};
-		class Item2281
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9680.0635,27.469498,4285.7349};
-				angles[]={0,1.485988,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21914;
-			type="Land_zac_prison_wall";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2282
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9680.5059,27.469498,4280.4155};
-				angles[]={0,1.4895562,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21916;
-			type="Land_zac_prison_wall";
-		};
-		class Item2283
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9641.5117,27.469498,4241.1245};
-				angles[]={0,4.620913,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21919;
-			type="Land_zac_prison_wall";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2284
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9641.0332,27.469498,4246.4409};
-				angles[]={0,4.6244812,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21920;
-			type="Land_zac_prison_wall";
-		};
-		class Item2285
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9653.8945,27.298212,4239.519};
-				angles[]={0,3.0556002,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21923;
-			type="Land_zac_prison_fence";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2286
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9649.6963,27.298212,4239.2515};
-				angles[]={0,3.0556002,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21924;
-			type="Land_zac_prison_fence";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2287
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9647.5,27.298212,4239.0625};
-				angles[]={0,3.0556002,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21925;
-			type="Land_zac_prison_fence";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2288
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9645.2891,27.298212,4238.8721};
-				angles[]={0,3.0556002,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21926;
-			type="Land_zac_prison_fence";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2289
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9643.0742,27.298212,4238.6821};
-				angles[]={0,3.0556002,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21927;
-			type="Land_zac_prison_fence";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2290
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9655.041,27.298212,4240.6973};
-				angles[]={0,1.4766837,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21928;
-			type="Land_zac_prison_fence";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2291
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9648.5,25.017387,4278.8296};
-				angles[]={0,3.0525377,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21933;
-			type="CG_Roads_parkinglot_6";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2292
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9668.6152,25.017387,4280.6924};
-				angles[]={0,3.0525377,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21934;
-			type="CG_Roads_parkinglot_6";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2293
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9649.541,25.036213,4263.4067};
-				angles[]={0,6.1987233,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				skill=0.60000002;
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21937;
-			type="CG_Roads_asphalt";
-			atlOffset=0.018825531;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2294
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9648.5088,25.017387,4249.3384};
-				angles[]={0,1.482753,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21938;
-			type="CG_Roads_asphalt";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2295
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9679.8496,26.332348,4279.5986};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21939;
-			type="Ficus_Bush_1";
-		};
-		class Item2296
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9678.668,25.827839,4281.6504};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21941;
-			type="Oleander_White";
-		};
-		class Item2297
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9678.5566,25.802221,4287.6685};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21942;
-			type="Oleander2";
-		};
-		class Item2298
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9679.1855,25.858301,4286.084};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21943;
-			type="Oleander1";
-			atlOffset=-1.1444092e-005;
-		};
-		class Item2299
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9679.0938,25.802221,4283.8682};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21947;
-			type="Oleander2";
-		};
-		class Item2300
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9662.1973,25.858313,4271.1821};
-				angles[]={0,1.4141201,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21948;
-			type="Oleander1";
-		};
-		class Item2301
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9665.7715,25.802221,4271.6611};
-				angles[]={0,1.4141201,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21949;
-			type="Oleander2";
-		};
-		class Item2302
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9663.5146,25.810087,4271.7358};
-				angles[]={0,1.4141201,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=21950;
-			type="Oleander_White";
-			atlOffset=0.0078659058;
-		};
-		class Item2303
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9642.46,26.788826,4234.5967};
-				angles[]={0,1.4780184,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21971;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2304
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9643.2168,26.788826,4226.8843};
-				angles[]={0,1.4780184,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21972;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2305
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9643.9248,26.788826,4219.1318};
-				angles[]={0,1.4780184,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21973;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2306
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.6582,25.227921,4238.1406};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21974;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2307
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.5068,25.23959,4240.4561};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21975;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2308
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.3555,25.251257,4242.8135};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21976;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2309
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.2197,25.261747,4245.1479};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21977;
-			type="vvv_modelos5_muro_fence3";
-			atlOffset=4.5776367e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2310
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.0693,25.273275,4247.4639};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21978;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2311
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9711.9043,25.286026,4249.8755};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21979;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2312
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9711.7549,25.297552,4252.1772};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21980;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2313
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9711.6006,25.309408,4254.4819};
-				angles[]={0,1.5073537,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21981;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2314
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9710.2051,25.417007,4255.3589};
-				angles[]={0,6.2255788,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21982;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2315
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9707.8877,25.59565,4255.2231};
-				angles[]={0,6.2255788,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21983;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2316
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9705.5625,25.774855,4255.0703};
-				angles[]={0,6.2255788,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21984;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2317
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9703.2451,25.953497,4254.9326};
-				angles[]={0,6.2255788,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21985;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2318
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9700.833,26.139431,4254.7837};
-				angles[]={0,6.2255788,6.206254};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21986;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2319
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9698.5313,26.203651,4254.6479};
-				angles[]={0,6.2255788,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21987;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2320
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9696.2246,26.203651,4254.5049};
-				angles[]={0,6.2255788,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21988;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2321
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9693.8896,26.203651,4254.3818};
-				angles[]={0,6.2255788,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21989;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2322
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9691.5732,26.203651,4254.2451};
-				angles[]={0,6.2255788,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21990;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2323
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9689.2793,26.203651,4254.0566};
-				angles[]={0,6.2255788,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21991;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2324
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9686.9775,26.203651,4253.9209};
-				angles[]={0,6.2255788,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21992;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2325
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9684.6709,26.203651,4253.7778};
-				angles[]={0,6.2255788,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21993;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2326
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9658.834,25,4253.876};
-				angles[]={0,6.191421,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=21791;
-			type="Land_Gaol_Main";
-		};
-		class Item2327
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9652.0215,26.788826,4184.5146};
-				angles[]={0,1.4780184,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21996;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2328
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9651.4648,26.788826,4192.3398};
-				angles[]={0,1.4780184,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21997;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2329
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9656.2305,26.788826,4181.4424};
-				angles[]={0,6.2067227,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21998;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2330
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9664.4668,26.788826,4182.1069};
-				angles[]={0,6.2067227,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=21999;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2331
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9672.6699,26.788826,4182.8335};
-				angles[]={0,6.2067227,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22000;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2332
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9680.9834,26.713032,4183.4468};
-				angles[]={0,6.2067227,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22001;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2333
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9689.1953,26.08,4184.0264};
-				angles[]={0,6.2067227,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22002;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2334
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9697.0371,25.475525,4184.7065};
-				angles[]={0,6.2067227,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22003;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2335
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9705.0273,25.247154,4185.3076};
-				angles[]={0,6.2067227,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22004;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2336
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9686.6953,26.788826,4252.9595};
-				angles[]={0,3.0911188,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22005;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2337
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9694.4268,26.788826,4253.7666};
-				angles[]={0,3.0911188,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22006;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2338
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9702.2412,26.616066,4254.1328};
-				angles[]={0,3.0945835,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22007;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2339
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9714.9678,25.247154,4189.019};
-				angles[]={0,4.6429982,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22008;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2340
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9714.4277,25.247154,4196.8345};
-				angles[]={0,4.6429982,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22009;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2341
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9713.9316,25.604979,4204.6421};
-				angles[]={0,4.6429982,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22010;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2342
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9713.4551,25.751652,4212.436};
-				angles[]={0,4.6429982,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22011;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2343
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.9307,25.792065,4220.1841};
-				angles[]={0,4.6429982,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22012;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2344
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9712.3799,25.834549,4227.9546};
-				angles[]={0,4.6429982,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22013;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2345
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9711.79,25.880043,4235.6738};
-				angles[]={0,4.6429982,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22014;
-			type="Land_Mil_WiredFence_F";
-			atlOffset=4.5776367e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2346
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9711.2393,25.922436,4243.4443};
-				angles[]={0,4.6429982,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22015;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2347
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9710.8076,25.955746,4251.1616};
-				angles[]={0,4.6429982,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22016;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2348
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9711.4404,25.247154,4185.6567};
-				angles[]={0,6.2067227,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22018;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2349
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9707.4316,26.215969,4254.375};
-				angles[]={0,3.0945835,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22019;
-			type="Land_Mil_WiredFence_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2350
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9678.0176,26.297037,4274.7998};
-				angles[]={0,3.0556674,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22020;
-			type="A3L_HospitalBed";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2351
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9651.5234,26.594238,4213.8003};
+				position[]={9635.0693,26.571486,4273.5249};
 				angles[]={0,3.0556674,0};
 			};
 			side="Empty";
@@ -65168,12 +59363,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2352
+		class Item2198
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9648.0488,26.594238,4213.4424};
+				position[]={9631.5947,26.571486,4273.167};
 				angles[]={0,3.0556674,0};
 			};
 			side="Empty";
@@ -65208,12 +59403,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2353
+		class Item2199
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9647.7324,26.59424,4193.5005};
+				position[]={9631.2783,26.571487,4253.2251};
 				angles[]={0,6.1383729,0};
 			};
 			side="Empty";
@@ -65248,12 +59443,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2354
+		class Item2200
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9644.1514,26.59424,4193.002};
+				position[]={9627.6973,26.571487,4252.7266};
 				angles[]={0,6.1383729,0};
 			};
 			side="Empty";
@@ -65288,132 +59483,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2355
+		class Item2201
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9613.9873,26.203651,4213.1602};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22025;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2356
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9611.6846,26.203651,4212.8481};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22026;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2357
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9609.3555,26.203651,4212.5313};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22027;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2358
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9607.0684,26.203651,4212.228};
+				position[]={9606.9629,26.203651,4272.8628};
 				angles[]={0,6.1527491,0};
 			};
 			side="Empty";
@@ -65448,12 +59523,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2359
+		class Item2202
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9604.7793,26.203651,4211.9189};
+				position[]={9604.6738,26.203651,4272.5537};
 				angles[]={0,6.1527491,0};
 			};
 			side="Empty";
@@ -65488,412 +59563,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2360
+		class Item2203
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9620.9189,26.203651,4214.0732};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22030;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2361
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9618.6162,26.203651,4213.7607};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22031;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2362
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9616.2861,26.203651,4213.4443};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22032;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2363
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9627.8164,26.203651,4214.9927};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22033;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2364
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9625.5293,26.203651,4214.689};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22034;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2365
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9623.2402,26.203651,4214.3799};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22035;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2366
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9630.1416,26.203651,4215.2822};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22036;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2367
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9632.3818,26.203651,4215.5596};
-				angles[]={0,6.1527491,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22037;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2368
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9633.709,26.203651,4214.7959};
-				angles[]={0,1.4689082,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22038;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2369
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9633.957,26.203651,4212.6143};
-				angles[]={0,1.4689082,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation true; this allowDamage false;";
-			};
-			id=22039;
-			type="vvv_modelos5_muro_fence3";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2370
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9602.6826,25.009001,4208.2632};
+				position[]={9602.5771,25.009001,4268.8979};
 			};
 			side="Empty";
 			flags=4;
@@ -65927,12 +59602,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2371
+		class Item2204
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9603.1816,25.009001,4198.9297};
+				position[]={9603.0762,25.009001,4259.5645};
 			};
 			side="Empty";
 			flags=4;
@@ -65966,12 +59641,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2372
+		class Item2205
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9602.6738,26.224722,4199.0513};
+				position[]={9602.5684,26.224722,4259.686};
 			};
 			side="Empty";
 			flags=4;
@@ -65981,12 +59656,12 @@ class Mission
 			id=22043;
 			type="Oleander2";
 		};
-		class Item2373
+		class Item2206
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9602.2822,26.224722,4208.3291};
+				position[]={9602.1768,26.224722,4268.9639};
 			};
 			side="Empty";
 			flags=4;
@@ -65996,23 +59671,10 @@ class Mission
 			id=22044;
 			type="Oleander_White";
 		};
-		class Item2374
+		class Item2207
 		{
 			dataType="Marker";
-			position[]={9661.6729,8.794226e+011,4267.5908};
-			name="crazy1_1";
-			markerType="ELLIPSE";
-			type="ellipse";
-			alpha=0;
-			a=35;
-			b=35;
-			id=22046;
-			atlOffset=8.794226e+011;
-		};
-		class Item2375
-		{
-			dataType="Marker";
-			position[]={9628.9473,3736.1045,4201.8652};
+			position[]={9613.748,3736.1045,4261.4409};
 			name="hospital_5";
 			text="Silver Lake Psychiatrie";
 			type="A3L_FD_Icon";
@@ -66020,144 +59682,24 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=22047;
-			atlOffset=3710.7817;
+			atlOffset=3710.8167;
 		};
-		class Item2376
+		class Item2208
 		{
 			dataType="Marker";
-			position[]={9638.9326,1,4195.7544};
+			position[]={9619.5264,1,4253.2095};
 			name="spawn_psych";
 			type="Empty";
-			angle=264.02145;
+			angle=353.65387;
 			id=22051;
 			atlOffset=-24;
 		};
-		class Item2377
+		class Item2209
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9655.7412,25.360527,4210.6108};
-				angles[]={0,1.4677726,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false;";
-			};
-			id=22054;
-			type="Land_Ancient_Wall_8m_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2378
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9650.6357,25.360527,4184.3159};
-				angles[]={0,1.4677726,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false;";
-			};
-			id=22055;
-			type="Land_Ancient_Wall_8m_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2379
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9660.1592,25.360527,4216.5029};
-				angles[]={0,6.1804976,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false;";
-			};
-			id=22056;
-			type="Land_Ancient_Wall_8m_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2380
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9644.6602,27.322403,4206.2207};
+				position[]={9628.2061,27.29965,4265.9453};
 				angles[]={0,3.0417252,0};
 			};
 			side="Empty";
@@ -66168,12 +59710,12 @@ class Mission
 			type="vvv_modelos6_m6estanterialargahospital";
 			atlOffset=1.6414433;
 		};
-		class Item2381
+		class Item2210
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9633.5273,27.290421,4195.2915};
+				position[]={9617.0732,27.267668,4255.0161};
 				angles[]={0,1.4775134,0};
 			};
 			side="Empty";
@@ -66184,12 +59726,12 @@ class Mission
 			id=22061;
 			type="vvv_modelos6_modelos6deco1";
 		};
-		class Item2382
+		class Item2211
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9641.6826,27.015366,4197.1221};
+				position[]={9625.2285,26.992615,4256.8467};
 				angles[]={0,1.4564397,0};
 			};
 			side="Empty";
@@ -66198,14 +59740,14 @@ class Mission
 			};
 			id=22062;
 			type="vvv_modelos6_modelos6estateriademedicamentos";
-			atlOffset=1.1229267;
+			atlOffset=1.1229286;
 		};
-		class Item2383
+		class Item2212
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9638.2598,26.821661,4197.5488};
+				position[]={9621.8057,26.798908,4257.2734};
 				angles[]={0,3.0540643,0};
 			};
 			side="Empty";
@@ -66241,12 +59783,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2384
+		class Item2213
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9638.7754,25.480396,4193.5146};
+				position[]={9622.3213,25.457644,4253.2393};
 				angles[]={0,6.1856656,0};
 			};
 			side="Empty";
@@ -66281,7 +59823,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2385
+		class Item2214
 		{
 			dataType="Object";
 			class PositionInfo
@@ -66297,7 +59839,7 @@ class Mission
 			id=22067;
 			type="vvv_modelos6_m6estatuademadera";
 		};
-		class Item2386
+		class Item2215
 		{
 			dataType="Object";
 			class PositionInfo
@@ -66314,12 +59856,12 @@ class Mission
 			type="vvv_modelos6_m6estaciongrande";
 			atlOffset=-1.5258789e-005;
 		};
-		class Item2387
+		class Item2216
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9653.4248,25.825375,4211.9453};
+				position[]={9636.9707,25.802622,4271.6699};
 				angles[]={0,4.0515571,0};
 			};
 			side="Empty";
@@ -66330,7 +59872,7 @@ class Mission
 			id=22074;
 			type="vvv_modelos6_modelos6mesadeoperaciones";
 		};
-		class Item2388
+		class Item2217
 		{
 			dataType="Object";
 			class PositionInfo
@@ -66370,12 +59912,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2389
+		class Item2218
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9633.7783,29.205847,4193.75};
+				position[]={9617.3242,29.183094,4253.4746};
 				angles[]={0,3.0303929,0};
 			};
 			side="Empty";
@@ -66385,13 +59927,14 @@ class Mission
 			};
 			id=22080;
 			type="vvv_modelos6_m6camilladeautosia";
+			atlOffset=1.9073486e-006;
 		};
-		class Item2390
+		class Item2219
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9638.3271,28.990065,4194.0288};
+				position[]={9621.873,28.967312,4253.7534};
 			};
 			side="Empty";
 			flags=4;
@@ -66400,24 +59943,9 @@ class Mission
 			};
 			id=22081;
 			type="vvv_modelos6_modelos6camilla";
+			atlOffset=1.9073486e-006;
 		};
-		class Item2391
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9673.6035,25.569279,4263.7031};
-				angles[]={0,6.070528,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=22082;
-			type="vvv_modelos6_modelos6camilla2";
-		};
-		class Item2392
+		class Item2220
 		{
 			dataType="Object";
 			class PositionInfo
@@ -66456,7 +59984,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2393
+		class Item2221
 		{
 			dataType="Object";
 			class PositionInfo
@@ -66496,132 +60024,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2394
+		class Item2222
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9639.4736,28.4221,4276.4868};
-				angles[]={0,1.4940096,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this allowDamage false;";
-			};
-			id=22086;
-			type="vvv_modelos6_m6camaradeseguridad";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2395
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9664.7471,28.396484,4216.7393};
-				angles[]={0,1.4940096,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this allowDamage false;";
-			};
-			id=22087;
-			type="vvv_modelos6_m6camaradeseguridad";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2396
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9649.6328,28.396484,4186.6284};
-				angles[]={0,6.1260619,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this allowDamage false;";
-			};
-			id=22088;
-			type="vvv_modelos6_m6camaradeseguridad";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2397
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9653.3525,26.352055,4211.9604};
+				position[]={9636.8984,26.329302,4271.6851};
 			};
 			side="Empty";
 			class Attributes
@@ -66631,12 +60039,12 @@ class Mission
 			type="vvv_modelos6_modelos6bolsadeanfetas";
 			atlOffset=0.8794651;
 		};
-		class Item2398
+		class Item2223
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9604.7803,25.533789,4192.6733};
+				position[]={9604.6748,25.533789,4253.3081};
 				angles[]={0,4.6239758,0};
 			};
 			side="Empty";
@@ -66671,7 +60079,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2399
+		class Item2224
 		{
 			dataType="Object";
 			class PositionInfo
@@ -66711,284 +60119,28 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2400
+		class Item2225
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9670.5596,25.569279,4254.3267};
-				angles[]={0,6.2538276,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=22104;
-			type="vvv_modelos6_modelos6camilla2";
-		};
-		class Item2401
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9637.4023,25.884232,4201.6953};
+				position[]={9620.9482,25.861477,4261.4199};
 				angles[]={0,4.5782337,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=22105;
 			type="vvv_modelos6_modelos6camilla2";
+			atlOffset=0.30006409;
 		};
-		class Item2402
+		class Item2226
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9678.3564,30.98218,4287.5244};
-				angles[]={0,5.3102279,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation true;";
-			};
-			id=22128;
-			type="Land_LampHalogen_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2403
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9710.5283,30.170601,4254.542};
-				angles[]={0,5.3102279,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation true;";
-			};
-			id=22129;
-			type="Land_LampHalogen_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2404
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9715.1279,29.440508,4186.4814};
-				angles[]={0,0.70246893,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation true;";
-			};
-			id=22130;
-			type="Land_LampHalogen_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2405
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9652.1133,30.98218,4181.5};
-				angles[]={0,2.3160889,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation true;";
-			};
-			id=22131;
-			type="Land_LampHalogen_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2406
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9645.0684,30.98218,4215.8853};
-				angles[]={0,2.1815653,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation true;";
-			};
-			id=22132;
-			type="Land_LampHalogen_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2407
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9638.4658,31.007797,4285.3247};
-				angles[]={0,4.0882072,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation true;";
-			};
-			id=22133;
-			type="Land_LampHalogen_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2408
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9605.6465,27.179586,4199.1729};
+				position[]={9607.6611,27.179644,4250.2246};
 			};
 			side="Empty";
 			flags=5;
@@ -66997,6 +60149,7 @@ class Mission
 			};
 			id=22134;
 			type="Land_LampDecor_F";
+			atlOffset=5.7220459e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -67021,12 +60174,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2409
+		class Item2227
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9604.8037,27.179586,4208.3491};
+				position[]={9642.7393,27.179607,4262.7627};
 			};
 			side="Empty";
 			flags=5;
@@ -67035,6 +60188,7 @@ class Mission
 			};
 			id=22135;
 			type="Land_LampDecor_F";
+			atlOffset=2.0980835e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -67059,12 +60213,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2410
+		class Item2228
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9629.0898,27.179586,4195.1631};
+				position[]={9626.7676,27.179586,4218.5923};
 			};
 			side="Empty";
 			flags=5;
@@ -67097,16 +60251,15 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2411
+		class Item2229
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9641.7002,25.182844,4199.6328};
+				position[]={9614.3652,28.021393,4261.2539};
 				angles[]={0,0.044210356,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -67114,6 +60267,7 @@ class Mission
 			};
 			id=22137;
 			type="Land_FloodLight_F";
+			atlOffset=2.5384846;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -67138,7 +60292,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2412
+		class Item2230
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67154,7 +60308,7 @@ class Mission
 			id=22138;
 			type="vvv_modelos6_modelos6camilla2";
 		};
-		class Item2413
+		class Item2231
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67171,7 +60325,7 @@ class Mission
 			type="vvv_modelos6_modelos6camilla2";
 			atlOffset=0.13120651;
 		};
-		class Item2414
+		class Item2232
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67187,7 +60341,7 @@ class Mission
 			type="vvv_modelos6_modelos6camilla2";
 			atlOffset=0.46847153;
 		};
-		class Item2415
+		class Item2233
 		{
 			dataType="Marker";
 			position[]={9575.2148,25.000004,4111.9019};
@@ -67197,7 +60351,7 @@ class Mission
 			id=22142;
 			atlOffset=3.8146973e-006;
 		};
-		class Item2416
+		class Item2234
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67214,7 +60368,7 @@ class Mission
 			id=22143;
 			type="plp_bo_BarStool_S1";
 		};
-		class Item2417
+		class Item2235
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67255,7 +60409,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2418
+		class Item2236
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67296,7 +60450,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2419
+		class Item2237
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67337,7 +60491,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2420
+		class Item2238
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67378,7 +60532,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2421
+		class Item2239
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67419,7 +60573,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2422
+		class Item2240
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67460,7 +60614,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2423
+		class Item2241
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67501,7 +60655,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2424
+		class Item2242
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67542,7 +60696,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2425
+		class Item2243
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67583,7 +60737,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2426
+		class Item2244
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67624,7 +60778,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2427
+		class Item2245
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67665,7 +60819,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2428
+		class Item2246
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67706,7 +60860,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2429
+		class Item2247
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67745,7 +60899,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2430
+		class Item2248
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67785,12 +60939,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2431
+		class Item2249
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9602.6143,33.978043,4246.7095};
+				position[]={9602.8652,33.978043,4244.0957};
 			};
 			side="Empty";
 			flags=4;
@@ -67824,7 +60978,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2432
+		class Item2250
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67864,7 +61018,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2433
+		class Item2251
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67904,7 +61058,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2434
+		class Item2252
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67944,7 +61098,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2435
+		class Item2253
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67984,12 +61138,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2436
+		class Item2254
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9602.6963,25.008883,4246.6523};
+				position[]={9602.9473,25.009001,4244.0386};
 			};
 			side="Empty";
 			flags=4;
@@ -67999,7 +61153,6 @@ class Mission
 			};
 			id=22164;
 			type="Land_TreeBin_F";
-			atlOffset=-0.00011825562;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -68024,7 +61177,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2437
+		class Item2255
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68064,7 +61217,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2438
+		class Item2256
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68104,7 +61257,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2439
+		class Item2257
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68145,12 +61298,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2440
+		class Item2258
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9619.3096,33.978119,4104.311};
+				position[]={9619.7471,33.978088,4094.0879};
 				angles[]={0,6.1084781,0};
 			};
 			side="Empty";
@@ -68161,7 +61314,7 @@ class Mission
 			};
 			id=22168;
 			type="Palm_2";
-			atlOffset=7.6293945e-005;
+			atlOffset=4.5776367e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -68186,12 +61339,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2441
+		class Item2259
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9619.4922,25.009031,4104.3525};
+				position[]={9619.9297,25.009001,4094.1294};
 				angles[]={0,6.1084781,0};
 			};
 			side="Empty";
@@ -68202,7 +61355,6 @@ class Mission
 			};
 			id=22169;
 			type="Land_TreeBin_F";
-			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -68227,7 +61379,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2442
+		class Item2260
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68268,7 +61420,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2443
+		class Item2261
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68309,7 +61461,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2444
+		class Item2262
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68326,7 +61478,7 @@ class Mission
 			type="Land_buildingApartments2B";
 			atlOffset=4.2477512;
 		};
-		class Item2445
+		class Item2263
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68365,7 +61517,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2446
+		class Item2264
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68382,7 +61534,7 @@ class Mission
 			type="Land_buildingApartments2C";
 			atlOffset=2.9506454;
 		};
-		class Item2447
+		class Item2265
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68423,7 +61575,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2448
+		class Item2266
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68464,7 +61616,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2449
+		class Item2267
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68504,7 +61656,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2450
+		class Item2268
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68521,7 +61673,7 @@ class Mission
 			type="Land_Furniture3";
 			atlOffset=-3.6429996;
 		};
-		class Item2451
+		class Item2269
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68538,7 +61690,7 @@ class Mission
 			type="Land_Furniture4";
 			atlOffset=-3.5847054;
 		};
-		class Item2452
+		class Item2270
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68555,7 +61707,7 @@ class Mission
 			type="Land_Furniture3";
 			atlOffset=-3.5493851;
 		};
-		class Item2453
+		class Item2271
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68571,7 +61723,7 @@ class Mission
 			id=22202;
 			type="vvv_modelos6_modelos6carabana";
 		};
-		class Item2454
+		class Item2272
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68611,7 +61763,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2455
+		class Item2273
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68651,7 +61803,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2456
+		class Item2274
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68668,7 +61820,7 @@ class Mission
 			type="vvv_modelos7_modelos7Dispensador_pediodico1";
 			atlOffset=-9.5367432e-005;
 		};
-		class Item2457
+		class Item2275
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68685,7 +61837,7 @@ class Mission
 			type="vvv_modelos7_modelos7Dispensador_pediodico";
 			atlOffset=-7.6293945e-005;
 		};
-		class Item2458
+		class Item2276
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68725,7 +61877,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2459
+		class Item2277
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68765,7 +61917,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2460
+		class Item2278
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68805,7 +61957,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2461
+		class Item2279
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68845,7 +61997,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2462
+		class Item2280
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68885,7 +62037,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2463
+		class Item2281
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68925,7 +62077,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2464
+		class Item2282
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68965,7 +62117,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2465
+		class Item2283
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69005,7 +62157,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2466
+		class Item2284
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69045,7 +62197,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2467
+		class Item2285
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69085,7 +62237,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2468
+		class Item2286
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69125,7 +62277,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2469
+		class Item2287
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69165,7 +62317,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2470
+		class Item2288
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69205,7 +62357,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2471
+		class Item2289
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69246,7 +62398,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2472
+		class Item2290
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69286,12 +62438,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2473
+		class Item2291
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9626.4502,26.041054,4073.156};
+				position[]={9646.8438,26.041054,4022.2104};
 				angles[]={0,5.9605613,0};
 			};
 			side="Empty";
@@ -69326,7 +62478,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2474
+		class Item2292
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69366,7 +62518,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2475
+		class Item2293
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69406,7 +62558,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item2476
+		class Item2294
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69425,7 +62577,7 @@ class Mission
 			type="cg_money_stack_1";
 			atlOffset=0.04759407;
 		};
-		class Item2477
+		class Item2295
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69444,7 +62596,7 @@ class Mission
 			type="cg_money_stack_1";
 			atlOffset=0.042024612;
 		};
-		class Item2478
+		class Item2296
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69463,7 +62615,7 @@ class Mission
 			type="cg_money_stack_1";
 			atlOffset=0.053489685;
 		};
-		class Item2479
+		class Item2297
 		{
 			dataType="Object";
 			class PositionInfo
@@ -69480,7 +62632,7 @@ class Mission
 			type="cg_pallet";
 			atlOffset=0.17270851;
 		};
-		class Item2480
+		class Item2298
 		{
 			dataType="Marker";
 			position[]={7140.3315,25.208141,2457.0256};
@@ -69491,6 +62643,918 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=22255;
+		};
+		class Item2299
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9558.792,26.029558,4123.0762};
+				angles[]={6.2738476,2.8350081,0.0014660766};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Medizinisches Equipment aufstocken</t>"",life_fnc_aufstocken,"""",0,false,false,"""",'playerSide == independent'];";
+			};
+			id=22256;
+			type="vvv_modelos6_modelos6mesadeoperaciones";
+			atlOffset=0.00045204163;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2300
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9609.2656,26.203651,4273.1519};
+				angles[]={0,6.1527491,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation true; this allowDamage false;";
+			};
+			id=22257;
+			type="vvv_modelos5_muro_fence3";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2301
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9611.5625,26.203651,4273.4409};
+				angles[]={0,6.1527491,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation true; this allowDamage false;";
+			};
+			id=22258;
+			type="vvv_modelos5_muro_fence3";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2302
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9612.9893,26.203651,4272.6348};
+				angles[]={0,1.4719958,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation true; this allowDamage false;";
+			};
+			id=22259;
+			type="vvv_modelos5_muro_fence3";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2303
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9598.9365,33.978043,4198.8516};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=22260;
+			type="Palm_2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2304
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9599.0186,25.009001,4198.7944};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation true; this allowDamage false;";
+			};
+			id=22261;
+			type="Land_TreeBin_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2305
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9613.3525,33.978043,4068.48};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=22262;
+			type="Palm_2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2306
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9613.4346,25.009001,4068.4229};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation true; this allowDamage false;";
+			};
+			id=22263;
+			type="Land_TreeBin_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2307
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9645.7754,33.978043,4024.9722};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=22264;
+			type="Palm_2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2308
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9645.8574,25.009001,4024.915};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation true; this allowDamage false;";
+			};
+			id=22265;
+			type="Land_TreeBin_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2309
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9657.2188,33.936825,3978.1292};
+				angles[]={6.2746372,0,6.2817206};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=22266;
+			type="Palm_2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2310
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9657.3008,24.967173,3978.072};
+				angles[]={6.2746372,0,6.2817206};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation true; this allowDamage false;";
+			};
+			id=22267;
+			type="Land_TreeBin_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2311
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9713.2002,32.874413,3959.2466};
+				angles[]={6.2760177,0,6.278697};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=22268;
+			type="Palm_2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2312
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9713.2822,23.904591,3959.1895};
+				angles[]={6.2760177,0,6.278697};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation true; this allowDamage false;";
+			};
+			id=22269;
+			type="Land_TreeBin_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2313
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9555.168,27.253136,4104.4453};
+				angles[]={0,6.0133491,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=22270;
+			type="vvv_modelos6_modelos6estateriademedicamentos";
+			atlOffset=1.336216;
+		};
+		class Item2314
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9548.3428,26.962427,4103.6777};
+				angles[]={0,1.3593835,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=22271;
+			type="vvv_modelos6_modelos6deco2";
+			atlOffset=0.13370895;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2315
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9547.5234,27.444868,4106.6694};
+				angles[]={0,1.3351024,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=22272;
+			type="vvv_modelos6_m6estanterialargahospital";
+			atlOffset=0.55158997;
+		};
+		class Item2316
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9555.2588,26.04771,4105.2046};
+				angles[]={6.2738566,1.3683689,0.0014648439};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=22273;
+			type="vvv_modelos6_modelos6camilla2";
+			atlOffset=0.13177872;
+		};
+		class Item2317
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9548.4922,27.445906,4111.2764};
+				angles[]={0,2.8801975,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=22276;
+			type="vvv_modelos6_modelos6deco1";
+			atlOffset=0.077102661;
+		};
+		class Item2318
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9548.8965,25.872402,4112.1646};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=22279;
+			type="vvv_modelos6_modelos6papeleradehospital";
+			atlOffset=0.080169678;
+		};
+		class Item2319
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9547.8076,26.02869,4106.3281};
+				angles[]={0,2.9066169,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=22281;
+			type="vvv_modelos6_modelos6camilla";
+			atlOffset=0.15412331;
+		};
+		class Item2320
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9551.4512,26.183414,4112.7627};
+				angles[]={0,1.3314967,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=22282;
+			type="vvv_modelos6_m6camilladeautosia";
+			atlOffset=0.027622223;
+		};
+		class Item2321
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9551.416,27.507385,4113.1724};
+				angles[]={0,2.8854482,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=22287;
+			type="vvv_modelos6_modelos6estateriademedicamentos";
+			atlOffset=0.54736328;
+		};
+		class Item2322
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9553.3428,25.990559,4109.5161};
+				angles[]={0,4.4476399,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Medizinisches Equipment aufstocken</t>"",life_fnc_aufstocken,"""",0,false,false,"""",'playerSide == independent'];";
+			};
+			id=22289;
+			type="vvv_modelos6_modelos6mesadeoperaciones";
+			atlOffset=0.096063614;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2323
+		{
+			dataType="Marker";
+			position[]={9613.8799,1.3143049e+013,4261.2378};
+			name="crazy1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			a=17;
+			b=17;
+			id=22290;
+			atlOffset=1.3143049e+013;
+		};
+		class Item2324
+		{
+			dataType="Marker";
+			position[]={9623.3682,25,4259.668};
+			name="crazy1_1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			a=17;
+			b=17;
+			id=22293;
+		};
+		class Item2325
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8433.6865,19.591532,6686.4761};
+				angles[]={0,3.2177808,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Medizinisches Equipment aufstocken</t>"",life_fnc_aufstocken,"""",0,false,false,"""",'playerSide == independent'];";
+			};
+			id=22294;
+			type="vvv_modelos6_modelos6mesadeoperaciones";
+			atlOffset=0.497612;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2326
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1505.0599,32.473953,7539.1743};
+				angles[]={0,1.7464306,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false;  " \n "this addAction[""<t color='#FF0000'>Medizinisches Equipment aufstocken</t>"",life_fnc_aufstocken,"""",0,false,false,"""",'playerSide == independent'];";
+			};
+			id=22295;
+			type="vvv_modelos6_modelos6mesadeoperaciones";
+			atlOffset=0.49564743;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2327
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9588.501,28.396439,4261.1436};
+				angles[]={0,0.59746081,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=22296;
+			type="vvv_modelos6_m6camaradeseguridad";
+			atlOffset=-4.5776367e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
