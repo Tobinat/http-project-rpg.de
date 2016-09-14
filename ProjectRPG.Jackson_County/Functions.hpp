@@ -273,6 +273,7 @@ class Life_Client_Core
 		class commander {};
 		class supervisor {};
 		class sheriff {};
+		class aufstocken {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};
