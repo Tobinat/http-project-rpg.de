@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=1538;
 	class ItemIDProvider
 	{
-		nextID=22548;
+		nextID=22551;
 	};
 	class MarkerIDProvider
 	{
-		nextID=469;
+		nextID=470;
 	};
 	class Camera
 	{
-		pos[]={6937.6621,78.104156,5141.397};
-		dir[]={0.45071915,-0.58163935,0.67716861};
-		up[]={0.32227549,0.81344569,0.484193};
-		aside[]={0.83246487,-2.2817403e-008,-0.55408353};
+		pos[]={8417.3047,50.996662,2947.7761};
+		dir[]={-0.63861322,-0.36224121,0.67895091};
+		up[]={-0.24819407,0.93208206,0.26386988};
+		aside[]={0.72842377,-2.8288923e-008,0.68514824};
 	};
 };
 binarizationWanted=0;
@@ -829,7 +829,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2292;
+		items=2293;
 		class Item0
 		{
 			dataType="Marker";
@@ -1315,7 +1315,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=97;
-			atlOffset=0.31500244;
 		};
 		class Item42
 		{
@@ -1786,7 +1785,7 @@ class Mission
 			type="Empty";
 			angle=223.14673;
 			id=206;
-			atlOffset=2.3859558;
+			atlOffset=2.3551025;
 		};
 		class Item83
 		{
@@ -1875,7 +1874,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=220;
-			atlOffset=0.43110657;
 		};
 		class Item90
 		{
@@ -2032,12 +2030,12 @@ class Mission
 		class Item103
 		{
 			dataType="Marker";
-			position[]={5894.5581,439.14136,8156.1802};
+			position[]={5699.6636,439.14136,8520.9395};
 			name="rally_stop_3";
 			type="Empty";
 			angle=357.6019;
 			id=243;
-			atlOffset=163.81815;
+			atlOffset=-3.2548828;
 		};
 		class Item104
 		{
@@ -2276,7 +2274,7 @@ class Mission
 			type="Empty";
 			angle=127.94003;
 			id=280;
-			atlOffset=1.1632996;
+			atlOffset=0.84841919;
 		};
 		class Item128
 		{
@@ -3071,7 +3069,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=411;
-			atlOffset=2.0709686;
+			atlOffset=1.7847595;
 		};
 		class Item201
 		{
@@ -12154,7 +12152,7 @@ class Mission
 			};
 			id=12265;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.44094086;
+			atlOffset=0.44099426;
 		};
 		class Item498
 		{
@@ -13266,7 +13264,7 @@ class Mission
 			type="Empty";
 			angle=108.63612;
 			id=14578;
-			atlOffset=38.22739;
+			atlOffset=38.22366;
 		};
 		class Item567
 		{
@@ -13276,7 +13274,7 @@ class Mission
 			type="Empty";
 			angle=112.58609;
 			id=14579;
-			atlOffset=45.147156;
+			atlOffset=45.143425;
 		};
 		class Item568
 		{
@@ -39144,7 +39142,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=3.5300684;
+			angle=3.5300679;
 			id=20861;
 			atlOffset=187.65506;
 		};
@@ -58312,7 +58310,7 @@ class Mission
 			};
 			id=22147;
 			type="Land_FloodLight_F";
-			atlOffset=2.4462585;
+			atlOffset=2.1311951;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -61334,25 +61332,28 @@ class Mission
 		class Item2235
 		{
 			dataType="Marker";
-			position[]={9613.8799,1.3143049e+013,4261.2378};
+			position[]={9613.8799,-8.5569046e-038,4261.2378};
 			name="crazy1";
 			markerType="ELLIPSE";
 			type="ellipse";
+			alpha=0;
 			a=17;
 			b=17;
 			id=22290;
-			atlOffset=1.3143049e+013;
+			atlOffset=-25;
 		};
 		class Item2236
 		{
 			dataType="Marker";
-			position[]={9623.3682,25,4259.668};
+			position[]={9623.3682,1.5020049e+028,4259.668};
 			name="crazy1_1";
 			markerType="ELLIPSE";
 			type="ellipse";
+			alpha=0;
 			a=17;
 			b=17;
 			id=22293;
+			atlOffset=1.5020049e+028;
 		};
 		class Item2237
 		{
@@ -61614,16 +61615,41 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9601.459,29.26347,4425.7637};
-				angles[]={0,2.0819359,0};
+				position[]={9601.459,28.41647,4425.7642};
+				angles[]={0,2.0819335,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="this allowDamage false;";
 			};
 			id=22361;
 			type="Land_treen";
+			atlOffset=-0.84700012;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item2246
 		{
@@ -62399,6 +62425,19 @@ class Mission
 			b=120;
 			id=22545;
 			atlOffset=5.9817973e+036;
+		};
+		class Item2292
+		{
+			dataType="Marker";
+			position[]={8268.7529,-4.7032574e-035,2998.8589};
+			name="hq1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			alpha=0;
+			a=80;
+			b=80;
+			id=22548;
+			atlOffset=-25;
 		};
 	};
 };
