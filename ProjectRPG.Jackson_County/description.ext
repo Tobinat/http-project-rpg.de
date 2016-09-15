@@ -1,5 +1,5 @@
 author = "Tonic | Edited by PRPG.de";
-onLoadName = "Project-RPG v2.0";
+onLoadName = "Project-RPG v2.1";
 onLoadMission = "Webseite: http://project-rpg.de";
 //loadScreen = "a3l_client2\bg\cgbg.paa";
 joinUnassigned = 1;
