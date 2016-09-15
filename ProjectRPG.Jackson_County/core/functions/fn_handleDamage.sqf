@@ -46,7 +46,7 @@ if(!isNull _source) then {
 		};
 		
 		if(_curWep in ["Taser_26"]) exitwith {
-			if(side _source in [west, civilian] && ((playerSide != west) && (!license_civ_udc))) then {
+			if(side _source in [west, civilian] && ((playerSide != west))) then {
 				[_unit,_source] call life_fnc_tazed;
 			};
 			_damage = 0;
