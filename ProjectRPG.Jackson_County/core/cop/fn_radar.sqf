@@ -5,7 +5,7 @@
 	Description:
 	Looks like weird but radar?
 */
-if(playerSide != west) exitWith {};
+if(playerSide != west && (!license_civ_udc)) exitWith {};
 private ["_speed","_vehicle"];
 _vehicle = cursorTarget;
 _speed = round speed _vehicle;
