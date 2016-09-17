@@ -3468,12 +3468,9 @@
 			<Portuguese>Kit anti-bomba</Portuguese>
 		</Key>
 		<Key ID="STR_Item_StorageBS">
-			<Original>Small Storage Box</Original>
-			<English>Small Storage Box</English>
-			<German>Kleine Lagerbox</German>
-			<French>Petit Conteneur de stockage</French>
-			<Italian>Contenitore piccolo</Italian>
-			<Portuguese>Caixa Pequena</Portuguese>
+			<Original>Storage Box</Original>
+			<English>Storage Box</English>
+			<German>Lagerbox</German>
 		</Key>
 		<Key ID="STR_Item_StorageBL">
 			<Original>Large Storage Box</Original>
