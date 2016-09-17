@@ -31,17 +31,17 @@ switch (true) do {
 //	case (_house in ["Land_Pub_A"]): {[125000,1]};
 //	case (_house in ["Land_Pub_B"]): {[125000,1]};
 //	case (_house in ["Land_Pub_C"]): {[125000,1]};
-	case (_house in ["Land_HouseA"]): {[2550000,3]};
-	case (_house in ["Land_HouseA1_L"]): {[2550000,3]};
-	case (_house in ["Land_HouseB"]): {[2550000,3]};
-	case (_house in ["Land_HouseB1_L"]): {[2550000,3]};
-	case (_house in ["Land_HouseC1_L"]): {[2550000,3]};
-	case (_house in ["Land_HouseC_R"]): {[2550000,3]};
+	case (_house in ["Land_HouseA"]): {[5550000,3]};
+	case (_house in ["Land_HouseA1_L"]): {[5550000,3]};
+	case (_house in ["Land_HouseB"]): {[5550000,3]};
+	case (_house in ["Land_HouseB1_L"]): {[5550000,3]};
+	case (_house in ["Land_HouseC1_L"]): {[5550000,3]};
+	case (_house in ["Land_HouseC_R"]): {[5550000,3]};
 	
-	case (_house in ["Land_HouseDoubleAL"]): {[3500000,4]};
-	case (_house in ["Land_HouseDoubleAL2"]): {[3500000,4]};
+	case (_house in ["Land_HouseDoubleAL"]): {[7500000,4]};
+	case (_house in ["Land_HouseDoubleAL2"]): {[7500000,4]};
 	
-	case (_house in ["Land_Ranch_DED_Ranch_01_F"]): {[2550000,2]};
-	case (_house in ["Land_Ranch_DED_Ranch_02_F"]): {[2550000,2]};
+	//case (_house in ["Land_Ranch_DED_Ranch_01_F"]): {[2550000,2]};
+	//case (_house in ["Land_Ranch_DED_Ranch_02_F"]): {[2550000,2]};
 	default {[]};
 };
