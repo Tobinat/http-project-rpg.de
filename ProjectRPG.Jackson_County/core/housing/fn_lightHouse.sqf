@@ -22,6 +22,8 @@ if(_mode) then {
 		case ((typeOf _house) in ["Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F"]): {_lightSource lightAttachObject [_house,[-1.5,0,2]]};
 		case ((typeOf _house) in ["Land_i_House_Small_02_V1_F","Land_i_House_Small_02_V2_F","Land_i_House_Small_02_V3_F"]): {_lightSource lightAttachObject [_house,[2,0,2.4]]};
 		case ((typeOf _house) in ["Land_i_House_Small_03_V1_F","Land_i_House_Small_03_V3_F","Land_i_House_Small_03_V3_F"]): {_lightSource lightAttachObject [_house,[-3.3,1,2.5]];};
+		case ((typeOf _house) in ["Land_houseA","LandHouseA1","Land_HouseB","Land_HouseB1","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"]): {_lightSource lightAttachObject [_house,[-1.5,0,2]];};
+		case ((typeOf _house) in ["Land_HouseDoubleAL","Land_HouseDoubleAL2"]): {_lightSource lightAttachObject [_house,[0,-2,3.8]];};
 		default {_exit = true;};
 	};
 	if(_exit) exitWith {deleteVehicle _lightSource;};
