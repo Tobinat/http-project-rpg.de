@@ -29,7 +29,7 @@ if(_pos isEqualTo [0,0,0]) exitWith {[localize "STR_ISTR_Box_HouseFull_2", false
 if(!([false,_boxType,1] call life_fnc_handleInv)) exitWith {};
 switch (_boxType) do {
 	case "storagesmall": {
-		_container = "Box_IND_Grenades_F" createVehicle [0,0,0];
+		_container = "Box_IND_AmmoVeh_F" createVehicle [0,0,0];
 		_container setPosATL _pos;
 		
 		_containers pushBack _container;
