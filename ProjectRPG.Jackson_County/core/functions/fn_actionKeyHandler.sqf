@@ -17,7 +17,6 @@ if(vehicle player != player) exitWith {
 }; 
 
 _curTarget = cursorTarget;
-_curObject = cursorObject;
 
 
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
@@ -62,11 +61,7 @@ if(isNull _curTarget) exitWith {
 	};
 };
 
-if ((_curObject isKindOf "B_supplyCrate_F" || _curObject isKindOf "Box_IND_Grenades_F") && {player distance _curObject < 3} ) exitWith {
-    if (alive _curObject) then {
-        [_curObject] call life_fnc_containerMenu;
-    };
-};
+
 
 
 

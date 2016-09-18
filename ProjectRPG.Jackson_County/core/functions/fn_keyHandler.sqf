@@ -672,7 +672,7 @@ switch (_code) do
 			};
 			
 			if(_veh isKindOf "House_F" && playerSide == civilian) then {
-				if(_veh in life_vehicles && player distance _veh < 20) then {
+				if(_veh in life_vehicles && player distance _veh < 8) then {
 					_door = [_veh] call life_fnc_nearestDoor;
 					if(_door == 0) exitWith {[localize "STR_House_Door_NotNear", false] spawn doquickmsg; };
 					_locked = _veh getVariable [format["bis_disabled_Door_%1",_door],0];
