@@ -682,10 +682,8 @@ switch(_shop) do
 					["cg_hatchet","Hatchet (s)",500],
 					["cg_machete","Machete (s)",500],
 					["CG_BAT","Bat (b)",500],
-					["CG_CROSS","Holy Cross (b)",500],
-					["A3L_Sign2","Weed Sign(Secondary Slot)",1000],
-					["A3L_Sign","Police Sign(Secondary Slot)",1000],
-					["Tv_Camera","TV Camera(Secondary Slot)",2520]
+					["CG_CROSS","Holy Cross (b)",500]
+					
 				]
 			];
         };
