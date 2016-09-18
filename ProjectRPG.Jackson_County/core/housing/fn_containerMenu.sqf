@@ -16,24 +16,31 @@
 #define Btn8 37457
 #define Title 37401
 
-private ["_container","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
-disableSerialization;
-_container = param [0,objNull,[objNull]];
-if (isNull _container) exitWith {}; //Bad target
-
-if (!dialog) then {
-    createDialog "pInteraction_Menu";
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
+if(!dialog) then {
+	createDialog "pInteraction_Menu";
 };
+disableSerialization;
+_curTarget = param [0,ObjNull,[ObjNull]];
+if(isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
 
-_Btn1 = CONTROL(37400,Btn1);
-_Btn2 = CONTROL(37400,Btn2);
-_Btn3 = CONTROL(37400,Btn3);
-_Btn4 = CONTROL(37400,Btn4);
-_Btn5 = CONTROL(37400,Btn5);
-_Btn6 = CONTROL(37400,Btn6);
-_Btn7 = CONTROL(37400,Btn7);
-_Btn8 = CONTROL(37400,Btn8);
-{_x ctrlShow false;} forEach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
+_display = findDisplay 37400;
+_Btn1 = _display displayCtrl Btn1;
+_Btn2 = _display displayCtrl Btn2;
+_Btn3 = _display displayCtrl Btn3;
+_Btn4 = _display displayCtrl Btn4;
+_Btn5 = _display displayCtrl Btn5;
+_Btn6 = _display displayCtrl Btn6;
+_Btn7 = _display displayCtrl Btn7;
+_Btn8 = _display displayCtrl Btn8;
+_Btn1 ctrlShow false;
+_Btn2 ctrlShow false;
+_Btn3 ctrlShow false;
+_Btn4 ctrlShow false;
+_Btn5 ctrlShow false;
+_Btn6 ctrlShow false;
+_Btn7 ctrlShow false;
+_Btn8 ctrlShow false;
 
 life_pInact_container = _container;
 if (playerSide isEqualTo west) then {

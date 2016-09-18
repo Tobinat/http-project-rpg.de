@@ -17,6 +17,7 @@ if(vehicle player != player) exitWith {
 }; 
 
 _curTarget = cursorTarget;
+_curObject = cursorObject;
 
 
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
