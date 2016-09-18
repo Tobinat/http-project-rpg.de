@@ -228,7 +228,7 @@ class Life_Client_Core
 		class copHouseOwner {};
 		class lockHouse {};
 		class containerMenu {};
-		class placeContainer
+		class placeContainer {};
 	};
 
 	class Drugs
