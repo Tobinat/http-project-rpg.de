@@ -109,19 +109,20 @@ class CfgFunctions
 			class paintball {};
 			class game {};
 		};
-		class Housing
-		{
-			file = "\life_server\Functions\Housing";
-			class addHouse {};
-			class fetchPlayerHouses {};
-			class initHouses {};
-			class sellHouse {};
-			class dogivekey1 {};
-			class dowipekeys {};
-			class updateHouseContainers {};
-			class updateHouseTrunk {};
-			class houseCleanup {};
-		};
+		class Housing {
+            file = "\life_server\Functions\Housing";
+            class addHouse {};
+            class addContainer {};
+            class deleteDBContainer {};
+            class fetchPlayerHouses {};
+            class initHouses {};
+            class sellHouse {};
+            class sellHouseContainer {};
+            class updateHouseContainers {};
+            class updateHouseTrunk {};
+            class houseCleanup {};
+            class houseGarage {};
+        };
 
 		class Gangs
 		{
