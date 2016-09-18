@@ -447,9 +447,13 @@ switch (true) do
 		};
 	};
 
-	case (_item in ["storagesmall","storagebig"]): {
-		[_item] call life_fnc_storageBox;
-	};
+	case (_item isEqualTo "storagesmall"): {
+        [false] call life_fnc_storageBox;
+    };
+
+    case (_item isEqualTo "storagebig"): {
+        [true] call life_fnc_storageBox;
+    };
 	
 	case (_item == "redgull"):
 	{
