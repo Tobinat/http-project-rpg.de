@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=Smill_VHO
+Pbo Type is: Arma Addon
+Sha: 'E9D3F3A48836642D15392619C786019ECD080E8B'
+//////</HEADER>//////
