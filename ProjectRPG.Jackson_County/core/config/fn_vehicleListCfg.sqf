@@ -133,6 +133,14 @@ switch (_shop) do
 			["shounka_f430_spider_rouge",2200000],
 			["shounka_f430_spider_violet",2200000],
 			
+			["Urbanized_458Ferrari",2200000],
+			["Urbanized_458Ferrari_yellow",2200000],
+			["Urbanized_458Ferrari_darkred",2200000],
+			["Urbanized_458Ferrari_orange",2200000],
+			["Urbanized_458Ferrari_pink",2200000],
+			["Urbanized_458Ferrari_blue",2200000],
+			["Urbanized_458Ferrari_black",2200000],
+			
 			["Urbanized_LaFerrari_red",14000000],
 			["Urbanized_LaFerrari_black",14000000],
 			["Urbanized_LaFerrari_white",14000000],
@@ -527,8 +535,18 @@ switch (_shop) do
 			["Mrshounka_c63_2015_orange",380000],
 			["Mrshounka_c63_2015_rose",380000],
 			["Mrshounka_c63_2015_rouge",380000],
-			["Mrshounka_c63_2015_violet",380000],			
-
+			["Mrshounka_c63_2015_violet",380000],	
+			
+			["Urbanized_G65_red",1600000],
+			["Urbanized_G65_black",1600000],
+			["Urbanized_G65_white",1600000],
+			["Urbanized_G65_blue",1600000],
+			["Urbanized_G65_purple",1600000],
+			["Urbanized_G65_pink",1600000],
+			["Urbanized_G65_orange",1600000],
+			["Urbanized_G65_yellow",1600000],			
+			["Urbanized_G65_Lime",1600000],
+			
 			["shounka_mp4_bleufonce",1110000],
 			["shounka_mp4_grise",1110000],
 			["shounka_mp4_jaune",1110000],
@@ -1040,7 +1058,10 @@ switch (_shop) do
 			["cg_evoSERT1",70000],
 			["charger_sert",90000],
 			["cg_h2_sert",11000],	
-			["AM_Holden_SO",40000],		
+			["AM_Holden_SO",40000],	
+            ["Urbanized_G65_UC1",400000],	
+			["Urbanized_G65_UC2",400000],			
+			["Urbanized_G65_UC3",400000],			
 			["cg_ducati_pol_reg",25000],
 			["prpg_charger_slso",90000],
 			["prpg_12Charger_P_Sheriff",70000]
