@@ -418,6 +418,7 @@ life_licenses =
 	["license_civ_gummi","civ"],
 	["license_civ_krok","civ"],
 	["license_civ_lcn","civ"],
+	["license_civ_udclang","civ"],
 	
 	//RFA Licenses
 	["license_med_air","med"],

@@ -299,6 +299,7 @@ switch(_shop) do
 			};
         };
 		
+		
 		case "udc_weaponShop": 
 		{
 			switch(true) do
@@ -338,6 +339,58 @@ switch(_shop) do
 				};				
 			};
 		};
+		case "udc_lang":
+        {
+			switch(true) do
+			{
+				case (!license_civ_udc): {"Sie sind nicht befugt auf diesen Shop zuzugreifen."};
+				case (!license_civ_udclang): {"Sie sind nicht befugt auf diesen Shop zuzugreifen."};
+				default
+				{
+					["Ausrüstungskammer",								
+						[
+							["RH_fn57",nil,1120],
+							["RH_sfn57",nil,20],
+							["RH_20Rnd_57x28_FN",nil,20],
+							["hlc_smg_mp5a4",nil,2100],
+							["hlc_30Rnd_9x19_GD_MP5",nil,25],
+							["RH_M4A1_ris",nil,8222],
+							["RH_30Rnd_556x45_M855A1",nil,20],
+							["RH_m4covers_f",nil,25],
+							["RH_M4A6",nil,12220],
+							["RH_30Rnd_68x43_FMJ",nil,220],
+							["prpl_benelli_14_pgs_rail","Shotgun Rubber",2200],
+							["prpl_6Rnd_12Gauge_Slug","Rubber Bullets",20],
+							["RH_Hk416s",nil,12220],
+							["RH_30Rnd_556x45_M855A1",nil,220],
+							["RH_30Rnd_556x45_Mk262",nil,220],
+							["RH_30Rnd_556x45_Mk318",nil,220],
+							["hlc_rifle_vendimus",nil,25000],
+							["RH_ta31rmr",nil,220],
+							["RH_bull",nil,240],
+							["RH_6Rnd_454_Mag",nil,4],
+							["RH_bullb",nil,240],
+							["RH_6Rnd_454_Mag",nil,4],
+							["optic_MRCO",nil,220],
+							["RH_barska_rds","Barska Red Dot",25],
+							["RH_cmore","C-more Red Dot",25],
+							["RH_compM2l","Rifle Aimpoint Low",25],
+							["RH_compM2","Rifle Aimpoint",25],
+							["RH_SFM952V",nil,80],
+							["RH_t1","Aimpoint",10],
+							["RH_ta648",nil,222],
+							["RH_leu_mk4",nil,100],
+							["RH_M6X",nil,20],
+							["RH_fa556",nil,20],
+							["RH_m110sd",nil,20],
+							["RH_qdss_nt4","M4A6 Silencer",220],
+							["muzzle_snds_H","KAC Silencer",220],
+							["RH_peq2","Laser (All Rifles)",220]
+						]
+					];
+				};
+			};
+        };
 		case "state_weaponShop": 
 		{
 			switch(true) do

@@ -175,5 +175,6 @@ switch (_var) do
 	case "license_civ_gummi": {"Kautschuk Verarbeitung"};
 	case "license_civ_krok": {"Krokodil Verarbeitung"};
 	case "license_civ_lcn": {"La Cosa Nostra"};
+	case "license_civ_udclang": {"Polizei Langwaffen"};
 	
 };
