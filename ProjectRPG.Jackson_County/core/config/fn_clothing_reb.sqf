@@ -119,6 +119,14 @@ switch (_filter) do
 	case 3:
 	{
 		[
+			["S_VHO_OV_95_5",nil,45000],
+			["S_VHO_OV_95_4",nil,45000],
+			["S_VHO_PV_95",nil,45000],
+			["S_VHO_LV_952",nil,45000],
+			["S_VHO_LV_951",nil,45000],
+			["S_VHO_LV_MTP1",nil,45000],
+			["S_VHO_LV_MTP2",nil,45000],
+			["S_VHO_OV_MTP_5",nil,45000],
 			["k_rebel_1",nil,3000],
 			["k_rebel_2",nil,3000],
 			["k_rebel_3",nil,3000],

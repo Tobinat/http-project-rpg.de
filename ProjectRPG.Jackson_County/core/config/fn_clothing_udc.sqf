@@ -134,11 +134,11 @@ switch (_filter) do
 		[
 		
 		
-			["S_VHO_PB_3","nil",20],
-			["S_VHO_OV_BLK_1",nil,20],
-			["S_VHO_OV_BLK_2",nil,20],
-			["S_VHO_OV_BLK_3",nil,20],
-			["S_VHO_OV_BLK_4",nil,20],
+			["S_VHO_PB_3","nil",2000],
+			["S_VHO_OV_BLK_1",nil,30000],
+			["S_VHO_OV_BLK_2",nil,30000],
+			["S_VHO_OV_BLK_3",nil,30000],
+			["S_VHO_OV_BLK_4",nil,30000],
 			["prpg_policevest","nil",20],
 			["prpg_sheriffvest",nil,20],
 			["prpg_statevest",nil,20],
