@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6130.5171,1114.8246,2242.1052};
-		dir[]={0.31792194,-0.74183142,0.59047002};
-		up[]={0.35168964,0.67056799,0.65318799};
-		aside[]={0.88050669,-1.8172432e-007,-0.47408321};
+		pos[]={9894.5635,314.68167,590.79321};
+		dir[]={0.048248753,-0.56904799,0.82089174};
+		up[]={0.033389356,0.82230079,0.56807029};
+		aside[]={0.99828011,-1.4441321e-007,-0.058675371};
 	};
 };
 binarizationWanted=0;
@@ -7636,8 +7636,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9762.3721,6.1052217,937.95325};
-						angles[]={6.2506847,3.3757637,0.049813427};
+						position[]={9762.3721,6.1052141,937.953};
+						angles[]={6.2506871,3.3757637,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -7646,7 +7646,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_7";
-						description="Sanitäter 07";
+						description="Leitstelle";
 						isPlayable=1;
 					};
 					id=1713;
@@ -7669,7 +7669,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -8347,8 +8347,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9751.3438,5.8492093,936.26221};
-						angles[]={0.040350255,3.2307963,0.041430686};
+						position[]={9751.3438,5.8492188,936.26196};
+						angles[]={0.040352013,3.2307963,0.041434117};
 					};
 					side="Independent";
 					flags=6;
@@ -8357,7 +8357,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_1";
-						description="Sanitäter 01";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=1707;
@@ -8379,7 +8379,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -8461,8 +8461,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9751.1875,5.7401443,938.80322};
-						angles[]={0.040350255,3.2307963,0.041430686};
+						position[]={9751.1885,5.7401819,938.80298};
+						angles[]={0.040352013,3.2307963,0.041434117};
 					};
 					side="Independent";
 					flags=6;
@@ -8471,11 +8471,12 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_3";
-						description="Sanitäter 03";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=1708;
 					type="I_medic_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8493,7 +8494,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -8562,6 +8563,7 @@ class Mission
 			{
 			};
 			id=1821;
+			atlOffset=-4.7683716e-007;
 		};
 		class Item396
 		{
@@ -8575,8 +8577,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9755.7891,5.9353728,938.69226};
-						angles[]={0.040350255,3.2307963,0.041430686};
+						position[]={9755.7891,5.9353824,938.69202};
+						angles[]={0.040352013,3.2307963,0.041434117};
 					};
 					side="Independent";
 					flags=6;
@@ -8585,7 +8587,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_4";
-						description="Leitstelle";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=1709;
@@ -8607,7 +8609,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -8689,8 +8691,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9754.9189,6.0040584,936.09729};
-						angles[]={0.040350255,3.2307963,0.041430686};
+						position[]={9754.9189,6.0040708,936.09698};
+						angles[]={0.040352013,3.2307963,0.041434117};
 					};
 					side="Independent";
 					flags=6;
@@ -8699,7 +8701,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_2";
-						description="Sanitäter 02";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=1710;
@@ -8721,7 +8723,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -8803,8 +8805,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9759.2266,6.1017318,938.1012};
-						angles[]={0.040350255,3.2307963,0.041430686};
+						position[]={9759.2266,6.101738,938.10101};
+						angles[]={0.040352013,3.2307963,0.041434117};
 					};
 					side="Independent";
 					flags=6;
@@ -8813,11 +8815,12 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_5";
-						description="Sanitäter 05";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=1711;
 					type="I_medic_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8835,7 +8838,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -8904,6 +8907,7 @@ class Mission
 			{
 			};
 			id=1824;
+			atlOffset=-4.7683716e-007;
 		};
 		class Item399
 		{
@@ -8917,8 +8921,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9758.7969,6.1808925,935.69922};
-						angles[]={0.040350255,3.2307963,0.041430686};
+						position[]={9758.7969,6.1809015,935.69897};
+						angles[]={0.040352013,3.2307963,0.041434117};
 					};
 					side="Independent";
 					flags=6;
@@ -8927,11 +8931,12 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_6";
-						description="Sanitäter 06";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=1712;
 					type="I_medic_F";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8949,7 +8954,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -9018,6 +9023,7 @@ class Mission
 			{
 			};
 			id=1825;
+			atlOffset=4.7683716e-007;
 		};
 		class Item400
 		{
@@ -9031,8 +9037,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9762.4316,6.1956735,935.18127};
-						angles[]={0.040350255,3.0495267,6.2601604};
+						position[]={9762.4316,6.1956859,935.18097};
+						angles[]={0.040352013,3.0495267,6.2601643};
 					};
 					side="Independent";
 					flags=6;
@@ -9041,11 +9047,12 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_8";
-						description="Sanitäter 08";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=1714;
 					type="I_medic_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9063,7 +9070,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -9132,6 +9139,7 @@ class Mission
 			{
 			};
 			id=1826;
+			atlOffset=-4.7683716e-007;
 		};
 		class Item401
 		{
@@ -9600,6 +9608,7 @@ class Mission
 			};
 			id=3018;
 			type="CG_SpeedCam";
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10220,8 +10229,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9765.6445,6.2523556,937.4613};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9765.6445,6.2523456,937.461};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -10230,7 +10239,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_9";
-						description="Sanitäter 09";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3977;
@@ -10253,7 +10262,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -10336,8 +10345,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9765.2969,6.1497626,934.83826};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9765.2969,6.1497555,934.83801};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -10346,7 +10355,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_10";
-						description="Sanitäter 10";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3979;
@@ -10369,7 +10378,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -10452,8 +10461,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9772.1504,6.5881376,937.81323};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9772.1504,6.5881271,937.81299};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -10462,7 +10471,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_11";
-						description="R.F.A 01";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3982;
@@ -10485,7 +10494,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -10568,8 +10577,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9772.2598,6.5106764,935.26221};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9772.2598,6.5106692,935.26196};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -10578,7 +10587,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_12";
-						description="R.F.A 02";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3984;
@@ -10601,7 +10610,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -10684,8 +10693,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9774.2617,6.6988482,937.98022};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9774.2617,6.6988401,937.97998};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -10694,7 +10703,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_13";
-						description="R.F.A 03";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3986;
@@ -10717,7 +10726,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -10800,8 +10809,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9774.6836,6.6321912,935.2832};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9774.6836,6.632184,935.28296};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -10810,7 +10819,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_14";
-						description="R.F.A 04";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3988;
@@ -10833,7 +10842,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -10916,8 +10925,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9776.9922,6.8343058,937.96021};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9776.9922,6.8342981,937.95996};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -10926,7 +10935,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_15";
-						description="R.F.A 05";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3990;
@@ -10949,7 +10958,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -11032,8 +11041,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9777.3984,6.7732601,935.45923};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9777.3984,6.7732534,935.45898};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -11042,12 +11051,11 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_16";
-						description="R.F.A 06";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3992;
 					type="I_Soldier_repair_F";
-					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11065,7 +11073,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -11134,7 +11142,6 @@ class Mission
 			{
 			};
 			id=3991;
-			atlOffset=-4.7683716e-007;
 		};
 		class Item465
 		{
@@ -11148,8 +11155,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9779.543,6.9669318,938.1283};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9779.543,6.9669218,938.12799};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -11158,11 +11165,12 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_17";
-						description="R.F.A 07";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3994;
 					type="I_Soldier_repair_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11180,7 +11188,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -11249,6 +11257,7 @@ class Mission
 			{
 			};
 			id=3993;
+			atlOffset=-4.7683716e-007;
 		};
 		class Item466
 		{
@@ -11262,8 +11271,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9779.6348,6.8934674,935.72729};
-						angles[]={6.2506847,3.0495267,0.049813427};
+						position[]={9779.6348,6.8934574,935.72699};
+						angles[]={6.2506871,3.0495267,0.049811698};
 					};
 					side="Independent";
 					flags=6;
@@ -11272,7 +11281,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_18";
-						description="R.F.A 08";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3996;
@@ -11294,7 +11303,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -11376,8 +11385,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9781.7324,6.8552208,938.11719};
-						angles[]={6.2506847,3.0495267,6.1849856};
+						position[]={9781.7324,6.8556471,938.117};
+						angles[]={6.2506871,3.0495267,6.1849928};
 					};
 					side="Independent";
 					flags=6;
@@ -11386,12 +11395,12 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_19";
-						description="R.F.A 09";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=3998;
 					type="I_Soldier_repair_F";
-					atlOffset=0.036566257;
+					atlOffset=0.037000179;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11409,7 +11418,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -11478,7 +11487,7 @@ class Mission
 			{
 			};
 			id=3997;
-			atlOffset=0.036566257;
+			atlOffset=0.037000179;
 		};
 		class Item468
 		{
@@ -11492,8 +11501,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9782.082,6.7088976,935.79919};
-						angles[]={6.2506847,3.0495267,6.1849856};
+						position[]={9782.082,6.7088923,935.79901};
+						angles[]={6.2506871,3.0495267,6.1849928};
 					};
 					side="Independent";
 					flags=6;
@@ -11502,7 +11511,7 @@ class Mission
 						skill=0.60000002;
 						init=" removeBackpack this; removeAllWeapons this; ";
 						name="medic_20";
-						description="R.F.A 10";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=4000;
@@ -11524,7 +11533,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=-1;
 								};
 							};
 						};
@@ -41203,7 +41212,7 @@ class Mission
 			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
-			angle=3.5300679;
+			angle=3.5300674;
 			id=20861;
 			atlOffset=187.65506;
 		};
@@ -52931,7 +52940,7 @@ class Mission
 			};
 			id=21490;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.3043251;
+			atlOffset=0.3043232;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53277,6 +53286,7 @@ class Mission
 			};
 			id=21507;
 			type="Land_InfoStand_V1_F";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item1981
 		{
@@ -53357,7 +53367,6 @@ class Mission
 				angles[]={0,4.8581972,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -53365,6 +53374,7 @@ class Mission
 			};
 			id=21513;
 			type="elementsblackjacktable1";
+			atlOffset=0.25088501;
 		};
 		class Item1986
 		{
