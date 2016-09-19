@@ -54,9 +54,9 @@ if(life_bail_amount < 12751) then {
 
 uiSleep 2;
 [player,"cellclose"] spawn life_fnc_nearestSound;
-if((player distance (getMarkerPos "jail_county_1")) > 40 && life_bail_amount < 12751) then
+if((player distance (getMarkerPos "Correctional Facility_1")) > 100 && life_bail_amount < 12751) then
 {
-	player setPos [9243.17,9283.73,2.00144];
+	player setPos [5625.9,6321.94,0.00143433];
 };
 
 if((player distance (getMarkerPos "jail_marker")) > 40 && life_bail_amount > 12750) then
