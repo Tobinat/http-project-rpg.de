@@ -14,7 +14,7 @@ switch (_shop) do
 	case "market": {["Market",["condom","tierope","bec","cigarette","lockpick","fuelF","boltcutter","storagesmall","storagebig"]]};
 	case "food": {["Market",["water","rabbit","apple","redgull","tbacon","peach"]]};
 	case "drinks": {["Drinks",["cigarette","zoobeer","zoobeer2","vodka","jagerbomb","absinthe","redwine","whiterussian","sexonthebeach","tequila","jackdanielsandcoke","Rax's Rum","water","redgull"]]};
-	case "rebel": {["Rebel Market",["tierope","RoadBlockConc","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","hackingtool","tracker"]]};
+	case "rebel": {["Rebel Market",["RoadBlockConc","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","hackingtool","tracker"]]};
 	case "gang": {["Gang Market", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
 	case "coffee": {["Starbugz Coffee Club",["coffee"]]};
