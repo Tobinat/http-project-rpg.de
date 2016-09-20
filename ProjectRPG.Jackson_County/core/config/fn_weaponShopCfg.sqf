@@ -264,7 +264,7 @@ switch(_shop) do
 				{
 					["Ausrüstungskammer",								
 						[
-							["ACE_CableTie",nil,10],
+							["CG_ATF_Handcuffs_i","Hand Cuffs",10],
 							["ItemCopCard",nil,5000],
 							["ToolKit",nil,1000],
 							["ACE_fieldDressing",nil,50],
@@ -439,10 +439,8 @@ switch(_shop) do
 				case (!license_civ_rebel): {"You want some, I'll give it YA! You don't have a license you pleb!"};
 				default
 				{
-					["Ausrüstungskammer",
-						[	
-							["ACE_CableTie",nil,250],
-							
+					["Rebel Pistols",
+						[
 							["TRYK_balaclava_NV",nil,125],		
 							
 							["RH_vp70",nil,9850],
@@ -711,10 +709,10 @@ switch(_shop) do
 					["CG_Pro_Item_i","CG GoPro",350],
 					["CG_tabletd","CG Tablet Phone",50],
 					["CG_battery_i","ZL Battery",5],
-					["TRYK_Shemagh_G_NV","NV",500],
+					["TRYK_Shemagh_G_NV","NV",5],
 					["vvv_fishing_rod","Angel",500],
-					["cebos","Köder",50],
 					["ACE_EarPlugs",nil,50],
+					["cebos","Köder",50],
 					["ToolKit",nil,1000],
 					["ACE_fieldDressing",nil,50],
 					["CG_ATF_Pizza_Box_i","Take Away Pizza",1400],

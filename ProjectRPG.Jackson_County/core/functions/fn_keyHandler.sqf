@@ -399,7 +399,7 @@ switch (_code) do
 
 
 	//Restraining
-	/* case 19:
+	case 19:
 	{
 
 		if(_shift) then {
@@ -435,7 +435,7 @@ switch (_code) do
 		};
 
 
-	}; */
+	};
 	
 	//Knockout
 	case 34:
