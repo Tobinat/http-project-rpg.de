@@ -43,7 +43,7 @@ if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "Vault_Do
 	_veh setVectorDirAndUp [[-0.01,0.01,0],[-0.01,0.01,0]];
 	_veh setpos (getpos _veh);
 
-	_num = 300; 
+	_num = 600; 
 	while {_num > 0} do {
 		if ( _num == 300 || _num == 240 || _num == 180 || _num == 120 || _num == 60 ) then {
 

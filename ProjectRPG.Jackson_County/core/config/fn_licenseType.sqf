@@ -55,7 +55,7 @@ switch (_mode) do
 			case "gummi": {_var = "license_civ_gummi"};
 			case "krok": {_var = "license_civ_krok"};
 			case "lcn": {_var = "license_civ_lcn"};
-			case "udclang" {_var = "license_civ_udclang"};
+			case "udclang": {_var = "license_civ_udclang"};
 			default {_var = ""};
 		};
 	};
@@ -102,7 +102,7 @@ switch (_mode) do
 			case "license_civ_gummi": {_var = "gummi"};
 			case "license_civ_krok": {_var = "krok"};
 			case "license_civ_lcn": {_var = "lcn"};
-			case "license_civ_udclang" {_var = "udclang"};
+			case "license_civ_udclang": {_var = "udclang"};
 			default {_var = ""};
 		};
 	};
