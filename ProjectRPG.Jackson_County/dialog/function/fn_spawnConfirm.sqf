@@ -67,12 +67,7 @@ else
 	}
 	else
 	{
-		if((life_spawn_point select 0) in ["medic_spawn_4"]) then {
-			player setPosATL [getMarkerPos (life_spawn_point select 0) select 0, getMarkerPos (life_spawn_point select 0) select 1, 6.5];
-			player setDir markerDir (life_spawn_point select 0);
-		} else {
 			player setPos (getMarkerPos (life_spawn_point select 0));
-		};
 	};
 };
 
