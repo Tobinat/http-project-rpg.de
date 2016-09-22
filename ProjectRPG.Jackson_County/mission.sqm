@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1410.8787,109.49969,7576.1514};
-		dir[]={0.66981781,-0.74053794,-0.055385608};
-		up[]={0.73803008,0.67198884,-0.061026238};
-		aside[]={-0.08241158,-3.0370575e-007,-0.99665529};
+		pos[]={7172.5859,79.815033,2431.9963};
+		dir[]={-0.41279131,-0.7127282,0.56714165};
+		up[]={-0.41941905,0.70144272,0.57624781};
+		aside[]={0.8085227,2.1420419e-007,0.58847904};
 	};
 };
 binarizationWanted=0;
@@ -1318,6 +1318,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=97;
+			atlOffset=0.31500244;
 		};
 		class Item42
 		{
@@ -1828,7 +1829,7 @@ class Mission
 			type="Empty";
 			angle=223.14673;
 			id=206;
-			atlOffset=2.3551025;
+			atlOffset=2.3859558;
 		};
 		class Item86
 		{
@@ -1917,7 +1918,6 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=220;
-			atlOffset=0.43110657;
 		};
 		class Item93
 		{
@@ -2317,7 +2317,7 @@ class Mission
 			type="Empty";
 			angle=127.94003;
 			id=280;
-			atlOffset=0.84841919;
+			atlOffset=1.1632996;
 		};
 		class Item131
 		{
@@ -4992,10 +4992,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8890.6348,20.071623,7469.8999};
-				angles[]={0,1.0166146,0};
+				position[]={7133.2168,25.812658,2456.8711};
+				angles[]={0,5.1413078,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5003,7 +5004,7 @@ class Mission
 			};
 			id=1192;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.38626099;
+			atlOffset=0.029153824;
 		};
 		class Item304
 		{
@@ -12593,13 +12594,14 @@ class Mission
 				angles[]={0,3.5284686,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="removeAllWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Gem Dealer"",life_fnc_virt_menu,""gems"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian '];";
 			};
 			id=12265;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.44094086;
+			atlOffset=3.8146973e-005;
 		};
 		class Item526
 		{
@@ -13502,7 +13504,7 @@ class Mission
 			type="Empty";
 			angle=105.93146;
 			id=14562;
-			atlOffset=35.63884;
+			atlOffset=35.724655;
 		};
 		class Item580
 		{
@@ -13512,7 +13514,7 @@ class Mission
 			type="Empty";
 			angle=105.53053;
 			id=14563;
-			atlOffset=36.439003;
+			atlOffset=36.524818;
 		};
 		class Item581
 		{
@@ -13526,7 +13528,7 @@ class Mission
 			b=0.69999999;
 			angle=358.05099;
 			id=14564;
-			atlOffset=36.630241;
+			atlOffset=36.716057;
 		};
 		class Item582
 		{
@@ -13543,7 +13545,7 @@ class Mission
 			};
 			id=14565;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.32485771;
+			atlOffset=0.41067314;
 		};
 		class Item583
 		{
@@ -14851,7 +14853,7 @@ class Mission
 			};
 			id=19083;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.66952896;
+			atlOffset=1.137001;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29083,7 +29085,6 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29091,6 +29092,7 @@ class Mission
 			};
 			id=20331;
 			type="Palm_2";
+			atlOffset=1.0305233;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29132,6 +29134,7 @@ class Mission
 			};
 			id=20332;
 			type="Palm_2";
+			atlOffset=0.1526432;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -58855,7 +58858,7 @@ class Mission
 			};
 			id=22147;
 			type="Land_FloodLight_F";
-			atlOffset=2.1311951;
+			atlOffset=2.4462585;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -62818,7 +62821,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9577.2061,25.669771,4129.2104};
+				position[]={9577.1563,25.669771,4129.231};
 				angles[]={6.2738476,2.9251194,0.0014660766};
 			};
 			side="Empty";
@@ -62858,7 +62861,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9576.1211,25.665216,4128.9629};
+				position[]={9575.8672,25.665216,4128.8892};
 				angles[]={6.2738476,2.9251194,0.0014660766};
 			};
 			side="Empty";

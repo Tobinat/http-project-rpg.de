@@ -24,14 +24,14 @@ player setVariable["ATM_MAN", true, true];
 while{_fkit > 0 && life_bankteller } do {
 	uiSleep 60;
 
-	if(isNull objectParent player && (player distance (getMarkerPos "bank_signup")) < 30000) then {
+	if(isNull objectParent player && (player distance (getMarkerPos "casino_area_1")) < 50) then {
 		if(uniform player find "KAEL_SUITS" != -1) then
 		{
 			["bank","add", 300] call life_fnc_handleCash;
 			["Du wurdest extra bezahlt: $300", false] spawn domsg; 
 		};
 	};
-	if((player distance (getMarkerPos "fed_reserve") > 30) && (player distance (getMarkerPos "fed_reserve_morrison") > 30)) exitwith {
+	if(player distance (getMarkerPos "casino_area_1") > 50) exitwith {
 
 	};
 	_fkit = _fkit - 1;
