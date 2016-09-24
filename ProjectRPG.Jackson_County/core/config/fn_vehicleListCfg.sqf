@@ -537,16 +537,6 @@ switch (_shop) do
 			["Mrshounka_c63_2015_rouge",380000],
 			["Mrshounka_c63_2015_violet",380000],	
 			
-			["Urbanized_G65_red",1600000],
-			["Urbanized_G65_black",1600000],
-			["Urbanized_G65_white",1600000],
-			["Urbanized_G65_blue",1600000],
-			["Urbanized_G65_purple",1600000],
-			["Urbanized_G65_pink",1600000],
-			["Urbanized_G65_orange",1600000],
-			["Urbanized_G65_yellow",1600000],			
-			["Urbanized_G65_Lime",1600000],
-			
 			["shounka_mp4_bleufonce",1110000],
 			["shounka_mp4_grise",1110000],
 			["shounka_mp4_jaune",1110000],
