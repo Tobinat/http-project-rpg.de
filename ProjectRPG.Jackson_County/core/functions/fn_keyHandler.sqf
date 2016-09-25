@@ -257,7 +257,13 @@ switch (_code) do
 	//code 4 
 	case 5:
 	{
-		if(_shift && has_job) then
+		// if(_shift && has_job) then
+		// {
+			// [] spawn fnc_quitjobs;
+			// _handled = true;
+		// };
+		
+		if(_shift) then
 		{
 			[] spawn fnc_quitjobs;
 			_handled = true;

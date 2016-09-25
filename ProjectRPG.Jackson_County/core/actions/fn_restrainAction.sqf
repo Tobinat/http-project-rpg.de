@@ -28,7 +28,7 @@ _degreesu = getDir _unit;
 _totald = _degrees - _degreesu;
 
 
-if( animationState _unit != "deadstate" && animationState _unit != "Incapacitated" && animationState _unit != "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" && (animationState _unit) != "AinjPfalMstpSnonWnonDf_carried_fallwc" ) exitwith { ["Target must put hands on head or be downed to restrain.", false] spawn domsg; };
+//if(animationState _unit != "Incapacitated" && animationState _unit != "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" && (animationState _unit) != "AinjPfalMstpSnonWnonDf_carried_fallwc" ) exitwith { ["Target must put hands on head or be downed to restrain.", false] spawn domsg; };
 
 
 

@@ -586,8 +586,7 @@
 	};
 
 	fnc_quitjobs = {
-		if(life_quitRecently) exitwith { ["Du musst 5 Minuten warten um dies erneut zu verwenden!", false] spawn domsg; };
-		life_quitRecently = true;
+		has_job = false;
 		if(life_NewsJobs) exitwith { has_job = false; life_NewsJobs = false; };
 		if(life_taxi) exitwith { has_job = false; fedex_on = false;	};
 		if(life_bankteller) exitwith { has_job = false; life_bankteller = false; };
@@ -603,8 +602,7 @@
 			has_job = false; fedex_on = false;
 			deleteVehicle vehspawned;
 		};
-		sleep 300;
-		life_quitRecently = false;
+		["Wenn du einen Job hattest, dann hast du ihn nun gekündigt!", false] spawn domsg;
 	};
 
 	fnc_totalatm =
@@ -2279,7 +2277,7 @@ fnc_trucking = {
 
 	player allowdamage false;
 	sleep 1;
-	player setpos (getMarkerPos "Truck_Jobs");
+	//player setpos (getMarkerPos "Truck_Jobs");
 	["Deine Lieferung ist abgeschlossen!", false] spawn domsg;
 	player allowdamage true;
 };
@@ -2487,7 +2485,7 @@ fnc_maintstart = {
 	};
 
 
-	_remaining = 60;
+	_remaining = 5;
 
 	while {_remaining > 0} do {
 		hint parsetext format["<img size='1' image='icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>JOB:</t><br/> Dein Fahrzeug wird in %1 Sekunden verschwinden!",_remaining];
@@ -2501,7 +2499,7 @@ fnc_maintstart = {
 	_newpos = getpos airvehspawned;
 	airvehspawned setVelocity [0, 0, 0];
 	deletevehicle airvehspawned;
-	player setpos [_newpos select 0, _newpos select 1, 0];
+	//player setpos [_newpos select 0, _newpos select 1, 0];
 	sleep 0.05;
 	player allowdamage true;
 	["Du wurdest entlassen!", false] spawn domsg;
@@ -2614,7 +2612,7 @@ fnc_fedex = {
 	};
 	player allowdamage false;
 	sleep 1;
-	player setpos (getMarkerPos "job_spawn_1");
+	//player setpos (getMarkerPos "job_spawn_1");
 	["Dein Auftrag ist abgeschlossen!", false] spawn domsg;
 	player allowdamage true;
 };
