@@ -10,7 +10,7 @@ player setVariable["tf_receivingDistanceMultiplicator", 10];
 player setVariable["tf_sendingDistanceMultiplicator", 10];
 deadPlayer = false;
 candy = 0;
-scarylevel = 0;
+/////scarylevel = 0;
 godMode = false;
 // A3L CURRENT VERSION
 
