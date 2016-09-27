@@ -31,6 +31,7 @@ switch (true) do {
 //	case (_house in ["Land_Pub_A"]): {[125000,1]};
 //	case (_house in ["Land_Pub_B"]): {[125000,1]};
 //	case (_house in ["Land_Pub_C"]): {[125000,1]};
+	//case (_house in ["Land_ivory_trailer_02"]): {[5550000,1]};
 	case (_house in ["Land_HouseA"]): {[8550000,1]};
 	case (_house in ["Land_HouseA1_L"]): {[8550000,1]};
 	case (_house in ["Land_HouseB"]): {[8550000,1]};
