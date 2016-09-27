@@ -30,8 +30,7 @@ for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_tourniquet";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_salineIV_500";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_salineIV_250";};
-for "_i" from 1 to 3 do {player addItemToUniform "ACE_surgicalKit";};
-for "_i" from 1 to 1 do {player addItemToUniform "ACE_personalAidKit";};
+for "_i" from 1 to 4 do {player addItemToUniform "ACE_surgicalKit";};
 for "_i" from 1 to 1 do {player addItemToBackpack "ToolKit";};
 
 player linkItem "ItemMap";

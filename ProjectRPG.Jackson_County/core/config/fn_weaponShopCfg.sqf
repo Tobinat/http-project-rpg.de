@@ -65,7 +65,6 @@ switch(_shop) do
 							["ACE_salineIV_250",nil,20], 
 							["ACE_plasmaIV_500",nil,20], 
 							["ACE_plasmaIV_250",nil,20], 
-							["ACE_personalAidKit",nil,50], 
 							["ACE_fieldDressing",nil,5], 
 							["ACE_atropine",nil,20],
 							

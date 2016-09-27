@@ -21,10 +21,9 @@ for "_i" from 1 to 2 do {player addItemToBackpack "ACE_bloodIV_250";};
 for "_i" from 1 to 6 do {player addItemToBackpack "ACE_salineIV";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_salineIV_500";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_salineIV_250";};
-for "_i" from 1 to 5 do {player addItemToBackpack "ACE_surgicalKit";};
+for "_i" from 1 to 7 do {player addItemToBackpack "ACE_surgicalKit";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_tourniquet";};
 for "_i" from 1 to 15 do {player addItemToBackpack "ACE_quikclot";};
-for "_i" from 1 to 2 do {player addItemToBackpack "ACE_personalAidKit";};
 
 
 
