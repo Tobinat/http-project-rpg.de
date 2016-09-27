@@ -14,7 +14,7 @@ if(_house == "") exitWith {[]};
 */
 switch (true) do {
 	case (_house in ["Land_i_House_Big_02_V1_F","Land_i_House_Big_02_V2_F","Land_i_House_Big_02_V3_F"]): {[16550000,3]};
-	case (_house in ["Land_i_House_Big_01_V1_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_01_V3_F"]): {[16800000,4]};
+	case (_house in ["Land_i_House_Big_01_V1_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_01_V3_F"]): {[16800000,2]};
 	case (_house in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F"]): {[1500000,0]};
 	case (_house in ["Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F"]): {[1050000,2]};
 	case (_house in ["Land_i_House_Small_02_V1_F","Land_i_House_Small_02_V2_F","Land_i_House_Small_02_V3_F"]): {[1000500,2]};
@@ -31,12 +31,12 @@ switch (true) do {
 //	case (_house in ["Land_Pub_A"]): {[125000,1]};
 //	case (_house in ["Land_Pub_B"]): {[125000,1]};
 //	case (_house in ["Land_Pub_C"]): {[125000,1]};
-	case (_house in ["Land_HouseA"]): {[8550000,3]};
-	case (_house in ["Land_HouseA1_L"]): {[8550000,3]};
-	case (_house in ["Land_HouseB"]): {[8550000,3]};
-	case (_house in ["Land_HouseB1_L"]): {[8550000,3]};
-	case (_house in ["Land_HouseC1_L"]): {[8550000,3]};
-	case (_house in ["Land_HouseC_R"]): {[8550000,3]};
+	case (_house in ["Land_HouseA"]): {[8550000,1]};
+	case (_house in ["Land_HouseA1_L"]): {[8550000,1]};
+	case (_house in ["Land_HouseB"]): {[8550000,1]};
+	case (_house in ["Land_HouseB1_L"]): {[8550000,1]};
+	case (_house in ["Land_HouseC1_L"]): {[8550000,1]};
+	case (_house in ["Land_HouseC_R"]): {[8550000,1]};
 	
 //	case (_house in ["Land_HouseDoubleAL"]): {[3500000,4]};
 //	case (_house in ["Land_HouseDoubleAL2"]): {[3500000,4]};
