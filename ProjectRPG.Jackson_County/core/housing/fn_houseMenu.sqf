@@ -168,31 +168,39 @@ if(!(_curTarget in life_vehicles) OR isNil {_curTarget getVariable "house_owner"
 		};
 		_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_lockHouse; closeDialog 0;";
 		_Btn2 ctrlShow true;
-
 		
-		_Btn3 ctrlSetText "Schluessel 1";
-		_Btn3 buttonSetAction "[life_pInact_curTarget,1] call life_fnc_givekey1; closeDialog 0;";
+		_Btn3 ctrlSetText localize "STR_pInAct_AccessGarage";
+		_Btn3 buttonSetAction "[life_pInact_curTarget,""Car""] spawn life_fnc_vehicleGarage; closeDialog 0;";
 		_Btn3 ctrlShow true;
-
-		_Btn4 ctrlSetText "Schluessel 2";
-		_Btn4 buttonSetAction "[life_pInact_curTarget,2] call life_fnc_givekey2; closeDialog 0;";
+		
+		_Btn4 ctrlSetText localize "STR_pInAct_StoreVeh";
+		_Btn4 buttonSetAction "[life_pInact_curTarget,player] spawn life_fnc_storeVehicle; closeDialog 0;";
 		_Btn4 ctrlShow true;
 
-		_Btn5 ctrlSetText "Schluessel 3";
-		_Btn5 buttonSetAction "[life_pInact_curTarget,3] call life_fnc_givekey3; closeDialog 0;";
+		
+		_Btn5 ctrlSetText "Schluessel 1";
+		_Btn5 buttonSetAction "[life_pInact_curTarget,1] call life_fnc_givekey1; closeDialog 0;";
 		_Btn5 ctrlShow true;
 
-		_Btn6 ctrlSetText "Schluessel 4";
-		_Btn6 buttonSetAction "[life_pInact_curTarget,4] call life_fnc_givekey4; closeDialog 0;";
+		_Btn6 ctrlSetText "Schluessel 2";
+		_Btn6 buttonSetAction "[life_pInact_curTarget,2] call life_fnc_givekey2; closeDialog 0;";
 		_Btn6 ctrlShow true;
 
-		_Btn7 ctrlSetText "Schluessel 5";
-		_Btn7 buttonSetAction "[life_pInact_curTarget,5] call life_fnc_givekey5; closeDialog 0;";
+		_Btn7 ctrlSetText "Schluessel 3";
+		_Btn7 buttonSetAction "[life_pInact_curTarget,3] call life_fnc_givekey3; closeDialog 0;";
 		_Btn7 ctrlShow true;
 
-		_Btn8 ctrlSetText "Schloss Tauschen";
-		_Btn8 buttonSetAction "[life_pInact_curTarget] call life_fnc_wipekeys; closeDialog 0;";
+		_Btn8 ctrlSetText "Schluessel 4";
+		_Btn8 buttonSetAction "[life_pInact_curTarget,4] call life_fnc_givekey4; closeDialog 0;";
 		_Btn8 ctrlShow true;
+
+		_Btn9 ctrlSetText "Schluessel 5";
+		_Btn9 buttonSetAction "[life_pInact_curTarget,5] call life_fnc_givekey5; closeDialog 0;";
+		_Btn9 ctrlShow true;
+
+		_Btn10 ctrlSetText "Schloss Tauschen";
+		_Btn10 buttonSetAction "[life_pInact_curTarget] call life_fnc_wipekeys; closeDialog 0;";
+		_Btn10 ctrlShow true;
 
 
 		if(((_curTarget getVariable "house_owner") select 0) != (getPlayerUID player)) then {
@@ -203,21 +211,23 @@ if(!(_curTarget in life_vehicles) OR isNil {_curTarget getVariable "house_owner"
 			_Btn6 ctrlEnable false;
 			_Btn7 ctrlEnable false;
 			_Btn8 ctrlEnable false;
+			_Btn9 ctrlEnable false;
+			_Btn10 ctrlEnable false;
 		};
 		if(!isNil {_curTarget getVariable "shared1"}) then {
-			_btn3 ctrlShow false;
-		};
-		if(!isNil {_curTarget getVariable "shared2"}) then {
-			_btn4 ctrlShow false;
-		};
-		if(!isNil {_curTarget getVariable "shared3"}) then {
 			_btn5 ctrlShow false;
 		};
-		if(!isNil {_curTarget getVariable "shared4"}) then {
+		if(!isNil {_curTarget getVariable "shared2"}) then {
 			_btn6 ctrlShow false;
 		};
-		if(!isNil {_curTarget getVariable "shared5"}) then {
+		if(!isNil {_curTarget getVariable "shared3"}) then {
 			_btn7 ctrlShow false;
+		};
+		if(!isNil {_curTarget getVariable "shared4"}) then {
+			_btn8 ctrlShow false;
+		};
+		if(!isNil {_curTarget getVariable "shared5"}) then {
+			_btn9 ctrlShow false;
 		};
 	};
 };
