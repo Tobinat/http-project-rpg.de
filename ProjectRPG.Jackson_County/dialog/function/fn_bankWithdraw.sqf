@@ -13,7 +13,7 @@ if(_val < 100 && cash_in_bank > 20000000) exitWith {[localize "STR_ATM_WithdrawM
 ["cash","add",_val] call life_fnc_handleCash;
 ["bank","take",_val] call life_fnc_handleCash;
 
-if (isPlayer _unit && uniform _unit isEqualTo "KAEL_SUITS_BR_F12" && (_unit getVariable "ATM_MAN")) then {
+if (isPlayer _unit && !(uniform player find "KAEL_SUITS" isEqualTo -1) && (_unit getVariable "ATM_MAN")) then {
 	cheap_buffs = true;
 	["You received a 30% voucher on your next Pizza or Donuts purchase!", false] spawn domsg;
 	_val remoteExec ["fnc_totalatm",_unit];
