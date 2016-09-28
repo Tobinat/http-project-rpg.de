@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=22450;
+		nextID=22454;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9842.085,3.7842915,8722.5205};
-		dir[]={-0.17192273,-0.62051278,-0.76516581};
-		up[]={-0.13603602,0.78417069,-0.60543966};
-		aside[]={-0.97570813,-3.2549724e-007,0.21922705};
+		pos[]={840.47906,201.37234,7577.8013};
+		dir[]={-0.80739957,-0.53192353,0.25540823};
+		up[]={-0.50716096,0.84678066,0.16043241};
+		aside[]={0.30161718,9.0201502e-007,0.95346326};
 	};
 };
 binarizationWanted=0;
@@ -873,7 +873,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2354;
+		items=2355;
 		class Item0
 		{
 			dataType="Marker";
@@ -1917,7 +1917,7 @@ class Mission
 			b=0.69999999;
 			angle=358.83945;
 			id=215;
-			atlOffset=104.37816;
+			atlOffset=101.03384;
 		};
 		class Item90
 		{
@@ -1932,7 +1932,7 @@ class Mission
 			b=100;
 			angle=18.163382;
 			id=216;
-			atlOffset=104.64278;
+			atlOffset=101.31543;
 		};
 		class Item91
 		{
@@ -1958,6 +1958,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=220;
+			atlOffset=0.43110657;
 		};
 		class Item93
 		{
@@ -2457,12 +2458,11 @@ class Mission
 		class Item140
 		{
 			dataType="Marker";
-			position[]={5238.8047,404.78384,9400.1748};
+			position[]={4314.7617,61.363998,6177.7061};
 			name="speed_cam_8";
 			type="Empty";
-			angle=284.32184;
+			angle=321.39047;
 			id=304;
-			atlOffset=6.1035156e-005;
 		};
 		class Item141
 		{
@@ -3201,7 +3201,7 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=411;
-			atlOffset=2.0709686;
+			atlOffset=1.7847595;
 		};
 		class Item208
 		{
@@ -4426,8 +4426,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9640.0225,37.76965,5058.812};
-				angles[]={6.2264414,5.1328883,6.2301788};
+				position[]={1536.8066,33.194324,2765.5691};
+				angles[]={0,3.4689629,0};
 			};
 			side="Empty";
 			flags=4;
@@ -4557,8 +4557,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5238.3862,406.24799,9415.6748};
-				angles[]={0.00048828125,0.51501852,0.044911053};
+				position[]={4323.458,61.280895,6189.8047};
+				angles[]={0.13679093,1.1619883,0.016482843};
 			};
 			side="Empty";
 			flags=4;
@@ -4569,7 +4569,6 @@ class Mission
 			};
 			id=1068;
 			type="CG_SpeedCam";
-			atlOffset=9.1552734e-005;
 		};
 		class Item278
 		{
@@ -9174,8 +9173,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5234.6636,406.25061,9391.4883};
-				angles[]={0.013580118,3.6177056,0.036312528};
+				position[]={4305.9087,63.468452,6172.75};
+				angles[]={0.10714135,4.2646751,0.0058999332};
 			};
 			side="Empty";
 			flags=4;
@@ -9186,7 +9185,6 @@ class Mission
 			};
 			id=2024;
 			type="CG_SpeedCam";
-			atlOffset=9.1552734e-005;
 		};
 		class Item402
 		{
@@ -12663,7 +12661,7 @@ class Mission
 			};
 			id=12265;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.44099426;
+			atlOffset=0.44094086;
 		};
 		class Item526
 		{
@@ -13793,7 +13791,7 @@ class Mission
 			type="Empty";
 			angle=108.63612;
 			id=14578;
-			atlOffset=38.22366;
+			atlOffset=38.22739;
 		};
 		class Item596
 		{
@@ -13803,7 +13801,7 @@ class Mission
 			type="Empty";
 			angle=112.58609;
 			id=14579;
-			atlOffset=45.143425;
+			atlOffset=45.147156;
 		};
 		class Item597
 		{
@@ -17707,7 +17705,7 @@ class Mission
 		class Item699
 		{
 			dataType="Marker";
-			position[]={9650.5576,36.430004,5072.0396};
+			position[]={1536.9178,31.475748,2770.8855};
 			name="speed_cam_1";
 			type="Empty";
 			angle=126.50591;
@@ -29475,6 +29473,7 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29482,7 +29481,6 @@ class Mission
 			};
 			id=20339;
 			type="Palm_2";
-			atlOffset=0.95476723;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29524,7 +29522,6 @@ class Mission
 			};
 			id=20340;
 			type="Palm_2";
-			atlOffset=0.1526432;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29722,6 +29719,7 @@ class Mission
 				angles[]={0,5.7347856,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -29729,7 +29727,6 @@ class Mission
 			};
 			id=20345;
 			type="Palm_2";
-			atlOffset=0.99685478;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53213,7 +53210,6 @@ class Mission
 			};
 			id=21499;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.21459389;
 		};
 		class Item1973
 		{
@@ -64329,6 +64325,24 @@ class Mission
 			id=22447;
 			type="Campfire_burning_F";
 			atlOffset=5.0449967;
+		};
+		class Item2354
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1539.2301,33.194324,2776.552};
+				angles[]={0,0.19872294,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false;  this enableSimulation false; ";
+			};
+			id=22453;
+			type="CG_SpeedCam";
 		};
 	};
 };

@@ -104,9 +104,9 @@
 		_vehicle = vehicle player;
 		if(vehicle player != player && driver (vehicle player) == player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike") || (_vehicle isKindOf "A3L_Tahoe_Base"))) then {
 
-			if((player distance (getMarkerPos "speed_cam_1")) < 20 || (player distance (getMarkerPos "speed_cam_2")) < 20 || (player distance (getMarkerPos "speed_cam_3")) < 20 || (player distance (getMarkerPos "speed_cam_4")) < 20 || (player distance (getMarkerPos "speed_cam_10")) < 20 ) then {
+			if((player distance (getMarkerPos "speed_cam_1")) < 20 || (player distance (getMarkerPos "speed_cam_2")) < 20 || (player distance (getMarkerPos "speed_cam_3")) < 20 || (player distance (getMarkerPos "speed_cam_4")) < 20 ) then {
 				_vel = speed player;
-				if(_vel > 90 && _vel < 140) then {
+				if(_vel > 80 && _vel < 100) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
 					"colorCorrections" ppEffectCommit 0;
@@ -131,7 +131,7 @@
 					};
 				};
 
-				if(_vel > 139 && _vel < 200) then {
+				if(_vel > 99 && _vel < 150) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
 					"colorCorrections" ppEffectCommit 0;
@@ -155,7 +155,7 @@
 						["bank","take",210] call life_fnc_handleCash;
 					};
 				};
-				if(_vel > 199) then {
+				if(_vel > 149) then {
 					["Du warst definitiv zu schnell! $2000 Strafe und dein Führerschein wurde eingezogen!", false] spawn domsg;
 					if(cash_in_bank > 2000) then {
 						["bank","take", 2000] call life_fnc_handleCash
@@ -189,7 +189,7 @@
 				};
 				uiSleep 30;
 			};
-			if((player distance (getMarkerPos "speed_cam_5")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30 || (player distance (getMarkerPos "speed_cam_18")) < 30) then {
+			if((player distance (getMarkerPos "speed_cam_5")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_10")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30 || (player distance (getMarkerPos "speed_cam_18")) < 30) then {
 				_vel = speed player;
 				if(_vel > 140 && _vel < 160) then {
 					["Du warst zu schnell! $100 Strafe!", false] spawn domsg;
@@ -216,7 +216,7 @@
 					"colorCorrections" ppEffectEnable false;
 
 				};
-				if(_vel > 159 && _vel < 224) then {
+				if(_vel > 159 && _vel < 205) then {
 					["Du warst viel zu schnell! $350 Strafe!", false] spawn domsg;
 					if(cash_in_bank > 350) then {
 						["bank","take",350] call life_fnc_handleCash;
@@ -241,7 +241,7 @@
 					"colorCorrections" ppEffectEnable false;
 
 				};
-				if(_vel > 225) then {
+				if(_vel > 204) then {
 					["Du warst definitiv zu schnell! $1000 Strafe und dein Führerschein wurde eingezogen!", false] spawn domsg;
 					if(cash_in_bank > 1000) then {
 						["bank","take", 1000] call life_fnc_handleCash
