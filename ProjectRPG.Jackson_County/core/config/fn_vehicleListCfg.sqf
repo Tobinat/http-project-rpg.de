@@ -357,7 +357,7 @@ switch (_shop) do
 			["DAR_TahoeCivSilver",140000],
 			["DAR_TahoeCivBlue",140000],
 			["DAR_TahoeCivRed",140000],
-			["DAR_TahoeCivBlack",140000],
+			//["DAR_TahoeCivBlack",140000], config lädt nicht richtig.
 			
 			["A3L_SuburbanWhite",190000],
 			["A3L_SuburbanBlue",190000],
