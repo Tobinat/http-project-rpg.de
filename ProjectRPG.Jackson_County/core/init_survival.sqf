@@ -2380,7 +2380,7 @@ fnc_maintstart = {
 	if (oil) then {
 		airvehspawned = createVehicle ["ivory_b206", (getmarkerPos "oil_spawn_1"), [], 0, "NONE"];
 		[airvehspawned] spawn life_fnc_clearVehicleAmmo;
-		oiljobs = [(getpos oilrig1),(getpos oilrig2),(getpos oilrig3)];
+		oiljobs = [(getpos oilrig1),(getpos oilrig2),(getpos oilrig3),(getpos oilrig4)];
 		bullshit_story = [
 		"A marker has been put down where medical supplies need to be delivered!",
 		"Some tools need to be delivered to a work spot! Check your map!",
