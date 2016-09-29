@@ -2368,13 +2368,13 @@ fnc_maintstart = {
 		[airvehspawned] spawn life_fnc_clearVehicleAmmo;
 		oiljobs = [(getpos wheat1),(getpos wheat2),(getpos wheat3),(getpos wheat4),(getpos wheat5),(getpos wheat6),(getpos wheat7),(getpos wheat8),(getpos wheat9),(getpos wheat10),(getpos wheat11),(getpos wheat12),(getpos wheat13),(getpos wheat14),(getpos wheat15),(getpos wheat16),(getpos wheat17)];
 		bullshit_story = [
-		"Go cut down the wheat in this area!",
-		"Spray pesticide on the marker!",
-		"Some tools need to be delivered to a work spot! Check your map!",
-		"Drop off some food supplies for animals!",
-		"Someone reported a fire on our farm? Surely its a joke, check please!",
-		"We heard our crops have pests, check it out please!",
-		"We have reports of chemical spillage at the marked location, can you check please?"
+		"Los geh und Ernte das Getreide!",
+		"Sprühe dort Pestizide auf den Marker!",
+		"Einige Werkzeuge müssen zu einem Arbeitsplatz gebracht werden! Schau auf deine Karte!",
+		"Bring den Tieren etwas zu Futtern!",
+		"Jemand hat gesagt es würde auf der Farm Brennen? Sicherlich ein Scherz, schau bitte nach!",
+		"Wir haben gehört unsere Pflanzen sollen Krank sein, schau bitte nach!",
+		"Jemand sagt da wären Chemikalien ausgelaufen, kannst du das Überprüfen?"
 		];
 	};
 	if (oil) then {
@@ -2382,12 +2382,12 @@ fnc_maintstart = {
 		[airvehspawned] spawn life_fnc_clearVehicleAmmo;
 		oiljobs = [(getpos oilrig1),(getpos oilrig2),(getpos oilrig3),(getpos oilrig4)];
 		bullshit_story = [
-		"A marker has been put down where medical supplies need to be delivered!",
-		"Some tools need to be delivered to a work spot! Check your map!",
-		"Drop off some food supplies for workers, ASAP please!",
-		"Some papers need signing off, take these to the marked location!",
-		"We need you to check out workers at this location!",
-		"We have reports of oil leakage at the marked location, can you check please?"
+		"Die Markierte Bohrinsel braucht Medizinisches Eqipment!",
+		"Einige Werkzeuge müssen zu einem Arbeitsplatz gebracht werden! Schau auf deine Karte!",
+		"Bring den Arbeitern was zu Essen, so schnell wie möglich!",
+		"Jemand muss etwas Unterschreiben, Bring diese bitte zu dieser Person!",
+		"Wir müssen auf dieser Bohrinsel die Arbeiter Überprüfen!",
+		"Wir haben meldungen eines Öl Lecks an der Markierten Position, kannst du das Überprüfen?"
 		];
 	};
 
