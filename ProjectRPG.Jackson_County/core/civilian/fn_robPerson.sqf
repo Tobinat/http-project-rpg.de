@@ -19,3 +19,5 @@ if(cash_in_hand > 0) then
 	[2,format[localize "STR_NOTF_RobFail",profileName]] remoteExecCall ["life_fnc_broadcast",_robber];
 };
 [] spawn fnc_searched;
+
+//script by mcclaine225
