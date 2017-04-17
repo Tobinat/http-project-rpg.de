@@ -1,6 +1,6 @@
 private["_admins", "_uid"];
 
-_admins = ["76561198068135912", "76561198239530068", "76561198046249740"];
+_admins = ["76561198068135912", "76561198124376194"];
 _uid = getPlayerUID player;
 
 if(!(_uid in _admins)) exitWith {hint "Lass das! Du bist nicht berechtigt!";};
