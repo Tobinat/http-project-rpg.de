@@ -30,6 +30,11 @@ _itemInfo = switch (_type) do
 	case "titan": {["titanu","titanp",11,"Schmelze Titan"];};
 	case "gummi": {["gummiu","gummip",7,"Erhitze Kautschuk"];};
 	case "krok": {["kroku","krokp",50,"Koche Krokodil"];};
+	case "alu": {["aluu","alup",11,"Schmelze Aluminium"];};
+	case "blei": {["bleiu","bleip",11,"Schmelze Blei"];};
+	case "zink": {["zinku","zinkp",11,"Schmelze Zink"];};
+	case "lithium": {["lithiumu","lithiump",11,"Elektrolyse lithium"];};
+
 	default {[];};
 };
 

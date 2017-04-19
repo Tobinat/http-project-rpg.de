@@ -53,6 +53,10 @@ switch (_mode) do
 			case "silber": {_var = "license_civ_silber"};
 			case "titan": {_var = "license_civ_titan"};
 			case "gummi": {_var = "license_civ_gummi"};
+			case "zink": {_var = "license_civ_zink"};
+			case "blei": {_var = "license_civ_blei"};
+			case "alu": {_var = "license_civ_alu"};
+		    case "lithium": {_var = "license_civ_lithium"};
 			case "krok": {_var = "license_civ_krok"};
 			case "lcn": {_var = "license_civ_lcn"};
 			case "udclang": {_var = "license_civ_udclang"};

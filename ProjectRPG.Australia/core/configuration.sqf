@@ -377,7 +377,17 @@ life_inv_items =
 	"life_inv_gummiu",
 	"life_inv_gummip",
 	"life_inv_kroku",
-	"life_inv_krokp"
+	"life_inv_krokp",
+	
+	"life_inv_aluu",
+	"life_inv_alup",
+	"life_inv_bleiu",
+	"life_inv_bleip",
+	"life_inv_zinku",
+	"life_inv_zinkp",
+	"life_inv_lithiumu",
+	"life_inv_lithiump",
+	
 ];
 
 
