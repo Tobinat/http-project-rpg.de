@@ -1,7 +1,7 @@
 /*
 	File: fn_licensePrice.sqf
-	
-	
+
+
 	Description:
 	Returns the license price.
 */
@@ -39,12 +39,17 @@ switch (_type) do
 	case "mair": {1500};
 	case "mdive": {1500};
 	case "home": {10000};
-	
+
 	case "rifle": {2000};
 	case "bank": {1500};
-	
+
 	case "silber": {1500};
 	case "titan": {2000};
 	case "gummi": {1000};
 	case "krok": {15000};
+
+	case "zink": {2000};
+	case "blei": {2000};
+	case "alu": {2000};
+	case "lithium": {2000};
 };

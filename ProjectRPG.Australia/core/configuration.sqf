@@ -110,7 +110,7 @@ life_bail_paid = false;
 life_nos_count = 0;
 life_impound_inuse = false;
 life_action_inUse = false;
-life_sickness = false; 
+life_sickness = false;
 life_paintball = false;
 life_spikestrip = ObjNull;
 life_deathpos = 1;
@@ -219,17 +219,17 @@ life_impoundedvehicles = [];
 bank_robber = [];
 switch (playerSide) do
 {
-	case west: 
+	case west:
 	{
 		cash_in_bank = 12000; //Starting Bank Money
 		life_paycheck = 2500; //Paycheck Amount
 	};
-	case civilian: 
+	case civilian:
 	{
 		cash_in_bank = 12000; //Starting Bank Money
 		life_paycheck = 1000; //Paycheck Amount
 	};
-	
+
 	case independent: {
 		cash_in_bank = 12000;
 		life_paycheck = 2500;
@@ -248,7 +248,7 @@ life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","Jonzie_Quat
 //,"Jonzie_Transit","Jonzie_Flat_Bed","Jonzie_Log_Truck","Jonzie_Box_Truck","Jonzie_Tanker_Truck"
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can neve%r be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
-life_inv_items = 
+life_inv_items =
 [
 	"life_inv_nos",
 	"life_inv_condom",
@@ -369,7 +369,7 @@ life_inv_items =
 	"life_inv_raxsrum",
 	"life_inv_blaulicht",
 	"life_inv_tracker",
-	
+
 	"life_inv_silberu",
 	"life_inv_silberp",
 	"life_inv_titanu",
@@ -378,7 +378,7 @@ life_inv_items =
 	"life_inv_gummip",
 	"life_inv_kroku",
 	"life_inv_krokp",
-	
+
 	"life_inv_aluu",
 	"life_inv_alup",
 	"life_inv_bleiu",
@@ -387,7 +387,7 @@ life_inv_items =
 	"life_inv_zinkp",
 	"life_inv_lithiumu",
 	"life_inv_lithiump",
-	
+
 ];
 
 
@@ -429,10 +429,10 @@ life_licenses =
 	["license_civ_krok","civ"],
 	["license_civ_lcn","civ"],
 	["license_civ_udclang","civ"],
-	
+
 	//RFA Licenses
 	["license_med_air","med"],
-	
+
 	//Cop Licenses
 	["license_cop_air","cop"],
 	["license_cop_swat","cop"],
@@ -451,7 +451,7 @@ life_illegal_items = [["heroinu",270],["heroinp",435],["cokeu",210],["cokep",800
 /*
 	Sell / buy arrays
 */
-sell_array = 
+sell_array =
 [
 	["weddingring",80],
 	["bec",1],
@@ -527,9 +527,9 @@ sell_array =
 	["raw rabbit",70],
 	["spikeStrip",12],
 	["cement",255],
-	["goldbar",9500], 
+	["goldbar",9500],
 	//Deo Additions
-	["zoobeer",1], 
+	["zoobeer",1],
 	["zoobeer2",1],
 	["vodka",1],
 	["jackdaniels",1],
@@ -557,7 +557,11 @@ sell_array =
 	["silberp",300],
 	["titanp",200],
 	["gummip",180],
-	["krokp",550]
+	["krokp",550],
+	["alup",160],
+	["bleip",160],
+	["zinkp",160],
+	["lithiump",160]
 ];
 
 __CONST__(sell_array,sell_array);
@@ -657,6 +661,7 @@ buy_array =
         ["Blaulicht",50],
 		["tracker",1000],
 		["krokp",700]
+
 ];
 __CONST__(buy_array,buy_array);
 
@@ -677,7 +682,7 @@ life_garage_prices =
 
 			["ADM_General_Lee",0],
 			["tcg_hrly",0],
-			["tcg_hrly_white",0],	
+			["tcg_hrly_white",0],
 			["tcg_hrly_red",0],
 			["tcg_hrly_metal",0],
 			["tcg_hrly_blue",0],
@@ -699,31 +704,31 @@ life_garage_prices =
 			["cg_evocor1",0],
 			["A3L_SuburbanDOC",0],
 			["charger_cor_skinned",0],
-			
+
 			//PD
 			["cg_cvpifpbpd",0],
 			["cg_TaurusPD2",0],
 			["cg_evopol1",0],
 			["charger_pd",0],
 			["charger_pd_skinned",0],
-			
+
 			//SO
 			["cg_CVPISH",0],
 			["cg_TaurusSS1",0],
 			["cg_TaurusSS2",0],
 			["cg_evoss1",0],
 			["charger_sh",0],
-			["charger_sh_skinned",0],			
+			["charger_sh_skinned",0],
 
 			//ST
 			["cg_cvpitrooper",0],
-			["cg_taurustrooperf",0],		
+			["cg_taurustrooperf",0],
 			["cg_trooperevo",0],
 			["charger_st",0],
-			["charger_trp_skinned",0],			
-			
-			//SERT					
-			["AM_Holden_UM",0],	
+			["charger_trp_skinned",0],
+
+			//SERT
+			["AM_Holden_UM",0],
 
 			["cg_peugeot_207_rc_noir",2000],
 			["I_G_Van_01_fuel_F",0],
@@ -739,7 +744,7 @@ life_garage_prices =
 			["A3L_BMW135Purple",0],
 			["A3L_BMW135Red",0],
 
-			["AM_Holden_RBlue",0],			
+			["AM_Holden_RBlue",0],
 			["AM_Holden_RRed",0],
 			["AM_Holden_RWhite",0],
 			["AM_Holden_RBlack",0],
@@ -925,7 +930,7 @@ life_garage_prices =
 	["ivory_lp560",0],
 	["IVORY_R8",0],
 	["IVORY_R8SPYDER",0],
-	["IVORY_REV",0],	
+	["IVORY_REV",0],
 	["ivory_lfa",0],
 	["ivory_c",0],
 	["ivory_gt500",0],
@@ -1021,7 +1026,7 @@ life_garage_prices =
 	["shounka_rs6_rouge",0],
 	["shounka_rs6_bleufonce",0],
 	["shounka_rs6",0],
-	["shounka_rs6_noir",0],	
+	["shounka_rs6_noir",0],
 	["cg_bmw_1series_m_noir",0],
 	["cg_bmw_1series_m_violet",0],
 	["cg_bmw_1series_m_rose",0],
@@ -1039,7 +1044,7 @@ life_garage_prices =
 	["cg_bmw_m6_bleufonce",0],
 	["cg_bmw_m6_bleu",0],
 	["cg_bmw_m6_white",0],
-	["cg_bmw_m6_jaune",0],						
+	["cg_bmw_m6_jaune",0],
 	["A3L_BMW135Red",0],
 	["A3L_BMW135Purple",0],
 	["A3L_BMW135Blue",0],
@@ -1049,7 +1054,7 @@ life_garage_prices =
 	["A3L_BMW135Sport4",0],
 	["A3L_BMW135Sport3",0],
 	["A3L_BMW135Sport2",0],
-	["A3L_BMW135Sport1",0], 			
+	["A3L_BMW135Sport1",0],
 	["cg_renault_megane_rs_2015_noir",0],
 	["cg_renault_megane_rs_2015_violet",0],
 	["cg_renault_megane_rs_2015_rose",0],
@@ -1110,7 +1115,7 @@ life_garage_prices =
 	["cg_bowler_offroad_jaune",0],
 	["Mrshounka_agera_p_noir",0],
 	["Mrshounka_agera_p_bleu",0],
-	["Mrshounka_agera_p_jaune",0],			
+	["Mrshounka_agera_p_jaune",0],
 	["shounka_gt_bleufonce",0],
 	["shounka_gt_grise",0],
 	["shounka_gt_jaune",0],
@@ -1147,7 +1152,7 @@ life_garage_prices =
 	["cg_nissan_gtr_2012_bleufonce",0],
 	["cg_nissan_gtr_2012_bleu",0],
 	["cg_nissan_gtr_2012_white",0],
-	["cg_nissan_gtr_2012_jaune",0],		
+	["cg_nissan_gtr_2012_jaune",0],
 	["shounka_mp4_bleufonce",0],
 	["shounka_mp4_grise",0],
 	["shounka_mp4_jaune",0],
@@ -1203,10 +1208,10 @@ life_garage_prices =
 	["cg_lambo_veneno_white",0],
 	["cg_lambo_veneno_jaune",0],
 	//Holden racing
-	["AM_Holden_RBlue",0],			
+	["AM_Holden_RBlue",0],
 	["AM_Holden_RRed",0],
 	["AM_Holden_RWhite",0],
-	["AM_Holden_RBlack",0],	
+	["AM_Holden_RBlack",0],
 	["A3L_Veyron_purple",0],
 	["A3L_Veyron_orange",0],
 	["A3L_Veyron_red",0],
@@ -1340,7 +1345,7 @@ life_garage_prices =
 	["critgamin_contown_grise",0],
 	["critgamin_contown_violet",0],
 	["critgamin_contown_jaune",0],
-	["critgamin_contown_orange",0],			
+	["critgamin_contown_orange",0],
 	["critgamin_contown_vert",0],
 	["critgamin_vangmcc_civ_noir",0],
 	["critgamin_vangmcc_civ_bleufonce",0],
@@ -1484,7 +1489,7 @@ life_garage_prices =
 	["shounka_transam",0],
 	//civ_motorbike
 	["tcg_hrly",0],
-	["tcg_hrly_white",0],	
+	["tcg_hrly_white",0],
 	["tcg_hrly_red",0],
 	["tcg_hrly_metal",0],
 	["tcg_hrly_blue",0],
@@ -1605,35 +1610,35 @@ life_garage_prices =
 	["ivory_m3_slicktop",0],
 	["A3L_CVPIFPBDOC",0],
 	["A3L_TaurusCO2",0],
-	["cg_cvpifpblbpd",0],	
-	["cg_TaurusPD1",0],	
+	["cg_cvpifpblbpd",0],
+	["cg_TaurusPD1",0],
 	["DAR_ExplorerPolice",0],
 	["charger_pd_skinned",0],
 	["cg_ss2",0],
 	["DAR_ExplorerSheriff",0],
-	["charger_sh_skinned",0],			
-	["cg_suburban_sert_pol",0],					
+	["charger_sh_skinned",0],
+	["cg_suburban_sert_pol",0],
 	["cg_evoSERT1",0],
 	["charger_sert",0],
-	["cg_h2_sert",0],	
-	["AM_Holden_SO",0],		
+	["cg_h2_sert",0],
+	["AM_Holden_SO",0],
 	["A3L_CVPIUC",0],
 	["A3L_CVPIUCBlack",0],
 	["A3L_CVPIUCBlue",0],
 	["cg_mercedes_sprinter_pol_base_reg",0],
-	["cg_ducati_pol_reg",0],			
-	["DAR_ExplorerPoliceStealth",0],			
+	["cg_ducati_pol_reg",0],
+	["DAR_ExplorerPoliceStealth",0],
 	["A3L_jailBus",0],
 	 //civ_air
 	["B_Heli_Light_01_F",0],
 	["ivory_b206",0],
 	["ivory_b206_news",0],
 	["CUP_C_DC3_CIV",0],
-	["CUP_C_C47_CIV",0],			
+	["CUP_C_C47_CIV",0],
 	["GNT_C185",0],
 	["IVORY_CRJ200_1",0],
 	["IVORY_ERJ135_1",0],
-	 //cop_air	
+	 //cop_air
 	["B_Heli_Light_01_F",0],
 	["C_Heli_Light_01_civil_F",0],
 	["EC635_SAR",0],
@@ -1659,8 +1664,8 @@ life_garage_prices =
 	["Urbanized_LaFerrari_Lime_Special",0],
 
 	["EC635_prpg_presidental",0]
-	
-	
+
+
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
@@ -1676,34 +1681,34 @@ life_impound_prices =
 			["cg_evocor1",10],
 			["A3L_SuburbanDOC",10],
 			["charger_cor_skinned",10],
-			
+
 			//PD
 			["cg_cvpifpbpd",10],
 			["cg_TaurusPD2",10],
 			["cg_evopol1",10],
 			["charger_pd",10],
 			["charger_pd_skinned",10],
-			
+
 			//SO
 			["cg_CVPISH",10],
 			["cg_TaurusSS1",10],
 			["cg_TaurusSS2",10],
 			["cg_evoss1",10],
 			["charger_sh",10],
-			["charger_sh_skinned",10],			
+			["charger_sh_skinned",10],
 
 			//ST
 			["cg_cvpitrooper",10],
-			["cg_taurustrooperf",10],		
+			["cg_taurustrooperf",10],
 			["cg_trooperevo",10],
 			["charger_st",10],
-			["charger_trp_skinned",10],			
-			
-			//SERT					
+			["charger_trp_skinned",10],
+
+			//SERT
 			["AM_Holden_UM",10],
-			
+
 			["tcg_hrly",10],
-			["tcg_hrly_white",10],	
+			["tcg_hrly_white",10],
 			["tcg_hrly_red",10],
 			["tcg_hrly_metal",10],
 			["tcg_hrly_blue",10],
@@ -1737,7 +1742,7 @@ life_impound_prices =
 			["A3L_BMW135Purple",10],
 			["A3L_BMW135Red",10],
 
-			["AM_Holden_RBlue",10],			
+			["AM_Holden_RBlue",10],
 			["AM_Holden_RRed",10],
 			["AM_Holden_RWhite",10],
 			["AM_Holden_RBlack",10],
@@ -1923,7 +1928,7 @@ life_impound_prices =
 	["ivory_lp560",10],
 	["IVORY_R8",10],
 	["IVORY_R8SPYDER",10],
-	["IVORY_REV",10],	
+	["IVORY_REV",10],
 	["ivory_lfa",10],
 	["ivory_c",10],
 	["ivory_gt500",10],
@@ -2019,7 +2024,7 @@ life_impound_prices =
 	["shounka_rs6_rouge",10],
 	["shounka_rs6_bleufonce",10],
 	["shounka_rs6",10],
-	["shounka_rs6_noir",10],	
+	["shounka_rs6_noir",10],
 	["cg_bmw_1series_m_noir",10],
 	["cg_bmw_1series_m_violet",10],
 	["cg_bmw_1series_m_rose",10],
@@ -2037,7 +2042,7 @@ life_impound_prices =
 	["cg_bmw_m6_bleufonce",10],
 	["cg_bmw_m6_bleu",10],
 	["cg_bmw_m6_white",10],
-	["cg_bmw_m6_jaune",10],						
+	["cg_bmw_m6_jaune",10],
 	["A3L_BMW135Red",10],
 	["A3L_BMW135Purple",10],
 	["A3L_BMW135Blue",10],
@@ -2047,7 +2052,7 @@ life_impound_prices =
 	["A3L_BMW135Sport4",10],
 	["A3L_BMW135Sport3",10],
 	["A3L_BMW135Sport2",10],
-	["A3L_BMW135Sport1",10], 			
+	["A3L_BMW135Sport1",10],
 	["cg_renault_megane_rs_2015_noir",10],
 	["cg_renault_megane_rs_2015_violet",10],
 	["cg_renault_megane_rs_2015_rose",10],
@@ -2108,7 +2113,7 @@ life_impound_prices =
 	["cg_bowler_offroad_jaune",10],
 	["Mrshounka_agera_p_noir",10],
 	["Mrshounka_agera_p_bleu",10],
-	["Mrshounka_agera_p_jaune",10],			
+	["Mrshounka_agera_p_jaune",10],
 	["shounka_gt_bleufonce",10],
 	["shounka_gt_grise",10],
 	["shounka_gt_jaune",10],
@@ -2145,7 +2150,7 @@ life_impound_prices =
 	["cg_nissan_gtr_2012_bleufonce",10],
 	["cg_nissan_gtr_2012_bleu",10],
 	["cg_nissan_gtr_2012_white",10],
-	["cg_nissan_gtr_2012_jaune",10],		
+	["cg_nissan_gtr_2012_jaune",10],
 	["shounka_mp4_bleufonce",10],
 	["shounka_mp4_grise",10],
 	["shounka_mp4_jaune",10],
@@ -2201,10 +2206,10 @@ life_impound_prices =
 	["cg_lambo_veneno_white",10],
 	["cg_lambo_veneno_jaune",10],
 	//Holden racing
-	["AM_Holden_RBlue",10],			
+	["AM_Holden_RBlue",10],
 	["AM_Holden_RRed",10],
 	["AM_Holden_RWhite",10],
-	["AM_Holden_RBlack",10],	
+	["AM_Holden_RBlack",10],
 	["A3L_Veyron_purple",10],
 	["A3L_Veyron_orange",10],
 	["A3L_Veyron_red",10],
@@ -2338,7 +2343,7 @@ life_impound_prices =
 	["critgamin_contown_grise",10],
 	["critgamin_contown_violet",10],
 	["critgamin_contown_jaune",10],
-	["critgamin_contown_orange",10],			
+	["critgamin_contown_orange",10],
 	["critgamin_contown_vert",10],
 	["critgamin_vangmcc_civ_noir",10],
 	["critgamin_vangmcc_civ_bleufonce",10],
@@ -2482,7 +2487,7 @@ life_impound_prices =
 	["shounka_transam",10],
 	//civ_motorbike
 	["tcg_hrly",10],
-	["tcg_hrly_white",10],	
+	["tcg_hrly_white",10],
 	["tcg_hrly_red",10],
 	["tcg_hrly_metal",10],
 	["tcg_hrly_blue",10],
@@ -2603,35 +2608,35 @@ life_impound_prices =
 	["ivory_m3_slicktop",10],
 	["A3L_CVPIFPBDOC",10],
 	["A3L_TaurusCO2",10],
-	["cg_cvpifpblbpd",10],	
-	["cg_TaurusPD1",10],	
+	["cg_cvpifpblbpd",10],
+	["cg_TaurusPD1",10],
 	["DAR_ExplorerPolice",10],
 	["charger_pd_skinned",10],
 	["cg_ss2",10],
 	["DAR_ExplorerSheriff",10],
-	["charger_sh_skinned",10],			
-	["cg_suburban_sert_pol",10],					
+	["charger_sh_skinned",10],
+	["cg_suburban_sert_pol",10],
 	["cg_evoSERT1",10],
 	["charger_sert",10],
-	["cg_h2_sert",10],	
-	["AM_Holden_SO",10],		
+	["cg_h2_sert",10],
+	["AM_Holden_SO",10],
 	["A3L_CVPIUC",10],
 	["A3L_CVPIUCBlack",10],
 	["A3L_CVPIUCBlue",10],
 	["cg_mercedes_sprinter_pol_base_reg",10],
-	["cg_ducati_pol_reg",10],			
-	["DAR_ExplorerPoliceStealth",10],			
+	["cg_ducati_pol_reg",10],
+	["DAR_ExplorerPoliceStealth",10],
 	["A3L_jailBus",10],
 	 //civ_air
 	["B_Heli_Light_01_F",10],
 	["ivory_b206",10],
 	["ivory_b206_news",10],
 	["CUP_C_DC3_CIV",10],
-	["CUP_C_C47_CIV",10],			
+	["CUP_C_C47_CIV",10],
 	["GNT_C185",10],
 	["IVORY_CRJ200_1",10],
 	["IVORY_ERJ135_1",10],
-	 //cop_air	
+	 //cop_air
 	["B_Heli_Light_01_F",10],
 	["C_Heli_Light_01_civil_F",10],
 	["EC635_SAR",10],
@@ -2670,30 +2675,30 @@ life_garage_sell =
 			["cg_evocor1",9000],
 			["A3L_SuburbanDOC",9000],
 			["charger_cor_skinned",9000],
-			
+
 			//PD
 			["cg_cvpifpbpd",9000],
 			["cg_TaurusPD2",9000],
 			["cg_evopol1",9000],
 			["charger_pd",9000],
 			["charger_pd_skinned",9000],
-			
+
 			//SO
 			["cg_CVPISH",9000],
 			["cg_TaurusSS1",9000],
 			["cg_TaurusSS2",9000],
 			["cg_evoss1",9000],
 			["charger_sh",9000],
-			["charger_sh_skinned",9000],			
+			["charger_sh_skinned",9000],
 
 			//ST
 			["cg_cvpitrooper",9000],
-			["cg_taurustrooperf",9000],		
+			["cg_taurustrooperf",9000],
 			["cg_trooperevo",9000],
 			["charger_st",9000],
-			["charger_trp_skinned",9000],			
-			
-			//SERT					
+			["charger_trp_skinned",9000],
+
+			//SERT
 			["AM_Holden_UM",9000],
 
 			["EC635_prpg_lvsf",20000],
@@ -2710,7 +2715,7 @@ life_garage_sell =
 			["ivory_lp560",63900],
 			["IVORY_R8",24900],
 			["IVORY_R8SPYDER",21900],
-			["IVORY_REV",20700],	
+			["IVORY_REV",20700],
 			["ivory_lfa",41700],
 			["ivory_c",37800],
 			["ivory_gt500",24000],
@@ -2806,7 +2811,7 @@ life_garage_sell =
             ["shounka_rs6_rouge",21000],
             ["shounka_rs6_bleufonce",21000],
             ["shounka_rs6",21000],
-            ["shounka_rs6_noir",21000],	
+            ["shounka_rs6_noir",21000],
 			["cg_bmw_1series_m_noir",8700],
 			["cg_bmw_1series_m_violet",8700],
 			["cg_bmw_1series_m_rose",8700],
@@ -2824,7 +2829,7 @@ life_garage_sell =
 			["cg_bmw_m6_bleufonce",11700],
 			["cg_bmw_m6_bleu",11700],
 			["cg_bmw_m6_white",11700],
-			["cg_bmw_m6_jaune",11700],						
+			["cg_bmw_m6_jaune",11700],
             ["A3L_BMW135Red",6600],
             ["A3L_BMW135Purple",6600],
             ["A3L_BMW135Blue",6600],
@@ -2834,7 +2839,7 @@ life_garage_sell =
             ["A3L_BMW135Sport4",6600],
             ["A3L_BMW135Sport3",6600],
             ["A3L_BMW135Sport2",6600],
-            ["A3L_BMW135Sport1",6600], 			
+            ["A3L_BMW135Sport1",6600],
 			["cg_renault_megane_rs_2015_noir",11700],
 			["cg_renault_megane_rs_2015_violet",11700],
 			["cg_renault_megane_rs_2015_rose",11700],
@@ -2895,7 +2900,7 @@ life_garage_sell =
 			["cg_bowler_offroad_jaune",14700],
 			["Mrshounka_agera_p_noir",147000],
 			["Mrshounka_agera_p_bleu",147000],
-			["Mrshounka_agera_p_jaune",147000],			
+			["Mrshounka_agera_p_jaune",147000],
 			["shounka_gt_bleufonce",18000],
 			["shounka_gt_grise",18000],
 			["shounka_gt_jaune",18000],
@@ -2932,7 +2937,7 @@ life_garage_sell =
 			["cg_nissan_gtr_2012_bleufonce",23700],
 			["cg_nissan_gtr_2012_bleu",23700],
 			["cg_nissan_gtr_2012_white",23700],
-			["cg_nissan_gtr_2012_jaune",23700],		
+			["cg_nissan_gtr_2012_jaune",23700],
 			["shounka_mp4_bleufonce",33300],
 			["shounka_mp4_grise",33300],
 			["shounka_mp4_jaune",33300],
@@ -2988,10 +2993,10 @@ life_garage_sell =
 			["cg_lambo_veneno_white",47700],
 			["cg_lambo_veneno_jaune",47700],
 			//Holden racing
-			["AM_Holden_RBlue",59550],			
+			["AM_Holden_RBlue",59550],
 			["AM_Holden_RRed",59550],
 			["AM_Holden_RWhite",59550],
-			["AM_Holden_RBlack",59550],	
+			["AM_Holden_RBlack",59550],
 			["A3L_Veyron_purple",63000],
             ["A3L_Veyron_orange",63000],
             ["A3L_Veyron_red",63000],
@@ -3125,7 +3130,7 @@ life_garage_sell =
 			["critgamin_contown_grise",540],
 			["critgamin_contown_violet",540],
 			["critgamin_contown_jaune",540],
-			["critgamin_contown_orange",540],			
+			["critgamin_contown_orange",540],
 			["critgamin_contown_vert",540],
 			["critgamin_vangmcc_civ_noir",540],
 			["critgamin_vangmcc_civ_bleufonce",540],
@@ -3269,7 +3274,7 @@ life_garage_sell =
             ["shounka_transam",12000],
 	        //civ_motorbike
 			["tcg_hrly",750],
-			["tcg_hrly_white",750],	
+			["tcg_hrly_white",750],
 			["tcg_hrly_red",750],
 			["tcg_hrly_metal",750],
 			["tcg_hrly_blue",750],
@@ -3403,35 +3408,35 @@ life_garage_sell =
 			["ivory_m3_slicktop",600],
 			["A3L_CVPIFPBDOC",600],
 			["A3L_TaurusCO2",750],
-			["cg_cvpifpblbpd",600],	
-			["cg_TaurusPD1",750],	
+			["cg_cvpifpblbpd",600],
+			["cg_TaurusPD1",750],
 			["DAR_ExplorerPolice",1200],
 			["charger_pd_skinned",2700],
 			["cg_ss2",750],
 			["DAR_ExplorerSheriff",1200],
-			["charger_sh_skinned",2700],			
-			["cg_suburban_sert_pol",1200],					
+			["charger_sh_skinned",2700],
+			["cg_suburban_sert_pol",1200],
 			["cg_evoSERT1",2100],
 			["charger_sert",2700],
-			["cg_h2_sert",3300],	
-			["AM_Holden_SO",1200],		
+			["cg_h2_sert",3300],
+			["AM_Holden_SO",1200],
 			["A3L_CVPIUC",600],
 			["A3L_CVPIUCBlack",600],
 			["A3L_CVPIUCBlue",600],
 			["cg_mercedes_sprinter_pol_base_reg",750],
-			["cg_ducati_pol_reg",750],			
-			["DAR_ExplorerPoliceStealth",900],			
+			["cg_ducati_pol_reg",750],
+			["DAR_ExplorerPoliceStealth",900],
 			["A3L_jailBus",1500],
 	         //civ_air
 			["B_Heli_Light_01_F",10500],
 			["ivory_b206",10500],
 			["ivory_b206_news",12000],
 			["CUP_C_DC3_CIV",24000],
-			["CUP_C_C47_CIV",30000],			
+			["CUP_C_C47_CIV",30000],
 			["GNT_C185",30000],
 			["IVORY_CRJ200_1",30000],
 			["IVORY_ERJ135_1",30000],
-             //cop_air	
+             //cop_air
 			["B_Heli_Light_01_F",1350],
 			["C_Heli_Light_01_civil_F",1350],
 			["EC635_SAR",600],
@@ -3441,7 +3446,7 @@ life_garage_sell =
 			["EC635_SAR",600],
 			["EC635_PRPG_SERT",600],
 			["C_Heli_Light_01_civil_F",1350],
-			
+
 			// Medic Cars
 			["cg_ambulanceexpansion",10],
 			["A3L_TowTruck_ADAC",10],

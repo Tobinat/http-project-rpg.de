@@ -1,7 +1,7 @@
 /*
 	File: fn_virt_shops.sqf
-	
-	
+
+
 	Description:
 	Config for virtual shops.
 */
@@ -22,9 +22,9 @@ switch (_shop) do
 	case "gems": {["Gem Dealer",["sapphire","ruby","emerald"]]};
 	case "oil": {["Oil Trader",["oilp","pickaxe","fuelF"]]};
 	case "fishmarket": {["Fish Market",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
-	case "farmingmarket": {["Market",["wheat","sunflower","corn","bean","cotton","olive","opium","cannabis","pumpkin"]]};	
+	case "farmingmarket": {["Market",["wheat","sunflower","corn","bean","cotton","olive","opium","cannabis","pumpkin"]]};
 	case "glass": {["Glass Dealer",["glass"]]};
-	case "iron": {["Industrial Trader",["iron_r","copper_r","silberp","titanp"]]};
+	case "iron": {["Industrial Trader",["iron_r","copper_r","silberp","titanp","alup","bleip","zinkp","lithiump"]]};
 	case "diamond": {["Diamond Dealer",["weddingring","diamond","diamondc"]]};
 	case "salt": {["Salt Dealer",["salt_r"]]};
 	case "cop": {["Cop Item Shop",["coffee","donuts","panicbutton","fuelF","defusekit","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB","tracker","Blaulicht"]]};

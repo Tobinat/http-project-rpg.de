@@ -1,7 +1,7 @@
 /*
 	File: fn_processAction.sqf
-	
-	
+
+
 	Description:
 	Master handling for processing an item.
 */
@@ -30,10 +30,10 @@ _itemInfo = switch (_type) do
 	case "titan": {["titanu","titanp",11,"Schmelze Titan"];};
 	case "gummi": {["gummiu","gummip",7,"Erhitze Kautschuk"];};
 	case "krok": {["kroku","krokp",50,"Koche Krokodil"];};
-	case "alu": {["aluu","alup",11,"Schmelze Aluminium"];};
-	case "blei": {["bleiu","bleip",11,"Schmelze Blei"];};
-	case "zink": {["zinku","zinkp",11,"Schmelze Zink"];};
-	case "lithium": {["lithiumu","lithiump",11,"Elektrolyse lithium"];};
+	case "alu": {["aluu","alup",11,"Aluminium elek­t­ro­ly­sie­ren"];};
+	case "blei": {["bleiu","bleip",11,"Blei elek­t­ro­ly­sie­ren"];};
+	case "zink": {["zinku","zinkp",11,"Zink elek­t­ro­ly­sie­ren"];};
+	case "lithium": {["lithiumu","lithiump",11,"Lithium elek­t­ro­ly­sie­ren"];};
 
 	default {[];};
 };
@@ -66,7 +66,7 @@ _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _cP = 0.01;
 
 if (life_karma < 0 && _type in ["heroin","marijuana","meth","MDMA","coke","krok"]) then {
-	_cP = 0.2;	
+	_cP = 0.2;
 };
 _progress progressSetPosition _cp;
 life_is_processing = true;
@@ -83,13 +83,13 @@ if(_hasLicense) then
 		if(_cP >= 1) exitWith {};
 		if(player distance _vendor > 10) exitWith {};
 	};
-	
+
 	if(player distance _vendor > 10) exitWith {[localize "STR_Process_Stay", false] spawn domsg; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
 	5 cutText ["","PLAIN"];
 	[format[localize "STR_Process_Processed",_oldVal,_itemName], false] spawn domsg;
-	life_is_processing = false; 
+	life_is_processing = false;
 }
 else
 {
@@ -104,7 +104,7 @@ else
 		if(_cP >= 1) exitWith {};
 		if(player distance _vendor > 10) exitWith {};
 	};
-	
+
 	if(player distance _vendor > 10) exitWith {[localize "STR_Process_Stay", false] spawn domsg; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(cash_in_hand < _cost) exitWith {[format[localize "STR_Process_License",[_cost] call life_fnc_numberText], false] spawn domsg; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
@@ -113,4 +113,4 @@ else
 	[format[localize "STR_Process_Processed2",_oldVal,_itemName,[_cost] call life_fnc_numberText], false] spawn domsg;
 	["cash","take",_cost] call life_fnc_handleCash;
 	life_is_processing = false;
-};	
+};

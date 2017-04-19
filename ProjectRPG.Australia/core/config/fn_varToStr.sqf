@@ -1,7 +1,7 @@
 /*
 	File: fn_varToStr.sqf
-	
-	
+
+
 	Description:
 	Takes the long-name (variable) and returns a display name for our
 	virtual item.
@@ -13,7 +13,7 @@ if(_var isEqualTo "") exitWith {""};
 
 switch (_var) do
 {
-	//Virtual Inventory Items 
+	//Virtual Inventory Items
 	case "life_inv_emerald": {"Emerald Rings"};
 	case "life_inv_sapphire": {"Sapphire Jewellery"};
 	case "life_inv_ruby": {"Ruby Necklace"};
@@ -106,8 +106,8 @@ switch (_var) do
 	case "life_inv_rawsheepmeat": {(localize "STR_Item_rawsheepmeat")};
 	case "life_inv_rawrabbit": {(localize "STR_Item_rawrabbit")};
 	//Additions
-	case "life_inv_zoobeer": {"Light Beer"}; 
-	case "life_inv_zoobeer2": {"Heavy Beer"}; 
+	case "life_inv_zoobeer": {"Light Beer"};
+	case "life_inv_zoobeer2": {"Heavy Beer"};
 	case "life_inv_jackdaniels": {"Jack Daniels"};
 	case "life_inv_vodka": {"Vodka Shot"};
 	case "life_inv_jagerbomb": {"Jagerbomb"};
@@ -138,7 +138,16 @@ switch (_var) do
 	case "life_inv_titanp": {"Titanbarren"};
 	case "life_inv_gummiu": {"Kautschuk"};
 	case "life_inv_gummip": {"Gummi"};
-	
+	case "life_inv_aluu": {"Aluminiumoxid"};
+	case "life_inv_alup": {"Aluminiumbarren"};
+	case "live_inv_bleiu": {"Bleisulfid"};
+	case "life_inv_bleip": {"Bleibarren"};
+	case "life_inv_zinku": {"Zinksulfid"};
+	case "life_inv_zinkp": {"Zink"};
+	case "life_inv_lithiumu": {"Lithiumcarbonat"};
+	case "life_inv_lithiump": {"Lithiumbarren"};
+
+
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
 	case "license_civ_air": {(localize "STR_License_Pilot")};
@@ -176,5 +185,9 @@ switch (_var) do
 	case "license_civ_krok": {"Krokodil Verarbeitung"};
 	case "license_civ_lcn": {"La Cosa Nostra"};
 	case "license_civ_udclang": {"Polizei Langwaffen"};
-	
+	case "license_civ_zink": {"Zink Verabeitung"};
+	case "license_civ_blei": {"Blei Verarbeitung"};
+	case "license_civ_alu": {"Alumiunium Verarbeitung"};
+	case "license_civ_lithium": {"Lithium Verarbeitung"};
+
 };

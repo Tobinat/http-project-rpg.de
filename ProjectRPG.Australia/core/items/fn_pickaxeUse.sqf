@@ -1,7 +1,7 @@
 /*
 	File: fn_pickaxeUse.sqf
-	
-	
+
+
 	Description:
 	Main functionality for pickaxe in mining.
 */
@@ -23,6 +23,12 @@ switch (true) do
 	case (player distance (getMarkerPos "rock_1") < 50): {_mine = "rock"; _val = 2;};
 	case (player distance (getMarkerPos "silber_1") <50) : {_mine = "silberu"; _val = 2;};
 	case (player distance (getMarkerPos "titan_1") <50) : {_mine = "titanu"; _val = 1;};
+
+	case (player distance (getMarkerPos "alu_1") <50) : {_mine = "aluu"; _val = 2;};
+	case (player distance (getMarkerPos "blei_1") <50) : {_mine = "bleiu"; _val = 2;};
+	case (player distance (getMarkerPos "zink_1") <50) : {_mine = "zinku"; _val = 2;};
+	case (player distance (getMarkerPos "lithium_1") <50) : {_mine = "lithiumu"; _val = 2;};
+
 	default {_mine = "";};
 };
 

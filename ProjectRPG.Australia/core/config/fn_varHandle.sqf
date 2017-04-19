@@ -1,7 +1,7 @@
 /*
 	File: fn_varHandle.sqf
-	
-	
+
+
 	Description:
 	Master handler for getting a variables name, short name, etc.
 */
@@ -22,7 +22,7 @@ switch (_mode) do
 			case "bec": {"life_inv_bec"};
 			case "medkit": {"life_inv_medkit"};
 			case "methu": {"life_inv_methu"};
-			case "methp": {"life_inv_methp"};   // into case 0 field 
+			case "methp": {"life_inv_methp"};   // into case 0 field
 			case "cokeu": {"life_inv_cokeu"};
 			case "cokep": {"life_inv_cokep"};
 			case "MDMAu": {"life_inv_MDMAu"};
@@ -135,7 +135,7 @@ switch (_mode) do
 			case "Rax's Rum": {"life_inv_raxsrum"};
 			case "Blaulicht": {"life_inv_blaulicht"};
 			case "tracker": {"life_inv_tracker"};
-			
+
 			case "silberu": {"life_inv_silberu"};
 			case "silberp": {"life_inv_silberp"};
 			case "titanu": {"life_inv_titanu"};
@@ -144,14 +144,23 @@ switch (_mode) do
 			case "gummip": {"life_inv_gummip"};
 			case "kroku": {"life_inv_kroku"};
 			case "krokp": {"life_inv_krokp"};
+
+			case "aluu": {"life_inv_aluu"};
+			case "alup": {"life_inv_alup"};
+			case "bleiu": {"live_inv_bleiu"};
+			case "bleip": {"life_inv_bleip"};
+			case "zinku": {"life_inv_zinku"};
+			case "zinkp": {"life_inv_zinkp"};
+			case "lithiumu": {"life_inv_lithiumu"};
+			case "lithiump": {"life_inv_lithiump"};
 		};
 	};
-	
+
 	case 1:
 	{
 		switch (_var) do
 		{
-			case "life_inv_medkit": {"medkit"};		
+			case "life_inv_medkit": {"medkit"};
 			case "life_inv_condom": {"condom"};
 			case "life_inv_nos": {"nos"};
 			case "life_inv_panicbutton": {"panicbutton"};
@@ -165,16 +174,16 @@ switch (_mode) do
 			case "life_inv_emerald": {"emerald"};
 			case "life_inv_sapphire": {"sapphire"};
 			case "life_inv_ruby": {"ruby"};
-			case "life_inv_stitches": {"stitches"}; // in the case 1 field 
+			case "life_inv_stitches": {"stitches"}; // in the case 1 field
 			case "life_inv_splint": {"splint"};
 			case "life_inv_epipen": {"epipen"};
 			case "life_inv_MDMAu": {"MDMAu"};
-			case "life_inv_MDMAp": {"MDMAp"}; // in the case 1 field 
+			case "life_inv_MDMAp": {"MDMAp"}; // in the case 1 field
 			case "life_inv_bec": {"bec"};
 			case "life_inv_methu": {"methu"};
-			case "life_inv_methp": {"methp"}; // in the case 1 field 
+			case "life_inv_methp": {"methp"}; // in the case 1 field
 			case "life_inv_cokeu": {"cokeu"};
-			case "life_inv_cokep": {"cokep"}; // in the case 1 field 
+			case "life_inv_cokep": {"cokep"}; // in the case 1 field
 			case "life_inv_oilu": {"oilu"};
 			case "life_inv_oilp": {"oilp"};
 			case "life_inv_heroinu": {"heroinu"};
@@ -256,17 +265,6 @@ switch (_mode) do
 			case "life_inv_sexonthebeach": {"sexonthebeach"};
 			case "life_inv_tequila": {"tequila"};
 			case "life_inv_jackdanielsandcoke": {"jackdanielsandcoke"};
-			case "zoobeer2": {"life_inv_zoobeer2"};
-			case "jackdaniels": {"life_inv_jackdaniels"};
-			case "vodka": {"life_inv_vodka"};
-			case "jagerbomb": {"life_inv_jagerbomb"};
-			case "absinthe": {"life_inv_absinthe"};
-			case "redwine": {"life_inv_redwine"};
-			case "whitewine": {"life_inv_whitewhine"};
-			case "whiterussian": {"life_inv_whiterussian"};
-			case "sexonthebeach": {"life_inv_sexonthebeach"};
-			case "tequila": {"life_inv_tequila"};
-			case "jackdanielsandcoke": {"life_inv_jackdanielsandcoke"};
 			case "life_inv_RoadConeStripB": {"RoadConeStripB"};
 			case "life_inv_RoadConeB": {"RoadConeB"};
 			case "life_inv_RoadConeStrip": {"RoadConeStrip"};
@@ -279,7 +277,7 @@ switch (_mode) do
 			case "life_inv_raxsrum": {"Rax's Rum"};
 			case "life_inv_blaulicht": {"Blaulicht"};
 			case "life_inv_tracker": {"tracker"};
-			
+
 			case "life_inv_silberu": {"silberu"};
 			case "life_inv_silberp": {"silberp"};
 			case "life_inv_titanu": {"titanu"};
@@ -288,6 +286,15 @@ switch (_mode) do
 			case "life_inv_gummip": {"gummip"};
 			case "life_inv_kroku": {"kroku"};
 			case "life_inv_krokp": {"krokp"};
+
+			case "life_inv_aluu": {"aluu"};
+			case "life_inv_alup": {"alup"};
+			case "live_inv_bleiu": {"bleiu"};
+			case "life_inv_bleip": {"bleip"};
+			case "life_inv_zinku": {"zinku"};
+			case "life_inv_zinkp": {"zinkp"};
+			case "life_inv_lithiumu": {"lithiumu"};
+			case "life_inv_lithiump": {"lithiump"};
 		};
 	};
 };

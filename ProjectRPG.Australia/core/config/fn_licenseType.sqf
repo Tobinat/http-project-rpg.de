@@ -1,7 +1,7 @@
 /*
 	File: fn_licenseType.sqf
-	
-	
+
+
 	Description:
 	Returns the short-var of the license name to a long var and display name.
 */
@@ -45,25 +45,26 @@ switch (_mode) do
 			case "home": {_var = "license_civ_home"};
 			case "udc": {_var = "license_civ_udc"};
 			case "sert": {_var = "license_cop_sert"};
-			
-			
+
+
 			case "rifle": {_var = "license_civ_rifle"};
 			case "doj": {_var = "license_civ_doj"};
 			case "bank": {_var = "license_civ_bank"};
 			case "silber": {_var = "license_civ_silber"};
 			case "titan": {_var = "license_civ_titan"};
 			case "gummi": {_var = "license_civ_gummi"};
+			case "krok": {_var = "license_civ_krok"};
+			case "lcn": {_var = "license_civ_lcn"};
+			case "udclang": {_var = "license_civ_udclang"};
+
 			case "zink": {_var = "license_civ_zink"};
 			case "blei": {_var = "license_civ_blei"};
 			case "alu": {_var = "license_civ_alu"};
 		    case "lithium": {_var = "license_civ_lithium"};
-			case "krok": {_var = "license_civ_krok"};
-			case "lcn": {_var = "license_civ_lcn"};
-			case "udclang": {_var = "license_civ_udclang"};
 			default {_var = ""};
 		};
 	};
-	
+
 	case 1:
 	{
 		switch (_type) do
@@ -97,7 +98,7 @@ switch (_mode) do
 			case "license_civ_home": {_var = "home"};
 			case "license_civ_udc": {_var = "udc"};
 			case "license_cop_sert": {_var = "sert"};
-			
+
 			case "license_civ_rifle": {_var = "rifle"};
 			case "license_civ_bank": {_var = "bank"};
 			case "license_civ_doj": {_var = "doj"};
@@ -107,6 +108,11 @@ switch (_mode) do
 			case "license_civ_krok": {_var = "krok"};
 			case "license_civ_lcn": {_var = "lcn"};
 			case "license_civ_udclang": {_var = "udclang"};
+
+			case "license_civ_zink": {_var = "zink"};
+			case "license_civ_blei": {_var = "blei"};
+			case "license_civ_alu": {_var = "alu"};
+		    case "license_civ_lithium": {_var = "lithium"};
 			default {_var = ""};
 		};
 	};
