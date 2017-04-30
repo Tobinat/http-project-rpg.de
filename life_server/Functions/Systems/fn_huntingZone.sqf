@@ -1,41 +1,53 @@
 /*
-	File: fn_huntingZone.sqf
-	
-	
-	Description:
-	Main functionality for the hunting zone.
+    File: fn_huntingZone.sqf
+    Author: Bryan "Tonic" Boardwine
 
+    Description:
+    Spawns animals around the marker when a player
+    is near. Very basic WIP
+
+    TODO:
+    Change it up so animals repopulate over time.
 */
-private["_bool","_total","_animals"];
-_bool = param [0,false,[false]];
-if(!_bool && count life_animals_array == 0) exitWith {};
 
-_animals = ["Goat_random_F","Hen_random_F","Sheep_random_F"]; 
-_total = 20; 
+private ["_animalList","_dist","_radius","_zoneName","_unitsNear","_animalsActive"];
+params [
+        ["_zoneName","",[""]],
+        ["_maxAnimals",10,[0]]
+];
 
-if(_bool) then
-{
-for "_i" from 0 to (_total)-1 do
-{
-_pos = ["hunting_area"] call SHK_pos;
-_type = _animals call BIS_fnc_selectRandom;
-_animal = _type createUnit [(position player),(createGroup civilian)];
+if (_zoneName isEqualTo "") exitWith {};
+_animalList = ["Sheep_random_F","Goat_random_F","Hen_random_F","Cock_random_F"];
+_radius = (getMarkerSize _zoneName) select 0;
+_dist = _radius + 100;
+_zone = getMarkerPos _zoneName;
 
-hint format["%1\n%2",_type,_animal];
-life_animals_array pushBack _animal;
+if (!isNil "animals" && {!(count animals isEqualTo 0)}) then {
+    _maxAnimals = _maxAnimals - count(animals);
+} else {
+    animals = [];
 };
-life_animals_spawned = true;
-systemChat str(life_animals_array);
-}
-else
-{
-{
-if(!isNull _x) then
-{
-deleteVehicle _x;
-};
-} foreach life_animals_array;
 
-life_animals_array = [];
-life_animals_spawned = false;
+_unitsNear = false;
+_animalsActive = false;
+for "_i" from 0 to 1 step 0 do {
+    {if ((_x distance _zone) < _dist) exitWith {_unitsNear = true;}; _unitsNear = false;} forEach playableUnits;
+    if (_unitsNear && !_animalsActive) then {
+        _animalsActive = true;
+        for "_i" from 1 to _maxAnimals do {
+            _animalClass = selectRandom _animalList;
+            _position = [((_zone select 0) - _radius + random (_radius * 2)), ((_zone select 1) - _radius + random (_radius * 2)),0];
+            _animal = createAgent [_animalClass,_position,[],0,"FORM"];
+            _animal setDir (random 360);
+            animals pushBack _animal;
+        };
+    } else {
+        if (!_unitsNear && _animalsActive) then {
+            {deleteVehicle _x;} forEach animals;
+            animals = [];
+            _animalsActive = false;
+        };
+    };
+    uiSleep (3 + random 2);
+    _maxAnimals = param [1,10,[0]];
 };

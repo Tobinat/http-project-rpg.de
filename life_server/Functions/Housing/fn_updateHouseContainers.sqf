@@ -1,26 +1,24 @@
 /*
-	fn_updateHouseContainers.sqf
+    File : fn_updateHouseContainers.sqf
+    Author: NiiRoZz
+
+    Description:
+    Update inventory "i" in container
 */
+private ["_containerID","_containers","_query","_vehItems","_vehMags","_vehWeapons","_vehBackpacks","_cargo"];
+_container = [_this,0,objNull,[objNull]] call BIS_fnc_param;
+if (isNull _container) exitWith {};
+_containerID = _container getVariable ["container_id",-1];
+if (_containerID isEqualTo -1) exitWith {};
 
-params [["_house", objNull, [objNull]], "_houseID", "_containers", "_query"];
+_vehItems = getItemCargo _container;
+_vehMags = getMagazineCargo _container;
+_vehWeapons = getWeaponCargo _container;
+_vehBackpacks = getBackpackCargo _container;
+_cargo = [_vehItems,_vehMags,_vehWeapons,_vehBackpacks];
 
-if(isNull _house) exitWith {systemChat "House null";};
-_houseID = _house getVariable["house_id",-1];
-if(_houseID isEqualTo -1) exitWith {systemChat "HouseID invalid";};
+_cargo = [_cargo] call DB_fnc_mresArray;
 
-_containers = _house getVariable ["containers",[]];
+_query = format ["UPDATE containers SET gear='%1' WHERE id='%2'",_cargo,_containerID];
 
-_arr = [];
-{
-	_className = typeOf _x;
-	_weapons = getWeaponCargo _x;
-	_magazines = getMagazineCargo _x;
-	_items = getItemCargo _x;
-	_backpacks = getBackpackCargo _x;
-
-	_arr pushBack [_className,[_weapons,_magazines,_items,_backpacks]];
-} foreach _containers;
-
-_arr = [_arr] call DB_fnc_mresArray;
-_query = format["UPDATE houses SET containers='%1' WHERE id='%2'",_arr,_houseID];
 [_query,1] call DB_fnc_asyncCall;

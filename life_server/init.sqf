@@ -1,205 +1,218 @@
-#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
+#include "script_macros.hpp"
+/*
+    File: init.sqf
+    Author: Bryan "Tonic" Boardwine
 
-life_loopExit = false;
+    Edit: Nanou for HeadlessClient optimization.
+    Please read support for more informations.
+
+    Description:
+    Initialize the server and required systems.
+*/
+private ["_dome","_rsb","_timeStamp","_extDBNotLoaded"];
+DB_Async_Active = false;
+DB_Async_ExtraLock = false;
 life_server_isReady = false;
-life_chopShopInUse = false;
-life_restartTime = 10800;
+_extDBNotLoaded = "";
+serv_sv_use = [];
 publicVariable "life_server_isReady";
-life_Hunting_Version = "gfdfgoreingioerngoerngonerg";
-publicVariable "life_Hunting_Version";
+life_save_civilian_position = if (LIFE_SETTINGS(getNumber,"save_civilian_position") isEqualTo 0) then {false} else {true};
+fn_whoDoneIt = compile preprocessFileLineNumbers "\life_server\Functions\Systems\fn_whoDoneIt.sqf";
 
+/*
+    Prepare the headless client.
+*/
+life_HC_isActive = false;
+publicVariable "life_HC_isActive";
+HC_Life = false;
+publicVariable "HC_Life";
 
-// [] spawn
-// {
-	// while {true} do {
-		// uisleep 600;
-		// if(daytime > 18 && daytime < 23.5) exitwith {
-			// skiptime 8;
-		// };
-	// };
-// };
+if (EXTDB_SETTING(getNumber,"HeadlessSupport") isEqualTo 1) then {
+    [] execVM "\life_server\initHC.sqf";
+};
 
-[] spawn
-{
-	while {true} do {
-		_cops = (west countSide playableUnits);
-		_meds = (independent countSide playableUnits);
- 		if(_cops > 9 || _meds > 3) then { 
- 			_chance = round (random 60);
-			if(_chance == 1) then {
-				remoteExec ["fnc_hotel_fire", -2];
-			};
-			if(_chance == 2) then {
-				if (cgbankvault animationPhase "d_o_Anim" == 0 && cgbankvault animationPhase "d_l_Anim" == 1) then {
-					remoteExec ["fnc_air_fire", -2];	
-				} else {
-					remoteExec ["fnc_hafen_fire", -2];
-				};
-			};
-			
-			
-			if(_chance == 4) then {
-				remoteExec ["fnc_autoladen_fire", -2];
-			};
-			if(_chance == 5) then {
-				remoteExec ["fnc_rasthof_fire", -2];
-			};
-			if(_chance == 6) then {
-				remoteExec ["fnc_buro_fire", -2];
-			};
-			if(_chance == 7) then {
-				remoteExec ["fnc_industrie_fire", -2];
-			};
-			if(_chance == 8) then {
-				remoteExec ["fnc_tanke_fire", -2];
-			};
-			if(_chance == 9) then {
-				remoteExec ["fnc_diablos_fire", -2];
-			};
-			if(_chance == 10) then {
-				remoteExec ["fnc_konti_fire", -2];
-			};
-		
-			if(_chance == 11) then {
-				remoteExec ["fnc_hot_fire", -2];
-			};
-		
-			if(_chance == 12) then {
-				remoteExec ["fnc_park_fire", -2];
-			};
-		
-		if(_chance == 13) then {
-				remoteExec ["fnc_shop_fire", -2];
-			};
-			
-		
-		
-		
-		
-		
-		};
-		uisleep 300;
-	};
+/*
+    Prepare extDB before starting the initialization process
+    for the server.
+*/
+
+if (isNil {uiNamespace getVariable "life_sql_id"}) then {
+    life_sql_id = round(random(9999));
+    CONSTVAR(life_sql_id);
+    uiNamespace setVariable ["life_sql_id",life_sql_id];
+        try {
+        _result = EXTDB format ["9:ADD_DATABASE:%1",EXTDB_SETTING(getText,"DatabaseName")];
+        if (!(_result isEqualTo "[1]")) then {throw "extDB3: Error with Database Connection"};
+        _result = EXTDB format ["9:ADD_DATABASE_PROTOCOL:%2:SQL:%1:TEXT2",FETCH_CONST(life_sql_id),EXTDB_SETTING(getText,"DatabaseName")];
+        if (!(_result isEqualTo "[1]")) then {throw "extDB3: Error with Database Connection"};
+    } catch {
+        diag_log _exception;
+        _extDBNotLoaded = [true, _exception];
+    };
+    if (_extDBNotLoaded isEqualType []) exitWith {};
+    EXTDB "9:LOCK";
+    diag_log "extDB3: Connected to Database";
+} else {
+    life_sql_id = uiNamespace getVariable "life_sql_id";
+    CONSTVAR(life_sql_id);
+    diag_log "extDB3: Still Connected to Database";
 };
 
 
-
-[] execVM "\life_server\functions.sqf";
-
-if(isNil {uiNamespace getVariable "life_sql_id"}) then
-{
-	"extDB2" callExtension "9:ADD_DATABASE:Database2";
-
-	_life_sql_id = str(round(random(999999)));
-	life_sql_id = compileFinal _life_sql_id;
-	"extDB2" callExtension format["9:ADD_DATABASE_PROTOCOL:Database2:SQL_RAW:%1:ADD_QUOTES",_life_sql_id];
-	"extDB2" callExtension "9:START_RCON:RCON";
-	"extDB2" callExtension "9:ADD_PROTOCOL:RCON:rcon";
-		
-	"extDB2" callExtension "9:LOCK";
-
-	uiNamespace setVariable ["life_sql_id", _life_sql_id];
-}
-else
-{
-	life_sql_id = uiNamespace getVariable "life_sql_id";
-	__CONST__(life_sql_id,life_sql_id);
+if (_extDBNotLoaded isEqualType []) exitWith {
+    life_server_extDB_notLoaded = true;
+    publicVariable "life_server_extDB_notLoaded";
 };
+life_server_extDB_notLoaded = false;
+publicVariable "life_server_extDB_notLoaded";
 
-//[] spawn DB_fnc_RCON_Restart;
-[] call DB_fnc_serverTime;
+/* Run stored procedures for SQL side cleanup */
 ["CALL resetLifeVehicles",1] call DB_fnc_asyncCall;
 ["CALL deleteDeadVehicles",1] call DB_fnc_asyncCall;
 ["CALL deleteOldHouses",1] call DB_fnc_asyncCall;
+["CALL deleteOldGangs",1] call DB_fnc_asyncCall;
 
-life_adminlevel = 0;
+_timeStamp = diag_tickTime;
+diag_log "----------------------------------------------------------------------------------------------------";
+diag_log "---------------------------------- Starting Altis Life Server Init ---------------------------------";
+diag_log "------------------------------------------ Version 5.0.0 -------------------------------------------";
+diag_log "----------------------------------------------------------------------------------------------------";
+
+if (LIFE_SETTINGS(getNumber,"save_civilian_position_restart") isEqualTo 1) then {
+    [] spawn {
+        _query = "UPDATE players SET civ_alive = '0' WHERE civ_alive = '1'";
+        [_query,1] call DB_fnc_asyncCall;
+    };
+};
+
+/* Map-based server side initialization. */
+master_group attachTo[bank_obj,[0,0,0]];
+
+{
+    _hs = createVehicle ["Land_Hospital_main_F", [0,0,0], [], 0, "NONE"];
+    _hs setDir (markerDir _x);
+    _hs setPosATL (getMarkerPos _x);
+    _var = createVehicle ["Land_Hospital_side1_F", [0,0,0], [], 0, "NONE"];
+    _var attachTo [_hs, [4.69775,32.6045,-0.1125]];
+    detach _var;
+    _var = createVehicle ["Land_Hospital_side2_F", [0,0,0], [], 0, "NONE"];
+    _var attachTo [_hs, [-28.0336,-10.0317,0.0889387]];
+    detach _var;
+    if (worldName isEqualTo "Tanoa") then {
+        if (_forEachIndex isEqualTo 0) then {
+            atm_hospital_2 setPos (_var modelToWorld [4.48633,0.438477,-8.25683]);
+            vendor_hospital_2 setPos (_var modelToWorld [4.48633,0.438477,-8.25683]);
+            "medic_spawn_3" setMarkerPos (_var modelToWorld [8.01172,-5.47852,-8.20022]);
+            "med_car_2" setMarkerPos (_var modelToWorld [8.01172,-5.47852,-8.20022]);
+            hospital_assis_2 setPos (_hs modelToWorld [0.0175781,0.0234375,-0.231956]);
+        } else {
+            atm_hospital_3 setPos (_var modelToWorld [4.48633,0.438477,-8.25683]);
+            vendor_hospital_3 setPos (_var modelToWorld [4.48633,0.438477,-8.25683]);
+            "medic_spawn_1" setMarkerPos (_var modelToWorld [-1.85181,-6.07715,-8.24944]);
+            "med_car_1" setMarkerPos (_var modelToWorld [5.9624,11.8799,-8.28493]);
+            hospital_assis_2 setPos (_hs modelToWorld [0.0175781,0.0234375,-0.231956]);
+        };
+    };
+} forEach ["hospital_2","hospital_3"];
+
+{
+    if (!isPlayer _x) then {
+        _npc = _x;
+        {
+            if (_x != "") then {
+                _npc removeWeapon _x;
+            };
+        } forEach [primaryWeapon _npc,secondaryWeapon _npc,handgunWeapon _npc];
+    };
+} forEach allUnits;
+
+[8,true,12] execFSM "\life_server\FSM\timeModule.fsm";
+
+life_adminLevel = 0;
 life_medicLevel = 0;
-life_coplevel = 0;
+life_copLevel = 0;
+CONST(JxMxE_PublishVehicle,"false");
 
+/* Setup radio channels for west/independent/civilian */
 life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 
-serv_sv_use = [];
-publicVariable "serv_sv_use";
+/* Set the amount of gold in the federal reserve at mission start */
+fed_bank setVariable ["safe",count playableUnits,true];
+[] spawn TON_fnc_federalUpdate;
 
+/* Event handler for disconnecting players */
 addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}];
+[] call compile preprocessFileLineNumbers "\life_server\functions.sqf";
 
-life_gang_list = [];
-publicVariable "life_gang_list";
-life_wanted_list = [];
-client_session_list = [];
-life_lastChopperFlagged = ["",0];
-
-[] execFSM "\life_server\cleanup.fsm";
-
+/* Set OwnerID players for Headless Client */
+TON_fnc_requestClientID =
 {
-	if(!isPlayer _x) then {
-		_npc = _x;
-		{
-			if(_x != "") then {
-				_npc removeWeapon _x;
-			};
-		} foreach [primaryWeapon _npc,secondaryWeapon _npc,handgunWeapon _npc];
-	};
-} foreach allUnits;
-
-[] call TON_fnc_initHouses;
-
-life_server_isReady = true;
-publicVariable "life_server_isReady";
-// cruise control
-//[] execVM "\life_server\mods\mod_cruiseControl.sqf";
-
-pb_spieler = [];
-pb_spielstatus = 0;
-pb_maxspieler = 10;
-execVM "\life_server\Functions\paintball\arena_paintball.sqf";
-//execVM "\life_server\Functions\DynMarket\fn_config.sqf";
-
-if (isServer) then {
-	racemachine setVariable["start",false,true];
-	racemachine2 setVariable["start",false,true];
-	jobstand setvariable ["job1",false,true];
-	jobstand setvariable ["job2",false,true];
-	jobstand setvariable ["job3",false,true];
-	jobstand setvariable ["job4",false,true];
-	jobstand setvariable ["job5",false,true];
-	jobstand setvariable ["job6",false,true];	
-	jobstand setvariable ["job7",false,true];
-	jobstand setvariable ["job8",false,true];	
+    (_this select 1) setVariable ["life_clientID", owner (_this select 1), true];
 };
+"life_fnc_RequestClientId" addPublicVariableEventHandler TON_fnc_requestClientID;
+
+/* Event handler for logs */
+"money_log" addPublicVariableEventHandler {diag_log (_this select 1)};
+"advanced_log" addPublicVariableEventHandler {diag_log (_this select 1)};
+
+/* Miscellaneous mission-required stuff */
+life_wanted_list = [];
+
+cleanupFSM = [] execFSM "\life_server\FSM\cleanup.fsm";
 
 [] spawn {
-	_counter = 0;
-	while {true} do {
-		if(_counter > 30) exitWith {
-			call TON_fnc_loops;
-		};
-		if(!isNil "hc_1" && {!isNil "life_HC_isActive"} && {life_HC_isActive}) exitWith {
-			[] remoteExecCall ["TON_fnc_loops",hc_1];
-		};
-		_counter = _counter + 1;
-		sleep 1;
-	};
+    for "_i" from 0 to 1 step 0 do {
+        uiSleep (30 * 60);
+        {
+            _x setVariable ["sellers",[],true];
+        } forEach [Dealer_1,Dealer_2,Dealer_3];
+    };
 };
 
-//hi, lets clean animals left over.
-fnc_cleananimals = {
+[] spawn TON_fnc_initHouses;
+cleanup = [] spawn TON_fnc_cleanup;
 
-//used animals
-_huntarray = ["Sheep_random_F","Cock_random_F","Hen_random_F","Goat_random_F"];
-_civScumLords = ["C_man_polo_1_F","C_man_polo_2_F","C_man_polo_6_F","C_man_polo_4_F","C_man_polo_3_F","C_man_polo_5_F","C_man_1_2_F","C_man_1_3_F"];
-//check if players are around if so, exit.
-_checkPlayer = (getmarkerpos "hunting_area") nearEntities [_civScumLords, 200];
-if(count _checkPlayer > 0) exitwith {};
-_animalsFound = (getmarkerpos "hunting_area") nearEntities [_huntarray, 350];
+TON_fnc_playtime_values = [];
+TON_fnc_playtime_values_request = [];
 
-//delete if no players are around
-	{		
-		deletevehicle _x;
-	} forEach _animalsFound;	
+//Just incase the Headless Client connects before anyone else
+publicVariable "TON_fnc_playtime_values";
+publicVariable "TON_fnc_playtime_values_request";
 
-};
 
-[fnc_cleananimals, 600] execFSM "\life_server\call.fsm";
+/* Setup the federal reserve building(s) */
+private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
+private _altisArray = [16019.5,16952.9,0];
+private _tanoaArray = [11074.2,11501.5,0.00137329];
+private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
+
+_dome = nearestObject [_pos,"Land_Dome_Big_F"];
+_rsb = nearestObject [_pos,_vaultHouse];
+
+for "_i" from 1 to 3 do {_dome setVariable [format ["bis_disabled_Door_%1",_i],1,true]; _dome animateSource [format ["Door_%1_source", _i], 0];};
+_dome setVariable ["locked",true,true];
+_rsb setVariable ["locked",true,true];
+_rsb setVariable ["bis_disabled_Door_1",1,true];
+_dome allowDamage false;
+_rsb allowDamage false;
+
+/* Tell clients that the server is ready and is accepting queries */
+life_server_isReady = true;
+publicVariable "life_server_isReady";
+
+/* Initialize hunting zone(s) */
+aiSpawn = ["hunting_zone",30] spawn TON_fnc_huntingZone;
+
+// We create the attachment point to be used for objects to attachTo load virtually in vehicles.
+life_attachment_point = "Land_HelipadEmpty_F" createVehicle [0,0,0];
+life_attachment_point setPosASL [0,0,0];
+life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
+
+// Sharing the point of attachment with all players.
+publicVariable "life_attachment_point";
+
+diag_log "----------------------------------------------------------------------------------------------------";
+diag_log format ["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
+diag_log "----------------------------------------------------------------------------------------------------";

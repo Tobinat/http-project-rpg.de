@@ -1,85 +1,35 @@
+#include "\life_server\script_macros.hpp"
 /*
-	
-	
-	Description:
-	When a client disconnects this will remove their corpse and
-	clean up their storage boxes in their house.
+    File: fn_clientDisconnect.sqf
+    Author: Bryan "Tonic" Boardwine
+
+    Description:
+    When a client disconnects this will remove their corpse and
+    clean up their storage boxes in their house. Also, saves player infos & position.
 */
-private["_unit","_id","_uid"];
+private ["_unit","_id","_uid","_name","_alive","_position","_side"];
 _unit = _this select 0;
+if (isNull _unit) exitWith {};
 _id = _this select 1;
 _uid = _this select 2;
-if(_unit == hc_1) exitWith {
-	deleteVehicle _unit; 
-	life_HC_isActive = false; 
-	publicVariable "life_HC_isActive";
-	life_loopExit = false;
-	[] call TON_fnc_loops;
-};
-if(isNull _unit) exitWith {};
-_containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
-{deleteVehicle _x;} foreach _containers;
+_name = _this select 3;
+_side = side _unit;
 
-if!(_unit getVariable ["testDriving",objNull] isEqualTo objNull) then {
-	_vehicle = _unit getVariable "testDriving";
-	[_vehicle,0] remoteExec ["life_fnc_setFuel",_vehicle];
-	[_vehicle] spawn {
-		_time = time;
-		_vehicle = _this select 0;
-		waitUntil {sleep 1; (time - _time > 30 || speed _vehicle < 5)};
-		deleteVehicle _vehicle;	
-	};
-};
+//Save player info
+if (isNil "HC_UID" || {!(_uid isEqualTo HC_UID)}) then {
+    _position = getPosATL _unit;
+    if ((getMarkerPos "respawn_civilian" distance _position) > 300) then {
 
-if(_unit in carSalesmanList) then {
-	carSalesmanList deleteAt (carSalesmanList find _unit);
-	publicVariable "carSalesmanList";
-};
-
-_cash = _unit getVariable "cash";
-_bank = _unit getVariable "bank";
-_gear = [_unit getVariable "gear"] call DB_fnc_mresArray;
-if(_unit getVariable ["loaded", true] && {!isNil "_cash"} && {!isNil "_bank"} && {!isNil "_gear"}) then {
-	_side = switch(side _unit) do {
-		case west: {"cop"};
-		case civilian: {"civ"};
-		case east: {"civ"};
-		case independent: {"med"};
-	};
-	_query = format["UPDATE players SET cash='%1',bankacc='%2',%3_gear='%4' WHERE playerid='%5'",_cash,_bank,_side,_gear,_uid];
-	if(!isNil "life_HC_isActive" && {life_HC_isActive}) then {
-		[_query,1] remoteExecCall ["DB_fnc_asyncCall",hc_1];
-	} else {
-		[_query,1] call DB_fnc_asyncCall;
-	};
-};
-
-{
-	_pid = _x getVariable["steam64ID",""];
-	
-	if(_uid == _pid OR _pid == "" OR owner _x < 3) then {
-		_containers = nearestObjects[_x,["WeaponHolderSimulated"],5]; //Fetch list of containers (Simulated = weapons)
-		{deleteVehicle _x;} foreach _containers; //Delete the containers.
-		deleteVehicle _x; //Get rid of the corpse when dead.
-	}
-} foreach allDeadMen;
-
-{
-	_pid = _x getVariable["steam64ID",""];
-	
-	if(_uid == _pid OR _pid == "" OR owner _x < 3) then {
-		_containers = nearestObjects[_x,["WeaponHolderSimulated"],5]; //Fetch list of containers (Simulated = weapons)
-		{deleteVehicle _x;} foreach _containers; //Delete the containers.
-		deleteVehicle _x; //Get rid of the corpse when client dc's while alive.
-	}
-} foreach playableUnits;
-
-{
-	if(count units _x == 0) then {
-		deleteGroup _x;
+        //Civilian position
+        if (life_save_civilian_position && _side isEqualTo civilian) then {
+            _alive = alive _unit;
+            if (life_HC_isActive) then {[_uid,_side,_alive,4,_position] remoteExec ["HC_fnc_updatePartial",HC_Life];} else {[_uid,_side,_alive,4,_position] spawn DB_fnc_updatePartial;};
+        };
     };
-} forEach allGroups;
+};
 
+_containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
+{deleteVehicle _x;} forEach _containers;
 deleteVehicle _unit;
 
 _uid spawn TON_fnc_houseCleanup;

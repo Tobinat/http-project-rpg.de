@@ -1,123 +1,85 @@
+#include "\life_server\script_macros.hpp"
 /*
-	
-	
-	Description:
-	Fetches all the players houses and sets them up.
+    File : fn_fetchPlayerHouses.sqf
+    Author: Bryan "Tonic" Boardwine
+    Modified : NiiRoZz
+
+    Description:
+    1. Fetches all the players houses and sets them up.
+    2. Fetches all the players containers and sets them up.
 */
-private["_query","_houses"];
-if(_this == "") exitWith {};
+private ["_query","_containers","_containerss","_houses"];
+params [
+    ["_uid","",[""]]
+];
+if (_uid isEqualTo "") exitWith {};
 
-_query = format["SELECT pid, pos, inventory, containers, shared1, shared2, shared3, shared4, shared5 FROM houses WHERE pid='%1' OR shared1='%1' OR shared2='%1' OR shared3='%1' OR shared4='%1' OR shared5='%1' AND owned='1'",_this];
+_query = format ["SELECT pid, pos, classname, inventory, gear, dir, id FROM containers WHERE pid='%1' AND owned='1'",_uid];
+_containers = [_query,2,true] call DB_fnc_asyncCall;
 
+_containerss = [];
+{
+    _position = call compile format ["%1",_x select 1];
+    _house = nearestObject [_position, "House"];
+    _direction = call compile format ["%1",_x select 5];
+    _trunk = [_x select 3] call DB_fnc_mresToArray;
+    if (_trunk isEqualType "") then {_trunk = call compile format ["%1", _trunk];};
+    _gear = [_x select 4] call DB_fnc_mresToArray;
+    if (_gear isEqualType "") then {_gear = call compile format ["%1", _gear];};
+    _container = createVehicle[_x select 2,[0,0,999],[],0,"NONE"];
+    waitUntil {!isNil "_container" && {!isNull _container}};
+    _containerss = _house getVariable ["containers",[]];
+    _containerss pushBack _container;
+    _container allowDamage false;
+    _container setPosATL _position;
+    _container setVectorDirAndUp _direction;
+    //Fix position for more accurate positioning
+    _posX = _position select 0;
+    _posY = _position select 1;
+    _posZ = _position select 2;
+    _currentPos = getPosATL _container;
+    _fixX = (_currentPos select 0) - _posX;
+    _fixY = (_currentPos select 1) - _posY;
+    _fixZ = (_currentPos select 2) - _posZ;
+    _container setPosATL [(_posX - _fixX), (_posY - _fixY), (_posZ - _fixZ)];
+    _container setVectorDirAndUp _direction;
+    _container setVariable ["Trunk",_trunk,true];
+    _container setVariable ["container_owner",[_x select 0],true];
+    _container setVariable ["container_id",_x select 6,true];
+    clearWeaponCargoGlobal _container;
+    clearItemCargoGlobal _container;
+    clearMagazineCargoGlobal _container;
+    clearBackpackCargoGlobal _container;
+    if (count _gear > 0) then {
+        _items = _gear select 0;
+        _mags = _gear select 1;
+        _weapons = _gear select 2;
+        _backpacks = _gear select 3;
+        for "_i" from 0 to ((count (_items select 0)) - 1) do {
+            _container addItemCargoGlobal [((_items select 0) select _i), ((_items select 1) select _i)];
+        };
+        for "_i" from 0 to ((count (_mags select 0)) - 1) do{
+            _container addMagazineCargoGlobal [((_mags select 0) select _i), ((_mags select 1) select _i)];
+        };
+        for "_i" from 0 to ((count (_weapons select 0)) - 1) do{
+            _container addWeaponCargoGlobal [((_weapons select 0) select _i), ((_weapons select 1) select _i)];
+        };
+        for "_i" from 0 to ((count (_backpacks select 0)) - 1) do{
+            _container addBackpackCargoGlobal [((_backpacks select 0) select _i), ((_backpacks select 1) select _i)];
+        };
+    };
+    _house setVariable ["containers",_containerss,true];
+} forEach _containers;
+
+_query = format ["SELECT pid, pos FROM houses WHERE pid='%1' AND owned='1'",_uid];
 _houses = [_query,2,true] call DB_fnc_asyncCall;
 
 _return = [];
 {
-	_pos = call compile format["%1",_x select 1];
-	_house = nearestBuilding _pos;
-	_house allowDamage false;
-	_containers = [];
-	_house setVariable["slots",[],true];
-	_owner = call compile format["%1",_x select 0];
-	_shared1 = call compile format["%1",_x select 4];
-	_shared2 = call compile format["%1",_x select 5];
-	_shared3 = call compile format["%1",_x select 6];
-	_shared4 = call compile format["%1",_x select 7];
-	_shared5 = call compile format["%1",_x select 8];
+    _pos = call compile format ["%1",_x select 1];
+    _house = nearestObject [_pos, "House"];
+    _house allowDamage false;
+    _return pushBack [_x select 1];
+} forEach _houses;
 
-	if(!isNil "_shared1") then {
-		_house setVariable["shared1",true,true];	
-	};
-	if(!isNil "_shared2") then {
-		_house setVariable["shared2",true,true];	
-	};
-	if(!isNil "_shared3") then {
-		_house setVariable["shared3",true,true];	
-	};
-	if(!isNil "_shared4") then {
-		_house setVariable["shared4",true,true];	
-	};
-	if(!isNil "_shared5") then {
-		_house setVariable["shared5",true,true];	
-	};
-
-
-	if(!isNil {(_house getVariable "containers")}) then {
-	{if(!isNull _x) then {deleteVehicle _x;};} foreach (_house getVariable "containers");
-	};
-
-	_trunk = [_x select 2] call DB_fnc_mresToArray;
-	if(typeName _trunk == "STRING") then {
-		_trunk = call compile format["%1", _trunk];
-	};
-	_containerData = [_x select 3] call DB_fnc_mresToArray;
-	if(typeName _containerData == "STRING") then {
-		_containerData = call compile format["%1", _containerData];
-	};
-	_house setVariable["Trunk",_trunk,true];
-
-		{
-			if(count _x == 0) exitWith {}; 
-			_className = _x select 0;
-			_weapons = (_x select 1) select 0;
-			_magazines = (_x select 1) select 1;
-			_items = (_x select 1) select 2;
-			_backpacks = (_x select 1) select 3;
-
-			_positions = [_house] call life_fnc_getBuildingPositions;
-			_pos = [0,0,0];
-
-			{
-				_slots = _house getVariable ["slots",[]];
-				if(!(_forEachIndex in _slots)) exitWith {
-					_slots pushBack _forEachIndex;
-					_house setVariable["slots",_slots,true];
-					_pos = _x;
-				};
-			} foreach _positions;
-
-			if(_pos isEqualTo [0,0,0]) exitWith {};
-
-			_container = createVehicle[_className,_pos,[],0,"NONE"];
-			waitUntil{!isNil "_container"};
-			_container setPosATL _pos;
-
-			_containers pushBack _container;
-			clearWeaponCargoGlobal _container;
-			clearItemCargoGlobal _container;
-			clearMagazineCargoGlobal _container;
-			clearBackpackCargoGlobal _container;
-
-			{
-				_weaponCount = (_weapons select 1) select _forEachIndex;
-				_container addWeaponCargoGlobal [_x,_weaponCount];
-			} foreach (_weapons select 0);
-
-
-			{
-				_magazineCount = (_magazines select 1) select _forEachIndex;
-				_container addMagazineCargoGlobal [_x,_magazineCount];
-			} foreach (_magazines select 0);
-
-
-			{
-				_itemCount = (_items select 1) select _forEachIndex;
-				_container addItemCargoGlobal [_x,_itemCount];
-			} foreach (_items select 0);
-
-
-			{
-				_backpackCount = (_backpacks select 1) select _forEachIndex;
-				_container addBackpackCargoGlobal [_x,_backpackCount];
-			} foreach (_backpacks select 0);
-
-		} foreach _containerData;
-
-
-
-	_house setVariable["containers",_containers,true];
-	_return pushBack [_x select 1,_containers];
-
-} foreach _houses;
-
-missionNamespace setVariable[format["houses_%1",_this],_return];
+missionNamespace setVariable [format ["houses_%1",_uid],_return];
