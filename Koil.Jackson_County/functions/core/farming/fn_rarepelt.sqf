@@ -8,7 +8,7 @@ if ("NP_kPelt" IN (magazines player)) then {
 
 	 _chance = round(random(100));
 	player removeitem "np_kpelt";
-	["Here is a box I found, search it!",false] spawn domsg;
+	["Ich hab so'ne alte Kiste gefunden, stöber mal rum!",false] spawn domsg;
 
 
 
@@ -32,5 +32,5 @@ if ("NP_kPelt" IN (magazines player)) then {
 	if(peltProtection > 1) then { removeuniform player; removevest player; removebackpack player; peltprotection = 0; };
 
 } else {
-	["I only trade for rare pelts.",false] spawn domsg;
+	["Ich tausche bloß für seltenen Pelz.",false] spawn domsg;
 };

@@ -21,7 +21,7 @@ if(myjob == "Mafia") then { _cashout = _cashout * 2.25 };
 
 [_cashout] call Client_fnc_addCash;
 
-hint format["You made $%1 from this drug run.",_cashout];
+hint format["Du hast $%1 von diesem Drogendeal erhalten, schnell Zahl es ein bevor du Kontrolliert wirst!",_cashout];
 
 
 

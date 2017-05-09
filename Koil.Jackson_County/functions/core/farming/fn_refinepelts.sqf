@@ -27,7 +27,7 @@ _n = 0;
 		player additem (_barArray select _n);
 		_i = _i - 1;
 		sleep 0.25;
-		hint "You are curing pelts, stay still!";
+		hint "Du schneidest deinen Pelz zurecht, Konzentrier dich!";
 	};
 
 	_n = _n + 1;

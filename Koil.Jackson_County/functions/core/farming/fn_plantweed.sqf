@@ -1,4 +1,4 @@
-if(surfacetype getpos player != "#k_rock") exitwith { ["You need to be on a dirt surface to grow this",false] spawn domsg; };
+if(surfacetype getpos player != "#k_rock") exitwith { ["Du solltest dein Weed auf Erde pflanzen",false] spawn domsg; };
 
 ["NP_GrowingPlot",0] spawn client_fnc_removeitem;
 

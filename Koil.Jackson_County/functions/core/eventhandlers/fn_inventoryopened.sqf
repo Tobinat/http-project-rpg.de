@@ -19,7 +19,7 @@ if(_isPack == 1) exitWith {
 
 if(_container isKindOf "Car" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["You're not allowed to open the vehicles inventory while it's locked.", false] spawn domsg;
+		["Du kannst nicht in den Kofferraum schauen, solange er verschlossen ist. Macht sinn wa'?", false] spawn domsg;
 	handle = true;
 	handle;
 	};
@@ -27,7 +27,7 @@ if(_container isKindOf "Car" && {(locked _container) == 2}) exitWith {
 
 if(_container isKindOf "Ship" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["You're not allowed to open the vehicles inventory while it's locked.", false] spawn domsg;
+		["Du kannst nicht in den Kofferraum schauen, solange er verschlossen ist. Macht sinn wa'?", false] spawn domsg;
 	handle = true;
 	handle;
 	};
@@ -35,7 +35,7 @@ if(_container isKindOf "Ship" && {(locked _container) == 2}) exitWith {
 
 if(_container isKindOf "Air" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["You're not allowed to open the vehicles inventory while it's locked.", false] spawn domsg;
+		["Du kannst nicht in den Kofferraum schauen, solange er verschlossen ist. Macht sinn wa'?", false] spawn domsg;
 	handle = true;
 	handle;
 	};
@@ -43,7 +43,7 @@ if(_container isKindOf "Air" && {(locked _container) == 2}) exitWith {
 
 if(_container isKindOf "LandVehicle" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["You're not allowed to open the vehicles inventory while it's locked.", false] spawn domsg;
+		["Du kannst nicht in den Kofferraum schauen, solange er verschlossen ist. Macht sinn wa'?", false] spawn domsg;
 	handle = true;
 	handle;
 	};
@@ -51,7 +51,7 @@ if(_container isKindOf "LandVehicle" && {(locked _container) == 2}) exitWith {
 
 if(_container isKindOf "MotorCycle" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["You're not allowed to open the vehicles inventory while it's locked.", false] spawn domsg;
+		["Du kannst nicht in den Kofferraum schauen, solange er verschlossen ist. Macht sinn wa'?", false] spawn domsg;
 	handle = true;
 	handle;
 	};

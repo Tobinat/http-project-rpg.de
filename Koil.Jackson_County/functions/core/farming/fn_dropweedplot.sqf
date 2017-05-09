@@ -1,7 +1,7 @@
 detach myDT2;
 growingweed = true;
 player removeAction myDrugAction2;
-hint "Your seedling is planted!";
+hint "Du hast deine Samen gepflanzt!";
 myActionStart2 = myDT2 addAction [ "Start Growing", {  
 	[] spawn client_fnc_weedgrowing;
 	myDrugValue2 = 4;

@@ -30,7 +30,7 @@ _n = 0;
 		playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];
 		uisleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "You are refining Ore, stay still!";
+		hint "Du verarbeitest dein Erz, Gedulde dich und mach mal ne Pause!";
 	};
 
 	_n = _n + 1;

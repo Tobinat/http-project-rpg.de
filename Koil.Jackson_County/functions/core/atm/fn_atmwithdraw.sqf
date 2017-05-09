@@ -17,11 +17,11 @@ if (_amount > 0) then
 			
 			[_amount] call Client_fnc_removeBank;
 			[_amount] call Client_fnc_addCash;
-			hint "Successfully withdrawed cash!";
+			hint "Geld wurde erfolgreich abhehoben!";
 			
 		} else {
 		
-			hint "Not enough bank balance!";
+			hint "Ihr Konto ist nicht gedeckt!";
 		
 		};
 
@@ -32,11 +32,11 @@ if (_amount > 0) then
 			
 			["Remove",_amount] remoteexec ["server_fnc_updateMafiaBank",2];
 			[_amount] call Client_fnc_addCash;
-			hint "Successfully withdrawed cash!";
+			hint "Die Mafia Kohle wurde erfolgreich abgehoben!";
 			
 		} else {
 		
-			hint "Not enough bank balance!";
+			hint "Nicht genügend Geld zum abheben.!";
 		
 		};
 
@@ -46,7 +46,7 @@ if (_amount > 0) then
  else  
 {
 
-	hint "Withdrawal amount must be more than $0!";
+	hint "Der Auszahlungsbetrag muss über 0$ liegen!";
 	
 };
 

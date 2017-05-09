@@ -1,7 +1,7 @@
 /*
 Refine Logs trees by koil
 */
-	if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) exitwith { hint "Your truck is too far away!"; }; 
+	if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) exitwith { hint "Dein Truck ist zu weit Weg!"; }; 
 	if(totalLogs == 6) exitwith { hint "Load is full!"; };
 	mylog = createVehicle ["Land_Pipes_large_F", position player, [], 0, "NONE"];
 

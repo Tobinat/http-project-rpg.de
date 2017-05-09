@@ -5,7 +5,7 @@ private ["_myOre"];
 _rock = cursorobject;
 if((getposATL player) distance (getposATL _rock) > 25) exitwith {};
 if (str _rock find "stone_small_w" > -1 && player distance [2260.54,9707.35,0.00168991] < 300) exitwith {   
-	if(_rock IN myoil) exitwith { ["There are no resources in this rock!", true] spawn domsg; };
+	if(_rock IN myoil) exitwith { ["In diesem Stein gibt es nicht wertvolles!", true] spawn domsg; };
 	_sound = round(random 5);
 	switch(_sound) do {
 		case 0: {
@@ -39,12 +39,12 @@ if (str _rock find "stone_small_w" > -1 && player distance [2260.54,9707.35,0.00
 	};
 	if(_CutChance > 8) then {	
 		player additem "CG_OilBarrel";
-		["You found an oil deposit!", true] spawn domsg;
+		["Scheiße, du hast ne Öl Quelle gefunden!", true] spawn domsg;
 	};	
 };
 
 if (str _rock find ": w_sharprock" > -1 || str _rock find ": bluntrock" > -1 ) exitwith {   
-	if(_rock IN mymetal) exitwith { ["There are no resources in this rock!", true] spawn domsg;  };
+	if(_rock IN mymetal) exitwith { ["Der Stein ist nutzlos!", true] spawn domsg;  };
 	_sound = round(random 5);
 	switch(_sound) do {
 		case 0: {
@@ -74,6 +74,6 @@ if (str _rock find ": w_sharprock" > -1 || str _rock find ": bluntrock" > -1 ) e
 		 if(_findchance == 18 || _findchance == 19) then { _myOre = "np_ironore1"; };
 		 if(_findchance == 20) then { _myOre = "np_silverore1"; };
 		player additem _myOre;
-		["You found some ore!", true] spawn domsg;
+		["Du hast etwas Erz gefunden !", true] spawn domsg;
 	};	
 };	

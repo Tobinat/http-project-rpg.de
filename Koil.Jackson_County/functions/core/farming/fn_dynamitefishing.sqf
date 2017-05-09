@@ -16,12 +16,12 @@ pole fishing by koil
 	sleep 2.5;
 
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		hint "You lost your dynamite!";
+		hint "Du hast dein Dynamit verloren!";
 		deletevehicle _vehicle;
 	};
 
 	_catchPos = (getpos _vehicle);
-	hint "Successful Throw - Stand Back!";
+	hint "Guter Wurf! - In Deckung!";
 	
 	sleep 8;
 	"R_60mm_HE" createvehicle [(getpos _vehicle select 0)-2,(getpos _vehicle select 1)+1,(getpos _vehicle select 2)-3];
@@ -31,7 +31,7 @@ pole fishing by koil
 	deletevehicle _vehicle;
 
 
-	hint "Get close to pick up your catch!";
+	hint "Fahre näher ran um deine Beute aufzuladen!";
 
 	_timeout = 60; 
 	while{true} do {
@@ -108,4 +108,4 @@ pole fishing by koil
 			};	
 			_amount = _amount - 1;	
 		};		
-	} else { hint "You didnt pick up your fish in time!";};				
+	} else { hint "Du hast deine Fische nicht rechtzeitig aufgehoben, nun riechen Sie wie deine Freundin!";};				

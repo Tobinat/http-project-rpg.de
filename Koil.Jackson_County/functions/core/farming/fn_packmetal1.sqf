@@ -2,8 +2,8 @@
 Refine Logs trees by koil
 */
 	if(carryingOre == 0) exitwith { hint "You have no ore"; };
-	if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) exitwith { hint "Your truck is too far away!"; }; 
-	if(totalLogs == 6) exitwith { hint "Load is full!"; deletevehicle mybarrow; deletevehicle myIron; carryingOre = 0; };
+	if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) exitwith { hint "Dein Truck ist zu weit Weg!!"; }; 
+	if(totalLogs == 6) exitwith { hint "Ladung ist voll!"; deletevehicle mybarrow; deletevehicle myIron; carryingOre = 0; };
 	mylog = myIron;
 	deletevehicle mybarrow;
 	totalLogs = totalLogs + 1;

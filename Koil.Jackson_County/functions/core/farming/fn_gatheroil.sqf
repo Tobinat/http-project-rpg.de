@@ -15,6 +15,6 @@ if(isNil "client_spam_my_dick") then { client_spam_my_dick = 0; };
 		};
 		myOil = createVehicle ["Land_MetalBarrel_F", getpos player, [], 0, "NONE"];  
 		myOil attachTo [vehspawned, [0, 0.8, 0.85] ]; 
-		hint "You have received a load of oil, take it to the three cranes at the docks for transport.";
+		hint "Du hast richtig Viel Öl bekommen, Fahre zu den Kränen um es transportieren zu können!";
 	};
 	client_spam_my_dick = 0;

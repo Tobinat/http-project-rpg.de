@@ -33,7 +33,7 @@ if (str _tree find ": t_" > -1) then {
 		if(!isnil "vehspawned") then {
 			[] call client_fnc_packLogs;
 		} else {
-			hint "You need to sign in as a wood logger to cut down trees";
+			hint "Du musst ein bärtiger Baumfäller sein um Bäume fällen zu können!";
 		};
 	};
 };

@@ -10,25 +10,25 @@ if(_type == "marijuana") then {
 	client_marijuana = _amount;
 	player setCustomAimCoef 0;
 	["set",0] call Client_Fnc_DoHealth;
-	["You feel great, and feel very calm.",false] spawn domsg;
+	["Du fühlst dich richtig Chillig und Toll, eventuell ein Stück Schokolade?",false] spawn domsg;
 };
 
 if(_type == "cocaine") then {
 	client_cocaine = _amount;
 	player setAnimSpeedCoef 1.2;
-	["You feel like you could run a marathon.",false] spawn domsg;
+	["Du fühlst dich wie Usain Bolt.",false] spawn domsg;
 };
 
 if(_type == "heroin") then {
 	client_heroin = _amount;
 	player setUnitRecoilCoefficient 0.5;
-	["You can manage your aim very well.",false] spawn domsg;
+	["Du kannst nun besser Zielen.",false] spawn domsg;
 };
 
 
 if(_type == "meth") then {
 	client_meth = _amount;
-	["You feel invincible.",false] spawn domsg;
+	["Du fühlst dich Unsichtbar, vielleicht bist du es ja auch?",false] spawn domsg;
 	//notazepls
 };
 
@@ -36,11 +36,11 @@ if(_type == "energy") then {
 	client_energy = _amount;
 	player enablefatigue false;
 	player enablestamina false;
-	["You feel very light!",false] spawn domsg;
+	["Du fühlst dich leichter!",false] spawn domsg;
 };
 ["Add","unhealthiness",5] call client_fnc_sustain;
 
-[format ["%1 will last %2m due to unhealthiness of %3",_type, (_amount * 5), client_unhealthiness],false] spawn domsg;
+[format ["%1 wirkt für %2m und fickt dein/e %3",_type, (_amount * 5), client_unhealthiness],false] spawn domsg;
 
 
 /*

@@ -29,7 +29,7 @@ _n = 0;
 		_i = _i - 1;
 		sleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "You are refining Oil, stay still!";
+		hint "Du verarbeitest dein Öl gerade, Pass auf deine Kleidung auf!";
 	};
 
 	_n = _n + 1;

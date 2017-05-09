@@ -29,7 +29,7 @@ if (_item IN ["np_ugroceries"] ) then { ["add","drink",100] call client_fnc_sust
 
 if (_item == "NP_drillitem") then { [] spawn client_fnc_bankrobbery; closeDialog 0; };
 
-if (_item == "CG_C4") then { if(currentcop < 3) exitwith { hint "Not enough police 3+"; }; [] spawn client_fnc_blowdoor; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item == "CG_C4") then { if(currentcop < 3) exitwith { hint "Es müssen mehr als 3+ Cops da sein!"; }; [] spawn client_fnc_blowdoor; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
 if (_item == "CG_Dynamite") then { [] spawn client_fnc_dynamiteFishing; [_item,82] spawn client_fnc_removeitem; closeDialog 0; };
 

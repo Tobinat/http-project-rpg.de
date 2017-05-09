@@ -1,8 +1,8 @@
-WaterArray = ["WARNING: The leaves are fading!","WARNING: The dirt looks too dry!","WARNING: The plant is wiltering!"];
-PruneArray = ["WARNING: Has too many leaves covering the buds!","WARNING: Looks overgrown!"];
-CoolArray2 = ["WARNING: Is getting brown spots on the leaves!","WARNING: Is drying out from the heat!"];
-HeatArray2 = ["WARNING: There is too much moisture!"];
-TurnoverArray = ["WARNING: The soil needs turning!"];
+WaterArray = ["WARNING: Die Blätter sehen Welk aus!","WARNING: Die Erde ist zu trocken!","WARNING: Die Pflanze verwelkt!!"];
+PruneArray = ["WARNING: Zu viele Blätter verdecken die Knospen!","WARNING: Sieht verwuchert aus!"];
+CoolArray2 = ["WARNING: Es bilden sich braune Punkte auf den Blättern!","WARNING: Trocknet aufgrund der Hitze aus!"];
+HeatArray2 = ["WARNING: Es ist zu Feucht!!"];
+TurnoverArray = ["WARNING: Der Boden muss gedreht werden!!"];
 private["_stage1","_stage2"];
 _count = 0;
 checkFinish2 = false;
@@ -44,7 +44,7 @@ if(player distance [1409.98,5740.65,0.00143814] < 400) then {
 	_randomvalue = _randomvalue + _randomvalue;
 };
 
-hint format["You grew %1 bags of weed!",_randomvalue];
+hint format["Du hast %1 Tütchen voller Gras!",_randomvalue];
 
 while {_randomValue > 0} do { player additem _item; _randomValue = _randomValue - 1; };
 

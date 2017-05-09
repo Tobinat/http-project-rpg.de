@@ -42,4 +42,4 @@ _cashTotal = 0;
 
 globalProtection = 0;
 
-hint format["You just earned $%1",_cashTotal];
+hint format["Du hast $%1 bekommen!",_cashTotal];

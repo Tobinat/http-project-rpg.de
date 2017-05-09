@@ -40,11 +40,11 @@ if(_fuck != _you) then {
 	if(_fuck find "Error: " > -1) then {
 		[getpos player, "News", "Vehicle Accident"] remoteexec ["server_fnc_giveTask",2];
 
-		[format["%1 is severely hurt!", _you], false] spawn domsg; 
+		[format["%1 ist schwer verletzt!", _you], false] spawn domsg; 
 		shooting_death = false;
 	} else {
 		[getpos player, "News", "Shooting"] remoteexec ["server_fnc_giveTask",2];
-		if(_headshot == 1) then { [format["%1 headshot %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 downed %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
+		if(_headshot == 1) then { [format["%1 töte durch einen Headshot %2 auf einer Distanz von %3 mit einer: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 schoß %2 um mit einer Distanz von %3 mit einer: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
 		client_kcCamera  = "CAMERA" camCreate (getPosATL _killer); 
 		showCinemaBorder false;    
 		client_kcCamera cameraEffect ["EXTERNAL", "BACK"];  
@@ -59,7 +59,7 @@ if(_fuck != _you) then {
 } else {
 	shooting_death = false;
 	[getpos player, "News", "Unknown Death"] remoteexec ["server_fnc_giveTask",2];
-	[format["%1 is bleeding out!", _fuck], false] spawn domsg; 
+	[format["%1 ist am verbluten!", _fuck], false] spawn domsg; 
 };
 
 if(_playerkill) then { 

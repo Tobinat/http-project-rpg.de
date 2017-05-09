@@ -488,7 +488,7 @@ if(_status IN _clothing1 || _status IN _clothing2) then {
 	_checkCost = _cost;
 
 	_amountcurrent = {_x == "NP_Pelt"} count magazines player;
-	if(_amountcurrent < _checkCost) exitwith { hint "Not enough resources"; _error = true; };
+	if(_amountcurrent < _checkCost) exitwith { hint "Nicht genügend Resourcen!"; _error = true; };
 
 	if(_error) exitwith {};
 
@@ -511,7 +511,7 @@ if(_status IN _clothing1 || _status IN _clothing2) then {
 		_checkCost = _cost select _n;
 
 		_amountcurrent = {_x == (_materials select _n)} count magazines player;
-		if(_amountcurrent < _checkCost) exitwith { hint "Not enough resources"; _error = true; };
+		if(_amountcurrent < _checkCost) exitwith { hint "Du brauchst mehr Material, du Gurke!"; _error = true; };
 		_n = _n + 1;
 
 	} foreach _cost;
@@ -576,7 +576,7 @@ if((_this select 0) == "CRAFTMAG") exitwith {
 		_checkCost = _cost select _n;
 
 		_amountcurrent = {_x == (_materials select _n)} count magazines player;
-		if(_amountcurrent < _checkCost) exitwith { hint "Not enough resources"; _error = true; };
+		if(_amountcurrent < _checkCost) exitwith { hint "Nicht genügend Resourcen"; _error = true; };
 		_n = _n + 1;
 
 	} foreach _cost;

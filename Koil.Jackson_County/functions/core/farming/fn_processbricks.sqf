@@ -27,7 +27,7 @@ while{ _i > 0 } do {
 	_i = _i - 1;
 	uisleep 0.25;
 	if(dialog) then { closedialog 0; };
-	hint "You are processing drug bricks, stay still!";
+	hint "Du verpackst grad deine Drogen, beruhige dich!";
 
 };
 

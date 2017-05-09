@@ -18,7 +18,7 @@ imfishing = true;
 	sleep 2.5;
 
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		hint "You lost your bait!";
+		hint "Du hast deinen Köder verloren!";
 		deletevehicle _vehicle;
 		imfishing = false;
 	};
@@ -39,13 +39,13 @@ imfishing = true;
 	};
 
 	if(_fail) exitwith {
-		hint "You lost your bait by moving too far.";
+		hint "Du hast deinen Köder verloren, weil du zu weit Weg warst.";
 		deletevehicle _vehicle;
 		imfishing = false;
 	};
 
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL player, 15, 1, 45];
-	hint "You got a bite, press Windows key too hook it!";
+	hint "Da hat was angebissen! Schnell drück den Windows-Muskel und pack das Ding an den Kiemen!";
 
 	mouseMovement = 1;
 	sleep 0.5;
@@ -116,7 +116,7 @@ imfishing = true;
 		if(_curWep == "legendary_fishing_rod") then { Player additemtobackpack _myFish; };
 
 	} else {
-		hint "You were too slow";
+		hint "Du warst zu Lahmarschig";
 	};
 
 	imfishing = false;

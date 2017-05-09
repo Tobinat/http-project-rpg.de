@@ -37,7 +37,7 @@ _n = 0;
 		playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosasl player, 5, 1, 5];
 		sleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "Your fish is being filleted, stay still!";
+		hint "Gedulde dich während dein Fisch filletiert wird!";
 	};
 
 	_n = _n + 1;

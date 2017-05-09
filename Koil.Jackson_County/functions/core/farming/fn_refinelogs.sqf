@@ -3,7 +3,7 @@ Refine Logs trees by koil
 */
 private["_localprotection"];
 
-if(backpack player == "") exitwith { hint "You need to grab a backpack before doing this!"; };
+if(backpack player == "") exitwith { hint "Hol dir einen Rucksack bevor du das tragen willst!"; };
 
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { hint "Error - Already processing"; };
@@ -23,10 +23,10 @@ if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) 
 		player additem "NP_Wood";	
 		uisleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "You are refining wood, stay still!"
+		hint "Du verarbeitest dein Holz, habe Geduld und trink nen Kaffe!"
 	};
 } forEach attachedObjects vehspawned;
-hint "Wood refined & placed in inventory";  
+hint "Dein Holz wurde verarbeitet und in deinen Kofferraum geschmissen!";  
 totalLogs = 0;
 
 globalProtection = 0;
