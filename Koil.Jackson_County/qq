@@ -1,0 +1,10 @@
+brokenthings = nearestObjects [player, ["Land_Fence1_DED_Fence_01_F"], 10];  { if((damage _x) > 0) then { _x setdamage 0; hint "grats you fixed some shit koil, you dick head"; };}foreach brokenthings;
+
+
+
+
+When someone buys a car, a job is added to the job list for a person.
+When someone gets paid(every 30 mins?) add a job to the list for a person to deliver that paycheck to their house.
+When someone sends mail to another player, add a job to the list for a person.
+When someone crashes, allow request of a medic, police or tow truck driver to help.
+Allow a player to fix broken things if their job is a repair man.

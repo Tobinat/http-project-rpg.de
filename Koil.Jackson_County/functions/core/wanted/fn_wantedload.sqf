@@ -1,0 +1,1 @@
+[player] remoteExec ["Server_fnc_wantedList",2];

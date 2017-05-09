@@ -1,0 +1,10 @@
+player setvariable["PhoneCallNumber",33.3,true];
+player setvariable["PhoneID",33.3,true];
+_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
+_channel = _channel + 1;
+[(call TFAR_fnc_activeSwRadio), _channel, 33.3] call TFAR_fnc_SetChannelFrequency;
+callInProgress = false;
+myCallOwner = player;
+player setVariable ["tf_unable_to_use_radio", false];
+call TFAR_fnc_HideHint;
+["You are on the Police Freq!", false] spawn domsg;

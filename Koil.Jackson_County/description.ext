@@ -1,0 +1,673 @@
+#include "Functions.hpp"
+#include "Dialogs\Dialogs.hpp"
+
+class RscTitles
+{
+	#include "dialogs\ui.hpp"
+};
+
+enableDebugConsole = 1;
+
+respawn = "BASE";
+disabledAI = 1;
+author = "Koil";
+onLoadName = "Koil Framework";
+onLoadMission = "Version 0.1";
+respawndelay = 300;
+
+wreckLimit = 2;
+wreckRemovalMaxTime = 300;
+wreckRemovalMinTime = 10;
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 100;
+};
+
+
+
+class CfgSounds
+{
+	sounds[] = {};
+
+
+	class uragan_1
+	{
+		name = "uragan_1";
+		sound[] = {"\sound\uragan_1.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};
+	class uragan_end
+	{
+		name = "uragan_end";
+		sound[] = {"\sound\uragan_end.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};
+	class bcg_wind
+	{
+		name = "bcg_wind";
+		sound[] = {"\sound\bcg_wind.ogg", db+5, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_1
+	{
+		name = "rafala_1";
+		sound[] = {"\sound\rafala_1.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_2
+	{
+		name = "rafala_2";
+		sound[] = {"\sound\rafala_2.ogg", db+5, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_4_dr
+	{
+		name = "rafala_4_dr";
+		sound[] = {"\sound\rafala_4_dr.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_5_st
+	{
+		name = "rafala_5_st";
+		sound[] = {"\sound\rafala_5_st.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};
+	class rafala_6
+	{
+		name = "rafala_6";
+		sound[] = {"\sound\rafala_6.ogg", db+15, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_7
+	{
+		name = "rafala_7";
+		sound[] = {"\sound\rafala_7.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_8
+	{
+		name = "rafala_8";
+		sound[] = {"\sound\rafala_8.ogg", db+15, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_9
+	{
+		name = "rafala_9";
+		sound[] = {"\sound\rafala_9.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};
+	class sandstorm
+	{
+		name = "sandstorm";
+		sound[] = {"\sound\sandstorm.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};		
+
+	class carlock
+	{
+		name = "carlock";
+		sound[] = {"sounds\carlock.ogg", 1, 1};
+		titles[] = {};
+	};	
+
+	class npmsg
+	{
+		name = "npmsg";
+		sound[] = {"np_sounds\smssound.ogg", 0.7, 1};
+		titles[] = {};
+	};
+
+	class cgturbo1
+	{
+		name = "cg_turbo1";
+		sound[] = {"Sounds\turbo1.ogg", 1.3, 0.9};
+		titles[] = {};
+	};
+	class cgturbo2
+	{
+		name = "cg_turbo2";
+		sound[] = {"Sounds\turbo1.ogg", 1.1, 1.1};
+		titles[] = {};
+	};
+	class cgturbo3
+	{
+		name = "cg_turbo3";
+		sound[] = {"Sounds\turbo1.ogg", 0.7, 1.3};
+		titles[] = {};
+	};
+	class cgturbo4
+	{
+		name = "cg_turbo4";
+		sound[] = {"Sounds\turbo1.ogg", 0.5, 1.5};
+		titles[] = {};
+	};
+
+
+	class cgphone_static
+	{
+		name = "cgphone_static";
+		sound[] = {"@cg_mission_files\PhoneSounds\cgphone_static.ogg", 1.5, 1};
+		titles[] = {};
+	};
+
+	class cgphone_call
+	{
+		name = "cgphone_call";
+		sound[] = {"@cg_mission_files\PhoneSounds\cgphone_call.ogg", 1.5, 1};
+		titles[] = {};
+	};
+	class cgphone_hangup
+	{
+		name = "cgphone_hangup";
+		sound[] = {"@cg_mission_files\PhoneSounds\cgphone_hangup.ogg", 1.5, 1};
+		titles[] = {};
+	};
+	class cgphone_nodialtone
+	{
+		name = "cgphone_nodialtone";
+		sound[] = {"@cg_mission_files\PhoneSounds\cgphone_nodialtone.ogg", 1.5, 1};
+		titles[] = {};
+	};
+	class cgphone_noservice
+	{
+		name = "cgphone_noservice";
+		sound[] = {"@cg_mission_files\PhoneSounds\cgphone_noservice.ogg", 1.5, 1};
+		titles[] = {};
+	};
+
+
+	class mdciv
+	{
+		name = "mdciv";
+		sound[] = {"@cg_mission_files\dispatch\mdciv.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+
+	class mdofficer
+	{
+		name = "mdofficer";
+		sound[] = {"@cg_mission_files\dispatch\mdofficer.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+
+	class danimal
+	{
+		name = "danimal";
+		sound[] = {"@cg_mission_files\dispatch\danimal.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+
+	class dnopermit
+	{
+		name = "dnopermit";
+		sound[] = {"@cg_mission_files\dispatch\dnopermit.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+
+	class dgang
+	{
+		name = "dgang";
+		sound[] = {"@cg_mission_files\dispatch\dgang.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class pillswallow
+	{
+		name = "pillswallow";
+		sound[] = {"@cg_mission_files\Sounds\swallow.ogg", 1, 1};
+		titles[] = {};
+	};
+	class spraycar
+	{
+		name = "spraycar";
+		sound[] = {"@cg_mission_files\sounds\spraypaint.ogg", 1.7, 1};
+		titles[] = {};
+	};
+
+	class defib
+	{
+		name = "defib";
+		sound[] = {"@cg_mission_files\sounds\defib.ogg", 1.7, 1};
+		titles[] = {};
+	};
+
+	class dbank
+	{
+		name = "dbank";
+		sound[] = {"@cg_mission_files\dispatch\dbank.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class dj
+	{
+		name = "dj";
+		sound[] = {"@cg_mission_files\dispatch\dj.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class dbe
+	{
+		name = "dbe";
+		sound[] = {"@cg_mission_files\dispatch\dbe.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class dpanic
+	{
+		name = "dpanic";
+		sound[] = {"@cg_mission_files\dispatch\dpanic.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class drcentral
+	{
+		name = "drcentral";
+		sound[] = {"@cg_mission_files\dispatch\drcentral.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class drsouth
+	{
+		name = "drsouth";
+		sound[] = {"@cg_mission_files\dispatch\drsouth.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class dreast
+	{
+		name = "dreast";
+		sound[] = {"@cg_mission_files\dispatch\dreast.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class drnorth
+	{
+		name = "drnorth";
+		sound[] = {"@cg_mission_files\dispatch\drnorth.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class drwest
+	{
+		name = "drwest";
+		sound[] = {"@cg_mission_files\dispatch\drwest.ogg", 0.7, 1.1};
+		titles[] = {};
+	};
+	class pain1
+	{
+		name = "pain1";
+		sound[] = {"@cg_mission_files\sounds\pain1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class pain2
+	{
+		name = "pain2";
+		sound[] = {"@cg_mission_files\sounds\pain2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class satdisable
+	{
+		name = "satdisable";
+		sound[] = {"@cg_mission_files\sounds\satdisable.ogg", 1, 1};
+		titles[] = {};
+	};
+	
+	class shot1
+	{
+		name = "shot1";
+		sound[] = {"@cg_mission_files\sounds\shot1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class shot2
+	{
+		name = "shot2";
+		sound[] = {"@cg_mission_files\sounds\shot2.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class shot3
+	{
+		name = "shot3";
+		sound[] = {"@cg_mission_files\sounds\shot3.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class levelup
+	{
+		name = "levelup";
+		sound[] = {"@cg_mission_files\sounds\levelup.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class ringing
+	{
+		name = "ringing";
+		sound[] = {"@cg_mission_files\sounds\ringing.ogg", 1, 1};
+		titles[] = {};
+	};
+	class satmove
+	{
+		name = "satmove";
+		sound[] = {"@cg_mission_files\sounds\satmove.ogg", 1, 1};
+		titles[] = {};
+	};
+	class grunt
+	{
+		name = "grunt";
+		sound[] = {"@cg_mission_files\sounds\grunt.ogg", 1, 1};
+		titles[] = {};
+	};
+	class startup
+	{
+		name = "startup";
+		sound[] = {"@cg_mission_files\sounds\startup.ogg", 1, 1};
+		titles[] = {};
+	};
+	class handcuff
+	{
+		name = "handcuff";
+		sound[] = {"@cg_mission_files\sounds\handcuff.ogg", 1, 1};
+		titles[] = {};
+	};
+	
+	class racebeep1
+	{
+		name = "racebeep1";
+		sound[] = {"@cg_mission_files\sounds\racebeep1.ogg", 1.0, 1};
+		titles[] = {};
+	};
+  class racebeep2
+    {
+		name = "racebeep2";
+		sound[] = {"@cg_mission_files\sounds\racebeep2.ogg", 1.0, 1};
+		titles[] = {};
+    };
+	
+	class cellclose
+	{
+		name = "cellclose";
+		sound[] = {"@cg_mission_files\sounds\cellclose.ogg", 1, 1};
+		titles[] = {};
+	};
+	class lockunlock
+	{
+		name = "lockunlock";
+		sound[] = {"@cg_mission_files\sounds\lockunlock.ogg", 1, 1};
+		titles[] = {};
+	};
+	class knockhit
+	{
+		name = "knockhit";
+		sound[] = {"@cg_mission_files\sounds\knockhit.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class patdown1
+	{
+		name = "patdown1";
+		sound[] = {"@cg_mission_files\sounds\patdown1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class start
+	{
+		name = "start";
+		sound[] = {"@cg_mission_files\sounds\start.ogg", 1, 1};
+		titles[] = {};
+	};
+	class slideout
+	{
+		name = "slideout";
+		sound[] = {"@cg_mission_files\sounds\slideout.ogg", 1, 1};
+		titles[] = {};
+	};		
+	class endbeep
+	{
+		name = "endbeep";
+		sound[] = {"@cg_mission_files\sounds\endbeep.ogg", 1, 1};
+		titles[] = {};
+	};	
+	class SirenLong
+	{
+		name = "SirenLong";
+		sound[] = {"@cg_mission_files\sounds\Siren_Long.ogg", 1.55, 0.95};
+		titles[] = {};
+	};
+	class panicbutton
+	{
+		name = "panicbutton";
+		sound[] = {"@cg_mission_files\sounds\panicbutton.ogg", 1, 1};
+		titles[] = {};
+	};
+	class spray
+	{
+		name = "spray";
+		sound[] = {"@cg_mission_files\sounds\spray.ogg", 1, 1};
+		titles[] = {};
+	};
+	class jackpot1
+	{
+		name = "jackpot1";
+		sound[] = {"@cg_mission_files\sounds\jackpot1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class jackpot2
+	{
+		name = "jackpot2";
+		sound[] = {"@cg_mission_files\sounds\jackpot2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class spin
+	{
+		name = "spin";
+		sound[] = {"@cg_mission_files\sounds\spin.ogg", 1, 1};
+		titles[] = {};
+	};
+	class ciggy
+	{
+		name = "ciggy";
+		sound[] = {"@cg_mission_files\sounds\ciggy.ogg", 1, 1};
+		titles[] = {};
+	};
+	class hungry
+	{
+		name = "hungry";
+		sound[] = {"@cg_mission_files\sounds\hungry.ogg", 1, 1};
+		titles[] = {};
+	};	
+	class nos
+	{
+		name = "nos";
+		sound[] = {"@cg_mission_files\sounds\nos.ogg", 1, 1};
+		titles[] = {};
+	};
+	class gagged
+	{
+		name = "gagged";
+		sound[] = {"@cg_mission_files\sounds\gagged.ogg", 1, 1};
+		titles[] = {};
+	};	
+	class glassbreak
+	{
+		name = "glassbreak";
+		sound[] = {"@cg_mission_files\sounds\glassbreak.ogg", 1, 1};
+		titles[] = {};
+	};
+	class seatwarn
+	{
+		name = "seatwarn";
+		sound[] = {"@cg_mission_files\sounds\seatwarn.ogg", 1, 1};
+		titles[] = {};
+	};
+	class seatbelt
+	{
+		name = "seatbelt";
+		sound[] = {"@cg_mission_files\sounds\seatbelt.ogg", 1, 1};
+		titles[] = {};
+	};
+	class fart1
+	{
+		name = "fart1";
+		sound[] = {"@cg_mission_files\sounds\fart1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class fart2
+	{
+		name = "fart2";
+		sound[] = {"@cg_mission_files\sounds\fart2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class fart3
+	{
+		name = "fart3";
+		sound[] = {"@cg_mission_files\sounds\fart3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class fart4
+	{
+		name = "fart4";
+		sound[] = {"@cg_mission_files\sounds\fart4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class fart5
+	{
+		name = "fart5";
+		sound[] = {"@cg_mission_files\sounds\fart5.ogg", 1, 1};
+		titles[] = {};
+	};
+	class fart6
+	{
+		name = "fart6";
+		sound[] = {"@cg_mission_files\sounds\fart6.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class punch1
+	{
+		name = "punch1";
+		sound[] = {"@cg_mission_files\sounds\punch1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class punch2
+	{
+		name = "punch2";
+		sound[] = {"@cg_mission_files\sounds\punch2.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class punch3
+	{
+		name = "punch3";
+		sound[] = {"@cg_mission_files\sounds\punch3.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class punch4
+	{
+		name = "punch4";
+		sound[] = {"@cg_mission_files\sounds\punch4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class vomit
+	{
+		name = "vomit";
+		sound[] = {"@cg_mission_files\sounds\vomit.ogg", 1, 1};
+		titles[] = {};
+	};	
+};
+
+
+
+class CfgDebriefing
+{
+	class NotWhitelisted
+	{
+		title = "Mission Failed";
+		subtitle = "You are not white-listed to use this slot";
+		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class Blacklisted
+	{
+		title = "Mission Failed";
+		subtitle = "You are blacklisted from cops";
+		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+};
+
+class CfgNotifications
+{
+	class MedicalRequestEmerg
+	{
+		title = "EMS Requested";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
+	
+	class DeliveryAssigned
+	{
+		title = "Delivery Job Accepted";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 10;
+		priority = 7;
+	};
+	
+	class DeliveryFailed
+	{
+		title = "Delivery Job Failed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
+	
+	class DeliverySucceeded
+	{
+		title = "Delivery Job Completed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 6;
+		priority = 6;
+	};
+	
+	class TextMessage
+	{
+		title = "Received A Text Message";
+		iconPicture = "\cg_sndimg\icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class PoliceDispatch
+	{
+		title = "911 Dispatch Center";
+		iconPicture = "\cg_sndimg\icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class AdminDispatch
+	{
+		title = "Admin Dispatch Center";
+		iconPicture = "\cg_sndimg\icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class AdminMessage
+	{
+		title = "Admin Message";
+		iconPicture = "\cg_sndimg\icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+};
+#include "infiSTAR_AdminMenu.hpp"

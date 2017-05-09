@@ -1,0 +1,1 @@
+[player] remoteExec ["client_fnc_revived",CurrentCursorTarget];
