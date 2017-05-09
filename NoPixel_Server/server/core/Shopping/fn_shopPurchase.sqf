@@ -45,8 +45,8 @@ _price = call compile format["%1", _price];
 _newcount = _itemcount - _quantity; 
 _totalprice = _quantity * _price; 
  
-if(_newcount < 0) exitwith { _ERROR = "Not enough of that item."; }; 
-if(_cash < _totalprice) exitwith { _ERROR = "Not enough cash."; }; 
+if(_newcount < 0) exitwith { _ERROR = "Dieser Artikel ist vergriffen, wenn du ihn unbedingt willst schau auf Amazon."; }; 
+if(_cash < _totalprice) exitwith { _ERROR = "Nicht genügend Kohle, geh Anschaffen."; }; 
  
 if(_newcount == 0) then { 
  
@@ -75,8 +75,8 @@ _price = call compile format["%1", _price];
 _newcount = _itemcount - _quantity; 
 _totalprice = _quantity * _price; 
  
-if(_newcount < 0) exitwith { _ERROR = "Not enough of that item."; }; 
-if(_cash < _totalprice) exitwith { _ERROR = "Not enough cash."; }; 
+if(_newcount < 0) exitwith { _ERROR = "Dieser Artikel ist vergriffen, wenn du ihn unbedingt willst schau auf Amazon."; }; 
+if(_cash < _totalprice) exitwith { _ERROR = "Nicht genügend Kohle, geh Anschaffen."; }; 
  
 if(_newcount == 0) then { 
  
@@ -106,8 +106,8 @@ _price = call compile format["%1", _price];
 _newcount = _itemcount - _quantity; 
 _totalprice = _quantity * _price; 
  
-if(_newcount < 0) exitwith { _ERROR = "Not enough of that item."; }; 
-if(_cash < _totalprice) exitwith { _ERROR = "Not enough cash."; }; 
+if(_newcount < 0) exitwith { _ERROR = "Dieser Artikel ist vergriffen, wenn du ihn unbedingt willst schau auf Amazon."; }; 
+if(_cash < _totalprice) exitwith { _ERROR = "Nicht genügend Kohle, geh Anschaffen."; }; 
  
 if(_newcount == 0) then { 
  

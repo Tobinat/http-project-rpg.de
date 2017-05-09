@@ -6,7 +6,7 @@ _newname = _this select 1;
 diag_log ["store update name %1", _player]; 
  
  
-if(count _newname > 25) exitWith { ["Shop name can not be longer than 25 characters.", false] remoteExec ["domsg",_player]; }; 
+if(count _newname > 25) exitWith { ["Dein Shop-Name darf nicht über 25 Buchstaben liegen.", false] remoteExec ["domsg",_player]; }; 
  
 _shop = _player getVariable "shop"; 
 deletemarker format["%1",getPlayerUID _player]; 

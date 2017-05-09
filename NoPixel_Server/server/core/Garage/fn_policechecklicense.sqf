@@ -27,6 +27,6 @@ if (_booli) then {
 
     format["License: %1 - Make: %2 - Color: %3 - Owner: %4", (_fetch select 0), (_fetch select 1), (_fetch select 2), _owner] remoteexec["hint", _officer];
 } else {
-    "This plate returned no results in the DMV database."
+    "Dieses Kennzeichen hat keinen Eintrag in der DMV Database."
     remoteexec["hint", _officer];
 };

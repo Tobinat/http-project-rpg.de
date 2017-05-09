@@ -15,11 +15,11 @@ _shop = _shop select 0;
  
 _shopplayer = _shop getVariable "shop"; 
  
-if(isNil "_ShopPlayer") exitWith { ["This shop is currently not owned.", false] remoteExec ["domsg",_unit]; }; 
+if(isNil "_ShopPlayer") exitWith { ["Dieser Shop ist momentan in keinem Besitz.", false] remoteExec ["domsg",_unit]; }; 
  
 _uid = getPlayerUID _shopplayer; 
  
-if(_uid in activeshopcrates) exitwith { ["This shop is currently being stocked, please wait a few moments.", false] remoteExec ["domsg",_unit]; }; 
+if(_uid in activeshopcrates) exitwith { ["Dieser Laden wird moment aufgefüllt, Bitte haben Sie einen Moment Geduld.", false] remoteExec ["domsg",_unit]; }; 
  
 _shopcontent = _shopplayer getVariable "shopcontent"; 
  

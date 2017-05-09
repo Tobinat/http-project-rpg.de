@@ -15,7 +15,7 @@ currentCop pushback _player;
 publicvariable "currentCop"; 
  
 } else { 
-"Too many on duty" remoteexec ["hint",_player]; 
+"Es sind zu viele Kollegen im Dienst, ruhe dich etwas aus!" remoteexec ["hint",_player]; 
 }; 
 }; 
  
@@ -28,7 +28,7 @@ currentEMS pushback _player;
 publicvariable "currentEMS"; 
 } else { 
  
-"Too many on duty" remoteexec ["hint",_player]; 
+"Es sind zu viele Kollegen im Dienst, ruhe dich etwas aus!" remoteexec ["hint",_player]; 
 }; 
 }; 
  
@@ -41,7 +41,7 @@ _player setvariable ["sync",0,false];
 publicvariable "currentFire"; 
 } else { 
  
-"Too many on duty" remoteexec ["hint",_player]; 
+"Es sind zu viele Kollegen im Dienst, ruhe dich etwas aus!" remoteexec ["hint",_player]; 
 };   
 }; 
  
@@ -52,7 +52,7 @@ currentMafia pushback _player;
 publicvariable "currentMafia"; 
 } else { 
  
-"Too many on duty" remoteexec ["hint",_player]; 
+"Zu viele Gangster sind auf den Straßen!" remoteexec ["hint",_player]; 
 };  
 }; 
  

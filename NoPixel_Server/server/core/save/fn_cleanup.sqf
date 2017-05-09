@@ -1,7 +1,7 @@
 _chance = random 100;
 
 if (_chance > 50) then {
-    "A Silverlake Bank has received a money shipment"
+    "Die Bank of Silverlake hat eine Geldüberweisung erhalten."
     remoteexec["hint", -2];
     _mybank = banks call BIS_fnc_selectRandom;
     _thebankcontainer = "plp_ct_HighSecMediumBlack"

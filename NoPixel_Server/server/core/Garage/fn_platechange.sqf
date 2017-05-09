@@ -15,7 +15,7 @@ diag_log ["license change - %1 - %2", _player, plate];
  
 if(_booli) then { 
  
-"That plate already exists" remoteexec ["hint",_player]; 
+"Dieses Kennzeichen existiert bereit." remoteexec ["hint",_player]; 
 } else { 
  
 _checkstr = format ["updateLicense:%1:%2", _plate, _oldPlate]; 

@@ -8,7 +8,7 @@ diag_log ["rent office %1", _player];
  
 if(isNil "rentedshops") then { rentedshops = []; }; 
  
-if(_shoppos IN rentedshops) exitwith { "This shop is already rented, find one with out a marker!" remoteexec ["hint",_player]; }; 
+if(_shoppos IN rentedshops) exitwith { "Der Laden gehört schon jemanden, finde am besten eine Ohne Marker!" remoteexec ["hint",_player]; }; 
  
 rentedshops pushback _shoppos; 
  

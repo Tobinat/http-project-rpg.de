@@ -11,9 +11,9 @@ activeshopcrates pushback _uid;
  
 _holder = createVehicle ["plp_ct_woodboxlightbig", _player modeltoworld[0,2,1], [], 0, "can_Collide"];   
  
-["Your crate is ready, people can not use your shop while this is happening.", false] remoteExec ["domsg",_player]; 
+["Dein Lager ist eingeräumt, Kunden können während dem Einräumen nicht Einkaufen!", false] remoteExec ["domsg",_player]; 
  
-["You can change prices once the items are stored in a few minutes.", false] remoteExec ["domsg",_player]; 
+["Du kannst die Preise deiner Artikel verändern, sobald Sie verräumt sind.", false] remoteExec ["domsg",_player]; 
  
 _shopcontent = _player getVariable "shopcontent"; 
  
