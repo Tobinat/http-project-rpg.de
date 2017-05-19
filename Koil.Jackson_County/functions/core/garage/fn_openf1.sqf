@@ -2,7 +2,7 @@ mypos = _this select 0;
 
 createDialog "garage2";
 
-hint "You are in the race, pick your car!";
+hint "Du bist beim Rennen dabei, wähle deinen Wagen!";
 
 ctrlSetText [1000, "Garage"];
 
