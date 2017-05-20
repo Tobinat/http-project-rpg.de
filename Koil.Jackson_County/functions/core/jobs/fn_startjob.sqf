@@ -9,29 +9,29 @@ lbClear _list;
 _jobs = [];
 
 if(count currentMailmen < 3) then {
-_Jobs pushback "Fedex Worker"; 
+_Jobs pushback "Fedex Worker";
 };
 
 if(count currentSecurity < 2) then {
-_Jobs pushback "Security"; 
+_Jobs pushback "Security";
 };
 
 if(count currentTrashman < 3) then {
-_Jobs pushback "Garbage Man"; 
+_Jobs pushback "Garbage Man";
 };
 
 if(count currentNewsMan < 3) then {
-_Jobs pushback "News Reporter"; 
+_Jobs pushback "News Reporter";
 };
 
 if(count currentRepairmen < 7) then {
-_Jobs pushback "Repairman"; 
+_Jobs pushback "Repairman";
 };
 
 if(count currentTaxiDrivers < 7) then {
-_Jobs pushback "Taxi Driver"; 
+_Jobs pushback "Taxi Driver";
 };
-if(_jobs isequalto []) then { _jobs = ["No Jobs Available"]; };
+if(_jobs isequalto []) then { _jobs = ["Keine Arbeit verfügbar"]; };
 
 {
 	_list lbAdd format["Job: %1",_x];
@@ -42,5 +42,5 @@ _list lbAdd "Job: Wood Logging";
 _job = "Wood Logging";
 _list lbSetdata [(lbSize _list)-1,str(_job)];
 
-hint "Remember, farming jobs require backpacks - most jobs come with a vehicle, you can access it by windows keying this building once you have a job.";
+hint "Erinnere dich, farming jobs benötigen einen Rucksack - Die meisten Jobs haben eigene Autos, du bekommst sie in dem du den Windows muskel in diesem Haus verwendest.";
 

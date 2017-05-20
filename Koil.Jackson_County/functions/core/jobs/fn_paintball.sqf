@@ -72,9 +72,9 @@ while{paintballing} do {
 
 };
 
-_nearPlayers = player nearEntities ["man", 275]; 
+_nearPlayers = player nearEntities ["man", 275];
 
-format["%1 scored: %2",name player, paintballscore] remoteexec ["systemchat",_nearplayers];
+format["%1 hat %2 Punkte",name player, paintballscore] remoteexec ["systemchat",_nearplayers];
 
 removeAllWeapons player;
 removeAllItems player;
@@ -91,7 +91,7 @@ paintballing = false;
 paintballhit = false;
 
 [_amount] call Client_fnc_addCash;
-[format["You won %1 dollars!",_amount],false] spawn domsg;
+[format["Du hast %1 gewonnen!",_amount],false] spawn domsg;
 
 if(client_energy == 0) then {
 	player enablefatigue true;

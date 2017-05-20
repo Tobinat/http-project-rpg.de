@@ -52,7 +52,7 @@ if(mybin distance (vehicle player) < 25 && _type == "bin") then {
 	paycheck = paycheck + 35;
 
 	if(_veh == player) exitwith {};
-		
+
 	_veh setfuel 0;
 	_veh animate ['contenedor_unhide',1];
 	_veh animate ['contenedor',1];
@@ -87,6 +87,6 @@ if(mybin distance (vehicle player) < 25 && _type == "bin") then {
 
 	} else {
 
-	hint "There is no garbage near you!";	
+	hint "Kein Müll in deiner nähe!";
 
 };
