@@ -1,7 +1,7 @@
 //[_location] remoteExec ["client_fnc_startSecurity",_player];
 //[getpos player,] remoteExec ["client_fnc_startGarbage",_player];
 // use lexus with directionals only.
-if(myjob != "none") exitwith { hint "You already have a job!"; };
+if(myjob != "none") exitwith { hint "Du hast schon Arbeit!"; };
 
 if(isnil "taskrunning") then { taskrunning = false; };
 
@@ -18,19 +18,19 @@ if(!taskrunning) then {
 		while{taskrunning} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
-				hint "You have no current jobs, please patrol a city and keep an eye on shops!";
+				hint "Du hast keine aktuelle Aufgabe, fahr einfach durch die stadt und pass auf die Läden auf!";
 				uisleep 60;
 			} else {
 
 				if(player distance ((playertasks select 0) select 0) < 15) then {
-					hint "You have arrived, please stick around for atleast 5-10 minutes unless told otherwise!";
+					hint "Du bist angekommen, bleib für 5-10 Minuten hier bis man dir anderes sagt!";
 					paycheck = paycheck + 30;
 					playertasks deleteat 0;
 					uisleep 3;
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
-					hint "Your current Job (Marked on the Map): Job Type - Security";	
-					[((playertasks select 0) select 0)] call client_fnc_jobMarker;			
+					hint "Deine aktuelle Aufgabe (Markiert auf der Karte): Job - Security";
+					[((playertasks select 0) select 0)] call client_fnc_jobMarker;
 					uisleep 3;
 				};
 			};
@@ -39,7 +39,7 @@ if(!taskrunning) then {
 	};
 };
 
-if(taskrunning) then { 
+if(taskrunning) then {
 	_location = _this select 0;
-	playertasks pushback [_location]; 
+	playertasks pushback [_location];
 };

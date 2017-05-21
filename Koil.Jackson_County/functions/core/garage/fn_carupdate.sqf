@@ -1,5 +1,5 @@
 
-if (vehicle player == player) exitwith { hint "You need to be inside your vehicle to upgrade it!"; };
+if (vehicle player == player) exitwith { hint "Du musst in deinem Auto sitzen für ein upgrade!"; };
 _PROCESS = vehicle player;
 _civilianVehicle = [
 	["Jonzie_XB",1900],
@@ -11,25 +11,25 @@ _civilianVehicle = [
 	["jonzie_30CSL",3200],
 	["ADM_1969_Charger",3500],
 	["ivory_rs4",5000],
-	["ADM_GMC_Vandura",5100], 
-	["ivory_gti",6000],	
-	["Jonzie_Transit",6400], 
+	["ADM_GMC_Vandura",5100],
+	["ivory_gti",6000],
+	["Jonzie_Transit",6400],
 	["ivory_e36",8000],
-	["Jonzie_Mini_Cooper_r_spec",9000],	
+	["Jonzie_Mini_Cooper_r_spec",9000],
 	["ADM_Ford_F100",9500],
-	["nopixel_GMC_Campervan",9999],	
-	["nopixel_Box_Default",9999],	
+	["nopixel_GMC_Campervan",9999],
+	["nopixel_Box_Default",9999],
 	["Jonzie_Raptor",12000],
 	["Jonzie_Escalade",12000],
-	["ivory_gt500",12000],	
+	["ivory_gt500",12000],
 	["ivory_m3",15000],
-	["ivory_evox",18000],	
-	["ivory_supra",19000],	
+	["ivory_evox",18000],
+	["ivory_supra",19000],
 	["ivory_r34",22000],
-	["ivory_c",25000],	
+	["ivory_c",25000],
 	["ivory_wrx",27000],
-	["ivory_elise",30000],		
-	["ivory_isf",35000],		
+	["ivory_elise",30000],
+	["ivory_isf",35000],
 	["Jonzie_Viper",39999],
 	["ivory_lfa",85000],
 	["ivory_mp4",95000],
@@ -52,7 +52,7 @@ if(typeof _PROCESS IN ["ADM_1964_Impala","ADM_1969_Charger","ADM_1969_Camaro","A
 
 _cashcheck = [2,_price] call client_fnc_checkmoney;
 
-if!(_cashCheck) exitwith { hint format["$%1 - You dont have enough money to pay for this!",_price]; };
+if!(_cashCheck) exitwith { hint format["$%1 - Du brauchst mehr Kohle!",_price]; };
 
 [_price] call Client_fnc_removebank;
 
@@ -74,10 +74,10 @@ if(_reprocess) then {
 
 		if(_vehicle == "ADM_1969_Camaro") exitwith { _attempt = true; _newVehicle = format["%1_1",_vehicle]; };
 		if(_vehicle == "ADM_1969_Camaro_1") exitwith { _attempt = true; _newVehicle = "ADM_1969_Camaro_2"; };
-		if(_vehicle == "ADM_1969_Camaro_2") exitwith { _attempt = false; };		
+		if(_vehicle == "ADM_1969_Camaro_2") exitwith { _attempt = false; };
 
 		if(_vehicle == "ivory_f1_1") exitwith { _attempt = true; _newVehicle = "ivory_f1_2"; };
-		if(_vehicle == "ivory_f1_2") exitwith { _attempt = false; };	
+		if(_vehicle == "ivory_f1_2") exitwith { _attempt = false; };
 
 } else {
 
@@ -93,14 +93,14 @@ if(_reprocess) then {
 			_attempt = isClass (ConfigFile >> "CfgVehicles" >> _newVehicle);
 
 	};
-	
+
 };
 
 if(_attempt && _oldveh in current_cars) then {
 
  	_car = _oldveh getvariable "information";
 
- 	if(isNil "_car") exitwith { hint "You can not upgrade this vehicle..."; };
+ 	if(isNil "_car") exitwith { hint "Mit der Karre geht das nicht..."; };
 
 	_garage = player getVariable "garage";
 
@@ -119,5 +119,5 @@ if(_attempt && _oldveh in current_cars) then {
 	[_price] call Client_fnc_removeCash;
 
 } else {
-	hint "This car is either already upgraded or unable to be upgraded!";
+	hint "Entweder hast du schon ein Upgrade oder die Karre geht nicht!";
 };

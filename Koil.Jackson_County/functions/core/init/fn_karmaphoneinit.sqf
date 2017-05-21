@@ -10,7 +10,7 @@ client_fnc_checkPhone = {
 	_radios = player call TFAR_fnc_radiosList;
 
 	if(count _radios > 0) then {
-		if([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio) then {  
+		if([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio) then {
 
 		} else {
 			_myradio = call TFAR_fnc_ActiveSwRadio;
@@ -50,12 +50,12 @@ if(client_karma > 999) then {
 	karma_level = client_karma / 400;
 	karma_level = floor (karma_level);
 } else {
-	karma_level = 0;	
+	karma_level = 0;
 };
 
 if(karma_level > 80) then {
 	karma_level = 80;
 };
 
-[format["Your reputation level is %1",karma_level], true] spawn domsg;
+[format["Dein reputations Level ist %1",karma_level], true] spawn domsg;
 

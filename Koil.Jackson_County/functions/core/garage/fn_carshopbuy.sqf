@@ -21,7 +21,11 @@ _price = _price + _pricePaint;
 _cash = player getVariable "wallet";
 
 
+<<<<<<< HEAD
 if(_cash < _price) exitwith { [format["COST: %1 - Nicht genügend Geld.",_price], true] spawn domsg; };
+=======
+if(_cash < _price) exitwith { [format["Kosten: %1 - Du hast nicht genug Geld.",_price], true] spawn domsg; };
+>>>>>>> origin/master
 
 [_price] call Client_fnc_removeCash;
 
@@ -29,14 +33,18 @@ if(_cash < _price) exitwith { [format["COST: %1 - Nicht genügend Geld.",_price]
 
 closedialog 0;
 
+<<<<<<< HEAD
 ["Das Fahrzeug wird demnächst zu Ihnen geliefert.", true] spawn domsg;
+=======
+["Das Fahrzeug wird bald an deine Adresse geliefert.", true] spawn domsg;
+>>>>>>> origin/master
 
-_player = player; 
-_rims = "antiquewhite"; 
-_windows = 0; 
-_Lights = 0; 
-_owner = getplayeruid player; 
-_licensePlate = "Testing"; 
+_player = player;
+_rims = "antiquewhite";
+_windows = 0;
+_Lights = 0;
+_owner = getplayeruid player;
+_licensePlate = "Testing";
 
-_statuses = 1; 
+_statuses = 1;
 [_licensePlate, _class, _color, _finish, _rims, _windows, _lights, _owner, _statuses, "Add", _player] remoteExec ["Server_fnc_garageUpdate",2];

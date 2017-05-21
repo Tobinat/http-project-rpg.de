@@ -1,8 +1,8 @@
-AcetoneArray = ["WARNING: The substance seems too dark!","WARNING: The substance is turning black!","WARNING: The substance has too much color!"];
-PseudoArray = ["WARNING: The substance is losing color!","WARNING: The substance is faded!","WARNING: The substance is almost see-thru!"];
-CoolArray = ["WARNING: The stove is forcing steam!","WARNING: The stove is burning the table!","WARNING: The room is filling with heat!"];
-HeatArray = ["WARNING: The substance isnt flowing properly!","WARNING: The substance is very thick!","WARNING: The substance is looking sticky!"];
-ReleaseArray = ["WARNING: The substance is flowing too fast!","WARNING: Steam is trying to escape!","WARNING: The vials are looking very foggy!"];
+AcetoneArray = ["ACHTUNG: Die Substanz scheint zu Schwarz!","ACHTUNG: Die Substanz wird Schwarz!","ACHTUNG: Die Substanz hat zu viel Farbe!"];
+PseudoArray = ["ACHTUNG: Die Substanz verliert Farbe!","ACHTUNG: Die Substanz ist ausgeblichen!","ACHTUNG: Diue Substanz ist beinahe durchsichtig!"];
+CoolArray = ["ACHTUNG: Der Herd baut Dampf auf!","ACHTUNG: Der Herd verbrennt den Tisch!","ACHTUNG: Es wird heiß im Raum!"];
+HeatArray = ["ACHTUNG: Die Substanz fließt nicht korrekt!","ACHTUNG: Die Substanz ist zu dickflüssig!","ACHTUNG: Die Substanz sieht klebrig aus!"];
+ReleaseArray = ["ACHTUNG: Achtung die Substanz fließt zu schnell!","ACHTUNG: Dampf versucht zu entweichen!","ACHTUNG: Die Flächen sehen sehr trüb aus!"];
 
 _count = 0;
 checkFinish = false;
@@ -16,7 +16,7 @@ while{_count < 15 && cookingMeth} do {
 	if(_randomValue == 3) then { requiredOutput = "Cool"; _message = CoolArray call BIS_fnc_selectRandom; hint _message; };
 	if(_randomValue == 4) then { requiredOutput = "Heat"; _message = HeatArray call BIS_fnc_selectRandom; hint _message; };
 	if(_randomValue == 5) then { requiredOutput = "Release"; _message = ReleaseArray call BIS_fnc_selectRandom; hint _message; };
-	sleep 30;	
+	sleep 30;
 	_count = _count + 1;
 };
 

@@ -43,7 +43,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 
 			if( (_myInjuries select 0) != 0 || (_myInjuries select 1) != 0 || (_myInjuries select 7) != 0 ) then {
 				im_hurt = true;
-				_bleeding ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\head.paa'/><t size='0.03px'> Your head aches. </t>",player];
+				_bleeding ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\head.paa'/><t size='0.03px'> Du hast Kopfschmerzen. </t>",player];
 
 				_chances = round (random 1000);
 				if(_chances > 985) then
@@ -63,7 +63,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 
 			if( (_myInjuries select 2) != 0 || (_myInjuries select 3) != 0 || (_myInjuries select 6) != 0 || (_myInjuries select 9) != 0 ) then {
 				im_hurt = true;
-				_wounded ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\chest.paa'/><t size='0.03px'> Your body is sore. </t>",player];
+				_wounded ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\chest.paa'/><t size='0.03px'> Dein Thorso hat wunden. </t>",player];
 
 				_chances = round (random 1000);
 				if(_chances > 985) then
@@ -82,7 +82,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 
 			if( (_myInjuries select 4) != 0 || (_myInjuries select 5) != 0 ) then {
 				im_hurt = true;
-				_fracture ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\arm.paa'/><t size='0.03px'> Your arms are weak. </t>",player];
+				_fracture ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\arm.paa'/><t size='0.03px'> Deine Arme sind Schwach. </t>",player];
 
 				_chances = round (random 1000);
 				if(_chances > 985) then
@@ -101,7 +101,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 
 			if( (_myInjuries select 8) != 0 ) then {
 				im_hurt = true;
-				_unconcious ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\foot.paa'/><t size='0.03px'> Your legs are weak. </t>",player];
+				_unconcious ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\foot.paa'/><t size='0.03px'> Deine Beine sind Schwach. </t>",player];
 
 				_chances = round (random 1000);
 				if(_chances > 985) then
@@ -121,7 +121,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 		if( (_myInjuries select 10) != 0 ) then
 		{
 			im_hurt = true;
-			_disease ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\sick.paa'/><t size='0.03px'> You feel sick. </t>",player];
+			_disease ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\sick.paa'/><t size='0.03px'> Du fühlst dich Krank. </t>",player];
 
 
 			_chances = round (random 600);
@@ -174,4 +174,3 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 	};
 	if(isNil "client_fnc_totalPain") exitWith {};
 	[] spawn client_fnc_totalPain;
-	

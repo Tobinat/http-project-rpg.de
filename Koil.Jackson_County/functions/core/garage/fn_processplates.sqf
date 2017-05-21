@@ -20,7 +20,7 @@ if(_fuckit) exitwith { hint "Invalid Numberplate"; };
 
 _cashcheck = [2,2000] call client_fnc_checkmoney;
 
-if!(_cashCheck) exitwith { hint "You dont have enough money to pay for this!"; };
+if!(_cashCheck) exitwith { hint "Du brauchst mehr Kohle!"; };
 
 _text = ctrlText 9993;
 

@@ -17,11 +17,11 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 	_karma ctrlSetText format["Level %1", karma_level];
 
 	_battery = _ui displayCtrl 23610;
-	_battery ctrlSetText format["Battery: %1", client_battery];
+	_battery ctrlSetText format["Batterie: %1", client_battery];
 
 	_ammo = _ui displayCtrl 23525;
 	_amountmag = {_x == (currentmagazine player)} count magazines player;
-	_ammo ctrlSetText format["%1 Mags", format["%1",_amountmag]];
+	_ammo ctrlSetText format["%1 Magazine", format["%1",_amountmag]];
 	_bamountmag = _amountmag / 100;
 	_bamountmag = _bamountmag * 3;
 
@@ -36,13 +36,13 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 		_fuck = _ammocount / _maxammo;
 	};
 	_ammocount = (player ammo (currentWeapon player));
-	_bullet ctrlSetText format["%1 Rounds", format["%1",_ammocount]];
+	_bullet ctrlSetText format["%1 Kugeln", format["%1",_ammocount]];
 
 
 	_select = _ui displayCtrl 23535;
 	_gunmode = currentWeaponMode player;
 	if(vehicle player != player || currentweapon player == "") then { _gunmode = "No"; };
-	_select ctrlSetText format["%1 Firemode", format["%1",_gunmode]];
+	_select ctrlSetText format["%1 Feuermodus", format["%1",_gunmode]];
 
 		_mylife = _ui displayCtrl 444440;
 
@@ -55,11 +55,11 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 			if(myHealth > 0.6) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\health5.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};		
+			};
 			if(myHealth > 0.45) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\health4.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};	
+			};
 
 			if(myHealth > 0.3) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\health3.paa'/>";
@@ -68,11 +68,11 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 			if(myHealth > 0.15) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\health2.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};		
+			};
 			if(myHealth > 0) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\health1.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
-			};				
+			};
 		}
 		else
 		{
@@ -95,11 +95,11 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 			if(client_hunger > 50) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\food2.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
-			};		
+			};
 			if(client_hunger > 40) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\food3.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
-			};	
+			};
 
 			if(client_hunger > 30) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\food4.paa'/>";
@@ -108,11 +108,11 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 			if(client_hunger > 15) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\food5.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
-			};		
+			};
 			if(client_hunger > 0) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\food6.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
-			};	
+			};
 
 
 		}
@@ -135,11 +135,11 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 			if(client_thirst > 50) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\drink2.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
-			};		
+			};
 			if(client_thirst > 40) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\drink3.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
-			};	
+			};
 
 			if(client_thirst > 30) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\drink4.paa'/>";
@@ -148,11 +148,11 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 			if(client_thirst > 15) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\drink5.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
-			};		
+			};
 			if(client_thirst > 0) exitwith {
 				_message = "<img size='2.5' image='cg_mission_files\icons2\drink6.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
-			};	
+			};
 
 		}
 		else
@@ -193,7 +193,7 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 			_message = "";
 			_donuts ctrlSetStructuredText parseText format["%1",_message];
 		};
-		_donuts ctrlCommit 0;	
+		_donuts ctrlCommit 0;
 
 
 		_enrgy = _ui displayCtrl 444445;
@@ -307,7 +307,7 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 			_message = "";
 			_bewdgopro ctrlSetStructuredText parseText format["%1",_message];
 		};
-		_bewdgopro ctrlCommit 0;	
+		_bewdgopro ctrlCommit 0;
 
 
 		_tbewdgopro = _ui displayCtrl 444452;
@@ -321,7 +321,7 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 			_message = "";
 			_tbewdgopro ctrlSetStructuredText parseText format["%1",_message];
 		};
-		_tbewdgopro ctrlCommit 0;	
+		_tbewdgopro ctrlCommit 0;
 
 
 
@@ -536,4 +536,3 @@ private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo",
 	};
 	if(isNil "client_fnc_totalPain") exitWith {};
 	[] spawn client_fnc_totalPain;
-	
