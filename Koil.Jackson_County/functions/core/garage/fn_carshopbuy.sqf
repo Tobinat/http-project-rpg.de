@@ -21,7 +21,7 @@ _price = _price + _pricePaint;
 _cash = player getVariable "wallet";
 
 
-if(_cash < _price) exitwith { [format["COST: %1 - Not enough cash.",_price], true] spawn domsg; };
+if(_cash < _price) exitwith { [format["COST: %1 - Nicht genügend Geld.",_price], true] spawn domsg; };
 
 [_price] call Client_fnc_removeCash;
 
@@ -29,7 +29,7 @@ if(_cash < _price) exitwith { [format["COST: %1 - Not enough cash.",_price], tru
 
 closedialog 0;
 
-["The vehicle will be delivered to your house soon.", true] spawn domsg;
+["Das Fahrzeug wird demnächst zu Ihnen geliefert.", true] spawn domsg;
 
 _player = player; 
 _rims = "antiquewhite"; 
