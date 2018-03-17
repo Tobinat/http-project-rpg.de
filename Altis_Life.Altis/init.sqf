@@ -11,5 +11,6 @@ if (hasInterface) then {
     [] execVM "briefing.sqf"; //Load Briefing
 };
 [] execVM "KRON_Strings.sqf";
+[] execVM "AdminTool\loop.sqf";
 
 StartProgress = true;
