@@ -1,0 +1,29 @@
+extDB2: Version: 60
+extDB2: https://github.com/Torndeco/extDB2
+extDB2: Windows Version
+Message: All development for extDB2 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB2 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 20/02/15
+
+
+extDB2: Found extdb-conf.ini
+extDB2: Detected 8 Cores, Setting up 6 Worker Threads
+
+
+[10:14:31:672 +00:-1] [Thread 6968] extDB2: Database Type: MySQL
+[10:14:31:685 +00:-1] [Thread 6968] extDB2: Database Session Pool Started
+[10:14:31:685 +00:-1] [Thread 6968] extDB2: SQL_RAW: Initialized: ADD_QUOTES True
+[10:14:31:685 +00:-1] [Thread 6968] extDB2: SQL_RAW: Is now deprecated will be removed in a month, update to SQL_RAW_V2
+[10:14:31:685 +00:-1] [Thread 6968] extDB2: SQL_RAW: Is now deprecated will be removed in a month, update to SQL_RAW_V2
+[10:14:31:685 +00:-1] [Thread 6968] extDB2: SQL_RAW: Is now deprecated will be removed in a month, update to SQL_RAW_V2
+[10:14:31:685 +00:-1] [Thread 6968] extDB2: Loading Rcon Config
+[10:14:31:685 +00:-1] [Thread 6968] extDB2: Loading Rcon IP: 127.0.0.1, Port: 2302
+[10:14:31:685 +00:-1] [Thread 6968] Rcon: Sending Login Packet
+[10:14:31:686 +00:-1] [Thread 6968] Rcon: Sent Login Info
+[10:14:31:687 +00:-1] [Thread 3764] extDB2: SQL_RAW: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Table 'life.serverinstance' doesn't exist	[mysql_stmt_errno]: 1146	[mysql_stmt_sqlstate]: 42S02	[statemnt]: UPDATE serverinstance SET startTime=NOW() WHERE id='1'
+[10:14:31:687 +00:-1] [Thread 3764] extDB2: SQL_RAW: Error StatementException: SQL: UPDATE serverinstance SET startTime=NOW() WHERE id='1'
+[10:14:41:719 +00:-1] [Thread 7136] Rcon: sendCommand: SAY -1 extDB2 RCON ONLINE
+[10:20:23:893 +00:-1] [Thread 6968] extDB2: Stopping ...

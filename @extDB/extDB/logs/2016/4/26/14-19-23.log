@@ -1,0 +1,283 @@
+extDB2: Version: 60
+extDB2: https://github.com/Torndeco/extDB2
+extDB2: Windows Version
+Message: All development for extDB2 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB2 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 20/02/15
+
+
+extDB2: Found extdb-conf.ini
+extDB2: Detected 8 Cores, Setting up 6 Worker Threads
+
+
+[15:19:23:112 +00:-1] [Thread 840] extDB2: Database Type: MySQL
+[15:19:23:115 +00:-1] [Thread 840] extDB2: Database Session Pool Started
+[15:19:23:115 +00:-1] [Thread 840] extDB2: SQL_RAW: Initialized: ADD_QUOTES True
+[15:19:23:115 +00:-1] [Thread 840] extDB2: SQL_RAW: Is now deprecated will be removed in a month, update to SQL_RAW_V2
+[15:19:23:115 +00:-1] [Thread 840] extDB2: SQL_RAW: Is now deprecated will be removed in a month, update to SQL_RAW_V2
+[15:19:23:115 +00:-1] [Thread 840] extDB2: SQL_RAW: Is now deprecated will be removed in a month, update to SQL_RAW_V2
+[15:19:23:115 +00:-1] [Thread 840] extDB2: Loading Rcon Config
+[15:19:23:115 +00:-1] [Thread 840] extDB2: Loading Rcon IP: 127.0.0.1, Port: 2302
+[15:19:23:115 +00:-1] [Thread 840] Rcon: Sending Login Packet
+[15:19:23:115 +00:-1] [Thread 840] Rcon: Sent Login Info
+[15:19:23:115 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:19:23:117 +00:-1] [Thread 5708] extDB2: SQL_RAW: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Table 'life.serverinstance' doesn't exist	[mysql_stmt_errno]: 1146	[mysql_stmt_sqlstate]: 42S02	[statemnt]: UPDATE serverinstance SET startTime=NOW() WHERE id='1'
+[15:19:23:117 +00:-1] [Thread 5708] extDB2: SQL_RAW: Error StatementException: SQL: UPDATE serverinstance SET startTime=NOW() WHERE id='1'
+[15:19:28:116 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:19:28:117 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:19:28:117 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:19:28:117 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:19:33:117 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:19:33:117 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:19:33:117 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:19:33:117 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:19:33:163 +00:-1] [Thread 5708] Rcon: sendCommand: SAY -1 extDB2 RCON ONLINE
+[15:19:33:163 +00:-1] [Thread 3052] Rcon: Error handleSent: The file handle supplied is not valid
+[15:19:38:117 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:19:38:117 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:19:38:117 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:19:38:117 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:19:43:118 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:19:43:118 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:19:43:118 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:19:43:118 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:19:48:118 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:19:48:118 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:19:48:118 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:19:48:118 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:19:53:118 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:19:53:118 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:19:53:118 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:19:53:118 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:19:58:119 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:19:58:119 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:19:58:119 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:19:58:119 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:03:119 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:20:03:119 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:20:03:119 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:03:119 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:20:08:119 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:20:08:119 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:20:08:119 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:20:08:119 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:13:120 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:20:13:120 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:20:13:120 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:20:13:120 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:18:120 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:20:18:120 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:20:18:120 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:20:18:120 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:23:120 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:20:23:120 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:20:23:120 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:20:23:120 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:28:120 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:20:28:120 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:20:28:120 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:20:28:120 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:33:121 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:20:33:121 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:20:33:121 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:20:33:121 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:38:121 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:20:38:121 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:20:38:121 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:20:38:121 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:43:121 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:20:43:121 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:20:43:121 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:20:43:121 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:48:122 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:20:48:122 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:20:48:122 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:20:48:122 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:53:122 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:20:53:122 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:20:53:122 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:20:53:122 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:20:58:122 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:20:58:122 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:20:58:122 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:20:58:122 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:03:122 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:21:03:122 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:21:03:122 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:21:03:122 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:08:123 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:21:08:123 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:21:08:123 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:08:123 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:21:13:123 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:21:13:123 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:21:13:123 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:13:123 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:21:18:123 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:21:18:123 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:21:18:123 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:18:123 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:21:23:124 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:21:23:124 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:21:23:124 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:23:124 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:21:28:124 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:21:28:124 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:21:28:124 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:28:124 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:21:33:124 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:21:33:124 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:21:33:124 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:33:124 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:21:38:124 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:21:38:124 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:21:38:124 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:21:38:124 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:43:125 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:21:43:125 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:21:43:125 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:21:43:125 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:48:125 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:21:48:125 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:21:48:125 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:21:48:125 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:53:125 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:21:53:125 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:21:53:125 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:21:53:125 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:21:58:126 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:21:58:126 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:21:58:126 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:21:58:126 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:03:126 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:22:03:126 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:22:03:126 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:22:03:126 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:08:126 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:22:08:126 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:22:08:126 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:22:08:126 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:13:126 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:22:13:126 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:22:13:126 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:22:13:126 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:18:127 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:22:18:127 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:22:18:127 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:18:127 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:22:23:127 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:22:23:127 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:22:23:127 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:22:23:127 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:28:127 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:22:28:127 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:22:28:127 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:22:28:127 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:33:128 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:22:33:128 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:22:33:128 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:22:33:128 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:38:128 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:22:38:128 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:22:38:128 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:22:38:128 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:43:128 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:22:43:128 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:22:43:128 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:43:128 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:22:48:128 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:22:48:128 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:22:48:128 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:48:128 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:22:53:129 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:22:53:129 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:22:53:129 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:53:129 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:22:58:129 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:22:58:129 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:22:58:129 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:22:58:129 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:23:03:129 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:23:03:129 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:23:03:129 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:03:129 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:23:08:130 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:23:08:130 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:23:08:130 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:23:08:130 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:13:130 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:23:13:130 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:23:13:130 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:23:13:130 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:18:130 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:23:18:130 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:23:18:130 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:23:18:130 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:23:130 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:23:23:130 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:23:23:130 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:23:23:130 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:28:131 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:23:28:131 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:23:28:131 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:23:28:131 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:33:131 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:23:33:131 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:23:33:131 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:23:33:131 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:38:131 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:23:38:131 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:23:38:131 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:23:38:131 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:43:132 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:23:43:132 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:23:43:132 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:23:43:132 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:48:132 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:23:48:132 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:23:48:132 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:23:48:132 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:53:132 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:23:53:132 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:23:53:132 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:23:53:132 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:23:58:133 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:23:58:133 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:23:58:133 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:23:58:133 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:24:03:133 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:24:03:133 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:24:03:133 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:24:03:133 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:24:08:133 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:24:08:133 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:24:08:133 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:24:08:133 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:24:13:133 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:24:13:133 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:24:13:133 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:24:13:133 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:24:18:134 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:24:18:134 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:24:18:134 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:24:18:134 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:24:23:134 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:24:23:134 +00:-1] [Thread 6036] Rcon: Sending Login Packet
+[15:24:23:134 +00:-1] [Thread 6036] Rcon: Sent Login Info
+[15:24:23:134 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:24:28:134 +00:-1] [Thread 3052] Rcon: Attempting to Reconnect
+[15:24:28:134 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:24:28:134 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:24:28:134 +00:-1] [Thread 3052] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:24:33:134 +00:-1] [Thread 5708] Rcon: Attempting to Reconnect
+[15:24:33:134 +00:-1] [Thread 3052] Rcon: Sending Login Packet
+[15:24:33:134 +00:-1] [Thread 3052] Rcon: Sent Login Info
+[15:24:33:134 +00:-1] [Thread 5708] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:24:38:135 +00:-1] [Thread 6036] Rcon: Attempting to Reconnect
+[15:24:38:135 +00:-1] [Thread 5708] Rcon: Sending Login Packet
+[15:24:38:135 +00:-1] [Thread 5708] Rcon: Sent Login Info
+[15:24:38:135 +00:-1] [Thread 6036] Rcon: UDP handleReceive Error: No connection could be made because the target machine actively refused it
+[15:24:42:634 +00:-1] [Thread 840] extDB2: Stopping ...
