@@ -1,0 +1,61 @@
+extDB2: Version: 60
+extDB2: https://github.com/Torndeco/extDB2
+extDB2: Windows Version
+Message: All development for extDB2 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB2 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 20/02/15
+
+
+extDB2: Found extdb-conf.ini
+extDB2: Detected 8 Cores, Setting up 6 Worker Threads
+
+
+[20:49:19:057 +00:-1] [Thread 4332] extDB2: Database Type: MySQL
+[20:49:19:070 +00:-1] [Thread 4332] extDB2: Database Session Pool Started
+[20:49:19:070 +00:-1] [Thread 4332] extDB2: SQL_RAW: Initialized: ADD_QUOTES True
+[20:49:19:070 +00:-1] [Thread 4332] extDB2: SQL_RAW: Is now deprecated will be removed in a month, update to SQL_RAW_V2
+[20:49:19:070 +00:-1] [Thread 4332] extDB2: SQL_RAW: Is now deprecated will be removed in a month, update to SQL_RAW_V2
+[20:49:19:070 +00:-1] [Thread 4332] extDB2: SQL_RAW: Is now deprecated will be removed in a month, update to SQL_RAW_V2
+[20:49:19:070 +00:-1] [Thread 4332] extDB2: Loading Rcon Config
+[20:49:19:070 +00:-1] [Thread 4332] extDB2: Loading Rcon IP: 127.0.0.1, Port: 2302
+[20:49:19:070 +00:-1] [Thread 4332] Rcon: Sending Login Packet
+[20:49:19:071 +00:-1] [Thread 4332] Rcon: Sent Login Info
+[20:49:19:072 +00:-1] [Thread 5880] extDB2: SQL_RAW: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Table 'life.serverinstance' doesn't exist	[mysql_stmt_errno]: 1146	[mysql_stmt_sqlstate]: 42S02	[statemnt]: UPDATE serverinstance SET startTime=NOW() WHERE id='1'
+[20:49:19:072 +00:-1] [Thread 5880] extDB2: SQL_RAW: Error StatementException: SQL: UPDATE serverinstance SET startTime=NOW() WHERE id='1'
+[20:49:29:106 +00:-1] [Thread 5384] Rcon: sendCommand: SAY -1 extDB2 RCON ONLINE
+[21:48:40:775 +00:-1] [Thread 5976] Rcon: sendCommand: SAY -1 Server restart in 2 hours!
+[21:48:40:775 +00:-1] [Thread 5192] Rcon: sendCommand: SAY -1 Server restart in 2 hours!
+[21:48:40:775 +00:-1] [Thread 5384] Rcon: sendCommand: SAY -1 Server restart in 2 hours!
+[22:48:46:136 +00:-1] [Thread 4828] Rcon: sendCommand: SAY -1 Server restart in 1 hour!
+[22:48:46:136 +00:-1] [Thread 5880] Rcon: sendCommand: SAY -1 Server restart in 1 hour!
+[22:48:46:136 +00:-1] [Thread 5976] Rcon: sendCommand: SAY -1 Server restart in 1 hour!
+[23:18:47:066 +00:-1] [Thread 4828] Rcon: sendCommand: SAY -1 Server restart in 30 minutes!
+[23:18:47:066 +00:-1] [Thread 5384] Rcon: sendCommand: SAY -1 Server restart in 30 minutes!
+[23:18:47:066 +00:-1] [Thread 5192] Rcon: sendCommand: SAY -1 Server restart in 30 minutes!
+[23:33:47:584 +00:-1] [Thread 5976] Rcon: sendCommand: SAY -1 Server restart in 15 minutes! The server will lock with 5 minutes left.
+[23:33:47:584 +00:-1] [Thread 5384] Rcon: sendCommand: SAY -1 Server restart in 15 minutes! The server will lock with 5 minutes left.
+[23:33:47:585 +00:-1] [Thread 5880] Rcon: sendCommand: SAY -1 Server restart in 15 minutes! The server will lock with 5 minutes left.
+[23:38:47:711 +00:-1] [Thread 5880] Rcon: sendCommand: SAY -1 Server restart in 10 minutes! The server will lock with 5 minutes left.
+[23:38:47:711 +00:-1] [Thread 5192] Rcon: sendCommand: SAY -1 Server restart in 10 minutes! The server will lock with 5 minutes left.
+[23:38:47:711 +00:-1] [Thread 5976] Rcon: sendCommand: SAY -1 Server restart in 10 minutes! The server will lock with 5 minutes left.
+[23:43:48:048 +00:-1] [Thread 5880] Rcon: sendCommand: SAY -1 Server restart in 5 minutes! Remember to sync your data. The server will be locked until restart.
+[23:43:48:048 +00:-1] [Thread 5976] Rcon: sendCommand: SAY -1 Server restart in 5 minutes! Remember to sync your data. The server will be locked until restart.
+[23:43:48:048 +00:-1] [Thread 5384] Rcon: sendCommand: #lock
+[23:43:48:048 +00:-1] [Thread 5192] Rcon: sendCommand: SAY -1 Server restart in 5 minutes! Remember to sync your data. The server will be locked until restart.
+[23:47:33:487 +00:-1] [Thread 4828] Rcon: sendCommand: SAY -1 extDB2 Auto RCON: Server restart in 1 minute!
+[23:47:33:487 +00:-1] [Thread 5192] Rcon: sendCommand: SAY -1 extDB2 Auto RCON: Server restart in 1 minute!
+[23:47:33:487 +00:-1] [Thread 5976] Rcon: sendCommand: SAY -1 extDB2 Auto RCON: Server restart in 1 minute!
+[23:47:33:745 +00:-1] [Thread 5976] Rcon: sendCommand: #kick 76561198058407953
+[23:47:34:009 +00:-1] [Thread 5384] Rcon: sendCommand: #kick 76561198153300223
+[23:47:34:262 +00:-1] [Thread 5976] Rcon: sendCommand: #kick 76561198105055100
+[23:47:34:519 +00:-1] [Thread 5384] Rcon: sendCommand: #kick 76561198064223194
+[23:47:34:790 +00:-1] [Thread 5384] Rcon: sendCommand: #kick 76561197971353050
+[23:47:35:056 +00:-1] [Thread 4828] Rcon: sendCommand: #kick 76561198146209541
+[23:47:35:303 +00:-1] [Thread 5384] Rcon: sendCommand: #kick 76561198182692634
+[23:48:20:606 +00:-1] [Thread 5976] Rcon: sendCommand: #shutdown
+[04:38:22:076 +00:-1] [Thread 5880] extDB2: SQL_RAW: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: Incorrect integer value: '[0.9,0.9,0.5]' for column 'color' at row 1	[mysql_stmt_errno]: 1366	[mysql_stmt_sqlstate]: HY000	[statemnt]: INSERT INTO vehicles (side, classname, type, pid, alive, active, inventory, color, plate) VALUES ('civ', 'Jonzie_Mini_Cooper_R_spec', 'Car', '76561198058407953', '1','1','"[]"', '[0.9,0.9,0.5]', '174742')
+[04:38:22:076 +00:-1] [Thread 5880] extDB2: SQL_RAW: Error StatementException: SQL: INSERT INTO vehicles (side, classname, type, pid, alive, active, inventory, color, plate) VALUES ('civ', 'Jonzie_Mini_Cooper_R_spec', 'Car', '76561198058407953', '1','1','"[]"', '[0.9,0.9,0.5]', '174742')
+[16:59:50:225 +00:-1] [Thread 4332] extDB2: Stopping ...
