@@ -526,7 +526,6 @@ PersonWhomMadeThisCorroded_Menu = PersonWhomMadeThisCorroded_Menu + [["RAPID FIR
 //PersonWhomMadeThisCorroded_Menu = PersonWhomMadeThisCorroded_Menu + [["NO RECOIL", "PersonWhomMadeThisCorroded_NoRecoil", "", false, false, true, "PersonWhomMadeThisCorroded_NoRecoil_TOGGLE"]];
 PersonWhomMadeThisCorroded_Menu = PersonWhomMadeThisCorroded_Menu + [["BIG BULLETS*", "PersonWhomMadeThisCorroded_BigBullets", "", false, false, true, "PersonWhomMadeThisCorroded_BigBullets_TOGGLE"]];
 PersonWhomMadeThisCorroded_Menu = PersonWhomMadeThisCorroded_Menu + [[">> GEAR EDITOR* <<", "PersonWhomMadeThisCorroded_GearsPloxBaePlox", "", false, false, false, ""]];
-PersonWhomMadeThisCorroded_Menu = PersonWhomMadeThisCorroded_Menu + [["^^ Spyglass Sees ^^", "", "", false, false, false, ""]];
 PersonWhomMadeThisCorroded_Menu = PersonWhomMadeThisCorroded_Menu + [["FLY*", "PersonWhomMadeThisCorroded_FLYING_plo0p", "", false, false, true, "PersonWhomMadeThisCorroded_plo0p_p0mpERS_TOGGLE"]];
 PersonWhomMadeThisCorroded_Menu = PersonWhomMadeThisCorroded_Menu + [["NO CLIP*", "PersonWhomMadeThisCorroded_CLIPPIN", "", false, false, true, "PersonWhomMadeThisCorroded_CLIPPIN_TOGGLE"]];
 PersonWhomMadeThisCorroded_Menu = PersonWhomMadeThisCorroded_Menu + [["INVISIBLE*", "PersonWhomMadeThisJrINukeReaper_Invisable", "", false, false, true, "CASECorroded_909093344343INV_TOGGLE"]];
