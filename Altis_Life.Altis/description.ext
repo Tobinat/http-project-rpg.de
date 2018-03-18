@@ -28,6 +28,74 @@ class CfgFunctions {
 
 class CfgSounds {
     sounds[] = {};
+	
+	
+	
+	class cgphone_static
+	{
+		name = "cgphone_static";
+		sound[] = {"\PhoneSounds\cgphone_static.ogg", 1.5, 1};
+		titles[] = {};
+	};
+
+	class cgphone_call
+	{
+		name = "cgphone_call";
+		sound[] = {"\PhoneSounds\cgphone_call.ogg", 1.5, 1};
+		titles[] = {};
+	};
+	class cgphone_hangup
+	{
+		name = "cgphone_hangup";
+		sound[] = {"\PhoneSounds\cgphone_hangup.ogg", 1.5, 1};
+		titles[] = {};
+	};
+	class cgphone_nodialtone
+	{
+		name = "cgphone_nodialtone";
+		sound[] = {"\PhoneSounds\cgphone_nodialtone.ogg", 1.5, 1};
+		titles[] = {};
+	};
+	class cgphone_noservice
+	{
+		name = "cgphone_noservice";
+		sound[] = {"\PhoneSounds\cgphone_noservice.ogg", 1.5, 1};
+		titles[] = {};
+	};
+
+	
+	
+	
+	class medicalintro
+	{
+		name = "medicalintro";
+		sound[] = {"\sounds\medicalintro.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class copintro
+	{
+		name = "copintro";
+		sound[] = {"\sounds\copintro.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class civintro
+	{
+		name = "civintro";
+		sound[] = {"\sounds\civintro.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     class sirenLong {
         name = "sirenLong";
         sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
