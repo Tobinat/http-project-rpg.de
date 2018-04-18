@@ -538,7 +538,7 @@ class EnterLicense {
 		};	
 		class PurchaseOption : HideButton {
 			idc = 9995;
-			text = "Purchase";
+			text = "Kaufen";
 			onButtonClick = "[] spawn client_fnc_processPlates";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.7 * safezoneH + safezoneY;
@@ -548,7 +548,7 @@ class EnterLicense {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;

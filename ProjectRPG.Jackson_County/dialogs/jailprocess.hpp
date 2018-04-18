@@ -66,7 +66,7 @@ class jailprocess {
 		class Reason : Client_RscEdit 
 		{
 			idc = 1111;
-			text = "Reason";
+			text = "Grund";
 			autocomplete = "";
 			sizeEx = 0.05;
 			x = 0.25; 
@@ -89,7 +89,7 @@ class jailprocess {
 
 		class HomeOption : hidebutton {
 			idc = 1115;
-			text = "Process";
+			text = "Abfertigen";
 			onButtonClick = "[] call client_fnc_processjail;";
 			x = 0.55;
 			y = 0.45;
