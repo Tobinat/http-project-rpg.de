@@ -1,5 +1,0 @@
-///'red_z.pbo' from Mikero's dos tools, dll version 5.66///
-prefix=red_z
-Pbo Type is: Arma Unknown pbo typ (no config).
-Sha: 'C02C0704138A972A44C00BA04013FE082B1FE9BC'
-//////</HEADER>//////
