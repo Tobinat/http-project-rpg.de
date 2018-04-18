@@ -79,7 +79,7 @@ class buycar {
 
 		class Saveranks : client_RscButtonMenu {
 			idc = 1115;
-			text = "Buy Car";
+			text = "Auto kaufen";
 			onButtonClick = "[] call client_fnc_carShopBuy;";
 			x = 0.85;
 			y = 0.95;
