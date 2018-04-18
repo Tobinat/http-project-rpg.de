@@ -7,7 +7,7 @@ class vehicle_colors {
 		class title: RscText
 		{
 			idc = -1;
-			text = "Zmiana koloru";
+			text = "Farbwechsel";
 			x = 0.298906 * safezoneW + safezoneX;
 			y = 0.2448 * safezoneH + safezoneY;
 			w = 0.350625 * safezoneW;
@@ -17,7 +17,7 @@ class vehicle_colors {
 		class title_finish: RscText
 		{
 			idc = -1;
-			text = "Wykończenie";
+			text = "Abschließen";
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.269 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
@@ -27,7 +27,7 @@ class vehicle_colors {
 		class title_lights: RscText
 		{
 			idc = -1;
-			text = "Światła";
+			text = "Lampen";
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.39 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
@@ -37,7 +37,7 @@ class vehicle_colors {
 		class title_windows: RscText
 		{
 			idc = -1;
-			text = "Przyciemnienie szyb";
+			text = "Glas toenung";
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.445 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
@@ -47,7 +47,7 @@ class vehicle_colors {
 		class title_rims: RscText
 		{
 			idc = -1;
-			text = "Kolor felg"; //--- ToDo: Localize;
+			text = "Felgenfarbe"; //--- ToDo: Localize;
 			x = 0.536094 * safezoneW + safezoneX;
 			y = 0.269 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
@@ -57,7 +57,7 @@ class vehicle_colors {
 		class title_color: RscText
 		{
 			idc = -1;
-			text = "Kolor";
+			text = "Farbe";
 			x = 0.298906 * safezoneW + safezoneX;
 			y = 0.269 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
@@ -67,7 +67,7 @@ class vehicle_colors {
 		class title_price: RscText
 		{
 			idc = 1001;
-			text = "Cena: $1000"; //--- ToDo: Localize;
+			text = "Preis: $1000"; //--- ToDo: Localize;
 			x = 0.298906 * safezoneW + safezoneX;
 			y = 0.4934 * safezoneH + safezoneY;
 			w = 0.201094 * safezoneW;
@@ -127,7 +127,7 @@ class vehicle_colors {
 		class button_confirm: client_RscButtonMenu
 		{
 			idc = 1601;
-			text = "Zatwierdź";
+			text = "Bestaetigen";
 			x = 0.505157 * safezoneW + safezoneX;
 			y = 0.4934 * safezoneH + safezoneY;
 			w = 0.0928125 * safezoneW;
@@ -138,7 +138,7 @@ class vehicle_colors {
 		class button_cancel: client_RscButtonMenu
 		{
 			idc = 1602;
-			text = "Anuluj"; //--- ToDo: Localize;
+			text = "Annulieren"; //--- ToDo: Localize;
 			x = 0.603125 * safezoneW + safezoneX;
 			y = 0.4934 * safezoneH + safezoneY;
 			w = 0.0464062 * safezoneW;

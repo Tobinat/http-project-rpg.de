@@ -44,7 +44,7 @@ class FindPlayer_Menu {
 
 		class HomeOption : client_RscButtonMenu {
 			idc = 1115;
-			text = "Select";
+			text = "Auswaehlen";
 			onButtonClick = "[] spawn client_fnc_chooseUser;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;
@@ -54,7 +54,7 @@ class FindPlayer_Menu {
 
 		class CraftOption : client_RscButtonMenu {
 			idc = 1116;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = -0.06 + (13.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;
@@ -89,7 +89,7 @@ class FindKeyPlayer_Menu {
 		class Title : client_RscTitle {
 
 			idc = 1112;
-			text = "Select player to give keys!";
+			text = "Waehle spieler um schluessel zum uebergeben!";
 			x = 0.05;
 			y = 0.05;
 			w = 0.6;
@@ -110,7 +110,7 @@ class FindKeyPlayer_Menu {
 
 		class HomeOption : client_RscButtonMenu {
 			idc = 1115;
-			text = "Select";
+			text = "Auswaehlen";
 			onButtonClick = "[] spawn client_fnc_chooseKeyUser;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;
@@ -120,7 +120,7 @@ class FindKeyPlayer_Menu {
 
 		class CraftOption : client_RscButtonMenu {
 			idc = 1116;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = -0.06 + (13.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;

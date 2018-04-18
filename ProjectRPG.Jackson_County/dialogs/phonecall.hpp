@@ -24,7 +24,7 @@ class phoneTapMenu {
 		class Title : client_RscTitle {
 
 			idc = 1112;
-			text = "Select player to tap into!";
+			text = "Spieler auswaehlen!";
 			x = 0.05;
 			y = 0.05;
 			w = 0.6;
@@ -45,7 +45,7 @@ class phoneTapMenu {
 
 		class HomeOption : client_RscButtonMenu {
 			idc = 1115;
-			text = "Select";
+			text = "Auswaelen";
 			onButtonClick = "[] spawn client_fnc_requestCurrentCall;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;
@@ -55,7 +55,7 @@ class phoneTapMenu {
 
 		class CraftOption : client_RscButtonMenu {
 			idc = 1116;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = -0.06 + (13.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;

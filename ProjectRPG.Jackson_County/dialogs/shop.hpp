@@ -145,7 +145,7 @@ class placefurniture {
 
 		class PurchaseOption : RSCButton {
 			idc = 9995;
-			text = "Accept";
+			text = "Akzeptieren";
 			onButtonClick = "[] call client_fnc_spawnfurniture;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -155,7 +155,7 @@ class placefurniture {
 
 		class CloseOption : RSCButton {
 			idc = 9996;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.511518 * safezoneW + safezoneX;
 			y = 0.706043 * safezoneH + safezoneY;
@@ -198,7 +198,7 @@ class rentshop {
 		class QuantityText : Client_RscEdit 
 		{
 			idc = 9339;
-			text = "ENTER SHOP NAME HERE";
+			text = "Ladenname";
 			autocomplete = "";
 			sizeEx = 0.030;
 			x = 0.353178 * safezoneW + safezoneX;
@@ -209,7 +209,7 @@ class rentshop {
 
 		class PurchaseOption : RSCButton {
 			idc = 9995;
-			text = "Accept";
+			text = "Akzeptieren";
 			onButtonClick = "[] call client_fnc_rentOffice;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -219,7 +219,7 @@ class rentshop {
 
 		class CloseOption : RSCButton {
 			idc = 9996;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.511518 * safezoneW + safezoneX;
 			y = 0.706043 * safezoneH + safezoneY;
@@ -274,7 +274,7 @@ class tax_Menu {
 
 		class PurchaseOption : RSCButton {
 			idc = 9995;
-			text = "Ustaw podatek";
+			text = "Steuern festlegen";
 			onButtonClick = "[] spawn client_fnc_settax;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -284,7 +284,7 @@ class tax_Menu {
 
 		class CloseOption : RSCButton {
 			idc = 9996;
-			text = "Zamknij";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.511518 * safezoneW + safezoneX;
 			y = 0.706043 * safezoneH + safezoneY;
@@ -386,7 +386,7 @@ class shop_update {
 
 		class PriceUpdateOption : HideButton {
 			idc = 9995;
-			text = "Ustaw cene";
+			text = "Preis festlegen";
 			onButtonClick = "[shopcontent,""update""] spawn client_fnc_updatePrices;"; 
 			x = 0.412136 * safezoneW + safezoneX;
 			y = 0.655309 * safezoneH + safezoneY;
@@ -409,7 +409,7 @@ class shop_update {
 
 		class ShopnameUpdateOption : HideButton {
 			idc = 8995;
-			text = "Zmien nazwe";
+			text = "Ladenname aendern";
 			onButtonClick = "[shopcontent,""nameupdate""] spawn client_fnc_updatePrices;"; 
 			x = 0.412136 * safezoneW + safezoneX;
 			y = 0.70991 * safezoneH + safezoneY;
@@ -419,7 +419,7 @@ class shop_update {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Zamknij";
+			text = "Schließen";
 			onButtonClick = "closedialog 0";
 			x = 0.317949 * safezoneW + safezoneX;
 			y = 0.654954 * safezoneH + safezoneY;
@@ -516,7 +516,7 @@ class Shop_Menu {
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
-			text = "Kup";
+			text = "Kaufen";
 			onButtonClick = "[] spawn client_fnc_purchase;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -526,7 +526,7 @@ class Shop_Menu {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Zamknij";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.511518 * safezoneW + safezoneX;
 			y = 0.706043 * safezoneH + safezoneY;
@@ -646,7 +646,7 @@ class GUN_Menu {
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
-			text = "Kup";
+			text = "Kaufen";
 			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -656,7 +656,7 @@ class GUN_Menu {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Zamknij";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
@@ -764,7 +764,7 @@ class Food_Menu {
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
-			text = "Kup";
+			text = "Kaufen";
 			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -774,7 +774,7 @@ class Food_Menu {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Zamknij";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.511518 * safezoneW + safezoneX;
 			y = 0.706043 * safezoneH + safezoneY;
@@ -874,7 +874,7 @@ class GeneralStore_Menu {
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
-			text = "Kup";
+			text = "Kaufen";
 			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -884,7 +884,7 @@ class GeneralStore_Menu {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Zamknij";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.511518 * safezoneW + safezoneX;
 			y = 0.706043 * safezoneH + safezoneY;
@@ -973,7 +973,7 @@ class RareFish_Menu {
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
-			text = "Kup";
+			text = "Kaufen";
 			onButtonClick = "[""fish""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -983,7 +983,7 @@ class RareFish_Menu {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
@@ -1072,7 +1072,7 @@ class Clothing_Menu {
 
 		class ClothingOption : HideButton {
 			idc = 9993;
-			text = "Clothing";
+			text = "Kleidung";
 			onButtonClick = "[""clothing""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -1082,7 +1082,7 @@ class Clothing_Menu {
 
 		class BackpackOption : HideButton {
 			idc = 9994;
-			text = "Backpack";
+			text = "Rucksack";
 			onButtonClick = "[""backpack""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
@@ -1092,7 +1092,7 @@ class Clothing_Menu {
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
-			text = "Kup";
+			text = "Kaufen";
 			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -1102,7 +1102,7 @@ class Clothing_Menu {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
@@ -1193,7 +1193,7 @@ class HairDresser_Menu {
 
 		class ClothingOption : HideButton {
 			idc = 9993;
-			text = "Glasses";
+			text = "Brillen";
 			onButtonClick = "[""Glasses""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -1203,7 +1203,7 @@ class HairDresser_Menu {
 
 		class BackpackOption : HideButton {
 			idc = 9994;
-			text = "Head";
+			text = "Kopfbedeckungen";
 			onButtonClick = "[""head""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
@@ -1213,7 +1213,7 @@ class HairDresser_Menu {
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
-			text = "Kup";
+			text = "Kaufen";
 			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -1223,7 +1223,7 @@ class HairDresser_Menu {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
@@ -1311,7 +1311,7 @@ class wallet_Menu {
 
 		class atmText : client_RscStructuredText {
 			idc = 9993;
-			text = "Loading Bank";
+			text = "Lade Bank";
 			sizeEx = 0.05;
 			x = 0.34 * safezoneW + safezoneX;
 			y = 0.652 * safezoneH + safezoneY;
@@ -1321,7 +1321,7 @@ class wallet_Menu {
 
 		class CashText : client_RscStructuredText {
 			idc = 9994;
-			text = "Loading Cash";
+			text = "Lade Bargeld";
 			sizeEx = 0.05;
 			x = 0.34 * safezoneW + safezoneX;
 			y = 0.695 * safezoneH + safezoneY;
@@ -1331,7 +1331,7 @@ class wallet_Menu {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;

@@ -58,7 +58,7 @@ class kruk_slpd_ticket_give {
 		};
 		class button_accept: client_RscButtonMenu {
 			idc = 1201;
-			text = "Wypisz"; //--- ToDo: Localize;
+			text = "Ticket geben"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 21 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
@@ -70,7 +70,7 @@ class kruk_slpd_ticket_give {
 			idc = 1202;
 		    sizeEx = 0.02921;
 			style = 2;
-			text = "Anuluj"; //--- ToDo: Localize;
+			text = "Schließen"; //--- ToDo: Localize;
 			x = 20 * GUI_GRID_W + GUI_GRID_X;
 			y = 21 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
@@ -81,7 +81,7 @@ class kruk_slpd_ticket_give {
 		class text_reason: RscText {
 			idc = -1;
 			style = 2;
-			text = "Powód"; //--- ToDo: Localize;
+			text = "Grund"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 11 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;
@@ -91,7 +91,7 @@ class kruk_slpd_ticket_give {
 		class text_points: RscText {
 			idc = -1;
 			style = 2;
-			text = "Punkty"; //--- ToDo: Localize;
+			text = "Punkte"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 7 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;
@@ -101,7 +101,7 @@ class kruk_slpd_ticket_give {
 		class text_amount: RscText {
 			idc = -1;
 			style = 2;
-			text = "Kwota"; //--- ToDo: Localize;
+			text = "Betrag"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;
@@ -110,7 +110,7 @@ class kruk_slpd_ticket_give {
 		};
 		class text_title: RscText {
 			idc = -1;
-			text = "Wystawianie mandatu"; //--- ToDo: Localize;
+			text = "Titel"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;
@@ -180,7 +180,7 @@ class kruk_slpd_ticket_receive {
 		class button_accept: client_RscButtonMenu {
 			idc = 1201;
 			style = 2;
-			text = "Podpisz"; //--- ToDo: Localize;
+			text = "Akzeptieren"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 21 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
@@ -192,7 +192,7 @@ class kruk_slpd_ticket_receive {
 			idc = 1202;
 		    sizeEx = 0.02921;
 			style = 2;
-			text = "Odrzuć"; //--- ToDo: Localize;
+			text = "Abweisen"; //--- ToDo: Localize;
 			x = 20 * GUI_GRID_W + GUI_GRID_X;
 			y = 21 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
@@ -203,7 +203,7 @@ class kruk_slpd_ticket_receive {
 		class text_reason: RscText {
 			idc = -1;
 			style = 2;
-			text = "Powód"; //--- ToDo: Localize;
+			text = "Grund"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 11 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;
@@ -213,7 +213,7 @@ class kruk_slpd_ticket_receive {
 		class text_points: RscText {
 			idc = -1;
 			style = 2;
-			text = "Punkty"; //--- ToDo: Localize;
+			text = "Punkte"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 7 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;
@@ -223,7 +223,7 @@ class kruk_slpd_ticket_receive {
 		class text_amount: RscText {
 			idc = -1;
 			style = 2;
-			text = "Kwota"; //--- ToDo: Localize;
+			text = "Betrag"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;
@@ -232,7 +232,7 @@ class kruk_slpd_ticket_receive {
 		};
 		class text_title: RscText {
 			idc = 1301;
-			text = "Wystawianie mandatu"; //--- ToDo: Localize;
+			text = "Titel"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;
