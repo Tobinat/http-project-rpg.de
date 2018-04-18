@@ -70,7 +70,11 @@ class job_update {
 		class JobList : client_RscListBox 
 		{
 			idc = 9001;
+<<<<<<< HEAD
 			text = "Verbinde mit dem Arbeitsamt..";
+=======
+			text = "Verbinde zum Job Center..";
+>>>>>>> 5e7e4946c9dbf906457dd173161c72961b98a2b7
 			sizeEx = 0.05;
 			x = 0.339114 * safezoneW + safezoneX;
 			y = 0.282244 * safezoneH + safezoneY;

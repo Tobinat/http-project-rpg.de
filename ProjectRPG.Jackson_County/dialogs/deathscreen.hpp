@@ -20,7 +20,7 @@ class DeathScreen
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-			text = "Respawn";
+			text = "Neues Leben";
 			onButtonClick = "closeDialog 0; [] call client_fnc_startFresh;";
 			colorBackground[] = {0, 0, 0, 1};
 			class Attributes 
@@ -37,7 +37,7 @@ class DeathScreen
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
 			onButtonClick = "[player] remoteExec [""server_fnc_requestMedic"",2]; _MedicBtn = ((findDisplay 7300) displayCtrl 7303); _MedicBtn ctrlEnable false; ";
-			text = "Request Medic";
+			text = "Rufe Sanitaeter";
 			colorBackground[] = {0, 0, 0, 1};
 			class Attributes 
 			{
@@ -50,7 +50,7 @@ class DeathScreen
 			idc = 7301;
 			type = 13;
 			style = 0;
-			text = "You are severely injured!";
+			text = "Du bist schwer verletzt!";
 			size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 			colorText[] = {1, 1, 1, 1.0};
 			class Attributes {

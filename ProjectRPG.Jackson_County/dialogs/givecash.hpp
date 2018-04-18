@@ -45,7 +45,7 @@ class giveCash
 
 class loanMenu {
 	idd = 9999;
-	name= "loanmenu";
+	name= "Kredit";
 	movingEnable = 0;
 	enableSimulation = 1;
 
@@ -142,7 +142,7 @@ class loanMenu {
 
 class LoanShark {
 	idd = 9999;
-	name= "LoanShark";
+	name= "Kredithai";
 	movingEnable = 0;
 	enableSimulation = 1;
 
@@ -239,7 +239,11 @@ class LoanShark {
 		class RscButton_1600: HideButton
 		{
 			idc = 1600;
+<<<<<<< HEAD
 			text = "Summe"; //--- ToDo: Localize;
+=======
+			text = "Waehle Betrag"; //--- ToDo: Localize;
+>>>>>>> 5e7e4946c9dbf906457dd173161c72961b98a2b7
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -293,7 +297,11 @@ class giveLoan
 		class RscText_1000: RscText
 		{
 			idc = 1000;
+<<<<<<< HEAD
 			text = "Summe"; //--- ToDo: Localize;
+=======
+			text = "Menge"; //--- ToDo: Localize;
+>>>>>>> 5e7e4946c9dbf906457dd173161c72961b98a2b7
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.34606 * safezoneH + safezoneY;
 			w = 0.09625 * safezoneW;
@@ -331,7 +339,11 @@ class giveLoan
 		class RscText_1002: RscText
 		{
 			idc = 1002;
+<<<<<<< HEAD
 			text = "Rueckzahldatum"; //--- ToDo: Localize;
+=======
+			text = "Datum bis"; //--- ToDo: Localize;
+>>>>>>> 5e7e4946c9dbf906457dd173161c72961b98a2b7
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.54606 * safezoneH + safezoneY;
 			w = 0.09625 * safezoneW;
