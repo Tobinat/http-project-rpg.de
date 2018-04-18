@@ -2,9 +2,10 @@ enableDebugConsole = 1;
 
 respawn = "BASE";
 disabledAI = 1;
-author = "STANLAKESIDE.PL Developers";
-onLoadName = "Silverlake by StanLakeside.pl";
-onLoadMission = "Powered on NoPixel Mod by Koil";
+author = "Tonic | Edited by PRPG.de";
+onLoadName = "Project-RPG v0.0";
+onLoadMission = "Webseite: http://project-rpg.de";
+onLoadIntro = "PRPG Life ist am laden...";
 loadScreen =  "sl_client\textures\loading\load.paa";
 respawndelay = 1;
 
