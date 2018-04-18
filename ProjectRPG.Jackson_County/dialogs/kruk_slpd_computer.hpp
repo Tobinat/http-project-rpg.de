@@ -340,7 +340,7 @@ class kruk_slpd_casefile {
 			idc = 1201;
 		    sizeEx = 0.02921;
 			colorBackground[] = {0.325,0.906,0.235,0.5};
-			text = "Hinzufügen"; //--- ToDo: Localize;
+			text = "Hinzufuegen"; //--- ToDo: Localize;
 			x = 33.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
@@ -373,7 +373,7 @@ class kruk_slpd_casefile {
 			idc = 1204;
 		    sizeEx = 0.02921;
 			colorBackground[] = {0.325,0.906,0.235,0.5};
-			text = "Hinzufügen"; //--- ToDo: Localize;
+			text = "Hinzufuegen"; //--- ToDo: Localize;
 			x = 12 * GUI_GRID_W + GUI_GRID_X;
 			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
