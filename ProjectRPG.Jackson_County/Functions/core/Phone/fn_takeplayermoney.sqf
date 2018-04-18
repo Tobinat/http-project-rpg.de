@@ -1,0 +1,1 @@
+[player] remoteexec ["client_fnc_returnwallet",currentcursortarget];
