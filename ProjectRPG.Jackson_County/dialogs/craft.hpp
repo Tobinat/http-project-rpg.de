@@ -6,20 +6,20 @@ class FindPlayer_Menu {
 	onLoad = "[] spawn client_fnc_findPlayers;";
 
 	class controlsBackground {
-	
+
 		class MainBackground: client_RscText {
 			colorBackground[] = {0.1058823529411765,0.1058823529411765,0.1058823529411765,0.8};
 			idc = -1;
-			x = 0.05; 
+			x = 0.05;
 			y = 0.05;
-			w = 0.50; 
+			w = 0.50;
 			h = 0.6;
 		};
 	};
 
 
 	class controls {
-		
+
 		class Title : client_RscTitle {
 
 			idc = 1112;
@@ -29,16 +29,16 @@ class FindPlayer_Menu {
 			w = 0.6;
 			h = (1 / 25);
 		};
-		
 
-		class CraftList : client_RscListBox 
+
+		class CraftList : client_RscListBox
 		{
 			idc = 1113;
 			text = "";
 			sizeEx = 0.05;
-			x = 0.10; 
+			x = 0.10;
 			y = 0.10;
-			w = 0.25; 
+			w = 0.25;
 			h = 0.5;
 		};
 
@@ -50,7 +50,7 @@ class FindPlayer_Menu {
 			y = 0.65;
 			w = (6.25 / 40);
 			h = (1 / 25);
-		};	
+		};
 
 		class CraftOption : client_RscButtonMenu {
 			idc = 1116;
@@ -60,7 +60,7 @@ class FindPlayer_Menu {
 			y = 0.65;
 			w = (6.25 / 40);
 			h = (1 / 25);
-		};	
+		};
 	};
 };
 
@@ -72,43 +72,40 @@ class FindKeyPlayer_Menu {
 	onLoad = "";
 
 	class controlsBackground {
-	
+
 		class MainBackground: client_RscText {
 			colorBackground[] = {0.1058823529411765,0.1058823529411765,0.1058823529411765,0.8};
 			idc = -1;
-			x = 0.05; 
+			x = 0.05;
 			y = 0.05;
-			w = 0.50; 
+			w = 0.50;
 			h = 0.6;
 		};
 	};
 
 
 	class controls {
-		
+
 		class Title : client_RscTitle {
 
 			idc = 1112;
-<<<<<<< HEAD
 			text = "Waehle spieler um schluessel zum uebergeben!";
-=======
 			text = "Waehle Person die den Schluessel kriegen soll!";
->>>>>>> 5e7e4946c9dbf906457dd173161c72961b98a2b7
 			x = 0.05;
 			y = 0.05;
 			w = 0.6;
 			h = (1 / 25);
 		};
-		
 
-		class CraftList : client_RscListBox 
+
+		class CraftList : client_RscListBox
 		{
 			idc = 1113;
 			text = "";
 			sizeEx = 0.05;
-			x = 0.10; 
+			x = 0.10;
 			y = 0.10;
-			w = 0.25; 
+			w = 0.25;
 			h = 0.5;
 		};
 
@@ -120,7 +117,7 @@ class FindKeyPlayer_Menu {
 			y = 0.65;
 			w = (6.25 / 40);
 			h = (1 / 25);
-		};	
+		};
 
 		class CraftOption : client_RscButtonMenu {
 			idc = 1116;
@@ -130,7 +127,7 @@ class FindKeyPlayer_Menu {
 			y = 0.65;
 			w = (6.25 / 40);
 			h = (1 / 25);
-		};	
+		};
 	};
 };
 
@@ -140,12 +137,12 @@ class client_Craft_Menu {
 	movingEnable = 0;
 	enableSimulation = 1;
 	onLoad = "[""FRESH""] spawn client_fnc_craftMenu;";
-	
+
 	class controls {
-		
+
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -162,7 +159,7 @@ class client_Craft_Menu {
 			y = 0.0996764 * safezoneH + safezoneY;
 			w = 0.455142 * safezoneW;
 			h = 0.791843 * safezoneH;
-		};  
+		};
 
 
 		class HideButton
@@ -199,7 +196,7 @@ class client_Craft_Menu {
 		    borderSize = 0.01;
 		};
 
-		
+
 		class SelectInformation
 		{
 			idc = 1110;
@@ -218,7 +215,7 @@ class client_Craft_Menu {
 			h = 0.380581 * safezoneH;
 		};
 
-		class CraftList : client_RscListBox 
+		class CraftList : client_RscListBox
 		{
 			idc = 1113;
 			text = "";
@@ -237,7 +234,7 @@ class client_Craft_Menu {
 			y = 0.65 * safezoneH + safezoneY;
 			w = 0.03 * safezoneW;
 			h = 0.038 * safezoneH;
-		};	
+		};
 
 		class ProcessOption : HideButton {
 			idc = 1117;
@@ -257,7 +254,7 @@ class client_Craft_Menu {
 			y = 0.700203 * safezoneH + safezoneY;
 			w = 0.0899698 * safezoneW;
 			h = 0.0483904 * safezoneH;
-		};	
+		};
 
 		class MagOption : HideButton {
 			idc = 1118;
@@ -267,7 +264,7 @@ class client_Craft_Menu {
 			y = 0.699443 * safezoneH + safezoneY;
 			w = 0.0899698 * safezoneW;
 			h = 0.0483904 * safezoneH;
-		};		
+		};
 
 		class CloseOption : HideButton {
 			idc = -1;
@@ -280,6 +277,3 @@ class client_Craft_Menu {
 		};
 	};
 };
-
-
-
