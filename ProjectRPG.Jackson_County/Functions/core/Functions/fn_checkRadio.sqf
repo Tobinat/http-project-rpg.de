@@ -1,7 +1,7 @@
 for "_i" from 0 to 1 step 0 do  {
 	uiSleep 20;
     if (myjob == "Cop" || myjob == "EMS" || myjob == "Fire" || myjob == "fbi") then {
-		
+
     }else{
 			_radios = player call TFAR_fnc_radiosList;
 			if(count _radios < 2) then {
@@ -10,7 +10,7 @@ for "_i" from 0 to 1 step 0 do  {
 					if(!([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio)) then {
 						[] call client_fnc_checkPhone;
 						[] call client_fnc_resetCallSpawn;
-						hint "Twoje radio zostalo zastapione telefonem";
+						hint "Dein Radio wurde durch ein Tablet ersetzt";
 					};
 				};
 
@@ -22,7 +22,7 @@ for "_i" from 0 to 1 step 0 do  {
 						_curfreqlr = [(call TFAR_fnc_activeLrRadio), _channel] call TFAR_fnc_GetChannelFrequency;
 						_curfreqlr = parseNumber _curfreqlr;
 						if( _curfreqlr > 33 && _curfreqlr < 34 ) then {
-							["33.1 - 33.9 to kodowane czestotliwosci.", false] spawn domsg;
+							["33.1 - 33.9 sind kodierte Frequenzen.", false] spawn domsg;
 							[(call TFAR_fnc_activeLrRadio), _channel, "40"] call TFAR_fnc_SetChannelFrequency;
 						};
 					};
@@ -36,7 +36,7 @@ for "_i" from 0 to 1 step 0 do  {
 					_curfreqsr = parseNumber _curfreqsr;
 					if(!isNil "_curfreqsr") then {
 						if( _curfreqsr > 33 && _curfreqsr < 34 ) then {
-							["33.1 - 33.9 to kodowane czestotliwosci.", false] spawn domsg;
+							["33.1 - 33.9 sind kodierte Frequenzen.", false] spawn domsg;
 							[(call TFAR_fnc_activeSwRadio), _channel, "40"] call TFAR_fnc_SetChannelFrequency;
 						};
 					};
@@ -44,7 +44,7 @@ for "_i" from 0 to 1 step 0 do  {
 			}
 			else
 			{
-				["Wyrzuc jedno radio lub telefon.", false] spawn domsg;
+				["Wirf ein Radio oder Telefon.", false] spawn domsg;
 				{
 					if(_forEachIndex != 0) then
 					{

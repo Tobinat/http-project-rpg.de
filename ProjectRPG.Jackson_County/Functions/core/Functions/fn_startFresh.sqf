@@ -34,8 +34,8 @@ player assignitem "cg_tabletd";
 
 closedialog 0;
 
-[] spawn { 
-	sleep 3; 
+[] spawn {
+	sleep 3;
 	im_dead = false;
 	imrestrained = false;
 	player setVariable ["sl_wallet_silverlake", 0, false];
@@ -55,5 +55,5 @@ closedialog 0;
 	player setVariable ["respawn", _respawn, false];
 	[_respawn,getplayeruid player] remoteExec ["server_fnc_syncRespawn",2];
 	[] spawn client_fnc_syncData;
-	[player,objNull,4,format ["%1 zrespawnił się",name player],"",""] remoteExec ["server_fnc_deathLog", 2];
+	[player,objNull,4,format ["%1 ist respawned.",name player],"",""] remoteExec ["server_fnc_deathLog", 2];
 };

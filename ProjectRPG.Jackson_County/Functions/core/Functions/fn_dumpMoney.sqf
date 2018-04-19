@@ -1,8 +1,8 @@
 if (myjob == "Cop" || myjob == "EMS" || myjob == "Fire") exitWith {};
-_class1 = ["kif_25k"];  
-_class2 = ["kif_100k"]; 
-_class3 = ["kif_50k"]; 
-_class4 = ["kif_10k"]; 
+_class1 = ["kif_25k"];
+_class2 = ["kif_100k"];
+_class3 = ["kif_50k"];
+_class4 = ["kif_10k"];
 _class5 = ["kif_5k"];
 _total = 0;
 _cashout = 0;
@@ -21,8 +21,8 @@ _cashout = 0;
 [_cashout] call Client_fnc_sl_addCash_secure;
 
 
-[player,objNull,7,format ["%1 wyprał %2", name player, _cashout],_cashout] remoteExec ["server_fnc_moneyLog", 2];
-["Sukces",format["Wyprałeś: $%1", _cashout],[0,255,0,1],""] call Client_fnc_showNotification;
+[player,objNull,7,format ["%1 hat %2 gewaschen", name player, _cashout],_cashout] remoteExec ["server_fnc_moneyLog", 2];
+["Erfolg",format["Summe: $%1", _cashout],[0,255,0,1],""] call Client_fnc_showNotification;
 [player, getunitloadout player, getPlayerUID player] remoteExec ["Server_fnc_invSave", 2];
 //[player,objNull,3,format ["%1 sprzedał NARKOTYKI w ilości %2 za %3 $", name player, _total, _cashout],_cashout, "NARKOTYKI", _total] remoteExec ["server_fnc_economyLog", 2];
 //hint format["Zarobiłeś $%1.",_cashout];

@@ -25,11 +25,11 @@ _POPTASK = uiNameSpace getVariable ["RSC_dotask",displayNull];
 _POPUP = _POPTASK displayCtrl 9119;
 _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
 
-if !(_sound isEqualTo 0) then { 
+if !(_sound isEqualTo 0) then {
 	playSound3D [_sound, player, false, getPosASL player, 8, 1, 45];
 };
 
-if (_distanceCheck isEqualTo 0) then { 
+if (_distanceCheck isEqualTo 0) then {
 	_distanceCheck = player;
 };
 
@@ -39,16 +39,16 @@ for "_i" from 0 to 1 step 0 do {
 	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
 	if(_timeLeft == 0) exitwith {};
 
-	if((getposATL player) distance (getposATL _distanceCheck) > 10) exitwith { _success = false; _error = "Movement Error"; };
-	if(!_success) exitwith {};		
-	if(ClientInterrupted) exitwith { _success = false; _error = "Client Interrupted"; };
-	if(DeadPlayer) exitwith { _success = false; _error = "Dead Player"; };	
+	if((getposATL player) distance (getposATL _distanceCheck) > 10) exitwith { _success = false; _error = "Positionsfehler"; };
+	if(!_success) exitwith {};
+	if(ClientInterrupted) exitwith { _success = false; _error = "Vom Kunden abgebrochen"; };
+	if(DeadPlayer) exitwith { _success = false; _error = "Spieler gestorben"; };	
 };
 
-if !(_animation isEqualTo 0) then { 
+if !(_animation isEqualTo 0) then {
 	player switchMove "";
 };
-	
+
 _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='1'>%2</t>",_task,_error];
 sleep 1;
 player say "slideout";

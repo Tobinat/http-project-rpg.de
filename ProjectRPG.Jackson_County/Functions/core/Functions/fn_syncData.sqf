@@ -12,6 +12,6 @@ _vestItems = vestItems player;
 player addVest vest player;
 {player addItemToVest _x} foreach _vestItems;
 
-hint "Pomyślnie zapisano!"; 
+hint "Daten sind erfolgreich in der Cloud gespeichert!";
 lastforcesync = time;
-[player,objNull,13,format ["%1 wykonał synchronizacje", name player],""] remoteExec ["server_fnc_actionLog", 2];
+[player,objNull,13,format ["%1 hat seine Daten gespeichert", name player],""] remoteExec ["server_fnc_actionLog", 2];

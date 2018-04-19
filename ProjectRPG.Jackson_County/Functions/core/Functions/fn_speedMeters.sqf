@@ -12,7 +12,7 @@ for "_i" from 0 to 1 step 0 do {
 			_wanted_level = 1;
 			_handle = false;
 			if((player distance (getMarkerPos "speed_cam_1")) < 30 || (player distance (getMarkerPos "speed_cam_2")) < 30 || (player distance (getMarkerPos "speed_cam_3")) < 30 || (player distance (getMarkerPos "speed_cam_4")) < 30) then {
-				_text = " w terenie zabudowanym";
+				_text = " in bebauten Gebieten";
 				if(_vel > 90 && _vel < 140) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
@@ -75,7 +75,7 @@ for "_i" from 0 to 1 step 0 do {
 				};
 			};
 			if((player distance (getMarkerPos "speed_cam_5")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_10")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30) then {
-				_text = " poza terenem zabudowanym.";
+				_text = " außerhalb bebauter Gebiete.";
 				if(_vel > 159 && _vel < 224) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
@@ -127,18 +127,18 @@ for "_i" from 0 to 1 step 0 do {
 				_vehName = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
 				_description = format["%1(%2)",_vehName,_color];
 				_uid_officer = "901";
-				_reason = format["Predkosc %1kmh%2",round(_vel),_text];
+				_reason = format["Geschwindigkeit %1kmh%2",round(_vel),_text];
 				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
 				["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
 
-				_message = format["Kierowco! Zostałeś złapany na przekroczeniu prędkości. Prosimy udaj się na komisariat i opłać swój mandat! %2 Zdjęcie pojazdu o numerze rejestracyjnym - %1", toUpper(_plate), _reason];
+				_message = format["Sie wurden erwischt, wie sie die erlaubte Hoechstgeschwindigkeit ueberschritten haben. Bitte begeben sie sich zu einer Polizeiinspektion und zahlen sie ein Strafgeld! %2 Fahrzeugfoto und mit Zulassungsnummer - %1", toUpper(_plate), _reason];
 
 				speedMeter_last_ticket = true;
 				[_message] spawn {
 					_message = _this select 0;
 					uiSleep 60;
-					["fotoradar",player,_message,"Wydział ruchu drogowego","[Mandat] Wydział ruchu drogowego"] remoteExec ["server_fnc_sendMail",2];
-					[_message,"[Mandat] Wydział ruchu drogowego","Wydział ruchu drogowego"] remoteExec ["client_fnc_sendMail",player];
+					["fotoradar",player,_message,"Verkehrsabteilung","[Strafzettel] Verkehrsabteilung"] remoteExec ["server_fnc_sendMail",2];
+					[_message,"[Strafzettel] Verkehrsabteilung","Verkehrsabteilung"] remoteExec ["client_fnc_sendMail",player];
 					speedMeter_last_ticket = false;
 				};
 			};
