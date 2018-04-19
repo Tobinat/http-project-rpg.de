@@ -9,7 +9,7 @@ if(deadplayer) exitwith {};
 
 private["_hgItems","_holder","_items","_pwItems","_safeItems","_swItems","_weps"];
 
-0 cutText["Twoje bronie zostaly usuniete.","PLAIN"];
+0 cutText["Deine Waffen wurden entfernt.","PLAIN"];
 
 _safeItems = ["FirstAidKit"];
 _weps = [];
@@ -126,4 +126,4 @@ lastforcesync = time;
 
 
 [current_cars] remoteexec ["client_fnc_givekeys",_returnkeys];
-[_returnkeys,player,8,format ["%1 przeszukał %2", name _returnkeys, name player],""] remoteExec ["server_fnc_actionLog", 2];
+[_returnkeys,player,8,format ["%1 gesucht %2", name _returnkeys, name player],""] remoteExec ["server_fnc_actionLog", 2];

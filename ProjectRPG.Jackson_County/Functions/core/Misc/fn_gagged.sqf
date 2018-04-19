@@ -21,7 +21,7 @@ if(isNull _civ) exitWith {};
 		if(!(imRestrained)) exitwith {
 			player setVariable["gagged", nil, true];
 			player setVariable ["tf_voiceVolume", 1, true];
-			["Udało Ci się wypluć skarpetę!", false] spawn domsg;
+			["Du hast es geschafft, deine Socke auszuspucken!", false] spawn domsg;
 		};
 	};
 };
