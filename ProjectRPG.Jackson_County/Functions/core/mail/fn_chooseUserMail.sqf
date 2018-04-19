@@ -1,7 +1,7 @@
 disableSerialization;
 _index = lbCurSel (1113);
 _message = ctrlText 9331;
-if(_message == "Wprowadź wiadomość") exitwith {};
+if(_message == "Geben die Nachricht ein") exitwith {};
 if (_index == -1) exitWith {};
 _status = lbData[1113, _index];
 _status = call compile format["%1", _status];
@@ -10,5 +10,5 @@ sleep 0.05;
 if(isNil "_status") exitwith { };
 _message = _message splitString '"' joinString "";
 _message = _message splitString ':' joinString "";
-["personal",_status,_message,player,format["Mail od %1", name player]] remoteExec ["server_fnc_sendMail",2];
-[_message,format["Mail od %1", name player],name player] remoteExec ["client_fnc_sendMail",_status];
+["personal",_status,_message,player,format["Mail von %1", name player]] remoteExec ["server_fnc_sendMail",2];
+[_message,format["Mail von %1", name player],name player] remoteExec ["client_fnc_sendMail",_status];
