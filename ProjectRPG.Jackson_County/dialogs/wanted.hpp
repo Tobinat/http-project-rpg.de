@@ -36,7 +36,7 @@ class yn_Menu {
 		class YESOption : RSCButton {
 
 			idc = 9995;
-			text = "YES";
+			text = "Ja";
 			onButtonClick = "closedialog 0; JuryDuty = true;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
@@ -48,7 +48,7 @@ class yn_Menu {
 		class noOption : RSCButton {
 
 			idc = 9996;
-			text = "NO";
+			text = "Nein";
 			onButtonClick = "closedialog 0; JuryDuty = false;";
 			x = 0.511518 * safezoneW + safezoneX;
 			y = 0.706043 * safezoneH + safezoneY;

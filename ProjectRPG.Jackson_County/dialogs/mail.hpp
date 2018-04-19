@@ -116,11 +116,7 @@ class client_findMail {
 		class MessageText : Client_RscEdit 
 		{
 			idc = 9331;
-<<<<<<< HEAD
 			text = "Schreibe eine Nachricht";
-=======
-			text = "Nachricht eingeben";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			autocomplete = "";
 			x = 0.447078 * safezoneW + safezoneX;
 			y = 0.288841 * safezoneH + safezoneY;
@@ -131,11 +127,7 @@ class client_findMail {
 
 		class sendOption : HideButton {
 			idc = 1115;
-<<<<<<< HEAD
 			text = "Senden";
-=======
-			text = "Absenden";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			onButtonClick = "[] spawn client_fnc_chooseUserMail;";
 			x = 0.401967 * safezoneW + safezoneX;
 			y = 0.703346 * safezoneH + safezoneY;
@@ -243,11 +235,7 @@ class openMail {
 			fadein=1;
 		  	fadeout=1;
 			font="PuristaLight";
-<<<<<<< HEAD
-			text = "Keine Mail gewaehlt!";
-=======
 			text = "Keine Nachricht ausgewaehlt!";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			size = 0.035;
 			sizeEx = 0.05;
 			x = 0.517817 * safezoneW + safezoneX;

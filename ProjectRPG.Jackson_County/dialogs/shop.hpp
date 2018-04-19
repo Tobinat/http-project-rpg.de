@@ -198,11 +198,7 @@ class rentshop {
 		class QuantityText : Client_RscEdit 
 		{
 			idc = 9339;
-<<<<<<< HEAD
-			text = "SCHREIBE SHOP NAMEN HIER";
-=======
 			text = "Ladenname";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			autocomplete = "";
 			sizeEx = 0.030;
 			x = 0.353178 * safezoneW + safezoneX;
@@ -413,11 +409,7 @@ class shop_update {
 
 		class ShopnameUpdateOption : HideButton {
 			idc = 8995;
-<<<<<<< HEAD
-			text = "Namen aendern";
-=======
 			text = "Ladenname aendern";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			onButtonClick = "[shopcontent,""nameupdate""] spawn client_fnc_updatePrices;"; 
 			x = 0.412136 * safezoneW + safezoneX;
 			y = 0.70991 * safezoneH + safezoneY;
@@ -1211,11 +1203,7 @@ class HairDresser_Menu {
 
 		class BackpackOption : HideButton {
 			idc = 9994;
-<<<<<<< HEAD
-			text = "Kopf";
-=======
 			text = "Kopfbedeckungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			onButtonClick = "[""head""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
@@ -1333,11 +1321,7 @@ class wallet_Menu {
 
 		class CashText : client_RscStructuredText {
 			idc = 9994;
-<<<<<<< HEAD
-			text = "Lade Geld";
-=======
 			text = "Lade Bargeld";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			sizeEx = 0.05;
 			x = 0.34 * safezoneW + safezoneX;
 			y = 0.695 * safezoneH + safezoneY;
