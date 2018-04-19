@@ -57,9 +57,9 @@ for "_i" from 0 to 1 step 0 do {
 
 		if(_markerNum == 15) then { _markerNum = 1;  };
 
-		if(_markerNum == 1) then { _laps = _laps + 1; _lapTime = _timer;  if(_laptime < _myfastest) then { _myfastest = _laptime; }; hint format["Twoje ostatnie okrążenie to: %1 sekund --- Najszybsze: %2",_laptime,_myfastest];  _timer = 0; };
+		if(_markerNum == 1) then { _laps = _laps + 1; _lapTime = _timer;  if(_laptime < _myfastest) then { _myfastest = _laptime; }; hint format["Letzte Runde: %1 Sek. --- schnellste: %2 Sek.",_laptime,_myfastest];  _timer = 0; };
 
-		if(_laps == 3) then { _finish = true; hint "Ukonczyłes sesje i otrzymales $100!"; [100] call Client_fnc_sl_addCash_secure; };
+		if(_laps == 3) then { _finish = true; hint "Rennen beendet und $100 erhalten!"; [100] call Client_fnc_sl_addCash_secure; };
 
 	};
 
@@ -69,12 +69,12 @@ for "_i" from 0 to 1 step 0 do {
 
 	_timer = _timer + 0.05;
 
-	if(_timer > 300) exitwith {}; 
-	if(player distance getmarkerpos _marker > 700) exitwith {}; 
+	if(_timer > 300) exitwith {};
+	if(player distance getmarkerpos _marker > 700) exitwith {};
 };
 
 
-hint format["Twoje najszybsze okrążenie: %1",_myfastest];
+hint format["Deine schnellste Runde: %1",_myfastest];
 
 _vehicle setVelocity [0, 0, 0];
 uisleep 0.5;
@@ -97,4 +97,4 @@ if(_servercheck) then {
 	[_myfastest,name player] remoteexec ["server_fnc_updatefastestRally",2];
 };
 
-diag_log format ["Czas: %1",rallyracetimes];
+diag_log format ["Zeit: %1",rallyracetimes];

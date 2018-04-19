@@ -54,9 +54,9 @@ for "_i" from 0 to 1 step 0 do {
 
 		if(_markerNum == 36) then { _markerNum = 1;  };
 
-		if(_markerNum == 1) then { _laps = _laps + 1; _lapTime = _timer;  if(_laptime < _myfastest) then { _myfastest = _laptime; }; hint format["Your last laptime was: %1 seconds --- fastest: %2",_laptime,_myfastest];  _timer = 0; };
+		if(_markerNum == 1) then { _laps = _laps + 1; _lapTime = _timer;  if(_laptime < _myfastest) then { _myfastest = _laptime; }; hint format["Letzte Runde: %1 Sek. --- schnellste: %2 Sek.",_laptime,_myfastest];  _timer = 0; };
 
-		if(_laps == 3) then { _finish = true; hint "Ukonczyles sesje i otrzymales $175!"; [175] call Client_fnc_sl_addCash_secure; };
+		if(_laps == 3) then { _finish = true; hint "Sie haben das Rennen beendet und erhalten $175!"; [175] call Client_fnc_sl_addCash_secure; };
 
 	};
 
@@ -71,7 +71,7 @@ for "_i" from 0 to 1 step 0 do {
 };
 
 
-hint format["Twoje najlepszy czas: %1",_myfastest];
+hint format["Beste Runde: %1",_myfastest];
 
 _vehicle setVelocity [0, 0, 0];
 uisleep 0.5;

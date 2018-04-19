@@ -2,7 +2,7 @@
 	Author: Kajetan "Kruk" Mruk
 	For: stanlakeside.pl
 	Date: 19.01.2017 (Non-retard Units)
-	
+
 	Params: none
 	Description: Function that get price from GUI and sets vehicle variable. TODO: attachTo car dealer building - it was not working correctly
 	Return: nothing
@@ -27,13 +27,13 @@ _pos = [
 	[6,[-26.5,-17,1.4], 130]
 ];
 
-if(_price <= 0) exitWith { ["Cena nie zgadza się!", true] spawn domsg; }; //Za mala cena
-if(count _carsInShop == count _pos) exitWith { ["W salonie nie ma miejsca!", true] spawn domsg; }; //Nie ma miejsca w salonie
+if(_price <= 0) exitWith { ["Preis stimmt nicht überein!", true] spawn domsg; }; //Za mala cena
+if(count _carsInShop == count _pos) exitWith { ["Kein Platz im Raum!", true] spawn domsg; }; //Nie ma miejsca w salonie
 if(isNull _veh) exitWith {}; //Nie ma takiego pojazdu
 if(!(_veh isKindOf "Car")) exitWith {}; //To nie jest samochod
 if(count _information isEqualTo 0) exitWith {}; //Coś jest nie tak
-if(player distance _shop > 40) exitWith { ["Jesteś za daleko!", true] spawn domsg; }; //Jestes za daleko
-if(_carowner != getPlayerUID player) exitWith { ["Nie jesteś właścicielem pojazdu!", true] spawn domsg; }; //To nie jest Twoj samochod
+if(player distance _shop > 40) exitWith { ["Du bist zu weit weg!", true] spawn domsg; }; //Jestes za daleko
+if(_carowner != getPlayerUID player) exitWith { ["Das ist nicht deine Karre!", true] spawn domsg; }; //To nie jest Twoj samochod
 
 
 _veh setVariable ["information",_information, true];
@@ -53,5 +53,5 @@ _shop setVariable ["CarsToBuy",_carsInShop,true];
 _veh setVariable ["vehPrice", _price, true];
 _className = typeOf _veh;
 _vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
-[player,5,format ["%1 ustawił cenę sprzedaży %2 na kwotę %3",name player,_vehicleName,_price],_price,_className,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
+[player,5,format ["%1 legen sie einen Verkaufspreis fuer das Fahrzeug %2 mit dem Wert %3 fest",name player,_vehicleName,_price],_price,_className,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
 closeDialog 0;

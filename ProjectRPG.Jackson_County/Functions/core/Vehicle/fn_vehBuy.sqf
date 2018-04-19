@@ -2,7 +2,7 @@
 	Author: Kajetan "Kruk" Mruk
 	For: stanlakeside.pl
 	Date: 19.01.2017 (Non-retard Units)
-	
+
 	Params: none
 	Description: Function that buys a vehicle and sends information to the server.
 	Return: nothing
@@ -14,11 +14,11 @@ _carsInShop = _shop getVariable ["CarsToBuy",[]];
 _cash = player getVariable ["sl_wallet_silverlake",0];
 
 _information = _veh getVariable ["information",[]];
-if((count _information) isEqualTo 0) exitWith { ["Nie można było kupić pojazdu.", false] spawn domsg; };
+if((count _information) isEqualTo 0) exitWith { ["Du kannst das Fahrzeug nicht kaufen.", false] spawn domsg; };
 if(_price <= 0) exitWith {}; //za mala cena
 if(count _carsInShop isEqualTo 0) exitWith {}; //Cos poszlo nie tak
 if(isNull _veh) exitWith {}; //Brak pojazdu
-if(_cash < _price) exitWith { ["Nie masz wystarczającej ilosci pieniędzy.", false] spawn domsg; }; //Nie masz pieniedzy
+if(_cash < _price) exitWith { ["Du hast zu wenig Geld dabei.", false] spawn domsg; }; //Nie masz pieniedzy
 [_price] call Client_fnc_sl_removeCash_secure;
 
 {
@@ -31,4 +31,4 @@ _shop setVariable ["CarsToBuy", _carsInShop, true];
 
 
 [_price, _veh, player] remoteExec ["Server_fnc_vehBuy",2];
-["Pojazd zostanie dostarczony do Twojego garażu.", false] spawn domsg;
+["Das Fahrzeug wird in deine Garage geliefert.", false] spawn domsg;
