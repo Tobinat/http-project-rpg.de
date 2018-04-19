@@ -115,7 +115,6 @@ class kruk_slpd_computer {
 		class button_search_case: client_RscButtonMenu {
 			idc = 1204;
 		    sizeEx = 0.02921;
-<<<<<<< HEAD
 			text = "Person Ueberpruefen"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 18.5 * GUI_GRID_H + GUI_GRID_Y;
