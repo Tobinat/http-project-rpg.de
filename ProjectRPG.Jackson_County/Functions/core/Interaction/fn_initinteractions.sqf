@@ -59,58 +59,58 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" ((lastforcesync + 300) < time) && client_canSync "],
-		["Sync Data (5min CD)", " [] spawn client_fnc_syncData; ",5]
+		["Daten Speichern", " [] spawn client_fnc_syncData; ",5]
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Sync Data", " [] spawn client_fnc_syncData; ",5]
+		["Daten Speichern", " [] spawn client_fnc_syncData; ",5]
 	],
 
 	[
 		[" alive cursorTarget && cursorTarget isKindOf ""Man"" "],
-		["Daj klucze", " [current_cars] remoteExec [""client_fnc_givekeys"",currentcursortarget]; ",5]
+		["Schluessel geben", " [current_cars] remoteExec [""client_fnc_givekeys"",currentcursortarget]; ",5]
 	],
 
 	[
 		["(licensearray select 0) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""] && player getVariable[""veh_points"",0] < 15"],
-		["Prawo jazdy 500$", "_cashcheck = [1,500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",1] call client_fnc_sustain; [500] call Client_fnc_sl_removeCash_secure; ",1]
+		["Fuehrerschein $500", "_cashcheck = [1,500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",1] call client_fnc_sustain; [500] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Land_buildingGunStore1"" && (licensearray select 1) == 0"],
-		["Licencja Broń 2500$", "_cashcheck = [1,2500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",2] call client_fnc_sustain; [2500] call Client_fnc_sl_removeCash_secure; ",1]
+		["Waffenschein $2500", "_cashcheck = [1,2500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",2] call client_fnc_sustain; [2500] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 
 
 	[
 		["(licensearray select 2) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Licencja Górnika 700$", "_cashcheck = [1,700] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",3] call client_fnc_sustain; [700] call Client_fnc_sl_removeCash_secure; ",1]
+		["Abbau Lizen $700", "_cashcheck = [1,700] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",3] call client_fnc_sustain; [700] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 
 	[
 		["(licensearray select 3) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Licencja Drwala", "[""Add"",""license"",4] call client_fnc_sustain;",1]
+		["Holzfaeller Lizenz", "[""Add"",""license"",4] call client_fnc_sustain;",1]
 	],
 
 	[
 		["(licensearray select 4) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Licencja Rybaka 400$", "_cashcheck = [1,400] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",5] call client_fnc_sustain; [400] call Client_fnc_sl_removeCash_secure; ",1]
+		["Fischerlizenz $400", "_cashcheck = [1,400] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",5] call client_fnc_sustain; [400] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 
 	[
 		["paintballing "],
-		["Odrodzenie", " paintballhit = true; hint ""Respawned"";",1]
+		["Respawnen", " paintballhit = true; hint ""Respawned"";",1]
 	],
 
 	[
 		["paintballing "],
-		["Uzupełnij kulki", " for ""_i"" from 1 to 3 do { player addItemToUniform ""140Rnd_PaintBall_blau""; }; ",1]
+		["Kugeln nehmen", " for ""_i"" from 1 to 3 do { player addItemToUniform ""140Rnd_PaintBall_blau""; }; ",1]
 	],
 
 	[
 		[" player distance [3370.36,1436.92,0.00147247] < 225 && !paintballing"],
-		["Start Paintball", " [player] remoteexec [""server_fnc_paintball"",2]; ",1]
+		["Starte Paintball", " [player] remoteexec [""server_fnc_paintball"",2]; ",1]
 	],
 
 	//[
@@ -135,22 +135,22 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" myJob == ""cop"" &&  client_aiad_actions == 2"],
-		["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
+		["Verwanzen", " [] spawn client_fnc_findTapped; ",1]
 	],
 
 	[
 		[" myJob == ""Cop"" && (count(nearestObjects [player,[""weaponholder""],3])>0) "],
-		["Konfiskuj", " [] spawn client_fnc_seizeObjects; ",1]
+		["Konfiszieren", " [] spawn client_fnc_seizeObjects; ",1]
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Konfiskuj", " [] spawn client_fnc_seizeObjects; ",1]
+		["Konfiszieren", " [] spawn client_fnc_seizeObjects; ",1]
 	],
 
 	[
 		[" isplayer currentcursortarget && myJob == ""Mafia"" && currentcursortarget distance player < 5"],
-		["Siku sik", " [currentcursortarget] spawn client_fnc_pee; ",1]
+		["Urinieren", " [currentcursortarget] spawn client_fnc_pee; ",1]
 	],
 
 //	[
@@ -188,150 +188,150 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Cop"" && (player distance getmarkerpos ""fbiHQ"" < 30 || player distance getmarkerpos ""policeHQ"" < 30) "],
-		["Szukaj pluskwy", " [currentcursortarget] spawn client_fnc_disTracking; ",1]
+		["Nach Wanzen SUchen", " [currentcursortarget] spawn client_fnc_disTracking; ",1]
 	],
 
 	[
 		[" player distance theDrill < 5"],
-		["Zabierz wiertło", " ['Pakowanie wiertła',30,client_fnc_takeDrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",1]
+		["Bohrer entfernen", " ['Packe bohrer ein',30,client_fnc_takeDrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",1]
 	],
 
 	[
 		[" player distance getmarkerpos ""rally_1"" < 80 "],
-		["Próba rajdowa", " [] spawn client_fnc_doRally; ",1]
+		["Rally starten", " [] spawn client_fnc_doRally; ",1]
 	],
 
 	[
 		[" player distance getmarkerpos ""formula1"" < 40 "],
-		["Wyścig", " [player] remoteexec [""server_fnc_raceenter"",2] ",1]
+		["F1 Rennen", " [player] remoteexec [""server_fnc_raceenter"",2] ",1]
 	],
 
 	[
 		[" player distance getmarkerpos ""formula1"" < 40 || player distance getmarkerpos ""rally_1"" < 80 "],
-		["Okrążenia", " createdialog ""racetimes""; ",1]
+		["Runden", " createdialog ""racetimes""; ",1]
 	],
 
 	[
 		[" !client_seatbelt && vehicle player != player "],
-		["Zapnij Pasy", "client_seatbelt = true;",1]
+		["Anschnallen", "client_seatbelt = true;",1]
 	],
 
 	[
 		[" client_seatbelt && vehicle player != player "],
-		["Odepnij Pasy", "client_seatbelt = false;",1]
+		["Abschnallen", "client_seatbelt = false;",1]
 	],
 // healing
 
 	[
 		["CurrentCursorTarget getVariable[""dead"",FALSE] && (count currentEMS < 0)"],
-		["Reanimuj", "['Reanimacja',125,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",1]
+		["Reanimieren", "['Reanimiere',125,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",1]
 	],
 
 	[
 		["CurrentCursorTarget getVariable[""dead"",FALSE] && (myjob == ""EMS"" || myJob == ""Fire"")"],
-		["Reanimuj", "['Reanimacja',15,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; paycheck = paycheck + 125;",1]
+		["Reanimieren", "['Reanimiere',15,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; paycheck = paycheck + 125;",1]
 	],
 
 	[
 		["(count currentEMS < 3) && !(myjob == ""EMS"")"],
-		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
+		["Behandeln", "[] spawn client_fnc_openHealMenu;",1]
 	],
 
 	[
 		["(myjob == ""EMS"" || myjob == ""Fire"")"],
-		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
+		["Behandeln", "[] spawn client_fnc_openHealMenu;",1]
 	],
 
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 3)"],
-		["Ulecz całkowicie", "[] spawn client_fnc_fullheal;",1]
+		["Goetterspritze", "[] spawn client_fnc_fullheal;",1]
 	],
 
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"""],
-		["Zmień płeć", " if(female) then {female = false; hint ""You are now male""; } else {female = true; hint ""You are now female""; }; [""NA"",""sex"",0] call client_fnc_sustain;",1]
+		["Geschlechtsverwandlung", " if(female) then {female = false; hint ""You are now male""; } else {female = true; hint ""You are now female""; }; [""NA"",""sex"",0] call client_fnc_sustain;",1]
 	],
 
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"""],
-		["Szukaj pluskwy", "['Szukanie pluskwy',60,client_fnc_disabletrackingme,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",1]
+		["Suche nach Wanzen", "['Szukanie pluskwy',60,client_fnc_disabletrackingme,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",1]
 	],
 
 	// vehicles
 
 	[
 		[" typeof cursorobject == ""Land_fs_feed_F"" "],
-		["Zatankuj", "[] spawn client_fnc_fillvehicle;",2]
+		["Tanken", "[] spawn client_fnc_fillvehicle;",2]
 	],
 
 	[
 		["count attachedObjects player > 0 && attachedcar"],
-		["Upuść pojazd", " [] spawn client_fnc_detach; ",2]
+		["Fahrzeug hinstellen", " [] spawn client_fnc_detach; ",2]
 	],
 
 	[
 		["currentcursortarget in current_cars || myjob IN [""Cop"",""Fire"",""EMS""] "],
-		["Wyciągnij graczy", " ['Wyciąganie graczy',10,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; ",2]
+		["Spieler aus dem Fahrzeug ziehen", " ['Wyciąganie graczy',10,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; ",2]
 	],
 
 	[
 		["(getpos player) distance [1055,3660,0.014] < 30"],
-		["Zezłomuj", "[""who cares"",0,CurrentCursorTarget,player] remoteExec [""Server_fnc_updateCarStatus"",2]; paycheck = paycheck + 500; hint ""Zezłomowano i doliczono do wypłaty"";",2]
+		["Verschrotten", "[""who cares"",0,CurrentCursorTarget,player] remoteExec [""Server_fnc_updateCarStatus"",2]; paycheck = paycheck + 500; hint ""Fahrzeug wurde verschrottet, das Geld wird gutgeschrieben."";",2]
 	],
 
 	[
 		["(myjob == ""Cop"" || myjob == ""Fire"") && currentcursortarget isKindOf ""Car"""],
-		["Schowaj($20)", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2];  paycheck = paycheck + 20; hint ""Odholowano i doliczono do wypłaty"";",2]
+		["Verschwinden lassen($20)", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2];  paycheck = paycheck + 20; hint ""Das Auto wurde von Aliens eingesammelt, der Lohn wird gutgeschrieben."";",2]
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Schowaj pojazd", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2];",2]
+		["Verschwinden lassen", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2];",2]
 	],
 
 	[
 		["myJob == ""Mafia"" && (getpos player) distance [1055,3660,0.014] < 20"],
-		["Sprzedaj pojazd", "['Sprzedawanie',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask;",2]
+		["Vahrzeug Verkaufen", "['Verschrotten',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask;",2]
 	],
 
 	[
 		["CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat' "],
-		["Napraw", "['Naprawianie',(30 - mav_ttm_var_repairToReduce),client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",2]
+		["Reperatur", "['Naprawianie',(30 - mav_ttm_var_repairToReduce),client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",2]
 	],
 
 	[
 		["(vehicle player) == player && CurrentCursorTarget in Current_Cars"],
-		["Użyj klucza", "[CurrentCursorTarget] call Client_fnc_useKey",2]
+		["Schluessel Benutzen", "[CurrentCursorTarget] call Client_fnc_useKey",2]
 	],
 
 	[
 		["(vehicle player) in Current_Cars"],
-		["Użyj klucza", "[vehicle player] call Client_fnc_useKey",2]
+		["Schluessel Benutzen", "[vehicle player] call Client_fnc_useKey",2]
 	],
 
 	[
 		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && currentcursortarget in current_cars "],
-		["Obróć", " currentcursortarget setpos (getposatl currentcursortarget) ",2]
+		["Drehen", " currentcursortarget setpos (getposatl currentcursortarget) ",2]
 	],
 
 	[
 		[" (CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Ship') && player distance currentcursortarget < 11 && currentcursortarget in current_cars "],
-		["Pchnij", "[] spawn Client_fnc_pushveh",2]
+		["Auto schubsen", "[] spawn Client_fnc_pushveh",2]
 	],
 
 	[
 		["CurrentCursorTarget in Current_Cars", "!imRestrained", "myhouse distance getpos player > 50"],
-		["Schowaj do garażu", "['Chowam pojazd do garażu ($10)',30, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",10] spawn client_fnc_dotask",2]
+		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',30, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",10] spawn client_fnc_dotask",2]
 	],
 
 	[
 		["CurrentCursorTarget in Current_Cars", "!imRestrained", "myhouse distance getpos player < 50"],
-		["Schowaj do garażu", "['Chowam pojazd do garażu',10, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
+		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',10, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Schowaj do garażu", "['Chowam pojazd do garażu',1, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
+		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',1, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 
@@ -339,60 +339,60 @@ NoPixel_InteractionMenuItems = [
 //furniture
 	[
 		["player distance getpos currentcursortarget < 20 && currentcursortarget IN mychairs "],
-		["Obróć o 180st.", " _dir = getdir currentcursortarget; currentcursortarget setdir (_dir + 180); " ,2]
+		["180 Grad drehen.", " _dir = getdir currentcursortarget; currentcursortarget setdir (_dir + 180); " ,2]
 	],
 
 	[
 		[" (player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) "],
-		["Usuń wszystkie meble", "  [0] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
+		["Alle Moebel entfernen", "  [0] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
 	],
 
 	[
 		["player distance getpos currentcursortarget < 20 && count attachedobjects player == 0 && currentcursortarget IN mychairs "],
-		["Usuń meble", " _pia = mychairs FIND currentcursortarget; mychairs DELETEAT _pia; deletevehicle currentcursortarget; ",2]
+		["Moebelstueck entfernen", " _pia = mychairs FIND currentcursortarget; mychairs DELETEAT _pia; deletevehicle currentcursortarget; ",2]
 	],
 
 	[
 		["player distance getpos currentcursortarget < 20 && count attachedobjects player == 0 && currentcursortarget IN mychairs "],
-		["Podnieś mebel", " fuckingcouch = currentcursortarget; fuckingcouch attachto [player,[0,1.8,2]]; attachedfurniture = true; ",2]
+		["Moebelstueck bewegen", " fuckingcouch = currentcursortarget; fuckingcouch attachto [player,[0,1.8,2]]; attachedfurniture = true; ",2]
 	],
 
 	[
 		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) && attachedfurniture "],
-		["Postaw", " [] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
+		["Platzieren", " [] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
 	],
 
 	[
 		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) && player distance getpos currentcursortarget < 20 && !attachedfurniture "],
-		["Wybierz mebel", " createdialog ""placefurniture"" ",2]
+		["Moebelstueck waehlen", " createdialog ""placefurniture"" ",2]
 	],
 
 
 	[
 		[" attachedbarrier "],
-		["Postaw barierkę", " [] spawn client_fnc_placebarrier; ",2]
+		["Barriere Platzieren", " [] spawn client_fnc_placebarrier; ",2]
 	],
 
 	[
 		["myjob == ""Cop"" || myjob ==""EMS"" || myjob == ""Fire"" "],
-		["Usuń najbliższą barierkę", "_destroy = nearestObjects [player, [""plp_up_BarrierTapePolice8m"",""plp_up_BarrierTapePolice4m"",""plp_up_BarrierTapePolice1m"",""plp_up_woodbarrierlongpolice"",""plp_up_WoodBarrierShortPoliceLightsOn""], 10]; deletevehicle (_destroy select 0); ",2]
+		["Barriereb entfernen", "_destroy = nearestObjects [player, [""plp_up_BarrierTapePolice8m"",""plp_up_BarrierTapePolice4m"",""plp_up_BarrierTapePolice1m"",""plp_up_woodbarrierlongpolice"",""plp_up_WoodBarrierShortPoliceLightsOn""], 10]; deletevehicle (_destroy select 0); ",2]
 	],
 
 	// player to player
 
 	[
 		["CurrentCursorTarget isKindOf 'Man' && myjob == ""Cop"""],
-		["Odbierz licencję", " ['Odbieranie',5,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
+		["Lizenz entziehen", " ['Entziehe',5,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
 		[" CurrentCursorTarget isKindOf 'Man'", "(myjob == ""Cop"" || myjob == ""EMS"")"],
-		["Weź dowód", " hint format[""Imię i nazwisko: %1\nPESEL: %2"",name currentcursortarget, getPlayerUID currentcursortarget]; ",2]
+		["Beweise sammeln", " hint format[""Vor- und Nachname: %1\nSozialversicherung: %2"",name currentcursortarget, getPlayerUID currentcursortarget]; ",2]
 	],
 
 	[
 		[" CurrentCursorTarget isKindOf 'Man'", "myjob == ""Cop"""],
-		["Aresztuj", "createdialog ""jailprocess""",2]
+		["Inhaftieren", "createdialog ""jailprocess""",2]
 	],
 
 	//[
@@ -402,12 +402,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(CurrentCursorTarget isKindOf 'Man') && !(myjob == ""Cop"" || myjob == ""Fire"" || myjob == ""EMS"") && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Zabierz pieniądze", " ['Zbieranie pieniędzy',10,client_fnc_takePlayerMoney,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""sl_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
+		["Geld Aufnehmen", " ['Sammle Geld',10,client_fnc_takePlayerMoney,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""sl_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
 		[" myJob == ""Cop""", "!imRestrained", "(!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man') && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Skuj", " ['Skuwanie',3,client_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Handschellen anlegen", " ['Lege Acht an',3,client_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	//[
@@ -417,12 +417,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" myJob == ""Cop""", "!imRestrained", "CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Rozkuj", " ['Rozkuwanie',5,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Entfesseln", " ['Entfessle',5,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
 		[" myJob != ""Cop""", "!imRestrained", "CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Rozkuj", " ['Rozkuwanie',60,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Entfesseln", " ['Entfessle',60,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	//[
@@ -447,7 +447,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" myJob == ""Cop"" &&  CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Wrzuć do auta", " ['Wrzucanie do auta',10,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["In das Auto setzen", " ['Wrzucanie do auta',10,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	//[
@@ -457,42 +457,42 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" myJob != ""Fire"" && myJob != ""EMS"" && CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Eskortuj", " ['Rozpoczynam eskortę',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Eskortieren", " ['Beginne Eskorte',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
 		[" (myJob == ""EMS"" || myjob == ""Fire"") && CurrentCursorTarget isKindOf 'Man'"],
-		["Eskortuj", " ['Rozpoczynam eskortę',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Eskortieren", " ['Beginne Eskorte',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
 		["adminInteractions>=2"],
-		["Eskortuj", " ['Rozpoczynam eskortę',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Eskortieren", " ['Beginne Eskorte',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
 		["count attachedObjects player > 0 && !attachedcar"],
-		["Puść", " ['Puszczam',5,client_fnc_detach,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Loslassen", " ['Loslassen',5,client_fnc_detach,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
 		["CurrentCursorTarget isKindOf 'Man' && bankrobber == 1"],
-		["Daj pieniądze", "[CurrentCursorTarget] call Client_fnc_sl_giveCash_secure",2]
+		["Geld geben", "[CurrentCursorTarget] call Client_fnc_sl_giveCash_secure",2]
 	],
 
 	[
 		["CurrentCursorTarget isKindOf 'Man' && (myjob == ""Mafia"" || myjob == ""Fire"" || myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Judge"" || myjob == ""Lawyer"" || myjob == ""Prosecutor"")"],
-		["Awansuj", "[CurrentCursorTarget] spawn client_fnc_promotionStart",2]
+		["Befoerdern", "[CurrentCursorTarget] spawn client_fnc_promotionStart",2]
 	],
 
 	[
 		[" myJob == ""Cop"" && CurrentCursorTarget isKindOf 'Man'"],
-		["Wypisz mandat", " createdialog ""kruk_slpd_ticket_give""; ",2]
+		["Strafzettel ausgeben", " createdialog ""kruk_slpd_ticket_give""; ",2]
 	],
 
 	[
 		[" myJob == ""Cop"" && CurrentCursorTarget isKindOf 'Man' && getpos player distance [5556.2,6291.29,0.00143433] < 100"],
-		["Aresztuj", " createdialog ""jailprocess"";",2]
+		["Inhaftieren", " createdialog ""jailprocess"";",2]
 	],
 
 
@@ -503,7 +503,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance myshop < 3"],
-		["Wyposażenie sklepu", "[""shop""] spawn client_fnc_retreiveCargo;",3]
+		["Ladeninventar", "[""shop""] spawn client_fnc_retreiveCargo;",3]
 	],
 
 	/*[
@@ -513,122 +513,122 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance myshop < 3"],
-		["Ceny", "[shopcontent,""start""] call client_fnc_updatePrices;",3]
+		["Preise", "[shopcontent,""start""] call client_fnc_updatePrices;",3]
 	],
 
 	[
 		["(typeof CurrentCursorTarget) IN [""Land_buildingCommercial1"",""Land_buildingCommercial2""]"],
-		["Przeglądaj sklep", "[typeof CurrentCursorTarget,player] remoteExec [""server_fnc_retreiveStoreShopper"",2]",3]
+		["Laden durchsuchen", "[typeof CurrentCursorTarget,player] remoteExec [""server_fnc_retreiveStoreShopper"",2]",3]
 	],
 
 	[
 		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget in weedPlantArray && player distance CurrentCursorTarget < 3"],
-		["Sprawdz roślinę", "[CurrentCursorTarget] call client_fnc_checkWeedPlant",3]
+		["Anlage ueberpruefen", "[CurrentCursorTarget] call client_fnc_checkWeedPlant",3]
 	],
 	[
 		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget getVariable [""growing"",false] && CurrentCursorTarget getVariable [""ready"",false] && player distance CurrentCursorTarget < 3"],
-		["Zetnij roślinę", "[CurrentCursorTarget] call client_fnc_cutDownWeedPlant",3]
+		["Pflanzen beschneiden", "[CurrentCursorTarget] call client_fnc_cutDownWeedPlant",3]
 	],
 
 	[
 		//["(player distance myshop < 3) && ("""" != player getvariable ""shop"");"],
 		["(player distance myshop < 3)  && (sklepotw == 1)"],
-		["Zamknij Sklep", "[player] call client_fnc_closeshop;",3]
+		["Laden schließen", "[player] call client_fnc_closeshop;",3]
 	],
 
 	[
 		["typeof currentcursortarget == ""Land_buildingApartments2A"" && player distance getpos currentcursortarget < 20"],
-		["Wynajmij biuro ($250)", " createdialog ""rentshop""",3]
+		["Buero Mieten ($250)", " createdialog ""rentshop""",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Land_buildingBarbers1"""],
-		["Fryzjer", "closedialog 0; createdialog ""HairDresser_Menu""; [""Glasses""] spawn client_fnc_loadStore;",3]
+		["Friseur", "closedialog 0; createdialog ""HairDresser_Menu""; [""Glasses""] spawn client_fnc_loadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget IN [""Land_ModernShowroom""]"],
-		["Salon samochodowy", "createdialog ""buycar"";",3]
+		["Autohaus", "createdialog ""buycar"";",3]
 	],
 
 	[
 		["player distance myhouse < 10 || typeof CurrentCursorTarget IN [""Land_PostB""]"],
-		["Sprawdź mail'a", "[] spawn client_fnc_openMail",3]
+		["Postfach ueberpruefen", "[] spawn client_fnc_openMail",3]
 	],
 
 	[
 		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 30 && cursorTarget in Current_Cars && cursorTarget getVariable[""vehPrice"",0] == 0"],
-		["Wystaw samochód", "createDialog ""vehSetPrice""",3]
+		["Auto verkaufen", "createDialog ""vehSetPrice""",3]
 	],
 
 	[
 		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 20 && currentCursorTarget in Current_Cars && (count (currentCursorTarget getVariable[""information"",[]]) != 0)"],
-		["Przemaluj pojazd", " [] spawn client_fnc_vehChangeColorMenu; ",3]
+		["Fahrzeug neu Lakieren", " [] spawn client_fnc_vehChangeColorMenu; ",3]
 	],
 
 	[
 		["cursorTarget getVariable[""vehPrice"",0] > 0 && cursorTarget in Current_Cars"],
-		["Usuń cenę", "cursorTarget setVariable[""vehPrice"",0,true]",3]
+		["Preis Loeschen", "cursorTarget setVariable[""vehPrice"",0,true]",3]
 	],
 
 	[
 		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 40 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0"],
-		["Sprawdz ofertę", "[cursorTarget] spawn client_fnc_vehGetInfo;",3]
+		["Angebot Ueberpruefen", "[cursorTarget] spawn client_fnc_vehGetInfo;",3]
 	],
 
 	[
 		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 40 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0 && !(cursorTarget in Current_Cars)"],
-		["Kup samochód", "[] spawn client_fnc_vehBuy",3]
+		["Auto Kaufen", "[] spawn client_fnc_vehBuy",3]
 	],
 
 
 	[
 		["str CurrentCursorTarget find ""mailboxnorth"" > -1"],
-		["Sprawdź pocztę", "createdialog ""client_findMail""",3]
+		["Postfach ueberpruefen", "createdialog ""client_findMail""",3]
 	],
 
 	[
 		["str CurrentCursorTarget find ""embarcadero"" > -1"],
-		["Sklep z łodziami", "createdialog ""buycar"";",3]
+		["Bootsladen", "createdialog ""buycar"";",3]
 	],
 
 	[
 		["(typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["Sklep z samolotami", "createdialog ""buycar"";",3]
+		["Flugzeughaendler", "createdialog ""buycar"";",3]
 	],
 
 	[
 		["currentcursortarget == fishTrader"],
-		["Skup rzadkich ryb", "closedialog 0; createdialog ""RareFish_Menu""; [""rarefish""] spawn client_fnc_LoadStore;",3]
+		["Ankauf seltener Fische", "closedialog 0; createdialog ""RareFish_Menu""; [""rarefish""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
 		["currentcursortarget == fishTrader"],
-		["Wymień rzadką skórę", "closedialog 0; [] spawn client_fnc_rarePelt;",3]
+		["Haut abziehen", "closedialog 0; [] spawn client_fnc_rarePelt;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_Coffee_DED_Coffee_01_F""]"],
-		["Sklep z ubraniami", "closedialog 0; createdialog ""Clothing_Menu""; [""clothing""] spawn client_fnc_LoadStore;",3]
+		["Kleidungsladen", "closedialog 0; createdialog ""Clothing_Menu""; [""clothing""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Land_buildingGunStore1"""],
-		["Sklep z bronią", "closedialog 0; createdialog ""gun_menu""; [""gunstore""] spawn client_fnc_LoadStore;",3]
+		["Waffenladen", "closedialog 0; createdialog ""gun_menu""; [""gunstore""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"""],
-		["Cukiernia", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn client_fnc_LoadStore;",3]
+		["Baeckerrei", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
-		["Pączkowe ubranka", "closedialog 0; createdialog ""Clothing_Menu""; [""doughnuts_general""] spawn client_fnc_LoadStore;",3]
+		["Arbeitskleidung", "closedialog 0; createdialog ""Clothing_Menu""; [""doughnuts_general""] spawn client_fnc_LoadStore;",3]
 	],
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
-		["Pączkowe bronie", "closedialog 0; createdialog ""gun_menu""; [""doughnuts_gun""] spawn client_fnc_LoadStore;",3]
+		["Waffenladen", "closedialog 0; createdialog ""gun_menu""; [""doughnuts_gun""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
@@ -653,103 +653,103 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Wielobranżowy", "closedialog 0; createdialog ""GeneralStore_Menu""; [""general""] spawn client_fnc_LoadStore;",3]
+		["Markt", "closedialog 0; createdialog ""GeneralStore_Menu""; [""general""] spawn client_fnc_LoadStore;",3]
 	],
 
 
 	[
 		["str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 && (getpos player) distance [1055,3660,0.014] < 20"],
-		["Parking policyjny", "[CurrentCursorTarget] call Client_fnc_openCarYard",3]
+		["Polizei Parkplatz", "[CurrentCursorTarget] call Client_fnc_openCarYard",3]
 	],
 
 	[
 		["str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""]"],
-		["Ulepsz pojazd", "[] spawn client_fnc_carupdate;",3]
+		["Fahrzeug Tunen", "[] spawn client_fnc_carupdate;",3]
 	],
 
 	[
 		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
-		["Otwórz garaż policyjny", "[] spawn client_fnc_openGaragePolice;",3]
+		["Polizeigarage", "[] spawn client_fnc_openGaragePolice;",3]
 	],
 
 	[
 		["client_aiad_actions > 0","myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
-		["Otwórz garaż AIAD", "[] spawn client_fnc_openGarageAIAD;",3]
+		["AIAD-Garage", "[] spawn client_fnc_openGarageAIAD;",3]
 	],
 
 	[
 		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingshospital1"""],
-		["Otwórz garaż EMS", "[] spawn client_fnc_openGarageEMS;",3]
+		["EMS-Garage", "[] spawn client_fnc_openGarageEMS;",3]
 	],
 
 	[
 		["myjob == ""Fire""", "typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["Otwórz garaż F.D.", "[] spawn client_fnc_openGarageEMS;",3]
+		["F.D.-Garage", "[] spawn client_fnc_openGarageEMS;",3]
 	],
 
 	[
 		["myJob == ""Mafia""", "player distance myhouse < 40 "],
-		["Otwórz garaż Mafii", "[] spawn client_fnc_openGarageMafia;",3]
+		["Mafiagarage", "[] spawn client_fnc_openGarageMafia;",3]
 	],
 
 	[
 		["myjob != ""Cop""", "myjob != ""EMS""", "myjob != ""Fire""", "myjob != ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
+		["Garage", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
 	],
 
 	[
 		["client_aiad_actions > 0","myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["Otwórz garaż AIAD", "[CurrentCursorTarget] call Client_fnc_openGarageAIAD",3]
+		["AIAD-Garage", "[CurrentCursorTarget] call Client_fnc_openGarageAIAD",3]
 	],
 
 	[
 		["myjob == ""EMS""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["Otwórz garaż EMS", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3]
+		["EMS-Garage", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3]
 	],
 
 	[
 		["myjob == ""Fire""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["Otwórz garaż F.D.", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3]
+		["F.D.-Garage", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3]
 	],
 
 	[
 		["myJob == ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["Otwórz garaż Mafii", "[CurrentCursorTarget] call Client_fnc_openGarageMafia",3]
+		["Mafiagarage", "[CurrentCursorTarget] call Client_fnc_openGarageMafia",3]
 	],
 
 	[
 		["myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["Otwórz garaż policyjny", "[CurrentCursorTarget] call Client_fnc_openGaragePolice",3]
+		["Polizeigarage", "[CurrentCursorTarget] call Client_fnc_openGaragePolice",3]
 	],
 
 	[
 		["adminInteractions>=2"],
-		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
+		["Garage", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
 	],
 
 	[
 		[" myJob == ""Mafia"" && (str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] ) "],
-		["Otwórz garaż firmy", "[] spawn client_fnc_opengaragepolice;",3]
+		["Firmengarage", "[] spawn client_fnc_opengaragepolice;",3]
 	],
 
 	[
 		["count attachedObjects player == 0 && !attachedcar && str CurrentCursorTarget find ""embarcadero"" > -1 && player distance currentcursortarget < 20"],
-		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
+		["Garage", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
 	],
 
 	[
 		["((player distance (getMarkerPos ""houseUpgrades"")) < 30)"],
-		["Ulepsz dom (50k)", "[] spawn client_fnc_UpgradeHouse",3]
+		["Haus verbessern (50k)", "[] spawn client_fnc_UpgradeHouse",3]
 	],
 
 	[
 		["typeof currentcursortarget == ""Land_Market_DED_Market_03_F"""],
-		["Wymień telefon", "closedialog 0; [] call client_fnc_checkPhone;",3]
+		["Telefon austauschen", "closedialog 0; [] call client_fnc_checkPhone;",3]
 	],
 
 	[
 		["typeof currentcursortarget == ""Land_Market_DED_Market_03_F"""],
-		["Naładuj telefon", "closedialog 0; [""add"",""battery"",200] call client_fnc_sustain;",3]
+		["Telefon aufladen", "closedialog 0; [""add"",""battery"",200] call client_fnc_sustain;",3]
 	],
 
 
@@ -757,27 +757,27 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (myjob == ""Cop"" || (player getvariable ""legal"") > 7) && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
-		["Komputer Policyjny", "createdialog ""kruk_slpd_computer"";",4]
+		["Polizeicomputer", "createdialog ""kruk_slpd_computer"";",4]
 	],
 
 	[
 		["(typeof CurrentCursorTarget IN [""Land_Centrelink"",""Land_CommonwealthBank"",""Land_Bank_DED_House_01_F""] || str CurrentCursorTarget find ""mcl_atm"" > -1) && myJob == ""Mafia"" && (player getVariable ""Mafia"") > 6 && bankrobber == 1"],
-		["Bank mafii", "[] call Client_fnc_openMafiaATM",4]
+		["Mafiabank", "[] call Client_fnc_openMafiaATM",4]
 	],
 
 	[
 		["(typeof CurrentCursorTarget IN [""Land_Centrelink"",""Land_CommonwealthBank"",""Land_Bank_DED_House_01_F""] || str CurrentCursorTarget find ""mcl_atm"" > -1) && bankrobber == 1"],
-		["Bankomat", "[] call Client_fnc_openATM",4]
+		["ATM", "[] call Client_fnc_openATM",4]
 	],
 
 	[
 		["adminInteractions>=2"],
-		["Bankomat", "[] call Client_fnc_openATM",4]
+		["ATM", "[] call Client_fnc_openATM",4]
 	],
 
 	[
 		["player distance myhouse < 10"],
-		["Otwórz wyposażenie domu", "[""house""] spawn client_fnc_retreiveCargo;",4]
+		["Einrichtungsgegenstaende oeffnen", "[""house""] spawn client_fnc_retreiveCargo;",4]
 	],
 
 //	[
@@ -787,27 +787,27 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["typeof currentcursortarget == ""Land_buildingscourthouse1"" && (myjob == ""Cop"" || myjob == ""Judge"")"],
-		["Zwołaj Jury", "  [] spawn client_fnc_startJury; ",4]
+		["Jury einberufen", "  [] spawn client_fnc_startJury; ",4]
 	],
 
 	[
 		["(str CurrentCursorTarget find ""gymbench"" > -1 || str CurrentCursorTarget find ""gymrack"" > -1)"],
-		["Ćwicz", "[""Na rozgrzewkę są podskoki, skłony w dół i na boki!"",60,client_fnc_workout,player,'AmovPercMstpSnonWnonDnon_exercisekneeBendA',player,0] spawn client_fnc_dotask; ",4]
+		["Trainieren", "[""Hart am arbeiten!"",60,client_fnc_workout,player,'AmovPercMstpSnonWnonDnon_exercisekneeBendA',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[
 		["Mayor && player distance myhouse < 25"],
-		["Załóż strój burmistrza", "[150] call Client_fnc_sl_removeBank_secure; player forceAddUniform ""vvv_traje_ejecutivo_1"";",4]
+		["Buergermeisterkleidung anlegen", "[150] call Client_fnc_sl_removeBank_secure; player forceAddUniform ""vvv_traje_ejecutivo_1"";",4]
 	],
 
 	[
 		["Mayor && player distance myhouse < 25"],
-		["Ustaw podatki", "createdialog ""tax_menu"";",4]
+		["Steuern festlegen", "createdialog ""tax_menu"";",4]
 	],
 
 	[
 		["clientarrested"],
-		["Długo jeszcze?", "hint format[""Pozostało %1 miesięcy"",secondsLeft];",4]
+		["Wie lange denn noch?!", "hint format[""Noch %1 Monate"",secondsLeft];",4]
 	],
 
 
@@ -823,12 +823,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && (myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Fire"")"],
-		["Poziom ‰ krwi", " [currentcursortarget] spawn client_fnc_testIntox; ",4]
+		["Alkoholtest", " [currentcursortarget] spawn client_fnc_testIntox; ",4]
 	],
 
 	[
 		[""],
-		["Portfel", "createdialog ""wallet_Menu""",4]
+		["Brieftasche", "createdialog ""wallet_Menu""",4]
 	],
 
 	[
@@ -838,18 +838,18 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["str CurrentCursorTarget find ""cabinatelefonica"" > -1 && !callInProgress && !PhonesRinging && !TryingCall"],
-		["Anonimowy telefon", "[] spawn client_fnc_callMenuPP; ",4]
+		["Anonymes telefon", "[] spawn client_fnc_callMenuPP; ",4]
 	],
 
 	[
 		["adminInteractions>=2"],
-		["Anonimowy telefon", "[] spawn client_fnc_callMenuPP; ",4]
+		["Anonymes telefon", "[] spawn client_fnc_callMenuPP; ",4]
 	],
 
 
 	[
 		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30"],
-		["Craft Menu", "createdialog ""client_Craft_Menu""",4]
+		["Handwerksmenue", "createdialog ""client_Craft_Menu""",4]
 	],
 
 	//[
@@ -859,57 +859,57 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
-		["Zbierz dowody", "[""Zbieram dowody"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+		["Beweise Sammeln", "[""Sammle Beweise"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 	[
 		["CurrentCursorTarget != objNull && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
-		["Zniszcz dowody", "[""Niszcze dowody"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+		["Beweise zerstoeren", "[""Zerstoere Beweise"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[
 		["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
-		["Zapis medyczna centrala", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
+		["Notrufzentrale", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		[" myjob == ""Cop"" && !dispatch && (player getvariable ""cop"") > 0 "],
-		["Zapis policyjna centrala", "[player,""Police Dispatch""] spawn client_fnc_jobstart;",4]
+		["Notrufzentrale", "[player,""Police Dispatch""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""EMS"" && !dispatch && (player getvariable ""ems"") > 0 "],
-		["Zapis medyczna centrala", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
+		["Notrufzentrale", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["dispatch"],
-		["Wypis z centrali", "[player] remoteExec [""server_fnc_quitDispatch"",2]; dispatch = false;",4]
+		["Notrufzentrale verlassen", "[player] remoteExec [""server_fnc_quitDispatch"",2]; dispatch = false;",4]
 		//["Dispatch Sign-Off", "Dispatch = false",4]
 	],
 
 	[
 		["myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["Skończ służbę", "[] call client_fnc_jobEnd",4]
+		["Dienst beenden", "[] call client_fnc_jobEnd",4]
 	],
 
 	[
 		[" myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-		["Skończ służbę", "[] call client_fnc_jobEnd",4]
+		["Dienst beenden", "[] call client_fnc_jobEnd",4]
 	],
 
 	[
 		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
-		["Skończ służbę", "[] call client_fnc_jobEnd",4]
+		["Dienst beenden", "[] call client_fnc_jobEnd",4]
 	],
 
 	[
 		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"")) || (myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"") || (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") || myJob == ""Mafia"" && player distance myhouse < 20 "],
-		["Podstawowy ekwipunek", "[""basic""] spawn client_fnc_setGear",4]
+		["Grundausstattung", "[""basic""] spawn client_fnc_setGear",4]
 	],
 
 	[
 		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"" || typeOF cursorTarget == ""sl_ford350_swat"" || typeOF cursorTarget == ""Abruzzi_LencoPD_01"")) && player getvariable ""cop"" > 6 "],
-		["Ekwipunek SERT", "[""riot""] spawn client_fnc_setGear",4]
+		["Austattung Sondereinsatzeinheit", "[""riot""] spawn client_fnc_setGear",4]
 	],
 
 	[
@@ -944,67 +944,67 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""cop"" > 10 "],
-		["MUNDURY PD", "[cursorobject] spawn client_fnc_policeClothes"]
+		["Kleiderkammer PD", "[cursorobject] spawn client_fnc_policeClothes"]
 	],
 
 	[
 		[" (myjob == ""EMS"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""ems"" > 1 "],
-		["Mundury EMS", "[cursorobject] spawn client_fnc_medicClothes"]
+		["Kleiderkammer EMS", "[cursorobject] spawn client_fnc_medicClothes"]
 	],
 
 	[
 		[" (myjob == ""Fire"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""Fire"" > 1 "],
-		["Mundury FD", "[cursorobject] spawn client_fnc_medicClothes"]
+		["Kleiderkammer FD", "[cursorobject] spawn client_fnc_medicClothes"]
 	],
 
 	[
 		[" myjob == ""none"" && (player getvariable ""cop"") > 0 && typeof cursorobject == ""Land_PoliceStation"""],
-		["Rozpocznij służbę", "[player,""Cop""] spawn client_fnc_jobstart;",4]
+		["Dienst beginnen", "[player,""Cop""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""Fire"") > 0 && typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["Rozpocznij służbę FD", "[player,""Fire""] spawn client_fnc_jobstart;",4]
+		["Dienst beginnen", "[player,""Fire""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""ems"") > 0 && (typeof cursorobject == ""Land_buildingshospital1"" || player distance getmarkerpos ""marker_30"" < 15 || player distance getmarkerpos ""marker_31"" < 15)"],
-		["Rozpocznij służbę EMS", "[player,""EMS""] spawn client_fnc_jobstart;",4]
+		["Dienst beginnen", "[player,""EMS""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
-		["Praca sędziego", "[player,""Judge""] spawn client_fnc_jobstart;",4]
+		["Als Richter Arbeiten", "[player,""Judge""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
-		["Praca prokuratora", "[player,""Prosecutor""] spawn client_fnc_jobstart;",4]
+		["Als Staatsanwalt Arbeiten", "[player,""Prosecutor""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""doughnuts"") > 0"],
-		["Przewoznik paczkow", "[player,""doughnuts""] spawn client_fnc_jobstart;",4]
+		["Karriere starten", "[player,""doughnuts""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""legal"") > 0"],
-		["Praca adwokata", "[player,""Lawyer""] spawn client_fnc_jobstart;",4]
+		["Als Anwalt Arbeiten", "[player,""Lawyer""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""Judge"" || myjob == ""Lawyer"" || myjob == ""Prosecutor"" "],
-		["Zakończ pracę", "[] call client_fnc_jobEnd",4]
+		["Dienst beenden", "[] call client_fnc_jobEnd",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""mafia"") > 0 && player distance myhouse < 30"],
-		["Rozpocznij działalność", "[player,""Mafia""] spawn client_fnc_jobstart;",4]
+		["Beginne mit den Mafia geschaeften", "[player,""Mafia""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""Mafia"""],
-		["Zakończ działalność", "[] call client_fnc_jobEnd",4]
+		["Geschaefte beenden", "[] call client_fnc_jobEnd",4]
 	],
 
 	//[
@@ -1014,7 +1014,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["((player distance (getMarkerPos ""sales"")) < 30)"],
-		["Sprzedaj surowce", "closedialog 0; [] spawn client_fnc_sellOre",4]
+		["Rohstoffe beenden", "closedialog 0; [] spawn client_fnc_sellOre",4]
 	],
 
 	//[
@@ -1024,7 +1024,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["((player distance (getMarkerPos ""fishRefinery"")) < 70) || typeof (vehicle player) IN [""vvv_NewYacht"",""POP_Speed_yatch""] "],
-		["Przetwórz ryby", "closedialog 0; [] spawn client_fnc_refineFish",4]
+		["Fisch Verarbeiten", "closedialog 0; [] spawn client_fnc_refineFish",4]
 	],
 
 	[
@@ -1034,62 +1034,62 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["((player distance (getMarkerPos ""logRefinery"")) < 30)"],
-		["Przetwórz drewno", "closedialog 0; [] spawn client_fnc_refineLogs",4]
+		["Holz verarbeiten", "closedialog 0; [] spawn client_fnc_refineLogs",4]
 	],
 
 	[
 		["((player distance (getMarkerPos ""oilRefinery"")) < 30)"],
-		["Przetwórz ropę", "closedialog 0; [] spawn client_fnc_refineoil;",4]
+		["Oel verarbeiten", "closedialog 0; [] spawn client_fnc_refineoil;",4]
 	],
 
 	[
 		["((player distance (getMarkerPos ""OreRefinery"")) < 30)"],
-		["Przetwórz rudę", "closedialog 0; [] spawn client_fnc_refinemetal1;",4]
+		["Erze verarbeiten", "closedialog 0; [] spawn client_fnc_refinemetal1;",4]
 	],
 
 	[
 		["ClientArrested && player distance [5616.14,6313.37,0.00143433] < 8"],
-		["Wytwórz narzędzie hakujące", "[""Wytwarzam narzędzie hakujące"",20,client_fnc_crafthackingdevice,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+		["Hacking-Tool Herstellen", "[""Erstelle Hacking-Tool"",20,client_fnc_crafthackingdevice,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[
 		["ClientArrested && (str CurrentCursorTarget find ""gymbench"" > -1 || str CurrentCursorTarget find ""gymrack""> -1 ) && getpos player distance [5644.19,6329.73,0.00143433] < 55"],
-		["Wytwórz wytrych", "[""Wytwarzam wytrych"",60,client_fnc_craftlockpick,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
+		["Stelle Dietrich her", "[""Baue Polenschluessel"",60,client_fnc_craftlockpick,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Rabbit_F"" && getdammage cursorobject == 1"],
-		["Oskóruj", "deletevehicle CurrentCursorTarget; player additem ""np_upelt""; hint ""You skinned the rabbit for its pelt!""",4]
+		["Haut abziehen", "deletevehicle CurrentCursorTarget; player additem ""np_upelt""; hint ""Du hast den Hasen gehauetet!""",4]
 	],
 
 	[
 		["((player distance (getMarkerPos ""fishSales"")) < 20)"],
-		["Sprzedaj ryby", "closedialog 0; [] spawn client_fnc_sellFish",4]
+		["Fische verkaufen", "closedialog 0; [] spawn client_fnc_sellFish",4]
 	],
 
 	[
 		["str CurrentCursorTarget find ""plp_cts_contshippinggreen"" > -1 && getpos player distance getpos currentcursortarget < 4"],
-		["Przeszukaj obiekt", "[""Szukam"",7,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Objekte suchen", "[""Szukam"",7,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
 	[
 		["myjob != ""none"" && (typeof CurrentCursorTarget IN [""Land_Centrelink""] || player distance myhouse < 20)"],
-		["Zakończ pracę", "[] spawn client_fnc_jobEnd;",4]
+		["Job beenden", "[] spawn client_fnc_jobEnd;",4]
 	],
 
 	[
 		["myjob != ""none"" && typeof CurrentCursorTarget IN [""Land_Centrelink""]"],
-		["Pojazd służbowy", "[] spawn client_fnc_spawnjobvehicle",4]
+		["Firmenwagen", "[] spawn client_fnc_spawnjobvehicle",4]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Land_Centrelink"""],
-		["Szukaj pracy", "[player] spawn client_fnc_startjob",4]
+		["Arbeitsamt", "[player] spawn client_fnc_startjob",4]
 	],
 
 	[
 		["myjob == ""Cop""", "cursorTarget isKindOf ""Car""", "(typeOf cursorTarget IN np_red_cars)"],
-		["Sprawdź rejestrację", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Tablica rejestracyjna"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
+		["Kenzeichen ueberpruefen", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Tablica rejestracyjna"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
 	],
 
 	[
@@ -1099,7 +1099,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["adminInteractions>=1"],
-		["Napraw obiekt", "[""Naprawiam obiekt"",1,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Objekt reparieren", "[""Naprawiam obiekt"",1,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
 	[
