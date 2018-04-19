@@ -373,11 +373,7 @@ class medicHUD
 		class ArmText: client_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 13;
-<<<<<<< HEAD
-			text = "Handverletzungen";
-=======
 			text = "Armverltzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.35;
 			w = 0.55; 
@@ -399,11 +395,7 @@ class medicHUD
 		class LegText: client_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 15;
-<<<<<<< HEAD
-			text = "Handverletzung";
-=======
 			text = "Beinverletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.45;
 			w = 0.55; 
