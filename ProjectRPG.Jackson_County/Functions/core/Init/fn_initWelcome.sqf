@@ -9,19 +9,17 @@
 _onScreenTime = 3;
 
 sleep 2; //Wait in seconds before the credits start after player is in-game
-_role1 = "Witaj w";
-_role1names = ["Stan Lakeside"];       //Add your texts here!
-_role2 = "Zawsze badź na TeamSpeaku";
-_role2names = ["178.217.189.51"];
-_role3 = "Zasady";
-_role3names = ["Przestrzegaj regulaminu dostepnego na forum"];
-_role4 = "Pozostań w postaci!";
-_role4names = ["Nie wychodź z postaci! Masz problem? Zgłos go!"];
-_role5 = "Pamiętaj!";
-_role5names = ["To co dzieje sie w grze - zostaje w grze!"];
-_role6 = "Pamiętaj!";
-_role6names = ["Życzymy miłej zabawy, odstresuj się i przestrzegaj zasad!"];
- 
+_role1 = "Willkommen bei";
+_role1names = ["PRPG"];       //Add your texts here!
+_role2 = "Kommt auf unseren Teamspeak";
+_role2names = ["ts.prpg.de"];
+_role3 = "Regeln";
+_role3names = ["Lesen sie Regelmaeßig die Regeln im Forum"];
+_role4 = "Bleib im Charakter!";
+_role4names = ["Verlasse nicht das RP!"];
+_role5 = "Merke!";
+_role5names = ["Was im Spiel passiert ist bleibt im Spiel!"];
+
 {
 sleep 2;
 _memberFunction = _x select 0;
@@ -47,6 +45,5 @@ sleep (_onScreenTime);
 [_role2, _role2names],
 [_role3, _role3names],
 [_role4, _role4names],
-[_role5, _role5names],
-[_role6, _role6names]
+[_role5, _role5names]
 ];

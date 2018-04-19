@@ -91,37 +91,27 @@ client_tran=0;
 weedPlantArray = [];
 adminInteractions = 0;
 /*
-	BAN HAMMER
+	Admin
 */
-							//downlad
-if (getplayerUID player IN ["76561198023332238"]) then { kif_admin=1; };
-							//danio				//farmer
-if (getplayerUID player IN ["76561198082441969","76561198131854921"]) then { kif_admin=2; };
-//							//raf				//teddy				//arthur
-if (getplayerUID player IN ["76561197982469013","76561198150573190","76561198028980508"]) then { kif_admin=3; };
-							//katekarin			//sid				//dzoka
-if (getplayerUID player IN ["76561198041834190","76561198061433788","76561197998091289"]) then { kif_admin=4; };
-							//kifkick			//dorian
-if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif_admin=5; };
+if (getplayerUID player IN [""]) then { kif_admin=1; };
+if (getplayerUID player IN ["",""]) then { kif_admin=2; };
+if (getplayerUID player IN ["","",""]) then { kif_admin=3; };
+if (getplayerUID player IN ["","",""]) then { kif_admin=4; };
+if (getplayerUID player IN ["",""]) then { kif_admin=5; };
 /*
-	AIAD
+	AIAD Sondereinheit???
 */
-							//Pablo	   		//Donald				Alanovski			//knox	   		    //easy	   			//katekarin	   		//wazka
-if (getplayerUID player IN ["76561198185455243","76561198023332238","76561198058274311","76561198030912509","76561198161472762","76561198041834190","76561198039045183"]) then { client_aiad_actions=1; };
-                            //Kenju			//Galaretka				//raf				//kifkick			//miathur			//kruk
-if (getplayerUID player IN ["76561198019277102","76561198013128581","76561197982469013","76561198201987250","76561198037419471","76561198015862132"]) then { client_aiad_actions=2; };
+if (getplayerUID player IN ["","","","","","",""]) then { client_aiad_actions=1; };
+if (getplayerUID player IN ["","","","","",""]) then { client_aiad_actions=2; };
 /*
 	TECZKA ALLOWED
 */
-							//kenju
-if (getplayerUID player IN ["76561198019277102"]) then { teczka_allowed=1; };
-							//galaretka				//raf				//kifkick			//dorian			//kruk
-if (getplayerUID player IN ["76561198013128581","76561197982469013","76561198201987250","76561198253273755","76561198015862132"]) then { teczka_allowed=2; };
+if (getplayerUID player IN [""]) then { teczka_allowed=1; };
+if (getplayerUID player IN ["","","","",""]) then { teczka_allowed=2; };
 /*
 	TRAN
 */
-							//wedkarz bogdan	//michael skocik	//kifkick
-if (getplayerUID player IN ["76561198084421746","76561198045378889","76561198201987250"]) then { client_tran=1; };
+if (getplayerUID player IN ["","",""]) then { client_tran=1; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "
