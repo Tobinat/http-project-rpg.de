@@ -9,14 +9,14 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 			_marker = createMarkerLocal [format["%1_NAMIERZONY_PRZESTĘPCA_BANK",name _x],visiblePosition _x];
 			_marker setMarkerColorLocal "ColorRed";
 			_marker setMarkerTypeLocal "hd_dot";
-			_marker setMarkerTextLocal "NAMIERZONY WŁAMYWACZ DO BANKU";
+			_marker setMarkerTextLocal "Stiller Alarm der Bank!;
 			_markers pushBack [_marker,_x];
 		};
 		if ( _x getVariable["pbsee",FALSE] ) then {
 			_marker = createMarkerLocal [format["%1_PANIC_BUTTON_CYWIL",name _x],visiblePosition _x];
 			_marker setMarkerColorLocal "ColorRed";
 			_marker setMarkerTypeLocal "hd_dot";
-			_marker setMarkerTextLocal "NAMIERZONY PANIC BUTTON";
+			_marker setMarkerTextLocal "PANIC!";
 			_markers pushBack [_marker,_x];
 		};
 
@@ -98,14 +98,14 @@ if(visibleMap && "kif_gps" in assignedItems player || visibleGPS) then {
 			_marker = createMarkerLocal [format["%1_NAMIERZONY_PRZESTĘPCA_BANK",name _x],visiblePosition _x];
 			_marker setMarkerColorLocal "ColorRed";
 			_marker setMarkerTypeLocal "hd_dot";
-			_marker setMarkerTextLocal "NAMIERZONY WŁAMYWACZ DO BANKU";
+			_marker setMarkerTextLocal "Stiller Alarm der Bank!";
 			_markers pushBack [_marker,_x];
 		};
 		if ( _x getVariable["pbsee",FALSE] ) then {
 			_marker = createMarkerLocal [format["%1_PANIC_BUTTON_CYWIL",name _x],visiblePosition _x];
 			_marker setMarkerColorLocal "ColorRed";
 			_marker setMarkerTypeLocal "hd_dot";
-			_marker setMarkerTextLocal "NAMIERZONY PANIC BUTTON";
+			_marker setMarkerTextLocal "PANIC!";
 			_markers pushBack [_marker,_x];
 		};
 

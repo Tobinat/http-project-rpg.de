@@ -9,4 +9,4 @@ do
         uiSleep 0.056;
 };
 _destroyed = _destroyed - 1;
-[format["Skonfiskowano %1 rzeczy.", _destroyed], false] spawn domsg;
+[format["%1 wurden Sichergestellt..", _destroyed], false] spawn domsg;
