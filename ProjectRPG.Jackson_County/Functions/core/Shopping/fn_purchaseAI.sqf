@@ -31,11 +31,11 @@ _error = false;
 
 if(_typebuy == "fish") then {
 	_rarefish = {_x IN ["Fish_Mackerel_7", "Fish_Tuna_7", "Fish_Trout_Rare", "Fish_Shark_Rare"]} count magazines player;
-	if(_rarefish < _totalprice) exitwith { hint "Zu wenig Fisch."; _error = true; };
+	if(_rarefish < _totalprice) exitwith { hint "Zu wenig Geld."; _error = true; };
 };
 if(_typebuy == "standard") then {
 	_cash = player getVariable "sl_wallet_silverlake";
-	if(_cash < _totalprice) exitwith { hint "Zu wenig Fisch."; _error = true; };
+	if(_cash < _totalprice) exitwith { hint "Zu wenig Geld."; _error = true; };
 };
 
 if(_error) exitwith {};
