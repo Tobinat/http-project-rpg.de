@@ -54,7 +54,7 @@ if(count _playerInfo != 0) then {
 		_ID = _x select 0;
 		_charges = _x select 5;
 		_wantedLevel = _x select 6;
-		_list_activeCases lbAdd format["ID: %1; Poziom: %3; Zarzuty: %2", _ID, _charges, _wantedlevel];
+		_list_activeCases lbAdd format["ID: %1; Straftaten: %3; Wanted Level: %2", _ID, _charges, _wantedlevel];
 		_list_activeCases lbSetdata [(lbSize _list_activeCases)-1,str(_x)];
 	} foreach _activeCases;
 
@@ -64,7 +64,7 @@ if(count _playerInfo != 0) then {
 		_ID = _x select 0;
 		_charges = _x select 5;
 		_wantedLevel = _x select 6;
-		_list_prevCases lbAdd format["ID: %1; Poziom: %3; Zarzuty: %2", _ID, _charges, _wantedlevel];
+		_list_prevCases lbAdd format["ID: %1; Straftaten: %3; Wanted Level: %2", _ID, _charges, _wantedlevel];
 		_list_prevCases lbSetdata [(lbSize _list_prevCases)-1,str(_x)];
 	} foreach _prevCases;
 
@@ -76,7 +76,7 @@ if(count _playerInfo != 0) then {
 		_color = _x select 2;
 		_color = getText(configFile >> "CfgIvoryTextures" >> _color >> "displayName");
 		_name = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
-		_list_vehicles lbAdd format["Rej: %1; Model: %2; Kol: %3", _plate, _name, _color];
+		_list_vehicles lbAdd format["Kennzeichen: %1; Model: %2; Farbe: %3", _plate, _name, _color];
 		_list_vehicles lbSetdata [(lbSize _list_vehicles)-1,str(_x)];
 	} foreach _vehicles;
 
@@ -88,21 +88,21 @@ if(count _playerInfo != 0) then {
 		_reason = _x select 5;
 		_amount = _x select 6;
 		_points = _points + _tPoints;
-		_list_tickets lbAdd format["ID: %1; Powód: %2; Kwota: $%3", _id, _reason, _amount];
+		_list_tickets lbAdd format["ID: %1; Grund: %2; Betrag: $%3", _id, _reason, _amount];
 		_list_tickets lbSetdata [(lbSize _list_tickets)-1,str(_x)];
 	} foreach _tickets;
 
 
-	_string = _string + format["Imię i Nazwisko: %1\nPESEL: %2\n", _playerName, _uid];
-	if(count _activeCases == 0) then { _string = _string + "Poszukiwany: NIE\n"; } else { _string = _string + "Poszukiwany: TAK\n"; };
-	_string = _string + format["Ilość punktów karnych: %1\nPrzynależność do służb: %2\nLicencje:\n", _points, _services];
-	if(_licenses select 0 == 1) then { _string = _string + "Prawo Jazdy "; };
-	if(_licenses select 1 == 1) then { _string = _string + "Licencja na Bron\n"; };
-	if(_licenses select 2 == 1) then { _string = _string + "Licencja Gornika "; };
-	if(_licenses select 3 == 1) then { _string = _string + "Licencja Drwala "; };
-	if(_licenses select 4 == 1) then { _string = _string + "Licencja Rybaka\n"; };
+	_string = _string + format["Name und Vorname: %1\nSozialversicherungsnr.: %2\n", _playerName, _uid];
+	if(count _activeCases == 0) then { _string = _string + "Gesucht: Nein\n"; } else { _string = _string + "Poszukiwany: Ja\n"; };
+	_string = _string + format["Anzahl der Strafpunkte: %1\nZugehörigkeit: %2\nZulassung:\n", _points, _services];
+	if(_licenses select 0 == 1) then { _string = _string + "Führerschein "; };
+	if(_licenses select 1 == 1) then { _string = _string + "Waffenschein\n"; };
+	if(_licenses select 2 == 1) then { _string = _string + "Miner Lizenz "; };
+	if(_licenses select 3 == 1) then { _string = _string + "Holzfaeller Lizenz "; };
+	if(_licenses select 4 == 1) then { _string = _string + "Fichser Lizenz\n"; };
 	_text_info ctrlSetText _string;
 	kruk_slpd_computer_data = [_uid, objNull, _playerName];
 } else {
-	hint "Nie ma takiego rekordu.";
+	hint "Keine Eintraege.";
 };

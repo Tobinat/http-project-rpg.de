@@ -22,12 +22,12 @@ _amount = parseNumber(_ticket_data select 0);
 _points = parseNumber(_ticket_data select 1);
 _reason = _ticket_data select 2;
 
-_text_title ctrlSetText format["Mandat od: %1", name _officer];
+_text_title ctrlSetText format["Das Ticket von: %1", name _officer];
 
 _edit_amount ctrlSetText format["$%1",_amount];
-if(_points == 0) then { _edit_points ctrlSetText format["%1 punktów",_points]; };
-if(_points == 1) then { _edit_points ctrlSetText format["%1 punkt",_points]; };
-if(_points > 1 && _points < 5) then { _edit_points ctrlSetText format["%1 punkty",_points]; };
-if(_points >= 5) then { _edit_points ctrlSetText format["%1 punktów",_points]; };
+if(_points == 0) then { _edit_points ctrlSetText format["%1 Punkte",_points]; };
+if(_points == 1) then { _edit_points ctrlSetText format["%1 Punkte",_points]; };
+if(_points > 1 && _points < 5) then { _edit_points ctrlSetText format["%1 Punkte",_points]; };
+if(_points >= 5) then { _edit_points ctrlSetText format["%1 Punkte",_points]; };
 _edit_reason ctrlSetText _reason;
 kruk_slpd_ticket_data = [[_amount, _points, _reason], _officer];

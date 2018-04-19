@@ -17,7 +17,7 @@ if(_type == "vehicle") exitWith {
 	_ok = createDialog "kruk_slpd_info";
 	if(!_ok) exitWith { hint "Dialog not created"; };
 	_display = findDisplay 666003;
-	_title = format ["Informacje o pojeździe w sprawie ID: %1", (_data select 0)];
+	_title = format ["Information zum Fahrzeug. ID: %1", (_data select 0)];
 	_text_title = _display displayCtrl 1000;
 	_text_info = _display displayCtrl 1001;
 	_text_title ctrlSetText _title;
@@ -28,7 +28,7 @@ if(_type == "vehicle") exitWith {
 	_wanted_level = _data select 6;
 	kruk_slpd_computer_data = [(_data select 0), "vehicle", getPlayerUID player];
 	
-	_string = format["Numer rejestracyjny: %1\nOpis pojazdu: %2\nPoziom poszukiwania: %3\n\nPowód: %4\nWystawił: %5\n", _plate, _description, _wanted_level, _reason, _officer_name];
+	_string = format["Registrierungsnr.: %1\nKennzeichen: %2\nBeschreibung: %3\n\nWanted Level: %4\nGrund: %5\n", _plate, _description, _wanted_level, _reason, _officer_name];
 	_text_info ctrlSetText _string;
 };
 if(_type == "personal") exitWith {
@@ -37,7 +37,7 @@ if(_type == "personal") exitWith {
 	_ok = createDialog "kruk_slpd_info";
 	if(!_ok) exitWith { hint "Dialog not created"; };
 	_display = findDisplay 666003;
-	_title = format ["Informacje o osobie w sprawie ID: %1", (_data select 0)];
+	_title = format ["Information zur Person. ID: %1", (_data select 0)];
 	_text_title = _display displayCtrl 1000;
 	_text_info = _display displayCtrl 1001;
 	_text_title ctrlSetText _title;
@@ -48,7 +48,7 @@ if(_type == "personal") exitWith {
 	_wanted_level = _data select 6;
 	kruk_slpd_computer_data = [(_data select 0), "personal", getPlayerUID player];
 	
-	_string = format["Imię i nazwisko: %1\nPESEL: %2\nPoziom poszukiwania: %3\n\nZarzuty: %4\nWystawił: %5", _suspect_name, _suspect_uid, _wanted_level, _charges, _officer_name];
+	_string = format["Vor- und Nachname: %1\nSozialversicherungsnr.: %2\nWanted Level: %3\n\nStraftaten: %4\nName des Police Officers: %5", _suspect_name, _suspect_uid, _wanted_level, _charges, _officer_name];
 	_text_info ctrlSetText _string;
 };
 if(_type == "plate") exitWith {
@@ -82,10 +82,10 @@ if(_type == "plate") exitWith {
 		if(_wantedString == "") then { _wantedString = "NIE"; } else {
 			_wantedString = format["TAK ( %1)",_wantedString];
 		};
-		_title = format ["Informacje o pojeździe: %1", _plate];
+		_title = format ["Information zum Fahrzeug: %1", _plate];
 		_text_title ctrlSetText _title;
-		_string = format["Numer rejestracyjny: %1\nWłaściciel: %2\nPESEL: %3\nPoszukiwany: %4\nModel: %5\nKolor: %6(%7)\nMoc: %8KM\nPrędkośc maks.: %9kmh/h", _plate, _owner_name, _owner_uid, _wantedString, _name, _color, _finish, _enginePower, _maxSpeed];
+		_string = format["Registrierungsnr.: %1\nKennzeichen: %2\nBesitzer: %3\nSozialversicherungsnr: %4\nModel: %5\nFarbe: %6(%7)\nPS: %8KM\nMax.Geschwindigkeit.: %9kmh/h", _plate, _owner_name, _owner_uid, _wantedString, _name, _color, _finish, _enginePower, _maxSpeed];
 		_text_info ctrlSetText _string;
 		kruk_slpd_computer_data = [_plate, "vehicle_all", getPlayerUID player];
-	} else { _title = format["Nie znaleziono pojazdu"]; };
+	} else { _title = format["Kein Fahrzeug gefunden"]; };
 };

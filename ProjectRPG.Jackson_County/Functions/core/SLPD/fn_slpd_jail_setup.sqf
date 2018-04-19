@@ -61,13 +61,13 @@ while{ClientArrested} do {
 ClientArrested = false;
 //when jail time ends normally
 if(!_escaped) then {
-	hint "Skonczyles odsiadke";
+	hint "Haftstrafe abgesessen";
 	player setpos [5538.63,6258.06,0.00143433];
 } else {
-	hint "Uciekłeś z wiezienia!";
+	hint "Du bist aus dem Gefaengnis entkommen!";
 	//ustawianie wszystkiego na nieaktywne [updateSLPDPrison_deactive]
 	["escape", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
-	_data = [getPlayerUID player, "911", format["Ucieczka z wiezienia, pozostało: %1 miesięcy", _time], 5];
+	_data = [getPlayerUID player, "911", format["Flucht aus dem Gefängnis,verbleibende Zeit: %1 Monat/e", _time], 5];
 	["personal", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];
 };
 
