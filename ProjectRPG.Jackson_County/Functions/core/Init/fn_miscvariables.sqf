@@ -97,21 +97,25 @@ if (getplayerUID player IN [""]) then { kif_admin=1; };
 if (getplayerUID player IN ["",""]) then { kif_admin=2; };
 if (getplayerUID player IN ["","",""]) then { kif_admin=3; };
 if (getplayerUID player IN ["","",""]) then { kif_admin=4; };
-if (getplayerUID player IN ["",""]) then { kif_admin=5; };
+															//Manni
+if (getplayerUID player IN ["76561198124199916",""]) then { kif_admin=5; };
 /*
 	AIAD Sondereinheit???
 */
 if (getplayerUID player IN ["","","","","","",""]) then { client_aiad_actions=1; };
-if (getplayerUID player IN ["","","","","",""]) then { client_aiad_actions=2; };
+															//Manni
+if (getplayerUID player IN ["76561198124199916","","","","",""]) then { client_aiad_actions=2; };
 /*
 	TECZKA ALLOWED
 */
 if (getplayerUID player IN [""]) then { teczka_allowed=1; };
-if (getplayerUID player IN ["","","","",""]) then { teczka_allowed=2; };
+															//Manni
+if (getplayerUID player IN ["76561198124199916","","","",""]) then { teczka_allowed=2; };
 /*
 	TRAN
 */
-if (getplayerUID player IN ["","",""]) then { client_tran=1; };
+															//Manni
+if (getplayerUID player IN ["76561198124199916","",""]) then { client_tran=1; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "
