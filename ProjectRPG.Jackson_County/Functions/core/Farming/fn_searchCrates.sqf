@@ -1,7 +1,7 @@
 
 if (isNil "searchedcrates") then { searchedcrates = []; };
 
-if (currentcursortarget IN searchedcrates) exitwith { hint "Już przeszukałeś ten obiekt!"; };
+if (currentcursortarget IN searchedcrates) exitwith { hint "Sie haben diese Box bereits durchsucht."; };
 
 searchedcrates pushback currentcursortarget;
 
@@ -9,10 +9,10 @@ _chance = round(random(150));
 
 if(_chance > 145) then {
  player additem "NP_kPelt";
-	["Znalazłeś bardzo rzadką skórę!",false] spawn domsg; 
+	["Du hast eine sehr seltenen Pelz gefunden.",false] spawn domsg; 
  };
 
-if(_chance < 20) then { player additem "cg_DrugBrick"; ["Znalazłeś narkotyki",false] spawn domsg; };
+if(_chance < 20) then { player additem "cg_DrugBrick"; ["Du hast Drogen gefunden.",false] spawn domsg; };
 
 
 /*if(_chance == 149) THEN {

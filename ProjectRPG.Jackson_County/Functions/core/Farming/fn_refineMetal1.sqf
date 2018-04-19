@@ -8,7 +8,7 @@ _barArray = ["np_copperbar1", "np_ironbar1", "np_silverbar1"];
 _farmingVehicles = ["ADM_GMC_Vandura","Jonzie_Transit","ADM_Ford_F100","Jonzie_Raptor"];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Już przerabiam"; };
+if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits."; };
 _localProtection = 0;
 
 _n = 0;
@@ -30,7 +30,7 @@ _n = 0;
 		playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];
 		uisleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "You are refining Ore, stay still!";
+		hint "Du verarbeitest Metal, bleib stehn und pass auf.";
 		["Processed"] spawn mav_ttm_fnc_addExp;
 	};
 

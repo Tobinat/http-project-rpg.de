@@ -18,12 +18,12 @@ imfishing = true;
 	sleep 2.5;
 
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		hint "Zgubiłeś przynętę!";
+		hint "Du hast den Köder verloren";
 		deletevehicle _vehicle;
 		imfishing = false;
 	};
 
-	hint "Dobry rzut!";
+	hint "Ein guter Wurf";
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL _vehicle, 25, 1, 85];
 
 	_timeOut = 0;
@@ -39,13 +39,13 @@ imfishing = true;
 	};
 
 	if(_fail) exitwith {
-		hint "Oddaliłeś się i straciłeś przynętę.";
+		hint "Du bist gegangen und hast den Köder verloren.";
 		deletevehicle _vehicle;
 		imfishing = false;
 	};
 
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL player, 15, 1, 45];
-	hint "Masz branie, naciśnij klawisz Windows!";
+	hint "Um ihn zu nehmen drücke die Windowstast.";
 
 	mouseMovement = 1;
 	sleep 0.5;
@@ -105,7 +105,7 @@ imfishing = true;
 	    } else {
 	    	_myFish = _standardFish call BIS_fnc_selectRandom;
 		};
-		hint "Złapałeś coś!";
+		hint "Du hast etwas gefangen";
 		Player additemtobackpack _myFish;
 		["FishCaught"] spawn mav_ttm_fnc_addExp;
 
@@ -117,7 +117,7 @@ imfishing = true;
 		if(_curWep == "legendary_fishing_rod") then { Player additemtobackpack _myFish; };
 
 	} else {
-		hint "Byłeś zbyt wolny.";
+		hint "Du warst zu langsam.";
 	};
 
 	imfishing = false;

@@ -7,7 +7,7 @@ _farmingVehicles = ["ADM_GMC_Vandura","Jonzie_Transit","ADM_Ford_F100","Jonzie_R
 playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 31, 1, 15];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Już przerabiam"; };
+if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits."; };
 _localProtection = 0;
 
 
@@ -29,7 +29,7 @@ _n = 0;
 		_i = _i - 1;
 		sleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "You are refining Oil, stay still!";
+		hint "Du verarbeitest Oel, bleibe stehn und pass auf.";
 		["Processed"] spawn mav_ttm_fnc_addExp;
 	};
 

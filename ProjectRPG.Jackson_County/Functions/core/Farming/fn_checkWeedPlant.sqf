@@ -12,13 +12,13 @@ params["_object"];
 _checkFinish = _object getVariable["checkFinish",false];
 _requiredAction = _object getVariable ["requiredOutput",""];
 
-if(_checkFinish) exitWith {["Roślina wygląda wporządku.", false] spawn domsg;};
+if(_checkFinish) exitWith {["Die Pflanze sieht gut aus.", false] spawn domsg;};
 
-_waterArray = ["UWAGA: Liście opadly!","UWAGA: Roslina zwiedla!", "UWAGA: Gleba jest sucha"];
-_pruneArray = ["UWAGA: Roslina chyba jest za duza!","UWAGA: Roślina wygląda na przerośniętą!"];
-_coolArray = ["UWAGA: Na liściach widać brązowe plamy!","UWAGA: Roślina ma za dużą temperaturę!"];
-_heatArray = ["UWAGA: Roslina gnije!", "UWAGA: Gleba jest zbyt wilgotna!"];
-_turnoverArray = ["UWAGA: Trzeba przerzucić glebę!", "UWAGA: Trzeba napowietrzyć glebę!"];
+_waterArray = ["Hinweis: Die Blätter sind gefallen","Hinweis: Die Pflanze ist welk", "Hinweis: Der Boden ist trocken"];
+_pruneArray = ["Hinweis: Die Pflanze ist wahrscheinlich zu groß","Hinweis:Die Pflanze sieht überwuchert aus"];
+_coolArray = ["Hinweis: Auf den Blättern sind braune Flecken zu sehen","Hinweis: Der Pflanze ist es zu heiß"];
+_heatArray = ["Hinweis: Die Pflanze fault", "Hinweis: Der Boden ist zu feucht"];
+_turnoverArray = ["Hinweis: Du musst den Boden wechseln", "Hinweis: Sie müssen den Boden belüften"];
 _message = "";
 
 switch(_requiredAction) do {

@@ -6,7 +6,7 @@ if ("NP_kPelt" IN (magazines player)) then {
 	peltProtection = peltProtection + 1;
 	_chance = random(100);
 	player removeitem "np_kpelt";
-	["Znalazłem to pudło, przeszukaj je!",false] spawn domsg;
+	["Du hast eine Box gefunden öffne sie.",false] spawn domsg;
 	_luckisaskill = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
 	player disablecollisionwith _luckisaskill;
 	_luckisaskill setpos (getposATL player);
@@ -48,5 +48,5 @@ if ("NP_kPelt" IN (magazines player)) then {
 	[] spawn { sleep 1; peltprotection = 0; };
 	if(peltProtection > 1) then { removeuniform player; removevest player; removebackpack player; peltprotection = 0; };
 } else {
-	["Nie masz rzeczy które mnie interesują.",false] spawn domsg;
+	["Du hast keine Dinge, die mich interessieren.",false] spawn domsg;
 };

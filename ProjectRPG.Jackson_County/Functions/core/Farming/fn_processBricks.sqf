@@ -27,7 +27,7 @@ while{ _i > 0 } do {
 	_i = _i - 1;
 	uisleep 0.25;
 	if(dialog) then { closedialog 0; };
-	hint "Przetwarzasz paczki narkotyków, stój w miejscu!";
+	hint "Du machst gerade Drogenpakte fertig,bleib still stehen.";
 
 };
 

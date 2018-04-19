@@ -34,8 +34,8 @@ if (str _tree find ": t_" > -1) then {
 			[] call client_fnc_packLogs;
 			["TreeCutDown"] spawn mav_ttm_fnc_addExp;
 		} else {
-			["Błąd","Musisz się zatrudnić jako drwal by ścinać drzewa!",[255,0,0,1],""] call Client_fnc_showNotification;
-			//hint "Musisz się zatrudnić jako drwal by ścinać drzewa!";
+			["Fehler","Du brauchst die Holzfaeller Lizenz",[255,0,0,1],""] call Client_fnc_showNotification;
+			//hint "Du brauchst die Holzfaeller Lizenz";
 		};
 	};
 };
