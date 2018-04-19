@@ -8,7 +8,7 @@ class adminMessage {
 		class Life_RscTitleBackground: client_RscText {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
-			text = "Wiadomość do wszystkich";
+			text = "Adminnachricht";
 			x = 0.3;
 			y = 0.2;
 			w = 0.47;
@@ -46,7 +46,7 @@ class adminMessage {
 		};
 		class setPrice: RscButton {
 			idc = -1;
-			text = "Wyślij";
+			text = "Senden";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call client_fnc_adminMessage;";
 			x = 0.45;

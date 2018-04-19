@@ -89,7 +89,7 @@ class jailprocess {
 
 		class HomeOption : hidebutton {
 			idc = 1115;
-			text = "Abfertigen";
+			text = "Inhaftieren";
 			onButtonClick = "[] call client_fnc_processjail;";
 			x = 0.55;
 			y = 0.45;

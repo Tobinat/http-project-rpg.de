@@ -24,7 +24,11 @@ class phoneTapMenu {
 		class Title : client_RscTitle {
 
 			idc = 1112;
+<<<<<<< HEAD
 			text = "Waehle Person zum abhoeren!";
+=======
+			text = "Spieler auswaehlen!";
+>>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.05;
 			y = 0.05;
 			w = 0.6;
@@ -45,7 +49,11 @@ class phoneTapMenu {
 
 		class HomeOption : client_RscButtonMenu {
 			idc = 1115;
+<<<<<<< HEAD
 			text = "Waehle";
+=======
+			text = "Auswaelen";
+>>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			onButtonClick = "[] spawn client_fnc_requestCurrentCall;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;

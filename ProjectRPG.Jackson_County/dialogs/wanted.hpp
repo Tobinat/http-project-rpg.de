@@ -12,7 +12,7 @@ class yn_Menu {
 		{
 			type = 13;
 			style = 0;
-			text = "You have been summoned for Jury Duty - do you wish to accept? Payment is $2000.";
+			text = "Du wurdest in eine Jury einberufen - willst du akzeptieren? Dein Lohn sind $2000.";
 			size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 			colorText[] = {1, 1, 1, 1.0};
 			colorBackground[]={0,0,0,0.5};
@@ -141,7 +141,7 @@ class revoke_Menu {
 
 		class RemoveOption : HideButton {
 			idc = 9995;
-			text = "Revoke";
+			text = "Ablehnen";
 			onButtonClick = "[] spawn client_fnc_revoke;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.659497 * safezoneH + safezoneY;
@@ -151,7 +151,7 @@ class revoke_Menu {
 
 		class CloseOption : HideButton {
 			idc = 9996;
-			text = "Close";
+			text = "Schließen";
 			onButtonClick = "closedialog 0;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.679497 * safezoneH + safezoneY;

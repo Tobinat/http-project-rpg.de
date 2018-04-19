@@ -259,7 +259,7 @@ class garage2
 		class RscButton_1600: HideButton
 		{
 			idc = 1600;
-			text = "Fetch Car"; //--- ToDo: Localize;
+			text = "Ausparken"; //--- ToDo: Localize;
 			x = 0.315 * safezoneW + safezoneX;
 			y = 0.654 * safezoneH + safezoneY;
 			w = 0.09 * safezoneW;
@@ -350,7 +350,7 @@ class garage3
 		class RscButton_1600: HideButton
 		{
 			idc = 1600;
-			text = "Fetch Work Car"; //--- ToDo: Localize;
+			text = "Arbeitswagen ausparken"; //--- ToDo: Localize;
 			x = 0.315 * safezoneW + safezoneX;
 			y = 0.654 * safezoneH + safezoneY;
 			w = 0.09 * safezoneW;
@@ -443,7 +443,7 @@ class garage
 		class RscButton_1600: HideButton
 		{
 			idc = 1600;
-			text = "Fetch Car"; //--- ToDo: Localize;
+			text = "Ausparken"; //--- ToDo: Localize;
 			x = 0.315 * safezoneW + safezoneX;
 			y = 0.654 * safezoneH + safezoneY;
 			w = 0.09 * safezoneW;

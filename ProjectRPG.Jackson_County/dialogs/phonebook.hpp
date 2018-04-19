@@ -59,7 +59,11 @@ class phoneBook {
 
 		class CallSelected : client_RscButtonMenu {
 			idc = 1115;
+<<<<<<< HEAD
 			text = "Anrufen";
+=======
+			text = "Spieler Anrufen";
+>>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			onButtonClick = "[0] spawn client_fnc_CallSomebody;";
 			x = 0.75;
 			y = 0.75;

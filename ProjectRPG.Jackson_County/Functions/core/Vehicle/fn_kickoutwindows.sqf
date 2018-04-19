@@ -13,7 +13,7 @@ while{_doorkick > 0} do {
 	if(_locked != 2) exitwith { _failed = true; };
 
 	sleep 1;
-	hint format["Wywazasz okna - %1 sekund.",_doorkick];
+	hint format["Du zerschlägst ein Fenster - %1 Sek.",_doorkick];
 	_vehspeed = speed (vehicle player);
 	if(_vehspeed > 0) exitwith { _failed = true; };
 };

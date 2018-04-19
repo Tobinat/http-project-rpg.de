@@ -13,4 +13,4 @@ if("CG_ATF_Bandage_i" in magazines player || myJob IN ["EMS","Fire"]) then {
 
 	 ["CG_ATF_Bandage_i",0] spawn client_fnc_removeitem;
 
-} else { hint "Potrzebujesz bandaża!"; };
+} else { hint "Du hast keinen verband!"; };

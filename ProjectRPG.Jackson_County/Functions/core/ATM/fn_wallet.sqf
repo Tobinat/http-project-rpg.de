@@ -21,22 +21,22 @@ _list = _display displayCtrl 9001;
 _licenses = licenseArray;
 
 if(_licenses select 0 == 1) then {
-	_list lbAdd "Prawo Jazdy";
+	_list lbAdd "Führerschein";
 };
 
 if(_licenses select 1 == 1) then {
-	_list lbAdd "Licencja na Broń";
+	_list lbAdd "Waffenschein";
 };
 
 if(_licenses select 2 == 1) then {
-	_list lbAdd "Licencja Górnika";
+	_list lbAdd "Bergbau Zertifikat";
 };
 
 if(_licenses select 3 == 1) then {
-	_list lbAdd "Licencja Drwala";
+	_list lbAdd "Forstwirtschaftsschein";
 };
 
 if(_licenses select 4 == 1) then {
-	_list lbAdd "Licencja Rybaka";
+	_list lbAdd "Angelschein";
 };
 

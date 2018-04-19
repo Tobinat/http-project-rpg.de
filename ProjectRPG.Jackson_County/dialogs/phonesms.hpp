@@ -43,7 +43,11 @@ class openMessages {
 			fadein=1;
 		  	fadeout=1;
 			font="PuristaLight";
+<<<<<<< HEAD
 			text = "Keine Nachricht gewaehlt!";
+=======
+			text = "Keine Nachricht ausgewaehlt!";
+>>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			size = 0.035;
 			sizeEx = 0.05;
 			x = 0.75; 
@@ -67,7 +71,11 @@ class openMessages {
 
 		class SendSMS : client_RscButtonMenu {
 			idc = 1115;
+<<<<<<< HEAD
 			text = "Sende SMS";
+=======
+			text = "Sende Nachricht";
+>>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			onButtonClick = "closedialog 0; createdialog ""client_findSMS""";
 			x = 0.52;
 			y = 0.75;
@@ -151,7 +159,11 @@ class client_findSMS {
 		class MessageText : Client_RscEdit 
 		{
 			idc = 9331;
+<<<<<<< HEAD
 			text = "Schreibe eine Nachricht";
+=======
+			text = "Nachricht eingeben";
+>>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			autocomplete = "";
 			sizeEx = 0.030;
 			x = 0.75; 

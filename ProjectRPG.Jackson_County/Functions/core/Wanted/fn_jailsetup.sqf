@@ -5,7 +5,7 @@ if(isNil "secondsLeft") then {
 	secondsLeft = _time * 60;
 } else {
 	secondsLeft = secondsleft + (_time * 60);
-	hint "Do wyroku doliczono dodatkowy czas za poprzednia probę ucieczki.";
+	hint "zusaetzliche Zeit wegen fruehrem Fluchtversuch.";
 };
 //convert _time from seconds to minutes.
 _reason = _this select 1;
@@ -39,12 +39,12 @@ if(!_escaped) then {
 	player setpos [5538.63,6258.06,0.00143433];
 	[player] remoteExec ["server_fnc_wantedRemove2",2];
 } else {
-	hint "Uciekłeś z wiezienia!";
+	hint "Du bist aus dem Gefängnis entkommen!";
 	
 //_suspectID = name player;
 _Suid = getplayeruid player;
-//_officerID = "Departament Więziennictwa";
-_charges = format["Ucieczka z wiezienia, pozostało: %1 miesięcy", (secondsLeft/60)];
+//_officerID = "Departament of Corrections";
+_charges = format["Flucht aus dem Gefängnis,verbleibende Zeit: %1 Monat/e", (secondsLeft/60)];
 _status = 5;
 //_evidence = []; // lodged later.
 //_active = 1; // enabled instantly

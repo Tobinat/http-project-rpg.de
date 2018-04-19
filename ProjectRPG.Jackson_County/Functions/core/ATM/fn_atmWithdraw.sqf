@@ -8,7 +8,7 @@ closeDialog 0;
 
 if (_amount > 0) then 
 {
-	if (_amount > 999999) exitWith {hint "Kwota nie może być większa niż 999 999$!";};
+	if (_amount > 999999) exitWith {hint "Der Betrag darf 999 999$ nicht überschreiten!";};
 	if(_bankType == 0) then {
 
 		_check = [2, _amount] call Client_fnc_sl_checkMoney_secure;
@@ -18,14 +18,14 @@ if (_amount > 0) then
 			[_amount] call Client_fnc_sl_removeBank_secure;
 			[_amount] call Client_fnc_sl_addCash_secure;
 
-			["Sukces","Pomyślnie wypłacono pieniądze!",[0,255,0,1],""] call Client_fnc_showNotification;
+			["Erledigt!","Bitte entnehmen Sie Ihr Geld!",[0,255,0,1],""] call Client_fnc_showNotification;
 			[player,objNull,1,format ["%1 wypłacił %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
-			//hint "Pomyślnie wypłacono pieniądze!";
+			//hint "Bitte entnehmen Sie Ihr Geld!";
 			
 		} else {
 
-			["Błąd","Za mały stan konta!",[255,0,0,1],""] call Client_fnc_showNotification;
-			//hint "Za mały stan konta!";
+			["Verdammt!","Ihr Konto ist nicht ausreichend gedeckt!",[255,0,0,1],""] call Client_fnc_showNotification;
+			//hint "Ihr Konto ist nicht ausreichend gedeckt!";
 		
 		};
 
@@ -37,14 +37,14 @@ if (_amount > 0) then
 			["Remove",_amount] remoteexec ["server_fnc_updateMafiaBank",2];
 			[_amount] call Client_fnc_sl_addCash_secure;
 
-			["Sukces","Pomyślnie wypłacono pieniądze!",[0,255,0,1],""] call Client_fnc_showNotification;
+			["Erledigt!","Entnehmen Sie bitte Ihr Kriminelles Geld!",[0,255,0,1],""] call Client_fnc_showNotification;
 			[player,objNull,2,format ["%1 wypłacił %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
-			//hint "Pomyślnie wypłacono pieniądze!";
+			//hint "Entnehmen Sie bitte Ihr Kriminelles Geld!";
 			
 		} else {
 
-			["Błąd","Za mały stan konta!",[255,0,0,1],""] call Client_fnc_showNotification;
-			//hint "Za mały stan konta!";
+			["Verdammt!","Ihr Konto ist nicht ausreichend Gedeckt!",[255,0,0,1],""] call Client_fnc_showNotification;
+			//hint "Ihr Konto ist nicht ausreichend Gedeckt!";
 		
 		};
 
@@ -54,8 +54,8 @@ if (_amount > 0) then
  else  
 {
 
-	["Błąd","Musisz wypłacić więcej niż $0!",[255,0,0,1],""] call Client_fnc_showNotification;
-	//hint "Musisz wypłacić więcej niż $0!";
+	["Verdammt!","Bitte heben Sie mehr als $0 ab!",[255,0,0,1],""] call Client_fnc_showNotification;
+	//hint "Bitte heben Sie mehr als $0 ab!";
 	
 };
 

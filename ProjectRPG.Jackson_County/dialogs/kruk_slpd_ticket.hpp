@@ -101,7 +101,7 @@ class kruk_slpd_ticket_give {
 		class text_amount: RscText {
 			idc = -1;
 			style = 2;
-			text = "Höhe"; //--- ToDo: Localize;
+			text = "Hoehe"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;

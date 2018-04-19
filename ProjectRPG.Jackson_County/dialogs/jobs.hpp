@@ -7,7 +7,7 @@ class job_update {
 	onLoad = "[player] spawn client_fnc_startjob;";
 
 	class controls {
-			
+
 
 
 		class HideButton
@@ -46,7 +46,7 @@ class job_update {
 
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -63,14 +63,14 @@ class job_update {
 			y = 0.104079 * safezoneH + safezoneY;
 			w = 0.444557 * safezoneW;
 			h = 0.758849 * safezoneH;
-		};  
+		};
 
 
 
-		class JobList : client_RscListBox 
+		class JobList : client_RscListBox
 		{
 			idc = 9001;
-			text = "Verbinde zum Job Center..";
+			text = "Verbinde mit dem Arbeitsamt..";
 			sizeEx = 0.05;
 			x = 0.339114 * safezoneW + safezoneX;
 			y = 0.282244 * safezoneH + safezoneY;
@@ -87,7 +87,7 @@ class job_update {
 			y = 0.69972 * safezoneH + safezoneY;
 			w = 0.0889114 * safezoneW;
 			h = 0.0483904 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -97,6 +97,6 @@ class job_update {
 			y = 0.700159 * safezoneH + safezoneY;
 			w = 0.0889114 * safezoneW;
 			h = 0.0483904 * safezoneH;
-		};	
+		};
 	};
 };

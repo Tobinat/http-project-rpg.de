@@ -1,7 +1,7 @@
 class giveCash
 {
 	idd = 1010;
-	class controls 
+	class controls
 	{
 		class RscFrame_1800: RscText
 		{
@@ -86,7 +86,7 @@ class loanMenu {
 		};
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -103,10 +103,10 @@ class loanMenu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 
-		class VoteList : client_RscListBox 
+		class VoteList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -125,7 +125,7 @@ class loanMenu {
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 
 		class CloseOption : client_RscButtonMenu {
 			idc = 9996;
@@ -135,7 +135,7 @@ class loanMenu {
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -183,7 +183,7 @@ class LoanShark {
 		};
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -200,13 +200,13 @@ class LoanShark {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class ExtraInfo: client_RscStructuredText
 		{
 			idc = 1001;
 			text = "Kredit Informationen"; //--- ToDo: Localize;
-			
+
 			colorBackground[] = {0, 0, 0, 0.4};
 			x = 0.5 * safezoneW + safezoneX;
 			y = 0.293241 * safezoneH + safezoneY;
@@ -234,12 +234,12 @@ class LoanShark {
 			y = 0.656167 * safezoneH + safezoneY;
 			w = 0.0603332 * safezoneW;
 			h = 0.0307935 * safezoneH;
-		};	
+		};
 
 		class RscButton_1600: HideButton
 		{
 			idc = 1600;
-			text = "Waehle Betrag"; //--- ToDo: Localize;
+			text = "Summe"; //--- ToDo: Localize;
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -255,7 +255,7 @@ class LoanShark {
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 
 	};
 };
@@ -264,7 +264,7 @@ class LoanShark {
 class giveLoan
 {
 	idd = 1010;
-	class controls 
+	class controls
 	{
 		class RscFrame_1800: RscText
 		{
@@ -293,7 +293,7 @@ class giveLoan
 		class RscText_1000: RscText
 		{
 			idc = 1000;
-			text = "Menge"; //--- ToDo: Localize;
+			text = "Summe"; //--- ToDo: Localize;
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.34606 * safezoneH + safezoneY;
 			w = 0.09625 * safezoneW;
@@ -331,7 +331,7 @@ class giveLoan
 		class RscText_1002: RscText
 		{
 			idc = 1002;
-			text = "Datum bis"; //--- ToDo: Localize;
+			text = "Rueckzahldatum"; //--- ToDo: Localize;
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.54606 * safezoneH + safezoneY;
 			w = 0.09625 * safezoneW;
