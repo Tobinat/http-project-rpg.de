@@ -9,7 +9,7 @@ _priceArray = [12];
 
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Już przetwarzam"; };
+if(globalProtection != 0) exitwith { hint "Du verarbeitest."; };
 _localProtection = 0;
 
 
@@ -42,6 +42,6 @@ _cashTotal = 0;
 
 globalProtection = 0;
 
-["Sukces",format["Sprzedałeś ryby za: $%1", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
-[player,objNull,3,format ["%1 sprzedał RYBY w ilości %2 za %3 $", name player, _total, _cashTotal],_cashTotal, "RYBY", _total] remoteExec ["server_fnc_economyLog", 2];
+["Verarbeite",format["Du hast Fisch verkauft fuer: $%1", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
+[player,objNull,3,format ["%1 Fisch verkauft in einer Menge von: %2 fuer %3 $", name player, _total, _cashTotal],_cashTotal, "RYBY", _total] remoteExec ["server_fnc_economyLog", 2];
 //hint format["Zarobiłeś $%1",_cashTotal];

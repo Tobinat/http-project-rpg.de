@@ -16,12 +16,12 @@ pole fishing by koil
 	sleep 2.5;
 
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		hint "Straciłeś dynamit!";
+		hint "Du hast Dynamit geworfen";
 		deletevehicle _vehicle;
 	};
 
 	_catchPos = (getpos _vehicle);
-	hint "Dobry rzut - Lepiej się odsuń!";
+	hint "Guter Wurf - Du gehst besser weg";
 	
 	sleep 8;
 	"R_60mm_HE" createvehicle [(getpos _vehicle select 0)-2,(getpos _vehicle select 1)+1,(getpos _vehicle select 2)-3];
@@ -31,7 +31,7 @@ pole fishing by koil
 	deletevehicle _vehicle;
 
 
-	hint "Zbliż się, by zebrać swoją zdobycz!";
+	hint "Naehere dich um deine Beute einzusammeln";
 
 	_timeout = 60; 
 	for "_i" from 0 to 1 step 0 do {
@@ -42,7 +42,7 @@ pole fishing by koil
 	};
 	if(_catch) then {
 		playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL player, 51, 1, 45];
-	hint "Złapałeś swoją zdobycz!";
+	hint "Du hast deine Beute eingesammelt";
 	_amount = 1 + random(25);
 	_chance = random (100);
 	if(_chance > 80) then {
@@ -108,4 +108,4 @@ pole fishing by koil
 			};	
 			_amount = _amount - 1;	
 		};		
-	} else { hint "Nie zdążyłeś wyciągnąć ryby!";};				
+	} else { hint "Du hast es nicht geschafft, den Fisch einzusammeln";};				

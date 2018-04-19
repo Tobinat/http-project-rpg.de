@@ -48,8 +48,8 @@ if(_ems == 9) then { _house = getpos nearestObject [[9306.67,3430.66,0.00143814]
 if(_legal == 10) then { _house = getpos nearestObject [[9188.22,3371.8,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
 if(_legal == 9) then { _house = getpos nearestObject [[9094.99,3324.16,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
 if(_legal == 8) then { _house = getpos nearestObject [[8984.55,3274.12,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
-if(_mayor) then { 
-	[] spawn client_fnc_mayorsetup; 
+if(_mayor) then {
+	[] spawn client_fnc_mayorsetup;
 	_house = getpos nearestObject [[9949.03,3732.87,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
@@ -123,7 +123,7 @@ client_thirst = (_statuses select 2);
 client_battery = (_statuses select 3);
 client_poop = (_statuses select 4);
 
-myhealth = (_statuses select 5); 
+myhealth = (_statuses select 5);
 
 client_unhealthiness = (_statuses select 6);
 
@@ -153,53 +153,53 @@ if(count(_prisonArray) > 0) then {
 	player setpos [7639.87,2553.39,0.00143814];
 	if(_higherup) exitwith { player setpos _house};
 	if(_houselevel == 1) then {
-		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];  
-		_containerpos = (_nobject select 0) getrelpos [8,0]; 
+		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];
+		_containerpos = (_nobject select 0) getrelpos [8,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 2) then {
-		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];  
-		_containerpos = (_nobject select 0) getrelpos [8,0]; 
+		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];
+		_containerpos = (_nobject select 0) getrelpos [8,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 3) then {
-		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];  
-		_containerpos = (_nobject select 0) getrelpos [8,0]; 
+		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];
+		_containerpos = (_nobject select 0) getrelpos [8,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 4) then {
-		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];   
-		_containerpos = (_nobject select 0) getrelpos [15,0];  
+		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 5) then {
-		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];   
-		_containerpos = (_nobject select 0) getrelpos [15,0];  
+		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 6) then {
-		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];   
-		_containerpos = (_nobject select 0) getrelpos [15,0];  
+		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 7) then {
-		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];   
-		_containerpos = (_nobject select 0) getrelpos [15,0];  
+		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 8) then {
-		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];   
-		_containerpos = (_nobject select 0) getrelpos [15,0];  
+		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 9) then {
-		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];   
-		_containerpos = (_nobject select 0) getrelpos [15,0];  
+		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 10) then {
-		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];   
-		_containerpos = (_nobject select 0) getrelpos [15,0];  
+		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
 		player setpos _containerpos;
 	};
 };
@@ -228,19 +228,19 @@ if((_statuses select 9) == 0) then {
 		"dynamicBlur" ppEffectAdjust [0]; /* intensity of blur */
 		"dynamicBlur" ppEffectCommit 25; /* time till vision is fully blurred */
 		uisleep 27;
-		"dynamicBlur" ppEffectEnable false;	
+		"dynamicBlur" ppEffectEnable false;
 	};
 } else {
-	if((_statuses select 9) == 1) then { 
+	if((_statuses select 9) == 1) then {
 		Female = true;
 	} else { Female = false; };
-	player setVariable["loaded", 1, false];	
+	player setVariable["loaded", 1, false];
 	[] spawn {
 		"dynamicBlur" ppEffectEnable true; /* enables ppeffect */
 		"dynamicBlur" ppEffectAdjust [0]; /* intensity of blur */
 		"dynamicBlur" ppEffectCommit 5; /* time till vision is fully blurred */
 		uisleep 5;
-		"dynamicBlur" ppEffectEnable false;	
+		"dynamicBlur" ppEffectEnable false;
 	};
 };
 
@@ -253,5 +253,5 @@ if(client_energy > 0) then {
 	player enablefatigue false;
 	player enablestamina false;
 };
-[player,1,format ["%1 połączył się do serwera", name player],getPlayerUID player, getUnitLoadout player] remoteExec ["server_fnc_connectionLog", 2];
+[player,1,format ["%1 hat mit dem Server Verbunden", name player],getPlayerUID player, getUnitLoadout player] remoteExec ["server_fnc_connectionLog", 2];
 [getPlayerUID player, "connected", name player] remoteExec ["Server_fnc_connected", 2];

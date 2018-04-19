@@ -3,13 +3,13 @@ Refine Logs trees by koil
 */
 private["_localprotection"];
 
-if(backpack player == "") exitwith { hint "Musisz mieć plecak!"; };
+if(backpack player == "") exitwith { hint "Du brauchst einen Rucksack."; };
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Już przetwarzam"; };
+if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits."; };
 _localProtection = 0;
 
-if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) exitwith { hint "Twoja ciężarówka jest zbyt daleko!"; };
+if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) exitwith { hint "Dein LKW ist zu weit weg."; };
 {
 	if(_x distance vehspawned < 11) then {
 
@@ -23,7 +23,7 @@ if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) 
 		player additem "NP_Wood";
 		uisleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "Przerabiasz drewno, stój w miejscu!"
+		hint "Du hackst Holz,bleibe am Besten stehn! Eine Axt im Bein kann weh tun."
 	};
 } forEach attachedObjects vehspawned;
 hint "Drewno przerobione.";

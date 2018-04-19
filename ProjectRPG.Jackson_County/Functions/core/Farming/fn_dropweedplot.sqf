@@ -12,20 +12,20 @@ params["_player","_caller","_action","_myDT"];
 detach _myDT;
 _player removeAction _action;
 
-["Twoja sadzonka została zasadzona!",true] spawn domsg;
+["Du hast den Samen geseaht",true] spawn domsg;
 
 
-_action = _myDT addAction [ "Posadź", { 
+_action = _myDT addAction [ "Gepflanzt", { 
 	params["_target", "_caller", "_id"];
 	[_target] spawn client_fnc_weedgrowing;
 	myDrugValue2 = 4;
 	totalskills = 4;
 	_target removeAction _id;
-	_target addAction [ "Podlej rosline", { ["Water", (_this select 0)] call client_fnc_upweedgrowing; } ];
-	_target addAction [ "Przytnij rosline", { ["Prune", (_this select 0)] call client_fnc_upweedgrowing; } ];
-	_target addAction [ "Ochlodz rosline", { ["Cool", (_this select 0)] call client_fnc_upweedgrowing; } ];
-	_target addAction [ "Ogrzej rosline", { ["Heat", (_this select 0)] call client_fnc_upweedgrowing; } ];
-	_target addAction [ "Kultywatorowanie", { ["Turnover", (_this select 0)] call client_fnc_upweedgrowing; } ];
-	[player,objNull,25,format ["%1 posadził marychę",name player],""] remoteExec ["server_fnc_actionLog", 2];
+	_target addAction [ "Übergieß die Pflanze", { ["Water", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	_target addAction [ "Stutze die Pflanze", { ["Prune", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	_target addAction [ "Kühle die Pflanze", { ["Cool", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	_target addAction [ "Wärme die Pflanze", { ["Heat", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	_target addAction [ "Erneuer die Erde", { ["Turnover", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	[player,objNull,25,format ["%1 Weed gepflanzt",name player],""] remoteExec ["server_fnc_actionLog", 2];
 } ];
 weedPlantArray pushBack _myDT;

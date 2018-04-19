@@ -8,7 +8,7 @@ playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player
 
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Już przerabiam"; };
+if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits"; };
 _localProtection = 0;
 
 
@@ -27,7 +27,7 @@ _n = 0;
 		player additem (_barArray select _n);
 		_i = _i - 1;
 		sleep 0.25;
-		hint "You are curing pelts, stay still!";
+		hint "Du verarbeitest den Pelz, bleibe stehn und pass auf.";
 	};
 
 	_n = _n + 1;

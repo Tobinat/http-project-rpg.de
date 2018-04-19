@@ -10,7 +10,7 @@ client_fnc_checkPhone = {
 	_radios = player call TFAR_fnc_radiosList;
 
 	if(count _radios > 0) then {
-		if([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio) then {  
+		if([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio) then {
 
 		} else {
 			_myradio = call TFAR_fnc_ActiveSwRadio;
@@ -39,7 +39,7 @@ client_fnc_resetCallSpawn = {
 	_channel = [(call TFAR_fnc_ActiveSwRadio),"cg_tabletd"] call TFAR_fnc_getSwChannel;
 	_channel = _channel + 1;
 	[(call TFAR_fnc_activeSwRadio), _channel, _mynumber] call TFAR_fnc_SetChannelFrequency;
-	call TFAR_fnc_HideHint;	
+	call TFAR_fnc_HideHint;
 };
 
 [] call client_fnc_checkPhone;
@@ -50,12 +50,11 @@ if(client_karma > 999) then {
 	karma_level = client_karma / 400;
 	karma_level = floor (karma_level);
 } else {
-	karma_level = 0;	
+	karma_level = 0;
 };
 
 if(karma_level > 80) then {
 	karma_level = 80;
 };
 
-[format["Twój poziom reputacji to: %1",karma_level], true] spawn domsg;
-
+[format["Dein Karma betraegt: %1",karma_level], true] spawn domsg;
