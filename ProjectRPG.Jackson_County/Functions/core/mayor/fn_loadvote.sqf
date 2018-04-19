@@ -3,7 +3,7 @@
 // CANDIDATES PUSHBACK [player,0];
 
 disableserialization;
-if(isNil "candidates") exitwith { hint "Elekcja nie jest obecnie przeprowadzana"; closedialog 0; };
+if(isNil "candidates") exitwith { hint "Die Wahl wird derzeit nicht durchgeführt"; closedialog 0; };
 
 _display = findDisplay 9999;
 _list = _display displayCtrl 9001;

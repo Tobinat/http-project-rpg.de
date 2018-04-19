@@ -1,8 +1,8 @@
 _cashCheck = [1,50000] call Client_fnc_sl_checkMoney_secure;
 
-if!(_cashCheck) exitwith { hint "Za mało pieniędzy!"; };
+if!(_cashCheck) exitwith { hint "Hey besorgt dir Geld!"; };
 
-hint "Kupiłeś ekwipunek zabójcy - musisz go użyć w prawidłowym scenariuszu RP.";
+hint "Du hast die Ausrüstung des Auftragskiller gekauft.Benutze sie weise";
 
 removeAllWeapons player;
 removeAllItems player;

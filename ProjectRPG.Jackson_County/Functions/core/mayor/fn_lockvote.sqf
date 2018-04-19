@@ -2,7 +2,7 @@
 // CANDIDATES = [];
 // CANDIDATES PUSHBACK [player name,0];
 disableserialization;
-if(isNil "candidates") exitwith { hint "Wybory nie są obecnie przeprowadzane"; closedialog 0; };
+if(isNil "candidates") exitwith { hint "Zurzeit werden keine Entscheidungen getroffen"; closedialog 0; };
 
 _votenumber = call compile format["%1",(lbData[9001,(lbCurSel 9001)])];
 
