@@ -4,8 +4,8 @@
 		{
 		if(client_intox <= 0.02) then {client_intox = 0.00;} else {client_intox = client_intox - 0.02;};
 			switch(true) do {
-				case (client_intox isEqualTo 0.00): {["Ohh, ulga. Jestem już trzeźwy!", false] spawn domsg;};
-				case (client_intox isEqualTo 0.04): {["Jestem w stanie racjonalnie myśleć. Mogę już prowadzić samochód", false] spawn domsg;};
+				case (client_intox isEqualTo 0.00): {["Ohh, ich fühle mich nüchtern.", false] spawn domsg;};
+				case (client_intox isEqualTo 0.04): {["Ich bin in der Lage, vernünftig zu denken. Ich kann aber kein Auto mehr fahren...glaube ich zumindest.", false] spawn domsg;};
 			};
 		};
 };
