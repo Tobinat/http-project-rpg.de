@@ -43,35 +43,35 @@ _you = name _unit;
 
 if(_fuck != _you) then {
 	if(_fuck find "Error: " > -1) then {
-		[getpos player, "News", "Vehicle Accident"] remoteexec ["server_fnc_giveTask",2];
+		[getpos player, "Nachrichten", "VU"] remoteexec ["server_fnc_giveTask",2];
 
-		[format["%1 jest ciężko ranny!", _you], false] spawn domsg; 
+		[format["%1 ist schwer verletzt!", _you], false] spawn domsg;
 		shooting_death = false;
 		[_killer, player, "vehicleKill"] spawn client_fnc_createEvidence;
 	} else {
-		[getpos player, "News", "Shooting"] remoteexec ["server_fnc_giveTask",2];
-		if(_headshot == 1) then { [format["%1 ustrzelił głowę %2 z dystansu %3 używając: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 ułożył do snu %2 z dystansu %3 używając: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
-		client_kcCamera  = "CAMERA" camCreate (getPosATL _killer); 
-		showCinemaBorder false;    
-		client_kcCamera cameraEffect ["EXTERNAL", "BACK"];  
-		client_kcCamera camSetTarget _killer;    
-		client_kcCamera camSetRelPos [0,5,1];    
-		client_kcCamera camSetFOV .85;    
-		client_kcCamera camSetFocus [50,1];    
+		[getpos player, "Nachrichten", "Schießerrei"] remoteexec ["server_fnc_giveTask",2];
+		if(_headshot == 1) then { [format["%1 schoss %2 aus einer Distanz von %3 Metern mit einer %4 in den Kopf.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 erschoss %2 aus einer Distanz von %3 Metern mit einer %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
+		client_kcCamera  = "CAMERA" camCreate (getPosATL _killer);
+		showCinemaBorder false;
+		client_kcCamera cameraEffect ["EXTERNAL", "BACK"];
+		client_kcCamera camSetTarget _killer;
+		client_kcCamera camSetRelPos [0,5,1];
+		client_kcCamera camSetFOV .85;
+		client_kcCamera camSetFocus [50,1];
 		client_kcCamera camCommit 0;
 		_playerkill = true;
 		shooting_death = true;
 		[_killer, player, "killAtempt"] spawn client_fnc_createEvidence;
 	};
-	[player,_killer,1,format ["%1 zabił %2 z dystansu %3 używając %4",_fuck, name player, _killdistance, _killweapon],_killweapon, _killdistance] remoteExec ["server_fnc_deathLog", 2];
+	[player,_killer,1,format ["%1 tötete %2 aus der Distanz von %3 Metern mit einer %4",_fuck, name player, _killdistance, _killweapon],_killweapon, _killdistance] remoteExec ["server_fnc_deathLog", 2];
 } else {
 	shooting_death = false;
-	[getpos player, "News", "Unknown Death"] remoteexec ["server_fnc_giveTask",2];
-	[format["%1 jest nieprzytomny!", _fuck], false] spawn domsg; 
-	[player,objNull,2,format ["%1 zginął",name player],"",""] remoteExec ["server_fnc_deathLog", 2];
+	[getpos player, "Nachrichten", "Unbekannter Todesgrund"] remoteexec ["server_fnc_giveTask",2];
+	[format["%1 ist verstorben!", _fuck], false] spawn domsg;
+	[player,objNull,2,format ["%1 starb",name player],"",""] remoteExec ["server_fnc_deathLog", 2];
 };
 
-if(_playerkill) then { 
+if(_playerkill) then {
 	sleep 7;
 	client_kcCamera cameraEffect ["TERMINATE","BACK"];
 	camDestroy client_kcCamera;
@@ -104,18 +104,18 @@ _unit spawn
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format["Respawn: %1",[(maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(maxTime - time) <= 0 OR isNull _this};
 	_respawn = player getVariable "respawn";
-	if (_respawn > 0) then 
+	if (_respawn > 0) then
 	{
 		_RespawnBtn ctrlEnable true;
 		_Timer ctrlSetText "Respawn";
 	};
-	if (_respawn == 0) then 
+	if (_respawn == 0) then
 	{
-		_Timer ctrlSetText "Skończyły Ci się życia! Jeżeli w ciągu 15 minut nie pomoże Ci służba medyczna zostaniesz wyrzucony z serwera!";
+		_Timer ctrlSetText "Du bist Bewustlos! Wenn dir die Mediziner nicht interhalb 15 Minuten helfen stirbst du!";
 		[] spawn client_fnc_respawnTimer;
 	};
 	if(!deadplayer) exitwith { closedialog 0; };
-	//if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; [] call client_fnc_startFresh; };			
+	//if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; [] call client_fnc_startFresh; };
 };
 
 [_unit] spawn
@@ -129,7 +129,7 @@ _unit spawn
 	//imrestrained = false;
 };
 
-player setdamage 0; 
+player setdamage 0;
 
 [] spawn {
 	for "_i" from 0 to 1 step 0 do {
@@ -142,4 +142,3 @@ player setdamage 0;
 		if(!deadPlayer) exitwith {};
 	};
 };
-

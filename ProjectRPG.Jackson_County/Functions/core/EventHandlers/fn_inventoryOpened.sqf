@@ -19,7 +19,7 @@ if(_isPack == 1) exitWith {
 
 if(_container isKindOf "Car" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["Nie możesz otworzyć bagażnika zamkniętego pojazdu.", false] spawn domsg;
+		["Du kannst nicht auf den Kofferraum eines geschlossenen Autos zugreifen.", false] spawn domsg;
 	handle = true;
 	handle;
 	};
@@ -27,7 +27,7 @@ if(_container isKindOf "Car" && {(locked _container) == 2}) exitWith {
 
 if(_container isKindOf "Ship" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["Nie możesz otworzyć bagażnika zamkniętego pojazdu.", false] spawn domsg;
+		["Du kannst nicht auf den Kofferraum eines geschlossenen Autos zugreifen.", false] spawn domsg;
 	handle = true;
 	handle;
 	};
@@ -35,7 +35,7 @@ if(_container isKindOf "Ship" && {(locked _container) == 2}) exitWith {
 
 if(_container isKindOf "Air" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["Nie możesz otworzyć bagażnika zamkniętego pojazdu.", false] spawn domsg;
+		["Du kannst nicht auf den Kofferraum eines geschlossenen Autos zugreifen.", false] spawn domsg;
 	handle = true;
 	handle;
 	};
@@ -43,7 +43,7 @@ if(_container isKindOf "Air" && {(locked _container) == 2}) exitWith {
 
 if(_container isKindOf "LandVehicle" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["Nie możesz otworzyć bagażnika zamkniętego pojazdu.", false] spawn domsg;
+		["Du kannst nicht auf den Kofferraum eines geschlossenen Autos zugreifen.", false] spawn domsg;
 	handle = true;
 	handle;
 	};
@@ -51,7 +51,7 @@ if(_container isKindOf "LandVehicle" && {(locked _container) == 2}) exitWith {
 
 if(_container isKindOf "MotorCycle" && {(locked _container) == 2}) exitWith {
 	if(!(_container in current_cars)) then {
-		["Nie możesz otworzyć bagażnika zamkniętego pojazdu.", false] spawn domsg;
+		["Du kannst nicht auf den Kofferraum eines geschlossenen Autos zugreifen.", false] spawn domsg;
 	handle = true;
 	handle;
 	};
@@ -74,18 +74,18 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
 	uiSleep 0.05;
 	waituntil {!(isnull (finddisplay 602)) || handle };
 	if(!handle) then {
-		((findDisplay 602) displayCtrl 638) ctrlSetEventHandler ["LBDblClick", "_this call client_fnc_fuckyoucgandprorpandothershitmods"];  
-		((findDisplay 602) displayCtrl 633) ctrlSetEventHandler ["LBDblClick", "_this call client_fnc_fuckyoucgandprorpandothershitmods"];  
-		((findDisplay 602) displayCtrl 640) ctrlSetEventHandler ["LBDblClick", "_this call client_fnc_fuckyoucgandprorpandothershitmods"];  
+		((findDisplay 602) displayCtrl 638) ctrlSetEventHandler ["LBDblClick", "_this call client_fnc_fuckyoucgandprorpandothershitmods"];
+		((findDisplay 602) displayCtrl 633) ctrlSetEventHandler ["LBDblClick", "_this call client_fnc_fuckyoucgandprorpandothershitmods"];
+		((findDisplay 602) displayCtrl 640) ctrlSetEventHandler ["LBDblClick", "_this call client_fnc_fuckyoucgandprorpandothershitmods"];
 		((findDisplay 602) displayCtrl 619) ctrlSetEventHandler ["LBDblClick", "_this call client_fnc_fuckyoucgandprorpandothershitmods"];
-	}; 
+	};
 };
 
 [] spawn
 {
 	waituntil {!(isnull (finddisplay 602)) || handle };
 	if(!handle) then {
-		for "_i" from 0 to 1 step 0 do 
+		for "_i" from 0 to 1 step 0 do
 		{
 			if(!isNull (findDisplay 49)) exitwith {
 				closedialog 0;

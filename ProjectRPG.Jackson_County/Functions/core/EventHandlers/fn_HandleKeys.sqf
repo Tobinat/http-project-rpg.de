@@ -13,12 +13,12 @@ switch (_code) do
 			ClientInterrupted = true;
 		};
 
-		[] spawn { 
+		[] spawn {
 
-			uisleep 1.1; 
-			
+			uisleep 1.1;
+
 			if(clientInterrupted) then {
-				ClientInterrupted = false; 
+				ClientInterrupted = false;
 			};
 
 		};
@@ -40,13 +40,13 @@ switch (_code) do
 			if(_veh in current_cars && player distance _veh < 8) then {
 
 				if(_locked == 2) then {
-					
+
 					if(local _veh) then {
 						_veh lock 0;
 					} else {
 						[_veh,0] remoteExecCall ["client_fnc_lock",_veh];
 					};
-					["Otworzono pojazd", false] spawn doquickmsg; 
+					["Fahrzeug aufgeschlossen", false] spawn doquickmsg;
 
 					playSound3D ["cg_mission_files\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
 
@@ -56,9 +56,9 @@ switch (_code) do
 						_veh lock 2;
 					} else {
 						[_veh,2] remoteExecCall ["client_fnc_lock",_veh];
-					};	
+					};
 
-					["Zamknięto pojazd", false] spawn doquickmsg; 
+					["Fahrzeug abgeschlossen", false] spawn doquickmsg; 
 
 					playSound3D ["cg_mission_files\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
 				};
@@ -72,37 +72,37 @@ switch (_code) do
 
 	case 16:
 	{
-		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then 
+		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then
 		{
 			[2] spawn client_fnc_rotateLight;
 		};
 
-		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then 
+		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then
 		{
 			[] spawn client_fnc_raisebasket;
-		};	
+		};
 	};
 
 	case 18:
 	{
-		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then 
+		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then
 		{
 			[1] spawn client_fnc_rotateLight;
 		};
-		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then 
+		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then
 		{
 			[] spawn client_fnc_lowerbasket;
-		};	
+		};
 	};
 
 	//Map Key
 	case 50:
 	{
-		if(myJob == "EMS" || myJob == "Fire") then 
+		if(myJob == "EMS" || myJob == "Fire") then
 		{
 			[] spawn client_fnc_mapMarkers;
 		} else {
-			if(myJob == "Cop") then 
+			if(myJob == "Cop") then
 			{
 				[] spawn client_fnc_copmapMarkers;
 			} else {
@@ -135,17 +135,17 @@ switch (_code) do
 	                    if(_phase > 2000) then {
 	                       vehiclePressure = vehiclePressure + 0.2;
 	                       _gearphase = vehicle player animationSourcePhase "gear";
-	                        if(_gearphase > gearphase && vehiclePressure > 3) then { 
+	                        if(_gearphase > gearphase && vehiclePressure > 3) then {
 		                        playSound3D ["CG_turbo\sounds\turbo1.ogg", vehicle player, false, getPosasl (vehicle player), 1, 1, 21];
 	                            Gearphase = (vehicle player) animationSourcePhase "gear";
-	      						if(vehicle player != player && str(typeof (vehicle player)) find "vory" > -1 ) then {	                            
+	      						if(vehicle player != player && str(typeof (vehicle player)) find "vory" > -1 ) then {
 		                            vehicle player animate["backfire", 1];
 		                            uisleep 0.1;
-		                            vehicle player animate["backfire", 0];	
-						        };                     
+		                            vehicle player animate["backfire", 0];
+						        };
 	                            vehiclePressure = 0;
-	                            currenltyUpdating = false;	                                                      
-	                        };                     
+	                            currenltyUpdating = false;
+	                        };
 	                    };
 	                    if(vehicle player == player) exitwith {};
 	                    sleep 0.05;
@@ -153,10 +153,10 @@ switch (_code) do
 
 	            	Gearphase = (vehicle player) animationSourcePhase "gear";
 	            	vehiclePressure = 0;
-	                currenltyUpdating = false; 
+	                currenltyUpdating = false;
 	            };
 		 	};
-        }; 
+        };
     };
 
 	case 2:
@@ -167,32 +167,32 @@ switch (_code) do
 			if(handgunweapon player == "taser") then {
 				_weapon = handgunweapon player;
 				player removeweapon _weapon; player additemtobackpack _weapon;
-				[] spawn { 
+				[] spawn {
 
 					if("RH_uspm" in backpackItems Player) then {
 						player action ["SwitchWeapon", player, player, 100]; uisleep 0.75; player removeitem "RH_uspm"; player addweapon "RH_uspm"; player selectweapon "RH_uspm"; player addItemToBackPack "vvv_np_magazine_taser";
-						444 cutRsc ["HUDguncop","PLAIN"]; 
+						444 cutRsc ["HUDguncop","PLAIN"];
 					} else {
 						hint "ERROR: No USP Pistol in backpack";
 					};
-					
+
 				};
 			} else {
 				_weapon = handgunweapon player;
 				player removeweapon _weapon; player additemtobackpack _weapon;
-				[] spawn { 
+				[] spawn {
 
 					if("taser" in backpackItems Player) then {
 						player action ["SwitchWeapon", player, player, 100]; uisleep 0.75; player removeitem "taser"; player addweapon "taser"; player selectweapon "taser"; player addItemToBackpack "RH_16Rnd_40cal_usp";
-						444 cutRsc ["HUDtasercop","PLAIN"]; 
+						444 cutRsc ["HUDtasercop","PLAIN"];
 					} else {
 						hint "ERROR: No Taser in backpack";
 					};
 
 				};
 			};
-			_handle = true;	
-		};	
+			_handle = true;
+		};
 	};
 
 	case 219:
@@ -203,9 +203,9 @@ switch (_code) do
 					spikeAntiSpam = true;
 					sleep 1;
 					spikeAntispam = false;
-				};	
+				};
 				deletevehicle _spikeStrips;
-				["Podniosłeś kolczatkę!", false] spawn domsg; 
+				["Podniosłeś kolczatkę!", false] spawn domsg;
 				player additem "CG_Spikes_Collapsed";
 		};
 
@@ -216,13 +216,13 @@ switch (_code) do
 			_handle = true;
 		};
 	};
-	
+
 	case 25:
 	{
 	    if(_shift && !_alt && !_ctrlKey && !busyPlayer) then
 	    {
-	 		[] spawn client_fnc_keyBusyPlayer;      	
-			if (!client_fadeSound) then 
+	 		[] spawn client_fnc_keyBusyPlayer;
+			if (!client_fadeSound) then
 			{
 				1 fadeSound 0.1;
 				["Poziom głośności został obniżony.", false] spawn domsg;
@@ -255,9 +255,9 @@ switch (_code) do
 						spikeAntiSpam = true;
 						sleep 1;
 						spikeAntispam = false;
-					};	
+					};
 					deletevehicle _spikeStrips;
-					["Podniosłeś kolczatkę!", false] spawn domsg; 
+					["Podniosłeś kolczatkę!", false] spawn domsg;
 					player additem "CG_Spikes_Collapsed";
 			};
 
@@ -269,7 +269,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	case 7:
 	{
 		if (_shift) then { _handle = true; };
@@ -288,7 +288,7 @@ switch (_code) do
 				};
 			};
 		};
-				
+
 		if(_ctrlKey) then {
 			if (isNull objectParent player && !busyPlayer && !imRestrained) then
 			{
@@ -307,7 +307,7 @@ switch (_code) do
 			player action ["SwitchWeapon", player, player, 100];
 			player switchcamera cameraView;
 		};
-		
+
 		if(!_shift && _ctrlKey && !isNil "client_curWep_h" && {(client_curWep_h != "")}) then {
 			if(client_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
 				player selectWeapon client_curWep_h;
