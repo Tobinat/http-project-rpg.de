@@ -17,4 +17,4 @@ while {_n > 0} do {
 };
 
 [name player, getpos player, player] remoteexec ["client_fnc_jurycall",_players];
-hint "Lawa przysieglych została wezwana - proszę czekać."
+hint "Der Eid wird abgelegt - Bitte warte."
