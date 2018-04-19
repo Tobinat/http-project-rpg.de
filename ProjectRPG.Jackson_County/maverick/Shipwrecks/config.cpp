@@ -54,17 +54,17 @@ class Maverick_Shipwrecks {
 	};
 
 	//What shall be displayed as text to gather the items from the ship? (The text of the addAction ingame)
-	ShipLootText = "Szukaj łupu";
+	ShipLootText = "Schiff nach Beute durchsuchen";
 
     //The message when the user has got all the loot successfully.
-    ShipLootSuccess = "Pomyślnie zgarnąłeś cały łup dla Ciebie!";
+    ShipLootSuccess = "Du hast die gesamte Beute gefunden!";
 
     //The message in case something fails, or the user can not carry all the items.
-    ShipLootFail = "Nie możesz zmieścić całego łupu. Zrób miejsce w ekwipunku!";
+    ShipLootFail = "Du kannst nicht die gesammte Beute tragen. Mach platz in deinem Inventar!";
 
 	//Define the message, that should appear when a shipwreck spawns (broadcasted to all clients).
-	SpawnMSG = "WRAK STATKU\n\nZatopiony statek został odnaleziony i zaznaczony na mapie! Może posiadać cenne przedmioty!";
+	SpawnMSG = "Schiffswrack\n\nEin Frachter ist Gesunken, er wurde auf der Karte Markiert!";
 
     //Define the message, that should appear when a shipwreck disappears after a user looted it (broadcasted to all clients).
-	DeleteMSG = "WRAK STATKU\n\nStatek został ograbiony z łupu!";
+	DeleteMSG = "Schiffswrack\n\Das Wrack wurde von Unbekannten gepluendert!";
 };

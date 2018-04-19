@@ -1,129 +1,129 @@
 class VehicleRepaired {
     exptoAdd = 2;
-    message = "Naprawiono pojazd";
+    message = "Fahrzeug repariert";
 };
 
 class VehicleBought {
     exptoAdd = 4;
-    message = "Kupiono pojazd";
+    message = "Fahrzeug gekauft";
 };
 
 class VehicleLockpicked {
     exptoAdd = 5;
-    message = "Zwytrychowano pojazd";
+    message = "Fahrzeug aufgebrochen";
 };
 
 class TreeCutDown {
     exptoAdd = 2;
-    message = "Ścięto drzewo";
+    message = "Baum gefaellt";
 };
 
 class MarihuanaGathered {
     exptoAdd = 5;
-    message = "Zebrano marihuane";
+    message = "Marihuana gesammelt";
 };
 
 class OreGathered {
     exptoAdd = 2;
-    message = "Zebrano surowiec";
+    message = "Erze eingesammelt";
 };
 
 class PaidTicket {
     exptoAdd = 5;
-    message = "Zapłacono mandat";
+    message = "Strafgeld bezahlt";
 };
 
 class GivenTicket {
     exptoAdd = 5;
-    message = "Wystawiono mandat";
+    message = "Geldstrafe ausgesellt";
 };
 
 class MethGathered {
     exptoAdd = 6;
-    message = "Wytworzono metamfetamine";
+    message = "Methamphetamin wurde hergestellt";
 };
 
 class CraftedSth {
     exptoAdd = 2;
-    message = "Wytworzono coś";
+    message = "Objekt hergesellt";
 };
 
 class Revived {
     exptoAdd = 6;
-    message = "Zreanimowano obywatela";
+    message = "Wiederbelebt";
 };
 
 class FireEx {
     exptoAdd = 5;
-    message = "Ugaszono pożar";
+    message = "Feuer geloescht";
 };
 
 class EvidencePicked {
     exptoAdd = 8;
-    message = "Zebrano dowody";
+    message = "Beweise eingesammelt";
 };
 
 class Jailed {
     exptoAdd = 10;
-    message = "Wrzucono kogoś do wiezienia";
+    message = "Kriminellen inhaftiert";
 };
 
 class TrashPickedUp {
     exptoAdd = 2;
-    message = "Zebrano śmieci";
+    message = "Abfall eingesammelt";
 };
 
 class ReporterArrived {
     exptoAdd = 4;
-    message = "Dotarto na miejsce wydarzenia";
+    message = "Am veranstaltungsort eingetroffen";
 };
 
 class MechanicRepaired {
     exptoAdd = 2;
-    message = "Naprawiono obiekt";
+    message = "Objekt repariert";
 };
 
 class FishCaught {
     exptoAdd = 4;
-    message = "Złowiono rybę";
+    message = "Fisch gefangen";
 };
 
 class Processed {
     exptoAdd = 2;
-    message = "Przetworzono surowiec";
+    message = "Rohmaterial verarbeitet";
 };
 
 class HouseLvlUp {
     exptoAdd = 15;
-    message = "Ulepszono dom";
+    message = "Haus verbessert";
 };
 
 class CarTunedUp {
     exptoAdd = 5;
-    message = "Ulepszono pojazd";
+    message = "Auto getuned";
 };
 
 class Paycheck {
     exptoAdd = 2;
-    message = "Otrzymano wypłatę";
+    message = "Lohnabrechungn erhalten";
 };
 
 class Exercised {
     exptoAdd = 3;
-    message = "Wykonano ćwiczenia";
+    message = "Workout durchgefuehrt";
 };
 
 class PeltProcessed {
     exptoAdd = 5;
-    message = "Przetworzono skórę";
+    message = "Haut verarbeitet";
 };
 
 class Shipwreck {
 	exptoAdd = 20;
-	message = "Ograbiono statek";
+	message = "Schiffswrack gepuendert";
 };
 
 class Distance {
     exptoAdd = 4;
-    message = "Podróżowano przez 15 minut";
+    message = "15 Minuten gereist";
 };
