@@ -8,7 +8,7 @@ vehspawned = createVehicle ["ivory_r34", getpos player, [], 0, "NONE"];
 [vehicle player, "nopixel"] call ivory_fnc_setLicense;
 [vehicle player, ["white","matte"], "white", 1, 1] call ivory_fnc_initVehicle;
 
- license, class, color, finish, rims, windows, lights, statuses, owner 
+ license, class, color, finish, rims, windows, lights, statuses, owner
 
 
 */
@@ -21,10 +21,10 @@ lbDelete [1500, _currentitemindex];
 
 closeDialog 0;
 
-_car = call compile format["%1", _car]; 
+_car = call compile format["%1", _car];
 
-if((_this select 0) == 1) exitwith { 
-	_vehicle = _car createvehicle getpos player; 
+if((_this select 0) == 1) exitwith {
+	_vehicle = _car createvehicle getpos player;
 	_vehicle allowdamage false;
 	_className = toLower(_car);
 	if (str _className find "vory_" > -1) then {
@@ -97,14 +97,14 @@ _pia = _garage find _car;
 _garage deleteAt _pia;
 player setVariable ["garage", _garage, false];
 
-if (_damage > 0.99) exitWith {["Informacja","Mój pojazd jest doszczętnie rozwalony!",[255,69,0,1],""] call Client_fnc_showNotification; };
+if (_damage > 0.99) exitWith {["Information","Dein Wagen ist vollstaendig im Eimer!",[255,69,0,1],""] call Client_fnc_showNotification; };
 
 _vehicle = _classname createVehicle [(getpos player) select 0,(getpos player) select 1,((getpos player) select 2) + 100];
 
 waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 
 //changing the vehicle to non-impounded
-if(_status == 0) then { 
+if(_status == 0) then {
 	[_numberPlate,1,_vehicle,player] remoteExec ["Server_fnc_updateCarStatus",2];
 	_car SET [7,1];
 };
@@ -124,7 +124,7 @@ if (_vehicle isKindOf "Car") then {
 	if (str _className find "red_" > -1) then {
 		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 	};
-	
+
 	if (str _className find "sl_" > -1) then {
 		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 	};
@@ -156,7 +156,7 @@ Current_Cars pushBack _vehicle;
 
 [getPlayerUID player, "usedgarage", Current_Cars] remoteExec ["Server_fnc_setVariable",2];
 _vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
-[player,2,format ["%1 wyciagnał pojazd %2", name player, _vehicleName],"",_className,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
+[player,2,format ["%1 hat einen %2 ausgeparkt", name player, _vehicleName],"",_className,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
 
 _vehicle setvariable ["tracker1",objNull,true];
 _vehicle setvariable ["tracker2",objNull,true];

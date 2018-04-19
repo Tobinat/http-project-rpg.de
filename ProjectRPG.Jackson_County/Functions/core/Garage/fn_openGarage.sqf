@@ -13,15 +13,15 @@ _garage = player getVariable "garage";
 	_availability = _x select 7;
 	if(_availability == 1) then {
 		if((str CurrentCursorTarget find "embarcadero" > -1 ) && _class isKindOf "Ship" ) then {
-			_veh = lbAdd [1500, format["%2 %1 - Rejestracja: %3",_vehicleName, _colorName, _license] ];
+			_veh = lbAdd [1500, format["%2 %1 - Kennzeichen: %3",_vehicleName, _colorName, _license] ];
 			lbSetData [1500, _veh, format["%1",Str(_x)]];
 		} else {
 			if(((typeOF cursorTarget) find "Hangar_F" > -1) && _class isKindOf "air") then {
-				_veh = lbAdd [1500, format["%2 %1 - Rejestracja: %3",_vehicleName, _colorName, _license] ];
+				_veh = lbAdd [1500, format["%2 %1 - Kennzeichen: %3",_vehicleName, _colorName, _license] ];
 				lbSetData [1500, _veh, format["%1",Str(_x)]];
 			} else {
 				if !(_class isKindOf "Ship") then {
-					_veh = lbAdd [1500, format["%2 %1 - Rejestracja: %3",_vehicleName, _colorName, _license] ];
+					_veh = lbAdd [1500, format["%2 %1 - Kennzeichen: %3",_vehicleName, _colorName, _license] ];
 					lbSetData [1500, _veh, format["%1",Str(_x)]];
 				};
 			};

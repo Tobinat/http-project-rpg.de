@@ -21,36 +21,36 @@ _civilianVehicle = [
 	["ADM_1969_Charger",3500],
 	["vvv_Abarth_695",4000],
 	["ADM_GMC_Vandura",5100], // can farm
-	["ivory_gti",6000],	
+	["ivory_gti",6000],
 	["Jonzie_Transit",6400], //can farm
 	["vvv_Chevrolet_Bel_Air",7000],
 	["vvv_Abarth_500",7000],
 	["vvv_Alfa_Romeo_Spider_Duetto",8000],
 	["vvv_Chevrolet_Camaro_RS",9000],
-	["Jonzie_Mini_Cooper_r_spec",9000],	
-	["ADM_Ford_F100",9500], // can farm	
-	["nopixel_GMC_Campervan",9999],	
-	["nopixel_Box_Default",9999],	
+	["Jonzie_Mini_Cooper_r_spec",9000],
+	["ADM_Ford_F100",9500], // can farm
+	["nopixel_GMC_Campervan",9999],
+	["nopixel_Box_Default",9999],
 	["vvv_Chevrolet_Blazer",10000],
 	["vvv_Alfa_Romeo_59", 10000],
 	["vvv_Chevrolet_Impala",10000],
 	["ivory_e36",12000],
-	["Jonzie_Raptor",12000], // can farm	
+	["Jonzie_Raptor",12000], // can farm
 	["Jonzie_Escalade",12000],
 	["ivory_gt500",12000],
 	["vvv_Chevrolet_Corvette_Cone",12000],
 	["ivory_rs4",15000],
 	["vvv_Cadillac_Eldorado",15000],
-	["ivory_evox",18000],	
-	["ivory_supra",19000],	
+	["ivory_evox",18000],
+	["ivory_supra",19000],
 	["ivory_r34",22000],
 	["vvv_Cadillac_CTSV",25000],
 	["ivory_m3",25000],
 	["ivory_wrx",27000],
 	["vvv_Cadillac_Escalade",30000],
 	["vvv_Audi_A4",30000],
-	["ivory_elise",30000],		
-	["ivory_isf",35000],		
+	["ivory_elise",30000],
+	["ivory_isf",35000],
 	["Jonzie_Viper",39999],
 	["vvv_Audi_RS6_Avant_C6",40000],
 	["vvv_Audi_Q7",50000],
@@ -197,10 +197,10 @@ if(_whatdo == "NEW") then {
 		_addedprice = round (_addedprice);
 		_cost = _addedprice + _cost;
 
-		if(_class IN _farmingvehicles) then { 
-			_list lbAdd format["$%2 (Tax %%3): %1 (Auto Refine)",_vehicleName,_cost,taxRate]; 
-		} else { 
-			_list lbAdd format["$%2 (Tax %%3): %1",_vehicleName,_cost,taxRate]; 
+		if(_class IN _farmingvehicles) then {
+			_list lbAdd format["$%2 (Steuern %%3): %1",_vehicleName,_cost,taxRate]; 
+		} else {
+			_list lbAdd format["$%2 (Steuern %%3): %1",_vehicleName,_cost,taxRate];
 		};
 
 
@@ -220,7 +220,7 @@ if(_whatdo == "NEW") then {
 	lbClear _list;
 	{
 		_class = _x select 0;
-		_cost = _x select 1;	
+		_cost = _x select 1;
 		_FinishDisplayName = getText(configFile >> "CfgIvoryMaterials" >> _class >> "displayName");
 		_list lbAdd format["Cena: $%2 - %1",_FinishDisplayName,_cost];
 		_list lbSetdata [(lbSize _list)-1,str([_class, _cost])];
@@ -275,7 +275,7 @@ if(_whatdo == "CAR" || isNil "spawnedvehicle") then {
 		_dir = 180;
 		spawnedvehicle setdir _dir;
 	};
-	
+
 	client_kcCamera camSetTarget spawnedvehicle;
 	client_kcCamera camSetRelPos [2.7,1,0.25];
 	client_kcCamera camSetFOV .99;

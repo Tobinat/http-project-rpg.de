@@ -14,7 +14,7 @@ vehspawned = createVehicle ["ivory_r34", getpos player, [], 0, "NONE"];
 */
 
 _cashcheck = [2,(2000 * mav_ttm_var_mechanicRent)] call Client_fnc_sl_checkMoney_secure;
-if!(_cashCheck) exitwith { hint "Nie masz pieniędzy!"; };
+if!(_cashCheck) exitwith { hint "Du hast keine Kohle!"; };
 _currentitemindex = lbCurSel 1500;
 if (_currentitemindex == -1) exitWith {};
 _car = lbData [1500, _currentitemindex];
@@ -37,4 +37,3 @@ _status = _car select 7;
 _carowner = _car select 8;
 
 plateChange = _car;
-

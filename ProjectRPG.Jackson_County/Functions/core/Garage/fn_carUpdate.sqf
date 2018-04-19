@@ -1,5 +1,5 @@
 
-if (vehicle player == player) exitwith { hint "Musisz znajdować się w pojeździe!"; };
+if (vehicle player == player) exitwith { hint "Sie müsen im Auto sitzen!"; };
 _PROCESS = vehicle player;
 _civilianVehicle = [
 	["Jonzie_XB",1900],
@@ -109,7 +109,7 @@ if(typeof _PROCESS IN ["ADM_1964_Impala","ADM_1969_Charger","ADM_1969_Camaro","A
 
 _price = _price * mav_ttm_var_mechanicRent;
 _cashcheck = [2,_price] call Client_fnc_sl_checkMoney_secure;
-if!(_cashCheck) exitwith { hint format["$%1 - Nie masz wystarczająco dużo pieniędzy!",_price]; };
+if!(_cashCheck) exitwith { hint format["$%1 - Du hast nicht genug Geld!",_price]; };
 
 
 _vehicle = _PROCESS;
@@ -152,7 +152,7 @@ if(_attempt && _oldveh in current_cars) then {
 
  	_car = _oldveh getvariable "information";
 
- 	if(isNil "_car") exitwith { hint "Nie możesz ulepszyć tego pojazdu..."; };
+ 	if(isNil "_car") exitwith { hint "Du kannst dieses Auto nicht Tunen..."; };
 
 	_garage = player getVariable "garage";
 
@@ -172,5 +172,5 @@ if(_attempt && _oldveh in current_cars) then {
 	["CarTunedUp"] spawn mav_ttm_fnc_addExp;
 
 } else {
-	hint "Ten pojazd został już ulepszony, albo nie może być ulepszony w ogóle!";
+	hint "Du hast die Karre schon getuned oder du kannst den Wagen nicht Tunen!";
 };

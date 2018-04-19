@@ -1,5 +1,5 @@
 _garage = _this select 0;
-["Udało się podmienić tablicę!", false] spawn domsg;
+["Wir haben es geschafft, das Brett zu ersetzen!", false] spawn domsg;
 
 {
 	_carcheck = _x;

@@ -8,7 +8,7 @@ vehspawned = createVehicle ["ivory_r34", getpos player, [], 0, "NONE"];
 [vehicle player, "nopixel"] call ivory_fnc_setLicense;
 [vehicle player, ["white","matte"], "white", 1, 1] call ivory_fnc_initVehicle;
 
- license, class, color, finish, rims, windows, lights, statuses, owner 
+ license, class, color, finish, rims, windows, lights, statuses, owner
 
 
 */
@@ -17,7 +17,7 @@ _currentitemindex = lbCurSel 1500;
 if (_currentitemindex == -1) exitWith {};
 _car = lbData [1500, _currentitemindex];
 
-_car = call compile format["%1", _car]; 
+_car = call compile format["%1", _car];
 
 _vehicle = _car createVehicle getpos player;
 
@@ -32,4 +32,4 @@ vehicle player allowdamage false;
 player allowdamage false;
 closedialog 0;
 
-hint "If you exit the vehicle, you will lose god mode";
+hint "Wenn du aussteigst verlierst du die Unsterblichkeit";

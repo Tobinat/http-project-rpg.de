@@ -3,13 +3,13 @@ private["_text"];
 
 
 _cashcheck = [2,2000] call Client_fnc_sl_checkMoney_secure;
-if!(_cashCheck) exitwith { hint "Nie masz pieniędzy!"; };
+if!(_cashCheck) exitwith { hint "Du hast kein Geld!"; };
 
 
 _text = ctrlText 9993;
 
 _countPlate = count _text;
-if (_countPlate > 7) exitWith {["Błąd","Twoja tablica ma więcej niż 7 znaków!",[255,0,0,1],""] call Client_fnc_showNotification;};
+if (_countPlate > 7) exitWith {["Fehler","Dein Wheiteboard hat mehr als sieben Zeichen!",[255,0,0,1],""] call Client_fnc_showNotification;};
 _string = _text splitString " " joinString "";
 _string = _string splitString "#" joinString "";
 _string = _string splitString "*" joinString "";
@@ -54,8 +54,8 @@ _string = _string splitString "ś" joinString "";
 _string = _string splitString "`" joinString "";
 _string = _string splitString "~" joinString "";
 
-if (_string == "") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1],""] call Client_fnc_showNotification;};
-if (isNil "_string") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1],""] call Client_fnc_showNotification;};
+if (_string == "") exitWith {["Fehler","Dein Board ist Leer!",[255,0,0,1],""] call Client_fnc_showNotification;};
+if (isNil "_string") exitWith {["Fehler","Dein Board ist Leer!",[255,0,0,1],""] call Client_fnc_showNotification;};
 
 
 
