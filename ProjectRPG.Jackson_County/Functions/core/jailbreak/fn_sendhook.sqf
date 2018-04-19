@@ -1,12 +1,12 @@
 // send hook CurrentCursorTarget;
 
 _height = getposATL player;
-if((_height select 2) > 15) exitwith { hint "Musisz stać na ziemii!"; };
+if((_height select 2) > 15) exitwith { hint "Du musst auf dem Boden stehen."; };
 
 tower = nearestObjects [player, ["Land_Cargo_Tower_V1_No1_F","Land_Cargo_Tower_V1_No2_F","Land_Cargo_Tower_V1_No3_F","Land_Cargo_Tower_V1_No4_F","Land_Cargo_Tower_V1_No5_F"], 20];
 
 if(count tower > 0) then {
-	if(player distance (tower select 0) < 16) then { hint "You are too close"; };
+	if(player distance (tower select 0) < 16) then { hint "Du bist zu nahe."; };
 	godMode = true;
 	_speed = 115;
 	beginPoint = "vvv_anzuelo" createVehiclelocal getpos player;
@@ -19,5 +19,5 @@ if(count tower > 0) then {
 	sleep 2;
 	[] spawn client_fnc_climbrope;
 } else {
-	hint "Jesteś zbyt daleko!";
+	hint "Du bist zu weit weg.";
 };
