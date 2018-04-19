@@ -89,7 +89,6 @@ class FindKeyPlayer_Menu {
 		class Title : client_RscTitle {
 
 			idc = 1112;
-			text = "Waehle spieler um schluessel zum uebergeben!";
 			text = "Waehle Person die den Schluessel kriegen soll!";
 			x = 0.05;
 			y = 0.05;
