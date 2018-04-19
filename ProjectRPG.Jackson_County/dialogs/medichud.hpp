@@ -25,11 +25,7 @@ class medicHUD
 		class Title : client_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 1336;
-<<<<<<< HEAD
 			text = "Vitaldatenmonitor";
-=======
-			text = "Medzinischer Monitor";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = -0.05;
 			y = -0.05;
 			w = 1;
@@ -294,11 +290,7 @@ class medicHUD
 		class HeadText : client_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 5;
-<<<<<<< HEAD
 			text = "Kopfverletzung";
-=======
-			text = "Kopfverletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = -0.05;
 			w = 0.55; 
@@ -308,11 +300,7 @@ class medicHUD
 		class HeadText1: RscButtonMedicSystem
 		{
 			idc = 6;
-<<<<<<< HEAD
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0;
 			w = 0.55; 
@@ -332,11 +320,7 @@ class medicHUD
 		class NeckText1: RscButtonMedicSystem 
 		{
 			idc = 8;
-<<<<<<< HEAD
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.1;
 			w = 0.55; 
@@ -346,11 +330,7 @@ class medicHUD
 		class BodyText: client_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 9;
-<<<<<<< HEAD
 			text = "Torsoverletzungen";
-=======
-			text = "Torsowunden";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.15;
 			w = 0.55; 
@@ -361,11 +341,7 @@ class medicHUD
 		class BodyText1: RscButtonMedicSystem 
 		{
 			idc = 10;
-<<<<<<< HEAD
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.2;
 			w = 0.55; 
@@ -375,11 +351,7 @@ class medicHUD
 		class SpinalText: client_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 11;
-<<<<<<< HEAD
-			text = "Rueckenmarksverletzungen";
-=======
 			text = "Rückenmarksverletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.25;
 			w = 0.55; 
@@ -390,11 +362,7 @@ class medicHUD
 		class SpineText1: RscButtonMedicSystem 
 		{
 			idc = 12;
-<<<<<<< HEAD
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.3;
 			w = 0.55; 
@@ -420,11 +388,7 @@ class medicHUD
 		class ArmText1: RscButtonMedicSystem 
 		{
 			idc = 14;
-<<<<<<< HEAD
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.4;
 			w = 0.55; 
@@ -449,11 +413,7 @@ class medicHUD
 		class LegText1: RscButtonMedicSystem 
 		{
 			idc = 16;
-<<<<<<< HEAD
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.5;
 			w = 0.55; 
@@ -473,11 +433,7 @@ class medicHUD
 		class PelvisText1: RscButtonMedicSystem 
 		{
 			idc = 18;
-<<<<<<< HEAD
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.6;
 			w = 0.55; 
@@ -487,11 +443,7 @@ class medicHUD
 		class FacialText: client_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 19;
-<<<<<<< HEAD
 			text = "Gesichtsverletzungen";
-=======
-			text = "Gesichtswunden";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.65;
 			w = 0.55; 
@@ -501,11 +453,8 @@ class medicHUD
 		class FacialText1: RscButtonMedicSystem 
 		{
 			idc = 20;
-<<<<<<< HEAD
+
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.7;
 			w = 0.55; 
@@ -525,11 +474,7 @@ class medicHUD
 		class LegsText1: RscButtonMedicSystem 
 		{
 			idc = 22;
-<<<<<<< HEAD
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.8;
 			w = 0.55; 
@@ -539,11 +484,7 @@ class medicHUD
 		class OrganText: client_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 23;
-<<<<<<< HEAD
 			text = "Organverletzungen";
-=======
-			text = "Organschäden";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.85;
 			w = 0.55; 
@@ -553,11 +494,7 @@ class medicHUD
 		class OrganText1: RscButtonMedicSystem 
 		{
 			idc = 24;
-<<<<<<< HEAD
 			text = "Keine Wunden / Verletzungen";
-=======
-			text = "Keinerlei verletzungen";
->>>>>>> f36961c47e99d47525bba1e03c6a6b7c89d594a1
 			x = 0.45; 
 			y = 0.9;
 			w = 0.55; 
