@@ -17,16 +17,16 @@
     //sleep 1.5;
     //waitUntil {animationState player != "ainvpknlmstpsnonwnondnon_medic_1"};
      
-    if(player distance _unit > 7) exitWith {["Błąd","Jesteś za daleko!",[255,0,0,1],""] call Client_fnc_showNotification; player addItem "kif_speedbomb";};
+    if(player distance _unit > 7) exitWith {["Fehler","Du bist zu weit weg.",[255,0,0,1],""] call Client_fnc_showNotification; player addItem "kif_speedbomb";};
      
-    ["Sukces","Podłożyłeś bombę pod pojazd!",[0,255,0,1],""] call Client_fnc_showNotification;
+    ["Bringe an","Du hast eine Bombe unter das Fahrzeug gepackt.",[0,255,0,1],""] call Client_fnc_showNotification;
      
     [_unit] spawn
     {
     	_veh = _this select 0;
     	waitUntil {(speed _veh) > 130}; // 130 - Speed for activate the bomb.
         _crew = crew (vehicle _veh);
-    	["<t color='#ff0000' size = '.8'>Uwaga!<br /> W pojeździe została podłożona bomba! Jeżeli prędkość pojazdu spadnie poniżej 50km/h bomba eksploduje! W ciągu 15 minut bomba się zdezaktywuje!</t>",-1,-1,10,1,0,789] remoteExec ["BIS_fnc_dynamicText", _crew];
+    	["<t color='#ff0000' size = '.8'>Hinweis!<br /> Eine Bombe wurde unter das Fahrzeug gepackt! Fällt die Geschwindigkeit unter 50 km / h, explodiert die Bombe! Innerhalb von 15 Minuten wird die Bombe deaktiviert!</t>",-1,-1,10,1,0,789] remoteExec ["BIS_fnc_dynamicText", _crew];
         playSound3D ["sl_client\sounds\bombhasbeenplanted.ogg", _veh, true, getPos _veh, 15, 1, 25];
        // _timer = 0;
        // for "_i" from 0 to 1 step 0 do  {

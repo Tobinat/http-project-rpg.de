@@ -58,13 +58,13 @@ if(client_nos_count > 0 && _vehicle isKindOf "Car") then {
         sleep 300;
         client_can_use_nos = true;
         } else {
-            ["Musisz odczekać zanim użyjesz nitro kolejny raz!", false] spawn domsg;
+            ["Du musst warten,bis das Nitro wieder aufgeladen ist.", false] spawn domsg;
     };
 
 
 
 } else {
 
-	["Skonczyło Ci się nitro!", false] spawn domsg;
+	["Nitro bereit", false] spawn domsg;
 
 };

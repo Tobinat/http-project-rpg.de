@@ -1,7 +1,7 @@
 _vehicle = cursorTarget;
-if(isNull _vehicle) exitWith {["Nie patrzysz się na pojazd!", false] spawn domsg; player addItem "kif_Fuel";};
+if(isNull _vehicle) exitWith {["Du schaust nicht auf das Fahrzeug.", false] spawn domsg; player addItem "kif_Fuel";};
 
-['Uzupełniam paliwo',1, client_fnc_itemFuelVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,"cg_sndimg\sounds\repair.ogg",0] spawn client_fnc_dotask;
+['Du Tanks auf',1, client_fnc_itemFuelVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,"cg_sndimg\sounds\repair.ogg",0] spawn client_fnc_dotask;
 client_fnc_itemFuelVehicle = {
 
 
