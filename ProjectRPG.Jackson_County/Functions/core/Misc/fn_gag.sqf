@@ -15,7 +15,7 @@ _myposy = getPos player;
 for "_i" from 0 to 1 step 0 do  {
 //life_action_inUse = true;
 	if( player distance _myposy > 2.5 ) exitwith { 
-			["Cel jest zbyt daleko!", false] spawn domsg;
+			["Das Ziel ist zu weit weg!", false] spawn domsg;
 	};
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
