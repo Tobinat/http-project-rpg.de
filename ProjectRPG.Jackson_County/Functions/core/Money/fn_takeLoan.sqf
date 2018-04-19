@@ -1,15 +1,15 @@
 params ["_giver", "_amount","_reason","_datedue"];
 
-if(moneyOwed > 0) exitwith { "Ten czlowiek jest juz zadluzony" remoteexec ["hint",_giver]; };
+if(moneyOwed > 0) exitwith { "Diese Person ist bereits Insolvent" remoteexec ["hint",_giver]; };
 
-if(isNil "_reason") then { _reason = "Standardowa Pozyczka"; };
-if(isNil "_dateDue") exitwith { "Wpisz date zwrotu." remoteexec ["hint",_giver]; };
+if(isNil "_reason") then { _reason = "Standard Kredit"; };
+if(isNil "_dateDue") exitwith { "Geben Sie das Tilgungsdatum an." remoteexec ["hint",_giver]; };
 
 createdialog "loanmenu";
 
-hint "Zaoferowano Ci pozyczkę - 10%";
+hint "Ihnen wurde ein Kredit angeboten - 10%";
 
-_loan = lbAdd [9001, format["Pozyczka: %1",_amount] ];
+_loan = lbAdd [9001, format["Kredit: %1",_amount] ];
 
 lbSetData [9001, _loan, str([name _giver,_amount,_reason,_datedue])];
 

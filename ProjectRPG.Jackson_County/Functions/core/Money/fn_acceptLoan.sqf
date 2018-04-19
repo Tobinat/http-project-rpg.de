@@ -8,9 +8,9 @@ closedialog 0;
 
 _owed = round(_amountcheck + (_amountcheck / 10));
 
-if(mafiabank < _amountcheck) exitwith { hint "Mafia nie ma na to pieniędzy."; };
+if(mafiabank < _amountcheck) exitwith { hint "Die Mafia hat kein Geld dafür."; };
 
-hint format["Dostales pozyczke %1 - Musisz splacic %2",_amountcheck,_owed];
+hint format["Du hast einen Kredit in Höhe von %1 bekommen - den du zurück Zahlen wirst! %2",_amountcheck,_owed];
 
 loan SET [0,_amount select 0];
 loan SET [2,_amount select 2];

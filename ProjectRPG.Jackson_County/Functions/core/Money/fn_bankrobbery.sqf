@@ -1,5 +1,5 @@
-if(typeof cursortarget != "plp_ct_HighSecMediumBlack") exitwith { hint "Musisz tego uzyc na czarnej skrzyni"; };
-if(bankrobber != 1) exitwith { hint "W toku, lub niedawno obrabowane"; };
+if(typeof cursortarget != "plp_ct_HighSecMediumBlack") exitwith { hint "Sie müssen das bei der Blackbox verwenden"; };
+if(bankrobber != 1) exitwith { hint "Diese Bank wurde kürzlich erst ausgeraubt, sei kein Arsch.."; };
 [] spawn {
 	_bank = nearestObject [player, "Land_CommonwealthBank"];
 	uiSleep 30;
@@ -69,7 +69,7 @@ for "_i" from 0 to 1 step 0 do  {
 	uisleep 3;
 };
 if(bankrobber != 1) then {
-	hint "Obrabowales bank - sprawdz skrzynie!";
+	hint "Die Bank wurde ausgeraubt - Überprüfe den Sicherheitskasten!";
 	bankrobber = 4;
 	uisleep 300;
 	deletevehicle _thebankcontainer;

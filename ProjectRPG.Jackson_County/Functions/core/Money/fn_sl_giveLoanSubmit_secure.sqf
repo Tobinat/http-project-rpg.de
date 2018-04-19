@@ -10,5 +10,5 @@ if (_amount > 0) then
 {
 	[player,_amount,_reason,_datedue] remoteexec ["client_fnc_takeLoan",_target];
 } else {
-	hint "Wartosc musi byc wieksza od $0!";
+	hint "Der Betrag muss mehr als $0 betragen!";
 };

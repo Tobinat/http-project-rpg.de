@@ -14,7 +14,7 @@ _error = false;
 if ((player getVariable "Mafia") < 5 && _amount < _old) then {
 	_change = _old - _amount;
 	_enoughCash = [1, _change] call Client_fnc_sl_checkMoney_secure;
-	if(!_enoughCash) exitwith { _error = true; hint "Potrzebujesz gotowki by oddać dlug..."; };
+	if(!_enoughCash) exitwith { _error = true; hint "Du brauchst schon Geld um deine Schulden zu begleichen..."; };
 	[_change] call Client_fnc_sl_removeCash_secure;
 	["Add",_change] remoteexec ["server_fnc_updateMafiaBank",2];
 };

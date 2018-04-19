@@ -5,7 +5,7 @@ closeDialog 0;
 
 if (_amount > 0) then 
 {	
-	if (_amount > 999999) exitWith {hint "Kwota nie może być większa niż 999 999$!";};
+	if (_amount > 999999) exitWith {hint "Der Betrag darf nicht mehr als 999 999$ betragen!";};
 	_enoughCash = [1, _amount] call Client_fnc_sl_checkMoney_secure;
 	if (_enoughCash) then 
 	{
@@ -19,8 +19,8 @@ if (_amount > 0) then
 		[_giver,_target,5,format ["%1 dał %2 dla", name _giver, _amount, name _target],_amount] remoteExec ["server_fnc_moneyLog", 2];
 
 	} else {
-		hint "Nie masz tyle gotowki!";
+		hint "Du hast nicht genug Geld dabei!";
 	};
 } else {
-	hint "Wartosc musi być wieksza od $0!";
+	hint "Du Betrag muss mehr als $0 betragen!";
 };
