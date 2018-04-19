@@ -172,26 +172,26 @@ try {
 					if (_hasParents) then {
 						if (!_ownsPerk) then {
 							if ((getNumber (_selectedPerkConfig >> "requiredPerkPoints")) > life_currentPerkPoints) then {
-								_ctrlBtnPurchase ctrlSetText "ZA MALO PUNKTOW";
+								_ctrlBtnPurchase ctrlSetText "Fuer einen kleinen Punkt";
 								_ctrlBtnPurchase ctrlEnable false;
 							} else {
-								_ctrlBtnPurchase ctrlSetText "KUP";
+								_ctrlBtnPurchase ctrlSetText "Kaufen";
 								_ctrlBtnPurchase ctrlEnable true;
 							};
 						} else {
-							_ctrlBtnPurchase ctrlSetText "ZAKUPIONE";
+							_ctrlBtnPurchase ctrlSetText "Erworben";
 							_ctrlBtnPurchase ctrlEnable false;
 						};
 					} else {
-						_ctrlBtnPurchase ctrlSetText "NIE DO ZAKUPIENIA";
+						_ctrlBtnPurchase ctrlSetText "Kann nicht erworben werden";
 						_ctrlBtnPurchase ctrlEnable false;
 					};
 				} else {
-					_ctrlBtnPurchase ctrlSetText "ZA MALY LVL";
+					_ctrlBtnPurchase ctrlSetText "Zu geringes LVL";
 					_ctrlBtnPurchase ctrlEnable false;
 				};
 			} else {
-				_ctrlBtnPurchase ctrlSetText "ZLA FRAKCJA";
+				_ctrlBtnPurchase ctrlSetText "Falsche Fraktion";
 				_ctrlBtnPurchase ctrlEnable false;
 			};
 		};
@@ -228,10 +228,10 @@ try {
 
 			life_currentExpPerks call _iterate;
 
-			hint "Zakupiono umiejetnosc";
+			hint "Faehigkeit erworben!";
 
 			// -- Disable purchase button
-			_ctrlBtnPurchase ctrlSetText "ZAKUPIONO!";
+			_ctrlBtnPurchase ctrlSetText "Erworben!";
 			_ctrlBtnPurchase ctrlEnable false;
 
 			// -- Subtract perk points
