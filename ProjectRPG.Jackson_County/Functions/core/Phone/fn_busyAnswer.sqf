@@ -1,3 +1,3 @@
 	tryingcall = false;
 	playSound "cgphone_hangup";
-	["Ta osoba jest zajeta.", false] spawn domsg; 
+	["Die Person die Sie erreichen wollen ist gerade nicht erreichbar.", false] spawn domsg; 

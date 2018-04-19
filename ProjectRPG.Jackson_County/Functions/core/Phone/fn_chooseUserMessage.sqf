@@ -11,4 +11,4 @@ if(isNil "_status") exitwith { };
 _message = _message splitString '"' joinString "";
 _message = _message splitString ':' joinString "";
 [_status,_message,player] remoteExec ["server_fnc_sendMessage",2];
-[_message,format["Nowa wiadomosc od %1", name player],name player] remoteExec ["client_fnc_sendMessage",_status];
+[_message,format["Neue Nachricht von %1", name player],name player] remoteExec ["client_fnc_sendMessage",_status];

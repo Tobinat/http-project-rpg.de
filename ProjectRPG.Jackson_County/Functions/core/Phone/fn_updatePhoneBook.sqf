@@ -202,19 +202,19 @@ disableSerialization;
 
 _allJobs = [
 
-	["Policja",currentPoliceDispatch],
-	["Medycy",currentMedicDispatch],
-	["Strażacy",currentFireDispatch],
+	["Silver Lake Police Department",currentPoliceDispatch],
+	["Silver Lake Medical Department",currentMedicDispatch],
+	["Silver Lake Firde Department",currentFireDispatch],
 
-	["Ochrona",currentSecurity],
-	["Mechanik",currentRepairmen],
-	["Sędzia",currentJudges],
-	["Prokuratorzy",currentProsecutor],
-	["Adwokaci",currentLawyers],
-	["Listonosze",currentMailmen],
+	["Sicherheitsdienst",currentSecurity],
+	["Mechaniker",currentRepairmen],
+	["Richter",currentJudges],
+	["Saatanwalt",currentProsecutor],
+	["Anwalt",currentLawyers],
+	["Postbote",currentMailmen],
 
-	["Reporterzy",currentNewsMan],
-	["Taksowkarze",currentTaxiDrivers]
+	["Reporter",currentNewsMan],
+	["Taxifahrer",currentTaxiDrivers]
 	
 ];
 

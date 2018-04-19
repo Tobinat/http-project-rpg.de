@@ -5,4 +5,4 @@ if(_cash == 0) exitwith { "Brak pieniędzy" remoteexec ["hint",_player]; [_playe
 player setvariable ["sl_wallet_silverlake",0,false];
 [player, "sl_wallet_silverlake", 0] remoteExec ["Server_fnc_setVariable",2];
 [_cash] remoteexec ["client_fnc_robfinish",_player];
-[_player,player,7,format ["%1 okradł %2 na kwotę %3", name _player, name player, _cash],_cash] remoteExec ["server_fnc_actionLog", 2];
+[_player,player,7,format ["%1 Wurde um %2 beraubt %3", name _player, name player, _cash],_cash] remoteExec ["server_fnc_actionLog", 2];

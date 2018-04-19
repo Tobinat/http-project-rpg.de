@@ -1,2 +1,2 @@
 	playSound "cgphone_hangup";
-	["Brak odpowiedzi na połączenie!", false] spawn domsg; 
+	["Die Person hat aufgelegt!", false] spawn domsg; 

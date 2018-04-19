@@ -5,7 +5,7 @@ _selectedBG = lbData[911,lbCurSel (911)];
 _selectedBG = call compile format["%1", _selectedBG];
 
 phoneBackground = _selectedBG;
-if(isNil "phoneBackground") exitwith { hint "Wystapil blad."; };
+if(isNil "phoneBackground") exitwith { hint "Es ist ein Fehler aufgetreten."; };
 
 _bg = [phoneBackground,phoneskin];
 
@@ -16,4 +16,4 @@ _bg = [phoneBackground,phoneskin];
 
 
 
-["Zaplaciles $1 za nowa tapete!", false] spawn domsg; 
+["Der Betrag von $1 für einen Neuen Handy Hintergrund wurde bezahlt!", false] spawn domsg; 

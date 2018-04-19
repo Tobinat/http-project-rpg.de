@@ -8,7 +8,7 @@ callInProgress = false;
 myCallOwner = player;
 player setVariable ["tf_unable_to_use_radio", false];
 call TFAR_fnc_HideHint;
-["Jesteś na radiu PD!", false] spawn domsg;
+["Sie sind verbunden mit der Notrufzentralle des SLPD!", false] spawn domsg;
 */
 
 if (myjob =="EMS") then {
@@ -21,7 +21,7 @@ if (myjob =="EMS") then {
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;
-	["Jestes na czestotliwosci EMS!", false] spawn domsg;
+	["Sie sind verbunden mit der Notrufzentrale des SLMD!", false] spawn domsg;
 };
 if (myjob =="Fire") then {
 	player setvariable["PhoneCallNumber",33.1,true];
@@ -33,7 +33,7 @@ if (myjob =="Fire") then {
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;
-	["Jestes na czestotliwosci Służby FD!", false] spawn domsg;
+	["Sie sind verbunden mit der Notrufzentrale des SLFD!", false] spawn domsg;
 };
 if (myjob =="Cop") then {
 	player setvariable["PhoneCallNumber",33.3,true];
@@ -45,5 +45,5 @@ if (myjob =="Cop") then {
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;
-	["Jestes na czestotliwosci PD!", false] spawn domsg;
+	["Sie sind verbunden mit der Notrufeinsatz-Zentrale!", false] spawn domsg;
 };

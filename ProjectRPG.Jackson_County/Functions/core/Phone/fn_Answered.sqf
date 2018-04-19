@@ -1,5 +1,5 @@
 playSound "cgphone_click";
-["Osoba dolaczyla do rozmowy!", false] spawn domsg; 
+["Die Person ging an sein Telefon!", false] spawn domsg; 
 
 if(myJob IN ["Cop","EMS","Fire"]) then {
 
