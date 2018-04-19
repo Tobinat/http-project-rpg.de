@@ -1,7 +1,7 @@
 
 class phonebg {
 	idd = 537;
-	name= "phoneBG";
+	name= "HandyBG";
 	onLoad = "[] spawn client_fnc_loadBG; [] spawn client_fnc_loadSkin; uiNamespace setVariable [""phonemenu"", _this select 0]; [""nobg""] spawn client_fnc_fadephone;";	
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -66,7 +66,7 @@ class phonebg {
 
 		class SaveSelected : client_RscButtonMenu {
 			idc = 1115;
-			text = "Save BG";
+			text = "Speichern";
 			onButtonClick = "[] spawn client_fnc_saveBG;";
 			x = 0.4;
 			y = 0.45;
@@ -89,7 +89,7 @@ class phonebg {
 
 		class SaveSelectedSkin : client_RscButtonMenu {
 			idc = 1176;
-			text = "Save Skin";
+			text = "Skin speichern";
 			onButtonClick = "[] spawn client_fnc_saveSkin;";
 			x = 0.4;
 			y = 0.74;

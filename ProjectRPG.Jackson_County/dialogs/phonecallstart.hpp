@@ -39,7 +39,7 @@ class client_PhoneCallPP_Menu
 		class CallButton : client_RscButtonMenu {
 
 			idc = -1;
-			text = "Call";
+			text = "Anrufen";
 			colorBackground[] = {0,0.535294117647059,0.2725490196078431,0.7};
 			onButtonClick = "[1] spawn client_fnc_CallSomebody;";
 			x = 0.52;
@@ -101,7 +101,7 @@ class client_PhoneCall_Menu
 		class CallButton : client_RscButtonMenu {
 
 			idc = -1;
-			text = "Call";
+			text = "Anrufen";
 			colorBackground[] = {0,0.535294117647059,0.2725490196078431,0.7};
 			onButtonClick = "[0] spawn client_fnc_CallSomebody;";
 			x = 0.52;

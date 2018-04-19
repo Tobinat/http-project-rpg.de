@@ -3,7 +3,7 @@
 
 class phoneBook {
 	idd = 9999;
-	name= "phoneBook";
+	name= "Kontakte";
 	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [player] spawn client_fnc_updatePhonebook; [""nobg""] spawn client_fnc_fadephone;";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -59,7 +59,7 @@ class phoneBook {
 
 		class CallSelected : client_RscButtonMenu {
 			idc = 1115;
-			text = "Call Player";
+			text = "Anrufen";
 			onButtonClick = "[0] spawn client_fnc_CallSomebody;";
 			x = 0.75;
 			y = 0.75;

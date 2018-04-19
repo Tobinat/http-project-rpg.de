@@ -21,7 +21,7 @@ class promotion {
 
 		class Saveranks : client_RscButtonMenu {
 			idc = 1115;
-			text = "Save";
+			text = "Speichern";
 			onButtonClick = "[] call client_fnc_promote;";
 			x = 0.4;
 			y = 0.7;
