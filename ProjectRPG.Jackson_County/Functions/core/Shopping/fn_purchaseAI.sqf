@@ -1,7 +1,7 @@
 // this is where we open the shop that we are looking at
 private["_status","_lostprice"];
 disableSerialization;
-hint "Kupuję...";
+hint "Kaufe...";
 
 _typebuy = _this select 0;
 
@@ -26,16 +26,16 @@ _cost = call compile format["%1", (_status select 2)];
 
 _totalprice = _cost * _Quantity;
 
-if(_totalprice <= 0) exitwith { hint "Nie mozesz kupic przedmiotu, który kosztuje $0"; };
+if(_totalprice <= 0) exitwith { hint "Du kannst keinen Artikel kaufen, der 0 € kostet."; };
 _error = false;
 
 if(_typebuy == "fish") then {
 	_rarefish = {_x IN ["Fish_Mackerel_7", "Fish_Tuna_7", "Fish_Trout_Rare", "Fish_Shark_Rare"]} count magazines player;
-	if(_rarefish < _totalprice) exitwith { hint "Za malo ryb!"; _error = true; };
+	if(_rarefish < _totalprice) exitwith { hint "Zu wenig Fisch."; _error = true; };
 };
 if(_typebuy == "standard") then {
 	_cash = player getVariable "sl_wallet_silverlake";
-	if(_cash < _totalprice) exitwith { hint "Za malo pieniędzy."; _error = true; };
+	if(_cash < _totalprice) exitwith { hint "Zu wenig Fisch."; _error = true; };
 };
 
 if(_error) exitwith {};
@@ -117,5 +117,5 @@ if(_chance > 35) then {
 };
 
 
-[player,objNull,1,format ["%1 kupił %2 w ilości %3 za %4 $", name player, _item, _quantity, _totalPrice],_totalPrice, _item, _quantity] remoteExec ["server_fnc_economyLog", 2];
-[format["Kupiles %1x %2 za $%3 - Sprawdź skrzynkę pod swoimi nogami.",_quantity, _item, _totalprice],true] spawn domsg;
+[player,objNull,1,format ["%1 gekauf %2 Menge %3 fuer %4 $", name player, _item, _quantity, _totalPrice],_totalPrice, _item, _quantity] remoteExec ["server_fnc_economyLog", 2];
+[format["Gekauf %1x %2 fuer $%3 - Ueberpruefe die Box.",_quantity, _item, _totalprice],true] spawn domsg;

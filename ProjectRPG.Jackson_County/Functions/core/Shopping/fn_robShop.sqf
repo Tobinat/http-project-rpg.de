@@ -2,14 +2,14 @@ _shop = currentCursorTarget;
 _time = time;
 if(!(typeOf _shop in shopNameList)) exitWith {};
 _cops = (count currentcop);
- if(_cops < 3) exitwith { hint "Za mało policjantów - 3+"; };
+ if(_cops < 3) exitwith { hint "Nicht genug Cops. - 3+"; };
 _lastRobbed = _shop getVariable ["lastRobbed",0];
-if(_time - _lastRobbed < 600) exitWith { ["Ten sklep został niedawno okradziony", false] call domsg; };
+if(_time - _lastRobbed < 600) exitWith { ["Dieser Laden wurde kuerzlich ausgeraubt", false] call domsg; };
 disableSerialization;
 
 _pos = getPos _shop;
 _timeLeft = 360;
-_task = "Okradam sklep";
+_task = "Laden wird Ueberfallen";
 _error = "";
 
 if(client_robbing) exitWith {};
@@ -26,8 +26,8 @@ for "_i" from 0 to 1 step 0 do {
 	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
 	if(_timeLeft == 0) exitwith {};
 	if(DeadPlayer) exitwith { _success = false; _error = "Dead Player"; };	
-	if(player distance2D _pos > 10) exitWith {_error = "Przerwane przez klienta"; };
-	if(currentWeapon player == "") exitWith { _error = "Przerwane przez klienta"; };
+	if(player distance2D _pos > 10) exitWith {_error = "Abgebrochen wegen entfernung"; };
+	if(currentWeapon player == "") exitWith { _error = "Abgebrochen wegen nicht gezogener Waffe"; };
 };
 _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='1'>%2</t>",_task,_error];
 sleep 1;
@@ -40,9 +40,9 @@ if(_error == "") then {
 	_item = _suitCases call BIS_fnc_selectRandom;
 	player addItem _item;
 
-	[format["Okradłeś sklep, zabrałeś $%1", _amount], false] call domsg;
+	[format["Du hast den Laden erfolgreich Ueberfallen, deine Beute: $%1", _amount], false] call domsg;
 	["Remove","Karma",50] call client_fnc_sustain;
-	[player,objNull,19,format ["%1 okradł sklep na kwotę %2", name player, _amount],_amount] remoteExec ["server_fnc_actionLog", 2];
+	[player,objNull,19,format ["%1 hat den Laden Ueberfallen. %2 wurden gestohlen.", name player, _amount],_amount] remoteExec ["server_fnc_actionLog", 2];
 	_shop setVariable ["lastRobbed", time, true];
 };
 client_robbing = false;

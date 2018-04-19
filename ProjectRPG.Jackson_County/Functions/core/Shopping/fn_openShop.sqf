@@ -22,7 +22,7 @@ while{_currentShop < 4} do {
 		_quantity = ((_shopcontent select _currentShop) select 1) select _n;
 		_price = ((_shopcontent select _currentShop) select 2) select _n;
 		if(_price > 0) then {
-			_list lbAdd format["%1 | Ilosc: %2 | Cena: $%3", _item select 1, _quantity, _price];
+			_list lbAdd format["%1 | Anzahl: %2 | Preis: $%3", _item select 1, _quantity, _price];
 			_list lbSetdata [(lbSize _list)-1, str([_class,_price, _quantity]) ];
 			_list lbSetPicture [(lbSize _list)-1,_item select 2];
 		};
@@ -31,5 +31,5 @@ while{_currentShop < 4} do {
 	_currentShop = _currentShop + 1;
 };
 if(player getVariable ["cop",0] > 5 && myjob == "Cop") then {
-	[format["Otworzyłeś sklep gracza: %1", name _player], false] spawn domsg;
+	[format["Sie haben den Laden geoeffnet: %1", name _player], false] spawn domsg;
 };

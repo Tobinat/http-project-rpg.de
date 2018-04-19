@@ -21,8 +21,8 @@ uisleep 15;
 [
 	[
 		["12/12/2051","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],	
-		["Jest rok 2018. Po 20 latach staran malutka wysepka na polnocy Morza Karaibskiego uzyskala autonomie.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["Dzieki finansowemu wsparciu USA Silver Lake rozkwitlo. Uchwalilo wlasna konstytucje, powolalo sluzby i w koncu wyszlo ze strefy wpływow panstw Ameryki Lacinskiej.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
+		["Es ist 2018. Nach 20 Jahren erlangte eine sehr kleine Insel im Norden der Karibik die Eigenstaendigkeit.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
+		["Dank der finanziellen Unterstützung der USA floriert Silver Lake. Sie verabschiedeten ihre eigene Verfassung, riefen zum Dienst auf und kamen schließlich aus der Einflusssphaere Lateinamerikas heraus.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -40,8 +40,8 @@ uisleep 10;
 
 [
 	[
-		["Z racji swojej dogodnej pozycji Silver Lake od zawsze byl jednym z glownych narkotykowych szlakow laczącym obie Ameryki.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["Policja robi co może lecz nie jest w stanie zablokowac ciagle rozwijajacej się mafii i gangow.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
+		["Wegen seiner günstigen Lage war Silver Lake schon immer eine der wichtigsten Drogenrouten zwischen beiden Amerikas.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
+		["Die Polizei tut, was sie kann, ist aber nicht in der Lage, die staendig wachsenden Mafias und Banden zu blockieren.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -50,8 +50,8 @@ uisleep 18;
 
 [
 	[
-		["Przestepczym polswiatkiem zarzadza tajemniczy boss, ktory pozostaje w ukryciu. Trzyma w ryzach wszystkie gangi i nic nie umknie jego uwadze.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["Piecze nad wyspa trzyma demokratycznie wybrany burmistrz. To on, wraz ze swoimi doradcami, stanowia prawo na tej wyspie.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
+		["Das Verbrechen wird von einem mysterioesen Boss beherrscht, der sich versteckt hält. Er hält alle Banden in Schach, und nichts entgeht seiner Aufmerksamkeit.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
+		["Der demokratisch gewählte Buergermeister hält die Insel fest. Er und seine Berater sind die richtigen auf dieser Insel.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -59,8 +59,8 @@ uisleep 18;
 
 [
 	[
-		["Od decyzji burmistrza zalezy czy Silver Lake będzie prosperowac, czy pograzy się w dlugach i inflacji.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["Lud nie znosi nieudacznikow. Wladza musi się liczyc z tym, ze mieszkancy Silver Lake moga powiedziec dosc i wyjsc na ulice.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
+		["Es liegt an der Entscheidung des Buergermeisters, ob Silver Lake gedeihen wird oder nicht, ob es sich um Schulden oder Inflation handelt.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
+		["Menschen mögen keine Verlierer. Die Behoerden muessen sich darauf verlassen, dass die Einwohner von Silver Lake genug sagen und auf die Straße gehen koennen.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -68,8 +68,8 @@ uisleep 18;
 
 [
 	[
-		["Na wyspie pojawiles się Ty, moj drogi czytelniku. W poszukiwaniu lepszego miejsca na Ziemi przyleciales na wyspę.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["Za ostatnie dolary wynajales niechlujne mieszkanie i zakupiłes stare auto, w ktorym pasowałoby zmienić olej.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
+		["Du bist auf der Insel erschienen, mein lieber Leser. Auf der Suche nach einem besseren Ort auf der Erde bist du auf die Insel gekommen.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
+		["Fuer den letzten Dollar hast du eine unordentliche Wohnung gemietet und ein altes Auto gekauft.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -77,8 +77,8 @@ uisleep 18;
 
 [
 	[
-		["To co teraz zrobisz zalezy tylko od Ciebie i od twoich ambicji. Mozesz zostać sklepikarzem, politykiem. Mozesz uratowac zycie jako lekarz lub chronic je jako policjant.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["A moze z pistoletem w ręce wzbogacisz się na innych, dokonujac smiałych napadow i rozkrecajac swoj wlasny narkotykowy kartel. 
+		["Was du jetzt tun, haengt nur von Ihnen und Ihren Ambitionen ab. Du kannst ein Ladenbesitzer werden, ein Politiker. Sie koennen leben als Arzt retten oder als Polizist schützen.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
+		["Und vielleicht kannst du dich mit einer Waffe in deiner Hand bereichern oder dein eigenes Drogenkartell aufbauen. 
 ","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
@@ -88,9 +88,9 @@ uisleep 18;
 
 [
 	[
-		["To wiesz tylko Ty. Pamietaj, ze bede Ci się uwaznie przygladal. Jestem ciekaw do czego dojdziesz.
+		["Das weißt du nur. Denk daran es ist dein Leben und deine Zukunft.
 ","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["Ruszaj, juz czas… obudzic sie.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
+		["Aufstehen, es ist Zeit ... aufzuwachen.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -112,8 +112,8 @@ uisleep 15;
 
 [
 	[
-		["Wybierz płeć!","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
-		["Płeć może być zmieniona w szpitalu...","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
+		["Waehle Geschlecht","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
+		["Geschlecht kann im Krankenhaus geaendert werden ...","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -126,8 +126,8 @@ deletevehicle _dummy;
 
 [
 	[
-		["Witaj w Silver Lake!","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
-		["Używaj przycisku Windows by otwierać menu interakcji.","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
+		["Willkommen in Silver Lake.","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
+		["Verwenden die Windowstaste, um das Interaktionsmenü zu oeffnen.","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -135,8 +135,8 @@ uisleep 15;
 
 [
 	[
-		["Zacznij od otworzenia menu interakcji w Twojej przyczepie oznaczonej na mapie!","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
-		["Możesz w niej przeczytać swojego pierwszego maila. Powodzenia! :)","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
+		["Beginnen mit dem Oeffnen des Interaktionsmenues mit dem auf der Karte markierten Trailer.","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
+		["Du kannst deine erste E-Mail lesen. Viel Glück! :)","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
