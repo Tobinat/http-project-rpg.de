@@ -40,71 +40,71 @@ _PricesPistolClasses = [
 	//1911 ACP
 	//hgun_mas_ww2_acp_F
 	[3,2,0,0,0],
-	
+
 	//4-five .45 ACP
 	//hgun_Pistol_heavy_01_F
 	[3,0,2,0,0],
-	
+
 	//ACP-C2 .45 ACP
 	//hgun_ACPC2_F
 	[3,2,0,0,0],
-	
+
 	//Browning HP
 	//hgun_mas_ww2_bhp_F
 	[3,1,0,0,0],
-	
+
 	//Colt 1911
 	//sab_1911_handgun
 	[4,0,2,0,0],
-	
+
 	//CZ 75 COMPACT
 	//CUP_hgun_Compact
 	[3,2,0,0,0],
-	
+
 	//Luger
 	//hgun_mas_ww2_lug_F
 	[2,1,0,0,0],
-	
+
 	//Makarov PM
 	//CUP_hgun_Makarov
 	[3,0,1,0,0],
-	
+
 	//PB 6P9
 	//CUP_hgun_PB6P9
 	[3,0,1,0,0],
-	
+
 	//M9
 	//CUP_hgun_M9
 	[3,0,0,1,0],
-	
+
 	//Taurus Tracker Model 455
 	//CUP_hgun_TaurusTracker455
 	[3,0,0,1,0],
-	
+
 	//Tokarev
 	//hgun_mas_ww2_tt33_F
 	[2,0,0,1,1],
-	
+
 	//USP40 Match
 	//RH_uspm
 	[3,0,0,1,2],
-	
+
 	//Kimber Desert Warrior
 	//RH_kimber
 	[3,1,0,0,2],
-	
+
 	//FN Five-Seven
 	//RH_fn57
 	[3,1,0,0,2],
-	
+
 	//FNP45 Tactical
 	//RH_fnp45
 	[3,0,1,0,3],
-	
+
 	//Desert Eagle Gold
 	//RH_Deagleg
 	[3,0,5,0,7],
-	
+
 	//Desert Eagle Silver
 	//RH_Deagles
 	[3,5,0,1,7]
@@ -121,7 +121,7 @@ if(myJob == "Mafia" && player getVariable ["Mafia",0] > 4) then {
 		"CUP_hgun_SA61",
 		"RH_g18",
 		"RH_tec9",
-		"RH_muzi",			
+		"RH_muzi",
 		"CUP_smg_bizon",
 	//
 		"arifle_mas_ww2_tommy",
@@ -147,14 +147,14 @@ if(myJob == "Mafia" && player getVariable ["Mafia",0] > 4) then {
 
 
 } else {
-	
+
 	_iMafiaClasses = [
 	//small auto
 		"CUP_hgun_MicroUzi",
 		"CUP_hgun_SA61",
 		"RH_g18",
 		"RH_tec9",
-		"RH_muzi"		
+		"RH_muzi"
 	];
 
 };
@@ -212,14 +212,14 @@ _PricesItemList = [
 	[1,1,10,8,7],
 	[2,5,0,0,0],
 	[0,7,1,1,1],
-	[3,1,4,2,8]	
+	[3,1,4,2,8]
 ];
 
 
 _clothing1 =
 
 		["EF_HM_LPBPS","EF_HM_LPBP","EF_HM_LPBR","EF_HM_LPBW","EF_HM_LPB","EF_HM_LPBL",
-		
+
 		"CUP_O_TKI_Khet_Jeans_01","CUP_O_TKI_Khet_Jeans_02","CUP_O_TKI_Khet_Jeans_03","CUP_O_TKI_Khet_Jeans_04",
 
 		"CUP_U_C_Citizen_01","CUP_U_C_Citizen_02","CUP_U_C_Citizen_03","CUP_U_C_Citizen_04",
@@ -389,7 +389,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		_myArray = _PricesPistolClasses select _mySelect;
 		_mags = _PistolMags;
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Wood: %2 <br/> Copper: %3 <br/> Iron: %4 <br/> Silver: %5 <br/> Oil: %6 <br/><br/><t color='#33CC33'>Magazine Cost <t color='#ffffff'> <br/> Wood: %7 <br/> Copper: %8 <br/> Iron: %9 <br/> Silver: %10 <br/> Oil: %11 ",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_myArray select 4),(_Mags select 0),(_Mags select 1),(_Mags select 2),(_Mags select 3),(_Mags select 4)];
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Holz: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/> Silber: %5 <br/> Oel: %6 <br/><br/><t color='#33CC33'>Magazin Kosten <t color='#ffffff'> <br/> Holz: %7 <br/> Kupfer: %8 <br/> Eisen: %9 <br/> Silber: %10 <br/> Oel: %11 ",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_myArray select 4),(_Mags select 0),(_Mags select 1),(_Mags select 2),(_Mags select 3),(_Mags select 4)];
 		_btn4 ctrlCommit 0;
 	};
 
@@ -404,7 +404,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		_myArray = _iPricesMafiaClasses select _mySelect;
 		_mags = _iMafiaMags;
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Wood: %2 <br/> Copper: %3 <br/> Iron: %4 <br/> Silver: %5 <br/> Oil: %6 <br/><br/><t color='#33CC33'>Magazine Cost <t color='#ffffff'> <br/> Wood: %7 <br/> Copper: %8 <br/> Iron: %9 <br/> Silver: %10 <br/> Oil: %11 ",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_myArray select 4),(_Mags select 0),(_Mags select 1),(_Mags select 2),(_Mags select 3),(_Mags select 4)];
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Holz: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/> Silber: %5 <br/> Oel: %6 <br/><br/><t color='#33CC33'>Magazin Kosten <t color='#ffffff'> <br/> Holz: %7 <br/> Kupfer: %8 <br/> Eisen: %9 <br/> Silber: %10 <br/> Oel: %11 ",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_myArray select 4),(_Mags select 0),(_Mags select 1),(_Mags select 2),(_Mags select 3),(_Mags select 4)];
 		_btn4 ctrlCommit 0;
 	};
 
@@ -422,7 +422,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		_myArray = _PricesItemList select _myselect;
 
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Wood: %2 <br/> Copper: %3 <br/> Iron: %4 <br/> Silver: %5 <br/> Oil: %6",_selectedweapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_myArray select 4)];
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Holz: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/> Silber: %5 <br/> Oel: %6",_selectedweapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_myArray select 4)];
 		_btn4 ctrlCommit 0;
 	};
 
@@ -438,7 +438,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["Fur Pelt: 2",_selectedweapon];
+		_Btn4 ctrlSetStructuredText parsetext format["Pelz: 2",_selectedweapon];
 		_btn4 ctrlCommit 0;
 	};
 
@@ -454,7 +454,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["Fur Pelt: 4",_selectedweapon];
+		_Btn4 ctrlSetStructuredText parsetext format["Pelz: 4",_selectedweapon];
 		_btn4 ctrlCommit 0;
 	};
 
@@ -550,7 +550,7 @@ if(_status == "Quality Clothing") exitwith {
 
 
 if(isNil "shopholder") then {
-	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);  
+	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
 };
 
 if((_this select 0) == "CRAFT") exitwith {
@@ -584,11 +584,11 @@ if(_status IN _clothing1 || _status IN _clothing2) then {
 	_checkCost = _cost;
 
 	_amountcurrent = {_x == "NP_Pelt"} count magazines player;
-	if(_amountcurrent < _checkCost) exitwith { hint "Not enough resources"; _error = true; };
+	if(_amountcurrent < _checkCost) exitwith { hint "Nicht ausreichend Ressourcen"; _error = true; };
 
 	if(_error) exitwith {};
 
-	
+
 
 	_i = _Cost;
 
@@ -607,7 +607,7 @@ if(_status IN _clothing1 || _status IN _clothing2) then {
 		_checkCost = _cost select _n;
 
 		_amountcurrent = {_x == (_materials select _n)} count magazines player;
-		if(_amountcurrent < _checkCost) exitwith { hint "Not enough resources"; _error = true; };
+		if(_amountcurrent < _checkCost) exitwith { hint "Nicht ausreichend Ressourcen"; _error = true; };
 		_n = _n + 1;
 
 	} foreach _cost;
@@ -641,19 +641,19 @@ if(_error) exitwith {};
 			_status = (configfile >> "CfgMagazines" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		} else {
 			_classStatus = _status;
-			_status = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;	
+			_status = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		};
 	} else {
 		shopholder addWeaponCargoGlobal [_status,1];
 		_classStatus = _status;
-		_status = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;	
+		_status = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
 	};
 
 	player disablecollisionwith shopholder;
-	shopholder setpos (getposATL player);	
+	shopholder setpos (getposATL player);
 
-	hint format["You have crafted a %1",_status];
-	[player,1,format ["%1 wycraftował %2", name player, _status],_classStatus,_status] remoteExec ["server_fnc_craftLog", 2];
+	hint format["Du hast eine %1 hergestellt",_status];
+	[player,1,format ["%1 hat eine %2 hergestellt", name player, _status],_classStatus,_status] remoteExec ["server_fnc_craftLog", 2];
 	closedialog 0;
 };
 
@@ -676,7 +676,7 @@ if((_this select 0) == "CRAFTMAG") exitwith {
 		_checkCost = _cost select _n;
 
 		_amountcurrent = {_x == (_materials select _n)} count magazines player;
-		if(_amountcurrent < _checkCost) exitwith { hint "Not enough resources"; _error = true; };
+		if(_amountcurrent < _checkCost) exitwith { hint "Nicht ausreichend Ressourcen"; _error = true; };
 		_n = _n + 1;
 
 	} foreach _cost;
@@ -699,15 +699,15 @@ if((_this select 0) == "CRAFTMAG") exitwith {
 
 
 	_magazines = getArray (configFile / "CfgWeapons" / _status / "magazines");
-	_magazineClass = _magazines select 0; 
-	
+	_magazineClass = _magazines select 0;
+
 	shopholder addmagazineCargoGlobal [_magazineclass,2];
 
-	hint format["You have crafted 2 mags for a %1",_status];
-	[player,2,format ["%1 wycraftował 2 magazynki dla broni %2", name player, _status],_magazineclass,_status] remoteExec ["server_fnc_craftLog", 2];
+	hint format["Du hast 2 magazine fuer die %1 hergestellt!",_status];
+	[player,2,format ["%1 hat 2 Magazine fuer die Waffe %2 hergestellt", name player, _status],_magazineclass,_status] remoteExec ["server_fnc_craftLog", 2];
 	closedialog 0;
 	player disablecollisionwith shopholder;
-	shopholder setpos (getpos player);	
+	shopholder setpos (getpos player);
 };
 
 closedialog 0;
