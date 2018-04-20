@@ -18,7 +18,7 @@ if(vehicle player != player && (vehicle player isKindOf "LandVehicle")) then
 			if(!client_seatwarn) then {
 				uiSleep 1;
 				if(!client_seatwarn) then {
-					["Pamietaj o zapieciu pasow!", false] spawn domsg;
+					["Du bist nicht Angeschnallt", false] spawn domsg;
 				};
 				playSound "seatwarn";
 				client_seatwarn = true;

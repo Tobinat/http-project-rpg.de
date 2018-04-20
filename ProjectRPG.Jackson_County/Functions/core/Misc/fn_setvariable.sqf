@@ -1,7 +1,7 @@
 _variable = _this select 0;
 _new = _this select 1;
 
-if ( _variable == "mafia" || _variable =="ems" || _variable =="cop" || _variable =="fire" ) then { hint format["Twoja ranga została zmieniona na %1 as %2",_new,_variable]; };
+if ( _variable == "mafia" || _variable =="ems" || _variable =="cop" || _variable =="fire" ) then { hint format["Dein Rang wurde geändert in %1 von %2",_new,_variable]; };
 
 if(_variable == "garage") exitwith {
 	_garage = player getVariable "garage";

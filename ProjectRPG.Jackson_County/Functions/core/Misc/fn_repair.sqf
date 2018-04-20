@@ -12,7 +12,7 @@ if(_object gethit "motor" > 0.9 && _object iskindof "car") exitwith {
 		_chance = random ( 100 );
 		if(_chance > 85) then {
 			player removeitem "cg_engine";
-			hint "Zuzyles zestaw do naprawy silnika podczas naprawy.";
+			hint "Du hast das RepairKit fuer den Motor während der Reparatur verbraucht.";
 		};
 	};
 	_repaired = false;
@@ -23,7 +23,7 @@ if(_object gethit "motor" > 0.9 && _object iskindof "car") exitwith {
 
 	if(_repaired) exitwith {};
 
-	hint "Potrzebujesz mechanika, odholowac do garazu albo zestaw do naprawy silnika!";
+	hint "Du brauchst einen Mechaniker.";
 };
 
 _wheels = {_x == "CG_wheel"} count magazines player;
@@ -32,10 +32,10 @@ if(_wheels > 0) exitwith {
  ["VehicleRepaired"] spawn mav_ttm_fnc_addExp;
  	_chance = random ( 100 );
 	if(_chance > 85) then {
-		hint "Zuzyles zestaw do naprawy kol podczas naprawy.";
+		hint "Du hast das RepairKit fuer den Reifen während der Reparatur verbraucht.";
 	};
 };
-hint "Potrzebujesz kola do naprawy tego samochodu.";
+hint "Du benötigst ein Rad zum Reparieren.";
 
 
 

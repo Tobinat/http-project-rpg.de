@@ -2,4 +2,4 @@ disableSerialization;
 
 player say "racebeep1";
 
-hint "Na mapie został zaznaczony ranny człowiek!";
+hint "Ein verletzte Person wurde auf der Karte markiert.";

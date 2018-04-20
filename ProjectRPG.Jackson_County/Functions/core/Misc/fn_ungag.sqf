@@ -4,7 +4,7 @@
 params["_unit"];
 
 if((imRestrained) || (player getVariable ["escorting", false])) exitWith { 
-["Nie możesz tego zrobić.", false] spawn domsg;
+["Du kannst das nicht tun.", false] spawn domsg;
 //titleFadeOut 5;
 }; 
 

@@ -1,6 +1,6 @@
 params["_cash"];
 
-hint format["Ukradles %1",_cash];
+hint format["Du stahlst %1",_cash];
 [_cash] call Client_fnc_sl_addCash_secure;
 _chance = random(100);
 if(_chance < 95) then {

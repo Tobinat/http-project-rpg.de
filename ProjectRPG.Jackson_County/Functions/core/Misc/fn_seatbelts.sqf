@@ -20,7 +20,7 @@ for "_i" from 0 to 1 step 0 do
 				uiSleep 1;
 				if(!client_seatwarn) then {
 					427 cutRsc ["HUDseat","PLAIN"]; 
-					["Pamietaj o zapieciu pasow!", false] spawn domsg;
+					["Anschnallen nicht vergessen.", false] spawn domsg;
 				};
 				playSound "seatwarn";
 				client_seatwarn = true;

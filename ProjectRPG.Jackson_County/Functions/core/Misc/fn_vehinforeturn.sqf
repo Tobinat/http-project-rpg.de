@@ -118,7 +118,7 @@ if(_owner IN _owedPlayers) then {
 		if((_x select 0) == _typeofVeh) then { _value = (_x select 1) * 0.65; };
 	}foreach _civilianVehicle;
 
-	if(_value == 0) exitwith { hint "Wartość pojazdu to 0"; };
+	if(_value == 0) exitwith { hint "Der Fahrzeugwert ist 0"; };
 
 	_amount = _amount - _value;
 	if(_amount < 0) then { _amount = 0; };
@@ -136,5 +136,5 @@ if(_owner IN _owedPlayers) then {
 	//delete from database
 
 } else {
-	hint "Wlasciciel tego pojazdu nie ma dlugu u mafii.";	
+	hint "Der Besitzer dieses Fahrzeugs hat keine Schulden gegenüber der Mafia.";	
 };

@@ -7,14 +7,14 @@ _Cop = player getVariable ["Cop",0];
 _Fire = player getVariable ["Fire",0];
 _Mafia = player getVariable ["Mafia",0];
 _legal = player getVariable ["legal",0];
-if(myJob isEqualTo "Cop" && _Cop < 4) exitwith { hint "Musisz miec 4 poziom aby kogos awansowac."; };
-if(myJob isEqualTo "EMS" && _EMS < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
-if(myJob isEqualTo "Fire" && _Fire < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
-if(myJob isEqualTo "Mafia" && _Mafia < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
+if(myJob isEqualTo "Cop" && _Cop < 4) exitwith { hint "Du musst Rang 4 sein um jemanden zu Befoerdern."; };
+if(myJob isEqualTo "EMS" && _EMS < 8) exitwith { hint "Du musst Rang 8 sein um jemanden zu Befoerdern."; };
+if(myJob isEqualTo "Fire" && _Fire < 8) exitwith { hint "Du musst Rang 8 sein um jemanden zu Befoerdern."; };
+if(myJob isEqualTo "Mafia" && _Mafia < 8) exitwith { hint "Du musst Rang 8 sein um jemanden zu Befoerdern."; };
 
-if(myJob isEqualTo "Judge" && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
-if(myJob isEqualTo "Lawyer" && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
-if(myJob isEqualTo "Prosecutor" && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob isEqualTo "Judge" && _legal < 6) exitwith { hint "Du musst Rang 6 sein um jemanden zu Befoerdern."; };
+if(myJob isEqualTo "Lawyer" && _legal < 6) exitwith { hint "Du musst Rang 6 sein um jemanden zu Befoerdern."; };
+if(myJob isEqualTo "Prosecutor" && _legal < 6) exitwith { hint "Du musst Rang 6 sein um jemanden zu Befoerdern."; };
 
 
 if(myJob isEqualTo "Cop") then { _max = _Cop; };
@@ -37,9 +37,9 @@ _i = 0;
 
 while{_i < _max} do {
 	if(_i isEqualTo 0) then { 
-		_list lbAdd "Usun";
+		_list lbAdd "Entfernen";
 	} else {
-		_list lbAdd format["RANGA: %1", _i];
+		_list lbAdd format["Rang: %1", _i];
 	};
 	_list lbSetdata [(lbSize _list)-1,str(_i)];
 	_i = _i + 1;

@@ -10,8 +10,8 @@ _amount = param [2,0,[0]];
 
 if(_type == "Karma") then {
 
-	if(_adjust == "Add") then { client_karma = client_karma + _amount; [format["Zyskales %1 reputacji! W sumie masz: %2",_amount,client_karma], true] spawn domsg; };
-	if(_adjust == "Remove") then { client_karma = client_karma - _amount; [format["Straciles %1 reputacji! W sumie masz: %2",_amount,client_karma], true] spawn domsg; };
+	if(_adjust == "Add") then { client_karma = client_karma + _amount; [format["Du hast %1 Karma erlangt. Insgesammt hast du: %2",_amount,client_karma], true] spawn domsg; };
+	if(_adjust == "Remove") then { client_karma = client_karma - _amount; [format["Du hast %1 Karma verloren. Insgesammt hast du: %2",_amount,client_karma], true] spawn domsg; };
 
 	_oldKarmaLevel = karma_level;
 
@@ -26,8 +26,8 @@ if(_type == "Karma") then {
 		karma_level = 100;
 	};
 
-	if(_oldKarmaLevel < karma_level) then { ["Wszedles na nowy poziom!", false] spawn domsg; player say "levelup"; };
-	if(_oldKarmaLevel > karma_level) then { ["Wlasnie straciles poziom!", false] spawn domsg; player say "endbeep"; };
+	if(_oldKarmaLevel < karma_level) then { ["Du hast ein neues Karma level erreicht.", false] spawn domsg; player say "levelup"; };
+	if(_oldKarmaLevel > karma_level) then { ["Du hast ein Karma level verloren.", false] spawn domsg; player say "endbeep"; };
 
 	_selection = 0;
 	_change = client_karma;
@@ -35,7 +35,7 @@ if(_type == "Karma") then {
 };
 
 if(_type == "Food") then {
-	if(_adjust == "Add") then { [format["+%1 Odżywienia",_amount],true] spawn domsg; client_hunger = client_hunger + _amount; if (vehicle player == player) then { player playmove "vvv_anim_eat"; }; };
+	if(_adjust == "Add") then { [format["+%1 Essen",_amount],true] spawn domsg; client_hunger = client_hunger + _amount; if (vehicle player == player) then { player playmove "vvv_anim_eat"; }; };
 	if(_adjust == "Remove") then { client_hunger = client_hunger - _amount; };
 	if(client_hunger > 100) then {client_hunger = 100;};
 	if(client_hunger < 0) then {client_hunger = 0;};
@@ -45,7 +45,7 @@ if(_type == "Food") then {
 };
 
 if(_type == "Drink") then {
-	if(_adjust == "Add") then { [format["+%1 Nawodnienia",_amount],true] spawn domsg; client_thirst = client_thirst + _amount; if (vehicle player == player) then { player playmove "vvv_anim_drink"; }; };
+	if(_adjust == "Add") then { [format["+%1 Trinken",_amount],true] spawn domsg; client_thirst = client_thirst + _amount; if (vehicle player == player) then { player playmove "vvv_anim_drink"; }; };
 	if(_adjust == "Remove") then { client_thirst = client_thirst - _amount; };
 	if(client_thirst > 100) then {client_thirst = 100;};
 	if(client_thirst < 0) then {client_thirst = 0;};
@@ -75,12 +75,12 @@ if(_type == "Poop") then {
 //health is 5
 
 if(_type == "unhealthiness") then {
-	if(_adjust == "Add") then { [format["+%1 Choroby",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness + _amount; };
-	if(_adjust == "Remove") then { [format["-%1 Choroby",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness - _amount; };
+	if(_adjust == "Add") then { [format["+%1 Krankheit",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness + _amount; };
+	if(_adjust == "Remove") then { [format["-%1 Krankheit",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness - _amount; };
 	if(client_unhealthiness > 100) then { client_unhealthiness = 100;};
 	if(client_unhealthiness < 0) then { client_unhealthiness = 0;};	
 	if(client_unhealthiness > 60) then {
-		hint "Jestes w tym momencie bardzo niezdrowy.";
+		hint "Du bist sehr Krank.";
 		_roll = 100 - client_unhealthiness;
 		_chance = random(_roll);
 		_wtf = _chance + client_unhealthiness;
@@ -102,21 +102,21 @@ if(_type == "license") then {
 
 	if(_adjust == "Add") then { 
 
-		if(_amount == 1) then { licensearray SET [0,1]; ["Otrzymales prawo jazdy",false] spawn domsg; };
-		if(_amount == 2) then { licensearray SET [1,1]; ["Otrzymales licencje na bron",false] spawn domsg;  };
-		if(_amount == 3) then { licensearray SET [2,1]; ["Otrzymales licencje gornika",false] spawn domsg;  };
-		if(_amount == 4) then { licensearray SET [3,1]; ["Otrzymales licencje drwala",false] spawn domsg; };
-		if(_amount == 5) then { licensearray SET [4,1]; ["Otrzymales licencje rybaka",false] spawn domsg; };
+		if(_amount == 1) then { licensearray SET [0,1]; ["Du hast einen Fuehrerschein erhalten.",false] spawn domsg; };
+		if(_amount == 2) then { licensearray SET [1,1]; ["Du hast einen Waffenschein erhalten.",false] spawn domsg;  };
+		if(_amount == 3) then { licensearray SET [2,1]; ["Du hast eine Minerlizenz erhalten.",false] spawn domsg;  };
+		if(_amount == 4) then { licensearray SET [3,1]; ["Du hast eine Holzfaellerlizenz erhalten.",false] spawn domsg; };
+		if(_amount == 5) then { licensearray SET [4,1]; ["Du hast eine Fischerlizenz erhalten.",false] spawn domsg; };
 
 	};
 
 	if(_adjust == "Remove") then { 
 
-		if(_amount == 1) then { licensearray SET [0,0]; ["Straciles prawo jazdy",false] spawn domsg; };
-		if(_amount == 2) then { licensearray SET [1,0]; ["Straciles licencje na bron",false] spawn domsg; };
-		if(_amount == 3) then { licensearray SET [2,0]; ["Straciles licencje gornika",false] spawn domsg; };
-		if(_amount == 4) then { licensearray SET [3,0]; ["Straciles licencje drwala",false] spawn domsg; };
-		if(_amount == 5) then { licensearray SET [4,0]; ["Straciles licencje rybaka",false] spawn domsg; };
+		if(_amount == 1) then { licensearray SET [0,0]; ["Dein Fuehrerschein wurde dir entzogen.",false] spawn domsg; };
+		if(_amount == 2) then { licensearray SET [1,0]; ["Dein Waffenschein wurde dir entzogen.",false] spawn domsg; };
+		if(_amount == 3) then { licensearray SET [2,0]; ["Deine Minerlizenz wurde dir entzogen.",false] spawn domsg; };
+		if(_amount == 4) then { licensearray SET [3,0]; ["Deine Holzfaellerlizenz wurde dir entzogen.",false] spawn domsg; };
+		if(_amount == 5) then { licensearray SET [4,0]; ["Deine Fischerlizenz wurde dir entzogen.",false] spawn domsg; };
 
 	};
 

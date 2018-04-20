@@ -15,12 +15,12 @@
  client_canSync = false;
  switch(_type) do {
 	case "house": {
-		hint "Skrzynka zniknie w ciągu 2 minut!";
+		hint "Die Box wird innerhalb von 2 Minuten verschwinden.";
 		[player] remoteExec ["server_fnc_retreivehouse",2];
 		_time = time + 120;
 	};
 	case "shop": {
-		hint "Twoja skrzynia zniknie w ciągu 30 sekund - ludzie nie mogą używać do tego czasu Twojego sklepu!";
+		hint "Deine Box wird innerhalb von 30 Sekunden verschwinden - die Leute können deinen Laden bis dahin nicht benutzen.";
 		[player] remoteExec ["server_fnc_retreiveStore",2];
 		_time = time + 30;
 	};
