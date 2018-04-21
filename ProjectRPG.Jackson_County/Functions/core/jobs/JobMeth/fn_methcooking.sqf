@@ -1,8 +1,8 @@
-AcetoneArray = ["UWAGA: Substancja jest zbyt ciemna!","UWAGA: Substancja wydaje się być czarna!","UWAGA: Substancja jest zbyt jaskrawa!","UWAGA: Do substancji wpadł proszek do prania!","UWAGA: Substancja jest zanieczyszczona!"];
-PseudoArray = ["UWAGA: Substancja traci kolor!","UWAGA: Substancja jest mętna!","UWAGA: Substancja jest prawie przeźroczysta!","UWAGA: Substancja zmienia kolor na różowy!","UWAGA: Substancja ma odczyn kwasowy!"];
-CoolArray = ["UWAGA: Wydziela się zbyt dużo pary!","UWAGA: Kończy się gaz w palniku!","UWAGA: Robi się gorąco!","UWAGA: Substancja się pieni!","UWAGA: Substancja pachnie jak olej!","UWAGA: Substancja się przelewa!"];
-HeatArray = ["UWAGA: Substancja nie może przedostać się przez rurkę!","UWAGA: Substancja jest bardzo gęsta!","UWAGA: Substancja wygląda jak klej!","UWAGA: Substancja ma konsystencję gumy!"];
-ReleaseArray = ["UWAGA: Substancja płynie zbyt szybko!","UWAGA: Para zaczyna się ulatniać!","UWAGA: Fiolki wyglądają na zamglone!"];
+AcetoneArray = ["Hinweis: Die Substanz ist zu dunkel!","Hinweis: Die Substanz scheint schwarz zu sein!","Hinweis: Die Substanz ist zu hell!","Hinweis:  Die Substanz ist schneint weiß!","Hinweis: Die Substanz ist kontaminiert"];
+PseudoArray = ["Hinweis: Die Substanz verliert an Farbe!","Hinweis: Die Substanz ist druebe!","Hinweis: Die Substanz ist fast transparent!","Hinweis: Die Substanz wird rosa!","Hinweis: Die Substanz ist sauer!"];
+CoolArray = ["Hinweis: Zu viel Dampf wird ausgestoßen!","Hinweis: Die Substanz verdampft","Hinweis: Es wird heiß!","Hinweis: Die Substanz schäumt!","Hinweis: Die Substanz riecht nach Öl!","Hinweis: Die Substanz ist sehr dickfluessig!"];
+HeatArray = ["Hinweis: Die Substanz kann nicht durch die Röhre dringen!","Hinweis: Die Substanz ist sehr dick!","Hinweis: Die Substanz sieht aus wie Kleber!","Hinweis: Die Substanz hat eine gummiartige Konsistenz!"];
+ReleaseArray = ["Hinweis: Die Substanz fließt zu schnell!","Hinweis: Der Dampf beginnt zu verdampfen!","Hinweis:Die Fläschchen sehen druebe aus!"];
 
 _count = 0;
 checkFinish = false;
@@ -33,8 +33,8 @@ _randomValue = round(random 5) + 1;
 
 if(myDrugValue < 50) then { myDrugValue = 50; };
 _item = format["CG_MethBag%1", myDrugValue];
-["Sukces",format["Ugotowałeś %1 worków metamfetaminy", _randomvalue],[0,255,0,1],""] call Client_fnc_showNotification;
-[player,objNull,28,format ["%1 ugotował %2 worków metamfetaminy o jakości %3 CLASSNAME %4",name player, _randomValue, myDrugValue, _item],_randomValue] remoteExec ["server_fnc_actionLog", 2];
+["Verarbeite",format["Du hast %1 MethBag hergestellt.", _randomvalue],[0,255,0,1],""] call Client_fnc_showNotification;
+[player,objNull,28,format ["%1 kochte %2 MethBag %3 CLASSNAME %4",name player, _randomValue, myDrugValue, _item],_randomValue] remoteExec ["server_fnc_actionLog", 2];
 //hint format["Ugotowałeś %1 worków metamfetaminy!",_randomvalue];
 player additem "NP_DrugTable";
 ["MethGathered"] spawn mav_ttm_fnc_addExp;

@@ -10,8 +10,8 @@ _amount = param [2,0,[0]];
 
 if(_type == "Karma") then {
 
-	if(_adjust == "Add") then { client_karma = client_karma + _amount; [format["Du hast %1 Karma erlangt. Insgesammt hast du: %2",_amount,client_karma], true] spawn domsg; };
-	if(_adjust == "Remove") then { client_karma = client_karma - _amount; [format["Du hast %1 Karma verloren. Insgesammt hast du: %2",_amount,client_karma], true] spawn domsg; };
+	if(_adjust == "Add") then { client_karma = client_karma + _amount; [format["Karmalevel: %1 erlangt. Insgesammt hast du: %2",_amount,client_karma], true] spawn domsg; };
+	if(_adjust == "Remove") then { client_karma = client_karma - _amount; [format["Karmalevel: %1 verloren. Insgesammt hast du: %2",_amount,client_karma], true] spawn domsg; };
 
 	_oldKarmaLevel = karma_level;
 
