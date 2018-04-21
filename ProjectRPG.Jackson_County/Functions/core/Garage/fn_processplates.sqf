@@ -9,7 +9,7 @@ if!(_cashCheck) exitwith { hint "Du hast kein Geld!"; };
 _text = ctrlText 9993;
 
 _countPlate = count _text;
-if (_countPlate > 7) exitWith {["Fehler","Dein Wheiteboard hat mehr als sieben Zeichen!",[255,0,0,1],""] call Client_fnc_showNotification;};
+if (_countPlate > 7) exitWith {["Fehler","Dein Kennzeichen hat mehr als sieben Zeichen.",[255,0,0,1],""] call Client_fnc_showNotification;};
 _string = _text splitString " " joinString "";
 _string = _string splitString "#" joinString "";
 _string = _string splitString "*" joinString "";
@@ -54,8 +54,8 @@ _string = _string splitString "ś" joinString "";
 _string = _string splitString "`" joinString "";
 _string = _string splitString "~" joinString "";
 
-if (_string == "") exitWith {["Fehler","Dein Board ist Leer!",[255,0,0,1],""] call Client_fnc_showNotification;};
-if (isNil "_string") exitWith {["Fehler","Dein Board ist Leer!",[255,0,0,1],""] call Client_fnc_showNotification;};
+if (_string == "") exitWith {["Fehler","Dein Kennzeichen ist Leer.",[255,0,0,1],""] call Client_fnc_showNotification;};
+if (isNil "_string") exitWith {["Fehler","Dein Kennzeichen ist Leer.",[255,0,0,1],""] call Client_fnc_showNotification;};
 
 
 
