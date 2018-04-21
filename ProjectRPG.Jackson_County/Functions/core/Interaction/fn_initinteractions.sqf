@@ -553,7 +553,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance myhouse < 10 || typeof CurrentCursorTarget IN [""Land_PostB""]"],
-		["Postfach ueberpruefen", "[] spawn client_fnc_openMail",3]
+		["Postfach", "[] spawn client_fnc_openMail",3]
 	],
 
 	[
@@ -584,7 +584,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["str CurrentCursorTarget find ""mailboxnorth"" > -1"],
-		["Postfach ueberpruefen", "createdialog ""client_findMail""",3]
+		["Postfach", "createdialog ""client_findMail""",3]
 	],
 
 	[
