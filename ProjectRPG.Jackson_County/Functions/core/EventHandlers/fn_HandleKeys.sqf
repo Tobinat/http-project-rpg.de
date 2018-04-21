@@ -205,7 +205,7 @@ switch (_code) do
 					spikeAntispam = false;
 				};
 				deletevehicle _spikeStrips;
-				["Podniosłeś kolczatkę!", false] spawn domsg;
+				["SpikeStrips erhalten.", false] spawn domsg;
 				player additem "CG_Spikes_Collapsed";
 		};
 
@@ -225,13 +225,13 @@ switch (_code) do
 			if (!client_fadeSound) then
 			{
 				1 fadeSound 0.1;
-				["Poziom głośności został obniżony.", false] spawn domsg;
+				["Die Lautstärke wurde gesenkt.", false] spawn domsg;
 				client_fadesound = true;
 			}
 			else
 			{
 				1 fadeSound 1;
-				["Poziom głośności wrócił do normy.", false] spawn domsg;
+				["Die Lautstärke ist wieder normal.", false] spawn domsg;
 				client_fadesound = false;
 			};
 	        _handle = true;
@@ -257,7 +257,7 @@ switch (_code) do
 						spikeAntispam = false;
 					};
 					deletevehicle _spikeStrips;
-					["Podniosłeś kolczatkę!", false] spawn domsg;
+					["SpikeStrips gelegt", false] spawn domsg;
 					player additem "CG_Spikes_Collapsed";
 			};
 
