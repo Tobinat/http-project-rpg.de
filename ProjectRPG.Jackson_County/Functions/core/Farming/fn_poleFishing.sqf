@@ -39,13 +39,13 @@ imfishing = true;
 	};
 
 	if(_fail) exitwith {
-		hint "Du bist gegangen und hast den Köder verloren.";
+		hint "Du hast deinen Köder verloren, weil du zu weit Weg warst.";
 		deletevehicle _vehicle;
 		imfishing = false;
 	};
 
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL player, 15, 1, 45];
-	hint "Um ihn zu nehmen drücke die Windowstast.";
+	hint "Da hat was angebissen! Schnell drück den Windows-Muskel und pack das Ding an den Kiemen!";
 
 	mouseMovement = 1;
 	sleep 0.5;
@@ -117,7 +117,7 @@ imfishing = true;
 		if(_curWep == "legendary_fishing_rod") then { Player additemtobackpack _myFish; };
 
 	} else {
-		hint "Du warst zu langsam.";
+		hint "Du warst zu Lahmarschig";
 	};
 
 	imfishing = false;
