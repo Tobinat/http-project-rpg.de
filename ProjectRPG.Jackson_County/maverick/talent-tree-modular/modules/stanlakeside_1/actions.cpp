@@ -105,7 +105,7 @@ class CarTunedUp {
 
 class Paycheck {
     exptoAdd = 2;
-    message = "Lohnabrechungn erhalten";
+    message = "Du wurdest fuer deine Tapferen Taten entlohnt.";
 };
 
 class Exercised {
