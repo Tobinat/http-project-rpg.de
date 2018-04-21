@@ -6299,7 +6299,7 @@ class Mission
 			dataType="Marker";
 			position[]={1005.761,0,696.67297};
 			name="oreRefinery";
-			text="RAW-Verarbeitung";
+			text="Metall-Verarbeitung";
 			type="respawn_unknown";
 			colorName="ColorGUER";
 			id=219;
