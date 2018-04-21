@@ -1,0 +1,53 @@
+class FSM {
+    fsmName = "Server-Side Cleanup";
+    class States {
+        class init {
+            name = "init";
+            init = "private[""_function"",""_duration"",""_sleep""]; _function = _this select 0; _duration = _this select 1; _sleep = time;";
+            precondition = "";
+            class Links {
+                class true {
+                    priority = 0.000000;
+                    to = "Dummy";
+                    precondition = "";
+                    condition = "true";
+                    action = "";
+                };
+
+            };
+        };
+        class Dummy {
+            name = "Dummy";
+            init = "";
+            precondition = "";
+            class Links {
+                class Time_Check {
+                    priority = 0.000000;
+                    to = "Run_Function";
+                    precondition = "";
+                    condition = "((time - _sleep) > _duration)";
+                    action = "";
+                };
+
+            };
+        };
+        class Run_Function {
+            name = "Run_Function";
+            init = "[] call _function; _sleep = time;";
+            precondition = "";
+            class Links {
+                class true {
+                    priority = 0.000000;
+                    to = "Dummy";
+                    precondition = "";
+                    condition = "true";
+                    action = "";
+                };
+
+            };
+        };
+
+    };
+    initState = "init";
+    finalStates[] = {};
+};
