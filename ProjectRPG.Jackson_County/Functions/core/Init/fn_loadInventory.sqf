@@ -92,27 +92,27 @@ if (_houselevel > 6) then {
 	_marker = createMarkerLocal ["myhouse", _house];
 	_marker setMarkerShapeLocal "ICON";
 	_marker setMarkerTypeLocal "hd_dot";
-	_marker setMarkerTextLocal "Moja Willa";
+	_marker setMarkerTextLocal "Meine Villa";
 };
 if (_houselevel > 3) then {
 	deletemarkerlocal "myhouse";
 	_marker = createMarkerLocal ["myhouse", _house];
 	_marker setMarkerShapeLocal "ICON";
 	_marker setMarkerTypeLocal "hd_dot";
-	_marker setMarkerTextLocal "Mój Dom";
+	_marker setMarkerTextLocal "Mein Zuhause";
 } else {
 	deletemarkerlocal "myhouse";
 	_marker = createMarkerLocal ["myhouse", _house];
 	_marker setMarkerShapeLocal "ICON";
 	_marker setMarkerTypeLocal "hd_dot";
-	_marker setMarkerTextLocal "Moja Klitka";
+	_marker setMarkerTextLocal "Meine Kabine";
 };
 
 
 _marker = createMarkerLocal [getPlayerUID player, _shop];
 _marker setMarkerShapeLocal "ICON";
 _marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal format["%1 - ZAMKNIĘTY", _shopname];
+_marker setMarkerTextLocal format["%1 - GESCHLOSSEN", _shopname];
 
 
 player setVariable ["shopname", _shopname, false];
