@@ -6354,7 +6354,7 @@ class Mission
 			dataType="Marker";
 			position[]={6311.6528,0,2268.7661};
 			name="sales";
-			text="Ankauf/Holz/Öl";
+			text="Ankauf/Holz/Öl/Metall";
 			type="respawn_unknown";
 			colorName="ColorBrown";
 			id=224;

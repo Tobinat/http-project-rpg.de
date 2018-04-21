@@ -1014,7 +1014,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["((player distance (getMarkerPos ""sales"")) < 30)"],
-		["Rohstoffe beenden", "closedialog 0; [] spawn client_fnc_sellOre",4]
+		["Rohstoffe verkaufen", "closedialog 0; [] spawn client_fnc_sellOre",4]
 	],
 
 	//[
