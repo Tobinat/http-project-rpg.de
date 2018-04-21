@@ -222,7 +222,7 @@ if(_whatdo == "NEW") then {
 		_class = _x select 0;
 		_cost = _x select 1;
 		_FinishDisplayName = getText(configFile >> "CfgIvoryMaterials" >> _class >> "displayName");
-		_list lbAdd format["Cena: $%2 - %1",_FinishDisplayName,_cost];
+		_list lbAdd format["Kosten: $%2 - %1",_FinishDisplayName,_cost];
 		_list lbSetdata [(lbSize _list)-1,str([_class, _cost])];
 	} foreach _finishes;
 
