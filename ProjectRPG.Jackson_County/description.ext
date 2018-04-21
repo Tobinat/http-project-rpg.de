@@ -143,7 +143,7 @@ class CfgFunctions
             class adminMessage {};
             class adminGodmode {};
             class adminRemoteRespawn {};
-			
+
 		};
 
 		class police {
@@ -1498,8 +1498,8 @@ class CfgDebriefing {
         };
     };
     class Kicked {
-        title = "Zostałeś wyrzucony z gry";
-        subtitle = "Zostałeś wyrzucony z gry przez administratora!";
+        title = "Du wurdest aus dem Spiel geworfen";
+        subtitle = "Ein Administrator hat sie aus dem Spiel geworfen!";
         description = "";
         pictureBackground = "";
         picture = "";
@@ -1511,8 +1511,8 @@ class CfgDebriefing {
         };
     };
     class NotVersion {
-        title = "Zostałeś wyrzucony z gry";
-        subtitle = "Brak wykonanej synchronizacji Arma3Sync!";
+        title = "Du wurdest aus dem Spiel geworfen";
+        subtitle = "Synchronisiere deine Mod Dateien!";
         description = "";
         pictureBackground = "";
         picture = "";
@@ -1524,8 +1524,8 @@ class CfgDebriefing {
         };
     };
     class Respawn {
-        title = "Zostałeś wyrzucony z gry";
-        subtitle = "Skończyły Ci się życia!";
+        title = "Du wurdest aus dem Spiel geworfen";
+        subtitle = "Du bist gestorben!";
         description = "";
         pictureBackground = "";
         picture = "";
@@ -1537,8 +1537,8 @@ class CfgDebriefing {
         };
     };
     class WypierdalajKurwo {
-        title = "Zostałeś wyrzucony z gry";
-        subtitle = "No elo bulwo!";
+        title = "Du wurdest aus dem Spiel geworfen";
+        subtitle = "Tschau!";
         description = "";
         pictureBackground = "";
         picture = "";

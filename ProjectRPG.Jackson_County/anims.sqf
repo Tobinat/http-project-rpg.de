@@ -1,10 +1,10 @@
 vvv_anim_drink
 vvv_anim_eat
-vvv_anim_Knockout1In 
+vvv_anim_Knockout1In
 vvv_anim_lockpick
 vvv_anim_mugpis
 vvv_anim_mugrif
-vvv_anim_poo 
+vvv_anim_poo
 vvv_anim_punch1
 vvv_anim_ticket
 vvv_anim_weaponHit

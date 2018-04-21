@@ -34,14 +34,14 @@ uisleep 0.05;
 deletevehicle _vehicle;
 
 if(myhealth > 0.99) exitwith {
-	["Zabijanie gracza za battleloga.", true] spawn domsg;
-	[player,objNull,3,format ["%1 został zabity przez Battleloga", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
-	diag_log format["Zabijam %1 za battleloga", player];
+	["Toete Spieler fuer Deathlog.", true] spawn domsg;
+	[player,objNull,3,format ["%1 wurde getoetet", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
+	diag_log format["Toete %1 fuer Battlelog", player];
 	["Remove",1] call client_fnc_doHealth;
 	_respawn = player getVariable "respawn";
 	if (_respawn == 0) then {
 		[] spawn client_fnc_respawnTimer;
-	};	
+	};
 };
 
 cutText ["", "BLACK"];
@@ -95,4 +95,4 @@ sleep 2;
 437 cutfadeout 1;
 
 [] call client_fnc_initWelcome;
-["Klawisz Windows lub shift + 5 otwiera menu interakcji.", true] spawn domsg;
+["Windowstaste oder Shift+5 oeffnen Interaktionsmenue.", true] spawn domsg;
