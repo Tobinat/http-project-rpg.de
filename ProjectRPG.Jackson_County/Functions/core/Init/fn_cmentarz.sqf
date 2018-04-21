@@ -6,7 +6,7 @@
 if (sunOrMoon == 1) exitwith {};
 if (life_koil_hh == 1) exitwith {};
 
-["Dziwnie się czuję...", false] spawn domsg;
+["Ich fühle mich komisch...", false] spawn domsg;
 
 life_koil_hh = 1;
 uiSleep 1;
@@ -117,4 +117,4 @@ while { life_koil_hh == 1 } do {
 uiSleep 1;
 
 life_koil_hh = 2;
-["Zaczynam czuć się znowu normalnie.", false] spawn domsg;
+["Ich fühle mich wieder normal.", false] spawn domsg;
