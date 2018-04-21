@@ -255,7 +255,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_1";
-						description="Cywil 1";
+						description="Civilist 1";
 						isPlayable=1;
 					};
 					id=1;
@@ -311,7 +311,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_2";
-						description="Cywil 2";
+						description="Civilist 2";
 						isPlayable=1;
 					};
 					id=3;
@@ -367,7 +367,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_3";
-						description="Cywil 3";
+						description="Civilist 3";
 						isPlayable=1;
 					};
 					id=5;
@@ -423,7 +423,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_4";
-						description="Cywil 4";
+						description="Civilist 4";
 						isPlayable=1;
 					};
 					id=7;
@@ -479,7 +479,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_5";
-						description="Cywil 5";
+						description="Civilist 5";
 						isPlayable=1;
 					};
 					id=9;
@@ -535,7 +535,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_6";
-						description="Cywil 6";
+						description="Civilist 6";
 						isPlayable=1;
 					};
 					id=11;
@@ -591,7 +591,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_7";
-						description="Cywil 7";
+						description="Civilist 7";
 						isPlayable=1;
 					};
 					id=13;
@@ -647,7 +647,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_8";
-						description="Cywil 8";
+						description="Civilist 8";
 						isPlayable=1;
 					};
 					id=15;
@@ -703,7 +703,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_9";
-						description="Cywil 9";
+						description="Civilist 9";
 						isPlayable=1;
 					};
 					id=17;
@@ -759,7 +759,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_10";
-						description="Cywil 10";
+						description="Civilist 10";
 						isPlayable=1;
 					};
 					id=19;
@@ -815,7 +815,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_11";
-						description="Cywil 11";
+						description="Civilist 11";
 						isPlayable=1;
 					};
 					id=21;
@@ -871,7 +871,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_12";
-						description="Cywil 12";
+						description="Civilist 12";
 						isPlayable=1;
 					};
 					id=23;
@@ -927,7 +927,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_13";
-						description="Cywil 13";
+						description="Civilist 13";
 						isPlayable=1;
 					};
 					id=25;
@@ -983,7 +983,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_14";
-						description="Cywil 14";
+						description="Civilist 14";
 						isPlayable=1;
 					};
 					id=27;
@@ -1039,7 +1039,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_15";
-						description="Cywil 15";
+						description="Civilist 15";
 						isPlayable=1;
 					};
 					id=29;
@@ -1095,7 +1095,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_16";
-						description="Cywil 16";
+						description="Civilist 16";
 						isPlayable=1;
 					};
 					id=31;
@@ -1151,7 +1151,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_17";
-						description="Cywil 17";
+						description="Civilist 17";
 						isPlayable=1;
 					};
 					id=33;
@@ -1207,7 +1207,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_18";
-						description="Cywil 18";
+						description="Civilist 18";
 						isPlayable=1;
 					};
 					id=35;
@@ -1263,7 +1263,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_19";
-						description="Cywil 19";
+						description="Civilist 19";
 						isPlayable=1;
 					};
 					id=37;
@@ -1319,7 +1319,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_20";
-						description="Cywil 20";
+						description="Civilist 20";
 						isPlayable=1;
 					};
 					id=39;
@@ -1375,7 +1375,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_21";
-						description="Cywil 21";
+						description="Civilist 21";
 						isPlayable=1;
 					};
 					id=41;
@@ -1431,7 +1431,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_22";
-						description="Cywil 22";
+						description="Civilist 22";
 						isPlayable=1;
 					};
 					id=43;
@@ -1487,7 +1487,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_23";
-						description="Cywil 23";
+						description="Civilist 23";
 						isPlayable=1;
 					};
 					id=45;
@@ -1543,7 +1543,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_24";
-						description="Cywil 24";
+						description="Civilist 24";
 						isPlayable=1;
 					};
 					id=47;
@@ -1599,7 +1599,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_25";
-						description="Cywil 25";
+						description="Civilist 25";
 						isPlayable=1;
 					};
 					id=49;
@@ -1655,7 +1655,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_26";
-						description="Cywil 26";
+						description="Civilist 26";
 						isPlayable=1;
 					};
 					id=51;
@@ -1711,7 +1711,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_27";
-						description="Cywil 27";
+						description="Civilist 27";
 						isPlayable=1;
 					};
 					id=53;
@@ -1767,7 +1767,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_28";
-						description="Cywil 28";
+						description="Civilist 28";
 						isPlayable=1;
 					};
 					id=55;
@@ -1823,7 +1823,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_29";
-						description="Cywil 29";
+						description="Civilist 29";
 						isPlayable=1;
 					};
 					id=57;
@@ -1879,7 +1879,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_30";
-						description="Cywil 30";
+						description="Civilist 30";
 						isPlayable=1;
 					};
 					id=59;
@@ -1935,7 +1935,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_31";
-						description="Cywil 31";
+						description="Civilist 31";
 						isPlayable=1;
 					};
 					id=61;
@@ -1991,7 +1991,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_32";
-						description="Cywil 32";
+						description="Civilist 32";
 						isPlayable=1;
 					};
 					id=63;
@@ -2047,7 +2047,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_33";
-						description="Cywil 33";
+						description="Civilist 33";
 						isPlayable=1;
 					};
 					id=65;
@@ -2103,7 +2103,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_34";
-						description="Cywil 34";
+						description="Civilist 34";
 						isPlayable=1;
 					};
 					id=67;
@@ -2159,7 +2159,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_35";
-						description="Cywil 35";
+						description="Civilist 35";
 						isPlayable=1;
 					};
 					id=69;
@@ -2215,7 +2215,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_36";
-						description="Cywil 36";
+						description="Civilist 36";
 						isPlayable=1;
 					};
 					id=71;
@@ -2271,7 +2271,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_37";
-						description="Cywil 37";
+						description="Civilist 37";
 						isPlayable=1;
 					};
 					id=73;
@@ -2327,7 +2327,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_38";
-						description="Cywil 38";
+						description="Civilist 38";
 						isPlayable=1;
 					};
 					id=75;
@@ -2383,7 +2383,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_39";
-						description="Cywil 39";
+						description="Civilist 39";
 						isPlayable=1;
 					};
 					id=77;
@@ -2439,7 +2439,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_40";
-						description="Cywil 40";
+						description="Civilist 40";
 						isPlayable=1;
 					};
 					id=79;
@@ -2495,7 +2495,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_41";
-						description="Cywil 41";
+						description="Civilist 41";
 						isPlayable=1;
 					};
 					id=81;
@@ -2551,7 +2551,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_42";
-						description="Cywil 42";
+						description="Civilist 42";
 						isPlayable=1;
 					};
 					id=83;
@@ -2607,7 +2607,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_43";
-						description="Cywil 43";
+						description="Civilist 43";
 						isPlayable=1;
 					};
 					id=85;
@@ -2663,7 +2663,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_44";
-						description="Cywil 44";
+						description="Civilist 44";
 						isPlayable=1;
 					};
 					id=87;
@@ -2719,7 +2719,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_45";
-						description="Cywil 45";
+						description="Civilist 45";
 						isPlayable=1;
 					};
 					id=89;
@@ -2775,7 +2775,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_46";
-						description="Cywil 46";
+						description="Civilist 46";
 						isPlayable=1;
 					};
 					id=91;
@@ -2831,7 +2831,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_47";
-						description="Cywil 47";
+						description="Civilist 47";
 						isPlayable=1;
 					};
 					id=93;
@@ -2887,7 +2887,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_48";
-						description="Cywil 48";
+						description="Civilist 48";
 						isPlayable=1;
 					};
 					id=95;
@@ -2943,7 +2943,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_49";
-						description="Cywil 49";
+						description="Civilist 49";
 						isPlayable=1;
 					};
 					id=97;
@@ -2999,7 +2999,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_50";
-						description="Cywil 50";
+						description="Civilist 50";
 						isPlayable=1;
 					};
 					id=99;
@@ -3055,7 +3055,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_51";
-						description="Cywil 51";
+						description="Civilist 51";
 						isPlayable=1;
 					};
 					id=101;
@@ -3111,7 +3111,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_52";
-						description="Cywil 52";
+						description="Civilist 52";
 						isPlayable=1;
 					};
 					id=103;
@@ -3167,7 +3167,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_53";
-						description="Cywil 53";
+						description="Civilist 53";
 						isPlayable=1;
 					};
 					id=105;
@@ -3223,7 +3223,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_54";
-						description="Cywil 54";
+						description="Civilist 54";
 						isPlayable=1;
 					};
 					id=107;
@@ -3279,7 +3279,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_55";
-						description="Cywil 55";
+						description="Civilist 55";
 						isPlayable=1;
 					};
 					id=109;
@@ -3335,7 +3335,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_56";
-						description="Cywil 56";
+						description="Civilist 56";
 						isPlayable=1;
 					};
 					id=111;
@@ -3391,7 +3391,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_57";
-						description="Cywil 57";
+						description="Civilist 57";
 						isPlayable=1;
 					};
 					id=113;
@@ -3447,7 +3447,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_58";
-						description="Cywil 58";
+						description="Civilist 58";
 						isPlayable=1;
 					};
 					id=115;
@@ -3503,7 +3503,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_59";
-						description="Cywil 59";
+						description="Civilist 59";
 						isPlayable=1;
 					};
 					id=117;
@@ -3559,7 +3559,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_60";
-						description="Cywil 60";
+						description="Civilist 60";
 						isPlayable=1;
 					};
 					id=119;
@@ -3615,7 +3615,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_61";
-						description="Cywil 61";
+						description="Civilist 61";
 						isPlayable=1;
 					};
 					id=121;
@@ -3671,7 +3671,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_62";
-						description="Cywil 62";
+						description="Civilist 62";
 						isPlayable=1;
 					};
 					id=123;
@@ -3727,7 +3727,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_63";
-						description="Cywil 63";
+						description="Civilist 63";
 						isPlayable=1;
 					};
 					id=125;
@@ -3783,7 +3783,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_64";
-						description="Cywil 64";
+						description="Civilist 64";
 						isPlayable=1;
 					};
 					id=127;
@@ -3839,7 +3839,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_65";
-						description="Cywil 65";
+						description="Civilist 65";
 						isPlayable=1;
 					};
 					id=129;
@@ -3895,7 +3895,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_66";
-						description="Cywil 66";
+						description="Civilist 66";
 						isPlayable=1;
 					};
 					id=131;
@@ -3951,7 +3951,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_67";
-						description="Cywil 67";
+						description="Civilist 67";
 						isPlayable=1;
 					};
 					id=133;
@@ -4007,7 +4007,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_68";
-						description="Cywil 68";
+						description="Civilist 68";
 						isPlayable=1;
 					};
 					id=135;
@@ -4063,7 +4063,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_69";
-						description="Cywil 69";
+						description="Civilist 69";
 						isPlayable=1;
 					};
 					id=137;
@@ -4119,7 +4119,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_70";
-						description="Cywil 70";
+						description="Civilist 70";
 						isPlayable=1;
 					};
 					id=139;
@@ -4175,7 +4175,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_71";
-						description="Cywil 71";
+						description="Civilist 71";
 						isPlayable=1;
 					};
 					id=141;
@@ -4231,7 +4231,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_72";
-						description="Cywil 72";
+						description="Civilist 72";
 						isPlayable=1;
 					};
 					id=143;
@@ -4287,7 +4287,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_73";
-						description="Cywil 73";
+						description="Civilist 73";
 						isPlayable=1;
 					};
 					id=145;
@@ -4343,7 +4343,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_74";
-						description="Cywil 74";
+						description="Civilist 74";
 						isPlayable=1;
 					};
 					id=147;
@@ -4399,7 +4399,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_75";
-						description="Cywil 75";
+						description="Civilist 75";
 						isPlayable=1;
 					};
 					id=149;
@@ -4455,7 +4455,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_76";
-						description="Cywil 76";
+						description="Civilist 76";
 						isPlayable=1;
 					};
 					id=151;
@@ -4511,7 +4511,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_77";
-						description="Cywil 77";
+						description="Civilist 77";
 						isPlayable=1;
 					};
 					id=153;
@@ -4567,7 +4567,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_78";
-						description="Cywil 78";
+						description="Civilist 78";
 						isPlayable=1;
 					};
 					id=155;
@@ -4623,7 +4623,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_79";
-						description="Cywil 79";
+						description="Civilist 79";
 						isPlayable=1;
 					};
 					id=157;
@@ -4679,7 +4679,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_80";
-						description="Cywil 80";
+						description="Civilist 80";
 						isPlayable=1;
 					};
 					id=159;
@@ -4735,7 +4735,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_81";
-						description="Cywil 81";
+						description="Civilist 81";
 						isPlayable=1;
 					};
 					id=161;
@@ -4791,7 +4791,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_82";
-						description="Cywil 82";
+						description="Civilist 82";
 						isPlayable=1;
 					};
 					id=163;
@@ -4847,7 +4847,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_83";
-						description="Cywil 83";
+						description="Civilist 83";
 						isPlayable=1;
 					};
 					id=165;
@@ -4903,7 +4903,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_84";
-						description="Cywil 84";
+						description="Civilist 84";
 						isPlayable=1;
 					};
 					id=167;
@@ -4959,7 +4959,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_85";
-						description="Cywil 85";
+						description="Civilist 85";
 						isPlayable=1;
 					};
 					id=169;
@@ -5015,7 +5015,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_86";
-						description="Cywil 86";
+						description="Civilist 86";
 						isPlayable=1;
 					};
 					id=171;
@@ -5071,7 +5071,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_87";
-						description="Cywil 87";
+						description="Civilist 87";
 						isPlayable=1;
 					};
 					id=173;
@@ -5127,7 +5127,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_88";
-						description="Cywil 88";
+						description="Civilist 88";
 						isPlayable=1;
 					};
 					id=175;
@@ -5183,7 +5183,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_89";
-						description="Cywil 89";
+						description="Civilist 89";
 						isPlayable=1;
 					};
 					id=177;
@@ -5239,7 +5239,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_90";
-						description="Cywil 90";
+						description="Civilist 90";
 						isPlayable=1;
 					};
 					id=179;
@@ -5295,7 +5295,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_91";
-						description="Cywil 91";
+						description="Civilist 91";
 						isPlayable=1;
 					};
 					id=181;
@@ -5351,7 +5351,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_92";
-						description="Cywil 92";
+						description="Civilist 92";
 						isPlayable=1;
 					};
 					id=183;
@@ -5407,7 +5407,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_93";
-						description="Cywil 93";
+						description="Civilist 93";
 						isPlayable=1;
 					};
 					id=185;
@@ -5463,7 +5463,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_94";
-						description="Cywil 94";
+						description="Civilist 94";
 						isPlayable=1;
 					};
 					id=187;
@@ -5519,7 +5519,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_95";
-						description="Cywil 95";
+						description="Civilist 95";
 						isPlayable=1;
 					};
 					id=189;
@@ -5575,7 +5575,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_96";
-						description="Cywil 96";
+						description="Civilist 96";
 						isPlayable=1;
 					};
 					id=191;
@@ -5631,7 +5631,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_97";
-						description="Cywil 97";
+						description="Civilist 97";
 						isPlayable=1;
 					};
 					id=193;
@@ -5687,7 +5687,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_98";
-						description="Cywil 98";
+						description="Civilist 98";
 						isPlayable=1;
 					};
 					id=195;
@@ -5743,7 +5743,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_99";
-						description="Cywil 99";
+						description="Civilist 99";
 						isPlayable=1;
 					};
 					id=197;
@@ -5799,7 +5799,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_100";
-						description="Cywil 100";
+						description="Civilist 100";
 						isPlayable=1;
 					};
 					id=199;
@@ -5855,7 +5855,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_101";
-						description="Cywil 101";
+						description="Civilist 101";
 						isPlayable=1;
 					};
 					id=201;
@@ -5911,7 +5911,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_102";
-						description="Cywil 102";
+						description="Civilist 102";
 						isPlayable=1;
 					};
 					id=203;
@@ -5967,7 +5967,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_103";
-						description="Cywil 103";
+						description="Civilist 103";
 						isPlayable=1;
 					};
 					id=205;
@@ -6023,7 +6023,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_104";
-						description="Cywil 104";
+						description="Civilist 104";
 						isPlayable=1;
 					};
 					id=207;
@@ -6079,7 +6079,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_105";
-						description="Cywil 105";
+						description="Civilist 105";
 						isPlayable=1;
 					};
 					id=209;
@@ -6135,7 +6135,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_106";
-						description="Cywil 106";
+						description="Civilist 106";
 						isPlayable=1;
 					};
 					id=211;
@@ -6191,7 +6191,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_107";
-						description="Cywil 107";
+						description="Civilist 107";
 						isPlayable=1;
 					};
 					id=213;
@@ -6247,7 +6247,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_108";
-						description="Cywil 108";
+						description="Civilist 108";
 						isPlayable=1;
 					};
 					id=215;
@@ -7177,7 +7177,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_109";
-						description="Cywil 109";
+						description="Civilist 109";
 						isPlayable=1;
 					};
 					id=314;
@@ -7233,7 +7233,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_110";
-						description="Cywil 110";
+						description="Civilist 110";
 						isPlayable=1;
 					};
 					id=316;
@@ -7289,7 +7289,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_111";
-						description="Cywil 111";
+						description="Civilist 111";
 						isPlayable=1;
 					};
 					id=318;
@@ -7345,7 +7345,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_112";
-						description="Cywil 112";
+						description="Civilist 112";
 						isPlayable=1;
 					};
 					id=320;
@@ -7401,7 +7401,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_113";
-						description="Cywil 113";
+						description="Civilist 113";
 						isPlayable=1;
 					};
 					id=322;
@@ -7457,7 +7457,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_114";
-						description="Cywil 114";
+						description="Civilist 114";
 						isPlayable=1;
 					};
 					id=324;
@@ -7513,7 +7513,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_115";
-						description="Cywil 115";
+						description="Civilist 115";
 						isPlayable=1;
 					};
 					id=326;
@@ -7569,7 +7569,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_116";
-						description="Cywil 116";
+						description="Civilist 116";
 						isPlayable=1;
 					};
 					id=328;
@@ -7625,7 +7625,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_117";
-						description="Cywil 117";
+						description="Civilist 117";
 						isPlayable=1;
 					};
 					id=330;
@@ -7681,7 +7681,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_118";
-						description="Cywil 118";
+						description="Civilist 118";
 						isPlayable=1;
 					};
 					id=332;
@@ -7737,7 +7737,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_119";
-						description="Cywil 119";
+						description="Civilist 119";
 						isPlayable=1;
 					};
 					id=334;
@@ -7793,7 +7793,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_120";
-						description="Cywil 120";
+						description="Civilist 120";
 						isPlayable=1;
 					};
 					id=336;
@@ -7849,7 +7849,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_121";
-						description="Cywil 121";
+						description="Civilist 121";
 						isPlayable=1;
 					};
 					id=338;
@@ -7905,7 +7905,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_122";
-						description="Cywil 122";
+						description="Civilist 122";
 						isPlayable=1;
 					};
 					id=340;
@@ -7961,7 +7961,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_123";
-						description="Cywil 123";
+						description="Civilist 123";
 						isPlayable=1;
 					};
 					id=342;
@@ -8017,7 +8017,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_124";
-						description="Cywil 124";
+						description="Civilist 124";
 						isPlayable=1;
 					};
 					id=344;
@@ -8073,7 +8073,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_125";
-						description="Cywil 125";
+						description="Civilist 125";
 						isPlayable=1;
 					};
 					id=346;
@@ -8129,7 +8129,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_126";
-						description="Cywil 126";
+						description="Civilist 126";
 						isPlayable=1;
 					};
 					id=348;
@@ -8185,7 +8185,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_127";
-						description="Cywil 127";
+						description="Civilist 127";
 						isPlayable=1;
 					};
 					id=350;
@@ -8241,7 +8241,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_128";
-						description="Cywil 128";
+						description="Civilist 128";
 						isPlayable=1;
 					};
 					id=352;
@@ -8297,7 +8297,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_129";
-						description="Cywil 129";
+						description="Civilist 129";
 						isPlayable=1;
 					};
 					id=354;
@@ -8353,7 +8353,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_130";
-						description="Cywil 130";
+						description="Civilist 130";
 						isPlayable=1;
 					};
 					id=356;
@@ -8409,7 +8409,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_131";
-						description="Cywil 131";
+						description="Civilist 131";
 						isPlayable=1;
 					};
 					id=358;
@@ -8465,7 +8465,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_132";
-						description="Cywil 132";
+						description="Civilist 132";
 						isPlayable=1;
 					};
 					id=360;
@@ -8521,7 +8521,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_133";
-						description="Cywil 133";
+						description="Civilist 133";
 						isPlayable=1;
 					};
 					id=362;
@@ -8577,7 +8577,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_134";
-						description="Cywil 134";
+						description="Civilist 134";
 						isPlayable=1;
 					};
 					id=364;
@@ -8633,7 +8633,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_135";
-						description="Cywil 135";
+						description="Civilist 135";
 						isPlayable=1;
 					};
 					id=366;
@@ -8689,7 +8689,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_136";
-						description="Cywil 136";
+						description="Civilist 136";
 						isPlayable=1;
 					};
 					id=368;
@@ -8745,7 +8745,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_137";
-						description="Cywil 137";
+						description="Civilist 137";
 						isPlayable=1;
 					};
 					id=370;
@@ -8801,7 +8801,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_138";
-						description="Cywil 138";
+						description="Civilist 138";
 						isPlayable=1;
 					};
 					id=372;
@@ -8857,7 +8857,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_139";
-						description="Cywil 139";
+						description="Civilist 139";
 						isPlayable=1;
 					};
 					id=374;
@@ -8913,7 +8913,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_140";
-						description="Cywil 140";
+						description="Civilist 140";
 						isPlayable=1;
 					};
 					id=376;
@@ -8969,7 +8969,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_141";
-						description="Cywil 141";
+						description="Civilist 141";
 						isPlayable=1;
 					};
 					id=378;
@@ -9025,7 +9025,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_142";
-						description="Cywil 142";
+						description="Civilist 142";
 						isPlayable=1;
 					};
 					id=380;
@@ -9081,7 +9081,7 @@ class Mission
 					class Attributes
 					{
 						name="civ_143";
-						description="Cywil 143";
+						description="Civilist 143";
 						isPlayable=1;
 					};
 					id=382;
