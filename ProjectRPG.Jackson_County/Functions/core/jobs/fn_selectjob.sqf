@@ -1,4 +1,4 @@
-if(taskrunning) exitwith {hint "Masz już pracę!"; };
+if(taskrunning) exitwith {hint "Du hast schon einen Job."; };
 _data = lbData[9001,lbCurSel (9001)];
 _data = call compile format["%1", _data];
 _clientJobs = ["Wood Logging"];

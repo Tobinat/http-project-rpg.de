@@ -26,34 +26,34 @@ _Jobs pushback ["Kurier Fedex","mail"];
 };
 
 if(count currentSecurity < (_count select 1)) then {
-_Jobs pushback ["Ochrona","security"]; 
+_Jobs pushback ["Security","security"]; 
 };
 
 if(count currentTrashman < (_count select 2)) then {
-_Jobs pushback ["Wywóz śmieci","trashman"]; 
+_Jobs pushback ["Muellabfuhr","trashman"]; 
 };
 
 if(count currentNewsMan < (_count select 3)) then {
-_Jobs pushback ["Reporter wiadomości","reporter"]; 
+_Jobs pushback ["Reporter","reporter"]; 
 };
 
 if(count currentRepairmen < (_count select 4)) then {
-_Jobs pushback ["Mechanik","repairman"]; 
+_Jobs pushback ["Mechaniker","repairman"]; 
 };
 
 if(count currentTaxiDrivers < (_count select 5)) then {
-_Jobs pushback ["Taksowkarz","taxi"]; 
+_Jobs pushback ["Taxifahrer","taxi"]; 
 };
-if(_jobs isequalto []) then { _jobs = ["Brak dostępnych prac"]; };
+if(_jobs isequalto []) then { _jobs = ["Keine Arbeit verfügbar"]; };
 
 {
-	_list lbAdd format["Praca: %1",_x select 0];
+	_list lbAdd format["Arbeit: %1",_x select 0];
 	_list lbSetdata [(lbSize _list)-1,str(_x select 1)];
 } foreach _jobs;
 
-_list lbAdd "Praca: Drwal";
+_list lbAdd "Arbeit: Holzfäller";
 _job = "Wood Logging";
 _list lbSetdata [(lbSize _list)-1,str(_job)];
 
-hint "Prace uprawne wymagają plecaka - Większość prac udostępnia Ci pojazd firmowy. Skorzystaj z niego naciskając Windows, a następnie wybierz odpowiednią opcję.";
+hint "Holzfaell arbeiten erforden einen Rucksack - Die meisten Firmen stellen dir ein Firmenwaagen zur Verfügung. Verwende die Windowstaste und wähle die entsprechende Option aus.";
 

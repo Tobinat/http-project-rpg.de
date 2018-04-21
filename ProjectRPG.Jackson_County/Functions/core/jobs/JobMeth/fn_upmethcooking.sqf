@@ -1,5 +1,5 @@
 _required = _this select 0;
-if(checkFinish) exitwith { hint "Nie tak szybko!"; };
+if(checkFinish) exitwith { hint "Nicht so schnell!"; };
 
 if(animationState player != "Acts_carFixingWheel") then {
 	player playmovenow "Acts_carFixingWheel";  
@@ -7,7 +7,7 @@ if(animationState player != "Acts_carFixingWheel") then {
 };
 
 if(requiredOutput == _required) then { 
-	hint "Zadziałało! Produkt nie stracił na wartości!"; 
+	hint "Es hat funktioniert! Das Produkt hat nicht an Wert verloren!"; 
 	totalskills = totalskills - 10;
 	if(_required == "Acetone" || _required == "Pseudo") then { playSound3D ["CG_Jobs\sounds\meth\drugAdd.ogg", player, false, getPosasl player, 2, 1, 15]; };
 	if(_required == "Cool") then { playSound3D ["CG_Jobs\sounds\meth\drugCool.ogg", player, false, getPosasl player, 2, 1, 15]; };
@@ -15,13 +15,13 @@ if(requiredOutput == _required) then {
 	if(_required == "Release") then { playSound3D ["CG_Jobs\sounds\meth\drugPressure.ogg", player, false, getPosasl player, 2, 1, 15]; };
 } else { 
 	myDrugValue = myDrugValue - 10; 
-	hint "Źle.. miejmy nadzieję że uda się zapobiec eksplozji";
+	hint "Verdammt .. hoffentlich können wir die Explosion verhindern";
 	_randomValue = random 30;
 	playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 5, 1, 15];
 	playSound3D ["CG_Jobs\sounds\meth\drugPressure.ogg", player, false, getPosasl player, 5, 1, 15];
 	if(_randomValue < 3) exitwith { 
 		"R_60mm_HE" createvehicle (getPosatl player); 
-		hint "Well, you messed up!"; 
+		hint "Nun, du hast versaut!"; 
 		cookingMeth = false;
 		[(getpos player)] remoteExec ["server_fnc_firestart",2];
 		player removeaction myAction1;
