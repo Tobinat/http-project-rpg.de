@@ -271,7 +271,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["currentcursortarget in current_cars || myjob IN [""Cop"",""Fire"",""EMS""] "],
-		["Spieler aus dem Fahrzeug ziehen", " ['Wyciąganie graczy',10,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; ",2]
+		["Aus dem Fahrzeug ziehen", " ['Spieler herausziehen',10,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; ",2]
 	],
 
 	[
@@ -553,7 +553,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance myhouse < 10 || typeof CurrentCursorTarget IN [""Land_PostB""]"],
-		["Postfach ueberpruefen", "[] spawn client_fnc_openMail",3]
+		["Postfach", "[] spawn client_fnc_openMail",3]
 	],
 
 	[
@@ -584,7 +584,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["str CurrentCursorTarget find ""mailboxnorth"" > -1"],
-		["Postfach ueberpruefen", "createdialog ""client_findMail""",3]
+		["Postfach", "createdialog ""client_findMail""",3]
 	],
 
 	[
