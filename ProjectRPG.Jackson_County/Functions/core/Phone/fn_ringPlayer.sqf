@@ -30,5 +30,5 @@
 		PhonesRinging = false;		
 	} else {
 		currentCaller remoteExec ["fnc_busyAnswer",currentCaller];
-		["Du hast nicht ans Telefon gegangen.", false] spawn domsg; 
+		["Du bist nicht ans Telefon gegangen.", false] spawn domsg; 
 	};
