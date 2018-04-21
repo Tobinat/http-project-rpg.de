@@ -126,7 +126,7 @@ _selectedFinishDialog = 0;
 	_class = _x select 0;
 	_cost = _x select 1;
 	_FinishDisplayName = getText(configFile >> "CfgIvoryMaterials" >> _class >> "displayName");
-	_finishCtrl lbAdd format["Cena: $%2 - %1",_FinishDisplayName,_cost];
+	_finishCtrl lbAdd format["Preis: $%2 - %1",_FinishDisplayName,_cost];
 	_index = (lbSize _finishCtrl) - 1;
 	if(_finish == _class) then { _selectedFinishDialog = _index; };
 	_finishCtrl lbSetdata [_index, str([_class, _cost])];
@@ -219,7 +219,7 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 				spawnedVehicle setObjectTexture [2,"#(argb,8,8,3)color(0,0,0," + str (_selectedWindows / 10) + ",ca)"];
 				spawnedVehicle setObjectTexture [3,"#(argb,8,8,3)color(0,0,0," + str (_selectedLights / 10) + ",ca)"];
 			};
-			_priceStr = format["Cena: $%1",_price];
+			_priceStr = format["Preis: $%1",_price];
 			_priceCtrl ctrlSetText _priceStr;
 	};
 };
@@ -269,7 +269,7 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 
 		_haveCash = [1,_price] call Client_fnc_sl_checkMoney_secure;
 		if !(_haveCash) exitWith {
-			["Nie masz wystarczającej ilości pieniędzy.", false] spawn domsg;
+			["Du hast nicht genug Geld.", false] spawn domsg;
 			closeDialog 0;
 			//_color = getText(configfile >> "CfgIvoryTextures" >> _color >> "texture");
 			//_finish = getText(configfile >> "CfgIvoryMaterials" >> _finish >> "material");
@@ -296,7 +296,7 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_information set [5,_selectedWindows];
 		_information set [6,_selectedLights];
 		
-		[format["Przemalowałeś pojazd za: $%1. Twój pojazd jest teraz w garażu.", _price], false] spawn domsg;
+		[format["Fahrzeug umlackiert für: $ %1. Dein Fahrzeug ist jetzt in der Garage.", _price], false] spawn domsg;
 		[_selectedColor, _selectedFinish, _selectedRims, _selectedLights, _selectedWindows, _license] remoteExec ["server_fnc_updateVehicleColor", 2];
 		
 		[spawnedVehicle] call client_fnc_storeCar;
