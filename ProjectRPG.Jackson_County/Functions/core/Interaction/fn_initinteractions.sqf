@@ -385,10 +385,10 @@ NoPixel_InteractionMenuItems = [
 		["Lizenz entziehen", " ['Entziehe',5,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
-	[
-		[" CurrentCursorTarget isKindOf 'Man'", "(myjob == ""Cop"" || myjob == ""EMS"")"],
-		["Beweise sammeln", " hint format[""Vor- und Nachname: %1\nSozialversicherung: %2"",name currentcursortarget, getPlayerUID currentcursortarget]; ",2]
-	],
+	//[
+	//	[" CurrentCursorTarget isKindOf 'Man'", "(myjob == ""Cop"" || myjob == ""EMS"")"],
+	//	["Beweise sammeln", " hint format[""Vor- und Nachname: %1\nSozialversicherung: %2"",name currentcursortarget, getPlayerUID currentcursortarget]; ",2]
+	//],
 
 	[
 		[" CurrentCursorTarget isKindOf 'Man'", "myjob == ""Cop"""],
@@ -883,10 +883,10 @@ NoPixel_InteractionMenuItems = [
 		["Laden Ausrauben", " [] spawn client_fnc_robShop; ",4]
 	],
 
-	[
-		["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
-		["Beweise Sammeln", "[""Sammle Beweise"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
-	],
+	//[
+	//	["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
+	//	["Beweise Sammeln", "[""Sammle Beweise"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+	//],
 	[
 		["CurrentCursorTarget != objNull && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
 		["Beweise zerstoeren", "[""Zerstoere Beweise"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
