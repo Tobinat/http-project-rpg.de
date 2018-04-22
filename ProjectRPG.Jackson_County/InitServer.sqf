@@ -1,7 +1,7 @@
 [] spawn server_fnc_init;
 
 //usunięcie bram w willach
-_obj = [9585.29, 3385.69, 0.00143814] nearestObject 166437; 
+/* _obj = [9585.29, 3385.69, 0.00143814] nearestObject 166437; 
 _obj enableSimulationGlobal false;
 _obj hideObjectGlobal true;
 
@@ -11,7 +11,7 @@ _obj hideObjectGlobal true;
 
 _obj = [10017.60, 3585.74, 0.00143814] nearestObject 165573; 
 _obj enableSimulationGlobal false;
-_obj hideObjectGlobal true;
+_obj hideObjectGlobal true; */
 
 GarageVariableWhore = "Flag_US_F" createVehicle [0,1,0];
 

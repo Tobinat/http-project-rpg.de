@@ -210,12 +210,12 @@ if (_booli) then {
 
 	sleep 0.15;
 
-	_insertstr = format ["insertMail:%1:%2:%3:%4", "Witaj, to jest twoj pierwszy powitalny list! Witamy w Silver Lake!", format ["Drogi %1", name _player], "Silver Lake Urzad Miasta", getplayeruid _player];
+	_insertstr = format ["insertMail:%1:%2:%3:%4", "Hallo, dies ist dein erster Willkommensbrief! Willkommen in Silver Lake!", format ["Drogi %1", name _player], "Silver Lake Urzad Miasta", getplayeruid _player];
 	_insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
 
 	sleep 0.15;
 
-	_insertstr = format ["insertMessage:%1:%2:%3:%4", "Witaj, to jest twoj pierwszy SMS! Witamy w Silver Lake Siec Verizon!", format ["Drogi %1", name _player], "Siec Verizon", getplayeruid _player];
+	_insertstr = format ["insertMessage:%1:%2:%3:%4", "Hallo, das ist deine erste SMS! Willkommen im Silver Lake Verizon Netzwerk!", format ["Drogi %1", name _player], "Siec Verizon", getplayeruid _player];
 	_insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
 
 	sleep 1;
