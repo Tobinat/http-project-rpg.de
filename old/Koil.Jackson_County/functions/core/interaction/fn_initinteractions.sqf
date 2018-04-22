@@ -62,17 +62,17 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(licensearray select 2) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Bergbau Lizenz", " [""Add"",""license"",3] call client_fnc_sustain; ",1]
+		["Bergbau Zertifikat", " [""Add"",""license"",3] call client_fnc_sustain; ",1]
 	],
 
 	[
 		["(licensearray select 3) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Holzfäller Lizenz", "[""Add"",""license"",4] call client_fnc_sustain;",1]
+		["Forstwirtschaftsschein", "[""Add"",""license"",4] call client_fnc_sustain;",1]
 	],
 
 	[
 		["(licensearray select 4) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Fischer Lizenz", "[""Add"",""license"",5] call client_fnc_sustain;",1]
+		["Angelschein", "[""Add"",""license"",5] call client_fnc_sustain;",1]
 	],
 
 	[

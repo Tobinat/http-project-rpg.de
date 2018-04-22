@@ -18,7 +18,7 @@
 		while{PhonesRinging} do {
 			playSound "cgphone_call";
 			if(_type == 1) then {
-				[format["Eingehender Anruf von %1!","Gespeicherte Rufnummer"], false] spawn domsg; 
+				[format["Eingehender Anruf von %1!","Unbekannte Nummer"], false] spawn domsg; 
 			} else {
 				[format["Eingehender Anruf von %1!",name currentcaller], false] spawn domsg; 
 			};
