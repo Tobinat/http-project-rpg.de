@@ -5,7 +5,7 @@ Cutting down trees by koil
 if(isNil "totalLogs") then { totallogs = 0; };
 _tree = cursorobject;
 if (str _tree find ": t_" > -1) then {
-	if(_tree IN mytrees) exitwith { ["Brak surowca, znajdź inne drzewo!", true] spawn domsg; };
+	if(_tree IN mytrees) exitwith { ["Oh der Baum ist leer finde einen anderen Baum!", true] spawn domsg; };
 	_sound = round(random 5);
 	switch(_sound) do {
 		case 0: {
