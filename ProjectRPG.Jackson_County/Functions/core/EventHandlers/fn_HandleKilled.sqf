@@ -25,11 +25,14 @@ params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_lengt
 
 player setVariable ["tf_voiceVolume", 0, true];
 
-
+/*
 _length = 20 - _length;
 _length = round(_length);
 if(_length > 11) then { _length = 15; };
 if(_length < 5) then { _length = 8; };
+client_respawn_timer = _length;
+*/
+_length = 1;
 client_respawn_timer = _length;
 
 _unit setVariable["dead",true,true];
@@ -100,7 +103,7 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	maxTime = time + (client_respawn_timer * 60);
+	maxTime = time + (client_respawn_timer * 5);
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format["Respawn: %1",[(maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(maxTime - time) <= 0 OR isNull _this};
 	_respawn = player getVariable "respawn";
