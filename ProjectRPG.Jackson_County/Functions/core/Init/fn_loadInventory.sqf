@@ -150,7 +150,7 @@ moneyOwed = (_statuses select 11) select 1;
 if(count(_prisonArray) > 0) then {
 	[_prisonArray] spawn client_fnc_slpd_jail_setup;
 } else {
-	//player setpos [7639.87,2553.39,0.00143814];
+	player setpos [7639.87,2553.39,0.00143814];
 	if(_higherup) exitwith { player setpos _house};
 	if(_houselevel == 1) then {
 		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];
