@@ -44,7 +44,7 @@ if(_chance > 80) then {
 
 		if(_amount < 0) then { _amount = 5; };
 
-		robbedstores pushback _shop; hint format["Okradłeś ten sklep na: %1",_amount]; [_amount] call Client_fnc_sl_addCash_secure; 
+		robbedstores pushback _shop; hint format["Du hast diese Summe entwendet: %1",_amount]; [_amount] call Client_fnc_sl_addCash_secure; 
 
 	};
 

@@ -21,18 +21,18 @@ if(!taskrunning) then {
 		while{taskrunning && myjob == "security"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
-				hint "Nie masz obecnie żadnych zleceń, patroluj miasto i pilnuj sklepów!";
+				hint "Sie haben derzeit keine Aufgabe, patrouilliere die Stadt und sichere Geschaefte!";
 				uisleep 60;
 			} else {
 
 				if(player distance ((playertasks select 0) select 0) < 15) then {
-					hint "Dotarłeś na miejsce, wypatruj podejrzanych!";
+					hint "Du bist an deinem Einsatzort, halte ausschau nach verdaechtigen!";
 					paycheck = paycheck + 10;
 					playertasks deleteat 0;
 					uisleep 3;
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
-					hint "A store robbery has occured!: Job Type - Security";	
+					hint "Ein Laden wurde ausgeraubt!: Job Typ - Security";	
 					[((playertasks select 0) select 0)] call client_fnc_jobMarker;			
 					uisleep 3;
 				};

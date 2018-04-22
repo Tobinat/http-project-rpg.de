@@ -1,7 +1,7 @@
 //[getpos player(or object they drop / bin they use),"player"] remoteExec ["client_fnc_startGarbage",_player];
 //
 // _type is bin, player, dump - only should need to call player driven tasks with remoteexec.
-if(myjob != "none" && myjob != "TrashMan") exitwith { hint "Masz już pracę!"; };
+if(myjob != "none" && myjob != "TrashMan") exitwith { hint "Du hast bereits Arbeit!"; };
 if(isnil "taskrunning") then { taskrunning = false; };
 
 if(isnil "mapBins") then {
@@ -33,12 +33,12 @@ while{taskrunning  && myjob == "TrashMan" } do {
 			_garbageLevel = 0;
 			playertasks pushback [[1064,3667,0.014],"dump"];	
 			[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
-			hint "Zlecenie (Zaznaczone na mapie): Wywóz śmieci";			
+			hint "Auftrag (Markiert auf Karte): Abfall Kontainer leeren";			
 		} else {
 			mybin = mapBins call BIS_fnc_selectRandom;
 			playertasks pushback [mybin,"bin"];
 			[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
-			hint "Zlecenie (Zaznaczone na mapie): Wywóz śmieci";
+			hint "Auftrag (Markiert auf Karte): Abfall Kontainer leeren";
 		};
 	} else {
 
@@ -46,7 +46,7 @@ while{taskrunning  && myjob == "TrashMan" } do {
 		_warning = _warnings + 1;
 		if(_warnings > 150) then { 
 			taskrunning = false; 
-			hint "Zostałeś wyrzucony z pracy!"; 
+			hint "Du wurdest gefeuert!"; 
 		};
 
 		if !( (getmarkerpos _markername select 0) isEqualTo (getpos ((playertasks select 0) select 0) select 0) && (getmarkerpos _markername select 1) isEqualTo (getpos ((playertasks select 0) select 0) select 1) ) then {
@@ -73,7 +73,7 @@ while{taskrunning  && myjob == "TrashMan" } do {
 
 			if(((playertasks select 0) select 1) == "player") then {
 				//create function here to pick up player dropped garbage then pay the user.
-				hint "Zbierz śmieci znajdujące się w pobliżu.";
+				hint "Sammle den Abfall in der umgebung.";
 				_garbagelevel = _garbagelevel + 1;
 			};
 

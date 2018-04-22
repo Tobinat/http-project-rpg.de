@@ -20,18 +20,18 @@ if(!taskrunning) then {
 		while{taskrunning && myjob == "towtruck"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
-				hint "Nie masz obecnie żadnych zleceń. Wypatruj pojazdów które wymagają holowania!";
+				hint "Sie haben derzeit keine Aufgabe. Achten sie auf Fahrzeuge die abgeschleppt werden muessen.!";
 				uisleep 60;
 			} else {
 
 				if(player distance ((playertasks select 0) select 0) < 15) then {
-					hint "Dotarłeś na miejsce!";
+					hint "Hier bist du richtig, jetzt ran an die Arbeit!";
 					paycheck = paycheck + 75;
 					playertasks deleteat 0;
 					uisleep 3;
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
-					hint "Zlecenie (Zaznaczone na mapie): Typ - Holuj pojazd";	
+					hint "Auftrag (Markiert auf Karte): Typ - Abschleppen";	
 					[((playertasks select 0) select 0)] call client_fnc_jobMarker;			
 					uisleep 3;
 				};
