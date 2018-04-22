@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1674;
+		nextID=1693;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4199.4468,294.42987,1694.231};
-		dir[]={-0.40442765,-0.44967505,0.79643667};
-		up[]={-0.20362623,0.89315462,0.40100318};
-		aside[]={0.89166331,-7.1898103e-007,0.4527792};
+		pos[]={9645.0039,67.825813,4085.4329};
+		dir[]={-0.54746133,-0.676072,0.49338585};
+		up[]={-0.50226867,0.73672938,0.45265511};
+		aside[]={0.66954106,1.7589336e-006,0.74292368};
 	};
 };
 binarizationWanted=0;
@@ -49,13 +49,16 @@ addons[]=
 	"A3_Trees",
 	"A3_Structures_F_Civ_Accessories",
 	"PoliceStation",
-	"A3L_HospitalBed2015"
+	"A3L_HospitalBed2015",
+	"A3_Modules_F",
+	"buildingshospital1_F",
+	"landscapePart2_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=22;
+		items=25;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -188,6 +191,23 @@ class AddonsMetaData
 			className="A3L_HospitalBed2015";
 			name="A3L_HospitalBed2015";
 		};
+		class Item22
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item23
+		{
+			className="buildingshospital1_F";
+			name="buildingshospital1_F";
+		};
+		class Item24
+		{
+			className="landscapePart2_F";
+			name="landscapePart2_F";
+		};
 	};
 };
 randomSeed=14654677;
@@ -218,7 +238,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=387;
+		items=390;
 		class Item0
 		{
 			dataType="Group";
@@ -6631,7 +6651,7 @@ class Mission
 			position[]={7319.7217,5.3434937e+024,4584.4844};
 			name="race_5";
 			type="Empty";
-			angle=108.75141;
+			angle=108.7514;
 			id=257;
 			atlOffset=5.3434937e+024;
 		};
@@ -9266,7 +9286,7 @@ class Mission
 			};
 			id=403;
 			type="Box_NATO_Equip_F";
-			atlOffset=14.871193;
+			atlOffset=14.871162;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9474,7 +9494,7 @@ class Mission
 			};
 			id=468;
 			type="Box_NATO_Uniforms_F";
-			atlOffset=14.88578;
+			atlOffset=14.88575;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9610,8 +9630,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9561.3008,25,4192.7114};
-				angles[]={0,6.1041684,0};
+				position[]={9554,25,4200.1182};
+				angles[]={-0,2.9111867,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9629,8 +9649,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9566.6797,25,4155.6504};
-				angles[]={0,2.9101808,0};
+				position[]={9537.2314,25,4246.9536};
+				angles[]={-0,6.1951265,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9800,8 +9820,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9576.6494,25.084999,4211.4404};
-				angles[]={0,4.4663148,0};
+				position[]={9544.4961,25.084999,4280.8306};
+				angles[]={-0,3.0757024,0};
 			};
 			side="Empty";
 			flags=4;
@@ -14810,7 +14830,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9570.3896,25.761518,4129.5493};
+				position[]={9570.417,25.761919,4129.646};
 				angles[]={6.2738566,2.9278815,0.0014648439};
 			};
 			side="Empty";
@@ -14821,7 +14841,6 @@ class Mission
 			};
 			id=1668;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.0096263885;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14851,18 +14870,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9565.291,25.745913,4128.6841};
+				position[]={9565.2813,25.742659,4128.4009};
 				angles[]={6.2738566,2.9089561,0.0014648439};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=1669;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.010038376;
+			atlOffset=0.58492088;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14892,18 +14910,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9560.5576,25.72756,4127.4668};
+				position[]={9560.5479,25.724306,4127.1836};
 				angles[]={6.2738566,2.9033573,0.0014648439};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=1670;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.010419846;
+			atlOffset=0.56656837;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14933,8 +14950,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9555.9336,25.7103,4126.3491};
-				angles[]={6.2738504,2.8930376,0.0014648439};
+				position[]={9555.9238,25.707047,4126.0659};
+				angles[]={6.2738566,2.8930376,0.0014648439};
 			};
 			side="Empty";
 			flags=4;
@@ -14944,7 +14961,6 @@ class Mission
 			};
 			id=1671;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.010791779;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14974,7 +14990,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9569.3447,26.066473,4125.4102};
+				position[]={9568.7969,26.06682,4125.6108};
 				angles[]={6.2738566,2.74597,0.0014648439};
 			};
 			side="Empty";
@@ -14985,7 +15001,6 @@ class Mission
 			};
 			id=1672;
 			type="vvv_modelos6_modelos6mesadeoperaciones";
-			atlOffset=0.0098190308;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15015,7 +15030,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9551.0059,25.693041,4125.2793};
+				position[]={9550.9961,25.689787,4124.9961};
 				angles[]={6.2738566,2.9052043,0.0014648439};
 			};
 			side="Empty";
@@ -15026,7 +15041,7 @@ class Mission
 			};
 			id=1673;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.08687973;
+			atlOffset=0.00019645691;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15050,6 +15065,95 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item387
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9567.6523,25.433001,4112.7441};
+				angles[]={6.2738652,2.8515363,0.0015358897};
+			};
+			areaSize[]={25,0,25};
+			areaIsRectangle=1;
+			flags=1;
+			id=1674;
+			type="ModuleHideTerrainObjects_F";
+			atlOffset=0.43300056;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item388
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9560.2412,33.758255,4112.9429};
+				angles[]={0,4.4712982,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1688;
+			type="Land_buildingshospital1";
+		};
+		class Item389
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9541.6953,26.190031,4108.7119};
+				angles[]={0,4.4635272,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1690;
+			type="Land_landscapePart2";
 		};
 	};
 };
