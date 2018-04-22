@@ -1,4 +1,4 @@
-hint "Wynająłeś biuro!";
+hint "Du hast ein Büro gemietet.";
 
 player setvariable ["office",currentcursortarget,false];
 myoffice = getpos currentcursortarget;
