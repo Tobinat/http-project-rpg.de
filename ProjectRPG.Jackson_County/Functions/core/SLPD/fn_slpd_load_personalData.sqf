@@ -94,13 +94,13 @@ if(count _playerInfo != 0) then {
 
 
 	_string = _string + format["Name und Vorname: %1\nSozialversicherungsnr.: %2\n", _playerName, _uid];
-	if(count _activeCases == 0) then { _string = _string + "Gesucht: Nein\n"; } else { _string = _string + "Poszukiwany: Ja\n"; };
+	if(count _activeCases == 0) then { _string = _string + "Gesucht: Nein\n"; } else { _string = _string + "Gesucht: Ja\n"; };
 	_string = _string + format["Anzahl der Strafpunkte: %1\nZugehörigkeit: %2\nZulassung:\n", _points, _services];
 	if(_licenses select 0 == 1) then { _string = _string + "Führerschein "; };
 	if(_licenses select 1 == 1) then { _string = _string + "Waffenschein\n"; };
-	if(_licenses select 2 == 1) then { _string = _string + "Miner Lizenz "; };
-	if(_licenses select 3 == 1) then { _string = _string + "Holzfaeller Lizenz "; };
-	if(_licenses select 4 == 1) then { _string = _string + "Fichser Lizenz\n"; };
+	if(_licenses select 2 == 1) then { _string = _string + "Bergbau Zertifikat"; };
+	if(_licenses select 3 == 1) then { _string = _string + "Forstwirtschaftsschein"; };
+	if(_licenses select 4 == 1) then { _string = _string + "Angelschein"; };
 	_text_info ctrlSetText _string;
 	kruk_slpd_computer_data = [_uid, objNull, _playerName];
 } else {

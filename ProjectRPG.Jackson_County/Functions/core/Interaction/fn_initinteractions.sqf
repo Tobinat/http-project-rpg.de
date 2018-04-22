@@ -95,7 +95,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(licensearray select 4) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Fischerlizenz $400", "_cashcheck = [1,400] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",5] call client_fnc_sustain; [400] call Client_fnc_sl_removeCash_secure; ",1]
+		["Angelschein $400", "_cashcheck = [1,400] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",5] call client_fnc_sustain; [400] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 
 	[

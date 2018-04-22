@@ -141,7 +141,7 @@ class revoke_Menu {
 
 		class RemoveOption : HideButton {
 			idc = 9995;
-			text = "Ablehnen";
+			text = "Entziehen";
 			onButtonClick = "[] spawn client_fnc_revoke;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.659497 * safezoneH + safezoneY;
