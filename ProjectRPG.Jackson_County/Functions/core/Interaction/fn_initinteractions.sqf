@@ -90,7 +90,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(licensearray select 3) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Forstwirtschaftsschein", "[""Add"",""license"",4] call client_fnc_sustain;",1]
+		["Forstwirtschaftsschein $700", "_cashcheck = [1,700] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",4] call client_fnc_sustain; [700] call Client_fnc_sl_removeCash_secure;",1]
 	],
 
 	[
