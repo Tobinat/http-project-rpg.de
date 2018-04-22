@@ -3,6 +3,7 @@ disableSerialization;
 _condition = _this select 0;
 _storeList = [];
 _doughnuts = player getVariable ["doughnutsLevel", 0];
+
 if(_condition == "gunstore") then {
 
 	_gunStorePistols = [
@@ -726,6 +727,49 @@ if(_condition == "mcdonalds") then {
 	} foreach _mcdonalds;
 
 };
+
+
+
+//Test
+
+
+if(_condition == "cops") then {
+
+	_cops = [
+		["cg_hatchet",nil,120,1],
+		["cg_pickaxe",nil,120,1],
+		["cg_bat",nil,120,1],
+		["vvv_fishing_rod",nil,120,1],
+		["hgun_mas_ww2_acp_F",nil,3100,1],
+		["hgun_Pistol_heavy_01_F",nil,3000,1],
+		["hgun_ACPC2_F",nil,3150,1],
+		["hgun_mas_ww2_bhp_F",nil,3050,1],
+		["sab_1911_handgun",nil,3210,1],
+		["CUP_hgun_Compact",nil,3300,1],
+		["hgun_mas_ww2_lug_F",nil,3175,1],
+		["CUP_hgun_Makarov",nil,3500,1],
+		["CUP_hgun_PB6P9",nil,5200,1],
+		["RH_g17",nil,4600,1],
+		["CUP_hgun_M9",nil,6350,1],	
+		["CUP_hgun_TaurusTracker455",nil,6500,1],
+		["hgun_mas_ww2_tt33_F",nil,4300,1],
+		["RH_uspm",nil,7800,1],
+		["RH_kimber",nil,9600,1],
+		["RH_fn57",nil,7400,1],
+		["RH_fnp45",nil,6800,1],
+		["taser",nil,2200,1]
+	];
+
+	{
+		_storeList pushback _x;
+	} foreach _cops;
+
+};
+
+
+
+
+
 
 
 if(_condition == "hotdogs") then {
