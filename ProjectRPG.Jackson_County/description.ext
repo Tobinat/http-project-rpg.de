@@ -2,11 +2,12 @@ enableDebugConsole = 1;
 
 respawn = "BASE";
 disabledAI = 1;
-author = "Tonic | Edited by PRPG.de";
+author = "Koil | Edited by PRPG.de";
 onLoadName = "Project-RPG v0.0";
 onLoadMission = "Webseite: http://project-rpg.de";
 onLoadIntro = "PRPG Life ist am laden...";
-loadScreen =  "sl_client\textures\loading\load.paa";
+//loadScreen =  "sl_client\textures\loading\load.paa";
+disableChannels[]={0,1,2,3,4,5};
 respawndelay = 1;
 
 wreckLimit = 10;
