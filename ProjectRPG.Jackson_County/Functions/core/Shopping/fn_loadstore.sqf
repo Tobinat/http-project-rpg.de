@@ -768,6 +768,35 @@ if(_condition == "cops") then {
 
 
 
+if(_condition == "copskleidung") then {
+
+	_clothing = [
+		["TAC_BP_KAR_B",nil,50,4,2],
+		["TAC_BP_KAR_L",nil,50,4,2],
+		["TAC_BP_KAR_R",nil,50,4,2],
+		["CUP_B_SLA_Medicbag",nil,50,4,2],
+		["TAC_BP_Butt_B",nil,60,4,2],
+		["TAC_BP_Butt_Khaki",nil,60,4,2],
+		["TAC_BP_Butt_OD",nil,60,4,2],
+		["TRYK_B_Alicepack",nil,500,4,2],
+		["PATHuK_belt",nil,500,4,2],
+		["sl_backpack_bergen_pokemon_black",nil,500,4,2],
+		["sl_backpack_bergen_pokemon_white",nil,500,4,2],
+		["sl_backpack_bergen_pokemon_red",nil,500,4,2],
+		["sl_backpack_bergen_murica",nil,500,4,2],
+		["CUP_B_HikingPack_Civ",nil,750,4,2]
+	];
+
+	{
+		_storeList pushback _x;
+	} foreach _clothing;
+
+};
+
+
+
+
+
 
 
 
