@@ -1,7 +1,7 @@
 _oreArray = ["CG_Heroin"];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Przetwarzanie w toku"; };
+if(globalProtection != 0) exitwith { hint "Verarbeitung ist im Gange"; };
 _localProtection = 0;
 
 _thecargo = getmagazineCargo missionVehicle;

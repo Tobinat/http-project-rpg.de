@@ -8,10 +8,10 @@ myActionStart = myDT addAction [ "Zacznij gotować", {
 	totalskills = 100;
 	myDrugValue = 100;
 	myDT removeaction myActionStart;
-	myAction1 = myDT addAction [ "Zmieszaj aceton", { ["Acetone"] call client_fnc_upMethCooking; } ];
-	myAction2 = myDT addAction [ "Dodaj pseudoefedrynę", { ["Pseudo"] call client_fnc_upMethCooking; } ];
-	myAction3 = myDT addAction [ "Zmniejsz temperaturę", { ["Cool"] call client_fnc_upMethCooking; } ];
-	myAction4 = myDT addAction [ "Zwiększ temperaturę", { ["Heat"] call client_fnc_upMethCooking; } ];
-	myAction5 = myDT addAction [ "Obniż ciśnienie", { ["Release"] call client_fnc_upMethCooking; } ];
-	[player,objNull,27,format ["%1 postawił stół do mety",name player],""] remoteExec ["server_fnc_actionLog", 2];
+	myAction1 = myDT addAction [ "Aceton hinzufuegen", { ["Acetone"] call client_fnc_upMethCooking; } ];
+	myAction2 = myDT addAction [ "Pseudoephedrin hinzufuegen", { ["Pseudo"] call client_fnc_upMethCooking; } ];
+	myAction3 = myDT addAction [ "Temperatur senken", { ["Cool"] call client_fnc_upMethCooking; } ];
+	myAction4 = myDT addAction [ "Temperatur steigern", { ["Heat"] call client_fnc_upMethCooking; } ];
+	myAction5 = myDT addAction [ "Druck senken", { ["Release"] call client_fnc_upMethCooking; } ];
+	[player,objNull,27,format ["%1 hat Meth gekocht",name player],""] remoteExec ["server_fnc_actionLog", 2];
 } ];

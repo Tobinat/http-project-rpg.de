@@ -89,6 +89,6 @@ if(mybin distance (vehicle player) < 25 && _type == "bin") then {
 
 	} else {
 
-	hint "W pobliżu nie ma śmieci!";
+	hint "Hier gibt es keinen Abfall!";
 
 };

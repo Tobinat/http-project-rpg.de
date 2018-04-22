@@ -4,7 +4,7 @@ _chance = random(100);
 
 if(isNil "robbedStores") then { robbedstores = []; };
 
-if(_shop IN robbedstores) exitwith { hint "Nic tu nie ma!"; };
+if(_shop IN robbedstores) exitwith { hint "Hier gibts nix zu klauen!"; };
 
 if(_chance > 80) then {
 
@@ -26,7 +26,7 @@ if(_chance > 80) then {
 
 		for "_i" from 0 to 1 step 0 do  {
 
-			if(modifier == 0) exitwith { hint "Twój szał rabowania dobiegł końca"; };
+			if(modifier == 0) exitwith { hint "Deine Raubwut ist zu ende"; };
 			uisleep 20;
 			modifier = modifier - 1;
 
