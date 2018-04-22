@@ -13,7 +13,7 @@ _obj = [10017.60, 3585.74, 0.00143814] nearestObject 165573;
 _obj enableSimulationGlobal false;
 _obj hideObjectGlobal true; */
 
-GarageVariableWhore = "Flag_US_F" createVehicle [0,1,0];
+//GarageVariableWhore = "Flag_US_F" createVehicle [0,1,0];
 
 _vehicle = "ivory_wrx" createvehicle [0,0,0];
 [_vehicle, ["black","matte"], "black", 1, 1] call client_fnc_IvoryInitVehicle;
