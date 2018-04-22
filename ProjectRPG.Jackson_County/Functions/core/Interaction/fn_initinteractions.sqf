@@ -113,20 +113,20 @@ NoPixel_InteractionMenuItems = [
 		["Starte Paintball", " [player] remoteexec [""server_fnc_paintball"",2]; ",1]
 	],
 
-	//[
-	//	[" myJob != ""cop""", " myJob == ""Mafia"" && currentcursortarget == missionVehicle && !isNull missionVehicle && player distance endOfmission < 25"],
-	//	["Verkauf von Drogen", " ['Verkauf',60,client_fnc_finishDrugRun,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
-	//],
+	[
+		[" myJob != ""cop""", " myJob == ""Mafia"" && currentcursortarget == missionVehicle && !isNull missionVehicle && player distance endOfmission < 25"],
+		["Verkauf von Drogen", " ['Verkauf',60,client_fnc_finishDrugRun,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
+	],
 
 	//[
 	//	[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
 	//	["Sprzedaj narkotyki", " ['Sprzedawanie',30,client_fnc_dumpDrugs,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
 	//],
 
-	//[
-	//	[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
-	//	["Wasche dein Geld", " ['Piorę pieniądze',60,client_fnc_dumpMoney,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""sl_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",1]
-	//],
+	[
+		[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
+		["Wasche dein Geld", " ['Piorę pieniądze',60,client_fnc_dumpMoney,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""sl_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",1]
+	],
 
 	//[
 	//	[" myJob == ""Mafia"" && (player getVariable ""Mafia"") > 5 "],
@@ -385,10 +385,10 @@ NoPixel_InteractionMenuItems = [
 		["Lizenz entziehen", " ['Entziehe',5,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
-	[
-		[" CurrentCursorTarget isKindOf 'Man'", "(myjob == ""Cop"" || myjob == ""EMS"")"],
-		["Beweise sammeln", " hint format[""Vor- und Nachname: %1\nSozialversicherung: %2"",name currentcursortarget, getPlayerUID currentcursortarget]; ",2]
-	],
+	//[
+	//	[" CurrentCursorTarget isKindOf 'Man'", "(myjob == ""Cop"" || myjob == ""EMS"")"],
+	//	["Beweise sammeln", " hint format[""Vor- und Nachname: %1\nSozialversicherung: %2"",name currentcursortarget, getPlayerUID currentcursortarget]; ",2]
+	//],
 
 	[
 		[" CurrentCursorTarget isKindOf 'Man'", "myjob == ""Cop"""],
@@ -883,10 +883,10 @@ NoPixel_InteractionMenuItems = [
 		["Laden Ausrauben", " [] spawn client_fnc_robShop; ",4]
 	],
 
-	[
-		["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
-		["Beweise Sammeln", "[""Sammle Beweise"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
-	],
+	//[
+	//	["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
+	//	["Beweise Sammeln", "[""Sammle Beweise"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+	//],
 	[
 		["CurrentCursorTarget != objNull && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
 		["Beweise zerstoeren", "[""Zerstoere Beweise"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
