@@ -7,16 +7,16 @@ if (isNil "racequeue") then {
     racecount = 0;
 };
 if (raceprogress) exitwith {
-    "Race already in progress, sorry!"
+    "Rennen läuft schon, sorry!"
     remoteexec["hint", _player];
 };
 if (racecount == 24) exitwith {
-    "Race is full, sorry!"
+    "Das Rennen ist voll, sorry!"
     remoteexec["hint", _player];
 };
 
 if (_player IN racecontestents) exitwith {
-    "You are in this race!"
+    "Du bist in diesem Rennen!"
     remoteexec["hint", _player];
 };
 
@@ -28,16 +28,16 @@ racecount = racecount + 1;
 
 
 if (racecount == 1) then {
-    "Wyścigi F1 startują za 3 minuty!"
+    "F1-Rennen starten in 3 Minuten!"
     remoteexec["hint", -2];
     uisleep 60;
-    "Wyścigi F1 startują za 2 minuty!"
+    "F1-Rennen starten in 2 Minuten!"
     remoteexec["hint", -2];
     uisleep 60;
-    "Wyścigi F1 startują za 1 minutę!"
+    "F1 Rennen starten in 1 Minute!"
     remoteexec["hint", -2];
     uisleep 60;
-    "Wyścigi F1 startują TERAZ!"
+    "F1-Rennen beginnen jetzt!"
     remoteexec["hint", -2];
 
     [] remoteexec["client_fnc_dorace", racecontestents];
@@ -89,7 +89,7 @@ if (racecount == 1) then {
     racecontestents = [];
     raceprogress = false;
     racecount = 0;
-    "The F1 Track is open for business."
+    "Die F1 Strecke ist geoeffnet."
     remoteexec["hint", -2];
 
 };

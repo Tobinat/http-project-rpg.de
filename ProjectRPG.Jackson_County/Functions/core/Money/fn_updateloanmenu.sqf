@@ -10,5 +10,5 @@ _moneyOwed = _loan select 2;
 _cash = _moneyOwed call client_fnc_numberText;
 
 _TEXT = _display displayCtrl 1001;
-_TEXT ctrlSetStructuredText parsetext format["<t color='#33CC33'>Dal: %1 <t color='#ffffff'> <br/><br/> Kwota: %2 <t color='#33CC33'> <br/><br/> Powod: %3 <br/><br/> Do: %4", _loan select 1, _cash, _loan select 3, _loan select 4];
+_TEXT ctrlSetStructuredText parsetext format["<t color='#33CC33'>Dal: %1 <t color='#ffffff'> <br/><br/> Betrag: %2 <t color='#33CC33'> <br/><br/> Grund: %3 <br/><br/> zu: %4", _loan select 1, _cash, _loan select 3, _loan select 4];
 _TEXT ctrlCommit 0;
