@@ -24,7 +24,7 @@ _information = _ct getVariable "information";
 
 	[getPlayerUID player, "usedgarage", current_cars] remoteExec ["Server_fnc_setVariable",2];
 	[_fuel,_damage,_license] remoteExec ["server_fnc_updateFuelDamage", 2];
-	uiSleep 0.5;
+	uiSleep 0.1;
 
 };
 _className = typeOf _ct;

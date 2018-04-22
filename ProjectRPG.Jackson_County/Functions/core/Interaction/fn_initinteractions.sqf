@@ -115,7 +115,7 @@ NoPixel_InteractionMenuItems = [
 
 	//[
 	//	[" myJob != ""cop""", " myJob == ""Mafia"" && currentcursortarget == missionVehicle && !isNull missionVehicle && player distance endOfmission < 25"],
-	//	["Sprzedawanie narkotyków", " ['Sprzedawanie',60,client_fnc_finishDrugRun,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
+	//	["Verkauf von Drogen", " ['Verkauf',60,client_fnc_finishDrugRun,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
 	//],
 
 	//[
@@ -125,7 +125,7 @@ NoPixel_InteractionMenuItems = [
 
 	//[
 	//	[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
-	//	["Wypierz pieniądze", " ['Piorę pieniądze',60,client_fnc_dumpMoney,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""sl_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",1]
+	//	["Wasche dein Geld", " ['Piorę pieniądze',60,client_fnc_dumpMoney,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""sl_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",1]
 	//],
 
 	//[
@@ -153,25 +153,25 @@ NoPixel_InteractionMenuItems = [
 		["Urinieren", " [currentcursortarget] spawn client_fnc_pee; ",1]
 	],
 
-//	[
-//		[" myJob == ""Mafia"" "],
-//		["Pożyczki", " [player] remoteexec [""server_fnc_MafiaOwed"",2]; ",1]
-//	],
+	[
+	    [" myJob == ""Mafia"" "],
+		["Darlehen", " [player] remoteexec [""server_fnc_MafiaOwed"",2]; ",1]
+	],
 
 //	[
 //		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && (player getvariable ""mafia"") > 5 "],
 //		["Daj Pożyczkę", " [currentcursortarget] spawn Client_fnc_sl_giveLoan_secure; ",1]
 //	],
 
-	//[
-	//	[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && player getVariable [""Mafia"",0] > 5 "],
-	//	[" Namierz telefon ", " [] spawn client_fnc_tracecall; ",1]
-	//],
+	  [
+		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && player getVariable [""Mafia"",0] > 5 "],
+		[" Anruf zurückverfoilgen ", " [] spawn client_fnc_tracecall; ",1]
+	   ],
 
-	//[
-	//	[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""cop"" &&  client_aiad_actions == 2 "],
-	//	[" Namierz telefon ", " [] spawn client_fnc_tracecall; ",1]
-	//],
+	[
+		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""cop"" &&  client_aiad_actions == 2 "],
+		["Anruf zurückverfoilgen", " [] spawn client_fnc_tracecall; ",1]
+	],
 
 	//[
 	//	[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Mafia"" && player getVariable [""Mafia"",0] > 5 && vehicle player == player"],
@@ -395,10 +395,10 @@ NoPixel_InteractionMenuItems = [
 		["Inhaftieren", "createdialog ""jailprocess""",2]
 	],
 
-	//[
-	//	["!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man' && (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-	//	["Przeszukaj", " ['Przeszukiwanie',10,client_fnc_startpatdown,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
-	//],
+	[
+		["!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man' && (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
+		["Abtasten", " ['Suche',10,client_fnc_startpatdown,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+	],
 
 	[
 		["(CurrentCursorTarget isKindOf 'Man') && !(myjob == ""Cop"" || myjob == ""Fire"" || myjob == ""EMS"") && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
@@ -425,15 +425,15 @@ NoPixel_InteractionMenuItems = [
 		["Entfesseln", " ['Entfessle',60,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
-	//[
-	//	[" CurrentCursorTarget isKindOf 'Man'", "!imRestrained", "(headgear CurrentCursorTarget) != 'mgsr_headbag', (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-	//	["Załóż worek", " ['Zakładanie worka',5,client_fnc_blindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""sl_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",2]
-	//],
+	[
+		[" CurrentCursorTarget isKindOf 'Man'", "(headgear CurrentCursorTarget) != 'mgsr_headbag', (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
+		["Augenbinde anlegen", " ['Blindfolding',5,client_fnc_blindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",2]
+	],
 
-	//[
-	//	[" CurrentCursorTarget isKindOf 'Man'", "!imRestrained", "(headgear CurrentCursorTarget) == 'mgsr_headbag' "],
-	//	["Zdejmij worek", " ['Zdejmowanie worka',5,client_fnc_unblindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""sl_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
-	//],
+	[
+		[" CurrentCursorTarget isKindOf 'Man'", "(headgear CurrentCursorTarget) == 'mgsr_headbag' "],
+		["Augenbinde abnehmen", " ['Removing Blindfold',5,client_fnc_unblindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
+	],
 
 	/*[
 		[" CurrentCursorTarget isKindOf 'Man' && !(cursorTarget getVariable [""gagged"", false])", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
@@ -447,7 +447,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" myJob == ""Cop"" &&  CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["In das Auto setzen", " ['Wrzucanie do auta',10,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["In das Auto setzen", " ['Throwing in Car',10,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	//[
@@ -616,7 +616,22 @@ NoPixel_InteractionMenuItems = [
 		["typeof CurrentCursorTarget == ""Land_buildingGunStore1"""],
 		["Waffenladen", "closedialog 0; createdialog ""gun_menu""; [""gunstore""] spawn client_fnc_LoadStore;",3]
 	],
+	
+	//Test
+	
+	
+	
+	
+	[
+		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+		["Cop Waffenladen", "closedialog 0; createdialog ""gun_menu""; [""cops""] spawn client_fnc_LoadStore;",3]
+	],
 
+	
+	
+	
+	
+	
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"""],
 		["Baeckerrei", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn client_fnc_LoadStore;",3]
@@ -852,10 +867,10 @@ NoPixel_InteractionMenuItems = [
 		["Handwerksmenue", "createdialog ""client_Craft_Menu""",4]
 	],
 
-	//[
-	//	["((typeof CursorTarget) IN shopNameList) && ((time - (CursorTarget getVariable[""lastRobbed"",0])) > 600) && (player distance cursorTarget < 8) && (currentWeapon player != """")"],
-	//	["Okradnij sklep", " [] spawn client_fnc_robShop; ",4]
-	//],
+	[
+		["((typeof CursorTarget) IN shopNameList) && ((time - (CursorTarget getVariable[""lastRobbed"",0])) > 600) && (player distance cursorTarget < 8) && (currentWeapon player != """")"],
+		["Laden Ausrauben", " [] spawn client_fnc_robShop; ",4]
+	],
 
 	[
 		["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
@@ -1007,20 +1022,20 @@ NoPixel_InteractionMenuItems = [
 		["Geschaefte beenden", "[] call client_fnc_jobEnd",4]
 	],
 
-	//[
-	//	["(str CurrentCursorTarget find ""modelos6estateriademedicamentos"" > -1 || str CurrentCursorTarget find ""modelos6mesadeoperaciones"" > -1 || str CurrentCursorTarget find ""modelos6papeleradehospital"" > -1 || str CurrentCursorTarget find ""m6estanterialargahospital"" > -1) && player distance getmarkerpos ""drugprocess"" < 100 "],
-	//	["Przetwórz narkotyki", "closedialog 0; [] spawn client_fnc_processBricks",4]
-	//],
+	[
+		["(str CurrentCursorTarget find ""modelos6estateriademedicamentos"" > -1 || str CurrentCursorTarget find ""modelos6mesadeoperaciones"" > -1 || str CurrentCursorTarget find ""modelos6papeleradehospital"" > -1 || str CurrentCursorTarget find ""m6estanterialargahospital"" > -1) && player distance getmarkerpos ""drugprocess"" < 100 "],
+		["Drogen prozessieren", "closedialog 0; [] spawn client_fnc_processBricks",4]
+	],
 
 	[
 		["((player distance (getMarkerPos ""sales"")) < 30)"],
 		["Rohstoffe verkaufen", "closedialog 0; [] spawn client_fnc_sellOre",4]
 	],
 
-	//[
-	//	["((player distance (getMarkerPos ""peltCuring"")) < 30)"],
-	//	["Przetwórz skóry", "closedialog 0; [] spawn client_fnc_refinePelts",4]
-	//],
+	[
+		["((player distance (getMarkerPos ""peltCuring"")) < 30)"],
+		["Pelze verkaufen", "closedialog 0; [] spawn client_fnc_refinePelts",4]
+	],
 
 	[
 		["((player distance (getMarkerPos ""fishRefinery"")) < 70) || typeof (vehicle player) IN [""vvv_NewYacht"",""POP_Speed_yatch""] "],
@@ -1039,7 +1054,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["((player distance (getMarkerPos ""oilRefinery"")) < 30)"],
-		["Oel verarbeiten", "closedialog 0; [] spawn client_fnc_refineoil;",4]
+		["Öl raffiniern", "closedialog 0; [] spawn client_fnc_refineoil;",4]
 	],
 
 	[
