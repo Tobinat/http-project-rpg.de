@@ -16,7 +16,7 @@ if(!isNil "vehspawned") then {
 };
 
 [10] call Client_fnc_sl_removeBank_secure;
-["Zostałeś obciażony kwota $10 dolarów za wypożyczenie pojazdu służbowego.", true] spawn doquickmsg;
+["Ihnen wurden $10 fuer die Anmietung eines Firmenwagens berechnet.", true] spawn doquickmsg;
 
 _jobType = myjob;
 
@@ -32,7 +32,7 @@ if (_jobType == "Wood Logging") exitwith {
 	[vehspawned, ["white","Glossy"]] remoteexec ["client_fnc_initVehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["CUP_U_C_Mechanic_01",1];
-	hint "You have some items in the truck, use them!";
+	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 if (_jobType == "mail") exitwith {
@@ -40,7 +40,7 @@ if (_jobType == "mail") exitwith {
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["CUP_U_O_SLA_Overalls_Tank",1];
-	hint "You have some items in the truck, use them!";
+	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 if (_jobType == "trashman") exitwith {	
@@ -48,7 +48,7 @@ if (_jobType == "trashman") exitwith {
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["G_Uniform_worker_l",1];
-	hint "You have some items in the truck, use them!";
+	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 if (_jobType == "repairman") exitwith {	
@@ -57,7 +57,7 @@ if (_jobType == "repairman") exitwith {
 	[vehspawned] spawn client_fnc_spawnvehicle;	
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["CUP_U_C_Mechanic_02",1];
-	hint "You have some items in the truck, use them!";
+	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 if (_jobType == "security") exitwith {
@@ -66,7 +66,7 @@ if (_jobType == "security") exitwith {
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["vvv_character_agente_473",1];
-	hint "You have some items in the truck, use them - you can buy a taser from the gun store for this job.";
+	hint "Da liegen sachen im Auto, benutze sie. Außerdem kannst du als Sicherheitsmann im Wafenladen einen Taser kaufen.";
 };
 
 if (_jobType == "towtruck") exitwith {
@@ -75,7 +75,7 @@ if (_jobType == "towtruck") exitwith {
 
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["CUP_U_C_Mechanic_03",1];
-	hint "You have some items in the truck, use them!";
+	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 if (_jobType == "NewsMan") exitwith {	
@@ -87,7 +87,7 @@ if (_jobType == "NewsMan") exitwith {
 	vehspawned addWeaponCargo ["Press_Cam_F",2];
 	_microphone = ["Press_Mic_AAN_F", "Press_Mic_BBC_F", "Press_Mic_CNN_F", "Press_Mic_ARD_F", "Press_Mic_ZDF_F"] call BIS_fnc_selectRandom;
 	vehspawned addWeaponCargo [_microphone,2];
-	hint "You have some items in the truck, use them!";
+	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 if (_jobType == "taxi") exitwith {	
@@ -103,7 +103,7 @@ if (_jobType == "taxi") exitwith {
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["np_shirt_8",1];
-	hint "Masz jakieś rzeczy w bagażniku, użyj ich!";
+	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 
