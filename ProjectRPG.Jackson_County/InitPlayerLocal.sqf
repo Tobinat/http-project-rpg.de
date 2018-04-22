@@ -34,8 +34,8 @@ uisleep 0.05;
 deletevehicle _vehicle;
 
 if(myhealth > 0.99) exitwith {
-	["Toete Spieler fuer Deathlog.", true] spawn domsg;
-	[player,objNull,3,format ["%1 wurde getoetet", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
+	["Du wurdest aufgrund von Combat Logging getoetet.", true] spawn domsg;
+	[player,objNull,3,format ["%1 wurde wegen CombatLogging getoetet", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
 	diag_log format["Toete %1 fuer Battlelog", player];
 	["Remove",1] call client_fnc_doHealth;
 	_respawn = player getVariable "respawn";
