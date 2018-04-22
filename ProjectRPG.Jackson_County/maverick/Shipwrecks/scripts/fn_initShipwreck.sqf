@@ -20,7 +20,7 @@ if(!isServer) exitWith {};
 		_marker = createMarker ["shipwreck",_position];
 		_marker setMarkerColor "ColorBlack";
 		_marker setMarkerType "mil_warning";
-		_marker setMarkerText "Wrak Statku";
+		_marker setMarkerText "Schiffswrack";
 		_marker setMarkerAlpha 0.95;
 
 		_markerZone = createMarker ["shipwreckzone",_position];

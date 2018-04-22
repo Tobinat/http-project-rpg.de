@@ -6545,7 +6545,7 @@ class Mission
 			dataType="Marker";
 			position[]={7923.2378,-3.3655081e-035,2719.7781};
 			name="houseUpgrades";
-			text="Ulepszenia Domu";
+			text="Bauamt";
 			type="respawn_unknown";
 			colorName="ColorGUER";
 			id=243;
@@ -6578,7 +6578,7 @@ class Mission
 			dataType="Marker";
 			position[]={6671.0938,0,5285.2979};
 			name="marker_12";
-			text="Garaż";
+			text="Garage";
 			type="c_car";
 			colorName="ColorCIV";
 			id=249;
@@ -6960,7 +6960,7 @@ class Mission
 			dataType="Marker";
 			position[]={8037.9189,7.8861915e+028,5070.6992};
 			name="formula1";
-			text="Zapisy na Formula 1";
+			text="F1 Rennstrecke";
 			type="mil_flag";
 			id=291;
 			atlOffset=7.8861915e+028;

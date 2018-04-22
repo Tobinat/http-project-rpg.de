@@ -40,9 +40,9 @@ if (isNull _unit) then {
 };
 
 switch (_type) do {
-    case 1: {_type = "Zakup";};
-    case 2: {_type = "UlepszenieDomu";};
-    case 3: {_type = "Sprzedaż";};
+    case 1: {_type = "Ankauf";};
+    case 2: {_type = "Heimwerker";};
+    case 3: {_type = "Verkauf";};
     //case 3: {_type = "";};
 };
 

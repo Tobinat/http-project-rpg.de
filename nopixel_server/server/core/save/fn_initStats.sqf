@@ -204,7 +204,7 @@ if (_booli) then {
 	_housecontent = [[[],[]],[[],[]],[[],[]],[[],[]]];
 	_shopcontent = [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]];
 
-	_shopname = format["Sklep %1", _name];
+	_shopname = format["Shop %1", _name];
 	_insertstr = format ["insertPlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:%18", _uid, _name, _items, _cash, _bank, _cop, _ems, _position, _phoneBackground, _messages, _statuses, _houselevel, _housecontent, _shopcontent, _shopname, _mafia, _fire, _legal];
 	_insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
 

@@ -2,16 +2,16 @@ private["_turntable", "_policeHolder", "_time", "_dir"];
 
 _player = _this select 0;
 
-diag_log["retreive slpd police storage: %1", _player];
+diag_log["SLPD Datenbank abrufen: %1", _player];
 
-if (policeStorageActive == 1) exitWith {["Ktoś już używa skrzyni!", false] remoteExec ["domsg",_player];};
+if (policeStorageActive == 1) exitWith {["Jemand benutzt bereits die Box.", false] remoteExec ["domsg",_player];};
 if (policeStorageActive == 0) then {policeStorageActive = 1;};
 
 _uid = getPlayerUID _player;
 //[_player,objNull,21,format ["%1 otworzył skrzynkę w domu", name _player],""] call server_fnc_actionLog;
 
 _policeHolder = createVehicle["kif_storage_cargobox_dtu", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+["Die Synchronisierung wird gemacht, nachdem die Box verschwunden ist", false] remoteExec ["domsg",_player];
 
 
 _fetchstr = format ["getSLPDPoliceStorage:%1", 1];
@@ -97,5 +97,5 @@ if (!isnull _policeHolder) then {
 	} foreach _units;
 	policeStorageActive = 0;
     deleteVehicle _policeHolder;
-	["Synchronizacja skrzynki zakończona", false] remoteExec ["domsg",_player];
+	["Die Boxsynchronisierung ist abgeschlossen", false] remoteExec ["domsg",_player];
 };
