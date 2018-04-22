@@ -627,13 +627,31 @@ NoPixel_InteractionMenuItems = [
 		["Cop Waffenladen", "closedialog 0; createdialog ""gun_menu""; [""cops""] spawn client_fnc_LoadStore;",3]
 	],
 
-/*
+
 	[
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
 		["Cop Kleidungsladen", "closedialog 0; createdialog ""Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
 	],
-*/
 
+	[
+		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
+		["EMS Ausruestung", "closedialog 0; createdialog ""gun_menu""; [""medic""] spawn client_fnc_LoadStore;",3]
+	],
+	
+	[
+		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
+		["Kleiderkammer EMS", "closedialog 0; createdialog ""Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;"]
+	],
+
+	[
+		["myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"""],
+		["FD Ausruestung", "closedialog 0; createdialog ""gun_menu""; [""fd""] spawn client_fnc_LoadStore;",3]
+	],
+
+	[
+		["myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"""],
+		["Kleiderkammer FD", "closedialog 0; createdialog ""Clothing_Menu""; [""fdkleidung""] spawn client_fnc_LoadStore;"]
+	],
 
 
 
@@ -967,7 +985,7 @@ NoPixel_InteractionMenuItems = [
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 5K", "[5] spawn client_fnc_takeSuitcase"]
 	],*/
-
+/*
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") && player getvariable ""cop"" > 10 "],
 		["Kleiderkammer PD", "[cursorobject] spawn client_fnc_policeClothes"]
@@ -982,7 +1000,7 @@ NoPixel_InteractionMenuItems = [
 		[" (myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"") && player getvariable ""Fire"" > 1 "],
 		["Kleiderkammer FD", "[cursorobject] spawn client_fnc_medicClothes"]
 	],
-
+*/
 	[
 		[" myjob == ""none"" && (player getvariable ""cop"") > 0 && typeof cursorobject == ""Land_PoliceStation"""],
 		["Dienst beginnen", "[player,""Cop""] spawn client_fnc_jobstart;",4]

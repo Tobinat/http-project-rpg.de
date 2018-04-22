@@ -21,7 +21,7 @@ if(_condition == "gunstore") then {
 		["CUP_hgun_Makarov",nil,3500,1],
 		["CUP_hgun_PB6P9",nil,5200,1],
 		["RH_g17",nil,4600,1],
-		["CUP_hgun_M9",nil,6350,1],	
+		["CUP_hgun_M9",nil,6350,1],
 		["CUP_hgun_TaurusTracker455",nil,6500,1],
 		["hgun_mas_ww2_tt33_F",nil,4300,1],
 		["RH_uspm",nil,7800,1],
@@ -29,7 +29,7 @@ if(_condition == "gunstore") then {
 		["RH_fn57",nil,7400,1],
 		["RH_fnp45",nil,6800,1],
 		["taser",nil,2200,1]
-	];	
+	];
 	_gunStorePistols = _gunStorePistols;
 	{
 		_storeList pushback _x;
@@ -230,7 +230,7 @@ if(_condition == "clothing") then {
         ["H_ObamaMask",nil,02,3,5],
         ["Masque_Chains",nil,20,3,5],
         ["vvv_Anonymous_hat",nil,20,3,5],
-		
+
 		["U_B_Wetsuit",nil,2000,3,1],
 		["CUP_O_TKI_Khet_Jeans_01",nil,50,3,1],
 		["CUP_O_TKI_Khet_Jeans_02",nil,50,3,1],
@@ -255,7 +255,7 @@ if(_condition == "clothing") then {
 
 		["CUP_U_I_GUE_Anorak_03",nil,100,3,1],
 		["CUP_U_I_GUE_Anorak_02",nil,100,3,1],
-        
+
         ["EF_HM_B1",nil,100,3,1],
         ["EF_HM_BL1",nil,100,3,1],
         ["EF_HM_OD1",nil,100,3,1],
@@ -295,8 +295,8 @@ if(_condition == "clothing") then {
 		["TRYK_U_denim_hood_blk",nil,100,3,1],
 		["TRYK_U_taki_G_BLK",nil,100,3,1],
 		["TRYK_U_taki_G_COY",nil,100,3,1],
-		
-		
+
+
 		["PAT_nigga",nil,500,3,1],
 		["PAT_nigga2_1",nil,500,3,1],
 		["PAT_nigga3",nil,500,3,1],
@@ -316,7 +316,7 @@ if(_condition == "clothing") then {
 		["EF_suit_4",nil,100,3,1],
 		["EF_suit_5",nil,100,3,1],
 		["EF_suit_6",nil,100,3,1],
-        
+
         ["EF_M_jkt2",nil,500,3,1],
         ["EF_M_jkt22",nil,500,3,1],
         ["EF_M_jkt1",nil,500,3,1],
@@ -331,7 +331,7 @@ if(_condition == "clothing") then {
         ["EF_M_jkt2_4",nil,500,3,1],
         ["EF_M_jkt32",nil,500,3,1],
         ["EF_M_jkt4",nil,500,3,1],
-        
+
         ["EF_MX1",nil,1000,3,1],
 
 		["CUP_U_C_Worker_01",nil,100,3,1],
@@ -347,7 +347,7 @@ if(_condition == "clothing") then {
 		["vvv_character_rock2",nil,200,3,1],
 		["vvv_character_rock3",nil,200,3,1],
 		["vvv_character_rock4",nil,200,3,1],
-		
+
 		["vvv_ropa_comun_f_1",nil,200,3,1],
 		["vvv_ropa_comun_f_2",nil,200,3,1],
 		["vvv_ropa_comun_f_3",nil,200,3,1],
@@ -535,7 +535,7 @@ if(_condition == "clothing") then {
 		["EF_FEM_5",nil,100,3,1],
 		["EF_FEM_6",nil,100,3,1],
 		["EF_FEM_3_42",nil,100,3,1],
-        
+
         ["EF_FEM_3_3B",nil,100,3,1],
         ["EF_FEM_3_3BL",nil,100,3,1],
         ["EF_FEM_3_3OD",nil,100,3,1],
@@ -614,7 +614,7 @@ if(_condition == "clothing") then {
         ["EF_FEM_4_42RC",nil,100,3,1],
         ["EF_FEM_4_42W",nil,100,3,1],
         ["EF_FEM_62",nil,100,3,1],
-        
+
 		["I_FEM_AAF_long",nil,150,3,1],
 		["O_FEM_CSAT_Long",nil,150,3,1],
 		["B_FEM_NATO_long",nil,150,3,1],
@@ -635,7 +635,7 @@ if(_condition == "clothing") then {
 		["vvv_elena_fisher14",nil,200,3,1],
 		["vvv_elena_fisher15",nil,200,3,1],
 		["vvv_elena_fisher16",nil,200,3,1],
-		
+
 		["vvv_traje_motox_02_7",nil,500,3,1],
 		["vvv_traje_motox_02",nil,500,3,1],
 		["vvv_traje_motox_02_8",nil,500,3,1],
@@ -750,7 +750,7 @@ if(_condition == "cops") then {
 		["CUP_hgun_Makarov",nil,3500,1],
 		["CUP_hgun_PB6P9",nil,5200,1],
 		["RH_g17",nil,4600,1],
-		["CUP_hgun_M9",nil,6350,1],	
+		["CUP_hgun_M9",nil,6350,1],
 		["CUP_hgun_TaurusTracker455",nil,6500,1],
 		["hgun_mas_ww2_tt33_F",nil,4300,1],
 		["RH_uspm",nil,7800,1],
@@ -769,6 +769,56 @@ if(_condition == "cops") then {
 
 
 if(_condition == "copskleidung") then {
+
+	_clothing = [
+		["TAC_BP_KAR_B",nil,50,4,2],
+		["TAC_BP_KAR_L",nil,50,4,2],
+		["TAC_BP_KAR_R",nil,50,4,2],
+		["CUP_B_SLA_Medicbag",nil,50,4,2],
+		["TAC_BP_Butt_B",nil,60,4,2],
+		["TAC_BP_Butt_Khaki",nil,60,4,2],
+		["TAC_BP_Butt_OD",nil,60,4,2],
+		["TRYK_B_Alicepack",nil,500,4,2],
+		["PATHuK_belt",nil,500,4,2],
+		["sl_backpack_bergen_pokemon_black",nil,500,4,2],
+		["sl_backpack_bergen_pokemon_white",nil,500,4,2],
+		["sl_backpack_bergen_pokemon_red",nil,500,4,2],
+		["sl_backpack_bergen_murica",nil,500,4,2],
+		["CUP_B_HikingPack_Civ",nil,750,4,2]
+	];
+
+	{
+		_storeList pushback _x;
+	} foreach _clothing;
+
+};
+
+if(_condition == "medickleidung") then {
+
+	_clothing = [
+		["TAC_BP_KAR_B",nil,50,4,2],
+		["TAC_BP_KAR_L",nil,50,4,2],
+		["TAC_BP_KAR_R",nil,50,4,2],
+		["CUP_B_SLA_Medicbag",nil,50,4,2],
+		["TAC_BP_Butt_B",nil,60,4,2],
+		["TAC_BP_Butt_Khaki",nil,60,4,2],
+		["TAC_BP_Butt_OD",nil,60,4,2],
+		["TRYK_B_Alicepack",nil,500,4,2],
+		["PATHuK_belt",nil,500,4,2],
+		["sl_backpack_bergen_pokemon_black",nil,500,4,2],
+		["sl_backpack_bergen_pokemon_white",nil,500,4,2],
+		["sl_backpack_bergen_pokemon_red",nil,500,4,2],
+		["sl_backpack_bergen_murica",nil,500,4,2],
+		["CUP_B_HikingPack_Civ",nil,750,4,2]
+	];
+
+	{
+		_storeList pushback _x;
+	} foreach _clothing;
+
+};
+
+if(_condition == "fdkleidung") then {
 
 	_clothing = [
 		["TAC_BP_KAR_B",nil,50,4,2],
@@ -822,9 +872,9 @@ if(_condition == "general") then {
 	_generalGroceries = [
 
 		["cg_tabletd",nil,50,3],
-		["cg_atf_bandage_i",nil,45,3],	
+		["cg_atf_bandage_i",nil,45,3],
 		["CG_ATF_First_Aid_Kit_i",nil,200,3],
-		["kif_gopro",nil,300,3],		
+		["kif_gopro",nil,300,3],
 		["CG_wheel",nil,150,3],
 		["kif_nitro",nil,800,3],
 		["ItemMap",nil,1,3],
@@ -939,7 +989,7 @@ if(_condition == "head") then {
 			["ALE_H_NewEra_Black",nil,120,3,5],
 			["ALE_H_NewEra_Lakers",nil,120,3,5],
 			["ALE_H_NewEra_Redsox",nil,120,3,5],
-						
+
 			["H_Beret_blk",nil,120,3,5],
 			["H_Booniehat_khk",nil,120,3,5],
 			["H_Booniehat_oli",nil,120,3,5],
@@ -979,7 +1029,7 @@ if(_condition == "head") then {
 			["H_Cap_grn_BI",nil,120,3,5],
 			["H_Cap_blk_Raven",nil,120,3,5],
 			["H_Cap_blk_ION",nil,120,3,5],
-			
+
 			["Gorb_AngryGingerbread1",nil,120,3,5],
 			["Gorb_AngryGingerbreadSwirl2",nil,120,3,5],
 			["CUP_H_C_Beanie_01",nil,120,3,5],
@@ -990,7 +1040,7 @@ if(_condition == "head") then {
 			["CUP_H_C_Beret_02",nil,120,3,5],
 			["H_BobaMask",nil,120,3,5],
 			["BL_eimer_Hat",nil,120,3,5],
-			
+
 			["CUP_H_PMC_Cap_Burberry",nil,120,3,5],
 			["CUP_H_PMC_Cap_Grey",nil,120,3,5],
 			["CUP_H_PMC_Cap_Back_Grey",nil,120,3,5],
@@ -1001,7 +1051,7 @@ if(_condition == "head") then {
 			["BL_mask_Hat",nil,120,3,5],
 			["Gorb_HolidayBaseballHat1",nil,120,3,5],
 			["Gorb_HolidayBaseballHat2",nil,120,3,5],
-			
+
 			["Gorb_HolidayBaseballHat3",nil,120,3,5],
 			["Gorb_HolidayBaseballHat4",nil,120,3,5],
 			["Gorb_HolidayBaseballHat5",nil,120,3,5],
@@ -1012,7 +1062,7 @@ if(_condition == "head") then {
 			["Gorb_PlaidHat4",nil,120,3,5],
 			["cg_horsehead",nil,120,3,5],
 			["cg_horsehead_2",nil,120,3,5],
-			
+
 			["cg_horsehead_blk",nil,120,3,5],
 			["cg_horsehead_pnk",nil,120,3,5],
 			["H_Hat_brown",nil,120,3,5],
@@ -1023,8 +1073,8 @@ if(_condition == "head") then {
 			["sab_wwiplanes_ger_cap",nil,120,3,5],
 			["sab_wwiplanes_fr_cap",nil,120,3,5],
 			["CUP_H_SLA_TankerHelmet",nil,120,3,5],
-			
-			
+
+
 			["nigga_platok",nil,500,3,5],
 			["nigga_platok4",nil,500,3,5],
 			["nigga_platok3",nil,500,3,5],
@@ -1038,9 +1088,9 @@ if(_condition == "head") then {
 			["nigga_platok12",nil,500,3,5],
 			["nigga_platok11",nil,500,3,5],
 			["nigga_platok8",nil,500,3,5],
-			
-			
-			
+
+
+
 			["pat_cap4_nigga",nil,250,3,5],
 			["pat_cap4_nigga_back_low",nil,250,3,5],
 			["pat_cap4_front",nil,250,3,5],
@@ -1061,8 +1111,8 @@ if(_condition == "head") then {
 			["pat_cap5_back",nil,250,3,5],
 			["pat_cap_nigga",nil,250,3,5],
 			["pat_cap_nigga_back_low",nil,250,3,5],
-			
-			
+
+
 			["acj_casco_ammerica",nil,120,3,5],
 			["acj_casco_calavera",nil,120,3,5],
 			["acj_casco_camo",nil,120,3,5],
@@ -1093,7 +1143,7 @@ if(_condition == "head") then {
 };
 
 if(_condition == "doughnuts_general") then {
-	
+
 	//Doughnuts
 	_additional = [];
 	if(_doughnuts > 0) then {
@@ -1236,7 +1286,7 @@ if(_condition == "doughnuts_general") then {
 	} foreach _additional;
 };
 if(_condition == "doughnuts_gun") then {
-	
+
 	//Doughnuts
 	_additional = [];
 	if(_doughnuts > 0) then {
