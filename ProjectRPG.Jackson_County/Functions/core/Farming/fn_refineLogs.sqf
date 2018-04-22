@@ -26,9 +26,9 @@ if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) 
 		hint "Du hackst Holz,bleibe am Besten stehn! Eine Axt im Bein kann weh tun."
 	};
 } forEach attachedObjects vehspawned;
-hint "Drewno przerobione.";
+hint "Holz Verarbeitet";
 ["Processed"] spawn mav_ttm_fnc_addExp;
-[player,objNull,30,format ["%1 przerobił drewno. Ilość drewna przerobionego: %2",name player, totalLogs],totalLogs] remoteExec ["server_fnc_actionLog", 2];
+[player,objNull,30,format ["%1 hat Holz gemacht. Menge an verarbeitetem Holz: %2",name player, totalLogs],totalLogs] remoteExec ["server_fnc_actionLog", 2];
 totalLogs = 0;
 
 globalProtection = 0;
