@@ -115,10 +115,9 @@ _unit spawn
 	};
 	if (_respawn == 0) then
 	{
-		/*
-		_Timer ctrlSetText "Du bist Bewustlos! Wenn dir die Mediziner nicht interhalb 15 Minuten helfen stirbst du!";
-		[] spawn client_fnc_respawnTimer;
-		*/
+		//_Timer ctrlSetText "Du bist Bewustlos! Wenn dir die Mediziner nicht interhalb 15 Minuten helfen stirbst du!";
+		//[] spawn client_fnc_respawnTimer;
+
 		_RespawnBtn ctrlEnable true;
 		_Timer ctrlSetText "Respawn";
 	};
