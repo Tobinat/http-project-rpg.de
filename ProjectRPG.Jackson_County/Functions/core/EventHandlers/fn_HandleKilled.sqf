@@ -103,11 +103,11 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	maxTime = time + (client_respawn_timer * 30);
+	maxTime = time + (client_respawn_timer * 5);
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format["Respawn: %1",[(maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(maxTime - time) <= 0 OR isNull _this};
 	_respawn = player getVariable "respawn";
-	/*
+
 	if (_respawn > 0) then
 	{
 		_RespawnBtn ctrlEnable true;
@@ -115,10 +115,14 @@ _unit spawn
 	};
 	if (_respawn == 0) then
 	{
+		/*
 		_Timer ctrlSetText "Du bist Bewustlos! Wenn dir die Mediziner nicht interhalb 15 Minuten helfen stirbst du!";
 		[] spawn client_fnc_respawnTimer;
+		*/
+		_RespawnBtn ctrlEnable true;
+		_Timer ctrlSetText "Respawn";
 	};
-	*/
+
 	if(!deadplayer) exitwith { closedialog 0; };
 	//if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; [] call client_fnc_startFresh; };
 };
