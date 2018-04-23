@@ -3,7 +3,7 @@ class DeathScreen
 	idd = 7300;
 	name = "client_Death_Screen";
 	movingEnabled = 0;
-	onload = "_MedicBtn = ((findDisplay 7300) displayCtrl 7303);_MedicBtn ctrlEnable true; RespawnBtn = ((findDisplay 7300) displayCtrl 7302);RespawnBtn ctrlEnable true;";
+	onload = "_MedicBtn = ((findDisplay 7300) displayCtrl 7303);_MedicBtn ctrlEnable true; _RespawnBtn = ((findDisplay 7300) displayCtrl 7302);_RespawnBtn ctrlEnable true;";
 	enableSimulation = 1;
 
 	class controlsBackground
