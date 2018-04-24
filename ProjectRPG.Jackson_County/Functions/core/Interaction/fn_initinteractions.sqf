@@ -680,6 +680,22 @@ NoPixel_InteractionMenuItems = [
 		["Pizzeria", "closedialog 0; createdialog ""food_menu""; [""pizza""] spawn client_fnc_LoadStore;",3]
 	],
 
+	
+	
+	
+	
+	
+	[
+		["typeof CurrentCursorTarget == ""land_cg_dexters"""],
+		["Ripperino Pizza", "[] call client_fnc_pizza;",3]
+	],
+	
+	
+	
+	
+	
+	
+	
 	[
 		["typeof CurrentCursorTarget == ""Land_Market_DED_Market_01_F"""],
 		["Mc Dildos", "closedialog 0; createdialog ""food_menu""; [""mcdonalds""] spawn client_fnc_LoadStore;",3]
