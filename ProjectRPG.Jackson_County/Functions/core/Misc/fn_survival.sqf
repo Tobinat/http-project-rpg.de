@@ -33,7 +33,7 @@ if(client_marijuana > 0 || client_cocaine > 0 || client_meth > 0 || client_heroi
 
 if( client_hunger < 2 || client_thirst < 2 ) exitwith {
 	[7] spawn client_fnc_HudElements;
-	["Remove",0.05] call client_fnc_doHealth;
+	//["Remove",0.05] call client_fnc_doHealth;
 	["Remove","Drink",2] call client_fnc_sustain;
 	["Remove","Food",2] call client_fnc_sustain;
 	playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
@@ -68,7 +68,7 @@ if(!ClientArrested) then {
 	};
 };
 if(client_intox > 0.4) then {
-	["Add",10] spawn client_fnc_dohealth;
+	//["Add",10] spawn client_fnc_dohealth;
 };
 
 

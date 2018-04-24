@@ -221,7 +221,7 @@ NoPixel_InteractionMenuItems = [
 		["Abschnallen", "client_seatbelt = false;",1]
 	],
 // healing
-
+/*
 	[
 		["CurrentCursorTarget getVariable[""dead"",FALSE] && (count currentEMS < 0)"],
 		["Reanimieren", "['Reanimiere',125,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",1]
@@ -241,10 +241,10 @@ NoPixel_InteractionMenuItems = [
 		["(myjob == ""EMS"" || myjob == ""Fire"")"],
 		["Behandeln", "[] spawn client_fnc_openHealMenu;",1]
 	],
-
+*/
 	[
-		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 3)"],
-		["Goetterspritze", "[] spawn client_fnc_fullheal;",1]
+		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 1)"],
+		["Behandeln lassen", "[] spawn client_fnc_fullheal;",1]
 	],
 
 	[

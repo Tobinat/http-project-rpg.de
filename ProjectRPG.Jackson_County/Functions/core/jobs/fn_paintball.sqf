@@ -56,7 +56,7 @@ while{paintballing} do {
 
 	if(paintballhit && !godmode) then {
 		godmode = true;
-		["set",0] call Client_Fnc_DoHealth;
+		//["set",0] call Client_Fnc_DoHealth;
 		_goto = _spawnpoints call BIS_fnc_selectRandom;
 		player setpos _goto;
 		player setdir random(360);

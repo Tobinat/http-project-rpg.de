@@ -89,7 +89,7 @@ if(uniform player == "nopixel_character_swat") then { _damage = _damage / 3; };
 	if(client_meth > 4) then { _damage = _damage / 1.1; };
 	if(client_meth > 0) then { _damage = _damage / 1.1; };
 
-	["Remove",_damage,_source] spawn Client_Fnc_DoHealth;
+	//["Remove",_damage,_source] spawn Client_Fnc_DoHealth;
 	
 } else {
 
@@ -99,7 +99,9 @@ if(uniform player == "nopixel_character_swat") then { _damage = _damage / 3; };
 		//[] call fnc_firstPersonForced;
 	} else {
 		_source = player;
-		if(_damage > 0.65) then { [_damage,_selectionName,_source] spawn client_fnc_damageChance; };
+		if(_damage > 0.65) then { 
+		[_damage,_selectionName,_source] spawn client_fnc_damageChance; 
+		};
 	};
 
 };

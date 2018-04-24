@@ -8,5 +8,5 @@ if(deadPlayer) exitWith {};
 
 if(_shooter isKindOf "Man" && !deadPlayer) then
 {
-	["Remove",0.1] call client_fnc_doHealth;
+	//["Remove",0.1] call client_fnc_doHealth;
 };
