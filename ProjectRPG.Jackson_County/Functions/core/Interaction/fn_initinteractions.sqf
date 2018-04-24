@@ -523,7 +523,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget in weedPlantArray && player distance CurrentCursorTarget < 3"],
-		["Anlage ueberpruefen", "[CurrentCursorTarget] call client_fnc_checkWeedPlant",3]
+		["Anlage überpruefen", "[CurrentCursorTarget] call client_fnc_checkWeedPlant",3]
 	],
 	[
 		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget getVariable [""growing"",false] && CurrentCursorTarget getVariable [""ready"",false] && player distance CurrentCursorTarget < 3"],
@@ -538,7 +538,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["typeof currentcursortarget == ""Land_buildingApartments2A"" && player distance getpos currentcursortarget < 20"],
-		["Buero Mieten ($250)", " createdialog ""rentshop""",3]
+		["Büro Mieten ($250)", " createdialog ""rentshop""",3]
 	],
 
 	[
@@ -568,12 +568,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["cursorTarget getVariable[""vehPrice"",0] > 0 && cursorTarget in Current_Cars"],
-		["Preis Loeschen", "cursorTarget setVariable[""vehPrice"",0,true]",3]
+		["Preis Löschen", "cursorTarget setVariable[""vehPrice"",0,true]",3]
 	],
 
 	[
 		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 40 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0"],
-		["Angebot Ueberpruefen", "[cursorTarget] spawn client_fnc_vehGetInfo;",3]
+		["Angebot Überprüfen", "[cursorTarget] spawn client_fnc_vehGetInfo;",3]
 	],
 
 	[
@@ -594,7 +594,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["Flugzeughaendler", "createdialog ""buycar"";",3]
+		["Flugzeughändler", "createdialog ""buycar"";",3]
 	],
 
 	[
@@ -663,7 +663,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"""],
-		["Baeckerrei", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn client_fnc_LoadStore;",3]
+		["Bäckerrei", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
@@ -737,32 +737,32 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob != ""Cop""", "myjob != ""EMS""", "myjob != ""Fire""", "myjob != ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
+		["myjob != ""Cop""", "myjob != ""EMS""", "myjob != ""Fire""", "myjob != ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
 		["Garage", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
 	],
 
 	[
-		["client_aiad_actions > 0","myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
+		["client_aiad_actions > 0","myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
 		["AIAD-Garage", "[CurrentCursorTarget] call Client_fnc_openGarageAIAD",3]
 	],
 
 	[
-		["myjob == ""EMS""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
+		["myjob == ""EMS""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
 		["EMS-Garage", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3]
 	],
 
 	[
-		["myjob == ""Fire""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
+		["myjob == ""Fire""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
 		["F.D.-Garage", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3]
 	],
 
 	[
-		["myJob == ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
+		["myJob == ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
 		["Mafiagarage", "[CurrentCursorTarget] call Client_fnc_openGarageMafia",3]
 	],
 
 	[
-		["myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
+		["myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
 		["Polizeigarage", "[CurrentCursorTarget] call Client_fnc_openGaragePolice",3]
 	],
 
@@ -782,7 +782,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["((player distance (getMarkerPos ""houseUpgrades"")) < 30)"],
+		["((player distance (getMarkerPos ""houseUpgrades"")) < 20)"],
 		["Haus verbessern (50k)", "[] spawn client_fnc_UpgradeHouse",3]
 	],
 
@@ -799,10 +799,10 @@ NoPixel_InteractionMenuItems = [
 
 // jobs / situational
 
-	[
+	/* [
 		[" (myjob == ""Cop"" || (player getvariable ""legal"") > 7) && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
 		["Polizeicomputer", "createdialog ""kruk_slpd_computer"";",4]
-	],
+	], */
 
 	[
 		["(typeof CurrentCursorTarget IN [""Land_Centrelink"",""Land_CommonwealthBank"",""Land_Bank_DED_House_01_F""] || str CurrentCursorTarget find ""mcl_atm"" > -1) && myJob == ""Mafia"" && (player getVariable ""Mafia"") > 6 && bankrobber == 1"],
@@ -821,7 +821,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance myhouse < 10"],
-		["Einrichtungsgegenstaende oeffnen", "[""house""] spawn client_fnc_retreiveCargo;",4]
+		["Einrichtungsgegenstände öffnen", "[""house""] spawn client_fnc_retreiveCargo;",4]
 	],
 
 //	[
@@ -840,12 +840,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["Mayor && player distance myhouse < 25"],
+		["Mayor && player distance myhouse < 10"],
 		["Buergermeisterkleidung anlegen", "[150] call Client_fnc_sl_removeBank_secure; player forceAddUniform ""vvv_traje_ejecutivo_1"";",4]
 	],
 
 	[
-		["Mayor && player distance myhouse < 25"],
+		["Mayor && player distance myhouse < 10"],
 		["Steuern festlegen", "createdialog ""tax_menu"";",4]
 	],
 
@@ -956,11 +956,11 @@ NoPixel_InteractionMenuItems = [
 		["Austattung Sondereinsatzeinheit", "[""riot""] spawn client_fnc_setGear",4]
 	],
 
-	[
+	/* [
 		[" (myjob == ""Cop"" && (typeof cursorobject == ""Box_NATO_equip_F"" || typeOF cursorTarget == ""SL_Command_Unit"")) && player getvariable ""cop"" > 1 "],
 		["ARSENAL", "[cursorobject] spawn client_fnc_vars"]
 	],
-
+ */
 	/*[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 100K", "[2] spawn client_fnc_takeSuitcase"]
@@ -1043,12 +1043,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""none"" && (player getvariable ""mafia"") > 0 && player distance myhouse < 30"],
-		["Beginne mit den Mafia geschaeften", "[player,""Mafia""] spawn client_fnc_jobstart;",4]
+		["Beginne mit den Mafia geschäften", "[player,""Mafia""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""Mafia"""],
-		["Geschaefte beenden", "[] call client_fnc_jobEnd",4]
+		["Geschäfte beenden", "[] call client_fnc_jobEnd",4]
 	],
 
 	[
@@ -1113,7 +1113,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["str CurrentCursorTarget find ""plp_cts_contshippinggreen"" > -1 && getpos player distance getpos currentcursortarget < 4"],
-		["Objekte suchen", "[""Szukam"",7,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Objekte suchen", "[""Sucht"",7,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
 	[
@@ -1133,7 +1133,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Cop""", "cursorTarget isKindOf ""Car""", "(typeOf cursorTarget IN np_red_cars)"],
-		["Kenzeichen ueberpruefen", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Tablica rejestracyjna"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
+		["Kenzeichen überpruefen", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Tablica rejestracyjna"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
 	],
 
 	[
