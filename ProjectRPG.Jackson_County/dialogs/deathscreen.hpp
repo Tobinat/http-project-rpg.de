@@ -5,11 +5,11 @@ class DeathScreen
 	movingEnabled = 0;
 	onload = "_MedicBtn = ((findDisplay 7300) displayCtrl 7303);_MedicBtn ctrlEnable true;";
 	enableSimulation = 1;
-
+	
 	class controlsBackground
 	{
 	};
-
+	
 	class Controls
 	{
 
@@ -23,12 +23,12 @@ class DeathScreen
 			text = "Neues Leben";
 			onButtonClick = "closeDialog 0; [] call client_fnc_startFresh;";
 			colorBackground[] = {0, 0, 0, 1};
-			class Attributes
+			class Attributes 
 			{
 				align = "center";
 			};
 		};
-
+		
 		class MedicBtn : client_RscButtonMenu
 		{
 			idc = 7303;
@@ -39,12 +39,12 @@ class DeathScreen
 			onButtonClick = "[player] remoteExec [""server_fnc_requestMedic"",2]; _MedicBtn = ((findDisplay 7300) displayCtrl 7303); _MedicBtn ctrlEnable false; ";
 			text = "Rufe Sanitaeter";
 			colorBackground[] = {0, 0, 0, 1};
-			class Attributes
+			class Attributes 
 			{
 				align = "center";
 			};
 		};
-
+		
 		class respawnTime : client_RscStructuredText
 		{
 			idc = 7301;
@@ -58,7 +58,7 @@ class DeathScreen
 				color = "#ffffff";
 				align = "center";
 				shadow = 1;
-			};
+			};			
 
 			sizeEx = 0.030;
 			x = 0.275605 * safezoneW + safezoneX;
