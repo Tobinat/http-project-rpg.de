@@ -1,6 +1,7 @@
 if(myJob IN ["Fire","EMS"]) then {
 	_playerGear = player getVariable "lastSave";
 	player setunitloadout _playerGear;
+	player setVariable ["ace_medical_medicClass", 0, true]
 };
 if (myjob == "Cop") then {
 	_playerGear = player getVariable "lastSave";
@@ -23,9 +24,9 @@ if(!isNil "vehspawned") then {
 	if(!isNull vehspawned) then {
 		_players = crew (vehspawned);
 		if(count _players == 0) then {
-			{ 
+			{
 					detach _x;
-					deletevehicle _x; 
+					deletevehicle _x;
 			} forEach attachedObjects vehspawned;
 			deletevehicle vehspawned;
 		};

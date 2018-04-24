@@ -5,6 +5,7 @@ taskrunning = true;
 [] call client_fnc_hudwork;
 
 player setVariable ["coplevel", 1, false];
+player setVariable ["ace_medical_medicClass", 2, true];
 
 _items = getunitloadout player;
 player setvariable ["lastsave",_items, false];

@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=1718;
+		nextID=1721;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5447.793,17.282579,5172.4644};
-		dir[]={-0.11987963,-0.62910104,-0.76804549};
-		up[]={-0.097029597,0.77725846,-0.62165344};
-		aside[]={-0.98805225,-2.4088877e-007,0.15422095};
+		pos[]={5435.7588,37.505947,5172.7983};
+		dir[]={-0.12374741,-0.58670056,-0.80031747};
+		up[]={-0.089656398,0.80978245,-0.57984096};
+		aside[]={-0.98827195,-5.1906682e-008,0.15281163};
 	};
 };
 binarizationWanted=0;
@@ -9051,7 +9051,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5446.7017,7.3228502,5163.6592};
+						position[]={5446.2212,7.5670743,5163.1577};
 					};
 					side="Civilian";
 					flags=7;
@@ -9061,10 +9061,48 @@ class Mission
 					};
 					id=242;
 					type="C_man_sport_1_F_tanoan";
-					atlOffset=0.025310993;
+					atlOffset=0.089000225;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01FRE";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -9083,7 +9121,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 			};
@@ -9091,7 +9129,7 @@ class Mission
 			{
 			};
 			id=241;
-			atlOffset=0.025310993;
+			atlOffset=0.089000225;
 		};
 		class Item128
 		{
@@ -11961,25 +11999,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9581.9238,25,4070.2424};
-				angles[]={0,4.4416671,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="this enableSimulation true;this setdir 167.124;this setposATL [9606.875977,4032.581299,-0.253367];this setVectorUp [0,0,1]";
-				aiRadarUsage=144359;
-			};
-			id=831;
-			type="rmair_mk_ParkCar_5";
-		};
-		class Item226
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={9623.4648,25.016428,4059.9966};
 				angles[]={0,2.7503381,0};
 			};
@@ -11994,7 +12013,7 @@ class Mission
 			id=833;
 			type="plp_up_SpeedBumpPlasticYellow";
 		};
-		class Item227
+		class Item226
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12013,7 +12032,7 @@ class Mission
 			id=834;
 			type="plp_up_SpeedBumpPlasticYellow";
 		};
-		class Item228
+		class Item227
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12032,12 +12051,12 @@ class Mission
 			id=835;
 			type="plp_up_SpeedBumpPlasticYellow";
 		};
-		class Item229
+		class Item228
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9596.3408,25.084999,4109.2505};
+				position[]={9596.3408,25.084999,4109.25};
 				angles[]={0,4.478899,0};
 			};
 			side="Empty";
@@ -12051,7 +12070,7 @@ class Mission
 			id=844;
 			type="rmair_mk_TrafficSign_NoEntry";
 		};
-		class Item230
+		class Item229
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12071,7 +12090,7 @@ class Mission
 			type="rmair_mk_TrafficSign_NoEntry";
 			atlOffset=-0.16817665;
 		};
-		class Item231
+		class Item230
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12090,7 +12109,7 @@ class Mission
 			id=851;
 			type="Land_rmair_ParkingBooth";
 		};
-		class Item232
+		class Item231
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12109,7 +12128,7 @@ class Mission
 			type="rmair_ParkingSign_P1Pillar";
 			atlOffset=0.29074097;
 		};
-		class Item233
+		class Item232
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12149,7 +12168,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item234
+		class Item233
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12189,7 +12208,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item235
+		class Item234
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12229,7 +12248,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item236
+		class Item235
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12269,7 +12288,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item237
+		class Item236
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12309,7 +12328,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item238
+		class Item237
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12349,7 +12368,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item239
+		class Item238
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12389,7 +12408,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item240
+		class Item239
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12429,7 +12448,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item241
+		class Item240
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12469,7 +12488,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item242
+		class Item241
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12509,7 +12528,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item243
+		class Item242
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12549,7 +12568,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item244
+		class Item243
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12589,7 +12608,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item245
+		class Item244
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12629,7 +12648,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item246
+		class Item245
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12669,7 +12688,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item247
+		class Item246
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12688,7 +12707,7 @@ class Mission
 			id=1662;
 			type="rmair_mk_ParkCar_5";
 		};
-		class Item248
+		class Item247
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12728,7 +12747,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item249
+		class Item248
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12768,7 +12787,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item250
+		class Item249
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12808,7 +12827,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item251
+		class Item250
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12848,12 +12867,12 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item252
+		class Item251
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9585.2197,31.123829,4426.6074};
+				position[]={9600.3242,31.123829,4213.2144};
 				angles[]={0,4.6337576,0};
 			};
 			side="Empty";
@@ -12888,7 +12907,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item253
+		class Item252
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12904,7 +12923,7 @@ class Mission
 			id=496;
 			type="Mattaust_Cam1";
 		};
-		class Item254
+		class Item253
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12924,6 +12943,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -12941,10 +12979,29 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute2
+				{
+					property="ace_cookoff_enableAmmoCookoff";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
-		class Item255
+		class Item254
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12964,6 +13021,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -12981,10 +13057,29 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute2
+				{
+					property="ace_cookoff_enableAmmoCookoff";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
-		class Item256
+		class Item255
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13004,8 +13099,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
 					class Value
 					{
 						class data
@@ -13014,35 +13109,14 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value=1;
 						};
 					};
 				};
-				nAttributes=1;
-			};
-		};
-		class Item257
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9555.9238,25.707047,4126.0659};
-				angles[]={6.2738566,2.8930376,0.0014648439};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation true;";
-			};
-			id=1671;
-			type="A3L_HospitalBed2015";
-			class CustomAttributes
-			{
-				class Attribute0
+				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -13061,10 +13135,107 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute2
+				{
+					property="ace_cookoff_enableAmmoCookoff";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
-		class Item258
+		class Item256
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9555.9238,25.706738,4126.0654};
+				angles[]={6.2738476,2.8930404,0.0014660766};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation true;";
+			};
+			id=1671;
+			type="A3L_HospitalBed2015";
+			atlOffset=0.54899979;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_cookoff_enableAmmoCookoff";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item257
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13104,26 +13275,44 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item259
+		class Item258
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9550.9961,25.689787,4124.9961};
-				angles[]={6.2738566,2.9052043,0.0014648439};
+				position[]={9550.9961,25.689579,4124.9961};
+				angles[]={6.2738476,2.905205,0.0014660766};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=1673;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.00019645691;
+			atlOffset=0.53199959;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ace_isMedicalVehicle";
+					expression="_this setVariable [""ace_medical_medicClass"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -13142,10 +13331,29 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute2
+				{
+					property="ace_cookoff_enableAmmoCookoff";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
-		class Item260
+		class Item259
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13202,13 +13410,13 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item261
+		class Item260
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={9560.2412,33.758255,4112.9429};
-				angles[]={0,4.4712982,0};
+				angles[]={0,4.4712892,0};
 			};
 			side="Empty";
 			flags=5;
@@ -13217,8 +13425,31 @@ class Mission
 			};
 			id=1688;
 			type="Land_buildingshospital1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item262
+		class Item261
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13235,7 +13466,7 @@ class Mission
 			type="Land_City_Pillar_F";
 			atlOffset=-0.53554916;
 		};
-		class Item263
+		class Item262
 		{
 			dataType="Marker";
 			position[]={9804.6416,5.8670001,956.42102};
@@ -13250,7 +13481,7 @@ class Mission
 			id=1707;
 			atlOffset=0.57828045;
 		};
-		class Item264
+		class Item263
 		{
 			dataType="Trigger";
 			position[]={9766.1104,5.375176,946.42798};
@@ -13259,10 +13490,30 @@ class Mission
 				condition="call{this && (local player) && (vehicle player in thisList)}";
 				onActivation="call{[] call client_fnc_startFresh;}";
 				repeatable=1;
+				activationBy="ANYPLAYER";
 			};
 			id=1708;
 			type="EmptyDetector";
 			atlOffset=-1.0139999;
+		};
+		class Item264
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9580.7266,25,4069.9021};
+				angles[]={0,4.4450355,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation true;this setdir 167.124;this setposATL [9606.875977,4032.581299,-0.253367];this setVectorUp [0,0,1]";
+				aiRadarUsage=144359;
+			};
+			id=1720;
+			type="rmair_mk_ParkCar_5";
 		};
 	};
 };
