@@ -195,12 +195,12 @@ NoPixel_InteractionMenuItems = [
 		[" player distance theDrill < 5"],
 		["Bohrer entfernen", " ['Packe bohrer ein',30,client_fnc_takeDrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",1]
 	],
-
+/*
 	[
 		[" player distance getmarkerpos ""rally_1"" < 80 "],
 		["Rally starten", " [] spawn client_fnc_doRally; ",1]
 	],
-
+*/
 	[
 		[" player distance getmarkerpos ""formula1"" < 40 "],
 		["F1 Rennen", " [player] remoteexec [""server_fnc_raceenter"",2] ",1]
