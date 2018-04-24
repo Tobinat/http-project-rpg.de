@@ -241,7 +241,7 @@ NoPixel_InteractionMenuItems = [
 		["(myjob == ""EMS"" || myjob == ""Fire"")"],
 		["Behandeln", "[] spawn client_fnc_openHealMenu;",1]
 	],
-*/(
+*/
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 1)"],
 		["Behandeln lassen", "[] spawn client_fnc_fullheal;",1]
@@ -637,7 +637,7 @@ NoPixel_InteractionMenuItems = [
 		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
 		["EMS Ausruestung", "closedialog 0; createdialog ""gun_menu""; [""medic""] spawn client_fnc_LoadStore;",3]
 	],
-	
+
 	[
 		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
 		["Kleiderkammer EMS", "closedialog 0; createdialog ""Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;"]
@@ -680,22 +680,22 @@ NoPixel_InteractionMenuItems = [
 		["Pizzeria", "closedialog 0; createdialog ""food_menu""; [""pizza""] spawn client_fnc_LoadStore;",3]
 	],
 
-	
-	
-	
-	
-	
+
+
+
+
+
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dexters"""],
 		["Ripperino Pizza", "[] spawn client_fnc_pizza;",3]
 	],
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	[
 		["typeof CurrentCursorTarget == ""Land_Market_DED_Market_01_F"""],
 		["Mc Dildos", "closedialog 0; createdialog ""food_menu""; [""mcdonalds""] spawn client_fnc_LoadStore;",3]
