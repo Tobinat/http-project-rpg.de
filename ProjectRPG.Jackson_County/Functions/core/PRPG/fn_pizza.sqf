@@ -5,7 +5,7 @@ pizza
 
 _item = param [0,false,[false]];
 _complete = false;
-_cashCheck = 75;
+_price = 750;
 
 
 if(_item) then {
@@ -17,19 +17,16 @@ if(_item) then {
 	if(karma_level > 0) then {
 		_mydiscount = karma_level / 100;
 		_discount = 1 - _mydiscount;
-		_cashCheck = _price * _discount;
+		_price = _price * _discount;
 		_discountper = _mydiscount * 100;
 		[format["Du hast einen %%1 Rabatt durch dein Karma erhalten!",_discountper], false] spawn domsg;
 	};
 
 
-	if(cheap_buffs) then { _cashCheck = _cashCheck * 0.7; cheap_buffs = false; ["Du hast einen Rabatt von 30% durch einen Verkäufer erhalten!", false] spawn domsg; };
-	
-	_cashCheck = [2,75] call Client_fnc_sl_checkMoney_secure;
+	if(cheap_buffs) then { _price = _price * 0.7; cheap_buffs = false; ["Du hast einen Rabatt von 30% durch einen Verkäufer erhalten!", false] spawn domsg; };
+	if(cash_in_hand < _price) exitWith { ["PIZZA LIEFERANT: Dude...Ich brauche 70$ für diese Ripperino Pizza", false] spawn domsg; _complete = true; };
 
-    if!(_cashCheck) exitWith { ["PIZZA LIEFERANT: Dude...Ich brauche 75$ für diese Ripperino Pizza", false] spawn domsg; _complete = true; };
-
-	[75] call Client_fnc_sl_removeCash_secure;
+	["cash","take",_price] call life_fnc_handleCash;
 
 	
 };
