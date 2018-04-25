@@ -11,13 +11,13 @@ if(_currentHitLocation IN _injuryArray) then {
 	_mychance = round (random 2);
 	_injuryLevel = (_myInjuries select _currentHitnumber) + _myChance;
 	if(_injuryLevel > 4) then { _injuryLevel = 4; };
-	_myInjuries set [_currentHitNumber, _injuryLevel];
+	//_myInjuries set [_currentHitNumber, _injuryLevel];
 
 	if(_currentHitLocation == "Body") then {
 		_chance = round (random 40);
 		if(_chance < 7) then {
 			_organDamage = round (random 4);
-			_myInjuries set [9, _organDamage];
+			//_myInjuries set [9, _organDamage];
 		};
 	};
 
