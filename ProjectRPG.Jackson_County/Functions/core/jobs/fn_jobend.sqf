@@ -1,7 +1,6 @@
 if(myJob IN ["Fire","EMS"]) then {
 	_playerGear = player getVariable "lastSave";
 	player setunitloadout _playerGear;
-	player setVariable ["ace_medical_medicClass", 0, true]
 };
 if (myjob == "Cop") then {
 	_playerGear = player getVariable "lastSave";
