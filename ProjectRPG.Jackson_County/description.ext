@@ -1617,4 +1617,39 @@ class CfgNotifications {
         priority = 5;
     };
 };
+
+class ACE_Settings {
+  // ACE Advanced Fatigue
+  force ace_advanced_fatigue_enabled = false;
+  // ACE Interaction
+  force ace_interaction_enableTeamManagement = false;
+  // ACE Medical
+  // ACE Medical
+  force ace_medical_enableRevive = 1;
+  force ace_medical_level = 2;
+  force ace_medical_litterCleanUpDelay = 60;
+  force ace_medical_maxReviveTime = 3600;
+  force ace_medical_medicSetting = 2;
+  ace_medical_menu_useMenu = 1;
+  ace_medical_painEffectType = 1;
+  force ace_medical_preventInstaDeath = true;
+  force ace_medical_useCondition_PAK = 1;
+  force ace_medical_useLocation_PAK = 3;
+  force ace_medical_useLocation_SurgicalKit = 3;
+  // ACE Name Tags
+  force ace_nametags_showNamesForAI = false;
+  force ace_nametags_showPlayerNames = 0;
+  force ace_nametags_showPlayerRanks = false;
+  force ace_nametags_showSoundWaves = 0;
+  force ace_nametags_showVehicleCrewInfo = false;
+  // ACE Nightvision
+  force ace_nightvision_effectScaling = 0.5;
+  force ace_nightvision_fogScaling = 0.5;
+  force ace_nightvision_noiseScaling = 0.5;
+  // ACE Pointing
+  force ace_finger_enabled = true;
+  force ace_finger_indicatorColor = [0,1,0,1];
+  force ace_finger_maxRange = 5;
+};
+
 #include "maverick\maverick_master.cpp"
