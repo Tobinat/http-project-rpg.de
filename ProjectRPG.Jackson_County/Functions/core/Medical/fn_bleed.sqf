@@ -9,6 +9,6 @@ bleedingEffect = _newParam;
 while {bleedingEffect > 0} do {
 	999 cutRsc ["HUDbleed","PLAIN"]; 
 	uisleep 3;
-	//["Remove",0.05] call Client_Fnc_DoHealth;
+	["Remove",0.05] call Client_Fnc_DoHealth;
 	bleedingEffect = bleedingEffect - 3;
 };

@@ -48,7 +48,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 				_chances = round (random 1000);
 				if(_chances > 985) then
 				{
-					//["Remove",0.01] call Client_Fnc_DoHealth;
+					["Remove",0.01] call Client_Fnc_DoHealth;
 				};
 
 			}
@@ -68,7 +68,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 				_chances = round (random 1000);
 				if(_chances > 985) then
 				{
-					//["Remove",0.01] call Client_Fnc_DoHealth;
+					["Remove",0.01] call Client_Fnc_DoHealth;
 				};
 
 			}
@@ -87,7 +87,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 				_chances = round (random 1000);
 				if(_chances > 985) then
 				{
-					//["Remove",0.01] call Client_Fnc_DoHealth;
+					["Remove",0.01] call Client_Fnc_DoHealth;
 				};
 
 			}
@@ -106,7 +106,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 				_chances = round (random 1000);
 				if(_chances > 985) then
 				{
-					//["Remove",0.01] call Client_Fnc_DoHealth;
+					["Remove",0.01] call Client_Fnc_DoHealth;
 				};
 
 			}
@@ -166,7 +166,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 							[] spawn KK_fnc_forceRagdoll;
 							[] spawn client_fnc_spreaddisease;
 						};
-					//["Remove",0.05] call Client_Fnc_DoHealth;
+					["Remove",0.05] call Client_Fnc_DoHealth;
 					};
 				};
 			};
@@ -178,5 +178,5 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 		};
 	};
 	if(isNil "client_fnc_totalPain") exitWith {};
-	//[] spawn client_fnc_totalPain;
+	[] spawn client_fnc_totalPain;
 	

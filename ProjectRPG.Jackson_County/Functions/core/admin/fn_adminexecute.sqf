@@ -42,7 +42,7 @@ if(_statementsent == 6) then {
 };
 
 if(_statementsent == 7) then {
-	//["Remove",1,_target] remoteExec ["Client_Fnc_DoHealth", _target]; 
+	["Remove",1,_target] remoteExec ["Client_Fnc_DoHealth", _target]; 
 	[player,_target,7,format ["%1 hat %2 getoetet",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
@@ -86,7 +86,7 @@ if(_statementsent == 12) then {
 
 if(_statementsent == 13) then {
 	[] remoteExec ["client_fnc_fullheal", _target]; 
-	//["SET",0] remoteexec ["Client_Fnc_DoHealth",_target];
+	["SET",0] remoteexec ["Client_Fnc_DoHealth",_target];
 	[player,_target,12,format ["%1 hat %2 geheilt",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 

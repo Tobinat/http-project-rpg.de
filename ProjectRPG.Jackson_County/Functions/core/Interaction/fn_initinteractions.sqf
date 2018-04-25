@@ -195,12 +195,12 @@ NoPixel_InteractionMenuItems = [
 		[" player distance theDrill < 5"],
 		["Bohrer entfernen", " ['Packe bohrer ein',30,client_fnc_takeDrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",1]
 	],
-/*
+
 	[
 		[" player distance getmarkerpos ""rally_1"" < 80 "],
 		["Rally starten", " [] spawn client_fnc_doRally; ",1]
 	],
-*/
+
 	[
 		[" player distance getmarkerpos ""formula1"" < 40 "],
 		["F1 Rennen", " [player] remoteexec [""server_fnc_raceenter"",2] ",1]
@@ -221,7 +221,7 @@ NoPixel_InteractionMenuItems = [
 		["Abschnallen", "client_seatbelt = false;",1]
 	],
 // healing
-/*
+
 	[
 		["CurrentCursorTarget getVariable[""dead"",FALSE] && (count currentEMS < 0)"],
 		["Reanimieren", "['Reanimiere',125,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",1]
@@ -241,10 +241,10 @@ NoPixel_InteractionMenuItems = [
 		["(myjob == ""EMS"" || myjob == ""Fire"")"],
 		["Behandeln", "[] spawn client_fnc_openHealMenu;",1]
 	],
-*/
+
 	[
-		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 1)"],
-		["Behandeln lassen", "[] spawn client_fnc_fullheal;",1]
+		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 3)"],
+		["Goetterspritze", "[] spawn client_fnc_fullheal;",1]
 	],
 
 	[
@@ -637,7 +637,7 @@ NoPixel_InteractionMenuItems = [
 		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
 		["EMS Ausruestung", "closedialog 0; createdialog ""gun_menu""; [""medic""] spawn client_fnc_LoadStore;",3]
 	],
-
+	
 	[
 		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
 		["Kleiderkammer EMS", "closedialog 0; createdialog ""Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;"]
@@ -680,22 +680,22 @@ NoPixel_InteractionMenuItems = [
 		["Pizzeria", "closedialog 0; createdialog ""food_menu""; [""pizza""] spawn client_fnc_LoadStore;",3]
 	],
 
-
-
-
-
-
+	
+	
+	
+	
+	
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dexters"""],
-		["Ripperino Pizza", "[] spawn client_fnc_pizza;",3]
+		["Ripperino Pizza", "[] call client_fnc_pizza;",3]
 	],
-
-
-
-
-
-
-
+	
+	
+	
+	
+	
+	
+	
 	[
 		["typeof CurrentCursorTarget == ""Land_Market_DED_Market_01_F"""],
 		["Mc Dildos", "closedialog 0; createdialog ""food_menu""; [""mcdonalds""] spawn client_fnc_LoadStore;",3]

@@ -23,9 +23,9 @@ if(!isNil "vehspawned") then {
 	if(!isNull vehspawned) then {
 		_players = crew (vehspawned);
 		if(count _players == 0) then {
-			{
+			{ 
 					detach _x;
-					deletevehicle _x;
+					deletevehicle _x; 
 			} forEach attachedObjects vehspawned;
 			deletevehicle vehspawned;
 		};
