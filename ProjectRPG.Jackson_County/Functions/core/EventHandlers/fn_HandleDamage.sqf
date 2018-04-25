@@ -95,12 +95,12 @@ if(uniform player == "nopixel_character_swat") then { _damage = _damage / 3; };
 
 	if(!isNull _source && isPlayer _source && _source != _unit && _damage > 0.1) then {	
 
-		[_damage,_selectionName,_source] spawn client_fnc_damageChance;
+		//[_damage,_selectionName,_source] spawn client_fnc_damageChance;
 		//[] call fnc_firstPersonForced;
 	} else {
 		_source = player;
 		if(_damage > 0.65) then { 
-		[_damage,_selectionName,_source] spawn client_fnc_damageChance; 
+		//[_damage,_selectionName,_source] spawn client_fnc_damageChance; 
 		};
 	};
 
