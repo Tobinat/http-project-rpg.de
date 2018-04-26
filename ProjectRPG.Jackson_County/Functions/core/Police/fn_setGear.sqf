@@ -28,6 +28,9 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 2 do {player addItemToBackPack "nonlethal_swing"; };
 		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
 
+		for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
+		player addItemToUniform "ACE_Flashlight_XL50";
+		player addItemToUniform "ACE_EarPlugs";
 		_level = player getvariable ["cop", 0];
 
 		if(female) then { player forceAddUniform "female_police"; player addHeadgear "EF_Fcap_P"; } else {
@@ -108,11 +111,7 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 2 do {player addItemToBackpack "CUP_15Rnd_9x19_M9";};
 		for "_i" from 1 to 2 do {player addItemToBackpack "CG_Spikes_Collapsed";};
 		player addItemToBackpack "CG_wheel";
-		for "_i" from 1 to 10 do {player addItemToBackpack "CG_ATF_Bandage_i";};
-		player addItemToBackpack "CG_ATF_First_Aid_Kit_i";
 		for "_i" from 1 to 3 do {player addItemToBackpack "30Rnd_556x45_Stanag";};
-		player addItemToBackpack "kif_gopro";
-		player addItemToBackpack "kif_panicbutton";
 		for "_i" from 1 to 2 do {player addItemToBackpack "SUPER_flash";};
 		for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShell";};
 		player addHeadgear "TRYK_H_PASGT_OD";
@@ -166,6 +165,21 @@ if(myjob == "EMS") exitwith {
 
 	player addBackpack "invisible_carryall";
 	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
+	player addItemToUniform "ACE_Flashlight_XL50";
+  player addItemToUniform "ACE_EarPlugs";
+	player addItemToBackpack "ACE_surgicalKit";
+	player addItemToBackpack "ACE_personalAidKit";
+	for "_i" from 1 to 8 do {player addItemToBackpack "ACE_salineIV";};
+	for "_i" from 1 to 6 do {player addItemToBackpack "ACE_tourniquet";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_salineIV_500";};
+	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_packingBandage";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
+	for "_i" from 1 to 5 do {player addItemToBackpack "ACE_bodyBag";};
+	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
+	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_adenosine";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
 
 };
 
