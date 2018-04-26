@@ -9,7 +9,7 @@ _amount = _amount - _unhealth;
 if(_type == "marijuana") then {
 	client_marijuana = _amount;
 	player setCustomAimCoef 0;
-	["set",0] call Client_Fnc_DoHealth;
+	//["set",0] call Client_Fnc_DoHealth;
 	["Das Zeug faengt an zu wirken.",false] spawn domsg;
 	["Remove","Karma",20] call client_fnc_sustain;
 };
