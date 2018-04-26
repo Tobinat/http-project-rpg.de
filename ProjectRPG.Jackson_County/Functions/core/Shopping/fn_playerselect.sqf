@@ -5,7 +5,7 @@
 //[8832.93,1565.37,0.000883102]
 disableSerialization;
 private["_male","_female","_dummy"];
-
+/*
 client_kcCamera  = "CAMERA" camCreate [7797.61,326.183,2.57719];
 showCinemaBorder true;   
 client_kcCamera cameraEffect ["EXTERNAL", "BACK"];                             
@@ -13,8 +13,9 @@ client_kcCamera camSetPos [8193.63,2268.02,0.00144625];
 client_kcCamera camSetFOV 0.85;  
 
 lastsync = time - 3;
-
+*/
 charselection = true;
+/*
 playMusic  "npIntro";
 uisleep 15;
 
@@ -116,13 +117,14 @@ uisleep 15;
 		["Geschlecht kann im Krankenhaus geaendert werden ...","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
-
+*/
 createdialog "charselect";
-while{charselection} do { uisleep 0.05; _male setdir ((getdir _male) + 15); _female setdir ((getdir _female) - 15); };
 
-deletevehicle _female;
-deletevehicle _male;
-deletevehicle _dummy;
+//while{charselection} do { uisleep 0.05; _male setdir ((getdir _male) + 15); _female setdir ((getdir _female) - 15); };
+
+//deletevehicle _female;
+//deletevehicle _male;
+//deletevehicle _dummy;
 
 [
 	[
@@ -131,11 +133,11 @@ deletevehicle _dummy;
 	]
 ] spawn BIS_fnc_typeText;
 
-uisleep 15;
+uisleep 18;
 
 [
 	[
-		["Beginnen mit dem Oeffnen des Interaktionsmenues mit dem auf der Karte markierten Trailer.","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
+		["Beginnen mit dem Oeffnen des Interaktionsmenues bei dem auf der Karte markierten Trailer.","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
 		["Du kannst deine erste E-Mail lesen. Viel Glück! :)","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;

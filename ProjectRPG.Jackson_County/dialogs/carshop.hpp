@@ -120,7 +120,7 @@ class charselect {
 		{
 			idc = 1501;
 			sizeEx = 0.033;
-			text = "Maennlich";
+			text = "Männlich";
 			onButtonClick = "[""Male""] spawn client_fnc_playerselectFinish;";		
 			x = 0.53 * safezoneW + safezoneX;
 			y = 0.76 * safezoneH + safezoneY;
