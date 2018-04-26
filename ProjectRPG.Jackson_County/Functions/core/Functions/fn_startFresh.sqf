@@ -10,18 +10,19 @@ removeAllAssignedItems player;
 removeVest player;
 removeBackpack player;
 removeHeadgear player;
+removeGoggles player;
 
 deadPlayer = false;
 godmode = false;
 
-player setpos [7641.1,2555.71,0.00143623];
+//player setpos [7641.1,2555.71,0.00143623];
 
 //hospital
-//player setpos [9588.23,4136.39,0.00143814];
+player setpos [9585.01,4113.2,0.00141525];
 
-//player setdir 210;
+player setdir 350;
 
-_clothingarray = ["np_shirt_1","np_shirt_2","np_shirt_3","np_shirt_4","np_shirt_5","np_shirt_6","np_shirt_7","np_shirt_8","vvv_ropa_comun_f_1","vvv_ropa_comun_f_2","vvv_ropa_comun_f_4","vvv_ropa_comun_f_5","vvv_ropa_comun_f_6","vvv_ropa_comun_f_7","vvv_ropa_comun_f_8","vvv_ropa_comun_f_9","vvv_ropa_comun_f_10","CUP_U_I_GUE_Anorak_03","CUP_U_I_GUE_Anorak_02","U_BG_Guerilla3_1","U_OrestesBody","CUP_O_TKI_Khet_Jeans_04","CUP_O_TKI_Khet_Jeans_02","CUP_O_TKI_Khet_Jeans_01","CUP_O_TKI_Khet_Jeans_03"];
+_clothingarray = ["np_shirt_1","np_shirt_2","np_shirt_3","np_shirt_4","np_shirt_5","np_shirt_6","np_shirt_7","np_shirt_8","vvv_ropa_comun_f_1","vvv_ropa_comun_f_2","vvv_ropa_comun_f_4","vvv_ropa_comun_f_5","vvv_ropa_comun_f_6","vvv_ropa_comun_f_7","vvv_ropa_comun_f_8","vvv_ropa_comun_f_9","vvv_ropa_comun_f_10"];
 _clothing = _clothingarray call BIS_FNC_SELECTRANDOM;
 
 player adduniform _clothing;
@@ -44,6 +45,8 @@ closedialog 0;
 	player setVariable ["evidence",[],true];
 	[player,""] remoteExec ["client_fnc_animSync"];
 	["set",0] call Client_Fnc_DoHealth;
+	player setDamage 0;
+	[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
 	player setVariable ["tf_voiceVolume", 1, true];
 	lastsync = time;
 	["add","battery",200] call client_fnc_sustain;
