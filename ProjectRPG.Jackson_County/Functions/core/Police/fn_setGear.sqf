@@ -3,7 +3,7 @@ _type = _this select 0;
 if(myjob == "Cop") exitwith {
 	[player,objNull,9,format ["%1 hat folgende Ausrüstung %2 gewählt", name player, _type],_type] remoteExec ["server_fnc_copLog", 2];
     client_gopro = true;
-    434 cutRsc ["HUDGoPro","PLAIN"]; 
+    434 cutRsc ["HUDGoPro","PLAIN"];
 	if(_type == "basic") then {
 		removeAllWeapons player;
 		removeAllItems player;
@@ -26,11 +26,11 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_16Rnd_40cal_usp"; };
 		for "_i" from 1 to 10 do {player addItemToBackPack "vvv_np_magazine_taser"; };
 		for "_i" from 1 to 2 do {player addItemToBackPack "nonlethal_swing"; };
-		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","kif_gopro","kif_panicbutton"];
+		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
 
 		_level = player getvariable ["cop", 0];
-		
-		if(female) then { player forceAddUniform "female_police"; player addHeadgear "EF_Fcap_P"; } else { 
+
+		if(female) then { player forceAddUniform "female_police"; player addHeadgear "EF_Fcap_P"; } else {
 			if(_level == 1) then {
 				player forceAddUniform "jamie_police1";
 				player addVest "jamie_blue";
@@ -134,7 +134,7 @@ if(myjob == "Cop") exitwith {
 
 	};
 
-	
+
 };
 
 
@@ -161,10 +161,11 @@ if(myjob == "EMS") exitwith {
 
 	_level = player getVariable "ems";
 
-	if(female) then { player forceAddUniform "female_ems"; } else { player forceAddUniform "CUP_U_C_Rescuer_01"; };
-	
-	player addBackpack "CUP_B_SLA_Medicbag";
-	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","kif_gopro","kif_panicbutton"];
+	if(female) then { player forceAddUniform "female_ems"; } else { player forceAddUniform "pRPG_Candidate1"; };
+	player addgoggles "Masque_Chirurgical";
+
+	player addBackpack "invisible_carryall";
+	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
 
 };
 
@@ -189,11 +190,11 @@ player linkItem "ItemGPS";
 
 
 	_level = player getVariable "fire";
-	player forceAddUniform "CUP_U_C_Fireman_01";
-	player addBackpack "TAC_LBT_LEGAB_BK";
-	player addgoggles "TAC_SF10";
-	player addHeadgear "CUP_H_C_Fireman_Helmet_01";
-	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","kif_gopro","kif_panicbutton"];
+	player forceAddUniform "vvv_traje_bombero";
+	player addBackpack "invisible_carryall";
+	player addgoggles "Mask_M40";
+	//player addHeadgear "CUP_H_C_Fireman_Helmet_01";
+	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
 
 	for "_i" from 1 to 10 do {player addItemToBackPack "Manguera_magazine";};
 	player addweapon "fireextinguisher";
