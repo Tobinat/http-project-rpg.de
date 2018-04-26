@@ -167,15 +167,15 @@ if(myjob == "EMS") exitwith {
 	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
 	player addItemToUniform "ACE_Flashlight_XL50";
   player addItemToUniform "ACE_EarPlugs";
-	player addItemToBackpack "ACE_surgicalKit";
-	player addItemToBackpack "ACE_personalAidKit";
+	player addItemToUniform "ACE_surgicalKit";
+	player addItemToUniform "ACE_personalAidKit";
 	for "_i" from 1 to 8 do {player addItemToBackpack "ACE_salineIV";};
 	for "_i" from 1 to 6 do {player addItemToBackpack "ACE_tourniquet";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_salineIV_500";};
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_packingBandage";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
-	for "_i" from 1 to 5 do {player addItemToBackpack "ACE_bodyBag";};
+	for "_i" from 1 to 5 do {player addItemToUniform "ACE_bodyBag";};
 	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_adenosine";};
