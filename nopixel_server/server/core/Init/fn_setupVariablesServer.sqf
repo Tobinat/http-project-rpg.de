@@ -60,5 +60,5 @@ publicvariable "mafiaBank";
 
 priceArrayOre = [30,45,75,10,115];
 publicVariable "priceArrayOre";
-diag_log "SERWER: Pomyślnie ustawiłem startowe ceny surowców";
+diag_log "SERVER: Rohstoffpreise erfolgreich eingerichtet";
 //publicVariable "TaxRate";

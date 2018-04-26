@@ -8,7 +8,7 @@ for [{_i = 0}, {_i < 3}, {_i = _i + 1}] do {
 };
 
 _random = round(random(25000)) + 20000;
-[format["Ukradles $%1, przez 5 minut służby porządkowe mają podgląd na Twoją pozycję", _random], false] call domsg;
+[format["Gestohlen $%1, Für 5 Minuten hat der Sicherheitsdienst eine deine Position", _random], false] call domsg;
 [player,player,15,format ["%1 hat %2 $ aus der Bank mitgehen lassen!", name player, _random],""] remoteExec ["server_fnc_actionLog", 2];
 [_random] call Client_fnc_sl_addCash_secure;
 closedialog 0;
