@@ -18,13 +18,13 @@ if (_amount > 0) then
 			[_amount] call Client_fnc_sl_removeBank_secure;
 			[_amount] call Client_fnc_sl_addCash_secure;
 
-			["Erledigt!","Du hast dein Geld entnommen!",false] call spawn domsg;
+			["Erledigt!","Du hast dein Geld entnommen!",[0,255,0,1],""] call spawn domsg;
 			[player,objNull,1,format ["%1 bezahlt %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
 			//hint "Bitte entnehmen Sie Ihr Geld!";
 			
 		} else {
 
-			["Verdammt!","Ihr Konto ist nicht ausreichend gedeckt!",false] spawn domsg;
+			["Verdammt!","Ihr Konto ist nicht ausreichend gedeckt!",[255,0,0,1],""] spawn domsg;
 			//hint "Ihr Konto ist nicht ausreichend gedeckt!";
 		
 		};
@@ -37,13 +37,13 @@ if (_amount > 0) then
 			["Remove",_amount] remoteexec ["server_fnc_updateMafiaBank",2];
 			[_amount] call Client_fnc_sl_addCash_secure;
 
-			["Erledigt!","Du hast dein Kriminelles Geld entnommen!",false] call spawn domsg;
+			["Erledigt!","Du hast dein Kriminelles Geld entnommen!",[0,255,0,1],""] call spawn domsg;
 			[player,objNull,2,format ["%1 bezahlt %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
 			//hint "Entnehmen Sie bitte Ihr Kriminelles Geld!";
 			
 		} else {
 
-			["Verdammt!","Ihr Konto ist nicht ausreichend Gedeckt!",false] spawn domsg;
+			["Verdammt!","Ihr Konto ist nicht ausreichend Gedeckt!",[255,0,0,1],""] spawn domsg;
 			//hint "Ihr Konto ist nicht ausreichend Gedeckt!";
 		
 		};
@@ -54,7 +54,7 @@ if (_amount > 0) then
  else  
 {
 
-	["Verdammt!","Bitte heben Sie mehr als $0 ab!",false] spawn domsg;
+	["Verdammt!","Bitte heben Sie mehr als $0 ab!",[255,0,0,1],""] spawn domsg;
 	//hint "Bitte heben Sie mehr als $0 ab!";
 	
 };
