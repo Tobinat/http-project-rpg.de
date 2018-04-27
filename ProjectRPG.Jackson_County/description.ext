@@ -183,6 +183,13 @@ class CfgFunctions
 			class completeMail {};
 			class mailSystem {};
 		};
+		
+		
+		class PRPG {
+			file = "Functions\core\PRPG";
+			class pizza {};
+		
+		};
 
 		class jobFactions {
 			file = "Functions\core\jobs\JobFactions";
