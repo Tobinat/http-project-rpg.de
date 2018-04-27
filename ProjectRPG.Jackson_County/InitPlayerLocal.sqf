@@ -1,7 +1,7 @@
 if(!hasInterface) exitWith {}; //This is a headless client, he doesn't need to do anything but keep being headless..
 Np_ProfileVars = profilenamespace getvariable "Nopix_Profile";
 if(isnil "Np_ProfileVars") then {
-	profilenamespace setvariable ["Nopix_Profile",[[["Witamy na Silverlake ","Witamy", "Verizon"]],[["Witamy","Witamy na Silverlake", "Poczta"]]]];
+	profilenamespace setvariable ["Nopix_Profile",[[["Willkommen in Silverlake ","Willkommen", "Verizon"]],[["Willkommen","Willkommen in Silverlake", "Post"]]]];
 };
 
 
