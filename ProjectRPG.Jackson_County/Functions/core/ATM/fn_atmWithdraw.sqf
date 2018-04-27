@@ -26,7 +26,7 @@ if (_amount > 0) then
 		} else {
 
 			//["Verdammt!","Ihr Konto ist nicht ausreichend gedeckt!",[255,0,0,1],""] spawn domsg;
-			["Fehler /nDu hast nicht genug Geld auf dem Konto.", false] call domsg;
+			["Du hast nicht genug Geld auf dem Konto.", false] call domsg;
 			//hint "Ihr Konto ist nicht ausreichend gedeckt!";
 
 		};
@@ -47,7 +47,7 @@ if (_amount > 0) then
 		} else {
 
 			//["Verdammt!","Ihr Konto ist nicht ausreichend Gedeckt!",[255,0,0,1],""] spawn domsg;
-			["Fehler /nDu hast nicht genug Geld auf dem Konto.", false] call domsg;
+			["Du hast nicht genug Geld auf dem Konto.", false] call domsg;
 			//hint "Ihr Konto ist nicht ausreichend Gedeckt!";
 
 		};
@@ -59,7 +59,7 @@ if (_amount > 0) then
 {
 
 	//["Verdammt!","Bitte heben Sie mehr als $0 ab!",[255,0,0,1],""] spawn domsg;
-	["Fehler /nDu musst mehr als $0 Abheben.", false] call domsg;
+	["Du musst mehr als $0 Abheben.", false] call domsg;
 	//hint "Bitte heben Sie mehr als $0 ab!";
 
 };
