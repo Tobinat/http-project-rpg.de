@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7828.7129,230.54787,6240.7607};
-		dir[]={-0.51321822,-0.55187595,-0.65730548};
-		up[]={-0.33963799,0.83392489,-0.43499145};
-		aside[]={-0.7882033,-8.2654878e-009,0.61542231};
+		pos[]={8140.5991,115.90842,2768.4546};
+		dir[]={-0.58412164,-0.40325212,-0.70448291};
+		up[]={-0.25740165,0.91507888,-0.31044134};
+		aside[]={-0.76984251,-4.8964284e-007,0.63831532};
 	};
 };
 binarizationWanted=0;
@@ -37,8 +37,6 @@ addons[]=
 	"A3_Structures_F_Civ_Accessories",
 	"A3_Weapons_F_Items",
 	"A3L_HospitalBed2015",
-	"A3_Modules_F",
-	"buildingshospital1_F",
 	"A3_Structures_F_Walls",
 	"A3L_ObjectsOnSteroids",
 	"ace_map",
@@ -55,7 +53,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=21;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -127,78 +125,66 @@ class AddonsMetaData
 		};
 		class Item11
 		{
-			className="A3_Modules_F";
-			name="Arma 3 Alpha - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item12
-		{
-			className="buildingshospital1_F";
-			name="buildingshospital1_F";
-		};
-		class Item13
-		{
 			className="A3L_ObjectsOnSteroids";
 			name="A3L_ObjectsOnSteroids";
 		};
-		class Item14
+		class Item12
 		{
 			className="ace_map";
 			name="ACE3 - Map";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item13
 		{
 			className="ace_medical_menu";
 			name="ACE3 - Medical Menu";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item14
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item15
 		{
 			className="ace_ui";
 			name="ACE3 - UI";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item16
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item17
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item18
 		{
 			className="ace_nametags";
 			name="ACE3 - Name Tags";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item21
+		class Item19
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item20
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
@@ -226,24 +212,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -258,6 +226,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -311,7 +297,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=41;
+									items=44;
 									class Item0
 									{
 										class data
@@ -886,6 +872,48 @@ class CustomAttributes
 											value="ace_nightvision_fogscaling";
 										};
 									};
+									class Item41
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_medicsetting_basicepi";
+										};
+									};
+									class Item42
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_medicsetting_pak";
+										};
+									};
+									class Item43
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_medicsetting_surgicalkit";
+										};
+									};
 								};
 							};
 						};
@@ -902,7 +930,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=41;
+									items=44;
 									class Item0
 									{
 										class data
@@ -2807,6 +2835,141 @@ class CustomAttributes
 											};
 										};
 									};
+									class Item41
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=2;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item42
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=2;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item43
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=2;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
 								};
 							};
 						};
@@ -2855,7 +3018,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=278;
+		items=273;
 		class Item0
 		{
 			dataType="Group";
@@ -12064,8 +12227,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9596.3408,25.084999,4109.25};
-				angles[]={0,4.478899,0};
+				position[]={9599.2803,25.084999,4109.2383};
+				angles[]={-0,4.478899,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12920,8 +13083,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9568.7969,26.06682,4125.6108};
-				angles[]={6.2738566,2.74597,0.0014648439};
+				position[]={9568.416,26.071234,4125.4336};
+				angles[]={6.2738695,2.74597,0.001544081};
 			};
 			side="Empty";
 			flags=4;
@@ -12970,7 +13133,7 @@ class Mission
 			};
 			id=1673;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.52767944;
+			atlOffset=0.53053474;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13035,102 +13198,6 @@ class Mission
 		};
 		class Item247
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={9567.6523,25.433001,4112.7441};
-				angles[]={6.2738652,2.8515363,0.0015358897};
-			};
-			areaSize[]={25,0,25};
-			areaIsRectangle=1;
-			flags=1;
-			id=1674;
-			type="ModuleHideTerrainObjects_F";
-			atlOffset=0.43300056;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="#filter";
-					expression="_this setVariable [""#filter"",_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=15;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="#hideLocally";
-					expression="_this setVariable [""#hideLocally"",_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item248
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9560.2412,33.758255,4112.9429};
-				angles[]={0,4.4712892,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=1688;
-			type="Land_buildingshospital1";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item249
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -13146,7 +13213,7 @@ class Mission
 			type="Land_City_Pillar_F";
 			atlOffset=-0.53554916;
 		};
-		class Item250
+		class Item248
 		{
 			dataType="Marker";
 			position[]={9804.6416,5.8670001,956.42102};
@@ -13161,7 +13228,7 @@ class Mission
 			id=1707;
 			atlOffset=0.57828045;
 		};
-		class Item251
+		class Item249
 		{
 			dataType="Trigger";
 			position[]={9903.1367,5.3751755,1068.6417};
@@ -13176,7 +13243,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=4.3884344;
 		};
-		class Item252
+		class Item250
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13195,7 +13262,7 @@ class Mission
 			id=1720;
 			type="rmair_mk_ParkCar_5";
 		};
-		class Item253
+		class Item251
 		{
 			dataType="Marker";
 			position[]={9905.3623,0.97299999,1069.858};
@@ -13204,7 +13271,7 @@ class Mission
 			id=1721;
 			atlOffset=0.00035572052;
 		};
-		class Item254
+		class Item252
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13282,7 +13349,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item255
+		class Item253
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13360,7 +13427,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item256
+		class Item254
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13369,13 +13436,13 @@ class Mission
 				angles[]={6.2738566,1.3417584,0.0014648439};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=1724;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.58631706;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13438,7 +13505,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item257
+		class Item255
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13447,13 +13514,13 @@ class Mission
 				angles[]={6.2738566,1.3417584,0.0014648439};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation true;";
 			};
 			id=1725;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.60464859;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13516,7 +13583,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item258
+		class Item256
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13594,62 +13661,13 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item259
+		class Item257
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9546.2559,26.943581,4112.1538};
-				angles[]={6.2738566,2.8793647,0.0014648439};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1730;
-			type="vvv_modelos6_modelos6deco2";
-			atlOffset=0.039628983;
-		};
-		class Item260
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9547.7666,27.440487,4103.7261};
-				angles[]={0,1.3236289,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=1733;
-			type="vvv_modelos6_modelos6estateriademedicamentos";
-			atlOffset=1.541996;
-		};
-		class Item261
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9546.7363,27.348944,4107.855};
-				angles[]={0,1.3334616,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=1735;
-			type="vvv_modelos6_m6estanterialargahospital";
-			atlOffset=1.6249218;
-		};
-		class Item262
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9552.0332,26.003159,4113.4937};
-				angles[]={6.2738566,3.5501871,0.0014648439};
+				position[]={9551.9648,25.933811,4113.4429};
+				angles[]={6.2738695,3.5501871,0.001544081};
 			};
 			side="Empty";
 			flags=4;
@@ -13658,15 +13676,14 @@ class Mission
 			};
 			id=1743;
 			type="vvv_modelos6_modelos6mesadeoperaciones";
-			atlOffset=0.074251175;
 		};
-		class Item263
+		class Item258
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9553.2275,25.87582,4109.73};
-				angles[]={6.2738566,2.9298439,0.0014648439};
+				position[]={9553.0557,25.778486,4109.5146};
+				angles[]={6.2738695,2.9298439,0.001544081};
 			};
 			side="Empty";
 			flags=4;
@@ -13675,15 +13692,14 @@ class Mission
 			};
 			id=1746;
 			type="vvv_modelos6_modelos6papeleradehospital";
-			atlOffset=0.10068703;
 		};
-		class Item264
+		class Item259
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9553.2461,25.877077,4113.5967};
-				angles[]={6.2738566,1.2813228,0.0014648439};
+				position[]={9556.1211,25.793308,4110.5918};
+				angles[]={6.2738695,1.2813228,0.001544081};
 			};
 			side="Empty";
 			flags=4;
@@ -13692,9 +13708,8 @@ class Mission
 			};
 			id=1747;
 			type="vvv_modelos6_modelos6papeleradehospital";
-			atlOffset=0.065828323;
 		};
-		class Item265
+		class Item260
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13823,16 +13838,16 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item266
+		class Item261
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={9109.0742,380.39291,10130.417};
+				position[]={9109.0742,380.39331,10130.417};
 			};
 			id=1781;
 			type="ACE_moduleMedicalMenuSettings";
-			atlOffset=387.98761;
+			atlOffset=387.98801;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13857,16 +13872,16 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item267
+		class Item262
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={9125.5645,379.54709,10130.417};
+				position[]={9125.5645,379.5473,10130.417};
 			};
 			id=1782;
 			type="ACE_moduleAdvancedMedicalSettings";
-			atlOffset=387.14178;
+			atlOffset=387.142;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13903,7 +13918,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -13941,7 +13956,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -13960,7 +13975,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -14119,16 +14134,16 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item268
+		class Item263
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={9209.4502,365.01306,10130.417};
+				position[]={9209.4502,365.01331,10130.417};
 			};
 			id=1783;
 			type="ACE_moduleReviveSettings";
-			atlOffset=372.60776;
+			atlOffset=372.608;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14184,14 +14199,14 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=360;
+							value=3600;
 						};
 					};
 				};
 				nAttributes=3;
 			};
 		};
-		class Item269
+		class Item264
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14472,7 +14487,7 @@ class Mission
 				nAttributes=14;
 			};
 		};
-		class Item270
+		class Item265
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15152,7 +15167,7 @@ class Mission
 				nAttributes=35;
 			};
 		};
-		class Item271
+		class Item266
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15205,7 +15220,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item272
+		class Item267
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15277,7 +15292,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item273
+		class Item268
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15463,7 +15478,7 @@ class Mission
 				nAttributes=9;
 			};
 		};
-		class Item274
+		class Item269
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15516,7 +15531,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item275
+		class Item270
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15626,7 +15641,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item276
+		class Item271
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15680,7 +15695,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item277
+		class Item272
 		{
 			dataType="Logic";
 			class PositionInfo
