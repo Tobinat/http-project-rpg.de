@@ -53,10 +53,10 @@ closedialog 0;
 	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
 
-	_respawn = player getVariable "respawn";
-	_respawn = _respawn - 1;
-	player setVariable ["respawn", _respawn, false];
-	[_respawn,getplayeruid player] remoteExec ["server_fnc_syncRespawn",2];
+	//_respawn = player getVariable "respawn";
+	//_respawn = _respawn - 1;
+	//player setVariable ["respawn", _respawn, false];
+	//[_respawn,getplayeruid player] remoteExec ["server_fnc_syncRespawn",2];
 	[] spawn client_fnc_syncData;
 	[player,objNull,4,format ["%1 ist respawned.",name player],"",""] remoteExec ["server_fnc_deathLog", 2];
 };
