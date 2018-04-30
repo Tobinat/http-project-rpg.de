@@ -14,9 +14,9 @@ if (_status isEqualTo 0) then {
 	 _className = typeOf _object;
 	 _vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
 	 if (_player in currentCop) then {
-		[_player,objNull,18,format ["%1 odholował %2 (%3)", name _player, _vehicleName, _className],_className] call server_fnc_copLog;
+		[_player,objNull,18,format ["%1 hat %2 abgeschleppt (%3)", name _player, _vehicleName, _className],_className] call server_fnc_copLog;
 	 } else {
-		[_player,4,format ["%1 zezlomowal %2", name _player, _vehicleName],"",_className,_vehicleName] call server_fnc_vehiclelog;
+		[_player,4,format ["%1 verschrottet einen %2", name _player, _vehicleName],"",_className,_vehicleName] call server_fnc_vehiclelog;
 	 };
 	 if (isNil "_carowner") exitwith {_exit = true;};
 	 {if (getplayeruid _x isEqualTo _carowner) exitwith { _player = _x; }; } foreach playableunits;

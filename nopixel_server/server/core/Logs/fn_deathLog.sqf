@@ -41,8 +41,8 @@ if (isNull _unit) then {
 };
 
 switch (_type) do {
-    case 1: {_type = "Zabojstwo";};
-    case 2: {_type = "Smierc";};
+    case 1: {_type = "Mord";};
+    case 2: {_type = "Tod";};
     case 3: {_type = "Battlelog";};
     case 4: {_type = "Respawn";};
     //case 5: {_type = "";};

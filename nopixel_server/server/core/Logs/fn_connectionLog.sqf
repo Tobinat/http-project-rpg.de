@@ -29,8 +29,8 @@ _playerBank = _player getVariable ["sl_atm_silverlake",-1];
 _items = getUnitLoadout _player;
 
 switch (_type) do {
-    case 1: {_type = "Połączenie";};
-    case 2: {_type = "Rozłączenie";};
+    case 1: {_type = "Verbindet";};
+    case 2: {_type = "Trennt";};
     //case 3: {_type = "";};
 };
 

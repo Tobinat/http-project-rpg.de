@@ -28,8 +28,8 @@ _playerBank = _player getVariable ["sl_atm_silverlake",-1];
 _playerInv = getUnitLoadout _player;
 
 switch (_type) do {
-    case 1: {_type = "Weapon";};
-    case 2: {_type = "Mag";};
+    case 1: {_type = "Waffe";};
+    case 2: {_type = "Magazin";};
     //case 3: {_type = "";};
 };
 

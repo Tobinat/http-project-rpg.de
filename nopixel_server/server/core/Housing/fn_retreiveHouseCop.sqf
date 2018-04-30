@@ -8,7 +8,7 @@ diag_log["retreive house: %1", _player];
 
 
 _uid = getPlayerUID _player;
-[_player,objNull,23,format ["%1 miał przeszukany dom przez policję", name _player],""] call server_fnc_actionLog;
+[_player,objNull,23,format ["%1 ließ ein Haus von der Polizei durchsuchen", name _player],""] call server_fnc_actionLog;
 
 if (_uid in activecrates) exitwith {};
 activecrates pushback _uid;
@@ -19,43 +19,43 @@ activecrates pushback _uid;
 _houseLevel = _player getvariable "houselevel";
 if (_houselevel == 1) then {
     _holder = createVehicle["kif_storage_sack", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 2) then {
     _holder = createVehicle["kif_storage_cartondarkmedium", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 3) then {
     _holder = createVehicle["kif_storage_travelbag", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 4) then {
     _holder = createVehicle["kif_storage_suitcase", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 5) then {
     _holder = createVehicle["kif_storage_cartonlightbig", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 6) then {
     _holder = createVehicle["kif_storage_wood", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 7) then {
     _holder = createVehicle["kif_storage_woodbarrel", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 8) then {
     _holder = createVehicle["kif_storage_woodbox", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 9) then {
     _holder = createVehicle["kif_storage_cargobox", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 10) then {
     _holder = createVehicle["kif_storage_cargobox10", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
 };
 
 
@@ -138,9 +138,9 @@ if (!isnull _holder) then {
     {
 		[] remoteExec ["client_fnc_closedialogs",_x];
 	} foreach _units;
-    
+
     deleteVehicle _holder;
     _pia = activecrates find _uid;
     activecrates deleteAt _pia;
-	["Synchronizacja skrzynki zakończona", false] remoteExec ["domsg",_player];
+	["Syncronisierung der Box abgeschlossen.", false] remoteExec ["domsg",_player];
 };
