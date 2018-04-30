@@ -97,8 +97,6 @@ class cfgWeapons {
 	class ItemInfo;
 
 
-	#include "\PRPG_Data\cfgPDVests.hpp"
-	#include "\PRPG_Data\cfgPDUniformsW.hpp"
-	#include "\PRPG_Data\cfgPDCaps.hpp"
+	
 	#include "\PRPG_Data\cfgItemsWeapons.hpp"
 };
