@@ -615,7 +615,7 @@ class HUDbleed
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
 			shadow=0;
-			text = "\sl_client\textures\icons\bleed.paa";
+			text = "\PRPG_Data\textures\icons\bleed.paa";
 		};
 	};
 };
@@ -939,8 +939,8 @@ class HUDGoPro
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
 			shadow=0;
-			//text = "<img size='2' image='sl_client\textures\icons\record.paa'/>"
-			text = "\sl_client\textures\icons\record.paa";
+			//text = "<img size='2' image='PRPG_Data\textures\icons\record.paa'/>"
+			text = "\PRPG_Data\textures\icons\record.paa";
 		};
 	};
 };
@@ -975,8 +975,8 @@ class HUDNos
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
 			shadow=0;
-			//text = "<img size='2' image='sl_client\textures\icons\nos.paa'/>"
-			text = "\sl_client\textures\icons\nos.paa";
+			//text = "<img size='2' image='PRPG_Data\textures\icons\nos.paa'/>"
+			text = "\PRPG_Data\textures\icons\nos.paa";
 		};
 	};
 };
@@ -1045,7 +1045,7 @@ class HUDLoading
 			font="PuristaLight";
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
-			text = "\sl_client\textures\scripts\Loading\background.paa";
+			text = "\PRPG_Data\textures\scripts\Loading\background.paa";
 		};
 	};
 };
