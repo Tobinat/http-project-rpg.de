@@ -88,7 +88,6 @@ class CfgVehicles {
 		waterAngularDampingCoef=0.1;
 	};
         #include "\PRPG_Data\cfgHouseStorages.hpp"
-	#include "\PRPG_Data\cfgPDUniformsV.hpp"
 	#include "\PRPG_Data\cfgBuildings.hpp"
 };
 #include "\PRPG_Data\cfgSounds.hpp"
