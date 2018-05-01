@@ -11,8 +11,5 @@
 */
 class soundInstructions {
 	// Voicepacks
-		#include "male_de-de_2\config.cpp"
-		#include "female_de-de_1\config.cpp"
-		#include "male_de-de_1\config.cpp"
-		#include "male_en-en_1\config.cpp"
+
 };
