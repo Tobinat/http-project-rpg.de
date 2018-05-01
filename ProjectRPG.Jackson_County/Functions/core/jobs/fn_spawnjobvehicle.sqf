@@ -32,7 +32,6 @@ if (_jobType == "Wood Logging") exitwith {
 	[vehspawned, ["white","Glossy"]] remoteexec ["client_fnc_initVehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["CUP_U_C_Mechanic_01",1];
-	vehspawned addItemCargo ["cg_pickaxe",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
