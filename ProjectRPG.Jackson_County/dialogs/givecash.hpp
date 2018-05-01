@@ -3,41 +3,46 @@ class giveCash
 	idd = 1010;
 	class controls
 	{
+				
 		class RscFrame_1800: RscText
 		{
 			idc = 1800;
-			x = 0.40375 * safezoneW + safezoneX;
-			y = 0.335064 * safezoneH + safezoneY;
-			w = 0.1925 * safezoneW;
-			h = 0.30788 * safezoneH;
+
+			x = 10.67 * GUI_GRID_W + GUI_GRID_X;
+			y = 5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 18.6667 * GUI_GRID_W;
+			h = 13.9945 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.8};
 		};
 		class RscText_1000: RscText
 		{
 			idc = 1000;
+
 			text = "Menge"; //--- ToDo: Localize;
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.34606 * safezoneH + safezoneY;
-			w = 0.09625 * safezoneW;
-			h = 0.0329871 * safezoneH;
+			x = 12 * GUI_GRID_W + GUI_GRID_X;
+			y = 5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 4 * GUI_GRID_W;
+			h = 3.5 * GUI_GRID_H;
 		};
 		class RscButton_1600: RscButton
 		{
 			idc = 1600;
+			action = "[currentcursortarget, player] call Client_fnc_sl_giveCashSubmit_secure";
+
 			text = "Geben"; //--- ToDo: Localize;
-			x = 0.534375 * safezoneW + safezoneX;
-			y = 0.57697 * safezoneH + safezoneY;
-			w = 0.055 * safezoneW;
-			h = 0.0549786 * safezoneH;
-			action = [currentcursortarget, player] call Client_fnc_sl_giveCashSubmit_secure;
+			x = 23.33 * GUI_GRID_W + GUI_GRID_X;
+			y = 16 * GUI_GRID_H + GUI_GRID_Y;
+			w = 5.33333 * GUI_GRID_W;
+			h = 2.49903 * GUI_GRID_H;
 		};
 		class RscEdit_1401: RscEdit
 		{
 			idc = 1401;
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.390043 * safezoneH + safezoneY;
-			w = 0.165 * safezoneW;
-			h = 0.0329871 * safezoneH;
+
+			x = 12 * GUI_GRID_W + GUI_GRID_X;
+			y = 8 * GUI_GRID_H + GUI_GRID_Y;
+			w = 16 * GUI_GRID_W;
+			h = 1.49941 * GUI_GRID_H;
 		};
 	};
 };
