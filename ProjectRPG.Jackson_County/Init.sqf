@@ -33,3 +33,4 @@ shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_0
 };
 
 [] execVM "AdminTool\loop.sqf";
+Test
