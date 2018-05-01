@@ -19,6 +19,12 @@ scriptName "fn_init";
 	life_currentExpLevel = 0;
 	life_currentExp = 0;
 	life_currentPerkPoints = 0;
+	mav_ttm_var_lockpickMultiplier = 1;
+	mav_ttm_var_paycheckMultiplier = 1;
+	mav_ttm_var_repairToReduce = 0;
+	mav_ttm_var_mechanicRent = 1;
+	mav_ttm_var_bonusExp = 0;
+
 
 	diag_log "fn_init.sqf 3";
 
@@ -27,7 +33,7 @@ scriptName "fn_init";
 
 	// Request data from server
 	diag_log "Requesting experience data from server";
-	[player] remoteExecCall ["mav_ttm_fnc_loadFromDatabase", 2];
+	[player] remoteExec ["mav_ttm_fnc_loadFromDatabase", 2];
 
 	// Create auto-retry thread
 	[] spawn {
@@ -36,7 +42,7 @@ scriptName "fn_init";
 			sleep 5;
 			if (life_perksInitialized) exitWith {};
 			diag_log "Requesting experience data from server (RETRY)";
-			[player] remoteExecCall ["mav_ttm_fnc_loadFromDatabase", 2];
+			[player] remoteExec ["mav_ttm_fnc_loadFromDatabase", 2];
 		};
 	};
 

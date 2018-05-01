@@ -10,7 +10,7 @@ class TTM_GUI_RscTitlePerkUnlocked
 
 	class controls
 	{
-		class RscStructuredText_1100: Life_RscStructuredText
+		class RscStructuredText_1100: RscStructuredText
 		{
 			idc = 0;
 			x = 0.2989 * safezoneW + safezoneX;

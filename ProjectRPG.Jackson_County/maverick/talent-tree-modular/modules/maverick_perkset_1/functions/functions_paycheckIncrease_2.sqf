@@ -12,5 +12,5 @@ scriptName "functions_paycheckIncrease_2";
 _ownsDependency = [life_currentExpPerks, "perk_paycheck_3"] call mav_ttm_fnc_hasPerk;
 
 if (!_ownsDependency) then {
-	mav_ttm_var_paycheckMultiplier = 1.5;
+	mav_ttm_var_paycheckMultiplier = 1.25;
 };

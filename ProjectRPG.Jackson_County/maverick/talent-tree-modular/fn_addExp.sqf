@@ -18,6 +18,7 @@ scopeName "main";
 private _baseConfig = missionConfigFile >> "Maverick_TTM";
 private _actionConfig = _baseConfig >> "Actions" >> _action;
 private _expGained = getNumber (_actionConfig >> "expToAdd");
+_expGained = _expGained + mav_ttm_var_bonusExp;
 private _messageEntry = _actionConfig >> "message";
 private _message = getText _messageEntry;
 private _level = life_currentExpLevel;
