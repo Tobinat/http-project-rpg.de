@@ -12,8 +12,8 @@ class maverick_taxis_cfg {
 	class pricing {
 		pricePerKilometre 					= 250; // Dollars
 		basePrice							= 1000; // Price at which billing starts, required to call a taxi
-		moneyHandVariable					= "life_cash";
-		moneyBankVariable					= "life_atmbank";
+		moneyHandVariable					= "sl_wallet_silverlake";
+		moneyBankVariable					= "sl_atm_silverlake";
 		paymentSource						= "WALLET";
 		fullRefundOnDriverAbort				= true;
 	};
