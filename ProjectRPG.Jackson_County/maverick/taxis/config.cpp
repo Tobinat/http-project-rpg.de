@@ -10,11 +10,11 @@
 
 class maverick_taxis_cfg {
 	class pricing {
-		pricePerKilometre 					= 500; // Dollars
+		pricePerKilometre 					= 250; // Dollars
 		basePrice							= 1000; // Price at which billing starts, required to call a taxi
 		moneyHandVariable					= "life_cash";
 		moneyBankVariable					= "life_atmbank";
-		paymentSource						= "BOTH";
+		paymentSource						= "WALLET";
 		fullRefundOnDriverAbort				= true;
 	};
 
@@ -35,66 +35,66 @@ class maverick_taxis_cfg {
 
 	class localization {
 		// Localization
-		msgMainInfoNoTaxiCalled	=			"<t size='2'>You do not have an active taxi call!</t><br/><t>Click on 'Call Taxi' to create a taxi request for all available taxi drivers to see!</t><br/><br/><t font='RobotoCondensedBold'>Available Taxi Drivers: %1</t>";
-		msgMainInfoNoTaxiYet =				"<t size='2'>A taxi has been called!</t><br/><t>No taxi driver has accepted your request yet though. You will be notified once a taxi driver does so!</t><br/><br/><t font='RobotoCondensedBold'>Available Taxi Drivers: %1</t>";
-		msgTaxiCalled = 					"A taxi request has been created!";
-		msgTaxiCancelled = 					"Your current taxi request has been cancelled!";
-		msgTaxiFareCancelled =				"You have cancelled the fare";
-		msgTaxiCancelConfirm =				"A taxi driver has already accepted your request and is on his way to you. Are you sure that you still want to cancel?";
-		msgTaxiCancelHeader	=				"Cancel Taxi Call";
-		msgTaxiCancelButtonConfirm =		"Yes";
-		msgTaxiCancelButtonCancel =			"No";
-		msgTaxiCancelDriverConfirm =		"Are you sure that you want to cancel the fare? If a base price has already been transferred to you, it will be transferred back to the customer again.";
-		msgTaxiMeterInfoText = 				"<t>Total Distance</t><t align='right' font='RobotoCondensedBold'>%1</t><br/><t>Time Elapsed</t><t align='right' font='RobotoCondensedBold'>%2</t><br/><t>Total Price (%3$/km)</t><t align='right' font='RobotoCondensedBold'>%4</t>";
-		msgTaxiMeterStatusTextActive = 		"<t align='right' font='RobotoCondensedBold'>ACTIVE</t>";
-		msgTaxiMeterStatusTextInactive = 	"<t align='right' font='RobotoCondensedBold'>INACTIVE</t>";
-		masTaxiInfoPleaseWait =				"<t size='2'>%1 is on his way to you!</t><br/>Please wait at your current location for your taxi driver. He is currently %2 away.</t>";
-		msgTaxiFareCancelledAsCustomer =	"Your taxi driver has cancelled the fare";
-		masTaxiFareCancelledAsDriver =		"Your customer has cancelled the fare.";
-		msgTaxiCallAccepted =				"A taxi driver driver is on his way";
-		msgTaxiDriverNotAvailable =			"You do not meet the requirements to work as a taxi driver";
-		msgTaxiDestinationUpdated =			"The destination has been updated";
-		msgTaxiNoRoadNearFound =			"No road segment near position found!";
-		msgTaxiCannotCallWhileDriver =		"You cannot call a taxi while being on-duty as a taxi driver!";
-		msgTaxiCannotDriveWhileCalling =	"You cannot work as a taxi driver while calling one yourself!";
-		msgTaxiSpamClickPrevention =		"You cannot do this action so fast!";
-		msgTaxiAlreadyInFare =				"You have already accepted a fare!";
-		msgCallTaxi =						"Call Taxi";
-		msgBaseNotAffordable =				"You do not have enough money to call a taxi!";
-		msgPaidCustomer =					"You have reached your destination.<br/>Total payment made: %1$";
-		msgNotFullyPaidCustomer =			"You have reached your destination. You could not afford the total amount of %1$, instead %2$ (excluding base fee) have been paid!";
-		msgPaidDriver =						"You have reached the destination.<br/>Your customer has paid you <t color='#43a047'>%1$</t>.";
-		msgNotFullyPaidDriver =				"You have reached the destination. Your customer could not pay you the full amount of <t color='#43a047'>%1$</t>, instead <t color='#43a047'>%2$</t> (excluding base fee) have been transferred to you.";
-		msgPayCustomer =					"You have reached your destination.<br/>The total payment that has be made is %1$.";
-		msgPayDriver =						"You have reached the destination.<br/>Your customer has been prompted to pay %1$.";
-		msgTotalPayment =					"Total payment: %1$";
-		msgTaximeterPositionSaved =			"Taximeter position saved";
-		msgTaximeterPositionReset =			"Taximeter position reset";
-		msgTaxiPressSpaceSaveSettings = 	"Press [SPACE] to save";
-		msgNowOnDuty =						"You are now on duty and will receive notifications when a taxi call comes in!";
-		msgNowOffDuty =						"You are now off duty";
-		msgTaxiMenuActiveCalls =			"View Active Calls";
-		msgTaxiNewCallCreated = 			"A new taxi call has been created";
-		msgTaxiBillingPayment =				"Total payment by driven distance";
-		msgTaxiBillingDriverMissingP =		"Amount not affordable by customer";
-		msgTaxiBillingBasePrice =			"Base Price";
-		msgTaxiBillingCustomerMissingP =	"Amount not affordable";
-		msgTaxiCurrentFareInformation =		"Current Fare Information";
-		msgTaxiBillingCancelled =			"Fare cancelled";
+		msgMainInfoNoTaxiCalled	=			"<t size='2'>Sie haben keinen aktiven Taxiruf!</t><br/><t>Klicke auf 'Taxi rufen' um eine Taxi-Anfrage an alle verfügbaren Taxifahrer zu erstellen!</t><br/><br/><t font='RobotoCondensedBold'>Verfügbare Taxifahrer: %1</t>";
+		msgMainInfoNoTaxiYet =				"<t size='2'>Ein Taxi wurde gerufen!</t><br/><t>Kein Taxifahrer hat Ihre Anfrage akzeptiert. Denoch werden Sie benachrichtigt, sobald ein Taxifahrer dies tut!</t><br/><br/><t font='RobotoCondensedBold'>Verfügbare Taxifahrer: %1</t>";
+		msgTaxiCalled = 					"Eine Taxianfrage wurde erstellt!";
+		msgTaxiCancelled = 					"Ihre aktuelle Taxianfrage wurde storniert!";
+		msgTaxiFareCancelled =				"Sie haben den Tarif storniert";
+		msgTaxiCancelConfirm =				"Ein Taxifahrer hat Ihre Anfrage bereits angenommen und ist auf dem Weg zu Ihnen. Sind Sie sicher, dass Sie trotzdem stornieren möchten?";
+		msgTaxiCancelHeader	=				"Taxi anfrage abrechen";
+		msgTaxiCancelButtonConfirm =		"Ja";
+		msgTaxiCancelButtonCancel =			"Nein";
+		msgTaxiCancelDriverConfirm =		"Sind Sie sicher, dass Sie den Fahrpreis stornieren möchten? Wenn ein Basispreis bereits an Sie übergeben wurde, wird dieser wieder an den Kunden zurücküberwiesen.";
+		msgTaxiMeterInfoText = 				"<t>Gesamtentfernung</t><t align='right' font='RobotoCondensedBold'>%1</t><br/><t>Verstrichene Zeit</t><t align='right' font='RobotoCondensedBold'>%2</t><br/><t>Gesamtpreis (%3$/km)</t><t align='right' font='RobotoCondensedBold'>%4</t>";
+		msgTaxiMeterStatusTextActive = 		"<t align='right' font='RobotoCondensedBold'>AKTIV</t>";
+		msgTaxiMeterStatusTextInactive = 	"<t align='right' font='RobotoCondensedBold'>INACTIV</t>";
+		masTaxiInfoPleaseWait =				"<t size='2'>%1 ist auf dem Weg zu dir!</t><br/>Bitte warten Sie an Ihrem aktuellen Standort auf Ihren Taxifahrer. Er ist derzeit %2 entfernt.</t>";
+		msgTaxiFareCancelledAsCustomer =	"Dein Taxifahrer hat den Fahrpreis abgebrochen";
+		masTaxiFareCancelledAsDriver =		"Ihr Kunde hat den Fahrpreis storniert.";
+		msgTaxiCallAccepted =				"Ein Taxifahrer ist unterwegs";
+		msgTaxiDriverNotAvailable =			"Sie erfüllen nicht die Voraussetzungen, um als Taxifahrer zu arbeiten";
+		msgTaxiDestinationUpdated =			"Das Ziel wurde aktualisiert";
+		msgTaxiNoRoadNearFound =			"Kein Straßenabschnitt in der Nähe gefunden!";
+		msgTaxiCannotCallWhileDriver =		"Sie können kein Taxi rufen, wenn Sie als Taxifahrer im Einsatz sind!";
+		msgTaxiCannotDriveWhileCalling =	"Sie können nicht als Taxifahrer arbeiten, während Sie selbst einen anfordern!";
+		msgTaxiSpamClickPrevention =		"Du kannst diese Aktion nicht so schnell machen!";
+		msgTaxiAlreadyInFare =				"Sie haben bereits einen Fahrpreis akzeptiert!";
+		msgCallTaxi =						"Taxi anfordern";
+		msgBaseNotAffordable =				"Sie haben nicht genug Geld, um ein Taxi zu rufen!";
+		msgPaidCustomer =					"Sie haben Ihr Ziel erreicht.<br/>Gesamtzahlung getätigt: %1$";
+		msgNotFullyPaidCustomer =			"Sie haben Ihr Ziel erreicht. Du könntest dir die Gesamtmenge von %1$, stattdessen %2$ (ohne Grundgebühr) bezahlt worden!";
+		msgPaidDriver =						"Sie haben Ihr Ziel erreicht.<br/>Ihr Kunde hat Sie bezahlt <t color='#43a047'>%1$</t>.";
+		msgNotFullyPaidDriver =				"Sie haben Ihr Ziel erreicht. Ihr Kunde konnte Ihnen nicht den vollen Betrag von <t color='#43a047'>%1$</t>, stattdessen <t color='#43a047'>%2$</t> (ohne Grundgebühr) auf Sie übertragen worden.";
+		msgPayCustomer =					"Sie haben Ihr Ziel erreicht.<br/>Die Gesamtzahlung, die getätigt wird, ist %1$.";
+		msgPayDriver =						"Sie haben Ihr Ziel erreicht.<br/>Ihr Kunde wurde aufgefordert %1$ zu zahlen.";
+		msgTotalPayment =					"Gesamtzahlung: %1$";
+		msgTaximeterPositionSaved =			"Taxameterposition gespeichert";
+		msgTaximeterPositionReset =			"Taxameter zurücksetzen";
+		msgTaxiPressSpaceSaveSettings = 	"Drücke [SPACE] zum speicher";
+		msgNowOnDuty =						"Sie sind jetzt im Einsatz und werden benachrichtigt, wenn ein Taxianruf eingeht!";
+		msgNowOffDuty =						"Du bist jetzt dienstfrei";
+		msgTaxiMenuActiveCalls =			"Aktive Anrufe anzeigen";
+		msgTaxiNewCallCreated = 			"Eine neue Taxianfrage wurde erstellt";
+		msgTaxiBillingPayment =				"Gesamtzahlung nach der gefahrenen Strecke";
+		msgTaxiBillingDriverMissingP =		"Vom Kunden nicht bezahlbarer Betrag";
+		msgTaxiBillingBasePrice =			"Grundpreis";
+		msgTaxiBillingCustomerMissingP =	"Betrag nicht erschwinglich";
+		msgTaxiCurrentFareInformation =		"Aktuelle Tarifinformationen";
+		msgTaxiBillingCancelled =			"Tarif storniert";
 
 
 		// Tasks
-		msgTaskDriverPickupDescription =	"Pick up your passenger at this location";
-		msgTaskDriverPickupDescriptionS =	"PICK UP";
-		msgTaskDriverPickupHUD =			"Pick Up";
+		msgTaskDriverPickupDescription =	"Holen Sie Ihren Passagier an diesem Ort ab";
+		msgTaskDriverPickupDescriptionS =	"ABHOLEN";
+		msgTaskDriverPickupHUD =			"Abholen";
 
-		msgTaskCustomerDriverDescription =	"Get into your taxi drivers vehicle";
-		msgTaskCustomerDriverDescriptionS =	"GET IN";
-		msgTaskCustomerDriverHUD =			"Get In";
+		msgTaskCustomerDriverDescription =	"Steigen Sie in Ihr Taxifahrer-Fahrzeug ein";
+		msgTaskCustomerDriverDescriptionS =	"EINSTEIGEN";
+		msgTaskCustomerDriverHUD =			"Einsteigen";
 
-		msgTaskDriverGoToDescription =		"Customer destination";
-		msgTaskDriverGoToDescriptionS =		"DESTINATION";
-		msgTaskDriverGoToDriverHUD =		"Move Here";
+		msgTaskDriverGoToDescription =		"Kundenziel";
+		msgTaskDriverGoToDescriptionS =		"REISEZIEL";
+		msgTaskDriverGoToDriverHUD =		"Hier hin fahren";
 
 		#define dialogCallTaxiTitle			"Taxi Service"
 		#define dialogCancelTaxi			"Cancel Taxi Request"
