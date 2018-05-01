@@ -14,9 +14,9 @@ if (_amount > 0) then
 		//[_giver, getUnitLoadout _giver] call Server_fnc_statSave; 
 		[_amount] remoteexec ["Client_fnc_sl_addCash_secure", _target];
 		//[_target, getUnitLoadout _target] call Server_fnc_statSave; 
-		_text = format ["%1 dal Ci %2 $", _giver, _amount];
+		_text = format ["%1 gibt dir %2 $", _giver, _amount];
 		[_text, false] remoteExec ["domsg",_target];
-		[_giver,_target,5,format ["%1 dał %2 dla", name _giver, _amount, name _target],_amount] remoteExec ["server_fnc_moneyLog", 2];
+		[_giver,_target,5,format ["%1 er gab %2 dla", name _giver, _amount, name _target],_amount] remoteExec ["server_fnc_moneyLog", 2];
 
 	} else {
 		hint "Du hast nicht genug Geld dabei!";
