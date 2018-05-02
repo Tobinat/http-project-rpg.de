@@ -712,7 +712,6 @@ if(_condition == "cops") then {
 	{
 		_storeList pushback _x;
 	} foreach _bulle;
-	//["",nil,2,1]
 };
 
 };
@@ -760,7 +759,6 @@ if(_condition == "medickleidung") then {
 		];
 		_additional = _additional + _ret;
 	};
-//["",nil,10,3,1]
 	{
 		_storeList pushback _x;
 	} foreach _additional;
@@ -822,7 +820,6 @@ if(_condition == "fdkleidung") then {
 		];
 		_additional = _additional + _ret;
 	};
-//["",nil,10,3,1]
 	{
 		_storeList pushback _x;
 	} foreach _additional;
