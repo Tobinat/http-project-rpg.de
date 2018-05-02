@@ -156,6 +156,7 @@ if(myjob == "EMS") exitwith {
 	player linkItem "Itemwatch";
 	player linkitem "tf_anprc152";
 	player linkItem "ItemGPS";
+	player linkItem "TRYK_Headset_NV";
 
 
 	_level = player getVariable "ems";
@@ -200,6 +201,7 @@ player linkItem "ItemCompass";
 player linkItem "Itemwatch";
 player linkitem "tf_anprc152";
 player linkItem "ItemGPS";
+player linkItem "TRYK_Headset_NV";
 
 
 	_level = player getVariable "fire";
