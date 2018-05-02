@@ -684,29 +684,28 @@ if(_condition == "cops") then {
 		["ACE_Flashlight_XL50",nil,2,1],
 		["ACE_EarPlugs",nil,2,1],
 		["ACE_fieldDressing",nil,2,1],
-		["RH_M9",nil,100,1],
-		["RH_cz75",nil,100,1],
-		["fn57",nil,100,1],
-		["g17",nil,100,1],
-		["uspm",nil,100,1]
+		["RH_M9",nil,10,1],
+		["RH_cz75",nil,10,1],
+		["fn57",nil,10,1],
+		["g17",nil,10,1],
+		["uspm",nil,10,1]
 	];
 	if(_cop > 3) then {
 		_ret = [
-			["hlc_rifle_RU5562",nil,200,1],
-			["hlc_rifle_Bushmaster300",nil,200,1],
-			["hlc_smg_mp5a2",nil,200,1],
-			["optic_ACO_grn",nil,25,1],
-			["RH_compM2",nil,25,1],
-			["RH_eotech553",nil,25,1],
-			["RH_ta01nsn",nil,25,1]
+			["hlc_rifle_RU5562",nil,20,1],
+			["hlc_rifle_Bushmaster300",nil,20,1],
+			["hlc_smg_mp5a2",nil,20,1],
+			["optic_ACO_grn",nil,5,1],
+			["RH_compM2",nil,5,1],
+			["RH_eotech553",nil,5,1],
+			["RH_ta01nsn",nil,5,1]
 		];
 		_bulle = _bulle + _ret;
 	};
 	if(_cop > 5) then {
 		_ret = [
-
-			["hlc_rifle_samr2",nil,200,1],
-			["optic_LRPS",nil,25,1]
+			["hlc_rifle_samr2",nil,20,1],
+			["optic_LRPS",nil,5,1]
 		];
 		_bulle = _bulle + _ret;
 	};
@@ -895,7 +894,7 @@ if(_condition == "general") then {
 
 		["cg_tabletd",nil,50,3],
 		["CG_wheel",nil,150,3],
-		["ACE_fieldDressing",nil,150,3],
+		["ACE_fieldDressing",nil,5,3],
 		["kif_nitro",nil,800,3],
 		["ItemMap",nil,1,3],
 		["ItemCompass",nil,10,3],
@@ -1184,7 +1183,7 @@ if(_condition == "doughnuts_general") then {
 			["vvv_traje_motox_02_7",nil,300,3,1],
 			["vvv_traje_motox_02_8",nil,300,3,1],
 			["vvv_traje_motox_02_2",nil,300,3,1],
-			["vvv_character_agente_473",nil,300,3,1]
+			["vvv_character_agente_473",nil,300,3,1],
 			["B_Uniform_survivor2_l",nil,300,3,1],
 			["G_Uniform_survivor5_l",nil,300,3,1],
 			["TRYK_U_B_ARO1_CBR_R_CombatUniform",nil,300,3,1],
