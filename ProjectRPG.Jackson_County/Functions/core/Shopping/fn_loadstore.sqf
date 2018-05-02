@@ -684,9 +684,9 @@ if(_condition == "cops") then {
 		["ACE_fieldDressing",nil,2,1],
 		["RH_M9",nil,10,1],
 		["RH_cz75",nil,10,1],
-		["fn57",nil,10,1],
-		["g17",nil,10,1],
-		["uspm",nil,10,1]
+		["RH_fn57",nil,10,1],
+		["RH_g17",nil,10,1],
+		["RH_uspm",nil,10,1]
 	];
 	if(_cop > 3) then {
 		_ret = [
@@ -828,6 +828,7 @@ if(_condition == "fdkleidung") then {
 if(_condition == "fd") then {
 
 	_fire = [
+		["fireextinguisher",nil,2,1],
 		["NP_8mPoliceLine",nil,2,1],
 		["NP_4mPoliceLine",nil,2,1],
 		["NP_1mPoliceLine",nil,2,1],
@@ -1427,7 +1428,7 @@ lbClear _list;
 	_list lbSetdata [(lbSize _list)-1, str([_class,_item select 1, _price,_type,_classtype,_addedprice])];
 	_list lbSetPicture [(lbSize _list)-1,_item select 2];
 
-	if(_condition == "gunstore" || _condition == "doughnuts_gun") then {
+	if(_condition == "gunstore" || _condition == "doughnuts_gun" || _condition == "cops" ||  _condition == "fd") then {
 		if(_type == 1) then {
 			_magPrice = 50;
 			_addedprice = (_price / 100) * taxRate;
