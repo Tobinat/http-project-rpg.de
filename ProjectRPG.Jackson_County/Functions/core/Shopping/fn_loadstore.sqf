@@ -762,6 +762,7 @@ if(_condition == "copvests") then {
 		_ret = [
 			["TAC_V_Sheriff_BA_TB",nil,20,1],
 			["TAC_V_Sheriff_BA_TC",nil,20,1]
+			];
 		_bulle = _bulle + _ret;
 	};
 	{
