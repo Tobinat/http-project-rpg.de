@@ -631,9 +631,13 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-		["Cop Waffenladen", "closedialog 0; createdialog ""gun_menu""; [""cops""] spawn client_fnc_LoadStore;",3]
+		["Cop Ausrüstung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""cops""] spawn client_fnc_LoadStore;",3]
 	],
 
+	[
+		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+		["Cop Waffenladen", "closedialog 0; createdialog ""gun_menu""; [""copwaffen""] spawn client_fnc_LoadStore;",3]
+	],
 
 	[
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
@@ -641,23 +645,23 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
-		["EMS Ausruestung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""medic""] spawn client_fnc_LoadStore;",3]
+		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
+		["EMS Ausrüstung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""medic""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
-		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
-		["Kleiderkammer EMS", "closedialog 0; createdialog ""Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;"]
+		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
+		["EMS Kleiderkammer", "closedialog 0; createdialog ""Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;"]
 	],
 
 	[
-		["myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"""],
+		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingsfiredept1"""],
 		["FD Ausruestung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""fd""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
-		["myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["Kleiderkammer FD", "closedialog 0; createdialog ""Clothing_Menu""; [""fdkleidung""] spawn client_fnc_LoadStore;"]
+		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingsfiredept1"""],
+		["FD Kleiderkammer", "closedialog 0; createdialog ""Clothing_Menu""; [""fdkleidung""] spawn client_fnc_LoadStore;"]
 	],
 
 
