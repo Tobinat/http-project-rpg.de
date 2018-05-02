@@ -21,9 +21,9 @@ if(myjob == "Cop") exitwith {
 		player linkitem "tf_anprc152";
 		player addweapon "cg_baton";
 		player addBackpack "AM_PoliceBelt";
-		player additemtobackpack "RH_uspm";
+		player additemtobackpack "RH_m9";
 		player addweapon "taser";
-		for "_i" from 1 to 8 do {player addItemToBackpack "RH_16Rnd_40cal_usp"; };
+		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
 		for "_i" from 1 to 10 do {player addItemToBackPack "vvv_np_magazine_taser"; };
 		for "_i" from 1 to 2 do {player addItemToBackPack "nonlethal_swing"; };
 		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
