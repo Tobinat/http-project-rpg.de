@@ -705,15 +705,6 @@ if(_condition == "cops") then {
 if(_condition == "copwaffen") then {
 
 	_bulle = [
-		["NP_8mPoliceLine",nil,2,1],
-		["NP_4mPoliceLine",nil,2,1],
-		["NP_1mPoliceLine",nil,2,1],
-		["NP_PoliceBarrierL",nil,2,1],
-		["NP_PoliceBarrierS",nil,2,1],
-		["CG_wheel",nil,2,1],
-		["ACE_Flashlight_XL50",nil,2,1],
-		["ACE_EarPlugs",nil,2,1],
-		["ACE_fieldDressing",nil,2,1],
 		["RH_M9",nil,10,1],
 		["RH_cz75",nil,10,1],
 		["RH_fn57",nil,10,1],
