@@ -1202,8 +1202,8 @@ if(_condition == "doughnuts_general") then {
 		    ["vvv_traje_romano",nil,300,3,1],
 			["vvv_character_funcionario_2",nil,300,3,1],
 			["vvv_character_wandelina",nil,300,3,1],
-			["vvv_character_wandelina_2",nil,300,3,1]
-			["U_I_C_Soldier_Bandit_2_F",nil,300,3,1]
+			["vvv_character_wandelina_2",nil,300,3,1],
+			["U_I_C_Soldier_Bandit_2_F",nil,300,3,1],
 			["U_C_man_sport_2_F",nil,300,3,1],
 			["vvv_hazmat",nil,1200,3,1],
 			["KAEL_SUITS_BR_F16",nil,300,3,1],
