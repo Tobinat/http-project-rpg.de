@@ -5,11 +5,11 @@ if(!isNil "vehspawned") then {
 		_players = crew (vehspawned);
 		if(count _players == 0) then {
 
-			{ 
+			{
 					detach _x;
-					deletevehicle _x; 
+					deletevehicle _x;
 			} forEach attachedObjects vehspawned;
-			
+
 			deletevehicle vehspawned;
 		};
 	};
@@ -21,7 +21,7 @@ if(!isNil "vehspawned") then {
 _jobType = myjob;
 
 if (_jobType == "Mafia") exitwith {
-	vehspawned = createVehicle ["VVV_Bentley_Arnage", [0,0,(random(500) + 3)], [], 0, "NONE"];	
+	vehspawned = createVehicle ["VVV_Bentley_Arnage", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
 };
@@ -31,32 +31,32 @@ if (_jobType == "Wood Logging") exitwith {
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[vehspawned, ["white","Glossy"]] remoteexec ["client_fnc_initVehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
-	vehspawned addItemCargo ["CUP_U_C_Mechanic_01",1];
+	//vehspawned addItemCargo ["CUP_U_C_Mechanic_01",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 if (_jobType == "mail") exitwith {
-	vehspawned = createVehicle ["nopixel_fedex", [0,0,(random(500) + 3)], [], 0, "NONE"];	
+	vehspawned = createVehicle ["nopixel_fedex", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
-	vehspawned addItemCargo ["CUP_U_O_SLA_Overalls_Tank",1];
+	//vehspawned addItemCargo ["CUP_U_O_SLA_Overalls_Tank",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
-if (_jobType == "trashman") exitwith {	
-	vehspawned = createVehicle ["nopixel_garbageTruck", [0,0,(random(500) + 3)], [], 0, "NONE"];	
+if (_jobType == "trashman") exitwith {
+	vehspawned = createVehicle ["nopixel_garbageTruck", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["G_Uniform_worker_l",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
-if (_jobType == "repairman") exitwith {	
-	vehspawned = createVehicle ["nopixel_mrfixit", [0,0,(random(500) + 3)], [], 0, "NONE"];	
+if (_jobType == "repairman") exitwith {
+	vehspawned = createVehicle ["nopixel_mrfixit", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned, ["white","Glossy"]] spawn client_fnc_initVehicle;
-	[vehspawned] spawn client_fnc_spawnvehicle;	
+	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
-	vehspawned addItemCargo ["CUP_U_C_Mechanic_02",1];
+	//vehspawned addItemCargo ["CUP_U_C_Mechanic_02",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
@@ -70,16 +70,16 @@ if (_jobType == "security") exitwith {
 };
 
 if (_jobType == "towtruck") exitwith {
-	vehspawned = createVehicle ["A3L_Towtruck", [0,0,(random(500) + 3)], [], 0, "NONE"];	
+	vehspawned = createVehicle ["A3L_Towtruck", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 
 	current_cars pushback vehspawned; uisleep 1;
-	vehspawned addItemCargo ["CUP_U_C_Mechanic_03",1];
+	//vehspawned addItemCargo ["CUP_U_C_Mechanic_03",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
-if (_jobType == "NewsMan") exitwith {	
-	vehspawned = createVehicle ["nopixel_news_van_original", [0,0,(random(500) + 3)], [], 0, "NONE"];	
+if (_jobType == "NewsMan") exitwith {
+	vehspawned = createVehicle ["nopixel_news_van_original", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	clearmagazinecargoGlobal (vehspawned);
 	current_cars pushback vehspawned; uisleep 1;
@@ -90,9 +90,9 @@ if (_jobType == "NewsMan") exitwith {
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
-if (_jobType == "taxi") exitwith {	
+if (_jobType == "taxi") exitwith {
 	_taxichance = random (10);
-	if(_taxichance > 9) then 
+	if(_taxichance > 9) then
 	{
 		vehspawned = createVehicle ["ivory_rs4_taxi", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	}else
@@ -105,6 +105,3 @@ if (_jobType == "taxi") exitwith {
 	vehspawned addItemCargo ["np_shirt_8",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
-
-
-

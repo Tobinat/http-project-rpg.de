@@ -642,7 +642,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
-		["EMS Ausruestung", "closedialog 0; createdialog ""gun_menu""; [""medic""] spawn client_fnc_LoadStore;",3]
+		["EMS Ausruestung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""medic""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
@@ -652,7 +652,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["FD Ausruestung", "closedialog 0; createdialog ""gun_menu""; [""fd""] spawn client_fnc_LoadStore;",3]
+		["FD Ausruestung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""fd""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[

@@ -8,13 +8,13 @@ if(isNil "Attachedcar") then {
 attachedcar = true;
 
 if(_vehicle iskindof "CAR") then {
-	_vehicle attachTo [player, [0, 2.5, 3.5]]; 
+	_vehicle attachTo [player, [0, 2.5, 2.5]];
 };
 if(_vehicle iskindof "SHIP") then {
-	_vehicle attachTo [player, [0, 4.5, 5.5]]; 
+	_vehicle attachTo [player, [0, 8.5, 5.5]];
 };
 if(_vehicle iskindof "AIR") then {
-	_vehicle attachTo [player, [0, 4.5, 5.5]]; 
+	_vehicle attachTo [player, [0, 5.5, 2.5]];
 };
 
 attachedCarArray = [];

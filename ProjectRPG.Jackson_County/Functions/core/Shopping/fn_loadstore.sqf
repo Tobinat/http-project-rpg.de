@@ -3,6 +3,7 @@ disableSerialization;
 _condition = _this select 0;
 _storeList = [];
 _doughnuts = player getVariable ["doughnutsLevel", 0];
+_EMS = player getVariable ["ems",0];
 
 if(_condition == "gunstore") then {
 
@@ -795,55 +796,127 @@ if(_condition == "copskleidung") then {
 
 if(_condition == "medickleidung") then {
 
-	_clothing = [
-		["TAC_BP_KAR_B",nil,50,4,2],
-		["TAC_BP_KAR_L",nil,50,4,2],
-		["TAC_BP_KAR_R",nil,50,4,2],
-		["CUP_B_SLA_Medicbag",nil,50,4,2],
-		["TAC_BP_Butt_B",nil,60,4,2],
-		["TAC_BP_Butt_Khaki",nil,60,4,2],
-		["TAC_BP_Butt_OD",nil,60,4,2],
-		["TRYK_B_Alicepack",nil,500,4,2],
-		["PATHuK_belt",nil,500,4,2],
-		["sl_backpack_bergen_pokemon_black",nil,500,4,2],
-		["sl_backpack_bergen_pokemon_white",nil,500,4,2],
-		["sl_backpack_bergen_pokemon_red",nil,500,4,2],
-		["sl_backpack_bergen_murica",nil,500,4,2],
-		["CUP_B_HikingPack_Civ",nil,750,4,2]
-	];
+	_additional = [];
+	if(_EMS > 0) then {
+		_ret = [
+			["pRPG_Candidate1",nil,10,3,1],
+			["female_ems",nil,10,3,1],
+			["Masque_Chirurgical",nil,10,3,1],
+			["invisible_carryall",nil,10,3,1]
+		];
+		_additional = _additional + _ret;
+	};
 
+	if(_EMS > 5) then {
+		_ret = [
+			["vvv_hazmat",nil,10,3,1],
+			["vvv_traje_doctor",nil,10,3,1]
+		];
+		_additional = _additional + _ret;
+	};
+//["",nil,10,3,1]
 	{
 		_storeList pushback _x;
-	} foreach _clothing;
+	} foreach _additional;
+
+};
+
+if(_condition == "medic") then {
+
+	_medic = [
+		["NP_8mPoliceLine",nil,2,1],
+		["NP_4mPoliceLine",nil,2,1],
+		["NP_1mPoliceLine",nil,2,1],
+		["NP_PoliceBarrierL",nil,2,1],
+		["NP_PoliceBarrierS",nil,2,1],
+		["CG_wheel",nil,2,1],
+		["ACE_Flashlight_XL50",nil,2,1],
+		["ACE_EarPlugs",nil,2,1],
+		["ACE_bodyBag",nil,2,1],
+		["ACE_tourniquet",nil,2,1],
+		["ACE_packingBandage",nil,2,1],
+		["ACE_elasticBandage",nil,2,1],
+		["ACE_quikclot",nil,2,1],
+		["ACE_salineIV_500",nil,2,1],
+		["ACE_salineIV",nil,2,1],
+		["ACE_surgicalKit",nil,2,1],
+		["ACE_morphine",nil,2,1],
+		["ACE_epinephrine",nil,2,1],
+		["ACE_atropine",nil,2,1]
+	];
+	if(_EMS > 5) then {
+		_ret = [
+			["ACE_personalAidKit",nil,2,1]
+		];
+		_medic = _medic + _ret;
+	};
+	{
+		_storeList pushback _x;
+	} foreach _medic;
 
 };
 
 if(_condition == "fdkleidung") then {
 
-	_clothing = [
-		["TAC_BP_KAR_B",nil,50,4,2],
-		["TAC_BP_KAR_L",nil,50,4,2],
-		["TAC_BP_KAR_R",nil,50,4,2],
-		["CUP_B_SLA_Medicbag",nil,50,4,2],
-		["TAC_BP_Butt_B",nil,60,4,2],
-		["TAC_BP_Butt_Khaki",nil,60,4,2],
-		["TAC_BP_Butt_OD",nil,60,4,2],
-		["TRYK_B_Alicepack",nil,500,4,2],
-		["PATHuK_belt",nil,500,4,2],
-		["sl_backpack_bergen_pokemon_black",nil,500,4,2],
-		["sl_backpack_bergen_pokemon_white",nil,500,4,2],
-		["sl_backpack_bergen_pokemon_red",nil,500,4,2],
-		["sl_backpack_bergen_murica",nil,500,4,2],
-		["CUP_B_HikingPack_Civ",nil,750,4,2]
-	];
+	_additional = [];
+	if(_EMS > 0) then {
+		_ret = [
+			["pRPG_Candidate1",nil,10,3,1],
+			["female_ems",nil,10,3,1],
+			["vvv_traje_bombero",nil,10,3,1],
+			["Masque_Chirurgical",nil,10,3,1],
+			["invisible_carryall",nil,10,3,1]
+		];
+		_additional = _additional + _ret;
+	};
 
+	if(_EMS > 5) then {
+		_ret = [
+			["vvv_hazmat",nil,10,3,1]
+		];
+		_additional = _additional + _ret;
+	};
+//["",nil,10,3,1]
 	{
 		_storeList pushback _x;
-	} foreach _clothing;
+	} foreach _additional;
 
 };
 
+if(_condition == "fd") then {
 
+	_fire = [
+		["NP_8mPoliceLine",nil,2,1],
+		["NP_4mPoliceLine",nil,2,1],
+		["NP_1mPoliceLine",nil,2,1],
+		["NP_PoliceBarrierL",nil,2,1],
+		["NP_PoliceBarrierS",nil,2,1],
+		["CG_wheel",nil,2,1],
+		["ACE_Flashlight_XL50",nil,2,1],
+		["ACE_EarPlugs",nil,2,1],
+		["ACE_bodyBag",nil,2,1],
+		["ACE_tourniquet",nil,2,1],
+		["ACE_packingBandage",nil,2,1],
+		["ACE_elasticBandage",nil,2,1],
+		["ACE_quikclot",nil,2,1],
+		["ACE_salineIV_500",nil,2,1],
+		["ACE_salineIV",nil,2,1],
+		["ACE_surgicalKit",nil,2,1],
+		["ACE_morphine",nil,2,1],
+		["ACE_epinephrine",nil,2,1],
+		["ACE_atropine",nil,2,1]
+	];
+	if(_EMS > 5) then {
+		_ret = [
+			["ACE_personalAidKit",nil,2,1]
+		];
+		_fire = _fire + _ret;
+	};
+	{
+		_storeList pushback _x;
+	} foreach _fire;
+
+};
 
 
 
@@ -872,9 +945,6 @@ if(_condition == "general") then {
 	_generalGroceries = [
 
 		["cg_tabletd",nil,50,3],
-		["cg_atf_bandage_i",nil,45,3],
-		["CG_ATF_First_Aid_Kit_i",nil,200,3],
-		["kif_gopro",nil,300,3],
 		["CG_wheel",nil,150,3],
 		["kif_nitro",nil,800,3],
 		["ItemMap",nil,1,3],

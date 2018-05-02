@@ -178,7 +178,6 @@ if(myjob == "EMS") exitwith {
 	for "_i" from 1 to 5 do {player addItemToUniform "ACE_bodyBag";};
 	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
-	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_adenosine";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
 
 };
