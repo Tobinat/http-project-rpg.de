@@ -693,7 +693,7 @@ if(_condition == "cops") then {
 	};
 	if(_cop > 5) then {
 		_ret = [
-			["optic_LRPS",nil,5,1]
+			["optic_dms",nil,5,1]
 		];
 		_bulle = _bulle + _ret;
 	};
