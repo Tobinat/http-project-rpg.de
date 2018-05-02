@@ -683,16 +683,24 @@ if(_condition == "cops") then {
 		["ACE_EarPlugs",nil,2,1],
 		["ACE_fieldDressing",nil,2,1],
 		["RH_M9",nil,10,1],
+		["RH_15Rnd_9x19_M9",nil,2,1],
 		["RH_cz75",nil,10,1],
+		["RH_16Rnd_9x19_CZ",nil,2,1],
 		["RH_fn57",nil,10,1],
+		["RH_20Rnd_57x28_FN",nil,2,1],
 		["RH_g17",nil,10,1],
-		["RH_uspm",nil,10,1]
+		["RH_17Rnd_9x19_g17",nil,2,1],
+		["RH_uspm",nil,10,1],
+		["RH_16Rnd_40cal_usp",nil,2,1]
 	];
 	if(_cop > 3) then {
 		_ret = [
 			["hlc_rifle_RU5562",nil,20,1],
+			["hlc_30rnd_556x45_EPR",nil,2,1],
 			["hlc_rifle_Bushmaster300",nil,20,1],
+			["29rnd_300BLK_STANAG",nil,2,1],
 			["hlc_smg_mp5a2",nil,20,1],
+			["hlc_30Rnd_9x19_B_MP5",nil,2,1],
 			["optic_ACO_grn",nil,5,1],
 			["RH_compM2",nil,5,1],
 			["RH_eotech553",nil,5,1],
@@ -703,6 +711,7 @@ if(_condition == "cops") then {
 	if(_cop > 5) then {
 		_ret = [
 			["hlc_rifle_samr2",nil,20,1],
+			["hlc_30rnd_556x45_EPR",nil,2,1],
 			["optic_LRPS",nil,5,1]
 		];
 		_bulle = _bulle + _ret;
@@ -829,6 +838,7 @@ if(_condition == "fd") then {
 
 	_fire = [
 		["fireextinguisher",nil,2,1],
+		["Manguera_magazine",nil,2,1],
 		["NP_8mPoliceLine",nil,2,1],
 		["NP_4mPoliceLine",nil,2,1],
 		["NP_1mPoliceLine",nil,2,1],
@@ -1428,7 +1438,7 @@ lbClear _list;
 	_list lbSetdata [(lbSize _list)-1, str([_class,_item select 1, _price,_type,_classtype,_addedprice])];
 	_list lbSetPicture [(lbSize _list)-1,_item select 2];
 
-	if(_condition == "gunstore" || _condition == "doughnuts_gun" || _condition == "cops" ||  _condition == "fd") then {
+	if(_condition == "gunstore" || _condition == "doughnuts_gun") then {
 		if(_type == 1) then {
 			_magPrice = 50;
 			_addedprice = (_price / 100) * taxRate;
