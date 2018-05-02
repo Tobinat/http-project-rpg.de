@@ -636,7 +636,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-		["Cop Waffenladen", "closedialog 0; createdialog ""gun_menu""; [""copwaffen""] spawn client_fnc_LoadStore;",3]
+		["Cop Waffenladen", "closedialog 0; createdialog ""Cops_GUN_Menu""; [""copwaffen""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[

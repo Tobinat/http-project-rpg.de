@@ -35,53 +35,54 @@ if(myjob == "Cop") exitwith {
 
 		if(female) then { player forceAddUniform "female_police"; player addHeadgear "EF_Fcap_P"; } else {
 			if(_level == 1) then {
-				player forceAddUniform "jamie_police1";
-				player addVest "jamie_blue";
-				player addHeadgear "kif_police_blue";
+				player forceAddUniform "pRPG_State1";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			if(_level == 2) then {
-				player forceAddUniform "jamie_police2";
-				player addVest "jamie_blue";
-				player addHeadgear "kif_police_blue";
+				player forceAddUniform "pRPG_State2";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			if(_level == 3) then {
-				player forceAddUniform "jamie_police2_2";
-				player addVest "jamie_blue";
-				player addHeadgear "kif_police_blue";
+				player forceAddUniform "pRPG_State3";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			if(_level == 4) then {
-				player forceAddUniform "jamie_police2_3";
-				player addVest "jamie_blue";
-				player addHeadgear "kif_police_blue";
+				player forceAddUniform "pRPG_State4";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			if(_level == 5) then {
-				player forceAddUniform "Sheriff_rang1";
-				player addVest "kenny_vest_Sheriff";
-				player addHeadgear "jamie_pcapgreen";
+				player forceAddUniform "pRPG_State5";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			if(_level == 6) then {
-				player forceAddUniform "police_kevuni7";
-				player addVest "kenny_vest_police";
-				player addHeadgear "jamie_pcapblack";
+				player forceAddUniform "pRPG_State6";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			if(_level == 7) then {
-				player forceAddUniform "police_kevuni4";
-				player addVest "kenny_vest_police";
-				player addHeadgear "KMC_Cap_sert";
+				player forceAddUniform "pRPG_State7";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			if(_level == 8) then {
-				player forceAddUniform "silver_lake_statepolice";
-				player addHeadgear "Campaign_Hat_Dark";
+				player forceAddUniform "pRPG_State7";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			if(_level == 9) then {
-				player forceAddUniform "jamie_police3_1";
-				player addVest "TAC_V_tacv1LC_P";
-				player addHeadgear "Campaign_Hat_Dark";
+				player forceAddUniform "pRPG_State7";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			if(_level == 10) then {
-				player forceAddUniform "slpd_uni_dzokawhite";
-				player addVest "TAC_V_tacv1LC_P";
-				player addHeadgear "Campaign_Hat_Dark";
+				player forceAddUniform "pRPG_State7";
+				player addVest "S_VHO_OV_BLK_4";
+				player addHeadgear "H_007_policecap";
 			};
 			//jedzonko
 			player additemtobackpack "np_water";

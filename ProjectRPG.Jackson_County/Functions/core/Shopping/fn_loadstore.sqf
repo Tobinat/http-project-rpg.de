@@ -734,24 +734,50 @@ if(_condition == "copwaffen") then {
 if(_condition == "copskleidung") then {
 
 	_clothing = [
-		["TAC_BP_KAR_B",nil,50,4,2],
-		["TAC_BP_KAR_L",nil,50,4,2],
-		["TAC_BP_KAR_R",nil,50,4,2],
-		["TAC_BP_Butt_B",nil,60,4,2],
-		["TAC_BP_Butt_Khaki",nil,60,4,2],
-		["TAC_BP_Butt_OD",nil,60,4,2],
-		["TRYK_B_Alicepack",nil,500,4,2],
-		["PATHuK_belt",nil,500,4,2],
-		["sl_backpack_bergen_pokemon_black",nil,500,4,2],
-		["sl_backpack_bergen_pokemon_white",nil,500,4,2],
-		["sl_backpack_bergen_pokemon_red",nil,500,4,2],
-		["sl_backpack_bergen_murica",nil,500,4,2]
+		["female_police",nil,5,4,2],
+		["pRPG_State1",nil,5,4,2],
+		["pRPG_State2",nil,5,4,2],
+		["pRPG_State3",nil,5,4,2],
+		["pRPG_State4",nil,5,4,2],
+		["pRPG_State5",nil,5,4,2],
+		["pRPG_State6",nil,5,4,2],
+		["pRPG_State7",nil,5,4,2]
 	];
 
 	{
 		_storeList pushback _x;
 	} foreach _clothing;
 
+};
+
+if(_condition == "copvests") then {
+
+	_bulle = [
+		["S_VHO_OV_BLK_1",nil,10,1],
+		["S_VHO_OV_BLK_2",nil,10,1],
+		["S_VHO_OV_BLK_3",nil,10,1],
+		["S_VHO_OV_BLK_4",nil,10,1]
+	];
+	if(_cop > 4) then {
+		_ret = [
+			["TAC_V_Sheriff_BA_TB",nil,20,1],
+			["TAC_V_Sheriff_BA_TC",nil,20,1]
+		_bulle = _bulle + _ret;
+	};
+	{
+		_storeList pushback _x;
+	} foreach _bulle;
+};
+
+if(_condition == "copbackpack") then {
+
+	_bulle = [
+		["AM_PoliceBelt",nil,10,1],
+		["invisible_carryall",nil,10,1]
+	];
+	{
+		_storeList pushback _x;
+	} foreach _bulle;
 };
 
 if(_condition == "medickleidung") then {
