@@ -205,9 +205,7 @@ if(_condition == "rarefish") then {
 			["Gorb_HolidayBaseballHat6",nil,12,3,5],
 			["Gorb_HolidayBaseballHat7",nil,12,3,5],
 			["Gorb_HolidayBaseballHat8",nil,12,3,5]
-
 		];
-
 	{
 		_storeList pushback _x;
 	} foreach _gunStorePistols;
@@ -714,7 +712,6 @@ if(_condition == "cops") then {
 	} foreach _bulle;
 };
 
-};
 
 if(_condition == "copskleidung") then {
 
