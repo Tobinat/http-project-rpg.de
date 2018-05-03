@@ -110,8 +110,6 @@ class CfgFunctions
 			class dumpDrugs {};
 			class mafiaDrugEvent {};
 			class finishDrugRun {};
-			class useMarijuana {};
-  		class useMeth {};
 		};
 
 		class JailBreak {

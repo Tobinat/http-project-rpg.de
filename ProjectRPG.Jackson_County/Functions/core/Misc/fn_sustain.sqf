@@ -75,8 +75,8 @@ if(_type == "Poop") then {
 //health is 5
 
 if(_type == "unhealthiness") then {
-	if(_adjust == "Add") then { [format["+%1 Krankheit",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness + _amount; };
-	if(_adjust == "Remove") then { [format["-%1 Krankheit",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness - _amount; };
+	if(_adjust == "Add") then { [format["Das war sehr Ungesund: +%1 Krankheit ",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness + _amount; };
+	if(_adjust == "Remove") then { [format["Dir geht es etwas Besser: -%1 Krankheit",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness - _amount; };
 	if(client_unhealthiness > 100) then { client_unhealthiness = 100;};
 	if(client_unhealthiness < 0) then { client_unhealthiness = 0;};	
 	if(client_unhealthiness > 60) then {

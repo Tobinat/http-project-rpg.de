@@ -9,7 +9,7 @@ if(paycheck > 500) then { paycheck = 450; };
 paycheck = paycheck * mav_ttm_var_paycheckMultiplier;
 
 if(!taskrunning) then {
-	_str = format["Du hast $35 erhalten plus %1 an Boni.",paycheck];
+	_str = format["Du hast $35 erhalten plus $%1 an Boni.",paycheck];
 	[_str, true] spawn domsg;
 	paycheck = paycheck + 35;
 	["Paycheck"] spawn mav_ttm_fnc_addExp;
@@ -67,8 +67,11 @@ if(!ClientArrested) then {
 		["Remove","battery",5] call client_fnc_sustain;
 	};
 };
-if(client_intox > 0.4) then {
+if(client_intox > 0.6) then {
 	//["Add",10] spawn client_fnc_dohealth;
+	["Du hast zu viel Gesoffen und hast ein Blackout.",false] spawn domsg;
+	[player, true, 120] call ace_medical_fnc_setUnconscious;
+	client_intox = client_intox - 0.2)
 };
 
 
