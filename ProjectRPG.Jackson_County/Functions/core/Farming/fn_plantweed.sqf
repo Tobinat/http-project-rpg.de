@@ -13,4 +13,4 @@ if(surfacetype getpos player != "#k_rock") exitwith { ["Du musst auf brauner Erd
 
 _myDT = createVehicle ["vvv_cannabis1_plan", [0,0,0], [], 0, "NONE"]; 
 _myDT attachto [player, [0, 1.3, -1] ]; 
-_action = player addAction [ "Du hast einen Samen gesaeht.", client_fnc_dropWeedPlot, _myDT ];
+_action = player addAction [ "Du hast einen Samen gesäht.", client_fnc_dropWeedPlot, _myDT ];
