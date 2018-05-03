@@ -727,21 +727,13 @@ if(_condition == "copwaffen") then {
 	];
 	if(_cop > 1) then {
 		_ret = [
-			["RH_p226",nil,20,1],
-			["hlc_smg_mp5a4",nil,20,1]
-		];
-		_bulle = _bulle + _ret;
-	};
-	if(_cop > 2) then {
-		_ret = [
-			["hlc_rifle_bcmblackjack",nil,10,1]
+			["hlc_smg_mp5a4",nil,10,1]
 		];
 		_bulle = _bulle + _ret;
 	};
 	if(_cop > 3) then {
 		_ret = [
-			["RH_sw659",nil,10,1],
-			["hlc_rifle_RU556",nil,20,1]
+			["hlc_rifle_RU556",nil,10,1]
 		];
 		_bulle = _bulle + _ret;
 	};
@@ -759,7 +751,6 @@ if(_condition == "copwaffen") then {
 	};
 	if(_cop > 6) then {
 		_ret = [
-			["arifle_SPAR_01_blk_F",nil,10,1],
 			["hlc_rifle_samr2",nil,10,1]
 		];
 		_bulle = _bulle + _ret;
@@ -773,12 +764,6 @@ if(_condition == "copwaffen") then {
 	if(_cop > 8) then {
 		_ret = [
 			["RH_ttracker_g",nil,10,1]
-		];
-		_bulle = _bulle + _ret;
-	};
-	if(_cop > 9) then {
-		_ret = [
-			["kio_sr25",nil,10,1]
 		];
 		_bulle = _bulle + _ret;
 	};

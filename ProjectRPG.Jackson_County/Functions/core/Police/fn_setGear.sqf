@@ -19,18 +19,16 @@ if(myjob == "Cop") exitwith {
 		player linkItem "Itemwatch";
 		player linkItem "ItemGPS";
 		player linkitem "tf_anprc152";
-		player addweapon "cg_baton";
+		player addweapon "CG_TELBAT";
 		player addBackpack "AM_PoliceBelt";
 		player additemtobackpack "RH_m9";
 		player addweapon "DDOPP_X26";
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
 		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
-		for "_i" from 1 to 2 do {player addItemToBackPack "nonlethal_swing"; };
+		player addItemToBackPack "nonlethal_swing";
 		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
 
 		for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
-		player addItemToUniform "ACE_Flashlight_XL50";
-		player addItemToUniform "ACE_EarPlugs";
 		_level = player getvariable ["cop", 0];
 
 		if(female) then { player forceAddUniform "female_police"; player addHeadgear "EF_Fcap_P"; } else {
@@ -87,6 +85,8 @@ if(myjob == "Cop") exitwith {
 			//jedzonko
 			player additemtobackpack "np_water";
 			player additemtobackpack "np_beefsoup";
+			player addItemToUniform "ACE_Flashlight_XL50";
+			player addItemToUniform "ACE_EarPlugs";
 		};
 	};
 	if(_type == "riot") then {
