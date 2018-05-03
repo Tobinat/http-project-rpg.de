@@ -707,11 +707,16 @@ if(_condition == "copwaffen") then {
 
 	_bulle = [
 		["RH_M9",nil,10,1],
-		["RH_cz75",nil,10,1],
 		["RH_fn57",nil,10,1],
-		["RH_g17",nil,10,1],
-		["RH_uspm",nil,10,1]
+		["RH_p226",nil,10,1],
+		["RH_usp",nil,10,1],
+		["RH_sw659",nil,10,1],
+		["DDOPP_X3",nil,10,1],
+		["DDOPP_X26_b",nil,10,1],
+		["DDOPP_X26",nil,10,1],
+		["DDOPP_X3_b",nil,10,1]
 	];
+	/*
 	if(_cop > 3) then {
 		_ret = [
 			["hlc_rifle_RU5562",nil,20,1],
@@ -726,6 +731,7 @@ if(_condition == "copwaffen") then {
 		];
 		_bulle = _bulle + _ret;
 	};
+	*/
 	{
 		_storeList pushback _x;
 	} foreach _bulle;
