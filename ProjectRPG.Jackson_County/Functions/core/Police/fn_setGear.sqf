@@ -25,6 +25,7 @@ if(myjob == "Cop") exitwith {
 		player addweapon "DDOPP_X26";
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
 		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
+		for "_i" from 1 to 5 do {player addItemToBackPack "ACE_CableTie"; };
 		player addItemToBackPack "nonlethal_swing";
 		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
 

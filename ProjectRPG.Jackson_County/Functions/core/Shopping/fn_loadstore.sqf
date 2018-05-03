@@ -680,6 +680,7 @@ if(_condition == "cops") then {
 		["NP_PoliceBarrierL",nil,2,1],
 		["NP_PoliceBarrierS",nil,2,1],
 		["CG_wheel",nil,2,1],
+		["ACE_CableTie",nil,1,1],
 		["ACE_Flashlight_XL50",nil,2,1],
 		["ACE_EarPlugs",nil,2,1],
 		["ACE_fieldDressing",nil,2,1],

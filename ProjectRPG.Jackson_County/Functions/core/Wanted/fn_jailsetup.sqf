@@ -5,7 +5,7 @@ if(isNil "secondsLeft") then {
 	secondsLeft = _time * 60;
 } else {
 	secondsLeft = secondsleft + (_time * 60);
-	hint "zusaetzliche Zeit wegen fruehrem Fluchtversuch.";
+	hint "Zusätzliche Zeit wegen frührem Fluchtversuch.";
 };
 //convert _time from seconds to minutes.
 _reason = _this select 1;
@@ -35,7 +35,7 @@ while{ClientArrested} do {
 ClientArrested = false;
 //when jail time ends normally
 if(!_escaped) then {
-	hint "Skonczyles odsiadke";
+	hint "Sie haben ihre Zeit abgesessen.";
 	player setpos [5538.63,6258.06,0.00143433];
 	[player] remoteExec ["server_fnc_wantedRemove2",2];
 } else {

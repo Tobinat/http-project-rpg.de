@@ -43,7 +43,7 @@ for "_i" from 0 to 1 step 0 do {
 	if( !(_animation isEqualTo 0) && (animationstate player) != _animation) then { player playmove _animation; };
 	if((getposATL player) distance (getposATL _distanceCheck) > 6) exitwith { _success = false; _error = "Positionsfehler"; };
 	if(!_success) exitwith {};
-	if(ClientInterrupted) exitwith { _success = false; _error = "Vom Kunden abgebrochen"; player switchmove ""; };
+	if(ClientInterrupted) exitwith { _success = false; _error = "Vom Spieler abgebrochen"; player switchmove ""; };
 	if(DeadPlayer) exitwith { _success = false; _error = "Spieler gestorben"; };
 
 };
