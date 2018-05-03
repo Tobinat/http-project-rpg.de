@@ -22,9 +22,9 @@ if(myjob == "Cop") exitwith {
 		player addweapon "cg_baton";
 		player addBackpack "AM_PoliceBelt";
 		player additemtobackpack "RH_m9";
-		player addweapon "taser";
+		player addweapon "DDOPP_X26";
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
-		for "_i" from 1 to 10 do {player addItemToBackPack "vvv_np_magazine_taser"; };
+		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
 		for "_i" from 1 to 2 do {player addItemToBackPack "nonlethal_swing"; };
 		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
 
@@ -181,6 +181,8 @@ if(myjob == "EMS") exitwith {
 	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
+	player additemtobackpack "np_water";
+	player additemtobackpack "np_beefsoup";
 
 };
 
@@ -209,11 +211,16 @@ player linkItem "TRYK_Headset_NV";
 	player forceAddUniform "vvv_traje_bombero";
 	player addBackpack "invisible_carryall";
 	player addgoggles "Mask_M40";
-	//player addHeadgear "CUP_H_C_Fireman_Helmet_01";
 	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
 
 	for "_i" from 1 to 10 do {player addItemToBackPack "Manguera_magazine";};
 	player addweapon "fireextinguisher";
+	player additemtobackpack "np_water";
+	player additemtobackpack "np_beefsoup";
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_salineIV_500";};
+	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_packingBandage";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
 
 };
 

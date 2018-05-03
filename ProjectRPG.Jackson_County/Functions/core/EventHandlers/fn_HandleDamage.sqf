@@ -22,8 +22,8 @@ if(!isNull _source) then {
 		    	if(typeof _vehicle == "B_MRAP_01_hmg_F") exitwith {};
 				_speed = speed _vehicle;
 				[] spawn KK_fnc_forceRagdoll;
-				if(_speed < 70) then { _damage = 0.1; }; 
-				if(_speed < 25) then { _damage = 0; }; 
+				if(_speed < 70) then { _damage = 0.1; };
+				if(_speed < 25) then { _damage = 0; };
 				if(_speed > 69) then { _damage = _speed / 100; };
 		    };
 		};
@@ -53,16 +53,16 @@ if(!isNull _source) then {
 			_damage = 0;
 		};
 
-		if(_curWep == "Taser" && vehicle player == player && vehicle _source == _source) exitwith {
-			if(player distance _source < 40) then {
+		if(_curWep == "DDOPP_X26" && vehicle player == player && vehicle _source == _source) exitwith {
+			if(player distance _source < 10) then {
 				[_unit,_source] spawn client_fnc_tazed;
 			};
-			_damage = 0;	
+			_damage = 0;
 		};
 
 	} else {
 		_isWater = surfaceIsWater (getPosASL player);
-		if(_isWater) then { player setOxygenRemaining 1; _damage = 0.05; };		
+		if(_isWater) then { player setOxygenRemaining 1; _damage = 0.05; };
 	};
 };
 
@@ -90,17 +90,17 @@ if(uniform player == "nopixel_character_swat") then { _damage = _damage / 3; };
 	if(client_meth > 0) then { _damage = _damage / 1.1; };
 
 	//["Remove",_damage,_source] spawn Client_Fnc_DoHealth;
-	
+
 } else {
 
-	if(!isNull _source && isPlayer _source && _source != _unit && _damage > 0.1) then {	
+	if(!isNull _source && isPlayer _source && _source != _unit && _damage > 0.1) then {
 
 		//[_damage,_selectionName,_source] spawn client_fnc_damageChance;
 		//[] call fnc_firstPersonForced;
 	} else {
 		_source = player;
-		if(_damage > 0.65) then { 
-		//[_damage,_selectionName,_source] spawn client_fnc_damageChance; 
+		if(_damage > 0.65) then {
+		//[_damage,_selectionName,_source] spawn client_fnc_damageChance;
 		};
 	};
 

@@ -710,7 +710,8 @@ if(_condition == "copwaffen") then {
 		["RH_fn57",nil,10,1],
 		["RH_p226",nil,10,1],
 		["RH_usp",nil,10,1],
-		["RH_sw659",nil,10,1]
+		["RH_sw659",nil,10,1],
+		["DDOPP_X26",nil,10,1]
 	];
 	/*
 	if(_cop > 3) then {
