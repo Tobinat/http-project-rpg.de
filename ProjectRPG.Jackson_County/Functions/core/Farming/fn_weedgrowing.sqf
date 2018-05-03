@@ -28,11 +28,11 @@ while{_count < _random && (_object getVariable ["growing",false])} do {
 	sleep round(random 15) + 15;
 	_object setVariable ["checkFinish", false];
 	_randomValue = round(random 5);
-	if(_randomValue == 1 || _randomvalue == 0) then { _object setVariable["requiredOutput", "Water"]; _message = WaterArray call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue == 2) then { _object setVariable["requiredOutput", "Prune"]; _message = PruneArray call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue == 3) then { _object setVariable["requiredOutput", "Cool"]; _message = CoolArray2 call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue == 4) then { _object setVariable["requiredOutput", "Heat"]; _message = HeatArray2 call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue == 5) then { _object setVariable["requiredOutput", "Turnover"]; _message = TurnoverArray call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 1 || _randomvalue == 0) then { _object setVariable["requiredOutput", "Water"];  };
+	if(_randomValue == 2) then { _object setVariable["requiredOutput", "Prune"]; };
+	if(_randomValue == 3) then { _object setVariable["requiredOutput", "Cool"];  };
+	if(_randomValue == 4) then { _object setVariable["requiredOutput", "Heat"];  };
+	if(_randomValue == 5) then { _object setVariable["requiredOutput", "Turnover"];  };
 	sleep round(random 15) + 15;
 	_count = _count + 1;
 	_object setpos [(getpos _object select 0),(getpos _object select 1),(getpos _object select 2)+0.15];
