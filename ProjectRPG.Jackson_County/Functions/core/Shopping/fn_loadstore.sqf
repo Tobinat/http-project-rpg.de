@@ -674,9 +674,6 @@ if(_condition == "mcdonalds") then {
 if(_condition == "cops") then {
 
 	_bulle = [
-		["NP_8mPoliceLine",nil,2,1],
-		["NP_4mPoliceLine",nil,2,1],
-		["NP_1mPoliceLine",nil,2,1],
 		["NP_PoliceBarrierL",nil,2,1],
 		["NP_PoliceBarrierS",nil,2,1],
 		["CG_wheel",nil,2,1],
@@ -864,9 +861,6 @@ if(_condition == "EMSbackpack") then {
 if(_condition == "medic") then {
 
 	_medic = [
-		["NP_8mPoliceLine",nil,2,1],
-		["NP_4mPoliceLine",nil,2,1],
-		["NP_1mPoliceLine",nil,2,1],
 		["NP_PoliceBarrierL",nil,2,1],
 		["NP_PoliceBarrierS",nil,2,1],
 		["CG_wheel",nil,2,1],
@@ -886,7 +880,7 @@ if(_condition == "medic") then {
 	];
 	if(_EMS > 1) then {
 		_ret = [
-			["adv_aceCPR_AEDItem",nil,2,1]
+			["adv_aceCPR_AED",nil,2,1]
 		];
 		_medic = _medic + _ret;
 	};
@@ -939,9 +933,6 @@ if(_condition == "fdkleidung") then {
 if(_condition == "fd") then {
 
 	_fire = [
-		["NP_8mPoliceLine",nil,2,1],
-		["NP_4mPoliceLine",nil,2,1],
-		["NP_1mPoliceLine",nil,2,1],
 		["NP_PoliceBarrierL",nil,2,1],
 		["NP_PoliceBarrierS",nil,2,1],
 		["CG_wheel",nil,2,1],

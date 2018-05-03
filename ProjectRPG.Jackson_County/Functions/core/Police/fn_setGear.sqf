@@ -27,7 +27,7 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
 		for "_i" from 1 to 5 do {player addItemToBackPack "ACE_CableTie"; };
 		player addItemToBackPack "nonlethal_swing";
-		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
+		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
 
 		for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
 		_level = player getvariable ["cop", 0];
@@ -167,7 +167,7 @@ if(myjob == "EMS") exitwith {
 	player addgoggles "Masque_Chirurgical";
 
 	player addBackpack "invisible_carryall";
-	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
+	{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
 	player addItemToUniform "ACE_Flashlight_XL50";
   player addItemToUniform "ACE_EarPlugs";
 	player addItemToUniform "ACE_surgicalKit";
