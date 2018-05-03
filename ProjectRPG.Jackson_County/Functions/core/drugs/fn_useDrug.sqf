@@ -34,6 +34,7 @@ if(_type == "meth") then {
 	client_meth = _amount;
 	["Du fühlst dich unzerstörbar.",false] spawn domsg;
 	["Remove","Karma",20] call client_fnc_sustain;
+	[] spawn client_fnc_useMeth;
 	//notazepls
 };
 
