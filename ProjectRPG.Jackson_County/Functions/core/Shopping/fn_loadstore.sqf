@@ -682,7 +682,8 @@ if(_condition == "cops") then {
 		["CG_wheel",nil,2,1],
 		["ACE_Flashlight_XL50",nil,2,1],
 		["ACE_EarPlugs",nil,2,1],
-		["ACE_fieldDressing",nil,2,1]
+		["ACE_fieldDressing",nil,2,1],
+		["RH_M6X",nil,10,1]
 	];
 	if(_cop > 1) then {
 		_ret = [
@@ -722,7 +723,6 @@ if(_condition == "copwaffen") then {
 		["RH_M9",nil,10,1],
 		["RH_g17",nil,10,1],
 		["DDOPP_X26",nil,10,1],
-		["RH_M6X",nil,10,1],
 		["CG_TELBAT",nil,10,1]
 	];
 	if(_cop > 1) then {
