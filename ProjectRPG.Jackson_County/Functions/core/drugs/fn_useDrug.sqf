@@ -12,6 +12,7 @@ if(_type == "marijuana") then {
 	//["set",0] call Client_Fnc_DoHealth;
 	["Das Zeug faengt an zu wirken.",false] spawn domsg;
 	["Remove","Karma",20] call client_fnc_sustain;
+	[] spawn client_fnc_useMarijuana;
 };
 
 if(_type == "cocaine") then {
