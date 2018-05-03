@@ -1,7 +1,7 @@
 /*
 	Author: Kajetan "Kruk" Mruk
 	Date: 22.01.2017 (Non-retard Units)
-	
+
 	Params:
 		1 - Object - weed plant object
 	Description: Function that checks state of plant
@@ -14,11 +14,11 @@ _requiredAction = _object getVariable ["requiredOutput",""];
 
 if(_checkFinish) exitWith {["Die Pflanze sieht gut aus.", false] spawn domsg;};
 
-_waterArray = ["Hinweis: Die Blätter sind gefallen","Hinweis: Die Pflanze ist welk", "Hinweis: Der Boden ist trocken"];
-_pruneArray = ["Hinweis: Die Pflanze ist wahrscheinlich zu groß","Hinweis:Die Pflanze sieht überwuchert aus"];
-_coolArray = ["Hinweis: Auf den Blättern sind braune Flecken zu sehen","Hinweis: Der Pflanze ist es zu heiß"];
-_heatArray = ["Hinweis: Die Pflanze fault", "Hinweis: Der Boden ist zu feucht"];
-_turnoverArray = ["Hinweis: Du musst den Boden wechseln", "Hinweis: Sie müssen den Boden belüften"];
+_waterArray = ["Hinweis: Die Erde ist Trocken!","Hinweis: Die Pflanze welkt!","Hinweis: Die blätter hängen runter!"];
+_pruneArray = ["Hinweis: Da sind einige Kranke Blätter!","Hinweis: Einige Blätter verwelken!","Hinweis: Die Pflanze hat sehr viele Seitenzweige!"];
+_coolArray = ["Hinweis: Die Pflanze stinkt!","Hinweis: Es sind 32°C","Hinweis: Es wird heiß!"];
+_heatArray = ["Hinweis: Es ist recht Kalt!","Hinweis: Es sind 14°C!","Hinweis: Die Pflanze verrfärbt ihre Blätter!"];
+_turnoverArray = ["Hinweis: Die Erde hat wenige Nährstoffe!","Hinweis: Die Erde ist verdichtet!","Hinweis: Perlite währen ganz gut!"];
 _message = "";
 
 switch(_requiredAction) do {
