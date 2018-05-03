@@ -44,7 +44,7 @@ class vote_Menu {
 		};
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -61,10 +61,10 @@ class vote_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 
-		class VoteList : client_RscListBox 
+		class VoteList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -78,12 +78,12 @@ class vote_Menu {
 		class LockVoteOption : HideButton {
 			idc = 9995;
 			text = "";
-			onButtonClick = "[] spawn client_fnc_LockVote;"; 
+			onButtonClick = "[] spawn client_fnc_LockVote;";
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -93,7 +93,7 @@ class vote_Menu {
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -111,7 +111,7 @@ class placefurniture {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -128,7 +128,7 @@ class placefurniture {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 
 		class QuantityText : client_RscListBox
@@ -146,12 +146,12 @@ class placefurniture {
 		class PurchaseOption : RSCButton {
 			idc = 9995;
 			text = "Akzeptieren";
-			onButtonClick = "[] call client_fnc_spawnfurniture;"; 
+			onButtonClick = "[] call client_fnc_spawnfurniture;";
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 
 		class CloseOption : RSCButton {
 			idc = 9996;
@@ -161,7 +161,7 @@ class placefurniture {
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -175,7 +175,7 @@ class rentshop {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -192,10 +192,10 @@ class rentshop {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 
-		class QuantityText : Client_RscEdit 
+		class QuantityText : Client_RscEdit
 		{
 			idc = 9339;
 			text = "Ladenname";
@@ -210,12 +210,12 @@ class rentshop {
 		class PurchaseOption : RSCButton {
 			idc = 9995;
 			text = "Akzeptieren";
-			onButtonClick = "[] call client_fnc_rentOffice;"; 
+			onButtonClick = "[] call client_fnc_rentOffice;";
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 
 		class CloseOption : RSCButton {
 			idc = 9996;
@@ -225,7 +225,7 @@ class rentshop {
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -240,7 +240,7 @@ class tax_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -257,10 +257,10 @@ class tax_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 
-		class QuantityText : Client_RscEdit 
+		class QuantityText : Client_RscEdit
 		{
 			idc = 9339;
 			text = "1";
@@ -275,12 +275,12 @@ class tax_Menu {
 		class PurchaseOption : RSCButton {
 			idc = 9995;
 			text = "Steuern festlegen";
-			onButtonClick = "[] spawn client_fnc_settax;"; 
+			onButtonClick = "[] spawn client_fnc_settax;";
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 
 		class CloseOption : RSCButton {
 			idc = 9996;
@@ -290,7 +290,7 @@ class tax_Menu {
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -306,9 +306,9 @@ class shop_update {
 
 
 	class controls {
-		
+
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -325,7 +325,7 @@ class shop_update {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -360,8 +360,8 @@ class shop_update {
 		    offsetPressedY = 0.002;
 		    borderSize = 0.01;
 		};
-	
-		class ShopList : client_RscListBox 
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -372,7 +372,7 @@ class shop_update {
 			h = 0.343181 * safezoneH;
 		};
 
-		class PriceText : Client_RscEdit 
+		class PriceText : Client_RscEdit
 		{
 			idc = 9331;
 			text = "0";
@@ -387,15 +387,15 @@ class shop_update {
 		class PriceUpdateOption : HideButton {
 			idc = 9995;
 			text = "Preis festlegen";
-			onButtonClick = "[shopcontent,""update""] spawn client_fnc_updatePrices;"; 
+			onButtonClick = "[shopcontent,""update""] spawn client_fnc_updatePrices;";
 			x = 0.412136 * safezoneW + safezoneX;
 			y = 0.655309 * safezoneH + safezoneY;
 			w = 0.087862 * safezoneW;
 			h = 0.0461909 * safezoneH;
-		};	
+		};
 
 
-		class Shopnametext : Client_RscEdit 
+		class Shopnametext : Client_RscEdit
 		{
 			idc = 8331;
 			text = "";
@@ -410,12 +410,12 @@ class shop_update {
 		class ShopnameUpdateOption : HideButton {
 			idc = 8995;
 			text = "Ladenname aendern";
-			onButtonClick = "[shopcontent,""nameupdate""] spawn client_fnc_updatePrices;"; 
+			onButtonClick = "[shopcontent,""nameupdate""] spawn client_fnc_updatePrices;";
 			x = 0.412136 * safezoneW + safezoneX;
 			y = 0.70991 * safezoneH + safezoneY;
 			w = 0.087862 * safezoneW;
 			h = 0.0461909 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -425,7 +425,7 @@ class shop_update {
 			y = 0.654954 * safezoneH + safezoneY;
 			w = 0.087862 * safezoneW;
 			h = 0.0461909 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -438,7 +438,7 @@ class Shop_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -455,7 +455,7 @@ class Shop_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -490,8 +490,8 @@ class Shop_Menu {
 		    offsetPressedY = 0.002;
 		    borderSize = 0.01;
 		};
-			
-		class ShopList : client_RscListBox 
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -502,7 +502,7 @@ class Shop_Menu {
 			h = 0.343181 * safezoneH;
 		};
 
-		class QuantityText : Client_RscEdit 
+		class QuantityText : Client_RscEdit
 		{
 			idc = 9339;
 			text = "1";
@@ -517,12 +517,12 @@ class Shop_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kaufen";
-			onButtonClick = "[] spawn client_fnc_purchase;"; 
+			onButtonClick = "[] spawn client_fnc_purchase;";
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -532,7 +532,7 @@ class Shop_Menu {
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -559,7 +559,7 @@ class GUN_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -576,7 +576,7 @@ class GUN_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -611,8 +611,8 @@ class GUN_Menu {
 		    offsetPressedY = 0.002;
 		    borderSize = 0.01;
 		};
-			
-		class ShopList : client_RscListBox 
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -632,17 +632,17 @@ class GUN_Menu {
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class vestOption : HideButton {
 			idc = 9994;
 			text = "";
-			onButtonClick = "[""veststore""] spawn client_fnc_loadStore;"; 
+			onButtonClick = "[""veststore""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
@@ -652,7 +652,7 @@ class GUN_Menu {
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -662,7 +662,7 @@ class GUN_Menu {
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 
 
 
@@ -685,7 +685,7 @@ class Cops_GUN_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -702,7 +702,7 @@ class Cops_GUN_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -737,8 +737,8 @@ class Cops_GUN_Menu {
 		    offsetPressedY = 0.002;
 		    borderSize = 0.01;
 		};
-			
-		class ShopList : client_RscListBox 
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -758,17 +758,17 @@ class Cops_GUN_Menu {
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class vestOption : HideButton {
 			idc = 9994;
 			text = "";
-			onButtonClick = "[""copvests""] spawn client_fnc_loadStore;"; 
+			onButtonClick = "[""copvests""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
@@ -778,7 +778,7 @@ class Cops_GUN_Menu {
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -788,7 +788,7 @@ class Cops_GUN_Menu {
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 
 
 
@@ -813,7 +813,7 @@ class Food_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -830,7 +830,7 @@ class Food_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -865,8 +865,8 @@ class Food_Menu {
 		    offsetPressedY = 0.002;
 		    borderSize = 0.01;
 		};
-			
-		class ShopList : client_RscListBox 
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -877,7 +877,7 @@ class Food_Menu {
 			h = 0.343181 * safezoneH;
 		};
 
-		class QuantityText : Client_RscEdit 
+		class QuantityText : Client_RscEdit
 		{
 			idc = 9339;
 			text = "1";
@@ -892,12 +892,12 @@ class Food_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kaufen";
-			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;";
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -907,7 +907,7 @@ class Food_Menu {
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -923,7 +923,7 @@ class GeneralStore_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -940,7 +940,7 @@ class GeneralStore_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -975,8 +975,8 @@ class GeneralStore_Menu {
 		    offsetPressedY = 0.002;
 		    borderSize = 0.01;
 		};
-			
-		class ShopList : client_RscListBox 
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -987,7 +987,7 @@ class GeneralStore_Menu {
 			h = 0.343181 * safezoneH;
 		};
 
-		class QuantityText : Client_RscEdit 
+		class QuantityText : Client_RscEdit
 		{
 			idc = 9339;
 			text = "1";
@@ -1002,12 +1002,12 @@ class GeneralStore_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kaufen";
-			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;";
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -1017,7 +1017,7 @@ class GeneralStore_Menu {
 			y = 0.706043 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -1033,7 +1033,7 @@ class RareFish_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -1050,7 +1050,7 @@ class RareFish_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -1085,8 +1085,8 @@ class RareFish_Menu {
 		    offsetPressedY = 0.002;
 		    borderSize = 0.01;
 		};
-			
-		class ShopList : client_RscListBox 
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -1101,12 +1101,12 @@ class RareFish_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kaufen";
-			onButtonClick = "[""fish""] spawn client_fnc_purchaseAI;"; 
+			onButtonClick = "[""fish""] spawn client_fnc_purchaseAI;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -1116,7 +1116,7 @@ class RareFish_Menu {
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -1132,7 +1132,7 @@ class Clothing_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -1149,7 +1149,7 @@ class Clothing_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -1184,8 +1184,8 @@ class Clothing_Menu {
 		    offsetPressedY = 0.002;
 		    borderSize = 0.01;
 		};
-			
-		class ShopList : client_RscListBox 
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -1205,7 +1205,7 @@ class Clothing_Menu {
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class BackpackOption : HideButton {
 			idc = 9994;
@@ -1215,17 +1215,17 @@ class Clothing_Menu {
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kaufen";
-			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -1235,7 +1235,7 @@ class Clothing_Menu {
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 	};
 };
 
@@ -1250,7 +1250,7 @@ class Cop_Clothing_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -1267,7 +1267,7 @@ class Cop_Clothing_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -1302,8 +1302,8 @@ class Cop_Clothing_Menu {
 		    offsetPressedY = 0.002;
 		    borderSize = 0.01;
 		};
-			
-		class ShopList : client_RscListBox 
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -1323,7 +1323,7 @@ class Cop_Clothing_Menu {
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class BackpackOption : HideButton {
 			idc = 9994;
@@ -1333,17 +1333,17 @@ class Cop_Clothing_Menu {
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kaufen";
-			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -1353,16 +1353,13 @@ class Cop_Clothing_Menu {
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 	};
 };
 
-
-
-
-class HairDresser_Menu {
+class Med_Clothing_Menu {
 	idd = 9999;
-	name= "HairDresser_menu";
+	name= "Med_Clothing_Menu";
 	onLoad = "[] spawn client_fnc_storesetup";
 	onunload = "dialog_open = false; deletevehicle cockbag; client_kcCamera cameraEffect [""TERMINATE"",""BACK""]; camDestroy client_kcCamera;";
 	movingEnable = 0;
@@ -1371,7 +1368,7 @@ class HairDresser_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -1383,12 +1380,12 @@ class HairDresser_Menu {
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 191911;
-			text = "\np_dialogs1\Images\HairDresserMenu.paa";
+			text = "\np_dialogs1\Images\ClothingMenu.paa";
 			x = 0.275605 * safezoneW + safezoneX;
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -1424,7 +1421,126 @@ class HairDresser_Menu {
 		    borderSize = 0.01;
 		};
 
-		class ShopList : client_RscListBox 
+		class ShopList : client_RscListBox
+		{
+			idc = 9001;
+			text = "";
+			sizeEx = 0.05;
+			onLBSelChanged = "[] spawn client_fnc_clothesUpdate;";
+			x = 0.311121 * safezoneW + safezoneX;
+			y = 0.293241 * safezoneH + safezoneY;
+			w = 0.178 * safezoneW;
+			h = 0.343181 * safezoneH;
+		};
+
+		class ClothingOption : HideButton {
+			idc = 9993;
+			text = "Kleidung";
+			onButtonClick = "[""medickleidung""] spawn client_fnc_loadStore;";
+			x = 0.311029 * safezoneW + safezoneX;
+			y = 0.706497 * safezoneH + safezoneY;
+			w = 0.0867957 * safezoneW;
+			h = 0.0231907 * safezoneH;
+		};
+
+		class BackpackOption : HideButton {
+			idc = 9994;
+			text = "Rucksack";
+			onButtonClick = "[""EMSbackpack""] spawn client_fnc_loadStore;";
+			x = 0.311029 * safezoneW + safezoneX;
+			y = 0.729497 * safezoneH + safezoneY;
+			w = 0.0867957 * safezoneW;
+			h = 0.0231907 * safezoneH;
+		};
+
+		class PurchaseOption : HideButton {
+			idc = 9995;
+			text = "Kaufen";
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;";
+			x = 0.40229 * safezoneW + safezoneX;
+			y = 0.706497 * safezoneH + safezoneY;
+			w = 0.0867957 * safezoneW;
+			h = 0.023 * safezoneH;
+		};
+
+		class CloseOption : HideButton {
+			idc = 9996;
+			text = "Schließen";
+			onButtonClick = "closedialog 0;";
+			x = 0.40229 * safezoneW + safezoneX;
+			y = 0.729497 * safezoneH + safezoneY;
+			w = 0.0878542 * safezoneW;
+			h = 0.023 * safezoneH;
+		};
+	};
+};
+
+
+class HairDresser_Menu {
+	idd = 9999;
+	name= "HairDresser_menu";
+	onLoad = "[] spawn client_fnc_storesetup";
+	onunload = "dialog_open = false; deletevehicle cockbag; client_kcCamera cameraEffect [""TERMINATE"",""BACK""]; camDestroy client_kcCamera;";
+	movingEnable = 0;
+	enableSimulation = 1;
+
+	class controls {
+
+		class BASE
+		{
+			shadow = 0;
+			type = 0;
+			style = 2096;
+			sizeEx = 1;
+			font = "PuristaMedium";
+			colorBackground[] = {};
+			colorText[] = {};
+			tooltipColorText[] = {1,1,1,1};
+			tooltipColorBox[] = {1,1,1,1};
+			tooltipColorShade[] = {0,0,0,0.65};
+			idc = 191911;
+			text = "\np_dialogs1\Images\HairDresserMenu.paa";
+			x = 0.275605 * safezoneW + safezoneX;
+			y = 0.126074 * safezoneH + safezoneY;
+			w = 0.447732 * safezoneW;
+			h = 0.747851 * safezoneH;
+		};
+
+		class HideButton
+		{
+		    colorBorder[] = {0,0,0,0.05};
+		    access = 0;
+		    type = CT_BUTTON;
+		    text = "";
+		    colorText[] = {1, 1, 1, 0};
+		    colorActive[] = {1, 1, 1, 0};
+		    colorTextSelect[] = {1, 1, 1, 0};
+		    colorDisabled[] = {1, 1, 1, 0};
+		    colorBackground[] = {0, 0, 0, 0};
+		    colorBackgroundActive[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])", 0.05};
+		    colorBackgroundDisabled[] = {0, 0, 0, 0.5};
+		    colorFocused[] = {0, 0, 0, 0};
+		    colorShadow[] = {0, 0, 0, 0};
+		    soundEnter[] = {"\ca\ui\data\sound\onover",0.09,1};
+		    soundPush[] = {"\ca\ui\data\sound\new1",0,0};
+		    soundClick[] = {"\ca\ui\data\sound\onclick",0.07,1};
+		    soundEscape[] = {"\ca\ui\data\sound\onescape",0.09,1};
+		    style = 2;
+		    x = 0;
+		    y = 0;
+		    w = 0.055589;
+		    h = 0.039216;
+		    shadow = 0;
+		    font = "PuristaMedium";
+		    sizeEx = 0.02921;
+		    offsetX = 0.003;
+		    offsetY = 0.003;
+		    offsetPressedX = 0.002;
+		    offsetPressedY = 0.002;
+		    borderSize = 0.01;
+		};
+
+		class ShopList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -1444,7 +1560,7 @@ class HairDresser_Menu {
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class BackpackOption : HideButton {
 			idc = 9994;
@@ -1454,17 +1570,17 @@ class HairDresser_Menu {
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kaufen";
-			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.023 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;
@@ -1489,7 +1605,7 @@ class wallet_Menu {
 	class controls {
 
 		class BASE
-		{    
+		{
 			shadow = 0;
 			type = 0;
 			style = 2096;
@@ -1506,7 +1622,7 @@ class wallet_Menu {
 			y = 0.126074 * safezoneH + safezoneY;
 			w = 0.447732 * safezoneW;
 			h = 0.747851 * safezoneH;
-		};  
+		};
 
 		class HideButton
 		{
@@ -1542,7 +1658,7 @@ class wallet_Menu {
 		    borderSize = 0.01;
 		};
 
-		class LicenseList : client_RscListBox 
+		class LicenseList : client_RscListBox
 		{
 			idc = 9001;
 			text = "";
@@ -1562,7 +1678,7 @@ class wallet_Menu {
 			y = 0.652 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class CashText : client_RscStructuredText {
 			idc = 9994;
@@ -1572,7 +1688,7 @@ class wallet_Menu {
 			y = 0.695 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0231907 * safezoneH;
-		};	
+		};
 
 		class CloseOption : HideButton {
 			idc = 9996;

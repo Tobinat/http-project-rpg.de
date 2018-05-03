@@ -198,7 +198,15 @@ _iMafiaMags = [5,2,2,2,2];
 
 _itemList = [
 	//"NP_DrugTable","NP_GrowingPlot","CG_Dynamite","CG_C4","CG_Engine","CG_wheel","CG_HackingTool","CG_Lockpick","CG_MetalWire","NP_drillitem"
-	"NP_DrugTable","NP_GrowingPlot","CG_Dynamite","CG_C4","CG_Engine","CG_wheel","CG_HackingTool","CG_Lockpick","NP_drillitem"
+	"NP_DrugTable",
+	"NP_GrowingPlot",
+	"CG_Dynamite",
+	"CG_C4",
+	"CG_Engine",
+	"CG_wheel",
+	"CG_HackingTool",
+	"CG_Lockpick",
+	"NP_drillitem"
 ];
 
 
@@ -218,31 +226,18 @@ _PricesItemList = [
 
 _clothing1 =
 
-		["EF_HM_LPBPS","EF_HM_LPBP","EF_HM_LPBR","EF_HM_LPBW","EF_HM_LPB","EF_HM_LPBL",
-
-		"CUP_O_TKI_Khet_Jeans_01","CUP_O_TKI_Khet_Jeans_02","CUP_O_TKI_Khet_Jeans_03","CUP_O_TKI_Khet_Jeans_04",
-
-		"CUP_U_C_Citizen_01","CUP_U_C_Citizen_02","CUP_U_C_Citizen_03","CUP_U_C_Citizen_04",
-
-
-		"CUP_O_TKI_Khet_Partug_01","CUP_O_TKI_Khet_Partug_02","CUP_O_TKI_Khet_Partug_03","CUP_O_TKI_Khet_Partug_04","CUP_O_TKI_Khet_Partug_05",
-
-		"CUP_U_C_Profiteer_01",
-		"CUP_U_C_Profiteer_02",
-		"CUP_U_C_Profiteer_03",
-		"CUP_U_C_Profiteer_04",
-
+		["EF_HM_LPBPS",
+		"EF_HM_LPBP",
+		"EF_HM_LPBR",
+		"EF_HM_LPBW",
+		"EF_HM_LPB",
+		"EF_HM_LPBL",
 		"EF_HM_LPBPS2",
 		"EF_HM_LPBP2",
 		"EF_HM_LPBR2",
 		"EF_HM_LPBW2",
 		"EF_HM_LPB2",
 		"EF_HM_LPBL2",
-
-
-		"CUP_U_I_GUE_Anorak_03",
-		"CUP_U_I_GUE_Anorak_02",
-
 		"TRYK_U_B_PCUGs_BLK_R",
 		"TRYK_U_B_PCUGs_gry_R",
 		"TRYK_U_B_PCUGs_OD_R",
@@ -257,17 +252,12 @@ _clothing1 =
 		"TRYK_U_denim_hood_blk",
 		"TRYK_U_taki_G_BLK",
 		"TRYK_U_taki_G_COY",
-
 		"EF_suit_1",
 		"EF_suit_2",
 		"EF_suit_3",
 		"EF_suit_4",
 		"EF_suit_5",
 		"EF_suit_6",
-		"CUP_U_C_Worker_01",
-		"CUP_U_C_Worker_02",
-		"CUP_U_C_Worker_03",
-		"CUP_U_C_Worker_04",
 		"EF_FEM_2U",
 		"EF_FEM_2BK",
 		"EF_FEM_3_2",
@@ -302,7 +292,6 @@ _clothing2 = ["vvv_character_rock1",
 		"vvv_character_rock3",
 		"vvv_character_rock4",
 		"vvv_traje_jackoy",
-
 		"vvv_traje_motox_02",
 		"vvv_traje_motox_02_2",
 		"vvv_traje_motox_02_3",
@@ -311,7 +300,6 @@ _clothing2 = ["vvv_character_rock1",
 		"vvv_traje_motox_02_6",
 		"vvv_traje_motox_02_7",
 		"vvv_traje_motox_02_8",
-
 		"vvv_character_sport",
 		"vvv_character_sport_2",
 		"vvv_character_sport_3",
@@ -325,45 +313,16 @@ _clothing2 = ["vvv_character_rock1",
 		"vvv_character_sport_11",
 		"vvv_character_sport_12",
 		"vvv_character_sport_13",
-
-		"CUP_U_C_Villager_01",
-		"CUP_U_C_Villager_02",
-		"CUP_U_C_Villager_03",
-		"CUP_U_C_Villager_04",
-
 		"eaglkes_wwi_ind_pilot_cloth",
 		"eaglkes_wwi_ger_pilot_cloth",
-
-		"CUP_U_C_Priest_01",
-
 		"TRYK_HRP_USMC",
 		"TRYK_HRP_khk",
 		"U_mas_ww2_B_CombatUniform_us",
-
-		"CUP_U_C_Mechanic_01",
-		"CUP_U_C_Mechanic_02",
-		"CUP_U_C_Mechanic_03",
-
-		"CUP_U_O_SLA_Overalls_Pilot",
-		"CUP_U_O_SLA_Overalls_Tank",
-
-		"CUP_U_O_SLA_Green",
-		"CUP_U_O_SLA_MixedCamo",
-
-
-
-		"CUP_U_C_Suit_01",
-		"CUP_U_C_Suit_02",
-
-
 		"np_sleeve_common_1",
 		"np_shortsleeve_common_1",
-
 		"vvv_traje_ejecutivo_1",
 		"vvv_character_messi",
-		"vvv_traje_romano",
-
-		"CUP_U_O_SLA_Officer_Suit"];
+		"vvv_traje_romano"];
 
 
 

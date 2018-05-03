@@ -651,7 +651,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
-		["EMS Kleiderkammer", "closedialog 0; createdialog ""Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;"]
+		["EMS Kleiderkammer", "closedialog 0; createdialog ""Med_Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;"]
 	],
 
 	[
@@ -661,7 +661,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["FD Kleiderkammer", "closedialog 0; createdialog ""Clothing_Menu""; [""fdkleidung""] spawn client_fnc_LoadStore;"]
+		["FD Kleiderkammer", "closedialog 0; createdialog ""Med_Clothing_Menu""; [""fdkleidung""] spawn client_fnc_LoadStore;"]
 	],
 
 

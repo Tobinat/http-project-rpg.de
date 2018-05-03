@@ -807,6 +807,17 @@ if(_condition == "medickleidung") then {
 
 };
 
+if(_condition == "EMSbackpack") then {
+
+	_additional = [
+			["invisible_carryall",nil,10,3,1]
+			];
+	{
+		_storeList pushback _x;
+	} foreach _additional;
+
+};
+
 if(_condition == "medic") then {
 
 	_medic = [
