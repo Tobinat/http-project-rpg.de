@@ -3,7 +3,7 @@ enableDebugConsole = 1;
 respawn = "BASE";
 disabledAI = 1;
 author = "Koil | Edited by PRPG.de";
-onLoadName = "Project-RPG v0.0";
+onLoadName = "Project-RPG v0.5";
 onLoadMission = "Webseite: http://project-rpg.de";
 onLoadIntro = "PRPG Life ist am laden...";
 //loadScreen =  "sl_client\textures\loading\load.paa";
@@ -38,7 +38,7 @@ showHUD[] = {
 #include "maverick\maverick_master.cpp"
 class RscTitles {
 
-	#include "maverick\maverick_titles_master.cpp" 
+	#include "maverick\maverick_titles_master.cpp"
     #include "dialogs\ui.hpp"
 	#include "dialogs\RscNotification.hpp"
 	#include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
@@ -185,12 +185,12 @@ class CfgFunctions
 			class completeMail {};
 			class mailSystem {};
 		};
-		
-		
+
+
 		class PRPG {
 			file = "Functions\core\PRPG";
 			class pizza {};
-		
+
 		};
 
 		class jobFactions {
@@ -1630,5 +1630,3 @@ class CfgNotifications {
         priority = 5;
     };
 };
-
-
