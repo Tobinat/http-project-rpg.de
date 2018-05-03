@@ -845,6 +845,18 @@ if(_condition == "medic") then {
 		["ACE_epinephrine",nil,2,1],
 		["ACE_atropine",nil,2,1]
 	];
+	if(_EMS > 1) then {
+		_ret = [
+			["adv_aceCPR_AEDItem",nil,2,1]
+		];
+		_medic = _medic + _ret;
+	};
+	if(_EMS > 4) then {
+		_ret = [
+			["FSGm_ItemMedicBag",nil,2,1]
+		];
+		_medic = _medic + _ret;
+	};
 	if(_EMS > 5) then {
 		_ret = [
 			["ACE_personalAidKit",nil,2,1]
