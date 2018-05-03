@@ -684,17 +684,30 @@ if(_condition == "cops") then {
 		["ACE_EarPlugs",nil,2,1],
 		["ACE_fieldDressing",nil,2,1]
 	];
-	if(_cop > 3) then {
+	if(_cop > 1) then {
 		_ret = [
-			["RH_compM2",nil,5,1],
-			["RH_eotech553",nil,5,1],
-			["RH_ta01nsn",nil,5,1]
+			["RH_barska_rds",nil,5,1],
+			["acc_flashlight",nil,5,1],
+			["RH_SFM952V",nil,5,1]
 		];
 		_bulle = _bulle + _ret;
 	};
-	if(_cop > 5) then {
+	if(_cop > 2) then {
 		_ret = [
-			["optic_dms",nil,5,1]
+			["RH_ta31rmr",nil,5,1],
+			["RH_compM2",nil,5,1]
+		];
+		_bulle = _bulle + _ret;
+	};
+	if(_cop > 6) then {
+		_ret = [
+			["optic_DMS",nil,5,1]
+		];
+		_bulle = _bulle + _ret;
+	};
+	if(_cop > 7) then {
+		_ret = [
+			["optic_LRPS",nil,5,1]
 		];
 		_bulle = _bulle + _ret;
 	};
@@ -707,28 +720,68 @@ if(_condition == "copwaffen") then {
 
 	_bulle = [
 		["RH_M9",nil,10,1],
-		["RH_fn57",nil,10,1],
-		["RH_p226",nil,10,1],
-		["RH_usp",nil,10,1],
-		["RH_sw659",nil,10,1],
-		["DDOPP_X26",nil,10,1]
+		["RH_g17",nil,10,1],
+		["DDOPP_X26",nil,10,1],
+		["RH_M6X",nil,10,1],
+		["CG_TELBAT",nil,10,1]
 	];
-	/*
+	if(_cop > 1) then {
+		_ret = [
+			["RH_p226",nil,20,1],
+			["hlc_smg_mp5a4",nil,20,1]
+		];
+		_bulle = _bulle + _ret;
+	};
+	if(_cop > 2) then {
+		_ret = [
+			["hlc_rifle_bcmblackjack",nil,10,1]
+		];
+		_bulle = _bulle + _ret;
+	};
 	if(_cop > 3) then {
 		_ret = [
-			["hlc_rifle_RU5562",nil,20,1],
-			["hlc_rifle_Bushmaster300",nil,20,1],
-			["hlc_smg_mp5a2",nil,20,1]
+			["RH_sw659",nil,10,1],
+			["hlc_rifle_RU556",nil,20,1]
+		];
+		_bulle = _bulle + _ret;
+	};
+	if(_cop > 4) then {
+		_ret = [
+			["RH_fn57",nil,10,1]
 		];
 		_bulle = _bulle + _ret;
 	};
 	if(_cop > 5) then {
 		_ret = [
-			["hlc_rifle_samr2",nil,20,1]
+			["RH_usp",nil,10,1]
 		];
 		_bulle = _bulle + _ret;
 	};
-	*/
+	if(_cop > 6) then {
+		_ret = [
+			["arifle_SPAR_01_blk_F",nil,10,1],
+			["hlc_rifle_samr2",nil,10,1]
+		];
+		_bulle = _bulle + _ret;
+	};
+	if(_cop > 7) then {
+		_ret = [
+			["RH_kimber_nw",nil,10,1]
+		];
+		_bulle = _bulle + _ret;
+	};
+	if(_cop > 8) then {
+		_ret = [
+			["RH_ttracker_g",nil,10,1]
+		];
+		_bulle = _bulle + _ret;
+	};
+	if(_cop > 9) then {
+		_ret = [
+			["kio_sr25",nil,10,1]
+		];
+		_bulle = _bulle + _ret;
+	};
 	{
 		_storeList pushback _x;
 	} foreach _bulle;
