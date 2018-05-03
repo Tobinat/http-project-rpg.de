@@ -2,6 +2,8 @@
 Interaction Menus
 */
 
+_myInjuries = CurrentCursorTarget getVariable "playerInjuries";
+
 NoPixel_InteractionButtons = [
 	1600, 1601, 1602, 1603, 1604, 1605, 1606, 1607, 1608,
 	1609, 1610, 1611, 1612, 1613, 1614, 1615, 1616, 1617,
@@ -242,6 +244,11 @@ NoPixel_InteractionMenuItems = [
 		["Behandeln", "[] spawn client_fnc_openHealMenu;",1]
 	],
 */
+	[
+		["(myjob == ""EMS"" || myjob == ""Fire"") && (_myInjuries select 10) != 0"],
+		["Antibiotika verabreichen", "[user,10,5] spawn client_fnc_fixProblem;",1]
+	],
+
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 1)"],
 		["Behandeln lassen", "[] spawn client_fnc_fullheal;",1]
