@@ -1,7 +1,7 @@
 /*
 	Author: Unknown edit Kajetan "Kruk" Mruk
 	Date: 22.01.2017 (Non-retard Units)
-	
+
 	Params:
 		0 - Object - weed plant object
 		1 - Number - ID of the action
@@ -12,10 +12,10 @@ params["_player","_caller","_action","_myDT"];
 detach _myDT;
 _player removeAction _action;
 
-["Du hast den Samen geseaht",true] spawn domsg;
+["Du hast den Samen gesäht",true] spawn domsg;
 
 
-_action = _myDT addAction [ "Gepflanzt", { 
+_action = _myDT addAction [ "Gepflanzt", {
 	params["_target", "_caller", "_id"];
 	[_target] spawn client_fnc_weedgrowing;
 	myDrugValue2 = 4;

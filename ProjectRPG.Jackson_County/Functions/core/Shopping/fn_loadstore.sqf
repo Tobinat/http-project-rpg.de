@@ -11,6 +11,7 @@ if(_condition == "gunstore") then {
 	_gunStorePistols = [
 		["cg_hatchet",nil,120,1],
 		["cg_pickaxe",nil,120,1],
+		["CG_Pro_Item_i",nil,350,1],
 		["cg_bat",nil,120,1],
 		["vvv_fishing_rod",nil,120,1],
 		["hgun_mas_ww2_acp_F",nil,3100,1],

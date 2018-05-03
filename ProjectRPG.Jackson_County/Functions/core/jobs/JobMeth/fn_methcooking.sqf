@@ -1,5 +1,5 @@
 AcetoneArray = ["Hinweis: Die Substanz ist zu dunkel!","Hinweis: Die Substanz scheint schwarz zu sein!","Hinweis: Die Substanz ist zu hell!","Hinweis:  Die Substanz ist schneint weiß!","Hinweis: Die Substanz ist kontaminiert"];
-PseudoArray = ["Hinweis: Die Substanz verliert an Farbe!","Hinweis: Die Substanz ist druebe!","Hinweis: Die Substanz ist fast transparent!","Hinweis: Die Substanz wird rosa!","Hinweis: Die Substanz ist sauer!"];
+PseudoArray = ["Hinweis: Die Substanz verliert an Farbe!","Hinweis: Die Substanz ist trübe!","Hinweis: Die Substanz ist fast transparent!","Hinweis: Die Substanz wird rosa!","Hinweis: Die Substanz ist sauer!"];
 CoolArray = ["Hinweis: Zu viel Dampf wird ausgestoßen!","Hinweis: Die Substanz verdampft","Hinweis: Es wird heiß!","Hinweis: Die Substanz schäumt!","Hinweis: Die Substanz riecht nach Öl!","Hinweis: Die Substanz ist sehr dickfluessig!"];
 HeatArray = ["Hinweis: Die Substanz kann nicht durch die Röhre dringen!","Hinweis: Die Substanz ist sehr dick!","Hinweis: Die Substanz sieht aus wie Kleber!","Hinweis: Die Substanz hat eine gummiartige Konsistenz!"];
 ReleaseArray = ["Hinweis: Die Substanz fließt zu schnell!","Hinweis: Der Dampf beginnt zu verdampfen!","Hinweis:Die Fläschchen sehen druebe aus!"];
