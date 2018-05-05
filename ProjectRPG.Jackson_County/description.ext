@@ -190,8 +190,13 @@ class CfgFunctions
 		class PRPG {
 			file = "Functions\core\PRPG";
 			class pizza {};
-
 		};
+
+    class ausweis {
+      file = "Functions\core\PRPG\ausweis";
+      class LicenseShown {};
+      class ShowLicense {};
+    };
 
 		class jobFactions {
 			file = "Functions\core\jobs\JobFactions";

@@ -391,6 +391,11 @@ NoPixel_InteractionMenuItems = [
 		["Lizenz entziehen", " ['Entziehe',5,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
+	[
+		["CurrentCursorTarget isKindOf 'Man'"],
+		["Ausweis Zeigen", "[] spawn client_fnc_ShowLicense;",2]
+	],
+
 	//[
 	//	[" CurrentCursorTarget isKindOf 'Man'", "(myjob == ""Cop"" || myjob == ""EMS"")"],
 	//	["Beweise sammeln", " hint format[""Vor- und Nachname: %1\nSozialversicherung: %2"",name currentcursortarget, getPlayerUID currentcursortarget]; ",2]
