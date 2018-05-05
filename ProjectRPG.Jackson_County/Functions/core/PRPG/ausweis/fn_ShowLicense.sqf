@@ -15,7 +15,7 @@ if(!(alive _target)) exitWith {};
 if (myJob == "cop") then
 {
 	_coplevel = player getVariable ["cop",0];
-	_id = "<img image='\textures\license\police_license.paa' size='8'/>";
+	_id = "<img image='PRPG_Data\textures\license\police_license.paa' size='8'/>";
 
 	switch (_coplevel) do
     {
@@ -38,7 +38,7 @@ if (myJob == "cop") then
 if (myJob == "EMS") then
 {
 	_mediclevel = player getVariable ["ems",0];
-	_id = "<img image='\textures\license\rfa_license.paa' size='8'/>";
+	_id = "<img image='PRPG_Data\textures\license\rfa_license.paa' size='8'/>";
 
 	switch (_mediclevel) do
 	{
