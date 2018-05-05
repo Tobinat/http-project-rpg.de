@@ -365,7 +365,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) && attachedfurniture "],
-		["Platzieren", " [] spawn client_fnc_detach; attachedfurniture = false; ",2]
+		["Platzieren", " [] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
 	],
 
 	[
