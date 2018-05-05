@@ -91,6 +91,7 @@ client_tran=0;
 weedPlantArray = [];
 adminInteractions = 0;
 cheap_buffs = false;
+lastRobbed = 0;
 /*
 	Admin
 */
