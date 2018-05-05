@@ -837,7 +837,8 @@ if(_condition == "medickleidung") then {
 	if(_EMS > 5) then {
 		_ret = [
 			["vvv_hazmat",nil,10,3,1],
-			["vvv_traje_doctor",nil,10,3,1]
+			["vvv_traje_doctor",nil,10,3,1],
+			["EF_F_DR",nil,10,3,1]
 		];
 		_additional = _additional + _ret;
 	};

@@ -31,7 +31,7 @@ if (_jobType == "Wood Logging") exitwith {
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[vehspawned, ["white","Glossy"]] remoteexec ["client_fnc_initVehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
-	//vehspawned addItemCargo ["CUP_U_C_Mechanic_01",1];
+	vehspawned addItemCargo ["R_Uniform_worker_l",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
@@ -39,7 +39,7 @@ if (_jobType == "mail") exitwith {
 	vehspawned = createVehicle ["nopixel_fedex", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
-	//vehspawned addItemCargo ["CUP_U_O_SLA_Overalls_Tank",1];
+	vehspawned addItemCargo ["TRYK_U_B_PCUGs_gry_R",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
@@ -56,7 +56,7 @@ if (_jobType == "repairman") exitwith {
 	[vehspawned, ["white","Glossy"]] spawn client_fnc_initVehicle;
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
-	//vehspawned addItemCargo ["CUP_U_C_Mechanic_02",1];
+	vehspawned addItemCargo ["A3L_Worker_Outfit",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
@@ -74,7 +74,7 @@ if (_jobType == "towtruck") exitwith {
 	[vehspawned] spawn client_fnc_spawnvehicle;
 
 	current_cars pushback vehspawned; uisleep 1;
-	//vehspawned addItemCargo ["CUP_U_C_Mechanic_03",1];
+	vehspawned addItemCargo ["A3L_Worker_Outfit",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
