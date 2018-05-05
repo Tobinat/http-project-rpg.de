@@ -646,8 +646,7 @@ if(_condition == "copwaffen") then {
 	_bulle = [
 		["RH_M9",nil,10,1],
 		["RH_g17",nil,10,1],
-		["DDOPP_X26",nil,10,1],
-		["CG_TELBAT",nil,10,1]
+		["DDOPP_X26",nil,10,1]
 	];
 	if(_cop > 1) then {
 		_ret = [
