@@ -21,13 +21,13 @@ if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) 
 		_sound = round(random 5);
 		playSound3D ["CG_Jobs\sounds\sawing\saw.ogg", player, false, getPosasl player, 7, 1, 25];
 		player additem "NP_Wood";
+		["Processed"] spawn mav_ttm_fnc_addExp;
 		uisleep 0.25;
 		if(dialog) then { closedialog 0; };
 		hint "Du hackst Holz,bleibe am Besten stehn! Eine Axt im Bein kann weh tun."
 	};
 } forEach attachedObjects vehspawned;
 hint "Holz Verarbeitet";
-["Processed"] spawn mav_ttm_fnc_addExp;
 [player,objNull,30,format ["%1 hat Holz gemacht. Menge an verarbeitetem Holz: %2",name player, totalLogs],totalLogs] remoteExec ["server_fnc_actionLog", 2];
 totalLogs = 0;
 

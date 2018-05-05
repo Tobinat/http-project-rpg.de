@@ -45,14 +45,14 @@ NoPixel_InteractionMenuItems = [
 		["Sichere Geldmittel", " ['Sicherung',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
 
-	[ 
-		[" bankrobber == 4 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "], 
-		["Nimm Bargeld", " ['Geld nehmen',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',[CurrentCursorTarget],""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5] 
+	[
+		[" bankrobber == 4 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "],
+		["Nimm Bargeld", " ['Geld nehmen',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',[CurrentCursorTarget],""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
 
-	[ 
-		[" bankrobber == 2 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"""], 
-		["Reparatur Bohrer", " ['Reparatur von Bohrer',60,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5] 
+	[
+		[" bankrobber == 2 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"""],
+		["Reparatur Bohrer", " ['Reparatur von Bohrer',60,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
 
 
@@ -1165,7 +1165,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Cop""", "cursorTarget isKindOf ""Car""", "(typeOf cursorTarget IN np_red_cars)"],
-		["Kenzeichen überpruefen", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Tablica rejestracyjna"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
+		["Kenzeichen überpruefen", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Kennzeichen"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
 	],
 
 	[
