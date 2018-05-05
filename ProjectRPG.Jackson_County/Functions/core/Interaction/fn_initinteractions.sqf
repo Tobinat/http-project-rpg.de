@@ -407,7 +407,7 @@ NoPixel_InteractionMenuItems = [
 	],
 */
 	[
-		["!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man' && !(CurrentCursorTarget getVariable [""ace_captives_isHandcuffed"",false])"],
+		["!(cursortarget getVariable[""dead"",FALSE]) && CursorTarget isKindOf 'Man' && (CursorTarget getVariable [""ace_captives_isHandcuffed"",false])"],
 		["Abtasten", " ['Suche',10,client_fnc_startpatdown,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
@@ -437,7 +437,7 @@ NoPixel_InteractionMenuItems = [
 	],
 */
 	[
-		[" CurrentCursorTarget isKindOf 'Man' && (headgear CurrentCursorTarget) != 'mgsr_headbag' && !(CurrentCursorTarget getVariable [""ace_captives_isHandcuffed"",false])"],
+		[" CurrentCursorTarget isKindOf 'Man' && (headgear CurrentCursorTarget) != 'mgsr_headbag' && (CursorTarget getVariable [""ace_captives_isHandcuffed"",false])"],
 		["Augenbinde anlegen", " ['Blindfolding',5,client_fnc_blindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
@@ -927,7 +927,7 @@ NoPixel_InteractionMenuItems = [
 		["Handwerksmenü", "createdialog ""client_Craft_Menu""",4]
 	],
 
-	[	
+	[
 		["((typeof CursorTarget) IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]) && ((time - (CursorTarget getVariable[""lastRobbed"",0])) > 600) && (player distance cursorTarget < 8) && (currentWeapon player != """")"],
 		["Laden Ausrauben", " [] spawn client_fnc_robShop; ",4]
 	],
