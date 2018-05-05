@@ -52,7 +52,7 @@
 	{
 		scope=2;
 		displayName="Acetone";
-		descriptionShort="I hope you know what to do with this!";
+		descriptionShort="Ich hoffe du weißt was damit zu tun ist!";
 		picture="\PRPG_Data\textures\icons\items\Acetone.paa";
 		model="\A3\structures_f_epa\items\Medical\DisinfectantSpray_F";
 		allowedSlots[]={901};
@@ -72,7 +72,7 @@
 	{
 		scope=2;
 		displayName="100 000$";
-		descriptionShort="I hope you know what to do with this!";
+		descriptionShort="Ich hoffe du weißt was damit zu tun ist!";
 		picture="\PRPG_Data\textures\icons\items\suitcase.paa";
 		model="\A3\structures_f\items\luggage\Suitcase_F";
 		allowedSlots[]={901,801,701};
@@ -82,7 +82,7 @@
 	{
 		scope=2;
 		displayName="50 000$";
-		descriptionShort="I hope you know what to do with this!";
+		descriptionShort="Ich hoffe du weißt was damit zu tun ist!";
 		picture="\PRPG_Data\textures\icons\items\suitcase.paa";
 		model="\A3\structures_f\items\luggage\Suitcase_F";
 		allowedSlots[]={901,801,701};
@@ -92,7 +92,7 @@
 	{
 		scope=2;
 		displayName="25 000$";
-		descriptionShort="I hope you know what to do with this!";
+		descriptionShort="Ich hoffe du weißt was damit zu tun ist!";
 		picture="\PRPG_Data\textures\icons\items\suitcase.paa";
 		model="\PRPG_Data\models\suitcase\suitcase_closed.p3d";
 		allowedSlots[]={901,801,701};
@@ -102,7 +102,7 @@
 	{
 		scope=2;
 		displayName="10 000$";
-		descriptionShort="I hope you know what to do with this!";
+		descriptionShort="Ich hoffe du weißt was damit zu tun ist!";
 		picture="\PRPG_Data\textures\icons\items\suitcase.paa";
 		model="\PRPG_Data\models\suitcase\suitcase_closed.p3d";
 		allowedSlots[]={901,801,701};
@@ -112,7 +112,7 @@
 	{
 		scope=2;
 		displayName="5 000$";
-		descriptionShort="I hope you know what to do with this!";
+		descriptionShort="Ich hoffe du weißt was damit zu tun ist!";
 		picture="\PRPG_Data\textures\icons\items\suitcase.paa";
 		model="\PRPG_Data\models\suitcase\suitcase_closed.p3d";
 		allowedSlots[]={901,801,701};
