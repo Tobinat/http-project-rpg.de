@@ -40,20 +40,20 @@ np_red_cars = [
 
 NoPixel_InteractionMenuItems = [
 
-	//[
-	//	[" typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "],
-	//	["Zabezpiecz pieniądze", " ['Zabezpieczanie pieniędzy',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
-	//],
+	[
+		[" typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "],
+		["Sichere Geldmittel", " ['Sicherung',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
+	],
 
-	//[
-	//	[" bankrobber == 4 "],
-	//	["Zbierz pieniądze", " ['Pakuję pieniądze',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
-	//],
+	[ 
+		[" bankrobber == 4 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "], 
+		["Nimm Bargeld", " ['Geld nehmen',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',[CurrentCursorTarget],""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5] 
+	],
 
-	//[
-	///	[" bankrobber == 2 "],
-	//	["Napraw wiertło", " ['Repairing Drill',120,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
-	//],
+	[ 
+		[" bankrobber == 2 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"""], 
+		["Reparatur Bohrer", " ['Reparatur von Bohrer',60,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5] 
+	],
 
 
 	[
@@ -157,10 +157,10 @@ NoPixel_InteractionMenuItems = [
 		["Darlehen", " [player] remoteexec [""server_fnc_MafiaOwed"",2]; ",1]
 	],
 
-//	[
-//		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && (player getvariable ""mafia"") > 5 "],
-//		["Daj Pożyczkę", " [currentcursortarget] spawn Client_fnc_sl_giveLoan_secure; ",1]
-//	],
+	[
+		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && (player getvariable ""mafia"") > 5 "],
+		["Gib mir einen Kredit", " [currentcursortarget] spawn Client_fnc_sl_giveLoan_secure; ",1]
+	],
 
 	  [
 		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && player getVariable [""Mafia"",0] > 5 "],
