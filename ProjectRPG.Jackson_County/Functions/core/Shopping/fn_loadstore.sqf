@@ -15,7 +15,6 @@ if(_condition == "gunstore") then {
 		["vvv_fishing_rod",nil,120,1],
 		["hgun_Pistol_heavy_01_F",nil,3000,1],
 		["hgun_ACPC2_F",nil,3150,1],
-		["sab_1911_handgun",nil,3210,1],
 		["RH_g17",nil,4600,1],
 		["RH_uspm",nil,7800,1],
 		["RH_kimber",nil,9600,1],
