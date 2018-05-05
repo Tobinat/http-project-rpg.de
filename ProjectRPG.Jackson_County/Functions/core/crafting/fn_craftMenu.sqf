@@ -16,18 +16,8 @@ _materials = ["NP_Wood","np_copperbar1","np_ironbar1","np_silverbar1","CG_OilCan
 
 
 _PistolClasses = [
-	"hgun_mas_ww2_acp_F",
 	"hgun_Pistol_heavy_01_F",
 	"hgun_ACPC2_F",
-	"hgun_mas_ww2_bhp_F",
-	"sab_1911_handgun",
-	"CUP_hgun_Compact",
-	"hgun_mas_ww2_lug_F",
-	"CUP_hgun_Makarov",
-	"CUP_hgun_PB6P9",
-	"CUP_hgun_M9",
-	"CUP_hgun_TaurusTracker455",
-	"hgun_mas_ww2_tt33_F",
 	"RH_uspm",
 	"RH_kimber",
 	"RH_fn57",
@@ -37,10 +27,6 @@ _PistolClasses = [
 ];
 
 _PricesPistolClasses = [
-	//1911 ACP
-	//hgun_mas_ww2_acp_F
-	[3,2,0,0,0],
-
 	//4-five .45 ACP
 	//hgun_Pistol_heavy_01_F
 	[3,0,2,0,0],
@@ -48,42 +34,6 @@ _PricesPistolClasses = [
 	//ACP-C2 .45 ACP
 	//hgun_ACPC2_F
 	[3,2,0,0,0],
-
-	//Browning HP
-	//hgun_mas_ww2_bhp_F
-	[3,1,0,0,0],
-
-	//Colt 1911
-	//sab_1911_handgun
-	[4,0,2,0,0],
-
-	//CZ 75 COMPACT
-	//CUP_hgun_Compact
-	[3,2,0,0,0],
-
-	//Luger
-	//hgun_mas_ww2_lug_F
-	[2,1,0,0,0],
-
-	//Makarov PM
-	//CUP_hgun_Makarov
-	[3,0,1,0,0],
-
-	//PB 6P9
-	//CUP_hgun_PB6P9
-	[3,0,1,0,0],
-
-	//M9
-	//CUP_hgun_M9
-	[3,0,0,1,0],
-
-	//Taurus Tracker Model 455
-	//CUP_hgun_TaurusTracker455
-	[3,0,0,1,0],
-
-	//Tokarev
-	//hgun_mas_ww2_tt33_F
-	[2,0,0,1,1],
 
 	//USP40 Match
 	//RH_uspm
@@ -116,78 +66,40 @@ _PistolMags = [2,1,0,0,0];
 if(myJob == "Mafia" && player getVariable ["Mafia",0] > 4) then {
 
 	_iMafiaClasses = [
-		//small auto
-		"CUP_hgun_MicroUzi",
-		"CUP_hgun_SA61",
+		//Pistols
 		"RH_g18",
 		"RH_tec9",
 		"RH_muzi",
-		"CUP_smg_bizon",
-	//
-		"arifle_mas_ww2_tommy",
-		"arifle_mas_ww2_mp40",
-		"arifle_mas_ww2_ppsh",
-		"arifle_mas_ww2_sten",
-
-		//rifle
-		"CUP_srifle_CZ550_rail",
-		"arifle_mas_ww2_kar98",
-		"CUP_srifle_LeeEnfield_rail",
-		"arifle_mas_ww2_m1g",
-		"arifle_mas_ww2_mos",
-
-		//shotguns & light macs
-		//"CUP_sgun_AA12", zbyt op broń
-		//"CUP_lmg_Mk48_des",
-
-		//launchers
-		"CUP_launch_RPG7V"
-		//"CUP_glaunch_6G30"
+		"RH_bull",
+		"hlc_smg_mp5k"
 	];
 
 
 } else {
 
 	_iMafiaClasses = [
-	//small auto
-		"CUP_hgun_MicroUzi",
-		"CUP_hgun_SA61",
+		//Pistols
 		"RH_g18",
 		"RH_tec9",
-		"RH_muzi"
+		"RH_muzi",
+		"RH_bull",
+		"hlc_smg_mp5k"
 	];
 
 };
 
 
 _iPricesMafiaClasses = [
-	[2,3,0,3,7],
-
-	[1,2,2,2,8],
-
+	//RH_g18
 	[2,3,0,3,11],
-
+	//RH_tec9
 	[1,0,2,1,7],
+	//RH_muzi
 	[0,2,0,1,8],
-	[2,0,0,1,8],
-
-	[5,2,2,2,10],
-	[5,12,1,2,5],
-	[5,2,15,1,4],
-	[5,1,1,11,5],
-
-	[5,2,2,2,25],
-	[5,2,5,5,25],
-	[5,5,5,2,25],
-	[5,2,12,2,25],
-	[5,2,2,12,25],
-
-	//[5,5,25,5,35],
-	//[5,5,5,25,35],
-
-
-	[5,5,5,15,85]
-	//[5,5,5,5,85]
+	//RH_bull
+	[0,2,0,6,4],
+	//hlc_smg_mp5k
+	[0,4,4,6,6]
 ];
 _iMafiaMags = [5,2,2,2,2];
 
@@ -197,7 +109,6 @@ _iMafiaMags = [5,2,2,2,2];
 
 
 _itemList = [
-	//"NP_DrugTable","NP_GrowingPlot","CG_Dynamite","CG_C4","CG_Engine","CG_wheel","CG_HackingTool","CG_Lockpick","CG_MetalWire","NP_drillitem"
 	"NP_DrugTable",
 	"NP_GrowingPlot",
 	"CG_Dynamite",
@@ -224,9 +135,8 @@ _PricesItemList = [
 ];
 
 
-_clothing1 =
-
-		["EF_HM_LPBPS",
+_clothing1 = [
+		"EF_HM_LPBPS",
 		"EF_HM_LPBP",
 		"EF_HM_LPBR",
 		"EF_HM_LPBW",
@@ -287,7 +197,8 @@ _clothing1 =
 		"vvv_character_jennifer"
 ];
 
-_clothing2 = ["vvv_character_rock1",
+_clothing2 = [
+		"vvv_character_rock1",
 		"vvv_character_rock2",
 		"vvv_character_rock3",
 		"vvv_character_rock4",
@@ -313,8 +224,6 @@ _clothing2 = ["vvv_character_rock1",
 		"vvv_character_sport_11",
 		"vvv_character_sport_12",
 		"vvv_character_sport_13",
-		"eaglkes_wwi_ind_pilot_cloth",
-		"eaglkes_wwi_ger_pilot_cloth",
 		"TRYK_HRP_USMC",
 		"TRYK_HRP_khk",
 		"U_mas_ww2_B_CombatUniform_us",
@@ -322,7 +231,8 @@ _clothing2 = ["vvv_character_rock1",
 		"np_shortsleeve_common_1",
 		"vvv_traje_ejecutivo_1",
 		"vvv_character_messi",
-		"vvv_traje_romano"];
+		"vvv_traje_romano"
+	];
 
 
 
