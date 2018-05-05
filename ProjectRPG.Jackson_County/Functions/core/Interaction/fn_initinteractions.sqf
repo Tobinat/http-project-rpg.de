@@ -355,22 +355,22 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance getpos currentcursortarget < 20 && count attachedobjects player == 0 && currentcursortarget IN mychairs "],
-		["Moebelstueck entfernen", " _pia = mychairs FIND currentcursortarget; mychairs DELETEAT _pia; deletevehicle currentcursortarget; ",2]
+		["Möbelstück  entfernen", " _pia = mychairs FIND currentcursortarget; mychairs DELETEAT _pia; deletevehicle currentcursortarget; ",2]
 	],
 
 	[
 		["player distance getpos currentcursortarget < 20 && count attachedobjects player == 0 && currentcursortarget IN mychairs "],
-		["Moebelstueck bewegen", " fuckingcouch = currentcursortarget; fuckingcouch attachto [player,[0,1.8,2]]; attachedfurniture = true; ",2]
+		["Möbelstück bewegen", " fuckingcouch = currentcursortarget; fuckingcouch attachto [player,[0,1.8,2]]; attachedfurniture = true; ",2]
 	],
 
 	[
 		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) && attachedfurniture "],
-		["Platzieren", " [] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
+		["Platzieren", " [] spawn client_fnc_detach; attachedfurniture = false; ",2]
 	],
 
 	[
 		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) && player distance getpos currentcursortarget < 20 && !attachedfurniture "],
-		["Moebelstueck waehlen", " createdialog ""placefurniture"" ",2]
+		["Möbelstück waehlen", " createdialog ""placefurniture"" ",2]
 	],
 
 
