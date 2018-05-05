@@ -5,7 +5,7 @@ pizza
 
 _item = param [0,false,[false]];
 _complete = false;
-_cashCheck = 75;
+_cashCheck = [1,75] call Client_fnc_sl_checkMoney_secure;
 
 
 if(_item) then {
@@ -24,9 +24,9 @@ if(_item) then {
 
 
 	if(cheap_buffs) then { _price = _price * 0.7; cheap_buffs = false; ["Du hast einen Rabatt von 30% durch einen Verkäufer erhalten!", false] spawn domsg; };
-	if(cash < _price) exitWith { ["PIZZA LIEFERANT: Dude...Ich brauche 75$ für diese Ripperino Pizza", false] spawn domsg; _complete = true; };
+	if!(_cashCheck) exitwith { ["PIZZA LIEFERANT: Dude...Ich brauche 75$ für diese Ripperino Pizza", false] spawn domsg; _complete = true; };
 
-	[75] call Client_fnc_sl_removeCash_secure;
+	
 
 	
 };
