@@ -121,4 +121,5 @@ _pumpe animate ["bort_l", 0];
 hint "Der Bohrvorgang ist beendet.";
 
 _fuel = _fuel - 0.4;
-_pumpe setFuel _fuel;
+//_pumpe setFuel _fuel;
+[_pumpe,_fuel] remoteExec ["client_fnc_setFuel",_pumpe];
