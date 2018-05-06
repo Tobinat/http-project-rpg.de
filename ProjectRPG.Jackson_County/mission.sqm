@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1798;
+		nextID=1799;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8978.542,84.747864,5393.8076};
-		dir[]={0.92125845,-0.34489408,0.1801745};
-		up[]={0.338557,0.93860096,0.066215128};
-		aside[]={0.1919485,-1.1915981e-006,-0.98146868};
+		pos[]={9122.7715,58.996872,6402.7295};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -220,24 +220,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -252,6 +234,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -9384,13 +9384,13 @@ class Mission
 		class Item109
 		{
 			dataType="Marker";
-			position[]={9273.2158,0,5576.1396};
+			position[]={1488.205,-7.6810002,1174.469};
 			name="oreRefinery";
-			text="RAW-Verarbeitung";
+			text="Erz Verarbeitung";
 			type="respawn_unknown";
 			colorName="ColorGUER";
 			id=219;
-			atlOffset=-56.488594;
+			atlOffset=-56.506306;
 		};
 		class Item110
 		{
@@ -9406,13 +9406,13 @@ class Mission
 		class Item111
 		{
 			dataType="Marker";
-			position[]={2903.1565,63.305664,3125.0862};
+			position[]={9124.0938,15.222,6430.8828};
 			name="oilRefinery";
-			text="Raffinerie";
+			text="Öl Raffinerie";
 			type="respawn_unknown";
 			colorName="ColorBlack";
 			id=221;
-			atlOffset=-9.9395447;
+			atlOffset=-18.774872;
 		};
 		class Item112
 		{
