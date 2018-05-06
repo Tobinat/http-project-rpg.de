@@ -1174,7 +1174,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["typeof CurrentCursorTarget == ""prpg_kamaz_6550"" && cursortarget animationPhase ""bur_rot"" > 0.99 && !(myjob == ""EMS"" || myJob == ""Fire"" || myJob == ""cop"" ) && ((player distance (getMarkerPos ""marker_5"")) < 25)"],
+		["typeof CurrentCursorTarget == ""prpg_kamaz_6550"" && cursortarget animationPhase ""bur_rot"" > 0.99 && !(myjob == ""EMS"" || myJob == ""Fire"" || myJob == ""cop"" ) && ((player distance (getMarkerPos ""marker_5"")) < 50) && !("CG_OilBarrel" in MagazineCargo cursorTarget)"],
 		["Öl Abpumpen", "[]spawn client_fnc_pumpOil;",4]
 	],
 
