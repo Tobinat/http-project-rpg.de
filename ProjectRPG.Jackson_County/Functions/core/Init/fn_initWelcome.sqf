@@ -6,7 +6,8 @@
 	Creates an intro on the bottom-right hand corner of the screen.
 */
 
-_onScreenTime = 3;
+_onScreenTime = 5;
+playsound "civintro";
 
 sleep 2; //Wait in seconds before the credits start after player is in-game
 _role1 = "Willkommen bei";
@@ -47,4 +48,3 @@ sleep (_onScreenTime);
 [_role4, _role4names],
 [_role5, _role5names]
 ];
-playsound "civintro";
