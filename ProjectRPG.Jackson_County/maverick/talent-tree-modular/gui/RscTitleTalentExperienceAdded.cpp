@@ -10,7 +10,7 @@ class TTM_GUI_RscTitleExperienceAdded
 
 	class controls
 	{
-		class RscText_1000: RscText
+		class RscText_1000: Life_RscText
 		{
 			idc = -1;
 			x = 0.345312 * safezoneW + safezoneX;
@@ -19,7 +19,7 @@ class TTM_GUI_RscTitleExperienceAdded
 			h = 0.011 * safezoneH;
 			colorBackground[] = {1,1,1,0.35};
 		};
-		class textExpInfo: RscStructuredText
+		class textExpInfo: Life_RscStructuredText
 		{
 			idc = 3;
 			text = ""; //--- ToDo: Localize;
@@ -29,7 +29,7 @@ class TTM_GUI_RscTitleExperienceAdded
 			h = 0.022 * safezoneH;
 			colorText[] = {0,0,0,1};
 		};
-		class textActionText: RscStructuredText
+		class textActionText: Life_RscStructuredText
 		{
 			idc = 4;
 			text = ""; //--- ToDo: Localize;
@@ -39,7 +39,7 @@ class TTM_GUI_RscTitleExperienceAdded
 			h = 0.022 * safezoneH;
 			colorText[] = {0,0,0,1};
 		};
-		class progressLevelProgress: RscProgress
+		class progressLevelProgress: Life_RscProgress
 		{
 			idc = 5;
 			x = 0.345312 * safezoneW + safezoneX;

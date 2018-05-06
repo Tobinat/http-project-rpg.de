@@ -6,7 +6,7 @@ class TTM_GUI_RscDisplayTalentOverview {
     onLoad = "[_this, 'onLoad'] spawn TTM_GUI_master_script;";
 
     class controls {
-		class RscText_1000: RscText
+		class RscText_1000: Life_RscText
 		{
 			idc = -1;
 
@@ -16,7 +16,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 0.473 * safezoneH;
 			colorBackground[] = {0.12,0.14,0.16,0.8};
 		};
-		class RscText_1001: RscText
+		class RscText_1001: Life_RscText
 		{
 			idc = -1;
 			x = 0.298906 * safezoneW + safezoneX;
@@ -25,7 +25,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 0.066 * safezoneH;
 			colorBackground[] = {0.99,0.49,0,1};
 		};
-		class RscText_1003: RscText
+		class RscText_1003: Life_RscText
 		{
 			idc = -1;
 			x = 0.340156 * safezoneW + safezoneX;
@@ -34,7 +34,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 0.011 * safezoneH;
 			colorBackground[] = {1,1,1,1};
 		};
-		class textCurrentRank: RscStructuredText
+		class textCurrentRank: Life_RscStructuredText
 		{
 			idc = 3;
 			text = ""; //--- ToDo: Localize;
@@ -44,7 +44,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 0.066 * safezoneH;
 			sizeEx = 2.7 * 0.04;
 		};
-		class RscText_1002: RscText
+		class RscText_1002: Life_RscText
 		{
 			idc = -1;
 			x = 0.340156 * safezoneW + safezoneX;
@@ -54,7 +54,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			//colorBackground[] = {0.98,0.74,0.1,1};
 			colorBackground[] = {1,1,1,0.5};
 		};
-		class textRankName: RscText
+		class textRankName: Life_RscText
 		{
 			idc = 4;
 			text = ""; //--- ToDo: Localize;
@@ -65,7 +65,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			sizeEx = 1.5 * 0.04;
 			shadow = 0;
 		};
-		class textStatusInfo: RscText
+		class textStatusInfo: Life_RscText
 		{
 			idc = 5;
 			text = ""; //--- ToDo: Localize;
@@ -75,7 +75,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 0.022 * safezoneH;
 			shadow = 0;
 		};
-		class RscText_1700: RscText
+		class RscText_1700: Life_RscText
 		{
 			idc = -1;
 			x = 0.340156 * safezoneW + safezoneX;
@@ -84,7 +84,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 0.011 * safezoneH;
     		colorBackground[] = {1,1,1,1};
 		};
-		class progressRankProgress: RscProgress
+		class progressRankProgress: Life_RscProgress
 		{
 			idc = 6;
 			x = 0.340156 * safezoneW + safezoneX;
@@ -167,7 +167,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			colorDisabled[] = {0,0,0,0}; // Does nothing, but must be present, otherwise an error is shown
 			colorArrow[] = {0,0,0,0}; // Does nothing, but must be present, otherwise an error is shown
 		};
-		class textPerkName: RscText
+		class textPerkName: Life_RscText
 		{
 			idc = 8;
 			text = "PERK NAME"; //--- ToDo: Localize;
@@ -178,7 +178,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			sizeEx = 2 * 0.04;
 			shadow = 2;
 		};
-		class textPerkSubtitle: RscText
+		class textPerkSubtitle: Life_RscText
 		{
 			idc = 9;
 			text = "PERK SUBTITLE"; //--- ToDo: Localize;
@@ -188,7 +188,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 0.022 * safezoneH;
 			shadow = 2;
 		};
-		class textPerkDescription: RscStructuredText
+		class textPerkDescription: Life_RscStructuredText
 		{
 			idc = 11;
 			x = 0.494844 * safezoneW + safezoneX;
@@ -197,7 +197,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 0.33 * safezoneH;
 			shadow = 2;
 		};
-		class RscButton_1600: RscButtonMenu
+		class RscButton_1600: Life_RscButtonMenu
 		{
 			idc = 10;
 			text = "PURCHASE"; //--- ToDo: Localize;

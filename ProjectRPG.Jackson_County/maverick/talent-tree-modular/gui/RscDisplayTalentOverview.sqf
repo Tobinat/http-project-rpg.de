@@ -46,10 +46,10 @@ try {
 		_ctrlTextRankName ctrlSetText getText (_currentLevelConfig >> "displayName");
 
 		if (isClass _nextLevelConfig) then {
-			_ctrlTextStatusInfo ctrlSetText format ["XP: %1/%2, Posiadane Punkty Umiej.: %3", life_currentExp - _currentLevelBottomExp, _currentLevelTopExp - _currentLevelBottomExp, life_currentPerkPoints];
+			_ctrlTextStatusInfo ctrlSetText format ["XP: %1/%2, Perk Points Available: %3", life_currentExp - _currentLevelBottomExp, _currentLevelTopExp - _currentLevelBottomExp, life_currentPerkPoints];
 			_ctrlProgress progressSetPosition _currentLevelProgress;
 		} else {
-			_ctrlTextStatusInfo ctrlSetText format ["XP: %1, Maksymalny LVL, Posiadane Punkty Umiej.: %2", life_currentExp - _currentLevelBottomExp, life_currentPerkPoints];
+			_ctrlTextStatusInfo ctrlSetText format ["XP: %1, Maximum Level, Perk Points Available: %2", life_currentExp - _currentLevelBottomExp, life_currentPerkPoints];
 			_ctrlProgress progressSetPosition 1;
 		};
 	};
@@ -172,26 +172,26 @@ try {
 					if (_hasParents) then {
 						if (!_ownsPerk) then {
 							if ((getNumber (_selectedPerkConfig >> "requiredPerkPoints")) > life_currentPerkPoints) then {
-								_ctrlBtnPurchase ctrlSetText "Fuer einen kleinen Punkt";
+								_ctrlBtnPurchase ctrlSetText "INSUFFICIENT POINTS";
 								_ctrlBtnPurchase ctrlEnable false;
 							} else {
-								_ctrlBtnPurchase ctrlSetText "Kaufen";
+								_ctrlBtnPurchase ctrlSetText "PURCHASE";
 								_ctrlBtnPurchase ctrlEnable true;
 							};
 						} else {
-							_ctrlBtnPurchase ctrlSetText "Erworben";
+							_ctrlBtnPurchase ctrlSetText "ALREADY PURCHASED";
 							_ctrlBtnPurchase ctrlEnable false;
 						};
 					} else {
-						_ctrlBtnPurchase ctrlSetText "Kann nicht erworben werden";
+						_ctrlBtnPurchase ctrlSetText "NOT PURCHASABLE";
 						_ctrlBtnPurchase ctrlEnable false;
 					};
 				} else {
-					_ctrlBtnPurchase ctrlSetText "Zu geringes LVL";
+					_ctrlBtnPurchase ctrlSetText "HIGHER LEVEL REQ.";
 					_ctrlBtnPurchase ctrlEnable false;
 				};
 			} else {
-				_ctrlBtnPurchase ctrlSetText "Falsche Fraktion";
+				_ctrlBtnPurchase ctrlSetText "WRONG FACTION";
 				_ctrlBtnPurchase ctrlEnable false;
 			};
 		};
@@ -200,6 +200,14 @@ try {
 		{
 			private _selectedPerkConfig = missionConfigFile >> "Maverick_TTM" >> "Perks" >> (_ctrlTreeOverview tvData (tvCurSel _ctrlTreeOverview));
 
+			if ((getNumber (_selectedPerkConfig >> "requiredPerkPoints")) > life_currentPerkPoints) exitWith {
+				hint "You do not have enough perk points to purchase this perk!";
+			};
+			
+			if ((getNumber (_selectedPerkConfig >> "requiredPerkPoints")) > life_currentPerkPoints) then {
+				hint "You do not have the required level to unlock this perk!";
+			};
+			
 			private _toFind = configName _selectedPerkConfig;
 
 			private _exit = false;
@@ -228,10 +236,10 @@ try {
 
 			life_currentExpPerks call _iterate;
 
-			hint "Faehigkeit erworben!";
+			hint "Perk purchased";
 
 			// -- Disable purchase button
-			_ctrlBtnPurchase ctrlSetText "Erworben!";
+			_ctrlBtnPurchase ctrlSetText "PURCHASED!";
 			_ctrlBtnPurchase ctrlEnable false;
 
 			// -- Subtract perk points
