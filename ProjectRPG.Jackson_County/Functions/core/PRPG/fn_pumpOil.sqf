@@ -12,8 +12,8 @@ if !(cursorTarget animationPhase "bur_rot" > 0.99) exit with {
 if ("CG_OilBarrel" in MagazineCargo cursorTarget) exit with {
 	hint "Du hast bereits Öl in deinem LKW, entlere ihn erst einmal!"
 	};
-if (marker_5 distance getpos player < 50) exit with {
-	hint "Du hast am Falschen Ort gebohrt und nun wasser in den Leitungen."
+if (player distance [9500.73,9700.02,0.00143892] > 35) exit with {
+	hint "Du hast am Falschen Ort gebohrt und nun wasser in den Leitungen"
 	};
 
 cursorTarget addItemCargo ["CG_OilBarrel", 6];
