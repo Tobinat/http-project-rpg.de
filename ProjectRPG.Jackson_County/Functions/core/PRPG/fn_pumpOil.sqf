@@ -71,7 +71,7 @@ if (_chance > 5) then {
 	_pumpe addItemCargo ["CG_OilBarrel", 6];
 	["OreGathered"] spawn mav_ttm_fnc_addExp;
 	hint "Du hast Öl gesammelt";
-	} esle {
+	} else {
 	hint "Der Bohrer konnte kein Öl finden! Versuche es noch einmal.";
 };
 
