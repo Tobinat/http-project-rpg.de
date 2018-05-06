@@ -2,9 +2,9 @@
 pole fishing by koil
 */
 private["_chance"];
-/* if(imfishing) exitwith {};
-imfishing = true; */
-	player playmove "AwopPercMstpSgthWrflDnon_start2";
+	if(imfishing) exitwith {};
+	imfishing = true;
+	player playMoveNow "AwopPercMstpSgthWrflDnon_Throw1";
 	sleep 1;
 	_dirAdd = (-30) + random(60);
 	_speed = 20;
