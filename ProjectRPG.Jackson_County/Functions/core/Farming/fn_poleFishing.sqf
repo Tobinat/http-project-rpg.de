@@ -4,7 +4,7 @@ pole fishing by koil
 private["_chance"];
 if(imfishing) exitwith {};
 imfishing = true;
-	player playmove "AwopPercMstpSgthWrflDnon_start1";
+	player playmove "AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthEnd";
 	sleep 1;
 	_dirAdd = (-30) + random(60);
 	_speed = 20;
