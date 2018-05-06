@@ -1174,7 +1174,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["typeof CurrentCursorTarget == ""prpg_kamaz_6550"" && cursortarget animationPhase ""bur_rot"" > 0.99 && ((player distance (getMarkerPos ""marker_5"")) < 50)"],
+		["typeof CurrentCursorTarget == ""prpg_kamaz_6550"" && ((cursorTarget distance (getMarkerPos ""marker_5"")) < 50)"],
 		["Öl Abpumpen", "[]spawn client_fnc_pumpOil;",4]
 	],
 
