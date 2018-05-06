@@ -68,15 +68,11 @@ sleep 5;
 // Öl in LKW & XP an spieler
 _chance = random (100);
 if (_chance > 5) then {
-
-	cursorTarget addItemCargo ["CG_OilBarrel", 6];
+	_pumpe addItemCargo ["CG_OilBarrel", 6];
 	["OreGathered"] spawn mav_ttm_fnc_addExp;
 	hint "Du hast Öl gesammelt";
-	
 	} esle {
-	
-	hint "Der Bohrer konnte kein Öl finden! Versuche es noch einmal."
-	
+	hint "Der Bohrer konnte kein Öl finden! Versuche es noch einmal.";
 };
 
 sleep 2;
@@ -122,7 +118,7 @@ _pumpe animate ["dizel_slang", 0];
 _pumpe animate ["bort_r", 0];
 _pumpe animate ["bort_l", 0];
 
-hint "Der Bohrvorgang ist beendet."
+hint "Der Bohrvorgang ist beendet.";
 
 _fuel = _fuel - 0.4;
 _pumpe setFuel _fuel;
