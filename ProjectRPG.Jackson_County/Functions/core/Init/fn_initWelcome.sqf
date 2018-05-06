@@ -47,3 +47,4 @@ sleep (_onScreenTime);
 [_role4, _role4names],
 [_role5, _role5names]
 ];
+playsound "civintro";

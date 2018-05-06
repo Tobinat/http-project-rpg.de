@@ -158,6 +158,7 @@ class CfgFunctions
 			class raidhouse {};
 			class copmapmarkers {};
 			class policeClothes{};
+			class giveCards{};
 		};
 
 		class Wanted {
@@ -1485,6 +1486,24 @@ class CfgSounds {
         };
         titles[] = {};
     };
+
+	
+	class copintro {
+        name = "copintro";
+        sound[] = {
+            "@PRPG_Data\sounds\copintro.ogg",1,1};
+        titles[] = {};
+    };
+	
+	class civintro {
+        name = "civintro";
+        sound[] = {
+            "@PRPG_Data\sounds\civintro.ogg",1,1};
+        titles[] = {};
+    };
+	
+	
+	
 };
 
 

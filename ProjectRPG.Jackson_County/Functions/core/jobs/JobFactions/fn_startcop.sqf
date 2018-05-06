@@ -11,4 +11,8 @@ player setvariable ["lastsave",_items, false];
 
 
 [] call client_fnc_ChangePolice;
+[] call client_fnc_giveCards;
+
+
+playsound "copintro";
 //[] call client_fnc_jobEnd;
