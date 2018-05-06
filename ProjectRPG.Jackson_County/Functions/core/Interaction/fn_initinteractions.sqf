@@ -1174,7 +1174,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["cursorTarget ==""prpg_kamaz_6550"" && cursortarget animationPhase 'bur_rot' > 0.99 && (myjob == ""EMS"" || myJob == ""Fire"" || myJob == ""cop"" )"],
+		["typeof CurrentCursorTarget == ""prpg_kamaz_6550"" && cursortarget animationPhase ""bur_rot"" > 0.99 && !(myjob == ""EMS"" || myJob == ""Fire"" || myJob == ""cop"" )"],
 		["Öl Abpumpen", "[]spawn client_fnc_pumpOil;",4]
 	],
 
