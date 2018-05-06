@@ -30,10 +30,10 @@ for "_i" from 0 to 1 step 0 do {
 	if(player distance2D _pos > 10) exitWith {_error = "Abgebrochen wegen entfernung"; };
 	if(currentWeapon player == "") exitWith { _error = "Abgebrochen wegen nicht gezogener Waffe"; };
 };
- /* _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='1'>%2</t>",_task,_error];
+_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='1'>%2</t>",_task,_error];
 sleep 1;
 player say "slideout";
-_POPUP ctrlSetStructuredText parseText format["",_task,_timeLeft]; */
+_POPUP ctrlSetStructuredText parseText format["",_task,_timeLeft]; 
 
 if(_error == "") then {
 
