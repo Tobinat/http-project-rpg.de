@@ -83,7 +83,7 @@ sleep 1;
 //Pump vorgang Beenden
 _pumpe animate ["truba_hide", 0];
 
-waitUntil {_pumpe animationPhase 'truba_hide' < 0.0001 };
+waitUntil {_pumpe animationPhase 'truba_hide' < 0.001 };
 sleep 1;
 
 //Bohrer hochfahren
@@ -91,7 +91,7 @@ _pumpe animate ["bur_plate", 0];
 _pumpe animate ["bur", 0];
 _pumpe animate ["bur_rot", 0];
 
-waitUntil {_pumpe animationPhase 'bur_rot' < 0.0001 };
+waitUntil {_pumpe animationPhase 'bur_rot' < 0.001 };
 sleep 1;
 
 //Bohrarm einfahren
@@ -99,7 +99,7 @@ _pumpe animate ["strela", 0];
 _pumpe animate ["gidra", 0];
 _pumpe animate ["stok", 0];
 
-waitUntil {_pumpe animationPhase 'strela' < 0.0001 };
+waitUntil {_pumpe animationPhase 'strela' < 0.001 };
 sleep 1;
 
 //Stützen einfahren
@@ -108,7 +108,7 @@ _pumpe animate ["opora_r", 0];
 _pumpe animate ["opora_l_niz", 0];
 _pumpe animate ["opora_r_niz", 0];
 
-waitUntil {_pumpe animationPhase 'opora_l' < 0.0001 };
+waitUntil {_pumpe animationPhase 'opora_l' < 0.001 };
 sleep 1;
 
 //Pumpe aus
