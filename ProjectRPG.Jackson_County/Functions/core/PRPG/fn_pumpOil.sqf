@@ -14,7 +14,7 @@ if !("CG_OilBarrel" in MagazineCargo cursorTarget) then {
 	};
 */
 
-cursorTarget = _pumpe;
+_pumpe = cursorTarget;
 _fuel = fuel _pumpe;
 if (_fuel < 0.4) exitWith {
 hint "Du hast nicht genug Benzin im Tank um den Motor für einen ganzen Bohrvorgang zu betreiben";
