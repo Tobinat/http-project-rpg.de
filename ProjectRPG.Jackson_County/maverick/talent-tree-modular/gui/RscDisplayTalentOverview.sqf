@@ -199,7 +199,16 @@ try {
 		case "onButtonPurchaseClick":
 		{
 			private _selectedPerkConfig = missionConfigFile >> "Maverick_TTM" >> "Perks" >> (_ctrlTreeOverview tvData (tvCurSel _ctrlTreeOverview));
-
+			
+			if ((getNumber (_selectedPerkConfig >> "requiredPerkPoints")) > life_currentPerkPoints) exitWith {
+				hint "You do not have enough perk points to purchase this perk!";
+			};
+			
+			if ((getNumber (_selectedPerkConfig >> "requiredPerkPoints")) > life_currentPerkPoints) then {
+				hint "You do not have the required level to unlock this perk!";
+			};
+			
+			
 			private _toFind = configName _selectedPerkConfig;
 
 			private _exit = false;
