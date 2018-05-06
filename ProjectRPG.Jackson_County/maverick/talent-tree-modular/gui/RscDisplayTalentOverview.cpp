@@ -37,11 +37,11 @@ class TTM_GUI_RscDisplayTalentOverview {
 		{
 			idc = 3;
 
-			x = 0.5 * GUI_GRID_W + GUI_GRID_X;
-			y = -1 * GUI_GRID_H + GUI_GRID_Y;
-			w = 4 * GUI_GRID_W;
-			h = 3 * GUI_GRID_H;
-			sizeEx = 2.7 * 0.04 * 	(0.04) * GUI_GRID_H;
+			x = 0 * GUI_GRID_W + GUI_GRID_X;
+			y = -2 * GUI_GRID_H + GUI_GRID_Y;
+			w = 5 * GUI_GRID_W;
+			h = 4 * GUI_GRID_H;
+			sizeEx = 2.7 * 0.04 * (0.04) * (0.04) * GUI_GRID_H;
 		};
 		class RscText_1002: RscText
 		{
@@ -68,10 +68,10 @@ class TTM_GUI_RscDisplayTalentOverview {
 			idc = 5;
 			shadow = 0;
 
-			x = 5 * GUI_GRID_W + GUI_GRID_X;
-			y = 1 * GUI_GRID_H + GUI_GRID_Y;
-			w = 27.1212 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+			x = 5.12 * GUI_GRID_W + GUI_GRID_X;
+			y = -0.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 31.5 * GUI_GRID_W;
+			h = 2.5 * GUI_GRID_H;
 		};
 		class RscText_1700: RscText
 		{
