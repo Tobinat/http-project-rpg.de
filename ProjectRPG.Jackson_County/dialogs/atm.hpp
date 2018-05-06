@@ -63,24 +63,25 @@ class ATMmafia
 		};  
 
 
-		class RscText_1002: RscText
-		{
-			idc = 1002;
-			text = ""; //--- ToDo: Localize; balance
-			x = 0.17;
-			y = 0.25;
-			w = 0.09875 * safezoneW;
-			h = 0.0329871 * safezoneH;
-		};
-		class RscText_1004: RscText
-		{
-			idc = 1004;
-			text = ""; //--- ToDo: Localize; cash balance
-			x = 0.17;
-			y = 0.35;
-			w = 0.09875 * safezoneW;
-			h = 0.0329871 * safezoneH;
-		};
+		
+class RscText_1002: RscText
+{
+	idc = 1002;
+
+	x = 8 * GUI_GRID_W + GUI_GRID_X;
+	y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 10.5 * GUI_GRID_W;
+	h = 2 * GUI_GRID_H;
+};
+class RscText_1004: RscText
+{
+	idc = 1004;
+
+	x = 7.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 7.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 11 * GUI_GRID_W;
+	h = 2.5 * GUI_GRID_H;
+};
 
 		class RscEdit_1400: RscEdit
 		{
