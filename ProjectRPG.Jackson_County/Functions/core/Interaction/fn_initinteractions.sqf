@@ -1130,7 +1130,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["ClientArrested && (str CurrentCursorTarget find ""gymbench"" > -1 || str CurrentCursorTarget find ""gymrack""> -1 ) && getpos player distance [5644.19,6329.73,0.00143433] < 55"],
-		["Stelle Dietrich her", "[""Baue Polenschluessel"",60,client_fnc_craftlockpick,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
+		["Stelle Dietrich her", "[""Baue Polenschlüssel"",60,client_fnc_craftlockpick,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[
@@ -1171,6 +1171,11 @@ NoPixel_InteractionMenuItems = [
 	[
 		["myjob == ""Repairman"""],
 		["Repariere das Objekt", "[""Ich repariere das Objekt"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+	],
+
+	[
+		["cursorTarget ==""prpg_kamaz_6550"" && cursortarget animationPhase 'bur_rot' > 0.99 && (myjob == ""EMS"" || myJob == ""Fire"" || myJob == ""cop"" )"],
+		["Öl Abpumpen", "[]spawn client_fnc_pumpOil;",4]
 	],
 
 	[

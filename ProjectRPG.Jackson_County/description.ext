@@ -190,6 +190,7 @@ class CfgFunctions
 		class PRPG {
 			file = "Functions\core\PRPG";
 			class pizza {};
+  		class pumpOil {};
 		};
 
     class ausweis {
