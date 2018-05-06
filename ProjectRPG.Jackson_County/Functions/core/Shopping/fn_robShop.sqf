@@ -24,11 +24,12 @@ for "_i" from 0 to 1 step 0 do {
 	_timeLeft = _timeLeft - 1;
 	if(_timeLeft == 330) then { playSound3D ["PRPG_Data\sounds\shopAlarm.ogg", _shop, false, getPosASL _shop, 5, 1, 150]; [player] remoteExec ["server_fnc_robberyCall", 2];};
 	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
-	if(_timeLeft == 0) exitwith {};
+	
 	
 	if(DeadPlayer) exitwith { _success = false; _error = "Dead Player"; };	
 	if(player distance2D _pos > 10) exitWith {_error = "Abgebrochen wegen entfernung"; };
 	if(currentWeapon player == "") exitWith { _error = "Abgebrochen wegen nicht gezogener Waffe"; };
+	if(_timeLeft == 0) exitwith {};
 };
 _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='1'>%2</t>",_task,_error];
 sleep 1;
