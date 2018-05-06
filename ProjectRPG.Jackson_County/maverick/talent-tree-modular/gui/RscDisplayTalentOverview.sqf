@@ -46,7 +46,7 @@ try {
 		_ctrlTextRankName ctrlSetText getText (_currentLevelConfig >> "displayName");
 
 		if (isClass _nextLevelConfig) then {
-			_ctrlTextStatusInfo ctrlSetText format ["XP: %1/%2, Posiadane Punkty Umiej.: %3", life_currentExp - _currentLevelBottomExp, _currentLevelTopExp - _currentLevelBottomExp, life_currentPerkPoints];
+			_ctrlTextStatusInfo ctrlSetText format ["XP: %1/%2, Eigene Fähigkeitspunkte.: %3", life_currentExp - _currentLevelBottomExp, _currentLevelTopExp - _currentLevelBottomExp, life_currentPerkPoints];
 			_ctrlProgress progressSetPosition _currentLevelProgress;
 		} else {
 			_ctrlTextStatusInfo ctrlSetText format ["XP: %1, Maksymalny LVL, Posiadane Punkty Umiej.: %2", life_currentExp - _currentLevelBottomExp, life_currentPerkPoints];
@@ -172,7 +172,7 @@ try {
 					if (_hasParents) then {
 						if (!_ownsPerk) then {
 							if ((getNumber (_selectedPerkConfig >> "requiredPerkPoints")) > life_currentPerkPoints) then {
-								_ctrlBtnPurchase ctrlSetText "Fuer einen kleinen Punkt";
+								_ctrlBtnPurchase ctrlSetText "Für einen kleinen Punkt";
 								_ctrlBtnPurchase ctrlEnable false;
 							} else {
 								_ctrlBtnPurchase ctrlSetText "Kaufen";
