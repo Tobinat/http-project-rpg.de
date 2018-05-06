@@ -29,7 +29,7 @@ missionNamespace setVariable [
 	try {
 		// -- Dialog script location
 		private _scriptLocation = getText (_x >> "scriptPath");
-		if (_scriptLocation == "") throw format ["Dialog %1 does not implement scriptPath", configName _x];
+		//if (_scriptLocation == "") throw format ["Dialog %1 does not implement scriptPath", configName _x];
 
 		// -- Load script
 		private _dialogScriptAsString = preprocessFileLineNumbers _scriptLocation;
