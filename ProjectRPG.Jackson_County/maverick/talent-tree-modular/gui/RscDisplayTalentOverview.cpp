@@ -8,109 +8,98 @@ class TTM_GUI_RscDisplayTalentOverview {
     class controls {
 		class RscText_1000: RscText
 		{
-			idc = -1;
-
-			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.291 * safezoneH + safezoneY;
-			w = 0.402187 * safezoneW;
-			h = 0.473 * safezoneH;
+			idc = 1000;
+			x = 0.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 3 * GUI_GRID_H + GUI_GRID_Y;
+			w = 39 * GUI_GRID_W;
+			h = 21.5 * GUI_GRID_H;
 			colorBackground[] = {0.12,0.14,0.16,0.8};
 		};
 		class RscText_1001: RscText
 		{
-			idc = -1;
-			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.236 * safezoneH + safezoneY;
-			w = 0.04125 * safezoneW;
-			h = 0.066 * safezoneH;
+			idc = 1001;
+			x = 0.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 4 * GUI_GRID_W;
+			h = 3 * GUI_GRID_H;
 			colorBackground[] = {0.99,0.49,0,1};
 		};
 		class RscText_1003: RscText
-		{
-			idc = -1;
-			x = 0.340156 * safezoneW + safezoneX;
-			y = 0.291 * safezoneH + safezoneY;
-			w = 0.360937 * safezoneW;
-			h = 0.011 * safezoneH;
-			colorBackground[] = {1,1,1,1};
-		};
+{
+	idc = 1002;
+	x = 4.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 35 * GUI_GRID_W;
+	h = 0.5 * GUI_GRID_H;
+	colorBackground[] = {1,1,1,1};
+};
 		class textCurrentRank: RscStructuredText
 		{
 			idc = 3;
-			text = ""; //--- ToDo: Localize;
-			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.236 * safezoneH + safezoneY;
-			w = 0.04125 * safezoneW;
-			h = 0.066 * safezoneH;
-			sizeEx = 2.7 * 0.04;
+
+			x = 0.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 0 * GUI_GRID_H + GUI_GRID_Y;
+			w = 4 * GUI_GRID_W;
+			h = 3 * GUI_GRID_H;
+			sizeEx = 2.7 * 0.04 * GUI_GRID_H;
 		};
 		class RscText_1002: RscText
 		{
-			idc = -1;
-			x = 0.340156 * safezoneW + safezoneX;
-			y = 0.236 * safezoneH + safezoneY;
-			w = 0.360937 * safezoneW;
-			h = 0.066 * safezoneH;
-			//colorBackground[] = {0.98,0.74,0.1,1};
+			idc = 1003;
+			x = 4.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 35 * GUI_GRID_W;
+			h = 3 * GUI_GRID_H;
 			colorBackground[] = {1,1,1,0.5};
 		};
 		class textRankName: RscText
 		{
 			idc = 4;
-			text = ""; //--- ToDo: Localize;
-			x = 0.343156 * safezoneW + safezoneX;
-			y = 0.245 * safezoneH + safezoneY;
-			w = 0.1979687 * safezoneW;
-			h = 0.022 * safezoneH;
-			sizeEx = 1.5 * 0.04;
 			shadow = 0;
+
+			x = 5 * GUI_GRID_W + GUI_GRID_X;
+			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 19.197 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+			sizeEx = 1.5 * 0.04 * GUI_GRID_H;
 		};
 		class textStatusInfo: RscText
 		{
 			idc = 5;
-			text = ""; //--- ToDo: Localize;
-			x = 0.343156 * safezoneW + safezoneX;
-			y = 0.2655 * safezoneH + safezoneY;
-			w = 0.279687 * safezoneW;
-			h = 0.022 * safezoneH;
 			shadow = 0;
+
+			x = 5 * GUI_GRID_W + GUI_GRID_X;
+			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 27.1212 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
 		};
 		class RscText_1700: RscText
 		{
-			idc = -1;
-			x = 0.340156 * safezoneW + safezoneX;
-			y = 0.291 * safezoneH + safezoneY;
-			w = 0.360937 * safezoneW;
-			h = 0.011 * safezoneH;
-    		colorBackground[] = {1,1,1,1};
+			idc = 1006;
+			x = 4.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 3 * GUI_GRID_H + GUI_GRID_Y;
+			w = 35 * GUI_GRID_W;
+			h = 0.5 * GUI_GRID_H;
+			colorBackground[] = {1,1,1,1};
 		};
 		class progressRankProgress: RscProgress
 		{
 			idc = 6;
-			x = 0.340156 * safezoneW + safezoneX;
-			y = 0.291 * safezoneH + safezoneY;
-			w = 0.360937 * safezoneW;
-			h = 0.011 * safezoneH;
-			colorFrame[] = {0,0,0,0};
-    		colorBackground[] = {0,0,0,0};
-   	 		colorBar[] = {0.99,0.49,0,1};
+			colorBar[] = {0.99,0.49,0,1};
+
+			x = 4.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 35 * GUI_GRID_W;
+			h = 0.5 * GUI_GRID_H;
 		};
-		class treeSkillsOverview
+		class treeSkillsOverview: RscText
 		{
 			onTreeSelChanged = "[_this, 'onTreeSelectionChanged'] spawn TTM_GUI_master_script;";
-
 			idc = 7;
 			type = 12;
 			default = 0;
 			style = 2;
 			blinkingPeriod = 0;
-			x = 0.304062 * safezoneW + safezoneX;
-			y = 0.313 * safezoneH + safezoneY;
-			w = 0.180469 * safezoneW;
-			h = 0.44 * safezoneH;
-			colorBackground[] = {0,0,0,0.2};
-			sizeEx = 0.04;
-
 			picture = "";
 			colorPicture[] = {1,1,1,1};
 			colorPictureSelected[] = {1,1,1,1};
@@ -121,97 +110,84 @@ class TTM_GUI_RscDisplayTalentOverview {
 			colorPictureLeft[] = {1,1,1,1};
 			colorPictureLeftSelected[] = {1,1,1,1};
 			colorPictureLeftDisabled[] = {1,1,1,1};
-
 			font = "RobotoCondensed";
-
 			rowHeight = 0.0439091;
-		    color[] = {1, 1, 1, 1};
-		    colorSelect[] = {0.7, 0.7, 0.7, 1};
-		    colorSelectBackground[] = {0, 0, 0, 0.5};
-		    colorBorder[] = {0, 0, 0, 0};
-		    borderSize = 0;
+			color[] = {1,1,1,1};
+			colorSelect[] = {0.7,0.7,0.7,1};
+			colorSelectBackground[] = {0,0,0,0.5};
+			colorBorder[] = {0,0,0,0};
+			borderSize = 0;
+			colorMarked[] = {1,0.5,0,0.5};
+			colorMarkedSelected[] = {1,0.5,0,1};
+			colorSelectText[] = {1,1,1,1};
+			colorMarkedText[] = {1,1,1,1};
+			tooltipColorShade[] = {0,0,0,1};
+			tooltipColorText[] = {1,1,1,1};
+			tooltipColorBox[] = {1,1,1,1};
+			multiselectEnabled = 1;
+			expandOnDoubleclick = 1;
+			hiddenTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\hiddenTexture_ca.paa";
+			expandedTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\expandedTexture_ca.paa";
+			maxHistoryDelay = 1;
+			colorDisabled[] = {0,0,0,0};
+			colorArrow[] = {0,0,0,0};
 
-			colorMarked[] = {1,0.5,0,0.5}; // Marked item fill color (when multiselectEnabled is 1)
-			colorMarkedSelected[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 1)
-
-			colorText[] = {1,1,1,1}; // Text color
-			colorSelectText[] = {1,1,1,1}; // Selected text color (when multiselectEnabled is 0)
-			colorMarkedText[] = {1,1,1,1}; // Selected text color (when multiselectEnabled is 1)
-
-			tooltip = "CT_TREE"; // Tooltip text
-			tooltipColorShade[] = {0,0,0,1}; // Tooltip background color
-			tooltipColorText[] = {1,1,1,1}; // Tooltip text color
-			tooltipColorBox[] = {1,1,1,1}; // Tooltip frame color
-
-			multiselectEnabled = 1; // Allow selecting multiple items while holding Ctrl or Shift
-			expandOnDoubleclick = 1; // Expand/collapse item upon double-click
-			hiddenTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\hiddenTexture_ca.paa"; // Expand icon
-			expandedTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\expandedTexture_ca.paa"; // Collapse icon
-			maxHistoryDelay = 1; // Time since last keyboard type search to reset it
-
-			// Scrollbar configuration
-			class ScrollBar
-			{
-				width = 0; // width of ScrollBar
-				height = 0; // height of ScrollBar
-				scrollSpeed = 0.01; // scroll speed of ScrollBar
-
-				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
-				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
-				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
-				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
-
-				color[] = {1,1,1,1}; // Scrollbar color
-			};
-
-			colorDisabled[] = {0,0,0,0}; // Does nothing, but must be present, otherwise an error is shown
-			colorArrow[] = {0,0,0,0}; // Does nothing, but must be present, otherwise an error is shown
+			x = 1 * GUI_GRID_W + GUI_GRID_X;
+			y = 4 * GUI_GRID_H + GUI_GRID_Y;
+			w = 17.5 * GUI_GRID_W;
+			h = 20 * GUI_GRID_H;
+			colorText[] = {1,1,1,1};
+			colorBackground[] = {0,0,0,0.2};
+			tooltip = "CT_TREE"; //--- ToDo: Localize;
 		};
-		class textPerkName: RscText
-		{
-			idc = 8;
-			text = "PERK NAME"; //--- ToDo: Localize;
-			x = 0.494844 * safezoneW + safezoneX;
-			y = 0.324 * safezoneH + safezoneY;
-			w = 0.220469 * safezoneW;
-			h = 0.033 * safezoneH;
-			sizeEx = 2 * 0.04;
-			shadow = 2;
-		};
-		class textPerkSubtitle: RscText
-		{
-			idc = 9;
-			text = "PERK SUBTITLE"; //--- ToDo: Localize;
-			x = 0.494844 * safezoneW + safezoneX;
-			y = 0.357 * safezoneH + safezoneY;
-			w = 0.165 * safezoneW;
-			h = 0.022 * safezoneH;
-			shadow = 2;
-		};
+		
+		
+class textPerkName: RscText
+{
+	idc = 8;
+	shadow = 2;
+
+	text = "PERK NAME"; //--- ToDo: Localize;
+	x = 19.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 21.3788 * GUI_GRID_W;
+	h = 1.5 * GUI_GRID_H;
+	sizeEx = 2 * 0.04 * (0.04)*(0.04)*(0.04)*(0.04)* GUI_GRID_H;
+};
+class textPerkSubtitle: RscText
+{
+	idc = 9;
+	shadow = 2;
+
+	text = "PERK SUBTITLE"; //--- ToDo: Localize;
+	x = 19.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 16 * GUI_GRID_W;
+	h = 2.5 * GUI_GRID_H;
+};
 		class textPerkDescription: RscStructuredText
 		{
 			idc = 11;
-			x = 0.494844 * safezoneW + safezoneX;
-			y = 0.39 * safezoneH + safezoneY;
-			w = 0.201094 * safezoneW;
-			h = 0.33 * safezoneH;
 			shadow = 2;
+
+			x = 19.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 7.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 19.5 * GUI_GRID_W;
+			h = 15 * GUI_GRID_H;
 		};
+		
 		class RscButton_1600: RscButtonMenu
 		{
 			idc = 10;
-			text = "PURCHASE"; //--- ToDo: Localize;
-			x = 0.608281 * safezoneW + safezoneX;
-			y = 0.731 * safezoneH + safezoneY;
-			w = 0.0876563 * safezoneW;
-			h = 0.022 * safezoneH;
-			colorBackground[] = {0.12,0.14,0.16,1};
 			onButtonClick = "[_this, 'onButtonPurchaseClick'] spawn TTM_GUI_master_script;";
 			enabled = 0;
 
-			class Attributes {
-				align = "center";
-			};
+			text = "PURCHASE"; //--- ToDo: Localize;
+			x = 30.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 23 * GUI_GRID_H + GUI_GRID_Y;
+			w = 8.5 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+			colorBackground[] = {0.12,0.14,0.16,1};
 		};
     };
 };
