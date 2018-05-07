@@ -18,10 +18,12 @@ _itemName = _status select 1;
 _cost = _status select 2;
 _type = _status select 3;
 
+if (_item IN ["RH_M6X","RH_barska_rds","acc_flashlight","RH_SFM952V","RH_ta31rmr","RH_compM2","optic_DMS","optic_LRPS"]) then { _type = 3; };
+
 if(isNil "_status") exitwith {};
 if(isNil "_quantity") then { _quantity = 1; };
 if(_quantity < 0) exitwith {};
- 
+
 _cost = call compile format["%1", (_status select 2)];
 
 _totalprice = _cost * _Quantity;
@@ -46,10 +48,10 @@ if(_error) exitwith {};
 player allowdamage false;
 
 if(isNil "shopholder") then {
-	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);  
+	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
 };
 player disablecollisionwith shopholder;
-shopholder setpos (getposATL player);	
+shopholder setpos (getposATL player);
 
 
 player allowdamage true;
@@ -58,7 +60,7 @@ switch (_type) do {
     case 1: { shopholder addWeaponCargoGlobal [_item,_quantity]; };
     case 2: { shopholder addMagazineCargoGlobal [_item,_quantity]; };
     case 3: { shopholder addItemCargoGlobal [_item,_quantity]; };
-    case 4: { _backpackitems = backpackItems player; removeBackpack player; player addBackpack _item; {player addItemToBackpack _x} foreach _backpackitems;};   
+    case 4: { _backpackitems = backpackItems player; removeBackpack player; player addBackpack _item; {player addItemToBackpack _x} foreach _backpackitems;};
 };
 
 if(_typebuy == "fish") then {
@@ -78,26 +80,26 @@ if(_typebuy == "fish") then {
 	while { _rarefish2 > 0 } do {
 		if(_totalprice == 0) exitwith {};
 		_rarefish1 = _rarefish1 - 1;
-		_totalprice = _totalprice - 1;	
-		player removeitem "Fish_Shark_Rare";	
+		_totalprice = _totalprice - 1;
+		player removeitem "Fish_Shark_Rare";
 		uisleep 0.05;
 	};
 
 	while { _rarefish3 > 0 } do {
 		if(_totalprice == 0) exitwith {};
 		_rarefish1 = _rarefish1 - 1;
-		_totalprice = _totalprice - 1;	
-		player removeitem "Fish_Mackerel_7";	
+		_totalprice = _totalprice - 1;
+		player removeitem "Fish_Mackerel_7";
 		uisleep 0.05;
 	};
 
 	while { _rarefish4 > 0 } do {
 		if(_totalprice == 0) exitwith {};
 		_rarefish1 = _rarefish1 - 1;
-		_totalprice = _totalprice - 1;	
-		player removeitem "Fish_Tuna_7";	
+		_totalprice = _totalprice - 1;
+		player removeitem "Fish_Tuna_7";
 		uisleep 0.05;
-	};	
+	};
 
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL player, 5, 1, 45];
 };
