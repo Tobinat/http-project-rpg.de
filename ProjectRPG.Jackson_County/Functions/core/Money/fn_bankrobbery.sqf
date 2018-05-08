@@ -41,9 +41,9 @@ for "_i" from 0 to 1 step 0 do  {
 		while{bankrobber == 2} do {
 
 			deletevehicle _ps;
-			playSound3D ["cg_mission_files\sounds\npdrillfailing.ogg", player, false, getPosAtL theDrill, 1, 1, 45];
+			playSound3D ["cg_mission_files\sounds\npdrillfailing.ogg", player, false, getPosAtL theDrill, 3, 1, 45];
 			uisleep 12;
-			hint "Wiertlo utknelo";
+			hint "Der Bohrer steckt fest";
 			uisleep 3;
 		};
 
@@ -51,23 +51,33 @@ for "_i" from 0 to 1 step 0 do  {
 
 	if(_pick > 19 && _pick < 61) then {
 
-		playSound3D ["cg_mission_files\sounds\npdrill2.ogg", player, false, getPosAtL theDrill, 1, 1, 45];
+		playSound3D ["cg_mission_files\sounds\npdrill2.ogg", player, false, getPosAtL theDrill, 3, 1, 45];
 		uisleep 20;
 		deletevehicle _ps;
 
 	};
 
-	if(_pick > 60 && _pick < 93) then {
+	if(_pick > 60 && _pick < 91) then {
 
-		playSound3D ["cg_mission_files\sounds\npdrill1.ogg", player, false, getPosAtL theDrill, 1, 1, 45];
+		playSound3D ["cg_mission_files\sounds\npdrill1.ogg", player, false, getPosAtL theDrill, 3, 1, 45];
 		uisleep 14;
 		deletevehicle _ps;
 	};
 
-	if(_pick > 92) exitwith { deletevehicle _ps; };
+	if(_pick > 90) exitwith { 
+	deletevehicle _ps;
+	hint "Die Bank wurde ausgeraubt - Überprüfe den Sicherheitskasten!";
+	bankrobber = 4;
+	uisleep 300;
+	deletevehicle _thebankcontainer;
+	deletevehicle theDrill;
+	uisleep 1500;
+	bankrobber = 1
+	};
 
 	uisleep 3;
 };
+/*
 if(bankrobber != 1) then {
 	hint "Die Bank wurde ausgeraubt - Überprüfe den Sicherheitskasten!";
 	bankrobber = 4;
@@ -77,3 +87,4 @@ if(bankrobber != 1) then {
 	uisleep 1500;
 	bankrobber = 1;
 };
+*/

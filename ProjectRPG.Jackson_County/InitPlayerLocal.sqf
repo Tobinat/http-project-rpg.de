@@ -4,8 +4,22 @@ if(isnil "Np_ProfileVars") then {
 	profilenamespace setvariable ["Nopix_Profile",[[["Willkommen in Silverlake ","Willkommen", "Verizon"]],[["Willkommen","Willkommen in Silverlake", "Post"]]]];
 };
 
-
+//Tanken leerlutschen
 { _x setFuelCargo 0; } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_fs_feed_F"], 20000]);
+
+//Banktüren schließen & verriegeln
+{
+	 	_x animate ["vault_door",0];
+		_mybank = _x;
+    _thebankcontainer = "plp_ct_HighSecMediumBlack" createvehicle [9794,978,0.0014];
+    _pos = getpos _mybank;
+    _thebankcontainer setdir(getdir _mybank) - 89;
+    _containerpos = _mybank getrelpos[-3, 0];
+    _thebankcontainer setpos _containerpos;
+    _newpos = _thebankcontainer getrelpos[-1.2, 0];
+    _thebankcontainer setpos[(_newpos select 0), (_newpos select 1), (_newpos select 2) + 4];
+
+ } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_CommonwealthBank"], 20000]);
 
 [] spawn client_fnc_setGuiColor;
 

@@ -52,7 +52,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" bankrobber == 2 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"""],
-		["Reparatur Bohrer", " ['Reparatur von Bohrer',60,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
+		["Reparatur Bohrer", " ['Repariere Bohrer',60,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
 
 
@@ -931,16 +931,16 @@ NoPixel_InteractionMenuItems = [
 		["((typeof CursorTarget) IN shopNameList) && ((time - (CursorTarget getVariable[""lastRobbed"",0])) > 1) && (player distance cursorTarget < 8) && (currentWeapon player != """")"],
 		["Laden Ausrauben", " [] spawn client_fnc_robShop; ",4]
 	],
-
-	//[
-	//	["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
-	//	["Beweise Sammeln", "[""Sammle Beweise"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
-	//],
+/*
+	[
+		["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
+		["Beweise Sammeln", "[""Sammle Beweise"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+	],
 	[
 		["CurrentCursorTarget != objNull && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
 		["Beweise zerstoeren", "[""Zerstoere Beweise"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
-
+*/
 	[
 		["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
 		["Notrufzentrale", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
