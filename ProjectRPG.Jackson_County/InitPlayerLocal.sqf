@@ -9,7 +9,8 @@ if(isnil "Np_ProfileVars") then {
 
 //Banktüren schließen & verriegeln
 {
-	 	_x animate [""Vault_Door"",0];
+	 	_x animate ['Vault_Door',0];
+		_x animate ['door_5',0];
 		_mybank = _x;
     _thebankcontainer = "plp_ct_HighSecMediumBlack" createvehicle [9794,978,0.0014];
     _pos = getpos _mybank;
