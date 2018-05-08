@@ -1,4 +1,5 @@
 _chance = random 100;
+/*
 if (_chance < 20 && currentBanks < 2) then {
     ["Information","Eine der Banken hat gerade eine Lieferung von Geld erhalten.",[255,69,0,1],""] remoteExec ["Client_fnc_showNotification", -2];
     //"Jeden z banków właśnie otrzymał dostawę pieniędzy." remoteexec["hint", -2];
@@ -13,6 +14,7 @@ if (_chance < 20 && currentBanks < 2) then {
 	diag_log format ["Bank pos - %1", _pos];
 	currentBanks = currentBanks + 1;
 };
+*/
 _fireLocations = [
 	[7078.03,2458.97,0.00143814],
 	[8144.45,2722.83,0.00143814],
