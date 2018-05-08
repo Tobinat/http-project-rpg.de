@@ -6,7 +6,7 @@ if(isnil "Np_ProfileVars") then {
 
 //Tanken leerlutschen
 { _x setFuelCargo 0; } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_fs_feed_F"], 20000]);
-
+/*
 //Banktüren schließen & verriegeln
 {
 	 	_x animate ['Vault_Door',0];
@@ -21,7 +21,7 @@ if(isnil "Np_ProfileVars") then {
     _thebankcontainer setpos[(_newpos select 0), (_newpos select 1), (_newpos select 2) + 4];
 
  } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_CommonwealthBank"], 20000]);
-
+*/
 [] spawn client_fnc_setGuiColor;
 
 waitUntil {sleep 0.05; !(isNil {player}) && player == player && alive player};
