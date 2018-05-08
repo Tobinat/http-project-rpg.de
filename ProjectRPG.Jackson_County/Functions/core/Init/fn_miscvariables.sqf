@@ -92,6 +92,7 @@ weedPlantArray = [];
 adminInteractions = 0;
 cheap_buffs = false;
 lastRobbed = 0;
+life_unconscious = false;
 /*
 	Admin
 */
