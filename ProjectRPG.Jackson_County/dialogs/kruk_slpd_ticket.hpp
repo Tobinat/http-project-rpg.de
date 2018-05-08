@@ -17,7 +17,7 @@ class kruk_slpd_ticket_give {
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = -1;
-			text = "\sl_client\textures\scripts\SLPD\ticket.paa";
+			text = "\PRPG_Data\textures\scripts\SLPD\ticket.paa";
 			x = 0.5 * GUI_GRID_W + GUI_GRID_X;
 			y = -5.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 39 * GUI_GRID_W;
@@ -138,7 +138,7 @@ class kruk_slpd_ticket_receive {
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = -1;
-			text = "\sl_client\textures\scripts\SLPD\ticket.paa";
+			text = "\PRPG_Data\textures\scripts\SLPD\ticket.paa";
 			x = 0.5 * GUI_GRID_W + GUI_GRID_X;
 			y = -5.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 39 * GUI_GRID_W;

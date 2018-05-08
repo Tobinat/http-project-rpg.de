@@ -27,7 +27,7 @@
     	waitUntil {(speed _veh) > 130}; // 130 - Speed for activate the bomb.
         _crew = crew (vehicle _veh);
     	["<t color='#ff0000' size = '.8'>Hinweis!<br /> Eine Bombe wurde unter das Fahrzeug gepackt! Fällt die Geschwindigkeit unter 50 km / h, explodiert die Bombe! Innerhalb von 15 Minuten wird die Bombe deaktiviert!</t>",-1,-1,10,1,0,789] remoteExec ["BIS_fnc_dynamicText", _crew];
-        playSound3D ["sl_client\sounds\bombhasbeenplanted.ogg", _veh, true, getPos _veh, 15, 1, 25];
+        playSound3D ["PRPG_Data\sounds\bombhasbeenplanted.ogg", _veh, true, getPos _veh, 15, 1, 25];
        // _timer = 0;
        // for "_i" from 0 to 1 step 0 do  {
        //     _timer = _timer + 1;
@@ -40,6 +40,6 @@
     	waitUntil {(speed _veh) < 70}; // 50 - Speed that the bomb will explode. 
     	_test = "Bo_Mk82" createVehicle [0,0,9999];
     	_test setPos (getPos _veh);
-        playSound3D ["sl_client\sounds\speedbombExplode.ogg", player, false, getPos _veh, 15, 1, 25];
+        playSound3D ["PRPG_Data\sounds\speedbombExplode.ogg", player, false, getPos _veh, 15, 1, 25];
     	_test setVelocity [100,0,0];
     };

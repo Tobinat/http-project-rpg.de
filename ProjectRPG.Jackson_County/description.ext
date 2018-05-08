@@ -767,7 +767,7 @@ class CfgSounds {
     class carlock {
         name = "carlock";
         sound[] = {
-            "@sl_client\sounds\carlock.ogg",
+            "@PRPG_Data\sounds\carlock.ogg",
             1,
             1
         };
@@ -777,7 +777,7 @@ class CfgSounds {
     class bankAlarm {
         name = "bankAlarm";
         sound[] = {
-            "@sl_client\sounds\bankAlarm.ogg",
+            "@PRPG_Data\sounds\bankAlarm.ogg",
             1,
             1
         };
@@ -787,7 +787,7 @@ class CfgSounds {
     class shopAlarm {
         name = "shopAlarm";
         sound[] = {
-            "@sl_client\sounds\shopAlarm.ogg",
+            "@PRPG_Data\sounds\shopAlarm.ogg",
             1,
             1
         };
@@ -797,7 +797,7 @@ class CfgSounds {
     class fireAlarm {
         name = "fireAlarm";
         sound[] = {
-            "@sl_client\sounds\fireAlarm.ogg",
+            "@PRPG_Data\sounds\fireAlarm.ogg",
             1,
             1
         };
@@ -807,7 +807,7 @@ class CfgSounds {
     class bombhasbeenplanted {
         name = "bombhasbeenplanted";
         sound[] = {
-            "@sl_client\sounds\bombhasbeenplanted.ogg",
+            "@PRPG_Data\sounds\bombhasbeenplanted.ogg",
             1,
             1
         };

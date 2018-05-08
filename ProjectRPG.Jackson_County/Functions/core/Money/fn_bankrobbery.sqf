@@ -3,7 +3,7 @@ if(bankrobber != 1) exitwith { hint "Diese Bank wurde kürzlich erst ausgeraubt,
 [] spawn {
 	_bank = nearestObject [player, "Land_CommonwealthBank"];
 	uiSleep 30;
-	playSound3D ["sl_client\sounds\bankAlarm.ogg", _bank, false, getPosASL _bank, 2, 1, 150];
+	playSound3D ["PRPG_Data\sounds\bankAlarm.ogg", _bank, false, getPosASL _bank, 2, 1, 150];
 	[player] remoteExec ["server_fnc_robberyCallBank",2];
 };
 _thebankcontainer = cursortarget;
