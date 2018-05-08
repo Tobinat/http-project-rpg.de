@@ -3,7 +3,7 @@ if(bankrobber != 1) exitwith { hint "Diese Bank wurde kürzlich erst ausgeraubt,
 [] spawn {
 	_bank = nearestObject [player, "Land_CommonwealthBank"];
 	uiSleep 30;
-	playSound3D ["sl_client\sounds\bankAlarm.ogg", _bank, false, getPosASL _bank, 2, 1, 150]; 
+	playSound3D ["sl_client\sounds\bankAlarm.ogg", _bank, false, getPosASL _bank, 2, 1, 150];
 	[player] remoteExec ["server_fnc_robberyCallBank",2];
 };
 _thebankcontainer = cursortarget;
@@ -22,7 +22,7 @@ bankrobber = 3;
 for "_i" from 0 to 1 step 0 do  {
 	if(isNull theDrill) exitWith { bankrobber = 1; };
 	_location = getposatl _thebankcontainer;
-	_PS = "#particlesource" createVehicleLocal _location;  
+	_PS = "#particlesource" createVehicleLocal _location;
 
 	_PS setParticleRandom [0,[0.004,0.004,0.004],[0.01,0.01,0.01],30,0.01,[0,0,0,0],1,0.02,360];
 
@@ -41,7 +41,7 @@ for "_i" from 0 to 1 step 0 do  {
 		while{bankrobber == 2} do {
 
 			deletevehicle _ps;
-			playSound3D ["cg_mission_files\sounds\npdrillfailing.ogg", player, false, getPosAtL theDrill, 6, 1, 45];
+			playSound3D ["cg_mission_files\sounds\npdrillfailing.ogg", player, false, getPosAtL theDrill, 10, 1, 45];
 			uisleep 12;
 			hint "Der Bohrer steckt fest";
 			uisleep 3;
@@ -51,7 +51,7 @@ for "_i" from 0 to 1 step 0 do  {
 
 	if(_pick > 19 && _pick < 61) then {
 
-		playSound3D ["cg_mission_files\sounds\npdrill2.ogg", player, false, getPosAtL theDrill, 6, 1, 45];
+		playSound3D ["cg_mission_files\sounds\npdrill2.ogg", player, false, getPosAtL theDrill, 10, 1, 45];
 		uisleep 20;
 		deletevehicle _ps;
 
@@ -59,12 +59,12 @@ for "_i" from 0 to 1 step 0 do  {
 
 	if(_pick > 60 && _pick < 91) then {
 
-		playSound3D ["cg_mission_files\sounds\npdrill1.ogg", player, false, getPosAtL theDrill, 6, 1, 45];
+		playSound3D ["cg_mission_files\sounds\npdrill1.ogg", player, false, getPosAtL theDrill, 10, 1, 45];
 		uisleep 14;
 		deletevehicle _ps;
 	};
 
-	if(_pick > 90) exitwith { 
+	if(_pick > 90) exitwith {
 	deletevehicle _ps;
 	hint "Die Bank wurde ausgeraubt - Überprüfe den Sicherheitskasten!";
 	bankrobber = 4;
@@ -72,7 +72,7 @@ for "_i" from 0 to 1 step 0 do  {
 	deletevehicle _thebankcontainer;
 	deletevehicle theDrill;
 	uisleep 1500;
-	bankrobber = 1
+	bankrobber = 1;
 	};
 
 	uisleep 3;

@@ -13,5 +13,10 @@ _random = round(random(25000)) + 20000;
 [_random] call Client_fnc_sl_addCash_secure;
 closedialog 0;
 player setvariable ["robber",true,true];
+//ATM deaktivieren, nach Geldentnahme
+bankrobber = 6;
 sleep 300;
 player setvariable ["robber",nil,true];
+sleep 600;
+//ATM reaktivieren nach 15 Minuten
+bankrobber = 1;
