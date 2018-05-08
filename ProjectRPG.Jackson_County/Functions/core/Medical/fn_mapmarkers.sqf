@@ -6,7 +6,7 @@ _markers = [];
 
 if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 	{
-		if ( _x getVariable["ACE_isUnconscious",True] ) then {
+		if ( _x getVariable["ACE_isUnconscious",false] ) then {
 			_marker = createMarkerLocal [format["%1_dead_marker",name _x],visiblePosition _x];
 			_marker setMarkerColorLocal "ColorRed";
 			_marker setMarkerTypeLocal "loc_Hospital";
