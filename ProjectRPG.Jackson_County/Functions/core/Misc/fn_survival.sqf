@@ -94,7 +94,7 @@ while {true} do {
 		life_corpse = player;
 		if(!isNil "_action" && {_action}) then {
 
-			[] call life_fnc_requestMedic;
+			[] call client_fnc_requestMedic;
 				
 			_medicsOnline = {_x != player && {side _x == independent} && {alive _x}} count playableUnits > 0;
 			if(!_medicsOnline) then {
