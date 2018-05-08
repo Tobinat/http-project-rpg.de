@@ -47,12 +47,9 @@ if(_error) exitwith {};
 
 player allowdamage false;
 
-if(isNil "shopholder") then {
-	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
-};
+shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
 player disablecollisionwith shopholder;
 shopholder setpos (getposATL player);
-
 
 player allowdamage true;
 
