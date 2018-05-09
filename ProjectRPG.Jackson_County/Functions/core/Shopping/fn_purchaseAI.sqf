@@ -121,5 +121,5 @@ if(_chance > 35) then {
 [format["Gekauf %1x %2 fuer $%3 - Überprüfe deine Box, sie wird in 2 Minuten verschwinden.",_quantity, _item, _totalprice],true] spawn domsg;
 
 sleep 120;
-clearItemCargoGlobal shopholder;
+clearItemCargo shopholder;
 shopholder setPos [0,0,0];
