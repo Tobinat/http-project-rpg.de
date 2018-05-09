@@ -1,4 +1,4 @@
-[] spawn {
+while {true} do {
 if(player getVariable  "ACE_isUnconscious" && !life_unconscious) then {
 		_action = ["Du bist Ohnmächtig. Mit letzter kraft kannst du dein Handy ziehen. Möchtest du das S.L.F.D. über deine Lage informieren?","Ohnmächtig","Ja","Nein"] call BIS_fnc_guiMessage;
 		life_corpse = player;
