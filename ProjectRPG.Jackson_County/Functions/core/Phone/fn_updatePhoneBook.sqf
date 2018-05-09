@@ -198,6 +198,15 @@ disableSerialization;
 	};
 
 	if!(_old isEqualTo currentlegalaid) then { publicvariable "currentlegalaid"; };
+	
+	_old =  currentPizzaFicker;
+
+	for "_i" from 0 to 20 step 1 do {
+		_pia =  currentPizzaFicker FIND objNull;  
+		 currentPizzaFicker deleteAT _pia;  
+	};
+
+	if!(_old isEqualTo  currentPizzaFicker) then { publicvariable "currentPizzaFicker"; };
 
 
 _allJobs = [
