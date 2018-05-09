@@ -1,5 +1,4 @@
 disableSerialization;
-
 player say "racebeep1";
-
-hint "Eine verletzte Person wurde auf der Karte markiert.";
+hint "Die Mediziner wurden Informiert.";
+["911: Ein Bewustloser wurde auf der Karte Markiert!", false] remoteExec ["domsg", currentEMS];
