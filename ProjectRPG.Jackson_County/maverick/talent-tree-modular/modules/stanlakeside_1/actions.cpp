@@ -73,6 +73,11 @@ class TrashPickedUp {
     message = "Abfall eingesammelt";
 };
 
+class PizzaGeliefert {
+    exptoAdd = 2;
+    message = "Pizza ausgeliefert";
+};
+
 class ReporterArrived {
     exptoAdd = 4;
     message = "Am veranstaltungsort eingetroffen";
