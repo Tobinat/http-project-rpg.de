@@ -27,6 +27,7 @@ currentNewsMan = [];
 currentRepairmen = []; 
 currentTaxiDrivers = [];
 currentDoughnuts = [];
+currentPizzaFicker = [];
 
 priceArrayOre = [];
 MafiaHoldings = 0; 
@@ -53,7 +54,8 @@ publicvariable "currentMailmen";
 publicvariable "currentsecurity"; 
 publicvariable "currentTowTruckDrivers"; 
 publicvariable "currentTrashMan"; 
-publicvariable "currentNewsMan"; 
+publicvariable "currentNewsMan";
+publicvariable "currentPizzaFicker" 
 publicvariable "currentRepairmen"; 
 publicvariable "currentTaxiDrivers";
 publicvariable "mafiaBank";

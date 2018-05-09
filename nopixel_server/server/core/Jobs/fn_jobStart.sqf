@@ -152,3 +152,10 @@ currentRepairmen pushback _player;
 publicvariable "currentRepairmen";
 
 };
+
+if (str _jobtype find "pizza" > -1) exitwith {
+[] remoteExec ["client_fnc_startPizza",_player];
+currentPizzaFicker pushback _player;
+publicvariable "currentPizzaFicker";
+
+};

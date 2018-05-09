@@ -22,7 +22,7 @@ if(_i > 50) then {
 _jobs = [];
 
 if(count currentMailmen < (_count select 0)) then {
-_Jobs pushback ["Kurier Fedex","mail"]; 
+_Jobs pushback ["Fedex Kurier","mail"]; 
 };
 
 if(count currentSecurity < (_count select 1)) then {
@@ -44,9 +44,11 @@ _Jobs pushback ["Mechaniker","repairman"];
 if(count currentTaxiDrivers < (_count select 5)) then {
 _Jobs pushback ["Taxifahrer","taxi"]; 
 };
+
 if(count currentPizzaFicker < (_count select 6)) then {
 _Jobs pushback ["Pizza Lieferant","pizza"]; 
 };
+
 if(_jobs isequalto []) then { _jobs = ["Keine Arbeit verfügbar"]; };
 
 {
