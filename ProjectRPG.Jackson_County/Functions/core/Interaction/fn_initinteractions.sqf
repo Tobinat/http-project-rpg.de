@@ -44,7 +44,14 @@ NoPixel_InteractionMenuItems = [
 		[" typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "],
 		["Sichere Geldmittel", " ['Sicherung',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
-*/
+*/	
+	[
+		["client_poop > 80 && (isNull objectParent player)"],
+		["Auf die Toilette gehen", " [] spawn client_takeashit; ",5]
+	],
+
+
+	
 	[
 		[" bankrobber == 4 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "],
 		["Nimm Bargeld", " ['Geld nehmen',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',[CurrentCursorTarget],""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
