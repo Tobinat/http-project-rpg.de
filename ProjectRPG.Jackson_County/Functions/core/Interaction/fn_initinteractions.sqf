@@ -350,7 +350,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) "],
-		["Alle Moebel entfernen", "  [0] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
+		["Alle Möbel entfernen", "  [0] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
 	],
 
 	[
@@ -370,7 +370,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) && player distance getpos currentcursortarget < 20 && !attachedfurniture "],
-		["Möbelstück waehlen", " createdialog ""placefurniture"" ",2]
+		["Möbelstück wählen", " createdialog ""placefurniture"" ",2]
 	],
 
 
@@ -493,7 +493,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["CurrentCursorTarget isKindOf 'Man' && (myjob == ""Mafia"" || myjob == ""Fire"" || myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Judge"" || myjob == ""Lawyer"" || myjob == ""Prosecutor"")"],
-		["Befoerdern", "[CurrentCursorTarget] spawn client_fnc_promotionStart",2]
+		["Befördern", "[CurrentCursorTarget] spawn client_fnc_promotionStart",2]
 	],
 
 	[
