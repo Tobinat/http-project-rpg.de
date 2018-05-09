@@ -10,12 +10,12 @@ _i = 0;
 		_i = _i + 1;
 	};
 } forEach playableUnits;
-_count = [3,2,3,3,7,7];
+_count = [3,2,3,3,7,7,3];
 if(_i > 50) then {
 	if(_i > 80) then {
-		_count = [7,6,7,7,13,13];
+		_count = [7,6,7,7,13,13,6];
 	} else {
-		_count = [5,4,5,5,10,10];
+		_count = [5,4,5,5,10,10,5];
 	};
 };
 
@@ -44,7 +44,7 @@ _Jobs pushback ["Mechaniker","repairman"];
 if(count currentTaxiDrivers < (_count select 5)) then {
 _Jobs pushback ["Taxifahrer","taxi"]; 
 };
-if(count currentPizzaFicker < (_count select 2)) then {
+if(count currentPizzaFicker < (_count select 6)) then {
 _Jobs pushback ["Pizza Lieferant","pizza"]; 
 };
 if(_jobs isequalto []) then { _jobs = ["Keine Arbeit verfügbar"]; };

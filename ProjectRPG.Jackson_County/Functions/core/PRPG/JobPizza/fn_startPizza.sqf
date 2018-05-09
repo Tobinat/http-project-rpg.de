@@ -23,6 +23,7 @@ while{taskrunning  && myjob == "pizza" } do {
 	if(playertasks isequalTO []) then {
 	
 		opfer = playableUnits call BIS_fnc_selectRandom;
+		if (isPlayer opfer) exitWith {};
 		playertasks pushback [opfer,"pizzaliefern"];
 		[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
 		//hint "Auftrag (Markiert auf Karte): Pizza ausliefern.";
