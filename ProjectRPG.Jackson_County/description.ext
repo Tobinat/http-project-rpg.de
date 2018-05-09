@@ -1505,42 +1505,7 @@ class CfgSounds {
     };
 	
 	
-	class fart1
-	{
-		name = "fart1";
-		sound[] = {"@PRPG_Data\sounds\fart1.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart2
-	{
-		name = "fart2";
-		sound[] = {"@PRPG_Data\sounds\fart2.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart3
-	{
-		name = "fart3";
-		sound[] = {"@PRPG_Data\sounds\fart3.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart4
-	{
-		name = "fart4";
-		sound[] = {"@PRPG_Data\sounds\fart4.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart5
-	{
-		name = "fart5";
-		sound[] = {"@PRPG_Data\sounds\fart5.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart6
-	{
-		name = "fart6";
-		sound[] = {"@PRPG_Data\sounds\fart6.ogg", 1, 1};
-		titles[] = {};
-	};
+	
 	
 	
 	
