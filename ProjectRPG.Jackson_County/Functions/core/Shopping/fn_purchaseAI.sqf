@@ -46,8 +46,8 @@ if(_error) exitwith {};
 
 
 player allowdamage false;
-if(shopholder == "dumm") then {
-shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
+if(isNil "shopholder") then {
+	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
 };
 player disablecollisionwith shopholder;
 shopholder setpos (getposATL player);
@@ -118,8 +118,8 @@ if(_chance > 35) then {
 
 
 [player,objNull,1,format ["%1 gekauf %2 Menge %3 fuer %4 $", name player, _item, _quantity, _totalPrice],_totalPrice, _item, _quantity] remoteExec ["server_fnc_economyLog", 2];
-[format["Gekauf %1x %2 fuer $%3 - Überprüfe die Box, sie verschwindet in 2 Minuten.",_quantity, _item, _totalprice],true] spawn domsg;
+[format["Gekauf %1x %2 fuer $%3 - Überprüfe deine Box, sie wird in 2 Minuten verschwinden.",_quantity, _item, _totalprice],true] spawn domsg;
 
 sleep 120;
-deleteVehicle shopholder;
-shopholder = "dumm";
+clearItemCargoGlobal shopholder;
+shopholder setPos [0,0,0];
