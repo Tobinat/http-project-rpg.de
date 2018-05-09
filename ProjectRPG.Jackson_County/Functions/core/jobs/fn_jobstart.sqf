@@ -1,14 +1,14 @@
 _player = _this select 0;
 _jobtype = _this select 1;
 
-[player,objNull,3,format ["%1 rozpoczął pracę %2", name player, _jobtype],_jobtype] remoteExec ["server_fnc_jobLog", 2];
+[player,objNull,3,format ["%1 fing an als %2 zu Arbeiten.", name player, _jobtype],_jobtype] remoteExec ["server_fnc_jobLog", 2];
 if (str _jobtype find "Cop" > -1 || str _jobtype == "Cop") exitwith {
 	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];	
 	[] call client_fnc_startCop;
 	currentCop pushback _player;
 	publicvariable "currentCop";
 	["basic"] spawn client_fnc_setGear;
-	[player,objNull,10,format ["%1 rozpoczął służbę", name player],""] remoteExec ["server_fnc_copLog", 2];
+	[player,objNull,10,format ["%1 begann seinen Polizeidienst", name player],""] remoteExec ["server_fnc_copLog", 2];
 };
 
 if (str _jobtype find "EMS" > -1 || str _jobtype == "EMS") exitwith {
@@ -121,4 +121,10 @@ if (str _jobtype find "repairman" > -1 || str _jobtype == "repairman") exitwith 
 	[] call client_fnc_startRepair;
 	currentRepairmen pushback _player;
 	publicvariable "currentRepairmen";	
+};
+
+if (str _jobtype find "pizza" > -1 || str _jobtype == "pizza") exitwith {	
+	[] call client_fnc_startPizza;
+	currentPizzaFicker pushback _player;
+	publicvariable "currentPizzaFicker";	
 };

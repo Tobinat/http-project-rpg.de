@@ -44,6 +44,9 @@ _Jobs pushback ["Mechaniker","repairman"];
 if(count currentTaxiDrivers < (_count select 5)) then {
 _Jobs pushback ["Taxifahrer","taxi"]; 
 };
+if(count currentPizzaFicker < (_count select 2)) then {
+_Jobs pushback ["Pizza Lieferant","pizza"]; 
+};
 if(_jobs isequalto []) then { _jobs = ["Keine Arbeit verfügbar"]; };
 
 {
@@ -55,5 +58,5 @@ _list lbAdd "Arbeit: Holzfäller";
 _job = "Wood Logging";
 _list lbSetdata [(lbSize _list)-1,str(_job)];
 
-hint "Holzfaell arbeiten erforden einen Rucksack - Die meisten Firmen stellen dir ein Firmenwaagen zur Verfügung. Verwende die Windowstaste und wähle die entsprechende Option aus.";
+hint "Die Arbeit als Holzfäller - Die meisten Firmen stellen dir ein Firmenwagen zur Verfügung. Verwende die Windowstaste und wähle die entsprechende Option aus.";
 

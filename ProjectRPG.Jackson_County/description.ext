@@ -195,6 +195,12 @@ class CfgFunctions
 			class takeashit {};
 			class poop {};
 		};
+		
+		class JobPizza {
+			file = "Functions\core\PRPG\JobPizza";
+			class startPizza {};
+			class getPizza {};
+		};
 
     class ausweis {
       file = "Functions\core\PRPG\ausweis";
