@@ -768,7 +768,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob != ""Cop""", "myjob != ""EMS""", "myjob != ""Fire""", "myjob != ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
+		["myjob != ""Cop""", "myjob != ""EMS""", "myjob != ""Fire""", "myjob != ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1 || str CurrentCursorTarget find ""embarcadero"" > -1"],
 		["Garage", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
 	],
 
@@ -806,12 +806,12 @@ NoPixel_InteractionMenuItems = [
 		[" myJob == ""Mafia"" && (str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] ) "],
 		["Firmengarage", "[] spawn client_fnc_opengaragepolice;",3]
 	],
-
+/*
 	[
 		["count attachedObjects player == 0 && !attachedcar && str CurrentCursorTarget find ""embarcadero"" > -1 && player distance currentcursortarget < 20"],
 		["Garage", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
 	],
-
+*/
 	[
 		["((player distance (getMarkerPos ""houseUpgrades"")) < 20)"],
 		["Haus verbessern (50k)", "[] spawn client_fnc_UpgradeHouse",3]
