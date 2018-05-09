@@ -93,7 +93,7 @@ adminInteractions = 0;
 cheap_buffs = false;
 lastRobbed = 0;
 life_unconscious = false;
-client_poop = 15;
+client_poop = 0;
 /*
 	Admin
 */
