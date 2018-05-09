@@ -66,7 +66,7 @@ if (_jobType == "security") exitwith {
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["vvv_character_agente_473",1];
-	hint "Da liegen sachen im Auto, benutze sie. Außerdem kannst du als Sicherheitsmann im Wafenladen einen Taser kaufen.";
+	hint "Da liegen sachen im Auto, benutze sie.";
 };
 
 if (_jobType == "towtruck") exitwith {
