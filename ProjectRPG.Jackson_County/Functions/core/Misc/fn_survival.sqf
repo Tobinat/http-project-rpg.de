@@ -110,4 +110,3 @@ if (!paintballing) then {
 	if(!(player getVariable "ACE_isUnconscious") && life_unconscious) then {
 		life_unconscious = false;
 	};
-*/

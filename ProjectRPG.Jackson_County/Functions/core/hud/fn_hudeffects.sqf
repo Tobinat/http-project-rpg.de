@@ -51,9 +51,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 					//["Remove",0.01] call Client_Fnc_DoHealth;
 				};
 
-			}
-			else
-			{
+			} else {
 				_bleedingon = "";
 				_bleeding ctrlSetText format["%1", _bleedingon];
 				_bleeding ctrlCommit 0;
@@ -71,9 +69,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 					//["Remove",0.01] call Client_Fnc_DoHealth;
 				};
 
-			}
-			else
-			{
+			} else {
 				_woundedon = "";
 				_wounded ctrlSetText format["%1", _woundedon];
 				_wounded ctrlCommit 0;
@@ -90,9 +86,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 					//["Remove",0.01] call Client_Fnc_DoHealth;
 				};
 
-			}
-			else
-			{
+			} else {
 				_fractureon = "";
 				_fracture ctrlSetText format["%1", _fractureon];
 				_fracture ctrlCommit 0;
@@ -109,9 +103,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 					//["Remove",0.01] call Client_Fnc_DoHealth;
 				};
 
-			}
-			else
-			{
+			} else {
 				_unconciouson = "";
 				_unconcious ctrlSetText format["%1", _unconciouson];
 				_unconcious ctrlCommit 0;
@@ -170,12 +162,24 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 					};
 				};
 			};
-		}
-		else
-		{
+		} else {
 			_diseaseon = "";
 			_disease ctrlSetText format["%1", _diseaseon];
 		};
+		
+		if(player getVariable  "ACE_isUnconscious" && !life_unconscious) then {
+			_action = ["Du bist Ohnmächtig. Mit letzter kraft kannst du dein Handy ziehen. Möchtest du das S.L.F.D. über deine Lage informieren?","Ohnmächtig","Ja","Nein"] call BIS_fnc_guiMessage;
+			life_corpse = player;
+			if(!isNil "_action" && {_action}) then {
+				[] call client_fnc_requestMedic;
+			};
+		life_unconscious = true;
+		};
+
+		if(!(player getVariable "ACE_isUnconscious") && life_unconscious) then {
+			life_unconscious = false;
+		};
+		
 	};
 	if(isNil "client_fnc_totalPain") exitWith {};
 	//[] spawn client_fnc_totalPain;

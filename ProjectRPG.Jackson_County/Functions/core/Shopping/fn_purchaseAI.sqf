@@ -46,8 +46,9 @@ if(_error) exitwith {};
 
 
 player allowdamage false;
-
+if(shopholder == "dumm") then {
 shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
+};
 player disablecollisionwith shopholder;
 shopholder setpos (getposATL player);
 
@@ -121,3 +122,4 @@ if(_chance > 35) then {
 
 sleep 120;
 deleteVehicle shopholder;
+shopholder = "dumm";
