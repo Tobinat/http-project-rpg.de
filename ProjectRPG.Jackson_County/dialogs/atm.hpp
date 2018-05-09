@@ -69,7 +69,7 @@ class RscText_1002: RscText
 {
 	idc = 1002;
 
-	x = 9 * GUI_GRID_W + GUI_GRID_X;
+	x = 8 * GUI_GRID_W + GUI_GRID_X;
 	y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
 	w = 10.5 * GUI_GRID_W;
 	h = 2 * GUI_GRID_H;
@@ -78,12 +78,11 @@ class RscText_1004: RscText
 {
 	idc = 1004;
 
-	x = 8.5 * GUI_GRID_W + GUI_GRID_X;
+	x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 	y = 7.5 * GUI_GRID_H + GUI_GRID_Y;
 	w = 11 * GUI_GRID_W;
 	h = 2.5 * GUI_GRID_H;
 };
-
 		class RscEdit_1400: RscEdit
 		{
 			idc = 1400;
@@ -223,7 +222,7 @@ class RscText_1002: RscText
 {
 	idc = 1002;
 
-	x = 9 * GUI_GRID_W + GUI_GRID_X;
+	x = 8 * GUI_GRID_W + GUI_GRID_X;
 	y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
 	w = 10.5 * GUI_GRID_W;
 	h = 2 * GUI_GRID_H;
@@ -232,7 +231,7 @@ class RscText_1004: RscText
 {
 	idc = 1004;
 
-	x = 8.5 * GUI_GRID_W + GUI_GRID_X;
+	x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 	y = 7.5 * GUI_GRID_H + GUI_GRID_Y;
 	w = 11 * GUI_GRID_W;
 	h = 2.5 * GUI_GRID_H;
