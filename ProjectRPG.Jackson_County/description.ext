@@ -9,6 +9,7 @@ onLoadIntro = "PRPG Life ist am laden...";
 //loadScreen =  "sl_client\textures\loading\load.paa";
 //disableChannels[]={0,1,2,3,4,5};
 respawndelay = 1;
+joinUnassigned = 1;
 
 wreckLimit = 10;
 wreckRemovalMaxTime = 600;
