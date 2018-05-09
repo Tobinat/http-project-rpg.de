@@ -55,7 +55,7 @@ publicvariable "currentsecurity";
 publicvariable "currentTowTruckDrivers"; 
 publicvariable "currentTrashMan"; 
 publicvariable "currentNewsMan";
-publicvariable "currentPizzaFicker" 
+publicvariable "currentPizzaFicker";
 publicvariable "currentRepairmen"; 
 publicvariable "currentTaxiDrivers";
 publicvariable "mafiaBank";
