@@ -4,10 +4,10 @@ disableUserInput true;
 //life_action_inUse = true;
 
 player playmove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";  
-player say3D"fart4";   
+player say "fart4";   
 uiSleep 2;  
 player enablesimulation false;   
-player say3D"fart5"; 
+player say "fart5"; 
 uiSleep 2;    
 player enablesimulation true; 
 uisleep 1; 

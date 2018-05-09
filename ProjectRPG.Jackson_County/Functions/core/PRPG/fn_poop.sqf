@@ -12,22 +12,22 @@ if (client_poop > 80) then {
 				player setFatigue _pooplord + 0.01;
 				_chance = round (random 95);
    			 	if(_chance == 19) then {
-   				  	player say3D"fart1";
+   				  	player say"fart1";
    				};
    				if(_chance == 20) then {
-   				  	player say3D"fart2";
+   				  	player say"fart2";
    				};
    				if(_chance == 21) then {
-   				  	player say3D"fart3";
+   				  	player say"fart3";
    				};
    				if(_chance == 22 || _chance == 23) then {
-   				  	player say3D"fart4";
+   				  	player say"fart4";
    				};
    				if(_chance == 24) then {
-   				  	player say3D"fart5";
+   				  	player say"fart5";
    				};
    				if(_chance == 25) then {
-   				  	player say3D"fart6";
+   				  	player say"fart6";
    				};
 			};
 		};
