@@ -7,11 +7,10 @@ _markers = [];
 if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 	{
 		if ( _x getVariable["ACE_isUnconscious",false]) then {
-			_name = _x getVariable "name";
 			_marker = createMarkerLocal [format["%1_dead_marker",name _x],visiblePosition _x];
 			_marker setMarkerColorLocal "ColorRed";
 			_marker setMarkerTypeLocal "loc_Hospital";
-			_marker setMarkerTextLocal "_name";
+			_marker setMarkerTextLocal "Patient";
 			_markers pushBack [_marker,_x];
 		};
 		if ("ItemGPS" in assignedItems _x) then {
