@@ -49,6 +49,7 @@ shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_0
  } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_CommonwealthBank"], 20000]);
 
 [] execVM "AdminTool\loop.sqf";
+[] execVM "core\init_survival.sqf";
 
 //----------------- ADV ACE CPR ----------------//
 /* Konfiguration der Mod "ACE ADV CPR" */

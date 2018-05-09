@@ -79,7 +79,7 @@ if (!paintballing) then {
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
 };
 
-
+/*
 	if(player getVariable  "ACE_isUnconscious" && !life_unconscious) then {
 
 		_action = [
@@ -110,3 +110,4 @@ if (!paintballing) then {
 	if(!(player getVariable "ACE_isUnconscious") && life_unconscious) then {
 		life_unconscious = false;
 	};
+*/
