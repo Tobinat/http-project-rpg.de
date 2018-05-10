@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=514;
+	toggles=522;
 	class ItemIDProvider
 	{
 		nextID=1801;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9901.4893,17.181339,5086.9775};
-		dir[]={0.048064902,-0.72825563,-0.68364251};
-		up[]={0.051076263,0.6853053,-0.72646451};
-		aside[]={-0.99756163,7.1112299e-007,-0.070134327};
+		pos[]={7557.4785,111.23707,2539.4285};
+		dir[]={-0.81084418,-0.54042327,-0.22491705};
+		up[]={-0.52083427,0.84133995,-0.14447083};
+		aside[]={-0.26730803,-2.7132046e-007,0.96366763};
 	};
 };
 binarizationWanted=0;
@@ -214,6 +214,7 @@ class ScenarioData
 {
 	author="PRPG";
 	disabledAI=1;
+	joinUnassigned=0;
 	respawn=3;
 	respawnDelay=15.000001;
 	class Header
@@ -227,6 +228,24 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="RespawnButton";
 			expression="true";
@@ -242,24 +261,6 @@ class CustomAttributes
 						};
 					};
 					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -12411,19 +12412,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9554,25,4200.1182};
-				angles[]={0,2.9111867,0};
+				position[]={9554,24.771315,4200.1182};
+				angles[]={0,2.9111917,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 166.003;this setposATL [9546.931641,4228.62793,-0.219845];this setVectorUp [0,0,1]";
 				aiRadarUsage=82788;
 			};
 			id=738;
 			type="rmair_mk_ParkCar_11";
+			atlOffset=-0.22868538;
 		};
 		class Item215
 		{
@@ -12468,15 +12469,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9623.4648,25.016428,4059.9966};
-				angles[]={0,2.7503381,0};
+				position[]={9623.4648,25.016428,4059.9971};
+				angles[]={0,2.7503421,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 163.714;this setposATL [9614.515625,4087.597168,0];this setVectorUp [0,0,1]";
 				aiRadarUsage=82788;
 			};
 			id=833;
@@ -12488,14 +12488,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9647.9121,25.016428,4004.3049};
-				angles[]={0,2.6147623,0};
+				angles[]={0,2.6147649,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 157.212;this setposATL [9632.0576172,4037.253662,-0.0109428];this setVectorUp [0,0,1]";
 				aiRadarUsage=70690;
 			};
 			id=834;
@@ -12610,15 +12609,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9614.5127,26.249939,4064.0217};
-				angles[]={0,5.9721093,0};
+				position[]={9614.5127,26.249939,4064.022};
+				angles[]={0,5.972115,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 71.8131;this setposATL [9625.37207,4030.812988,0];this setVectorUp [0,0,1]";
 				aiRadarUsage=-1;
 			};
 			id=851;
@@ -13208,19 +13206,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9601.373,25,4059.6746};
-				angles[]={0,2.8465569,0};
+				position[]={9601.373,24.747734,4059.675};
+				angles[]={-0,2.8465621,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 167.124;this setposATL [9606.875977,4032.581299,-0.253367];this setVectorUp [0,0,1]";
 				aiRadarUsage=144359;
 			};
 			id=1662;
 			type="rmair_mk_ParkCar_5";
+			atlOffset=-0.25226593;
 		};
 		class Item239
 		{
@@ -13592,19 +13590,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9580.7266,25,4069.9021};
-				angles[]={0,4.4450355,0};
+				position[]={9580.7266,24.748945,4069.9021};
+				angles[]={0,4.4450397,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation true;this setdir 167.124;this setposATL [9606.875977,4032.581299,-0.253367];this setVectorUp [0,0,1]";
 				aiRadarUsage=144359;
 			};
 			id=1720;
 			type="rmair_mk_ParkCar_5";
+			atlOffset=-0.25105476;
 		};
 		class Item250
 		{
@@ -16308,7 +16306,7 @@ class Mission
 			};
 			id=1799;
 			type="Land_PierWooden_02_16m_F";
-			atlOffset=0.57282364;
+			atlOffset=0.57282376;
 		};
 		class Item276
 		{
@@ -16325,7 +16323,7 @@ class Mission
 			};
 			id=1800;
 			type="Land_PierWooden_02_16m_F";
-			atlOffset=-1.7211463;
+			atlOffset=-1.7211454;
 		};
 	};
 };

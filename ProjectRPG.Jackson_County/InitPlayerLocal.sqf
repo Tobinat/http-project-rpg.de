@@ -31,6 +31,8 @@ waituntil {(player getvariable "loaded") == 2};
 player setVariable["loaded", nil, false];
 
 waitUntil {!(isNull (findDisplay 46))};
+waitUntil {!(isNull (findDisplay 49))};
+((findDisplay 49) displayCtrl 1010) ctrlEnable false;
 
 _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 [_vehicle, ["black","matte"], "black", 1, 1] call client_fnc_IvoryInitVehicle;
