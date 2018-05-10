@@ -1,28 +1,56 @@
 class RscStandardDisplay;
-class RscDisplayMain: RscStandardDisplay
+class RscPicture;
+class RscPictureKeepAspect;
+class RscDisplayStart: RscStandardDisplay
 {
-	class Spotlight
+	onLoad = "[""onLoad"",_this,""RscDisplayLoading"",'Loading'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf"";";
+	onUnload = "[""onUnload"",_this,""RscDisplayLoading"",'Loading'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf"";";
+	class controls
 	{
-		delete Bootcamp;
-		delete EastWind;
-		delete ApexProtocol;
-		class StanLakeside
+		class Logo: RscPicture
 		{
-			text = "WILLKOMMEN BEI PRPG";
-			textIsQuote = 0;
-			//picture = "\PRPG_Data\textures\loading\main_screen.paa";
-			video = "";
-			action = "_display = ctrlparent(_this select 0); ctrlactivate ((_display) displayctrl 105); _display = findDisplay 8; _control = _display displayctrl 159; ctrlActivate _control;_titleControl = _display displayCtrl 1000;_titleControl ctrlSetText 'Witaj na StanLakeside.pl!';";
-			actionText = "WILLKOMMEN BEI PRPG";
-			condition = "(getstatvalue 'BCFirstDeployment' == 0)";
+			idc = 1200;
+			text = "\PRPG_Data\textures\loading\logo.paa";
+			x = "0.350469 * safezoneW + safezoneX";
+			y = "0.247 * safezoneH + safezoneY";
+			w = "0.299062 * safezoneW";
+			h = "0.462 * safezoneH";
 		};
 	};
-	class controls {
-			delete Spotlight1;
-			//delete Spotlight2;
-			delete Spotlight3;
-			delete BackgroundSpotlightRight;
-			delete BackgroundSpotlightLeft;
-			delete BackgroundSpotlight;
+};
+class RscDisplayLoading
+{
+	class Variants
+	{
+		class LoadingOne
+		{
+			idd = -1;
+			movingEnable = 0;
+			class controls
+			{
+				class LoadingPic: RscPicture
+				{
+					text = "\PRPG_Data\textures\loading\logo.paa";
+					x = "0.350469 * safezoneW + safezoneX";
+					y = "0.247 * safezoneH + safezoneY";
+					w = "0.299062 * safezoneW";
+					h = "0.462 * safezoneH";
+				};
+			};
 		};
+	};
+};
+class RscDisplayMain: RscStandardDisplay
+{
+	class controlsBackground
+	{
+		class CA_ARMA2: RscPicture
+		{
+			text = "\PRPG_Data\textures\loading\logo.paa";
+			x = "0.350469 * safezoneW + safezoneX";
+			y = "0.247 * safezoneH + safezoneY";
+			w = "0.299062 * safezoneW";
+			h = "0.462 * safezoneH";
+		};
+	};
 };
