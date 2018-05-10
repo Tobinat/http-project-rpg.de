@@ -18,6 +18,8 @@ taskrunning = true;
 _markername = format["job%1",getPlayerUID player];
 _warnings = 0;
 _pizzaLevel = 0;
+["Hole deine erste Aufgabe bei der Pizzeria in Silver Lake ab!", false] spawn domsg;
+[[7258.44,2411.93,0.00143814]] call client_fnc_jobMarker;
 while{taskrunning  && myjob == "pizza" } do {
 
 	if(playertasks isequalTO [] && (Player distance [7258.44,2411.93,0.00143814] < 15)) then {
@@ -48,8 +50,8 @@ while{taskrunning  && myjob == "pizza" } do {
 				_warnings = 0;
 				paycheck = paycheck + 35;
 				playertasks deleteat 0;
-				["Du hast die Pizza erfolgreich ausgeliefert. Kehre nun zur Pizzaria in Silver Lake zurück und warte auf einen weiteren Auftrag!", false] spawn domsg;
-				[7258.44,2411.93,0.00143814] call client_fnc_jobMarker;
+				["Auslieferung Erfolgreich! Kehre zur Pizzeria zurück!", false] spawn domsg;
+				[[7258.44,2411.93,0.00143814]] call client_fnc_jobMarker;
 			};
 			uisleep 3;
 		};
