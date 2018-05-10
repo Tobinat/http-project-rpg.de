@@ -8,7 +8,7 @@
 		{
 			438 cutRsc ["HUDPoop","PLAIN"]; 
 			if(client_poop < 80) exitwith {};
-			_severity = 100 - client_poop;
+			_severity = 180 - client_poop;
 			_severity = round(_severity / 10);
 			uisleep _severity; 
 			438 cutfadeout 1; 

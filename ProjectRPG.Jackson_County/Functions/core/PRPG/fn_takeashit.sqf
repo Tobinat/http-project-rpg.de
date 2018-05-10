@@ -13,7 +13,7 @@ player say "fart5";
 uiSleep 2;    
 player enablesimulation true; 
 uisleep 1; 
-_poopvehicle = createVehicle ["cg_human_poop", (player), [], 0, "NONE"];
+_poopvehicle = "cg_human_poop" createVehicle (getpos player);
 _poopvehicle setpos (getpos player);
 player switchmove "";
 
