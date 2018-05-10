@@ -12,6 +12,7 @@ respawndelay = 1;
 respawnButton = 0;
 skipLobby = 1;
 joinUnassigned = 1;
+scriptedPlayer = 1;
 
 wreckLimit = 10;
 wreckRemovalMaxTime = 600;
