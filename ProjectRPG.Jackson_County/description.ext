@@ -10,9 +10,9 @@ onLoadIntro = "PRPG Life ist am laden...";
 //disableChannels[]={0,1,2,3,4,5};
 respawndelay = 1;
 respawnButton = 0;
-//skipLobby = 1;
-//joinUnassigned = 1;
-//scriptedPlayer = 1;
+skipLobby = 1;
+joinUnassigned = 1;
+scriptedPlayer = 1;
 
 wreckLimit = 10;
 wreckRemovalMaxTime = 600;
