@@ -47,7 +47,7 @@ NoPixel_InteractionMenuItems = [
 */	
 	[
 		["client_poop > 80 && (isNull objectParent player)"],
-		["Auf die Toilette gehen", " [] spawn client_takeashit; ",5]
+		["Auf die Toilette gehen", " [] spawn client_fnc_takeashit; ",5]
 	],
 
 
