@@ -183,20 +183,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 		};		
 	
 	
-		//Poop Scheiß
 		
-		_tbewdgopro = _ui displayCtrl 444452;
-		if ( client_poop > 80 ) then
-		{
-			_message = "<img size='2' image='PRPG_Data\icons\toilet.paa'/>";
-			_tbewdgopro ctrlSetStructuredText parseText format["%1",_message];
-		}
-		else
-		{
-			_message = "";
-			_tbewdgopro ctrlSetStructuredText parseText format["%1",_message];
-		};
-		_tbewdgopro ctrlCommit 0;
 	
 	
 	

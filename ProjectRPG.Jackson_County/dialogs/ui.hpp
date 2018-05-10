@@ -514,6 +514,8 @@ class HUDBattery
 	};
 };
 
+
+
 class HUDWork
    	{
 	idd=426;
@@ -1049,6 +1051,50 @@ class HUDLoading
 		};
 	};
 };
+
+
+
+
+
+
+class HUDPoop
+   	{
+	idd=438;
+	movingEnable=0;
+  	fadein=1;
+	duration = 999999999;
+  	fadeout=1;
+	name="HUDPoop";
+	onLoad="uiNamespace setVariable ['HUDPoop',_this select 0]";
+	objects[]={};
+		
+	class controls
+	{
+		class hud5
+		{
+			type = 0;
+			style = 2096;			
+			idc=42569;
+			fadein=1;
+		  	fadeout=1;
+			x = 0.39 * safezoneW + safezoneX;
+			y = 0.93 * safezoneH + safezoneY;
+			w = 0.1;
+			H = 0.1;
+			sizeEx=0.01;
+			size=0.01;
+			font="PuristaLight";
+			colorBackground[]={0,0,0,0};
+			colorText[] = { 1 , 1 , 1 , 1 };
+			shadow=0;
+			text = "\PRPG_Data\icons\toilet.paa";
+		};
+	};
+};
+
+
+
+
 
 
 	class playerHUD

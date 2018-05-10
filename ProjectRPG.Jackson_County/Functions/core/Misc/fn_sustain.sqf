@@ -70,7 +70,8 @@ if(_type == "Poop") then {
 	if(client_poop > 100) then {client_poop = 100;};
 	if(client_poop < 0) then {client_poop = 0;};
 	_selection = 4;
-	_change = client_poop;			
+	_change = client_poop;	
+	[] spawn client_fnc_hudpoop;	
 };
 //health is 5
 

@@ -135,6 +135,7 @@ class CfgFunctions
 			class hudwork {};
 			class showNotification {};
             class hudnos {};
+			class hudpoop {};
 		};
 
 		class admin {
