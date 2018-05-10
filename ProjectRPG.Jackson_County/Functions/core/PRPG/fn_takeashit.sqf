@@ -1,7 +1,14 @@
 // Take a shit
 _currentuniform = Uniform player;
-disableUserInput true;
+//disableUserInput true;
 //life_action_inUse = true;
+
+if(_currentuniform != "") then {
+	 ["Diggah...mit Klamotten ? Ich rieche und fühle mich wie Scheiße...", false] spawn domsg;
+	// life_dirt = 100;
+	 client_poop = 50;
+	 player setfatigue 1;	
+};
 
 player playmove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";  
 player say "fart4";   
@@ -17,15 +24,10 @@ player switchmove "";
 
 //life_dirt = life_dirt + 10;
 client_poop = 0;
- if(_currentuniform != "") then {
-	 ["Diggah...mit Klamotten ? Ich rieche und fühle mich wie Scheiße...", false] spawn domsg;
-	// life_dirt = 100;
-	 client_poop = 50;
-	 player setfatigue 1;	
-};
+ 
 
 //life_action_inUse = false;
-disableUserInput false;
+//disableUserInput false;
 uisleep 5;
 deletevehicle _poopvehicle;
 
