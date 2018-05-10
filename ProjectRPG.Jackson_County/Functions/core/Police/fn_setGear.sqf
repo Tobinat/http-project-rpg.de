@@ -76,7 +76,7 @@ if(myjob == "Cop") exitwith {
 				player addVest "S_VHO_OV_BLK_4";
 				player addHeadgear "H_007_policecap";
 			};
-			if(_level == 10) then {
+			if(_level >= 10) then {
 				player forceAddUniform "pRPG_State7";
 				player addVest "S_VHO_OV_BLK_4";
 				player addHeadgear "H_007_policecap";
