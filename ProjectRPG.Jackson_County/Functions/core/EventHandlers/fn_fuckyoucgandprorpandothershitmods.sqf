@@ -8,7 +8,7 @@ if(_current == 0) exitwith {};
 if (_item == "NP_DrugTable") then { [] spawn client_fnc_usedrugtable; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "NP_GrowingPlot") then { [] spawn client_fnc_plantweed; closeDialog 0; };
 if (_item == "np_water") then { ["remove","unhealthiness",1] call client_fnc_sustain; ["add","drink",100] call client_fnc_sustain; [_item,20] spawn client_fnc_removeitem; closeDialog 0; };
-if (_item IN ["np_sausage","np_chickensoup","np_peasoup","np_psoup","np_beefsoup","np_lettucesoup","np_tuna"]) then { ["remove","unhealthiness",1] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["add","drink",10] call client_fnc_sustain; ["remove","Poop",10] call client_fnc_sustain;  [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item IN ["np_sausage","np_chickensoup","np_peasoup","np_psoup","np_beefsoup","np_lettucesoup","np_tuna"]) then { ["remove","unhealthiness",1] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["add","drink",10] call client_fnc_sustain; ["add","Poop",10] call client_fnc_sustain;  [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "np_groceries") then { ["add","drink",100] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["remove","unhealthiness",1] call client_fnc_sustain; [_item,80] spawn client_fnc_removeitem; closeDialog 0; };
 //junky drink
 if (_item IN ["np_coke","np_drpepper"]) then {playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45]; ["add","drink",50] call client_fnc_sustain; ["add","unhealthiness",10] call client_fnc_sustain; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
@@ -20,7 +20,7 @@ if (_item IN ["plp_bo_inv_BottleBlueCorazol","plp_bo_inv_BottleGin"]) then {play
 //junkfood&drink
 if (_item IN
 	["np_hpizza","np_mpizza","np_cpizza","np_spizza","np_vpizza","np_chdonuts","np_jdonuts","np_cdonuts","np_donuts","np_happymeal","np_bigmac","np_mchicken","np_quater","np_cheeseburger","np_hamburger","np_hotdog","np_mhotdog","np_kmhotdog","np_bbqhotdog","np_cheesehotdog"]
-	) then { ["add","drink",60] call client_fnc_sustain; ["add","food",60] call client_fnc_sustain; ["add","unhealthiness",10] call client_fnc_sustain; ["remove","Poop",10] call client_fnc_sustain; [_item,20] spawn client_fnc_removeitem; closeDialog 0; };
+	) then { ["add","drink",60] call client_fnc_sustain; ["add","food",60] call client_fnc_sustain; ["add","unhealthiness",10] call client_fnc_sustain; ["add","Poop",10] call client_fnc_sustain; [_item,20] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item IN ["np_ugroceries"] ) then { ["add","drink",100] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["add","unhealthiness",6] call client_fnc_sustain;  [_item,80] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "NP_drillitem") then {_cops = (count currentcop); if(_cops < 5) exitwith { hint "Es sind weniger als 5 Polizisten im Dienst."; }; [] spawn client_fnc_bankrobbery; closeDialog 0; };
 //if (_item == "CG_C4") then {_cops = (count currentcop); if(_cops < 3) exitwith { hint "Za mało policjantów - 3+"; }; [] spawn client_fnc_blowdoor; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
