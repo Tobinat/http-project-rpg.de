@@ -27,7 +27,6 @@ while{taskrunning  && myjob == "pizza" } do {
 		if (player == opfer) exitWith {playertasks deleteat 0;};
 		playertasks pushback [opfer,"pizzaliefern"];
 		[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
-		//hint "Auftrag (Markiert auf Karte): Pizza ausliefern.";
 		["Ein Lieferauftrag wurde auf der Karter Markiert - Wenn du bei deinem Kunden bist, verlasse das Fahrzeug.", false] spawn domsg;
 	} else {
 
@@ -42,10 +41,10 @@ while{taskrunning  && myjob == "pizza" } do {
 			[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
 		};
 
-		if(player distance ((playertasks select 0) select 0) < 15 && vehicle player == player && player distance vehspawned < 10) then {
+		if(player distance ((playertasks select 0) select 0) < 15 && vehicle player == player) then {
 
 			if(((playertasks select 0) select 1) == "pizzaliefern") then {
-				["pizzaliefern"] spawn client_fnc_getPizza;
+				[] spawn client_fnc_getPizza;
 				_warnings = 0;
 				paycheck = paycheck + 35;
 				playertasks deleteat 0;
