@@ -11,16 +11,12 @@ _doughnuts = player getVariable ["doughnutsLevel", 0];
 //remember to use this array in the mafia selling script & ALSO THE CAR UPDATE SCRIPT.
 _civilianVehicle = [
 	["Jonzie_XB",1900],
-	["ADM_1969_Camaro",2200],
 	["Jonzie_Mini_Cooper",2300],
 	["Jonzie_Ceed",2400],
-	["ADM_1964_Impala",2500],
 	["ivory_190e",2600],
 	["vvv_Chevrolet_Cone0",3000],
 	["jonzie_30CSL",3200],
-	["ADM_1969_Charger",3500],
 	["vvv_Abarth_695",4000],
-	["ADM_GMC_Vandura",5100], // can farm
 	["ivory_gti",6000],
 	["Jonzie_Transit",6400], //can farm
 	["vvv_Chevrolet_Bel_Air",7000],
@@ -28,7 +24,6 @@ _civilianVehicle = [
 	["vvv_Alfa_Romeo_Spider_Duetto",8000],
 	["vvv_Chevrolet_Camaro_RS",9000],
 	["Jonzie_Mini_Cooper_r_spec",9000],
-	["ADM_Ford_F100",9500], // can farm
 	["nopixel_GMC_Campervan",9999],
 	["nopixel_Box_Default",9999],
 	["vvv_Chevrolet_Blazer",10000],
@@ -72,25 +67,6 @@ _civilianVehicle = [
 	["ivory_ccx", 240000],
 	["ivory_f1",250000],
 	["ivory_veyron",300000],
-	["red_beetle_66_black",14000],
-	["red_cvpi_06_black",25000],
-	["red_f350_08_black",120000],
-	["red_towtruck_08_black",45000],
-	["sl_taurus_10_black",90000],
-	["sl_panamera_10_black",350000],
-	["sl_camaro_12_black",250000],
-	["sl_charger_12_black",300000],
-	["sl_xkrs_12_black",450000],
-	["sl_s65_12_black",200000],
-	["sl_porsche_12_black",400000],
-	["sl_vanquish_13_black",600000],
-	["sl_gs350_13_black",105000],
-	["sl_corvette_14_black",800000],
-	["sl_suburban_15_black",350000],
-	["sl_charger_15_black",400000],
-	["red_explorer_16_black",250000],
-	["C_Quadbike_01_F",5000],
-	["C_SUV_01_F",25000],
 	["Aston_Martin_Vanquish_13_Black",220000], // A3F Fahrzeuge
 	["A3F_TT_RS_10_Black",150000],
 	["A3F_BMW_M5_F10_12_Black",90000],
@@ -122,16 +98,9 @@ _civilianVehicle = [
 	["Dodge_Charger_SRT8_2016_Black",65650],
 	["Dodge_Ram_SRT10_Black",32900],
 	["Chevrolet_Camaro_ZL1_13_Black",26500],
-	["CadillacEldorado1959_Black",32050],
-	
+	["CadillacEldorado1959_Black",32050]
+
 ];
-_harleys = [
-	["Acj_Harley_Davidson_Sons_Of_Anarchy",15000],
-	["Acj_HarleyDavidson_Sholvehead",20000],
-	["vvv_HarleyDavidson_CustomBobber1",25000],
-	["Acj_BMWR_75",35000]
-];
-_civilianVehicle = _civilianVehicle + _harleys;
 
 
 if(_doughnuts > 0) then {
@@ -231,7 +200,7 @@ if(_whatdo == "NEW") then {
 		_cost = _addedprice + _cost;
 
 		if(_class IN _farmingvehicles) then {
-			_list lbAdd format["$%2 (Steuern %%3): %1",_vehicleName,_cost,taxRate]; 
+			_list lbAdd format["$%2 (Steuern %%3): %1",_vehicleName,_cost,taxRate];
 		} else {
 			_list lbAdd format["$%2 (Steuern %%3): %1",_vehicleName,_cost,taxRate];
 		};
