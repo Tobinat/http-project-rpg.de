@@ -1,3 +1,4 @@
+params["_ticket"];
 speedMeter_last_ticket = false;
 _lastPos = visiblePosition player;
 _lastPos = (_lastPos select 0) + (_lastPos select 1);
