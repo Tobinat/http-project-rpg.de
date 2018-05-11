@@ -30,7 +30,7 @@ _Jobs pushback ["Security","security"];
 };
 
 if(count currentTrashman < (_count select 2)) then {
-_Jobs pushback ["Muellabfuhr","trashman"]; 
+_Jobs pushback ["Müllabfuhr","trashman"]; 
 };
 
 if(count currentNewsMan < (_count select 3)) then {
@@ -60,5 +60,5 @@ _list lbAdd "Arbeit: Holzfäller";
 _job = "Wood Logging";
 _list lbSetdata [(lbSize _list)-1,str(_job)];
 
-hint "Die Arbeit als Holzfäller - Die meisten Firmen stellen dir ein Firmenwagen zur Verfügung. Verwende die Windowstaste und wähle die entsprechende Option aus.";
+hint "Die meisten Firmen stellen dir ein Firmenwagen zur Verfügung. Verwende die Windowstaste und wähle die entsprechende Option aus.";
 
