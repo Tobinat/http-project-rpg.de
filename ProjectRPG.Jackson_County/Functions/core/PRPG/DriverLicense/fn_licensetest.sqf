@@ -12,6 +12,7 @@ myvehicletesticle = "Smart_Blue" createVehicle (getmarkerpos "t_test_25");
 myvehicletesticle setDir (markerDir "t_test_25");
 sleep 1;
 player action ["getInDriver", myvehicletesticle];
+driver_test = true;
 totalres = 0;
 while{_totaltest > 0} do {
 	while{true} do {
@@ -21,7 +22,7 @@ while{_totaltest > 0} do {
 		if(player distance postest < 3000) exitwith {};
 		sleep 1;
 	};
-	["Schaue dich in der Stadt um, um den nächsten Checkpoint zu finden!",false] spawn domsg;
+	["Schaue dich um, um den nächsten Checkpoint zu finden!",false] spawn domsg;
 	[postest] spawn client_fnc_jobmarker;
 	_timer = 0;
 	anwser = "Error";
@@ -30,7 +31,7 @@ while{_totaltest > 0} do {
 		if(!life_seatbelt) exitwith { answer = "Nicht angeschnallt!"; };
 		if(player distance postest < 15) exitwith { answer = "Checkpoint Erfolgreich!"; totalres = totalres + 1; };
 		if(speed player >= 75) exitwith { answer = "Höchstegeschwindigkeit überschritten!"; (vehicle player) setVelocity [0, 0, 0]; };
-		if(_timer > 120) exitwith { answer = "Du hast zu lange gebraucht!"; };
+		if(_timer > 240) exitwith { answer = "Du hast zu lange gebraucht!"; };
 		_timer = _timer + 1;
 		uisleep 1;
 		hint parsetext format["<img size='1' image='\PRPG_Data\textures\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>JOB:</t><br/> Du hast %1 Sekunden gebraucht.",_timer];
@@ -44,10 +45,11 @@ while{_totaltest > 0} do {
 
 if(totalres > 1) then {
 	endresult = "BESTANDEN: Du hast nun einen Neuen Fühererschein..";
-	driver_test = true;
+	driver_test = false;
 	["Add","license",1] call client_fnc_sustain;
 } else {
 	endresult = "DURCHGEFALLEN: Du hast es nicht geschaft! Gut gemacht, du Loser!";
+	driver_test = false;
 };
 
 [endresult,false] spawn domsg;
