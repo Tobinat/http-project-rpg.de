@@ -7,7 +7,7 @@ _marker setMarkerTypelocal "hd_dot";
 _marker setMarkerColorlocal "ColorOrange";
 _marker setMarkerTextlocal "Ort der Aufgabe";
 if (driver_test) then {
-	[_pos,"Checkpoint","Location"] spawn client_fnc_hudHelper;
+	[_pos,"Checkpoint","Job"] spawn client_fnc_hudHelper;
 	} else {
 		if(myjob == "Cop") then {
 			[_pos,"Alarm aktiviert!","Job"] spawn client_fnc_hudHelper;
