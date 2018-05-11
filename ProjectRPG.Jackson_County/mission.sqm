@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=1801;
+		nextID=1863;
 	};
 	class MarkerIDProvider
 	{
@@ -229,24 +229,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -261,6 +243,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -3330,7 +3330,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=277;
+		items=297;
 		class Item0
 		{
 			dataType="Group";
@@ -9771,7 +9771,7 @@ class Mission
 			position[]={7319.7217,5.3434937e+024,4584.4844};
 			name="race_5";
 			type="Empty";
-			angle=108.75137;
+			angle=108.75136;
 			id=257;
 			atlOffset=5.3434937e+024;
 		};
@@ -13207,7 +13207,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9601.373,24.747734,4059.675};
-				angles[]={-0,2.8465621,0};
+				angles[]={0,2.8465621,0};
 			};
 			side="Empty";
 			flags=4;
@@ -16324,6 +16324,187 @@ class Mission
 			id=1800;
 			type="Land_PierWooden_02_16m_F";
 			atlOffset=-1.7211454;
+		};
+		class Item277
+		{
+			dataType="Marker";
+			position[]={7163.7896,11.897,2353.0989};
+			name="t_test_25";
+			type="Empty";
+			angle=69.073578;
+			id=1841;
+			atlOffset=-13.091901;
+		};
+		class Item278
+		{
+			dataType="Marker";
+			position[]={7262.1353,11.911,2449.9729};
+			name="t_test_1";
+			type="Empty";
+			id=1842;
+			atlOffset=-13.089;
+		};
+		class Item279
+		{
+			dataType="Marker";
+			position[]={7340.7783,11.911,2482.6689};
+			name="t_test_2";
+			type="Empty";
+			id=1843;
+			atlOffset=-13.089;
+		};
+		class Item280
+		{
+			dataType="Marker";
+			position[]={7490.9033,11.911,2464.26};
+			name="t_test_3";
+			type="Empty";
+			id=1844;
+			atlOffset=-13.089;
+		};
+		class Item281
+		{
+			dataType="Marker";
+			position[]={7694.5635,11.911,2639.2471};
+			name="t_test_4";
+			type="Empty";
+			id=1845;
+			atlOffset=-13.089;
+		};
+		class Item282
+		{
+			dataType="Marker";
+			position[]={7052.3354,11.911,2343.7209};
+			name="t_test_5";
+			type="Empty";
+			id=1846;
+			atlOffset=-13.089;
+		};
+		class Item283
+		{
+			dataType="Marker";
+			position[]={6477.0044,11.911,1940.0959};
+			name="t_test_6";
+			type="Empty";
+			id=1847;
+			atlOffset=-13.089;
+		};
+		class Item284
+		{
+			dataType="Marker";
+			position[]={6415.0586,11.911,1667.3199};
+			name="t_test_9";
+			type="Empty";
+			id=1848;
+			atlOffset=-13.089;
+		};
+		class Item285
+		{
+			dataType="Marker";
+			position[]={6205.7476,11.911,1357.3729};
+			name="t_test_7";
+			type="Empty";
+			id=1849;
+			atlOffset=-13.089;
+		};
+		class Item286
+		{
+			dataType="Marker";
+			position[]={6794.5596,11.911,2317.2061};
+			name="t_test_8";
+			type="Empty";
+			id=1850;
+			atlOffset=-13.089;
+		};
+		class Item287
+		{
+			dataType="Marker";
+			position[]={6368.1143,11.911,2166.146};
+			name="t_test_10";
+			type="Empty";
+			id=1851;
+			atlOffset=-13.089;
+		};
+		class Item288
+		{
+			dataType="Marker";
+			position[]={6106.4146,11.911,873.7959};
+			name="t_test_11";
+			type="Empty";
+			id=1852;
+			atlOffset=-13.089;
+		};
+		class Item289
+		{
+			dataType="Marker";
+			position[]={6286.3633,11.911,1331.8099};
+			name="t_test_12";
+			type="Empty";
+			id=1853;
+			atlOffset=-13.089;
+		};
+		class Item290
+		{
+			dataType="Marker";
+			position[]={7466.8271,11.911,2544.1479};
+			name="t_test_13";
+			type="Empty";
+			id=1854;
+			atlOffset=-13.089;
+		};
+		class Item291
+		{
+			dataType="Marker";
+			position[]={7673.9492,11.911,2662.0999};
+			name="t_test_14";
+			type="Empty";
+			id=1855;
+			atlOffset=-13.089;
+		};
+		class Item292
+		{
+			dataType="Marker";
+			position[]={6365.9922,11.911,2080.009};
+			name="t_test_15";
+			type="Empty";
+			id=1856;
+			atlOffset=-13.089;
+		};
+		class Item293
+		{
+			dataType="Marker";
+			position[]={6900.7231,0,2098.7939};
+			name="t_test_16";
+			type="Empty";
+			id=1857;
+			atlOffset=-13.088833;
+		};
+		class Item294
+		{
+			dataType="Marker";
+			position[]={7003.1875,11.911,2406.4399};
+			name="t_test_17";
+			type="Empty";
+			id=1858;
+			atlOffset=-13.089;
+		};
+		class Item295
+		{
+			dataType="Marker";
+			position[]={6529.2632,11.911,2205.2119};
+			name="t_test_18";
+			type="Empty";
+			id=1859;
+			atlOffset=-13.089;
+		};
+		class Item296
+		{
+			dataType="Marker";
+			position[]={6317.9912,11.911,1639.3729};
+			name="t_test_19";
+			type="Empty";
+			id=1860;
+			atlOffset=-13.089;
 		};
 	};
 };
