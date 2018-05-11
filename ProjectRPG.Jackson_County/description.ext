@@ -215,7 +215,6 @@ class CfgFunctions
 
     class DriverLicense {
 			file = "Functions\core\PRPG\DriverLicense";
-			class draw3d {};
 			class licensetest {};
 		};
 

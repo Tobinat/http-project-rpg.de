@@ -22,7 +22,7 @@ while{_totaltest > 0} do {
 		sleep 1;
 	};
 	["Schaue dich in der Stadt um, um den nächsten Checkpoint zu finden!",false] spawn domsg;
-	["Driving Test",postest] spawn client_fnc_draw3d;
+	[postest] spawn client_fnc_jobmarker;
 	_timer = 0;
 	anwser = "Error";
 	_shitcunt = 0;
@@ -55,7 +55,7 @@ if(totalres > 1) then {
 sleep 0.05;
 player action ["Eject", vehicle player];
 deletevehicle myvehicletesticle;
-marker_on = false;
+[getpos player,"text to display","destroy"] spawn client_fnc_hudHelper;
 if(life_istazed) exitWith {};
 if(life_interrupted) exitWith {};
 if((player getVariable["restrained",false])) exitWith {};
