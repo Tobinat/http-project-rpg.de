@@ -14,9 +14,6 @@ _marker setMarkerTextlocal "Ort der Aufgabe";
 				[_pos,"Feuer!","Job"] spawn client_fnc_hudHelper;
 				playSound "fireAlarm";
 			} else {
-				if (driver_test) then {
-					[_pos,"Checkpoint","Location"] spawn client_fnc_hudhelper;
-				} else {
 				[_pos,"Aufgabe","Job"] spawn client_fnc_hudHelper;
 			};
 		};
