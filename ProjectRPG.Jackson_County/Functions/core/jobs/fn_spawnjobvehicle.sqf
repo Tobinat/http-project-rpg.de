@@ -15,8 +15,8 @@ if(!isNil "vehspawned") then {
 	};
 };
 
-[10] call Client_fnc_sl_removeBank_secure;
-["Ihnen wurden $10 fuer die Anmietung eines Firmenwagens berechnet.", true] spawn doquickmsg;
+[50] call Client_fnc_sl_removeBank_secure;
+["Ihnen wurden $50 für die Anmietung eines Firmenwagens berechnet.", true] spawn doquickmsg;
 
 _jobType = myjob;
 
@@ -49,6 +49,13 @@ if (_jobType == "trashman") exitwith {
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["G_Uniform_worker_l",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
+};
+
+
+if (_jobType == "pizza") exitwith {
+	vehspawned = createVehicle ["GMC_Vandura_83_Pizza_COSTUM_V1", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	[vehspawned] spawn client_fnc_spawnvehicle;
+	current_cars pushback vehspawned; uisleep 1;
 };
 
 if (_jobType == "repairman") exitwith {
