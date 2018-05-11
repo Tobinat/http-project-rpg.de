@@ -79,7 +79,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(licensearray select 0) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""] && player getVariable[""veh_points"",0] < 15"],
+		["(licensearray select 0) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""]"],
 		["Fuehrerschein $500", "_cashcheck = [1,500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [] spawn client_fnc_licensetest; [500] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 

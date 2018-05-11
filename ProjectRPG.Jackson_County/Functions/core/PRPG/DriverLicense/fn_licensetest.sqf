@@ -8,10 +8,10 @@ playSound "racebeep1";
 sleep 1;
 beginpos = getpos player;
 _totaltest = 4;
-myvehicletesticle = createVehicle ["critgamin_smart_civ", (getmarkerpos "t_test_25"), [], 0, "NONE"];
-myvehicletesticle = setDir (markerDir "t_test_25")
+myvehicletesticle = "critgamin_smart_civ" createVehicle (getmarkerpos "t_test_25");
+myvehicletesticle = setDir (markerDir "t_test_25");
 sleep 1;
-player action ["getInDriver", myvehicletesticle];	
+player action ["getInDriver", myvehicletesticle];
 totalres = 0;
 while{_totaltest > 0} do {
 	while{true} do {
@@ -43,11 +43,11 @@ while{_totaltest > 0} do {
 };
 
 if(totalres > 1) then {
-	endresult = "BESTANDEN: Du hast nun einen Neuen Fühererschein.."; 
+	endresult = "BESTANDEN: Du hast nun einen Neuen Fühererschein..";
 	driver_test = true;
 	["Add","license",1] call client_fnc_sustain;
-} else { 
-	endresult = "DURCHGEFALLEN: Du hast es nicht geschaft! Gut gemacht, du Loser!"; 
+} else {
+	endresult = "DURCHGEFALLEN: Du hast es nicht geschaft! Gut gemacht, du Loser!";
 };
 
 [endresult,false] spawn domsg;
@@ -60,4 +60,3 @@ if(life_istazed) exitWith {};
 if(life_interrupted) exitWith {};
 if((player getVariable["restrained",false])) exitWith {};
 player setpos beginpos;
-
