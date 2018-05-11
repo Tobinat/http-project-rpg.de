@@ -8,7 +8,7 @@ playSound "racebeep1";
 sleep 1;
 beginpos = getpos player;
 _totaltest = 4;
-myvehicletesticle = "critgamin_smart_civ" createVehicle (getmarkerpos "t_test_25");
+myvehicletesticle = "Smart_Blue" createVehicle (getmarkerpos "t_test_25");
 myvehicletesticle setDir (markerDir "t_test_25");
 sleep 1;
 player action ["getInDriver", myvehicletesticle];
