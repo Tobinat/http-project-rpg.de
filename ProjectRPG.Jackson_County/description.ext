@@ -213,6 +213,12 @@ class CfgFunctions
       class ShowLicense {};
     };
 
+    class DriverLicense {
+			file = "Functions\core\PRPG\DriverLicense";
+			class draw3d {};
+			class licensetest {};
+		};
+
 		class jobFactions {
 			file = "Functions\core\jobs\JobFactions";
 			class startDispatch {};
