@@ -104,3 +104,4 @@ sleep 2;
 
 [] call client_fnc_initWelcome;
 ["Windowstaste oder Shift+5 oeffnen Interaktionsmenue.", true] spawn domsg;
+marker_on = false;

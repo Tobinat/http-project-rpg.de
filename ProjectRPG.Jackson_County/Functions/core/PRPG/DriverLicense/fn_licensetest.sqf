@@ -33,7 +33,7 @@ while{_totaltest > 0} do {
 		if(_timer > 120) exitwith { answer = "Du hast zu lange gebraucht!"; };
 		_timer = _timer + 1;
 		uisleep 1;
-		hint parsetext format["<img size='1' image='icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>JOB:</t><br/> Du hast %1 Sekunden gebraucht.",_timer];
+		hint parsetext format["<img size='1' image='\PRPG_Data\textures\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>JOB:</t><br/> Du hast %1 Sekunden gebraucht.",_timer];
 	};
 	playSound "racebeep1";
 	[format["%1",answer],false] spawn domsg;
