@@ -190,6 +190,12 @@ for "_i" from 0 to 1 step 0 do {
         _lastPos = visiblePosition player;
         _lastPos = (_lastPos select 0) + (_lastPos select 1);
     };
+	
+	if(marker_on) then {
+	_distance = floor( getpos player distance posinext );     
+	_distance = format ["%1 | %2",drawmessage, _distance];
+	drawIcon3D ["\A3\ui_f\data\map\markers\military\pickup_ca.paa", [1,1,1,1], posinext, 0.7, 0.7, 5, _distance, 1, 0.036, "PuristaLight"];  
+	};
 
 	/* if (TF_speak_volume_level == "normal") then {
    9534 cutfadeout 0;
