@@ -13,7 +13,7 @@ for "_i" from 0 to 1 step 0 do {
 			_handle = false;
 			if((player distance (getMarkerPos "speed_cam_1")) < 30 || (player distance (getMarkerPos "speed_cam_2")) < 30 || (player distance (getMarkerPos "speed_cam_3")) < 30 || (player distance (getMarkerPos "speed_cam_4")) < 30) then {
 				_text = " in bebauten Gebieten";
-				if(_vel > 74 && _vel < 140) then {
+				if(_vel > 74 && _vel < 85) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
 					"colorCorrections" ppEffectCommit 0;
@@ -32,8 +32,9 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
+					_ticket = 1500;
 				};
-				if(_vel > 139 && _vel < 200) then {
+				if(_vel > 84 && _vel < 130) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
 					"colorCorrections" ppEffectCommit 0;
@@ -52,8 +53,10 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
+					_ticket = 2500;
+					["Remove","license",1] call client_fnc_sustain;
 				};
-				if(_vel > 199) then {
+				if(_vel > 129) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
 					"colorCorrections" ppEffectCommit 0;
@@ -72,11 +75,13 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
+					_ticket = 5000;
+					["Remove","license",1] call client_fnc_sustain;
 				};
 			};
 			if((player distance (getMarkerPos "speed_cam_5")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_10")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30) then {
 				_text = " außerhalb bebauter Gebiete.";
-				if(_vel > 159 && _vel < 224) then {
+				if(_vel > 164 && _vel < 185) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
 					"colorCorrections" ppEffectCommit 0;
@@ -95,8 +100,9 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
+					_ticket = 1000;
 				};
-				if(_vel > 225) then {
+				if(_vel > 184 && _vel < 254) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
 					"colorCorrections" ppEffectCommit 0;
@@ -115,10 +121,35 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
+					_ticket = 2000;
+					["Remove","license",1] call client_fnc_sustain
+				};
+				if(_vel > 255) then {
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
+					"colorCorrections" ppEffectEnable false;
+					uiSleep 0.1;
+					"colorCorrections" ppEffectEnable true;
+					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
+					"colorCorrections" ppEffectCommit 0;
+					uiSleep 0;
+					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];
+					"colorCorrections" ppEffectCommit 0.05;
+					uiSleep 0.05;
+					"colorCorrections" ppEffectEnable false;
+					_handle = true;
+					_ticket = 2500;
+					["Remove","license",1] call client_fnc_sustain;
 				};
 				uiSleep 1;
 			};
-			if(_handle && !speedMeter_last_ticket) then {
+			if(_handle) then {
+				
 				_information = _vehicle getVariable ["information",[]];
 				_plate = _information select 0;
 				_class = typeof _vehicle;
@@ -131,15 +162,15 @@ for "_i" from 0 to 1 step 0 do {
 				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
 				//["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
 
-				_message = format["Sie wurden erwischt, wie sie die erlaubte Höchstgeschwindigkeit überschritten haben. %2 Fahrzeugfoto und mit Zulassungsnummer - %1", toUpper(_plate), _reason];
+				_message = format["Du bist zu schnell gefahren! %2 Zulassungsnummer %1", toUpper(_plate), _reason];
+				_message2 = format ["Strafgeld $%1", _ticket];
 
-				speedMeter_last_ticket = true;
-				[_message] spawn {
-					_message = _this select 0;
-					uiSleep 60;
-					//["fotoradar",player,_message,"Verkehrsabteilung","[Strafzettel] Verkehrsabteilung"] remoteExec ["server_fnc_sendMail",2];
-					//[_message,"[Strafzettel] Verkehrsabteilung","Verkehrsabteilung"] remoteExec ["client_fnc_sendMail",player];
-					speedMeter_last_ticket = false;
+				uiSleep 0.1;
+				[_message,true] spawn domsg;
+				uiSleep 0.1;
+				[_message2,true] spawn domsg;
+				uiSleep 0.1;
+				[_ticket] call Client_fnc_sl_removeBank_secure;
 				};
 			};
 			uiSleep 1;
