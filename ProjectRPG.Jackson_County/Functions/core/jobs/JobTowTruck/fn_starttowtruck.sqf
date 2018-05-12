@@ -2,7 +2,7 @@
 //[getpos player,] remoteExec ["client_fnc_startGarbage",_player];
 // use lexus with directionals only.
 
-if( myjob != "none" && myjob != "towtruck") exitwith { hint "Masz już pracę!"; };
+if( myjob != "none" && myjob != "towtruck") exitwith { hint "Du hast schon einen Job!"; };
 
 if(isnil "taskrunning") then { taskrunning = false; };
 
@@ -20,7 +20,7 @@ if(!taskrunning) then {
 		while{taskrunning && myjob == "towtruck"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
-				hint "Sie haben derzeit keine Aufgabe. Achten sie auf Fahrzeuge die abgeschleppt werden muessen.!";
+				hint "Sie haben derzeit keine Aufgabe. Achten sie auf Fahrzeuge die abgeschleppt werden müssen.!";
 				uisleep 60;
 			} else {
 

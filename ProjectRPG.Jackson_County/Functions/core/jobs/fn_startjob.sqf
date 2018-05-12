@@ -49,6 +49,12 @@ if(count currentPizzaFicker < (_count select 6)) then {
 _Jobs pushback ["Pizza Lieferant","pizza"]; 
 };
 
+if(count currentTowTruckDrivers < (_count select 7)) then {
+_Jobs pushback ["Abschlepper","Tow Truck Driver"]; 
+};
+
+
+
 if(_jobs isequalto []) then { _jobs = ["Keine Arbeit verfügbar"]; };
 
 {
