@@ -1528,6 +1528,13 @@ class CfgSounds {
         titles[] = {};
     };
 	
+	
+	class mafia {
+        name = "mafia";
+        sound[] = {
+            "@PRPG_Data\sounds\mafia.ogg",1,1};
+        titles[] = {};
+    };
 
 
 
