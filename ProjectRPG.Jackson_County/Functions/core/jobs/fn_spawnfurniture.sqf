@@ -54,9 +54,9 @@ if(_type == 1) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		_fickdicharma = getPos fuckingcouch select 0;
-		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
-		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
+		//_fickdicharma = getPos fuckingcouch select 0;
+		//_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		//fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -75,9 +75,9 @@ if(_type == 2) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch; 
-		_fickdicharma = getPos fuckingcouch select 0;
-		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
-		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
+		//_fickdicharma = getPos fuckingcouch select 0;
+		//_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		//fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 
 	};
 };
@@ -97,9 +97,9 @@ if(_type == 3) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {}; 
 		mychairs pushback fuckingcouch;
-		_fickdicharma = getPos fuckingcouch select 0;
-		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
-		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
+		//_fickdicharma = getPos fuckingcouch select 0;
+		//_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		//fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 
 	};
 };
@@ -119,9 +119,9 @@ if(_type == 4) exitwith {
 		fuckingcouch setdir getdir player;  
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		_fickdicharma = getPos fuckingcouch select 0;
-		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
-		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
+		//_fickdicharma = getPos fuckingcouch select 0;
+		//_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		//fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 
 	};
 };
@@ -162,9 +162,9 @@ if(_type == 6) exitwith {
 		fuckingcouch setdir getdir player; 		
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		_fickdicharma = getPos fuckingcouch select 0;
-		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
-		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
+		//_fickdicharma = getPos fuckingcouch select 0;
+		//_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		//fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -273,9 +273,9 @@ if(_type == 11) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		_fickdicharma = getPos fuckingcouch select 0;
-		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
-		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
+		//_fickdicharma = getPos fuckingcouch select 0;
+		//_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		//fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -317,8 +317,8 @@ if(_type == 13) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		_fickdicharma = getPos fuckingcouch select 0;
-		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
-		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
+		//_fickdicharma = getPos fuckingcouch select 0;
+		//_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		//fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
