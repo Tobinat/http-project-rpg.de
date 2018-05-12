@@ -340,6 +340,7 @@ class CfgFunctions
 			class settax {};
 			class mayorsetup {};
 			class loadassassin {};
+			class musik {};
 		};
 
 		class Crafting
@@ -1520,8 +1521,13 @@ class CfgSounds {
         titles[] = {};
     };
 
-
-
+	class präsi {
+        name = "präsi";
+        sound[] = {
+            "@PRPG_Data\sounds\präsident.ogg",1,1};
+        titles[] = {};
+    };
+	
 
 
 

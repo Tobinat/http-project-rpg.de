@@ -1,0 +1,1 @@
+playSound3D ["PRPG_Data\sounds\präsident.ogg", player, false, getPosASL player, 1, 1, 10]

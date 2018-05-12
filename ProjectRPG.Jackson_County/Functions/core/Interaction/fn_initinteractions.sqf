@@ -886,6 +886,11 @@ NoPixel_InteractionMenuItems = [
 		["Mayor && player distance myhouse < 10"],
 		["Steuern festlegen", "createdialog ""tax_menu"";",4]
 	],
+	
+	[
+		["Mayor"],
+		["Der Präsident kommt", "[] spawn client_fnc_musik;",4]
+	],
 
 	[
 		["clientarrested"],
