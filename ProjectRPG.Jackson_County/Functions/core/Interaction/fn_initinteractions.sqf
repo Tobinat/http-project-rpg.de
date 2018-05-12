@@ -667,7 +667,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
-		["EMS Kleiderkammer", "closedialog 0; createdialog ""Med_Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;"]
+		["EMS Kleiderkammer", "closedialog 0; createdialog ""Med_Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
