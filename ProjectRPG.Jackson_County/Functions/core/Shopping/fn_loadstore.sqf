@@ -835,7 +835,7 @@ if(_condition == "fdkleidung") then {
 			["pRPG_Candidate1",nil,10,3,1],
 			["female_ems",nil,10,3,1],
 			["vvv_traje_bombero",nil,10,3,1],
-			["Masque_Chirurgical",nil,10,3,1],
+			["Mask_M40",nil,10,3,1],
 			["TRYK_Headset_NV",nil,10,3,1]
 		];
 		_additional = _additional + _ret;
