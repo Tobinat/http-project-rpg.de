@@ -7,7 +7,6 @@ if( myjob != "none" && myjob != "towtruck") exitwith { hint "Du hast schon einen
 if(isnil "taskrunning") then { taskrunning = false; };
 
 myjob = "towtruck";
-
 [] call client_fnc_hudwork;
 private ["_warning","_JobBase"];
 if(!taskrunning) then {

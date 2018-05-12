@@ -18,7 +18,7 @@ if(!taskrunning) then {
 		while{taskrunning && myjob == "Repairman"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
-				hint "Sie haben derzeit keine Aufgabe. Suchen sie nach Objekten, die sie Reparieren koennen!";
+				hint "Sie haben derzeit keine Aufgabe. Suchen sie nach Objekten, die sie Reparieren können!";
 				uisleep 60;
 			} else {
 

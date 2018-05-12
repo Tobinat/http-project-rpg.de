@@ -1,6 +1,6 @@
 //[position,type IE "Murder" or "Vehicle Accident"] remoteExec ["client_fnc_startNews",_player];
 
-if(myjob != "none" && myjob != "NewsMan") exitwith { hint "Masz już pracę!"; };
+if(myjob != "none" && myjob != "NewsMan") exitwith { hint "Du hast schon einen Job!"; };
 if(isnil "taskrunning") then { taskrunning = false; };
 
 myjob = "NewsMan";

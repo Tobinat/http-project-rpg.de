@@ -77,11 +77,10 @@ if (_jobType == "security") exitwith {
 };
 
 if (_jobType == "towtruck") exitwith {
-	vehspawned = createVehicle ["A3L_Towtruck", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	vehspawned = createVehicle ["Jonzie_Tow_Truck", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
-
 	current_cars pushback vehspawned; uisleep 1;
-	vehspawned addItemCargo ["A3L_Worker_Outfit",1];
+	vehspawned addItemCargo ["U_C_Mechanic_01_F",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 

@@ -75,12 +75,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" alive cursorTarget && cursorTarget isKindOf ""Man"" "],
-		["Schluessel geben", " [current_cars] remoteExec [""client_fnc_givekeys"",currentcursortarget]; ",5]
+		["Schlüssel geben", " [current_cars] remoteExec [""client_fnc_givekeys"",currentcursortarget]; ",5]
 	],
 
 	[
 		["(licensearray select 0) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""]"],
-		["Fuehrerschein $500", "_cashcheck = [1,500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [] spawn client_fnc_licensetest; [500] call Client_fnc_sl_removeCash_secure; ",1]
+		["Führerschein $500", "_cashcheck = [1,500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [] spawn client_fnc_licensetest; [500] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 
 	[
@@ -192,10 +192,10 @@ NoPixel_InteractionMenuItems = [
 	//	["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTrackingCop; ",1]
 	//],
 
-	[
+	/* [
 		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Cop"" && (player distance getmarkerpos ""fbiHQ"" < 30 || player distance getmarkerpos ""policeHQ"" < 30) "],
 		["Nach Wanzen Suchen", " [currentcursortarget] spawn client_fnc_disTracking; ",1]
-	],
+	], */
 
 	[
 		[" player distance theDrill < 5"],
@@ -258,10 +258,10 @@ NoPixel_InteractionMenuItems = [
 		["Geschlechtsverwandlung", " if(female) then {female = false; hint ""You are now male""; } else {female = true; hint ""You are now female""; }; [""NA"",""sex"",0] call client_fnc_sustain;",1]
 	],
 
-	[
-		[" typeof cursorobject == ""Land_buildingshospital1"""],
-		["Suche nach Wanzen", "['Szukanie pluskwy',60,client_fnc_disabletrackingme,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",1]
-	],
+	// [
+		// [" typeof cursorobject == ""Land_buildingshospital1"""],
+		// ["Suche nach Wanzen", "['Szukanie pluskwy',60,client_fnc_disabletrackingme,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",1]
+	// ],
 
 	// vehicles
 
@@ -307,12 +307,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(vehicle player) == player && CurrentCursorTarget in Current_Cars"],
-		["Schluessel Benutzen", "[CurrentCursorTarget] call Client_fnc_useKey",2]
+		["Schlüssel Benutzen", "[CurrentCursorTarget] call Client_fnc_useKey",2]
 	],
 
 	[
 		["(vehicle player) in Current_Cars"],
-		["Schluessel Benutzen", "[vehicle player] call Client_fnc_useKey",2]
+		["Schlüssel Benutzen", "[vehicle player] call Client_fnc_useKey",2]
 	],
 
 	[

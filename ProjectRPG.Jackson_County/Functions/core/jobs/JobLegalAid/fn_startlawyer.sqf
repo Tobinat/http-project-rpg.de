@@ -1,7 +1,7 @@
 //[_location] remoteExec ["client_fnc_startSecurity",_player];
 //[getpos player,] remoteExec ["client_fnc_startGarbage",_player];
 // use lexus with directionals only.
-if(myjob != "none") exitwith { hint "Masz już pracę!"; };
+if(myjob != "none") exitwith { hint "Du hast schon einen Job!"; };
 
 if(isnil "taskrunning") then { taskrunning = false; };
 
