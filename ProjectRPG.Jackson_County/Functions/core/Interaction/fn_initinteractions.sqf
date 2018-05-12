@@ -254,7 +254,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(((cursorTarget getVariable ""playerInjuries"") select 10) != 0 )  && myjob == ""EMS"" && currentcursortarget isKindOf ""Man"""],
+		["myjob == ""EMS"" && currentcursortarget isKindOf ""Man"""],
 		["Antibiotika verabreichen", "[user,10,(_yourInjuries select 10)] spawn client_fnc_fixProblem;",1]
 	],
 
