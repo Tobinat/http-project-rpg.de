@@ -38,9 +38,6 @@ np_red_cars = [
 	"C_SUV_01_F"
 ];
 
-_myInjuries = player getVariable "playerInjuries";
-_yourInjuries = cursorTarget getVariable "playerInjuries";
-
 NoPixel_InteractionMenuItems = [
 /*
 	[
@@ -257,7 +254,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["((_yourInjuries select 10) != 0 )  && (myJob == ""EMS"")"],
+		["(((cursorTarget getVariable ""playerInjuries"") select 10) != 0 )  && (myjob == ""EMS"")"],
 		["Antibiotika verabreichen", "[user,10,(_yourInjuries select 10)] spawn client_fnc_fixProblem;",1]
 	],
 
