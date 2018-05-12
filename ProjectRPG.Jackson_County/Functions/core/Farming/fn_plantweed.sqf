@@ -7,7 +7,7 @@
 	Return: nothing
 */
 private["_myDT","_action"];
-if((count weedPlantArray) > 6) exitwith { ["Du kannst nicht mehr als 7 Buesche pflanzen.",false] spawn domsg; };
+if((count weedPlantArray) > 6) exitwith { ["Du kannst nicht mehr als 7 Büsche pflanzen.",false] spawn domsg; };
 if(surfacetype getpos player != "#k_rock") exitwith { ["Du musst auf brauner Erde stehen, um sie zu pflanzen.",false] spawn domsg; };
 ["NP_GrowingPlot",0] spawn client_fnc_removeitem;
 

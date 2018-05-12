@@ -3,7 +3,7 @@ private["_n","_i","_localprotection"];
 
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Już przerabiam"; };
+if(globalProtection != 0) exitwith { hint "Ich verarbeite bereits!"; };
 _localProtection = 0;
 
 
