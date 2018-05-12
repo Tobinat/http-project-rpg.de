@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5920.8589,250.33257,6452.6133};
-		dir[]={0.37866732,-0.79473513,-0.47436902};
-		up[]={0.49580643,0.60695285,-0.62111336};
-		aside[]={-0.78154308,2.0553125e-007,-0.62386882};
+		pos[]={9527.9297,36.483185,4380.8696};
+		dir[]={-0.83384115,-0.53497177,-0.13610449};
+		up[]={-0.52798676,0.84486741,-0.086181469};
+		aside[]={-0.16109508,-1.2747478e-008,0.9869411};
 	};
 };
 binarizationWanted=0;
@@ -228,24 +228,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -260,6 +242,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -9770,7 +9770,7 @@ class Mission
 			position[]={7319.7217,5.3434937e+024,4584.4844};
 			name="race_5";
 			type="Empty";
-			angle=108.75135;
+			angle=108.75134;
 			id=257;
 			atlOffset=5.3434937e+024;
 		};
@@ -12726,13 +12726,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9506.7695,26.329262,4376.937};
-				angles[]={0,1.5108993,0};
+				angles[]={0,1.5108967,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init=" this enableSimulation false; this allowDamage false;this addAction[""Ausrauben"",life_fnc_robStore,""Hooker""];  this addAction[""Snacks"",life_fnc_virt_menu,""food""];";
+				init="call{ this enableSimulation false; this allowDamage false;}";
 			};
 			id=1645;
 			type="vvv_modelos6_modelos6kisosko3";
@@ -12765,14 +12765,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9506.3398,26.367855,4381.0093};
-				angles[]={0,1.4967796,0};
+				position[]={9506.3398,26.367855,4381.0088};
+				angles[]={0,1.4967769,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init=" this enableSimulation false; this allowDamage false; this addAction[""Generalstore"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Ausrauben"",life_fnc_robStore,""General""];";
+				init="call{ this enableSimulation false; this allowDamage false;}";
 			};
 			id=1646;
 			type="vvv_modelos6_modelos6kiosko";
