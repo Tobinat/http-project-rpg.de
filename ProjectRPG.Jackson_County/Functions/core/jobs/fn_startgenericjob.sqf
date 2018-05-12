@@ -1,5 +1,5 @@
 _data = _this select 0;
-if(myjob != "none") exitwith { hint "Masz już pracę!"; };
+if(myjob != "none") exitwith { hint "Du hast schon einen Job!"; };
 
 if(isnil "taskrunning") then { taskrunning = false; };
 
