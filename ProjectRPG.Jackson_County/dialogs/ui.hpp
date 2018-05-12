@@ -8,7 +8,7 @@
 		idd = -1;
 		fadein=1;
 	  	fadeout=1;
-		duration = 300;
+		duration = 360;
 		name="RSC_DOTASK";
 		onLoad="uiNamespace setVariable ['RSC_DOTASK',_this select 0]";
 		objects[]={};
