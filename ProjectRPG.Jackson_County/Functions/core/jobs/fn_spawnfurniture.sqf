@@ -54,7 +54,9 @@ if(_type == 1) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -73,7 +75,9 @@ if(_type == 2) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch; 
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 
 	};
 };
@@ -93,7 +97,9 @@ if(_type == 3) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {}; 
 		mychairs pushback fuckingcouch;
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 
 	};
 };
@@ -113,7 +119,9 @@ if(_type == 4) exitwith {
 		fuckingcouch setdir getdir player;  
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 
 	};
 };
@@ -133,7 +141,9 @@ if(_type == 5) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -152,7 +162,9 @@ if(_type == 6) exitwith {
 		fuckingcouch setdir getdir player; 		
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -171,7 +183,9 @@ if(_type == 7) exitwith {
 		fuckingcouch setdir getdir player; 	
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -190,7 +204,9 @@ if(_type == 8) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -213,7 +229,9 @@ if(_type == 9) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -233,7 +251,9 @@ if(_type == 10) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setpos [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2)];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -253,7 +273,9 @@ if(_type == 11) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setposATL [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2) - 0.05 ];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -273,7 +295,9 @@ if(_type == 12) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setposATL [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2) - 0.05 ];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
 
@@ -293,6 +317,8 @@ if(_type == 13) exitwith {
 		fuckingcouch setdir getdir player; 
 		if(fuckingcouch in mychairs) exitwith {};
 		mychairs pushback fuckingcouch;
-		fuckingcouch setposATL [ getpos fuckingcouch select 0,getpos fuckingcouch select 1, (getposATL player select 2) - 0.05 ];
+		_fickdicharma = getPos fuckingcouch select 0;
+		_armadudreckigerhurensohn = getpos fuckingcouch select 1;
+		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
