@@ -1,6 +1,6 @@
  private ["_weapons","_magazines","_items","_backpacks"];
 _player = _this select 0;
-["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+["Dein Shop wird Aktualisiert wenn die Box verschwindet", false] remoteExec ["domsg",_player];
 _uid = getPlayerUID _player;
 [_player,objNull,24,format ["%1 ließ ein geschäft von der Polizei durchsuchen", name _player],""] call server_fnc_actionLog;
 
