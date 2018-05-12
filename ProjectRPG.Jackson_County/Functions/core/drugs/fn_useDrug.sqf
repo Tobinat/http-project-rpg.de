@@ -12,6 +12,7 @@ if(_type == "marijuana") then {
 	//["set",0] call Client_Fnc_DoHealth;
 	["Das Zeug faengt an zu wirken.",false] spawn domsg;
 	["Remove","Karma",20] call client_fnc_sustain;
+	["Remove","unhealthiness",5] call client_fnc_sustain;
 };
 
 if(_type == "cocaine") then {
@@ -19,13 +20,15 @@ if(_type == "cocaine") then {
 	player setAnimSpeedCoef 1.2;
 	["Du hast das Gefühl, dass du einen Marathon laufen könntest.",false] spawn domsg;
 	["Remove","Karma",20] call client_fnc_sustain;
+	["Add","unhealthiness",15] call client_fnc_sustain;
 };
 
 if(_type == "heroin") then {
 	client_heroin = _amount;
 	player setUnitRecoilCoefficient 0.5;
 	["Das Zielen scheint jetzt viel einfacher.",false] spawn domsg;
-	["Remove","Karma",20] call client_fnc_sustain;
+	["Remove","Karma",20] call client_fnc_sustain;	
+	["Add","unhealthiness",25] call client_fnc_sustain;
 };
 
 
@@ -34,6 +37,7 @@ if(_type == "meth") then {
 	["Du fühlst dich unzerstörbar.",false] spawn domsg;
 	["Remove","Karma",20] call client_fnc_sustain;
 	//notazepls
+	["Add","unhealthiness",25] call client_fnc_sustain;
 };
 
 if(_type == "energy") then {
@@ -42,10 +46,10 @@ if(_type == "energy") then {
 	player enablestamina false;
 	["Du fühlst dich sehr leicht.",false] spawn domsg;
 	["Remove","Karma",20] call client_fnc_sustain;
+	["Add","unhealthiness",5] call client_fnc_sustain;
 };
-["Add","unhealthiness",5] call client_fnc_sustain;
 
-[format ["%1 will last %2m due to unhealthiness of %3",_type, (_amount * 5), client_unhealthiness],false] spawn domsg;
+[format ["%1 hält %2m aufgrunbd der Gesundheit von -%3",_type, (_amount * 5), client_unhealthiness],false] spawn domsg;
 
 
 /*
