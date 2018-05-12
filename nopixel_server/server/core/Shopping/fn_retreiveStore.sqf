@@ -150,7 +150,7 @@ if(_shopcontent isEqualTo [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]) then {
 _marker = createMarkerLocal [_uid, getpos _player];
 _marker setMarkerShapeLocal "ICON";
 _marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal format["%1 - ZAMKNIĘTY", _shopname];
+_marker setMarkerTextLocal format["%1 - GESCHLOSSEN", _shopname];
 } else {
 _marker = createMarker [_uid, getpos _player];
 _marker setMarkerShape "ICON";
