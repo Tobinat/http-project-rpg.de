@@ -38,6 +38,9 @@ np_red_cars = [
 	"C_SUV_01_F"
 ];
 
+_myInjuries = player getVariable "playerInjuries";
+_yourInjuries = cursorTarget getVariable "playerInjuries";
+
 NoPixel_InteractionMenuItems = [
 /*
 	[
@@ -251,6 +254,11 @@ NoPixel_InteractionMenuItems = [
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 1)"],
 		["Behandeln lassen", "[] spawn client_fnc_fullheal;",1]
+	],
+
+	[
+		["((_yourInjuries select 10) != 0 )  && (myJob == ""EMS"")"],
+		["Antibiotika verabreichen", "[user,10,(_yourInjuries select 10)] spawn client_fnc_fixProblem;",1]
 	],
 
 	[
@@ -886,7 +894,7 @@ NoPixel_InteractionMenuItems = [
 		["Mayor && player distance myhouse < 10"],
 		["Steuern festlegen", "createdialog ""tax_menu"";",4]
 	],
-	
+
 	[
 		["Mayor"],
 		["Der Präsident kommt", "[] spawn client_fnc_musik;",4]
