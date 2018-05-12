@@ -9,4 +9,4 @@ player removeMagazine _item;
 _myInjuries set [_arrayCount, 0]; 
 _user setVariable ["playerInjuries",_myInjuries,true]; 
 imHealing = false;
-[_user] spawn client_fnc_medicUpdater;
+//[_user] spawn client_fnc_medicUpdater;
