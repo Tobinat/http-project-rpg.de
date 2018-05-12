@@ -17,7 +17,7 @@ if(karma_level != 0) then { _factor = karma_level / 4; };
 
 _timeLeft = _timeLeft - _factor;
 
-if(_timeLeft < 1) then { _timeLeft = 6; };
+if(_timeLeft < 1) then { _timeLeft = 3; };
 _timeLeft = round ( _timeLeft );
 
 21 cutRsc ["RSC_dotask","PLAIN"];
