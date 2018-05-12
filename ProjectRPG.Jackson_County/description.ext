@@ -1524,7 +1524,7 @@ class CfgSounds {
 	class presi {
         name = "presi";
         sound[] = {
-            "@PRPG_Data\sounds\präsident.ogg",1,1};
+            "@PRPG_Data\sounds\president.ogg",1,1};
         titles[] = {};
     };
 	
