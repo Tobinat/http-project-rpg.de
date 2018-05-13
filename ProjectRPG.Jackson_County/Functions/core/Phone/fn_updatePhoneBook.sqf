@@ -213,7 +213,7 @@ _allJobs = [
 
 	["Silver Lake Police Department",currentPoliceDispatch],
 	["Silver Lake Medical Department",currentMedicDispatch],
-	["Silver Lake Fire Department",currentFireDispatch],
+	//["Silver Lake Fire Department",currentFireDispatch],
 
 	["Sicherheitsdienst",currentSecurity],
 	["Mechaniker",currentRepairmen],
