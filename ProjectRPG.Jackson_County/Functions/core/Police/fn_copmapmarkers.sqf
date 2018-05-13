@@ -28,6 +28,7 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 		_marker setMarkerTextLocal format["%1",name _x];
 		_markers pushBack [_marker,_x];
 		};
+		/*
 		if ("ItemGPS" in assignedItems _x) then {
 								//&& driver (vehicle _x) == _x
 			if ( _x in currentcop) then {
@@ -37,6 +38,7 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 				_marker setMarkerTextLocal format["%1",name _x];
 				_markers pushBack [_marker,_x];
 			};
+			
 								//&& driver (vehicle _x) == _x
 			if ( _x in currentems) then {
 				_marker = createMarkerLocal [format["%1_EMS_UNIT",name _x],visiblePosition _x];
@@ -54,6 +56,7 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 				_markers pushBack [_marker,_x];
 			};
 		};
+		*/
 	} foreach PlayableUnits;
 
 
@@ -118,6 +121,7 @@ if(visibleMap && "kif_gps" in assignedItems player || visibleGPS) then {
 		_marker setMarkerTextLocal format["%1",name _x];
 		_markers pushBack [_marker,_x];
 		};
+		/*
 		if ("ItemGPS" in assignedItems _x) then {
 								//&& driver (vehicle _x) == _x
 			if ( _x in currentcop) then {
@@ -154,6 +158,7 @@ if(visibleMap && "kif_gps" in assignedItems player || visibleGPS) then {
 				_markers pushBack [_marker,_x];
 			};
 		};
+		*/
 	} foreach PlayableUnits;
 
 
