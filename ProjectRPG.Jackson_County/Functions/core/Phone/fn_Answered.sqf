@@ -1,4 +1,4 @@
-playSound "cgphone_click";
+//playSound "cgphone_click";
 ["Die Person ging an sein Telefon!", false] spawn domsg; 
 
 if(myJob IN ["Cop","EMS","Fire"]) then {
