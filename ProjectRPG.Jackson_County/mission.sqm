@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=1898;
+		nextID=1901;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9545.8281,27.793472,4136.1123};
-		dir[]={0.20012937,-0.14628315,0.96882868};
-		up[]={0.029597431,0.98923564,0.14328595};
-		aside[]={0.97936291,3.942987e-007,-0.20230487};
+		pos[]={9572.5029,33.94191,4086.6831};
+		dir[]={-0.087320961,-0.55133665,0.82970643};
+		up[]={-0.057716552,0.83420897,0.54842013};
+		aside[]={0.99451351,-5.071779e-007,0.10466485};
 	};
 };
 binarizationWanted=0;
@@ -48,13 +48,14 @@ addons[]=
 	"ace_captives",
 	"A3_Modules_F",
 	"A3_Structures_F_Exp_Naval_Piers",
-	"SpeedRadar"
+	"SpeedRadar",
+	"mm_bank"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -206,6 +207,11 @@ class AddonsMetaData
 			className="SpeedRadar";
 			name="SpeedRadar";
 		};
+		class Item23
+		{
+			className="mm_bank";
+			name="mm_bank";
+		};
 	};
 };
 randomSeed=14654677;
@@ -228,24 +234,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -260,6 +248,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -3565,7 +3571,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=315;
+		items=317;
 		class Item0
 		{
 			dataType="Group";
@@ -16904,6 +16910,39 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item315
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9579.4365,25.834568,4137.7417};
+				angles[]={0,4.4796109,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1899;
+			type="Land_Mattaust_ATM";
+			atlOffset=0.15001106;
+		};
+		class Item316
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9572.4463,25.788435,4097.4102};
+				angles[]={0,6.033061,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1900;
+			type="Land_Mattaust_ATM";
+			atlOffset=0.27164459;
 		};
 	};
 };
