@@ -21,7 +21,7 @@ if (myjob =="EMS") then {
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;
-	["Sie sind verbunden mit der Notrufzentrale des SLMD!", false] spawn domsg;
+	["Sie sind verbunden mit der Notrufzentrale des S.L.F.D.!", false] spawn domsg;
 };
 if (myjob =="Fire") then {
 	player setvariable["PhoneCallNumber",33.1,true];

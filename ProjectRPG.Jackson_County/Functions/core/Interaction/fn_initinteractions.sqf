@@ -291,7 +291,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(myjob == ""Cop"" || myjob == ""Fire"") && currentcursortarget isKindOf ""Car"""],
+		["(myjob == ""Cop"" || myjob == ""EMS"") && currentcursortarget isKindOf ""Car"""],
 		["Verschwinden lassen($20)", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2];  paycheck = paycheck + 20; hint ""Das Auto wurde von Aliens eingesammelt, der Lohn wird gutgeschrieben."";",2]
 	],
 
@@ -766,12 +766,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingshospital1"""],
-		["EMS-Garage", "[] spawn client_fnc_openGarageEMS;",3]
+		["S.L.F.D.-Garage", "[] spawn client_fnc_openGarageEMS;",3]
 	],
 
 	[
-		["myjob == ""Fire""", "typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["F.D.-Garage", "[] spawn client_fnc_openGarageEMS;",3]
+		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingsfiredept1"""],
+		["S.L.F.D.-Garage", "[] spawn client_fnc_openGarageEMS;",3]
 	],
 
 	[
@@ -791,7 +791,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""EMS""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["EMS-Garage", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3]
+		["S.L.F.D. Garage", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3]
 	],
 
 	[
@@ -995,8 +995,23 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"")) || (myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"") || (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") || myJob == ""Mafia"" && player distance myhouse < 20 "],
+		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"")) || myJob == ""Mafia"" && player distance myhouse < 20 "],
 		["Grundausstattung", "[""basic""] spawn client_fnc_setGear",4]
+	],
+	
+	[
+		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1""))"],
+		["EMS Loadout", "[""basic""] spawn client_fnc_setGear",4]
+	],
+	
+	[
+		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1""))"],
+		["FD Loadout", "[""fire""] spawn client_fnc_setGear",4]
+	],
+	
+	[
+		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1"") && player getvariable ""ems"" > 4)"],
+		["Doktor Loadout", "[""doktor""] spawn client_fnc_setGear",4]
 	],
 
 /*
@@ -1061,7 +1076,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""none"" && (player getvariable ""ems"") > 0 && (typeof cursorobject == ""Land_buildingshospital1"" || player distance getmarkerpos ""marker_30"" < 15 || player distance getmarkerpos ""marker_31"" < 15)"],
+		["myjob == ""none"" && (player getvariable ""ems"") > 0 && (typeof cursorobject == ""Land_buildingshospital1"" || player distance getmarkerpos ""marker_30"" < 15 || player distance getmarkerpos ""marker_31"" < 15 || typeof cursorobject == ""Land_buildingsfiredept1"")"],
 		["Dienst beginnen", "[player,""EMS""] spawn client_fnc_jobstart;",4]
 	],
 

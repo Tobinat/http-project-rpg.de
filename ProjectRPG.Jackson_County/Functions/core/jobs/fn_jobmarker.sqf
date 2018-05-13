@@ -10,7 +10,7 @@ _marker setMarkerTextlocal "Ort der Aufgabe";
 		if(myjob == "Cop") then {
 			[_pos,"Alarm aktiviert!","Job"] spawn client_fnc_hudHelper;
 		} else {
-			if(myjob == "Fire") then {
+			if(myjob == "EMS") then {
 				[_pos,"Feuer!","Job"] spawn client_fnc_hudHelper;
 				playSound "fireAlarm";
 			} else {

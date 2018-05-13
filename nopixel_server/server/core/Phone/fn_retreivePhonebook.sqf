@@ -17,8 +17,8 @@ _information = [
 ["Taxi",currentTaxiDrivers]
  */
 	["Polizei",currentPoliceDispatch],
-	["EMS",currentMedicDispatch],
-	["Fire Departmend",currentFireDispatch],
+	["S.L.F.D.",currentMedicDispatch],
+	//["Fire Departmend",currentFireDispatch],
 	["Security",currentSecurity],
 	["Anwalt",currentLegalAid],
 	["Mechaniker",currentRepairmen],

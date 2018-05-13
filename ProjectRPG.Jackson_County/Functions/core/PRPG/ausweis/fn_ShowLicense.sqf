@@ -46,7 +46,7 @@ if (myJob == "EMS") then
 
 	switch (_mediclevel) do
 	{
-		case 1: { _rank = "Probationary Firefighter";};
+	case 1: { _rank = "Probationary Firefighter";};
     case 2: { _rank = "Firefighter";};
     case 3: { _rank = "Lieutenant";};
     case 4: { _rank = "Captain";};

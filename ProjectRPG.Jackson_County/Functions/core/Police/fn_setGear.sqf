@@ -139,7 +139,7 @@ if(myjob == "Cop") exitwith {
 
 //if(typeof currentcursortarget == "Land_buildingshospital1") exitwith {
 if(myjob == "EMS") exitwith {
-
+	if(_type == "basic") then {
 	removeAllWeapons player;
 	removeAllItems player;
 	removeAllAssignedItems player;
@@ -149,7 +149,6 @@ if(myjob == "EMS") exitwith {
 	removeHeadgear player;
 	removeGoggles player;
 
-
 	player addWeapon "Binocular";
 	player linkItem "ItemMap";
 	player linkItem "ItemCompass";
@@ -158,18 +157,15 @@ if(myjob == "EMS") exitwith {
 	player linkItem "ItemGPS";
 	player linkItem "TRYK_Headset_NV";
 
+	_emslevel = player getVariable "ems";
 
-	_level = player getVariable "ems";
-
-	if(female) then { player forceAddUniform "female_ems"; } else { player forceAddUniform "pRPG_Candidate1"; };
 	player addgoggles "Masque_Chirurgical";
 
 	player addBackpack "invisible_carryall";
 	{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
 	player addItemToUniform "ACE_Flashlight_XL50";
-  player addItemToUniform "ACE_EarPlugs";
+	player addItemToUniform "ACE_EarPlugs";
 	player addItemToUniform "ACE_surgicalKit";
-	player addItemToUniform "ACE_personalAidKit";
 	for "_i" from 1 to 8 do {player addItemToBackpack "ACE_salineIV";};
 	for "_i" from 1 to 6 do {player addItemToBackpack "ACE_tourniquet";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_salineIV_500";};
@@ -182,37 +178,117 @@ if(myjob == "EMS") exitwith {
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
 	player additemtobackpack "np_water";
 	player additemtobackpack "np_beefsoup";
+	
+		if(female) then { player forceAddUniform "female_ems";} else {
+			//Probationary Firefighter
+			if(_emslevel == 1) then {
+				player forceAddUniform "pRPG_Candidate1";
+			};
+			//Firefighter
+			if(_emslevel == 2) then {
+				player forceAddUniform "pRPG_Candidate1";
+				player addItemToBackpack "adv_aceCPR_AED";
+			};
+			//Lieutenant
+			if(_emslevel == 3) then {
+				player forceAddUniform "pRPG_Candidate1";
+			};
+			//Captain
+			if(_emslevel == 4) then {
+				player forceAddUniform "pRPG_Candidate1";
+			};
+			//Battalion Chief
+			if(_emslevel == 5) then {
+				player forceAddUniform "pRPG_Candidate1";
+				player addItemToBackpack "FSGm_ItemMedicBag";
+			};
+			//Division Chief
+			if(_emslevel == 6) then {
+				player forceAddUniform "pRPG_Candidate1";
+				player addItemToUniform "ACE_personalAidKit";
+			};
+			//Assistant Chief
+			if(_emslevel == 7) then {
+				player forceAddUniform "pRPG_Candidate1";
+			};
+			//Chief
+			if(_emslevel == 8) then {
+				player forceAddUniform "pRPG_Candidate1";
+			};
+		};
+	player addItemToUniform "ACE_Flashlight_XL50";
+	player addItemToUniform "ACE_EarPlugs";
+	player addItemToUniform "ACE_surgicalKit";	
+	};
+	
+	if(_type == "doktor") then {
+	removeAllWeapons player;
+	removeAllItems player;
+	removeAllAssignedItems player;
+	removeUniform player;
+	removeVest player;
+	removeBackpack player;
+	removeHeadgear player;
+	removeGoggles player;
 
-};
+	player addWeapon "Binocular";
+	player linkItem "ItemMap";
+	player linkItem "ItemCompass";
+	player linkItem "Itemwatch";
+	player linkitem "tf_anprc152";
+	player linkItem "ItemGPS";
+	player linkItem "TRYK_Headset_NV";
 
-//if(typeof currentcursortarget == "Land_buildingsfiredept1") exitwith {
-	if(myjob == "Fire") exitwith {
-removeAllWeapons player;
-removeAllItems player;
-removeAllAssignedItems player;
-removeUniform player;
-removeVest player;
-removeBackpack player;
-removeHeadgear player;
-removeGoggles player;
+	_level = player getVariable "ems";
 
+	if(female) then { player forceAddUniform "EF_F_DR"; } else { player forceAddUniform "vvv_traje_doctor"; };
+	player addgoggles "Masque_Chirurgical";
 
-player addWeapon "Binocular";
-player linkItem "ItemMap";
-player linkItem "ItemCompass";
-player linkItem "Itemwatch";
-player linkitem "tf_anprc152";
-player linkItem "ItemGPS";
-player linkItem "TRYK_Headset_NV";
+	player addBackpack "invisible_carryall";
+	player addItemToUniform "ACE_Flashlight_XL50";
+	player addItemToUniform "ACE_EarPlugs";
+	player addItemToUniform "ACE_surgicalKit";
+	player addItemToUniform "ACE_personalAidKit";
+	player addItemToBackpack "FSGm_ItemMedicBag";
+	player addItemToBackpack "adv_aceCPR_AED";
+	for "_i" from 1 to 8 do {player addItemToBackpack "ACE_salineIV";};
+	for "_i" from 1 to 6 do {player addItemToBackpack "ACE_tourniquet";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_salineIV_500";};
+	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_packingBandage";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
+	for "_i" from 1 to 5 do {player addItemToUniform "ACE_bodyBag";};
+	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
+	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
+	player additemtobackpack "np_water";
+	player additemtobackpack "np_beefsoup";
+	};
+	
+	if(_type == "fire") then {
+	removeAllWeapons player;
+	removeAllItems player;
+	removeAllAssignedItems player;
+	removeUniform player;
+	removeVest player;
+	removeBackpack player;
+	removeHeadgear player;
+	removeGoggles player;
 
+	player addWeapon "Binocular";
+	player linkItem "ItemMap";
+	player linkItem "ItemCompass";
+	player linkItem "Itemwatch";
+	player linkitem "tf_anprc152";
+	player linkItem "ItemGPS";
+	player linkItem "TRYK_Headset_NV";
 
-	_level = player getVariable "fire";
 	player forceAddUniform "vvv_traje_bombero";
 	player addBackpack "invisible_carryall";
 	player addgoggles "Mask_M40";
-	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
+	{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
 
-	for "_i" from 1 to 10 do {player addItemToBackPack "Manguera_magazine";};
+	for "_i" from 1 to 2 do {player addItemToBackPack "Manguera_magazine";};
 	player addweapon "fireextinguisher";
 	player additemtobackpack "np_water";
 	player additemtobackpack "np_beefsoup";
@@ -220,8 +296,44 @@ player linkItem "TRYK_Headset_NV";
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_packingBandage";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
+	};
+	
+	if(_type == "cdc") then {
+	removeAllWeapons player;
+	removeAllItems player;
+	removeAllAssignedItems player;
+	removeUniform player;
+	removeVest player;
+	removeBackpack player;
+	removeHeadgear player;
+	removeGoggles player;
 
+	player addWeapon "Binocular";
+	player linkItem "ItemMap";
+	player linkItem "ItemCompass";
+	player linkItem "Itemwatch";
+	player linkitem "tf_anprc152";
+	player linkItem "ItemGPS";
+	player linkItem "TRYK_Headset_NV";
+
+	player forceAddUniform "vvv_hazmat";
+	player addBackpack "invisible_carryall";
+	player additemtobackpack "np_water";
+	player additemtobackpack "np_beefsoup";
+	for "_i" from 1 to 8 do {player addItemToBackpack "ACE_salineIV";};
+	for "_i" from 1 to 6 do {player addItemToBackpack "ACE_tourniquet";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_salineIV_500";};
+	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_packingBandage";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
+	for "_i" from 1 to 5 do {player addItemToUniform "ACE_bodyBag";};
+	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
+	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
+	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
+	};
+	
 };
+
 
 if(myjob == "Mafia") exitwith {
 	_level = player getVariable "Mafia";

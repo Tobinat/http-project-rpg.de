@@ -10,7 +10,7 @@ if (myjob == "Cop") then {
 };
 if (myjob == "EMS") then {
     ["Panikknopf ausgelöst!",false] spawn domsg;
-    [format["911 PANIC BUTTON: Medic %1 ist in Gefahr!", name _player], false] remoteexec ["domsg",_all];
+    [format["911 PANIC BUTTON: S.L.F.D. Mitarbeiter %1 ist in Gefahr!", name _player], false] remoteexec ["domsg",_all];
     ["dpanic"] remoteExec ["client_fnc_playSound", _all];
     _player setVariable["pbsee",true,true];
     sleep 300;
