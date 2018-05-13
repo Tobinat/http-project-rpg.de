@@ -82,6 +82,7 @@ if (_jobType == "towtruck") exitwith {
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["U_C_Mechanic_01_F",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
+	[vehspawned, ["burntorange","Glossy"]] call client_fnc_initVehicle;
 };
 
 if (_jobType == "NewsMan") exitwith {
