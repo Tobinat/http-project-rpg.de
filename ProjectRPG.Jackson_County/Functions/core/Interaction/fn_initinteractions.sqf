@@ -917,6 +917,11 @@ NoPixel_InteractionMenuItems = [
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && (myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Fire"")"],
 		["Alkoholtest", " [currentcursortarget] spawn client_fnc_testIntox; ",4]
 	],
+	
+	[
+		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && (myjob == ""EMS"" || myjob == ""Fire"")"],
+		["Drogentest", " [currentcursortarget] spawn client_fnc_testdrug; ",4]
+	],
 
 	[
 		[""],

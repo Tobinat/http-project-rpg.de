@@ -207,15 +207,22 @@ class CfgFunctions
 			class getPizza {};
 		};
 
-    class ausweis {
-      file = "Functions\core\PRPG\ausweis";
-      class LicenseShown {};
-      class ShowLicense {};
-    };
+		class ausweis {
+			file = "Functions\core\PRPG\ausweis";
+			class LicenseShown {};
+			class ShowLicense {};
+		};
 
-    class DriverLicense {
+		class DriverLicense {
 			file = "Functions\core\PRPG\DriverLicense";
 			class licensetest {};
+		};
+		
+		class drogentest {
+			file = "Functions\core\PRPG\drogentest";
+			class testdrug {};
+			class testdrugClient {};
+			class drugTestReturn {};
 		};
 
 		class jobFactions {
