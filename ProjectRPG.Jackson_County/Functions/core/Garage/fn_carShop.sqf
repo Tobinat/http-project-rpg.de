@@ -259,8 +259,8 @@ if(_whatdo == "CAR" || isNil "spawnedvehicle") then {
 	_dir = 180;
 
 	if(_SELECTEDVEHICLE iskindof "car") then {
-		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [8729.93,6875.65,0.3];
-		spawnedvehicle setpos [8729.93,6875.65,0.3];
+		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [8729.93,6875.65,0.6];
+		spawnedvehicle setpos [8729.93,6875.65,0.6];
 		spawnedvehicle setdir _dir;
 	};
 
