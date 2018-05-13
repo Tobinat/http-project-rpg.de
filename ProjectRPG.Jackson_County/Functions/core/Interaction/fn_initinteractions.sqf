@@ -1069,12 +1069,12 @@ NoPixel_InteractionMenuItems = [
 		[" myjob == ""none"" && (player getvariable ""cop"") > 0 && typeof cursorobject == ""Land_PoliceStation"""],
 		["Dienst beginnen", "[player,""Cop""] spawn client_fnc_jobstart;",4]
 	],
-
+/*
 	[
 		["myjob == ""none"" && (player getvariable ""Fire"") > 0 && typeof cursorobject == ""Land_buildingsfiredept1"""],
 		["Dienst beginnen", "[player,""Fire""] spawn client_fnc_jobstart;",4]
 	],
-
+*/
 	[
 		["myjob == ""none"" && (player getvariable ""ems"") > 0 && (typeof cursorobject == ""Land_buildingshospital1"" || player distance getmarkerpos ""marker_30"" < 15 || player distance getmarkerpos ""marker_31"" < 15 || typeof cursorobject == ""Land_buildingsfiredept1"")"],
 		["Dienst beginnen", "[player,""EMS""] spawn client_fnc_jobstart;",4]
