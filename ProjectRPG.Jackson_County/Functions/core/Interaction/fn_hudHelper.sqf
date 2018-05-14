@@ -4,7 +4,8 @@ _type = _this select 2;
 
 if(_type == "destroy") exitwith { 
 	["location", "onEachFrame"] call BIS_fnc_removeStackedEventHandler; 
-	["Job", "onEachFrame"] call BIS_fnc_removeStackedEventHandler; 
+	["Job", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+	deletemarkerlocal marker;
 };
 
 if(_type == "Location") exitwith { 
@@ -13,6 +14,7 @@ if(_type == "Location") exitwith {
 
 	_markername = format["location%1",getPlayerUID player];
 	deletemarkerlocal _markername;
+	marker = _markername;
 	_marker = createMarkerlocal [_markername, myposition];
 	_marker setMarkerShapelocal "ICON";
 	_marker setMarkerTypelocal "hd_dot";
@@ -34,6 +36,16 @@ if(_type == "Location") exitwith {
 if(_type == "Job") exitwith { 
 	mypositionJob = _this select 0;
 	mytextJob = _this select 1;
+	
+	_markername = format["job%1",getPlayerUID player];
+	deletemarkerlocal _markername;
+	marker = _markername;
+	_marker = createMarkerlocal [_markername, myposition];
+	_marker setMarkerShapelocal "ICON";
+	_marker setMarkerTypelocal "hd_dot";
+	_marker setMarkerColorlocal "ColorOrange";
+	_marker setMarkerTextlocal format ["%1",mytext];
+
 
 	["Job", "onEachFrame"] call BIS_fnc_removeStackedEventHandler; 
 

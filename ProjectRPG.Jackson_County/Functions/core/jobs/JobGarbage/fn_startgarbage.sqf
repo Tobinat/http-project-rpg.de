@@ -32,12 +32,12 @@ while{taskrunning  && myjob == "TrashMan" } do {
 		if(_garbageLevel > 10) then {
 			_garbageLevel = 0;
 			playertasks pushback [[1064,3667,0.014],"dump"];	
-			[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
+			[getpos ((playertasks select 0) select 0),"garbage"] call client_fnc_jobMarker;
 			hint "Auftrag (Markiert auf Karte): Abfall Kontainer leeren";			
 		} else {
 			mybin = mapBins call BIS_fnc_selectRandom;
 			playertasks pushback [mybin,"bin"];
-			[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
+			[getpos ((playertasks select 0) select 0),"garbage"] call client_fnc_jobMarker;
 			hint "Auftrag (Markiert auf Karte): Abfall Kontainer leeren";
 		};
 	} else {
@@ -50,7 +50,7 @@ while{taskrunning  && myjob == "TrashMan" } do {
 		};
 
 		if !( (getmarkerpos _markername select 0) isEqualTo (getpos ((playertasks select 0) select 0) select 0) && (getmarkerpos _markername select 1) isEqualTo (getpos ((playertasks select 0) select 0) select 1) ) then {
-			[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
+			[getpos ((playertasks select 0) select 0),"garbage"] call client_fnc_jobMarker;
 		};
 
 
