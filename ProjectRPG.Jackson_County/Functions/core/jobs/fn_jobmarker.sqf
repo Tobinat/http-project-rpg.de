@@ -32,7 +32,7 @@ if (_type == "Cop") then {
 };
 
 if (_type == "driver") then {
-	[_pos,"Checkpoint!","Location"] spawn client_fnc_hudHelper;
+	[_pos,"Checkpoint","Location"] spawn client_fnc_hudHelper;
 };
 
 if (_type != "driver" && _type != "Cop" && _type != "Feuer") then {

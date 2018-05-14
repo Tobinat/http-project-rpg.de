@@ -18,7 +18,7 @@ if(!taskrunning) then {
 			if(playertasks isequalto []) then {
 	
 				if(player distance [7151.34,2462.99,0.00143814] > 100) then {
-					[[7151.34,2462.99,0.00143814]] call client_fnc_jobMarker;
+					[[7151.34,2462.99,0.00143814],"mail"] call client_fnc_jobMarker;
 					hint "Gehe zur Post (Auf der Karte markiert)";
 					uisleep 120;
 					_warnings = _warnings + 1;
@@ -41,7 +41,7 @@ if(!taskrunning) then {
 					uisleep 3;
 				} else {
 					hint format["Auftrag (Auf der Karte markiert): Typ - %1",(playertasks select 0) select 3];	
-					[((playertasks select 0) select 0)] call client_fnc_jobMarker;			
+					[((playertasks select 0) select 0),"mail"] call client_fnc_jobMarker;			
 					uisleep 3;
 				};
 			};

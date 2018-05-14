@@ -30,7 +30,7 @@ if(!taskrunning) then {
 					uisleep 3;
 				} else {
 					[format ["Auftrag (Markiert auf Karte): Art - %1", ((playertasks select 0) select 1)], false] spawn doquickmsg;
-					[((playertasks select 0) select 0)] call client_fnc_jobMarker;
+					[((playertasks select 0) select 0),"news"] call client_fnc_jobMarker;
 					uisleep 30;
 				};
 			};

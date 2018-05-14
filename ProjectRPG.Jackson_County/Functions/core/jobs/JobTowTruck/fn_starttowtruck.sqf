@@ -31,7 +31,7 @@ if(!taskrunning) then {
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
 					hint "Auftrag (Markiert auf Karte): Typ - Abschleppen";	
-					[((playertasks select 0) select 0)] call client_fnc_jobMarker;			
+					[((playertasks select 0) select 0),"towtruck"] call client_fnc_jobMarker;			
 					uisleep 3;
 				};
 			};

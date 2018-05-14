@@ -19,7 +19,7 @@ _markername = format["job%1",getPlayerUID player];
 _warnings = 0;
 _pizzaLevel = 0;
 ["Hole deine erste Aufgabe bei der Pizzeria in Silver Lake ab!", false] spawn domsg;
-[[7258.44,2411.93,0.00143814]] call client_fnc_jobMarker;
+[[7258.44,2411.93,0.00143814],"pizza"] call client_fnc_jobMarker;
 while{taskrunning  && myjob == "pizza" } do {
 
 	if(playertasks isequalTO [] && (Player distance [7258.44,2411.93,0.00143814] < 15)) then {
@@ -28,7 +28,7 @@ while{taskrunning  && myjob == "pizza" } do {
 		if (!isPlayer opfer) exitWith {};
 		if (player == opfer) exitWith {playertasks deleteat 0;};
 		playertasks pushback [opfer,"pizzaliefern"];
-		[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
+		[getpos ((playertasks select 0) select 0),"pizza"] call client_fnc_jobMarker;
 		["Ein Lieferauftrag wurde auf der Karter Markiert - Wenn du bei deinem Kunden bist, verlasse das Fahrzeug.", false] spawn domsg;
 	} else {
 
@@ -40,7 +40,7 @@ while{taskrunning  && myjob == "pizza" } do {
 		};
 
 		if !( (getmarkerpos _markername select 0) isEqualTo (getpos ((playertasks select 0) select 0) select 0) && (getmarkerpos _markername select 1) isEqualTo (getpos ((playertasks select 0) select 0) select 1) ) then {
-			[getpos ((playertasks select 0) select 0)] call client_fnc_jobMarker;
+			[getpos ((playertasks select 0) select 0),"pizza"] call client_fnc_jobMarker;
 		};
 
 		if(player distance ((playertasks select 0) select 0) < 15 && vehicle player == player) then {
@@ -51,7 +51,7 @@ while{taskrunning  && myjob == "pizza" } do {
 				paycheck = paycheck + 35;
 				playertasks deleteat 0;
 				["Auslieferung Erfolgreich! Kehre zur Pizzeria zurück!", false] spawn domsg;
-				[[7258.44,2411.93,0.00143814]] call client_fnc_jobMarker;
+				[[7258.44,2411.93,0.00143814],"pizza"] call client_fnc_jobMarker;
 			};
 			uisleep 3;
 		};

@@ -25,7 +25,7 @@ _failed = true;
 
 if(JuryDuty) then { 
 
-	[_location] call client_fnc_jobMarker;
+	[_location,"jury"] call client_fnc_jobMarker;
 	["Sie haben den Dienst als Jury angenommen, der Standort wurde auf der Karte markiert.", false] spawn domsg;
 	[format["Der Name des Police Officers ist %1, Sie erhalten eine Zahlung in der Höhe von 2.000$",_policeOfficerName], false] spawn domsg;	
 	[format["%1 wird sich der Jury anschließen.",name player]] remoteexec ["domsg",_officer];
@@ -44,7 +44,7 @@ while{JuryDuty} do {
 
 if(!_failed) then {
 	
-	[getpos _officer] call client_fnc_jobMarker;
+	[getpos _officer,"jury"] call client_fnc_jobMarker;
 
 	[format["Der Name des Police Officers ist %1, von Ihm bekommen Sie die 2.000$.",_policeOfficerName], false] spawn domsg;
 	while{JuryDuty} do {
@@ -52,7 +52,7 @@ if(!_failed) then {
 		if(player distance _officer < 5) exitwith { ["Dotarles do sadu", false] spawn doquickmsg; [2000] call Client_fnc_sl_addCash_secure; }; 
 		uisleep 1;
 		mypositionJob = getpos _officer;
-		[getpos _officer] call client_fnc_jobMarker;
+		[getpos _officer,"jury"] call client_fnc_jobMarker;
 	};
 
 	["Die Jury wird sich versammeln und Abstimmen.", false] spawn doquickmsg;

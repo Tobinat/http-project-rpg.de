@@ -33,7 +33,7 @@ if(!taskrunning) then {
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
 					hint "Ein Laden wurde ausgeraubt!: Job Typ - Security";	
-					[((playertasks select 0) select 0)] call client_fnc_jobMarker;			
+					[((playertasks select 0) select 0),"security"] call client_fnc_jobMarker;			
 					uisleep 3;
 				};
 			};
