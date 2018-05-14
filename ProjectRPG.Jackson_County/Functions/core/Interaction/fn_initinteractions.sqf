@@ -47,12 +47,12 @@ NoPixel_InteractionMenuItems = [
 */
 
 	[
-		[" myJob == ""cop"" && !(cursorTarget getVariable [""parkingTicket"", false]) && !(cursorTarget getVariable [""parkingTicket2"", false])"],
+		[" myJob == ""cop"" && !(cursorTarget getVariable [""parkingTicket"", false]) && !(cursorTarget getVariable [""parkingTicket2"", false]) && currentcursortarget isKindOf ""Car"""],
 		["Parkticket $250", "cursorTarget setVariable[""parkingTicket"",true,true]; [""Parkticket von $250 ausgestellt!"",false] spawn domsg;",1]
 	],
 	
 	[
-		[" myJob == ""cop"" && !(cursorTarget getVariable [""parkingTicket"", false]) && !(cursorTarget getVariable [""parkingTicket2"", false])"],
+		[" myJob == ""cop"" && !(cursorTarget getVariable [""parkingTicket"", false]) && !(cursorTarget getVariable [""parkingTicket2"", false]) && currentcursortarget isKindOf ""Car"""],
 		["Parkticket $750", "cursorTarget setVariable[""parkingTicket2"",true,true]; [""Parkticket von $750 ausgestellt!"",false] spawn domsg;",1]
 	],
 
