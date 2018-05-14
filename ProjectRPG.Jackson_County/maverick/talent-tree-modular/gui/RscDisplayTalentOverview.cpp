@@ -197,20 +197,18 @@ class textPerkSubtitle: RscText
 		class RscButton_1600: RscButtonMenu
 		{
 			idc = 10;
+			text = "PURCHASE"; //--- ToDo: Localize;
+			x = 0.608281 * safezoneW + safezoneX;
+			y = 0.731 * safezoneH + safezoneY;
+			w = 0.0876563 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorBackground[] = {0.12,0.14,0.16,1};
 			onButtonClick = "[_this, 'onButtonPurchaseClick'] spawn TTM_GUI_master_script;";
 			enabled = 0;
 
-			text = "PURCHASE"; //--- ToDo: Localize;
-			x = 30.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 23 * GUI_GRID_H + GUI_GRID_Y;
-			w = 8.5 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0.12,0.14,0.16,1};
 			class Attributes {
 				align = "center";
 			};
-		
-		
 		};
     };
 };
