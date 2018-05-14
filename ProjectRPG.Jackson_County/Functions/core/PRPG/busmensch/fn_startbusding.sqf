@@ -22,9 +22,10 @@ while{taskrunning  && myjob == "busdriver" } do {
 
 	if(playertasks isequalTO []) then {
 		_fickandi = round (random 26);
-		_marker = format["bus_%1", _fickandi];
-		playertasks pushback [[(getmarkerpos _marker)],"bus"];
-		[(playertasks select 0),"bus"] call client_fnc_jobMarker;
+		_dimimarker = format["bus_%1", _fickandi];
+		dimishaltestelle = getmarkerpos _dimimarker;
+		playertasks pushback [dimishaltestelle,"bus"];
+		[dimishaltestelle,"bus"] call client_fnc_jobMarker;
 		["Die nächste Buhaltestelle wurde auf der Karte markiert!",false] spawn domsg;
 		
 	} else {
@@ -36,8 +37,8 @@ while{taskrunning  && myjob == "busdriver" } do {
 			["Du hast zulange gebraucht und wurdest entlassen!",false] spawn domsg;
 		};
 
-		if !( (getmarkerpos _markername select 0) isEqualTo (playertasks select 0) select 0) && ((getmarkerpos _markername select 1) isEqualTo ((playertasks select 0) select 1)) then {
-			[(playertasks select 0),"bus"] call client_fnc_jobMarker;
+		if !( (getmarkerpos _markername select 0) isEqualTo dimishaltestelle select 0) && ((getmarkerpos _markername select 1) isEqualTo (dimishaltestelle select 1)) then {
+			[dimishaltestelle,"bus"] call client_fnc_jobMarker;
 		};
 
 
