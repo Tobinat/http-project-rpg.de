@@ -188,6 +188,11 @@ class textPerkSubtitle: RscText
 			w = 8.5 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0.12,0.14,0.16,1};
+			class Attributes {
+				align = "center";
+			};
+		
+		
 		};
     };
 };
