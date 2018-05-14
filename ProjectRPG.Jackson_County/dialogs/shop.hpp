@@ -409,7 +409,7 @@ class shop_update {
 
 		class ShopnameUpdateOption : HideButton {
 			idc = 8995;
-			text = "Ladenname aendern";
+			text = "Ladenname ändern";
 			onButtonClick = "[shopcontent,""nameupdate""] spawn client_fnc_updatePrices;";
 			x = 0.412136 * safezoneW + safezoneX;
 			y = 0.70991 * safezoneH + safezoneY;
