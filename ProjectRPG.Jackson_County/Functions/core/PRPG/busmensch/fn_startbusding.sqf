@@ -37,20 +37,15 @@ while{taskrunning  && myjob == "busdriver" } do {
 			["Du hast zulange gebraucht und wurdest entlassen!",false] spawn domsg;
 		};
 
-		if !( (getmarkerpos _markername select 0) isEqualTo dimishaltestelle select 0) && ((getmarkerpos _markername select 1) isEqualTo (dimishaltestelle select 1)) then {
+		if !((getmarkerpos _markername select 0) isEqualTo (dimishaltestelle select 0) && (getmarkerpos _markername select 1) isEqualTo (dimishaltestelle select 1)) then {
 			[dimishaltestelle,"bus"] call client_fnc_jobMarker;
 		};
 
 
 		if(player distance ((playertasks select 0) select 0) < 15 && vehicle player != player && player distance vehspawned < 10) then {
-
-			if(((playertasks select 0) select 1) == "bus") then {
-				
-				_warnings = 0;
-				paycheck = paycheck + 200;
-				playertasks deleteat 0;
-			};
-
+			_warnings = 0;
+			paycheck = paycheck + 200;
+			playertasks deleteat 0;
 			uisleep 3;
 		};
 
