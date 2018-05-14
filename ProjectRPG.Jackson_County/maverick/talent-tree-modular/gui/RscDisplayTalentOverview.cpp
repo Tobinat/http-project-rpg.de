@@ -129,6 +129,24 @@ class TTM_GUI_RscDisplayTalentOverview {
 			hiddenTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\hiddenTexture_ca.paa";
 			expandedTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\expandedTexture_ca.paa";
 			maxHistoryDelay = 1;
+			
+			// Scrollbar configuration
+			class ScrollBar
+			{
+				width = 0; // width of ScrollBar
+				height = 0; // height of ScrollBar
+				scrollSpeed = 0.01; // scroll speed of ScrollBar
+
+				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
+				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
+				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
+				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
+
+				color[] = {1,1,1,1}; // Scrollbar color
+			};
+			
+			
+			
 			colorDisabled[] = {0,0,0,0};
 			colorArrow[] = {0,0,0,0};
 
