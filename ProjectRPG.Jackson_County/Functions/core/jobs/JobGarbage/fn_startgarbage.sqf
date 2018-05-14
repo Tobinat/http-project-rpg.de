@@ -33,12 +33,12 @@ while{taskrunning  && myjob == "TrashMan" } do {
 			_garbageLevel = 0;
 			playertasks pushback [[1064,3667,0.014],"dump"];	
 			[getpos ((playertasks select 0) select 0),"garbage"] call client_fnc_jobMarker;
-			hint "Auftrag (Markiert auf Karte): Abfall Kontainer leeren";			
+			["Fahre zur Müllkippe und Entlere deinen Wagen!",false] spawn domsg;
 		} else {
 			mybin = mapBins call BIS_fnc_selectRandom;
 			playertasks pushback [mybin,"bin"];
 			[getpos ((playertasks select 0) select 0),"garbage"] call client_fnc_jobMarker;
-			hint "Auftrag (Markiert auf Karte): Abfall Kontainer leeren";
+			["Fahre zur Abfalltonne und leere sie!",false] spawn domsg;
 		};
 	} else {
 
@@ -46,7 +46,7 @@ while{taskrunning  && myjob == "TrashMan" } do {
 		_warning = _warnings + 1;
 		if(_warnings > 150) then { 
 			taskrunning = false; 
-			hint "Du wurdest gefeuert!"; 
+			["Du hast zulange gebraucht und wurdest entlassen!",false] spawn domsg;
 		};
 
 		if !( (getmarkerpos _markername select 0) isEqualTo (getpos ((playertasks select 0) select 0) select 0) && (getmarkerpos _markername select 1) isEqualTo (getpos ((playertasks select 0) select 0) select 1) ) then {
