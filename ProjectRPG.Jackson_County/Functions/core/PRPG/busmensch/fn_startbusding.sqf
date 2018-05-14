@@ -42,7 +42,7 @@ while{taskrunning  && myjob == "busdriver" } do {
 		};
 
 
-		if(player distance ((playertasks select 0) select 0) < 15 && vehicle player != player && player distance vehspawned < 10) then {
+		if(player distance dimishaltestelle < 15 && vehicle player != player && player distance vehspawned < 10) then {
 			_warnings = 0;
 			paycheck = paycheck + 200;
 			playertasks deleteat 0;
