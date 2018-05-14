@@ -216,6 +216,7 @@ class CfgFunctions
 		class DriverLicense {
 			file = "Functions\core\PRPG\DriverLicense";
 			class licensetest {};
+			class licensetestlkw {};
 		};
 		
 		class drogentest {
