@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: mpx_buildings\data\Counter.rvmat
+//Produced from mikero's Dos Tools Dll version 6.44
+//'now' is Sun May 13 17:17:35 2018 : 'file' last modified on Sat May 06 06:33:07 2017
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0,0,0,1};
+specularPower = 50;
+renderFlags[] = {"NoAlphaWrite"};
+PixelShaderID = "NormalMapSpecularMap";
+VertexShaderID = "NormalMap";
+class Stage1
+{
+	texture = "mpx_buildings\data\Counter_nohq.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage2
+{
+	texture = "mpx_buildings\data\Counter_smdi.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};

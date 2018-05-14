@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: mpx_buildings\data\glass-pass2.rvmat
+//Produced from mikero's Dos Tools Dll version 6.44
+//'now' is Sun May 13 17:17:36 2018 : 'file' last modified on Sat May 06 06:33:09 2017
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1.0,1.0,1.0,1.0};
+diffuse[] = {1.0,1.0,1.0,1.0};
+forcedDiffuse[] = {0.0,0.0,0.0,0.0};
+emmisive[] = {0.0,0.0,0.0,1.0};
+specular[] = {0.0,0.0,0.0,0.0};
+specularPower = 0.0;
+renderFlags[] = {"NoColorWrite"};
+PixelShaderID = "AlphaShadow";
+VertexShaderID = "Basic";
