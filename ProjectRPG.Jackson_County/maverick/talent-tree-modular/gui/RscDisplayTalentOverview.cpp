@@ -200,7 +200,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			onButtonClick = "[_this, 'onButtonPurchaseClick'] spawn TTM_GUI_master_script;";
 			enabled = 0;
 
-			text = "PURCHASE"; //--- ToDo: Localize;
+			text = "PURCHASE"; 
 			x = 0.608281 * safezoneW + safezoneX;
 			y = 0.731 * safezoneH + safezoneY;
 			w = 0.0876563 * safezoneW;
