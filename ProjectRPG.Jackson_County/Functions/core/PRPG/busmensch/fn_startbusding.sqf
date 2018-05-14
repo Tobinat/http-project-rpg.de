@@ -38,7 +38,7 @@ while{taskrunning  && myjob == "busdriver"} do {
 		};
 
 		
-		if !((getmarkerpos _markername select 0) isEqualTo (dimishaltestelle select 0) && (getmarkerpos _markername select 1) isEqualTo (dimishaltestelle select 1) && myJob != "busdriver") ) then {
+		if !((getmarkerpos _markername select 0) isEqualTo (dimishaltestelle select 0) && (getmarkerpos _markername select 1) isEqualTo (dimishaltestelle select 1) && myJob != "busdriver") then {
 			[dimishaltestelle,"bus"] call client_fnc_jobMarker;
 		};
 
