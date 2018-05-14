@@ -23,7 +23,7 @@ while{taskrunning  && myjob == "busdriver" } do {
 	if(playertasks isequalTO []) then {
 		_fickandi = round (random 26);
 		_marker = format["bus_%1", _fickandi];
-		playertasks pushback [(getPos _marker),"bus"];
+		playertasks pushback [(getmarkerpos _marker),"bus"];
 		[(playertasks select 0),"bus"] call client_fnc_jobMarker;
 		["Die nächste Buhaltestelle wurde auf der Karte markiert!",false] spawn domsg;
 		

@@ -39,6 +39,6 @@ if (_type == "bus") then {
 	[_pos,"Bushaltestelle","Location"] spawn client_fnc_hudHelper;
 };
 
-if (_type != "driver" && _type != "Cop" && _type != "Feuer") then {
+if (_type != "driver" && _type != "Cop" && _type != "Feuer" && _type != "bus") then {
 	[_pos,"Aufgabe","Job"] spawn client_fnc_hudHelper;
 };
