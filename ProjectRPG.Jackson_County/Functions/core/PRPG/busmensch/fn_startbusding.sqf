@@ -2,7 +2,7 @@ if(myjob != "none" && myjob != "busdriver") exitwith { hint "Du hast bereits Arb
 if(isnil "taskrunning") then { taskrunning = false; };
 
 if(isnil "haltestellen") then {
-	haltestellen = nearestObjects [getPos player,["Land_Dumpster_DED_Dumpster_01_F"],3500];
+	haltestellen = nearestObjects [getPos player,["paradadebus_civ"],3500];
 };
 
 
