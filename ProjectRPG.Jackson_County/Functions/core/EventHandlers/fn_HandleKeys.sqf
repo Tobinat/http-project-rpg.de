@@ -39,6 +39,17 @@ switch (_code) do
 			_locked = locked _veh;
 			if(_veh in current_cars && player distance _veh < 8) then {
 
+				if(_veh getVariable ["parkingTicket2", false]) then {
+					_veh setVariable["parkingTicket2",false,true];
+					["Dir wurde eine Strafe von 750$ fürs Falschparken berechnet!", false] spawn domsg;
+					[750] call Client_fnc_sl_removeBank_secure;h;
+				};
+				if(_veh getVariable ["parkingTicket", false]) then {
+					_veh setVariable["parkingTicket",false,true];
+					["Dir wurde eine Strafe von 250$ fürs Falschparken berechnet!", false] spawn domsg;
+					[250] call Client_fnc_sl_removeBank_secure;
+				};
+				
 				if(_locked == 2) then {
 
 					if(local _veh) then {

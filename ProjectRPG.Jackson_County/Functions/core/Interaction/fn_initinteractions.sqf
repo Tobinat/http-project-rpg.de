@@ -45,6 +45,17 @@ NoPixel_InteractionMenuItems = [
 		["Sichere Geldmittel", " ['Sicherung',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
 */
+
+	[
+		[" myJob == ""cop"" && !(cursorTarget getVariable [""parkingTicket"", false]) && !(cursorTarget getVariable [""parkingTicket2"", false])"],
+		["Parkticket $250", "cursorTarget setVariable[""parkingTicket"",true,true]; [""Parkticket von $250 ausgestellt!"",false] spawn domsg;",1]
+	],
+	
+	[
+		[" myJob == ""cop"" && !(cursorTarget getVariable [""parkingTicket"", false]) && !(cursorTarget getVariable [""parkingTicket2"", false])"],
+		["Parkticket $750", "cursorTarget setVariable[""parkingTicket2"",true,true]; [""Parkticket von $750 ausgestellt!"",false] spawn domsg;",1]
+	],
+
 	[
 		["client_poop > 80 && (isNull objectParent player)"],
 		["Auf die Toilette gehen", " [] spawn client_fnc_takeashit; ",5]
