@@ -18,7 +18,7 @@ taskrunning = true;
 _markername = format["job%1",getPlayerUID player];
 _warnings = 0;
 
-while{taskrunning  && myjob == "busdriver" } do {
+while{taskrunning  && myjob == "busdriver"} do {
 
 	if(playertasks isequalTO []) then {
 		_fickandi = round (random 26);
@@ -37,12 +37,13 @@ while{taskrunning  && myjob == "busdriver" } do {
 			["Du hast zulange gebraucht und wurdest entlassen!",false] spawn domsg;
 		};
 
-		if !((getmarkerpos _markername select 0) isEqualTo (dimishaltestelle select 0) && (getmarkerpos _markername select 1) isEqualTo (dimishaltestelle select 1)) then {
+		
+		if !((getmarkerpos _markername select 0) isEqualTo (dimishaltestelle select 0) && (getmarkerpos _markername select 1) isEqualTo (dimishaltestelle select 1) && myJob == "busdriver" ) then {
 			[dimishaltestelle,"bus"] call client_fnc_jobMarker;
 		};
 
 
-		if(player distance dimishaltestelle < 15 && vehicle player != player && player distance vehspawned < 10) then {
+		if(player distance dimishaltestelle < 15 && vehicle player != player) then {
 			_warnings = 0;
 			paycheck = paycheck + 200;
 			playertasks deleteat 0;
