@@ -177,6 +177,12 @@ if (_player IN currentPizzaFicker) exitwith {
     _pia = currentPizzaFicker find _player;
     currentPizzaFicker deleteAt _pia;
     publicvariable "currentPizzaFicker";
- //   currentTrashMan ="";
+
+};
+
+if (_player IN currentdimis) exitwith {
+    _pia = currentdimis find _player;
+    currentdimis deleteAt _pia;
+    publicvariable "currentdimis";
 
 };

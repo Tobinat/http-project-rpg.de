@@ -159,3 +159,10 @@ currentPizzaFicker pushback _player;
 publicvariable "currentPizzaFicker";
 
 };
+
+if (str _jobtype find "busdriver" > -1) exitwith {
+[] remoteExec ["client_fnc_startbusding",_player];
+currentdimis pushback _player;
+publicvariable "currentdimis";
+
+};

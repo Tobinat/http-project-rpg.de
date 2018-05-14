@@ -10,12 +10,12 @@ _i = 0;
 		_i = _i + 1;
 	};
 } forEach playableUnits;
-_count = [3,2,3,3,7,7,3,3];
+_count = [3,2,3,3,7,7,3,3,3];
 if(_i > 50) then {
 	if(_i > 80) then {
-		_count = [7,6,7,7,13,13,6,6];
+		_count = [7,6,7,7,13,13,6,6,6];
 	} else {
-		_count = [5,4,5,5,10,10,5,5];
+		_count = [5,4,5,5,10,10,5,5,4];
 	};
 };
 
@@ -51,6 +51,10 @@ _Jobs pushback ["Pizza Lieferant","pizza"];
 
 if(count currentTowTruckDrivers < (_count select 7)) then {
 _Jobs pushback ["Abschlepper","Tow Truck Driver"]; 
+};
+
+if(count currentdimis < (_count select 8)) then {
+_Jobs pushback ["Busfahrer","busdriver"]; 
 };
 
 

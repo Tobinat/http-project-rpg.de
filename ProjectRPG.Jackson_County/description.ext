@@ -225,6 +225,11 @@ class CfgFunctions
 			class testdrugClient {};
 			class drugTestReturn {};
 		};
+		
+		class busmensch {
+			file = "Functions\core\PRPG\busmensch";
+			class startbusding {};
+		};
 
 		class jobFactions {
 			file = "Functions\core\jobs\JobFactions";

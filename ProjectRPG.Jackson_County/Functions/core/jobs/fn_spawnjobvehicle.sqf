@@ -58,6 +58,12 @@ if (_jobType == "pizza") exitwith {
 	current_cars pushback vehspawned; uisleep 1;
 };
 
+if (_jobType == "busdriver") exitwith {
+	vehspawned = createVehicle ["acj_bus", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	[vehspawned] spawn client_fnc_spawnvehicle;
+	current_cars pushback vehspawned; uisleep 1;
+};
+
 if (_jobType == "repairman") exitwith {
 	vehspawned = createVehicle ["nopixel_mrfixit", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned, ["white","Glossy"]] spawn client_fnc_initVehicle;

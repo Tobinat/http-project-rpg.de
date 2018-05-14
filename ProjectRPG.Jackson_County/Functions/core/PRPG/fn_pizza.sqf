@@ -34,7 +34,10 @@ if(_item) then {
 
 if(_complete) exitWith {};
 
-["Add","Food",100] call client_fnc_sustain;
+["add","drink",80] call client_fnc_sustain;
+["add","food",20] call client_fnc_sustain;
+["add","unhealthiness",6] call client_fnc_sustain;
+["add","Poop",10] call client_fnc_sustain;
 
 life_pizza = 0;
 uiSleep 1.5;
