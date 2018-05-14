@@ -207,10 +207,6 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0.12,0.14,0.16,1};
 			
-			class Attributes {
-				align = "center";
-			};
-		
 		
 		}; 
     };
