@@ -359,7 +359,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["CurrentCursorTarget in Current_Cars", "!imRestrained", "player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 30 || ((player distance (getMarkerPos ""marker_10"")) < 20) || ((player distance (getMarkerPos ""marker_11"")) < 20) || ((player distance (getMarkerPos ""marker_13"")) < 20) || ((player distance (getMarkerPos ""marker_14"")) < 20) || ((player distance (getMarkerPos ""impoundlot"")) < 20)"],
+		["CurrentCursorTarget in Current_Cars", "!imRestrained", "player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 30 || ((player distance (getMarkerPos ""marker_10"")) < 20) || ((player distance (getMarkerPos ""marker_11"")) < 20) || ((player distance (getMarkerPos ""marker_13"")) < 20) || ((player distance (getMarkerPos ""marker_14"")) < 20)"],
 		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',5, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
