@@ -40,11 +40,11 @@ if(_type == "Job") exitwith {
 	_markername = format["job%1",getPlayerUID player];
 	deletemarkerlocal _markername;
 	marker = _markername;
-	_marker = createMarkerlocal [_markername, myposition];
+	_marker = createMarkerlocal [_markername, mypositionJob];
 	_marker setMarkerShapelocal "ICON";
 	_marker setMarkerTypelocal "hd_dot";
 	_marker setMarkerColorlocal "ColorOrange";
-	_marker setMarkerTextlocal format ["%1",mytext];
+	_marker setMarkerTextlocal format ["%1",mytextJob];
 
 
 	["Job", "onEachFrame"] call BIS_fnc_removeStackedEventHandler; 
