@@ -43,9 +43,10 @@ showHUD[] = {
 class RscTitles {
 
 	#include "maverick\maverick_titles_master.cpp"
+	#include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
     #include "dialogs\ui.hpp"
 	#include "dialogs\RscNotification.hpp"
-	#include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
+	
 };
 
 class CfgFunctions
