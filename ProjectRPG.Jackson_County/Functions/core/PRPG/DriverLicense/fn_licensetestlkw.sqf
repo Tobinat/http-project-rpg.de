@@ -46,7 +46,7 @@ while{_totaltest > 0} do {
 if(totalres > 1) then {
 	endresult = "BESTANDEN: Du hast nun einen Neuen Fühererschein..";
 	driver_test = false;
-	["Add","license",1] call client_fnc_sustain;
+	["Add","license",6] call client_fnc_sustain;
 } else {
 	endresult = "DURCHGEFALLEN: Du hast es nicht geschaft! Gut gemacht, du Loser!";
 	driver_test = false;

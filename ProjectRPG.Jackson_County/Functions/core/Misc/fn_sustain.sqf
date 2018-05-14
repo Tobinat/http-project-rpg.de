@@ -103,21 +103,23 @@ if(_type == "license") then {
 
 	if(_adjust == "Add") then { 
 
-		if(_amount == 1) then { licensearray SET [0,1]; ["Du hast einen Fuehrerschein erhalten.",false] spawn domsg; };
+		if(_amount == 1) then { licensearray SET [0,1]; ["Du hast einen Führerschein erhalten.",false] spawn domsg; };
 		if(_amount == 2) then { licensearray SET [1,1]; ["Du hast einen Waffenschein erhalten.",false] spawn domsg;  };
 		if(_amount == 3) then { licensearray SET [2,1]; ["Du hast eine Minerlizenz erhalten.",false] spawn domsg;  };
-		if(_amount == 4) then { licensearray SET [3,1]; ["Du hast eine Holzfaellerlizenz erhalten.",false] spawn domsg; };
+		if(_amount == 4) then { licensearray SET [3,1]; ["Du hast eine Holzfällerlizenz erhalten.",false] spawn domsg; };
 		if(_amount == 5) then { licensearray SET [4,1]; ["Du hast eine Fischerlizenz erhalten.",false] spawn domsg; };
-
+		if(_amount == 6) then { licensearray SET [5,1]; ["Du hast einen LKW-Führerschein erhalten.",false] spawn domsg; };
+		
 	};
 
 	if(_adjust == "Remove") then { 
 
-		if(_amount == 1) then { licensearray SET [0,0]; ["Dein Fuehrerschein wurde dir entzogen.",false] spawn domsg; };
+		if(_amount == 1) then { licensearray SET [0,0]; ["Dein Führerschein wurde dir entzogen.",false] spawn domsg; };
 		if(_amount == 2) then { licensearray SET [1,0]; ["Dein Waffenschein wurde dir entzogen.",false] spawn domsg; };
 		if(_amount == 3) then { licensearray SET [2,0]; ["Deine Minerlizenz wurde dir entzogen.",false] spawn domsg; };
-		if(_amount == 4) then { licensearray SET [3,0]; ["Deine Holzfaellerlizenz wurde dir entzogen.",false] spawn domsg; };
+		if(_amount == 4) then { licensearray SET [3,0]; ["Deine Holzfällerlizenz wurde dir entzogen.",false] spawn domsg; };
 		if(_amount == 5) then { licensearray SET [4,0]; ["Deine Fischerlizenz wurde dir entzogen.",false] spawn domsg; };
+		if(_amount == 6) then { licensearray SET [5,0]; ["Dein LKW-Führerschein wurde dir entzogen.",false] spawn domsg; };
 
 	};
 
@@ -128,6 +130,7 @@ if(_type == "license") then {
 		if(_amount == 3) then { licensearray SET [2,0]; };
 		if(_amount == 4) then { licensearray SET [3,0]; };
 		if(_amount == 5) then { licensearray SET [4,0]; };
+		if(_amount == 6) then { licensearray SET [5,0]; };
 
 	};
 

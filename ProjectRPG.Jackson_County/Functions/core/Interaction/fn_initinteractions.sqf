@@ -95,6 +95,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["(licensearray select 5) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""]"],
+		["LKW-Führerschein $1500", "_cashcheck = [1,1500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [] spawn client_fnc_licensetestlkw; [1500] call Client_fnc_sl_removeCash_secure; ",1]
+	],
+	
+	[
 		["typeof CurrentCursorTarget == ""Land_buildingGunStore1"" && (licensearray select 1) == 0"],
 		["Waffenschein $2500", "_cashcheck = [1,2500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",2] call client_fnc_sustain; [2500] call Client_fnc_sl_removeCash_secure; ",1]
 	],

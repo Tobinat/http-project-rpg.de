@@ -39,4 +39,7 @@ if(_licenses select 3 == 1) then {
 if(_licenses select 4 == 1) then {
 	_list lbAdd "Angelschein";
 };
+if(_licenses select 5 == 1) then {
+	_list lbAdd "LKW-Führerschein";
+};
 
