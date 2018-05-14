@@ -194,7 +194,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 15 * GUI_GRID_H;
 		};
 		
-		/* class RscButton_1600: RscButtonMenu
+		 class RscButton_9900: RscButtonMenu
 		{
 			idc = 10;
 			onButtonClick = "[_this, 'onButtonPurchaseClick'] spawn TTM_GUI_master_script;";
@@ -212,6 +212,6 @@ class TTM_GUI_RscDisplayTalentOverview {
 			};
 		
 		
-		}; */
+		}; 
     };
 };
