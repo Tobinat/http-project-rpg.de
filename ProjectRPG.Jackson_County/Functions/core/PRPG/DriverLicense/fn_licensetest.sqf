@@ -23,7 +23,7 @@ while{_totaltest > 0} do {
 		sleep 1;
 	};
 	["Schaue dich um, um den nächsten Checkpoint zu finden!",false] spawn domsg;
-	[postest] spawn client_fnc_jobmarker;
+	[postest,"driver"] spawn client_fnc_jobmarker;
 	_timer = 0;
 	anwser = "Error";
 	_shitcunt = 0;
