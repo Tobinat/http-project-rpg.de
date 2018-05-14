@@ -132,5 +132,5 @@ if (str _jobtype find "pizza" > -1 || str _jobtype == "pizza") exitwith {
 if (str _jobtype find "busdriver" > -1 || str _jobtype == "busdriver") exitwith {	
 	[] call client_fnc_startbusding;
 	currentdimis pushback _player;
-	publicvariable "currentPizzaFicker";	
+	publicvariable "currentdimis";	
 };
