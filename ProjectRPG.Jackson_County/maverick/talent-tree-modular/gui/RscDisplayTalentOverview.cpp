@@ -25,14 +25,14 @@ class TTM_GUI_RscDisplayTalentOverview {
 			colorBackground[] = {0.99,0.49,0,1};
 		};
 		class RscText_1003: RscText
-{
-	idc = 1002;
-	x = 4.5 * GUI_GRID_W + GUI_GRID_X;
-	y = 3 * GUI_GRID_H + GUI_GRID_Y;
-	w = 35 * GUI_GRID_W;
-	h = 0.5 * GUI_GRID_H;
-	colorBackground[] = {1,1,1,1};
-};
+		{
+			idc = 1002;
+			x = 4.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 3 * GUI_GRID_H + GUI_GRID_Y;
+			w = 35 * GUI_GRID_W;
+			h = 0.5 * GUI_GRID_H;
+			colorBackground[] = {1,1,1,1};
+		};
 		class textCurrentRank: RscStructuredText
 		{
 			idc = 3;
@@ -160,29 +160,29 @@ class TTM_GUI_RscDisplayTalentOverview {
 		};
 		
 		
-class textPerkName: RscText
-{
-	idc = 8;
-	shadow = 2;
+		class textPerkName: RscText
+		{
+			idc = 8;
+			shadow = 2;
 
-	text = "PERK NAME"; //--- ToDo: Localize;
-	x = 19.5 * GUI_GRID_W + GUI_GRID_X;
-	y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
-	w = 21.3788 * GUI_GRID_W;
-	h = 1.5 * GUI_GRID_H;
-	sizeEx = 2 * 0.04 * (0.04)*(0.04)*(0.04)*(0.04)* GUI_GRID_H;
-};
-class textPerkSubtitle: RscText
-{
-	idc = 9;
-	shadow = 2;
+			text = "PERK NAME"; //--- ToDo: Localize;
+			x = 19.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 21.3788 * GUI_GRID_W;
+			h = 1.5 * GUI_GRID_H;
+			sizeEx = 2 * 0.04 * (0.04)*(0.04)*(0.04)*(0.04)* GUI_GRID_H;
+		};
+		class textPerkSubtitle: RscText
+		{
+			idc = 9;
+			shadow = 2;
 
-	text = "PERK SUBTITLE"; //--- ToDo: Localize;
-	x = 19.5 * GUI_GRID_W + GUI_GRID_X;
-	y = 3 * GUI_GRID_H + GUI_GRID_Y;
-	w = 16 * GUI_GRID_W;
-	h = 2.5 * GUI_GRID_H;
-};
+			text = "PERK SUBTITLE"; //--- ToDo: Localize;
+			x = 19.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 3 * GUI_GRID_H + GUI_GRID_Y;
+			w = 16 * GUI_GRID_W;
+			h = 2.5 * GUI_GRID_H;
+		};
 		class textPerkDescription: RscStructuredText
 		{
 			idc = 11;
