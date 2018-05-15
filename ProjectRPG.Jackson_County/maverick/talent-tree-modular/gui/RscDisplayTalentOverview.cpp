@@ -197,18 +197,17 @@ class TTM_GUI_RscDisplayTalentOverview {
 		 class RscButton_9900: RscButtonMenu
 		{
 			idc = 10;
-			text = "PURCHASE"; //--- ToDo: Localize;
+			onButtonClick = "[_this, 'onButtonPurchaseClick'] spawn TTM_GUI_master_script;";
+			enabled = 0;
+
+			text = "PURCHASE"; 
 			x = 0.608281 * safezoneW + safezoneX;
 			y = 0.731 * safezoneH + safezoneY;
 			w = 0.0876563 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0.12,0.14,0.16,1};
-			onButtonClick = "[_this, 'onButtonPurchaseClick'] spawn TTM_GUI_master_script;";
-			enabled = 0;
-
-			class Attributes {
-				align = "center";
-			};		
+			
+		
 		}; 
     };
 };
