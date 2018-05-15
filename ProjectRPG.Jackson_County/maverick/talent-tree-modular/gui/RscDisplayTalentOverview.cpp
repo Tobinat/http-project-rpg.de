@@ -100,6 +100,12 @@ class TTM_GUI_RscDisplayTalentOverview {
 			default = 0;
 			style = 2;
 			blinkingPeriod = 0;
+			x = 0.304062 * safezoneW + safezoneX;
+			y = 0.313 * safezoneH + safezoneY;
+			w = 0.180469 * safezoneW;
+			h = 0.44 * safezoneH;
+			colorBackground[] = {0,0,0,0.2};
+			sizeEx = 0.04;
 			picture = "";
 			colorPicture[] = {1,1,1,1};
 			colorPictureSelected[] = {1,1,1,1};
@@ -112,23 +118,26 @@ class TTM_GUI_RscDisplayTalentOverview {
 			colorPictureLeftDisabled[] = {1,1,1,1};
 			font = "RobotoCondensed";
 			rowHeight = 0.0439091;
-			color[] = {1,1,1,1};
-			colorSelect[] = {0.7,0.7,0.7,1};
-			colorSelectBackground[] = {0,0,0,0.5};
-			colorBorder[] = {0,0,0,0};
-			borderSize = 0;
-			colorMarked[] = {1,0.5,0,0.5};
-			colorMarkedSelected[] = {1,0.5,0,1};
-			colorSelectText[] = {1,1,1,1};
-			colorMarkedText[] = {1,1,1,1};
-			tooltipColorShade[] = {0,0,0,1};
-			tooltipColorText[] = {1,1,1,1};
-			tooltipColorBox[] = {1,1,1,1};
-			multiselectEnabled = 1;
-			expandOnDoubleclick = 1;
-			hiddenTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\hiddenTexture_ca.paa";
-			expandedTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\expandedTexture_ca.paa";
-			maxHistoryDelay = 1;
+		    color[] = {1, 1, 1, 1};
+		    colorSelect[] = {0.7, 0.7, 0.7, 1};
+		    colorSelectBackground[] = {0, 0, 0, 0.5};
+		    colorBorder[] = {0, 0, 0, 0};
+		    borderSize = 0;
+			colorMarked[] = {1,0.5,0,0.5}; // Marked item fill color (when multiselectEnabled is 1)
+			colorMarkedSelected[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 1)
+			colorText[] = {1,1,1,1}; // Text color
+			colorSelectText[] = {1,1,1,1}; // Selected text color (when multiselectEnabled is 0)
+			colorMarkedText[] = {1,1,1,1}; // Selected text color (when multiselectEnabled is 1)
+			tooltip = "CT_TREE"; // Tooltip text
+			tooltipColorShade[] = {0,0,0,1}; // Tooltip background color
+			tooltipColorText[] = {1,1,1,1}; // Tooltip text color
+			tooltipColorBox[] = {1,1,1,1}; // Tooltip frame color
+			multiselectEnabled = 1; // Allow selecting multiple items while holding Ctrl or Shift
+			expandOnDoubleclick = 1; // Expand/collapse item upon double-click
+			hiddenTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\hiddenTexture_ca.paa"; // Expand icon
+			expandedTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\expandedTexture_ca.paa"; // Collapse icon
+			maxHistoryDelay = 1; // Time since last keyboard type search to reset it
+
 			
 			// Scrollbar configuration
 			class ScrollBar
