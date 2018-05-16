@@ -13,13 +13,13 @@ if(_condition == "gunstore") then {
 		["cg_pickaxe",nil,120,1],
 		["cg_bat",nil,120,1],
 		["vvv_fishing_rod",nil,120,1],
-		["hgun_Pistol_heavy_01_F",nil,3000,1],
-		["hgun_ACPC2_F",nil,3150,1],
-		["RH_g17",nil,4600,1],
-		["RH_uspm",nil,7800,1],
-		["RH_kimber",nil,9600,1],
-		["RH_fn57",nil,7400,1],
-		["RH_fnp45",nil,6800,1]
+		["hgun_Pistol_heavy_01_F",nil,6000,1],
+		["hgun_ACPC2_F",nil,6150,1],
+		["RH_g17",nil,6600,1],
+		["RH_uspm",nil,9800,1],
+		["RH_kimber",nil,12600,1],
+		["RH_fn57",nil,14400,1],
+		["RH_fnp45",nil,10000,1]
 	];
 	_gunStorePistols = _gunStorePistols;
 	{
@@ -33,20 +33,20 @@ if(_condition == "rarefish") then {
 		_gunStorePistols = [
 
 			//weapons
-			["gold_fishing_rod",nil,6,1],
-			["platinum_fishing_rod",nil,10,1],
-			["epic_fishing_rod",nil,15,1],
-			["legendary_fishing_rod",nil,18,1],
+			["gold_fishing_rod",nil,25,1],
+			["platinum_fishing_rod",nil,50,1],
+			["epic_fishing_rod",nil,80,1],
+			["legendary_fishing_rod",nil,100,1],
 			//clothes
-			["U_B_Wetsuit",nil,1,3,1],
-			["cg_horsehead",nil,12,3,5],
-			["cg_horsehead_2",nil,12,3,5],
-			["cg_horsehead_blk",nil,12,3,5],
-			["cg_horsehead_pnk",nil,12,3,5],
+			["U_B_Wetsuit",nil,10,3,1],
+			["cg_horsehead",nil,20,3,5],
+			["cg_horsehead_2",nil,25,3,5],
+			["cg_horsehead_blk",nil,25,3,5],
+			["cg_horsehead_pnk",nil,15,3,5],
 			//hats
-			["BL_eimer_hat",nil,12,3,5],
-			["BL_mask2_hat",nil,12,3,5],
-			["BL_us_hat",nil,12,3,5],
+			["BL_eimer_hat",nil,5,3,5],
+			["BL_mask2_hat",nil,6,3,5],
+			["BL_us_hat",nil,12,5,5],
 			["BL_party_hat",nil,12,3,5],
 			["vvv_VAMPIRO_hat",nil,12,3,5],
 			["vvv_alien24_hat",nil,12,3,5],
@@ -204,64 +204,64 @@ if(_condition == "rarefish") then {
 if(_condition == "clothing") then {
 
 	_clothing = [
-		["Masque_Hoxton",nil,20,3,5],
-		["Masque_Wolfv2",nil,20,3,5],
-		["H_ObamaMask",nil,02,3,5],
+		["Masque_Hoxton",nil,50,3,5],
+		["Masque_Wolfv2",nil,60,3,5],
+		["H_ObamaMask",nil,20,3,5],
 		["Masque_Chains",nil,20,3,5],
 		["vvv_Anonymous_hat",nil,20,3,5],
 		["U_B_Wetsuit",nil,2000,3,1],
-		["EF_HM_B1",nil,100,3,1],
-		["EF_HM_BL1",nil,100,3,1],
-		["EF_HM_OD1",nil,100,3,1],
-		["EF_HM_SG1",nil,100,3,1],
-		["EF_HM_PP1",nil,100,3,1],
-		["EF_HM_B2",nil,100,3,1],
-		["EF_HM_BL2",nil,100,3,1],
-		["EF_HM_OD2",nil,100,3,1],
-		["EF_HM_SG2",nil,100,3,1],
-		["EF_HM_PP2",nil,100,3,1],
-		["EF_MKJKT",nil,100,3,1],
-		["EF_MKJKT2",nil,100,3,1],
-		["EF_HM_LPBPS",nil,100,3,1],
-		["EF_HM_LPBP",nil,100,3,1],
-		["EF_HM_LPBR",nil,100,3,1],
-		["EF_HM_LPBW",nil,100,3,1],
-		["EF_HM_LPB",nil,100,3,1],
-		["EF_HM_LPBL",nil,100,3,1],
-		["EF_HM_LPBPS2",nil,100,3,1],
-		["EF_HM_LPBP2",nil,100,3,1],
-		["EF_HM_LPBR2",nil,100,3,1],
-		["EF_HM_LPBW2",nil,100,3,1],
-		["EF_HM_LPB2",nil,100,3,1],
-		["EF_HM_LPBL2",nil,100,3,1],
-		["TRYK_U_B_PCUGs_BLK_R",nil,100,3,1],
-		["TRYK_U_B_PCUGs_gry_R",nil,100,3,1],
-		["TRYK_U_B_PCUGs_OD_R",nil,100,3,1],
-		["TRYK_U_B_wh_blk_Rollup_CombatUniform",nil,100,3,1],
-		["TRYK_shirts_DENIM_BK",nil,100,3,1],
-		["TRYK_shirts_DENIM_BL",nil,100,3,1],
-		["TRYK_shirts_DENIM_BWH",nil,100,3,1],
-		["TRYK_shirts_DENIM_R",nil,100,3,1],
-		["TRYK_shirts_DENIM_RED2",nil,100,3,1],
+		["EF_HM_B1",nil,300,3,1],
+		["EF_HM_BL1",nil,300,3,1],
+		["EF_HM_OD1",nil,300,3,1],
+		["EF_HM_SG1",nil,300,3,1],
+		["EF_HM_PP1",nil,300,3,1],
+		["EF_HM_B2",nil,300,3,1],
+		["EF_HM_BL2",nil,300,3,1],
+		["EF_HM_OD2",nil,300,3,1],
+		["EF_HM_SG2",nil,300,3,1],
+		["EF_HM_PP2",nil,300,3,1],
+		["EF_MKJKT",nil,300,3,1],
+		["EF_MKJKT2",nil,300,3,1],
+		["EF_HM_LPBPS",nil,300,3,1],
+		["EF_HM_LPBP",nil,300,3,1],
+		["EF_HM_LPBR",nil,300,3,1],
+		["EF_HM_LPBW",nil,300,3,1],
+		["EF_HM_LPB",nil,300,3,1],
+		["EF_HM_LPBL",nil,300,3,1],
+		["EF_HM_LPBPS2",nil,300,3,1],
+		["EF_HM_LPBP2",nil,300,3,1],
+		["EF_HM_LPBR2",nil,300,3,1],
+		["EF_HM_LPBW2",nil,300,3,1],
+		["EF_HM_LPB2",nil,300,3,1],
+		["EF_HM_LPBL2",nil,300,3,1],
+		["TRYK_U_B_PCUGs_BLK_R",nil,250,3,1],
+		["TRYK_U_B_PCUGs_gry_R",nil,300,3,1],
+		["TRYK_U_B_PCUGs_OD_R",nil,250,3,1],
+		["TRYK_U_B_wh_blk_Rollup_CombatUniform",nil,300,3,1],
+		["TRYK_shirts_DENIM_BK",nil,200,3,1],
+		["TRYK_shirts_DENIM_BL",nil,200,3,1],
+		["TRYK_shirts_DENIM_BWH",nil,300,3,1],
+		["TRYK_shirts_DENIM_R",nil,300,3,1],
+		["TRYK_shirts_DENIM_RED2",nil,300,3,1],
 		["TRYK_shirts_DENIM_WHB",nil,100,3,1],
 		["TRYK_shirts_DENIM_ylb",nil,100,3,1],
 		["TRYK_U_denim_hood_blk",nil,100,3,1],
 		["TRYK_U_taki_G_BLK",nil,100,3,1],
 		["TRYK_U_taki_G_COY",nil,100,3,1],
-		["EF_suit_1",nil,100,3,1],
-		["EF_suit_2",nil,100,3,1],
-		["EF_suit_3",nil,100,3,1],
-		["EF_suit_4",nil,100,3,1],
-		["EF_suit_5",nil,100,3,1],
-		["EF_suit_6",nil,100,3,1],
-		["EF_M_jkt2",nil,500,3,1],
-		["EF_M_jkt22",nil,500,3,1],
-		["EF_M_jkt1",nil,500,3,1],
-		["EF_M_jkt2_2",nil,500,3,1],
-		["EF_M_jkt2_22",nil,500,3,1],
-		["EF_M_jkt1_2",nil,500,3,1],
-		["EF_M_jkt2_3",nil,500,3,1],
-		["EF_M_jkt2_32",nil,500,3,1],
+		["EF_suit_1",nil,600,3,1],
+		["EF_suit_2",nil,600,3,1],
+		["EF_suit_3",nil,600,3,1],
+		["EF_suit_4",nil,600,3,1],
+		["EF_suit_5",nil,600,3,1],
+		["EF_suit_6",nil,600,3,1],
+		["EF_M_jkt2",nil,600,3,1],
+		["EF_M_jkt22",nil,600,3,1],
+		["EF_M_jkt1",nil,600,3,1],
+		["EF_M_jkt2_2",nil,600,3,1],
+		["EF_M_jkt2_22",nil,600,3,1],
+		["EF_M_jkt1_2",nil,600,3,1],
+		["EF_M_jkt2_3",nil,600,3,1],
+		["EF_M_jkt2_32",nil,600,3,1],
 		["EF_M_jkt1_3",nil,500,3,1],
 		["EF_M_jkt32_2",nil,500,3,1],
 		["EF_M_jkt32_2",nil,500,3,1],
@@ -578,10 +578,10 @@ if(_condition == "veststore") then {
 if(_condition == "mcdonalds") then {
 
 	_mcdonalds = [
-		["np_happymeal",nil,8,3],
-		["np_bigmac",nil,8,3],
-		["np_mchicken",nil,8,3],
-		["np_cheeseburger",nil,8,3],
+		["np_happymeal",nil,10,3],
+		["np_bigmac",nil,12,3],
+		["np_mchicken",nil,10,3],
+		["np_cheeseburger",nil,9,3],
 		["np_hamburger",nil,8,3]
 	];
 
@@ -917,7 +917,7 @@ if(_condition == "general") then {
 		["CG_wheel",nil,150,3],
 		["ACE_fieldDressing",nil,5,3],
 		["CG_Pro_Item_i",nil,350,1],
-		["kif_nitro",nil,800,3],
+		["kif_nitro",nil,2000,3],
 		["ItemMap",nil,1,3],
 		["ItemCompass",nil,10,3],
 		["Itemwatch",nil,5,3],
@@ -1261,34 +1261,34 @@ if(_condition == "doughnuts_gun") then {
 	_additional = [];
 	if(_doughnuts > 0) then {
 		_ret = [
-			["hgun_Pistol_heavy_01_F",nil,5000,1],
-			["muzzle_snds_acp",nil,2000,3],
-			["optic_MRD",nil,1000,3],
-			["RH_m9",nil,4000,1],
-			["RH_m9qd",nil,1000,3],
-			["RH_m9c",nil,4000,3],
+			["hgun_Pistol_heavy_01_F",nil,10000,1],
+			["muzzle_snds_acp",nil,3700,3],
+			["optic_MRD",nil,1900,3],
+			["RH_m9",nil,7000,1],
+			["RH_m9qd",nil,2000,3],
+			["RH_m9c",nil,8000,3],
 			["RH_fn57_t",nil,5000,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 1) then {
 		_ret = [
-		  ["RH_python",nil,6000,1],
-			["RH_fnp45",nil,5000,1],
-			["RH_gemtech45",nil,2000,3],
-			["RH_docter",nil,1000,3],
+		  ["RH_python",nil,16000,1],
+			["RH_fnp45",nil,9000,1],
+			["RH_gemtech45",nil,6000,3],
+			["RH_docter",nil,6000,3],
 			["RH_fnp45t",nil,5000,1],
-			["RH_g18",nil,6000,1]
+			["RH_g18",nil,9000,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 2) then {
 		_ret = [
-		  ["RH_g19",nil,5000,1],
-			["RH_g19t",nil,5000,1],
+		  ["RH_g19",nil,8000,1],
+			["RH_g19t",nil,6000,1],
 			["RH_tec9",nil,7000,1],
-			["RH_tecsd",nil,2000,3],
-			["RH_kimber",nil,5000,1]
+			["RH_tecsd",nil,4000,3],
+			["RH_kimber",nil,8000,1]
 		];
 		_additional = _additional + _ret;
 	};
@@ -1300,11 +1300,11 @@ if(_condition == "doughnuts_gun") then {
 	};
 	if(_doughnuts > 4) then {
 		_ret = [
-		  ["RH_deagle",nil,10000,1],
+		  ["RH_deagle",nil,20000,1],
 			["RH_Deagleg",nil,15000,1],
-			["hgun_PDW2000_F",nil,20000,1],
-			["RH_mk2",nil,5000,1],
-			["SMG_01_F",nil,30000,1]
+			["hgun_PDW2000_F",nil,30000,1],
+			["RH_mk2",nil,15000,1],
+			["SMG_01_F",nil,60000,1]
 		];
 		_additional = _additional + _ret;
 	};
