@@ -228,7 +228,7 @@ switch (_code) do
 		};
 	};
 
-	case 25:
+	/* case 25:
 	{
 	    if(_shift && !_alt && !_ctrlKey && !busyPlayer) then
 	    {
@@ -247,7 +247,7 @@ switch (_code) do
 			};
 	        _handle = true;
 	    };
-	};
+	}; */
 
 
 
