@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=1953;
+		nextID=1955;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6611.71,378.58972,1663.7783};
-		dir[]={-0.50561696,-0.6072194,-0.61292171};
-		up[]={-0.38641527,0.79452127,-0.46842152};
-		aside[]={-0.77141267,-2.830202e-007,0.63636118};
+		pos[]={8322.9375,46.036472,2941.8774};
+		dir[]={-0.82522482,-0.53153771,0.1910114};
+		up[]={-0.51793617,0.84697497,0.11988477};
+		aside[]={0.22550496,1.0174699e-007,0.97424638};
 	};
 };
 binarizationWanted=0;
@@ -240,6 +240,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -254,24 +272,6 @@ class CustomAttributes
 						};
 					};
 					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -3577,7 +3577,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=368;
+		items=370;
 		class Item0
 		{
 			dataType="Group";
@@ -17356,7 +17356,7 @@ class Mission
 			position[]={6279.2666,0.77490234,3689.5408};
 			name="bus_6";
 			type="Empty";
-			angle=114.99949;
+			angle=114.99948;
 			id=1912;
 			atlOffset=-9.5367432e-007;
 		};
@@ -17572,7 +17572,7 @@ class Mission
 			position[]={4560.8965,144.599,4014.9016};
 			name="bus_9";
 			type="Empty";
-			angle=132.87654;
+			angle=132.87653;
 			id=1918;
 			atlOffset=4.5776367e-005;
 		};
@@ -17716,7 +17716,7 @@ class Mission
 			position[]={8685.0889,19.109985,6943.3984};
 			name="bus_11";
 			type="Empty";
-			angle=31.252823;
+			angle=31.252819;
 			id=1922;
 			atlOffset=-1.335144e-005;
 		};
@@ -18075,7 +18075,7 @@ class Mission
 			position[]={9947.6895,25,3528.4744};
 			name="bus_16";
 			type="Empty";
-			angle=72.941246;
+			angle=72.941238;
 			id=1932;
 		};
 		class Item348
@@ -18146,7 +18146,7 @@ class Mission
 			position[]={3828.9246,74.060059,1763.1263};
 			name="bus_17";
 			type="Empty";
-			angle=52.192871;
+			angle=52.192867;
 			id=1934;
 			atlOffset=-0.10477448;
 		};
@@ -18360,7 +18360,7 @@ class Mission
 			position[]={2740.1389,73.245239,3075.8982};
 			name="bus_20";
 			type="Empty";
-			angle=110.99031;
+			angle=110.9903;
 			id=1940;
 			atlOffset=3.0517578e-005;
 		};
@@ -18646,7 +18646,7 @@ class Mission
 			position[]={8824.4355,56.488594,5713.0659};
 			name="bus_24";
 			type="Empty";
-			angle=208.79807;
+			angle=208.79805;
 			id=1948;
 		};
 		class Item364
@@ -18788,6 +18788,114 @@ class Mission
 			type="Empty";
 			angle=208.0397;
 			id=1952;
+		};
+		class Item368
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8293.5137,25,2939.3169};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=1953;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item369
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8282.2305,25,2929.0217};
+			};
+			areaSize[]={1,0,1};
+			flags=1;
+			id=1954;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };
