@@ -14,7 +14,7 @@ class TTM_GUI_RscTitleExperienceAdded
 		{
 			idc = -1;
 			x = 0.345312 * safezoneW + safezoneX;
-			y = 0.900 * safezoneH + safezoneY;
+			y = 0.999 * safezoneH + safezoneY;
 			w = 0.309375 * safezoneW;
 			h = 0.011 * safezoneH;
 			colorBackground[] = {1,1,1,0.35};
@@ -24,9 +24,9 @@ class TTM_GUI_RscTitleExperienceAdded
 			idc = 3;
 			text = ""; //--- ToDo: Localize;
 			x = 0.5825 * safezoneW + safezoneX;
-			y = 0.999 * safezoneH + safezoneY;
+			y = 0.863 * safezoneH + safezoneY;
 			w = 0.0721875 * safezoneW;
-			h = 0.90 * safezoneH;
+			h = 0.50 * safezoneH;
 			colorText[] = {0,0,0,1};
 		};
 		class textActionText: RscStructuredText
