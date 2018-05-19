@@ -301,7 +301,8 @@ class CfgVehicles
 				position = "ACTION_Garage";
 				onlyforplayer = 0;
 				radius = 2;
-				condition = "((this animationPhase 'animateGarage') >= 0.5)";
+				condition = "(myjob IN [""Cop"",""doc"",""EMS""] && this animationPhase ""animateGarage"">= 0.5";
+				//condition = "((this animationPhase 'animateGarage') >= 0.5)";
 				statement = "this animate [""animateGarage"", 0]";
 			};
 			class OpenGarage
@@ -312,7 +313,8 @@ class CfgVehicles
 				position = "ACTION_Garage";
 				onlyforplayer = 0;
 				radius = 2;
-				condition = "((player getVariable ['copLevel',0]) > 0); this animationPhase ""animateGarage""<0.5";
+				condition = "(myjob IN [""Cop"",""doc"",""EMS""] && this animationPhase ""animateGarage""<0.5";
+				//condition = "((player getVariable ['copLevel',0]) > 0); this animationPhase ""animateGarage""<0.5";
 				statement = "this animate [""animateGarage"", 1]";
 			};
 			class CloseCell
@@ -323,7 +325,8 @@ class CfgVehicles
 				position = "ACTION_DoorCell1";
 				onlyforplayer = 0;
 				radius = 2;
-				condition = "((this animationPhase 'animateDoorCell1') >= 0.5)";
+				condition = "(myjob IN [""Cop"",""doc"",""EMS""] && this animationPhase ""animateDoorCell1"">= 0.5";
+				//condition = "((this animationPhase 'animateDoorCell1') >= 0.5)";
 				statement = "this animate [""animateDoorCell1"", 0]";
 			};
 			class OpenCell
@@ -334,7 +337,8 @@ class CfgVehicles
 				position = "ACTION_DoorCell1";
 				onlyforplayer = 0;
 				radius = 2;
-				condition = "((player getVariable ['copLevel',0]) > 0); this animationPhase ""animateDoorCell1""<0.5";
+				condition = "(myjob IN [""Cop"",""doc"",""EMS""] && this animationPhase ""animateDoorCell1""<0.5";
+				//condition = "((player getVariable ['copLevel',0]) > 0); this animationPhase ""animateDoorCell1""<0.5";
 				statement = "this animate [""animateDoorCell1"", 1]";
 			};
 		};
