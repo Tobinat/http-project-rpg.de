@@ -14,7 +14,7 @@ class TTM_GUI_RscTitleExperienceAdded
 		{
 			idc = -1;
 			x = 0.345312 * safezoneW + safezoneX;
-			y = 0.885 * safezoneH + safezoneY;
+			y = 0.899 * safezoneH + safezoneY;
 			w = 0.309375 * safezoneW;
 			h = 0.011 * safezoneH;
 			colorBackground[] = {1,1,1,0.35};
@@ -43,9 +43,9 @@ class TTM_GUI_RscTitleExperienceAdded
 		{
 			idc = 5;
 			x = 0.345312 * safezoneW + safezoneX;
-			y = 0.885 * safezoneH + safezoneY;
+			y = 0.899 * safezoneH + safezoneY;
 			w = 0.309375 * safezoneW;
-			h = 0.007 * safezoneH;
+			h = 0.011 * safezoneH;
 			colorFrame[] = {0,0,0,0};
     		colorBackground[] = {0,0,0,0};
    	 		colorBar[] = {0.96,0.65,0.12,0.8};
