@@ -17,7 +17,7 @@ if(_vehType == "ivory") then {
 if(_vehType == "jonzie") then {
 	_licenseSelections = [1,2,3,4,5,6,7];
 };
-if(_vehType == "") then {
+if(_vehType == "A3F") then {
 	_licenseSelections = [1,2,3,4,5,6,7];
 };
 
