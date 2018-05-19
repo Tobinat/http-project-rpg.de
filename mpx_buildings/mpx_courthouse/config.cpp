@@ -177,7 +177,7 @@ class CfgVehicles
 				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
 				priority = 0.4;
 				displayName = "Close door";
-				position = "ACTION_SenatorDoor2";
+				position = "ACTION_JudgeDoor";
 				onlyforplayer = 0;
 				radius = 2;
 				condition = "((this animationPhase 'animateJudgeDoor') >= 0.5)";
