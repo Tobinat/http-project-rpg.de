@@ -208,5 +208,3 @@ for "_i" from 0 to 1 step 0 do {
    9536 cutfadeout 0;
    9534 cutRsc ["HUDSpeak1","PLAIN",0.001];
   }; */
-    uiSleep 1;
-};
