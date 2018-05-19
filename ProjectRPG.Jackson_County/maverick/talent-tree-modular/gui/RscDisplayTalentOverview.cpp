@@ -88,7 +88,7 @@ class TTM_GUI_RscDisplayTalentOverview {
 			colorBar[] = {0.99,0.49,0,1};
 
 			x = 4.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 35 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 		};
