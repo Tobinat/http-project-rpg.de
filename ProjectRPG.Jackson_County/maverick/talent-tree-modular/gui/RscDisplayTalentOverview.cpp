@@ -25,14 +25,14 @@ class TTM_GUI_RscDisplayTalentOverview {
 			colorBackground[] = {0.99,0.49,0,1};
 		};
 		class RscText_1003: RscText
-		{
-			idc = 1002;
-			x = 4.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 35 * GUI_GRID_W;
-			h = 0.5 * GUI_GRID_H;
-			colorBackground[] = {1,1,1,1};
-		};
+{
+	idc = 1002;
+	x = 4.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 35 * GUI_GRID_W;
+	h = 0.5 * GUI_GRID_H;
+	colorBackground[] = {1,1,1,1};
+};
 		class textCurrentRank: RscStructuredText
 		{
 			idc = 3;
@@ -129,24 +129,6 @@ class TTM_GUI_RscDisplayTalentOverview {
 			hiddenTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\hiddenTexture_ca.paa";
 			expandedTexture = "\A3\ui_f\data\gui\rsccommon\rsctree\expandedTexture_ca.paa";
 			maxHistoryDelay = 1;
-			
-			// Scrollbar configuration
-			class ScrollBar
-			{
-				width = 0; // width of ScrollBar
-				height = 0; // height of ScrollBar
-				scrollSpeed = 0.01; // scroll speed of ScrollBar
-
-				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
-				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
-				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
-				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
-
-				color[] = {1,1,1,1}; // Scrollbar color
-			};
-			
-			
-			
 			colorDisabled[] = {0,0,0,0};
 			colorArrow[] = {0,0,0,0};
 
@@ -160,29 +142,29 @@ class TTM_GUI_RscDisplayTalentOverview {
 		};
 		
 		
-		class textPerkName: RscText
-		{
-			idc = 8;
-			shadow = 2;
+class textPerkName: RscText
+{
+	idc = 8;
+	shadow = 2;
 
-			text = "PERK NAME"; //--- ToDo: Localize;
-			x = 19.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 21.3788 * GUI_GRID_W;
-			h = 1.5 * GUI_GRID_H;
-			sizeEx = 2 * 0.04 * (0.04)*(0.04)*(0.04)*(0.04)* GUI_GRID_H;
-		};
-		class textPerkSubtitle: RscText
-		{
-			idc = 9;
-			shadow = 2;
+	text = "PERK NAME"; //--- ToDo: Localize;
+	x = 19.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 21.3788 * GUI_GRID_W;
+	h = 1.5 * GUI_GRID_H;
+	sizeEx = 2 * 0.04 * (0.04)*(0.04)*(0.04)*(0.04)* GUI_GRID_H;
+};
+class textPerkSubtitle: RscText
+{
+	idc = 9;
+	shadow = 2;
 
-			text = "PERK SUBTITLE"; //--- ToDo: Localize;
-			x = 19.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 16 * GUI_GRID_W;
-			h = 2.5 * GUI_GRID_H;
-		};
+	text = "PERK SUBTITLE"; //--- ToDo: Localize;
+	x = 19.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 16 * GUI_GRID_W;
+	h = 2.5 * GUI_GRID_H;
+};
 		class textPerkDescription: RscStructuredText
 		{
 			idc = 11;
@@ -194,20 +176,18 @@ class TTM_GUI_RscDisplayTalentOverview {
 			h = 15 * GUI_GRID_H;
 		};
 		
-		 class RscButton_9900: RscButtonMenu
+		class RscButton_1600: RscButtonMenu
 		{
 			idc = 10;
 			onButtonClick = "[_this, 'onButtonPurchaseClick'] spawn TTM_GUI_master_script;";
 			enabled = 0;
 
-			text = "PURCHASE"; 
-			x = 0.608281 * safezoneW + safezoneX;
-			y = 0.731 * safezoneH + safezoneY;
-			w = 0.0876563 * safezoneW;
-			h = 0.022 * safezoneH;
+			text = "PURCHASE"; //--- ToDo: Localize;
+			x = 30.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 23 * GUI_GRID_H + GUI_GRID_Y;
+			w = 8.5 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0.12,0.14,0.16,1};
-			
-		
-		}; 
+		};
     };
 };
