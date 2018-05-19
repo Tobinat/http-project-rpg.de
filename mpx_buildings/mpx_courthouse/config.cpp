@@ -136,7 +136,7 @@ class CfgVehicles
 				position = "ACTION_SenatorDoor";
 				onlyforplayer = 0;
 				radius = 3;
-				condition = "(this animationPhase 'animateSenatorDoorL') >= 0.5)";
+				condition = "((this animationPhase 'animateSenatorDoorL') >= 0.5)";
 				statement = "this animate [""animateSenatorDoorL"", 0]";
 			};
 			class OpenSenatorDoor2
@@ -180,7 +180,7 @@ class CfgVehicles
 				position = "ACTION_SenatorDoor2";
 				onlyforplayer = 0;
 				radius = 2;
-				condition = "(this animationPhase 'animateJudgeDoor') >= 0.5)";
+				condition = "((this animationPhase 'animateJudgeDoor') >= 0.5)";
 				statement = "this animate [""animateJudgeDoor"", 0]";
 			};
 			class OpenDefendantDoor
