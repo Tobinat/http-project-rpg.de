@@ -2,7 +2,7 @@ private["_licenseselections"];
 _car = param [0, objNull, [objNull]];
 _license = param [1, "", [""]];
 _license = toLower(_license);
-_vehType = _this select 3;
+_vehType = _this select 2;
 
 _licenseAlphaArray 		= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 _licenseNumericArray 	= ["0","1","2","3","4","5","6","7","8","9"];
@@ -17,9 +17,7 @@ if(_vehType == "ivory") then {
 if(_vehType == "jonzie") then {
 	_licenseSelections = [1,2,3,4,5,6,7];
 };
-if(_vehType == "A3F") then {
-	_licenseSelections = [1,2,3,4,5,6,7];
-};
+
 
 
 if (_license == "") then 
