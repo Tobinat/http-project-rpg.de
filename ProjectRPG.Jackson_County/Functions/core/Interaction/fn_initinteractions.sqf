@@ -50,7 +50,7 @@ NoPixel_InteractionMenuItems = [
 		[" myJob == ""cop"" && !(cursorTarget getVariable [""parkingTicket"", false]) && !(cursorTarget getVariable [""parkingTicket2"", false]) && currentcursortarget isKindOf ""Car"""],
 		["Parkticket $250", "cursorTarget setVariable[""parkingTicket"",true,true]; [""Parkticket von $250 ausgestellt!"",false] spawn domsg;",1]
 	],
-	
+
 	[
 		[" myJob == ""cop"" && !(cursorTarget getVariable [""parkingTicket"", false]) && !(cursorTarget getVariable [""parkingTicket2"", false]) && currentcursortarget isKindOf ""Car"""],
 		["Parkticket $750", "cursorTarget setVariable[""parkingTicket2"",true,true]; [""Parkticket von $750 ausgestellt!"",false] spawn domsg;",1]
@@ -98,7 +98,7 @@ NoPixel_InteractionMenuItems = [
 		["(licensearray select 5) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""]"],
 		["LKW-Führerschein $1500", "_cashcheck = [1,1500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [] spawn client_fnc_licensetestlkw; [1500] call Client_fnc_sl_removeCash_secure; ",1]
 	],
-	
+
 	[
 		["typeof CurrentCursorTarget == ""Land_buildingGunStore1"" && (licensearray select 1) == 0"],
 		["Waffenschein $2500", "_cashcheck = [1,2500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",2] call client_fnc_sustain; [2500] call Client_fnc_sl_removeCash_secure; ",1]
@@ -671,10 +671,10 @@ NoPixel_InteractionMenuItems = [
 		["Cop Waffenladen", "closedialog 0; createdialog ""Cops_GUN_Menu""; [""copwaffen""] spawn client_fnc_LoadStore;",3]
 	],
 
-	[
-		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-		["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
-	],
+	//[
+		//["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+		//["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
+	//],
 
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
@@ -933,7 +933,7 @@ NoPixel_InteractionMenuItems = [
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && (myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Fire"")"],
 		["Alkoholtest", " [currentcursortarget] spawn client_fnc_testIntox; ",4]
 	],
-	
+
 	[
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && (myjob == ""EMS"" || myjob == ""Fire"")"],
 		["Drogentest", " [currentcursortarget] spawn client_fnc_testdrug; ",4]
@@ -1019,17 +1019,17 @@ NoPixel_InteractionMenuItems = [
 		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"")) || myJob == ""Mafia"" && player distance myhouse < 20 "],
 		["Grundausstattung", "[""basic""] spawn client_fnc_setGear",4]
 	],
-	
+
 	[
 		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1""))"],
 		["EMS Loadout", "[""basic""] spawn client_fnc_setGear",4]
 	],
-	
+
 	[
 		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1""))"],
 		["FD Loadout", "[""fire""] spawn client_fnc_setGear",4]
 	],
-	
+
 	[
 		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1"") && player getvariable ""ems"" > 4)"],
 		["Doktor Loadout", "[""doktor""] spawn client_fnc_setGear",4]
