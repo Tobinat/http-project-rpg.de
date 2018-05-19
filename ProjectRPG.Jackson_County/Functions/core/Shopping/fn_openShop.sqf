@@ -31,5 +31,5 @@ while{_currentShop < 4} do {
 	_currentShop = _currentShop + 1;
 };
 if(player getVariable ["cop",0] > 5 && myjob == "Cop") then {
-	[format["Sie haben den Laden von: %1 geöffnet", name _player], false] spawn domsg;
+	[format["Sie haben den Laden geoeffnet: %1", name _player], false] spawn domsg;
 };
