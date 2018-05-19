@@ -42,11 +42,11 @@ try {
 
 			// -- Animate action text
 			_ctrlActionText = _titleDisplay displayCtrl 4;
-			_ctrlActionText ctrlSetPosition [0.445312 * safezoneW + safezoneX, 0.863 * safezoneH + safezoneY, 0.237187 * safezoneW, 0.022 * safezoneH];
+			_ctrlActionText ctrlSetPosition [0.445312 * safezoneW + safezoneX, 0.800 * safezoneH + safezoneY, 0.237187 * safezoneW, 0.022 * safezoneH];
 			_ctrlActionText ctrlSetFade 1;
 			_ctrlActionText ctrlCommit 0;
 			_ctrlActionText ctrlSetStructuredText parseText format ["<t size='1' align='left' shadow='2'><t color='#FE6B2E'>+%1EXP</t> <t color='#FFFFFF'>%2</t></t>", _expAdded, _message ];
-			_ctrlActionText ctrlSetPosition [0.345312 * safezoneW + safezoneX, 0.863 * safezoneH + safezoneY, 0.237187 * safezoneW, 0.022 * safezoneH];
+			_ctrlActionText ctrlSetPosition [0.345312 * safezoneW + safezoneX, 0.800 * safezoneH + safezoneY, 0.237187 * safezoneW, 0.022 * safezoneH];
 			_ctrlActionText ctrlSetFade 0;
 			_ctrlActionText ctrlCommit 1;
 
