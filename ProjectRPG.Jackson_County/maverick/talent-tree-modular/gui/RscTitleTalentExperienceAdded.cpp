@@ -16,7 +16,7 @@ class TTM_GUI_RscTitleExperienceAdded
 			x = 0.345312 * safezoneW + safezoneX;
 			y = 0.900 * safezoneH + safezoneY;
 			w = 0.309375 * safezoneW;
-			h = 0.055 * safezoneH;
+			h = 0.011 * safezoneH;
 			colorBackground[] = {1,1,1,0.35};
 		};
 		class textExpInfo: RscStructuredText
@@ -36,7 +36,7 @@ class TTM_GUI_RscTitleExperienceAdded
 			x = 0.345312 * safezoneW + safezoneX;
 			y = 3000 * safezoneH + safezoneY;
 			w = 0.99 * safezoneW;
-			h = 0.90 * safezoneH;
+			h = 999 * safezoneH;
 			colorText[] = {0,0,0,1};
 		};
 		class progressLevelProgress: RscProgress
@@ -45,7 +45,7 @@ class TTM_GUI_RscTitleExperienceAdded
 			x = 0.345312 * safezoneW + safezoneX;
 			y = 0.900 * safezoneH + safezoneY;
 			w = 0.309375 * safezoneW;
-			h = 0.055 * safezoneH;
+			h = 0.011 * safezoneH;
 			colorFrame[] = {0,0,0,0};
     		colorBackground[] = {0,0,0,0};
    	 		colorBar[] = {0.96,0.65,0.12,0.8};
