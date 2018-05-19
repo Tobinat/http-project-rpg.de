@@ -35,8 +35,8 @@ class TTM_GUI_RscTitleExperienceAdded
 			text = ""; //--- ToDo: Localize;
 			x = 0.345312 * safezoneW + safezoneX;
 			y = 0.863 * safezoneH + safezoneY;
-			w = 0.237187 * safezoneW;
-			h = 0.50 * safezoneH;
+			w = 0.937187 * safezoneW;
+			h = 0.99 * safezoneH;
 			colorText[] = {0,0,0,1};
 		};
 		class progressLevelProgress: RscProgress
