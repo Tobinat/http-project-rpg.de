@@ -24,9 +24,9 @@ class TTM_GUI_RscTitleExperienceAdded
 			idc = 3;
 			text = ""; //--- ToDo: Localize;
 			x = 0.5825 * safezoneW + safezoneX;
-			y = 0.863 * safezoneH + safezoneY;
+			y = 0.999 * safezoneH + safezoneY;
 			w = 0.0721875 * safezoneW;
-			h = 0.50 * safezoneH;
+			h = 0.90 * safezoneH;
 			colorText[] = {0,0,0,1};
 		};
 		class textActionText: RscStructuredText
