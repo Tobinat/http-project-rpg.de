@@ -24,7 +24,7 @@ class TTM_GUI_RscTitleExperienceAdded
 			idc = 3;
 			text = ""; //--- ToDo: Localize;
 			x = 0.5825 * safezoneW + safezoneX;
-			y = 0.863 * safezoneH + safezoneY;
+			y = 0.833 * safezoneH + safezoneY;
 			w = 0.0721875 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {0,0,0,1};
@@ -34,7 +34,7 @@ class TTM_GUI_RscTitleExperienceAdded
 			idc = 4;
 			text = ""; //--- ToDo: Localize;
 			x = 0.345312 * safezoneW + safezoneX;
-			y = 0.863 * safezoneH + safezoneY;
+			y = 0.833 * safezoneH + safezoneY;
 			w = 0.437187 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorText[] = {0,0,0,1};
