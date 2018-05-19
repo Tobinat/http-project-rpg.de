@@ -29,16 +29,16 @@ class TTM_GUI_RscTitleExperienceAdded
 			h = 0.50 * safezoneH;
 			colorText[] = {0,0,0,1};
 		};
-		/* class textActionText: RscStructuredText
+		class textActionText: RscStructuredText
 		{
 			idc = 4;
 			text = ""; //--- ToDo: Localize;
 			x = 0.345312 * safezoneW + safezoneX;
 			y = 0.600 * safezoneH + safezoneY;
-			w = 0.937187 * safezoneW;
-			h = 5 * safezoneH;
+			w = 0.3 * safezoneW;
+			h = 0.90 * safezoneH;
 			colorText[] = {0,0,0,1};
-		}; */
+		};
 		class progressLevelProgress: RscProgress
 		{
 			idc = 5;
