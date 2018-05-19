@@ -257,7 +257,8 @@ class CfgVehicles
 				position = "ACTION_JailDoor";
 				onlyforplayer = 0;
 				radius = 2;
-				condition = "((player getVariable ['copLevel',0]) > 0); this animationPhase ""animateJailDoor""<0.5";
+				condition = "(myjob IN [""Cop"",""doc"",""EMS""] && this animationPhase ""animateJailDoor""<0.5";
+				//condition = "((player getVariable ['copLevel',0]) > 0); this animationPhase ""animateJailDoor""<0.5";
 				statement = "this animate [""animateJailDoor"", 1]";
 			};
 			class CloseJailDoor
@@ -268,7 +269,8 @@ class CfgVehicles
 				position = "ACTION_JailDoor";
 				onlyforplayer = 0;
 				radius = 2;
-				condition = "((this animationPhase 'animateJailDoor') >= 0.5)";
+				condition = "(myjob IN [""Cop"",""doc"",""EMS""] && this animationPhase ""animateJailDoor"">= 0.5";
+				//condition = "((this animationPhase 'animateJailDoor') >= 0.5)";
 				statement = "this animate [""animateJailDoor"", 0]";
 			};
 			class OpenJailDoor2
