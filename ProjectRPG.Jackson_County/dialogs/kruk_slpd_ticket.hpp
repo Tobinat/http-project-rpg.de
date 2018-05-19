@@ -82,30 +82,30 @@ class kruk_slpd_ticket_give {
 			idc = -1;
 			style = 2;
 			text = "Grund"; //--- ToDo: Localize;
-			x = 13 * GUI_GRID_W + GUI_GRID_X;
-			y = 11 * GUI_GRID_H + GUI_GRID_Y;
-			w = 14 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+				x = 13 * GUI_GRID_W + GUI_GRID_X;
+	y = 10 * GUI_GRID_H + GUI_GRID_Y;
+	w = 14 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
 			colorText[] = {0,0,0,1};
 		};
 		class text_points: RscText {
 			idc = -1;
 			style = 2;
 			text = "Punkte"; //--- ToDo: Localize;
-			x = 13 * GUI_GRID_W + GUI_GRID_X;
-			y = 7 * GUI_GRID_H + GUI_GRID_Y;
-			w = 14 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+				x = 13 * GUI_GRID_W + GUI_GRID_X;
+	y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 14 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
 			colorText[] = {0,0,0,1};
 		};
 		class text_amount: RscText {
 			idc = -1;
 			style = 2;
-			text = "Hoehe"; //--- ToDo: Localize;
+			text = "Höhe"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 14 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+	y = 2 * GUI_GRID_H + GUI_GRID_Y;
+	w = 14 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
 			colorText[] = {0,0,0,1};
 		};
 		class text_title: RscText {
