@@ -103,5 +103,5 @@ sleep 2;
 437 cutfadeout 1;
 
 [] call client_fnc_initWelcome;
-["Windowstaste oder Shift+5 oeffnen Interaktionsmenue.", true] spawn domsg;
+["Windowstaste oder Shift+5 öffnet das Interaktionsmenü.", true] spawn domsg;
 driver_test = false;
