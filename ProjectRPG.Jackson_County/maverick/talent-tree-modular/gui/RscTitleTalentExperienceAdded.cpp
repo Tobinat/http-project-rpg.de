@@ -33,7 +33,7 @@ class TTM_GUI_RscTitleExperienceAdded
 		{
 			idc = 4;
 			text = ""; //--- ToDo: Localize;
-			x = 0.345312 * safezoneW + safezoneX;
+			x = 0.5825 * safezoneW + safezoneX;
 			y = 0.893 * safezoneH + safezoneY;
 			w = 0.297187 * safezoneW;
 			h = 0.060 * safezoneH;
