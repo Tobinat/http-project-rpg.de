@@ -14,7 +14,7 @@ class CfgPatches
 		units[] = {"Land_mpx_bikerbar","mpx_mcwinter_chair2","mpx_mcwinter_chair3"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"orgo_client"};
+		
 	};
 };
 class CfgSounds{};
