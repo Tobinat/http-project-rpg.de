@@ -34,7 +34,7 @@ class TTM_GUI_RscTitleExperienceAdded
 			idc = 4;
 			text = ""; //--- ToDo: Localize;
 			x = 0.345312 * safezoneW + safezoneX;
-			y = 0.600 * safezoneH + safezoneY;
+			y = 0.100 * safezoneH + safezoneY;
 			w = 0.3 * safezoneW;
 			h = 0.90 * safezoneH;
 			colorText[] = {0,0,0,1};
