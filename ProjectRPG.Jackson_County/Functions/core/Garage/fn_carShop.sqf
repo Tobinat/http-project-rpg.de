@@ -10,15 +10,15 @@ _farmingVehicles = ["ADM_GMC_Vandura","Jonzie_Transit","ADM_Ford_F100","Jonzie_R
 _doughnuts = player getVariable ["doughnutsLevel", 0];
 //remember to use this array in the mafia selling script & ALSO THE CAR UPDATE SCRIPT.
 _civilianVehicle = [
-	["Jonzie_XB",1900],
-	["Jonzie_Mini_Cooper",2300],
-	["Jonzie_Ceed",2400],
-	["ivory_190e",2600],
-	["vvv_Chevrolet_Cone0",3000],
-	["jonzie_30CSL",3200],
-	["vvv_Abarth_695",4000],
-	["ivory_gti",6000],
-	["Jonzie_Transit",6400], //can farm
+	["Jonzie_XB",2900],
+	["Jonzie_Mini_Cooper",3300],
+	["Jonzie_Ceed",6400],
+	["ivory_190e",5600],
+	["vvv_Chevrolet_Cone0",7000],
+	["jonzie_30CSL",8200],
+	["vvv_Abarth_695",10000],
+	["ivory_gti",20000],
+	["Jonzie_Transit",12400], //can farm
 	["vvv_Chevrolet_Bel_Air",7000],
 	["vvv_Abarth_500",7000],
 	["vvv_Alfa_Romeo_Spider_Duetto",8000],
@@ -30,14 +30,14 @@ _civilianVehicle = [
 	["vvv_Alfa_Romeo_59", 10000],
 	["vvv_Chevrolet_Impala",10000],
 	["ivory_e36",12000],
-	["Jonzie_Raptor",12000], // can farm
-	["Jonzie_Escalade",12000],
-	["ivory_gt500",12000],
-	["vvv_Chevrolet_Corvette_Cone",12000],
-	["ivory_rs4",15000],
-	["vvv_Cadillac_Eldorado",15000],
-	["ivory_evox",18000],
-	["ivory_supra",19000],
+	["Jonzie_Raptor",22000], // can farm
+	["Jonzie_Escalade",42000],
+	["ivory_gt500",62000],
+	["vvv_Chevrolet_Corvette_Cone",52000],
+	["ivory_rs4",65000],
+	["vvv_Cadillac_Eldorado",35000],
+	["ivory_evox",35000],
+	["ivory_supra",49000],
 	["ivory_r34",22000],
 	["vvv_Cadillac_CTSV",25000],
 	["ivory_m3",25000],
@@ -78,79 +78,79 @@ _civilianVehicle = [
 	["A3F_Chevrolet_Tahoe_2013_Black",40500],
 	["A3F_Charger_RT_12_Black",40500],
 	["A3F_Charger_RT_15_Black",58500],
-	["A3F_Ford_Taurus_10_Black",12500],
-	["Jaguar_XKRS_12_Black",128500],
-	["A3F_Benz_G65_AMG_Black",80500],
+	["A3F_Ford_Taurus_10_Black",42500],
+	["Jaguar_XKRS_12_Black",528500],
+	["A3F_Benz_G65_AMG_Black",90500],
 	["A3F_Nissan_GTR_12_Black",65800],
-	["A3F_911_GT2_12_Black",50600],
-	["Kenworth_T440_Box_Black",80000],
-	["Smart_Black",5000],
+	["A3F_911_GT2_12_Black",80600],
+	["Kenworth_T440_Box_Black",120000],
+	["Smart_Black",10000],
 	["Rolls_Royce_Dawn_Black",125500],
-	["Porsche_Cayenne_12_Black",40000],
-	["Nissan_370Z_Black",35000],
-	["Mercedes_Benz_SL65_Black",56500],
-	["GMC_Vandura_83_Custom_V1",3250],
-	["GMC_C5500_Black",25250],
-	["Ford_Raptor_17_Black",58250],
-	["Ford_F350_XLT_SuperDuty_Black",52500],
-	["Ford_Crown_Black",10250],
-	["Dodge_Charger_06_Black",12500],
-	["Dodge_Charger_SRT8_2016_Black",65650],
-	["Dodge_Ram_SRT10_Black",32900],
-	["Chevrolet_Camaro_ZL1_13_Black",26500],
-	["CadillacEldorado1959_Black",32050]
+	["Porsche_Cayenne_12_Black",9770000],
+	["Nissan_370Z_Black",65000],
+	["Mercedes_Benz_SL65_Black",86500],
+	["GMC_Vandura_83_Custom_V1",12250],
+	["GMC_C5500_Black",65250],
+	["Ford_Raptor_17_Black",78250],
+	["Ford_F350_XLT_SuperDuty_Black",82500],
+	["Ford_Crown_Black",41250],
+	["Dodge_Charger_06_Black",50000],
+	["Dodge_Charger_SRT8_2016_Black",53650],
+	["Dodge_Ram_SRT10_Black",82900],
+	["Chevrolet_Camaro_ZL1_13_Black",56500],
+	["CadillacEldorado1959_Black",62050]
 
 ];
 
 
 if(_doughnuts > 0) then {
 	_ret = [
-		["1967_Shelby_Mustang_GT500", 20000],
-		["ADM_Monte_Carlo", 15000],
-		["VVV_Aston_Martin_1964_DB5", 40000]
+		["1967_Shelby_Mustang_GT500", 80000],
+		["ADM_Monte_Carlo", 85000],
+		["VVV_Aston_Martin_1964_DB5", 60000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
 };
 if(_doughnuts > 1) then {
 	_ret = [
-		["vvv_man_obras_negro", 35000],
-		["shounka_buggy", 35000],
-		["vvv_man_obras_negro", 35000],
-		["VVV_cazafantasmas_civ", 35000]
+		["vvv_man_obras_negro", 75000],
+		["shounka_buggy", 55000],
+		["vvv_man_obras_negro", 95000],
+		["VVV_cazafantasmas_civ", 85000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
 };
 if(_doughnuts > 2) then {
 	_ret = [
-		["devon_gtx", 50000],
-		["vvv_DOD_RamSRT_civ", 25000],
-		["vvv_dumper", 50000],
-		["Jonzie_Forklift", 25000],
-		["sl_genesis_16_black",150000]
+		["devon_gtx", 100000],
+		["vvv_DOD_RamSRT_civ", 125000],
+		["vvv_dumper", 250000],
+		["Jonzie_Forklift", 69000],
+		["sl_genesis_16_black",350000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
 };
 if(_doughnuts > 3) then {
 	_ret = [
-		["vvv_formula1", 100000],
-		["C_Offroad_02_unarmed_F", 50000],
-		["sl_venomgt_11_black",400000]
+		["vvv_formula1", 300000],
+		["C_Offroad_02_unarmed_F", 80000],
+		["sl_venomgt_11_black",600000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
 };
 if(_doughnuts > 4) then {
 	_ret = [
-		["New_Holland_TC590_civ", 25000],
-		["vvv_Ponsse_Buffalo_Forwarder_civ", 30000],
-		["B_T_LSV_01_unarmed_F", 100000],
-		["O_T_LSV_02_unarmed_F",150000],
-		["vvv_SeatLeon_2014_font", 100000],
-		["shelbycobra_car_azul", 100000],
-		["ivory_supra_topsecret", 100000],
-		["vvv_steyrmulti_civ", 25000],
-		["1967_Shelby_Mustang_GT500", 20000],
-		["ADM_Monte_Carlo", 15000],
-		["VVV_Aston_Martin_1964_DB5", 40000]
+		["New_Holland_TC590_civ", 95000],
+		["vvv_Ponsse_Buffalo_Forwarder_civ", 90000],
+		["B_T_LSV_01_unarmed_F", 300000],
+		["O_T_LSV_02_unarmed_F",350000],
+		["vvv_SeatLeon_2014_font", 300000],
+		["shelbycobra_car_azul", 300000],
+		["ivory_supra_topsecret", 300000],
+		["vvv_steyrmulti_civ", 75000],
+		["1967_Shelby_Mustang_GT500", 80000],
+		["ADM_Monte_Carlo", 90000],
+		["VVV_Aston_Martin_1964_DB5", 80000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
 };
@@ -161,8 +161,8 @@ if(str CurrentCursorTarget find "embarcadero" > -1) then {
 	_civilianVehicle = [
 		["B_Boat_Transport_01_F",15000],
 		["Lexx_Jetboat_H",30000],
-		["POP_Speed_yatch",70000],
-		["vvv_NewYacht",200000],
+		["POP_Speed_yatch",300000],
+		["vvv_NewYacht",1000000],
 		["Mattaust_Fisher",350000]
 	];
 };
