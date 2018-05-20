@@ -24,6 +24,23 @@ switch (_code) do
 		};
 
 	};
+	
+	//Bild Hoch   Schranke öffnen 
+	
+	case 201:	
+	{
+		if (!_shift && !_alt && !_ctrlKey && (myJob == "EMS" || myJob == "Cop")) then {[] call life_fnc_copOpener;};
+	};
+	
+	case 209:	
+	{
+		if (!_shift && !_alt && !_ctrlKey && (myJob == "EMS" || myJob == "Cop")) then {
+			{
+				detach _x;
+			} forEach attachedObjects player;
+		};
+	};
+	
 	case 19:
 	{
 		if(_shift && (driver (vehicle player) isEqualTo player) && (vehicle player) != player) then {

@@ -165,6 +165,7 @@ class CfgFunctions
 			class copmapmarkers {};
 			class policeClothes{};
 			class giveCards{};
+			class copOpener{};
 		};
 
 		class Wanted {
