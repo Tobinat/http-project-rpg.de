@@ -29,7 +29,7 @@ switch (_code) do
 	
 	case 201:	
 	{
-		if (!_shift && !_alt && !_ctrlKey && (myJob == "EMS" || myJob == "Cop")) then {[] call life_fnc_copOpener;};
+		if (!_shift && !_alt && !_ctrlKey && (myJob == "EMS" || myJob == "Cop")) then {[] call client_fnc_copOpener;};
 	};
 	
 	case 209:	
