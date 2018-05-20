@@ -645,10 +645,6 @@ class CfgFunctions
 };
 
 class CfgSounds {
-#include "maverick\navigation\sounds\voicepacks\male_de-de_2\sounds.cpp"
-#include "maverick\navigation\sounds\voicepacks\female_de-de_1\sounds.cpp"
-#include "maverick\navigation\sounds\voicepacks\male_de-de_1\sounds.cpp"
-#include "maverick\navigation\sounds\voicepacks\male_en-en_1\sounds.cpp"
     sounds[] = {};
 
 
