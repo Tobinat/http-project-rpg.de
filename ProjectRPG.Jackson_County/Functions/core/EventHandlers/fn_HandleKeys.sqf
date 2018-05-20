@@ -59,7 +59,7 @@ switch (_code) do
 				if(_veh getVariable ["parkingTicket2", false]) then {
 					_veh setVariable["parkingTicket2",false,true];
 					["Dir wurde eine Strafe von 750$ fürs Falschparken berechnet!", false] spawn domsg;
-					[750] call Client_fnc_sl_removeBank_secure;h;
+					[750] call Client_fnc_sl_removeBank_secure;
 				};
 				if(_veh getVariable ["parkingTicket", false]) then {
 					_veh setVariable["parkingTicket",false,true];
