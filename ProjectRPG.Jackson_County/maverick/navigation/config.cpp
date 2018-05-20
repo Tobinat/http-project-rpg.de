@@ -160,7 +160,7 @@ class maverick_navigation_cfg {
 	};
 
 	// Do not touch below
-	#include "sounds\voicepacks\config.cpp"
+	#include "@PRPG_Data\sounds\sounds\voicepacks\config.cpp"
 };
 
 //Do not touch below
