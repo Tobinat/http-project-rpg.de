@@ -5,7 +5,7 @@
 	["NP_Wood","np_copperbar1","np_ironbar1","np_silverbar1","CG_OilCanister"];
 */
 disableSerialization;
-private["_cost","_error","_materials","_n","_i","_iMafiaClasses"];
+private["_cost","_error","_materials","_n","_i","_iMafiaClasses","_classStatus"];
 
 _status = lbData[1113,lbCurSel (1113)];
 _status = call compile format["%1", _status];
