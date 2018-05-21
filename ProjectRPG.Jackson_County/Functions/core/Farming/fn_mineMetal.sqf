@@ -4,6 +4,7 @@ Refine Logs trees by koil
 private ["_myOre"];
 _rock = cursorobject;
 if((getposATL player) distance (getposATL _rock) > 25) exitwith {};
+/*
 if (str _rock find "stone_small_w" > -1 && player distance [2260.54,9707.35,0.00168991] < 300) exitwith {
 	if(_rock IN myoil) exitwith { ["Es gibt keinen Rohstoff mehr in diesem Stein.", true] spawn domsg; };
 	_sound = round(random 5);
@@ -36,6 +37,7 @@ if (str _rock find "stone_small_w" > -1 && player distance [2260.54,9707.35,0.00
 		["Du hast ein Oelvorkommen gefunden.", true] spawn domsg;
 	};
 };
+*/
 
 if (str _rock find ": w_sharprock" > -1 || str _rock find ": bluntrock" > -1 ) exitwith {
 	if(_rock IN mymetal) exitwith { ["Es gibt kein Rohmaterial mehr in diesem Stein", true] spawn domsg;  };
