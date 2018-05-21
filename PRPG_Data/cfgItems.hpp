@@ -217,9 +217,53 @@
 		mass=1;
       };
       class kif_item_barGate : ItemCore {
-            scope=2;
+        scope=2;
 		displayName="Bar Gate";
 		model="\A3\structures_f\civ\constructions\Bricks_V1_F";
 		allowedSlots[]={901};
 		mass=1;
       };
+	class prpg_item_ruby : ItemCore {
+        scope=2;
+		displayName="Rubin";
+		author="PRPG";
+		descriptionShort="Oh ein Rubin.";
+		picture="\PRPG_Data\textures\icons\items\dynamite.paa";
+		model="\cg_banktowermainvault\moneyjewls\cg_gem_ruby.p3d";
+		allowedSlots[]={901};
+		mass=1;
+      };
+	  
+	  class prpg_item_sapphire : ItemCore {
+        scope=2;
+		displayName="Sapphire";
+		author="PRPG";
+		descriptionShort="Oh ein Sapphire.";
+		picture="\PRPG_Data\textures\icons\items\sapphire.paa";
+		model="\cg_banktowermainvault\moneyjewls\cg_gem_sapphire.p3d";
+		allowedSlots[]={901};
+		mass=1;
+      };
+	  
+	  class prpg_item_diamond : ItemCore {
+        scope=2;
+		displayName="Diamond";
+		author="PRPG";
+		descriptionShort="Oh ein Diamond.";
+		picture="\PRPG_Data\textures\icons\items\diamond.paa";
+		model="\cg_banktowermainvault\moneyjewls\cg_gem_diamond.p3d";
+		allowedSlots[]={901};
+		mass=1;
+      };
+	  
+	  class prpg_item_emerald : ItemCore {
+        scope=2;
+		displayName="Smaragd";
+		author="PRPG";
+		descriptionShort="Oh ein Smaragd.";
+		picture="\PRPG_Data\textures\icons\items\smaragd.paa";
+		model="\cg_banktowermainvault\moneyjewls\cg_gem_emerald.p3d";
+		allowedSlots[]={901};
+		mass=1;
+      };
+	  
