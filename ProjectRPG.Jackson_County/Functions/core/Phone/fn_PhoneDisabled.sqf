@@ -1,7 +1,7 @@
 	if(PhoneDisabled) then {
 		PhoneDisabled = false;
-		["Aktive Anrufe!", false] spawn domsg; 
+		["Telefon aktiviert!", false] spawn domsg; 
 	} else {
 		PhoneDisabled = true;
-		["Inaktive Verbindung!", false] spawn domsg; 
+		["Lautlos!", false] spawn domsg; 
 	};	
