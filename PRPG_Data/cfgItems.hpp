@@ -267,3 +267,102 @@
 		mass=1;
       };
 	  
+	   class prpg_item_garn : ItemCore {
+        scope=2;
+		displayName="Garn";
+		author="PRPG";
+		descriptionShort="Ein Stück Garn.";
+		picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+		model="\A3\Structures_F_Heli\Items\Tools\Rope_01_F.p3d";
+		allowedSlots[]={901};
+		mass=1;
+      };
+	  
+	    class prpg_item_gold_ore : ItemCore {
+        scope=2;
+		displayName="Gold Erz";
+		author="PRPG";
+		descriptionShort="Ein Stück Gold Erz.";
+		//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+		model="\PRPG_Data\models\ore\gold_ore.p3d";
+		allowedSlots[]={901};
+		mass=1;
+      };
+	  
+	class prpg_item_aluminium_ore : ItemCore {
+    scope=2;
+	displayName="Aluminium Erz";
+	author="PRPG";
+	descriptionShort="Ein Stück Aluminium Erz.";
+	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	model="\PRPG_Data\models\ore\aluminium_ore.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_schwefel_ore : ItemCore {
+    scope=2;
+	displayName="Schwefel Erz";
+	author="PRPG";
+	descriptionShort="Ein Stück Schwefel Erz.";
+	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	model="\PRPG_Data\models\ore\schwefel_ore.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_aluminium_bar : ItemCore {
+    scope=2;
+	displayName="Aluminium Baren";
+	author="PRPG";
+	descriptionShort="Ein Stück Aluminium Baren.";
+	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	model="\PRPG_Data\models\bar\aluminium_bar.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_batterie : ItemCore {
+    scope=2;
+	displayName="Autobatterie";
+	author="PRPG";
+	descriptionShort="Eine Autobatterie.";
+	picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_CarBattery_02_F.jpg";
+	model="\A3\Structures_F_Bootcamp\Items\Electronics\CarBattery_02_F.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	
+	class prpg_item_sandsack : ItemCore {
+    scope=2;
+	displayName="Sandsack";
+	author="PRPG";
+	descriptionShort="Ein Sandsack.";
+	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_CarBattery_02_F.jpg";
+	model = "@ace\addons\ace_sandbag\z\ace\addons\sandbag\data\ace_sandbag_build.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_glas : ItemCore {
+    scope=2;
+	displayName="Glas";
+	author="PRPG";
+	descriptionShort="Ein Stück Glas.";
+	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_CarBattery_02_F.jpg";
+	model = "\plp_containers\StcMisc\plp_ctm_DisplayShelfGlass.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_reifen : ItemCore {
+    scope=2;
+	displayName="Reifen";
+	author="PRPG";
+	descriptionShort="Ein Reifen.";
+	picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Tyre_F.jpg";
+	model = "\A3\Structures_F\Civ\Garbage\Tyre_F.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
