@@ -46,7 +46,7 @@ class RscTitles {
 	#include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
     #include "dialogs\ui.hpp"
 	#include "dialogs\RscNotification.hpp"
-	
+
 };
 
 class CfgFunctions
@@ -220,17 +220,28 @@ class CfgFunctions
 			class licensetest {};
 			class licensetestlkw {};
 		};
-		
+
 		class drogentest {
 			file = "Functions\core\PRPG\drogentest";
 			class testdrug {};
 			class testdrugClient {};
 			class drugTestReturn {};
 		};
-		
+
 		class busmensch {
 			file = "Functions\core\PRPG\busmensch";
 			class startbusding {};
+		};
+
+    class advcrafting {
+			file = "Functions\core\PRPG\advcrafting";
+			class craftMenucar {};
+			class craftMenuweapon {};
+      class craftMenuclothing {};
+		};
+
+    class workbenches {
+			file = "Functions\core\PRPG\advcrafting\workbenches";
 		};
 
 		class jobFactions {
@@ -1538,8 +1549,8 @@ class CfgSounds {
             "@PRPG_Data\sounds\president.ogg",1,1};
         titles[] = {};
     };
-	
-	
+
+
 	class mafia {
         name = "mafia";
         sound[] = {
