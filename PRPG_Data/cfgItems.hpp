@@ -228,7 +228,7 @@
 		displayName="Rubin";
 		author="PRPG";
 		descriptionShort="Oh ein Rubin.";
-		picture="\PRPG_Data\textures\icons\items\dynamite.paa";
+		picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 		model="\cg_banktowermainvault\moneyjewls\cg_gem_ruby.p3d";
 		allowedSlots[]={901};
 		mass=1;
@@ -239,7 +239,7 @@
 		displayName="Sapphire";
 		author="PRPG";
 		descriptionShort="Oh ein Sapphire.";
-		picture="\PRPG_Data\textures\icons\items\sapphire.paa";
+		picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 		model="\cg_banktowermainvault\moneyjewls\cg_gem_sapphire.p3d";
 		allowedSlots[]={901};
 		mass=1;
@@ -250,7 +250,7 @@
 		displayName="Diamond";
 		author="PRPG";
 		descriptionShort="Oh ein Diamond.";
-		picture="\PRPG_Data\textures\icons\items\diamond.paa";
+		picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 		model="\cg_banktowermainvault\moneyjewls\cg_gem_diamond.p3d";
 		allowedSlots[]={901};
 		mass=1;
@@ -261,7 +261,7 @@
 		displayName="Smaragd";
 		author="PRPG";
 		descriptionShort="Oh ein Smaragd.";
-		picture="\PRPG_Data\textures\icons\items\smaragd.paa";
+		picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 		model="\cg_banktowermainvault\moneyjewls\cg_gem_emerald.p3d";
 		allowedSlots[]={901};
 		mass=1;
@@ -283,7 +283,7 @@
 		displayName="Gold Erz";
 		author="PRPG";
 		descriptionShort="Ein Stück Gold Erz.";
-		//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+		picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 		model="\PRPG_Data\models\ore\gold_ore.p3d";
 		allowedSlots[]={901};
 		mass=1;
@@ -294,7 +294,7 @@
 	displayName="Aluminium Erz";
 	author="PRPG";
 	descriptionShort="Ein Stück Aluminium Erz.";
-	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\aluminium_ore.p3d";
 	allowedSlots[]={901};
 	mass=1;
@@ -305,7 +305,7 @@
 	displayName="Schwefel Erz";
 	author="PRPG";
 	descriptionShort="Ein Stück Schwefel Erz.";
-	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\schwefel_ore.p3d";
 	allowedSlots[]={901};
 	mass=1;
@@ -316,7 +316,7 @@
 	displayName="Blei Erz";
 	author="PRPG";
 	descriptionShort="Ein Stück Blei Erz.";
-	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\blei_ore.p3d";
 	allowedSlots[]={901};
 	mass=1;
@@ -327,7 +327,7 @@
 	displayName="Aluminium Baren";
 	author="PRPG";
 	descriptionShort="Ein Aluminium Baren.";
-	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\bar\aluminium_bar.p3d";
 	allowedSlots[]={901};
 	mass=1;
@@ -338,7 +338,7 @@
 	displayName="Blei Baren";
 	author="PRPG";
 	descriptionShort="Ein Blei Baren.";
-	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\bar\blei_bar.p3d";
 	allowedSlots[]={901};
 	mass=1;
@@ -349,7 +349,7 @@
 	displayName="Autobatterie";
 	author="PRPG";
 	descriptionShort="Eine Autobatterie.";
-	picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_CarBattery_02_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\A3\Structures_F_Bootcamp\Items\Electronics\CarBattery_02_F.p3d";
 	allowedSlots[]={901};
 	mass=1;
@@ -361,7 +361,7 @@
 	displayName="Sandsack";
 	author="PRPG";
 	descriptionShort="Ein Sandsack.";
-	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_CarBattery_02_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "@ace\addons\ace_sandbag\z\ace\addons\sandbag\data\ace_sandbag_build.p3d";
 	allowedSlots[]={901};
 	mass=1;
@@ -372,7 +372,7 @@
 	displayName="Glas";
 	author="PRPG";
 	descriptionShort="Ein Stück Glas.";
-	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_CarBattery_02_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcMisc\plp_ctm_DisplayShelfGlass.p3d";
 	allowedSlots[]={901};
 	mass=1;
@@ -383,7 +383,7 @@
 	displayName="Reifen";
 	author="PRPG";
 	descriptionShort="Ein Reifen.";
-	picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Tyre_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\A3\Structures_F\Civ\Garbage\Tyre_F.p3d";
 	allowedSlots[]={901};
 	mass=1;
@@ -394,8 +394,85 @@
 	displayName="Nägel";
 	author="PRPG";
 	descriptionShort="Nägel.";
-	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Tyre_F.jpg";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\PRPG_Data\models\nails\Nail.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_stoff : ItemCore {
+    scope=2;
+	displayName="Stoff";
+	author="PRPG";
+	descriptionShort="Stoff";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "@ace\addons\ace_medical\z\ace\addons\medical\data\littergeneric_clean.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_elektronik : ItemCore {
+    scope=2;
+	displayName="Elektronik";
+	author="PRPG";
+	descriptionShort="Elektronik";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonDarkSmall.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_kabel : ItemCore {
+    scope=2;
+	displayName="Kabel";
+	author="PRPG";
+	descriptionShort="Kabel";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonDarkSmall.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_ledersitz : ItemCore {
+    scope=2;
+	displayName="Ledersitz";
+	author="PRPG";
+	descriptionShort="Ledersitz";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonRottenBig.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_stoffsitz : ItemCore {
+    scope=2;
+	displayName="Stoffsitz";
+	author="PRPG";
+	descriptionShort="Stoffsitz";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonRottenBig.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_airbag  : ItemCore {
+    scope=2;
+	displayName="Airbag";
+	author="PRPG";
+	descriptionShort="Airbag";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonRottenMedium.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_auspuff  : ItemCore {
+    scope=2;
+	displayName="Auspuff";
+	author="PRPG";
+	descriptionShort="Auspuff";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonLightMedium.p3d";
 	allowedSlots[]={901};
 	mass=1;
     };
