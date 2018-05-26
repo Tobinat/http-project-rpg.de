@@ -1,0 +1,3 @@
+detach myclothingworkbench;
+player removeAction myclothingworkbenchAction;
+player removeAction myclothingworkbenchAction2;

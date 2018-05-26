@@ -242,6 +242,14 @@ class CfgFunctions
 
     class workbenches {
 			file = "Functions\core\PRPG\advcrafting\workbenches";
+      class carworkbench {};
+      class clothingworkbench {};
+      class dropcarworkbench {};
+      class dropclothingworkbench {};
+      class dropweaponworkbench {};
+      class dropworkbench {};
+      class weaponworkbench {};
+      class workbench {};
 		};
 
 		class jobFactions {
