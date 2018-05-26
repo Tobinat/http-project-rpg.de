@@ -1,2 +1,2 @@
 deletevehicle cursorTarget;
-player additem "NP_DrugTable";
+player additem "PRPG_WorkBench_Clothing_item";
