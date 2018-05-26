@@ -311,13 +311,35 @@
 	mass=1;
     };
 	
+	class prpg_item_blei_ore : ItemCore {
+    scope=2;
+	displayName="Blei Erz";
+	author="PRPG";
+	descriptionShort="Ein Stück Blei Erz.";
+	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	model="\PRPG_Data\models\ore\blei_ore.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
 	class prpg_item_aluminium_bar : ItemCore {
     scope=2;
 	displayName="Aluminium Baren";
 	author="PRPG";
-	descriptionShort="Ein Stück Aluminium Baren.";
+	descriptionShort="Ein Aluminium Baren.";
 	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
 	model="\PRPG_Data\models\bar\aluminium_bar.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_blei_bar : ItemCore {
+    scope=2;
+	displayName="Blei Baren";
+	author="PRPG";
+	descriptionShort="Ein Blei Baren.";
+	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
+	model="\PRPG_Data\models\bar\blei_bar.p3d";
 	allowedSlots[]={901};
 	mass=1;
     };
@@ -363,6 +385,17 @@
 	descriptionShort="Ein Reifen.";
 	picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Tyre_F.jpg";
 	model = "\A3\Structures_F\Civ\Garbage\Tyre_F.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_nails : ItemCore {
+    scope=2;
+	displayName="Nägel";
+	author="PRPG";
+	descriptionShort="Nägel.";
+	//picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Tyre_F.jpg";
+	model = "\PRPG_Data\models\nails\Nail.p3d";
 	allowedSlots[]={901};
 	mass=1;
     };
