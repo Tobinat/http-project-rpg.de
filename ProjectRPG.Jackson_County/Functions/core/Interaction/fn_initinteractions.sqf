@@ -962,22 +962,42 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Normal_01_F"""],
-		["Werkbank", "createdialog ""client_Craft_Menu""",4]
+		["Werkbank", "createdialog ""client_Craft_Menu""",3]
 	],
 
 	[
 		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Clothing_01_F"""],
-		["Kleidungswerkbank", "createdialog ""client_Craft_Menu_clothing""",4]
+		["Kleidungswerkbank", "createdialog ""client_Craft_Menu_clothing""",3]
 	],
 
 	[
 		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Weapon_01_F"""],
-		["Waffenwerkbank", "createdialog ""client_Craft_Menu_weapon""",4]
+		["Waffenwerkbank", "createdialog ""client_Craft_Menu_weapon""",3]
 	],
 
 	[
 		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Car_01_F"""],
-		["Automobilwerkbank", "createdialog ""client_Craft_Menu_car""",4]
+		["Automobilwerkbank", "createdialog ""client_Craft_Menu_car""",3]
+	],
+
+	[
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Normal_01_F"""],
+		["Werkbank einsammeln", "[] call client_fnc_pickupworkbench",4]
+	],
+
+	[
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Clothing_01_F"""],
+		["Werkbank einsammeln", "[] call client_fnc_pickupclothingworkbench",4]
+	],
+
+	[
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Weapon_01_F"""],
+		["Werkbank einsammeln", "[] call client_fnc_pickupweaponworkbench",4]
+	],
+
+	[
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Car_01_F"""],
+		["Werkbank einsammeln", "[] call client_fnc_pickupcarworkbench",4]
 	],
 
 	[

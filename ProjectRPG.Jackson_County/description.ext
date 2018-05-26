@@ -250,6 +250,10 @@ class CfgFunctions
       class dropworkbench {};
       class weaponworkbench {};
       class workbench {};
+      class pickupworkbench {};
+      class pickupclothingworkbench {};
+      class pickupcarworkbench {};
+      class pickupweaponworkbench {};
 		};
 
 		class jobFactions {
