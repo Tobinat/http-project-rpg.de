@@ -717,15 +717,22 @@ if(_condition == "copskleidung") then {
 if(_condition == "copvests") then {
 
 	_bulle = [
-		["S_VHO_OV_BLK_1",nil,1,1],
-		["S_VHO_OV_BLK_2",nil,1,1],
-		["S_VHO_OV_BLK_3",nil,1,1],
-		["S_VHO_OV_BLK_4",nil,1,1]
+		["PRPG_Deputy_W_1_W",nil,1,1],
+		["PRPG_Deputy_W_2_W",nil,1,1],
+		["PRPG_Deputy_W_1_Y",nil,1,1],
+		["PRPG_Deputy_W_2_Y",nil,1,1],
+		["PRPG_Deputy_W_1_S",nil,1,1],
+		["PRPG_Deputy_W_2_S",nil,1,1],
+		["PRPG_Sheriff_Belt",nil,1,1]
 	];
 	if(_cop > 4) then {
 		_ret = [
-			["TAC_V_Sheriff_BA_TB",nil,1,1],
-			["TAC_V_Sheriff_BA_TC",nil,1,1]
+			["PRPG_Sheriff_W_1_W",nil,1,1],
+			["PRPG_Sheriff_W_2_W",nil,1,1],
+			["PRPG_Sheriff_W_1_Y",nil,1,1],
+			["PRPG_Sheriff_W_2_Y",nil,1,1],
+			["PRPG_Sheriff_W_1_S",nil,1,1],
+			["PRPG_Sheriff_W_2_S",nil,1,1]
 			];
 		_bulle = _bulle + _ret;
 	};
@@ -750,19 +757,56 @@ if(_condition == "medickleidung") then {
 	_additional = [];
 	if(_EMS > 0) then {
 		_ret = [
-			["pRPG_Candidate1",nil,10,3,1],
+			["PRPG_FD_Uniform_Firefighter1",nil,10,3,1],
+			["PRPG_EMS_Paramedic1",nil,10,3,1],
+			["PRPG_EMS_Belt",nil,10,3,1],
 			["female_ems",nil,10,3,1],
 			["Masque_Chirurgical",nil,10,3,1],
 			["TRYK_Headset_NV",nil,10,3,1]
 		];
 		_additional = _additional + _ret;
 	};
-
-	if(_EMS > 5) then {
+	if(_EMS > 2) then {
 		_ret = [
-			["vvv_hazmat",nil,10,3,1],
+			["PRPG_FD_Uniform_Lieutenant1",nil,10,3,1],
+			["PRPG_EMS_Paramedic_21",nil,10,3,1],
 			["vvv_traje_doctor",nil,10,3,1],
 			["EF_F_DR",nil,10,3,1]
+		];
+		_additional = _additional + _ret;
+	};
+	if(_EMS > 3) then {
+		_ret = [
+			["PRPG_FD_Uniform_Captain1",nil,10,3,1],
+			["PRPG_EMS_Overall_11",nil,10,3,1],
+			["PRPG_EMS_Overall_21",nil,10,3,1],
+			["PRPG_EMS_Overall_31",nil,10,3,1],
+			["PRPG_EMS_BallistX",nil,10,3,1]
+		];
+		_additional = _additional + _ret;
+	};
+	if(_EMS > 4) then {
+		_ret = [
+			["PRPG_FD_Uniform_BattalionChief1",nil,10,3,1],
+			["vvv_hazmat",nil,10,3,1]
+		];
+		_additional = _additional + _ret;
+	};
+	if(_EMS > 5) then {
+		_ret = [
+			["PRPG_FD_Uniform_DivisionChief1",nil,10,3,1]
+		];
+		_additional = _additional + _ret;
+	};
+	if(_EMS > 6) then {
+		_ret = [
+			["PRPG_FD_Uniform_AssistantChief1",nil,10,3,1]
+		];
+		_additional = _additional + _ret;
+	};
+	if(_EMS > 7) then {
+		_ret = [
+			["PRPG_FD_Uniform_Chief1",nil,10,3,1]
 		];
 		_additional = _additional + _ret;
 	};
@@ -886,11 +930,6 @@ if(_condition == "fd") then {
 	} foreach _fire;
 
 };
-
-
-
-
-
 
 
 if(_condition == "hotdogs") then {

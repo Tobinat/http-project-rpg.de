@@ -1070,6 +1070,11 @@ NoPixel_InteractionMenuItems = [
 		["Doktor Loadout", "[""doktor""] spawn client_fnc_setGear",4]
 	],
 
+	[
+		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1"") && player getvariable ""ems"" > 5)"],
+		["Tactical Loadout", "[""tac""] spawn client_fnc_setGear",4]
+	],
+
 /*
 	[
 		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"" || typeOF cursorTarget == ""sl_ford350_swat"" || typeOF cursorTarget == ""Abruzzi_LencoPD_01"")) && player getvariable ""cop"" > 6 "],
