@@ -1,4 +1,4 @@
-[] spawn {
+/* [] spawn {
 	waitUntil {alive player && {!isnull (findDisplay 46)}};
 
 	sleep 2;
@@ -39,4 +39,4 @@
 			["NotVersion",false,true] call BIS_fnc_endMission;
 			};
 	};
-};
+}; */
