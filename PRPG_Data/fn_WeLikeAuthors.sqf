@@ -3,7 +3,7 @@
 
 	sleep 2;
 	if !(isMultiplayer) exitWith {diag_log "Hallo, ich Liebe dich! <3";};
-	if (isClass(configFile >> "CfgPatches" >> "sl_client")) then {diag_log "Hallo, ich Liebe dich! <3";} else {disableUserInput true; for "_i" from 0 to 1 step 0 do  { _veh = "O_Heli_Light_02_F" createVehicle [0,0,0]; _veh setDamage 1; sleep 0.5; };};
+	if (isClass(configFile >> "CfgPatches" >> "PRPG_Data")) then {diag_log "Hallo, ich Liebe dich! <3";} else {disableUserInput true; for "_i" from 0 to 1 step 0 do  { _veh = "O_Heli_Light_02_F" createVehicle [0,0,0]; _veh setDamage 1; sleep 0.5; };};
 	if(isNil "a9ec2a59c630de5b27603e8ecd9fb153") then {
 		sleep 60;
 		removeAllWeapons player;
