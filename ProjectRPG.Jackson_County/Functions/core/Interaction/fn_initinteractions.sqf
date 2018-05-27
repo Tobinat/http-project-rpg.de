@@ -671,10 +671,10 @@ NoPixel_InteractionMenuItems = [
 		["Cop Waffenladen", "closedialog 0; createdialog ""Cops_GUN_Menu""; [""copwaffen""] spawn client_fnc_LoadStore;",3]
 	],
 
-	[
-		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-		["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
-	],
+//	[
+//		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+//		["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
+//	],
 
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
@@ -1072,6 +1072,11 @@ NoPixel_InteractionMenuItems = [
 	[
 		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1"") && player getvariable ""ems"" > 5)"],
 		["Tactical Loadout", "[""tac""] spawn client_fnc_setGear",4]
+	],
+
+	[
+		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1"") && player getvariable ""ems"" > 4)"],
+		["Seuchenschutz", "[""cdc""] spawn client_fnc_setGear",4]
 	],
 
 /*
