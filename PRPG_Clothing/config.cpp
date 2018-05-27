@@ -22,11 +22,11 @@ class CfgVehicles
 	class C_man_polo_1_F;
 	class C_man_1;
 	class B_Soldier_base_F;
-	
+
 // Uniformen //
 
-// Sheriff //	
-	
+// Sheriff //
+
 	class PRPG_P_Deputy: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -38,7 +38,7 @@ class CfgVehicles
 		displayName = "PRPG Probationary Deputy";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_Deputy: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -47,10 +47,10 @@ class CfgVehicles
 		uniformClass = "PRPG_Deputy1";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Police\PRPG_DEPUTY.paa"};
-		displayName = "PRPG Probationary Deputy";
+		displayName = "PRPG Deputy";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_Senior_Deputy: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -62,7 +62,7 @@ class CfgVehicles
 		displayName = "PRPG Senior Deputy";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_Detective: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -74,8 +74,8 @@ class CfgVehicles
 		displayName = "PRPG Detective";
 		author = "project-rpg.de";
 	};
-	
-	
+
+
 	class PRPG_Sergeant: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -87,7 +87,7 @@ class CfgVehicles
 		displayName = "PRPG Sergeant";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_S_Sergeant: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -99,7 +99,7 @@ class CfgVehicles
 		displayName = "PRPG Senior Sergeant";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_Lieutenant: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -111,7 +111,7 @@ class CfgVehicles
 		displayName = "PRPG Lieutenant";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_Captain: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -123,7 +123,7 @@ class CfgVehicles
 		displayName = "PRPG Captain";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_D_Chief: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -135,7 +135,7 @@ class CfgVehicles
 		displayName = "PRPG Division Chief";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_Superintendent: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -147,7 +147,7 @@ class CfgVehicles
 		displayName = "PRPG Superintendent";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_A_Sheriff: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -159,7 +159,7 @@ class CfgVehicles
 		displayName = "PRPG Assistant Sheriff";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_Sheriff: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -171,7 +171,7 @@ class CfgVehicles
 		displayName = "PRPG Sheriff";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_A_Deputy: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -183,7 +183,7 @@ class CfgVehicles
 		displayName = "PRPG Auxiliary Deputy";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_Sheriff_Shorts: C_man_polo_1_F
 	{
 		_generalMacro = "C_man_polo_1_F";
@@ -196,7 +196,7 @@ class CfgVehicles
 		author = "project-rpg.de";
 	};
 
-// EMS //	
+// EMS //
 
 	class PRPG_EMS_Paramedic: B_Competitor_F
 	{
@@ -209,7 +209,7 @@ class CfgVehicles
 		displayName = "PRPG EMS Paramedic (Polo)";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_EMS_Paramedic_2: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
@@ -221,7 +221,7 @@ class CfgVehicles
 		displayName = "PRPG EMS Paramedic (Polo) 2";
 		author = "project-rpg.de";
 	};
-	
+
 	class PRPG_EMS_Overall_1: B_Soldier_base_F
 	{
 		scope=1;
@@ -233,7 +233,7 @@ class CfgVehicles
 		author = "project-rpg.de";
 		displayName = "PRPG EMS Overall";
 	};
-	
+
 	class PRPG_EMS_Overall_2: B_Soldier_base_F
 	{
 		scope=1;
@@ -245,7 +245,7 @@ class CfgVehicles
 		author = "project-rpg.de";
 		displayName = "PRPG EMS Overall 2";
 	};
-	
+
 	class PRPG_EMS_Overall_3: B_Soldier_base_F
 	{
 		scope=1;
@@ -257,7 +257,7 @@ class CfgVehicles
 		author = "project-rpg.de";
 		displayName = "PRPG EMS Overall 3";
 	};
-	
+
 	class PRPG_FD_Uniform_Firefighter: B_Soldier_base_F
 	{
 		scope=1;
@@ -275,7 +275,7 @@ class CfgVehicles
 			""
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_Lieutenant: B_Soldier_base_F
 	{
 		scope=1;
@@ -293,7 +293,7 @@ class CfgVehicles
 			""
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_Captain: B_Soldier_base_F
 	{
 		scope=1;
@@ -311,7 +311,7 @@ class CfgVehicles
 			""
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_BattalionChief: B_Soldier_base_F
 	{
 		scope=1;
@@ -329,7 +329,7 @@ class CfgVehicles
 			""
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_DivisionChief: B_Soldier_base_F
 	{
 		scope=1;
@@ -347,7 +347,7 @@ class CfgVehicles
 			""
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_AssistantChief: B_Soldier_base_F
 	{
 		scope=1;
@@ -365,7 +365,7 @@ class CfgVehicles
 			""
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_Chief: B_Soldier_base_F
 	{
 		scope=1;
@@ -385,7 +385,7 @@ class CfgVehicles
 	};
 };
 
-	
+
 class CfgWeapons
 {
 	class ItemCore;
@@ -406,7 +406,7 @@ class CfgWeapons
 // Uniformen //
 
 // Sheriff //
-	
+
 	class PRPG_P_Deputy1: Uniform_Base
 	{
 		scope = 2;
@@ -440,7 +440,7 @@ class CfgWeapons
 			armor = 40;
 		};
 	};
-	
+
 	class PRPG_Senior_Deputy1: Uniform_Base
 	{
 		scope = 2;
@@ -457,7 +457,7 @@ class CfgWeapons
 			armor = 40;
 		};
 	};
-	
+
 	class PRPG_Detective1: Uniform_Base
 	{
 		scope = 2;
@@ -491,8 +491,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};		
-	
+	};
+
 	class PRPG_S_Sergeant1: Uniform_Base
 	{
 		scope = 2;
@@ -508,8 +508,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};		
-	
+	};
+
 	class PRPG_Lieutenant1: Uniform_Base
 	{
 		scope = 2;
@@ -525,8 +525,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
-	
+	};
+
 	class PRPG_Captain1: Uniform_Base
 	{
 		scope = 2;
@@ -542,8 +542,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
-	
+	};
+
 	class PRPG_D_Chief1: Uniform_Base
 	{
 		scope = 2;
@@ -559,8 +559,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
-	
+	};
+
 	class PRPG_Superintendent1: Uniform_Base
 	{
 		scope = 2;
@@ -576,8 +576,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
-	
+	};
+
 	class PRPG_A_Sheriff1: Uniform_Base
 	{
 		scope = 2;
@@ -593,8 +593,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
-	
+	};
+
 	class PRPG_Sheriff1: Uniform_Base
 	{
 		scope = 2;
@@ -610,8 +610,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
-	
+	};
+
 	class PRPG_A_Deputy1: Uniform_Base
 	{
 		scope = 2;
@@ -627,8 +627,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
-		
+	};
+
 	class PRPG_Sheriff_Shorts1: Uniform_Base
 	{
 		scope = 2;
@@ -651,10 +651,10 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
+	};
 
-// EMS //	
-	
+// EMS //
+
 	class PRPG_EMS_Paramedic1: Uniform_Base
 	{
 		scope = 2;
@@ -670,8 +670,8 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
-	
+	};
+
 	class PRPG_EMS_Paramedic_21: Uniform_Base
 	{
 		scope = 2;
@@ -687,9 +687,9 @@ class CfgWeapons
 			mass = 0;
 			armor = 40;
 		};
-	};	
-	
-	
+	};
+
+
 	class PRPG_EMS_Overall_11: Uniform_Base
 	{
 		scope=2;
@@ -706,7 +706,7 @@ class CfgWeapons
 			armor=100;
 		};
 	};
-	
+
 	class PRPG_EMS_Overall_21: Uniform_Base
 	{
 		scope=2;
@@ -723,7 +723,7 @@ class CfgWeapons
 			armor=100;
 		};
 	};
-	
+
 	class PRPG_EMS_Overall_31: Uniform_Base
 	{
 		scope=2;
@@ -740,7 +740,7 @@ class CfgWeapons
 			armor=100;
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_Firefighter1: Uniform_Base
 	{
 		scope=2;
@@ -756,7 +756,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_Lieutenant1: Uniform_Base
 	{
 		scope=2;
@@ -772,7 +772,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_Captain1: Uniform_Base
 	{
 		scope=2;
@@ -804,7 +804,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_DivisionChief1: Uniform_Base
 	{
 		scope=2;
@@ -820,7 +820,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_AssistantChief1: Uniform_Base
 	{
 		scope=2;
@@ -836,7 +836,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	
+
 	class PRPG_FD_Uniform_Chief1: Uniform_Base
 	{
 		scope=2;
@@ -852,9 +852,9 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	
-	
-	
+
+
+
 // Westen //
 
 // Sheriff Westen //
@@ -902,7 +902,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Sheriff_W_2_W: V_HarnessO_brn
 	{
 		scope = 2;
@@ -946,7 +946,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Sheriff_W_1_Y: V_HarnessO_brn
 	{
 		scope = 2;
@@ -990,7 +990,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Sheriff_W_2_Y: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1034,7 +1034,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Sheriff_W_1_S: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1078,7 +1078,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Sheriff_W_2_S: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1123,8 +1123,8 @@ class CfgWeapons
 		};
 	};
 
-// Deputy Westen //	
-	
+// Deputy Westen //
+
 	class PRPG_Deputy_W_1_W: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1168,7 +1168,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Deputy_W_2_W: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1212,7 +1212,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Deputy_W_1_Y: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1256,7 +1256,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Deputy_W_2_Y: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1300,7 +1300,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Deputy_W_1_S: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1344,7 +1344,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Deputy_W_2_S: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1388,7 +1388,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Sheriff_Belt: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1432,7 +1432,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 // EMS Westen //
 
 	class PRPG_EMS_BallistX: V_HarnessO_brn
@@ -1478,7 +1478,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_EMS_Belt: V_HarnessO_brn
 	{
 		scope = 2;
@@ -1544,7 +1544,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Cap_Sheriff_2: ItemCore
 	{
 		scope = 2;
@@ -1563,7 +1563,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Cap_PRPG: ItemCore
 	{
 		scope = 2;
@@ -1582,7 +1582,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Cap_Twitch: ItemCore
 	{
 		scope = 2;
@@ -1601,7 +1601,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Cap_pizza: ItemCore
 	{
 		scope = 2;
@@ -1620,7 +1620,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Cap_ems_1: ItemCore
 	{
 		scope = 2;
@@ -1677,7 +1677,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	
+
 	class PRPG_Cap_doj_2: ItemCore
 	{
 		scope = 2;
@@ -1696,7 +1696,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-		
+
 	class PRPG_Beanie_Sheriff: H_HelmetB
 	{
 		scope=2;
@@ -1718,7 +1718,7 @@ class CfgWeapons
 			explosionShielding=0.2;
 		};
 	};
-	
+
 	class PRPG_Helmet_Sheriff: H_HelmetB
 	{
 		scope=2;
@@ -1746,9 +1746,9 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
 };
-	
+
 class cfgMods
 {
 	author = "Project-Rpg.de";
