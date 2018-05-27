@@ -476,3 +476,58 @@
 	allowedSlots[]={901};
 	mass=1;
     };
+	
+	class prpg_item_autotur  : ItemCore {
+    scope=2;
+	displayName="Autotür";
+	author="PRPG";
+	descriptionShort="Autotür";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonDarkBig.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_karosserie  : ItemCore {
+    scope=2;
+	displayName="Karosserie";
+	author="PRPG";
+	descriptionShort="Karosserie";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonDarkBig.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_windschutzscheibe  : ItemCore {
+    scope=2;
+	displayName="Windschutzscheibe";
+	author="PRPG";
+	descriptionShort="Windschutzscheibe";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonDarkMedium.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_motor  : ItemCore {
+    scope=2;
+	displayName="Motor";
+	author="PRPG";
+	descriptionShort="Motor";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonLightBig.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+	
+	class prpg_item_sportmotor  : ItemCore {
+    scope=2;
+	displayName="Sportmotor";
+	author="PRPG";
+	descriptionShort="Sportmotor";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonLightBig.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
