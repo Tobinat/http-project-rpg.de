@@ -671,10 +671,10 @@ NoPixel_InteractionMenuItems = [
 		["Cop Waffenladen", "closedialog 0; createdialog ""Cops_GUN_Menu""; [""copwaffen""] spawn client_fnc_LoadStore;",3]
 	],
 
-	//[
-		//["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-		//["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
-	//],
+	[
+		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+		["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
+	],
 
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
@@ -1032,7 +1032,6 @@ NoPixel_InteractionMenuItems = [
 	[
 		["dispatch"],
 		["Notrufzentrale verlassen", "[player] remoteExec [""server_fnc_quitDispatch"",2]; dispatch = false;",4]
-		//["Dispatch Sign-Off", "Dispatch = false",4]
 	],
 
 	[
