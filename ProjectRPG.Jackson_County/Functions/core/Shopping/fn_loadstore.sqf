@@ -699,13 +699,32 @@ if(_condition == "copskleidung") then {
 
 	_clothing = [
 		["female_police",nil,5,4,2],
-		["pRPG_State1",nil,5,4,2],
-		["pRPG_State2",nil,5,4,2],
-		["pRPG_State3",nil,5,4,2],
-		["pRPG_State4",nil,5,4,2],
-		["pRPG_State5",nil,5,4,2],
-		["pRPG_State6",nil,5,4,2],
-		["pRPG_State7",nil,5,4,2]
+		["PRPG_P_Deputy1",nil,5,4,2],
+		["PRPG_Deputy1",nil,5,4,2],
+		["PRPG_Senior_Deputy1",nil,5,4,2],
+		["PRPG_S_Sergeant1",nil,5,4,2],
+		["PRPG_Lieutenant1",nil,5,4,2],
+		["PRPG_Captain1",nil,5,4,2],
+		["PRPG_D_Chief1",nil,5,4,2],
+		["PRPG_Superintendent1",nil,5,4,2],
+		["PRPG_A_Sheriff1",nil,5,4,2],
+		["PRPG_Sheriff1",nil,5,4,2],
+		["PRPG_A_Deputy1",nil,5,4,2],
+
+		["PRPG_Deputy_W_1_W",nil,1,1],
+		["PRPG_Deputy_W_2_W",nil,1,1],
+		["PRPG_Deputy_W_1_Y",nil,1,1],
+		["PRPG_Deputy_W_2_Y",nil,1,1],
+		["PRPG_Deputy_W_1_S",nil,1,1],
+		["PRPG_Deputy_W_2_S",nil,1,1],
+		["PRPG_Sheriff_Belt",nil,1,1],
+
+		["PRPG_Sheriff_W_1_W",nil,1,1],
+		["PRPG_Sheriff_W_2_W",nil,1,1],
+		["PRPG_Sheriff_W_1_Y",nil,1,1],
+		["PRPG_Sheriff_W_2_Y",nil,1,1],
+		["PRPG_Sheriff_W_1_S",nil,1,1],
+		["PRPG_Sheriff_W_2_S",nil,1,1]
 	];
 
 	{
@@ -717,23 +736,23 @@ if(_condition == "copskleidung") then {
 if(_condition == "copvests") then {
 
 	_bulle = [
-		["PRPG_Deputy_W_1_W",nil,1,1],
-		["PRPG_Deputy_W_2_W",nil,1,1],
-		["PRPG_Deputy_W_1_Y",nil,1,1],
-		["PRPG_Deputy_W_2_Y",nil,1,1],
-		["PRPG_Deputy_W_1_S",nil,1,1],
-		["PRPG_Deputy_W_2_S",nil,1,1],
-		["PRPG_Sheriff_Belt",nil,1,1]
+	//	["PRPG_Deputy_W_1_W",nil,1,1],
+	//	["PRPG_Deputy_W_2_W",nil,1,1],
+	//	["PRPG_Deputy_W_1_Y",nil,1,1],
+	//	["PRPG_Deputy_W_2_Y",nil,1,1],
+	//	["PRPG_Deputy_W_1_S",nil,1,1],
+	//	["PRPG_Deputy_W_2_S",nil,1,1],
+	//	["PRPG_Sheriff_Belt",nil,1,1]
 	];
 	if(_cop > 4) then {
 		_ret = [
-			["PRPG_Sheriff_W_1_W",nil,1,1],
-			["PRPG_Sheriff_W_2_W",nil,1,1],
-			["PRPG_Sheriff_W_1_Y",nil,1,1],
-			["PRPG_Sheriff_W_2_Y",nil,1,1],
-			["PRPG_Sheriff_W_1_S",nil,1,1],
-			["PRPG_Sheriff_W_2_S",nil,1,1]
-			];
+		//	["PRPG_Sheriff_W_1_W",nil,1,1],
+		//	["PRPG_Sheriff_W_2_W",nil,1,1],
+		//	["PRPG_Sheriff_W_1_Y",nil,1,1],
+		//	["PRPG_Sheriff_W_2_Y",nil,1,1],
+		//	["PRPG_Sheriff_W_1_S",nil,1,1],
+		//	["PRPG_Sheriff_W_2_S",nil,1,1]
+		];
 		_bulle = _bulle + _ret;
 	};
 	{

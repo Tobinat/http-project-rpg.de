@@ -20,19 +20,18 @@ if (myJob == "cop") then
 	switch (_coplevel) do
     {
       case 1: { _rank = "Probationary Deputy";};
-      case 2: { _rank = "Deputy I";};
+      case 2: { _rank = "Deputy";};
       case 3: { _rank = "Senior Deputy";};
       case 4: { _rank = "Detective";};
-      case 5: { _rank = "Patrol Detective";};
-      case 6: { _rank = "Sergeant";};
-      case 7: { _rank = "Sen. Sergeant";};
-    	case 8: { _rank = "Lieutenant";};
-    	case 9: { _rank = "Captain";};
-    	case 10: { _rank = "Division Chief";};
-			case 11: { _rank = "Superintendent";};
-			case 12: { _rank = "Assistant Sheriff";};
-			case 13: { _rank = "Sheriff";};
-			case 14: { _rank = "Auxiliary Deputy";};
+      case 5: { _rank = "Sergeant";};
+      case 6: { _rank = "Sen. Sergeant";};
+    	case 7: { _rank = "Lieutenant";};
+    	case 8: { _rank = "Captain";};
+    	case 9: { _rank = "Division Chief";};
+			case 10: { _rank = "Superintendent";};
+			case 11: { _rank = "Assistant Sheriff";};
+			case 12: { _rank = "Sheriff";};
+			case 13: { _rank = "Auxiliary Deputy";};
     };
 
 	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#0000ff'>%3</t>", _id, name player, _rank];
