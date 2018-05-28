@@ -381,7 +381,7 @@ class kruk_slpd_casefile {
 		    sizeEx = 0.02921;
 			colorBackground[] = {0.325,0.906,0.235,0.5};
 			text = "Hinzufügen"; //--- ToDo: Localize;
-			x = 11 * GUI_GRID_W + GUI_GRID_X;
+			x = 12 * GUI_GRID_W + GUI_GRID_X;
 	y = 21 * GUI_GRID_H + GUI_GRID_Y;
 	w = 6.5 * GUI_GRID_W;
 	h = 1.5 * GUI_GRID_H;
@@ -393,7 +393,7 @@ class kruk_slpd_casefile {
 			colorBackground[] = {0,0,0,0.5};
 			text = "Prüfen"; //--- ToDo: Localize;
 			x = 4.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 21 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "_data = lbData[1104,lbCurSel (1104)]; _data = call compile format[""%1"", _data]; [player, (_data select 0)] remoteExec [""server_fnc_slpdCheckVehicle""];";
