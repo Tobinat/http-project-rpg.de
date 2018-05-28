@@ -93,7 +93,7 @@ if(count _playerInfo != 0) then {
 	} foreach _tickets;
 
 
-	_string = _string + format["\nName und Vorname: %1\nSozialversicherungsnr.: %2\n", _playerName, _uid];
+	_string = _string + format["Name und Vorname: %1\nSozialversicherungsnr.: %2\n", _playerName, _uid];
 	if(count _activeCases == 0) then { _string = _string + "Gesucht: Nein\n"; } else { _string = _string + "Gesucht: Ja\n"; };
 	_string = _string + format["Anzahl der Strafpunkte: %1\nZugehörigkeit: %2\nZulassung:\n", _points, _services];
 	if(_licenses select 0 == 1) then { _string = _string + "Führerschein  "; };
