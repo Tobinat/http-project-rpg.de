@@ -273,7 +273,7 @@ if((_this select 0) == "REFRESH") exitwith {
 			_mySelect = _myselect + 1;
 		} foreach _carClasses;
 		
-		_selectedWeapon = (configfile >> "CfgVehicles" >> _status >> "displayName") call BIS_fnc_getCfgData;
+		_selectedWeapon = getText(configFile >> "CfgVehicles" >> _status >> "displayName");
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 		
 		_myArray = _PricesCarClasses select _mySelect;
@@ -333,7 +333,7 @@ if(_status == "Autoteile") exitwith {
 if(_status == "Fahrzeuge") exitwith {
 
 	{
-		_selectedweapon = (configfile >> "CfgVehicles" >> _x >> "displayName") call BIS_fnc_getCfgData;
+		_selectedweapon = getText(configFile >> "CfgVehicles" >> _x >> "displayName");
 		_list lbAdd _selectedweapon;
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
 	} foreach _carClasses;
@@ -435,6 +435,7 @@ if(_error) exitwith {};
 		shopholder setpos (getposATL player);
 	
 	} else {
+	/*
 		_classStatus = _status;
 		_player = player;
 		_licensePlate = "Testing";
@@ -446,6 +447,9 @@ if(_error) exitwith {};
 		_Lights = 0;
 		_owner = getplayeruid player;
 		[_licensePlate, _class, _color, _finish, _rims, _windows, _lights, _owner, _statuses, "Add", _player] remoteExec ["Server_fnc_garageUpdate",2];
+	*/
+		["Testing", _status, "black", "Metallic", "antiquewhite", 0, 0, (getPlayerUID player), 1, "Add", player] remoteExec ["Server_fnc_garageUpdate",2]; 
+
 		
 		_namendings = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
 	};

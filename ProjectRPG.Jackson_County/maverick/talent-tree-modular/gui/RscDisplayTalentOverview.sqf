@@ -49,7 +49,7 @@ try {
 			_ctrlTextStatusInfo ctrlSetText format ["XP: %1/%2, Eigene Fähigkeitspunkte.: %3", life_currentExp - _currentLevelBottomExp, _currentLevelTopExp - _currentLevelBottomExp, life_currentPerkPoints];
 			_ctrlProgress progressSetPosition _currentLevelProgress;
 		} else {
-			_ctrlTextStatusInfo ctrlSetText format ["XP: %1, Maksymalny LVL, Posiadane Punkty Umiej.: %2", life_currentExp - _currentLevelBottomExp, life_currentPerkPoints];
+			_ctrlTextStatusInfo ctrlSetText format ["XP: %1, Maximales Level, Fähigkeitspunkte: %2", life_currentExp - _currentLevelBottomExp, life_currentPerkPoints];
 			_ctrlProgress progressSetPosition 1;
 		};
 	};
