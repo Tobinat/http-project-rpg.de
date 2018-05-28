@@ -177,8 +177,8 @@ class kruk_slpd_computer {
 		    sizeEx = 0.02921;
 			text = "Hinzufügen"; //--- ToDo: Localize;
 			style = 2;
-			x = 11 * GUI_GRID_W + GUI_GRID_X;
-			y = 21 * GUI_GRID_H + GUI_GRID_Y;
+			x = 9 * GUI_GRID_W + GUI_GRID_X;
+			y = 22 * GUI_GRID_H + GUI_GRID_Y;
 			w = 5.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0.325,0.906,0.235,0.5};
@@ -191,7 +191,7 @@ class kruk_slpd_computer {
 			style = 2;
 			x = 5.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 22 * GUI_GRID_H + GUI_GRID_Y;
-			w = 1.5 * GUI_GRID_W;
+			w = 5.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
 			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [""vehicle"", (_data select 0), parseNumber(ctrlText 1002), getPlayerUID player] remoteExec [""server_fnc_slpdCaseUpdate"", 2]; closeDialog 0; [] spawn { sleep 0.2; createDialog ""kruk_slpd_computer"";};";
