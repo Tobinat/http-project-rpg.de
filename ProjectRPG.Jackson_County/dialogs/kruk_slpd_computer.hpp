@@ -402,7 +402,7 @@ class kruk_slpd_casefile {
 			idc = -1;
 			text = "Kartei"; //--- ToDo: Localize;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-			y = 0 * GUI_GRID_H + GUI_GRID_Y;
+			y = -1 * GUI_GRID_H + GUI_GRID_Y;
 			w = 40 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		//	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
@@ -414,7 +414,7 @@ class kruk_slpd_casefile {
 		    sizeEx = 0.035;
 			text = "Informationen"; //--- ToDo: Localize;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
 			h = 10 * GUI_GRID_H;
 		//colorBackground[] = {0,0,0,0.5};
@@ -424,7 +424,7 @@ class kruk_slpd_casefile {
 			idc = -1;
 			text = "Tickets"; //--- ToDo: Localize;
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 16 * GUI_GRID_H + GUI_GRID_Y;
+			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 			//colorBackground[] = {0,0,0,1};
@@ -434,7 +434,7 @@ class kruk_slpd_casefile {
 			idc = -1;
 			text = "Vorbestrafungen"; //--- ToDo: Localize;
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 			//colorBackground[] = {0,0,0,1};
@@ -444,7 +444,7 @@ class kruk_slpd_casefile {
 			idc = -1;
 			text = "Informationen"; //--- ToDo: Localize;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 			//colorBackground[] = {0,0,0,1};
@@ -454,7 +454,7 @@ class kruk_slpd_casefile {
 			idc = -1;
 			text = "Fahrzeuge"; //--- ToDo: Localize;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-			y = 12 * GUI_GRID_H + GUI_GRID_Y;
+			y = 11 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 			//colorBackground[] = {0,0,0,1};
@@ -464,7 +464,7 @@ class kruk_slpd_casefile {
 			idc = -1;
 			text = "Veraltet"; //--- ToDo: Localize;
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 8.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 7.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 			//colorBackground[] = {0,0,0,1};
