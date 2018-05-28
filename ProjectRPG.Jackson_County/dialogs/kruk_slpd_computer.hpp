@@ -56,7 +56,7 @@ class kruk_slpd_computer {
 			idc = 1102;
 		    sizeEx = 0.02921;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-			y = 13 * GUI_GRID_H + GUI_GRID_Y;
+			y = 13.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 8.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.3};
@@ -494,7 +494,7 @@ class kruk_slpd_info{
 			idc = 1000;
 			text = "Informationen"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 0 * GUI_GRID_H + GUI_GRID_Y;
+			y = -1 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
