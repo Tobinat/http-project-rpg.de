@@ -636,50 +636,55 @@ class kruk_slpd_vehicle_add {
 			idc = -1;
 			text = "Kennzeichen"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 1 * GUI_GRID_H + GUI_GRID_Y;
 			w = 10 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_description: RscText
 		{
 			idc = -1;
 			text = "Fahrzeugbeschreibung"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_title: RscText
 		{
 			idc = -1;
 			text = "Fahrzeug hinzufügen"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 0 * GUI_GRID_H + GUI_GRID_Y;
+			y = -0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_reason: RscText
 		{
 			idc = -1;
 			text = "Grund"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 11 * GUI_GRID_H + GUI_GRID_Y;
+			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_level: RscText
 		{
 			idc = -1;
 			text = "Wichtigkeit"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 3.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 10 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 	};
 };
@@ -755,40 +760,44 @@ class kruk_slpd_criminal_add {
 			idc = -1;
 			text = "Grund"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_level: RscText
 		{
 			idc = -1;
 			text = "Wichtigkeit"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 3.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 10 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_title: RscText
 		{
 			idc = -1;
 			text = "Fall eröffnen"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 0 * GUI_GRID_H + GUI_GRID_Y;
+			y = -0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_info: RscText
 		{
 			idc = 1301;
 			text = "Vor- & Nachname:"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
-			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 1 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 	};
 };
