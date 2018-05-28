@@ -1,12 +1,12 @@
 /*
 		Author: Kajetan "Kruk" Mruk
 		Date: 15.03.2017
-		Params: 
+		Params:
 			0 - Array, active wanted cases
 			1 - Array, last active wanted cases
 			2 - Array, last tickets of player
 			3 - Array, vehicles of player
-			3 - Array, player info 
+			3 - Array, player info
 		Description: Reads personal data and display it on computer screen.
 		Return: none
 */
@@ -39,10 +39,10 @@ if(count _playerInfo != 0) then {
 	_services = "";
 	if(_level_cop > 0) then { _services = _services + "PD "; };
 	if(_level_ems > 0) then { _services = _services + "EMS "; };
-	if(_level_fire > 0) then { _services = _services + "FD "; };
-	if(_level_legal > 0) then { _services = _services + "LEGAL "; };
-	if(_services == "") then { _services = "BRAK"; };
-	
+	//if(_level_fire > 0) then { _services = _services + "FD "; };
+	if(_level_legal > 0) then { _services = _services + "DOJ/ANWALT "; };
+	if(_services == "") then { _services = "Nichts "; };
+
 	_statuses = _playerInfo select 6;
 	//_cash = _playerInfo select 7;
 	//_bank = _playerInfo select 8;
@@ -93,14 +93,15 @@ if(count _playerInfo != 0) then {
 	} foreach _tickets;
 
 
-	_string = _string + format["Name und Vorname: %1\nSozialversicherungsnr.: %2\n", _playerName, _uid];
+	_string = _string + format["\nName und Vorname: %1\nSozialversicherungsnr.: %2\n", _playerName, _uid];
 	if(count _activeCases == 0) then { _string = _string + "Gesucht: Nein\n"; } else { _string = _string + "Gesucht: Ja\n"; };
 	_string = _string + format["Anzahl der Strafpunkte: %1\nZugehörigkeit: %2\nZulassung:\n", _points, _services];
-	if(_licenses select 0 == 1) then { _string = _string + "Führerschein "; };
-	if(_licenses select 1 == 1) then { _string = _string + "Waffenschein\n"; };
-	if(_licenses select 2 == 1) then { _string = _string + "Bergbau Zertifikat"; };
-	if(_licenses select 3 == 1) then { _string = _string + "Forstwirtschaftsschein"; };
-	if(_licenses select 4 == 1) then { _string = _string + "Angelschein"; };
+	if(_licenses select 0 == 1) then { _string = _string + "Führerschein  "; };
+	if(_licenses select 1 == 1) then { _string = _string + "Waffenschein "; };
+	if(_licenses select 2 == 1) then { _string = _string + "Bergbau Zertifikat/n"; };
+	if(_licenses select 3 == 1) then { _string = _string + "Forstwirtschaftsschein "; };
+	if(_licenses select 4 == 1) then { _string = _string + "Angelschein "; };
+	if(_licenses select 5 == 1) then { _string = _string + "LKW-Führerschein"}
 	_text_info ctrlSetText _string;
 	kruk_slpd_computer_data = [_uid, objNull, _playerName];
 } else {

@@ -414,9 +414,9 @@ class kruk_slpd_casefile {
 		    sizeEx = 0.035;
 			text = "Informationen"; //--- ToDo: Localize;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
-			h = 10 * GUI_GRID_H;
+			h = 9 * GUI_GRID_H;
 		//colorBackground[] = {0,0,0,0.5};
 			colorBackground[] = {0,0,0,0};
 		};
@@ -454,7 +454,7 @@ class kruk_slpd_casefile {
 			idc = -1;
 			text = "Fahrzeuge"; //--- ToDo: Localize;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-			y = 11 * GUI_GRID_H + GUI_GRID_Y;
+			y = 10 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 			//colorBackground[] = {0,0,0,1};
