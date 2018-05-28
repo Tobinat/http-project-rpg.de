@@ -383,7 +383,7 @@ class kruk_slpd_casefile {
 			text = "Hinzufügen"; //--- ToDo: Localize;
 			x = 11 * GUI_GRID_W + GUI_GRID_X;
 	y = 21 * GUI_GRID_H + GUI_GRID_Y;
-	w = 4.5 * GUI_GRID_W;
+	w = 6.5 * GUI_GRID_W;
 	h = 1.5 * GUI_GRID_H;
 			action = "_data = lbData[1104,lbCurSel (1104)]; _data = call compile format[""%1"", _data]; [_data] call client_fnc_slpd_load_vehicleAdd;";
 		};
