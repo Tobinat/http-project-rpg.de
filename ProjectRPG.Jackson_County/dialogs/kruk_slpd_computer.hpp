@@ -38,7 +38,7 @@ class kruk_slpd_computer {
 			text = "";
 			autocomplete = "";
 			x = -2 * GUI_GRID_W + GUI_GRID_X;
-	y = 22 * GUI_GRID_H + GUI_GRID_Y;
+	y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
 	w = 6.5 * GUI_GRID_W;
 	h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.3};
@@ -255,7 +255,7 @@ class kruk_slpd_computer {
 			idc = -1;
 			text = "Gesuchte Fahrzeuge"; //--- ToDo: Localize;
 			x = -2 * GUI_GRID_W + GUI_GRID_X;
-			y = 10 * GUI_GRID_H + GUI_GRID_Y;
+			y = 11 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 			//colorBackground[] = {0,0,0,0.5};
