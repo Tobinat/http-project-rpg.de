@@ -1286,6 +1286,16 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["myJob == ""Cop"" && CurrentCursorTarget isKindOf 'Man' && (CursorTarget getVariable [""ace_captives_isHandcuffed"",false]) &&  ({_x == ""np_beefsoup""} count magazines player) != 0"],
+		["Essen geben", " [""add"",""food"",100] remoteExec [""client_fnc_sustain"", cursorTarget]; [""add"",""poop"",10] remoteExec [""client_fnc_sustain"", cursorTarget]; [""np_beefsoup"",0] spawn client_fnc_removeitem; ",4]
+	],
+
+	[
+		["myJob == ""Cop"" && CurrentCursorTarget isKindOf 'Man' && (CursorTarget getVariable [""ace_captives_isHandcuffed"",false]) &&  ({_x == ""np_water""} count magazines player) != 0"],
+		["Trinken geben", " [""add"",""drink"",100] remoteExec [""client_fnc_sustain"", cursorTarget]; [""np_water"",0] spawn client_fnc_removeitem; ",4]
+	],
+
+	[
 		["kif_admin>=1"],
 		["BAN HAMMER", "closedialog 0; createdialog ""koiladmin""; ",4]
 	]
