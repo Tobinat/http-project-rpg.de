@@ -72,7 +72,7 @@ class kruk_slpd_computer {
 		};
 		class button_search_plate: client_RscButtonMenu {
 			idc = 1201;
-			text = "Registrierung Feststellen"; //--- ToDo: Localize;
+			text = "Kennzeichen prüfen"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 15.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -82,7 +82,7 @@ class kruk_slpd_computer {
 		};
 		class button_search_name: client_RscButtonMenu {
 			idc = 1202;
-			text = "Namen Feststellen"; //--- ToDo: Localize;
+			text = "Personen überprüfung"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 16.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -90,6 +90,7 @@ class kruk_slpd_computer {
 			action = "[player, (ctrlText 1001), ""name""] remoteExec [""server_fnc_slpdCheckPlayer""];";
 			colorBackground[] = {0,0,0,0.5};
 		};
+		/*
 		class button_search_uid: client_RscButtonMenu {
 			idc = 1202;
 			text = "Personalausweis suchen"; //--- ToDo: Localize;
@@ -100,6 +101,7 @@ class kruk_slpd_computer {
 			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
 		};
+		*/
 		class button_close: client_RscButtonMenu {
 			idc = 1203;
 		    sizeEx = 0.02921;
@@ -115,7 +117,7 @@ class kruk_slpd_computer {
 		class button_search_case: client_RscButtonMenu {
 			idc = 1204;
 		    sizeEx = 0.02921;
-			text = "Person Ueberpruefen"; //--- ToDo: Localize;
+			text = "Akte Aufrufen"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 18.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -126,7 +128,7 @@ class kruk_slpd_computer {
 		class button_search_case_vehicle: client_RscButtonMenu {
 			idc = 1212;
 		    sizeEx = 0.02921;
-			text = "Fahrzeug Ueberpruefen"; //--- ToDo: Localize;
+			text = "Fahrzeug Überprüfen"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 19.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -161,7 +163,7 @@ class kruk_slpd_computer {
 		class button_criminal_add: client_RscButtonMenu {
 			idc = 1207;
 		    sizeEx = 0.02921;
-			text = "Hinzufuegen"; //--- ToDo: Localize;
+			text = "Hinzufügen"; //--- ToDo: Localize;
 			style = 2;
 			x = 31 * GUI_GRID_W + GUI_GRID_X;
 			y = 10 * GUI_GRID_H + GUI_GRID_Y;
@@ -173,7 +175,7 @@ class kruk_slpd_computer {
 		class button_add_vehicle: client_RscButtonMenu {
 			idc = 1208;
 		    sizeEx = 0.02921;
-			text = "Hinzufuegen"; //--- ToDo: Localize;
+			text = "Hinzufügen"; //--- ToDo: Localize;
 			style = 2;
 			x = 11 * GUI_GRID_W + GUI_GRID_X;
 			y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
@@ -188,9 +190,9 @@ class kruk_slpd_computer {
 			text = "Bearbeiten"; //--- ToDo: Localize;
 			style = 2;
 			x = 6.5 * GUI_GRID_W + GUI_GRID_X;
-	y = 21 * GUI_GRID_H + GUI_GRID_Y;
-	w = 4.5 * GUI_GRID_W;
-	h = 1.5 * GUI_GRID_H;
+			y = 21 * GUI_GRID_H + GUI_GRID_Y;
+			w = 4.5 * GUI_GRID_W;
+			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
 			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [""vehicle"", (_data select 0), parseNumber(ctrlText 1002), getPlayerUID player] remoteExec [""server_fnc_slpdCaseUpdate"", 2]; closeDialog 0; [] spawn { sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 
@@ -223,45 +225,45 @@ class kruk_slpd_computer {
 			idc = -1;
 			text = "SLPD Computer"; //--- ToDo: Localize;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-	y = -0.5 * GUI_GRID_H + GUI_GRID_Y;
-	w = 40 * GUI_GRID_W;
-	h = 1 * GUI_GRID_H;
+			y = -0.2 * GUI_GRID_H + GUI_GRID_Y;
+			w = 40 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 		};
 		class text_wanted_criminals: RscText {
 			idc = -1;
 			text = "Gesuchte Verbrecher"; //--- ToDo: Localize;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-	y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
-	w = 20 * GUI_GRID_W;
-	h = 1 * GUI_GRID_H;
+			y = 0.7 * GUI_GRID_H + GUI_GRID_Y;
+			w = 20 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class text_search: RscText {
 			idc = -1;
 			text = "Suchen"; //--- ToDo: Localize;
-		x = 21 * GUI_GRID_W + GUI_GRID_X;
-	y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
-	w = 19 * GUI_GRID_W;
-	h = 1 * GUI_GRID_H;
+   		x = 21 * GUI_GRID_W + GUI_GRID_X;
+			y = 0.7 * GUI_GRID_H + GUI_GRID_Y;
+			w = 19 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class text_wanted_vehicles: RscText {
 			idc = -1;
 			text = "Gesuchte Fahrzeuge"; //--- ToDo: Localize;
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
-	y = 11 * GUI_GRID_H + GUI_GRID_Y;
-	w = 20 * GUI_GRID_W;
-	h = 1 * GUI_GRID_H;
+			y = 11.2 * GUI_GRID_H + GUI_GRID_Y;
+			w = 20 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class text_search_input: RscText {
 			idc = -1;
 			text = "Suchen"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
-	y = 11 * GUI_GRID_H + GUI_GRID_Y;
-	w = 19 * GUI_GRID_W;
-	h = 1 * GUI_GRID_H;
+			y = 11.2 * GUI_GRID_H + GUI_GRID_Y;
+			w = 19 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
 		};
 	};

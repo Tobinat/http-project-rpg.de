@@ -60,7 +60,7 @@ NoPixel_InteractionMenuItems = [
 		[" myJob == ""cop"" && currentcursortarget isKindOf ""Car"""],
 		["Kennzeichen abrufen", "_numberplate = cursorTarget getVariable ""kennzeichen""; [format[""Kennzeichen: %1"",_numberplate], true] spawn domsg;",1]
 	],
-	
+
 	[
 		["client_poop > 80 && (isNull objectParent player)"],
 		["Auf die Toilette gehen", " [] spawn client_fnc_takeashit; ",5]
@@ -863,10 +863,10 @@ NoPixel_InteractionMenuItems = [
 
 // jobs / situational
 
-	/* [
+	[
 		[" (myjob == ""Cop"" || (player getvariable ""legal"") > 7) && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
 		["Polizeicomputer", "createdialog ""kruk_slpd_computer"";",4]
-	], */
+	],
 
 	[
 		["(typeof CurrentCursorTarget IN [""Land_Centrelink"",""Land_CommonwealthBank"",""Land_Bank_DED_House_01_F""] || str CurrentCursorTarget find ""mcl_atm"" > -1) && myJob == ""Mafia"" && (player getVariable ""Mafia"") > 6 && bankrobber == 1"],
