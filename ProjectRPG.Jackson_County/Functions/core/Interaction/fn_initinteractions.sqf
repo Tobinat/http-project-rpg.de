@@ -57,6 +57,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		[" myJob == ""cop"" && currentcursortarget isKindOf ""Car"""],
+		["Kennzeichen abrufen", "_numberplate = cursorTarget getVariable ""kennzeichen""; [format[""Kennzeichen: %1"",_numberplate], true] spawn domsg;",1]
+	],
+	
+	[
 		["client_poop > 80 && (isNull objectParent player)"],
 		["Auf die Toilette gehen", " [] spawn client_fnc_takeashit; ",5]
 	],
