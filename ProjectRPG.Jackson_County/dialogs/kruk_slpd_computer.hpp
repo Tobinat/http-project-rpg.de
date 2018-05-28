@@ -37,8 +37,8 @@ class kruk_slpd_computer {
 			idc = 1002;
 			text = "";
 			autocomplete = "";
-			x = 0 * GUI_GRID_W + GUI_GRID_X;
-	y = 21 * GUI_GRID_H + GUI_GRID_Y;
+			x = -2 * GUI_GRID_W + GUI_GRID_X;
+	y = 22 * GUI_GRID_H + GUI_GRID_Y;
 	w = 6.5 * GUI_GRID_W;
 	h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.3};
@@ -46,18 +46,18 @@ class kruk_slpd_computer {
 		class listbox_criminals: client_RscListBox {
 			idc = 1101;
 		    sizeEx = 0.02921;
-			x = 0 * GUI_GRID_W + GUI_GRID_X;
+			x = -2 * GUI_GRID_W + GUI_GRID_X;
 			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 20 * GUI_GRID_W;
+			w = 22 * GUI_GRID_W;
 			h = 7.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.3};
 		};
 		class listbox_vehicles: client_RscListBox {
 			idc = 1102;
 		    sizeEx = 0.02921;
-			x = 0 * GUI_GRID_W + GUI_GRID_X;
+			x = -2 * GUI_GRID_W + GUI_GRID_X;
 			y = 13.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 20 * GUI_GRID_W;
+			w = 22 * GUI_GRID_W;
 			h = 8.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.3};
 		};
@@ -142,7 +142,7 @@ class kruk_slpd_computer {
 			text = "Checken"; //--- ToDo: Localize;
 			style = 2;
 			x = 15.5 * GUI_GRID_W + GUI_GRID_X;
-	y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
+	y = 22 * GUI_GRID_H + GUI_GRID_Y;
 	w = 4.5 * GUI_GRID_W;
 	h = 1.5 * GUI_GRID_H;
 			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [_data, ""vehicle""] spawn client_fnc_slpd_load_checkCase; diag_log ""Button click"";";
@@ -165,9 +165,9 @@ class kruk_slpd_computer {
 		    sizeEx = 0.02921;
 			text = "Hinzufügen"; //--- ToDo: Localize;
 			style = 2;
-			x = 31 * GUI_GRID_W + GUI_GRID_X;
+			x = 30 * GUI_GRID_W + GUI_GRID_X;
 			y = 10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 4.5 * GUI_GRID_W;
+			w = 5.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0.325,0.906,0.235,0.5};
 			action = "_data = lbData[1103,lbCurSel (1103)]; _data = call compile format[""%1"", _data]; kruk_slpd_computer_data = _data; closeDialog 0; createDialog ""kruk_slpd_criminal_add"";";
@@ -178,8 +178,8 @@ class kruk_slpd_computer {
 			text = "Hinzufügen"; //--- ToDo: Localize;
 			style = 2;
 			x = 11 * GUI_GRID_W + GUI_GRID_X;
-			y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 4.5 * GUI_GRID_W;
+			y = 21 * GUI_GRID_H + GUI_GRID_Y;
+			w = 5.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0.325,0.906,0.235,0.5};
 			action = "closeDialog 0; createDialog ""kruk_slpd_vehicle_add"";";
@@ -189,9 +189,9 @@ class kruk_slpd_computer {
 		  sizeEx = 0.02921;
 			text = "Bearbeiten"; //--- ToDo: Localize;
 			style = 2;
-			x = 6.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 4.5 * GUI_GRID_W;
+			x = 5.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 22 * GUI_GRID_H + GUI_GRID_Y;
+			w = 1.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
 			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [""vehicle"", (_data select 0), parseNumber(ctrlText 1002), getPlayerUID player] remoteExec [""server_fnc_slpdCaseUpdate"", 2]; closeDialog 0; [] spawn { sleep 0.2; createDialog ""kruk_slpd_computer"";};";
@@ -224,7 +224,7 @@ class kruk_slpd_computer {
 		class text_title: RscText {
 			idc = -1;
 			text = "SLPD Computer"; //--- ToDo: Localize;
-			x = 0 * GUI_GRID_W + GUI_GRID_X;
+			x = -2 * GUI_GRID_W + GUI_GRID_X;
 			y = -0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 40 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
@@ -234,7 +234,7 @@ class kruk_slpd_computer {
 		class text_wanted_criminals: RscText {
 			idc = -1;
 			text = "Gesuchte Verbrecher"; //--- ToDo: Localize;
-			x = 0 * GUI_GRID_W + GUI_GRID_X;
+			x = -2 * GUI_GRID_W + GUI_GRID_X;
 			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
