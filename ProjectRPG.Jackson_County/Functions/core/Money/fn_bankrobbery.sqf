@@ -5,6 +5,7 @@ if(bankrobber != 1) exitwith { hint "Diese Bank wurde kürzlich erst ausgeraubt,
 	uiSleep 30;
 	playSound3D ["PRPG_Data\sounds\bankAlarm.ogg", _bank, false, getPosASL _bank, 2, 1, 150];
 	[player] remoteExec ["server_fnc_robberyCallBank",2];
+	[_bank, "Nachrichten", "Banküberfall"] remoteexec ["server_fnc_giveTask",2];
 };
 _thebankcontainer = cursortarget;
 theDrill = "itemsvaultdrill1" createvehicle getpos player;
