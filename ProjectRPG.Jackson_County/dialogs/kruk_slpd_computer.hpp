@@ -237,8 +237,9 @@ class kruk_slpd_computer {
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
 			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_search: RscText {
 			idc = -1;
@@ -246,8 +247,9 @@ class kruk_slpd_computer {
    		x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_wanted_vehicles: RscText {
 			idc = -1;
@@ -255,8 +257,9 @@ class kruk_slpd_computer {
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
 			y = 11 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_search_input: RscText {
 			idc = -1;
@@ -264,8 +267,9 @@ class kruk_slpd_computer {
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 11 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 	};
 };
