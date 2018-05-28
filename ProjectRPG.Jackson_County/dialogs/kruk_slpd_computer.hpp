@@ -142,7 +142,7 @@ class kruk_slpd_computer {
 			text = "Checken"; //--- ToDo: Localize;
 			style = 2;
 			x = 15.5 * GUI_GRID_W + GUI_GRID_X;
-	y = 21 * GUI_GRID_H + GUI_GRID_Y;
+	y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
 	w = 4.5 * GUI_GRID_W;
 	h = 1.5 * GUI_GRID_H;
 			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [_data, ""vehicle""] spawn client_fnc_slpd_load_checkCase; diag_log ""Button click"";";
@@ -190,7 +190,7 @@ class kruk_slpd_computer {
 			text = "Bearbeiten"; //--- ToDo: Localize;
 			style = 2;
 			x = 6.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 21 * GUI_GRID_H + GUI_GRID_Y;
+			y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
@@ -496,8 +496,9 @@ class kruk_slpd_info{
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 0 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_info: RscText
 		{
@@ -514,7 +515,7 @@ class kruk_slpd_info{
 		class button_caseClose: client_RscButtonMenu
 		{
 			idc = 1201;
-			text = "Schließe Fall"; //--- ToDo: Localize;
+			text = "Fall Schließen"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 15.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;

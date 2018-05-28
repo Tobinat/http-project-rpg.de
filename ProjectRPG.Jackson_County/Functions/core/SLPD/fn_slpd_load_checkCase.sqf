@@ -1,7 +1,7 @@
 /*
 		Author: Kajetan "Kruk" Mruk
 		Date: 15.03.2017
-		Params: 
+		Params:
 			0 - Array, case data
 			1 - String, type of data(vehicle/personal)
 		Description: Reads data from case and display it on computer
@@ -27,8 +27,8 @@ if(_type == "vehicle") exitWith {
 	_reason = _data select 5;
 	_wanted_level = _data select 6;
 	kruk_slpd_computer_data = [(_data select 0), "vehicle", getPlayerUID player];
-	
-	_string = format["Registrierungsnr.: %1\nKennzeichen: %2\nBeschreibung: %3\n\nWanted Level: %4\nGrund: %5\n", _plate, _description, _wanted_level, _reason, _officer_name];
+
+	_string = format["Kennzeichen: %1\nBesitzer: %2\nBeschreibung: %3\n\nWanted Level: %4\nGrund: %5\n", _plate, _description, _wanted_level, _reason, _officer_name];
 	_text_info ctrlSetText _string;
 };
 if(_type == "personal") exitWith {
@@ -47,7 +47,7 @@ if(_type == "personal") exitWith {
 	_charges = _data select 5;
 	_wanted_level = _data select 6;
 	kruk_slpd_computer_data = [(_data select 0), "personal", getPlayerUID player];
-	
+
 	_string = format["Vor- und Nachname: %1\nSozialversicherungsnr.: %2\nWanted Level: %3\n\nStraftaten: %4\nName des Police Officers: %5", _suspect_name, _suspect_uid, _wanted_level, _charges, _officer_name];
 	_text_info ctrlSetText _string;
 };
@@ -78,7 +78,7 @@ if(_type == "plate") exitWith {
 				_wantedString = _wantedString + format["%1 ",_x select 0];
 			};
 		} forEach _wantedInfo;
-		
+
 		if(_wantedString == "") then { _wantedString = "NIE"; } else {
 			_wantedString = format["TAK ( %1)",_wantedString];
 		};
