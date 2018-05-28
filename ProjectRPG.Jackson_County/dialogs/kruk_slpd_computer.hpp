@@ -404,8 +404,9 @@ class kruk_slpd_casefile {
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
 			y = 0 * GUI_GRID_H + GUI_GRID_Y;
 			w = 40 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			h = 2 * GUI_GRID_H;
+		//	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+		colorBackground[] = {0,0,0,0};
 		};
 		class text_info: RscText {
 			idc = 1301;
@@ -415,17 +416,19 @@ class kruk_slpd_casefile {
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
 			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
-			h = 9 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			h = 10 * GUI_GRID_H;
+		//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_tickets: RscText {
 			idc = -1;
-			text = "Ticket"; //--- ToDo: Localize;
+			text = "Tickets"; //--- ToDo: Localize;
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 16 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,1};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {0,0,0,1};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_activeCases: RscText {
 			idc = -1;
@@ -433,8 +436,9 @@ class kruk_slpd_casefile {
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,1};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {0,0,0,1};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_titleInfo: RscText {
 			idc = -1;
@@ -442,8 +446,9 @@ class kruk_slpd_casefile {
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
 			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,1};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {0,0,0,1};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_titleLicences: RscText {
 			idc = -1;
@@ -451,8 +456,9 @@ class kruk_slpd_casefile {
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
 			y = 12 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,1};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {0,0,0,1};
+			colorBackground[] = {0,0,0,0};
 		};
 		class text_restCases: RscText {
 			idc = -1;
@@ -460,8 +466,9 @@ class kruk_slpd_casefile {
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 8.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19.5 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,1};
+			h = 2 * GUI_GRID_H;
+			//colorBackground[] = {0,0,0,1};
+			colorBackground[] = {0,0,0,0};
 		};
 	};
 };
