@@ -5,7 +5,7 @@
 	["NP_Wood","np_copperbar1","np_ironbar1","np_silverbar1","CG_OilCanister"];
 */
 disableSerialization;
-private["_cost","_error","_materialsteile","_materialsautos","_n","_i","_iMafiaClasses","_classStatus","_player","_licensePlate","_class","_color","_finish","_rims","_windows","_Lights","_owner"];
+private["_cost","_error","_materialsteile","_materialsautos","_n","_i","_MaterialClasses","_PricesMaterialClasses","_carClasses","_PricesCarClasses","_classStatus","_player","_licensePlate","_class","_color","_finish","_rims","_windows","_Lights","_owner"];
 
 _status = lbData[1113,lbCurSel (1113)];
 _status = call compile format["%1", _status];
