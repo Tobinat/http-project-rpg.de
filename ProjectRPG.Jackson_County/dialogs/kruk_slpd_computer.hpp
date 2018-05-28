@@ -177,7 +177,7 @@ class kruk_slpd_computer {
 		    sizeEx = 0.02921;
 			text = "Hinzufügen"; //--- ToDo: Localize;
 			style = 2;
-			x = 9 * GUI_GRID_W + GUI_GRID_X;
+			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 22 * GUI_GRID_H + GUI_GRID_Y;
 			w = 5.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
@@ -189,7 +189,7 @@ class kruk_slpd_computer {
 		  sizeEx = 0.02921;
 			text = "Bearbeiten"; //--- ToDo: Localize;
 			style = 2;
-			x = 5.5 * GUI_GRID_W + GUI_GRID_X;
+			x = 4.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 22 * GUI_GRID_H + GUI_GRID_Y;
 			w = 5.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
