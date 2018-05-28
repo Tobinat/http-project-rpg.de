@@ -366,7 +366,7 @@ class client_Craft_Menu_car {
 			idc = 1113;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[""REFRESH""] spawn client_fnc_craftMenu;";
+			onLBSelChanged = "[""REFRESH""] spawn client_fnc_craftMenuCar;";
 			x = 0.33173 * safezoneW + safezoneX;
 			y = 0.301596 * safezoneH + safezoneY;
 			w = 0.14605 * safezoneW;
@@ -375,7 +375,7 @@ class client_Craft_Menu_car {
 
 		class HomeOption : HideButton {
 			idc = 1115;
-			onButtonClick = "[""FRESH""] spawn client_fnc_CraftMenu;";
+			onButtonClick = "[""FRESH""] spawn client_fnc_CraftMenuCar;";
 			x = 0.485 * safezoneW + safezoneX;
 			y = 0.65 * safezoneH + safezoneY;
 			w = 0.03 * safezoneW;
@@ -384,8 +384,8 @@ class client_Craft_Menu_car {
 
 		class ProcessOption : HideButton {
 			idc = 1117;
-			text = "Oeffnen";
-			onButtonClick = "[""MENU""] spawn client_fnc_CraftMenu; [""REFRESH""] spawn client_fnc_craftMenu;";
+			text = "Öffnen";
+			onButtonClick = "[""MENU""] spawn client_fnc_CraftMenucar; [""REFRESH""] spawn client_fnc_craftMenucar;";
 			x = 0.311275 * safezoneW + safezoneX;
 			y = 0.70016 * safezoneH + safezoneY;
 			w = 0.0899698 * safezoneW;
@@ -395,7 +395,7 @@ class client_Craft_Menu_car {
 		class CraftOption : HideButton {
 			idc = 1116;
 			text = "Baue Gegenstand";
-			onButtonClick = "[""CRAFT""] spawn client_fnc_CraftMenu;";
+			onButtonClick = "[""CRAFT""] spawn client_fnc_CraftMenucar;";
 			x = 0.406871 * safezoneW + safezoneX;
 			y = 0.700203 * safezoneH + safezoneY;
 			w = 0.0899698 * safezoneW;
@@ -405,7 +405,7 @@ class client_Craft_Menu_car {
 		class MagOption : HideButton {
 			idc = 1118;
 			text = "Baue Magazin";
-			onButtonClick = "[""CRAFTMAG""] spawn client_fnc_CraftMenu;";
+			onButtonClick = "[""CRAFTMAG""] spawn client_fnc_CraftMenucar;";
 			x = 0.503218 * safezoneW + safezoneX;
 			y = 0.699443 * safezoneH + safezoneY;
 			w = 0.0899698 * safezoneW;
@@ -531,7 +531,7 @@ class client_Craft_Menu_weapon {
 
 		class ProcessOption : HideButton {
 			idc = 1117;
-			text = "Oeffnen";
+			text = "Öffnen";
 			onButtonClick = "[""MENU""] spawn client_fnc_CraftMenuweapon; [""REFRESH""] spawn client_fnc_craftMenuweapon;";
 			x = 0.311275 * safezoneW + safezoneX;
 			y = 0.70016 * safezoneH + safezoneY;
@@ -678,7 +678,7 @@ class client_Craft_Menu_clothing {
 
 		class ProcessOption : HideButton {
 			idc = 1117;
-			text = "Oeffnen";
+			text = "Öffnen";
 			onButtonClick = "[""MENU""] spawn client_fnc_CraftMenuclothing; [""REFRESH""] spawn client_fnc_craftMenuclothing;";
 			x = 0.311275 * safezoneW + safezoneX;
 			y = 0.70016 * safezoneH + safezoneY;
