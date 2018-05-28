@@ -101,7 +101,7 @@ if(count _playerInfo != 0) then {
 	if(_licenses select 2 == 1) then { _string = _string + "Bergbau Zertifikat/n"; };
 	if(_licenses select 3 == 1) then { _string = _string + "Forstwirtschaftsschein "; };
 	if(_licenses select 4 == 1) then { _string = _string + "Angelschein "; };
-	if(_licenses select 5 == 1) then { _string = _string + "LKW-Führerschein"}
+	if(_licenses select 5 == 1) then { _string = _string + "LKW-Führerschein"};
 	_text_info ctrlSetText _string;
 	kruk_slpd_computer_data = [_uid, objNull, _playerName];
 } else {
