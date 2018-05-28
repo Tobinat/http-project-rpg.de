@@ -273,7 +273,7 @@ if((_this select 0) == "REFRESH") exitwith {
 			_mySelect = _myselect + 1;
 		} foreach _carClasses;
 		
-		_selectedWeapon = getText(configFile >> "CfgVehicles" >> _status >> "displayName");
+		_selectedWeapon = (configfile >> "CfgVehicles" >> _x >> "displayName") call BIS_fnc_getCfgData;
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 		
 		_myArray = _PricesCarClasses select _mySelect;
@@ -333,7 +333,7 @@ if(_status == "Autoteile") exitwith {
 if(_status == "Fahrzeuge") exitwith {
 
 	{
-		_selectedweapon = getText(configFile >> "CfgVehicles" >> _x >> "displayName");
+		_selectedweapon = (configfile >> "CfgVehicles" >> _x >> "displayName") call BIS_fnc_getCfgData;
 		_list lbAdd _selectedweapon;
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
 	} foreach _carClasses;
@@ -451,7 +451,7 @@ if(_error) exitwith {};
 		["Testing", _status, "black", "Metallic", "antiquewhite", 0, 0, (getPlayerUID player), 1, "Add", player] remoteExec ["Server_fnc_garageUpdate",2]; 
 
 		
-		_namendings = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
+		_namendings = (configfile >> "CfgVehicles" >> _status >> "displayName") call BIS_fnc_getCfgData;
 	};
 
 	hint format["Du hast eine %1 hergestellt",_namendings];
