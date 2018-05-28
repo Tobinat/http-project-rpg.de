@@ -147,6 +147,7 @@ if (_vehicle isKindOf "Car") then {
 		};
 	} else {
 		[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
+		_vehicle setVariable ["kennzeichen",[[_numverPlate]],true];
 	};
 _vehicle setFuel _fuel;
 _vehicle setDamage _damage;
