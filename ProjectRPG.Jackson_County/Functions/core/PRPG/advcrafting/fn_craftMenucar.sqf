@@ -5,7 +5,7 @@
 	["NP_Wood","np_copperbar1","np_ironbar1","np_silverbar1","CG_OilCanister"];
 */
 disableSerialization;
-private["_cost","_error","_materialsteile","_materialsautos","_n","_i","_MaterialClasses","_PricesMaterialClasses","_carClasses","_PricesCarClasses","_classStatus","_player","_licensePlate","_class","_color","_finish","_rims","_windows","_Lights","_owner"];
+private["_cost","_error","_materialsteile","_materialsautos","_n","_i","_MaterialClasses","_PricesMaterialClasses","_carClasses","_PricesCarClasses","_classStatus","_player","_licensePlate","_class","_color","_finish","_rims","_windows","_Lights","_owner","_selectedweapon"];
 
 _status = lbData[1113,lbCurSel (1113)];
 _status = call compile format["%1", _status];
@@ -172,8 +172,6 @@ if (mav_ttm_var_autocrafting == 5) then {
 	];
 };
 
-//"prpg_item_motor","prpg_item_sportmotor","prpg_item_karosserie","prpg_item_reifen","prpg_item_auspuff","prpg_item_airbag","prpg_item_batterie","prpg_item_stoffsitz","prpg_item_ledersitz","prpg_item_autotur","prpg_item_windschutzscheibe","prpg_item_glas","prpg_item_eisenstange"
-
 _PricesCarClasses = [
 	//vvv_Audi_RS6_Avant_C6
 	[1,0,3,4,1,2,1,4,0,4,1,7,0],
@@ -257,7 +255,8 @@ if((_this select 0) == "REFRESH") exitwith {
 			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _MaterialClasses;
-		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
+		
+		_selectedWeapon = (configfile >> "CfgMagazines" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 
 		_myArray = _PricesMaterialClasses select _mySelect;
@@ -273,7 +272,8 @@ if((_this select 0) == "REFRESH") exitwith {
 			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _carClasses;
-		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
+		
+		_selectedWeapon = (configfile >> "CfgVehicles" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 		
 		_myArray = _PricesCarClasses select _mySelect;
@@ -323,7 +323,7 @@ if(isNil "_status") exitwith { hint "Error with Selection!"; };
 if(_status == "Autoteile") exitwith {
 
 	{
-		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
+		_selectedweapon = (configfile >> "CfgMagazines" >> _x >> "displayName") call BIS_fnc_getCfgData;
 		_list lbAdd _selectedweapon;
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
 	} foreach _MaterialClasses;
@@ -333,7 +333,7 @@ if(_status == "Autoteile") exitwith {
 if(_status == "Fahrzeuge") exitwith {
 
 	{
-		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
+		_selectedweapon = (configfile >> "CfgVehicles" >> _x >> "displayName") call BIS_fnc_getCfgData;
 		_list lbAdd _selectedweapon;
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
 	} foreach _carClasses;
@@ -351,9 +351,9 @@ if((_this select 0) == "CRAFT") exitwith {
 		_cost = _PricesMaterialClasses select _count;
 	};
 
-	if(_status IN _iMafiaClasses) then {
-		_count = _iMafiaClasses FIND _status;
-		_cost = _iPricesMafiaClasses select _count;
+	if(_status IN _carClasses) then {
+		_count = _carClasses FIND _status;
+		_cost = _PricesCarClasses select _count;
 	};
 
 
