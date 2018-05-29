@@ -231,6 +231,7 @@ class CfgFunctions
 		class busmensch {
 			file = "Functions\core\PRPG\busmensch";
 			class startbusding {};
+      class busabfrage {};
 		};
 
     class advcrafting {
