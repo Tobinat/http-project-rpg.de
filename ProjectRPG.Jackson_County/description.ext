@@ -260,6 +260,8 @@ class CfgFunctions
     class FarmingSim {
 			file = "Functions\core\PRPG\FarmingSim";
 			class plantcotton {};
+      class plantbeans {};
+      class plantwheat {};
 		};
 
 		class jobFactions {
