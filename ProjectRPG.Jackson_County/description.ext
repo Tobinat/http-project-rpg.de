@@ -257,6 +257,11 @@ class CfgFunctions
       class pickupweaponworkbench {};
 		};
 
+    class FarmingSim {
+			file = "Functions\core\PRPG\FarmingSim";
+			class plantcotton {};
+		};
+
 		class jobFactions {
 			file = "Functions\core\jobs\JobFactions";
 			class startDispatch {};
