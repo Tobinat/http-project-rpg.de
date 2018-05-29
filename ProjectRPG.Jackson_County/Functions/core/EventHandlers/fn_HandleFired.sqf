@@ -31,6 +31,14 @@ if(_ammo isKindOf "Melee") exitwith {
 		[] call client_fnc_cutTree;
 	 };
 
+	 if(currentWeapon _unit == "cg_scythe") then {
+ 		[] call client_fnc_farmgarn;
+ 	 };
+
+	 if(currentWeapon _unit == "CG_SHOVEL") then {
+ 		[] call client_fnc_farmsand;
+ 	 };
+
 	if(currentWeapon _unit == "cg_bat" && typeof cursorobject IN ["Land_buildingCommercial1","Land_buildingCommercial2"] && player distance getpos cursorobject < 3 && myjob != "Security") then {
 		[cursorobject] spawn client_fnc_BATrobbery;
 	 };

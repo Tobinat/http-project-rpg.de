@@ -7,10 +7,12 @@ _EMS = player getVariable ["ems",0];
 _cop = player getVariable ["cop",0];
 
 if(_condition == "gunstore") then {
-
+	
 	_gunStorePistols = [
 		["cg_hatchet",nil,120,1],
 		["cg_pickaxe",nil,120,1],
+		["cg_scythe",nil,120,1],
+		["CG_SHOVEL",nil,120,1],
 		["cg_bat",nil,120,1],
 		["vvv_fishing_rod",nil,120,1],
 		["hgun_Pistol_heavy_01_F",nil,6000,1],

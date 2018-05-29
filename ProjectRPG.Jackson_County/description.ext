@@ -262,6 +262,8 @@ class CfgFunctions
 			class plantcotton {};
       class plantbeans {};
       class plantwheat {};
+      class farmgarn {};
+      class farmsand {};
 		};
 
 		class jobFactions {
