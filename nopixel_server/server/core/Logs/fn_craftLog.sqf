@@ -30,7 +30,8 @@ _playerInv = getUnitLoadout _player;
 switch (_type) do {
     case 1: {_type = "Waffe";};
     case 2: {_type = "Magazin";};
-    //case 3: {_type = "";};
+    case 3: {_type = "Auto";};
+    case 4: {_type = "Autoteil";};
 };
 
 

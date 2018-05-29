@@ -255,7 +255,7 @@ if((_this select 0) == "REFRESH") exitwith {
 			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _MaterialClasses;
-		
+
 		_selectedWeapon = (configfile >> "CfgMagazines" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 
@@ -272,10 +272,10 @@ if((_this select 0) == "REFRESH") exitwith {
 			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _carClasses;
-		
+
 		_selectedWeapon = (configfile >> "CfgVehicles" >> _x >> "displayName") call BIS_fnc_getCfgData;
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
-		
+
 		_myArray = _PricesCarClasses select _mySelect;
 
 		_Btn4 = _display displayCtrl 1110;
@@ -430,10 +430,12 @@ if(_error) exitwith {};
 		shopholder additemCargoGlobal [_status,1];
 		_classStatus = _status;
 		_namendings = (configfile >> "CfgMagazines" >> _status >> "displayName") call BIS_fnc_getCfgData;
-		
+
 		player disablecollisionwith shopholder;
 		shopholder setpos (getposATL player);
-	
+
+		[player,1,format ["%1 hat eine %2 hergestellt", name player, _status],_classStatus,_namendings] remoteExec ["server_fnc_craftLog", 4];
+
 	} else {
 	/*
 		_classStatus = _status;
@@ -448,14 +450,14 @@ if(_error) exitwith {};
 		_owner = getplayeruid player;
 		[_licensePlate, _class, _color, _finish, _rims, _windows, _lights, _owner, _statuses, "Add", _player] remoteExec ["Server_fnc_garageUpdate",2];
 	*/
-		["Testing", _status, "black", "Metallic", "antiquewhite", 0, 0, (getPlayerUID player), 1, "Add", player] remoteExec ["Server_fnc_garageUpdate",2]; 
+		["Testing", _status, "black", "Metallic", "antiquewhite", 0, 0, (getPlayerUID player), 1, "Add", player] remoteExec ["Server_fnc_garageUpdate",2];
 
-		
+
 		_namendings = (configfile >> "CfgVehicles" >> _status >> "displayName") call BIS_fnc_getCfgData;
+		[player,1,format ["%1 hat eine %2 hergestellt", name player, _status],_classStatus,_namendings] remoteExec ["server_fnc_craftLog", 3];
 	};
 
 	hint format["Du hast eine %1 hergestellt",_namendings];
-	[player,1,format ["%1 hat eine %2 hergestellt", name player, _status],_classStatus,_namendings] remoteExec ["server_fnc_craftLog", 2];
 	closedialog 0;
 };
 
