@@ -392,7 +392,7 @@ player addEventHandler["Fired",{_this call client_fnc_handleFired;}];
 //player addEventHandler["FiredNear",{_this call client_fnc_handlefiredNear;}];
 player addEventHandler["handleDamage", { _this spawn Client_fnc_handleDamage; false } ];
 
-client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","client_fnc_nametags"] call BIS_fnc_addStackedEventHandler;
+//client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","client_fnc_nametags"] call BIS_fnc_addStackedEventHandler;
 
 turboVehicleList = [
 	"ivory_190e_tuned3",
