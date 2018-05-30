@@ -44,13 +44,13 @@ NoPixel_InteractionMenuItems = [
 		[" typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "],
 		["Sichere Geldmittel", " ['Sicherung',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
-*/
+
 
 	[
 		[" typeof cursorobject == ""paradadebus_civ"" "],
 		["Busfahrer da?", "[] spawn client_fnc_busabfrage;",1]
 	],
-
+*/
 	[
 		[" myJob == ""cop"" && !(cursorTarget getVariable [""parkingTicket"", false]) && !(cursorTarget getVariable [""parkingTicket2"", false]) && currentcursortarget isKindOf ""Car"""],
 		["Parkticket $250", "cursorTarget setVariable[""parkingTicket"",true,true]; [""Parkticket von $250 ausgestellt!"",false] spawn domsg;",1]
