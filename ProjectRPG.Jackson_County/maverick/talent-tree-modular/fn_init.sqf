@@ -25,6 +25,7 @@ scriptName "fn_init";
 	mav_ttm_var_mechanicRent = 1;
 	mav_ttm_var_bonusExp = 0;
 	mav_ttm_var_autocrafting = 0;
+	mav_ttm_var_weaponcrafting = 0;
 
 
 	diag_log "fn_init.sqf 3";

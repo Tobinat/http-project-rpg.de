@@ -157,7 +157,7 @@ if(_status == "Werkbänke") exitwith {
 };
 
 if(isNil "shopholder") then {
-	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
+	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal [0,0,0];
 };
 
 if((_this select 0) == "CRAFT") exitwith {
@@ -255,7 +255,7 @@ if(_error) exitwith {};
 	shopholder setpos (getposATL player);
 
 	hint format["Du hast eine %1 hergestellt",_status];
-	[player,1,format ["%1 hat eine %2 hergestellt", name player, _status],_classStatus,_status] remoteExec ["server_fnc_craftLog", 2];
+	[player,1,format ["%1 hat eine %2 hergestellt", name player, _status],_classStatus,_status] remoteExec ["server_fnc_craftLog", 5];
 	closedialog 0;
 };
 

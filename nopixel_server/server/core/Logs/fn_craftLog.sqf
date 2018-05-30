@@ -32,6 +32,7 @@ switch (_type) do {
     case 2: {_type = "Magazin";};
     case 3: {_type = "Auto";};
     case 4: {_type = "Autoteil";};
+	case 5: {_type = "Item";};
 };
 
 
