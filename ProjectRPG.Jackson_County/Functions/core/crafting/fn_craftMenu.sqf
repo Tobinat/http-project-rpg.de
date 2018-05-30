@@ -181,7 +181,6 @@ if((_this select 0) == "CRAFT") exitwith {
 
 			_materialCheck = _PricesItemList select _n;
 			_checkCost = _cost select _n;
-
 			_amountcurrent = {_x == (_PricesItemList select _n)} count magazines player;
 			if(_amountcurrent < _checkCost) exitwith { hint "Nicht ausreichend Ressourcen"; _error = true; };
 			_n = _n + 1;

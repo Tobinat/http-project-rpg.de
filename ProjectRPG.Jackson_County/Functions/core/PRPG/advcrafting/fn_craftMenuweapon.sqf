@@ -212,9 +212,6 @@ if(_status == "Waffen") exitwith {
 
 };
 
-};
-
-
 if(isNil "shopholder") then {
 	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal [0,0,0];
 };
