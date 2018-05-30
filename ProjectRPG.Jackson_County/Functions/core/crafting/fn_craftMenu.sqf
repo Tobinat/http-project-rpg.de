@@ -13,7 +13,7 @@ _status = call compile format["%1", _status];
 _mainMenus = ["Items","Werkbänke"];
 
 _materialsitems = ["np_ironbar1","np_silverbar1","prpg_item_aluminium_bar","np_copperbar1","prpg_item_glas","prpg_item_gummi"];
-_materialsworkbenches = ["NP_Wood","prpg_item_nails"]
+_materialsworkbenches = ["NP_Wood","prpg_item_nails"];
 
 _itemList = [
 	"prpg_item_nails",

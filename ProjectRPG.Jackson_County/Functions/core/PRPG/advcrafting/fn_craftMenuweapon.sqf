@@ -140,7 +140,7 @@ _PricesWaffenClasses = [
 	//hlc_rifle_bcmjack
 	[4,8,10,8],
 	//hlc_rifle_SAMR
-	[4,8,10,8],
+	[4,8,10,8]
 ];
 
 _WaffenMags = [0,2,2,0];
