@@ -273,7 +273,7 @@ if((_this select 0) == "REFRESH") exitwith {
 			_mySelect = _myselect + 1;
 		} foreach _carClasses;
 
-		_selectedWeapon = (configfile >> "CfgVehicles" >> _x >> "displayName") call BIS_fnc_getCfgData;
+		_selectedWeapon = (configfile >> "CfgVehicles" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 
 		_myArray = _PricesCarClasses select _mySelect;
@@ -333,8 +333,8 @@ if(_status == "Autoteile") exitwith {
 if(_status == "Fahrzeuge") exitwith {
 
 	{
-		_selectedweapon = (configfile >> "CfgVehicles" >> _x >> "displayName") call BIS_fnc_getCfgData;
-		_list lbAdd _selectedweapon;
+		_selectedcar = (configfile >> "CfgVehicles" >> _x >> "displayName") call BIS_fnc_getCfgData;
+		_list lbAdd _selectedcar;
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
 	} foreach _carClasses;
 
