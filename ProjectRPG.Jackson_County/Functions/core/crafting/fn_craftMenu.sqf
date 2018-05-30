@@ -244,9 +244,9 @@ if(_error) exitwith {};
 		shopholder additemCargoGlobal [_status,1];
 		} else {
 			if (_status == "prpg_item_nails") then {
-				for "_i" from 1 to 20 do {player addItemToBackpack "prpg_item_nails"; };
+				for "_i" from 1 to 20 do {shopholder additemCargoGlobal "prpg_item_nails"; };
 			} else {
-				for "_i" from 1 to 4 do {player addItemToBackpack "prpg_item_eisenstange"; };
+				for "_i" from 1 to 4 do {shopholder additemCargoGlobal "prpg_item_eisenstange"; };
 			};
 	};
 	_classStatus = _status;
