@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=2412;
+		nextID=2413;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9337.9229,68.373726,5358.6387};
-		dir[]={0.048393846,-0.64342391,0.76413447};
-		up[]={0.040688328,0.76520026,0.64241481};
-		aside[]={0.99810988,-2.1187589e-008,-0.063210905};
+		pos[]={6850.4019,24.879698,1778.5984};
+		dir[]={0.7349143,-0.49249604,0.46626607};
+		up[]={0.41586614,0.87030435,0.26384631};
+		aside[]={0.53573954,3.9115548e-008,-0.84441489};
 	};
 };
 binarizationWanted=0;
@@ -313,6 +313,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -327,24 +345,6 @@ class CustomAttributes
 						};
 					};
 					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -3650,7 +3650,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=590;
+		items=591;
 		class Item0
 		{
 			dataType="Group";
@@ -9821,11 +9821,12 @@ class Mission
 		class Item119
 		{
 			dataType="Marker";
-			position[]={8328.2148,-0.59000295,6726.4038};
+			position[]={8614.0898,-0.59000295,7664.2017};
 			name="Boat_2";
 			text="Boot Shop/ Hafen";
 			type="b_naval";
 			id=234;
+			atlOffset=1.826457;
 		};
 		class Item120
 		{
@@ -9839,12 +9840,12 @@ class Mission
 		class Item121
 		{
 			dataType="Marker";
-			position[]={6849.0869,0,1794.382};
+			position[]={4843.7827,0,2366.0713};
 			name="Boat_4";
 			text="Boot Shop/ Hafen";
 			type="b_naval";
 			id=236;
-			atlOffset=-1.6087555;
+			atlOffset=0.51947355;
 		};
 		class Item122
 		{
@@ -9870,12 +9871,13 @@ class Mission
 		class Item124
 		{
 			dataType="Marker";
-			position[]={8408.582,8.5822048,6600.6216};
+			position[]={7514.3359,8.5821533,2496.7251};
 			name="marker_8";
 			text="Waffenladen";
 			type="o_art";
 			angle=44.836998;
 			id=239;
+			atlOffset=-16.417847;
 		};
 		class Item125
 		{
@@ -16213,7 +16215,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -18219,7 +18221,7 @@ class Mission
 			position[]={3828.9246,74.060059,1763.1263};
 			name="bus_17";
 			type="Empty";
-			angle=52.192825;
+			angle=52.192822;
 			id=1934;
 			atlOffset=-0.10477448;
 		};
@@ -18433,7 +18435,7 @@ class Mission
 			position[]={2740.1389,73.245239,3075.8982};
 			name="bus_20";
 			type="Empty";
-			angle=110.99023;
+			angle=110.99022;
 			id=1940;
 			atlOffset=3.0517578e-005;
 		};
@@ -26131,6 +26133,61 @@ class Mission
 			};
 			id=2409;
 			type="Oleander2";
+		};
+		class Item590
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6887.5581,2.2469006,1803.3521};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=2412;
+			type="ModuleHideTerrainObjects_F";
+			atlOffset=-0.16494727;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };
