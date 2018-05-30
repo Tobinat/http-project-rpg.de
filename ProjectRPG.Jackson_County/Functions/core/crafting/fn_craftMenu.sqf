@@ -169,7 +169,7 @@ if((_this select 0) == "CRAFT") exitwith {
 
 	if(_status IN _werlbankList) then {
 		_count = _werlbankList FIND _status;
-		_cost2 = _PriceswerlbankList select _count;
+		_cost = _PriceswerlbankList select _count;
 	};
 
 
