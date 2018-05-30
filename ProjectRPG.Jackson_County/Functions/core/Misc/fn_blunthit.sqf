@@ -13,7 +13,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 
 	if(!client_istazed) then
 	{
-		uiSleep 0.01;
+		Sleep 0.05;
 		[] spawn KK_fnc_forceRagdoll;
 		client_istazed = true;
 		disableUserInput true;
