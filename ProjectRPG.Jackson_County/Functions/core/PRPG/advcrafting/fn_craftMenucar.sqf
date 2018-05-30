@@ -5,7 +5,7 @@
 	["NP_Wood","np_copperbar1","np_ironbar1","np_silverbar1","CG_OilCanister"];
 */
 disableSerialization;
-private["_cost","_error","_materialsteile","_materialsautos","_n","_i","_MaterialClasses","_PricesMaterialClasses","_carClasses","_PricesCarClasses","_classStatus","_player","_licensePlate","_class","_color","_finish","_rims","_windows","_Lights","_owner","_selectedweapon","_selectedcar","_namendings"];
+private["_cost","_error","_materialsteile","_materialsautos","_n","_i","_MaterialClasses","_PricesMaterialClasses","_carClasses","_PricesCarClasses","_classStatus","_player","_licensePlate","_class","_color","_finish","_rims","_windows","_Lights","_owner","_selectedweapon"];
 
 _status = lbData[1113,lbCurSel (1113)];
 _status = call compile format["%1", _status];
@@ -340,6 +340,10 @@ if(_status == "Fahrzeuge") exitwith {
 
 };
 
+if(isNil "shopholder") then {
+	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
+};
+
 if((_this select 0) == "CRAFT") exitwith {
 
 	if(_status IN _MaterialClasses) then {
@@ -423,10 +427,6 @@ if(_error) exitwith {};
 	playSound3D ["CG_Jobs\sounds\sawing\saw.ogg", player, false, getPosasl player, 4, 1, 15];
 
 	if(_status IN _MaterialClasses) then {
-		if(isNil "shopholder") then {
-			shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal [0,0,0]];
-		};
-
 		shopholder additemCargoGlobal [_status,1];
 		_classStatus = _status;
 		_namendings = (configfile >> "CfgMagazines" >> _status >> "displayName") call BIS_fnc_getCfgData;
@@ -435,7 +435,6 @@ if(_error) exitwith {};
 		shopholder setpos (getposATL player);
 
 		[player,1,format ["%1 hat eine %2 hergestellt", name player, _status],_classStatus,_namendings] remoteExec ["server_fnc_craftLog", 4];
-		hint format["Du hast eine %1 hergestellt",_namendings];
 
 	} else {
 	/*
@@ -456,8 +455,9 @@ if(_error) exitwith {};
 
 		_namendings = (configfile >> "CfgVehicles" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		[player,1,format ["%1 hat eine %2 hergestellt", name player, _status],_classStatus,_namendings] remoteExec ["server_fnc_craftLog", 3];
-		hint format["Du hast eine %1 hergestellt",_namendings];
 	};
+
+	hint format["Du hast eine %1 hergestellt",_namendings];
 	closedialog 0;
 };
 
