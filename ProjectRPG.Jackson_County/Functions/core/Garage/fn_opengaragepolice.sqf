@@ -7,19 +7,19 @@ _garage = [];
 
 if(myJob == "Cop") then {
 	_garage = [
-		"A3F_Ford_Crown_Police_V1"
+		//"A3F_Ford_Crown_Police_V1"
 			];
 	if(_cop > 1) then {
 		_ret = [
-			"A3F_Ford_Taurus_P_TL_V1",
+			//"A3F_Ford_Taurus_P_TL_V1",
 			"Ford_Raptor_Police_V1"
 		];
 		_garage = _garage + _ret;
 	};
 	if(_cop > 2) then {
 		_ret = [
-			"A3F_Chevrolet_Tahoe_2013_P_TL_V1",
-			"A3F_Charger_RT_15_Police_V1",
+			//"A3F_Chevrolet_Tahoe_2013_P_TL_V1",
+			//"A3F_Charger_RT_15_Police_V1",
 			"Chevrolet_Tahoe_2015_POLICE_V1"
 		];
 		_garage = _garage + _ret;
@@ -33,15 +33,15 @@ if(myJob == "Cop") then {
 	};
 	if(_cop > 4) then {
 		_ret = [
-			"Chevrolet_Camaro_ZL1_Police_V1",
-			"Dodge_Charger_06_Police_V1",
-			"Dodge_Charger_SRT8_Hellcat_Police_V1"
+			//"Chevrolet_Camaro_ZL1_Police_V1",
+			//"Dodge_Charger_06_Police_V1",
+			//"Dodge_Charger_SRT8_Hellcat_Police_V1"
 		];
 		_garage = _garage + _ret;
 	};
 	if(_cop > 7) then {
 		_ret = [
-			"A3F_TT_RS_10_P_TL_V1",
+			//"A3F_TT_RS_10_P_TL_V1",
 			"Porsche_Cayenne_12_Police_unmarked_V1"
 		];
 		_garage = _garage + _ret;
