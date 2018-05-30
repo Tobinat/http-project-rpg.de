@@ -43,12 +43,12 @@ if(!isNull _source) then {
 			_damage = 0;
 		};
 
-		if(_curWep in ["CG_CROSS","CG_BATON","CG_TELBAT","CG_SHOVEL"] && vehicle player == player) exitwith {
+		if(_curWep in ["CG_CROSS","CG_BATON","CG_TELBAT"] && vehicle player == player) exitwith {
 			[_unit,_source] spawn client_fnc_blunthit;
 			_damage = 0;
 		};
 
-		if(_curWep in ["cg_scythe","CG_PICKAXE","cg_hatchet","cg_machete","CG_BAT"] && vehicle player == player) exitwith {
+		if(_curWep in ["cg_scythe","CG_PICKAXE","cg_hatchet","cg_machete","CG_BAT","CG_SHOVEL"] && vehicle player == player) exitwith {
 			[_unit,_source] spawn client_fnc_sharphit;
 			_damage = 0;
 		};

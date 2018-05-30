@@ -179,9 +179,10 @@ if((_this select 0) == "CRAFT") exitwith {
 		_n = 0;
 		{
 
-			_materialCheck = _PricesItemList select _n;
+			_materialCheck = _materialsitems select _n;
 			_checkCost = _cost select _n;
-			_amountcurrent = {_x == (_PricesItemList select _n)} count magazines player;
+
+			_amountcurrent = {_x == (_materialsitems select _n)} count magazines player;
 			if(_amountcurrent < _checkCost) exitwith { hint "Nicht ausreichend Ressourcen"; _error = true; };
 			_n = _n + 1;
 
@@ -196,7 +197,7 @@ if((_this select 0) == "CRAFT") exitwith {
 			_i = _checkCost;
 
 			while{ _i > 0 } do {
-				player removeitem (_PricesItemList select _n);
+				player removeitem (_materialsitems select _n);
 				_i = _i - 1;
 			};
 
@@ -210,10 +211,10 @@ if((_this select 0) == "CRAFT") exitwith {
 		_n = 0;
 		{
 
-			_materialCheck = _PriceswerlbankList select _n;
+			_materialCheck = _materialsworkbenches select _n;
 			_checkCost = _cost select _n;
 
-			_amountcurrent = {_x == (_PriceswerlbankList select _n)} count magazines player;
+			_amountcurrent = {_x == (_materialsworkbenches select _n)} count magazines player;
 			if(_amountcurrent < _checkCost) exitwith { hint "Nicht ausreichend Ressourcen"; _error = true; };
 			_n = _n + 1;
 
@@ -221,13 +222,14 @@ if((_this select 0) == "CRAFT") exitwith {
 
 		if(_error) exitwith {};
 
+
 		_n = 0;
 		{
 			_checkCost = _cost select _n;
 			_i = _checkCost;
 
 			while{ _i > 0 } do {
-				player removeitem (_PriceswerlbankList select _n);
+				player removeitem (_materialsworkbenches select _n);
 				_i = _i - 1;
 			};
 
