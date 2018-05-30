@@ -3,9 +3,9 @@ petroleo < string to object
 */
 private["_n","_i","_localprotection"];
 
-_oreArray = ["np_copperore1", "np_ironOre1", "np_silverOre1"];
-_barArray = ["np_copperbar1", "np_ironbar1", "np_silverbar1"];
-_farmingVehicles = ["ADM_GMC_Vandura","Jonzie_Transit","ADM_Ford_F100","Jonzie_Raptor"];
+_oreArray = ["np_copperore1", "np_ironOre1", "np_silverOre1","prpg_item_aluminium_ore","prpg_item_blei_ore","prpg_item_sandsack"];
+_barArray = ["np_copperbar1", "np_ironbar1", "np_silverbar1","prpg_item_aluminium_bar","prpg_item_blei_bar","prpg_item_glas"];
+_farmingVehicles = ["ADM_GMC_Vandura","Jonzie_Transit","ADM_Ford_F100","Jonzie_Raptor","Kenworth_T440_Box_Black","GMC_Vandura_83_Custom_V1","GMC_C5500_Black"];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits."; };
@@ -30,7 +30,7 @@ _n = 0;
 		playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];
 		uisleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "Du verarbeitest Metal, bleib stehn und pass auf.";
+		hint "Du verarbeitest Material, bleib stehn und pass auf.";
 		["Processed"] spawn mav_ttm_fnc_addExp;
 	};
 

@@ -62,13 +62,16 @@ if (str _rock find ": w_sharprock" > -1 || str _rock find ": bluntrock" > -1 ) e
 			playSound3D ["CG_Jobs\sounds\mining\mine1.ogg", player, false, getPosasl player, 3, 1, 15];
 		};
 	};
-	 _findchance = round(random 20);
+	_findchance = round(random 24);
 	if(_findchance > 14) then {
 		mymetal pushback _rock;
-		 _myOre = "np_copperore1";
-		 if(_findchance == 15 || _findchance == 16 || _findchance == 17) then { _myOre = "np_copperore1"; };
-		 if(_findchance == 18 || _findchance == 19) then { _myOre = "np_ironore1"; };
-		 if(_findchance == 20) then { _myOre = "np_silverore1"; };
+		_myOre = "np_copperore1";
+		if(_findchance == 15) then { _myOre = "prpg_item_blei_ore"; };
+		if(_findchance == 16) then { _myOre = "prpg_item_schwefel_ore"; };
+		if(_findchance == 17 || _findchance == 18) then { _myOre = "prpg_item_aluminium_ore"; };
+		if(_findchance == 19 || _findchance == 20 || _findchance == 21) then { _myOre = "np_copperore1"; };
+		if(_findchance == 22 || _findchance == 23) then { _myOre = "np_ironore1"; };
+		if(_findchance == 24) then { _myOre = "np_silverore1"; };
 		player additem _myOre;
 		["Du hast etwas Erz gefunden", true] spawn domsg;
 		["OreGathered"] spawn mav_ttm_fnc_addExp;
