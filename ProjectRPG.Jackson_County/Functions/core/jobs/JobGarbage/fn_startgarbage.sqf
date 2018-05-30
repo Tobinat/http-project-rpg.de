@@ -10,12 +10,12 @@ if(isnil "mapBins") then {
 
 private ["_warnings"];
 
-if(taskrunning) then { 
+if(taskrunning) then {
 	_location = _this select 0;
 	_sender = _this select 1;
 	_jobType = _this select 2;
 	_message = _this select 3;
-	playertasks pushback [_location,_jobtype]; 
+	playertasks pushback [_location,_jobtype];
 };
 
 myjob = "TrashMan";
@@ -25,13 +25,14 @@ taskrunning = true;
 _markername = format["job%1",getPlayerUID player];
 _warnings = 0;
 _garbageLevel = 0;
+_garbageLevel2 = 0;
 while{taskrunning  && myjob == "TrashMan" } do {
 
 	if(playertasks isequalTO []) then {
 
-		if(_garbageLevel > 10) then {
+		if(_garbageLevel2 > 10) then {
 			_garbageLevel = 0;
-			playertasks pushback [[1064,3667,0.014],"dump"];	
+			playertasks pushback [[1064,3667,0.014],"dump"];
 			[getpos ((playertasks select 0) select 0),"garbage"] call client_fnc_jobMarker;
 			["Fahre zur Müllkippe und Entlere deinen Wagen!",false] spawn domsg;
 		} else {
@@ -42,10 +43,10 @@ while{taskrunning  && myjob == "TrashMan" } do {
 		};
 	} else {
 
-		uisleep 3;	
+		uisleep 3;
 		_warning = _warnings + 1;
-		if(_warnings > 150) then { 
-			taskrunning = false; 
+		if(_warnings > 150) then {
+			taskrunning = false;
 			["Du hast zulange gebraucht und wurdest entlassen!",false] spawn domsg;
 		};
 
@@ -84,5 +85,3 @@ while{taskrunning  && myjob == "TrashMan" } do {
 };
 
 if(myjob == "TrashMan") then { [] call client_fnc_jobEnd; };
-
-
