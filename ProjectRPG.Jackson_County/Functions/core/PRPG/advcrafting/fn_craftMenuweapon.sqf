@@ -153,17 +153,17 @@ if((_this select 0) == "REFRESH") exitwith {
 
 	if(isNil "_status") exitwith {};
 
-	if(_status IN _pistolClasses) then {
+	if(_status IN _WaffenClasses) then {
 		_mySelect = 0;
 		{
 			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
-		} foreach _PistolClasses;
+		} foreach _WaffenClasses;
 		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 
-		_myArray = _PricesPistolClasses select _mySelect;
-		_mags = _PistolMags;
+		_myArray = _PricesWaffenClasses select _mySelect;
+		_mags = _WaffenMags;
 		_Btn4 = _display displayCtrl 1110;
 		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Holz: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/> Silber: %5 <br/><t color='#33CC33'>Magazin Kosten <t color='#ffffff'> <br/> Holz: %7 <br/> Kupfer: %8 <br/> Eisen: %9 <br/> Silber: %10",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_Mags select 0),(_Mags select 1),(_Mags select 2),(_Mags select 3)];
 		_btn4 ctrlCommit 0;
@@ -270,15 +270,10 @@ if(_error) exitwith {};
 
 if((_this select 0) == "CRAFTMAG") exitwith {
 
-	if(_status IN _PistolClasses) then {
-		_count = _pistolclasses FIND _status;
-		_cost = _PistolMags;
+	if(_status IN _WaffenClasses) then {
+		_count = _WaffenClasses FIND _status;
+		_cost = _WaffenMags;
 	};
-	if(_status IN _iMafiaClasses) then {
-		_count = _iMafiaClasses FIND _status;
-		_cost = _iMafiaMags;
-	};
-
 	_error = false;
 	_n = 0;
 	{
