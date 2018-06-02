@@ -213,57 +213,57 @@ if(myjob == "EMS") exitwith {
 			if(_emslevel == 2) then {
 				player forceAddUniform "PRPG_FD_Uniform_Firefighter1";
 				player addHeadgear "PRPG_Cap_ems_2";
-				player addItemToBackpack "adv_aceCPR_AED";
+				player addItemToVest "adv_aceCPR_AED";
 			};
 			//Lieutenant
 			if(_emslevel == 3) then {
 				player forceAddUniform "PRPG_FD_Uniform_Lieutenant1";
 				player addHeadgear "PRPG_Cap_ems_2";
-				player addItemToBackpack "adv_aceCPR_AED";
+				player addItemToVest "adv_aceCPR_AED";
 			};
 			//Captain
 			if(_emslevel == 4) then {
 				player forceAddUniform "PRPG_FD_Uniform_Captain1";
 				player addHeadgear "PRPG_Cap_ems_2";
-				player addItemToBackpack "adv_aceCPR_AED";
+				player addItemToVest "adv_aceCPR_AED";
 			};
 			//Battalion Chief
 			if(_emslevel == 5) then {
 				player forceAddUniform "PRPG_FD_Uniform_BattalionChief1";
 				player addHeadgear "PRPG_Cap_ems_1";
-				player addItemToBackpack "adv_aceCPR_AED";
-				player addItemToBackpack "FSGm_ItemMedicBag";
+				player addItemToVest "adv_aceCPR_AED";
+				player addItemToVest "FSGm_ItemMedicBag";
 			};
 			//Division Chief
 			if(_emslevel == 6) then {
 				player forceAddUniform "PRPG_FD_Uniform_DivisionChief1";
 				player addHeadgear "PRPG_Cap_ems_1";
-				player addItemToBackpack "adv_aceCPR_AED";
-				player addItemToBackpack "FSGm_ItemMedicBag";
+				player addItemToVest "adv_aceCPR_AED";
+				player addItemToVest "FSGm_ItemMedicBag";
 				player addItemToUniform "ACE_personalAidKit";
 			};
 			//Assistant Chief
 			if(_emslevel == 7) then {
 				player forceAddUniform "PRPG_FD_Uniform_AssistantChief1";
 				player addHeadgear "PRPG_Cap_ems_1";
-				player addItemToBackpack "adv_aceCPR_AED";
-				player addItemToBackpack "FSGm_ItemMedicBag";
+				player addItemToVest "adv_aceCPR_AED";
+				player addItemToVest "FSGm_ItemMedicBag";
 				player addItemToUniform "ACE_personalAidKit";
 			};
 			//Chief
 			if(_emslevel == 8) then {
 				player forceAddUniform "PRPG_FD_Uniform_Chief1";
 				player addHeadgear "PRPG_Cap_ems_1";
-				player addItemToBackpack "adv_aceCPR_AED";
-				player addItemToBackpack "FSGm_ItemMedicBag";
+				player addItemToVest "adv_aceCPR_AED";
+				player addItemToVest "FSGm_ItemMedicBag";
 				player addItemToUniform "ACE_personalAidKit";
 			};
 			//Admin
 			if(_emslevel == 9) then {
 				player forceAddUniform "PRPG_FD_Uniform_Firefighter1";
 				player addHeadgear "PRPG_Cap_ems_1";
-				player addItemToBackpack "adv_aceCPR_AED";
-				player addItemToBackpack "FSGm_ItemMedicBag";
+				player addItemToVest "adv_aceCPR_AED";
+				player addItemToVest "FSGm_ItemMedicBag";
 				player addItemToUniform "ACE_personalAidKit";
 			};
 		};
