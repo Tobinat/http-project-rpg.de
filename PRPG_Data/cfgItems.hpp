@@ -233,7 +233,7 @@
 		allowedSlots[]={901};
 		mass=1;
       };
-	  
+
 	  class prpg_item_sapphire : ItemCore {
         scope=2;
 		displayName="Sapphire";
@@ -244,7 +244,7 @@
 		allowedSlots[]={901};
 		mass=1;
       };
-	  
+
 	  class prpg_item_diamond : ItemCore {
         scope=2;
 		displayName="Diamond";
@@ -255,7 +255,7 @@
 		allowedSlots[]={901};
 		mass=1;
       };
-	  
+
 	  class prpg_item_emerald : ItemCore {
         scope=2;
 		displayName="Smaragd";
@@ -266,7 +266,7 @@
 		allowedSlots[]={901};
 		mass=1;
       };
-	  
+
 	   class prpg_item_garn : ItemCore {
         scope=2;
 		displayName="Garn";
@@ -277,7 +277,7 @@
 		allowedSlots[]={901};
 		mass=1;
       };
-	  
+
 	    class prpg_item_gold_ore : ItemCore {
         scope=2;
 		displayName="Gold Erz";
@@ -288,7 +288,7 @@
 		allowedSlots[]={901};
 		mass=1;
       };
-	  
+
 	class prpg_item_aluminium_ore : ItemCore {
     scope=2;
 	displayName="Aluminium Erz";
@@ -299,7 +299,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_schwefel_ore : ItemCore {
     scope=2;
 	displayName="Schwefel Erz";
@@ -310,7 +310,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_blei_ore : ItemCore {
     scope=2;
 	displayName="Blei Erz";
@@ -321,7 +321,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_aluminium_bar : ItemCore {
     scope=2;
 	displayName="Aluminium Baren";
@@ -332,7 +332,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_blei_bar : ItemCore {
     scope=2;
 	displayName="Blei Baren";
@@ -343,7 +343,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_batterie : ItemCore {
     scope=2;
 	displayName="Autobatterie";
@@ -354,8 +354,8 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
-	
+
+
 	class prpg_item_sandsack : ItemCore {
     scope=2;
 	displayName="Sandsack";
@@ -366,7 +366,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_glas : ItemCore {
     scope=2;
 	displayName="Glas";
@@ -377,7 +377,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_reifen : ItemCore {
     scope=2;
 	displayName="Reifen";
@@ -388,7 +388,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_nails : ItemCore {
     scope=2;
 	displayName="Nägel";
@@ -399,7 +399,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_stoff : ItemCore {
     scope=2;
 	displayName="Stoff";
@@ -410,7 +410,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_elektronik : ItemCore {
     scope=2;
 	displayName="Elektronik";
@@ -421,7 +421,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_kabel : ItemCore {
     scope=2;
 	displayName="Kabel";
@@ -432,7 +432,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_ledersitz : ItemCore {
     scope=2;
 	displayName="Ledersitz";
@@ -443,7 +443,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_stoffsitz : ItemCore {
     scope=2;
 	displayName="Stoffsitz";
@@ -454,7 +454,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_airbag  : ItemCore {
     scope=2;
 	displayName="Airbag";
@@ -465,7 +465,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_auspuff  : ItemCore {
     scope=2;
 	displayName="Auspuff";
@@ -476,7 +476,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_autotur  : ItemCore {
     scope=2;
 	displayName="Autotür";
@@ -487,7 +487,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_karosserie  : ItemCore {
     scope=2;
 	displayName="Karosserie";
@@ -498,7 +498,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_windschutzscheibe  : ItemCore {
     scope=2;
 	displayName="Windschutzscheibe";
@@ -509,7 +509,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_motor  : ItemCore {
     scope=2;
 	displayName="Motor";
@@ -520,7 +520,7 @@
 	allowedSlots[]={901};
 	mass=1;
     };
-	
+
 	class prpg_item_sportmotor  : ItemCore {
     scope=2;
 	displayName="Sportmotor";
@@ -528,6 +528,28 @@
 	descriptionShort="Sportmotor";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcCartons\plp_cts_CartonLightBig.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+
+  class prpg_item_gummi  : ItemCore {
+    scope=2;
+	displayName="Gummi";
+	author="PRPG";
+	descriptionShort="Gummi";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonLightFlat.p3d";
+	allowedSlots[]={901};
+	mass=1;
+    };
+
+  class prpg_item_eisenstange  : ItemCore {
+    scope=2;
+	displayName="Eisenstange";
+	author="PRPG";
+	descriptionShort="Eisenstange";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model = "\plp_containers\StcCartons\plp_cts_CartonLightFlat.p3d";
 	allowedSlots[]={901};
 	mass=1;
     };
