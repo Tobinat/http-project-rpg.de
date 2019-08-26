@@ -14,6 +14,7 @@ if(_condition == "gunstore") then {
 		["cg_scythe",nil,120,1],
 		["CG_SHOVEL",nil,120,1],
 		["cg_bat",nil,120,1],
+		["CG_CROSS",nil,120,1],
 		["vvv_fishing_rod",nil,120,1],
 		["hgun_Pistol_heavy_01_F",nil,6000,1],
 		["hgun_ACPC2_F",nil,6150,1],
@@ -646,6 +647,8 @@ if(_condition == "cops") then {
 if(_condition == "copwaffen") then {
 
 	_bulle = [
+		["CG_BATON",nil,1,1],
+		["CG_TELBAT",nil,1,1],
 		["RH_M9",nil,1,1],
 		["RH_g17",nil,1,1],
 		["DDOPP_X26",nil,1,1]
