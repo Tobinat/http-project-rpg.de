@@ -6,6 +6,8 @@ unsafeCVL = 1; // Allows createVehicleLocal to be executed in Multiplayer
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
+#include "The-Programmer\theprogrammer_dialog_master.cpp"
+
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -29,6 +31,7 @@ class CfgFunctions {
 
 class CfgSounds {
     sounds[] = {};
+	#include "The-Programmer\Iphone_X\Sounds.hpp"
     class sirenLong {
         name = "sirenLong";
         sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
@@ -79,6 +82,11 @@ class CfgSounds {
 };
 
 class CfgDebriefing {
+	class kick {
+		title = "Global banned";
+		description = "You're not allowed to join this server cause you're banned by Projekt-RPG";
+	};
+
     class NotWhitelisted {
         title = "$STR_NotWhitelisted_Title";
         subtitle = "$STR_NotWhitelisted_SubTitle";

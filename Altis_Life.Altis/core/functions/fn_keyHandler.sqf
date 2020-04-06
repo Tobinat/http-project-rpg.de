@@ -32,7 +32,7 @@ if (life_action_inUse) exitWith {
 
 //Hotfix for Interaction key not being able to be bound on some operation systems.
 if (!(actionKeys "User10" isEqualTo []) && {(inputAction "User10" > 0)}) exitWith {
-    //Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
+    //Interaction key (default is Left P, can be mapped via Controls -> Custom -> User Action 10)
     if (!life_action_inUse) then {
         [] spawn {
             private _handle = [] spawn life_fnc_actionKeyHandler;
@@ -217,7 +217,7 @@ switch (_code) do {
     //Y Player Menu
     case 21: {
         if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
-            [] call life_fnc_p_openMenu;
+            [1] spawn the_programmer_iphone_fnc_phone_init;
         };
     };
 
