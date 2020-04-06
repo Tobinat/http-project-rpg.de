@@ -23,6 +23,8 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
+	#include "The-Programmer\AdvancedIdentity\RscTitles.hpp"
+
 };
 
 class CfgFunctions {
@@ -82,6 +84,7 @@ class CfgSounds {
 };
 
 class CfgDebriefing {
+#include "The-Programmer\AdvancedIdentity\debriefing.sqf"
 	class kick {
 		title = "Global banned";
 		description = "You're not allowed to join this server cause you're banned by Projekt-RPG";
