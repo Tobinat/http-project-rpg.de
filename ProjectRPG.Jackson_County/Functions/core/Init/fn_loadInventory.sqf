@@ -34,7 +34,7 @@ _respawn = _this select 25;
 _prisonArray = _this select 26;
 _points = _this select 27;
 
-
+loadinventory_test = 1;
 
 _higherup = false;
 
@@ -63,6 +63,7 @@ _count = 0;
 	_count = _count + 1;
 } foreach current_cars;
 
+loadinventory_test = 2;
 Shared_Cars = [];
 
 player setVariable ["sl_wallet_silverlake", _cash, false];
@@ -85,7 +86,7 @@ player setVariable ["veh_points",_points,false];
 
 myoffice = [0,0,0];
 player setVariable ["houselevel", _houselevel, false];
-
+loadinventory_test = 3;
 deletemarkerlocal "myhouse";
 if (_houselevel > 6) then {
 	deletemarkerlocal "myhouse";
@@ -146,7 +147,7 @@ loan = (_statuses select 11);
 moneyOwed = (_statuses select 11) select 1;
 
 //do prison shit here
-
+loadinventory_test = 4;
 if(count(_prisonArray) > 0) then {
 	[_prisonArray] spawn client_fnc_slpd_jail_setup;
 } else {
@@ -203,7 +204,7 @@ if(count(_prisonArray) > 0) then {
 		player setpos _house;
 	};
 };
-
+loadinventory_test = 5;
 myhouse = _house;
 myshop = _shop;
 
@@ -243,7 +244,7 @@ if((_statuses select 9) == 0) then {
 		"dynamicBlur" ppEffectEnable false;
 	};
 };
-
+loadinventory_test = 6;
 if(isNil "TaxRate") then { TaxRate = 0; };
 player setUnitRecoilCoefficient 1.75;
 if(client_marijuana > 0) then { player setCustomAimCoef 0; };
