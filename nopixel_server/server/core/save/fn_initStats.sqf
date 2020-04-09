@@ -220,7 +220,7 @@ if (_booli) then {
 
 	sleep 1;
 
-	[_player] remoteexec ["Server_fnc_initStats",2];
+	[_player] spawn Server_fnc_initStats;
 
 	_startercars = ["Jonzie_XB","ADM_1969_Camaro","Jonzie_Mini_Cooper","Jonzie_Ceed","ADM_1964_Impala","ivory_190e"];
 	_class = _startercars call BIS_fnc_selectRandom;
