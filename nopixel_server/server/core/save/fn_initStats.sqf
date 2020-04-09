@@ -7,7 +7,7 @@ _booli = (_check select 0) select 0;
 
 diag_log format["init stats %1 %2", _uid,_booli];
 _points = 0;
-init_stats_test = 1;
+_player setVariable ["init_stats_test", 1, false];
 if (_booli) then {
 	_fetchstr = format ["getMessages:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
@@ -28,7 +28,7 @@ if (_booli) then {
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	
-init_stats_test = 2;
+	_player setVariable ["init_stats_test", 2, false];
 	_res = _fetch select 0;
 	_items = _res select 0;
 	_cash = _res select 1;
@@ -115,7 +115,7 @@ init_stats_test = 2;
 		_mayor = true;
 		theMayor = _player;
 	};
-	init_stats_test = 3;
+	_player setVariable ["init_stats_test", 3, false];
 	/*_mayor = false;
 	if(_uid == call compile format["%1",currentmayor]) then { _mayor = true; theMayor = _player; };
 
@@ -183,7 +183,7 @@ init_stats_test = 2;
 
 	_house setVariable ["house", _player, false];
 	_shop setVariable ["shop", _player, false];
-	init_stats_test = 4;
+	_player setVariable ["init_stats_test", 4, false];
 	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28 %29",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points];																																																																																																																																																													//,_mayor
 	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points] remoteexec ["Client_fnc_loadInventory", _player];
 } else {
@@ -204,7 +204,7 @@ init_stats_test = 2;
 	_houselevel = 1;
 	_housecontent = [[[],[]],[[],[]],[[],[]],[[],[]]];
 	_shopcontent = [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]];
-	init_stats_test = 5;
+	_player setVariable ["init_stats_test", 5, false];
 	_shopname = format["Shop %1", _name];
 	_insertstr = format ["insertPlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:%18", _uid, _name, _items, _cash, _bank, _cop, _ems, _position, _phoneBackground, _messages, _statuses, _houselevel, _housecontent, _shopcontent, _shopname, _mafia, _fire, _legal];
 	_insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
@@ -222,7 +222,7 @@ init_stats_test = 2;
 	sleep 1;
 
 	[_player] spawn Server_fnc_initStats;
-	init_stats_test = 5;
+	_player setVariable ["init_stats_test", 6, false];
 	_startercars = ["Jonzie_XB","ADM_1969_Camaro","Jonzie_Mini_Cooper","Jonzie_Ceed","ADM_1964_Impala","ivory_190e"];
 	_class = _startercars call BIS_fnc_selectRandom;
 
