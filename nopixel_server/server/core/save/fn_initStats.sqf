@@ -40,6 +40,15 @@ if (_booli) then {
 	_phoneBackground = _res select 7;
 	_messages = _res select 8;
 	_statuses = _res select 9;
+	_houselevel = _res select 10;
+	_housecontent = _res select 11;
+	_shopcontent = _res select 12;
+	_shopname = _res select 13;
+	_mafia = _res select 14;
+	_fire = _res select 15;
+	_legal = _res select 16;
+	_doughnuts = _res select 17;
+	_respawn = _res select 18;
 
 	_queryStr = format["getSLPDPrison_active:%1:%2", _uid, 1];
 	_prison = [_queryStr, 2] call ExternalS_fnc_ExtDBasync;
@@ -59,7 +68,7 @@ if (_booli) then {
 	MafiaLoan1 pushback _player;
 	MafiaLoan2 pushback (_statuses select 11);
 	};
-
+	/*
 	_houselevel = _res select 10;
 	_housecontent = _res select 11;
 	_shopcontent = _res select 12;
@@ -69,7 +78,7 @@ if (_booli) then {
 	_legal = _res select 16;
 	_doughnuts = _res select 17;
 	_respawn = _res select 18;
-
+	*/
 	_messages = [];
 
 	_player setvariable ["getunitloadout",_items,false];
