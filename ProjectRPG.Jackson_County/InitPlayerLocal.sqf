@@ -1,9 +1,10 @@
+init_player_test = 0;
 if(!hasInterface) exitWith {}; //This is a headless client, he doesn't need to do anything but keep being headless..
 Np_ProfileVars = profilenamespace getvariable "Nopix_Profile";
 if(isnil "Np_ProfileVars") then {
 	profilenamespace setvariable ["Nopix_Profile",[[["Willkommen in Silverlake ","Willkommen", "Verizon"]],[["Willkommen","Willkommen in Silverlake", "Post"]]]];
 };
-
+init_player_test = 1;
 //Tanken leerlutschen
 { _x setFuelCargo 0; } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_fs_feed_F"], 20000]);
 
@@ -17,19 +18,27 @@ if(isnil "Np_ProfileVars") then {
 
 waitUntil {sleep 0.05; !(isNil {player}) && player == player && alive player};
 
+init_player_test = 2;
+
 [] call Client_fnc_miscVariables;
 player allowdamage false;
+init_player_test = 3;
 [player] remoteexec ["Server_fnc_initStats",2];
+init_player_test = 4;
 waituntil {(player getvariable "loaded") == 1};
+init_player_test = 5;
 player allowdamage true;
 [] call client_fnc_initInteractions;
 [] spawn client_fnc_escInterupt;
+init_player_test = 6;
 waituntil {(player getvariable "loaded") == 2};
+init_player_test = 7;
 
 [] call client_fnc_karmaPhoneInit;
 
 player setVariable["loaded", nil, false];
 
+init_player_test = 8;
 waitUntil {!(isNull (findDisplay 46))};
 /* waitUntil {!(isNull (findDisplay 49))};
 ((findDisplay 49) displayCtrl 1010) ctrlEnable false; */
@@ -40,7 +49,7 @@ _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 
 uisleep 0.05;
 deletevehicle _vehicle;
-
+init_player_test = 9;
 // if(myhealth > 0.99) exitwith {
 	// ["Du wurdest aufgrund von Combat Logging getoetet.", true] spawn domsg;
 	// [player,objNull,3,format ["%1 wurde wegen CombatLogging getoetet", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
@@ -60,7 +69,7 @@ cutText ["", "BLACK"];
 player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened;}];
 player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
 //player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
-
+init_player_test = 10;
 [ missionNamespace, "arsenalOpened", {
     disableSerialization;
     _display = _this select 0;
@@ -87,7 +96,7 @@ client_seatbelt = false;
 [] spawn client_fnc_checkRadio;
 //[] spawn client_fnc_forceFirstPerson;
 [] spawn client_fnc_speedMeters;
-
+init_player_test = 11;
 //_respawn = player getVariable "respawn";
 //if (_respawn == 0) then {
 //		[] spawn client_fnc_respawnTimer;
