@@ -1,8 +1,6 @@
 private ["_query", "_queryResult", "_perks", "_unit"];
 
-params [
-    ["_unit", objNull, [objNull]]
-];
+params [ ["_unit", objNull, [objNull]] ];
 
 private _query = format ["getExp:%1", getPlayerUID _unit];
 

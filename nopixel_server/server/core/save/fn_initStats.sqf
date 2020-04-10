@@ -1,4 +1,4 @@
-private ["_player", "_uid", "_checkstr", "_check", "_booli", "_points", "_fetchstr", "_fetch", "_returned", "_phonemessages", "_mail", "_garage", "_res", "_items", "_cash", "_bank", "_cop", "_ems", "_position", "_bankAccount", "_phoneBackground", "_messages", "_statuses", "_houselevel", "_housecontent", "_shopcontent", "_shopname", "_mafia", "_fire", "_legal", "_doughnuts", "_respawn", "_queryStr", "_prison", "_moneyOwed", "_inUseVehicles", "_mycarinfo", "_info", "_pia", "_mayor", "_house", "_shop", "_name"];
+params ["_player", "_uid", "_checkstr", "_check", "_booli", "_points", "_fetchstr", "_fetch", "_returned", "_phonemessages", "_mail", "_garage", "_res", "_items", "_cash", "_bank", "_cop", "_ems", "_position", "_bankAccount", "_phoneBackground", "_messages", "_statuses", "_houselevel", "_housecontent", "_shopcontent", "_shopname", "_mafia", "_fire", "_legal", "_doughnuts", "_respawn", "_queryStr", "_prison", "_moneyOwed", "_inUseVehicles", "_mycarinfo", "_info", "_pia", "_mayor", "_house", "_shop", "_name"];
 
 
 _player = _this select 0;
@@ -15,6 +15,7 @@ _booli = (_check select 0) select 0;
 diag_log format["init stats %1 %2", _uid,_booli];
 _points = 0;
 if (_booli) then {
+
 	diag_log "initStats phase 2";
 	_fetchstr = format ["getMessages:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
