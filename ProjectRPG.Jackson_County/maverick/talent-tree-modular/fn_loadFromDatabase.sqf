@@ -1,4 +1,5 @@
-private ["_query", "_queryResult", "_perks"]
+private ["_query", "_queryResult", "_perks", "_unit"];
+
 params [
     ["_unit", objNull, [objNull]]
 ];

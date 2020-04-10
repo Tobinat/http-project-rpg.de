@@ -1,4 +1,4 @@
-params ["_player", "_id", "_uid", "_name"]; 
+params ["_player", "_id", "_uid", "_name", "_items", "_messages", "_cash", "_bank", "_position", "_syncInfo", "_updatestr", "_playeroffice", "_pia"]; 
 if(isNull _player) exitWith { diag_log "Stat Disconnect - player null"; };
 
 _items = getUnitLoadout _player;

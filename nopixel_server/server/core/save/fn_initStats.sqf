@@ -1,9 +1,12 @@
-private ["_player", "_uid", "_checkstr", "_check", "_booli", "_points", "_fetchstr", "_fetch", "_returned", "_phonemessages", "_mail", "_garage", "_res", "_items", "_cash", "_bank", "_cop", "_ems", "_position", "_bankAccount", "_phoneBackground", "_messages", "_statuses", "_houselevel", "_housecontent", "_shopcontent", "_shopname", "_mafia", "_fire", "_legal", "_doughnuts", "_respawn", "_queryStr", "_prison", "_moneyOwed", "_inUseVehicles", "_mycarinfo", "_info", "_pia", "_mayor", "_house", "_shop", "_name"]
+private ["_player", "_uid", "_checkstr", "_check", "_booli", "_points", "_fetchstr", "_fetch", "_returned", "_phonemessages", "_mail", "_garage", "_res", "_items", "_cash", "_bank", "_cop", "_ems", "_position", "_bankAccount", "_phoneBackground", "_messages", "_statuses", "_houselevel", "_housecontent", "_shopcontent", "_shopname", "_mafia", "_fire", "_legal", "_doughnuts", "_respawn", "_queryStr", "_prison", "_moneyOwed", "_inUseVehicles", "_mycarinfo", "_info", "_pia", "_mayor", "_house", "_shop", "_name"];
 
 
 _player = _this select 0;
 _uid = getPlayerUID _player;
-waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
+waitUntil {
+if (isNil {extDB_SQL_CUSTOM_ID}) then { false } else { true };
+};
+//waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
 diag_log "initStats phase 1";
 _checkstr = format ["existPlayerInfo:%1", _uid];
 _check = [0, _checkstr] call ExternalS_fnc_ExtDBquery;
