@@ -96,7 +96,7 @@ if (_booli) then {
 	*/
 	_messages = [];
 
-	_player setvariable ["getunitloadout",_items,false];
+	_player setvariable ["getunitloadout", _items, false];
 	_player setVariable ["sl_wallet_silverlake", _cash, false];
 	_player setVariable ["sl_atm_silverlake", _bank, false];
 	_player setVariable ["bankAccount", _bankAccount, false];
