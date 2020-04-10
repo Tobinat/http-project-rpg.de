@@ -7,7 +7,7 @@ waitUntil {
 if (isNil {extDB_SQL_CUSTOM_ID}) then { false } else { true };
 };
 //waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
-diag_log "initStats phase 1";
+//diag_log "initStats phase 1";
 _checkstr = format ["existPlayerInfo:%1", _uid];
 _check = [0, _checkstr] call ExternalS_fnc_ExtDBquery;
 _booli = (_check select 0) select 0;
@@ -16,33 +16,33 @@ diag_log format["init stats %1 %2", _uid,_booli];
 _points = 0;
 if (_booli) then {
 
-	diag_log "initStats phase 2";
+	//diag_log "initStats phase 2";
 	_fetchstr = format ["getMessages:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	_phonemessages = _fetch;
-	diag_log "initStats:";
-	diag_log _phonemessages;
+	//diag_log "initStats:";
+	//diag_log _phonemessages;
 
 	_fetchstr = format ["getMail:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	_mail = _fetch;
-	diag_log "initStats:";
-	diag_log _mail;
+	//diag_log "initStats:";
+	//diag_log _mail;
 
 	_fetchstr = format ["getGarage:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	_garage = _fetch;
-	diag_log "initStats:";
-	diag_log _garage;
+	//diag_log "initStats:";
+	//diag_log _garage;
 
 	_fetchstr = format ["playerInfo:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
-	diag_log "initStats:";
-	diag_log _returned;
+	//diag_log "initStats:";
+	//diag_log _returned;
 	
 	_res = _fetch select 0;
 	_items = _res select 0;
@@ -199,7 +199,7 @@ if (_booli) then {
 
 	_player setVariable ["house", _house, false];
 	_player setVariable ["shop", _shop, false];
-	diag_log "initStats phase 3";
+	//diag_log "initStats phase 3";
 	_house setVariable ["house", _player, false];
 	_shop setVariable ["shop", _player, false];
 	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28 %29",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points];																																																																																																																																																													//,_mayor
