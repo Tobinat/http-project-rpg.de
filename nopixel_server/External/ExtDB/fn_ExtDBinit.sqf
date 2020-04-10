@@ -48,6 +48,7 @@ if ( isNil {uiNamespace getVariable "extDB_SQL_CUSTOM_ID"}) then
 	// extDB3 Lock
 	"extDB3" callExtension "9:LOCK";
 	diag_log "extDB3: Locked";
+	diag_log _extDB_SQL_CUSTOM_ID;
 
 	// Save Randomized ID
 	uiNamespace setVariable ["extDB_SQL_CUSTOM_ID", _extDB_SQL_CUSTOM_ID];

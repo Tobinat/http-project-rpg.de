@@ -1,3 +1,4 @@
+private ["_query", "_queryResult", "_perks"]
 params [
     ["_unit", objNull, [objNull]]
 ];
