@@ -164,7 +164,6 @@ class CfgFunctions
 			class raidhouse {};
 			class copmapmarkers {};
 			class policeClothes{};
-			class giveCards{};
 			class copOpener{};
 		};
 

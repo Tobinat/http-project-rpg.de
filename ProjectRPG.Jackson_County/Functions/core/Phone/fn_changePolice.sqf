@@ -23,7 +23,7 @@ if (myjob =="EMS") then {
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;
-	["Sie sind verbunden mit der Notrufzentrale des S.L.F.D.!", false] spawn domsg;
+	["Du bist jetzt im FD-Funk!", false] spawn domsg;
 };
 if (myjob =="Fire") then {
 	player setvariable["PhoneCallNumber",33.1,true];
@@ -47,5 +47,5 @@ if (myjob =="Cop") then {
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;
-	["Sie sind verbunden mit der Notrufeinsatz-Zentrale!", false] spawn domsg;
+	["Du bist jetzt im Sheriff-Funk!!", false] spawn domsg;
 };
