@@ -52,8 +52,6 @@ if(_condition == "rarefish") then {
 			["BL_us_hat",nil,12,5,5],
 			["BL_party_hat",nil,12,3,5],
 			["vvv_VAMPIRO_hat",nil,12,3,5],
-			["vvv_alien24_hat",nil,12,3,5],
-			["vvv_Anonymous_hat",nil,12,3,5],
 			["vvv_azgt_hat",nil,12,3,5],
 			["vvv_azteca_hat",nil,12,3,5],
 			["vvv_bane_hat",nil,12,3,5],
@@ -210,7 +208,6 @@ if(_condition == "clothing") then {
 		["Masque_Wolfv2",nil,60,3,5],
 		["H_ObamaMask",nil,20,3,5],
 		["Masque_Chains",nil,20,3,5],
-		["vvv_Anonymous_hat",nil,20,3,5],
 		["U_B_Wetsuit",nil,2000,3,1],
 		["EF_HM_B1",nil,300,3,1],
 		["EF_HM_BL1",nil,300,3,1],
@@ -615,7 +612,7 @@ if(_condition == "cops") then {
 	if(_cop > 1) then {
 		_ret = [
 			["RH_barska_rds",nil,1,1],
-			["acc_flashlight",nil,1,1],
+			["acc_flashlight",nil,1,1]
 			["RH_SFM952V",nil,1,1]
 		];
 		_bulle = _bulle + _ret;
@@ -742,22 +739,22 @@ if(_condition == "copskleidung") then {
 if(_condition == "copvests") then {
 
 	_bulle = [
-	//	["PRPG_Deputy_W_1_W",nil,1,1],
-	//	["PRPG_Deputy_W_2_W",nil,1,1],
-	//	["PRPG_Deputy_W_1_Y",nil,1,1],
-	//	["PRPG_Deputy_W_2_Y",nil,1,1],
-	//	["PRPG_Deputy_W_1_S",nil,1,1],
-	//	["PRPG_Deputy_W_2_S",nil,1,1],
-	//	["PRPG_Sheriff_Belt",nil,1,1]
+		["PRPG_Deputy_W_1_W",nil,1,1],
+		["PRPG_Deputy_W_2_W",nil,1,1],
+		["PRPG_Deputy_W_1_Y",nil,1,1],
+		["PRPG_Deputy_W_2_Y",nil,1,1],
+		["PRPG_Deputy_W_1_S",nil,1,1],
+		["PRPG_Deputy_W_2_S",nil,1,1],
+		["PRPG_Sheriff_Belt",nil,1,1]
 	];
 	if(_cop > 4) then {
 		_ret = [
-		//	["PRPG_Sheriff_W_1_W",nil,1,1],
-		//	["PRPG_Sheriff_W_2_W",nil,1,1],
-		//	["PRPG_Sheriff_W_1_Y",nil,1,1],
-		//	["PRPG_Sheriff_W_2_Y",nil,1,1],
-		//	["PRPG_Sheriff_W_1_S",nil,1,1],
-		//	["PRPG_Sheriff_W_2_S",nil,1,1]
+			["PRPG_Sheriff_W_1_W",nil,1,1],
+			["PRPG_Sheriff_W_2_W",nil,1,1],
+			["PRPG_Sheriff_W_1_Y",nil,1,1],
+			["PRPG_Sheriff_W_2_Y",nil,1,1],
+			["PRPG_Sheriff_W_1_S",nil,1,1],
+			["PRPG_Sheriff_W_2_S",nil,1,1]
 		];
 		_bulle = _bulle + _ret;
 	};
@@ -876,7 +873,7 @@ if(_condition == "medic") then {
 	];
 	if(_EMS > 1) then {
 		_ret = [
-			["adv_aceCPR_AED",nil,1,1]
+			//["adv_aceCPR_AED",nil,1,1]
 		];
 		_medic = _medic + _ret;
 	};
@@ -903,7 +900,7 @@ if(_condition == "fdkleidung") then {
 	_additional = [];
 	if(_EMS > 0) then {
 		_ret = [
-			["pRPG_Candidate1",nil,10,3,1],
+			//["pRPG_Candidate1",nil,10,3,1],
 			["female_ems",nil,10,3,1],
 			["vvv_traje_bombero",nil,10,3,1],
 			["Mask_M40",nil,10,3,1],
@@ -1159,6 +1156,7 @@ if(_condition == "head") then {
 			["H_Hat_camo",nil,120,3,5],
 			["H_Hat_checker",nil,120,3,5],
 			["H_KermitMask",nil,120,3,5],
+			/*
 			["sab_wwiplanes_ger_cap",nil,120,3,5],
 			["sab_wwiplanes_fr_cap",nil,120,3,5],
 			["nigga_platok",nil,500,3,5],
@@ -1194,6 +1192,7 @@ if(_condition == "head") then {
 			["pat_cap5_back",nil,250,3,5],
 			["pat_cap_nigga",nil,250,3,5],
 			["pat_cap_nigga_back_low",nil,250,3,5],
+			*/
 			["acj_casco_ammerica",nil,120,3,5],
 			["acj_casco_calavera",nil,120,3,5],
 			["acj_casco_camo",nil,120,3,5],
