@@ -70,7 +70,7 @@ if(!ClientArrested) then {
 if(client_intox > 0.6) then {
 	//["Add",10] spawn client_fnc_dohealth;
 	["Du hast zu viel Gesoffen und hast ein Blackout.",false] spawn domsg;
-	[player, true, 120, true] call ace_medical_fnc_setUnconscious;
+	[player, true, 60, true] call ace_medical_fnc_setUnconscious;
 	client_intox = client_intox - 0.2
 };
 
