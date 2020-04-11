@@ -40,15 +40,17 @@ _PricesItemList = [
 ];
 
 _werlbankList = [
-	"PRPG_WorkBench_Normal_item",
-	"PRPG_WorkBench_Car_item",
-	"PRPG_WorkBench_Weapon_item"
+	"prpg_workbench_normal_kit",
+	"prpg_workbench_car_kit",
+	"prpg_workbench_weapon_kit"
+	//"prpg_workbench_clothing_kit"
 ];
 
 _PriceswerlbankList = [
 	[20,10],
 	[20,10],
 	[20,10]
+	//[20,10]
 ];
 
 uisleep 0.05;

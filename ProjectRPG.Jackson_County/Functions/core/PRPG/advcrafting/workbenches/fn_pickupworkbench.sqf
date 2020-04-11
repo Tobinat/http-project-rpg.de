@@ -1,5 +1,5 @@
 
-if !(cursorTarget == "PRPG_WorkBench_Normal_01_F") exitWith {};
+if !(cursorTarget == "prpg_workbench_normal") exitWith {};
 
 deletevehicle cursorTarget;
-player additem "PRPG_WorkBench_Normal_item";
+player additem "prpg_workbench_normal_kit";

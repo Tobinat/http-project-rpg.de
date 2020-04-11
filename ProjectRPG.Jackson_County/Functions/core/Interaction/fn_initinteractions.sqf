@@ -971,42 +971,42 @@ NoPixel_InteractionMenuItems = [
 
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Normal_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_normal"""],
 		["Werkbank", "createdialog ""client_Craft_Menu""",3]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Clothing_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_clothing"""],
 		["Kleidungswerkbank", "createdialog ""client_Craft_Menu_clothing""",3]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Weapon_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_weapon"""],
 		["Waffenwerkbank", "createdialog ""client_Craft_Menu_weapon""",3]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Car_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_car"""],
 		["Automobilwerkbank", "createdialog ""client_Craft_Menu_car""",3]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Normal_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_normal"""],
 		["Werkbank einsammeln", "[] call client_fnc_pickupworkbench",4]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Clothing_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_clothing"""],
 		["Werkbank einsammeln", "[] call client_fnc_pickupclothingworkbench",4]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Weapon_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_weapon"""],
 		["Werkbank einsammeln", "[] call client_fnc_pickupweaponworkbench",4]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Car_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_car"""],
 		["Werkbank einsammeln", "[] call client_fnc_pickupcarworkbench",4]
 	],
 
