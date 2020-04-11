@@ -6,7 +6,7 @@
 
 class Maverick_TTM {
 	class Config {
-		keyCode = 20;
+		keyCode = 8;
 		shift = false;
 		ctrl = true;
 	};
