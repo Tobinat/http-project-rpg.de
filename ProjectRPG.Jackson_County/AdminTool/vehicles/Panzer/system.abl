@@ -28,7 +28,7 @@ removeAllActions player;
 			[true] call life_fnc_sessionUpdate;
 			[] call life_fnc_hudUpdate;
 			[] call life_fnc_healself;
-			[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
+			[player] call ace_medical_treatment_fnc_fullHealLocal;
 			hint "Healed";
 			break;
 			};

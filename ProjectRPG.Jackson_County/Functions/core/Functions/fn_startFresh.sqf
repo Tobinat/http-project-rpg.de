@@ -46,7 +46,7 @@ closedialog 0;
 	[player,""] remoteExec ["client_fnc_animSync"];
 	["set",0] call Client_Fnc_DoHealth;
 	player setDamage 0;
-	[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
+	[player] call ace_medical_treatment_fnc_fullHealLocal;
 	player setVariable ["tf_voiceVolume", 1, true];
 	lastsync = time;
 	["add","battery",200] call client_fnc_sustain;
