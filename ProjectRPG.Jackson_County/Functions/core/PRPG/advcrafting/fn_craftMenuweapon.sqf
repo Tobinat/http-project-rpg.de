@@ -12,7 +12,7 @@ _status = call compile format["%1", _status];
 
 _mainMenus = ["Waffen"];
 
-_materials = ["NP_Wood","np_copperbar1","np_ironbar1","np_silverbar1"];
+_materials = ["NP_Wood","np_copperbar1","np_ironbar1","prpg_item_aluminium_bar"];
 
 
 if (mav_ttm_var_weaponcrafting == 1) then {

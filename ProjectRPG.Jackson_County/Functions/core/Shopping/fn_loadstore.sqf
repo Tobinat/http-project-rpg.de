@@ -612,7 +612,7 @@ if(_condition == "cops") then {
 	if(_cop > 1) then {
 		_ret = [
 			["RH_barska_rds",nil,1,1],
-			["acc_flashlight",nil,1,1]
+			["acc_flashlight",nil,1,1],
 			["RH_SFM952V",nil,1,1]
 		];
 		_bulle = _bulle + _ret;
