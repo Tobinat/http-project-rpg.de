@@ -49,7 +49,7 @@ if(_type == "energy") then {
 	["Add","unhealthiness",5] call client_fnc_sustain;
 };
 
-[format ["%1 hält %2m aufgrunbd der Gesundheit von -%3",_type, (_amount * 5), client_unhealthiness],false] spawn domsg;
+//[format ["%1 hält %2m aufgrund der Gesundheit von -%3",_type, (_amount * 5), client_unhealthiness],false] spawn domsg;
 
 
 /*
