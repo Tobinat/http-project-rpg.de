@@ -686,10 +686,10 @@ NoPixel_InteractionMenuItems = [
 //		["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
 //	],
 
-	[
-		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-		["Cop Westen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copvests""] spawn client_fnc_LoadStore;",3]
-	],
+//	[
+//		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+//		["Cop Westen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copvests""] spawn client_fnc_LoadStore;",3]
+//	],
 
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
