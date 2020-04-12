@@ -33,8 +33,8 @@ if (mav_ttm_var_weaponcrafting == 2) then {
 	"RH_fn57_t",
 	"RH_tec9",
 	"hlc_smg_mp5k",
-	"hlc_smg_mp5a2",
-	"hlc_rifle_hk51"
+	"hlc_smg_mp5a2" //KOMMA!!!!!!!
+	//"hlc_rifle_hk51"
 	];
 };
 
@@ -47,9 +47,9 @@ if (mav_ttm_var_weaponcrafting == 3) then {
 	"RH_tec9",
 	"hlc_smg_mp5k",
 	"hlc_smg_mp5a2",
-	"hlc_rifle_hk51",
+	//"hlc_rifle_hk51",
 	"RH_bull",
-	"hlc_rifle_slr107u_MTK",
+	//"hlc_rifle_slr107u_MTK",
 	"SG553_CQB"
 	];
 };
@@ -63,14 +63,14 @@ if (mav_ttm_var_weaponcrafting == 4) then {
 	"RH_tec9",
 	"hlc_smg_mp5k",
 	"hlc_smg_mp5a2",
-	"hlc_rifle_hk51",
+	//"hlc_rifle_hk51",
 	"RH_bull",
-	"hlc_rifle_slr107u_MTK",
+	//"hlc_rifle_slr107u_MTK",
 	"SG553_CQB",
 	"hlc_rifleACR_SBR_cliffhanger",
-	"hlc_rifle_akm_MTK",
-	"hlc_rifle_G36C",
-	"hlc_rifle_augpara_t",
+	//"hlc_rifle_akm_MTK",
+	//"hlc_rifle_G36C",
+	//"hlc_rifle_augpara_t",
 	"hlc_rifle_honeybadger"
 	];
 };
@@ -84,14 +84,14 @@ if (mav_ttm_var_weaponcrafting == 5) then {
 	"RH_tec9",
 	"hlc_smg_mp5k",
 	"hlc_smg_mp5a2",
-	"hlc_rifle_hk51",
+	//"hlc_rifle_hk51",
 	"RH_bull",
-	"hlc_rifle_slr107u_MTK",
+	//"hlc_rifle_slr107u_MTK",
 	"SG553_CQB",
 	"hlc_rifleACR_SBR_cliffhanger",
-	"hlc_rifle_akm_MTK",
-	"hlc_rifle_G36C",
-	"hlc_rifle_augpara_t",
+	//"hlc_rifle_akm_MTK",
+	//"hlc_rifle_G36C",
+	//"hlc_rifle_augpara_t",
 	"hlc_rifle_honeybadger",
 	"RH_Deagles",
 	"hlc_rifle_bcmblackjack",
@@ -116,21 +116,21 @@ _PricesWaffenClasses = [
 	//hlc_smg_mp5a2
 	[4,5,5,5],
 	//hlc_rifle_hk51
-	[4,5,5,5],
+	//[4,5,5,5],
 	//RH_bull
 	[4,3,3,3],
 	//hlc_rifle_slr107u_MTK
-	[4,6,6,6],
+	//[4,6,6,6],
 	//SG553_CQB
 	[4,6,6,6],
 	//hlc_rifleACR_SBR_cliffhanger
 	[4,8,8,8],
 	//hlc_rifle_akm_MTK
-	[4,8,8,8],
+	//[4,8,8,8],
 	//hlc_rifle_G36C
-	[4,8,8,8],
+	//[4,8,8,8],
 	//hlc_rifle_augpara_t
-	[4,8,8,8],
+	//[4,8,8,8],
 	//hlc_rifle_honeybadger
 	[4,8,8,8],
 	//RH_Deagles
@@ -165,7 +165,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		_myArray = _PricesWaffenClasses select _mySelect;
 		_mags = _WaffenMags;
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Holz: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/> Silber: %5 <br/><t color='#33CC33'>Magazin Kosten <t color='#ffffff'> <br/> Holz: %7 <br/> Kupfer: %8 <br/> Eisen: %9 <br/> Silber: %10",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_Mags select 0),(_Mags select 1),(_Mags select 2),(_Mags select 3)];
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Holz: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/> Aluminium: %5 <br/><t color='#33CC33'>Magazin Kosten <t color='#ffffff'> <br/> Holz: %7 <br/> Kupfer: %8 <br/> Eisen: %9 <br/> Aluminium: %10",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_Mags select 1),(_Mags select 2),(_Mags select 3),(_Mags select 4)];
 		_btn4 ctrlCommit 0;
 	};
 
