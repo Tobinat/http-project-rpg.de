@@ -98,7 +98,7 @@ if(count _playerInfo != 0) then {
 	_string = _string + format["Anzahl der Strafpunkte: %1\nZugehörigkeit: %2\nZulassung:\n", _points, _services];
 	if(_licenses select 0 == 1) then { _string = _string + "Führerschein  "; };
 	if(_licenses select 1 == 1) then { _string = _string + "Waffenschein "; };
-	if(_licenses select 2 == 1) then { _string = _string + "Bergbau Zertifikat/n"; };
+	if(_licenses select 2 == 1) then { _string = _string + "Bergbau Zertifikat "; };
 	if(_licenses select 3 == 1) then { _string = _string + "Forstwirtschaftsschein "; };
 	if(_licenses select 4 == 1) then { _string = _string + "Angelschein "; };
 	if(_licenses select 5 == 1) then { _string = _string + "LKW-Führerschein"};

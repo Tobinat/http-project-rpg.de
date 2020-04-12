@@ -61,7 +61,7 @@ if (mav_ttm_var_autocrafting == 1) then {
 		//"Ford_F350_XLT_SuperDuty_Black",
 		//"Ford_Raptor_17_Black",
 		//"A3F_BMW_M5_F10_12_Back",
-		"vvv_Audi_Q7",
+		"vvv_Audi_Q7"	////KOMMA!!!!!
 		//"CadillacEldorado1959_Black"
 	];
 };
@@ -122,7 +122,7 @@ if (mav_ttm_var_autocrafting == 4) then {
 		"ivory_supra",
 		"VVV_Aston_Martin_1964_DB5",
 		"ivory_r8",
-		"ivory_r8_spyder"
+		"ivory_r8_spyder",
 		//"A3F_911_GT2_Black",
 		//"Porsche_Cayenne_12_Black",
 		//"A3F_Benz_G65_AMG_Black",
@@ -149,7 +149,7 @@ if (mav_ttm_var_autocrafting == 5) then {
 		"ivory_supra",
 		"VVV_Aston_Martin_1964_DB5",
 		"ivory_r8",
-		"ivory_r8_spyder"
+		"ivory_r8_spyder",
 		//"A3F_911_GT2_Black",
 		//"Porsche_Cayenne_12_Black",
 		//"A3F_Benz_G65_AMG_Black",

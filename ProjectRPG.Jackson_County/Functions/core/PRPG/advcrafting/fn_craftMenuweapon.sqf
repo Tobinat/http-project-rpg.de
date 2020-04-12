@@ -169,7 +169,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		_myArray = _PricesWaffenClasses select _mySelect;
 		_mags = _WaffenMags;
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Holz: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/> Aluminium: %5 <br/><t color='#33CC33'>Magazin Kosten <t color='#ffffff'> <br/> Holz: %7 <br/> Kupfer: %8 <br/> Eisen: %9 <br/> Aluminium: %10",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_Mags select 0),(_Mags select 1),(_Mags select 2),(_Mags select 3)];
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Holz: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/> Aluminium: %5 <br/><t color='#33CC33'>Magazin Kosten <t color='#ffffff'> <br/> Holz: %6 <br/> Kupfer: %7 <br/> Eisen: %8 <br/> Aluminium: %9",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_Mags select 0),(_Mags select 1),(_Mags select 2),(_Mags select 3)];
 		_btn4 ctrlCommit 0;
 	};
 
@@ -200,7 +200,7 @@ if((_this select 0) == "FRESH") exitwith {
 
 };
 
-if(isNil "_status") exitwith { hint "Error with Selection!"; };
+if(isNil "_status") exitwith { ["Du musst auch etwas auswählen!", false] spawn domsg; };
 
 
 	_btn2 ctrlShow true;
@@ -235,7 +235,7 @@ if((_this select 0) == "CRAFT") exitwith {
 		_checkCost = _cost select _n;
 
 		_amountcurrent = {_x == (_materials select _n)} count magazines player;
-		if(_amountcurrent < _checkCost) exitwith { hint "Nicht ausreichend Ressourcen"; _error = true; };
+		if(_amountcurrent < _checkCost) exitwith { ["Dir fehlen Ressourcen!", false] spawn domsg; _error = true; };
 		_n = _n + 1;
 
 	} foreach _cost;
@@ -266,8 +266,9 @@ if(_error) exitwith {};
 
 	player disablecollisionwith shopholder;
 	shopholder setpos (getposATL player);
-
-	hint format["Du hast eine %1 hergestellt",_status];
+	
+	[format["Du hast eine %1 hergestellt!",_status], true] spawn domsg;
+	//hint format["Du hast eine %1 hergestellt",_status];
 	[player,1,format ["%1 hat eine %2 hergestellt", name player, _status],_classStatus,_status] remoteExec ["server_fnc_craftLog", 1];
 	closedialog 0;
 };
@@ -286,7 +287,7 @@ if((_this select 0) == "CRAFTMAG") exitwith {
 		_checkCost = _cost select _n;
 
 		_amountcurrent = {_x == (_materials select _n)} count magazines player;
-		if(_amountcurrent < _checkCost) exitwith { hint "Nicht ausreichend Ressourcen"; _error = true; };
+		if(_amountcurrent < _checkCost) exitwith { ["Dir fehlen Ressourcen!", false] spawn domsg; _error = true; };
 		_n = _n + 1;
 
 	} foreach _cost;
@@ -312,8 +313,9 @@ if((_this select 0) == "CRAFTMAG") exitwith {
 	_magazineClass = _magazines select 0;
 
 	shopholder addmagazineCargoGlobal [_magazineclass,2];
-
-	hint format["Du hast 2 magazine fuer die %1 hergestellt!",_status];
+	
+	[format["Du hast 2 magazine fuer die %1 hergestellt!",_status], true] spawn domsg;
+	//hint format["Du hast 2 magazine fuer die %1 hergestellt!",_status];
 	[player,2,format ["%1 hat 2 Magazine fuer die Waffe %2 hergestellt", name player, _status],_magazineclass,_status] remoteExec ["server_fnc_craftLog", 2];
 	closedialog 0;
 	player disablecollisionwith shopholder;
