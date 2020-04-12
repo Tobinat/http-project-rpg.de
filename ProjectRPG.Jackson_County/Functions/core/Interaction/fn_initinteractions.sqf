@@ -904,7 +904,7 @@ NoPixel_InteractionMenuItems = [
 //	],
 
 	[
-		["typeof currentcursortarget == ""Land_buildingscourthouse1"" && (myjob == ""Cop"" || myjob == ""Judge"")"],
+		["typeof currentcursortarget == ""prpg_courthouse"" && (myjob == ""Cop"" || myjob == ""Judge"")"],
 		["Jury einberufen", "  [] spawn client_fnc_startJury; ",4]
 	],
 
