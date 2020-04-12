@@ -237,32 +237,34 @@ class CfgFunctions
 			file = "Functions\core\PRPG\advcrafting";
 			class craftMenucar {};
 			class craftMenuweapon {};
-      class craftMenuclothing {};
+			class craftMenuclothing {};
 		};
 
     class workbenches {
 			file = "Functions\core\PRPG\advcrafting\workbenches";
-      class carworkbench {};
-      class clothingworkbench {};
-      class dropcarworkbench {};
-      class dropclothingworkbench {};
-      class dropweaponworkbench {};
-      class dropworkbench {};
-      class weaponworkbench {};
-      class workbench {};
-      class pickupworkbench {};
-      class pickupclothingworkbench {};
-      class pickupcarworkbench {};
-      class pickupweaponworkbench {};
+			class carworkbench {};
+			class clothingworkbench {};
+			class dropcarworkbench {};
+			class dropclothingworkbench {};
+			class dropweaponworkbench {};
+			class dropworkbench {};
+			class weaponworkbench {};
+			class workbench {};
+			class pickupworkbench {};
+			class pickupclothingworkbench {};
+			class pickupcarworkbench {};
+			class pickupweaponworkbench {};
 		};
 
     class FarmingSim {
 			file = "Functions\core\PRPG\FarmingSim";
 			class plantcotton {};
-      class plantbeans {};
-      class plantwheat {};
-      class farmgarn {};
-      class farmsand {};
+			class plantbeans {};
+			class plantwheat {};
+			class farmgarn {};
+			class farmsand {};
+			class refinegarn {};
+			class refineoil2 {};
 		};
 
 		class jobFactions {

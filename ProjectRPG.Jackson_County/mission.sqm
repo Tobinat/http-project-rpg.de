@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=2413;
+		nextID=2414;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8735.6006,179.57843,7248.9155};
-		dir[]={0.2718125,-0.60403281,0.7491889};
-		up[]={0.20601094,0.79695398,0.56782311};
-		aside[]={0.94005114,-6.2005711e-008,-0.34105846};
+		pos[]={6034.6973,100.69751,2679.5906};
+		dir[]={-0.65921366,-0.61372685,-0.43451774};
+		up[]={-0.5124281,0.7895115,-0.33776507};
+		aside[]={-0.55035168,-1.6960257e-008,0.83494574};
 	};
 };
 binarizationWanted=0;
@@ -166,6 +166,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -180,24 +198,6 @@ class CustomAttributes
 						};
 					};
 					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -3503,7 +3503,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=370;
+		items=371;
 		class Item0
 		{
 			dataType="Group";
@@ -9566,7 +9566,7 @@ class Mission
 			dataType="Marker";
 			position[]={1488.205,-7.6810002,1174.469};
 			name="oreRefinery";
-			text="Erz Verarbeitung";
+			text="Erz & Sand Verarbeitung";
 			type="respawn_unknown";
 			colorName="ColorGUER";
 			id=219;
@@ -9607,13 +9607,13 @@ class Mission
 		class Item113
 		{
 			dataType="Marker";
-			position[]={6311.6528,0,2268.7661};
+			position[]={6231.8281,0,762.00403};
 			name="sales";
-			text="Ankauf/Holz/Öl";
+			text="Ankauf Holz/Öl";
 			type="respawn_unknown";
 			colorName="ColorBrown";
 			id=224;
-			atlOffset=-25;
+			atlOffset=-8.774251;
 		};
 		class Item114
 		{
@@ -16051,7 +16051,7 @@ class Mission
 			position[]={2740.1389,73.245239,3075.8982};
 			name="bus_20";
 			type="Empty";
-			angle=110.99019;
+			angle=110.99018;
 			id=1940;
 			atlOffset=3.0517578e-005;
 		};
@@ -16869,6 +16869,16 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item370
+		{
+			dataType="Marker";
+			position[]={6316.3872,25,2271.7439};
+			name="weber";
+			text="Weber";
+			type="respawn_unknown";
+			colorName="ColorBlack";
+			id=2413;
 		};
 	};
 };

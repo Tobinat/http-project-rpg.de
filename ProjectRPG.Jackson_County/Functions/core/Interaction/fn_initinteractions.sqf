@@ -1231,10 +1231,20 @@ NoPixel_InteractionMenuItems = [
 		["((player distance (getMarkerPos ""oilRefinery"")) < 30)"],
 		["Öl raffiniern", "closedialog 0; [] spawn client_fnc_refineoil;",4]
 	],
+	
+	[
+		["((player distance (getMarkerPos ""oilRefinery"")) < 30)"],
+		["Gummi Produzieren", "closedialog 0; [] spawn client_fnc_refineoil2;",4]
+	],
 
 	[
 		["((player distance (getMarkerPos ""OreRefinery"")) < 30)"],
 		["Erze verarbeiten", "closedialog 0; [] spawn client_fnc_refinemetal1;",4]
+	],
+	
+	[
+		["((player distance (getMarkerPos ""weber"")) < 30)"],
+		["Stoff weben", "closedialog 0; [] spawn client_fnc_refinegarn;",4]
 	],
 
 	[

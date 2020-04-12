@@ -331,7 +331,7 @@ class prpg_item_sandsack : ItemCore {
 	author="PRPG";
 	descriptionShort="Ein Sandsack.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model = "@ace\addons\ace_sandbag\z\ace\addons\sandbag\data\ace_sandbag_build.p3d";
+	model = "@ace\addons\ace_sandbag\data\ace_sandbag_build.p3d";
 	allowedSlots[]={901};
 	mass=1;
 };
