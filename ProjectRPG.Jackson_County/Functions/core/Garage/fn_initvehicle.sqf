@@ -7,9 +7,7 @@ _colorBodyMaterial = _colorBody select 1;
 _colorBodyTexture = getText(configfile >> "CfgIvoryTextures" >> _colorBodyTexture >> "texture");
 _colorBodyMaterial = getText(configfile >> "CfgIvoryMaterials" >> _colorBodyMaterial >> "material");
 
-diag_log "initvehicle:";
-diag_log _colorBodyTexture;
-diag_log _colorBodyMaterial;
+hint format["%1  %2", _colorBodyTexture,_colorBodyMaterial];
 
 _car setObjectTextureGlobal 	[0, _colorBodyTexture];
 _car setObjectMaterialGlobal 	[0, _colorBodyMaterial];
