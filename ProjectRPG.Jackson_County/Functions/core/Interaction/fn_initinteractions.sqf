@@ -1287,10 +1287,10 @@ NoPixel_InteractionMenuItems = [
 		["Arbeitsamt", "[player] spawn client_fnc_startjob",4]
 	],
 
-	[
-		["myjob == ""Cop""", "cursorTarget isKindOf ""Car""", "(typeOf cursorTarget IN np_red_cars)"],
-		["Kenzeichen überpruefen", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Kennzeichen"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
-	],
+	//[
+	//	["myjob == ""Cop""", "cursorTarget isKindOf ""Car""", "(typeOf cursorTarget IN np_red_cars)"],
+	//	["Kenzeichen überpruefen", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Kennzeichen"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
+	//],
 
 	[
 		["myjob == ""Repairman"""],

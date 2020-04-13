@@ -44,6 +44,9 @@ if (_tintWindows > 0.9) then { _tintWindows = 0.9 };
 if (_tintLights < 0.1) then { _tintLights = 0.1 };
 if (_tintLights > 0.9) then { _tintLights = 0.9 };
 
+diag_log "ivoryinitvehicle:";
+diag_log _colorBodyTexture;
+diag_log _colorBodyMaterial;
 
 _car setObjectTextureGlobal 	[0, _colorBodyTexture];
 _car setObjectMaterialGlobal 	[0, _colorBodyMaterial];
