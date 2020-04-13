@@ -35,11 +35,3 @@ shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_0
 
 
 [] execVM "AdminTool\loop.sqf";
-
-//----------------- ADV ACE CPR ----------------//
-/* Konfiguration der Mod "ACE ADV CPR" */
-// Jeder kann wiederbeleben
-//adv_aceCPR_onlyDoctors = 0;
-// Wiederbelebungschance [Doktor, Sanitäter, Normalsterblicher, Defi]
-//adv_aceCPR_probabilities = [ 20, 10, 5, 50];
-//----------------- Vcom AI ----------------//
