@@ -29,14 +29,14 @@ _playerBank = _player getVariable ["sl_atm_silverlake",-1];
 _playerInv = getUnitLoadout _player;
 
 switch (_type) do {
-    case 1: {_type = "Kupno";};
-    case 2: {_type = "Wyciagniecie";};
-    case 3: {_type = "Schowanie";};
-    case 4: {_type = "Zlomowanie";};
-    case 5: {_type = "UstalenieCenySprzedaży";};
-    case 6: {_type = "KupieniePojazdu";};
+    case 1: {_type = "Kauf";};
+    case 2: {_type = "Ausgeparkt";};
+    case 3: {_type = "Eingeparkt";};
+    case 4: {_type = "Verschrottet";};
+    case 5: {_type = "Feststellung des Verkaufspreises";};
+    case 6: {_type = "Kauft";};
     case 7: {_type = "OtrzymanieKasyZSprzedaży";};
-    case 8: {_type = "KupnoSamochoduFail";};
+    case 8: {_type = "Kauf Fehlgeschlagen";};
     //case 9: {_type = "";};
 };
 

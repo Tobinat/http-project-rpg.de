@@ -10,10 +10,8 @@ scriptName "fn_init";
 #define __filename "fn_init.sqf"
 
 [] spawn {
-	diag_log "fn_init.sqf 1";
 	if (isServer && !hasInterface) exitWith {};
 
-	diag_log "fn_init.sqf 2";
 	life_perksInitialized = false;
 	life_currentExpPerks = (0 call mav_ttm_fnc_generateBasePerks);
 	life_currentExpLevel = 0;
@@ -26,9 +24,6 @@ scriptName "fn_init";
 	mav_ttm_var_bonusExp = 0;
 	mav_ttm_var_autocrafting = 0;
 	mav_ttm_var_weaponcrafting = 0;
-
-
-	diag_log "fn_init.sqf 3";
 
 	// Wait until player is ready
 	waitUntil {player == player};
