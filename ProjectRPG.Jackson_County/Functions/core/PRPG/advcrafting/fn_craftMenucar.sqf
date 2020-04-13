@@ -58,24 +58,24 @@ _PricesMaterialClasses = [
 if (mav_ttm_var_autocrafting == 1) then {
 	_carClasses = [
 		"vvv_Audi_RS6_Avant_C6",
-		"Ford_F350_XLT_SuperDuty_Black",
-		"Ford_Raptor_17_Black",
-		"A3F_BMW_M5_F10_12_Back",
-		"vvv_Audi_Q7",
-		"CadillacEldorado1959_Black"
+		//"Ford_F350_XLT_SuperDuty_Black",
+		//"Ford_Raptor_17_Black",
+		//"A3F_BMW_M5_F10_12_Back",
+		"vvv_Audi_Q7"	////KOMMA!!!!!
+		//"CadillacEldorado1959_Black"
 	];
 };
 
 if (mav_ttm_var_autocrafting == 2) then {
 	_carClasses = [
 		"vvv_Audi_RS6_Avant_C6",
-		"Ford_F350_XLT_SuperDuty_Black",
-		"Ford_Raptor_17_Black",
-		"A3F_BMW_M5_F10_12_Back",
+		//"Ford_F350_XLT_SuperDuty_Black",
+		//"Ford_Raptor_17_Black",
+		//"A3F_BMW_M5_F10_12_Back",
 		"vvv_Audi_Q7",
-		"CadillacEldorado1959_Black",
-		"A3F_X5_11_Black",
-		"BMW_X6_Black",
+		//"CadillacEldorado1959_Black",
+		//"A3F_X5_11_Black",
+		//"BMW_X6_Black",
 		"ivory_wrx",
 		"ivory_evox",
 		"ivory_supra",
@@ -86,50 +86,50 @@ if (mav_ttm_var_autocrafting == 2) then {
 if (mav_ttm_var_autocrafting == 3) then {
 	_carClasses = [
 		"vvv_Audi_RS6_Avant_C6",
-		"Ford_F350_XLT_SuperDuty_Black",
-		"Ford_Raptor_17_Black",
-		"A3F_BMW_M5_F10_12_Back",
+		//"Ford_F350_XLT_SuperDuty_Black",
+		//"Ford_Raptor_17_Black",
+		//"A3F_BMW_M5_F10_12_Back",
 		"vvv_Audi_Q7",
-		"CadillacEldorado1959_Black",
-		"A3F_X5_11_Black",
-		"BMW_X6_Black",
+		//"CadillacEldorado1959_Black",
+		//"A3F_X5_11_Black",
+		//"BMW_X6_Black",
 		"ivory_wrx",
 		"ivory_evox",
 		"ivory_supra",
 		"VVV_Aston_Martin_1964_DB5",
 		"ivory_r8",
-		"ivory_r8_spyder",
-		"A3F_911_GT2_Black",
-		"Porsche_Cayenne_12_Black",
-		"A3F_Benz_G65_AMG_Black",
-		"Nissan_370Z_Black",
-		"A3F_Nissan_GTR_12_Black"
+		"ivory_r8_spyder"	//ACHTUNG KOMMA!!!!!
+		//"A3F_911_GT2_Black",
+		//"Porsche_Cayenne_12_Black",
+		//"A3F_Benz_G65_AMG_Black",
+		//"Nissan_370Z_Black",
+		//"A3F_Nissan_GTR_12_Black"
 	];
 };
 
 if (mav_ttm_var_autocrafting == 4) then {
 	_carClasses = [
 		"vvv_Audi_RS6_Avant_C6",
-		"Ford_F350_XLT_SuperDuty_Black",
-		"Ford_Raptor_17_Black",
-		"A3F_BMW_M5_F10_12_Back",
+		//"Ford_F350_XLT_SuperDuty_Black",
+		//"Ford_Raptor_17_Black",
+		//"A3F_BMW_M5_F10_12_Back",
 		"vvv_Audi_Q7",
-		"CadillacEldorado1959_Black",
-		"A3F_X5_11_Black",
-		"BMW_X6_Black",
+		//"CadillacEldorado1959_Black",
+		//"A3F_X5_11_Black",
+		//"BMW_X6_Black",
 		"ivory_wrx",
 		"ivory_evox",
 		"ivory_supra",
 		"VVV_Aston_Martin_1964_DB5",
 		"ivory_r8",
 		"ivory_r8_spyder",
-		"A3F_911_GT2_Black",
-		"Porsche_Cayenne_12_Black",
-		"A3F_Benz_G65_AMG_Black",
-		"Nissan_370Z_Black",
-		"A3F_Nissan_GTR_12_Black",
-		"Mercedes_Benz_SL65_Black",
-		"Jaguar_XKRS_12_Black",
+		//"A3F_911_GT2_Black",
+		//"Porsche_Cayenne_12_Black",
+		//"A3F_Benz_G65_AMG_Black",
+		//"Nissan_370Z_Black",
+		//"A3F_Nissan_GTR_12_Black",
+		//"Mercedes_Benz_SL65_Black",
+		//"Jaguar_XKRS_12_Black",
 		"vvv_Aston_Martin_DB9"
 	];
 };
@@ -137,38 +137,38 @@ if (mav_ttm_var_autocrafting == 4) then {
 if (mav_ttm_var_autocrafting == 5) then {
 	_carClasses = [
 		"vvv_Audi_RS6_Avant_C6",
-		"Ford_F350_XLT_SuperDuty_Black",
-		"Ford_Raptor_17_Black",
-		"A3F_BMW_M5_F10_12_Back",
+		//"Ford_F350_XLT_SuperDuty_Black",
+		//"Ford_Raptor_17_Black",
+		//"A3F_BMW_M5_F10_12_Back",
 		"vvv_Audi_Q7",
-		"CadillacEldorado1959_Black",
-		"A3F_X5_11_Black",
-		"BMW_X6_Black",
+		//"CadillacEldorado1959_Black",
+		//"A3F_X5_11_Black",
+		//"BMW_X6_Black",
 		"ivory_wrx",
 		"ivory_evox",
 		"ivory_supra",
 		"VVV_Aston_Martin_1964_DB5",
 		"ivory_r8",
 		"ivory_r8_spyder",
-		"A3F_911_GT2_Black",
-		"Porsche_Cayenne_12_Black",
-		"A3F_Benz_G65_AMG_Black",
-		"Nissan_370Z_Black",
-		"A3F_Nissan_GTR_12_Black",
-		"Mercedes_Benz_SL65_Black",
-		"Jaguar_XKRS_12_Black",
+		//"A3F_911_GT2_Black",
+		//"Porsche_Cayenne_12_Black",
+		//"A3F_Benz_G65_AMG_Black",
+		//"Nissan_370Z_Black",
+		//"A3F_Nissan_GTR_12_Black",
+		//"Mercedes_Benz_SL65_Black",
+		//"Jaguar_XKRS_12_Black",
 		"vvv_Aston_Martin_DB9",
-		"Rolls_Roxce_Dawn_Black",
-		"Chevrolet_Camaro_ZL1_13_Black",
+		//"Rolls_Roxce_Dawn_Black",
+		//"Chevrolet_Camaro_ZL1_13_Black",
 		"ivory_lp560",
 		"ivory_mp4",
 		"ivory_f1",
 		"ivory_rev",
 		"ivory_ccx",
-		"ivory_veryon",
-		"Aston_Martin_Vanquish_13_Black",
-		"vvv_Aston_Martin_Rapide",
-		"A3F_Corvette_Stingray_14_Black"
+		//"ivory_veryon",
+		//"Aston_Martin_Vanquish_13_Black",
+		"vvv_Aston_Martin_Rapide"	//KOMMA!!!!!!!
+		//"A3F_Corvette_Stingray_14_Black"
 	];
 };
 
@@ -176,19 +176,19 @@ _PricesCarClasses = [
 	//vvv_Audi_RS6_Avant_C6
 	[1,0,3,4,1,2,1,4,0,4,1,7,0],
 	//Ford_F350_XLT_SuperDuty_Black
-	[1,0,7,4,1,2,1,5,0,2,1,6,0],
+	//[1,0,7,4,1,2,1,5,0,2,1,6,0],
 	//Ford_Raptor_17_Black
 	[1,0,6,4,1,2,1,5,0,4,1,6,0],
 	//A3F_BMW_M5_F10_12_Back
-	[1,0,3,4,1,2,1,5,0,4,1,7,0],
+	//[1,0,3,4,1,2,1,5,0,4,1,7,0],
 	//vvv_Audi_Q7
 	[1,0,4,4,1,2,1,5,0,4,1,7,0],
 	//CadillacEldorado1959_Black
-	[1,0,3,4,1,2,1,4,0,2,1,0,0],
+	//[1,0,3,4,1,2,1,4,0,2,1,0,0],
 	//A3F_X5_11_Black
-	[1,0,4,4,1,2,1,5,0,4,1,7,0],
+	//[1,0,4,4,1,2,1,5,0,4,1,7,0],
 	//BMW_X6_Black
-	[1,0,4,4,1,2,1,0,5,4,1,7,0],
+	//[1,0,4,4,1,2,1,0,5,4,1,7,0],
 	//ivory_wrx
 	[1,0,3,4,1,2,1,4,0,4,1,5,0],
 	//ivory_evox
@@ -202,25 +202,25 @@ _PricesCarClasses = [
 	//ivory_r8_spyder
 	[0,1,3,4,1,2,1,0,2,2,1,0,0],
 	//A3F_911_GT2_Black
-	[0,1,3,4,1,2,1,0,2,2,1,3,4],
+	//[0,1,3,4,1,2,1,0,2,2,1,3,4],
 	//Porsche_Cayenne_12_Black
-	[1,0,4,4,1,2,1,0,5,4,1,7,0],
+    //[1,0,4,4,1,2,1,0,5,4,1,7,0],
 	//A3F_Benz_G65_AMG_Black
-	[0,1,5,4,1,2,1,0,5,4,1,7,0],
+	//[0,1,5,4,1,2,1,0,5,4,1,7,0],
 	//Nissan_370Z_Black
-	[0,1,3,4,1,2,1,0,1,2,1,3,2],
+	//[0,1,3,4,1,2,1,0,1,2,1,3,2],
 	//A3F_Nissan_GTR_12_Black
-	[0,1,3,4,1,2,1,0,4,2,1,3,0],
+	//[0,1,3,4,1,2,1,0,4,2,1,3,0],
 	//Mercedes_Benz_SL65_Black
-	[0,1,3,4,1,2,1,0,4,2,1,3,0],
+	//[0,1,3,4,1,2,1,0,4,2,1,3,0],
 	//Jaguar_XKRS_12_Black
-	[0,1,3,4,1,2,1,0,4,2,1,3,0],
+	//[0,1,3,4,1,2,1,0,4,2,1,3,0],
 	//vvv_Aston_Martin_DB9
 	[0,1,3,4,1,2,1,0,4,2,1,3,0],
 	//Rolls_Roxce_Dawn_Black
-	[0,1,2,4,1,2,1,0,4,2,1,0,0],
+	//[0,1,2,4,1,2,1,0,4,2,1,0,0],
 	//Chevrolet_Camaro_ZL1_13_Black
-	[0,1,3,4,1,2,1,0,4,2,1,3,0],
+	//[0,1,3,4,1,2,1,0,4,2,1,3,0],
 	//ivory_lp560
 	[0,1,3,4,1,2,1,0,2,2,1,3,0],
 	//ivory_mp4
@@ -232,13 +232,13 @@ _PricesCarClasses = [
 	//ivory_ccx
 	[0,1,3,4,1,2,1,0,2,2,1,3,0],
 	//ivory_veryon
-	[0,1,3,4,1,2,1,0,2,2,1,3,0],
+	//[0,1,3,4,1,2,1,0,2,2,1,3,0],
 	//Aston_Martin_Vanquish_13_Black
-	[0,1,3,4,1,2,1,0,4,2,1,3,0],
+	//[0,1,3,4,1,2,1,0,4,2,1,3,0],
 	//vvv_Aston_Martin_Rapide
-	[0,1,3,4,1,2,1,0,2,4,1,5,0],
+	[0,1,3,4,1,2,1,0,2,4,1,5,0]    //KOMMA!!!!!!!!
 	//A3F_Corvette_Stingray_14_Black
-	[0,1,3,4,1,2,1,0,2,2,1,3,0]
+	//[0,1,3,4,1,2,1,0,2,2,1,3,0]
 ];
 
 uisleep 0.05;

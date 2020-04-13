@@ -1,5 +1,8 @@
 
-if !(cursorTarget == "PRPG_WorkBench_Weapon_01_F") exitWith {};
+if (typeof cursorObject == "prpg_workbench_weapon") exitWith {
+	deletevehicle cursorTarget;
+	player additem "prpg_workbench_weapon_kit";
+};
 
-deletevehicle cursorTarget;
-player additem "PRPG_WorkBench_Weapon_item";
+//deletevehicle cursorTarget;
+//player additem "prpg_workbench_weapon_kit";

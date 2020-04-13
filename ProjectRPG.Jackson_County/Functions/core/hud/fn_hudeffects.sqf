@@ -114,11 +114,11 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 		{
 			im_hurt = true;
 			if( (_myInjuries select 10) == 1 ) then
-		{
-			_disease ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\sick.paa'/><t size='0.03px'> Du hast eine Erkältung. </t>",player];
-		} else {
+			{
+				_disease ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\sick.paa'/><t size='0.03px'> Du hast eine Erkältung. </t>",player];
+			} else {
 			_disease ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\sick.paa'/><t size='0.03px'> Du fühlst dich krank. </t>",player];
-		};
+			};
 
 
 			_chances = round (random 600);
@@ -175,8 +175,8 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 					[] call client_fnc_requestMedic;
 				};
 				life_unconscious = true;
-				};
 			};
+		};
 			
 		if(!(player getVariable "ACE_isUnconscious") && life_unconscious) then {
 				life_unconscious = false;

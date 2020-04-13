@@ -5,7 +5,7 @@ Cutting down trees by koil
 if(isNil "totalLogs") then { totallogs = 0; };
 _tree = cursorobject;
 if (str _tree find ": t_" > -1) then {
-	if(_tree IN mytrees) exitwith { ["Oh der Baum ist leer finde einen anderen Baum!", true] spawn domsg; };
+	if(_tree IN mytrees) exitwith { ["Such dir einen anderen Baum!", true] spawn domsg; };
 	_sound = round(random 5);
 	switch(_sound) do {
 		case 0: {
@@ -34,7 +34,7 @@ if (str _tree find ": t_" > -1) then {
 			[] call client_fnc_packLogs;
 			["TreeCutDown"] spawn mav_ttm_fnc_addExp;
 		} else {
-			["Fehler","Dein Fahrzeug ist nicht in der Nähe",[255,0,0,1],""] call Client_fnc_showNotification;
+			["Fehler","Wo ist dein LKW?",[255,0,0,1],""] call Client_fnc_showNotification;
 			//hint "Du brauchst die Holzfaeller Lizenz";
 		};
 	};

@@ -327,7 +327,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myJob == ""Mafia"" && (getpos player) distance [1055,3660,0.014] < 20"],
+		["myJob == ""Mafia"" && (getpos player) distance [7600.76,6316.81,0.00143814] < 20"],
 		["Vahrzeug Verkaufen", "['Verschrotten',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask;",2]
 	],
 
@@ -686,6 +686,11 @@ NoPixel_InteractionMenuItems = [
 //		["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
 //	],
 
+//	[
+//		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+//		["Cop Westen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copvests""] spawn client_fnc_LoadStore;",3]
+//	],
+
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
 		["EMS Ausrüstung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""medic""] spawn client_fnc_LoadStore;",3]
@@ -771,8 +776,8 @@ NoPixel_InteractionMenuItems = [
 
 
 	[
-		["str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 && (getpos player) distance [1055,3660,0.014] < 20"],
-		["Polizei Parkplatz", "[CurrentCursorTarget] call Client_fnc_openCarYard",3]
+		["str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 && (getpos player) distance [7600.76,6316.81,0.00143814] < 20"],
+		["Abschlepphof", "[CurrentCursorTarget] call Client_fnc_openCarYard",3]
 	],
 
 	[
@@ -899,7 +904,7 @@ NoPixel_InteractionMenuItems = [
 //	],
 
 	[
-		["typeof currentcursortarget == ""Land_buildingscourthouse1"" && (myjob == ""Cop"" || myjob == ""Judge"")"],
+		["typeof currentcursortarget == ""prpg_courthouse"" && (myjob == ""Cop"" || myjob == ""Judge"")"],
 		["Jury einberufen", "  [] spawn client_fnc_startJury; ",4]
 	],
 
@@ -971,42 +976,42 @@ NoPixel_InteractionMenuItems = [
 
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Normal_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_normal"""],
 		["Werkbank", "createdialog ""client_Craft_Menu""",3]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Clothing_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_clothing"""],
 		["Kleidungswerkbank", "createdialog ""client_Craft_Menu_clothing""",3]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Weapon_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_weapon"""],
 		["Waffenwerkbank", "createdialog ""client_Craft_Menu_weapon""",3]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Car_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_car"""],
 		["Automobilwerkbank", "createdialog ""client_Craft_Menu_car""",3]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Normal_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_normal"""],
 		["Werkbank einsammeln", "[] call client_fnc_pickupworkbench",4]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Clothing_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_clothing"""],
 		["Werkbank einsammeln", "[] call client_fnc_pickupclothingworkbench",4]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Weapon_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_weapon"""],
 		["Werkbank einsammeln", "[] call client_fnc_pickupweaponworkbench",4]
 	],
 
 	[
-		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""PRPG_WorkBench_Car_01_F"""],
+		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_car"""],
 		["Werkbank einsammeln", "[] call client_fnc_pickupcarworkbench",4]
 	],
 
@@ -1100,7 +1105,9 @@ NoPixel_InteractionMenuItems = [
 		["ARSENAL", "[cursorobject] spawn client_fnc_vars"]
 	],
  */
-	/*[
+	/*
+	//Geldtransporte
+	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 100K", "[2] spawn client_fnc_takeSuitcase"]
 	],
@@ -1224,10 +1231,20 @@ NoPixel_InteractionMenuItems = [
 		["((player distance (getMarkerPos ""oilRefinery"")) < 30)"],
 		["Öl raffiniern", "closedialog 0; [] spawn client_fnc_refineoil;",4]
 	],
+	
+	[
+		["((player distance (getMarkerPos ""oilRefinery"")) < 30)"],
+		["Gummi Produzieren", "closedialog 0; [] spawn client_fnc_refineoil2;",4]
+	],
 
 	[
 		["((player distance (getMarkerPos ""OreRefinery"")) < 30)"],
 		["Erze verarbeiten", "closedialog 0; [] spawn client_fnc_refinemetal1;",4]
+	],
+	
+	[
+		["((player distance (getMarkerPos ""weber"")) < 30)"],
+		["Stoff weben", "closedialog 0; [] spawn client_fnc_refinegarn;",4]
 	],
 
 	[

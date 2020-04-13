@@ -1,34 +1,49 @@
+params ["_player", "_uid", "_checkstr", "_check", "_booli", "_points", "_fetchstr", "_fetch", "_returned", "_phonemessages", "_mail", "_garage", "_res", "_items", "_cash", "_bank", "_cop", "_ems", "_position", "_bankAccount", "_phoneBackground", "_messages", "_statuses", "_houselevel", "_housecontent", "_shopcontent", "_shopname", "_mafia", "_fire", "_legal", "_doughnuts", "_respawn", "_queryStr", "_prison", "_moneyOwed", "_inUseVehicles", "_mycarinfo", "_info", "_pia", "_mayor", "_house", "_shop", "_name"];
+
+
 _player = _this select 0;
 _uid = getPlayerUID _player;
-waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
+waitUntil {
+if (isNil {extDB_SQL_CUSTOM_ID}) then { false } else { true };
+};
+//waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
+//diag_log "initStats phase 1";
 _checkstr = format ["existPlayerInfo:%1", _uid];
 _check = [0, _checkstr] call ExternalS_fnc_ExtDBquery;
 _booli = (_check select 0) select 0;
 
 diag_log format["init stats %1 %2", _uid,_booli];
 _points = 0;
-
 if (_booli) then {
+
+	//diag_log "initStats phase 2";
 	_fetchstr = format ["getMessages:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	_phonemessages = _fetch;
+	//diag_log "initStats:";
+	//diag_log _phonemessages;
 
 	_fetchstr = format ["getMail:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	_mail = _fetch;
+	//diag_log "initStats:";
+	//diag_log _mail;
 
 	_fetchstr = format ["getGarage:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	_garage = _fetch;
+	//diag_log "initStats:";
+	//diag_log _garage;
 
 	_fetchstr = format ["playerInfo:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
+	//diag_log "initStats:";
+	//diag_log _returned;
 	
-
 	_res = _fetch select 0;
 	_items = _res select 0;
 	_cash = _res select 1;
@@ -40,6 +55,16 @@ if (_booli) then {
 	_phoneBackground = _res select 7;
 	_messages = _res select 8;
 	_statuses = _res select 9;
+	
+	_houselevel = _res select 10;
+	_housecontent = _res select 11;
+	_shopcontent = _res select 12;
+	_shopname = _res select 13;
+	_mafia = _res select 14;
+	_fire = _res select 15;
+	_legal = _res select 16;
+	_doughnuts = _res select 17;
+	_respawn = _res select 18;
 
 	_queryStr = format["getSLPDPrison_active:%1:%2", _uid, 1];
 	_prison = [_queryStr, 2] call ExternalS_fnc_ExtDBasync;
@@ -59,7 +84,7 @@ if (_booli) then {
 	MafiaLoan1 pushback _player;
 	MafiaLoan2 pushback (_statuses select 11);
 	};
-
+	/*
 	_houselevel = _res select 10;
 	_housecontent = _res select 11;
 	_shopcontent = _res select 12;
@@ -69,11 +94,10 @@ if (_booli) then {
 	_legal = _res select 16;
 	_doughnuts = _res select 17;
 	_respawn = _res select 18;
-
+	*/
 	_messages = [];
 
-	_player setvariable ["getunitloadout",_items,false];
-
+	_player setvariable ["getunitloadout", _items, false];
 	_player setVariable ["sl_wallet_silverlake", _cash, false];
 	_player setVariable ["sl_atm_silverlake", _bank, false];
 	_player setVariable ["bankAccount", _bankAccount, false];
@@ -84,17 +108,13 @@ if (_booli) then {
 	_player setVariable ["legal", _legal, false];
 	_player setVariable ["garage", _garage, false];
 	_player setVariable ["doughnuts", _doughnuts, false];
-
 	_player setVariable ["phoneBackground", _phoneBackground, false];
 	_player setVariable ["messages", _messages, false];
 	_player setVariable ["statuses", _statuses, false];
-
 	_player setVariable ["houselevel", _houselevel, false];
-
 	_player setVariable ["housecontent", _housecontent, false];
 	_player setVariable ["shopcontent", _shopcontent, false];
 	_player setVariable ["shopname", _shopname, false];
-
 	_player setVariable ["respawn", _respawn, false];
 
 	_inUseVehicles = [];
@@ -115,7 +135,6 @@ if (_booli) then {
 		_mayor = true;
 		theMayor = _player;
 	};
-	
 	/*_mayor = false;
 	if(_uid == call compile format["%1",currentmayor]) then { _mayor = true; theMayor = _player; };
 
@@ -180,7 +199,7 @@ if (_booli) then {
 
 	_player setVariable ["house", _house, false];
 	_player setVariable ["shop", _shop, false];
-
+	//diag_log "initStats phase 3";
 	_house setVariable ["house", _player, false];
 	_shop setVariable ["shop", _player, false];
 	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28 %29",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points];																																																																																																																																																													//,_mayor
@@ -203,7 +222,6 @@ if (_booli) then {
 	_houselevel = 1;
 	_housecontent = [[[],[]],[[],[]],[[],[]],[[],[]]];
 	_shopcontent = [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]];
-
 	_shopname = format["Shop %1", _name];
 	_insertstr = format ["insertPlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:%18", _uid, _name, _items, _cash, _bank, _cop, _ems, _position, _phoneBackground, _messages, _statuses, _houselevel, _housecontent, _shopcontent, _shopname, _mafia, _fire, _legal];
 	_insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
@@ -221,7 +239,6 @@ if (_booli) then {
 	sleep 1;
 
 	[_player] spawn Server_fnc_initStats;
-
 	_startercars = ["Jonzie_XB","ADM_1969_Camaro","Jonzie_Mini_Cooper","Jonzie_Ceed","ADM_1964_Impala","ivory_190e"];
 	_class = _startercars call BIS_fnc_selectRandom;
 

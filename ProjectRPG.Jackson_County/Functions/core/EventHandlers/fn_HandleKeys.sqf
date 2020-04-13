@@ -97,7 +97,7 @@ switch (_code) do
 
 
 
-
+	// Q Key
 	case 16:
 	{
 		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then
@@ -110,7 +110,7 @@ switch (_code) do
 			[] spawn client_fnc_raisebasket;
 		};
 	};
-
+	// E Key
 	case 18:
 	{
 		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then
@@ -140,7 +140,7 @@ switch (_code) do
 
 
 	};
-
+	// 2 Key
 	case 3:
 	{
 		if(isNil "LoggedIn") then { LoggedIn = false; };
@@ -149,7 +149,7 @@ switch (_code) do
 
 
 	isClass (ConfigFile >> "CfgVehicles" >> "ivory_wrx_2");
-
+	// W Key
 	case 17:
 	{
 	    if(!currentlyUpdating) then {
@@ -186,22 +186,22 @@ switch (_code) do
 		 	};
         };
     };
-
+	// 1 Key
 	case 2:
 	{
 
 
 		if (_ctrlKey && myjob == "Cop") then {
-			if(handgunweapon player == "taser") then {
+			if(handgunweapon player == "DDOPP_X26") then {
 				_weapon = handgunweapon player;
 				player removeweapon _weapon; player additemtobackpack _weapon;
 				[] spawn {
 
-					if("RH_uspm" in backpackItems Player) then {
-						player action ["SwitchWeapon", player, player, 100]; uisleep 0.75; player removeitem "RH_uspm"; player addweapon "RH_uspm"; player selectweapon "RH_uspm"; player addItemToBackPack "vvv_np_magazine_taser";
+					if("RH_m9" in backpackItems Player) then {
+						player action ["SwitchWeapon", player, player, 100]; uisleep 0.75; player removeitem "RH_m9"; player addweapon "RH_m9"; player selectweapon "RH_m9"; player addItemToBackPack "DDOPP_1Rnd_X26";
 						444 cutRsc ["HUDguncop","PLAIN"];
 					} else {
-						hint "ERROR: No USP Pistol in backpack";
+						["ERROR: Keine M9 im Rucksack!", false] spawn domsg;
 					};
 
 				};
@@ -210,11 +210,11 @@ switch (_code) do
 				player removeweapon _weapon; player additemtobackpack _weapon;
 				[] spawn {
 
-					if("taser" in backpackItems Player) then {
-						player action ["SwitchWeapon", player, player, 100]; uisleep 0.75; player removeitem "taser"; player addweapon "taser"; player selectweapon "taser"; player addItemToBackpack "RH_16Rnd_40cal_usp";
+					if("DDOPP_X26" in backpackItems Player) then {
+						player action ["SwitchWeapon", player, player, 100]; uisleep 0.75; player removeitem "DDOPP_X26"; player addweapon "DDOPP_X26"; player selectweapon "DDOPP_X26"; player addItemToBackpack "RH_15Rnd_9x19_M9";
 						444 cutRsc ["HUDtasercop","PLAIN"];
 					} else {
-						hint "ERROR: No Taser in backpack";
+						["ERROR: Kein Taser im Rucksack!", false] spawn domsg;
 					};
 
 				};
@@ -222,7 +222,7 @@ switch (_code) do
 			_handle = true;
 		};
 	};
-
+	// Windows Key
 	case 219:
 	{
 		_spikeStrips = (nearestObjects[getPos player,["CG_Spikes_Extended"],3]) select 0;
@@ -270,7 +270,7 @@ switch (_code) do
 
 
 
-
+	// 5 Key
 	case 6:
 	{
 
@@ -297,7 +297,7 @@ switch (_code) do
 			};
 		};
 	};
-
+	// 6 Key
 	case 7:
 	{
 		if (_shift) then { _handle = true; };
@@ -327,6 +327,7 @@ switch (_code) do
 	    };
 	};
 
+	// H Key
 	//Holster / recall weapon.
 	case 35:
 	{
@@ -342,6 +343,8 @@ switch (_code) do
 			};
 		};
   	};
+	
+	//F1 Key
 	case 59:
 	{
 		if (_shift && !_ctrlKey && !_alt) then {

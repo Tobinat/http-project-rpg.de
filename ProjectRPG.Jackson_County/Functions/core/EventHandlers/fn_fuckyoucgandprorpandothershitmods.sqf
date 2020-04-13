@@ -6,10 +6,10 @@ _item = lbData [_idc, _selectedIndex];
 _current = {_x == _item} count magazines player;
 if(_current == 0) exitwith {};
 if (_item == "NP_DrugTable") then { [] spawn client_fnc_usedrugtable; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
-if (_item == "PRPG_WorkBench_Weapon_item") then {if(player distance myhouse > 30) then {["Mach das in deinem Haus!",true] spawn domsg;} else { [] spawn client_fnc_weaponworkbench; [_item,0] spawn client_fnc_removeitem; closeDialog 0;}; };
-if (_item == "PRPG_WorkBench_Clothing_item") then {if(player distance myhouse > 30) then {["Mach das in deinem Haus!",true] spawn domsg;} else { [] spawn client_fnc_clothingworkbench; [_item,0] spawn client_fnc_removeitem; closeDialog 0;}; };
-if (_item == "PRPG_WorkBench_Car_item") then {if(player distance myhouse > 30) then {["Mach das in deinem Haus!",true] spawn domsg;} else { [] spawn client_fnc_carworkbench; [_item,0] spawn client_fnc_removeitem; closeDialog 0;}; };
-if (_item == "PRPG_WorkBench_Normal_item") then {if(player distance myhouse > 30) then {["Mach das in deinem Haus!",true] spawn domsg;} else { [] spawn client_fnc_workbench; [_item,0] spawn client_fnc_removeitem; closeDialog 0;}; };
+if (_item == "prpg_workbench_weapon_kit") then {if(player distance myhouse > 30) then {["Mach das in deinem Haus!",true] spawn domsg;} else { [] spawn client_fnc_weaponworkbench; [_item,0] spawn client_fnc_removeitem; closeDialog 0;}; };
+if (_item == "prpg_workbench_clothing_kit") then {if(player distance myhouse > 30) then {["Mach das in deinem Haus!",true] spawn domsg;} else { [] spawn client_fnc_clothingworkbench; [_item,0] spawn client_fnc_removeitem; closeDialog 0;}; };
+if (_item == "prpg_workbench_car_kit") then {if(player distance myhouse > 30) then {["Mach das in deinem Haus!",true] spawn domsg;} else { [] spawn client_fnc_carworkbench; [_item,0] spawn client_fnc_removeitem; closeDialog 0;}; };
+if (_item == "prpg_workbench_normal_kit") then {if(player distance myhouse > 30) then {["Mach das in deinem Haus!",true] spawn domsg;} else { [] spawn client_fnc_workbench; [_item,0] spawn client_fnc_removeitem; closeDialog 0;}; };
 if (_item == "NP_GrowingPlot") then { [] spawn client_fnc_plantweed; closeDialog 0; };
 if (_item == "np_water") then { ["remove","unhealthiness",1] call client_fnc_sustain; ["add","drink",100] call client_fnc_sustain; [_item,20] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item IN ["np_sausage","np_chickensoup","np_peasoup","np_psoup","np_beefsoup","np_lettucesoup","np_tuna"]) then { ["remove","unhealthiness",1] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["add","drink",10] call client_fnc_sustain; ["add","Poop",10] call client_fnc_sustain;  [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
@@ -26,7 +26,7 @@ if (_item IN
 	["np_hpizza","np_mpizza","np_cpizza","np_spizza","np_vpizza","np_chdonuts","np_jdonuts","np_cdonuts","np_donuts","np_happymeal","np_bigmac","np_mchicken","np_quater","np_cheeseburger","np_hamburger","np_hotdog","np_mhotdog","np_kmhotdog","np_bbqhotdog","np_cheesehotdog"]
 	) then { ["add","drink",60] call client_fnc_sustain; ["add","food",60] call client_fnc_sustain; ["add","unhealthiness",6] call client_fnc_sustain; ["add","Poop",10] call client_fnc_sustain; [_item,20] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item IN ["np_ugroceries"] ) then { ["add","drink",100] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["add","unhealthiness",4] call client_fnc_sustain;  [_item,80] spawn client_fnc_removeitem; closeDialog 0; };
-if (_item == "NP_drillitem") then {_cops = (count currentcop); if(_cops < 5) exitwith { hint "Es sind weniger als 5 Polizisten im Dienst."; }; [] spawn client_fnc_bankrobbery; closeDialog 0; };
+if (_item == "NP_drillitem") then {/*_cops = (count currentcop); if(_cops < 5) exitwith { hint "Es sind weniger als 5 Polizisten im Dienst."; };*/ [] spawn client_fnc_bankrobbery; closeDialog 0; };
 //if (_item == "CG_C4") then {_cops = (count currentcop); if(_cops < 3) exitwith { hint "Za mało policjantów - 3+"; }; [] spawn client_fnc_blowdoor; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 //if (_item == "CG_Dynamite") then { [] spawn client_fnc_dynamiteFishing; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "CG_HackingTool") then { [] spawn client_fnc_hackdoor; closeDialog 0; };

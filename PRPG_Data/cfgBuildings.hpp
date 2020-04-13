@@ -153,39 +153,62 @@ class sl_billboard_2: sl_billboard_1
 
 
 class kif_speedcam: Building
+{
+	model = "\PRPG_Data\models\speedcam\speedcam.p3d";
+	scope = 2;
+	displayName = "Speed Camera";
+	vehicleclass = "kif_client";
+	placement = "vertical";
+	/*class Reflectors
 	{
-		model = "\PRPG_Data\models\speedcam\speedcam.p3d";
-		scope = 2;
-		displayName = "Speed Camera";
-		vehicleclass = "kif_client";
-		placement = "vertical";
-		/*class Reflectors
+		class Flash
 		{
-			class Flash
+			color[] = {3000,3000,3000};
+			ambient[] = {5,5,5};
+			position = "flash_start";
+			direction = "flash_end";
+			hitpoint = "flash";
+			selection = "flash";
+			size = 1;
+			innerAngle = 100;
+			outerAngle = 179;
+			coneFadeCoef = 10;
+			intensity = 1.6;
+			useFlare = "true";
+			dayLight = "true";
+			flareSize = 1;
+			class Attenuation
 			{
-				color[] = {3000,3000,3000};
-				ambient[] = {5,5,5};
-				position = "flash_start";
-				direction = "flash_end";
-				hitpoint = "flash";
-				selection = "flash";
-				size = 1;
-				innerAngle = 100;
-				outerAngle = 179;
-				coneFadeCoef = 10;
-				intensity = 1.6;
-				useFlare = "true";
-				dayLight = "true";
-				flareSize = 1;
-				class Attenuation
-				{
-					start = 50;
-					constant = 0;
-					linear = 0;
-					quadratic = 1;
-					hardLimitStart = 100;
-					hardLimitEnd = 200;
-				};
+				start = 50;
+				constant = 0;
+				linear = 0;
+				quadratic = 1;
+				hardLimitStart = 100;
+				hardLimitEnd = 200;
 			};
-		};*/
-	};
+		};
+	};*/
+};
+
+
+
+class prpg_workbench_normal: Land_Workbench_01_F
+{
+	scope=2;
+	displayName="Werkbank (Normal)";
+};
+class prpg_workbench_car: Land_Workbench_01_F
+{
+	scope=2;
+	displayName="Werkbank (Autos)";
+};
+class prpg_workbench_weapon: Land_Workbench_01_F
+{
+	scope=2;
+	displayName="Werkbank (Waffen)";
+};
+class prpg_workbench_clothing: Land_Workbench_01_F
+{
+	scope=2;
+	displayName="Werkbank (Kleidung)";
+};

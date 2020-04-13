@@ -25,7 +25,7 @@ _pumpe setFuel 0;
 _pumpe animate ["bort_r", 1];
 _pumpe animate ["bort_l", 1];
 
-hint "Dein LKW bohrt nun nach Öl. Dies Dauert einige Zeit";
+hint "Dein LKW bohrt nun nach Öl. Dies dauert einige Zeit";
 
 sleep 1;
 

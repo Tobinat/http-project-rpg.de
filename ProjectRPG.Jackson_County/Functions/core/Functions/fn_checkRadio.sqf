@@ -44,7 +44,7 @@ for "_i" from 0 to 1 step 0 do  {
 			}
 			else
 			{
-				["Wirf ein Radio oder Telefon.", false] spawn domsg;
+				["Wirf ein Radio oder Telefon weg.", false] spawn domsg;
 				{
 					if(_forEachIndex != 0) then
 					{
