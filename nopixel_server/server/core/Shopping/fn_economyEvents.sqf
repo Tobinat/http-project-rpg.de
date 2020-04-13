@@ -15,13 +15,13 @@
 
 private["_numbers","_selected","_debug"];
 
-diag_log "Uruchomiono economyEvents!";
+diag_log "Wirtschaftsereignisse gestartet!";
 _debug = 0;
 
 if (_debug == 1) then {diag_log "Udało mi się wykonać while {true}!";};
         
 sleep 180;
-if (_debug == 1) then {diag_log "Pomyślnie wykonałem sleep 1800 (fn_economyEvents.sqf)";};
+if (_debug == 1) then {diag_log " (fn_economyEvents.sqf)";};
         
 _numbers = ["0","1","2","3","4","5"];
 _selected = _numbers call BIS_fnc_selectRandom;
