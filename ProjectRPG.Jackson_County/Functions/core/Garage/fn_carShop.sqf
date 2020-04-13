@@ -83,8 +83,8 @@ _civilianVehicle = [
 	//["A3F_Benz_G65_AMG_Black",90500],
 	//["A3F_Nissan_GTR_12_Black",65800],
 	//["A3F_911_GT2_12_Black",80600],
-	["Kenworth_T440_Box_Black",120000],
-	["Smart_Black",10000]
+	//["Kenworth_T440_Box_Black",120000],
+	//["Smart_Black",10000]
 	//["Rolls_Royce_Dawn_Black",125500],
 	//["Porsche_Cayenne_12_Black",9770000],
 	//["Nissan_370Z_Black",65000],
@@ -99,6 +99,7 @@ _civilianVehicle = [
 	//["Dodge_Ram_SRT10_Black",82900]
 	//["Chevrolet_Camaro_ZL1_13_Black",56500]
 	//["CadillacEldorado1959_Black",62050]
+	["prpg_kamaz_6550",85000]
 
 ];
 
@@ -161,7 +162,7 @@ if(str CurrentCursorTarget find "embarcadero" > -1) then {
 	_civilianVehicle = [
 		["B_Boat_Transport_01_F",15000],
 		["Lexx_Jetboat_H",30000],
-		["POP_Speed_yatch",300000],
+		//["POP_Speed_yatch",300000],
 		["vvv_NewYacht",1000000],
 		["Mattaust_Fisher",350000]
 	];
@@ -169,15 +170,15 @@ if(str CurrentCursorTarget find "embarcadero" > -1) then {
 if((typeOF cursorTarget) find "Hangar_F" > -1) then {
 	_type = "PLANE";
 	_civilianVehicle = [
-		["sab_albatrosb2_civ",150000],
-		["sab_albatrosd2",160000],
+		//["sab_albatrosb2_civ",150000],
+		//["sab_albatrosd2",160000],
 		["C_Plane_Civil_01_F", 200000],
 		//["sab_piper", 200000],
-		["Sab_an22", 300000],
-		["sab_do228", 600000],
-		["Sab_an22", 600000],
-		["Sab_an12",700000],
-		["sab_falcon", 1000000],
+		//["Sab_an22", 300000],
+		//["sab_do228", 600000],
+		//["Sab_an22", 600000],
+		//["Sab_an12",700000],
+		//["sab_falcon", 1000000],
 		["B_T_VTOL_01_infantry_F", 2000000]
 	];
 };

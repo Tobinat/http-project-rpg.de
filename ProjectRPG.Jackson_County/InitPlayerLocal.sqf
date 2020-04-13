@@ -79,7 +79,7 @@ player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed
         ( _display displayCtrl _x ) ctrlRemoveAllEventHandlers "buttonclick";
 		( _display displayCtrl _x ) ctrlEnable false;
     }forEach [ 44150, 44146, 44147 ];
-	__display displayAddEventHandler ["KeyDown", "if ((_this select 1) in [19,29,24]) then {true}"];
+	_display displayAddEventHandler ["KeyDown", "if ((_this select 1) in [19,29,24]) then {true}"];
 } ] call BIS_fnc_addScriptedEventHandler;
 
 [Client_fnc_HudEffects, 3] execFSM "call.fsm";
