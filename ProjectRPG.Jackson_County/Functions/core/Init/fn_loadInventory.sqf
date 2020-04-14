@@ -134,6 +134,7 @@ licenseArray = (_statuses select 8);
 
 player setVariable ["playerInjuries", _myInjuries, true];
 player setVariable ["corona",0,true];
+player setVariable ["krank",false,true];
 
 _drugEffects = (_statuses select 10);
 

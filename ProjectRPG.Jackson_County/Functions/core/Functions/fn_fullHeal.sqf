@@ -1,6 +1,8 @@
 im_dead = false;
 player setvariable["playerInjuries",[0,0,0,0,0,0,0,0,0,0,0],true];
 player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false]; 
+player setVariable["corona"0,true];
+player setVariable["krank",false,false];
 [player,""] remoteExec ["client_fnc_animSync"];
 //["set",0] call Client_Fnc_DoHealth;
 [player] call ace_medical_treatment_fnc_fullHealLocal;

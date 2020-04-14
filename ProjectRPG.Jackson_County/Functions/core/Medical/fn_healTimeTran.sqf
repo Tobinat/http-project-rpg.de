@@ -8,4 +8,5 @@ player removeMagazine _item;
 5 cutText ["","PLAIN"];
 _myInjuries set [_arrayCount, 0]; 
 _user setVariable ["playerInjuries",_myInjuries,true]; 
+_user setVariable ["krank",false,true];
 imHealing = false;
