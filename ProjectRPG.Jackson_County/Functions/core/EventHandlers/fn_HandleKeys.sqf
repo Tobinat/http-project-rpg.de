@@ -76,7 +76,7 @@ switch (_code) do
 					};
 					["Fahrzeug aufgeschlossen", false] spawn doquickmsg;
 
-					playSound3D ["cg_mission_files\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
+					playSound3D ["prpg_data\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
 
 				} else {
 
@@ -88,7 +88,7 @@ switch (_code) do
 
 					["Fahrzeug abgeschlossen", false] spawn doquickmsg; 
 
-					playSound3D ["cg_mission_files\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
+					playSound3D ["prpg_data\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
 				};
 			};
 		};

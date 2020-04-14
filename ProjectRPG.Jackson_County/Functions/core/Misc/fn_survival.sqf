@@ -36,16 +36,16 @@ if( client_hunger < 2 || client_thirst < 2 ) exitwith {
 	//["Remove",0.05] call client_fnc_doHealth;
 	["Remove","Drink",2] call client_fnc_sustain;
 	["Remove","Food",2] call client_fnc_sustain;
-	playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
+	playSound3D ["PRPG_data\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
 };
 
 if( client_hunger < 15 || client_thirst < 15 ) then {
 	[7] spawn client_fnc_HudElements;
 	if( client_hunger < 15 || client_thirst < 15 ) then {
-		playSound3D ["cg_sndimg\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
+		playSound3D ["PRPG_data\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
 	};
 	if( client_poop > 80 ) then {
-		playSound3D ["cg_sndimg\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
+		playSound3D ["PRPG_data\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
 	};
 };
 

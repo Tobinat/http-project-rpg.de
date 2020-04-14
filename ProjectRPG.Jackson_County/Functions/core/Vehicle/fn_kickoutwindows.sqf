@@ -7,7 +7,7 @@ while{_doorkick > 0} do {
 	_locked = locked (vehicle player);
 
 	if(_doorkick == 44 || _doorkick == 25 || _doorkick == 10) then {
-		playSound3D ["cg_mission_files\sounds\glassbreak.ogg", vehicle player, false, getPosasl (vehicle player), 1, 1, 45];
+		playSound3D ["prpg_data\sounds\glassbreak.ogg", vehicle player, false, getPosasl (vehicle player), 1, 1, 45];
 	};
 
 	if(_locked != 2) exitwith { _failed = true; };

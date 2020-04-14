@@ -42,7 +42,7 @@ NoPixel_InteractionMenuItems = [
 /*
 	[
 		[" typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "],
-		["Sichere Geldmittel", " ['Sicherung',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
+		["Sichere Geldmittel", " ['Sicherung',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
 
 
@@ -75,12 +75,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" bankrobber == 4 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "],
-		["Nimm Bargeld", " ['Geld nehmen',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',[CurrentCursorTarget],""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
+		["Nimm Bargeld", " ['Geld nehmen',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',[CurrentCursorTarget],""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
 
 	[
 		[" bankrobber == 2 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"""],
-		["Reparatur Bohrer", " ['Repariere Bohrer',60,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
+		["Reparatur Bohrer", " ['Repariere Bohrer',60,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
 
 
@@ -147,12 +147,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" myJob != ""cop""", " myJob == ""Mafia"" && currentcursortarget == missionVehicle && !isNull missionVehicle && player distance endOfmission < 25"],
-		["Verkauf von Drogen", " ['Verkauf',60,client_fnc_finishDrugRun,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
+		["Verkauf von Drogen", " ['Verkauf',60,client_fnc_finishDrugRun,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
 	],
 
 	[
 		[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
-		["Drogen Verkaufen", " ['Verkaufe',30,client_fnc_dumpDrugs,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
+		["Drogen Verkaufen", " ['Verkaufe',30,client_fnc_dumpDrugs,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
 	],
 
 	[
@@ -225,7 +225,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" player distance theDrill < 5"],
-		["Bohrer entfernen", " ['Packe bohrer ein',30,client_fnc_takeDrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",1]
+		["Bohrer entfernen", " ['Packe bohrer ein',30,client_fnc_takeDrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask ",1]
 	],
 /*
 	[
@@ -256,12 +256,12 @@ NoPixel_InteractionMenuItems = [
 /*
 	[
 		["CurrentCursorTarget getVariable[""dead"",FALSE] && (count currentEMS < 0)"],
-		["Reanimieren", "['Reanimiere',125,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",1]
+		["Reanimieren", "['Reanimiere',125,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",1]
 	],
 
 	[
 		["CurrentCursorTarget getVariable[""dead"",FALSE] && (myjob == ""EMS"" || myJob == ""Fire"")"],
-		["Reanimieren", "['Reanimiere',15,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; paycheck = paycheck + 125;",1]
+		["Reanimieren", "['Reanimiere',15,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; paycheck = paycheck + 125;",1]
 	],
 
 	[
@@ -299,7 +299,7 @@ NoPixel_InteractionMenuItems = [
 
 	// [
 		// [" typeof cursorobject == ""Land_buildingshospital1"""],
-		// ["Suche nach Wanzen", "['Szukanie pluskwy',60,client_fnc_disabletrackingme,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",1]
+		// ["Suche nach Wanzen", "['Szukanie pluskwy',60,client_fnc_disabletrackingme,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",100] spawn client_fnc_dotask;",1]
 	// ],
 
 	// vehicles
@@ -316,7 +316,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["currentcursortarget in current_cars || myjob IN [""Cop"",""Fire"",""EMS""] "],
-		["Aus Fahrzeug ziehen", " ['Spieler herausziehen',10,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; ",2]
+		["Aus Fahrzeug ziehen", " ['Spieler herausziehen',10,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; ",2]
 	],
 
 	[
@@ -336,12 +336,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myJob == ""Mafia"" && (getpos player) distance [7600.76,6316.81,0.00143814] < 20"],
-		["Vahrzeug Verkaufen", "['Verschrotten',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask;",2]
+		["Vahrzeug Verkaufen", "['Verschrotten',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask;",2]
 	],
 
 	[
 		["CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat' "],
-		["Reperatur", "['Reparieren',(30 - mav_ttm_var_repairToReduce),client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",2]
+		["Reperatur", "['Reparieren',(30 - mav_ttm_var_repairToReduce),client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",100] spawn client_fnc_dotask;",2]
 	],
 
 	[
@@ -367,23 +367,23 @@ NoPixel_InteractionMenuItems = [
 /*
 	[
 		["CurrentCursorTarget in Current_Cars", "!imRestrained", "myhouse distance getpos player > 50"],
-		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',30, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",10] spawn client_fnc_dotask",2]
+		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',30, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",10] spawn client_fnc_dotask",2]
 	],
 */
 
 	[
 		["CurrentCursorTarget in Current_Cars", "!imRestrained", "myhouse distance getpos player < 20"],
-		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',5, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
+		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',5, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
 		["CurrentCursorTarget in Current_Cars", "!imRestrained", "player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 30 || ((player distance (getMarkerPos ""marker_10"")) < 20) || ((player distance (getMarkerPos ""marker_11"")) < 20) || ((player distance (getMarkerPos ""marker_13"")) < 20) || ((player distance (getMarkerPos ""marker_14"")) < 20)"],
-		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',5, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
+		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',5, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',1, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
+		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',1, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 
@@ -434,7 +434,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["CurrentCursorTarget isKindOf 'Man' && myjob == ""Cop"""],
-		["Lizenz entziehen", " ['Entziehe',5,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
+		["Lizenz entziehen", " ['Entziehe',5,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
@@ -454,7 +454,7 @@ NoPixel_InteractionMenuItems = [
 */
 	[
 		["!(cursortarget getVariable[""dead"",FALSE]) && CursorTarget isKindOf 'Man' && (CursorTarget getVariable [""ace_captives_isHandcuffed"",false])"],
-		["Abtasten", " ['Suche',10,client_fnc_startpatdown,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Abtasten", " ['Suche',10,client_fnc_startpatdown,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
@@ -464,32 +464,32 @@ NoPixel_InteractionMenuItems = [
 /*
 	[
 		[" myJob == ""Cop""", "!imRestrained", "(!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man') && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Handschellen anlegen", " ['Lege Acht an',3,client_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Handschellen anlegen", " ['Lege Acht an',3,client_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
 	],
 */
 	//[
 	//	[" myJob != ""Cop""", "!imRestrained", "(!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man') && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-	//	["Skuj", " ['Skuwanie',7,client_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+	//	["Skuj", " ['Skuwanie',7,client_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
 	//],
 /*
 	[
 		[" myJob == ""Cop""", "!imRestrained", "CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Entfesseln", " ['Entfessle',5,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Entfesseln", " ['Entfessle',5,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
 		[" myJob != ""Cop""", "!imRestrained", "CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Entfesseln", " ['Entfessle',60,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Entfesseln", " ['Entfessle',60,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
 	],
 */
 	[
 		[" CurrentCursorTarget isKindOf 'Man' && (headgear CurrentCursorTarget) != 'mgsr_headbag' && (CursorTarget getVariable [""ace_captives_isHandcuffed"",false])"],
-		["Augenbinde anlegen", " ['Blindfolding',5,client_fnc_blindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",2]
+		["Augenbinde anlegen", " ['Blindfolding',5,client_fnc_blindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""PRPG_data\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
 		[" CurrentCursorTarget isKindOf 'Man' && (headgear CurrentCursorTarget) == 'mgsr_headbag' "],
-		["Augenbinde abnehmen", " ['Removing Blindfold',5,client_fnc_unblindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
+		["Augenbinde abnehmen", " ['Removing Blindfold',5,client_fnc_unblindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""PRPG_data\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	/*[
@@ -504,32 +504,32 @@ NoPixel_InteractionMenuItems = [
 /*
 	[
 		[" myJob == ""Cop"" &&  CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["In das Auto setzen", " ['Throwing in Car',10,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["In das Auto setzen", " ['Throwing in Car',10,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	//[
 	//	[" myJob != ""Cop"" &&  CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-	//	["Wrzuć do auta", " ['Wrzucanie do auta',5,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+	//	["Wrzuć do auta", " ['Wrzucanie do auta',5,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	//],
 
 	[
 		[" myJob != ""Fire"" && myJob != ""EMS"" && CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Eskortieren", " ['Beginne Eskorte',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Eskortieren", " ['Beginne Eskorte',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 */
 	[
 		[" (myJob == ""EMS"" || myjob == ""Fire"") && CurrentCursorTarget isKindOf 'Man'"],
-		["Eskortieren", " ['Beginne Eskorte',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Eskortieren", " ['Beginne Eskorte',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
 		["adminInteractions>=2"],
-		["Eskortieren", " ['Beginne Eskorte',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Eskortieren", " ['Beginne Eskorte',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
 		["count attachedObjects player > 0 && !attachedcar"],
-		["Loslassen", " ['Loslassen',5,client_fnc_detach,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Loslassen", " ['Loslassen',5,client_fnc_detach,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
@@ -1277,7 +1277,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["str CurrentCursorTarget find ""plp_cts_contshippinggreen"" > -1 && getpos player distance getpos currentcursortarget < 4"],
-		["Objekte suchen", "[""Sucht"",7,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Objekte suchen", "[""Sucht"",7,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""prpg_data\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
 	[
@@ -1302,7 +1302,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Repairman"""],
-		["Repariere das Objekt", "[""Ich repariere das Objekt"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Repariere das Objekt", "[""Ich repariere das Objekt"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""prpg_data\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
 	[
@@ -1312,7 +1312,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["adminInteractions>=1"],
-		["Objekt reparieren", "[""Ich repariere das Objekt"",1,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Objekt reparieren", "[""Ich repariere das Objekt"",1,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""prpg_data\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
 	[

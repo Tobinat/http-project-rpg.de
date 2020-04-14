@@ -23,7 +23,7 @@ _timeLeft = round ( _timeLeft );
 21 cutRsc ["RSC_dotask","PLAIN"];
 _POPTASK = uiNameSpace getVariable ["RSC_dotask",displayNull];
 _POPUP = _POPTASK displayCtrl 9119;
-_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
+_POPUP ctrlSetStructuredText parseText format["<img size='1' image='prpg_data\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
 
 if !(_sound isEqualTo 0) then {
 	playSound3D [_sound, player, false, getPosASL player, 8, 1, 45];
@@ -37,7 +37,7 @@ for "_i" from 0 to 1 step 0 do {
 
 	uisleep 1;
 	_timeLeft = _timeLeft - 1;
-	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
+	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='prpg_data\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
 	if(_timeLeft == 0) exitwith {};
 
 	if( !(_animation isEqualTo 0) && (animationstate player) != _animation) then { player playmove _animation; };
@@ -52,7 +52,7 @@ if !(_animation isEqualTo 0) then {
 	player switchMove "";
 };
 
-_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='1'>%2</t>",_task,_error];
+_POPUP ctrlSetStructuredText parseText format["<img size='1' image='prpg_data\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='1'>%2</t>",_task,_error];
 sleep 1;
 player say "slideout";
 _POPUP ctrlSetStructuredText parseText format["",_task,_timeLeft];

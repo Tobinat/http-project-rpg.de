@@ -46,7 +46,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 191911;
-			text = "cg_mission_files\medic\medicBASE.paa";
+			text = "prpg_data\medic\medicBASE.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -67,7 +67,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 105;
-			text = "cg_mission_files\medic\medicHEAD.paa";
+			text = "prpg_data\medic\medicHEAD.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -89,7 +89,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 106;
-			text = "cg_mission_files\medic\medicBODY.paa";
+			text = "prpg_data\medic\medicBODY.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -110,7 +110,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 107;
-			text = "cg_mission_files\medic\medicNECK.paa";
+			text = "prpg_data\medic\medicNECK.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -131,7 +131,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 108;
-			text = "cg_mission_files\medic\medicSPINE.paa";
+			text = "prpg_data\medic\medicSPINE.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -152,7 +152,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 109;
-			text = "cg_mission_files\medic\medicARMS.paa";
+			text = "prpg_data\medic\medicARMS.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -173,7 +173,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 110;
-			text = "cg_mission_files\medic\medicPELVIS.paa";
+			text = "prpg_data\medic\medicPELVIS.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -194,7 +194,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 111;
-			text = "cg_mission_files\medic\medicFACE.paa";
+			text = "prpg_data\medic\medicFACE.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -215,7 +215,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 112;
-			text = "cg_mission_files\medic\medicHANDS.paa";
+			text = "prpg_data\medic\medicHANDS.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -236,7 +236,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 113;
-			text = "cg_mission_files\medic\medicLEGS.paa";
+			text = "prpg_data\medic\medicLEGS.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -257,7 +257,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 114;
-			text = "cg_mission_files\medic\medicORGANS.paa";
+			text = "prpg_data\medic\medicORGANS.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;
@@ -278,7 +278,7 @@ class medicHUD
 			tooltipColorBox[] = {1,1,1,1};
 			tooltipColorShade[] = {0,0,0,0.65};
 			idc = 115;
-			text = "cg_mission_files\medic\medicDISEASE.paa";
+			text = "prpg_data\medic\medicDISEASE.paa";
 			x = -0.08;
 			y = 0;
 			w = 1;

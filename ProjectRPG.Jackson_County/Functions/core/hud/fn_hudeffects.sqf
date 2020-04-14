@@ -42,13 +42,13 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 			_myInjuries = player getVariable "playerInjuries";
 			_corona = player getVariable "corona";
 
-			if (_corona == 0) then {
+			if (_corona == 0 && player getVariable ["krank",true] ) then {
 				[player,_myInjuries] spawn client_fnc_healcorona; 
 			};
 
 			if( (_myInjuries select 0) != 0 || (_myInjuries select 1) != 0 || (_myInjuries select 7) != 0 ) then {
 				im_hurt = true;
-				_bleeding ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\head.paa'/><t size='0.03px'> Dein Kopf tut weh. </t>",player];
+				_bleeding ctrlSetStructuredText parseText format["<img size='0.07' image='prpg_data\icons\head.paa'/><t size='0.03px'> Dein Kopf tut weh. </t>",player];
 
 				_chances = round (random 1000);
 				if(_chances > 985) then
@@ -66,7 +66,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 
 			if( (_myInjuries select 2) != 0 || (_myInjuries select 3) != 0 || (_myInjuries select 6) != 0 || (_myInjuries select 9) != 0 ) then {
 				im_hurt = true;
-				_wounded ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\chest.paa'/><t size='0.03px'> Deine Brust tut weh. </t>",player];
+				_wounded ctrlSetStructuredText parseText format["<img size='0.07' image='prpg_data\icons\chest.paa'/><t size='0.03px'> Deine Brust tut weh. </t>",player];
 
 				_chances = round (random 1000);
 				if(_chances > 985) then
@@ -83,7 +83,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 
 			if( (_myInjuries select 4) != 0 || (_myInjuries select 5) != 0 ) then {
 				im_hurt = true;
-				_fracture ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\arm.paa'/><t size='0.03px'> Deine Arme tun weh. </t>",player];
+				_fracture ctrlSetStructuredText parseText format["<img size='0.07' image='prpg_data\icons\arm.paa'/><t size='0.03px'> Deine Arme tun weh. </t>",player];
 
 				_chances = round (random 1000);
 				if(_chances > 985) then
@@ -100,7 +100,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 
 			if( (_myInjuries select 8) != 0 ) then {
 				im_hurt = true;
-				_unconcious ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\foot.paa'/><t size='0.03px'> Deine Beine tun weh. </t>",player];
+				_unconcious ctrlSetStructuredText parseText format["<img size='0.07' image='prpg_data\icons\foot.paa'/><t size='0.03px'> Deine Beine tun weh. </t>",player];
 
 				_chances = round (random 1000);
 				if(_chances > 985) then
@@ -118,32 +118,33 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 		if ( (_myInjuries select 10) != 0 ) then
 		{
 			if ( (_myInjuries select 10) == 5 ) then {
+				_disease ctrlSetStructuredText parseText format["<img size='0.07' image='prpg_data\icons\sick.paa'/><t size='0.03px'> Du fühlst dich krank. </t>",player];
 				_corona = _corona - 1;
 				player setVariable ["corona",_corona,true];
-				_chances = round (random 100);
-				if (_chances > 75) then {
+				_chances = round (random 1000);
+				if (_chances > 850) then {
 					if(goggles _x != "Mask_M40" && goggles _x != "Masque_Chirurgical" && uniform _x != "vvv_hazmat") then {
 						[] spawn client_fnc_spreaddisease;
 					};
 					_coughtype = round (random 4);
 					if(_coughtype == 1) then
 					{
-						playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
+						playSound3D ["prpg_data\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
 					if(_coughtype == 2) then
 					{
-						playSound3D ["cg_sndimg\sounds\cough2.ogg", player, false, getPosASL player, 3, 1, 45];
+						playSound3D ["prpg_data\sounds\cough2.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
 					if(_coughtype == 3) then
 					{
-						playSound3D ["cg_sndimg\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
+						playSound3D ["prpg_data\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
 					if(_coughtype == 4) then
 					{
-						playSound3D ["cg_sndimg\sounds\cough4.ogg", player, false, getPosASL player, 3, 1, 45];
+						playSound3D ["prpg_data\sounds\cough4.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
 
-					if (_chances > 95) then {
+					if (_chances > 950) then {
 						[] spawn KK_fnc_forceRagdoll;
 					};
 				};
@@ -153,21 +154,21 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 				im_hurt = true;
 				if( (_myInjuries select 10) == 1 ) then
 				{
-					_disease ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\sick.paa'/><t size='0.03px'> Du hast eine Erkältung. </t>",player];
+					_disease ctrlSetStructuredText parseText format["<img size='0.07' image='prpg_data\icons\sick.paa'/><t size='0.03px'> Du hast eine Erkältung. </t>",player];
 				} else {
-					_disease ctrlSetStructuredText parseText format["<img size='0.07' image='cg_mission_files\icons\sick.paa'/><t size='0.03px'> Du fühlst dich krank. </t>",player];
+					_disease ctrlSetStructuredText parseText format["<img size='0.07' image='prpg_data\icons\sick.paa'/><t size='0.03px'> Du fühlst dich krank. </t>",player];
 				};
 
 
 				_chances = round (random 600);
 				if(_chances > 595) then {
-					playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
-					playSound3D ["cg_sndimg\sounds\cough2.ogg", player, false, getPosASL player, 3, 1, 45];
+					playSound3D ["prpg_data\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
+					playSound3D ["prpg_data\sounds\cough2.ogg", player, false, getPosASL player, 3, 1, 45];
 					[1] spawn client_fnc_HudElements;
 
 				} else {
 					_chances = round (random 1000);
-					if(_chances > 900) then
+					if(_chances > 950) then
 					{
 						player enableFatigue true;
 						player setFatigue 0;
@@ -175,23 +176,23 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 						_coughtype = round (random 4);
 						if(_coughtype == 1) then
 						{
-							playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
+							playSound3D ["prpg_data\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
 						};
 						if(_coughtype == 2) then
 						{
-							playSound3D ["cg_sndimg\sounds\cough2.ogg", player, false, getPosASL player, 3, 1, 45];
+							playSound3D ["prpg_data\sounds\cough2.ogg", player, false, getPosASL player, 3, 1, 45];
 						};
 						if(_coughtype == 3) then
 						{
-							playSound3D ["cg_sndimg\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
+							playSound3D ["prpg_data\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
 						};
 						if(_coughtype == 4) then
 						{
-							playSound3D ["cg_sndimg\sounds\cough4.ogg", player, false, getPosASL player, 3, 1, 45];
+							playSound3D ["prpg_data\sounds\cough4.ogg", player, false, getPosASL player, 3, 1, 45];
 						};
 
 					};
-					if(_chances > 950) then
+					if(_chances > 960) then
 					{
 						if(isNull objectParent player) then
 						{
@@ -202,7 +203,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 						};
 					//["Remove",0.05] call Client_Fnc_DoHealth;
 					};
-					if (_chances > 985) then 
+					if (_chances > 990) then 
 					{
 						[] spawn KK_fnc_forceRagdoll;
 					};

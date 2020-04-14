@@ -35,31 +35,31 @@ while { life_koil_hh == 1 } do {
 	_mysound = round(random 7);
 
 	if(_mysound == 1) then {
-		playSound3D ["cg_sndimg\sounds\hhthunder.ogg", player, false, getPosASL player, 5, 1, 45];
+		playSound3D ["PRPG_Data\sounds\hhthunder.ogg", player, false, getPosASL player, 5, 1, 45];
 	};
 
 	if(_mysound == 2) then {
-		playSound3D ["cg_sndimg\sounds\hhscreams.ogg", player, false, getPosASL player, 22, 1, 45];
+		playSound3D ["PRPG_Data\sounds\hhscreams.ogg", player, false, getPosASL player, 22, 1, 45];
 	};
 
 	if(_mysound == 3) then {
-		playSound3D ["cg_sndimg\sounds\hhicanseeyou.ogg", player, false, getPosASL player, 5, 1, 45];
+		playSound3D ["PRPG_Data\sounds\hhicanseeyou.ogg", player, false, getPosASL player, 5, 1, 45];
 	};
 
 	if(_mysound == 4) then {
-		playSound3D ["cg_sndimg\sounds\hhgrowl.ogg", player, false, getPosASL player, 15, 1, 45];
+		playSound3D ["PRPG_Data\sounds\hhgrowl.ogg", player, false, getPosASL player, 15, 1, 45];
 	};
 
 	if(_mysound == 5) then {
-		playSound3D ["cg_sndimg\sounds\hhecho.ogg", player, false, getPosASL player, 5, 1, 45];
+		playSound3D ["PRPG_Data\sounds\hhecho.ogg", player, false, getPosASL player, 5, 1, 45];
 	};
 
 	if(_mysound == 6) then {
-		playSound3D ["cg_sndimg\sounds\hhdie.ogg", player, false, getPosASL player, 25, 1, 45];
+		playSound3D ["PRPG_Data\sounds\hhdie.ogg", player, false, getPosASL player, 25, 1, 45];
 	};
 
 	if(_mysound == 7) then {
-		playSound3D ["cg_sndimg\sounds\hhclank.ogg", player, false, getPosASL player, 15, 1, 45];
+		playSound3D ["PRPG_Data\sounds\hhclank.ogg", player, false, getPosASL player, 15, 1, 45];
 	};
 
 		_angel1 = "A3L_Angel_Idle" createVehicleLocal (player modelToWorld [0,10,0]);
