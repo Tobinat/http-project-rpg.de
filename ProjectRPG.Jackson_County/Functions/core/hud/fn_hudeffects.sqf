@@ -122,10 +122,15 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 				_corona = _corona - 1;
 				player setVariable ["corona",_corona,true];
 				_chances = round (random 1000);
-				if (_chances > 850) then {
-					if(goggles _x != "Mask_M40" && goggles _x != "Masque_Chirurgical" && uniform _x != "vvv_hazmat") then {
+				if (_chances > 750) then {
+					if(goggles player != "Mask_M40" && goggles player != "Masque_Chirurgical" && uniform player != "vvv_hazmat") then {
 						[] spawn client_fnc_spreaddisease;
-					};
+					} else {
+						_fickdich = round (random 100)
+						if (_fickdich > 90) then { 
+							[] spawn client_fnc_spreaddisease; 
+						};
+					}
 					_coughtype = round (random 4);
 					if(_coughtype == 1) then
 					{
