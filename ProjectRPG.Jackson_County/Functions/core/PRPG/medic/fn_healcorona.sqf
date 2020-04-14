@@ -1,11 +1,9 @@
 disableSerialization;
-_arrayNeeded = _this select 0;
-_user = _arrayNeeded select 0;
-_myInjuries = _arrayNeeded select 1;
+_myInjuries = player getVariable "playerInjuries";
 player removeMagazine _item;
 5 cutText ["","PLAIN"];
 _myInjuries set [10, 0]; 
-_user setVariable ["playerInjuries",_myInjuries,true]; 
+player setVariable ["playerInjuries",_myInjuries,true]; 
 player setVariable ["krank",false,true];
 player setVariable ["corona",500,true];
 sleep 300;

@@ -9,17 +9,19 @@ if(_myinjuries select 10 == 0) then {
 		_myInjuries set [10, 5];
 		//setzt corona variable
 		player setVariable ["corona",200,true];
+		player setVariable ["krank",true,true];
 		};
 	} else {
 		if(_disease == 69) then {
 		_myInjuries set [10, random(4)]; 
+		player setVariable ["krank",true,true];
 		} else {
 			_myInjuries set [10,_disease]; 
+			player setVariable ["krank",true,true];
 		};
 	};
 };
 player setVariable ["playerInjuriesToUpdate",_myInjuries,false];
-player setVariable ["krank",true,true];
 if(myUpdate) then {
 	[] spawn client_fnc_doInjuriesUpdate;
 };
