@@ -22,7 +22,7 @@ _7DamageStates = ["Keine Verletzungen","Hueftschnittwunden (1x Verband)","Hueftw
 _8DamageStates = ["Keine Verletzungen","Blutende Ohren (1x Verband)","Gebrochene Nase (1x Verband)","Fauler Zahn (1x Erste-Hilfe Koffer)","Gebrochener Keifer (1x Erste-Hilfe Koffer)"];
 _9DamageStates = ["Keine Verletzungen","Beinschuerfwunde (1x Verband)","Disloziertes Knie (1x Verband)","Muskelzerrung (1x Erste-Hilfe Koffer)","Gebrochener Oberschenkel (1x Erste-Hilfe Koffer)"];
 _10DamageStates = ["Keine Verletzungen","Innere verletzung (1x Verband)","Nierenschaeden (1x Verband)","Herzrasen (1x Erste-Hilfe Koffer)","Blutmangel (1x Erste-Hilfe Koffer)"];
-_11DamageStates = ["Keine Verletzungen","Erkältung (Tran/Sani/KH)","Alergie (Sani/KH)","Infektion (Sani/KH)","Unbekannte Krankheit (Sani/KH)"];
+_11DamageStates = ["Keine Verletzungen","Erkältung (Tran/Sani/KH)","Allergische Reaktion (Sani/KH)","Infektion (Sani/KH)","Unbekannte Krankheit (Sani/KH)","SARS-CoV-2 (Covid-19)"];
 
 _Btn1 = _display displayCtrl 6;
 damageAmount = myInjuries select 0;

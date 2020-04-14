@@ -73,15 +73,14 @@ if(_type == "Poop") then {
 	_change = client_poop;	
 	[] spawn client_fnc_hudpoop;	
 };
-//health is 5
 
 if(_type == "unhealthiness") then {
-	if(_adjust == "Add") then { [format["Das war sehr Ungesund: +%1 Krankheit ",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness + _amount; };
-	if(_adjust == "Remove") then { [format["Dir geht es etwas Besser: -%1 Krankheit",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness - _amount; };
+	if(_adjust == "Add") then { [format["Das war nicht gut für deinen Körper: -%1 Wohlbefinden",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness + _amount; };
+	if(_adjust == "Remove") then { [format["Das tat Gut: +%1 Wohlbefinden",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness - _amount; };
 	if(client_unhealthiness > 100) then { client_unhealthiness = 100;};
 	if(client_unhealthiness < 0) then { client_unhealthiness = 0;};	
 	if(client_unhealthiness > 60) then {
-		hint "Du bist sehr Krank.";
+		["Verdammt lebe ich ungesund, ich fühle mich garnicht gut!", false] spawn domsg;
 		_roll = 100 - client_unhealthiness;
 		_chance = random(_roll);
 		_wtf = _chance + client_unhealthiness;

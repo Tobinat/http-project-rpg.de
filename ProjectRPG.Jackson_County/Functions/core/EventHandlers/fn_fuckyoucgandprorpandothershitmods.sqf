@@ -26,6 +26,8 @@ if (_item IN
 	["np_hpizza","np_mpizza","np_cpizza","np_spizza","np_vpizza","np_chdonuts","np_jdonuts","np_cdonuts","np_donuts","np_happymeal","np_bigmac","np_mchicken","np_quater","np_cheeseburger","np_hamburger","np_hotdog","np_mhotdog","np_kmhotdog","np_bbqhotdog","np_cheesehotdog"]
 	) then { ["add","drink",60] call client_fnc_sustain; ["add","food",60] call client_fnc_sustain; ["add","unhealthiness",6] call client_fnc_sustain; ["add","Poop",10] call client_fnc_sustain; [_item,20] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item IN ["np_ugroceries"] ) then { ["add","drink",100] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["add","unhealthiness",4] call client_fnc_sustain;  [_item,80] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item == "np_energydrink") then { ["energy",3] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+//items
 if (_item == "NP_drillitem") then {/*_cops = (count currentcop); if(_cops < 5) exitwith { hint "Es sind weniger als 5 Polizisten im Dienst."; };*/ [] spawn client_fnc_bankrobbery; closeDialog 0; };
 //if (_item == "CG_C4") then {_cops = (count currentcop); if(_cops < 3) exitwith { hint "Za mało policjantów - 3+"; }; [] spawn client_fnc_blowdoor; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 //if (_item == "CG_Dynamite") then { [] spawn client_fnc_dynamiteFishing; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
@@ -33,6 +35,7 @@ if (_item == "CG_HackingTool") then { [] spawn client_fnc_hackdoor; closeDialog 
 //if (_item == "CG_MetalWire") then { [] spawn client_fnc_sendhook; closeDialog 0; };
 //if (_item == "CG_Lockpick") then { ["Wytrychuję",120,client_fnc_lockpick,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,"cg_sndimg\sounds\repair.ogg"] spawn client_fnc_dotask; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 //if (_item == "cg_atf_bandage_i") then {  ["Leczę",15,client_fnc_dohealth,player,0,["Add",100],0] spawn client_fnc_dotask2;  [_item,0] spawn client_fnc_removeitem;  closeDialog 0; };
+//drugs
 if (_item == "CG_MethBag100") then { ["meth",18] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "CG_MethBag90") then { ["meth",15] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "CG_MethBag80") then { ["meth",12] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
@@ -45,23 +48,15 @@ if (_item == "CG_WeedBag2") then { ["marijuana",12] spawn client_fnc_useDrug; [_
 if (_item == "CG_WeedBag1") then { ["marijuana",5] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "CG_heroin") then { ["heroin",30] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem;  closeDialog 0; };
 if (_item == "CG_cocaine") then { ["cocaine",10] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
-if (_item == "np_energydrink") then { ["energy",3] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+//barriers
 if (_item IN ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS"] && myjob IN ["Cop","Fire","EMS"]) then { [_item] spawn client_fnc_useBarrier; closeDialog 0; };
 if (_item == "CG_Spikes_Collapsed") then { [] spawn client_fnc_spikestrip; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+//other shit
 if (_item == "CG_Pro_Item_i") then { [] spawn client_fnc_itemGoPro; /*[] call client_fnc_hudgopro;*/ closeDialog 0; };
 if (_item == "kif_panicbutton") then { [player] spawn client_fnc_itemPanicButton; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "kif_nitro") then { client_nos_count = client_nos_count + 3; [] call client_fnc_hudnos; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "kif_fuel") then { [] spawn client_fnc_itemFuel; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
-//if (_item == "kif_fish_oil") then { [] spawn client_fnc_itemFishOil; closeDialog 0; };
+if (_item == "kif_fish_oil") then { [] spawn client_fnc_itemFishOil; closeDialog 0; };
 //if (_item == "kif_speedbomb") then {if((!(cursorObject isKindOf "LandVehicle"))&&(!(player getVariable ["escorted",false])) && (ClientArrested) && (client_istazed)) exitWith {["Błąd","Nie możesz podłożyć bomby!",[255,0,0,1],""] call Client_fnc_showNotification;}; if(player distance cursorObject > 7) exitWith {["Błąd","Jesteś za daleko!",[255,0,0,1],""] call Client_fnc_showNotification; player addItem "kif_speedbomb";}; ["Podkładam bombę",15,client_fnc_itemSpeedBomb,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,"cg_sndimg\sounds\repair.ogg"] spawn client_fnc_dotask; closeDialog 0; };
 
 false
-
-/*
-
-"CG_MethBag100","CG_MethBag90","CG_MethBag80","CG_MethBag70","CG_MethBag60","CG_MethBag50"
-
-"CG_WeedBag4","CG_WeedBag3","CG_WeedBag2","CG_WeedBag1"
-"CG_Heroin"
-player additem "CG_cocaine";
-*/

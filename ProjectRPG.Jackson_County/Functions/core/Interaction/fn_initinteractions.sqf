@@ -279,9 +279,17 @@ NoPixel_InteractionMenuItems = [
 		["Behandeln lassen", "[] spawn client_fnc_fullheal;",1]
 	],
 
+	//Temporärer Workaround um Krankheiten zu Behandeln vielleicht auch einfach permanent, who gives a fuck
 	[
-		["myjob == ""EMS"" && currentcursortarget isKindOf ""Man"""],
+		["myjob == ""EMS"" && currentcursortarget isKindOf ""Man""&& CurrentCursorTarget getVariable[""krank"",true] "],
 		["Antibiotika verabreichen", "[cursorTarget,10,2] spawn client_fnc_fixProblem;",1]
+	],
+
+
+	//WIP Corona
+	[
+		["myjob == ""EMS"" && currentcursortarget isKindOf ""Man"" && CurrentCursorTarget getVariable[""krank"",true] "],
+		["Coronavirus Test", "[cursorTarget] spawn client_fnc_testCorona;",1]
 	],
 
 	[

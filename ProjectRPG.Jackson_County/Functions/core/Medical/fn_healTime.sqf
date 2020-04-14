@@ -8,5 +8,8 @@ player removeMagazine _item;
 5 cutText ["","PLAIN"];
 _myInjuries set [_arrayCount, 0]; 
 _user setVariable ["playerInjuries",_myInjuries,true]; 
+if (_arraycount == 10) then {
+	_user setVariable ["krank",false,true];
+};
 imHealing = false;
 //[_user] spawn client_fnc_medicUpdater;

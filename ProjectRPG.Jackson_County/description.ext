@@ -230,17 +230,18 @@ class CfgFunctions
 		class busmensch {
 			file = "Functions\core\PRPG\busmensch";
 			class startbusding {};
-      class busabfrage {};
+            class busabfrage {};
 		};
 
-    class advcrafting {
+
+        class advcrafting {
 			file = "Functions\core\PRPG\advcrafting";
 			class craftMenucar {};
 			class craftMenuweapon {};
 			class craftMenuclothing {};
 		};
 
-    class workbenches {
+        class workbenches {
 			file = "Functions\core\PRPG\advcrafting\workbenches";
 			class carworkbench {};
 			class clothingworkbench {};
@@ -256,7 +257,7 @@ class CfgFunctions
 			class pickupweaponworkbench {};
 		};
 
-    class FarmingSim {
+        class FarmingSim {
 			file = "Functions\core\PRPG\FarmingSim";
 			class plantcotton {};
 			class plantbeans {};
@@ -265,6 +266,11 @@ class CfgFunctions
 			class farmsand {};
 			class refinegarn {};
 			class refineoil2 {};
+		};
+
+        class FarmingSim {
+			file = "Functions\core\PRPG\medic";
+			class testcorona {};
 		};
 
 		class jobFactions {
