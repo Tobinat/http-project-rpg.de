@@ -26,14 +26,7 @@ if ((getPlayerUID player) in _adminList) then {
 		player execVM "AdminTool\vehicles\Panzer\system.abl";
 	};
 	closemenu = {
-		player removeAction _ShowESP;
-		player removeAction _ShowESPVehicle;
-		player removeAction _ShowGearEditor;
-		player removeAction _ShowHeal;
-		player removeAction _ShowRepair;
-		player removeAction _ShowTeleport;
-		player removeAction _GottMenu;
-		player removeAction _closeMenu;
+		removeAllActions player;
 		player addaction [("<t color=""#FF0000"">" + ("Admin Menu") +"</t>"),"AdminTool\Admin-Pfad.sqf","",5,false,true,"",""];
 	};
 }
