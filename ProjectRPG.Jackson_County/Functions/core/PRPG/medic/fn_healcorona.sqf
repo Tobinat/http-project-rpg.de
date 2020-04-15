@@ -1,5 +1,4 @@
 _myInjuries = player getVariable "playerInjuries";
-player removeMagazine _item;
 5 cutText ["","PLAIN"];
 _myInjuries set [10, 0]; 
 player setVariable ["playerInjuries",_myInjuries,true]; 

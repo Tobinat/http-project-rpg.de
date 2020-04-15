@@ -44,7 +44,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 			_krank = player getVariable "krank";
 
 			if (_corona == 0 && _krank == true ) then {
-				[player,_myInjuries] spawn client_fnc_healcorona; 
+				[] spawn client_fnc_healcorona;
 			};
 
 			if( (_myInjuries select 0) != 0 || (_myInjuries select 1) != 0 || (_myInjuries select 7) != 0 ) then {
@@ -203,7 +203,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 						if(isNull objectParent player) then
 						{
 							//[] spawn KK_fnc_forceRagdoll;
-							if(goggles _x != "Mask_M40" && goggles _x != "Masque_Chirurgical" && uniform _x != "vvv_hazmat") then {
+							if(goggles player != "Mask_M40" && goggles player != "Masque_Chirurgical" && uniform player != "vvv_hazmat") then {
 								[] spawn client_fnc_spreaddisease;
 							};
 						};

@@ -7,7 +7,7 @@ if(_myinjuries select 10 == 0) then {
 	if(_disease == 5) then {
 		if (_corona == 0) then {
 		_myInjuries set [10, 5];
-		//setzt corona variable
+		//setzt corona variablen
 		player setVariable ["corona",200,true];
 		player setVariable ["krank",true,true];
 		};
