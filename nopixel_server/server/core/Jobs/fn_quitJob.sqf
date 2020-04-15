@@ -1,6 +1,8 @@
 _player = _this select 0;
+_playeruid = getplayeruid _player;
 
 diag_log["leave job % 1", _player];
+diag_log["puid % 1", _playeruid];
 
 
 /*
@@ -46,8 +48,8 @@ if (_player IN currentFireDispatch) then {
 };
 
 
-if (getplayeruid _player IN currentCop) exitwith {
-    _pia = currentCop find getplayeruid _player;
+if (_playeruid IN currentCop) exitwith {
+    _pia = currentCop find _playeruid;
     currentCop deleteAt _pia;
     publicvariable "currentCop";
 	//currentCop ="";
