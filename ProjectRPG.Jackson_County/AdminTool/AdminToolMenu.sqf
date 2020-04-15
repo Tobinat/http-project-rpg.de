@@ -1,6 +1,6 @@
 
 
-_adminList = ["76561198124199916"];
+_adminList = ["76561198124199916","76561198061326977","76561198152696230"];
 
 player removeAction _ShowESP;
 player removeAction _ShowESPVehicle;
