@@ -296,7 +296,6 @@ class CfgFunctions
 			class rentoffice {};
 			class completeoffice {};
 			class startJob {};
-            class quitJob;
 			class selectJob {};
 			class spawnJobVehicle {};
 			class jobMarker {};
