@@ -13,9 +13,9 @@ _ownsDependency1 = [life_currentExpPerks, "perk_gunsspecialist_lessRecoil_2"] ca
 _ownsDependency2 = [life_currentExpPerks, "perk_gunsspecialist_lessRecoil_3"] call mav_ttm_fnc_hasPerk;
 
 if (!_ownsDependency1 && !_ownsDependency2) then {
-	player setUnitRecoilCoefficient .95;
+	player setUnitRecoilCoefficient .98;
 
 	player addEventHandler ["Respawn", {
-		player setUnitRecoilCoefficient .95;
+		player setUnitRecoilCoefficient .98;
 	}];
 };
