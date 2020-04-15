@@ -131,7 +131,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 						if (_fickdich > 90) then { 
 							[] spawn client_fnc_spreaddisease; 
 						};
-					}
+					};
 					_coughtype = round (random 4);
 					if(_coughtype == 1) then
 					{
