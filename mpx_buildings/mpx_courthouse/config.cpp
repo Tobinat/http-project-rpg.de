@@ -327,7 +327,7 @@ class CfgVehicles
 				position = "ACTION_DoorCell1";
 				onlyforplayer = 0;
 				radius = 2;
-				condition = "(myjob IN [""Cop"",""doc"",""EMS""] && this animationPhase ""animateDoorCell1"">= 0.5";
+				condition = "(myjob IN [""Cop"",""doc"",""EMS""] && this animationPhase ""animateDoorCell1"">= 0.5)";
 				//condition = "((this animationPhase 'animateDoorCell1') >= 0.5)";
 				statement = "this animate [""animateDoorCell1"", 0]";
 			};
