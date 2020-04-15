@@ -60,7 +60,7 @@ if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "La
 		["911: Hinweis!!! Die Türen eines Zellenblocks wurde gehackt.", false] remoteExec ["domsg", currentCop];
 
 	};
-	[player, _door, "hackDoor"] spawn client_fnc_createEvidence;
+	[player, _fenceToOpen, "hackDoor"] spawn client_fnc_createEvidence;
 };
 
 if (typeOf cursorObject IN["Land_CommonwealthBank"]) then {

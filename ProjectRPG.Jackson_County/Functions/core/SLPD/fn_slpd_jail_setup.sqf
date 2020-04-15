@@ -17,9 +17,27 @@ secondsLeft = 0;
 
 
 //Player setup
-player setpos [5618.46,6335.5,0.00143433];
+//Jail Positionen
+_JailCell = [
+	[5615.18,6336.91,0.00143433],
+	[5615.19,6344.29,0.00143433],
+	[5633.99,6344.38,0.00143433],
+	[5634.17,6337.02,0.00143433],
+	[5594.69,6351.81,0.00143433],
+	[5594.4,6359.87,0.00143433],
+	[5575.64,6359,0.00143433],
+	[5576.7,6351.29,0.00143433],
+	[5537.39,6335.26,0.00143433],
+	[5555.88,6335.36,0.00143433],
+	[5556.15,6343.61,0.00143433],
+	[5537.05,6342.71,0.00143433] 
+	] call BIS_fnc_selectRandom;
+
+player setPos _JailCell;
+
 removeuniform player;
 player adduniform "noRP_Jail";
+player setVariable ["ace_captives_isHandcuffed",false];
 _escaped = false;
 secondsLeft = _time;
 ClientArrested = true;
@@ -28,7 +46,7 @@ _update = 0;
 player setVariable ["coplevel", 0, false];
 
 while{ClientArrested} do {
-	if(getpos player distance [5556.2,6291.29,0.00143433] > 400) exitwith { _escaped = true; };
+	if(getpos player distance [5556.2,6291.29,0.00143433] > 300) exitwith { _escaped = true; };
 	uisleep 60;
 	_time = _time - 1;
 	secondsLeft = _time;

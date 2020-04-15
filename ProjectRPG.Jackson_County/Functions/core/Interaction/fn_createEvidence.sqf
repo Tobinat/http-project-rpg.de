@@ -12,9 +12,13 @@
 //private["_suspect","_victim","_crime"];
 params ["_suspect","_victim", "_crime"];
 
+_suspect = _this select 0;
+_victim = _this select 1;
+_crime = _this select 2;
 _evidence = _victim getVariable ["evidence",[]];
 
-/*switch(_crime) do {
+/*
+switch(_crime) do {
 	case "bankRobbery": {};
 	case "bankDrill": {};
 	case "vaultBreach": {};
@@ -26,7 +30,8 @@ _evidence = _victim getVariable ["evidence",[]];
 	case "killAtempt": {};
 	case "kill": {};
 	case "vehicleKill": {};
-};*/
+};
+*/
 
 _evidence pushBack [_suspect, getPlayerUID _suspect, _crime, name _suspect];
 _victim setVariable ["evidence",_evidence,true];

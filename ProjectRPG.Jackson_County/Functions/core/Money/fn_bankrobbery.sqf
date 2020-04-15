@@ -13,7 +13,6 @@ theDrill attachTo [_thebankcontainer, [0, -0.9, 0] ];
 player removeitem "NP_drillitem";
 
 [player, theDrill, "bankDrill"] spawn client_fnc_createEvidence;
-[player, _theBankContainer, "vaultBreach"] spawn client_fnc_createEvidence;
 
 	["Remove","Karma",100] call client_fnc_sustain;
 
@@ -68,6 +67,7 @@ for "_i" from 0 to 1 step 0 do  {
 	if(_pick > 90) exitwith {
 	deletevehicle _ps;
 	hint "Die Bank wurde ausgeraubt - Überprüfe den Sicherheitskasten!";
+	[player, _theBankContainer, "vaultBreach"] spawn client_fnc_createEvidence;
 	bankrobber = 4;
 	uisleep 300;
 	deletevehicle _thebankcontainer;

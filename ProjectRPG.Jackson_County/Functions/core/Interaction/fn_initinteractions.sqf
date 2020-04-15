@@ -1027,7 +1027,7 @@ NoPixel_InteractionMenuItems = [
 		["((typeof CursorTarget) IN shopNameList) && ((time - (CursorTarget getVariable[""lastRobbed"",0])) > 1) && (player distance cursorTarget < 8) && (currentWeapon player != """")"],
 		["Laden Ausrauben", " [] spawn client_fnc_robShop; ",4]
 	],
-/*
+
 	[
 		["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
 		["Beweise Sammeln", "[""Sammle Beweise"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
@@ -1036,7 +1036,7 @@ NoPixel_InteractionMenuItems = [
 		["CurrentCursorTarget != objNull && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
 		["Beweise zerstoeren", "[""Zerstoere Beweise"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
-*/
+
 	[
 		["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
 		["Notrufzentrale", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
