@@ -52,8 +52,6 @@ closedialog 0;
 	["add","battery",200] call client_fnc_sustain;
 	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
-	//Beendet den Job
-	[] call client_fnc_jobEnd;
 	//_respawn = player getVariable "respawn";
 	//_respawn = _respawn - 1;
 	//player setVariable ["respawn", _respawn, false];
