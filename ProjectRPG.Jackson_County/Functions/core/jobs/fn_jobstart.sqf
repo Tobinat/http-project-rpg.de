@@ -1,11 +1,12 @@
 _player = _this select 0;
 _jobtype = _this select 1;
+_playeruid = getPlayerUID _player;
 
 [player,objNull,3,format ["%1 fing an als %2 zu Arbeiten.", name player, _jobtype],_jobtype] remoteExec ["server_fnc_jobLog", 2];
 if (str _jobtype find "Cop" > -1 || str _jobtype == "Cop") exitwith {
 	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];	
 	[] call client_fnc_startCop;
-	currentCop pushback _player;
+	currentCop pushback _playeruid;
 	publicvariable "currentCop";
 	["basic"] spawn client_fnc_setGear;
 	[player,objNull,10,format ["%1 begann seinen Polizeidienst", name player],""] remoteExec ["server_fnc_copLog", 2];
@@ -14,7 +15,7 @@ if (str _jobtype find "Cop" > -1 || str _jobtype == "Cop") exitwith {
 if (str _jobtype find "EMS" > -1 || str _jobtype == "EMS") exitwith {
 	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
 	[] call client_fnc_startEMS;
-	currentEMS pushback _player;
+	currentEMS pushback _playeruid;
 	publicvariable "currentEMS";
 	["basic"] spawn client_fnc_setGear;
 };
