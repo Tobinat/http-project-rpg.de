@@ -23,7 +23,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 					//"Ford_Crown_Medic_V1",
 					//"Ford_Crown_Medic_V2",
 					//"Ford_Crown_Medic_V3",
-					"PRPG_Durango_EMS_01"
+					"PRPG_Durango_EMS_01",
 					"vvv_fire_truck"
 				];
 				_garage = _garage + _ret;
