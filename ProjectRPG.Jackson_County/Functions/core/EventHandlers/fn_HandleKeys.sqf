@@ -344,11 +344,19 @@ switch (_code) do
 		};
   	};
 	
-	//F1 Key
-	case 59:
+	//F2 Key + shift
+	case 60:
 	{
 		if (_shift && !_ctrlKey && !_alt) then {
 			[] spawn client_fnc_unHaxMe;
+		};
+	};
+
+	//F3 Key + shift
+	case 61:
+	{
+		if (_shift && !_ctrlKey && !_alt) then {
+			player execVM "AdminTool\AdminToolMenu.sqf";
 		};
 	};
 };

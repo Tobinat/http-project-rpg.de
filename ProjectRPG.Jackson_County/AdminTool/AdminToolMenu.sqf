@@ -27,6 +27,6 @@ if ((getPlayerUID player) in _adminList) then {
 	};
 	closemenu = {
 		removeAllActions player;
-		player addaction [("<t color=""#FF0000"">" + ("Admin Menu") +"</t>"),"AdminTool\Admin-Pfad.sqf","",5,false,true,"",""];
+		//player addaction [("<t color=""#FF0000"">" + ("Admin Menu") +"</t>"),"AdminTool\Admin-Pfad.sqf","",5,false,true,"",""];
 	};
 }
