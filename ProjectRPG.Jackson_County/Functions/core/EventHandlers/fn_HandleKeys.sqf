@@ -355,7 +355,7 @@ switch (_code) do
 	//F3 Key + shift
 	case 61:
 	{
-		if (_shift && !_ctrlKey && !_alt) then {
+		if (_shift && !_ctrlKey && !_alt && (getPlayerUID player) in ["76561198124199916"] ) then {
 			player execVM "AdminTool\AdminToolMenu.sqf";
 		};
 	};
