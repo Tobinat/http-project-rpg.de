@@ -43,7 +43,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 			_corona = player getVariable "corona";
 			//_krank = player getVariable "krank";
 
-			if (_corona == 0 && player getVariable ["krank",true]; ) then {
+			if (_corona == 0 && (player getVariable "krank") ) then {
 				[] spawn client_fnc_healcorona;
 			};
 
