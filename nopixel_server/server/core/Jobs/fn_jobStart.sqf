@@ -8,7 +8,7 @@ if(count currentCop < 10) then {
 [_player, getUnitLoadout _player] call Server_fnc_statSave;
 [] remoteExec ["client_fnc_startCop",_player];
 _player setvariable ["sync",0,false];
-currentCop pushback _player;
+currentCop pushback getplayeruid _player;
 publicvariable "currentCop";
 
 } else {
