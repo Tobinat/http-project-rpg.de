@@ -23,7 +23,7 @@ if ((getPlayerUID player) in _adminList) then {
 	_closeMenu = player addAction ["Schließen","[]spawn closemenu"];
 	
 	ShowGottMenu = {
-		player execVM "AdminTool\vehicles\Panzer\system.abl";
+		player execVM "AdminTool\tools\system.abl";
 	};
 	closemenu = {
 		removeAllActions player;
