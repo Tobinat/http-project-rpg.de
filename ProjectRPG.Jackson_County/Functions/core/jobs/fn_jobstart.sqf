@@ -22,115 +22,115 @@ if (str _jobtype find "EMS" > -1 || str _jobtype == "EMS") exitwith {
 if (str _jobtype find "Fire" > -1 || str _jobtype == "Fire") exitwith {
 	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
 	[] call client_fnc_startFire;
-	currentFire pushback _playeruid;
+	currentFire pushback _player;
 	publicvariable "currentFire";	
 	["basic"] spawn client_fnc_setGear;
 };
 
 if (str _jobtype find "Mafia" > -1 || str _jobtype == "Mafia") exitwith {
 	[] call client_fnc_startMafia;
-	currentMafia pushback _playeruid;
+	currentMafia pushback _player;
 	publicvariable "currentMafia";
 };
 
 if(str _jobtype find "doughnuts" > -1 || str _jobtype == "doughnuts") exitWith {
 	[] call client_fnc_startDoughnuts;
-	currentDoughnuts pushback _playeruid;
+	currentDoughnuts pushback _player;
 	publicVariable "currentDoughnuts";
 };
 
 if (str _jobtype find "Police Dispatch" > -1 || str _jobtype == "Police Dispatch") exitwith {   
 	[] call client_fnc_startDispatch;
-	currentPoliceDispatch pushback _playeruid;
+	currentPoliceDispatch pushback _player;
 	publicvariable "currentPoliceDispatch";
 };
 
 if (str _jobtype find "Medic Dispatch" > -1 || str _jobtype == "Medic Dispatch") exitwith {
 	[] call client_fnc_startDispatch;
-	currentMedicDispatch pushback _playeruid;
+	currentMedicDispatch pushback _player;
 	publicvariable "currentMedicDispatch";	
 };
 
 if (str _jobtype find "Fire Dispatch" > -1 || str _jobtype == "Fire Dispatch") exitwith {
 	[] call client_fnc_startDispatch;
-	currentFireDispatch pushback _playeruid;
+	currentFireDispatch pushback _player;
 	publicvariable "currentFireDispatch";	
 };
 
 if (str _jobtype find "mail" > -1 || str _jobtype == "mail") exitwith {
 	[] call client_fnc_mailSystem;
-	currentMailmen pushback _playeruid;
+	currentMailmen pushback _player;
 	publicvariable "currentMailmen";	
 };
 
 if (str _jobtype find "taxi" > -1 || str _jobtype == "taxi") exitwith {
 	[] call client_fnc_startTaxi;
-	currentTaxiDrivers pushback _playeruid;
+	currentTaxiDrivers pushback _player;
 	publicvariable "currentTaxiDrivers";
 };
 
 if (str _jobtype find "security" > -1 || str _jobtype == "security") exitwith {
 	[] call client_fnc_startSecurity;
-	currentsecurity pushback _playeruid;
+	currentsecurity pushback _player;
 	publicvariable "currentSecurity";	
 };
 
 if (str _jobtype find "Legal Aid" > -1 || str _jobtype == "Legal Aid") exitwith {
 	[] call client_fnc_startLegalAid;
-	currentlegalaid pushback _playeruid;
+	currentlegalaid pushback _player;
 	publicvariable "currentLegalAid";	
 };
 
 if (str _jobtype find "Lawyer" > -1  || str _jobtype == "Lawyer") exitwith {
 	[] call client_fnc_startLawyer;
-	currentlawyers pushback _playeruid;
+	currentlawyers pushback _player;
 	publicvariable "currentLawyers";
 };
 
 if (str _jobtype find "Judge" > -1  || str _jobtype == "Judge") exitwith {
 	[] call client_fnc_startJudge;	
-	currentJudges pushback _playeruid;
+	currentJudges pushback _player;
 	publicvariable "currentJudges";
 };
 
 if (str _jobtype find "Prosecutor" > -1  || str _jobtype == "Prosecutor") exitwith {
 	[] call client_fnc_startProsecutor;	
-	currentProsecutor pushback _playeruid;
+	currentProsecutor pushback _player;
 	publicvariable "currentProsecutor";
 };
 
 if (str _jobtype find "Tow Truck Driver" > -1  || str _jobtype == "Tow Truck Driver") exitwith {
 	[] call client_fnc_startTowTruck;
-	currentTowTruckDrivers pushback _playeruid;
+	currentTowTruckDrivers pushback _player;
 	publicvariable "currentTowTruckDrivers";
 };
 
 if (str _jobtype find "trashman" > -1 || str _jobtype == "trashman") exitwith {
 	[] call client_fnc_startGarbage;
-	currentTrashMan pushback _playeruid;
+	currentTrashMan pushback _player;
 	publicvariable "currentTrashman";	
 };
 
 if (str _jobtype find "reporter" > -1 || str _jobtype == "reporter") exitwith {
 	[] call client_fnc_startNews;	
-	currentNewsMan pushback _playeruid;
+	currentNewsMan pushback _player;
 	publicvariable "currentNewsMan";
 };
 
 if (str _jobtype find "repairman" > -1 || str _jobtype == "repairman") exitwith {	
 	[] call client_fnc_startRepair;
-	currentRepairmen pushback _playeruid;
+	currentRepairmen pushback _player;
 	publicvariable "currentRepairmen";	
 };
 
 if (str _jobtype find "pizza" > -1 || str _jobtype == "pizza") exitwith {	
 	[] call client_fnc_startPizza;
-	currentPizzaFicker pushback _playeruid;
+	currentPizzaFicker pushback _player;
 	publicvariable "currentPizzaFicker";	
 };
 
 if (str _jobtype find "busdriver" > -1 || str _jobtype == "busdriver") exitwith {	
 	[] call client_fnc_startbusding;
-	currentdimis pushback _playeruid;
+	currentdimis pushback _player;
 	publicvariable "currentdimis";	
 };
