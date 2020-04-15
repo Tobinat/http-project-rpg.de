@@ -1,5 +1,5 @@
 _player = _this select 0;
-
+_playeruid = getPlayerUID _player;
 diag_log["leave job % 1", _player];
 
 
@@ -47,14 +47,14 @@ if (_player IN currentFireDispatch) then {
 
 
 if (_player IN currentCop) exitwith {
-    _pia = currentCop find _player;
+    _pia = currentCop find _playeruid;
     currentCop deleteAt _pia;
     publicvariable "currentCop";
 	//currentCop ="";
 };
 
 if (_player IN currentEMS) exitwith {
-    _pia = currentEMS find _player;
+    _pia = currentEMS find _playeruid;
     currentEMS deleteAt _pia;
     publicvariable "currentEMS";
    //currentEMS ="";
