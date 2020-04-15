@@ -1,6 +1,5 @@
 _player = _this select 0;
 _jobtype = _this select 1;
-_playeruid = getPlayerUID _player;
 
 diag_log ["job starting %1 - %2", _player,_jobtype];
 
@@ -9,7 +8,7 @@ if(count currentCop < 10) then {
 [_player, getUnitLoadout _player] call Server_fnc_statSave;
 [] remoteExec ["client_fnc_startCop",_player];
 _player setvariable ["sync",0,false];
-currentCop pushback _playeruid;
+currentCop pushback _player;
 publicvariable "currentCop";
 
 } else {
@@ -22,7 +21,7 @@ if(count currentEMS < 10) then {
 [_player, getUnitLoadout _player] call Server_fnc_statSave;
 [] remoteExec ["client_fnc_startEMS",_player];
 _player setvariable ["sync",0,false];
-currentEMS pushback _playeruid;
+currentEMS pushback _player;
 publicvariable "currentEMS";
 } else {
 
