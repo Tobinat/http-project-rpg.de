@@ -18,8 +18,8 @@ deletemarkerlocal format["job%1",getPlayerUID player];
 
 player setVariable ["coplevel", 0, false];
 
-//[player] remoteExec ["server_fnc_quitJob",2];
-[player] spawn client_fnc_quitjob;
+[player] remoteExec ["server_fnc_quitJob",2];
+//[player] spawn client_fnc_quitjob;
 
 if(!isNil "vehspawned") then {
 	if(!isNull vehspawned) then {

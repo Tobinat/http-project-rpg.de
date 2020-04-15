@@ -46,7 +46,7 @@ if (_player IN currentFireDispatch) then {
 };
 
 
-if (_player IN currentCop) exitwith {
+if (getplayeruid _player IN currentCop) exitwith {
     _pia = currentCop find getplayeruid _player;
     currentCop deleteAt _pia;
     publicvariable "currentCop";
