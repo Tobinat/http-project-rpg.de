@@ -127,7 +127,7 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 					if(goggles player != "Mask_M40" && goggles player != "Masque_Chirurgical" && uniform player != "vvv_hazmat") then {
 						[] spawn client_fnc_spreaddisease;
 					} else {
-						_fickdich = round (random 100)
+						_fickdich = round (random 100);
 						if (_fickdich > 90) then { 
 							[] spawn client_fnc_spreaddisease; 
 						};
