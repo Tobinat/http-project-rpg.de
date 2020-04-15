@@ -15677,7 +15677,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{this && (local player) && (vehicle player in thisList)}";
-				onActivation="call{[] call client_fnc_jobEnd; [] call client_fnc_startFresh;}";
+				onActivation="call{[] call client_fnc_startFresh;}";
 				repeatable=1;
 				activationBy="ANYPLAYER";
 			};
