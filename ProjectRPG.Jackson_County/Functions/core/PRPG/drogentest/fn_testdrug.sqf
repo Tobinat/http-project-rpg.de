@@ -9,5 +9,5 @@ _unit = cursorTarget;
 if(isNull _unit) exitWith {};
 ["Nehme Blutprobe und teste auf Drogen", false] spawn domsg;
 uiSleep 2;
-if(player distance _unit > 5 || deadPlayer || !alive _unit) exitWith {["Du kannst das nicht tun.", false] spawn domsg;};
+if(player distance _unit > 5 || deadPlayer || !alive _unit) exitWith {["So wird das nichts.", false] spawn domsg;};
 [player] remoteExec ["client_fnc_testdrugClient",_unit];

@@ -239,7 +239,7 @@ if (_booli) then {
 	sleep 1;
 
 	[_player] spawn Server_fnc_initStats;
-	_startercars = ["Jonzie_XB","ADM_1969_Camaro","Jonzie_Mini_Cooper","Jonzie_Ceed","ADM_1964_Impala","ivory_190e"];
+	_startercars = ["Jonzie_XB","Jonzie_Mini_Cooper","Jonzie_Ceed","ivory_190e"];
 	_class = _startercars call BIS_fnc_selectRandom;
 
 	_Color = "black"; _finish = "Matte"; _rims = "black";

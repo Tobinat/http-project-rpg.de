@@ -36,6 +36,7 @@ if(_condition == "rarefish") then {
 			["platinum_fishing_rod",nil,50,1],
 			["epic_fishing_rod",nil,80,1],
 			["legendary_fishing_rod",nil,100,1],
+			["prpg_workbench_normal_kit",nil,5,1],
 			//clothes
 			["U_B_Wetsuit",nil,10,3,1],
 			["cg_horsehead",nil,20,3,5],
@@ -709,22 +710,22 @@ if(_condition == "copskleidung") then {
 
 if(_condition == "copvests") then {
 	_bulle = [
-		["PRPG_Deputy_W_1_W",nil,1,1],
-		["PRPG_Deputy_W_2_W",nil,1,1],
-		["PRPG_Deputy_W_1_Y",nil,1,1],
-		["PRPG_Deputy_W_2_Y",nil,1,1],
-		["PRPG_Deputy_W_1_S",nil,1,1],
-		["PRPG_Deputy_W_2_S",nil,1,1],
-		["PRPG_Sheriff_Belt",nil,1,1]
+		//["PRPG_Deputy_W_1_W",nil,1,1],
+		//["PRPG_Deputy_W_2_W",nil,1,1],
+		//["PRPG_Deputy_W_1_Y",nil,1,1],
+		//["PRPG_Deputy_W_2_Y",nil,1,1],
+		//["PRPG_Deputy_W_1_S",nil,1,1],
+		//["PRPG_Deputy_W_2_S",nil,1,1],
+		//["PRPG_Sheriff_Belt",nil,1,1]
 	];
 	if(_cop > 4) then {
 		_ret = [
-			["PRPG_Sheriff_W_1_W",nil,1,1],
-			["PRPG_Sheriff_W_2_W",nil,1,1],
-			["PRPG_Sheriff_W_1_Y",nil,1,1],
-			["PRPG_Sheriff_W_2_Y",nil,1,1],
-			["PRPG_Sheriff_W_1_S",nil,1,1],
-			["PRPG_Sheriff_W_2_S",nil,1,1]
+		//	["PRPG_Sheriff_W_1_W",nil,1,1],
+		//	["PRPG_Sheriff_W_2_W",nil,1,1],
+		//	["PRPG_Sheriff_W_1_Y",nil,1,1],
+		//	["PRPG_Sheriff_W_2_Y",nil,1,1],
+		//	["PRPG_Sheriff_W_1_S",nil,1,1],
+		//	["PRPG_Sheriff_W_2_S",nil,1,1]
 		];
 		_bulle = _bulle + _ret;
 	};

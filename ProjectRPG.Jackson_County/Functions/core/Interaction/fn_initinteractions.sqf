@@ -918,7 +918,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(str CurrentCursorTarget find ""gymbench"" > -1 || str CurrentCursorTarget find ""gymrack"" > -1)"],
-		["Trainieren", "[""Hart am arbeiten!"",60,client_fnc_workout,player,'AmovPercMstpSnonWnonDnon_exercisekneeBendA',player,0] spawn client_fnc_dotask; ",4]
+		["Pumpen", "[""Muskeltraining"",60,client_fnc_workout,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[
@@ -1261,8 +1261,8 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["ClientArrested && (str CurrentCursorTarget find ""gymbench"" > -1 || str CurrentCursorTarget find ""gymrack""> -1 ) && getpos player distance [5644.19,6329.73,0.00143433] < 55"],
-		["Stelle Dietrich her", "[""Baue Polenschlüssel"",60,client_fnc_craftlockpick,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
+		["ClientArrested && (str CurrentCursorTarget find ""gymbench"" > -1 || str CurrentCursorTarget find ""gymrack""> -1 ) && getpos player distance [5571.2,6289.79,0.00143433] < 55"],
+		["Stelle Dietrich her", "[""Dietrich Feilen"",60,client_fnc_craftlockpick,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[

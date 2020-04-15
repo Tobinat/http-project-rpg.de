@@ -1,6 +1,6 @@
 if(PhonesRinging) exitwith { 
 	PhonesRinging = false;
-	["Es wird angeklopft.", false] spawn domsg; 
+	["Du wirst angerufen.", false] spawn domsg; 
 	[] call client_fnc_hangup; 
 };
 if(tryingCall) exitwith {

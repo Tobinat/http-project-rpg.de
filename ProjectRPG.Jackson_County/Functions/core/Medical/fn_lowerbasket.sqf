@@ -16,5 +16,5 @@ if(isNull basket || isNull myRope || isNull lure) exitwith {
 	};
 	[] spawn client_fnc_unloadbasket; 
 };
-if(ropelength myrope > 15) exitwith { hint "Ich kann nicht meiter runter"; };
+if(ropelength myrope > 15) exitwith { hint "Das Seil ist komplett draußen!"; };
 ropeUnwind [myrope, 0.5, 3, true];	
