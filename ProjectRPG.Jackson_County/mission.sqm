@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=2820;
+		nextID=2821;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3706.3418,82.910172,937.33612};
-		dir[]={0.03794533,-0.40040925,0.91555411};
-		up[]={0.016580934,0.91633451,0.40006965};
-		aside[]={0.99914676,5.2386895e-009,-0.041409627};
+		pos[]={8285.0635,31.680334,3005.2546};
+		dir[]={0.30457568,-0.67827058,-0.66874772};
+		up[]={0.28113133,0.7348069,-0.61726969};
+		aside[]={-0.91008139,-3.9325096e-007,-0.41449061};
 	};
 };
 binarizationWanted=0;
@@ -46,13 +46,14 @@ addons[]=
 	"A3_Structures_F_Exp_Walls_Concrete",
 	"A3_Trees",
 	"Land_Rxo_Air_Garage_Office",
-	"CG_Roads"
+	"CG_Roads",
+	"plp_containers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=20;
+		items=21;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -169,6 +170,11 @@ class AddonsMetaData
 			className="CG_Roads";
 			name="CG_Roads";
 		};
+		class Item20
+		{
+			className="plp_containers";
+			name="plp_containers";
+		};
 	};
 };
 randomSeed=14654677;
@@ -191,24 +197,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -223,6 +211,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -5770,7 +5776,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=495;
+		items=496;
 		class Item0
 		{
 			dataType="Group";
@@ -21921,6 +21927,23 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item495
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8286.0361,30.417065,3002.9778};
+				angles[]={0,3.986692,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=2820;
+			type="plp_cts_PlasticBoxBlack";
+			atlOffset=1.0004921;
 		};
 	};
 };

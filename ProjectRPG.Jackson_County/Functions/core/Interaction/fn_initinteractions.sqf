@@ -1114,8 +1114,8 @@ NoPixel_InteractionMenuItems = [
 	],
 */
 	[
-		[" myJob == ""Cop"" && getpos player distance [8282.1,3004.28,0.00143814] < 2 "], 
-		["Ausrüstung", "[cursorobject] spawn client_fnc_vars"]
+		[" myJob == ""Cop"" && getpos player distance [8286.036,3002.978,5.213] < 3 && (typeof cursorobject == ""plp_ct_plasticboxblack"")"], 
+		["Ausrüstung", "[cursortarget] spawn client_fnc_vars"]
 	],
  
 	/*
