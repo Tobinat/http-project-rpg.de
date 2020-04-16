@@ -678,7 +678,7 @@ NoPixel_InteractionMenuItems = [
 
 
 
-
+/*
 	[
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
 		["Cop Ausrüstung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""cops""] spawn client_fnc_LoadStore;",3]
@@ -688,7 +688,7 @@ NoPixel_InteractionMenuItems = [
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
 		["Cop Waffenladen", "closedialog 0; createdialog ""Cops_GUN_Menu""; [""copwaffen""] spawn client_fnc_LoadStore;",3]
 	],
-
+*/
 //	[
 //		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
 //		["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
@@ -1112,12 +1112,12 @@ NoPixel_InteractionMenuItems = [
 		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"" || typeOF cursorTarget == ""sl_ford350_swat"" || typeOF cursorTarget == ""Abruzzi_LencoPD_01"")) && player getvariable ""cop"" > 6 "],
 		["Austattung Sondereinsatzeinheit", "[""riot""] spawn client_fnc_setGear",4]
 	],
-
+*/
 	 [
-		[" (myjob == ""Cop"" && (typeof cursorobject == ""Box_NATO_equip_F"" || typeOF cursorTarget == ""SL_Command_Unit"")) && player getvariable ""cop"" > 1 "],
-		["ARSENAL", "[cursorobject] spawn client_fnc_vars"]
+		[" myjob == ""Cop"" && ((getpos player) distance [8282.1,3004.28,0.00143814] < 3 "],
+		["Ausrüstung", "[cursorobject] spawn client_fnc_vars"]
 	],
- */
+ 
 	/*
 	//Geldtransporte
 	[

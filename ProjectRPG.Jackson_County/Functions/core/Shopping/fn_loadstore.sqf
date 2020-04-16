@@ -575,7 +575,7 @@ if(_condition == "mcdonalds") then {
 if(_condition == "cops") then {
 	_bulle = [
 		["np_water",nil,1,1],
-		["np_beefsoup",nil,1,1],
+		["np_water",nil,1,1],
 		["NP_PoliceBarrierL",nil,1,1],
 		["NP_PoliceBarrierS",nil,1,1],
 		["CG_wheel",nil,1,1],
@@ -633,7 +633,7 @@ if(_condition == "copwaffen") then {
 	};
 	if(_cop > 3) then {
 		_ret = [
-			["hlc_rifle_RU556",nil,1,1]
+			["hlc_rifle_M4a1carryhandle",nil,1,1]
 		];
 		_bulle = _bulle + _ret;
 	};
@@ -834,7 +834,8 @@ if(_condition == "medic") then {
 		["ACE_surgicalKit",nil,1,1],
 		["ACE_morphine",nil,1,1],
 		["ACE_epinephrine",nil,1,1],
-		["ACE_atropine",nil,1,1]
+		["ACE_atropine",nil,1,1],
+		["ACE_Splint",nil,1,1]
 	];
 	if(_EMS > 1) then {
 		_ret = [

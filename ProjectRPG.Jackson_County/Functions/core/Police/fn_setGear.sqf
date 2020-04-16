@@ -313,6 +313,7 @@ if(myjob == "EMS") exitwith {
 	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
+	for "_i" from 1 to 4 do {player addItemToBackpack "ACE_Splint";};
 	player additemtobackpack "np_water";
 	player additemtobackpack "np_beefsoup";
 
