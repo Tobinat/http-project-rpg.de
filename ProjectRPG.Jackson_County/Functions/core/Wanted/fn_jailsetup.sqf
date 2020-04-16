@@ -11,8 +11,18 @@ if(isNil "secondsLeft") then {
 _reason = _this select 1;
 
 player setpos [5618.46,6335.5,0.00143433];
+removeAllItems player;
+removeAllContainers player;
+removeAllWeapons player;
+removeAllAssignedItems player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
 removeuniform player;
+
 player adduniform "noRP_Jail";
+player addbackpack "";
 ClientArrested = true;
 _escaped = false;
 imrestrained = false;
@@ -37,6 +47,10 @@ ClientArrested = false;
 if(!_escaped) then {
 	hint "Sie haben ihre Zeit abgesessen.";
 	player setpos [5538.63,6258.06,0.00143433];
+	_clothingarray = ["np_shirt_1","np_shirt_2","np_shirt_3","np_shirt_4","np_shirt_5","np_shirt_6","np_shirt_7","np_shirt_8","vvv_ropa_comun_f_1","vvv_ropa_comun_f_2","vvv_ropa_comun_f_4","vvv_ropa_comun_f_5","vvv_ropa_comun_f_6","vvv_ropa_comun_f_7","vvv_ropa_comun_f_8","vvv_ropa_comun_f_9","vvv_ropa_comun_f_10"];
+	_clothing = _clothingarray call BIS_FNC_SELECTRANDOM;
+	removeuniform player;
+	player adduniform _clothing; 
 	[player] remoteExec ["server_fnc_wantedRemove2",2];
 } else {
 	hint "Du bist aus dem Gefängnis entkommen!";

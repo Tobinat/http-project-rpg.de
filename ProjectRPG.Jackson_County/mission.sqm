@@ -8,7 +8,7 @@ class EditorData
 	toggles=1546;
 	class ItemIDProvider
 	{
-		nextID=2657;
+		nextID=2660;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9552.5273,41.253334,4199.7173};
-		dir[]={0.043641713,-0.53184694,-0.84584385};
-		up[]={0.027405458,0.8468067,-0.53117222};
-		aside[]={-0.99877661,1.6155973e-006,-0.051524416};
+		pos[]={8822.583,33.982571,1380.4636};
+		dir[]={0.51851213,-0.82377958,-0.22959265};
+		up[]={0.75335997,0.56669605,-0.33358034};
+		aside[]={-0.40491351,8.5728607e-007,-0.91444522};
 	};
 };
 binarizationWanted=0;
@@ -179,24 +179,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -211,6 +193,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -5060,7 +5060,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=3;
+														value=0;
 													};
 												};
 												class Item1
@@ -5240,7 +5240,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=3;
+														value=0;
 													};
 												};
 												class Item1
@@ -5758,7 +5758,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=470;
+		items=471;
 		class Item0
 		{
 			dataType="Group";
@@ -14672,7 +14672,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9554,24.771315,4200.1182};
+				position[]={9553.7598,25,4199.9336};
 				angles[]={0,2.9111917,0};
 			};
 			side="Empty";
@@ -14684,7 +14684,6 @@ class Mission
 			};
 			id=738;
 			type="rmair_mk_ParkCar_11";
-			atlOffset=-0.22868538;
 		};
 		class Item212
 		{
@@ -18307,7 +18306,7 @@ class Mission
 			position[]={2740.1389,73.245239,3075.8982};
 			name="bus_20";
 			type="Empty";
-			angle=110.99016;
+			angle=110.99015;
 			id=1940;
 			atlOffset=3.0517578e-005;
 		};
@@ -20925,6 +20924,62 @@ class Mission
 			id=2656;
 			type="Land_ConcreteWall_02_m_8m_F";
 			atlOffset=-0.4438858;
+		};
+		class Item470
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3700.5842,73.245209,979.69287};
+				angles[]={0,3.4656827,0};
+			};
+			areaSize[]={45,0,20};
+			areaIsRectangle=1;
+			flags=1;
+			id=2659;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };

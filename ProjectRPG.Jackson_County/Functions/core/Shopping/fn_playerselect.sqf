@@ -113,8 +113,8 @@ uisleep 15;
 
 [
 	[
-		["Waehle Geschlecht","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
-		["Geschlecht kann im Krankenhaus geaendert werden ...","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
+		["Wähle Geschlecht","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
+		["Geschlecht kann im Krankenhaus geändert werden ...","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 */
@@ -129,7 +129,7 @@ createdialog "charselect";
 [
 	[
 		["Willkommen in Silver Lake.","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
-		["Verwenden die Windowstaste, um das Interaktionsmenü zu oeffnen.","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
+		["Verwenden die Windowstaste oder belege Use Action 10, um das Interaktionsmenü zu öffnen.","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -137,7 +137,7 @@ uisleep 18;
 
 [
 	[
-		["Beginnen mit dem Oeffnen des Interaktionsmenues bei dem auf der Karte markierten Trailer.","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
+		["Beginnen mit dem Öffnen des Interaktionsmenüs bei dem auf der Karte markierten Trailer.","<t align = 'center' shadow = '1' size = '0.5'>%1</t><br/>"],
 		["Du kannst deine erste E-Mail lesen. Viel Glück! :)","<t align = 'center' shadow = '1' size = '0.4' font='PuristaBold'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
