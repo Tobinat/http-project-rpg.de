@@ -54,7 +54,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 					//"Chevrolet_Tahoe_2015_Medic_V1",
 					//"Chevrolet_Tahoe_2015_Medic_V2",
 					//"Chevrolet_Tahoe_2015_Medic_V3"
-					"PRPG_Durango_EMS_01"
+					"PRPG_Charger_EMS_01"
 				];
 				_garage = _garage + _ret;
 			};

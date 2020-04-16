@@ -15,6 +15,6 @@ if(typeof cursorobject == "Land_zac_prison_wall_gate") then {
 	["Remove","Karma",100] call client_fnc_sustain;
 	
 	[getpos _door,"cop"] remoteexec ["client_fnc_jobMarker", currentCop];
-	["911: Alarm wurde ausgeloest!!!Gefaengnis Haupttor wurde gesprengt!!!", false] remoteExec ["domsg", currentCop]; 
+	["911: Alarm wurde ausgeloest!!! Gefängnis Haupttor wurde gesprengt!!!", false] remoteExec ["domsg", currentCop]; 
 	playSound3D ["CG_Jobs\sounds\jailbreak\jailAlarm.ogg", _fenceToOpen, false, (getposasl _fenceToOpen), 1.7, 1, 10235];
 };

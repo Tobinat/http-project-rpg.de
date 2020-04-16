@@ -20,6 +20,8 @@ wreckRemovalMinTime = 10;
 
 forceRotorLibSimulation = 2;
 
+enableDebugConsole[] = {"76561198124199916","76561198061326977"};
+
 class Header {
     gameType = RPG;
     minPlayers = 1;
