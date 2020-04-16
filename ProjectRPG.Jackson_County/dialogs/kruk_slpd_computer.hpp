@@ -117,7 +117,7 @@ class kruk_slpd_computer {
 		class button_search_case: client_RscButtonMenu {
 			idc = 1204;
 		    sizeEx = 0.02921;
-			text = "Akte Aufrufen"; //--- ToDo: Localize;
+			text = "Personen Akte öffnen"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 18.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -128,7 +128,7 @@ class kruk_slpd_computer {
 		class button_search_case_vehicle: client_RscButtonMenu {
 			idc = 1212;
 		    sizeEx = 0.02921;
-			text = "Fahrzeug Überprüfen"; //--- ToDo: Localize;
+			text = "Fahrzeug Akte öffnen"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 19.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -184,6 +184,7 @@ class kruk_slpd_computer {
 			colorBackground[] = {0.325,0.906,0.235,0.5};
 			action = "closeDialog 0; createDialog ""kruk_slpd_vehicle_add"";";
 		};
+		/*
 		class button_change: client_RscButtonMenu {
 			idc = 1209;
 		  sizeEx = 0.02921;
@@ -196,7 +197,7 @@ class kruk_slpd_computer {
 			colorBackground[] = {0,0,0,0.5};
 			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [""vehicle"", (_data select 0), parseNumber(ctrlText 1002), getPlayerUID player] remoteExec [""server_fnc_slpdCaseUpdate"", 2]; closeDialog 0; [] spawn { sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 
-		};
+		};*/
 		class button_case_check: client_RscButtonMenu {
 			idc = 1210;
 		    sizeEx = 0.02921;

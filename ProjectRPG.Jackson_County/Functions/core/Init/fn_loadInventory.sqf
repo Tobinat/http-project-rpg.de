@@ -41,8 +41,8 @@ _higherup = false;
 
 if(_mafia == 10) then {_house = getpos nearestObject [[9842.84,3677.44,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
 if(_mafia == 9) then { _house = getpos nearestObject [[9736.28,3629.54,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
-if(_cop == 13) then {_house = getpos nearestObject [[9626,3578.7,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
-if(_cop == 12) then { _house = getpos nearestObject [[9516.43,3526.09,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_cop == 12) then {_house = getpos nearestObject [[9626,3578.7,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_cop == 11) then { _house = getpos nearestObject [[9516.43,3526.09,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
 if(_ems == 8) then { _house = getpos nearestObject [[9412.31,3479.1,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
 if(_ems == 7) then { _house = getpos nearestObject [[9306.67,3430.66,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
 if(_legal == 10) then { _house = getpos nearestObject [[9188.22,3371.8,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
@@ -171,12 +171,12 @@ if(count(_prisonArray) > 0) then {
 		player setpos _containerpos;
 	};
 	if(_houselevel == 4) then {
-		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];
+		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F"], 30];
 		_containerpos = (_nobject select 0) getrelpos [15,0];
 		player setpos _containerpos;
 	};
 	if(_houselevel == 5) then {
-		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];
+		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F"], 30];
 		_containerpos = (_nobject select 0) getrelpos [15,0];
 		player setpos _containerpos;
 	};
@@ -186,24 +186,24 @@ if(count(_prisonArray) > 0) then {
 		player setpos _containerpos;
 	};
 	if(_houselevel == 7) then {
-		// = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];
-		//_containerpos = (_nobject select 0) getrelpos [15,0];
-		player setpos _house;
+		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
+		player setpos _containerpos;
 	};
 	if(_houselevel == 8) then {
-		//_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];
-		//_containerpos = (_nobject select 0) getrelpos [15,0];
-		player setpos _house;
+		_nObject = nearestObjects [_house, ["Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
+		player setpos _containerpos;
 	};
 	if(_houselevel == 9) then {
-		//_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];
-		//_containerpos = (_nobject select 0) getrelpos [15,0];
-		player setpos _house;
+		_nObject = nearestObjects [_house, ["Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
+		player setpos _containerpos;
 	};
 	if(_houselevel == 10) then {
-		//_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];
-		//_containerpos = (_nobject select 0) getrelpos [15,0];
-		player setpos _house;
+		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL2","Land_HouseDoubleAL"], 30];
+		_containerpos = (_nobject select 0) getrelpos [15,0];
+		player setpos _containerpos;
 	};
 };
 //diag_log "loadInventory phase 6";
