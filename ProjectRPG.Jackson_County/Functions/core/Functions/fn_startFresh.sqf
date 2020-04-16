@@ -52,7 +52,38 @@ closedialog 0;
 	["add","battery",200] call client_fnc_sustain;
 	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
-	[] spawn client_fnc_jobend;
+
+
+	[player,objNull,4,format ["%1 stirbt und beendet seine arbeit als %2", name player, myjob],myjob] remoteExec ["server_fnc_jobLog", 2];
+	myjob = "none";
+	taskrunning = false;
+	dispatch = false;
+	playertasks = [];
+	deletemarkerlocal format["job%1",getPlayerUID player];
+
+	player setVariable ["coplevel", 0, false];
+	player setVariable ["ace_medical_medicClass", 0, true];
+
+	[player] remoteExec ["server_fnc_quitJob",2];
+
+	if(!isNil "vehspawned") then {
+		if(!isNull vehspawned) then {
+			_players = crew (vehspawned);
+			if(count _players == 0) then {
+				{
+					detach _x;
+					deletevehicle _x;
+				} forEach attachedObjects vehspawned;
+				deletevehicle vehspawned;
+			};
+		};
+	};
+	[] call client_fnc_hudwork;
+	[] spawn client_fnc_tryhangup;
+
+	[getpos player,"text to display","destroy"] spawn client_fnc_hudHelper;
+
+
 	//_respawn = player getVariable "respawn";
 	//_respawn = _respawn - 1;
 	//player setVariable ["respawn", _respawn, false];
