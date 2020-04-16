@@ -119,7 +119,7 @@ _availableUniforms = [
 
 
         ];
-        _availableUniforms = _availableUniforms + _availableUniformsFive;
+        _availableUniforms = _availableUniforms + _availableUniformsFour;
     };
  
 _availableVests = [
@@ -137,26 +137,6 @@ _availableVests = [
 	"PRPG_Sheriff_W_1_S",
 	"PRPG_Sheriff_W_2_S"
 ];
-    if (player getvariable ["cop", 0] > 2) then {
-        _availableVestsTwo = [
-		
-        ];
-    _availableVests = _availableVests + _availableVestsTwo;
-    };
-    
-    if (player getvariable ["cop", 0] > 4) then {
-        _availableVestsFour = [
-            
-        ];
-    _availableVests = _availableVests + _availableVestsFour;
-    };
-
-	if (player getvariable ["cop", 0] > 5) then {
-	_availableVestsFive = [
-		
-	];
-	_availableVests = _availableVests + _availableVestsFive;
-	};
 
 
 _availableBackpacks = [
