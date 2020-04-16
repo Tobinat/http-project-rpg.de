@@ -7,7 +7,7 @@ _crate = _this select 0;
  
 _availableHeadgear = [
 	"PRPG_Cap_Sheriff_1",
-	"PRPG_Cap_Sheriff_2".
+	"PRPG_Cap_Sheriff_2",
 	"PRPG_Beanie_Sheriff"
 	
 ];
