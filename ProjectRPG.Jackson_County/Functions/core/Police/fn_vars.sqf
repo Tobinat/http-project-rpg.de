@@ -53,8 +53,6 @@ _availableUniforms = [
 	"PRPG_A_Deputy1"
 ];
 
-	_availableUniforms = _availableUniforms + _temp;
-	};
     if (player getvariable ["cop", 0] > 4) then {
         _availableUniformsFour = [
 			"NP_traje_test",
@@ -110,7 +108,7 @@ _availableUniforms = [
 			"TRYK_U_B_wh_blk_Rollup_CombatUniform",
 			"TRYK_shirts_DENIM_BK",
 			"TRYK_shirts_DENIM_BL",
-			"TRYK_shirts_DENIM_BWH"
+			"TRYK_shirts_DENIM_BWH",
 			"TRYK_shirts_DENIM_R",
 			"TRYK_shirts_DENIM_RED2",
 			"TRYK_shirts_DENIM_WHB",
