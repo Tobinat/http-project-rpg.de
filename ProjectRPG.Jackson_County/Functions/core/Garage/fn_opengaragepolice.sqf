@@ -15,8 +15,8 @@ if(myJob == "Cop") then {
 		_ret = [
 			//"A3F_Ford_Taurus_P_TL_V1",
 			//"Ford_Raptor_Police_V1"
-			"PRPG_Durango_Sheriff_01"
-			//"PRPG_WRX_Sheriff_01"
+			"PRPG_Durango_Sheriff_01",
+			"ivory_wrx_marked"
 		];
 		_garage = _garage + _ret;
 	};
