@@ -2,6 +2,7 @@ params ["_player", "_id", "_uid", "_name", "_items", "_messages", "_cash", "_ban
 if(isNull _player) exitWith { diag_log "Stat Disconnect - player null"; };
 
 _items = getUnitLoadout _player;
+_playeruid = getplayerUID _player;
 
 _messages = [];
 
@@ -14,7 +15,7 @@ _position = position _player;
 _syncInfo = _player getVariable "sync";
 if(isNil "_syncInfo") then { _syncinfo = 1; };
 
-if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player in currentFire) then { 
+if(_syncInfo == 0 || _playeruid in currentCop || _playeruid in currentEMS || _playeruid in currentFire) then { 
 	_updatestr = format ["updatePlayerInfoNoGearNoShopNoHouse:%1:%2:%3:%4:%5", _cash, _bank, _position, _messages, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 } else { 
@@ -23,7 +24,7 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
 }; 
 
 [_uid,"disconnected"] spawn Server_fnc_connected;
-[_player,2,format ["%1 rozłączył się z serwerem", name _player],_uid,""] call server_fnc_connectionLog;
+[_player,2,format ["%1 vom Server getrennt", name _player],_uid,""] call server_fnc_connectionLog;
 
 [] spawn server_fnc_refreshjobs;
 

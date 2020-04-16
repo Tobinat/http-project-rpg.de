@@ -36,7 +36,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 					//"Dodge_Charger_SRT8_2016_Medic_V1",
 					//"Dodge_Charger_SRT8_2016_Medic_V2",
 					//"Dodge_Charger_SRT8_2016_Medic_V3",
-					"EC635_SAR",
+					//"EC635_SAR",
 					"C_hh60j_unarmed_F"
 				];
 				_garage = _garage + _ret;
