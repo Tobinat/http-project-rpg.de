@@ -298,6 +298,7 @@ _availableItems = [
 	"ACE_Flashlight_XL50",
 	"ACE_EarPlugs",
 	"ACE_fieldDressing",
+	"ACE_Tourniquet",
 	"ACE_Splint"
 ];
     if (player getvariable ["cop", 0] == 10) then {

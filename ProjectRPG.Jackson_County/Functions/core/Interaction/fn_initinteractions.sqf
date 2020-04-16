@@ -1113,7 +1113,7 @@ NoPixel_InteractionMenuItems = [
 		["Austattung Sondereinsatzeinheit", "[""riot""] spawn client_fnc_setGear",4]
 	],
 */
-	 [
+	[
 		[" myjob == ""Cop"" && ((getpos player) distance [8282.1,3004.28,0.00143814] < 3 "],
 		["Ausrüstung", "[cursorobject] spawn client_fnc_vars"]
 	],
