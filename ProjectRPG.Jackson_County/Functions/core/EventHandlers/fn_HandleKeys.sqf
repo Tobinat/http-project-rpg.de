@@ -2,6 +2,8 @@
 
 params ["_ctrl", "_code", "_shift", "_ctrlKey", "_alt", ["_handled", false, [false]], "_veh", "_locked", "_interactionKey", "_mapKey", ["_interruptionKeys", [17,30,31,32]]];
 
+_interactionKey = if (count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
+
 switch (_code) do
 {
 
@@ -223,7 +225,7 @@ switch (_code) do
 		};
 	};
 	// Windows Key
-	case 219:
+	case _interactionKey:
 	{
 		_spikeStrips = (nearestObjects[getPos player,["CG_Spikes_Extended"],3]) select 0;
 		if !(_spikeStrips isEqualTo [] && !spikeAntiSpam) then {

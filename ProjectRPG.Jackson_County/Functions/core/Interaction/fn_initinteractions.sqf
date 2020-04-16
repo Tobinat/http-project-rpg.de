@@ -1334,6 +1334,11 @@ NoPixel_InteractionMenuItems = [
 		["kif_admin>=1"],
 		["BAN HAMMER", "closedialog 0; createdialog ""koiladmin""; ",4]
 	]
+	// SPIELAUTOMATEN FÜR DIE ZUKUNFT // KOMMA NICHT VERGESSEN !!!!!!!!!!!!!!!!!!!!!!!!!!
+	//[
+	//	["getpos player distance [6803.76,4640.5,0.00143814] < 15"],
+	//	["Spielautomat","    ",4]
+	//]
 ];
 
 player setVariable["loaded", 2, false];
