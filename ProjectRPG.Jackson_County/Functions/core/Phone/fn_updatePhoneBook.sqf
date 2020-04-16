@@ -217,6 +217,19 @@ disableSerialization;
 
 	if!(_old isEqualTo  currentdimis) then { publicvariable "currentdimis"; };
 
+	_currentPoliceDispatch = [];
+	_currentMedicDispatch = [];
+	_currentSecurity = [];
+	_currentRepairmen = [];
+	_currentJudges = [];
+	_currentProsecutor = [];
+	_currentLawyers = [];
+	_currentMailmen = [];
+	_currentNewsMan = [];
+	_currentTaxiDrivers = [];
+
+
+
 	{
 		_unit = _x call BIS_fnc_getUnitByUid;
 		_currentPoliceDispatch pushback _unit;

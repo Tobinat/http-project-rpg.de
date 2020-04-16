@@ -1,6 +1,19 @@
 
 _player = _this select 0;
 
+	_currentPoliceDispatch = [];
+	_currentMedicDispatch = [];
+	_currentSecurity = [];
+	_currentLegalAid = [];
+	_currentRepairmen = [];
+	_currentJudges = [];
+	_currentProsecutor = [];
+	_currentLawyers = [];
+	_currentMailmen = [];
+	_currentTowTruckDrivers = [;
+	_currentNewsMan = [];
+	_currentTaxiDrivers = [];
+
 	{
 		_unit = _x call BIS_fnc_getUnitByUid;
 		_currentPoliceDispatch pushback _unit;
