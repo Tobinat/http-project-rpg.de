@@ -1,5 +1,3 @@
-enableDebugConsole = 1;
-
 respawn = "BASE";
 disabledAI = 1;
 author = "Koil | Edited by PRPG.de";
