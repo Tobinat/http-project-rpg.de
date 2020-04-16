@@ -34,6 +34,118 @@ if(myjob == "Cop") exitwith {
 			//Probationary Deputy
 			if(_level == 1) then {
 				player forceAddUniform "PRPG_P_Deputy1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Beanie_Sheriff";
+			};
+			//Deputy
+			if(_level == 2) then {
+				player forceAddUniform "PRPG_Deputy1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Beanie_Sheriff";
+			};
+			//Senior Deputy
+			if(_level == 3) then {
+				player forceAddUniform "PRPG_Senior_Deputy1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Beanie_Sheriff";
+			};
+			//Detective
+			if(_level == 4) then {
+				player forceAddUniform "PRPG_Detective1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_1";
+			};
+			//Sergeant
+			if(_level == 5) then {
+				player forceAddUniform "PRPG_Sergeant1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_1";
+			};
+			//Senior Sergeant
+			if(_level == 6) then {
+				player forceAddUniform "PRPG_S_Sergeant1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_1";
+			};
+			//Lieutenant
+			if(_level == 7) then {
+				player forceAddUniform "PRPG_Lieutenant1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_1";
+			};
+			//Captain
+			if(_level == 8) then {
+				player forceAddUniform "PRPG_Captain1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_1";
+			};
+			//Division Chief
+			if(_level == 9) then {
+				player forceAddUniform "PRPG_D_Chief1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_1";
+			};
+			//Superintendent
+			if(_level == 10) then {
+				player forceAddUniform "PRPG_Superintendent1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_2";
+			};
+			//Assistant Sheriff
+			if(_level == 11) then {
+				player forceAddUniform "PRPG_A_Sheriff1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_2";
+			};
+			//Sheriff
+			if(_level == 12) then {
+				player forceAddUniform "PRPG_Sheriff1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_2";
+			};
+			//Auxiliary Deputy
+			if(_level == 13) then {
+				player forceAddUniform "PRPG_A_Deputy1";
+				player addVest "PRPG_Sheriff_Belt";
+				player addHeadgear "PRPG_Cap_Sheriff_2";
+			};
+			player additemtobackpack "np_water";
+			player additemtobackpack "np_beefsoup";
+			player addItemToUniform "ACE_Flashlight_XL50";
+			player addItemToUniform "ACE_EarPlugs";
+		};
+	};
+
+	if(_type == "highthreat") then {
+		removeAllWeapons player;
+		removeAllItems player;
+		removeAllAssignedItems player;
+		removeUniform player;
+		removeVest player;
+		removeBackpack player;
+		removeHeadgear player;
+		removeGoggles player;
+		player addWeapon "Binocular";
+		player linkItem "ItemMap";
+		player linkItem "ItemCompass";
+		player linkItem "Itemwatch";
+		player linkItem "ItemGPS";
+		player linkitem "tf_anprc152";
+		player addBackpack "invisible_carryall";
+		player additemtobackpack "RH_m9";
+		player addweapon "DDOPP_X26";
+		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
+		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
+		for "_i" from 1 to 5 do {player addItemToBackPack "ACE_CableTie"; };
+		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
+
+		for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
+		_level = player getvariable ["cop", 0];
+
+		if(female) then { player forceAddUniform "female_police"; player addHeadgear "EF_Fcap_P"; } else {
+			//Probationary Deputy
+			if(_level == 1) then {
+				player forceAddUniform "PRPG_P_Deputy1";
 				player addVest "PRPG_Deputy_W_2_Y";
 				player addHeadgear "PRPG_Beanie_Sheriff";
 			};
@@ -115,6 +227,7 @@ if(myjob == "Cop") exitwith {
 			player addItemToUniform "ACE_EarPlugs";
 		};
 	};
+
 	if(_type == "riot") then {
 		removeAllWeapons player;
 		removeAllItems player;
