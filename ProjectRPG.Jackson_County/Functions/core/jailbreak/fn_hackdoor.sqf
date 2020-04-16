@@ -57,7 +57,10 @@ if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "La
 		_doors = ["door1","door2","door3","door4"];
 		{ _fencetoopen animate [_x,1]; } forEach _doors;
 		{ _fencetoopen animate [_x,0]; } forEach _doors2;
-		["911: Hinweis!!! Die Türen eines Zellenblocks wurde gehackt.", false] remoteExec ["domsg", currentCop];
+		{
+			_unit = _x call BIS_fnc_getUnitByUid;
+			["911: Hinweis!!! Die Türen eines Zellenblocks wurde gehackt.", false] remoteExec ["domsg", _unit];
+		} foreach currentCop;
 
 	};
 	[player, _fenceToOpen, "hackDoor"] spawn client_fnc_createEvidence;
