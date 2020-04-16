@@ -32,6 +32,7 @@ if(myJob == "Cop") then {
 		_ret = [
 			//"Dodge_Charger_06_Unmarked_V1",
 			//"Ford_Crown_Unmarked_V1"
+			"ivory_wrx_swat"
 		];
 		_garage = _garage + _ret;
 	};

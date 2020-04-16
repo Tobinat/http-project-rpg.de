@@ -42,6 +42,7 @@ class CfgVehicles {
 		};
 	};
 	
+	/* Andere möglichkeit den Skin ingame zu nutzen verwendet.
 	class PRPG_WRX_Sheriff_01: ivory_wrx_marked
 	{
 		displayname = "PRPG DOC WRX";
@@ -51,6 +52,7 @@ class CfgVehicles {
 			"PRPG_Cars\data\sheriff\prpg_wrx_sheriff.paa"
 		};
 	};
+	*/
 
 	class PRPG_durango_Sheriff_01: vvv_DodgeDurango 
 	{
