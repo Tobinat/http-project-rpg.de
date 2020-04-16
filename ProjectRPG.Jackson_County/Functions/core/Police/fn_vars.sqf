@@ -39,20 +39,19 @@ _availableGoggles = [
 
  
 _availableUniforms = [
-
+	"female_police",
+	"PRPG_P_Deputy1",
+	"PRPG_Deputy1",
+	"PRPG_Senior_Deputy1",
+	"PRPG_S_Sergeant1",
+	"PRPG_Lieutenant1",
+	"PRPG_Captain1",
+	"PRPG_D_Chief1",
+	"PRPG_Superintendent1",
+	"PRPG_A_Sheriff1",
+	"PRPG_Sheriff1",
+	"PRPG_A_Deputy1"
 ];
-		"female_police",
-		"PRPG_P_Deputy1",
-		"PRPG_Deputy1",
-		"PRPG_Senior_Deputy1",
-		"PRPG_S_Sergeant1",
-		"PRPG_Lieutenant1",
-		"PRPG_Captain1",
-		"PRPG_D_Chief1",
-		"PRPG_Superintendent1",
-		"PRPG_A_Sheriff1",
-		"PRPG_Sheriff1",
-		"PRPG_A_Deputy1"
 
 	_availableUniforms = _availableUniforms + _temp;
 	};
@@ -301,20 +300,6 @@ _availableItems = [
 	"ACE_Tourniquet",
 	"ACE_Splint"
 ];
-    if (player getvariable ["cop", 0] == 10) then {
-    _availableItemsTen = [
-        "kif_500k",
-	"kif_100k",
-	"kif_50k"
-    ];
-     _availableItems = _availableItems + _availableItemsTen;
-    };
-	if (client_dtu_actions > 0 ) then {
-	_availableItemsDtu = [
-    "kif_gps"
-    ];
-     _availableItems = _availableItems + _availableItemsDtu;
-	};
 
 
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
