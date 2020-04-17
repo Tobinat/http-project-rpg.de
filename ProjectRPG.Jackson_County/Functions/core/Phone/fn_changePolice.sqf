@@ -35,7 +35,7 @@ if (myjob =="Fire") then {
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;
-	["Sie sind verbunden mit der Notrufzentrale des SLFD!", false] spawn domsg;
+	["Du bist jetzt im FD-Funk!", false] spawn domsg;
 };
 if (myjob =="Cop") then {
 	player setvariable["PhoneCallNumber",33.3,true];
