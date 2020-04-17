@@ -50,7 +50,8 @@ _availableUniforms = [
 	"PRPG_Superintendent1",
 	"PRPG_A_Sheriff1",
 	"PRPG_Sheriff1",
-	"PRPG_A_Deputy1"
+	"PRPG_A_Deputy1",
+	"PRPG_Sheriff_Shorts1"
 ];
 
     if (player getvariable ["cop", 0] > 4) then {
