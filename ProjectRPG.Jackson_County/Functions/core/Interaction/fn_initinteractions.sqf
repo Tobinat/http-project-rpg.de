@@ -1145,10 +1145,6 @@ NoPixel_InteractionMenuItems = [
 		["TECZKA 5K", "[5] spawn client_fnc_takeSuitcase"]
 	],*/
 /*
-	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") && player getvariable ""cop"" > 10 "],
-		["Kleiderkammer PD", "[cursorobject] spawn client_fnc_policeClothes"]
-	],
 
 	[
 		[" (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") && player getvariable ""ems"" > 1 "],

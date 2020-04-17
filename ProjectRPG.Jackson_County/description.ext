@@ -163,7 +163,6 @@ class CfgFunctions
 			class raidshop {};
 			class raidhouse {};
 			class copmapmarkers {};
-			class policeClothes{};
 			class copOpener{};
 		};
 
