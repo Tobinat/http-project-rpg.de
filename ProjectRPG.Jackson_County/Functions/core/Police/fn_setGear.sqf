@@ -19,6 +19,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "Itemwatch";
 		player linkItem "ItemGPS";
 		player linkitem "tf_anprc152";
+		[] call client_fnc_ChangePolice;
 		player addBackpack "invisible_carryall";
 		player additemtobackpack "RH_m9";
 		player addweapon "DDOPP_X26";
@@ -131,6 +132,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "Itemwatch";
 		player linkItem "ItemGPS";
 		player linkitem "tf_anprc152";
+		[] call client_fnc_ChangePolice;
 		player addBackpack "invisible_carryall";
 		player additemtobackpack "RH_m9";
 		player addweapon "DDOPP_X26";
@@ -267,6 +269,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
 		player linkItem "tf_anprc152";
+		[] call client_fnc_ChangePolice;
 		player linkItem "ItemGPS";
 		player linkItem "TRYK_G_bala_ess_NV";
 	};
@@ -290,6 +293,7 @@ if(myjob == "EMS") exitwith {
 	player linkItem "ItemCompass";
 	player linkItem "Itemwatch";
 	player linkitem "tf_anprc152";
+	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
 	player linkItem "TRYK_Headset_NV";
 
@@ -393,6 +397,7 @@ if(myjob == "EMS") exitwith {
 	player linkItem "ItemCompass";
 	player linkItem "Itemwatch";
 	player linkitem "tf_anprc152";
+	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
 	player linkItem "TRYK_Headset_NV";
 
@@ -437,6 +442,7 @@ if(myjob == "EMS") exitwith {
 	player linkItem "ItemCompass";
 	player linkItem "Itemwatch";
 	player linkitem "tf_anprc152";
+	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
 	player linkItem "TRYK_Headset_NV";
 
@@ -470,6 +476,7 @@ if(myjob == "EMS") exitwith {
 	player linkItem "ItemCompass";
 	player linkItem "Itemwatch";
 	player linkitem "tf_anprc152";
+	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
 	player linkItem "TRYK_Headset_NV";
 
@@ -504,6 +511,7 @@ if(myjob == "EMS") exitwith {
 	player linkItem "ItemCompass";
 	player linkItem "Itemwatch";
 	player linkitem "tf_anprc152";
+	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
 	player linkItem "TRYK_Headset_NV";
 

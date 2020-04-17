@@ -9,8 +9,5 @@ player setVariable ["coplevel", _cop, false];
 _items = getunitloadout player;
 player setvariable ["lastsave",_items, false];
 
-
-[] call client_fnc_ChangePolice;
-
-playsound "copintro";
+//playsound "copintro";
 //[] call client_fnc_jobEnd;

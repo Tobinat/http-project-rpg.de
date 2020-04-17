@@ -7,7 +7,7 @@
 */
 
 _onScreenTime = 5;
-playsound "civintro";
+//playsound "civintro";
 
 sleep 2; //Wait in seconds before the credits start after player is in-game
 _role1 = "Willkommen bei";
