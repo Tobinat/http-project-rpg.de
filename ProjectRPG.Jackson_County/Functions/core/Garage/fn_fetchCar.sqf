@@ -80,7 +80,8 @@ if((_this select 0) == 1) exitwith {
 		[_vehicle, ["darkjunglegreen","metallic"], "black", 10, 10] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "red_" > -1) then {
-		_vehicle setObjectMaterialGlobal  [0, "ivory_data\data\matte.rvmat" ];
+
+		_vehicle setObjectMaterialGlobal  [0, "ivory_data\data\metallic.rvmat" ];
 
 	}; 
 	[_vehicle] call client_fnc_spawnvehicle;

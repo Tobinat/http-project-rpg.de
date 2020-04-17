@@ -8,14 +8,14 @@ _garage = [];
 if(myJob == "Cop") then {
 		_garage = [
 			"red_cvpi_06_p_sheriff",
-			"red_cvpi_06_p_u_sheriff"
-			//"red_cvpi_06_p_u_traffic" Momenatan keine Information darüber wie die Tafel funktioniert
+			"red_cvpi_06_p_u_sheriff",
+			"red_cvpi_06_p_u_traffic" 
 		];
 	if(_cop > 1) then {
 		_ret = [
 			"red_taurus_13_p_sheriff",
-			"red_taurus_13_p_u_sheriff"
-			//"red_taurus_13_p_u_traffic" Momenatan keine Information darüber wie die Tafel funktioniert
+			"red_taurus_13_p_u_sheriff",
+			"red_taurus_13_p_u_traffic" 
 		];
 		_garage = _garage + _ret;
 	};

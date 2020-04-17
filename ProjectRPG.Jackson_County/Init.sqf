@@ -14,7 +14,7 @@ tf_civ_radio_code = tf_west_radio_code;
 2 enableChannel false;
 3 enableChannel false;
 4 enableChannel false;
-0 enableChannel [true, false];
+0 enableChannel false;
 6 enableChannel false;
 
 shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_02_F","Land_buildingBar1","Land_Market_DED_Market_01_F","land_cg_dexters","Land_Coffee_DED_Coffee_02_F","Land_Coffee_DED_Coffee_01_F","Land_buildingGunStore1","land_cg_dunkinbronuts"];
