@@ -13,7 +13,6 @@ theDrill attachTo [_thebankcontainer, [0, -0.9, 0] ];
 player removeitem "NP_drillitem";
 
 [player, theDrill, "bankDrill"] spawn client_fnc_createEvidence;
-[player, _theBankContainer, "vaultBreach"] spawn client_fnc_createEvidence;
 
 	["Remove","Karma",100] call client_fnc_sustain;
 
@@ -42,7 +41,7 @@ for "_i" from 0 to 1 step 0 do  {
 		while{bankrobber == 2} do {
 
 			deletevehicle _ps;
-			playSound3D ["cg_mission_files\sounds\npdrillfailing.ogg", player, false, getPosAtL theDrill, 10, 1, 45];
+			playSound3D ["prpg_data\sounds\npdrillfailing.ogg", player, false, getPosAtL theDrill, 10, 1, 45];
 			uisleep 12;
 			hint "Der Bohrer steckt fest";
 			uisleep 3;
@@ -52,7 +51,7 @@ for "_i" from 0 to 1 step 0 do  {
 
 	if(_pick > 19 && _pick < 61) then {
 
-		playSound3D ["cg_mission_files\sounds\npdrill2.ogg", player, false, getPosAtL theDrill, 10, 1, 45];
+		playSound3D ["prpg_data\sounds\npdrill2.ogg", player, false, getPosAtL theDrill, 10, 1, 45];
 		uisleep 20;
 		deletevehicle _ps;
 
@@ -60,7 +59,7 @@ for "_i" from 0 to 1 step 0 do  {
 
 	if(_pick > 60 && _pick < 91) then {
 
-		playSound3D ["cg_mission_files\sounds\npdrill1.ogg", player, false, getPosAtL theDrill, 10, 1, 45];
+		playSound3D ["prpg_data\sounds\npdrill1.ogg", player, false, getPosAtL theDrill, 10, 1, 45];
 		uisleep 14;
 		deletevehicle _ps;
 	};
@@ -68,6 +67,7 @@ for "_i" from 0 to 1 step 0 do  {
 	if(_pick > 90) exitwith {
 	deletevehicle _ps;
 	hint "Die Bank wurde ausgeraubt - Überprüfe den Sicherheitskasten!";
+	[player, _theBankContainer, "vaultBreach"] spawn client_fnc_createEvidence;
 	bankrobber = 4;
 	uisleep 300;
 	deletevehicle _thebankcontainer;

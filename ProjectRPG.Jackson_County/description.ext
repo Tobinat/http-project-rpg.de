@@ -1,12 +1,10 @@
-enableDebugConsole = 1;
-
 respawn = "BASE";
 disabledAI = 1;
 author = "Koil | Edited by PRPG.de";
 onLoadName = "Project-RPG v0.6";
 onLoadMission = "Webseite: http://project-rpg.de";
 onLoadIntro = "PRPG Life ist am laden...";
-//loadScreen =  "sl_client\textures\loading\load.paa";
+//loadScreen =  "PRPG_Data\textures\loading\load.paa";
 disableChannels[]={6};
 respawndelay = 1;
 respawnButton = 0;
@@ -19,6 +17,8 @@ wreckRemovalMaxTime = 600;
 wreckRemovalMinTime = 10;
 
 forceRotorLibSimulation = 2;
+
+enableDebugConsole[] = {"76561198124199916","76561198061326977"};
 
 class Header {
     gameType = RPG;
@@ -163,7 +163,6 @@ class CfgFunctions
 			class raidshop {};
 			class raidhouse {};
 			class copmapmarkers {};
-			class policeClothes{};
 			class copOpener{};
 		};
 
@@ -230,17 +229,18 @@ class CfgFunctions
 		class busmensch {
 			file = "Functions\core\PRPG\busmensch";
 			class startbusding {};
-      class busabfrage {};
+            class busabfrage {};
 		};
 
-    class advcrafting {
+
+        class advcrafting {
 			file = "Functions\core\PRPG\advcrafting";
 			class craftMenucar {};
 			class craftMenuweapon {};
 			class craftMenuclothing {};
 		};
 
-    class workbenches {
+        class workbenches {
 			file = "Functions\core\PRPG\advcrafting\workbenches";
 			class carworkbench {};
 			class clothingworkbench {};
@@ -256,7 +256,7 @@ class CfgFunctions
 			class pickupweaponworkbench {};
 		};
 
-    class FarmingSim {
+        class FarmingSim {
 			file = "Functions\core\PRPG\FarmingSim";
 			class plantcotton {};
 			class plantbeans {};
@@ -265,6 +265,12 @@ class CfgFunctions
 			class farmsand {};
 			class refinegarn {};
 			class refineoil2 {};
+		};
+
+        class medic {
+			file = "Functions\core\PRPG\medic";
+			class testcorona {};
+            class healcorona {};
 		};
 
 		class jobFactions {
@@ -929,7 +935,7 @@ class CfgSounds {
     class cgphone_static {
         name = "cgphone_static";
         sound[] = {
-            "@cg_mission_files\PhoneSounds\cgphone_static.ogg",
+            "@prpg_data\sounds\PhoneSounds\cgphone_static.ogg",
             1.5,
             1
         };
@@ -939,7 +945,7 @@ class CfgSounds {
     class cgphone_call {
         name = "cgphone_call";
         sound[] = {
-            "@cg_mission_files\PhoneSounds\cgphone_call.ogg",
+            "@prpg_data\sounds\PhoneSounds\cgphone_call.ogg",
             1.5,
             1
         };
@@ -948,7 +954,7 @@ class CfgSounds {
     class cgphone_hangup {
         name = "cgphone_hangup";
         sound[] = {
-            "@cg_mission_files\PhoneSounds\cgphone_hangup.ogg",
+            "@prpg_data\sounds\PhoneSounds\cgphone_hangup.ogg",
             1.5,
             1
         };
@@ -957,7 +963,7 @@ class CfgSounds {
     class cgphone_nodialtone {
         name = "cgphone_nodialtone";
         sound[] = {
-            "@cg_mission_files\PhoneSounds\cgphone_nodialtone.ogg",
+            "@prpg_data\sounds\PhoneSounds\cgphone_nodialtone.ogg",
             1.5,
             1
         };
@@ -966,7 +972,7 @@ class CfgSounds {
     class cgphone_noservice {
         name = "cgphone_noservice";
         sound[] = {
-            "@cg_mission_files\PhoneSounds\cgphone_noservice.ogg",
+            "@prpg_data\sounds\PhoneSounds\cgphone_noservice.ogg",
             1.5,
             1
         };
@@ -977,7 +983,7 @@ class CfgSounds {
     class mdciv {
         name = "mdciv";
         sound[] = {
-            "@cg_mission_files\dispatch\mdciv.ogg",
+            "@prpg_data\sounds\dispatch\mdciv.ogg",
             0.7,
             1.1
         };
@@ -987,7 +993,7 @@ class CfgSounds {
     class mdofficer {
         name = "mdofficer";
         sound[] = {
-            "@cg_mission_files\dispatch\mdofficer.ogg",
+            "@prpg_data\sounds\dispatch\mdofficer.ogg",
             0.7,
             1.1
         };
@@ -997,7 +1003,7 @@ class CfgSounds {
     class danimal {
         name = "danimal";
         sound[] = {
-            "@cg_mission_files\dispatch\danimal.ogg",
+            "@prpg_data\sounds\dispatch\danimal.ogg",
             0.7,
             1.1
         };
@@ -1007,7 +1013,7 @@ class CfgSounds {
     class dnopermit {
         name = "dnopermit";
         sound[] = {
-            "@cg_mission_files\dispatch\dnopermit.ogg",
+            "@prpg_data\sounds\dispatch\dnopermit.ogg",
             0.7,
             1.1
         };
@@ -1017,7 +1023,7 @@ class CfgSounds {
     class dgang {
         name = "dgang";
         sound[] = {
-            "@cg_mission_files\dispatch\dgang.ogg",
+            "@prpg_data\sounds\dispatch\dgang.ogg",
             0.7,
             1.1
         };
@@ -1026,7 +1032,7 @@ class CfgSounds {
     class pillswallow {
         name = "pillswallow";
         sound[] = {
-            "@cg_mission_files\Sounds\swallow.ogg",
+            "@PRPG_Data\Sounds\swallow.ogg",
             1,
             1
         };
@@ -1035,7 +1041,7 @@ class CfgSounds {
     class spraycar {
         name = "spraycar";
         sound[] = {
-            "@cg_mission_files\sounds\spraypaint.ogg",
+            "@PRPG_Data\sounds\spraypaint.ogg",
             1.7,
             1
         };
@@ -1045,7 +1051,7 @@ class CfgSounds {
     class defib {
         name = "defib";
         sound[] = {
-            "@cg_mission_files\sounds\defib.ogg",
+            "@PRPG_Data\sounds\defib.ogg",
             1.7,
             1
         };
@@ -1055,7 +1061,7 @@ class CfgSounds {
     class dbank {
         name = "dbank";
         sound[] = {
-            "@cg_mission_files\dispatch\dbank.ogg",
+            "@prpg_data\sounds\dispatch\dbank.ogg",
             0.7,
             1.1
         };
@@ -1064,7 +1070,7 @@ class CfgSounds {
     class dj {
         name = "dj";
         sound[] = {
-            "@cg_mission_files\dispatch\dj.ogg",
+            "@prpg_data\sounds\dispatch\dj.ogg",
             0.7,
             1.1
         };
@@ -1073,7 +1079,7 @@ class CfgSounds {
     class dbe {
         name = "dbe";
         sound[] = {
-            "@cg_mission_files\dispatch\dbe.ogg",
+            "@prpg_data\sounds\dispatch\dbe.ogg",
             0.7,
             1.1
         };
@@ -1082,7 +1088,7 @@ class CfgSounds {
     class dpanic {
         name = "dpanic";
         sound[] = {
-            "@cg_mission_files\dispatch\dpanic.ogg",
+            "@prpg_data\sounds\dispatch\dpanic.ogg",
             0.7,
             1.1
         };
@@ -1091,7 +1097,7 @@ class CfgSounds {
     class drcentral {
         name = "drcentral";
         sound[] = {
-            "@cg_mission_files\dispatch\drcentral.ogg",
+            "@prpg_data\sounds\dispatch\drcentral.ogg",
             0.7,
             1.1
         };
@@ -1100,7 +1106,7 @@ class CfgSounds {
     class drsouth {
         name = "drsouth";
         sound[] = {
-            "@cg_mission_files\dispatch\drsouth.ogg",
+            "@prpg_data\sounds\dispatch\drsouth.ogg",
             0.7,
             1.1
         };
@@ -1109,7 +1115,7 @@ class CfgSounds {
     class dreast {
         name = "dreast";
         sound[] = {
-            "@cg_mission_files\dispatch\dreast.ogg",
+            "@prpg_data\sounds\dispatch\dreast.ogg",
             0.7,
             1.1
         };
@@ -1118,7 +1124,7 @@ class CfgSounds {
     class drnorth {
         name = "drnorth";
         sound[] = {
-            "@cg_mission_files\dispatch\drnorth.ogg",
+            "@prpg_data\sounds\dispatch\drnorth.ogg",
             0.7,
             1.1
         };
@@ -1127,7 +1133,7 @@ class CfgSounds {
     class drwest {
         name = "drwest";
         sound[] = {
-            "@cg_mission_files\dispatch\drwest.ogg",
+            "@prpg_data\sounds\dispatch\drwest.ogg",
             0.7,
             1.1
         };
@@ -1136,7 +1142,7 @@ class CfgSounds {
     class pain1 {
         name = "pain1";
         sound[] = {
-            "@cg_mission_files\sounds\pain1.ogg",
+            "@PRPG_Data\sounds\pain1.ogg",
             1,
             1
         };
@@ -1145,7 +1151,7 @@ class CfgSounds {
     class pain2 {
         name = "pain2";
         sound[] = {
-            "@cg_mission_files\sounds\pain2.ogg",
+            "@PRPG_Data\sounds\pain2.ogg",
             1,
             1
         };
@@ -1154,37 +1160,7 @@ class CfgSounds {
     class satdisable {
         name = "satdisable";
         sound[] = {
-            "@cg_mission_files\sounds\satdisable.ogg",
-            1,
-            1
-        };
-        titles[] = {};
-    };
-
-    class shot1 {
-        name = "shot1";
-        sound[] = {
-            "@cg_mission_files\sounds\shot1.ogg",
-            1,
-            1
-        };
-        titles[] = {};
-    };
-
-    class shot2 {
-        name = "shot2";
-        sound[] = {
-            "@cg_mission_files\sounds\shot2.ogg",
-            1,
-            1
-        };
-        titles[] = {};
-    };
-
-    class shot3 {
-        name = "shot3";
-        sound[] = {
-            "@cg_mission_files\sounds\shot3.ogg",
+            "@PRPG_Data\sounds\satdisable.ogg",
             1,
             1
         };
@@ -1194,17 +1170,7 @@ class CfgSounds {
     class levelup {
         name = "levelup";
         sound[] = {
-            "@cg_mission_files\sounds\levelup.ogg",
-            1,
-            1
-        };
-        titles[] = {};
-    };
-
-    class ringing {
-        name = "ringing";
-        sound[] = {
-            "@cg_mission_files\sounds\ringing.ogg",
+            "@PRPG_Data\sounds\levelup.ogg",
             1,
             1
         };
@@ -1213,7 +1179,7 @@ class CfgSounds {
     class satmove {
         name = "satmove";
         sound[] = {
-            "@cg_mission_files\sounds\satmove.ogg",
+            "@PRPG_Data\sounds\satmove.ogg",
             1,
             1
         };
@@ -1222,7 +1188,7 @@ class CfgSounds {
     class grunt {
         name = "grunt";
         sound[] = {
-            "@cg_mission_files\sounds\grunt.ogg",
+            "@PRPG_Data\sounds\grunt.ogg",
             1,
             1
         };
@@ -1231,7 +1197,7 @@ class CfgSounds {
     class startup {
         name = "startup";
         sound[] = {
-            "@cg_mission_files\sounds\startup.ogg",
+            "@PRPG_Data\sounds\startup.ogg",
             1,
             1
         };
@@ -1240,7 +1206,7 @@ class CfgSounds {
     class handcuff {
         name = "handcuff";
         sound[] = {
-            "@cg_mission_files\sounds\handcuff.ogg",
+            "@PRPG_Data\sounds\handcuff.ogg",
             1,
             1
         };
@@ -1250,7 +1216,7 @@ class CfgSounds {
     class racebeep1 {
         name = "racebeep1";
         sound[] = {
-            "@cg_mission_files\sounds\racebeep1.ogg",
+            "@PRPG_Data\sounds\racebeep1.ogg",
             1.0,
             1
         };
@@ -1259,7 +1225,7 @@ class CfgSounds {
     class racebeep2 {
         name = "racebeep2";
         sound[] = {
-            "@cg_mission_files\sounds\racebeep2.ogg",
+            "@PRPG_Data\sounds\racebeep2.ogg",
             1.0,
             1
         };
@@ -1269,7 +1235,7 @@ class CfgSounds {
     class cellclose {
         name = "cellclose";
         sound[] = {
-            "@cg_mission_files\sounds\cellclose.ogg",
+            "@PRPG_Data\sounds\cellclose.ogg",
             1,
             1
         };
@@ -1278,7 +1244,7 @@ class CfgSounds {
     class lockunlock {
         name = "lockunlock";
         sound[] = {
-            "@cg_mission_files\sounds\lockunlock.ogg",
+            "@PRPG_Data\sounds\lockunlock.ogg",
             1,
             1
         };
@@ -1287,7 +1253,7 @@ class CfgSounds {
     class knockhit {
         name = "knockhit";
         sound[] = {
-            "@cg_mission_files\sounds\knockhit.ogg",
+            "@PRPG_Data\sounds\knockhit.ogg",
             1,
             1
         };
@@ -1297,7 +1263,7 @@ class CfgSounds {
     class patdown1 {
         name = "patdown1";
         sound[] = {
-            "@cg_mission_files\sounds\patdown1.ogg",
+            "@PRPG_Data\sounds\patdown1.ogg",
             1,
             1
         };
@@ -1306,7 +1272,7 @@ class CfgSounds {
     class start {
         name = "start";
         sound[] = {
-            "@cg_mission_files\sounds\start.ogg",
+            "@PRPG_Data\sounds\start.ogg",
             1,
             1
         };
@@ -1315,7 +1281,7 @@ class CfgSounds {
     class slideout {
         name = "slideout";
         sound[] = {
-            "@cg_mission_files\sounds\slideout.ogg",
+            "@PRPG_Data\sounds\slideout.ogg",
             1,
             1
         };
@@ -1324,7 +1290,7 @@ class CfgSounds {
     class endbeep {
         name = "endbeep";
         sound[] = {
-            "@cg_mission_files\sounds\endbeep.ogg",
+            "@PRPG_Data\sounds\endbeep.ogg",
             1,
             1
         };
@@ -1333,7 +1299,7 @@ class CfgSounds {
     class SirenLong {
         name = "SirenLong";
         sound[] = {
-            "@cg_mission_files\sounds\Siren_Long.ogg",
+            "@PRPG_Data\sounds\Siren_Long.ogg",
             1.55,
             0.95
         };
@@ -1342,7 +1308,7 @@ class CfgSounds {
     class panicbutton {
         name = "panicbutton";
         sound[] = {
-            "@cg_mission_files\sounds\panicbutton.ogg",
+            "@PRPG_Data\sounds\panicbutton.ogg",
             1,
             1
         };
@@ -1351,7 +1317,7 @@ class CfgSounds {
     class spray {
         name = "spray";
         sound[] = {
-            "@cg_mission_files\sounds\spray.ogg",
+            "@PRPG_Data\sounds\spray.ogg",
             1,
             1
         };
@@ -1360,7 +1326,7 @@ class CfgSounds {
     class jackpot1 {
         name = "jackpot1";
         sound[] = {
-            "@cg_mission_files\sounds\jackpot1.ogg",
+            "@PRPG_Data\sounds\jackpot1.ogg",
             1,
             1
         };
@@ -1369,7 +1335,7 @@ class CfgSounds {
     class jackpot2 {
         name = "jackpot2";
         sound[] = {
-            "@cg_mission_files\sounds\jackpot2.ogg",
+            "@PRPG_Data\sounds\jackpot2.ogg",
             1,
             1
         };
@@ -1378,7 +1344,7 @@ class CfgSounds {
     class spin {
         name = "spin";
         sound[] = {
-            "@cg_mission_files\sounds\spin.ogg",
+            "@PRPG_Data\sounds\spin.ogg",
             1,
             1
         };
@@ -1387,7 +1353,7 @@ class CfgSounds {
     class ciggy {
         name = "ciggy";
         sound[] = {
-            "@cg_mission_files\sounds\ciggy.ogg",
+            "@PRPG_Data\sounds\ciggy.ogg",
             1,
             1
         };
@@ -1396,7 +1362,7 @@ class CfgSounds {
     class hungry {
         name = "hungry";
         sound[] = {
-            "@cg_mission_files\sounds\hungry.ogg",
+            "@PRPG_Data\sounds\hungry.ogg",
             1,
             1
         };
@@ -1405,7 +1371,7 @@ class CfgSounds {
     class nos {
         name = "nos";
         sound[] = {
-            "@cg_mission_files\sounds\nos.ogg",
+            "@PRPG_Data\sounds\nos.ogg",
             1,
             1
         };
@@ -1414,7 +1380,7 @@ class CfgSounds {
     class gagged {
         name = "gagged";
         sound[] = {
-            "@cg_mission_files\sounds\gagged.ogg",
+            "@PRPG_Data\sounds\gagged.ogg",
             1,
             1
         };
@@ -1423,7 +1389,7 @@ class CfgSounds {
     class glassbreak {
         name = "glassbreak";
         sound[] = {
-            "@cg_mission_files\sounds\glassbreak.ogg",
+            "@PRPG_Data\sounds\glassbreak.ogg",
             1,
             1
         };
@@ -1432,7 +1398,7 @@ class CfgSounds {
     class seatwarn {
         name = "seatwarn";
         sound[] = {
-            "@cg_mission_files\sounds\seatwarn.ogg",
+            "@PRPG_Data\sounds\seatwarn.ogg",
             1,
             1
         };
@@ -1441,7 +1407,7 @@ class CfgSounds {
     class seatbelt {
         name = "seatbelt";
         sound[] = {
-            "@cg_mission_files\sounds\seatbelt.ogg",
+            "@PRPG_Data\sounds\seatbelt.ogg",
             1,
             1
         };
@@ -1450,7 +1416,7 @@ class CfgSounds {
     class fart1 {
         name = "fart1";
         sound[] = {
-            "@cg_mission_files\sounds\fart1.ogg",
+            "@PRPG_Data\sounds\fart1.ogg",
             1,
             1
         };
@@ -1459,7 +1425,7 @@ class CfgSounds {
     class fart2 {
         name = "fart2";
         sound[] = {
-            "@cg_mission_files\sounds\fart2.ogg",
+            "@PRPG_Data\sounds\fart2.ogg",
             1,
             1
         };
@@ -1468,7 +1434,7 @@ class CfgSounds {
     class fart3 {
         name = "fart3";
         sound[] = {
-            "@cg_mission_files\sounds\fart3.ogg",
+            "@PRPG_Data\sounds\fart3.ogg",
             1,
             1
         };
@@ -1477,7 +1443,7 @@ class CfgSounds {
     class fart4 {
         name = "fart4";
         sound[] = {
-            "@cg_mission_files\sounds\fart4.ogg",
+            "@PRPG_Data\sounds\fart4.ogg",
             1,
             1
         };
@@ -1486,7 +1452,7 @@ class CfgSounds {
     class fart5 {
         name = "fart5";
         sound[] = {
-            "@cg_mission_files\sounds\fart5.ogg",
+            "@PRPG_Data\sounds\fart5.ogg",
             1,
             1
         };
@@ -1495,7 +1461,7 @@ class CfgSounds {
     class fart6 {
         name = "fart6";
         sound[] = {
-            "@cg_mission_files\sounds\fart6.ogg",
+            "@PRPG_Data\sounds\fart6.ogg",
             1,
             1
         };
@@ -1505,7 +1471,7 @@ class CfgSounds {
     class punch1 {
         name = "punch1";
         sound[] = {
-            "@cg_mission_files\sounds\punch1.ogg",
+            "@PRPG_Data\sounds\punch1.ogg",
             1,
             1
         };
@@ -1515,7 +1481,7 @@ class CfgSounds {
     class punch2 {
         name = "punch2";
         sound[] = {
-            "@cg_mission_files\sounds\punch2.ogg",
+            "@PRPG_Data\sounds\punch2.ogg",
             1,
             1
         };
@@ -1525,7 +1491,7 @@ class CfgSounds {
     class punch3 {
         name = "punch3";
         sound[] = {
-            "@cg_mission_files\sounds\punch3.ogg",
+            "@PRPG_Data\sounds\punch3.ogg",
             1,
             1
         };
@@ -1535,7 +1501,7 @@ class CfgSounds {
     class punch4 {
         name = "punch4";
         sound[] = {
-            "@cg_mission_files\sounds\punch4.ogg",
+            "@PRPG_Data\sounds\punch4.ogg",
             1,
             1
         };
@@ -1544,7 +1510,7 @@ class CfgSounds {
     class vomit {
         name = "vomit";
         sound[] = {
-            "@cg_mission_files\sounds\vomit.ogg",
+            "@PRPG_Data\sounds\vomit.ogg",
             1,
             1
         };
@@ -1704,7 +1670,7 @@ class CfgNotifications {
 
     class TextMessage {
         title = "Received A Text Message";
-        iconPicture = "\cg_sndimg\icons\messagenew.paa";
+        iconPicture = "\PRPG_Data\icons\messagenew.paa";
         description = "%1";
         duration = 10;
         priority = 6;
@@ -1712,7 +1678,7 @@ class CfgNotifications {
 
     class PoliceDispatch {
         title = "911 Dispatch Center";
-        iconPicture = "\cg_sndimg\icons\messagepolice.paa";
+        iconPicture = "\PRPG_Data\icons\messagepolice.paa";
         description = "%1";
         duration = 10;
         priority = 6;
@@ -1720,7 +1686,7 @@ class CfgNotifications {
 
     class AdminDispatch {
         title = "Admin Dispatch Center";
-        iconPicture = "\cg_sndimg\icons\messageadmin.paa";
+        iconPicture = "\PRPG_Data\icons\messageadmin.paa";
         description = "%1";
         duration = 10;
         priority = 6;
@@ -1728,7 +1694,7 @@ class CfgNotifications {
 
     class AdminMessage {
         title = "Admin Message";
-        iconPicture = "\cg_sndimg\icons\messageadmin.paa";
+        iconPicture = "\PRPG_Data\icons\messageadmin.paa";
         description = "%1";
         duration = 10;
         priority = 5;

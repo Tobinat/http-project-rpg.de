@@ -12,7 +12,7 @@
 
     _syncInfo = _x getVariable ["sync", 1];
 
-    if(_syncInfo == 0 || _x in currentCop || _x in currentEMS || _x in currentFire) then { 
+    if(_syncInfo == 0 || _uid in currentCop || _uid in currentEMS || _uid in currentFire) then { 
     _updatestr = format ["updatePlayerInfoNoGearNoShopNoHouse:%1:%2:%3:%4:%5", _cash, _bank, _position, _messages, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 

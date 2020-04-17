@@ -1,9 +1,4 @@
-
-
-
-
 #define _ARMA_
-
 
 class CfgPatches
 {
@@ -22,6 +17,7 @@ class CfgVehicles
 	class C_man_polo_1_F;
 	class C_man_1;
 	class B_Soldier_base_F;
+	class B_helicrew_F;
 
 // Uniformen //
 
@@ -193,6 +189,113 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Police\PRPG_Sheriff_Shorts.paa"};
 		displayName = "PRPG Sheriff Shorts";
+		author = "project-rpg.de";
+	};
+	
+	// State Police //
+
+	class PRPG_State_Trooper: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "PRPG_State_Trooper1";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Police\state\PRPG_State_trooper.paa"};
+		displayName = "PRPG SP Trooper";
+		author = "project-rpg.de";
+	};
+	class PRPG_State_Corporal: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "PRPG_State_Corporal1";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Police\state\PRPG_State_corporal.paa"};
+		displayName = "PRPG SP Corporal";
+		author = "project-rpg.de";
+	};
+	class PRPG_State_Sergeant: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "PRPG_State_Sergeant1";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Police\state\PRPG_State_Sergeant.paa"};
+		displayName = "PRPG SP Sergeant";
+		author = "project-rpg.de";
+	};
+	class PRPG_State_Sergeant_1st: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "PRPG_State_Sergeant_1st1";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Police\state\PRPG_State_sergeant_first_class.paa"};
+		displayName = "PRPG SP Sergeant 1st Class";
+		author = "project-rpg.de";
+	};
+	class PRPG_State_Lieutenant: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "PRPG_State_Lieutenant1";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Police\state\PRPG_State_lieutenant.paa"};
+		displayName = "PRPG SP Lieutenant";
+		author = "project-rpg.de";
+	};
+	class PRPG_State_Captain: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "PRPG_State_Captain1";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Police\state\PRPG_State_Captain.paa"};
+		displayName = "PRPG SP Captain";
+		author = "project-rpg.de";
+	};
+	class PRPG_State_Chief: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "PRPG_State_Chief1";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Police\state\PRPG_State_Chief.paa"};
+		displayName = "PRPG SP Chief";
+		author = "project-rpg.de";
+	};
+
+// DOJ //
+	
+	class DOJ_Jacket_1: B_Soldier_base_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		model = "\tryk_unit\data\PCUs_G.p3d";
+		uniformClass = "DOJ_Jacket_11";
+		hiddenSelections[] = {"camo","camo3"};
+		hiddenSelectionsTextures[] = {"tryk_unit\data\fr\tan_co.paa","PRPG_Clothing\Data\doj\prpg_doj_co.paa"};
+		displayName = "DOJ Jacke - Schlüter";
+		author = "project-rpg.de";
+	};
+	class DOJ_Jacket_2: B_Soldier_base_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		model = "\tryk_unit\data\PCUs_G.p3d";
+		uniformClass = "DOJ_Jacket_22";
+		hiddenSelections[] = {"camo","camo3"};
+		hiddenSelectionsTextures[] = {"tryk_unit\data\fr\tan_co.paa","PRPG_Clothing\Data\doj\prpg_doj2_co.paa"};
+		displayName = "DOJ Jacke";
 		author = "project-rpg.de";
 	};
 
@@ -383,6 +486,18 @@ class CfgVehicles
 			""
 		};
 	};
+	
+	class PRPG_FD_Pilot: B_helicrew_F
+	{
+		_generalMacro = "B_helicrew_F";
+		scope = 2;
+		displayName = "ASU Pilot";
+		nakedUniform = "U_BasicBody";
+		model = "\A3\Characters_F\Common\coveralls.p3d";
+		uniformClass = "PRPG_FD_Pilot1";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\Data\Medic\prpg_EMS_Pilot.paa"};
+	};
 };
 
 
@@ -390,6 +505,7 @@ class CfgWeapons
 {
 	class ItemCore;
 	class Uniform_Base;
+	class U_B_HeliPilotCoveralls;
 	class UniformItem;
 	class ItemInfo;
 	class HeadgearItem;
@@ -652,6 +768,153 @@ class CfgWeapons
 			armor = 40;
 		};
 	};
+	
+// State Police //
+
+	class PRPG_State_Trooper1: Uniform_Base
+	{
+		scope = 2;
+		author = "Project-Rpg.de";
+		displayName = "PRPG SP Trooper";
+		picture = "\PRPG_Clothing\Logos\prpg_shirt_sheriff.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "PRPG_State_Trooper";
+			containerClass = "Supply100";
+			mass = 0;
+			armor = 40;
+		};
+	};
+	class PRPG_State_Corporal1: Uniform_Base
+	{
+		scope = 2;
+		author = "Project-Rpg.de";
+		displayName = "PRPG SP Corporal";
+		picture = "\PRPG_Clothing\Logos\prpg_shirt_sheriff.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "PRPG_State_Corporal";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	class PRPG_State_Sergeant1: Uniform_Base
+	{
+		scope = 2;
+		author = "Project-Rpg.de";
+		displayName = "PRPG SP Sergeant";
+		picture = "\PRPG_Clothing\Logos\prpg_shirt_sheriff.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "PRPG_State_Sergeant";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	class PRPG_State_Sergeant_1st1: Uniform_Base
+	{
+		scope = 2;
+		author = "Project-Rpg.de";
+		displayName = "PRPG SP Sergeant 1st Class";
+		picture = "\PRPG_Clothing\Logos\prpg_shirt_sheriff.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "PRPG_State_Sergeant_1st";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	class PRPG_State_Lieutenant1: Uniform_Base
+	{
+		scope = 2;
+		author = "Project-Rpg.de";
+		displayName = "PRPG SP Lieutenant";
+		picture = "\PRPG_Clothing\Logos\prpg_shirt_sheriff.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "PRPG_State_Lieutenant";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	class PRPG_State_Captain1: Uniform_Base
+	{
+		scope = 2;
+		author = "Project-Rpg.de";
+		displayName = "PRPG SP Captain";
+		picture = "\PRPG_Clothing\Logos\prpg_shirt_sheriff.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "PRPG_State_Captain";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	class PRPG_State_Chief1: Uniform_Base
+	{
+		scope = 2;
+		author = "Project-Rpg.de";
+		displayName = "PRPG SP Chief";
+		picture = "\PRPG_Clothing\Logos\prpg_shirt_sheriff.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "PRPG_State_Chief";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	
+// DOJ //
+
+	class DOJ_Jacket_11: Uniform_Base
+	{
+		scope = 2;
+		author = "Project-Rpg.de";
+		displayName = "DOJ Jacke - Schlüter";
+		picture = "\PRPG_Clothing\Logos\prpg_shirt_sheriff.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[] = {"camo","camo3"};
+		hiddenSelectionsTextures[] = {"tryk_unit\data\fr\tan_co.paa","PRPG_Clothing\Data\doj\prpg_doj_co.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "DOJ_Jacket_1";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
+	
+	class DOJ_Jacket_22: Uniform_Base
+	{
+		scope = 2;
+		author = "Project-Rpg.de";
+		displayName = "DOJ Jacke";
+		picture = "\PRPG_Clothing\Logos\prpg_shirt_sheriff.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[] = {"camo","camo3"};
+		hiddenSelectionsTextures[] = {"tryk_unit\data\fr\tan_co.paa","PRPG_Clothing\Data\doj\prpg_doj2_co.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "DOJ_Jacket_2";
+			containerClass = "Supply100";
+			mass = 0;
+		};
+	};
 
 // EMS //
 
@@ -850,6 +1113,22 @@ class CfgWeapons
 			uniformClass="PRPG_FD_Uniform_Chief";
 			containerClass="Supply120";
 			mass=40;
+		};
+	};
+	
+	class PRPG_FD_Pilot1: U_B_HeliPilotCoveralls
+	{
+		scope = 2;
+		displayName = "PRPG FD Pilot";
+		author="Project-Rpg.de";
+		picture="\PRPG_Clothing\Logos\prpg_shirt.paa";
+		model = "\A3\Characters_F\Common\coveralls.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "PRPG_FD_Pilot";
+			containerClass = "Supply120";
+			mass = 40;
 		};
 	};
 
@@ -1744,6 +2023,41 @@ class CfgWeapons
 					passThrough=0.3;
 				};
 			};
+		};
+	};
+	
+	class PRPG_ACE_Helmet: ItemCore
+	{
+		scope = 2;
+		author = "PRPG ACE Pilot Helmet";
+		displayName = "Police ACE helmet";
+		model = "\a3\characters_f\Common\headgear_helmet_heli_shield.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\data\Headgear\ASQHelmet.paa"};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 20;
+			armor = 30;
+			uniformModel = "\a3\characters_f\Common\headgear_helmet_heli_shield.p3d";
+			modelSides[] = {3,1};
+			hiddenSelections[] = {"camo"};
+		};
+	};
+	class wing_helmet: ItemCore
+	{
+		scope = 2;
+		author = "Rory Flannigan For CG";
+		displayName = "PRPG Police Pilot Helmet";
+		model = "\a3\characters_f\Common\headgear_helmet_heli.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"PRPG_Clothing\data\Headgear\ASQHelmet2.paa"};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 20;
+			armor = 30;
+			uniformModel = "\a3\characters_f\Common\headgear_helmet_heli.p3d";
+			modelSides[] = {3,1};
+			hiddenSelections[] = {"camo"};
 		};
 	};
 

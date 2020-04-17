@@ -217,22 +217,84 @@ disableSerialization;
 
 	if!(_old isEqualTo  currentdimis) then { publicvariable "currentdimis"; };
 
+	_currentPoliceDispatch = [];
+	_currentMedicDispatch = [];
+	_currentSecurity = [];
+	_currentRepairmen = [];
+	_currentJudges = [];
+	_currentProsecutor = [];
+	_currentLawyers = [];
+	_currentMailmen = [];
+	_currentNewsMan = [];
+	_currentTaxiDrivers = [];
+
+
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentPoliceDispatch pushback _unit;
+	} foreach currentPoliceDispatch;
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentMedicDispatch pushback _unit;
+	} foreach currentMedicDispatch;
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentSecurity pushback _unit;
+	} foreach currentSecurity;
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentRepairmen pushback _unit;
+	} foreach currentRepairmen;
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentJudges pushback _unit;
+	} foreach currentJudges;
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentProsecutor pushback _unit;
+	} foreach currentProsecutor;
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentLawyers pushback _unit;
+	} foreach currentLawyers;
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentMailmen pushback _unit;
+	} foreach currentMailmen;
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentNewsMan pushback _unit;
+	} foreach currentNewsMan;
+
+	{
+		_unit = _x call BIS_fnc_getUnitByUid;
+		_currentTaxiDrivers pushback _unit;
+	} foreach currentTaxiDrivers;
+
+
+
 
 _allJobs = [
 
-	["Silver Lake Police Department",currentPoliceDispatch],
-	["Silver Lake Medical Department",currentMedicDispatch],
-	//["Silver Lake Fire Department",currentFireDispatch],
-
-	["Sicherheitsdienst",currentSecurity],
-	["Mechaniker",currentRepairmen],
-	["Richter",currentJudges],
-	["Saatanwalt",currentProsecutor],
-	["Anwalt",currentLawyers],
-	["Postbote",currentMailmen],
-
-	["Reporter",currentNewsMan],
-	["Taxifahrer",currentTaxiDrivers]
+	["Silver Lake Police Department",_currentPoliceDispatch],
+	["Silver Lake Medical Department",_currentMedicDispatch],
+	["Sicherheitsdienst",_currentSecurity],
+	["Mechaniker",_currentRepairmen],
+	["Richter",_currentJudges],
+	["Saatanwalt",_currentProsecutor],
+	["Anwalt",_currentLawyers],
+	["Postbote",_currentMailmen],
+	["Reporter",_currentNewsMan],
+	["Taxifahrer",_currentTaxiDrivers]
 	
 ];
 

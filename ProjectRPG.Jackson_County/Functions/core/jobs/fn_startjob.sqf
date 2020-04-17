@@ -10,12 +10,12 @@ _i = 0;
 		_i = _i + 1;
 	};
 } forEach playableUnits;
-_count = [3,2,3,3,7,7,3,3,3];
+_count = [2,2,2,2,4,4,2,2,2];
 if(_i > 50) then {
 	if(_i > 80) then {
-		_count = [7,6,7,7,13,13,6,6,6];
+		_count = [4,6,4,5,6,6,3,3,3];
 	} else {
-		_count = [5,4,5,5,10,10,5,5,4];
+		_count = [4,6,4,5,6,6,3,3,3];
 	};
 };
 
@@ -70,5 +70,5 @@ _list lbAdd "Arbeit: Holzfäller";
 _job = "Wood Logging";
 _list lbSetdata [(lbSize _list)-1,str(_job)];
 
-hint "Die meisten Firmen stellen dir ein Firmenwagen zur Verfügung. Verwende die Windowstaste und wähle die entsprechende Option aus.";
+hint "Die meisten Firmen stellen dir ein Firmenwagen zur Verfügung. Verwende die Interaktionstaste und wähle die entsprechende Option aus.";
 

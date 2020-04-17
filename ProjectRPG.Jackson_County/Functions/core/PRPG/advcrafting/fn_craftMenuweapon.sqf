@@ -33,8 +33,7 @@ if (mav_ttm_var_weaponcrafting == 2) then {
 	"RH_fn57_t",
 	"RH_tec9",
 	"hlc_smg_mp5k",
-	"hlc_smg_mp5a2" //KOMMA!!!!!!!
-	//"hlc_rifle_hk51"
+	"hlc_smg_mp5a2"
 	];
 };
 
@@ -47,10 +46,7 @@ if (mav_ttm_var_weaponcrafting == 3) then {
 	"RH_tec9",
 	"hlc_smg_mp5k",
 	"hlc_smg_mp5a2",
-	//"hlc_rifle_hk51",
-	"RH_bull",
-	//"hlc_rifle_slr107u_MTK",
-	"SG553_CQB"
+	"RH_bull"
 	];
 };
 
@@ -63,14 +59,8 @@ if (mav_ttm_var_weaponcrafting == 4) then {
 	"RH_tec9",
 	"hlc_smg_mp5k",
 	"hlc_smg_mp5a2",
-	//"hlc_rifle_hk51",
 	"RH_bull",
-	//"hlc_rifle_slr107u_MTK",
-	"SG553_CQB",
 	"hlc_rifleACR_SBR_cliffhanger",
-	//"hlc_rifle_akm_MTK",
-	//"hlc_rifle_G36C",
-	//"hlc_rifle_augpara_t",
 	"hlc_rifle_honeybadger"
 	];
 };
@@ -84,14 +74,8 @@ if (mav_ttm_var_weaponcrafting == 5) then {
 	"RH_tec9",
 	"hlc_smg_mp5k",
 	"hlc_smg_mp5a2",
-	//"hlc_rifle_hk51",
 	"RH_bull",
-	//"hlc_rifle_slr107u_MTK",
-	"SG553_CQB",
 	"hlc_rifleACR_SBR_cliffhanger",
-	//"hlc_rifle_akm_MTK",
-	//"hlc_rifle_G36C",
-	//"hlc_rifle_augpara_t",
 	"hlc_rifle_honeybadger",
 	"RH_Deagles",
 	"hlc_rifle_bcmblackjack",
@@ -115,22 +99,10 @@ _PricesWaffenClasses = [
 	[4,3,3,3],
 	//hlc_smg_mp5a2
 	[4,5,5,5],
-	//hlc_rifle_hk51
-	//[4,5,5,5],
 	//RH_bull
 	[4,3,3,3],
-	//hlc_rifle_slr107u_MTK
-	//[4,6,6,6],
-	//SG553_CQB
-	[4,6,6,6],
 	//hlc_rifleACR_SBR_cliffhanger
 	[4,8,8,8],
-	//hlc_rifle_akm_MTK
-	//[4,8,8,8],
-	//hlc_rifle_G36C
-	//[4,8,8,8],
-	//hlc_rifle_augpara_t
-	//[4,8,8,8],
 	//hlc_rifle_honeybadger
 	[4,8,8,8],
 	//RH_Deagles

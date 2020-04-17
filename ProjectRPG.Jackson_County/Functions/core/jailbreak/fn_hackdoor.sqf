@@ -19,7 +19,7 @@ if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "La
 		if(_calcT > 25) exitwith {};
 		uisleep 1;
 		_timeleft = 25 - _calcT;
-		_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>Sicherheitsmassnahmen werden umgeschrieben.</t> <br/> <t size='2'>%1</t>",_timeleft];
+		_POPUP ctrlSetStructuredText parseText format["<img size='1' image='prpg_data\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>Sicherheitsmassnahmen werden umgeschrieben.</t> <br/> <t size='2'>%1</t>",_timeleft];
 	};
 	playSound3D ["CG_Jobs\sounds\jailbreak\hacking.ogg", player, false, (getposasl player), 3, 1, 55];
 
@@ -57,10 +57,13 @@ if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "La
 		_doors = ["door1","door2","door3","door4"];
 		{ _fencetoopen animate [_x,1]; } forEach _doors;
 		{ _fencetoopen animate [_x,0]; } forEach _doors2;
-		["911: Hinweis!!! Die Türen eines Zellenblocks wurde gehackt.", false] remoteExec ["domsg", currentCop];
+		{
+			_unit = _x call BIS_fnc_getUnitByUid;
+			["911: Hinweis!!! Die Türen eines Zellenblocks wurde gehackt.", false] remoteExec ["domsg", _unit];
+		} foreach currentCop;
 
 	};
-	[player, _door, "hackDoor"] spawn client_fnc_createEvidence;
+	[player, _fenceToOpen, "hackDoor"] spawn client_fnc_createEvidence;
 };
 
 if (typeOf cursorObject IN["Land_CommonwealthBank"]) then {
@@ -75,7 +78,7 @@ if (typeOf cursorObject IN["Land_CommonwealthBank"]) then {
 		if(_calcT > 45) exitwith {};
 		uisleep 1;
 		_timeleft = 25 - _calcT;
-		_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>Sicherheitsmassnahmen werden umgeschrieben.</t> <br/> <t size='2'>%1</t>",_timeleft];
+		_POPUP ctrlSetStructuredText parseText format["<img size='1' image='prpg_data\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>Sicherheitsmassnahmen werden umgeschrieben.</t> <br/> <t size='2'>%1</t>",_timeleft];
 	};
 	playSound3D ["CG_Jobs\sounds\jailbreak\hacking.ogg", player, false, (getposasl player), 3, 1, 55];
 	["Daten werden verarbeitet. Firewall wird neugeschrieben.", false] spawn domsg;

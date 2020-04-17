@@ -9,7 +9,7 @@ if (myjob == "Cop") then {
 	[player,objNull,11,format ["%1 beendete seinen Dienst", name player],""] remoteExec ["server_fnc_copLog", 2];
 };
 
-[player,objNull,4,format ["%1 beendete die Arbeit %2", name player, myjob],myjob] remoteExec ["server_fnc_jobLog", 2];
+[player,objNull,4,format ["%1 beendete die Arbeit als %2", name player, myjob],myjob] remoteExec ["server_fnc_jobLog", 2];
 myjob = "none";
 taskrunning = false;
 dispatch = false;

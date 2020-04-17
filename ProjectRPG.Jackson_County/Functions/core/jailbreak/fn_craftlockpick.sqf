@@ -1,5 +1,5 @@
 _chance = random ( 100 );
 if(_chance > 85) then {
 	player additem "cg_lockpick";
-	hint "Es hat funktioniert.";
-} else { hint "Dieses mal hat es nicht funktioniert."; };
+	["Du warst Erfolgreich.", false] spawn domsg;
+} else { ["Das hat leider nicht geklappt.", false] spawn domsg; };

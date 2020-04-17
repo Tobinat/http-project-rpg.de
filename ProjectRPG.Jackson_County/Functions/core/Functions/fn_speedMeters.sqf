@@ -151,7 +151,7 @@ for "_i" from 0 to 1 step 0 do {
 			};
 			if(_handle) then {
 				
-				/*
+				
 				_information = _vehicle getVariable ["information",[]];
 				_plate = _information select 0;
 				_class = typeof _vehicle;
@@ -162,8 +162,8 @@ for "_i" from 0 to 1 step 0 do {
 				_uid_officer = "901";
 				_reason = format["Geschwindigkeit %1kmh%2",round(_vel),_text];
 				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
-				["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
-				*/
+				//["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
+				
 				_message = format["Du bist zu schnell gefahren! %2 Zulassungsnummer %1", toUpper(_plate), _reason];
 				_message2 = format ["Strafgeld $%1", _ticket];
 

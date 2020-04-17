@@ -1,35 +1,35 @@
 // -- Weapon related perks
 class perk_gunsspecialist_lessRecoil_1 {
-	displayName = "Weniger Rueckstoß";
+	displayName = "Weniger Rückstoß";
 	requiredPerkPoints = 5;
 	requiredLevel = 5;
 	requiredPerk = "";
-	subtitle = "Erforderliche Stufe 5, 5 Pkt. noetig.";
-	description = "Erlernen sie die Waffe mit geringerem Ruecktsoß zu verwenden<br/><br/><t color='#10FF45'>5% geringerer Rueckstoß</t>";
+	subtitle = "Erforderliche Stufe 5, 5 Pkt. benötigt.";
+	description = "Erlerne Waffen besser zu kontrolieren.<br/><br/><t color='#10FF45'>2% geringerer Rückstoß</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_1.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};
 };
 
 class perk_gunsspecialist_lessRecoil_2 {
-	displayName = "Weniger Rueckstoß II";
+	displayName = "Weniger Rückstoß II";
 	requiredPerkPoints = 6;
 	requiredLevel = 16;
 	requiredPerk = "perk_gunsspecialist_lessRecoil_1";
-	subtitle = "Erforderliche Stufe 16, 6 Pkt. noetig.";
-	description = "Erlernen sie die Waffe mit geringerem Ruecktsoß zu verwenden<br/><br/><t color='#10FF45'>10% geringerer Rueckstoß</t>";
+	subtitle = "Erforderliche Stufe 16, 6 Pkt. benötigt.";
+	description = "Erlerne Waffen besser zu kontrolieren.<br/><br/><t color='#10FF45'>4% geringerer Rückstoß</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_2.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};
 };
 
 class perk_gunsspecialist_lessRecoil_3 {
-	displayName = "Weniger Rueckstoß III";
+	displayName = "Weniger Rückstoß III";
 	requiredPerkPoints = 7;
 	requiredLevel = 25;
 	requiredPerk = "perk_gunsspecialist_lessRecoil_2";
-	subtitle = "Erforderliche Stufe 25, 7 Pkt. noetig.";
-	description = "Erlernen sie die Waffe mit geringerem Ruecktsoß zu verwenden<br/><br/><t color='#10FF45'>20% geringerer Rueckstoß</t>";
+	subtitle = "Erforderliche Stufe 25, 7 Pkt. benötigt.";
+	description = "Erlerne Waffen besser zu kontrolieren.<br/><br/><t color='#10FF45'>6% geringerer Rückstoß</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_recoilCompensation_3.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};
@@ -41,8 +41,8 @@ class perk_paycheck_1 {
 	requiredPerkPoints = 2;
 	requiredLevel = 2;
 	requiredPerk = "";
-	subtitle = "Erforderliche Stufe 2, 2 Pkt. noetig.";
-	description = "Erhalten sie mehr Gehalt<br/><br/><t color='#10FF45'>+10% hoehere Auszahlung</t>";
+	subtitle = "Erforderliche Stufe 2, 2 Pkt. benötigt.";
+	description = "Erhalten sie mehr Gehalt<br/><br/><t color='#10FF45'>+10% höhere Auszahlung</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_paycheckIncrease_1.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};
@@ -53,8 +53,8 @@ class perk_paycheck_2 {
 	requiredPerkPoints = 3;
 	requiredLevel = 8;
 	requiredPerk = "perk_paycheck_1";
-	subtitle = "Erforderliche Stufe 8, 3 Pkt. noetig.";
-	description = "Erhalten sie mehr Gehalt<br/><br/><t color='#10FF45'>+25% hoehere Auszahlung</t>";
+	subtitle = "Erforderliche Stufe 8, 3 Pkt. benötigt.";
+	description = "Erhalten sie mehr Gehalt<br/><br/><t color='#10FF45'>+25% höhere Auszahlung</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_paycheckIncrease_2.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};
@@ -65,8 +65,8 @@ class perk_paycheck_3 {
 	requiredPerkPoints = 6;
 	requiredLevel = 21;
 	requiredPerk = "perk_paycheck_2";
-	subtitle = "Erforderliche Stufe 21, 6 Pkt. noetig.";
-	description = "Erhalten sie mehr Gehalt<br/><br/><t color='#10FF45'>+50% hoehere Auszahlung</t>";
+	subtitle = "Erforderliche Stufe 21, 6 Pkt. benötigt.";
+	description = "Erhalten sie mehr Gehalt<br/><br/><t color='#10FF45'>+50% höhere Auszahlung</t>";
 	initScript = "maverick\talent-tree-modular\modules\maverick_perkset_1\functions\functions_paycheckIncrease_3.sqf";
 	limitToSides[] = {};
 	color[] = {1,1,1,1};

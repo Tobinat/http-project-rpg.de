@@ -44,7 +44,7 @@ if (_jobType == "mail") exitwith {
 };
 
 if (_jobType == "trashman") exitwith {
-	vehspawned = createVehicle ["nopixel_garbageTruck", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	vehspawned = createVehicle ["vvv_camionbasura", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["G_Uniform_worker_l",1];

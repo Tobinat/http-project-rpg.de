@@ -14,7 +14,7 @@ if(_chance > 80) then {
 
 	};
 
-	playSound3D ["cg_mission_files\sounds\glassbreak.ogg", vehicle player, false, getPosasl (vehicle player), 1, 1, 45];
+	playSound3D ["prpg_data\sounds\glassbreak.ogg", vehicle player, false, getPosasl (vehicle player), 1, 1, 45];
 
 	if(isNil "modifier") then { modifier = 0 };
 

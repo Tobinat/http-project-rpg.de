@@ -13,8 +13,9 @@
 params ["_player","_items","_uid"];
 if (isNull _player) exitWith {diag_log "Error in: invSave _player is null!";};
 if (isNil "_uid") exitWith {diag_log "Error in: invSave: uid is nil!";};
+_playeruid = getPlayerUID _player;
 //_items = getunitloadout _player;
-if(!(_player in CurrentCop || _player in currentEMS || _player in currentFire)) then {
+if(!(_playeruid in CurrentCop || _playeruid in currentEMS || _playeruid in currentFire)) then {
 	_updatestr = format ["updatePlayerInv:%1:%2", _items, _uid];
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 };

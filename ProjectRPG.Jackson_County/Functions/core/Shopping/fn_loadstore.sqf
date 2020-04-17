@@ -7,7 +7,6 @@ _EMS = player getVariable ["ems",0];
 _cop = player getVariable ["cop",0];
 
 if(_condition == "gunstore") then {
-	
 	_gunStorePistols = [
 		["cg_hatchet",nil,120,1],
 		["cg_pickaxe",nil,120,1],
@@ -28,18 +27,16 @@ if(_condition == "gunstore") then {
 	{
 		_storeList pushback _x;
 	} foreach _gunStorePistols;
-
 };
 
 if(_condition == "rarefish") then {
-
 		_gunStorePistols = [
-
 			//weapons
 			["gold_fishing_rod",nil,25,1],
 			["platinum_fishing_rod",nil,50,1],
 			["epic_fishing_rod",nil,80,1],
 			["legendary_fishing_rod",nil,100,1],
+			["prpg_workbench_normal_kit",nil,5,1],
 			//clothes
 			["U_B_Wetsuit",nil,10,3,1],
 			["cg_horsehead",nil,20,3,5],
@@ -198,11 +195,9 @@ if(_condition == "rarefish") then {
 	{
 		_storeList pushback _x;
 	} foreach _gunStorePistols;
-
 };
 
 if(_condition == "clothing") then {
-
 	_clothing = [
 		["Masque_Hoxton",nil,50,3,5],
 		["Masque_Wolfv2",nil,60,3,5],
@@ -533,16 +528,13 @@ if(_condition == "clothing") then {
 		["vvv_character_wandelina",nil,200,3,1],
 		["vvv_character_jennifer",nil,200,3,1]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _clothing;
-
 };
 
 
 if(_condition == "backpack") then {
-
 	_clothing = [
 		["TAC_BP_KAR_B",nil,50,4,2],
 		["TAC_BP_KAR_L",nil,50,4,2],
@@ -552,30 +544,22 @@ if(_condition == "backpack") then {
 		["TAC_BP_Butt_OD",nil,60,4,2],
 		["TRYK_B_Alicepack",nil,500,4,2]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _clothing;
-
 };
 
 
 
 if(_condition == "veststore") then {
-
 	_gunStoreVests = [
-
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _gunStoreVests;
-
 };
 
-
 if(_condition == "mcdonalds") then {
-
 	_mcdonalds = [
 		["np_happymeal",nil,10,3],
 		["np_bigmac",nil,12,3],
@@ -583,23 +567,15 @@ if(_condition == "mcdonalds") then {
 		["np_cheeseburger",nil,9,3],
 		["np_hamburger",nil,8,3]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _mcdonalds;
-
 };
 
-
-
-//Test
-
-
 if(_condition == "cops") then {
-
 	_bulle = [
 		["np_water",nil,1,1],
-		["np_beefsoup",nil,1,1],
+		["np_water",nil,1,1],
 		["NP_PoliceBarrierL",nil,1,1],
 		["NP_PoliceBarrierS",nil,1,1],
 		["CG_wheel",nil,1,1],
@@ -642,7 +618,6 @@ if(_condition == "cops") then {
 };
 
 if(_condition == "copwaffen") then {
-
 	_bulle = [
 		["CG_BATON",nil,1,1],
 		["CG_TELBAT",nil,1,1],
@@ -658,7 +633,7 @@ if(_condition == "copwaffen") then {
 	};
 	if(_cop > 3) then {
 		_ret = [
-			["hlc_rifle_RU556",nil,1,1]
+			["hlc_rifle_M4a1carryhandle",nil,1,1]
 		];
 		_bulle = _bulle + _ret;
 	};
@@ -699,7 +674,6 @@ if(_condition == "copwaffen") then {
 
 
 if(_condition == "copskleidung") then {
-
 	_clothing = [
 		["female_police",nil,5,4,2],
 		["PRPG_P_Deputy1",nil,5,4,2],
@@ -729,32 +703,29 @@ if(_condition == "copskleidung") then {
 		["PRPG_Sheriff_W_1_S",nil,1,1],
 		["PRPG_Sheriff_W_2_S",nil,1,1]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _clothing;
-
 };
 
 if(_condition == "copvests") then {
-
 	_bulle = [
-		["PRPG_Deputy_W_1_W",nil,1,1],
-		["PRPG_Deputy_W_2_W",nil,1,1],
-		["PRPG_Deputy_W_1_Y",nil,1,1],
-		["PRPG_Deputy_W_2_Y",nil,1,1],
-		["PRPG_Deputy_W_1_S",nil,1,1],
-		["PRPG_Deputy_W_2_S",nil,1,1],
-		["PRPG_Sheriff_Belt",nil,1,1]
+		//["PRPG_Deputy_W_1_W",nil,1,1],
+		//["PRPG_Deputy_W_2_W",nil,1,1],
+		//["PRPG_Deputy_W_1_Y",nil,1,1],
+		//["PRPG_Deputy_W_2_Y",nil,1,1],
+		//["PRPG_Deputy_W_1_S",nil,1,1],
+		//["PRPG_Deputy_W_2_S",nil,1,1],
+		//["PRPG_Sheriff_Belt",nil,1,1]
 	];
 	if(_cop > 4) then {
 		_ret = [
-			["PRPG_Sheriff_W_1_W",nil,1,1],
-			["PRPG_Sheriff_W_2_W",nil,1,1],
-			["PRPG_Sheriff_W_1_Y",nil,1,1],
-			["PRPG_Sheriff_W_2_Y",nil,1,1],
-			["PRPG_Sheriff_W_1_S",nil,1,1],
-			["PRPG_Sheriff_W_2_S",nil,1,1]
+		//	["PRPG_Sheriff_W_1_W",nil,1,1],
+		//	["PRPG_Sheriff_W_2_W",nil,1,1],
+		//	["PRPG_Sheriff_W_1_Y",nil,1,1],
+		//	["PRPG_Sheriff_W_2_Y",nil,1,1],
+		//	["PRPG_Sheriff_W_1_S",nil,1,1],
+		//	["PRPG_Sheriff_W_2_S",nil,1,1]
 		];
 		_bulle = _bulle + _ret;
 	};
@@ -764,7 +735,6 @@ if(_condition == "copvests") then {
 };
 
 if(_condition == "copbackpack") then {
-
 	_bulle = [
 		["AM_PoliceBelt",nil,1,1],
 		["invisible_carryall",nil,1,1]
@@ -775,7 +745,6 @@ if(_condition == "copbackpack") then {
 };
 
 if(_condition == "medickleidung") then {
-
 	_additional = [];
 	if(_EMS > 0) then {
 		_ret = [
@@ -835,22 +804,18 @@ if(_condition == "medickleidung") then {
 	{
 		_storeList pushback _x;
 	} foreach _additional;
-
 };
 
 if(_condition == "EMSbackpack") then {
-
 	_additional = [
 			["invisible_carryall",nil,10,3,1]
 			];
 	{
 		_storeList pushback _x;
 	} foreach _additional;
-
 };
 
 if(_condition == "medic") then {
-
 	_medic = [
 		["np_water",nil,1,1],
 		["np_beefsoup",nil,1,1],
@@ -869,11 +834,11 @@ if(_condition == "medic") then {
 		["ACE_surgicalKit",nil,1,1],
 		["ACE_morphine",nil,1,1],
 		["ACE_epinephrine",nil,1,1],
-		["ACE_atropine",nil,1,1]
+		["ACE_atropine",nil,1,1],
+		["ACE_Splint",nil,1,1]
 	];
 	if(_EMS > 1) then {
 		_ret = [
-			//["adv_aceCPR_AED",nil,1,1]
 		];
 		_medic = _medic + _ret;
 	};
@@ -892,15 +857,12 @@ if(_condition == "medic") then {
 	{
 		_storeList pushback _x;
 	} foreach _medic;
-
 };
 
 if(_condition == "fdkleidung") then {
-
 	_additional = [];
 	if(_EMS > 0) then {
 		_ret = [
-			//["pRPG_Candidate1",nil,10,3,1],
 			["female_ems",nil,10,3,1],
 			["vvv_traje_bombero",nil,10,3,1],
 			["Mask_M40",nil,10,3,1],
@@ -918,13 +880,9 @@ if(_condition == "fdkleidung") then {
 	{
 		_storeList pushback _x;
 	} foreach _additional;
-
 };
 
-
-
 if(_condition == "fd") then {
-
 	_fire = [
 		["np_water",nil,2,1],
 		["np_beefsoup",nil,2,1],
@@ -954,12 +912,9 @@ if(_condition == "fd") then {
 	{
 		_storeList pushback _x;
 	} foreach _fire;
-
 };
 
-
 if(_condition == "hotdogs") then {
-
 	_hotdogStore = [
 		["np_hotdog",nil,8,3],
 		["np_mhotdog",nil,8,3],
@@ -967,17 +922,13 @@ if(_condition == "hotdogs") then {
 		["np_bbqhotdog",nil,8,3],
 		["np_cheesehotdog",nil,8,3]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _hotdogStore;
-
 };
 
 if(_condition == "general") then {
-
 	_generalGroceries = [
-
 		["cg_tabletd",nil,50,3],
 		["CG_wheel",nil,150,3],
 		["ACE_fieldDressing",nil,5,3],
@@ -996,31 +947,24 @@ if(_condition == "general") then {
 		["np_lettucesoup",nil,2,3],
 		["np_tuna",nil,2,3]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _generalGroceries;
-
 };
 
-
 if(_condition == "donuts") then {
-
 	_donuts = [
 		["np_chdonuts",nil,8,3],
 		["np_jdonuts",nil,8,3],
 		["np_cdonuts",nil,8,3],
 		["np_donuts",nil,8,3]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _donuts;
-
 };
 
 if(_condition == "pizza") then {
-
 	_pizza = [
 		["np_hpizza",nil,14,3],
 		["np_mpizza",nil,14,3],
@@ -1028,34 +972,24 @@ if(_condition == "pizza") then {
 		["np_spizza",nil,14,3],
 		["np_vpizza",nil,14,3]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _pizza;
-
 };
 
-
-
-
 if(_condition IN ["general","hotdogs","donuts","pizza","mcdonalds","drinks"]) then {
-
 	_drinks = [
 		["np_water",nil,4,3],
 		["np_coke",nil,4,3],
 		["np_drpepper",nil,4,3],
 		["np_energydrink",nil,4,3]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _drinks;
-
 };
 
-
 if(_condition IN ["bar"]) then {
-
 	_drinks = [
 		["np_water",nil,4,3],
 		["np_coke",nil,4,3],
@@ -1069,18 +1003,13 @@ if(_condition IN ["bar"]) then {
 		["plp_bo_inv_BottleBlueCorazol",nil,7,3],
 		["np_energydrink",nil,4,3]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _drinks;
-
 };
 
-
 if(_condition == "head") then {
-
 	_gunStorePistols = [
-
 			["ALE_H_Cowboy_White",nil,120,3,5],
 			["ALE_H_Cowboy_Black",nil,120,3,5],
 			["ALE_H_Cowboy_Brown",nil,120,3,5],
@@ -1213,15 +1142,12 @@ if(_condition == "head") then {
 			["EF_Punk_wig_BW",nil,120,3,5],
 			["EF_Punk_wig_GL",nil,120,3,5]
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _gunStorePistols;
-
 };
 
 if(_condition == "doughnuts_general") then {
-
 	//Doughnuts
 	_additional = [];
 	if(_doughnuts > 0) then {
@@ -1322,8 +1248,8 @@ if(_condition == "doughnuts_general") then {
 		_storeList pushback _x;
 	} foreach _additional;
 };
-if(_condition == "doughnuts_gun") then {
 
+if(_condition == "doughnuts_gun") then {
 	//Doughnuts
 	_additional = [];
 	if(_doughnuts > 0) then {
@@ -1380,11 +1306,8 @@ if(_condition == "doughnuts_gun") then {
 	} foreach _additional;
 };
 
-
 if(_condition == "glasses") then {
-
 	_gunStorePistols = [
-
 		["G_Shades_Black",nil,120,3,4],
 		["G_Shades_Blue",nil,120,3,4],
 		["G_Sport_Blackred",nil,120,3,4],
@@ -1440,21 +1363,11 @@ if(_condition == "glasses") then {
 		["TRYK_Beard4",nil,120,3,4],
 		["TRYK_Beard_BW4",nil,120,3,4],
 		["TRYK_Beard_Gr4",nil,120,3,4]
-
 	];
-
 	{
 		_storeList pushback _x;
 	} foreach _gunStorePistols;
-
 };
-
-
-
-
-
-
-
 
 _display = findDisplay 9999;
 _list = _display displayCtrl 9001;

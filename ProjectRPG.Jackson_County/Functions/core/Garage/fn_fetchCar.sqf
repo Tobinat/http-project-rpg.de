@@ -29,6 +29,10 @@ if((_this select 0) == 1) exitwith {
 	_className = toLower(_car);
 	if (str _className find "vory_" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		if (str _className find "_wrx_mark" > -1) then {
+			sleep 0.5;
+			_vehicle setObjectTextureGlobal [0,"\prpg_cars\data\sheriff\prpg_wrx_sheriff.paa"];
+		};
 	};
 	if (str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 ) then {
 		[_vehicle, "", "jonzie"] remoteexec ["client_fnc_numberPlate",2];

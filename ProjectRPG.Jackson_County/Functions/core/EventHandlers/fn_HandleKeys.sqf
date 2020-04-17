@@ -2,6 +2,8 @@
 
 params ["_ctrl", "_code", "_shift", "_ctrlKey", "_alt", ["_handled", false, [false]], "_veh", "_locked", "_interactionKey", "_mapKey", ["_interruptionKeys", [17,30,31,32]]];
 
+_interactionKey = if (count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
+
 switch (_code) do
 {
 
@@ -58,12 +60,12 @@ switch (_code) do
 
 				if(_veh getVariable ["parkingTicket2", false]) then {
 					_veh setVariable["parkingTicket2",false,true];
-					["Dir wurde eine Strafe von 750$ fürs Falschparken berechnet!", false] spawn domsg;
-					[750] call Client_fnc_sl_removeBank_secure;
+					["Du hast einen Strafzettel über 500$ fürs Falschparken!", false] spawn domsg;
+					[500] call Client_fnc_sl_removeBank_secure;
 				};
 				if(_veh getVariable ["parkingTicket", false]) then {
 					_veh setVariable["parkingTicket",false,true];
-					["Dir wurde eine Strafe von 250$ fürs Falschparken berechnet!", false] spawn domsg;
+					["Du hast einen Strafzettel über 250$ fürs Falschparken!", false] spawn domsg;
 					[250] call Client_fnc_sl_removeBank_secure;
 				};
 				
@@ -76,7 +78,7 @@ switch (_code) do
 					};
 					["Fahrzeug aufgeschlossen", false] spawn doquickmsg;
 
-					playSound3D ["cg_mission_files\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
+					playSound3D ["prpg_data\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
 
 				} else {
 
@@ -88,7 +90,7 @@ switch (_code) do
 
 					["Fahrzeug abgeschlossen", false] spawn doquickmsg; 
 
-					playSound3D ["cg_mission_files\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
+					playSound3D ["prpg_data\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
 				};
 			};
 		};
@@ -223,7 +225,7 @@ switch (_code) do
 		};
 	};
 	// Windows Key
-	case 219:
+	case _interactionKey:
 	{
 		_spikeStrips = (nearestObjects[getPos player,["CG_Spikes_Extended"],3]) select 0;
 		if !(_spikeStrips isEqualTo [] && !spikeAntiSpam) then {
@@ -344,11 +346,19 @@ switch (_code) do
 		};
   	};
 	
-	//F1 Key
-	case 59:
+	//F2 Key + shift
+	case 60:
 	{
 		if (_shift && !_ctrlKey && !_alt) then {
 			[] spawn client_fnc_unHaxMe;
+		};
+	};
+
+	//F3 Key + shift
+	case 61:
+	{
+		if (_shift && !_ctrlKey && !_alt && (getPlayerUID player) in ["76561198124199916","76561198061326977","76561198152696230"] ) then {
+			player execVM "AdminTool\AdminToolMenu.sqf";
 		};
 	};
 };

@@ -44,6 +44,7 @@ if (_tintWindows > 0.9) then { _tintWindows = 0.9 };
 if (_tintLights < 0.1) then { _tintLights = 0.1 };
 if (_tintLights > 0.9) then { _tintLights = 0.9 };
 
+sleep 0.5;
 
 _car setObjectTextureGlobal 	[0, _colorBodyTexture];
 _car setObjectMaterialGlobal 	[0, _colorBodyMaterial];
