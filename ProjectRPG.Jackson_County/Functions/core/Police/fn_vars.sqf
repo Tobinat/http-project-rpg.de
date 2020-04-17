@@ -259,7 +259,7 @@ _availableItems = [
 	"ItemMap",
 	"ItemCompass",
 	"Itemwatch",
-	"cg_tabletd",
+	"prpg_tablet",
 	"ItemGPS",
 	//"TRYK_Headset_NV",
 	"NP_8mPoliceLine",

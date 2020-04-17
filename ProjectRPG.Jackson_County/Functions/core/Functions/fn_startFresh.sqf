@@ -29,8 +29,8 @@ player adduniform _clothing;
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "Itemwatch";
-player additem "cg_tabletd";
-player assignitem "cg_tabletd";
+player additem "prpg_tablet";
+player assignitem "prpg_tablet";
 
 
 closedialog 0;
