@@ -22,22 +22,22 @@ while {marker_mapesp} do
 
     for "o" from 0 to totalunits do
     {
-        _actualunit = unitList_player select o; //Player1
+        actualunit = unitList_player select o; //Player1
         //hint format["%1", actualunit];
         
-        if ( isplayer _actualunit && alive _actualunit ) then 
+        if ( isplayer actualunit && alive actualunit ) then 
         {
             deleteMarkerLocal ("Player" + (str o));
             yo = o + 1;
             deleteMarkerLocal ("Player" + (str yo));
                 
             namePlayer = "";
-            namePlayer = name _actualunit;
+            namePlayer = name actualunit;
         
             mark_player = "Player" + (str o); //Player0, Player1, Player2
-            mark_player = createMarkerLocal [mark_player,getPos _actualunit];
+            mark_player = createMarkerLocal [mark_player,getPos actualunit];
             mark_player setMarkerTypeLocal "waypoint";
-            mark_player setMarkerPosLocal (getPos _actualunit);
+            mark_player setMarkerPosLocal (getPos actualunit);
             mark_player setMarkerColorLocal "ColorBlue";
             mark_player setMarkerTextLocal format ["%1",namePlayer];
         };

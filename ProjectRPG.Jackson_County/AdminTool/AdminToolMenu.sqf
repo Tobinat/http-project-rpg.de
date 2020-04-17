@@ -1,11 +1,15 @@
 
-			
-_adminList =[	
-			"76561198124199916",	//Leonard
-			"76561198061326977",	//Kevin
-			"76561198152696230"		//Voight
-			];
 
+_adminList = ["76561198124199916","76561198061326977","76561198152696230"];
+
+player removeAction _ShowESP;
+player removeAction _ShowESPVehicle;
+player removeAction _ShowGearEditor;
+player removeAction _ShowHeal;
+player removeAction _ShowRepair;
+player removeAction _ShowTeleport;
+player removeAction _ShowTeleport2Me;
+player removeAction _GottMenu;
 removeAllActions player;
 
 if ((getPlayerUID player) in _adminList) then {

@@ -28,7 +28,7 @@ while{_totaltest > 0} do {
 	anwser = "Error";
 	_shitcunt = 0;
 	while{true} do {
-		if(!client_seatbelt) exitwith { answer = "Nicht angeschnallt!"; };
+		if(!life_seatbelt) exitwith { answer = "Nicht angeschnallt!"; };
 		if(player distance postest < 15) exitwith { answer = "Checkpoint Erfolgreich!"; totalres = totalres + 1; };
 		if(speed player >= 75) exitwith { answer = "Höchstegeschwindigkeit überschritten!"; (vehicle player) setVelocity [0, 0, 0]; };
 		if(_timer > 240) exitwith { answer = "Du hast zu lange gebraucht!"; };
