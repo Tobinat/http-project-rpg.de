@@ -7,7 +7,7 @@ for "_i" from 0 to 1 step 0 do  {
 			if(count _radios < 2) then {
 
 				if(count _radios > 0) then {
-					if(!([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio)) then {
+					if(!([(call TFAR_fnc_activeSwRadio),"prpg_tablet"] call TFAR_fnc_isSameRadio)) then {
 						[] call client_fnc_checkPhone;
 						[] call client_fnc_resetCallSpawn;
 						hint "Dein Radio wurde durch ein Tablet ersetzt";

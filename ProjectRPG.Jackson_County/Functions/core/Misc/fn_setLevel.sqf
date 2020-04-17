@@ -7,18 +7,18 @@ client_fnc_checkPhone = {
 	_radios = player call TFAR_fnc_radiosList;
 
 	if(count _radios > 0) then {
-		if([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio) then {  
+		if([(call TFAR_fnc_activeSwRadio),"prpg_tablet"] call TFAR_fnc_isSameRadio) then {  
 
 		} else {
 			_myradio = call TFAR_fnc_ActiveSwRadio;
 			player unassignitem _myradio;
 			player removeitem _myradio;
-			player additem "cg_tabletd";
-			player assignitem "cg_tabletd";
+			player additem "prpg_tablet";
+			player assignitem "prpg_tablet";
 		};
 	} else {
-		player additem "cg_tabletd";
-		player assignitem "cg_tabletd";
+		player additem "prpg_tablet";
+		player assignitem "prpg_tablet";
 	};
 
 	call TFAR_fnc_HideHint;

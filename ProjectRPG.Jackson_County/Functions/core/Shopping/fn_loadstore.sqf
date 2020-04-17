@@ -929,7 +929,7 @@ if(_condition == "hotdogs") then {
 
 if(_condition == "general") then {
 	_generalGroceries = [
-		["cg_tabletd",nil,50,3],
+		["prpg_tablet",nil,50,3],
 		["CG_wheel",nil,150,3],
 		["ACE_fieldDressing",nil,5,3],
 		["CG_Pro_Item_i",nil,350,1],

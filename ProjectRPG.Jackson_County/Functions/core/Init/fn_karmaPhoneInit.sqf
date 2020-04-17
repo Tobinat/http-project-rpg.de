@@ -10,18 +10,18 @@ client_fnc_checkPhone = {
 	_radios = player call TFAR_fnc_radiosList;
 
 	if(count _radios > 0) then {
-		if([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio) then {
+		if([(call TFAR_fnc_activeSwRadio),"prpg_tablet"] call TFAR_fnc_isSameRadio) then {
 
 		} else {
 			_myradio = call TFAR_fnc_ActiveSwRadio;
 			player unassignitem _myradio;
 			player removeitem _myradio;
-			player additem "cg_tabletd";
-			player assignitem "cg_tabletd";
+			player additem "prpg_tablet";
+			player assignitem "prpg_tablet";
 		};
 	} else {
-		player additem "cg_tabletd";
-		player assignitem "cg_tabletd";
+		player additem "prpg_tablet";
+		player assignitem "prpg_tablet";
 	};
 
 	call TFAR_fnc_HideHint;
@@ -36,7 +36,7 @@ client_fnc_resetCallSpawn = {
 	callInProgress = false;
 	myCallOwner = player;
 	_mynumber = getPlayerUID player;
-	_channel = [(call TFAR_fnc_ActiveSwRadio),"cg_tabletd"] call TFAR_fnc_getSwChannel;
+	_channel = [(call TFAR_fnc_ActiveSwRadio),"prpg_tablet"] call TFAR_fnc_getSwChannel;
 	_channel = _channel + 1;
 	[(call TFAR_fnc_activeSwRadio), _channel, _mynumber] call TFAR_fnc_SetChannelFrequency;
 	call TFAR_fnc_HideHint;
