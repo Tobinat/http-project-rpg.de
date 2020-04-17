@@ -91,5 +91,7 @@ class CfgVehicles {
 class cfgWeapons {
 	class ItemCore;
 	class ItemInfo;
+	class ItemRadio;
 	#include "\PRPG_Data\cfgItemsWeapons.hpp"
+	#include "\PRPG_Data\CfgRadio.hpp"
 };
