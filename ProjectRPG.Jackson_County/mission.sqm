@@ -197,6 +197,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -211,24 +229,6 @@ class CustomAttributes
 						};
 					};
 					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -2333,7 +2333,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=5;
+														value=1.2;
 													};
 												};
 												class Item1
@@ -4403,7 +4403,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2.45;
+														value=3;
 													};
 												};
 												class Item1
@@ -4538,7 +4538,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=2;
 													};
 												};
 												class Item1
@@ -4763,7 +4763,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=600;
+														value=1200;
 													};
 												};
 												class Item1
