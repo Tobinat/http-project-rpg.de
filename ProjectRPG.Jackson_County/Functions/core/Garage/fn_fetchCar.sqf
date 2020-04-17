@@ -79,6 +79,9 @@ if((_this select 0) == 1) exitwith {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
 		[_vehicle, ["darkjunglegreen","metallic"], "black", 10, 10] call client_fnc_IvoryInitVehicle;
 	};
+	if (str _className find "red_" > -1) then {
+		[_vehicle, ["black","metallic"]] call client_fnc_initVehicle;
+	}; 
 	[_vehicle] call client_fnc_spawnvehicle;
 	_vehicle allowdamage true;
 	Current_Cars pushBack _vehicle;
@@ -119,7 +122,7 @@ _vehicle allowdamage false;
 _vehicle setvariable ["information",_car,false];
 
 if (_vehicle isKindOf "Car") then {
-	if (str _className find "vory_" > -1 || str _className find "red_" > -1 || str _className find "sl_" > -1 || str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1 || str _className find "vv_" > -1 || str _className find "adilac_" > -1) then {
+	if (str _className find "vory_" > -1 || str _className find "sl_" > -1 || str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1 || str _className find "vv_" > -1 || str _className find "adilac_" > -1) then {
 		if (str _className find "vory_" > -1) then {
 			[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 			[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
@@ -127,8 +130,9 @@ if (_vehicle isKindOf "Car") then {
 		};
 
 		if (str _className find "red_" > -1) then {
-			[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
-		_vehicle setVariable ["kennzeichen",_numberplate,true];
+			[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
+			_vehicle setPlateNumber _numberPlate;
+			_vehicle setVariable ["kennzeichen",_numberplate,true];
 		};
 
 		if (str _className find "sl_" > -1) then {
