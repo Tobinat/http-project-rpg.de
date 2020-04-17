@@ -46,7 +46,7 @@ if (mav_ttm_var_weaponcrafting == 3) then {
 	"RH_tec9",
 	"hlc_smg_mp5k",
 	"hlc_smg_mp5a2",
-	"RH_bull",
+	"RH_bull"
 	];
 };
 
