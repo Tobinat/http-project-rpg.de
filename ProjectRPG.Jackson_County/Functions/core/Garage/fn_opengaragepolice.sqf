@@ -7,47 +7,38 @@ _garage = [];
 
 if(myJob == "Cop") then {
 		_garage = [
-			//"A3F_Ford_Crown_Police_V1"
-			"PRPG_Charger_Sheriff_01",
-			"PRPG_Charger_DOC_01"
+			"red_cvpi_06_p_sheriff",
+			"red_cvpi_06_p_u_sheriff"
+			//"red_cvpi_06_p_u_traffic" Momenatan keine Information darüber wie die Tafel funktioniert
 		];
 	if(_cop > 1) then {
 		_ret = [
-			//"A3F_Ford_Taurus_P_TL_V1",
-			//"Ford_Raptor_Police_V1"
-			"PRPG_Durango_Sheriff_01",
-			"ivory_wrx_marked"
-		];
-		_garage = _garage + _ret;
-	};
-	if(_cop > 2) then {
-		_ret = [
-			//"A3F_Chevrolet_Tahoe_2013_P_TL_V1",
-			//"A3F_Charger_RT_15_Police_V1",
-			//"Chevrolet_Tahoe_2015_POLICE_V1"
+			"red_taurus_13_p_sheriff",
+			"red_taurus_13_p_u_sheriff"
+			//"red_taurus_13_p_u_traffic" Momenatan keine Information darüber wie die Tafel funktioniert
 		];
 		_garage = _garage + _ret;
 	};
 	if(_cop > 3) then {
 		_ret = [
-			//"Dodge_Charger_06_Unmarked_V1",
-			//"Ford_Crown_Unmarked_V1"
-			"ivory_wrx_swat"
+			"red_charger_12_p_sheriff",
+			"red_charger_12_p_u_sheriff",
+			"red_camaro_12_p_u_black",
+			"red_suburban_15_p_f_custom1",
+			"red_challenger_15_p_u_black"
 		];
 		_garage = _garage + _ret;
 	};
 	if(_cop > 4) then {
 		_ret = [
-			//"Chevrolet_Camaro_ZL1_Police_V1",
-			//"Dodge_Charger_06_Police_V1",
-			//"Dodge_Charger_SRT8_Hellcat_Police_V1"
+			"red_suburban_15_p_sheriff",
+			"red_suburban_15_p_u_sheriff"
 		];
 		_garage = _garage + _ret;
 	};
-	if(_cop > 7) then {
+	if(_cop > 5) then {
 		_ret = [
-			//"A3F_TT_RS_10_P_TL_V1",
-			//"Porsche_Cayenne_12_Police_unmarked_V1"
+			"red_charger_15_p_sheriff"
 		];
 		_garage = _garage + _ret;
 	};
