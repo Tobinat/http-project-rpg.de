@@ -81,8 +81,15 @@ if((_this select 0) == 1) exitwith {
 	};
 	if (str _className find "red_" > -1) then {
 
-		_vehicle setObjectMaterialGlobal  [0, "ivory_data\data\metallic.rvmat" ];
-
+		if (str _className find "_p_u_bla" > -1 || str _className find "_p_f_cus" > -1 ) then {
+			_colorarray = ["black","blue","red","green","orange","purple","white","wildstrawberry","darkred","dimgray";"sunglow","brandeisblue","darkjunglegreen"];
+			_color = _colorarray call BIS_fnc_selectRandom;
+			_materialarray = ["metallic","matte"];
+			_material = _materialarray call BIS_fnc_selectRandom;
+			[_vehicle, [_color,_material]] call client_fnc_initVehicle;
+		} else {
+			_vehicle setObjectMaterialGlobal  [0, "ivory_data\data\metallic.rvmat" ];
+		};
 	}; 
 	[_vehicle] call client_fnc_spawnvehicle;
 	_vehicle allowdamage true;

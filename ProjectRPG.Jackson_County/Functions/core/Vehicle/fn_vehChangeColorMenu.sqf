@@ -245,7 +245,7 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_lightsCtrl = _display displayCtrl 1503;
 		_windowsCtrl = _display displayCtrl 1504;
 		_rimsCtrl = _display displayCtrl 1505;
-		_price = 0;
+		//_price = 0;
 		
 		_index = lbCurSel (1501);
 		_status = lbData[1501, _index];

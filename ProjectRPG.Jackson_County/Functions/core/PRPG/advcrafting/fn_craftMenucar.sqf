@@ -117,6 +117,7 @@ if (mav_ttm_var_autocrafting == 4) then {
 		//"CadillacEldorado1959_Black",
 		//"A3F_X5_11_Black",
 		//"BMW_X6_Black",
+		"red_camaro_12_black",
 		"ivory_wrx",
 		"ivory_evox",
 		"ivory_supra",
@@ -129,8 +130,9 @@ if (mav_ttm_var_autocrafting == 4) then {
 		//"Nissan_370Z_Black",
 		//"A3F_Nissan_GTR_12_Black",
 		//"Mercedes_Benz_SL65_Black",
-		//"Jaguar_XKRS_12_Black",
-		"vvv_Aston_Martin_DB9"
+		"red_vanquish_13_black",
+		"vvv_Aston_Martin_DB9",
+		"red_corvette_14_black"
 	];
 };
 
@@ -156,8 +158,9 @@ if (mav_ttm_var_autocrafting == 5) then {
 		//"Nissan_370Z_Black",
 		//"A3F_Nissan_GTR_12_Black",
 		//"Mercedes_Benz_SL65_Black",
-		//"Jaguar_XKRS_12_Black",
+		"red_vanquish_13_black",
 		"vvv_Aston_Martin_DB9",
+		"red_venomgt_11_black",
 		//"Rolls_Roxce_Dawn_Black",
 		//"Chevrolet_Camaro_ZL1_13_Black",
 		"ivory_lp560",
@@ -173,6 +176,7 @@ if (mav_ttm_var_autocrafting == 5) then {
 };
 
 _PricesCarClasses = [
+	//motor,smotor,karosse,reifen,auspuss,airbag,batterie,stoffsi,ledersi,tür,schutzscheibe,glas,eisenstange
 	//vvv_Audi_RS6_Avant_C6
 	[1,0,3,4,1,2,1,4,0,4,1,7,0],
 	//Ford_F350_XLT_SuperDuty_Black
@@ -189,6 +193,8 @@ _PricesCarClasses = [
 	//[1,0,4,4,1,2,1,5,0,4,1,7,0],
 	//BMW_X6_Black
 	//[1,0,4,4,1,2,1,0,5,4,1,7,0],
+	//red_camaro_12_black
+	[0,1,4,4,1,2,1,0,2,2,1,5,0],
 	//ivory_wrx
 	[1,0,3,4,1,2,1,4,0,4,1,5,0],
 	//ivory_evox
@@ -213,9 +219,11 @@ _PricesCarClasses = [
 	//[0,1,3,4,1,2,1,0,4,2,1,3,0],
 	//Mercedes_Benz_SL65_Black
 	//[0,1,3,4,1,2,1,0,4,2,1,3,0],
-	//Jaguar_XKRS_12_Black
-	//[0,1,3,4,1,2,1,0,4,2,1,3,0],
+	//red_vanquish_13_black
+	[0,1,3,4,1,2,1,0,4,2,1,3,0],
 	//vvv_Aston_Martin_DB9
+	[0,1,3,4,1,2,1,0,4,2,1,3,0],
+	//red_corvette_14_black
 	[0,1,3,4,1,2,1,0,4,2,1,3,0],
 	//Rolls_Roxce_Dawn_Black
 	//[0,1,2,4,1,2,1,0,4,2,1,0,0],
@@ -235,6 +243,8 @@ _PricesCarClasses = [
 	//[0,1,3,4,1,2,1,0,2,2,1,3,0],
 	//Aston_Martin_Vanquish_13_Black
 	//[0,1,3,4,1,2,1,0,4,2,1,3,0],
+	//red_venomgt_11_black
+	[0,1,3,4,1,2,1,0,2,2,1,8,0],
 	//vvv_Aston_Martin_Rapide
 	[0,1,3,4,1,2,1,0,2,4,1,5,0]    //KOMMA!!!!!!!!
 	//A3F_Corvette_Stingray_14_Black

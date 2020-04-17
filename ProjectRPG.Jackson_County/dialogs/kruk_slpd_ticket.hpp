@@ -58,7 +58,7 @@ class kruk_slpd_ticket_give {
 		};
 		class button_accept: client_RscButtonMenu {
 			idc = 1201;
-			text = "Abmelden"; //--- ToDo: Localize;
+			text = "Bestätigen"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 21 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
