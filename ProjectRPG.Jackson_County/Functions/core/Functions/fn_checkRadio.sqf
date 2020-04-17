@@ -14,6 +14,7 @@ for "_i" from 0 to 1 step 0 do  {
 					};
 				};
 
+				
 				_wtflol = call TFAR_fnc_haveLRRadio;
 				if(_wtflol) then {
 				_channel = (call TFAR_fnc_ActiveLRRadio) call TFAR_fnc_getLRChannel;
@@ -27,6 +28,7 @@ for "_i" from 0 to 1 step 0 do  {
 						};
 					};
 				};
+				
 
 				_wtfno = call TFAR_fnc_haveSWRadio;
 				if(_Wtfno) then {
