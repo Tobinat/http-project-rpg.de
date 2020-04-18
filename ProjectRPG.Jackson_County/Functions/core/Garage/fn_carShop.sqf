@@ -25,7 +25,7 @@ _civilianVehicle = [
 	["vvv_Alfa_Romeo_Spider_Duetto",8000],
 	["vvv_Chevrolet_Camaro_RS",9000],
 	["Jonzie_Mini_Cooper_r_spec",9000],
-	["nopixel_GMC_Campervan",9999],
+	//["nopixel_GMC_Campervan",9999],
 	["nopixel_Box_Default",9999],
 	["vvv_Chevrolet_Blazer",10000],
 	["vvv_Alfa_Romeo_59", 10000],

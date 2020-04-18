@@ -44,6 +44,7 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["CG_CROSS","CG_BATON","CG_TELBAT"] && vehicle player == player) exitwith {
+			sleep 0.1;
 			[_unit,_source] spawn client_fnc_blunthit;
 			_damage = 0;
 		};

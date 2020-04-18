@@ -13,9 +13,8 @@ if ("NP_kPelt" IN (magazines player)) then {
 	["PeltProcessed"] spawn mav_ttm_fnc_addExp;
 
 	if(_chance < 80) then {
-		_rods = ["epic_fishing_rod","platinum_fishing_rod","legendary_fishing_rod","gold_fishing_rod","CUP_NVG_PVS7","ItemGPS"];
+		_rods = ["epic_fishing_rod","platinum_fishing_rod","legendary_fishing_rod","gold_fishing_rod","ItemGPS"];
 		_myrod = _rods call BIS_FNC_SELECTRANDOM;
-		if(_myrod == "CUP_NVG_PVS7") then { _luckisaskill addItemCargoGlobal ["CUP_NVG_PVS7",3]; };
 		if(_myrod == "ItemGPS") then { _luckisaskill addItemCargoGlobal ["ItemGPS",3]; };
 		if(_myrod find "rod" > -1) then { _luckisaskill addWeaponCargoGlobal [_myrod,1]; } ;
 	};

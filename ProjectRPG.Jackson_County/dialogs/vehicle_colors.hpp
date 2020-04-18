@@ -9,7 +9,7 @@ class vehicle_colors {
 			idc = -1;
 			text = "Farbwechsel";
 			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.1448 * safezoneH + safezoneY;
+			y = 0.2448 * safezoneH + safezoneY;
 			w = 0.350625 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
@@ -19,7 +19,7 @@ class vehicle_colors {
 			idc = -1;
 			text = "Lack Typ";
 			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.169 * safezoneH + safezoneY;
+			y = 0.269 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
@@ -29,7 +29,7 @@ class vehicle_colors {
 			idc = -1;
 			text = "Lampen";
 			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.29 * safezoneH + safezoneY;
+			y = 0.39 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
@@ -39,7 +39,7 @@ class vehicle_colors {
 			idc = -1;
 			text = "Glas tönung";
 			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.345 * safezoneH + safezoneY;
+			y = 0.445 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
@@ -49,7 +49,7 @@ class vehicle_colors {
 			idc = -1;
 			text = "Felgenfarbe"; //--- ToDo: Localize;
 			x = 0.536094 * safezoneW + safezoneX;
-			y = 0.169 * safezoneH + safezoneY;
+			y = 0.269 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
@@ -59,7 +59,7 @@ class vehicle_colors {
 			idc = -1;
 			text = "Farbe";
 			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.169 * safezoneH + safezoneY;
+			y = 0.269 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
@@ -69,7 +69,7 @@ class vehicle_colors {
 			idc = 1001;
 			text = "Preis: $1000"; //--- ToDo: Localize;
 			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.3934 * safezoneH + safezoneY;
+			y = 0.4934 * safezoneH + safezoneY;
 			w = 0.201094 * safezoneW;
 			h = 0.033 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};

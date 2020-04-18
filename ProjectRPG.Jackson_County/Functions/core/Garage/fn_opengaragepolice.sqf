@@ -24,7 +24,7 @@ if(myJob == "Cop") then {
 			"red_charger_12_p_sheriff",
 			"red_charger_12_p_u_sheriff",
 			"red_camaro_12_p_u_black",
-			"red_suburban_15_p_f_custom1",
+			//"red_suburban_15_p_f_custom2",
 			"red_challenger_15_p_u_black"
 		];
 		_garage = _garage + _ret;
