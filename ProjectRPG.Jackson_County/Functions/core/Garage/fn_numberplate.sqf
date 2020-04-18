@@ -18,6 +18,11 @@ if(_vehType == "jonzie") then {
 	_licenseSelections = [1,2,3,4,5,6,7];
 };
 
+if(_vehType == "red") exitWith {
+	_licensered = toUpper(_license);
+	_car setPlateNumber _licensered;
+};
+
 
 
 if (_license == "") then 
