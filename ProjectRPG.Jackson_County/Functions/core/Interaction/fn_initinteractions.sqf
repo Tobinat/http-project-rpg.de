@@ -814,6 +814,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["myjob == ""EMS""", "typeof cursorobject == ""Land_Rxo_Air_Garage_Office"""],
+		["S.L.F.D.-Garage", "[] spawn client_fnc_openGarageEMS;",3]
+	],
+
+	[
 		["myJob == ""Mafia""", "player distance myhouse < 40 "],
 		["Mafiagarage", "[] spawn client_fnc_openGarageMafia;",3]
 	],
