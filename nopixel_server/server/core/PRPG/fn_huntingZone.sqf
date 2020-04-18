@@ -13,7 +13,7 @@
 private ["_animalList","_dist","_radius","_zoneName","_unitsNear","_animalsActive"];
 
     _zoneName = "hunting_zone"
-    _maxAnimals= 100;
+    _maxAnimals = 100;
 
 if (_zoneName isEqualTo "") exitWith {};
 _animalList = ["Sheep_random_F","Goat_random_F","Rabbit_F"];
