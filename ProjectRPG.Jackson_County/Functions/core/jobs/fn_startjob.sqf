@@ -52,11 +52,11 @@ _Jobs pushback ["Pizza Lieferant","pizza"];
 if(count currentTowTruckDrivers < (_count select 7)) then {
 _Jobs pushback ["Abschlepper","Tow Truck Driver"]; 
 };
-
+/*
 if(count currentdimis < (_count select 8)) then {
 _Jobs pushback ["Busfahrer","busdriver"]; 
 };
-
+*/
 
 
 if(_jobs isequalto []) then { _jobs = ["Keine Arbeit verfügbar"]; };
