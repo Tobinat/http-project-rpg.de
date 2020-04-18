@@ -4,11 +4,9 @@ class vehicle_colors {
 	movingEnable = 0;
 	enableSimulation = 1;
 	class controls {
-		class title: RscStructuredText 
+		class title: RscText
 		{
 			idc = -1;
-			align = "center";
-			valign = "top";
 			text = "Farbwechsel";
 			x = 0.265538 * safezoneW + safezoneX;
             y = 0.370589 * safezoneH + safezoneY;
@@ -16,11 +14,9 @@ class vehicle_colors {
             h = 0.023663 * safezoneH;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
 		};
-		class title_finish: RscStructuredText 
+		class title_finish: RscText
 		{
 			idc = -1;
-			align = "center";
-			valign = "top";
 			text = "Lack Typ";
 			x = 0.408451 * safezoneW + safezoneX;
             y = 0.396973 * safezoneH + safezoneY;
@@ -28,11 +24,9 @@ class vehicle_colors {
             h = 0.022154 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
-		class title_lights: RscStructuredText 
+		class title_lights: RscText
 		{
 			idc = -1;
-			align = "center";
-			valign = "top";
 			text = "Lampen";
 			x = 0.408451 * safezoneW + safezoneX;
             y = 0.529903 * safezoneH + safezoneY;
@@ -40,11 +34,9 @@ class vehicle_colors {
             h = 0.023607 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
-		class title_windows: RscStructuredText 
+		class title_windows: RscText
 		{
 			idc = -1;
-			align = "center";
-			valign = "top";
 			text = "Glas tönung";
 			x = 0.408451 * safezoneW + safezoneX;
             y = 0.585 * safezoneH + safezoneY;
@@ -52,11 +44,9 @@ class vehicle_colors {
             h = 0.023607 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
-		class title_rims: RscStructuredText 
+		class title_rims: RscText
 		{
 			idc = -1;
-			align = "center";
-			valign = "top";
 			text = "Felgenfarbe"; //--- ToDo: Localize;
 			x = 0.592011 * safezoneW + safezoneX;
             y = 0.396973 * safezoneH + safezoneY;
@@ -64,11 +54,9 @@ class vehicle_colors {
             h = 0.022154 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
-		class title_color: RscStructuredText 
+		class title_color: RscText
 		{
 			idc = -1;
-			align = "center";
-			valign = "top";
 			text = "Farbe";
 			x = 0.265152 * safezoneW + safezoneX;
             y = 0.396973 * safezoneH + safezoneY;
@@ -76,11 +64,9 @@ class vehicle_colors {
             h = 0.022154 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
-		class title_price: RscStructuredText 
+		class title_price: RscText
 		{
 			idc = 1001;
-			align = "center";
-			valign = "top";
 			text = "Preis: $1000"; //--- ToDo: Localize;
 			x = 0.408451 * safezoneW + safezoneX;
             y = 0.639769 * safezoneH + safezoneY;
@@ -144,7 +130,7 @@ class vehicle_colors {
 			text = "Bestätigen";
 			x = 0.408451 * safezoneW + safezoneX;
             y = 0.673637 * safezoneH + safezoneY;
-            w = 0.066881 * safezoneW;
+            w = 0.046881 * safezoneW;
             h = 0.027058 * safezoneH;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
 			action = "[] spawn client_fnc_vehChangeColorButtonAccept; closeDialog 0; ";
@@ -153,9 +139,9 @@ class vehicle_colors {
 		{
 			idc = 1602;
 			text = "Abbruch"; //--- ToDo: Localize;
-			x = 0.478262 * safezoneW + safezoneX;
+			x = 0.458262 * safezoneW + safezoneX;
             y = 0.673637 * safezoneH + safezoneY;
-            w = 0.066881 * safezoneW;
+            w = 0.046881 * safezoneW;
             h = 0.027058 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 			action = "[] spawn client_fnc_resetColor; closeDialog 0;";
