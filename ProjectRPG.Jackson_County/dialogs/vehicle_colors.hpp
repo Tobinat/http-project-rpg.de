@@ -8,119 +8,119 @@ class vehicle_colors {
 		{
 			idc = -1;
 			text = "Farbwechsel";
-			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.2448 * safezoneH + safezoneY;
-			w = 0.350625 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.265538 * safezoneW + safezoneX;
+            y = 0.370589 * safezoneH + safezoneY;
+            w = 0.463583 * safezoneW;
+            h = 0.023663 * safezoneH;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
 		};
 		class title_finish: RscText
 		{
 			idc = -1;
 			text = "Lack Typ";
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.269 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.408451 * safezoneW + safezoneX;
+            y = 0.396973 * safezoneH + safezoneY;
+            w = 0.174632 * safezoneW;
+            h = 0.022154 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class title_lights: RscText
 		{
 			idc = -1;
 			text = "Lampen";
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.39 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.408451 * safezoneW + safezoneX;
+            y = 0.529903 * safezoneH + safezoneY;
+            w = 0.174632 * safezoneW;
+            h = 0.023607 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class title_windows: RscText
 		{
 			idc = -1;
 			text = "Glas tönung";
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.445 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.408451 * safezoneW + safezoneX;
+            y = 0.585 * safezoneH + safezoneY;
+            w = 0.174632 * safezoneW;
+            h = 0.023607 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class title_rims: RscText
 		{
 			idc = -1;
 			text = "Felgenfarbe"; //--- ToDo: Localize;
-			x = 0.536094 * safezoneW + safezoneX;
-			y = 0.269 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.592011 * safezoneW + safezoneX;
+            y = 0.396973 * safezoneH + safezoneY;
+            w = 0.137243 * safezoneW;
+            h = 0.022154 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class title_color: RscText
 		{
 			idc = -1;
 			text = "Farbe";
-			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.269 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.265152 * safezoneW + safezoneX;
+            y = 0.396973 * safezoneH + safezoneY;
+            w = 0.137243 * safezoneW;
+            h = 0.022154 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class title_price: RscText
 		{
 			idc = 1001;
 			text = "Preis: $1000"; //--- ToDo: Localize;
-			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.4934 * safezoneH + safezoneY;
-			w = 0.201094 * safezoneW;
-			h = 0.033 * safezoneH;
+			x = 0.408451 * safezoneW + safezoneX;
+            y = 0.639769 * safezoneH + safezoneY;
+            w = 0.174632 * safezoneW;
+            h = 0.027058 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class listbox_colors: RscListbox
 		{
 			idc = 1501;
-			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.291 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.198 * safezoneH;
+			 x = 0.265152 * safezoneW + safezoneX;
+            y = 0.419 * safezoneH + safezoneY;
+            w = 0.137243 * safezoneW;
+            h = 0.250871 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
 			onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
 		};
 		class listbox_finish: RscListbox
 		{
 			idc = 1502;
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.291 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.088 * safezoneH;
+			 x = 0.408451 * safezoneW + safezoneX;
+            y = 0.419 * safezoneH + safezoneY;
+            w = 0.174632 * safezoneW;
+            h = 0.098191 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
 			onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
 		};
 		class combo_lights: RscCombo
 		{
 			idc = 1503;
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.412 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.408451 * safezoneW + safezoneX;
+            y = 0.555 * safezoneH + safezoneY;
+            w = 0.174632 * safezoneW;
+            h = 0.023607 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
 			onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
 		};
 		class combo_windows: RscCombo
 		{
 			idc = 1504;
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.467 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.408451 * safezoneW + safezoneX;
+            y = 0.61 * safezoneH + safezoneY;
+            w = 0.174632 * safezoneW;
+            h = 0.023607 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
 			onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
 		};
 		class listbox_rims: RscListbox
 		{
 			idc = 1505;
-			x = 0.536094 * safezoneW + safezoneX;
-			y = 0.291 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.198 * safezoneH;
+			x = 0.592011 * safezoneW + safezoneX;
+            y = 0.419 * safezoneH + safezoneY;
+            w = 0.137243 * safezoneW;
+            h = 0.250871 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
 			onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
 		};
@@ -128,10 +128,10 @@ class vehicle_colors {
 		{
 			idc = 1601;
 			text = "Bestätigen";
-			x = 0.505157 * safezoneW + safezoneX;
-			y = 0.4934 * safezoneH + safezoneY;
-			w = 0.0928125 * safezoneW;
-			h = 0.033 * safezoneH;
+			x = 0.408451 * safezoneW + safezoneX;
+            y = 0.673637 * safezoneH + safezoneY;
+            w = 0.046881 * safezoneW;
+            h = 0.027058 * safezoneH;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
 			action = "[] spawn client_fnc_vehChangeColorButtonAccept; closeDialog 0; ";
 		};
@@ -139,10 +139,10 @@ class vehicle_colors {
 		{
 			idc = 1602;
 			text = "Abbruch"; //--- ToDo: Localize;
-			x = 0.603125 * safezoneW + safezoneX;
-			y = 0.4934 * safezoneH + safezoneY;
-			w = 0.0464062 * safezoneW;
-			h = 0.033 * safezoneH;
+			x = 0.458262 * safezoneW + safezoneX;
+            y = 0.673637 * safezoneH + safezoneY;
+            w = 0.046881 * safezoneW;
+            h = 0.027058 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
 			action = "[] spawn client_fnc_resetColor; closeDialog 0;";
 		};
