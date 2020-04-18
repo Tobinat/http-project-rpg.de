@@ -15,6 +15,7 @@ waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
 [] spawn server_fnc_resetConnected; //Przy włączeniu serwera zmienia w bazie danych connected=1 na connected=0
 [] spawn server_fnc_removeVehiclesDamage; //Usuwa pojazdy gdzie damage=1
 [] spawn server_fnc_resetRespawn; //resetuje licznik zgonów do 3
+[] spawn server_fnc_huntingzone; //Spawnt Tiere in der Hunting Zone
 
 [server_fnc_addJob, 120] execFSM "\nopixel_server\call.fsm";
 [Server_fnc_cleanup, 1800] execFSM "\nopixel_server\call.fsm";

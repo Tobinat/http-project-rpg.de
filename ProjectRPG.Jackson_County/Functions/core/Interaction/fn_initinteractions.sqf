@@ -1268,7 +1268,17 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["typeof CurrentCursorTarget == ""Rabbit_F"" && getdammage cursorobject == 1"],
-		["Haut abziehen", "deletevehicle CurrentCursorTarget; player additem ""np_upelt""; hint ""Du hast den Hasen gehauetet!""",4]
+		["Haut abziehen", "deletevehicle CurrentCursorTarget; player additem ""np_upelt""; hint ""Du hast den Hasen gehäutet!""",4]
+	],
+
+	[
+		["typeof CurrentCursorTarget == ""Sheep_random_F"" && getdammage cursorobject == 1"],
+		["Haut abziehen", "deletevehicle CurrentCursorTarget; player additem ""np_upelt""; player additem ""np_upelt""; player additem ""np_upelt""; hint ""Du hast das Schaf gehäutet!""",4]
+	],
+
+	[
+		["typeof CurrentCursorTarget == ""Goat_random_F"" && getdammage cursorobject == 1"],
+		["Haut abziehen", "deletevehicle CurrentCursorTarget; player additem ""np_upelt""; player additem ""np_upelt""; player additem ""np_upelt""; hint ""Du hast die Ziege gehäutet!""",4]
 	],
 
 	[

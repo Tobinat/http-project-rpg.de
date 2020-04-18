@@ -161,6 +161,10 @@ class CfgFunctions {
             class quitDispatch {};
             class giveTask {};
         };
+		class PRPG {
+            file = "NoPixel_Server\server\core\PRPG";
+            class huntingZone {};
+        };
     };
     class ExternalS {
         class ExtDB {
