@@ -1,7 +1,7 @@
 _type = _this select 0;
-[player,objNull,1,format ["%1 hat folgende Ausrüstung %2 gewählt", name player, _type],_type] remoteExec ["server_fnc_jobLog", 2];
+//[player,objNull,1,format ["%1 hat folgende Ausrüstung %2 gewählt", name player, _type],_type] remoteExec ["server_fnc_jobLog", 2];
 if(myjob == "Cop") exitwith {
-	[player,objNull,9,format ["%1 hat folgende Ausrüstung %2 gewählt", name player, _type],_type] remoteExec ["server_fnc_copLog", 2];
+	//[player,objNull,9,format ["%1 hat folgende Ausrüstung %2 gewählt", name player, _type],_type] remoteExec ["server_fnc_copLog", 2];
     client_gopro = true;
     434 cutRsc ["HUDGoPro","PLAIN"];
 	if(_type == "basic") then {
