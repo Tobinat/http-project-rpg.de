@@ -197,24 +197,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -229,6 +211,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -22770,15 +22770,15 @@ class Mission
 		class Item497
 		{
 			dataType="Marker";
-			position[]={4527.4082,271.504,3043.8511};
+			position[]={4631.208,271.504,3095.2971};
 			name="hunting_zone";
 			markerType="ELLIPSE";
 			type="ellipse";
 			alpha=0;
-			a=300;
-			b=300;
+			a=200;
+			b=200;
 			id=2822;
-			atlOffset=156.92285;
+			atlOffset=155.08778;
 		};
 	};
 };
