@@ -40,24 +40,24 @@ if (isNull _unit) then {
 };
 
 switch (_type) do {
-    case 1: {_type = "Skucie";};
-    case 2: {_type = "Rozkucie";};
-    case 3: {_type = "Mandat";};
-    case 4: {_type = "Areszt";};
-    case 5: {_type = "ZabranieLicencji";};
-    case 6: {_type = "Awans";};
-    case 7: {_type = "Kolczatka";};
-    case 8: {_type = "Dowody";};
-    case 9: {_type = "Wyposażenie";};
-    case 10: {_type = "SłużbaStart";};
-    case 11: {_type = "SłużbaStop";};
-    case 12: {_type = "PrzeszukanieDom";};
-    case 13: {_type = "PrzeszukanieSklep";};
-    case 14: {_type = "Podsłuch";};
+    case 1: {_type = "Fesseln";};
+    case 2: {_type = "Entfesseln";};
+    case 3: {_type = "Strafzettel";};
+    case 4: {_type = "Inhaftiert";};
+    case 5: {_type = "Lizenzentzug";};
+    case 6: {_type = "Beförderung";};
+    case 7: {_type = "SpikeStrip";};
+    case 8: {_type = "Beweis";};
+    case 9: {_type = "Loadout";};
+    case 10: {_type = "Dienstbeginn";};
+    case 11: {_type = "Dienstende";};
+    case 12: {_type = "Hausdurchsuchung";};
+    case 13: {_type = "Ladendurchsuchung";};
+    case 14: {_type = "Abhören";};
     case 15: {_type = "Pluskwa";};
-    case 16: {_type = "NamierzenieRozmowy";};
-    case 17: {_type = "Teczka";};
-    case 18: {_type = "Odholowanie";};
+    case 16: {_type = "GesprächVerfolgung";};
+    case 17: {_type = "Geldkoffer";};
+    case 18: {_type = "Impound";};
     //case 19: {_type = "";};
 };
 

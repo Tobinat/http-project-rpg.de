@@ -232,7 +232,7 @@ class kruk_slpd_ticket_receive {
 		};
 		class text_title: RscText {
 			idc = 1301;
-			text = "Erteilung eines Mandats"; //--- ToDo: Localize;
+			text = "Erteilung eines Strafzettels"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 14 * GUI_GRID_W;
