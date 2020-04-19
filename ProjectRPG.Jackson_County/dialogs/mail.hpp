@@ -276,11 +276,11 @@ class openMail {
 			h = 0.0483903 * safezoneH;
 		};
 
-		class CloseOption : RscButton {
-			idc = 9996;
-			text = "";
+		class DeleteOption : RscButton {
+			idc = 9998;
+			text = "Brief Entfernen";
 			onButtonClick = "_status = lbData[9001,lbCurSel (9001)]; [_status] spawn client_fnc_deletemail;";
-			x = 0.706091 * safezoneW + safezoneX;
+			x = 0.606091 * safezoneW + safezoneX;
 			y = 0.703346 * safezoneH + safezoneY;
 			w = 0.0899712 * safezoneW;
 			h = 0.0483903 * safezoneH;
