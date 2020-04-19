@@ -269,7 +269,7 @@ class openMail {
 		class CloseOption : HideButton {
 			idc = 9996;
 			text = "";
-			onButtonClick = "closedialog 0;";
+			onButtonClick = "closedialog 0";
 			x = 0.506091 * safezoneW + safezoneX;
 			y = 0.703346 * safezoneH + safezoneY;
 			w = 0.0899712 * safezoneW;
@@ -279,7 +279,7 @@ class openMail {
 		class DeleteMail : client_RscButtonMenu {
 			idc = 9998;
 			text = "Brief Entfernen";
-			onButtonClick = "_status = lbData[9001,lbCurSel (9001)]; _status = call compile format[""%1"", _status]; closedialog 0; [_status] spawn client_fnc_deletemail;" 
+			onButtonClick = "_status = lbData[9001,lbCurSel (9001)]; _status = call compile format[""%1"", _status]; closedialog 0; [_status] spawn client_fnc_deletemail;"; 
 			x = 0.606091 * safezoneW + safezoneX;
 			y = 0.703346 * safezoneH + safezoneY;
 			w = 0.0899712 * safezoneW;

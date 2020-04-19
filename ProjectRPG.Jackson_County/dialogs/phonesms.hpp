@@ -78,7 +78,7 @@ class openMessages {
 		class DeleteSMS : client_RscButtonMenu {
 			idc = 1116;
 			text = "Nachricht Löschen";
-			onButtonClick = "_status = lbData[9001,lbCurSel (9001)]; _status = call compile format[""%1"", _status]; closedialog 0; [_status] spawn client_fnc_deleteMessages;" 
+			onButtonClick = "_status = lbData[9001,lbCurSel (9001)]; _status = call compile format[""%1"", _status]; closedialog 0; [_status] spawn client_fnc_deleteMessages;"; 
 			x = 0.75;
 			y = 0.75;
 			w = 0.312;
