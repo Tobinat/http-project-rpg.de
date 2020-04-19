@@ -8,5 +8,5 @@
 private["_updateStr"];
 
 _id = _this select 0;
-_updateStr = format ["deletMessages:%1", _id];
+_updateStr = format ["deleteMessages:%1", _id];
 _update = [0, _updateStr] call ExternalS_fnc_ExtDBquery;
