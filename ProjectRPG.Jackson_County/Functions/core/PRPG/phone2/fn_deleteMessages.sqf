@@ -6,6 +6,8 @@
 */
 
 _allesnurwegenkevin = _this select 0;
+_allesnurwegenkevin = call compile format["%1", _allesnurwegenkevin];
+
 
 hint format ["%1", _allesnurwegenkevin];
 
