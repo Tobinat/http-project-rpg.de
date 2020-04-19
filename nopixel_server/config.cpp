@@ -164,6 +164,8 @@ class CfgFunctions {
 		class PRPG {
             file = "NoPixel_Server\server\core\PRPG";
             class huntingZone {};
+            class removeMessages {};
+            class removeMail {};
         };
     };
     class ExternalS {

@@ -43,7 +43,7 @@ class openMessages {
 			fadein=1;
 		  	fadeout=1;
 			font="PuristaLight";
-			text = "Keine Nachricht gewaehlt!";
+			text = "Keine Nachricht gewählt!";
 			size = 0.035;
 			sizeEx = 0.05;
 			x = 0.75; 
@@ -67,13 +67,23 @@ class openMessages {
 
 		class SendSMS : client_RscButtonMenu {
 			idc = 1115;
-			text = "Sende SMS";
+			text = "SMS Schreiben";
 			onButtonClick = "closedialog 0; createdialog ""client_findSMS""";
-			x = 0.52;
+			x = 0.35;
 			y = 0.75;
-			w = 0.1;
+			w = 0.301;
 			h = 0.05;
 		};	
+
+		class DeleteSMS : client_RscButtonMenu {
+			idc = 1116;
+			text = "Nachricht Löschen";
+			onButtonClick = "_data = lbData[9001,lbCurSel (9001)]; messages deleteAt _data; _data = call compile format[""%1"", _status]; [(_data select 0)] remoteExec [""server_fnc_removemessage""]; closedialog 0;" 
+			x = 0.75;
+			y = 0.75;
+			w = 0.312;
+			h = 0.05;
+		};
 
 		class CTRL_PHONE_BG: RscStructuredText
 		{    

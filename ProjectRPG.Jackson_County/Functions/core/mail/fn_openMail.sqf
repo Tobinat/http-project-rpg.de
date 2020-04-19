@@ -28,14 +28,5 @@ if(isNil "_status") exitwith {};
 _selectedmessage = mail select _status;
 
 _Btn4 = _display displayCtrl 9110;
-_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'>TITLE: %2 <t color='#ffffff'> <br/><br/> %1 <t color='#33CC33'> <br/><br/> Absender: %3", _selectedmessage select 0, _selectedmessage select 1, _selectedmessage select 2];
+_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'>Betreff: %2 <t color='#ffffff'> <br/><br/> %1 <t color='#33CC33'> <br/><br/> Absender: %3", _selectedmessage select 1, _selectedmessage select 2, _selectedmessage select 3];
 _btn4 ctrlCommit 0;
-
-
-
-
-
-
-
-
-
