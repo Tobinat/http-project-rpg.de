@@ -5,7 +5,7 @@
 	Löscht Nachrichten aus der Datenbank
 */
 
-_allesnurwegenkevin = this select 0;
+_allesnurwegenkevin = _this select 0;
 
 hint format ["%1", _allesnurwegenkevin];
 
