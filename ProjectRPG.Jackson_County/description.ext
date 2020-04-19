@@ -276,7 +276,6 @@ class CfgFunctions
         class phone2 {
 			file = "Functions\core\PRPG\phone2";
 			class deletemessages {};
-            class deletemail {};
 		};
 
 		class jobFactions {
