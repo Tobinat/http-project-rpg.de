@@ -273,8 +273,8 @@ class CfgFunctions
             class healcorona {};
 		};
 
-        class phone {
-			file = "Functions\core\PRPG\phone";
+        class phone2 {
+			file = "Functions\core\PRPG\phone2";
 			class deletemessages {};
 		};
 
