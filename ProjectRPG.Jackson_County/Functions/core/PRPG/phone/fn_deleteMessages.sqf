@@ -7,6 +7,9 @@
 disableSerialization;
 
 _allesnurwegenkevin = this select 0;
+
+messages deleteAt _hurensohn;
+
 _hurensohn = call compile format["%1", _allesnurwegenkevin];
 
 _id = _hurensohn select 0;
