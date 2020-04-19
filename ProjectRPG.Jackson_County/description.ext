@@ -273,6 +273,11 @@ class CfgFunctions
             class healcorona {};
 		};
 
+        class phone {
+			file = "Functions\core\PRPG\phone";
+			class deletemessages {};
+		};
+
 		class jobFactions {
 			file = "Functions\core\jobs\JobFactions";
 			class startDispatch {};

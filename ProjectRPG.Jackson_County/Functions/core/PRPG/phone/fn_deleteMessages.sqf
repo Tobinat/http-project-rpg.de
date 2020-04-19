@@ -15,4 +15,4 @@ messages deleteAt _hurensohn;
 
 _id = _allesnurwegenkevin select 0;
 
-[_id] remoteexec ["server_fnc_removemessage"];
+[_id] remoteexec ["server_fnc_removemessage",2];
