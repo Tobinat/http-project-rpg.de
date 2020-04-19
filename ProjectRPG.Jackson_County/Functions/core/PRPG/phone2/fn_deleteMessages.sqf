@@ -7,13 +7,9 @@
 
 _allesnurwegenkevin = _this select 0;
 
+_sovieldreck = messages select _allesnurwegenkevin;
+messages deleteAt _allesnurwegenkevin;
 
-hint format ["%1", _allesnurwegenkevin];
-
-_hurensohn = messages find _allesnurwegenkevin;
-
-messages deleteAt _hurensohn;
-
-_id = _allesnurwegenkevin select 0;
+_id = _sovieldreck select 0;
 
 [_id] remoteexec ["server_fnc_removemessage",2];
