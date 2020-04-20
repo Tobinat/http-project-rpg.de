@@ -14,4 +14,4 @@ mail deleteAt _allesnurwegenkevin;
 
 _id = _sovieldreck select 0;
 
-[_id] remoteexec ["server_fnc_removemmail",2];
+[_id] remoteexec ["server_fnc_removemail",2];
