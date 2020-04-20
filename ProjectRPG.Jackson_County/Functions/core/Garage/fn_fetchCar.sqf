@@ -141,7 +141,8 @@ if (_vehicle isKindOf "Car") then {
 		if (str _className find "red_" > -1) then {
 			[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
 			//[_vehicle, _numberPlate, "red"] remoteexec ["client_fnc_numberPlate",2];
-			_vehicle setPlateNumber _numberPlate;
+			_numberplatered = topUpper(_numberplate);
+			_vehicle setPlateNumber _numberplatered;
 			_vehicle setVariable ["kennzeichen",_numberplate,true];
 		};
 

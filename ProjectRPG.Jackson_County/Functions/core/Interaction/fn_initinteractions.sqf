@@ -658,12 +658,12 @@ NoPixel_InteractionMenuItems = [
 		["currentcursortarget == fishTrader"],
 		["Ankauf seltener Fische", "closedialog 0; createdialog ""RareFish_Menu""; [""rarefish""] spawn client_fnc_LoadStore;",3]
 	],
-
+/*
 	[
 		["currentcursortarget == fishTrader"],
 		["Haut abziehen", "closedialog 0; [] spawn client_fnc_rarePelt;",3]
 	],
-
+*/
 	[
 		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_Coffee_DED_Coffee_01_F""]"],
 		["Kleidungsladen", "closedialog 0; createdialog ""Clothing_Menu""; [""clothing""] spawn client_fnc_LoadStore;",3]
