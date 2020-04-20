@@ -222,6 +222,7 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 			};
 			_priceStr = format["Preis: $%1",_price];
 			_priceCtrl ctrlSetText _priceStr;
+			vehchangeprice = _price;
 	};
 };
 if(isNil "client_fnc_vehChangeColorButtonAccept") then {
@@ -261,7 +262,9 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_status = lbData[1503, (lbCurSel (1503))];
 		
 		_status = lbData[1504, (lbCurSel (1504))];
-		_price = parseNumber((ctrlText 1001) select [7]);
+
+		//_price = parseNumber((ctrlText 1001) select [7]);
+		_price = vehchangeprice;
 
 		_haveCash = [1,_price] call Client_fnc_sl_checkMoney_secure;
 		if !(_haveCash) exitWith {
@@ -278,14 +281,14 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 			};
 		};
 
-		hint format ["%1",_selectedcolor];
-		/*
+		//hint format ["%1",_selectedcolor];
+		
 		if (isNil "_selectedColor") exitWith {hint "Selected color is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedFinish") exitWith {hint "Selected finish is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedRims") exitWith {hint "Selected rims is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedWindows") exitWith {hint "Selected windows is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedLights") exitWith {hint "Selected lights is nil, maybe not selected options?"; closeDialog 0; };
-		*/
+		
 		[_price] call Client_fnc_sl_removeCash_secure;
 		
 		_information set [2,_selectedColor];
@@ -301,5 +304,6 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		
 		[spawnedVehicle] call client_fnc_storeCar;
 		spawnedVehicle = objNull;
+		vehchangeprice = objNull;
 	};
 };
