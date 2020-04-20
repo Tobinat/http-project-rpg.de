@@ -34,7 +34,7 @@ if (myJob == "cop") then
 		case 13: { _rank = "Auxiliary Deputy";};
     };
 
-	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#0000ff'>%3</t>", _id, name player, _rank];
+	_message = format["<t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#0000ff'>%3</t>", _id, name player, _rank];
 	[_message] remoteExec ["client_fnc_LicenseShown",_target];
 };
 
@@ -55,7 +55,7 @@ if (myJob == "EMS") then
 		case 8: { _rank = "Chief";};
 	};
 
-	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#ff0000'>%3</t>", _id, name player, _rank];
+	_message = format["<t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#ff0000'>%3</t>", _id, name player, _rank];
 	[_message] remoteExec ["client_fnc_LicenseShown",_target];
 
 
