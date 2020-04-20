@@ -58,9 +58,9 @@ if (_chanceloot > 400) then {
 		for "_i" from 1 to 5 do { player addItem "ACE_tourniquet"; };
 		["In diesem Container sind Medizinische verbrauchsgüter, du nimmst dir ein paar Bandagen und Tourniquets.", true] spawn domsg;
 	};
-	case "10": { for "_i" from 1 to 5 do { player addItem "np_beer"; ["Du hast einen Container mit Energydrinks geöffnet, du nimmst dir 5!", true] spawn domsg; }; 
-	case "11": { for "_i" from 1 to 5 do { player addItem "np_beefsoup"; ["Du hast einen Container mit Rindersuppe geöffnet, du nimmst dir 5!", true] spawn domsg; };
-	case "12": { for "_i" from 1 to 3 do { player addItem "CG_OilCanister"; ["Du hast einen Container mit Rafiniertem Öl geöffnet, du nimmst dir 3 Kanister!", true] spawn domsg; };
+	case "10": { for "_i" from 1 to 5 do { player addItem "np_beer"; }; ["Du hast einen Container mit Energydrinks geöffnet, du nimmst dir 5!", true] spawn domsg; }; 
+	case "11": { for "_i" from 1 to 5 do { player addItem "np_beefsoup"; }; ["Du hast einen Container mit Rindersuppe geöffnet, du nimmst dir 5!", true] spawn domsg; };
+	case "12": { for "_i" from 1 to 3 do { player addItem "CG_OilCanister"; }; ["Du hast einen Container mit Rafiniertem Öl geöffnet, du nimmst dir 3 Kanister!", true] spawn domsg; };
     default { ["In dem Container war nur unbrauchbarer Müll!", true] spawn domsg; };
 };
 	
