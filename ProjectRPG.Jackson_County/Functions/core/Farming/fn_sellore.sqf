@@ -4,7 +4,7 @@ petroleo < string to object
 
 private["_n","_i","_localProtection"];
 
-_barArray = ["np_copperbar1","np_ironbar1","np_silverbar1","NP_Wood","CG_OilCanister"];
+_barArray = ["np_copperbar1","np_ironbar1","np_silverbar1","NP_Wood","CG_OilCanister","prpg_item_aluminium_bar","prpg_item_blei_bar","prpg_item_glas"];
 //priceArrayOre = [30,45,75,10,115];
 //publicVariable priceArrayOre;
 
@@ -42,5 +42,5 @@ _cashTotal = 0;
 globalProtection = 0;
 
 ["Verarbeite",format["Du hast Rohstoffe verkauft für: $%1", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
-[player,objNull,3,format ["%1 hat Rohstoffe verkauft in einer Menge von: %2 fuer %3 $", name player, _total, _cashTotal],_cashTotal, "SUROWIEC", _total] remoteExec ["server_fnc_economyLog", 2];
+//[player,objNull,3,format ["%1 hat Rohstoffe verkauft in einer Menge von: %2 fuer %3 $", name player, _total, _cashTotal],_cashTotal, "SUROWIEC", _total] remoteExec ["server_fnc_economyLog", 2];
 //hint format["Zarobiłeś $%1",_cashTotal];

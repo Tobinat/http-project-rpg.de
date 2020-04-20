@@ -2,7 +2,7 @@ if(surfacetype getpos player != "#k_sand") exitwith {};
 
 
 _findchance = round(random 20);
-if(_findchance > 10) then {
+if(_findchance > 5) then {
 _sand = "prpg_item_sandsack";
 player additem _sand;
 ["Du hast Sand gesammelt", true] spawn domsg;

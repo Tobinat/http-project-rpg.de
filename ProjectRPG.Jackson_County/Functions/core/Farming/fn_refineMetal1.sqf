@@ -5,7 +5,7 @@ private["_n","_i","_localprotection"];
 
 _oreArray = ["np_copperore1", "np_ironOre1", "np_silverOre1","prpg_item_aluminium_ore","prpg_item_blei_ore","prpg_item_sandsack"];
 _barArray = ["np_copperbar1", "np_ironbar1", "np_silverbar1","prpg_item_aluminium_bar","prpg_item_blei_bar","prpg_item_glas"];
-_farmingVehicles = ["ADM_GMC_Vandura","Jonzie_Transit","ADM_Ford_F100","Jonzie_Raptor","Kenworth_T440_Box_Black","GMC_Vandura_83_Custom_V1","GMC_C5500_Black"];
+_farmingVehicles = ["Jonzie_Transit","Jonzie_Transit_2","Jonzie_Transit_3","Jonzie_Transit_4","Jonzie_Transit_5","Jonzie_Raptor","Jonzie_Raptor_2","Jonzie_Raptor_3","Jonzie_Raptor_4","Jonzie_Raptor_5"];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits."; };
