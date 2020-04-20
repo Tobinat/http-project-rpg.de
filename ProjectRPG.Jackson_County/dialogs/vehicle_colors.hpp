@@ -9,7 +9,7 @@ class vehicle_colors {
     class controlsBackground {
     };
     class controls {
-        class title: RscText
+        class title: client_RscText
         {
             idc = -1;
             text = "Lackierer";
@@ -46,7 +46,7 @@ class vehicle_colors {
             colorSelectBackground[] = {0,0,0,1};
             colorSelect[] = {0,1,1,1};
         };
-        class title_color: RscText
+        class title_color: client_RscText
         {
             idc = -1;
             text = "Farbe";
@@ -57,7 +57,7 @@ class vehicle_colors {
             colorBackground[] = {0,0,0,0.7};
             ColorText[] = {1,1,1,1};
         };
-        class title_rims: RscText
+        class title_rims: client_RscText
         {
             idc = -1;
             text = "Felgenfarbe";
@@ -81,7 +81,7 @@ class vehicle_colors {
             colorSelectBackground[] = {0,0,0,1};
             colorSelect[] = {0,1,1,1};
         };
-        class title_lights: RscText
+        class title_lights: client_RscText
         {
             idc = -1;
             text = "Scheinwerfer";
@@ -92,7 +92,7 @@ class vehicle_colors {
             colorBackground[] = {0,0,0,0.7};
             ColorText[] = {1,1,1,1};
         };
-        class title_windows: RscText
+        class title_windows: client_RscText
         {
             idc = -1;
             text = "Scheiben tönung";
@@ -116,7 +116,7 @@ class vehicle_colors {
             colorSelectBackground[] = {0,0,0,1};
             colorSelect[] = {0,1,1,1};
         };
-        class title_finish: RscText
+        class title_finish: client_RscText
         {
             idc = -1;
             text = "Lack Typ";
@@ -127,7 +127,7 @@ class vehicle_colors {
             colorBackground[] = {0,0,0,0.7};
             ColorText[] = {1,1,1,1};
         };
-        class title_price: RscText
+        class title_price: client_RscText
         {
             idc = 1001;
             text = "Preis: 1000$";
