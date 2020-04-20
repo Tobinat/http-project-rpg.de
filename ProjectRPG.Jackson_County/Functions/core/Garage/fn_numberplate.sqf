@@ -20,6 +20,7 @@ if(_vehType == "jonzie") then {
 
 if(_vehType == "red") exitWith {
 	_licensered = toUpper(_license);
+	sleep 1;
 	_car setPlateNumber _licensered;
 };
 
