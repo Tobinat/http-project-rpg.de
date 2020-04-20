@@ -50,7 +50,7 @@ _civilianVehicle = [
 	["red_gs350_13_black",30000],
 	["red_x6_10_black",35000],
 	["ivory_elise",30000],
-	["ivory_isf",35000],
+	//["ivory_isf",35000],
 	["red_s65_12_black",32500],
 	["Jonzie_Viper",39999],
 	//["vvv_Audi_RS6_Avant_C6",40000],
