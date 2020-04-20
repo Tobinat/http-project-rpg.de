@@ -3,9 +3,9 @@ if (isNil "searchedcrates") then { searchedcrates = []; };
 
 if (({_x == "cg_lockpick"} count magazines player) == 0) exitWith {["Du brauchst einen Lockpick um den Container zu öffnen!", true] spawn domsg;};
 
-if (cursorobject IN searchedcrates) exitwith { ["An dem Container warst du eben erst!", true] spawn domsg;};
+if (cursorobject IN searchedcrates) exitwith { ["Dieser Container ist bereits aufgebrochen!", true] spawn domsg;};
 searchedcrates pushback cursorobject;
-publicVariable = searchedcrates;
+publicVariable "searchedcrates";
 
 _chancelockpick = random(1000);
 _chancepolice = random(1000);
