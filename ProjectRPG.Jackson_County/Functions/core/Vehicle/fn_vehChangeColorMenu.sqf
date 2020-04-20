@@ -281,13 +281,13 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 			};
 		};
 
-		//hint format ["%1",_selectedcolor];
-		
+		/*
 		if (isNil "_selectedColor") exitWith {hint "Selected color is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedFinish") exitWith {hint "Selected finish is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedRims") exitWith {hint "Selected rims is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedWindows") exitWith {hint "Selected windows is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedLights") exitWith {hint "Selected lights is nil, maybe not selected options?"; closeDialog 0; };
+		*/
 		
 		[_price] call Client_fnc_sl_removeCash_secure;
 		
