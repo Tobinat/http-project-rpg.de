@@ -242,7 +242,7 @@ if(myjob == "Cop") exitwith {
 		removeHeadgear player;
 		removeGoggles player;
 
-		player forceAddUniform "TYRK_U_B_BLK_TShirt";
+		player forceAddUniform "TRYK_U_B_BLK_TShirt";
 		player addVest "PRPG_Sheriff_W_2_Y";
 		player addBackpack "invisible_carryall";
 		player additemtobackpack "DDOPP_X26";
