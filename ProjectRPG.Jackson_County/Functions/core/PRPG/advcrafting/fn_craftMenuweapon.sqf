@@ -14,6 +14,10 @@ _mainMenus = ["Waffen"];
 
 _materials = ["NP_Wood","np_copperbar1","np_ironbar1","prpg_item_aluminium_bar"];
 
+if (mav_ttm_var_weaponcrafting == 0) then {
+	_WaffenClasses = [
+	];
+};
 
 if (mav_ttm_var_weaponcrafting == 1) then {
 	_WaffenClasses = [

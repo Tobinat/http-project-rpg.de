@@ -54,6 +54,9 @@ _PricesMaterialClasses = [
 	//prpg_item_windschutzscheibe
 	[0,0,2,0,0,0,0,0,4]
 ];
+if(mav_ttm_var_autocrafting == 0) then {
+	_carClasses = [];
+};
 
 if (mav_ttm_var_autocrafting == 1) then {
 	_carClasses = [
