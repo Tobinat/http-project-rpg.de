@@ -20,8 +20,6 @@ if(_vehType == "jonzie") then {
 
 if(_vehType == "red") exitWith {
 	_licensered = toUpper(_license);
-	hint format ["das ist die red numberplate: %1", _licensered];
-	sleep 1;
 	_car setPlateNumber _licensered;
 };
 
