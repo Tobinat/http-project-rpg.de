@@ -20,7 +20,7 @@ class vehicle_colors {
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
             ColorText[] = {0.933333,0.964705,1,1};
         };
-        class listbox_rims: RscListbox
+        class listbox_rims: client_RscListbox
         {
             idc = 1505;
             onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
@@ -33,7 +33,7 @@ class vehicle_colors {
             colorSelectBackground[] = {0,0,0,1};
             colorSelect[] = {0,1,1,1};
         };
-        class listbox_colors: RscListbox
+        class listbox_colors: client_RscListbox
         {
             idc = 1501;
             onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
@@ -68,7 +68,7 @@ class vehicle_colors {
             colorBackground[] = {0,0,0,0.7};
             ColorText[] = {1,1,1,1};
         };
-        class listbox_finish: RscListbox
+        class listbox_finish: client_RscListbox
         {
             idc = 1502;
             onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
@@ -103,7 +103,7 @@ class vehicle_colors {
             colorBackground[] = {0,0,0,0.7};
             ColorText[] = {1,1,1,1};
         };
-        class combo_lights: RscCombo
+        class combo_lights: client_RscCombo
         {
             idc = 1503;
             onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
@@ -138,7 +138,7 @@ class vehicle_colors {
             colorBackground[] = {0,0,0,0.7};
             ColorText[] = {1,1,1,1};
         };
-        class combo_windows: RscCombo
+        class combo_windows: client_RscCombo
         {
             idc = 1504;
             onLBSelChanged = "[] spawn client_fnc_vehChangeColorOnLbChange;";
@@ -151,7 +151,7 @@ class vehicle_colors {
             colorSelectBackground[] = {0,0,0,1};
             colorSelect[] = {0,1,1,1};
         };
-        class button_confirm: RscButton
+        class button_confirm: client_RscButton
         {
             idc = 1601;
             text = "Bestätigen";
@@ -165,7 +165,7 @@ class vehicle_colors {
             colorFocused[] = {0,1,1,1};
             colorDisabled[] = {1,1,1,1};
         };
-        class button_cancel: RscButton
+        class button_cancel: client_RscButton
         {
             idc = 1602;
             text = "Abbruch";
