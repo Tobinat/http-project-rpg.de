@@ -21,6 +21,7 @@ if(myjob == "Cop") exitwith {
 		player linkitem "tf_anprc152";
 		[] call client_fnc_ChangePolice;
 		player addBackpack "invisible_carryall";
+		player linkItem "TRYK_Headset_NV";
 		player additemtobackpack "RH_m9";
 		player addweapon "DDOPP_X26";
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
@@ -134,6 +135,7 @@ if(myjob == "Cop") exitwith {
 		player linkitem "tf_anprc152";
 		[] call client_fnc_ChangePolice;
 		player addBackpack "invisible_carryall";
+		player linkItem "TRYK_Headset_NV";
 		player additemtobackpack "RH_m9";
 		player addweapon "DDOPP_X26";
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
@@ -240,31 +242,18 @@ if(myjob == "Cop") exitwith {
 		removeHeadgear player;
 		removeGoggles player;
 
-		player forceAddUniform "slpd_uni_sert";
-		player addVest "slpd_sert_vest";
-		for "_i" from 1 to 4 do {player addItemToVest "RH_30Rnd_556x45_M855A1";};
-		player addItemToVest "RH_33Rnd_9x19_g18";
-		player addBackpack "AM_PoliceBelt";
-		player addItemToBackpack "taser";
-		for "_i" from 1 to 5 do {player addItemToBackpack "vvv_np_magazine_taser";};
-		player addItemToBackpack "np_energydrink";
-		for "_i" from 1 to 2 do {player addItemToBackpack "RH_33Rnd_9x19_g18";};
-		for "_i" from 1 to 2 do {player addItemToBackpack "CUP_15Rnd_9x19_M9";};
-		for "_i" from 1 to 2 do {player addItemToBackpack "CG_Spikes_Collapsed";};
-		player addItemToBackpack "CG_wheel";
-		for "_i" from 1 to 3 do {player addItemToBackpack "30Rnd_556x45_Stanag";};
-		for "_i" from 1 to 2 do {player addItemToBackpack "SUPER_flash";};
-		for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShell";};
-		player addHeadgear "TRYK_H_PASGT_OD";
-		player addGoggles "Mask_M40_OD";
-
-		player addWeapon "RH_m4_wdl";
-		player addPrimaryWeaponItem "RH_qdss_nt4_tg";
-		player addPrimaryWeaponItem "RH_ta01nsn_tan";
-		player addWeapon "RH_g18";
-		player addHandgunItem "RH_gemtech9";
-		player addWeapon "Rangefinder";
-
+		player forceAddUniform "TYRK_U_B_BLK_TShirt";
+		player addVest "PRPG_Sheriff_W_2_Y";
+		player addBackpack "invisible_carryall";
+		player additemtobackpack "DDOPP_X26";
+		player addweapon "RH_M9";
+		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
+		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
+		player addWeapon "hlc_rifle_M4a1carryhandle";
+		for "_i" from 1 to 4 do {player addItemToBackpack "hlc_3rnd_556x45_EPR";};
+		player addHeadgear "PRPG_Helmet_Sheriff";
+		player addgoggles "Mask_M40";
+		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
@@ -423,6 +412,7 @@ if(myjob == "EMS") exitwith {
 	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
+	for "_i" from 1 to 4 do {player addItemToBackpack "ACE_Splint";};
 	player additemtobackpack "np_water";
 	player additemtobackpack "np_beefsoup";
 	};
@@ -459,6 +449,7 @@ if(myjob == "EMS") exitwith {
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_packingBandage";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
+	for "_i" from 1 to 4 do {player addItemToBackpack "ACE_Splint";};
 	};
 
 	if(_type == "cdc") then {
@@ -494,6 +485,7 @@ if(myjob == "EMS") exitwith {
 	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
+	for "_i" from 1 to 4 do {player addItemToBackpack "ACE_Splint";};
 	};
 
 	if(_type == "tac") then {
@@ -536,6 +528,7 @@ if(myjob == "EMS") exitwith {
 	for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
 	for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
 	for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
+	for "_i" from 1 to 4 do {player addItemToBackpack "ACE_Splint";};
 	player additemtobackpack "np_water";
 	player additemtobackpack "np_beefsoup";
 	player addItemToUniform "ACE_Flashlight_XL50";
