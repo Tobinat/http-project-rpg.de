@@ -151,7 +151,7 @@ class vehicle_colors {
             colorSelectBackground[] = {0,0,0,1};
             colorSelect[] = {0,1,1,1};
         };
-        class button_confirm: client_RscButton
+        class button_confirm: RscButton
         {
             idc = 1601;
             text = "Bestätigen";
@@ -165,7 +165,7 @@ class vehicle_colors {
             colorFocused[] = {0,1,1,1};
             colorDisabled[] = {1,1,1,1};
         };
-        class button_cancel: client_RscButton
+        class button_cancel: RscButton
         {
             idc = 1602;
             text = "Abbruch";
