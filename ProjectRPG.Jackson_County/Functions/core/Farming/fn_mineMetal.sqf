@@ -40,7 +40,7 @@ if (str _rock find "stone_small_w" > -1 && player distance [2260.54,9707.35,0.00
 */
 
 if (str _rock find "rock" > -1 || str _rock find "stone" > -1 ) exitwith {
-	if(_rock IN mymetal) exitwith { ["Es gibt kein Rohmaterial mehr in diesem Stein", true] spawn domsg;  };
+	//if(_rock IN mymetal) exitwith { ["Es gibt kein Rohmaterial mehr in diesem Stein", true] spawn domsg;  };
 	_sound = round(random 5);
 	switch(_sound) do {
 		case 0: {
@@ -64,14 +64,14 @@ if (str _rock find "rock" > -1 || str _rock find "stone" > -1 ) exitwith {
 	};
 	_findchance = round(random 24);
 	if(_findchance > 14) then {
-		mymetal pushback _rock;
-		_myOre = "np_copperore1";
+		//mymetal pushback _rock;
+		_myOre = "prpg_item_kupfer_ore";
 		if(_findchance == 15) then { _myOre = "prpg_item_blei_ore"; };
 		if(_findchance == 16) then { _myOre = "prpg_item_schwefel_ore"; };
 		if(_findchance == 17 || _findchance == 18) then { _myOre = "prpg_item_aluminium_ore"; };
-		if(_findchance == 19 || _findchance == 20 || _findchance == 21) then { _myOre = "np_copperore1"; };
-		if(_findchance == 22 || _findchance == 23) then { _myOre = "np_ironore1"; };
-		if(_findchance == 24) then { _myOre = "np_silverore1"; };
+		if(_findchance == 19 || _findchance == 20 || _findchance == 21) then { _myOre = "prpg_item_kupfer_ore"; };
+		if(_findchance == 22 || _findchance == 23) then { _myOre = "prpg_item_eisen_ore"; };
+		if(_findchance == 24) then { _myOre = "prpg_item_silber_ore"; };
 		player additem _myOre;
 		["Du hast etwas Erz gefunden", true] spawn domsg;
 		["OreGathered"] spawn mav_ttm_fnc_addExp;

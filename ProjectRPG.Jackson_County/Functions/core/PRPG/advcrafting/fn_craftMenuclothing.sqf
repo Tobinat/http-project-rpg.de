@@ -12,7 +12,7 @@ _status = call compile format["%1", _status];
 
 _mainMenus = ["Pistols","Large Weapons","Items","Clothing","Quality Clothing"];
 
-_materials = ["NP_Wood","np_copperbar1","np_ironbar1","np_silverbar1","CG_OilCanister"];
+_materials = ["NP_Wood","prpg_item_kupfer_bar","prpg_item_eisen_bar","prpg_item_silber_bar","CG_OilCanister"];
 
 
 _PistolClasses = [

@@ -12,7 +12,7 @@ _status = call compile format["%1", _status];
 
 _mainMenus = ["Autoteile","Fahrzeuge"];
 
-_materialsteile = ["np_ironbar1","prpg_item_aluminium_bar","prpg_item_gummi","prpg_item_eisenstange","prpg_item_stoff","prpg_item_blei_bar","prpg_item_schwefel_ore","NP_Pelt","prpg_item_glas"];
+_materialsteile = ["prpg_item_eisen_bar","prpg_item_aluminium_bar","prpg_item_gummi","prpg_item_eisenstange","prpg_item_stoff","prpg_item_blei_bar","prpg_item_schwefel_ore","NP_Pelt","prpg_item_glas"];
 _materialsautos = ["prpg_item_motor","prpg_item_sportmotor","prpg_item_karosserie","prpg_item_reifen","prpg_item_auspuff","prpg_item_airbag","prpg_item_batterie","prpg_item_stoffsitz","prpg_item_ledersitz","prpg_item_autotur","prpg_item_windschutzscheibe","prpg_item_glas","prpg_item_eisenstange"];
 
 

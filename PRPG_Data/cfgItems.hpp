@@ -263,7 +263,7 @@ class prpg_item_gold_ore : ItemCore {
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\gold_ore.p3d";
 	allowedSlots[]={901};
-	mass=1;
+	mass=30;
 };
 class prpg_item_aluminium_ore : ItemCore {
 	scope=2;
@@ -273,7 +273,7 @@ class prpg_item_aluminium_ore : ItemCore {
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\aluminium_ore.p3d";
 	allowedSlots[]={901};
-	mass=1;
+	mass=30;
 };
 class prpg_item_schwefel_ore : ItemCore {
 	scope=2;
@@ -283,7 +283,7 @@ class prpg_item_schwefel_ore : ItemCore {
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\schwefel_ore.p3d";
 	allowedSlots[]={901};
-	mass=1;
+	mass=15;
 };
 class prpg_item_blei_ore : ItemCore {
 	scope=2;
@@ -292,6 +292,66 @@ class prpg_item_blei_ore : ItemCore {
 	descriptionShort="Ein Stück Blei Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\blei_ore.p3d";
+	allowedSlots[]={901};
+	mass=30;
+};
+class prpg_item_eisen_ore : ItemCore {
+	scope=2;
+	displayName="Eisen Erz";
+	author="PRPG";
+	descriptionShort="Ein Stück Eisen Erz.";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model="\PRPG_Data\models\ore\blei_ore.p3d";
+	allowedSlots[]={901};
+	mass=30;
+};
+class prpg_item_silber_ore : ItemCore {
+	scope=2;
+	displayName="Silber Erz";
+	author="PRPG";
+	descriptionShort="Ein Stück Silber Erz.";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model="\PRPG_Data\models\ore\blei_ore.p3d";
+	allowedSlots[]={901};
+	mass=30;
+};
+class prpg_item_kupfer_ore : ItemCore {
+	scope=2;
+	displayName="Kupfer Erz";
+	author="PRPG";
+	descriptionShort="Ein Stück Kupfer Erz.";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model="\PRPG_Data\models\ore\blei_ore.p3d";
+	allowedSlots[]={901};
+	mass=30;
+};
+class prpg_item_eisen_bar : ItemCore {
+	scope=2;
+	displayName="Eisen Barren";
+	author="PRPG";
+	descriptionShort="Ein Eisen Barren.";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model="\PRPG_Data\models\bar\blei_bar.p3d";
+	allowedSlots[]={901};
+	mass=1;
+};
+class prpg_item_silber_bar : ItemCore {
+	scope=2;
+	displayName="Silber Barren";
+	author="PRPG";
+	descriptionShort="Ein Silber Barren.";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model="\PRPG_Data\models\bar\blei_bar.p3d";
+	allowedSlots[]={901};
+	mass=1;
+};
+class prpg_item_kupfer_bar : ItemCore {
+	scope=2;
+	displayName="Kupfer Barren";
+	author="PRPG";
+	descriptionShort="Ein Kupfer Barren.";
+	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
+	model="\PRPG_Data\models\bar\blei_bar.p3d";
 	allowedSlots[]={901};
 	mass=1;
 };

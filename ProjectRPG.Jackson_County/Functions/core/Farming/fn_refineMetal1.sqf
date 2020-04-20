@@ -3,8 +3,8 @@ petroleo < string to object
 */
 private["_n","_i","_localprotection"];
 
-_oreArray = ["np_copperore1", "np_ironOre1", "np_silverOre1","prpg_item_aluminium_ore","prpg_item_blei_ore","prpg_item_sandsack"];
-_barArray = ["np_copperbar1", "np_ironbar1", "np_silverbar1","prpg_item_aluminium_bar","prpg_item_blei_bar","prpg_item_glas"];
+_oreArray = ["prpg_item_kupfer_ore", "prpg_item_eisen_ore", "prpg_item_silber_ore","prpg_item_aluminium_ore","prpg_item_blei_ore","prpg_item_sandsack"];
+_barArray = ["prpg_item_kupfer_bar", "prpg_item_eisen_bar", "prpg_item_silber_bar","prpg_item_aluminium_bar","prpg_item_blei_bar","prpg_item_glas"];
 _farmingVehicles = ["Jonzie_Transit","Jonzie_Transit_2","Jonzie_Transit_3","Jonzie_Transit_4","Jonzie_Transit_5","Jonzie_Raptor","Jonzie_Raptor_2","Jonzie_Raptor_3","Jonzie_Raptor_4","Jonzie_Raptor_5"];
 
 if(isNil "globalProtection") then { globalProtection = 0; };

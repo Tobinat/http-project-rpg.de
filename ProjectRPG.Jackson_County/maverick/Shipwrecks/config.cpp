@@ -25,12 +25,8 @@ class Maverick_Shipwrecks {
     //Define the possible sets of virtual items the user can loot from the wreck.
 	ShipLoot[] = {
         {"NP_kPelt","NP_Pelt"},
-        {"np_copperbar1","np_copperbar1","np_ironbar1","np_ironbar1","np_ironbar1"},
-        {"np_ironOre1","np_ironOre1","np_ironOre1","np_silverOre1","np_silverOre1"},
-        {"kif_5k"},
-        {"kif_10k"},
-        {"CUP_30Rnd_545x39_AK_M","CUP_20Rnd_762x51_FNFAL_M"},
-        {"CUP_srifle_LeeEnfield"},
+        {"prpg_item_kupfer_bar","prpg_item_kupfer_bar","prpg_item_eisen_bar","prpg_item_eisen_bar","prpg_item_eisen_bar"},
+        {"prpg_item_eisen_ore","prpg_item_eisen_ore","prpg_item_eisen_ore","prpg_item_silber_ore","prpg_item_silber_ore"},
         {"legendary_fishing_rod"},
         {"TRYK_US_ESS_Glasses_NV"},
         {"CG_OilBarrel"},
@@ -38,7 +34,6 @@ class Maverick_Shipwrecks {
         {"CG_MetalWire","CG_Lockpick"},
         {"CG_Acetone","CG_Heroin"},
         {"kif_fish_oil","kif_fish_oil"},
-        {"CUP_PipeBomb_M"},
         {"TRYK_Shemagh_TAN_NV"},
         {"TRYK_V_ArmorVest_CBR"},
         {"Rangefinder"},
@@ -48,8 +43,7 @@ class Maverick_Shipwrecks {
         {"H_Bandanna_khk_hs","H_Bandanna_gry","H_Bandanna_camo"},
         {"optic_Aco"},
         {"V_mas_ww2_vest_USB","U_mas_ww2_B_CombatUniform_uks"},
-        {"CG_Dynamite","CG_Dynamite","CG_Dynamite"},
-        {"CG_Glass","CG_Glass"},
+        {"prpg_item_glas","prpg_item_glas"},
         {"NP_Wood","NP_Wood","NP_Wood","NP_Wood"}
 	};
 
