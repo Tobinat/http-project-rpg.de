@@ -177,7 +177,7 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 			_selectedColor = call compile format["%1", _status];
 			if(_selectedColor != _color) then { _price = _price + 2000; _changedColor = true; };
 			//_selectedColor = getText(configfile >> "CfgIvoryTextures" >> _selectedColor >> "texture");
-			hint format ["%1",_selectedcolor];
+			//hint format ["%1",_selectedcolor];
 
 			_index = lbCurSel (1505);
 			_status = lbData[1505, _index];
@@ -288,7 +288,7 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		if (isNil "_selectedWindows") exitWith {hint "Selected windows is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedLights") exitWith {hint "Selected lights is nil, maybe not selected options?"; closeDialog 0; };
 		*/
-		
+
 		[_price] call Client_fnc_sl_removeCash_secure;
 		
 		_information set [2,_selectedColor];
