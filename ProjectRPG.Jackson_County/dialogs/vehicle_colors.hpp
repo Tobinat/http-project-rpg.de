@@ -2,7 +2,7 @@ class vehicle_colors {
     idd = 70001;
     name = "vehicle_colors";
     onLoad = "";
-    onUnLoad = "";
+    onUnLoad = "[] spawn client_fnc_resetColor;";
     movingEnable = false;
     enableSimulation = true;
 
