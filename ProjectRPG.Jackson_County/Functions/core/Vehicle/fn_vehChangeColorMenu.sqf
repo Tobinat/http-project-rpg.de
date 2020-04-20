@@ -247,24 +247,19 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_rimsCtrl = _display displayCtrl 1505;
 		//_price = 0;
 		
-		_index = lbCurSel (1501);
-		_status = lbData[1501, _index];
+		_status = lbData[1501, (lbCurSel (1501))];
 		_selectedColor = call compile format["%1", _status];
 		
-		_index = lbCurSel (1505);
-		_status = lbData[1505, _index];
+		_status = lbData[1505, (lbCurSel (1505))];
 		_selectedRims = call compile format["%1", _status];
 		
-		_index = lbCurSel (1502);
-		_status = lbData[1502, _index];
+		_status = lbData[1502, (lbCurSel (1502))];
 		_selectedFinish = call compile format["%1", _status];
 		_selectedFinish = _selectedFinish select 0;
 		
-		_index = lbCurSel (1503);
-		_selectedLights = parseNumber(lbData[1503, _index]);
+		_status = lbData[1503, (lbCurSel (1503))];
 		
-		_index = lbCurSel (1504);
-		_selectedWindows = parseNumber(lbData[1504, _index]);
+		_status = lbData[1504, (lbCurSel (1504))];
 		_price = parseNumber((ctrlText 1001) select [7]);
 
 		_haveCash = [1,_price] call Client_fnc_sl_checkMoney_secure;
@@ -295,6 +290,8 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_information set [4,_selectedRims];
 		_information set [5,_selectedWindows];
 		_information set [6,_selectedLights];
+		
+		closeDialog 0;
 		
 		[format["Fahrzeug umlackiert für: $ %1. Dein Fahrzeug ist jetzt in der Garage.", _price], false] spawn domsg;
 		[_selectedColor, _selectedFinish, _selectedRims, _selectedLights, _selectedWindows, _license] remoteExec ["server_fnc_updateVehicleColor", 2];

@@ -155,7 +155,7 @@ class vehicle_colors {
         {
             idc = 1601;
             text = "Bestätigen";
-            action = "[] spawn client_fnc_vehChangeColorButtonAccept; closeDialog 0;";
+            action = "[] spawn client_fnc_vehChangeColorButtonAccept;";
             x = 0.408451 * safezoneW + safezoneX;
             y = 0.673637 * safezoneH + safezoneY;
             w = 0.046881 * safezoneW;
