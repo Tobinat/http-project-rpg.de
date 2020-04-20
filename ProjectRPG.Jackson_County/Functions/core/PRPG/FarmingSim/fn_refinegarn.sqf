@@ -1,7 +1,7 @@
 private["_n","_i","_localprotection"];
 _oreArray = ["prpg_item_garn"];
 _barArray = ["prpg_item_stoff"];
-_farmingVehicles = ["ADM_GMC_Vandura","Jonzie_Transit","ADM_Ford_F100","Jonzie_Raptor"];
+_farmingVehicles = ["Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2"];
 
 
 playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 31, 1, 15];

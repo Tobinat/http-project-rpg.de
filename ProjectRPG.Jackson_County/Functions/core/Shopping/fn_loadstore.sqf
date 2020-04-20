@@ -553,6 +553,7 @@ if(_condition == "backpack") then {
 
 if(_condition == "veststore") then {
 	_gunStoreVests = [
+		["S_VHO_PB_3",nil,200,3,3]
 	];
 	{
 		_storeList pushback _x;

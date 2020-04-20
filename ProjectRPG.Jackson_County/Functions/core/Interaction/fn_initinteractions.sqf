@@ -154,12 +154,12 @@ NoPixel_InteractionMenuItems = [
 		[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
 		["Drogen Verkaufen", " ['Verkaufe',30,client_fnc_dumpDrugs,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
 	],
-
+/*
 	[
 		[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
 		["Wasche dein Geld", " ['Ich wasche Geld',60,client_fnc_dumpMoney,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""PRPG_Data\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",1]
 	],
-
+*/
 	//[
 	//	[" myJob == ""Mafia"" && (player getVariable ""Mafia"") > 5 "],
 	//	["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
@@ -1292,8 +1292,8 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["str CurrentCursorTarget find ""plp_cts_contshippinggreen"" > -1 && getpos player distance getpos currentcursortarget < 4"],
-		["Objekte suchen", "[""Sucht"",7,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""prpg_data\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["str Cursorobject find ""cargo"" > -1 && getpos player distance getpos cursorobject < 8"],
+		["Container knacken", "[""Öffne Container"",15,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""prpg_data\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
 	[

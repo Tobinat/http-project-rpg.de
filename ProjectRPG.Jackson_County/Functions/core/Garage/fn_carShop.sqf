@@ -6,7 +6,7 @@ _textures = ["airforceblue", "aliceblue", "alizarincrimson", "almond", "amaranth
 
 _finishes = [["Glossy",0], ["Metallic",500], ["Matte",2500], ["Chrome",5000]];
 
-_farmingVehicles = ["ADM_GMC_Vandura","Jonzie_Transit","ADM_Ford_F100","Jonzie_Raptor"];
+_farmingVehicles = ["Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2"];
 _doughnuts = player getVariable ["doughnutsLevel", 0];
 //remember to use this array in the mafia selling script & ALSO THE CAR UPDATE SCRIPT.
 _civilianVehicle = [
