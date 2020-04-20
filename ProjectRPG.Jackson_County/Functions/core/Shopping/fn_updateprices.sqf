@@ -25,7 +25,7 @@ if(_toDo == "nameUpdate") exitwith {
 };
 if(_toDo == "finishUpdate") exitwith {
 	if ((closetime + 180) > time) exitwith {hint "Du musst 3 Minuten warten.";};
-	hint "Die Aenderungen wurden in der Datenbank gespeichert, die Kunden sehen nun neue Preise..";
+	hint "Die Änderungen wurden in der Datenbank gespeichert, die Kunden sehen nun neue Preise..";
 	[player,shopcontent] remoteExec ["server_fnc_finishStoreUpdate",2];
 };
 

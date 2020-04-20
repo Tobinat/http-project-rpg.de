@@ -89,7 +89,7 @@ if (racecount == 1) then {
     racecontestents = [];
     raceprogress = false;
     racecount = 0;
-    "Die F1 Strecke ist geoeffnet."
+    "Die F1 Strecke ist geöffnet."
     remoteexec["hint", -2];
 
 };

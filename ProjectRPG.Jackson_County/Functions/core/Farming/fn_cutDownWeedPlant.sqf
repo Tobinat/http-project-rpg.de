@@ -18,9 +18,9 @@ if(player distance [1409.98,5740.65,0.00143814] < 400) then {
 	_randomValue = round(random 2) * 2;
 };
 
-_msg = format["Erhalten %1 Weedtuete",_randomValue];
+_msg = format["Erhalten %1 Weedtüte",_randomValue];
 ["MarihuanaGathered"] spawn mav_ttm_fnc_addExp;
-[player,objNull,26,format ["%1 Menge erhalten %2 Qualitaet %3 Bezeichnung: %4",name player, _randomValue, _quality, _item],_randomValue] remoteExec ["server_fnc_actionLog", 2];
+[player,objNull,26,format ["%1 Menge erhalten %2 Qualität %3 Bezeichnung: %4",name player, _randomValue, _quality, _item],_randomValue] remoteExec ["server_fnc_actionLog", 2];
 ["Erfolgreich", _msg, [0,255,0,1],""] call Client_fnc_showNotification;
 while {_randomValue > 0} do { player addItem _item; _randomValue = _randomValue - 1; };
 _point = weedPlantArray find _object;

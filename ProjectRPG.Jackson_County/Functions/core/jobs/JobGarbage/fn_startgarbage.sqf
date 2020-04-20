@@ -5,7 +5,7 @@ if(myjob != "none" && myjob != "TrashMan") exitwith { hint "Du hast bereits Arbe
 if(isnil "taskrunning") then { taskrunning = false; };
 
 if(isnil "mapBins") then {
-	mapBins = nearestObjects [getPos player,["Land_Dumpster_DED_Dumpster_01_F"],3500];
+	mapBins = nearestObjects [getPos player,["Land_Dumpster_DED_Dumpster_01_F"],6000];
 };
 
 private ["_warnings"];
@@ -32,7 +32,7 @@ while{taskrunning  && myjob == "TrashMan" } do {
 
 		if(_garbageLevel2 > 10) then {
 			_garbageLevel = 0;
-			playertasks pushback [[1064,3667,0.014],"dump"];
+			playertasks pushback [[7552.54,6313.59,0.00143814],"dump"];
 			[getpos ((playertasks select 0) select 0),"garbage"] call client_fnc_jobMarker;
 			["Fahre zur Müllkippe und Entlere deinen Wagen!",false] spawn domsg;
 		} else {

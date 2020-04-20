@@ -20,7 +20,7 @@ _escSync = {
 		_timeStamp = time + 10;
 
 		waitUntil {
-			_abortButton ctrlSetText format["Unterbrechung moeglich in %1",[(_timeStamp - time),"SS.MS"] call BIS_fnc_secondsToString];
+			_abortButton ctrlSetText format["Unterbrechung möglich in %1",[(_timeStamp - time),"SS.MS"] call BIS_fnc_secondsToString];
 			_abortButton ctrlCommit 0;
 			round(_timeStamp - time) <= 0 || isNull (findDisplay 49)
 		};

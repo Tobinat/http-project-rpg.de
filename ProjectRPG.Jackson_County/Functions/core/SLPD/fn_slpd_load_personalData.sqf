@@ -105,5 +105,5 @@ if(count _playerInfo != 0) then {
 	_text_info ctrlSetText _string;
 	kruk_slpd_computer_data = [_uid, objNull, _playerName];
 } else {
-	hint "Keine Eintraege.";
+	hint "Keine Einträge.";
 };

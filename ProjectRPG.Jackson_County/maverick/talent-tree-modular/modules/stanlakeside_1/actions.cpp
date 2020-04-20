@@ -15,7 +15,7 @@ class VehicleLockpicked {
 
 class TreeCutDown {
     exptoAdd = 2;
-    message = "Baum gefaellt";
+    message = "Baum gefällt";
 };
 
 class MarihuanaGathered {
@@ -55,7 +55,7 @@ class Revived {
 
 class FireEx {
     exptoAdd = 5;
-    message = "Feuer geloescht";
+    message = "Feuer gelöscht";
 };
 
 class EvidencePicked {

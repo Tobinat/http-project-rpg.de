@@ -69,14 +69,15 @@ if (_jobType == "repairman") exitwith {
 	[vehspawned, ["white","Glossy"]] spawn client_fnc_initVehicle;
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
-	vehspawned addItemCargo ["A3L_Worker_Outfit",1];
+	vehspawned addItemCargo ["G_Uniform_worker_l",1];
 	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 if (_jobType == "security") exitwith {
-	vehspawned = createVehicle ["ivory_rs4_security", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	vehspawned = createVehicle ["ivory_gti", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
-	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
+	[_vehicle, ["black","metallic"], "black", 10, 10] call client_fnc_IvoryInitVehicle;
+	//[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["vvv_character_agente_473",1];
 	hint "Da liegen sachen im Auto, benutze sie.";
@@ -115,6 +116,6 @@ if (_jobType == "taxi") exitwith {
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
-	vehspawned addItemCargo ["np_shirt_8",1];
-	hint "Da liegt zeug in dem Auto, benutze es!";
+	//vehspawned addItemCargo ["np_shirt_8",1];
+	//hint "Da liegt zeug in dem Auto, benutze es!";
 };

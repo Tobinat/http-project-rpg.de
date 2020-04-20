@@ -34,12 +34,12 @@ if (str _rock find "stone_small_w" > -1 && player distance [2260.54,9707.35,0.00
 	};
 	if(_CutChance > 8) then {
 		player additem "CG_OilBarrel";
-		["Du hast ein Oelvorkommen gefunden.", true] spawn domsg;
+		["Du hast ein Ölvorkommen gefunden.", true] spawn domsg;
 	};
 };
 */
 
-if (str _rock find ": w_sharprock" > -1 || str _rock find ": bluntrock" > -1 ) exitwith {
+if (str _rock find "rock" > -1 || str _rock find "stone" > -1 ) exitwith {
 	if(_rock IN mymetal) exitwith { ["Es gibt kein Rohmaterial mehr in diesem Stein", true] spawn domsg;  };
 	_sound = round(random 5);
 	switch(_sound) do {

@@ -35,7 +35,7 @@ if (str _tree find ": t_" > -1) then {
 			["TreeCutDown"] spawn mav_ttm_fnc_addExp;
 		} else {
 			["Fehler","Wo ist dein LKW?",[255,0,0,1],""] call Client_fnc_showNotification;
-			//hint "Du brauchst die Holzfaeller Lizenz";
+			//hint "Du brauchst die Holzfäller Lizenz";
 		};
 	};
 };

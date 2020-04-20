@@ -31,9 +31,9 @@ pole fishing by koil
 	deletevehicle _vehicle;
 
 
-	hint "Naehere dich um deine Beute einzusammeln";
+	hint "Nähere dich um deine Beute einzusammeln";
 
-	_timeout = 60; 
+	_timeout = 90; 
 	for "_i" from 0 to 1 step 0 do {
 		_timeout = _timeout - 1;
 		if(player distance _catchPos < 9) exitwith { _catch = true; };

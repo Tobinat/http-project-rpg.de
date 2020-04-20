@@ -22,8 +22,8 @@ uisleep 15;
 [
 	[
 		["12/12/2051","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],	
-		["Es ist 2018. Nach 20 Jahren erlangte eine sehr kleine Insel im Norden der Karibik die Eigenstaendigkeit.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["Dank der finanziellen Unterstützung der USA floriert Silver Lake. Sie verabschiedeten ihre eigene Verfassung, riefen zum Dienst auf und kamen schließlich aus der Einflusssphaere Lateinamerikas heraus.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
+		["Es ist 2018. Nach 20 Jahren erlangte eine sehr kleine Insel im Norden der Karibik die Eigenständigkeit.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
+		["Dank der finanziellen Unterstützung der USA floriert Silver Lake. Sie verabschiedeten ihre eigene Verfassung, riefen zum Dienst auf und kamen schließlich aus der Einflusssphäre Lateinamerikas heraus.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -42,7 +42,7 @@ uisleep 10;
 [
 	[
 		["Wegen seiner günstigen Lage war Silver Lake schon immer eine der wichtigsten Drogenrouten zwischen beiden Amerikas.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["Die Polizei tut, was sie kann, ist aber nicht in der Lage, die staendig wachsenden Mafias und Banden zu blockieren.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
+		["Die Polizei tut, was sie kann, ist aber nicht in der Lage, die ständig wachsenden Mafias und Banden zu blockieren.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -51,7 +51,7 @@ uisleep 18;
 
 [
 	[
-		["Das Verbrechen wird von einem mysterioesen Boss beherrscht, der sich versteckt hält. Er hält alle Banden in Schach, und nichts entgeht seiner Aufmerksamkeit.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
+		["Das Verbrechen wird von einem mysteriösen Boss beherrscht, der sich versteckt hält. Er hält alle Banden in Schach, und nichts entgeht seiner Aufmerksamkeit.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
 		["Der demokratisch gewählte Buergermeister hält die Insel fest. Er und seine Berater sind die richtigen auf dieser Insel.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
@@ -61,7 +61,7 @@ uisleep 18;
 [
 	[
 		["Es liegt an der Entscheidung des Buergermeisters, ob Silver Lake gedeihen wird oder nicht, ob es sich um Schulden oder Inflation handelt.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
-		["Menschen mögen keine Verlierer. Die Behoerden muessen sich darauf verlassen, dass die Einwohner von Silver Lake genug sagen und auf die Straße gehen koennen.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
+		["Menschen mögen keine Verlierer. Die Behörden muessen sich darauf verlassen, dass die Einwohner von Silver Lake genug sagen und auf die Straße gehen können.","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]
 ] spawn BIS_fnc_typeText;
 
@@ -78,7 +78,7 @@ uisleep 18;
 
 [
 	[
-		["Was du jetzt tun, haengt nur von Ihnen und Ihren Ambitionen ab. Du kannst ein Ladenbesitzer werden, ein Politiker. Sie koennen leben als Arzt retten oder als Polizist schützen.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
+		["Was du jetzt tun, hängt nur von Ihnen und Ihren Ambitionen ab. Du kannst ein Ladenbesitzer werden, ein Politiker. Sie können leben als Arzt retten oder als Polizist schützen.","<t align = 'center' shadow = '1' size = '0.5' font='PuristaBold'>%1</t><br/>"],
 		["Und vielleicht kannst du dich mit einer Waffe in deiner Hand bereichern oder dein eigenes Drogenkartell aufbauen. 
 ","<t align = 'center' shadow = '1' font='PuristaBold' size = '0.5'>%1</t>"]
 	]

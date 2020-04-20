@@ -580,7 +580,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget in weedPlantArray && player distance CurrentCursorTarget < 3"],
-		["Anlage überpruefen", "[CurrentCursorTarget] call client_fnc_checkWeedPlant",3]
+		["Anlage überprüfen", "[CurrentCursorTarget] call client_fnc_checkWeedPlant",3]
 	],
 	[
 		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget getVariable [""growing"",false] && CurrentCursorTarget getVariable [""ready"",false] && player distance CurrentCursorTarget < 3"],
@@ -711,7 +711,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["FD Ausruestung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""fd""] spawn client_fnc_LoadStore;",3]
+		["FD Ausrüstung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""fd""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[
@@ -1039,7 +1039,7 @@ NoPixel_InteractionMenuItems = [
 	],
 	[
 		["CurrentCursorTarget != objNull && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
-		["Beweise zerstoeren", "[""Zerstoere Beweise"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+		["Beweise zerstören", "[""Zerstöre Beweise"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[
@@ -1313,7 +1313,7 @@ NoPixel_InteractionMenuItems = [
 
 	//[
 	//	["myjob == ""Cop""", "cursorTarget isKindOf ""Car""", "(typeOf cursorTarget IN np_red_cars)"],
-	//	["Kenzeichen überpruefen", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Kennzeichen"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
+	//	["Kenzeichen überprüfen", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Kennzeichen"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
 	//],
 
 	[

@@ -113,7 +113,7 @@ _pia = _garage find _car;
 _garage deleteAt _pia;
 player setVariable ["garage", _garage, false];
 
-if (_damage > 0.99) exitWith {["Information","Dein Wagen ist vollstaendig im Eimer!",[255,69,0,1],""] call Client_fnc_showNotification; };
+if (_damage > 0.99) exitWith {["Information","Dein Wagen ist vollständig im Eimer!",[255,69,0,1],""] call Client_fnc_showNotification; };
 
 _vehicle = _classname createVehicle [(getpos player) select 0,(getpos player) select 1,((getpos player) select 2) + 100];
 

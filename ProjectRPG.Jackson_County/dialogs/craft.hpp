@@ -237,7 +237,7 @@ class client_Craft_Menu {
 
 		class ProcessOption : HideButton {
 			idc = 1117;
-			text = "Oeffnen";
+			text = "Öffnen";
 			onButtonClick = "[""MENU""] spawn client_fnc_CraftMenu; [""REFRESH""] spawn client_fnc_craftMenu;";
 			x = 0.311275 * safezoneW + safezoneX;
 			y = 0.70016 * safezoneH + safezoneY;
@@ -352,7 +352,7 @@ class client_Craft_Menu_car {
 			fadein=1;
 		  	fadeout=1;
 			font="PuristaLight";
-			text = "Waehle etwas aus fuer mehr Informationen!";
+			text = "Wähle etwas aus für mehr Informationen!";
 			size = 0.035;
 			sizeEx = 0.05;
 			x = 0.521649 * safezoneW + safezoneX;

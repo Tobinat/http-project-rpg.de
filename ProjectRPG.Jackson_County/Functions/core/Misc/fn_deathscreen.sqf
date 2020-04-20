@@ -15,9 +15,9 @@ waitUntil {
 			if (_distance < _nearby) then { _nearby = _distance; };
 		};
 	} foreach playableUnits;
-	_medicsOnline ctrlSetText format["Naechster Medic: Broken :)",player];
-	if (_nearby == 99999) then { _medicsNear ctrlSetText format["Naechster: None",_nearby]; }
-	else { _medicsNear ctrlSetText format["Neachster: Broken :)",(round _nearby)]; };
+	_medicsOnline ctrlSetText format["Nächster Medic: Broken :)",player];
+	if (_nearby == 99999) then { _medicsNear ctrlSetText format["Nächster: None",_nearby]; }
+	else { _medicsNear ctrlSetText format["Nächster: Broken :)",(round _nearby)]; };
 	uiSleep 5;
 	(isNull (findDisplay 7300))
 };

@@ -21,12 +21,12 @@ if(!taskrunning) then {
 		while{taskrunning && myjob == "security"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
-				hint "Sie haben derzeit keine Aufgabe, patrouilliere die Stadt und sichere Geschaefte!";
+				hint "Sie haben derzeit keine Aufgabe, patrouilliere die Stadt und sichere Geschäfte!";
 				uisleep 60;
 			} else {
 
 				if(player distance ((playertasks select 0) select 0) < 15) then {
-					hint "Du bist an deinem Einsatzort, halte ausschau nach verdaechtigen!";
+					hint "Du bist an deinem Einsatzort, halte ausschau nach verdächtigen!";
 					paycheck = paycheck + 10;
 					playertasks deleteat 0;
 					uisleep 3;

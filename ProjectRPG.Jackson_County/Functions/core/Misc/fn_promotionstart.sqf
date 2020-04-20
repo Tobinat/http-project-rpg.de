@@ -7,14 +7,14 @@ _Cop = player getVariable ["Cop",0];
 _Fire = player getVariable ["Fire",0];
 _Mafia = player getVariable ["Mafia",0];
 _legal = player getVariable ["legal",0];
-if(myJob isEqualTo "Cop" && _Cop < 12) exitwith { hint "Du musst Assistant Sheriff sein um jemanden zu Befoerdern."; };
-if(myJob isEqualTo "EMS" && _EMS < 9) exitwith { hint "Du musst Assistant Chief sein um jemanden zu Befoerdern."; };
-if(myJob isEqualTo "Fire" && _Fire < 9) exitwith { hint "Du musst Rang 9 sein um jemanden zu Befoerdern."; };
-if(myJob isEqualTo "Mafia" && _Mafia < 9) exitwith { hint "Du musst Rang 9 sein um jemanden zu Befoerdern."; };
 
-if(myJob isEqualTo "Judge" && _legal < 6) exitwith { hint "Du musst Rang 6 sein um jemanden zu Befoerdern."; };
-if(myJob isEqualTo "Lawyer" && _legal < 6) exitwith { hint "Du musst Rang 6 sein um jemanden zu Befoerdern."; };
-if(myJob isEqualTo "Prosecutor" && _legal < 6) exitwith { hint "Du musst Rang 6 sein um jemanden zu Befoerdern."; };
+if(myJob isEqualTo "Cop" && _Cop < 12) exitwith { hint "Du musst Assistant Sheriff sein um jemanden zu Befördern."; };
+if(myJob isEqualTo "EMS" && _EMS < 9) exitwith { hint "Du musst Assistant Chief sein um jemanden zu Befördern."; };
+if(myJob isEqualTo "Fire" && _Fire < 9) exitwith { hint "Du musst Rang 9 sein um jemanden zu Befördern."; };
+if(myJob isEqualTo "Mafia" && _Mafia < 9) exitwith { hint "Du musst Rang 9 sein um jemanden zu Befördern."; };
+if(myJob isEqualTo "Judge" && _legal < 6) exitwith { hint "Du musst Rang 6 sein um jemanden zu Befördern."; };
+if(myJob isEqualTo "Lawyer" && _legal < 6) exitwith { hint "Du musst Rang 6 sein um jemanden zu Befördern."; };
+if(myJob isEqualTo "Prosecutor" && _legal < 6) exitwith { hint "Du musst Rang 6 sein um jemanden zu Befördern."; };
 
 
 if(myJob isEqualTo "Cop") then { _max = _Cop; };

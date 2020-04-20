@@ -237,7 +237,7 @@ try {
 
 			life_currentExpPerks call _iterate;
 
-			hint "Faehigkeit erworben!";
+			hint "Fähigkeit erworben!";
 
 			// -- Disable purchase button
 			_ctrlBtnPurchase ctrlSetText "Erworben!";

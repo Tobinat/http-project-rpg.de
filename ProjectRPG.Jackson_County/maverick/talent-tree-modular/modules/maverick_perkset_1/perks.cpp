@@ -37,7 +37,7 @@ class perk_gunsspecialist_lessRecoil_3 {
 
 // -- Paycheck
 class perk_paycheck_1 {
-	displayName = "Lohnerhoehung";
+	displayName = "Lohnerhöhung";
 	requiredPerkPoints = 2;
 	requiredLevel = 2;
 	requiredPerk = "";
@@ -49,7 +49,7 @@ class perk_paycheck_1 {
 };
 
 class perk_paycheck_2 {
-	displayName = "Lohnerhoehung II";
+	displayName = "Lohnerhöhung II";
 	requiredPerkPoints = 3;
 	requiredLevel = 8;
 	requiredPerk = "perk_paycheck_1";
@@ -61,7 +61,7 @@ class perk_paycheck_2 {
 };
 
 class perk_paycheck_3 {
-	displayName = "Lohnerhoehung III";
+	displayName = "Lohnerhöhung III";
 	requiredPerkPoints = 6;
 	requiredLevel = 21;
 	requiredPerk = "perk_paycheck_2";

@@ -82,7 +82,7 @@ if(!_escaped) then {
 	hint "Haftstrafe abgesessen";
 	player setpos [5538.63,6258.06,0.00143433];
 } else {
-	hint "Du bist aus dem Gefaengnis entkommen!";
+	hint "Du bist aus dem Gefängnis entkommen!";
 	//ustawianie wszystkiego na nieaktywne [updateSLPDPrison_deactive]
 	["escape", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 	_data = [getPlayerUID player, "911", format["Flucht aus dem Gefängnis,verbleibende Zeit: %1 Monat/e", _time], 5];

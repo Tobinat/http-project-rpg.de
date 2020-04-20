@@ -43,7 +43,7 @@ if(_statementsent == 6) then {
 
 if(_statementsent == 7) then {
 	//["Remove",1,_target] remoteExec ["Client_Fnc_DoHealth", _target]; 
-	[player,_target,7,format ["%1 hat %2 getoetet",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
+	[player,_target,7,format ["%1 hat %2 getötet",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 8) then {
@@ -73,7 +73,7 @@ if(_statementsent == 11) then {
 	removeGoggles _target;
 	removeHeadgear _target;
 	[_target] spawn client_fnc_destroyGroundHolders;
-	[player,_target,11,format ["%1 hat Gegenstaende vom Boden Entfernt: %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
+	[player,_target,11,format ["%1 hat Gegenstände vom Boden Entfernt: %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 12) then {
@@ -226,12 +226,12 @@ if(_statementsent == 29) then {
 if(_statementsent == 30) then {
 	closeDialog 0;
 	createDialog "RscDisplayDebugPublic";
-	[player,objNull,36,format ["%1 hat die Debug Konsole geoeffnet",name player],""] remoteExec ["server_fnc_adminLog", 2];
+	[player,objNull,36,format ["%1 hat die Debug Konsole geöffnet",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 31) then {
 	["add","food",100] remoteExec ["client_fnc_sustain", _target];
-	[player,_target,37,format ["%1 hat %2 gefuettert",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
+	[player,_target,37,format ["%1 hat %2 gefüttert",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 32) then {
@@ -252,7 +252,7 @@ if(_statementsent == 34) then {
 if(_statementsent == 35) then {
 	closeDialog 0;
 	[] call BIS_fnc_camera;
-	[player,objNull,41,format ["%1 oeffent die Kamera",name player],""] remoteExec ["server_fnc_adminLog", 2];
+	[player,objNull,41,format ["%1 öffent die Kamera",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 36) then {

@@ -8,8 +8,8 @@ myActionStart = myDT addAction [ "Kochen beginnen", {
 	totalskills = 100;
 	myDrugValue = 100;
 	myDT removeaction myActionStart;
-	myAction1 = myDT addAction [ "Aceton hinzufuegen", { ["Acetone"] call client_fnc_upMethCooking; } ];
-	myAction2 = myDT addAction [ "Pseudoephedrin hinzufuegen", { ["Pseudo"] call client_fnc_upMethCooking; } ];
+	myAction1 = myDT addAction [ "Aceton hinzufügen", { ["Acetone"] call client_fnc_upMethCooking; } ];
+	myAction2 = myDT addAction [ "Pseudoephedrin hinzufügen", { ["Pseudo"] call client_fnc_upMethCooking; } ];
 	myAction3 = myDT addAction [ "Temperatur senken", { ["Cool"] call client_fnc_upMethCooking; } ];
 	myAction4 = myDT addAction [ "Temperatur steigern", { ["Heat"] call client_fnc_upMethCooking; } ];
 	myAction5 = myDT addAction [ "Druck senken", { ["Release"] call client_fnc_upMethCooking; } ];

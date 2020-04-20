@@ -29,7 +29,7 @@ _n = 0;
 		_i = _i - 1;
 		sleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "Du verarbeitest Oel, bleibe stehn und pass auf.";
+		hint "Du verarbeitest Öl, bleibe stehn und pass auf.";
 		["Processed"] spawn mav_ttm_fnc_addExp;
 	};
 

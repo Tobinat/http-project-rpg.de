@@ -12,16 +12,16 @@ if(isNil "user") then { user = player; };
 myInjuries = user getVariable "playerInjuries";
 _display = findDisplay 919191;
 
-_1DamageStates = ["Keine Verletzungen","Kopfschnittwunden (1x Verband)","Kopfschuerfwunde (1x Verband)","Schock (1x Erste-Hilfe Koffer)","Schaedelbruch (1x Erste-Hilfe Koffer)"];
-_2DamageStates = ["Keine Verletzungen","Halsschnittwunden (1x Verband)","Genickbruch (1x Verband)","Wirbelsaeulen Verletzung (1x Erste-Hilfe Koffer)","Rueckenmarks Verletzung (1x Erste-Hilfe Koffer)"];
+_1DamageStates = ["Keine Verletzungen","Kopfschnittwunden (1x Verband)","Kopfschuerfwunde (1x Verband)","Schock (1x Erste-Hilfe Koffer)","Schädelbruch (1x Erste-Hilfe Koffer)"];
+_2DamageStates = ["Keine Verletzungen","Halsschnittwunden (1x Verband)","Genickbruch (1x Verband)","Wirbelsäulen Verletzung (1x Erste-Hilfe Koffer)","Rueckenmarks Verletzung (1x Erste-Hilfe Koffer)"];
 _3DamageStates = ["Keine Verletzungen","Verletzter Brustkorb (1x Verband)","Rueckenschuerfwunde (1x Verband)","Rippenverletzung (1x Erste-Hilfe Koffer)","Gebrochene Rippe (1x Erste-Hilfe Koffer)"];
-_4DamageStates = ["Keine Verletzungen","Rueckenverletzung (1x Verband)","Muskelkrämpfe (1x Verband)","Muskelriss (1x Erste-Hilfe Koffer)","Wirbelsaeulen Verletzung (1x Erste-Hilfe Koffer)"];
+_4DamageStates = ["Keine Verletzungen","Rueckenverletzung (1x Verband)","Muskelkrämpfe (1x Verband)","Muskelriss (1x Erste-Hilfe Koffer)","Wirbelsäulen Verletzung (1x Erste-Hilfe Koffer)"];
 _5DamageStates = ["Keine Verletzungen","Armschuerfwunde (1x Verband)","Armschuerfwunde (1x Verband)","Dislozierte Schulter (1x Erste-Hilfe Koffer)","Multiple Frukturen (1x Erste-Hilfe Koffer)"];
 _6DamageStates = ["Keine Verletzungen","Handschuerfwunde (1x Verband)","Gebrochener Finger (1x Verband)","Dislozierter Finger (1x Erste-Hilfe Koffer)","Gebrochener Arm (1x Erste-Hilfe Koffer)"];
 _7DamageStates = ["Keine Verletzungen","Hueftschnittwunden (1x Verband)","Hueftwunde (1x Verband)","Geschwollene Genitalien (1x Erste-Hilfe Koffer)","Gebrochene Huefte (1x Erste-Hilfe Koffer)"];
 _8DamageStates = ["Keine Verletzungen","Blutende Ohren (1x Verband)","Gebrochene Nase (1x Verband)","Fauler Zahn (1x Erste-Hilfe Koffer)","Gebrochener Keifer (1x Erste-Hilfe Koffer)"];
 _9DamageStates = ["Keine Verletzungen","Beinschuerfwunde (1x Verband)","Disloziertes Knie (1x Verband)","Muskelzerrung (1x Erste-Hilfe Koffer)","Gebrochener Oberschenkel (1x Erste-Hilfe Koffer)"];
-_10DamageStates = ["Keine Verletzungen","Innere verletzung (1x Verband)","Nierenschaeden (1x Verband)","Herzrasen (1x Erste-Hilfe Koffer)","Blutmangel (1x Erste-Hilfe Koffer)"];
+_10DamageStates = ["Keine Verletzungen","Innere verletzung (1x Verband)","Nierenschäden (1x Verband)","Herzrasen (1x Erste-Hilfe Koffer)","Blutmangel (1x Erste-Hilfe Koffer)"];
 _11DamageStates = ["Keine Verletzungen","Erkältung (Tran/Sani/KH)","Allergische Reaktion (Sani/KH)","Infektion (Sani/KH)","Unbekannte Krankheit (Sani/KH)","SARS-CoV-2 (Covid-19)"];
 
 _Btn1 = _display displayCtrl 6;

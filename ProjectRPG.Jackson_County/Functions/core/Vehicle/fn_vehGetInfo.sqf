@@ -1,6 +1,5 @@
 /*
-	Author: Kajetan "Kruk" Mruk
-	For: stanlakeside.pl
+	Author: PRPG
 	Date: 24.01.2017
 
 	Params:
@@ -21,4 +20,4 @@ _ownerUID = _information select 8;
 _price = _veh getVariable["vehPrice",0];
 
 
-hint format["%1 - $%2\nHoechstgeschindigkeit: %3 km/h\n%4 km\nRegistrierung: %5\nFarbe: %6(%7)",_name, _price, _maxSpeed, _enginePower,_license, _color, _colorType];
+hint format["%1 - $%2\nHöchstgeschindigkeit: %3 km/h\n%4 km\nRegistrierung: %5\nFarbe: %6(%7)",_name, _price, _maxSpeed, _enginePower,_license, _color, _colorType];

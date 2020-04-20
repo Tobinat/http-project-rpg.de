@@ -37,7 +37,7 @@ class DeathScreen
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
 			onButtonClick = "[player] remoteExec [""server_fnc_requestMedic"",2]; _MedicBtn = ((findDisplay 7300) displayCtrl 7303); _MedicBtn ctrlEnable false; ";
-			text = "Rufe Sanitaeter";
+			text = "Rufe Sanitäter";
 			colorBackground[] = {0, 0, 0, 1};
 			class Attributes 
 			{

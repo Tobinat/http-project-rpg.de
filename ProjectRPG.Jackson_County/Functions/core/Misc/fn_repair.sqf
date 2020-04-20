@@ -2,7 +2,7 @@
 
 _object = _this select 0;
 
-if(myjob == "repairman") exitwith { _object setdamage 0; };
+if(myjob == "repairman" || myjob == "ems") exitwith { _object setdamage 0; };
 
 if(_object gethit "motor" > 0.9 && _object iskindof "car") exitwith {
 
@@ -12,7 +12,7 @@ if(_object gethit "motor" > 0.9 && _object iskindof "car") exitwith {
 		_chance = random ( 100 );
 		if(_chance > 85) then {
 			player removeitem "cg_engine";
-			hint "Du hast das RepairKit fuer den Motor während der Reparatur verbraucht.";
+			hint "Du hast das RepairKit für den Motor während der Reparatur verbraucht.";
 		};
 	};
 	_repaired = false;
@@ -23,7 +23,7 @@ if(_object gethit "motor" > 0.9 && _object iskindof "car") exitwith {
 
 	if(_repaired) exitwith {};
 
-	hint "Du brauchst einen Mechaniker.";
+	hint "Du brauchst ein Motor Kit oder einen Mechaniker.";
 };
 
 _wheels = {_x == "CG_wheel"} count magazines player;
@@ -32,7 +32,7 @@ if(_wheels > 0) exitwith {
  ["VehicleRepaired"] spawn mav_ttm_fnc_addExp;
  	_chance = random ( 100 );
 	if(_chance > 85) then {
-		hint "Du hast das RepairKit fuer den Reifen während der Reparatur verbraucht.";
+		hint "Du hast das RepairKit für den Reifen während der Reparatur verbraucht.";
 	};
 };
 hint "Du benötigst ein Rad zum Reparieren.";
