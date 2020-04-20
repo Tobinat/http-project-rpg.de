@@ -177,7 +177,8 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 			_selectedColor = call compile format["%1", _status];
 			if(_selectedColor != _color) then { _price = _price + 2000; _changedColor = true; };
 			//_selectedColor = getText(configfile >> "CfgIvoryTextures" >> _selectedColor >> "texture");
-			
+			hint format ["%1",_selectedcolor];
+
 			_index = lbCurSel (1505);
 			_status = lbData[1505, _index];
 			_selectedRims = call compile format["%1", _status];
@@ -206,7 +207,7 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 			if (str _classname find "vory_" > -1 || str _className find "adilac_" > -1) then {
 				[spawnedVehicle, [_selectedColor,_selectedFinish], _selectedRims, _selectedWindows, _selectedLights] call client_fnc_IvoryInitVehicle;
 			};
-			if (str _classname find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1) then {
+			if (str _classname find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1 || str _className find "red_" > -1) then {
 				[spawnedVehicle, [_selectedColor,_selectedFinish]] remoteexec ["client_fnc_initVehicle",2];
 			};
 			if (str _classname find "vv_" > -1) then {
@@ -277,12 +278,14 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 			};
 		};
 
+		hint format ["%1",_selectedcolor];
+		/*
 		if (isNil "_selectedColor") exitWith {hint "Selected color is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedFinish") exitWith {hint "Selected finish is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedRims") exitWith {hint "Selected rims is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedWindows") exitWith {hint "Selected windows is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedLights") exitWith {hint "Selected lights is nil, maybe not selected options?"; closeDialog 0; };
-
+		*/
 		[_price] call Client_fnc_sl_removeCash_secure;
 		
 		_information set [2,_selectedColor];
@@ -290,7 +293,7 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_information set [4,_selectedRims];
 		_information set [5,_selectedWindows];
 		_information set [6,_selectedLights];
-		
+
 		closeDialog 0;
 		
 		[format["Fahrzeug umlackiert für: $ %1. Dein Fahrzeug ist jetzt in der Garage.", _price], false] spawn domsg;
