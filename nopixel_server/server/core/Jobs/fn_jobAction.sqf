@@ -16,7 +16,7 @@ if(currentMailmen isequalto []) exitwith { [] remoteExec ["client_fnc_completema
 	_units = currentMailmen; 
 	_selectionuid = _units call BIS_fnc_selectRandom;
 	_selection = _selectionuid call BIS_fnc_getUnitByUid;
-[_location,_sender,_jobType,_message] remoteExec ["client_fnc_mailSystem",_selection]; 
+	[_location,_sender,_jobType,_message] remoteExec ["client_fnc_mailSystem",_selection]; 
 }; 
  
 if (_jobType == "News Reporter") exitwith {  

@@ -2,7 +2,6 @@
 load inventory
 */
 private ["_house"];
-//diag_log "loadInventory phase 1";
 _items = _this select 0;
 _position = _this select 1;
 _cash = _this select 2;
@@ -34,7 +33,6 @@ _respawn = _this select 25;
 _prisonArray = _this select 26;
 _points = _this select 27;
 
-//diag_log "loadInventory phase 2";
 
 _higherup = false;
 
@@ -63,7 +61,6 @@ _count = 0;
 	_count = _count + 1;
 } foreach current_cars;
 
-//diag_log "loadInventory phase 3";
 Shared_Cars = [];
 
 player setVariable ["sl_wallet_silverlake", _cash, false];
@@ -86,7 +83,6 @@ player setVariable ["veh_points",_points,false];
 
 myoffice = [0,0,0];
 player setVariable ["houselevel", _houselevel, false];
-//diag_log "loadInventory phase 4";
 deletemarkerlocal "myhouse";
 if (_houselevel > 6) then {
 	deletemarkerlocal "myhouse";
@@ -106,7 +102,7 @@ if (_houselevel > 3) then {
 	_marker = createMarkerLocal ["myhouse", _house];
 	_marker setMarkerShapeLocal "ICON";
 	_marker setMarkerTypeLocal "hd_dot";
-	_marker setMarkerTextLocal "Meine Kabine";
+	_marker setMarkerTextLocal "Meine Trailer";
 };
 
 
@@ -149,7 +145,6 @@ loan = (_statuses select 11);
 moneyOwed = (_statuses select 11) select 1;
 
 //do prison shit here
-//diag_log "loadInventory phase 5";
 if(count(_prisonArray) > 0) then {
 	[_prisonArray] spawn client_fnc_slpd_jail_setup;
 } else {
@@ -206,7 +201,6 @@ if(count(_prisonArray) > 0) then {
 		player setpos _containerpos;
 	};
 };
-//diag_log "loadInventory phase 6";
 myhouse = _house;
 myshop = _shop;
 
@@ -246,7 +240,6 @@ if((_statuses select 9) == 0) then {
 		"dynamicBlur" ppEffectEnable false;
 	};
 };
-//diag_log "loadInventory phase 7";
 if(isNil "TaxRate") then { TaxRate = 0; };
 player setUnitRecoilCoefficient 1.75;
 if(client_marijuana > 0) then { player setCustomAimCoef 0; };
@@ -256,5 +249,5 @@ if(client_energy > 0) then {
 	player enablefatigue false;
 	player enablestamina false;
 };
-[player,1,format ["%1 hat mit dem Server Verbunden", name player],getPlayerUID player, getUnitLoadout player] remoteExec ["server_fnc_connectionLog", 2];
+//[player,1,format ["%1 hat mit dem Server Verbunden", name player],getPlayerUID player, getUnitLoadout player] remoteExec ["server_fnc_connectionLog", 2];
 [getPlayerUID player, "connected", name player] remoteExec ["Server_fnc_connected", 2];

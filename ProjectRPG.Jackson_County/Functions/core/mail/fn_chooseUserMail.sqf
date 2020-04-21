@@ -11,4 +11,4 @@ if(isNil "_status") exitwith { };
 _message = _message splitString '"' joinString "";
 _message = _message splitString ':' joinString "";
 ["personal",_status,_message,player,format["Mail von %1", name player]] remoteExec ["server_fnc_sendMail",2];
-[_message,format["Mail von %1", name player],name player] remoteExec ["client_fnc_sendMail",_status];
+[999,_message,format["Mail von %1", name player],name player] remoteExec ["client_fnc_sendMail",_status];

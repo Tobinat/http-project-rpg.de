@@ -6,4 +6,4 @@ mail = awaitingmail;
 
 awaitingmail = [];
 
-["Hallo! Ein Brief erwartet dich, Du kannst es bei der Post oder zu Hause abholen!","SMS: Post","Silver Lake Postamt"] call client_fnc_sendMessage;
+[999,"Du hast einen Brief erhalten!","SMS: Post","Silver Lake Postamt"] call client_fnc_sendMessage;
