@@ -8,7 +8,7 @@ class EditorData
 	toggles=1546;
 	class ItemIDProvider
 	{
-		nextID=2824;
+		nextID=2825;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8334.3428,63.087498,2910.2683};
-		dir[]={-0.55838662,-0.61248761,0.55953544};
-		up[]={-0.43266851,0.79045635,0.43356037};
-		aside[]={0.70784044,-3.9181032e-008,0.70638567};
+		pos[]={9801.8564,12.800012,949.55859};
+		dir[]={-0.75361741,-0.63491356,0.17019066};
+		up[]={-0.61932307,0.77257895,0.13986257};
+		aside[]={0.22028606,2.5108238e-007,0.97544408};
 	};
 };
 binarizationWanted=0;
@@ -46,13 +46,14 @@ addons[]=
 	"A3_Trees",
 	"Land_Rxo_Air_Garage_Office",
 	"CG_Roads",
-	"plp_containers"
+	"plp_containers",
+	"A3_Rocks_F_Blunt"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=20;
+		items=21;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -169,6 +170,13 @@ class AddonsMetaData
 			className="plp_containers";
 			name="plp_containers";
 		};
+		class Item20
+		{
+			className="A3_Rocks_F";
+			name="Arma 3 - Rocks and Stones";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=14654677;
@@ -191,24 +199,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -223,6 +213,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -6537,7 +6545,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=472;
+		items=473;
 		class Item0
 		{
 			dataType="Group";
@@ -21176,6 +21184,23 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item472
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9793.7158,6.5810833,953.21198};
+				angles[]={0.012758357,0,6.2172465};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="GarageVariableWhore";
+			};
+			id=2824;
+			type="Land_BluntStone_02";
 		};
 	};
 };
