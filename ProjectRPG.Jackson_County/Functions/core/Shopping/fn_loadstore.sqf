@@ -537,13 +537,26 @@ if(_condition == "clothing") then {
 
 if(_condition == "backpack") then {
 	_clothing = [
-		["TAC_BP_KAR_B",nil,50,4,2],
-		["TAC_BP_KAR_L",nil,50,4,2],
-		["TAC_BP_KAR_R",nil,50,4,2],
-		["TAC_BP_Butt_B",nil,60,4,2],
-		["TAC_BP_Butt_Khaki",nil,60,4,2],
-		["TAC_BP_Butt_OD",nil,60,4,2],
-		["TRYK_B_Alicepack",nil,500,4,2]
+		["TAC_BP_Butt_B",nil,50,4,2],
+		["TAC_BP_Butt_Khaki",nil,50,4,2],
+		["TAC_BP_Butt_OD",nil,50,4,2],
+
+		["EF_SQBAG_BK",nil,65,4,2],
+		["EF_SQBAG_BL",nil,65,4,2],
+		["EF_SQBAG_GRAY",nil,65,4,2],
+		["EF_SQBAG_NV",nil,65,4,2],
+		["EF_SQBAG_RED",nil,65,4,2],
+
+
+		["TAC_BP_KAR_B",nil,75,4,2],
+		["TAC_BP_KAR_L",nil,75,4,2],
+		["TAC_BP_KAR_R",nil,75,4,2],
+		
+		["TRYK_B_Alicepack",nil,100,4,2],
+
+		["TRYK_B_Coyotebackpack_BLK",nil,110,4,2],
+		["TRYK_B_Coyotebackpack",nil,110,4,2],
+		["TRYK_B_Coyotebackpack_OD",nil,110,4,2]
 	];
 	{
 		_storeList pushback _x;
