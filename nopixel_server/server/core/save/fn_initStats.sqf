@@ -119,16 +119,18 @@ if (_booli) then {
 
 	_inUseVehicles = [];
 	_mycarinfo = [];
-	if(!isNil {GarageVariableWhore getVariable (getplayerUID _player)}) then {
-	_inUseVehicles = GarageVariableWhore getVariable (getplayerUID _player);
 
-	{
-	_info = _x getvariable "information";
-	_mycarinfo pushback _info;
-	_pia = _garage find _info;
-	_garage deleteAt _pia;
-	} foreach _inUseVehicles;
+	if(!isNil {GarageVariableWhore getVariable (getplayerUID _player)}) then {
+		_inUseVehicles = GarageVariableWhore getVariable (getplayerUID _player);
+		{
+			_info = _x getvariable "information";
+			_mycarinfo pushback _info;
+			_pia = _garage find _info;
+			_garage deleteAt _pia;
+		} foreach _inUseVehicles;
 	};
+
+
 	if(isNil "currentMayor") then { currentMayor = ""; };
 	_mayor = false;
 	if(_uid == currentMayor) then {
