@@ -345,12 +345,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(vehicle player) == player && CurrentCursorTarget in Current_Cars"],
+		["(vehicle player) == player && (CurrentCursorTarget in Current_Cars || getPlayerUID player in vehicle player getVariable ""information"" )"],
 		["Schlüssel Benutzen", "[CurrentCursorTarget] call Client_fnc_useKey",2]
 	],
 
 	[
-		["(vehicle player) in Current_Cars"],
+		["(vehicle player) in Current_Cars || getPlayerUID player in vehicle player getVariable ""information"" "],
 		["Schlüssel Benutzen", "[vehicle player] call Client_fnc_useKey",2]
 	],
 

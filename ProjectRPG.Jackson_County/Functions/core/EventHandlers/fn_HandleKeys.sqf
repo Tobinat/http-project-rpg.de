@@ -53,10 +53,11 @@ switch (_code) do
 	case 22:
 	{
 		if( (cursorobject iskindof "Car" || cursorobject iskindof "Ship" || cursorobject iskindof "Air") || vehicle player != player ) then {
+			_playeruid = getPlayerUID player;
 			_veh = cursorobject;
 			if(vehicle player != player) then { _veh = vehicle player; };
 			_locked = locked _veh;
-			if(_veh in current_cars && player distance _veh < 8) then {
+			if(_playeruid in _veh getVariable "information" || _veh in current_cars && player distance _veh < 8) then {
 
 				if(_veh getVariable ["parkingTicket2", false]) then {
 					_veh setVariable["parkingTicket2",false,true];
