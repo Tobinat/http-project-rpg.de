@@ -253,6 +253,8 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 4 do {player addItemToBackpack "hlc_30rnd_556x45_EPR"; };
 		player addHeadgear "PRPG_Helmet_Sheriff";
 		player addgoggles "Mask_M40";
+		player addItemToUniform "ACE_Flashlight_XL50";
+		player addItemToUniform "ACE_EarPlugs";
 		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";

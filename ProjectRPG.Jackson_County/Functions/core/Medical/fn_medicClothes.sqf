@@ -82,7 +82,7 @@ _availableVests = [
 ];
 
 	if (player getvariable ["ems", 0] > 3) then {
-		_availableVestsOne [
+		_availableVestsOne = [
 			"PRPG_EMS_BallistX"
 		];
 		_availableVests = _availableVests + _availableVestsOne;
