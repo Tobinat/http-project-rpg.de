@@ -5,8 +5,9 @@ _new = _this select 2;
 if(isNil "_new") exitwith { }; 
 
 if(_variable == "usedgarage") exitwith { 
-	if(isNil "_new") exitwith {}; 
+	if(isNil "_new") exitwith {diag_log "ich lass das nicht zu set variable";}; 
 	GarageVariableWhore setvariable [_object, _new, true]; 
+	diag_log _new;
 }; 
 
 if(_variable == "getunitloadout" && (_object getvariable "sync") == 0) exitwith {}; 

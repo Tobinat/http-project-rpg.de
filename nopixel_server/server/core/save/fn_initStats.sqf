@@ -121,6 +121,8 @@ if (_booli) then {
 	_mycarinfo = [];
 
 	if(!isNil {GarageVariableWhore getVariable (getplayerUID _player)}) then {
+
+		diag_log "ich erkenne da sind autos!";
 		_inUseVehicles = GarageVariableWhore getVariable (getplayerUID _player);
 		{
 			_info = _x getvariable "information";
