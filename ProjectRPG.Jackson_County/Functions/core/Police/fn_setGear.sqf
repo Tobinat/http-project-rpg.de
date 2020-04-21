@@ -260,7 +260,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "tf_anprc152";
 		[] call client_fnc_ChangePolice;
 		player linkItem "ItemGPS";
-		player linkItem "TRYK_G_bala_ess_NV";
+		player linkItem "TRYK_Headset_NV";
 	};
 };
 
