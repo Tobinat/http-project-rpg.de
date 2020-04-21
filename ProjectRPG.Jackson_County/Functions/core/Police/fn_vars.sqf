@@ -8,7 +8,10 @@ _crate = _this select 0;
 _availableHeadgear = [
 	"PRPG_Cap_Sheriff_1",
 	"PRPG_Cap_Sheriff_2",
-	"PRPG_Beanie_Sheriff"
+	"PRPG_Beanie_Sheriff",
+	//"TRYK_Headset_NV",
+	"G_squares_tinted",
+	"G_Spectacles_tinted"
 	
 ];
     if (player getvariable ["cop", 0] > 4) then {
@@ -32,9 +35,7 @@ _availableHeadgear = [
  
 _availableGoggles = [
 	"G_aviator",
-	"G_Squares",
-	"G_squares_tinted",
-	"G_Spectacles_tinted"
+	"G_Squares"
 ];
 
  
@@ -261,7 +262,7 @@ _availableItems = [
 	"Itemwatch",
 	"prpg_tablet",
 	"ItemGPS",
-	//"TRYK_Headset_NV",
+	"TRYK_Headset_NV",
 	"NP_8mPoliceLine",
 	"NP_4mPoliceLine",
 	"NP_1mPoliceLine",
@@ -277,7 +278,9 @@ _availableItems = [
 	"ACE_EarPlugs",
 	"ACE_fieldDressing",
 	"ACE_Tourniquet",
-	"ACE_Splint"
+	"ACE_Splint",
+	"np_water",
+	"np_beefsoup"
 ];
 
 

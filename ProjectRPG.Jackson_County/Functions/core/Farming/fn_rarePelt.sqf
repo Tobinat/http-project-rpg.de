@@ -19,28 +19,28 @@ if ("NP_kPelt" IN (magazines player)) then {
 		if(_myrod find "rod" > -1) then { _luckisaskill addWeaponCargoGlobal [_myrod,1]; } ;
 	};
 	if(_chance > 85 && _chance <= 87) then {
-		_rods = [["CUP_arifle_RPK74M","CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"],["CUP_arifle_Sa58V","CUP_30Rnd_Sa58_M"],["CUP_arifle_FNFAL_OSW","CUP_20Rnd_762x51_FNFAL_M"],["arifle_mas_ww2_sten", "30Rnd_mas_ww2_sten"],["arifle_mas_ww2_tommy", "30Rnd_mas_ww2_tommy"],["arifle_mas_ww2_mp40_o", "30Rnd_mas_ww2_mp40"],["brotherhood_1", "30Rnd_mas_ww2_mp40"]];
+		_rods = [["RH_M9","RH_15Rnd_9x19_M9"],["RH_fn57","RH_20Rnd_57x28_FN"],["RH_g17","RH_17Rnd_9x19_g17"],["RH_g19", "RH_17Rnd_9x19_g17"]];
 		_myrod = _rods call BIS_FNC_SELECTRANDOM;
 		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),1];
-		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),10];
+		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),5];
 	};
 	if(_chance > 87 && _chance <= 94) then {
-		_rods = [["SMG_05_F", "30Rnd_9x21_Mag_SMG_02"],["hgun_PDW2000_F", "30Rnd_9x21_Mag"]];
+		_rods = [["hlc_smg_mp5sd5", "hlc_30Rnd_9x19_B_MP5"],["hlc_smg_mp510", "hlc_30Rnd_10mm_B_MP5"]];
 		_myrod = _rods call BIS_FNC_SELECTRANDOM;
 		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),1];
-		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),10];
+		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),5];
 	};
 	if(_chance > 94 && _chance <= 99) then {
-		_rods = [["SG553", "30Rnd_556x45_Stanag"],["CUP_arifle_L85A2","CUP_30Rnd_556x45_Stanag"]];
+		_rods = [["RH_Deagleg", "RH_7Rnd_50_AE"],["RH_Deaglem","RH_7Rnd_50_AE"]];
 		_myrod = _rods call BIS_FNC_SELECTRANDOM;
 		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),1];
-		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),10];
+		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),5];
 	};
 	if(_chance > 99) then {
-		_rods = [["CUP_srifle_VSSVintorez", "CUP_10Rnd_9x39_SP5_VSS_M"],["CUP_srifle_M24_wdl", "CUP_5Rnd_762x51_M24"]];
+		_rods = [["hlc_rifleACR_SBR_cliffhanger", "hlc_30rnd_556x45_EPR"],["hlc_rifle_M4a1carryhandle", "hlc_30rnd_556x45_EPR"]];
 		_myrod = _rods call BIS_FNC_SELECTRANDOM;
 		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),1];
-		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),10];
+		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),5];
 	};
 
 

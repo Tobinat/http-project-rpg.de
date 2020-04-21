@@ -658,12 +658,12 @@ NoPixel_InteractionMenuItems = [
 		["currentcursortarget == fishTrader"],
 		["Ankauf seltener Fische", "closedialog 0; createdialog ""RareFish_Menu""; [""rarefish""] spawn client_fnc_LoadStore;",3]
 	],
-/*
+
 	[
 		["currentcursortarget == fishTrader"],
 		["Haut abziehen", "closedialog 0; [] spawn client_fnc_rarePelt;",3]
 	],
-*/
+
 	[
 		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_Coffee_DED_Coffee_01_F""]"],
 		["Kleidungsladen", "closedialog 0; createdialog ""Clothing_Menu""; [""clothing""] spawn client_fnc_LoadStore;",3]
@@ -688,17 +688,17 @@ NoPixel_InteractionMenuItems = [
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
 		["Cop Waffenladen", "closedialog 0; createdialog ""Cops_GUN_Menu""; [""copwaffen""] spawn client_fnc_LoadStore;",3]
 	],
+
+	[
+		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+		["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
+	],
+
+	[
+		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+		["Cop Westen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copvests""] spawn client_fnc_LoadStore;",3]
+	],
 */
-//	[
-//		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-//		["Cop Kleidungsladen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copskleidung""] spawn client_fnc_LoadStore;",3]
-//	],
-
-//	[
-//		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-//		["Cop Westen", "closedialog 0; createdialog ""Cop_Clothing_Menu""; [""copvests""] spawn client_fnc_LoadStore;",3]
-//	],
-
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
 		["EMS Ausrüstung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""medic""] spawn client_fnc_LoadStore;",3]
@@ -719,14 +719,6 @@ NoPixel_InteractionMenuItems = [
 		["FD Kleiderkammer", "closedialog 0; createdialog ""Med_Clothing_Menu""; [""fdkleidung""] spawn client_fnc_LoadStore;"]
 	],
 
-
-
-
-
-
-
-
-
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"""],
 		["Bäckerrei", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn client_fnc_LoadStore;",3]
@@ -746,21 +738,10 @@ NoPixel_InteractionMenuItems = [
 		["Pizzeria", "closedialog 0; createdialog ""food_menu""; [""pizza""] spawn client_fnc_LoadStore;",3]
 	],
 
-
-
-
-
-
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dexters"""],
 		["Ripperino Pizza", "[] spawn client_fnc_pizza;",3]
 	],
-
-
-
-
-
-
 
 	[
 		["typeof CurrentCursorTarget == ""Land_Market_DED_Market_01_F"""],
@@ -781,7 +762,6 @@ NoPixel_InteractionMenuItems = [
 		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
 		["Markt", "closedialog 0; createdialog ""GeneralStore_Menu""; [""general""] spawn client_fnc_LoadStore;",3]
 	],
-
 
 	[
 		["str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 && (getpos player) distance [7600.76,6316.81,0.00143814] < 20"],
@@ -910,11 +890,6 @@ NoPixel_InteractionMenuItems = [
 		["player distance myhouse < 10"],
 		["Hausinventar", "[""house""] spawn client_fnc_retreiveCargo;",4]
 	],
-
-//	[
-	//	["player distance myhouse < 10 && (typeof cursorobject ==""plp_ct_SuitcaseBigBlack"" || typeof cursorobject ==""plp_ct_woodboxlightmedium"" || typeof cursorobject ==""plp_ct_woodboxlightbig"") "],
-	//	["Schowaj skrzynkę", "hint ""Schowane!""; deleteVehicle cursorobject;",4]
-//	],
 
 	[
 		["typeof currentcursortarget == ""prpg_courthouse"" && (myjob == ""Cop"" || myjob == ""Judge"")"],
@@ -1148,9 +1123,9 @@ NoPixel_InteractionMenuItems = [
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 5K", "[5] spawn client_fnc_takeSuitcase"]
-	],*/
+	],
+*/
 /*
-
 	[
 		[" (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") && player getvariable ""ems"" > 1 "],
 		["Kleiderkammer EMS", "[cursorobject] spawn client_fnc_medicClothes"]

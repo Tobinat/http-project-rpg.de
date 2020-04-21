@@ -534,7 +534,6 @@ if(_condition == "clothing") then {
 	} foreach _clothing;
 };
 
-
 if(_condition == "backpack") then {
 	_clothing = [
 		["TAC_BP_Butt_B",nil,50,4,2],
@@ -562,8 +561,6 @@ if(_condition == "backpack") then {
 		_storeList pushback _x;
 	} foreach _clothing;
 };
-
-
 
 if(_condition == "veststore") then {
 	_gunStoreVests = [
@@ -686,7 +683,6 @@ if(_condition == "copwaffen") then {
 		_storeList pushback _x;
 	} foreach _bulle;
 };
-
 
 if(_condition == "copskleidung") then {
 	_clothing = [
@@ -961,7 +957,8 @@ if(_condition == "general") then {
 		["np_psoup",nil,2,3],
 		["np_beefsoup",nil,2,3],
 		["np_lettucesoup",nil,2,3],
-		["np_tuna",nil,2,3]
+		["np_tuna",nil,2,3],
+		["TRYK_Headset_NV",nil,850,3,1]
 	];
 	{
 		_storeList pushback _x;
@@ -1384,6 +1381,8 @@ if(_condition == "glasses") then {
 		_storeList pushback _x;
 	} foreach _gunStorePistols;
 };
+
+
 
 _display = findDisplay 9999;
 _list = _display displayCtrl 9001;
