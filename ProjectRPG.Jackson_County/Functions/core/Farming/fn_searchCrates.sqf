@@ -1,3 +1,10 @@
+/*
+	Author: project-rpg.de
+
+	Leute können Kisten durchsuchen und bekommen Random Loot zugewiesen.
+*/
+
+private ["_playeruid","_player"];
 
 if (isNil "searchedcrates") then { searchedcrates = []; };
 
@@ -11,7 +18,7 @@ _chancelockpick = random(1000);
 _chancepolice = random(1000);
 _chanceloot = random(1000);
 
-if (_chancelockpick > 750) then {player removeItem "cg_lcokpick";};
+if (_chancelockpick > 750) then {player removeItem "cg_lockpick"; ["Dein Dietrich ist abgebrochen!", true] spawn domsg;};
 if (_chancepolice > 875) then {
 	if (_chancepolice > 925) then {
 		{
