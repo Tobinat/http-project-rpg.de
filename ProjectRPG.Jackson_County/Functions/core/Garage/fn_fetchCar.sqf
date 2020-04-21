@@ -94,6 +94,7 @@ if((_this select 0) == 1) exitwith {
 	[_vehicle] call client_fnc_spawnvehicle;
 	_vehicle allowdamage true;
 	Current_Cars pushBack _vehicle;
+	["ACE_Wheel", _vehicle, 1] call ace_cargo_fnc_removeCargoItem;
 };
 
 _numberPlate = _car select 0;
@@ -129,7 +130,6 @@ _vehicle allowdamage false;
 
 [_vehicle, "information", _car] remoteExec ["Server_fnc_setVariable",2];
 _vehicle setvariable ["information",_car,false];
-
 if (_vehicle isKindOf "Car") then {
 	if (str _className find "vory_" > -1 || str _className find "sl_" > -1 || str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1 || str _className find "vv_" > -1 || str _className find "adilac_" > -1 || str _className find "red_" > -1) then {
 		if (str _className find "vory_" > -1) then {
@@ -175,8 +175,9 @@ if (_vehicle isKindOf "Car") then {
 		[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
 		_vehicle setVariable ["kennzeichen",_numberplate,true];
 	};
-_vehicle setFuel _fuel;
-_vehicle setDamage _damage;
+	_vehicle setFuel _fuel;
+	_vehicle setDamage _damage;
+	["ACE_Wheel", _vehicle, 1] call ace_cargo_fnc_removeCargoItem;
 };
 
 [_vehicle] call client_fnc_spawnvehicle;
