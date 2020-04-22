@@ -74,7 +74,9 @@ if (_jobType == "repairman") exitwith {
 };
 
 if (_jobType == "security") exitwith {
-	vehspawned = createVehicle ["ivory_gti", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	_veharr = ["np_rs4_security","np_isf_security"];
+	_veh = _veharr call BIS_fnc_selectRandom;
+	vehspawned = createVehicle [_veh, [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[_vehicle, ["black","metallic"], "black", 10, 10] call client_fnc_IvoryInitVehicle;
 	//[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];

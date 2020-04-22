@@ -102,7 +102,7 @@ if (_houselevel > 3) then {
 	_marker = createMarkerLocal ["myhouse", _house];
 	_marker setMarkerShapeLocal "ICON";
 	_marker setMarkerTypeLocal "hd_dot";
-	_marker setMarkerTextLocal "Meine Trailer";
+	_marker setMarkerTextLocal "Mein Trailer";
 };
 
 
