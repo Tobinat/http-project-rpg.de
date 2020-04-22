@@ -33,7 +33,7 @@ _randomValue = round(random 5) + 1;
 
 if(myDrugValue < 50) then { myDrugValue = 50; };
 _item = format["CG_MethBag%1", myDrugValue];
-["Verarbeite",format["Du hast %1 MethBag hergestellt.", _randomvalue],[0,255,0,1],""] call Client_fnc_showNotification;
+["Gekocht",format["Du hast %1 MethBag hergestellt.", _randomvalue],[0,255,0,1],""] call Client_fnc_showNotification;
 [player,objNull,28,format ["%1 kochte %2 MethBag %3 CLASSNAME %4",name player, _randomValue, myDrugValue, _item],_randomValue] remoteExec ["server_fnc_actionLog", 2];
 //hint format["Ugotowałeś %1 worków metamfetaminy!",_randomvalue];
 player additem "NP_DrugTable";
