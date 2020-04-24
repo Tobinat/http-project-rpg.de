@@ -18,7 +18,7 @@ lbClear _list;
 
 _n = 0;
 {
-	_list lbAdd format["SMS: %1", _x select 2];
+	_list lbAdd format["%1", _x select 2];
 	_list lbSetdata [(lbSize _list)-1,str(_n)];
 	_n = _n + 1;
 } foreach messages;

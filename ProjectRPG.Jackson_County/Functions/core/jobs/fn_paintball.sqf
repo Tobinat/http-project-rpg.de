@@ -45,7 +45,7 @@ if(_input == 1) then {
 	_headgear = _headgears call BIS_fnc_selectRandom;
 	player addheadgear _headgear;
 
-	for "_i" from 1 to 10 do { player addItemToUniform "140Rnd_PaintBall_blau"; };
+	for "_i" from 1 to 10 do { player addItemToUniform "30Rnd_test_mag_Tracer"; };
 };
 
 
@@ -62,7 +62,7 @@ while{paintballing} do {
 		player setdir random(360);
 		_mypos = player getrelpos [random(20),0];
 		player setpos _mypos;
-		for "_i" from 1 to 2 do { player addItemToUniform "140Rnd_PaintBall_blau"; };
+		for "_i" from 1 to 2 do { player addItemToUniform "30Rnd_test_mag_Tracer"; };
 		paintballhit = false;
 		sleep 1;
 		godmode = false;
@@ -74,7 +74,7 @@ while{paintballing} do {
 
 _nearPlayers = player nearEntities ["man", 275]; 
 
-format["%1 osiągnął wynik: %2",name player, paintballscore] remoteexec ["systemchat",_nearplayers];
+format["%1 hat %2 Punkte erreicht.",name player, paintballscore] remoteexec ["systemchat",_nearplayers];
 
 removeAllWeapons player;
 removeAllItems player;
@@ -91,7 +91,7 @@ paintballing = false;
 paintballhit = false;
 
 [_amount] call Client_fnc_sl_addCash_secure;
-[format["Wygrałeś %1 dolarów!",_amount],false] spawn domsg;
+[format["Du hast %1 gewonnen!",_amount],false] spawn domsg;
 
 if(client_energy == 0) then {
 	player enablefatigue true;
