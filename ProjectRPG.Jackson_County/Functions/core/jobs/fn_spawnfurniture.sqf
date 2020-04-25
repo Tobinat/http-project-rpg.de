@@ -210,10 +210,6 @@ if(_type == 8) exitwith {
 	};
 };
 
-
-
-
-
 if(_type == 9) exitwith {
 	if(_status == 1) then {
 		fuckingcouch = "nopixel_tools_escritorio2" createvehicle getpos player;
@@ -234,7 +230,6 @@ if(_type == 9) exitwith {
 		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
-
 
 if(_type == 10) exitwith {
 	if(_status == 1) then {
@@ -257,7 +252,6 @@ if(_type == 10) exitwith {
 	};
 };
 
-
 if(_type == 11) exitwith {
 	if(_status == 1) then {
 		fuckingcouch = "nopixel_tools_mesa" createvehicle getpos player;
@@ -279,7 +273,6 @@ if(_type == 11) exitwith {
 	};
 };
 
-
 if(_type == 12) exitwith {
 	if(_status == 1) then {
 		fuckingcouch = "nopixel_tools_planta" createvehicle getpos player;
@@ -300,7 +293,6 @@ if(_type == 12) exitwith {
 		fuckingcouch setpos [_fickdicharma,_armadudreckigerhurensohn, (getposATL player select 2)];
 	};
 };
-
 
 if(_type == 13) exitwith {
 	if(_status == 1) then {
