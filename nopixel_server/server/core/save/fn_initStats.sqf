@@ -6,8 +6,6 @@ _uid = getPlayerUID _player;
 waitUntil {
 if (isNil {extDB_SQL_CUSTOM_ID}) then { false } else { true };
 };
-//waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
-//diag_log "initStats phase 1";
 _checkstr = format ["existPlayerInfo:%1", _uid];
 _check = [0, _checkstr] call ExternalS_fnc_ExtDBquery;
 _booli = (_check select 0) select 0;
@@ -16,33 +14,24 @@ diag_log format["init stats %1 %2", _uid,_booli];
 _points = 0;
 if (_booli) then {
 
-	//diag_log "initStats phase 2";
 	_fetchstr = format ["getMessages:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	_phonemessages = _fetch;
-	//diag_log "initStats:";
-	//diag_log _phonemessages;
 
 	_fetchstr = format ["getMail:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	_mail = _fetch;
-	//diag_log "initStats:";
-	//diag_log _mail;
 
 	_fetchstr = format ["getGarage:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
 	_garage = _fetch;
-	//diag_log "initStats:";
-	//diag_log _garage;
 
 	_fetchstr = format ["playerInfo:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
-	//diag_log "initStats:";
-	//diag_log _returned;
 	
 	_res = _fetch select 0;
 	_items = _res select 0;
@@ -84,17 +73,7 @@ if (_booli) then {
 	MafiaLoan1 pushback _player;
 	MafiaLoan2 pushback (_statuses select 11);
 	};
-	/*
-	_houselevel = _res select 10;
-	_housecontent = _res select 11;
-	_shopcontent = _res select 12;
-	_shopname = _res select 13;
-	_mafia = _res select 14;
-	_fire = _res select 15;
-	_legal = _res select 16;
-	_doughnuts = _res select 17;
-	_respawn = _res select 18;
-	*/
+	
 	_messages = [];
 
 	_player setvariable ["getunitloadout", _items, false];
@@ -139,10 +118,12 @@ if (_booli) then {
 		_mayor = true;
 		theMayor = _player;
 	};
-	/*_mayor = false;
+	/*
+	_mayor = false;
 	if(_uid == call compile format["%1",currentmayor]) then { _mayor = true; theMayor = _player; };
 
-	if(_mayor) then{ _houselevel = 3; _player setVariable ["houselevel", _houselevel, false]; };*/
+	if(_mayor) then{ _houselevel = 3; _player setVariable ["houselevel", _houselevel, false]; };
+	*/
 
 
 	_house = [0,0,0];
@@ -203,7 +184,6 @@ if (_booli) then {
 
 	_player setVariable ["house", _house, false];
 	_player setVariable ["shop", _shop, false];
-	//diag_log "initStats phase 3";
 	_house setVariable ["house", _player, false];
 	_shop setVariable ["shop", _player, false];
 	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28 %29",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points];																																																																																																																																																													//,_mayor
