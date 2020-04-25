@@ -1,10 +1,11 @@
 params["_shop"];
 
-_chance = random(100);
-
 if(isNil "robbedStores") then { robbedstores = []; };
 
-if(_shop IN robbedstores) exitwith { hint "Hier gibts nix zu klauen!"; };
+if (count currentcop < 3) exitwith { ["Hier gibts nichts zu holen!",false] call domsg; };
+if (_shop IN robbedstores) exitwith { ["Hier gibts nichts zu holen!",false] call domsg; };
+
+_chance = random(100);
 
 if(_chance > 80) then {
 
@@ -44,7 +45,9 @@ if(_chance > 80) then {
 
 		if(_amount < 0) then { _amount = 5; };
 
-		robbedstores pushback _shop; hint format["Du hast diese Summe entwendet: %1",_amount]; [_amount] call Client_fnc_sl_addCash_secure; 
+		robbedstores pushback _shop; hint format["Du hast diese Summe entwendet: %1",_amount];
+		[_amount] call Client_fnc_sl_addCash_secure;
+		[player, _shop, "storeRobbery"] spawn client_fnc_createEvidence;
 
 	};
 

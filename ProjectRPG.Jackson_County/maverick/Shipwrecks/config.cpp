@@ -42,7 +42,6 @@ class Maverick_Shipwrecks {
         {"U_O_Wetsuit"},
         {"H_Bandanna_khk_hs","H_Bandanna_gry","H_Bandanna_camo"},
         {"optic_Aco"},
-        {"V_mas_ww2_vest_USB","U_mas_ww2_B_CombatUniform_uks"},
         {"prpg_item_glas","prpg_item_glas"},
         {"NP_Wood","NP_Wood","NP_Wood","NP_Wood"}
 	};

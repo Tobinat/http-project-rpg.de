@@ -28,12 +28,12 @@ if (_item IN
 if (_item IN ["np_ugroceries"] ) then { ["add","drink",100] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["add","unhealthiness",4] call client_fnc_sustain;  [_item,80] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "np_energydrink") then { ["energy",3] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 //items
-if (_item == "NP_drillitem") then {/*_cops = (count currentcop); if(_cops < 5) exitwith { hint "Es sind weniger als 5 Polizisten im Dienst."; };*/ [] spawn client_fnc_bankrobbery; closeDialog 0; };
+if (_item == "NP_drillitem") then {_cops = (count currentcop); if(_cops < 5) exitwith { hint "Es sind weniger als 5 Polizisten im Dienst."; }; [] spawn client_fnc_bankrobbery; closeDialog 0; };
 //if (_item == "CG_C4") then {_cops = (count currentcop); if(_cops < 3) exitwith { hint "Za mało policjantów - 3+"; }; [] spawn client_fnc_blowdoor; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 //if (_item == "CG_Dynamite") then { [] spawn client_fnc_dynamiteFishing; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 if (_item == "CG_HackingTool") then { [] spawn client_fnc_hackdoor; closeDialog 0; };
 //if (_item == "CG_MetalWire") then { [] spawn client_fnc_sendhook; closeDialog 0; };
-//if (_item == "CG_Lockpick") then { ["Wytrychuję",120,client_fnc_lockpick,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,"prpg_data\sounds\repair.ogg"] spawn client_fnc_dotask; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item == "CG_Lockpick") then { ["Schloss knacken",120,client_fnc_lockpick,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,"prpg_data\sounds\repair.ogg"] spawn client_fnc_dotask; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 //if (_item == "cg_atf_bandage_i") then {  ["Leczę",15,client_fnc_dohealth,player,0,["Add",100],0] spawn client_fnc_dotask2;  [_item,0] spawn client_fnc_removeitem;  closeDialog 0; };
 //drugs
 if (_item == "CG_MethBag100") then { ["meth",18] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };

@@ -42,7 +42,6 @@ if(_ammo isKindOf "Melee") exitwith {
 	if(currentWeapon _unit == "cg_bat" && typeof cursorobject IN ["Land_buildingCommercial1","Land_buildingCommercial2"] && player distance getpos cursorobject < 3 && myjob != "Security") then {
 		[cursorobject] spawn client_fnc_BATrobbery;
 	 };
-
 };
 
 if(currentWeapon _unit IN ["vvv_fishing_rod","epic_fishing_rod","platinum_fishing_rod","legendary_fishing_rod","gold_fishing_rod"]) exitwith {

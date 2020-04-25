@@ -1,5 +1,5 @@
 if(typeof cursortarget != "plp_ct_HighSecMediumBlack") exitwith { hint "Sie müssen das bei der Blackbox verwenden"; };
-if(bankrobber != 1) exitwith { hint "Diese Bank wurde kürzlich erst ausgeraubt, sei kein Arsch.."; };
+if(bankrobber != 1) exitwith { hint "Du hast vor kurzem erst eine Bank ausgeraubt."; };
 [] spawn {
 	_bank = nearestObject [player, "Land_CommonwealthBank"];
 	uiSleep 30;

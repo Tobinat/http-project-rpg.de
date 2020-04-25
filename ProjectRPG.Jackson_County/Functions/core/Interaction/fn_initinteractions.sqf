@@ -45,7 +45,6 @@ NoPixel_InteractionMenuItems = [
 		["Sichere Geldmittel", " ['Sicherung',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
 
-
 	[
 		[" typeof cursorobject == ""paradadebus_civ"" "],
 		["Busfahrer da?", "[] spawn client_fnc_busabfrage;",1]
@@ -71,8 +70,6 @@ NoPixel_InteractionMenuItems = [
 		["Auf die Toilette gehen", " [] spawn client_fnc_takeashit; ",5]
 	],
 
-
-
 	[
 		[" bankrobber == 4 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "],
 		["Nimm Bargeld", " ['Geld nehmen',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',[CurrentCursorTarget],""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
@@ -80,9 +77,8 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" bankrobber == 2 && typeof cursortarget == ""plp_ct_HighSecMediumBlack"""],
-		["Reparatur Bohrer", " ['Repariere Bohrer',60,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
+		["Bohrer Reparierern", " ['Repariere Bohrer',60,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5]
 	],
-
 
 	[
 		[" ((lastforcesync + 300) < time) && client_canSync "],
@@ -863,7 +859,6 @@ NoPixel_InteractionMenuItems = [
 		["Telefon aufladen", "closedialog 0; [""add"",""battery"",200] call client_fnc_sustain;",3]
 	],
 
-
 // jobs / situational
 
 	[
@@ -921,7 +916,6 @@ NoPixel_InteractionMenuItems = [
 		["Haftzeit", "hint format[""Noch %1 Monate"",secondsLeft];",4]
 	],
 
-
 	[
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && myjob == ""Cop"" && player getvariable ""cop"" > 5"],
 		["Haus durchsuchen", " [player] remoteexec [""client_fnc_raidhouse"",currentcursortarget]; ",4]
@@ -961,7 +955,6 @@ NoPixel_InteractionMenuItems = [
 		["adminInteractions>=2"],
 		["Anonymes telefon", "[] spawn client_fnc_callMenuPP; ",4]
 	],
-
 
 	[
 		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30 && typeof cursorobject == ""prpg_workbench_normal"""],
