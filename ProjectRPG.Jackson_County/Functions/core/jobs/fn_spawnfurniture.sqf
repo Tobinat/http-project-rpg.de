@@ -35,7 +35,7 @@ if(count mychairs > 6) then {
 };
 
 _totalallowed = player getvariable "houselevel";
-_totalallowed = _totalallowed * 3;
+_totalallowed = _totalallowed * 2;
 if(count mychairs > _totalallowed && count attachedobjects player == 0) exitwith { hint "Too much furniture"; };
 
 
