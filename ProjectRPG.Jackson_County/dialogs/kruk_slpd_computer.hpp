@@ -679,7 +679,7 @@ class kruk_slpd_vehicle_add {
 		class text_level: RscText
 		{
 			idc = -1;
-			text = "Wichtigkeit"; //--- ToDo: Localize;
+			text = "Wanted Level"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 10 * GUI_GRID_W;
@@ -770,7 +770,7 @@ class kruk_slpd_criminal_add {
 		class text_level: RscText
 		{
 			idc = -1;
-			text = "Wichtigkeit"; //--- ToDo: Localize;
+			text = "Wanted Level"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 10 * GUI_GRID_W;

@@ -77,7 +77,7 @@ if (typeOf cursorObject IN["Land_CommonwealthBank"]) then {
 		_calcT = _calcT + 1;
 		if(_calcT > 45) exitwith {};
 		uisleep 1;
-		_timeleft = 25 - _calcT;
+		_timeleft = 45 - _calcT;
 		_POPUP ctrlSetStructuredText parseText format["<img size='1' image='prpg_data\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>Sicherheitsmassnahmen werden umgeschrieben.</t> <br/> <t size='2'>%1</t>",_timeleft];
 	};
 	playSound3D ["CG_Jobs\sounds\jailbreak\hacking.ogg", player, false, (getposasl player), 3, 1, 55];
