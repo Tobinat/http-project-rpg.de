@@ -1019,16 +1019,6 @@ if(_condition IN ["bar"]) then {
 
 if(_condition == "head") then {
 	_gunStorePistols = [
-			["ALE_H_Cowboy_White",nil,120,3,5],
-			["ALE_H_Cowboy_Black",nil,120,3,5],
-			["ALE_H_Cowboy_Brown",nil,120,3,5],
-			["ALE_H_NewEra_Monster",nil,120,3,5],
-			["ALE_H_NewEra_Rouge",nil,120,3,5],
-			["ALE_H_NewEra_Superman",nil,12,3,5],
-			["ALE_H_NewEra_Cyan",nil,120,3,5],
-			["ALE_H_NewEra_Black",nil,120,3,5],
-			["ALE_H_NewEra_Lakers",nil,120,3,5],
-			["ALE_H_NewEra_Redsox",nil,120,3,5],
 			["H_Beret_blk",nil,120,3,5],
 			["H_Booniehat_khk",nil,120,3,5],
 			["H_Booniehat_oli",nil,120,3,5],
