@@ -17,15 +17,16 @@ if !("CG_OilBarrel" in MagazineCargo cursorTarget) then {
 _pumpe = cursorTarget;
 _fuel = fuel _pumpe;
 if (_fuel < 0.4) exitWith {
-hint "Du hast nicht genug Benzin im Tank um den Motor für einen ganzen Bohrvorgang zu betreiben";
+["Du hast nicht genug Benzin im LKW!",false] call domsg;
 };
-_pumpe setFuel 0;
+
+[_pumpe,0] remoteExec ["client_fnc_setFuel",_pumpe];
 
 //Seiten öffnen
 _pumpe animate ["bort_r", 1];
 _pumpe animate ["bort_l", 1];
 
-hint "Dein LKW bohrt nun nach Öl. Dies dauert einige Zeit";
+["Dein LKW Bohrt nun nach Öl, das dauert ein wenig!",false] call domsg;
 
 sleep 1;
 
@@ -66,13 +67,13 @@ _pumpe animate ["truba_hide", 1];
 sleep 5;
 
 // Öl in LKW & XP an spieler
-_chance = random (100);
-if (_chance > 5) then {
+_chance = random (200);
+if (_chance > 2) then {
 	_pumpe addItemCargo ["CG_OilBarrel", 6];
 	["OreGathered"] spawn mav_ttm_fnc_addExp;
-	hint "Du hast Öl gesammelt";
+	["Du hast Öl gesammelt, schau in den LKW!",false] call domsg;
 	} else {
-	hint "Der Bohrer konnte kein Öl finden! Versuche es noch einmal.";
+	["Du hast kein Ölvorkommen gefunden!",false] call domsg;
 };
 
 sleep 2;

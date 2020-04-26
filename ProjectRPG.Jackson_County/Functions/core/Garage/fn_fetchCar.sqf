@@ -10,7 +10,6 @@ vehspawned = createVehicle ["ivory_r34", getpos player, [], 0, "NONE"];
 
  license, class, color, finish, rims, windows, lights, statuses, owner
 
-
 */
 
 _currentitemindex = lbCurSel 1500;

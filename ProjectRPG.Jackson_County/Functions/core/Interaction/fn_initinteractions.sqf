@@ -765,32 +765,32 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
+		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"" && !attachedcar"],
 		["Polizeigarage", "[] spawn client_fnc_openGaragePolice;",3]
 	],
 
 	[
-		["client_aiad_actions > 0","myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
+		["client_aiad_actions > 0","myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"" && !attachedcar"],
 		["AIAD-Garage", "[] spawn client_fnc_openGarageAIAD;",3]
 	],
 
 	[
-		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingshospital1"""],
+		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingshospital1"" && !attachedcar"],
 		["S.L.F.D.-Garage", "[] spawn client_fnc_openGarageEMS;",3]
 	],
 
 	[
-		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingsfiredept1"""],
+		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingsfiredept1"" && !attachedcar"],
 		["S.L.F.D.-Garage", "[] spawn client_fnc_openGarageEMS;",3]
 	],
 
 	[
-		["myjob == ""EMS""", "typeof cursorobject == ""Land_Rxo_Air_Garage_Office"""],
+		["myjob == ""EMS""", "typeof cursorobject == ""Land_Rxo_Air_Garage_Office"" && !attachedcar"],
 		["S.L.F.D.-Garage", "[] spawn client_fnc_openGarageEMS;",3]
 	],
 
 	[
-		["myJob == ""Mafia""", "player distance myhouse < 40 "],
+		["myJob == ""Mafia""", "player distance myhouse < 40 && !attachedcar"],
 		["Mafiagarage", "[] spawn client_fnc_openGarageMafia;",3]
 	],
 
