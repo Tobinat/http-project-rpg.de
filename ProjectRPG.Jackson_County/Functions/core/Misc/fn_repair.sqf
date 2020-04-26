@@ -33,6 +33,10 @@ if(_wheels > 0) exitwith {
  	_chance = random ( 100 );
 	if(_chance > 85) then {
 		hint "Du hast das RepairKit für den Reifen während der Reparatur verbraucht.";
+		_object setHitPointDamage  ["hitlfwheel", 0];
+		_object setHitPointDamage  ["hitlf2wheel", 0];
+		_object setHitPointDamage  ["hitrfwheel", 0];
+		_object setHitPointDamage  ["hitlf2wheel", 0];
 	};
 };
 hint "Du benötigst ein Rad zum Reparieren.";

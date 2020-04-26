@@ -336,7 +336,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat' "],
+		["(CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat') && ( ({_x == ""cg_wheel""} count magazines player) != 0 || myjob == ""EMS"" || myjob == ""repairman"" || ({_x == ""cg_engine""} count magazines player) != 0)"],
 		["Reperatur", "['Reparieren',(30 - mav_ttm_var_repairToReduce),client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",100] spawn client_fnc_dotask;",2]
 	],
 
@@ -381,8 +381,6 @@ NoPixel_InteractionMenuItems = [
 		["adminInteractions>=1"],
 		["Fahrzeug einparken", "['Speichere Fahrzeug in der Garage',1, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
 	],
-
-
 
 //furniture
 	[
@@ -1260,7 +1258,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["str Cursorobject find ""cargo"" > -1 && getpos player distance getpos cursorobject < 8"],
+		["str Cursorobject find ""cargo"" > -1 && getpos player distance getpos cursorobject < 8 && ({_x == ""cg_lockpick""} count magazines player) != 0"],
 		["Container knacken", "[""Öffne Container"",15,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""prpg_data\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
