@@ -105,7 +105,7 @@ _civilianVehicle = [
 	//["Dodge_Ram_SRT10_Black",82900]
 	//["Chevrolet_Camaro_ZL1_13_Black",56500]
 	//["CadillacEldorado1959_Black",62050]
-	["prpg_kamaz_6550",85000]
+	["prpg_kamaz_6550",35000]
 
 ];
 

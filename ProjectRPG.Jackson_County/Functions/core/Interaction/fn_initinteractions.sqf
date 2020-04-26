@@ -546,12 +546,7 @@ NoPixel_InteractionMenuItems = [
 		["Inhaftieren", " createdialog ""jailprocess"";",2]
 	],
 
-
-
 //shops and offices garages etc
-
-
-
 	[
 		["player distance myshop < 3"],
 		["Ladeninventar", "[""shop""] spawn client_fnc_retreiveCargo;",3]

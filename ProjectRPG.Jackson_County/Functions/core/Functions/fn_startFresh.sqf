@@ -22,8 +22,13 @@ player setpos [9585.01,4113.2,0.00141525];
 
 player setdir 350;
 
+if (female) then {
+_clothingarray = ["vvv_elena_fisher","vvv_elena_fisher2","vvv_elena_fisher3","vvv_elena_fisher5","vvv_elena_fisher6","vvv_elena_fisher7","vvv_elena_fisher8","vvv_elena_fisher9","vvv_elena_fisher10","vvv_elena_fisher11","vvv_elena_fisher12","vvv_elena_fisher13","vvv_elena_fisher14","vvv_elena_fisher15","vvv_elena_fisher16"];
+_clothing = _clothingarray call BIS_FNC_SELECTRANDOM;
+} else {
 _clothingarray = ["np_shirt_1","np_shirt_2","np_shirt_3","np_shirt_4","np_shirt_5","np_shirt_6","np_shirt_7","np_shirt_8","vvv_ropa_comun_f_1","vvv_ropa_comun_f_2","vvv_ropa_comun_f_4","vvv_ropa_comun_f_5","vvv_ropa_comun_f_6","vvv_ropa_comun_f_7","vvv_ropa_comun_f_8","vvv_ropa_comun_f_9","vvv_ropa_comun_f_10"];
 _clothing = _clothingarray call BIS_FNC_SELECTRANDOM;
+};
 
 player adduniform _clothing;
 player linkItem "ItemMap";
@@ -31,7 +36,6 @@ player linkItem "ItemCompass";
 player linkItem "Itemwatch";
 player additem "prpg_tablet";
 player assignitem "prpg_tablet";
-
 
 closedialog 0;
 
