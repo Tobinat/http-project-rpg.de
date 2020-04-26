@@ -528,44 +528,6 @@ if(_condition == "clothing") then {
 	} foreach _clothing;
 };
 
-if(_condition == "masks") then {
-	_clothing = [
-		["H_Bandanna_gry",nil,50,3,5],
-		["H_Bandanna_blu",nil,50,3,5],
-		["H_Bandanna_cbr",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["",nil,50,3,5],
-		["Masque_Hoxton",nil,50,3,5],
-		["Masque_Wolfv2",nil,60,3,5],
-		["H_ObamaMask",nil,20,3,5],
-		["Masque_Chains",nil,20,3,5]
-	];
-	{
-		_storeList pushback _x;
-	} foreach _clothing;
-};
-
 if(_condition == "backpack") then {
 	_clothing = [
 		["TAC_BP_Butt_B",nil,50,4,2],
@@ -583,11 +545,13 @@ if(_condition == "backpack") then {
 		["TAC_BP_KAR_L",nil,75,4,2],
 		["TAC_BP_KAR_R",nil,75,4,2],
 		
-		["TRYK_B_Alicepack",nil,100,4,2],
+		["c_kitbag_cbr",nil,100,4,2],
+		["c_kitbag_rgr",nil,100,4,2],
 
-		["TRYK_B_Coyotebackpack_BLK",nil,110,4,2],
-		["TRYK_B_Coyotebackpack",nil,110,4,2],
-		["TRYK_B_Coyotebackpack_OD",nil,110,4,2]
+		["B_carryall_cbr",nil,110,4,2],
+		["B_carryall_khk",nil,110,4,2],
+		["B_carryall_oli",nil,110,4,2]
+		//["invisible_caryall",nil,150,4,2]
 	];
 	{
 		_storeList pushback _x;
