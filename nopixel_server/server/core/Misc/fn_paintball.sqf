@@ -10,7 +10,7 @@ if !(paintball isEqualTo []) exitwith { _player setvariable ["sync",0,false]; pa
 
 paintball pushback _player;
 
-"Ein Paitnball spiel beginnt!" remoteexec ["hint",-2]; 
+"Ein Paintball spiel beginnt!" remoteexec ["hint",-2]; 
 [1] remoteexec ["client_fnc_paintball",_player];
 uisleep 360;
 [3] remoteexec ["client_fnc_paintball",paintball];

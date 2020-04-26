@@ -7,9 +7,10 @@ _farmingVehicles = ["Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonz
 playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 31, 1, 15];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits."; };
+if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] call domsg; };
 _localProtection = 0;
 
+["Du Verarbeitest Öl, bleibe kurz stehen!",false] call domsg;
 
 _n = 0;
 {
@@ -29,7 +30,6 @@ _n = 0;
 		_i = _i - 1;
 		sleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "Du verarbeitest Öl, bleibe stehn und pass auf.";
 		["Processed"] spawn mav_ttm_fnc_addExp;
 	};
 
@@ -52,7 +52,6 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 	_process = _thecargo select 0;
 	_ItemCount = _thecargo select 1;
 
-
 	if(!isnil "_process") then {
 		_count = 0;
 		{
@@ -74,6 +73,7 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 				uisleep 0.25;
 				if(dialog) then { closedialog 0; };
 			};
+			["Processed"] spawn mav_ttm_fnc_addExp;
 		} foreach _process;
 	};
 };

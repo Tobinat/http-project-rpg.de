@@ -8,9 +8,10 @@ playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player
 
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits"; };
+if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] call domsg; };
 _localProtection = 0;
 
+["Du Verarbeitest Pelze, bleibe kurz stehen!",false] call domsg;
 
 _n = 0;
 {
@@ -27,7 +28,7 @@ _n = 0;
 		player additem (_barArray select _n);
 		_i = _i - 1;
 		sleep 0.25;
-		hint "Du verarbeitest den Pelz, bleibe stehn und pass auf.";
+		["Processed"] spawn mav_ttm_fnc_addExp;
 	};
 
 	_n = _n + 1;
@@ -69,7 +70,8 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 				_count = _count + 1;
 
 				uisleep 1.5;
-			};
+			};	
+			["Processed"] spawn mav_ttm_fnc_addExp;
 		} foreach _process; 
 	};
 };

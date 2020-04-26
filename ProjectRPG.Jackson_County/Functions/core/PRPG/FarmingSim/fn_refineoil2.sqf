@@ -73,6 +73,7 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 				uisleep 0.25;
 				if(dialog) then { closedialog 0; };
 			};
+			["Processed"] spawn mav_ttm_fnc_addExp;
 		} foreach _process;
 	};
 };

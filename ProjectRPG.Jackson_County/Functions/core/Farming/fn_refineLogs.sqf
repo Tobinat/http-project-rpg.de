@@ -3,16 +3,14 @@ Refine Logs trees by koil
 */
 private["_localprotection"];
 
-if(backpack player == "") exitwith { hint "Du brauchst einen Rucksack."; };
-
+if(backpack player == "") exitwith { ["Du brauchst einen Rucksack!",false] call domsg; };
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits."; };
+if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] call domsg; };
 _localProtection = 0;
 
-if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) exitwith { hint "Dein LKW ist zu weit weg."; };
+if(vehSpawned distance player > 10 || isNil {vehSpawned} || isnull vehSpawned ) exitwith { ["Willst du die stämme den ganzen weg Tragen?",false] call domsg; };
 {
-	if(_x distance vehspawned < 11) then {
-
+	if(_x distance vehspawned < 10) then {
 		_localProtection = _localprotection + 1;
 		globalProtection = globalProtection + 1;
 		if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn client_fnc_anticheat; };
@@ -24,11 +22,11 @@ if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) 
 		["Processed"] spawn mav_ttm_fnc_addExp;
 		uisleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "Du hackst Holz,bleibe am Besten stehn! Eine Axt im Bein kann weh tun."
+		["Du Verarbeitest Holz, bleibe kurz stehen!",false] call domsg;
 	};
 } forEach attachedObjects vehspawned;
-hint "Holz Verarbeitet";
-[player,objNull,30,format ["%1 hat Holz gemacht. Menge an verarbeitetem Holz: %2",name player, totalLogs],totalLogs] remoteExec ["server_fnc_actionLog", 2];
+["Du bist fertig!",false] call domsg;
+//[player,objNull,30,format ["%1 hat Holz gemacht. Menge an verarbeitetem Holz: %2",name player, totalLogs],totalLogs] remoteExec ["server_fnc_actionLog", 2];
 totalLogs = 0;
 
 globalProtection = 0;

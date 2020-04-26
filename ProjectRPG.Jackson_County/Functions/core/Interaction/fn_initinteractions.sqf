@@ -659,14 +659,16 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_Coffee_DED_Coffee_01_F""]"],
+		["Kopfbedeckungen", "closedialog 0; createdialog ""Clothing_Menu""; [""masks""] spawn client_fnc_LoadStore;",3]
+	],
+
+	[
 		["typeof CurrentCursorTarget == ""Land_buildingGunStore1"""],
 		["Waffenladen", "closedialog 0; createdialog ""gun_menu""; [""gunstore""] spawn client_fnc_LoadStore;",3]
 	],
 
 	//Test
-
-
-
 /*
 	[
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],

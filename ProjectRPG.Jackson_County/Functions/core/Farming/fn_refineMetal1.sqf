@@ -8,8 +8,10 @@ _barArray = ["prpg_item_kupfer_bar", "prpg_item_eisen_bar", "prpg_item_silber_ba
 _farmingVehicles = ["Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2"];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Du verarbeitest bereits."; };
+if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] call domsg; };
 _localProtection = 0;
+
+["Du Verarbeitest Material, bleibe kurz stehen!",false] call domsg;
 
 _n = 0;
 {
@@ -30,7 +32,6 @@ _n = 0;
 		playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];
 		uisleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "Du verarbeitest Material, bleib stehn und pass auf.";
 		["Processed"] spawn mav_ttm_fnc_addExp;
 	};
 
@@ -74,6 +75,7 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 				uisleep 0.25;
 				if(dialog) then { closedialog 0; };
 			};
+			["Processed"] spawn mav_ttm_fnc_addExp;
 		} foreach _process;
 	};
 };

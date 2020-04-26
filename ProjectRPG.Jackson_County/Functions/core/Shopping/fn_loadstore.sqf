@@ -200,11 +200,6 @@ if(_condition == "rarefish") then {
 
 if(_condition == "clothing") then {
 	_clothing = [
-		["Masque_Hoxton",nil,50,3,5],
-		["Masque_Wolfv2",nil,60,3,5],
-		["H_ObamaMask",nil,20,3,5],
-		["Masque_Chains",nil,20,3,5],
-		["U_B_Wetsuit",nil,2000,3,1],
 		["EF_HM_B1",nil,300,3,1],
 		["EF_HM_BL1",nil,300,3,1],
 		["EF_HM_OD1",nil,300,3,1],
@@ -517,6 +512,7 @@ if(_condition == "clothing") then {
 		["vvv_traje_motox_02_4",nil,500,3,1],
 		["vvv_traje_motox_02_5",nil,500,3,1],
 		["vvv_traje_motox_02_2",nil,500,3,1],
+		["U_B_Wetsuit",nil,2000,3,1],
 		["brotherhood_1",nil,1000,3,3],
 		["brotherhood_10",nil,1000,3,3],
 		["brotherhood_2to4",nil,1000,3,3],
@@ -525,9 +521,45 @@ if(_condition == "clothing") then {
 		["brotherhood_7",nil,1000,3,3],
 		["brotherhood_8",nil,1000,3,3],
 		["brotherhood_9",nil,1000,3,3],
-		["U_Cloth01_FS",nil,200,3,1],
-		["vvv_character_wandelina",nil,200,3,1],
-		["vvv_character_jennifer",nil,200,3,1]
+		["U_Cloth01_FS",nil,200,3,1]
+	];
+	{
+		_storeList pushback _x;
+	} foreach _clothing;
+};
+
+if(_condition == "masks") then {
+	_clothing = [
+		["H_Bandanna_gry",nil,50,3,5],
+		["H_Bandanna_blu",nil,50,3,5],
+		["H_Bandanna_cbr",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["",nil,50,3,5],
+		["Masque_Hoxton",nil,50,3,5],
+		["Masque_Wolfv2",nil,60,3,5],
+		["H_ObamaMask",nil,20,3,5],
+		["Masque_Chains",nil,20,3,5]
 	];
 	{
 		_storeList pushback _x;

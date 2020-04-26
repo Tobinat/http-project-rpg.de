@@ -9,7 +9,7 @@ _oreArray = ["Fish_Tuna_1","Fish_Tuna_2","Fish_Tuna_3","Fish_Tuna_4","Fish_Tuna_
 _barArray = ["np_fishmeat"];
 _farmingVehicles = ["POP_Speed_yatch","vvv_NewYacht"];
 
-
+["Du Filetierst Fisch, bleibe kurz stehen!",false] call domsg;
 
 _n = 0;
 {
@@ -39,11 +39,8 @@ _n = 0;
 		if(dialog) then { closedialog 0; };
 		["Erfolg","Dein Fisch ist filetiert, warte einen Moment",[0,255,0,1],""] call Client_fnc_showNotification;
 		["Processed"] spawn mav_ttm_fnc_addExp;
-		//hint "Your fish is being filleted, stay still!";
 	};
-
 	_n = _n + 1;
-
 } foreach _oreArray;
 
 
@@ -81,6 +78,7 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 				if(dialog) then { closedialog 0; };
 				uisleep 0.25;
 			};
+			["Processed"] spawn mav_ttm_fnc_addExp;
 		} foreach _process;
 	};
 
