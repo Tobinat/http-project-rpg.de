@@ -1,6 +1,6 @@
 scriptName "functions_weapon_2";
 /*--------------------------------------------------------------------
-	Author: Katekarin (ofpectag: MAV)
+	Author: PRPG (ofpectag: MAV)
     File: functions_weapon_2.sqf
 
 --------------------------------------------------------------------*/

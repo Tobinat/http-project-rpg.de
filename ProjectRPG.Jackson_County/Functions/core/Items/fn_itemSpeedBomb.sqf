@@ -1,5 +1,5 @@
 /*
-    Author: KifKick
+    Author: PRPG
     Date: 15.02.2017
 
     Description: Bomb for vehicle, if vehicle get speec 70km/h bomb has been activated and if vehicle got under 50km/h bomb has been explode

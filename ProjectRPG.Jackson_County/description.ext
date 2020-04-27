@@ -1,6 +1,6 @@
 respawn = "BASE";
 disabledAI = 1;
-author = "Koil | Edited by PRPG.de";
+author = "Koil | Edited by project-rpg.de";
 onLoadName = "Project-RPG v0.6";
 onLoadMission = "Webseite: http://project-rpg.de";
 onLoadIntro = "PRPG Life ist am laden...";

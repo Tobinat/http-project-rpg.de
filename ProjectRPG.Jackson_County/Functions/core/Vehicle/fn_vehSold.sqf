@@ -1,5 +1,5 @@
 /*
-	Author: Kajetan "Kruk" Mruk
+	Author: PRPG
 	For: stanlakeside.pl
 	Date: 19.01.2017 (Non-retard Units)
 

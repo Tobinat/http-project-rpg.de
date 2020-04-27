@@ -1,6 +1,6 @@
 scriptName "functions_mechanicRent_3";
 /*--------------------------------------------------------------------
-	Author: Katekarin (ofpectag: MAV)
+	Author: PRPG (ofpectag: MAV)
     File: functions_mechanicRent_3.sqf
 
 --------------------------------------------------------------------*/

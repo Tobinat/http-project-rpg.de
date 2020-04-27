@@ -1,6 +1,6 @@
 /*
 	File: welcome.sqf
-	Author: ZedBuster
+	Author: PRPG
         Link: opendayz.net/threads/dayz-welcome-message-credits-style.13071/
 	Description:
 	Creates an intro on the bottom-right hand corner of the screen.
@@ -13,7 +13,7 @@ sleep 2; //Wait in seconds before the credits start after player is in-game
 _role1 = "Willkommen bei";
 _role1names = ["PRPG"];       //Add your texts here!
 _role2 = "Kommt auf unseren Teamspeak";
-_role2names = ["ts.prpg.de"];
+_role2names = ["ts.project-rpg.de"];
 _role3 = "Regeln";
 _role3names = ["Lesen sie Regelmäßig die Regeln im Forum"];
 _role4 = "Bleib im Charakter!";

@@ -1,5 +1,5 @@
 /*
-Author: Kerkkoh
+Author: PRPG
 First Edit: 16.4.2016
 */
 params ["_index"];

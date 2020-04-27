@@ -1,6 +1,6 @@
 scriptName "functions_more_exp_1";
 /*--------------------------------------------------------------------
-	Author: Katekarin (ofpectag: MAV)
+	Author: PRPG (ofpectag: MAV)
     File: functions_more_exp_1.sqf
 
 --------------------------------------------------------------------*/

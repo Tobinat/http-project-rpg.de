@@ -1,5 +1,5 @@
 /*
-		Author: Kajetan "Kruk" Mruk
+		Author: PRPG
 		Date: 15.03.2017
 		Params:
 			0 - String, type of addition(personal/vehicle)

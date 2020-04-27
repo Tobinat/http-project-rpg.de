@@ -1,6 +1,6 @@
 /*
     File: fn_slotSpin.sqf
-    Author: Jacob "PapaBear" Tyler
+    Author: PRPG
     Description: Takes bet, spins slots, determines if win, pays
 */
 params["_betamt"];

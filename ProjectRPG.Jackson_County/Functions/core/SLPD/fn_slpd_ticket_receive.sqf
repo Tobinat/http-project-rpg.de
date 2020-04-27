@@ -1,5 +1,5 @@
 /*
-		Author: Kajetan "Kruk" Mruk
+		Author: PRPG
 		Date: 15.03.2017
 		Params: 
 		Description: Reads personal data and display it on computer screen.

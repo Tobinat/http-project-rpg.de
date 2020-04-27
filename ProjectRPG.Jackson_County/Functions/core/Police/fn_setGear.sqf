@@ -21,7 +21,7 @@ if(myjob == "Cop") exitwith {
 		player linkitem "tf_anprc152";
 		[] call client_fnc_ChangePolice;
 		player addBackpack "invisible_carryall";
-		player linkItem "TRYK_Headset_NV";
+		player linkItem "pmc_earpiece";
 		player additemtobackpack "RH_m9";
 		player addweapon "DDOPP_X26";
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
@@ -135,7 +135,7 @@ if(myjob == "Cop") exitwith {
 		player linkitem "tf_anprc152";
 		[] call client_fnc_ChangePolice;
 		player addBackpack "invisible_carryall";
-		player linkItem "TRYK_Headset_NV";
+		player linkItem "pmc_earpiece";
 		player additemtobackpack "RH_m9";
 		player addweapon "DDOPP_X26";
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
@@ -262,7 +262,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "tf_anprc152";
 		[] call client_fnc_ChangePolice;
 		player linkItem "ItemGPS";
-		player linkItem "TRYK_Headset_NV";
+		player linkItem "pmc_earpiece";
 	};
 };
 
@@ -286,7 +286,7 @@ if(myjob == "EMS") exitwith {
 	player linkitem "tf_anprc152";
 	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
-	player linkItem "TRYK_Headset_NV";
+	player linkItem "pmc_earpiece";
 
 	_emslevel = player getVariable "ems";
 
@@ -390,7 +390,7 @@ if(myjob == "EMS") exitwith {
 	player linkitem "tf_anprc152";
 	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
-	player linkItem "TRYK_Headset_NV";
+	player linkItem "pmc_earpiece";
 
 	_level = player getVariable "ems";
 
@@ -436,7 +436,7 @@ if(myjob == "EMS") exitwith {
 	player linkitem "tf_anprc152";
 	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
-	player linkItem "TRYK_Headset_NV";
+	player linkItem "pmc_earpiece";
 
 	player forceAddUniform "vvv_traje_bombero";
 	player addBackpack "invisible_carryall";
@@ -471,7 +471,7 @@ if(myjob == "EMS") exitwith {
 	player linkitem "tf_anprc152";
 	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
-	player linkItem "TRYK_Headset_NV";
+	player linkItem "pmc_earpiece";
 
 	player forceAddUniform "vvv_hazmat";
 	player addBackpack "invisible_carryall";
@@ -507,7 +507,7 @@ if(myjob == "EMS") exitwith {
 	player linkitem "tf_anprc152";
 	[] call client_fnc_ChangePolice;
 	player linkItem "ItemGPS";
-	player linkItem "TRYK_Headset_NV";
+	player linkItem "pmc_earpiece";
 
 	_emslevel = player getVariable "ems";
 

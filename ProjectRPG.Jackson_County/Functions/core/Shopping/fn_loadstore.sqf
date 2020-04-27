@@ -238,6 +238,16 @@ if(_condition == "clothing") then {
 		["TRYK_U_denim_hood_blk",nil,100,3,1],
 		["TRYK_U_taki_G_BLK",nil,100,3,1],
 		["TRYK_U_taki_G_COY",nil,100,3,1],
+		["U_PMC_CombatUniformLS_ChckDBS_GPSB",nil,100,3,1],
+		["U_PMC_CombatUniformLS_ChckLB_GPSB",nil,100,3,1],
+		["U_PMC_CombatUniformLS_ChckLR_GPSB",nil,100,3,1],
+		["U_PMC_CombatUniformLS_ChckP_GPSB",nil,100,3,1],
+		["U_PMC_CombatUniformRS_ChckDBS_GPSB",nil,100,3,1],
+		["U_PMC_CombatUniformRS_ChckLB_GPSB",nil,100,3,1],
+		["U_PMC_CombatUniformRS_ChckLR_SPBB",nil,100,3,1],
+		["U_PMC_CombatUniformRS_ChckP_BPBB",nil,100,3,1],
+		["U_PMC_Blue_Plaid_Shirt_BeigeCords",nil,100,3,1],
+		["U_PMC_RedPlaidShirt_DenimCords",nil,100,3,1],
 		["EF_suit_1",nil,600,3,1],
 		["EF_suit_2",nil,600,3,1],
 		["EF_suit_3",nil,600,3,1],
@@ -760,7 +770,7 @@ if(_condition == "medickleidung") then {
 			["PRPG_EMS_Belt",nil,10,3,1],
 			["female_ems",nil,10,3,1],
 			["Masque_Chirurgical",nil,10,3,1],
-			["TRYK_Headset_NV",nil,10,3,1]
+			["pmc_earpiece",nil,10,3,1]
 		];
 		_additional = _additional + _ret;
 	};
@@ -873,7 +883,7 @@ if(_condition == "fdkleidung") then {
 			["female_ems",nil,10,3,1],
 			["vvv_traje_bombero",nil,10,3,1],
 			["Mask_M40",nil,10,3,1],
-			["TRYK_Headset_NV",nil,10,3,1]
+			["pmc_earpiece",nil,10,3,1]
 		];
 		_additional = _additional + _ret;
 	};
@@ -954,7 +964,7 @@ if(_condition == "general") then {
 		["np_beefsoup",nil,2,3],
 		["np_lettucesoup",nil,2,3],
 		["np_tuna",nil,2,3],
-		["TRYK_Headset_NV",nil,850,3,1]
+		["pmc_earpiece",nil,850,3,1]
 	];
 	{
 		_storeList pushback _x;

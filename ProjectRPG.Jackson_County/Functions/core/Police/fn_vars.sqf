@@ -9,7 +9,7 @@ _availableHeadgear = [
 	"PRPG_Cap_Sheriff_1",
 	"PRPG_Cap_Sheriff_2",
 	"PRPG_Beanie_Sheriff",
-	//"TRYK_Headset_NV",
+	//"pmc_earpiece",
 	"G_squares_tinted",
 	"G_Spectacles_tinted"
 	
@@ -262,7 +262,7 @@ _availableItems = [
 	"Itemwatch",
 	"prpg_tablet",
 	"ItemGPS",
-	"TRYK_Headset_NV",
+	"pmc_earpiece",
 	"NP_8mPoliceLine",
 	"NP_4mPoliceLine",
 	"NP_1mPoliceLine",

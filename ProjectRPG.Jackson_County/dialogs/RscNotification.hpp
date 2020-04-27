@@ -1,13 +1,8 @@
 /*
-	Author: UpperM
+	Author: PRPG
 
 	Description:
-	Show some infos with slide move.
-	You can edit the script whitout my permission but you are not allow to remove the credit (but you can add "Edit by : Your Name" )
-	You are not allowed to sall my script !
-
-	Contact : uppperm@gmail.com
-	Youtube : upperm.fr/youtube
+	Notifications
 
 	Parameter(s): -
 

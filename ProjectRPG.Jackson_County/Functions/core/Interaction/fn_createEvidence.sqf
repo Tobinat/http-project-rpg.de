@@ -1,5 +1,5 @@
 /*
-    Author: Kajetan "Kruk" Mruk
+    Author: PRPG
     Date: 28.01.2017
 
     Params:

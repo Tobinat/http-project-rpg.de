@@ -1,5 +1,5 @@
 /*
-		Author: Kajetan "Kruk" Mruk
+		Author: PRPG
 		Date: 26.03.2017
 		Params: 
 			0 - Array, data

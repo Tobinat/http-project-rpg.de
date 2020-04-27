@@ -1,6 +1,6 @@
 scriptName "functions_fasterRepair_4";
 /*--------------------------------------------------------------------
-	Author: Katekarin (ofpectag: MAV)
+	Author: PRPG (ofpectag: MAV)
     File: functions_fasterRepair_4.sqf
 
 --------------------------------------------------------------------*/

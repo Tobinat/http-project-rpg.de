@@ -1,6 +1,6 @@
 /*
 	File: fn_copShowLicense.sqf
-	http://www.prpg.de
+	http://www.project-rpg.de
 */
 
 private ["_target", "_message","_rank","_rankSpec","_coplevel","_mediclevel",

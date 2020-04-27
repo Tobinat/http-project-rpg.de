@@ -1,6 +1,6 @@
 scriptName "functions_craftcar_4";
 /*--------------------------------------------------------------------
-	Author: Katekarin (ofpectag: MAV)
+	Author: PRPG (ofpectag: MAV)
     File: functions_craftcar_4.sqf
 
 --------------------------------------------------------------------*/

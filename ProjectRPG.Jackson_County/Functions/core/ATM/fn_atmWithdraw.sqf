@@ -1,5 +1,5 @@
 /*
-Author: Kerkkoh
+Author: PRPG
 First Edit: 30.11.2015
 */
 params["_bankType"];

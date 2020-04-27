@@ -1,5 +1,5 @@
 /*
-	Author: Unknown edit Kajetan "Kruk" Mruk
+	Author: PRPG
 	Date: 22.01.2017 (Non-retard Units)
 	
 	Params:
