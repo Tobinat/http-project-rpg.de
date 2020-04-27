@@ -1026,17 +1026,17 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"""],
+		["myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"" && vehicle player == player"],
 		["Dienst beenden", "[] call client_fnc_jobEnd",4]
 	],
 
 	[
-		[" myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
+		[" myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"" && vehicle player == player"],
 		["Dienst beenden", "[] call client_fnc_jobEnd",4]
 	],
 
 	[
-		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
+		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"" && vehicle player == player"],
 		["Dienst beenden", "[] call client_fnc_jobEnd",4]
 	],
 
@@ -1125,7 +1125,7 @@ NoPixel_InteractionMenuItems = [
 	],
 */
 	[
-		[" myjob == ""none"" && (player getvariable ""cop"") > 0 && typeof cursorobject == ""Land_PoliceStation"""],
+		[" myjob == ""none"" && (player getvariable ""cop"") > 0 && typeof cursorobject == ""Land_PoliceStation"" && vehicle player == player"],
 		["Dienst beginnen", "[player,""Cop""] spawn client_fnc_jobstart;",4]
 	],
 /*
@@ -1135,9 +1135,9 @@ NoPixel_InteractionMenuItems = [
 	],
 */
 	[
-		["myjob == ""none"" && (player getvariable ""ems"") > 0 && (typeof cursorobject == ""Land_buildingshospital1"" || player distance getmarkerpos ""marker_30"" < 15 || player distance getmarkerpos ""marker_31"" < 15 || typeof cursorobject == ""Land_buildingsfiredept1"")"],
+		["myjob == ""none"" && (player getvariable ""ems"") > 0 && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1"") && vehicle Player == player"],
 		["Dienst beginnen", "[player,""EMS""] spawn client_fnc_jobstart;",4]
-	],
+	],f
 
 	[
 		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
