@@ -251,6 +251,7 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
 		player addWeapon "hlc_rifle_M4a1carryhandle";
 		for "_i" from 1 to 4 do {player addItemToBackpack "hlc_30rnd_556x45_EPR"; };
+		player addPrimaryWeaponItem "RH_barska_rds";
 		player addHeadgear "PRPG_Helmet_Sheriff";
 		player addgoggles "Mask_M40";
 		player addItemToUniform "ACE_Flashlight_XL50";
