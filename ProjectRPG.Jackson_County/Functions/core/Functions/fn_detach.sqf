@@ -11,6 +11,6 @@ if(attachedcar) then {
 		_x allowdamage true;
 		_pia = attachedCarArray find _x;
     	attachedCarArray deleteAt _pia;
-		[_x, player] remoteExecCall ["disableCollisionWith", 0, _x];
+		[_x, player] remoteExecCall ["enableCollisionWith", 0, _x];
 	}forEach attachedCarArray;
 };
