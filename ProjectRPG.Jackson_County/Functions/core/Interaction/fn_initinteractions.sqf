@@ -1137,7 +1137,7 @@ NoPixel_InteractionMenuItems = [
 	[
 		["myjob == ""none"" && (player getvariable ""ems"") > 0 && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1"") && vehicle Player == player"],
 		["Dienst beginnen", "[player,""EMS""] spawn client_fnc_jobstart;",4]
-	],f
+	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
