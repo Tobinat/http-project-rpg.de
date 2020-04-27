@@ -40,8 +40,7 @@ uisleep 0.05;
 deletevehicle _vehicle;
 
 
-setTimeMultiplier 12;
-setDate [2016, 6, 25, 6, 0];
+setTimeMultiplier 8;
 0 setovercast 0;
 0 setrain 0;
 0 setRainbow 0;
@@ -52,4 +51,3 @@ setDate [2016, 6, 25, 6, 0];
 0 setWindStr 0;
 0 setGusts 0;
 0 setwinddir 0;
-skiptime 1;

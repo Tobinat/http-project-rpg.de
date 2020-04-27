@@ -93,19 +93,15 @@ _fireLocations = [
 	//Drogenverarbeitung
 	[2563.21,1469.47,0.00144196],
 	//Erzveratbeitung
-	[2563.21,1469.47,0.00144196],
+	[1489.05,1177.72,0.00144958],
 	//Holz verarbeitung
-	[2563.21,1469.47,0.00144196],
-	//Fischverarbeitung
-	[2563.21,1469.47,0.00144196],
-	//Präsidenten Wohnhaus
-	[2563.21,1469.47,0.00144196],
+	[2194.95,1232.59,0.00144196],
 	//Polizei Assistant Chief
 	[9519,3524.5,0.00143814],
 	//Polizei Chief
 	[9628.34,3579.47,0.00143814],
 	//Krankenhaus Helipad
-	[9628.34,3579.47,0.00143814],
+	[9535.71,4081.24,0.00143814],
 	//Silverlake Waffenladen
 	[7515.22,2494.52,0.00143814],
 	//Silverlake Pizzaria
@@ -135,9 +131,9 @@ _fire = _fireLocations call bis_fnc_selectRandom;
 
 _dateHour = date select 3;
 if (6 < _dateHour && _dateHour< 18) then {
-    setTimeMultiplier 12;
+    setTimeMultiplier 8;
 } else {
-    setTimeMultiplier 24;
+    setTimeMultiplier 36;
 };
 
 /*
