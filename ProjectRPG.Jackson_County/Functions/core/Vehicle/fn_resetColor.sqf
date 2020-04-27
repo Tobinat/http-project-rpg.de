@@ -12,6 +12,6 @@ _lights = _information select 6;
 if (str _classname find "vory_" > -1 || str _className find "vv_" > -1 || str _className find "adilac_" > -1) then {
 	[spawnedVehicle, [_color,_finish], _rims, _windows, _lights] call client_fnc_IvoryInitVehicle;
 };
-if (str _classname find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1) then {
+if (str _classname find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1 || str _className find "red_" > -1) then {
 	[spawnedVehicle, [_color,_finish]] remoteexec ["client_fnc_initVehicle",2];
 };

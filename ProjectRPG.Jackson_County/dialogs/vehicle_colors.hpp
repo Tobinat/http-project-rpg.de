@@ -81,6 +81,7 @@ class vehicle_colors {
             colorSelectBackground[] = {0,0,0,1};
             colorSelect[] = {0,1,1,1};
         };
+        /*
         class title_lights: client_RscText
         {
             idc = -1;
@@ -116,6 +117,7 @@ class vehicle_colors {
             colorSelectBackground[] = {0,0,0,1};
             colorSelect[] = {0,1,1,1};
         };
+        */
         class title_finish: client_RscText
         {
             idc = -1;
@@ -138,6 +140,7 @@ class vehicle_colors {
             colorBackground[] = {0,0,0,0.7};
             ColorText[] = {1,1,1,1};
         };
+        /*
         class combo_windows: RscCombo
         {
             idc = 1504;
@@ -151,6 +154,7 @@ class vehicle_colors {
             colorSelectBackground[] = {0,0,0,1};
             colorSelect[] = {0,1,1,1};
         };
+        */
         class button_confirm: RscButton
         {
             idc = 1601;
