@@ -1014,12 +1014,12 @@ if(_condition IN ["bar"]) then {
 		["np_coke",nil,4,3],
 		["np_drpepper",nil,4,3],
 		["np_beer",nil,4,3],
-		["plp_bo_w_BottleTequila",nil,5,3],
-		["plp_bo_w_BottleLiqOrange",nil,10,3],
-		["plp_bo_w_BottleLiqCream",nil,10,3],
-		["plp_bo_w_BottleBitters",nil,12,3],
-		["plp_bo_w_BottleGin",nil,8,3],
-		["plp_bo_w_BottleBlueCorazol",nil,7,3],
+		["prpg_bottle_tequila",nil,5,3],
+		["prpg_bottle_orangeliq",nil,10,3],
+		["prpg_bottle_creamliq",nil,10,3],
+		["prpg_bottle_bitters",nil,12,3],
+		["prpg_bottle_gin",nil,8,3],
+		["prpg_bottle_bluecorazol",nil,7,3],
 		["np_energydrink",nil,4,3]
 	];
 	{

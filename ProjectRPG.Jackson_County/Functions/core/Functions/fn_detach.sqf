@@ -12,8 +12,5 @@ if(attachedcar) then {
 		_vehicle allowdamage true;
 		_pia = attachedCarArray find _vehicle;
     	attachedCarArray deleteAt _pia;
-		{
-			_vehicle enableCollisionWith _x;
-		}foreach allplayers;
 	}forEach attachedCarArray;
 };

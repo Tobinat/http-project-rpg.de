@@ -597,3 +597,56 @@ class prpg_workbench_clothing_kit: ItemCore {
 	model = "\plp_containers\StcCartons\plp_cts_CartonRottenBig.p3d";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 };
+class prpg_bottle_tequila: ItemCore {
+	scope=2;
+	displayName="Tequila";
+	descriptionShort="Eine Flasche Tequila!";
+	mass=2;
+	picture="\plp_beachobjects\Inventory\pic_BottleTequila_ca.paa";
+	model="\plp_beachobjects\Inventory\plp_bo_inv_BottleTequila.p3d";
+};
+
+class prpg_bottle_bitters: ItemCore {
+	scope=2;
+	displayName="Bottle of Bitters";
+	descriptionShort="I never go jogging, it makes me spill my Martini.";
+	picture="\plp_beachobjects\Inventory\pic_BottleBitters_ca.paa";
+	model="\plp_beachobjects\Inventory\plp_bo_inv_BottleBitters.p3d";
+	mass=2;
+};
+
+class prpg_bottle_creamliq: ItemCore {
+	scope=2;
+	displayName="Bottle of Cream Liqueur";
+	descriptionShort="Candy is dandy, but liquor is quicker..";
+	picture="\plp_beachobjects\Inventory\pic_BottleLiqCream_ca.paa";
+	model="\plp_beachobjects\Inventory\plp_bo_inv_BottleLiqCream.p3d";
+	mass=2;
+};
+
+class prpg_bottle_orangeliq: ItemCore {
+	scope=2;
+	displayName="Bottle of Orange Liqueur";
+	picture="\plp_beachobjects\Inventory\pic_BottleLiqOrange_ca.paa";
+	model="\plp_beachobjects\Inventory\plp_bo_inv_BottleLiqOrange.p3d";
+	descriptionShort="I like liquor. Its taste and its effects. And that is just the reason why I never drink it.";
+	mass=2;
+};
+
+class prpg_bottle_gin: ItemCore {
+	scope=2;
+	displayName="Gin";
+	picture="\plp_beachobjects\Inventory\pic_BottleGin_ca.paa";
+	model="\plp_beachobjects\Inventory\plp_bo_inv_BottleGin.p3d";
+	descriptionShort="Eine Flasche Gin.";
+	mass=2;
+};
+
+class prpg_bottle_bluecorazol: ItemCore {
+	scope=2;
+	displayName="Bottle of Blue Corazol";
+	descriptionShort="We ate Blueberries, drank champagne tinted with Blue Corazol and listened to Miles Davis.";
+	picture="\plp_beachobjects\Inventory\pic_BottleBlueCorazol_ca.paa";
+	model="\plp_beachobjects\Inventory\plp_bo_inv_BottleBlueCorazol.p3d";
+	mass=2;
+};
