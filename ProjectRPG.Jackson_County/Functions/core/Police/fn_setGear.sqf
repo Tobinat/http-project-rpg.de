@@ -245,13 +245,14 @@ if(myjob == "Cop") exitwith {
 		player forceAddUniform "TRYK_U_B_BLK_TShirt";
 		player addVest "PRPG_Sheriff_W_2_Y";
 		player addBackpack "invisible_carryall";
-		player additemtobackpack "DDOPP_X26";
-		player addweapon "RH_M9";
-		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
-		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
 		player addWeapon "hlc_rifle_M4a1carryhandle";
 		for "_i" from 1 to 4 do {player addItemToBackpack "hlc_30rnd_556x45_EPR"; };
+		player addweapon "RH_M9";
+		player additemtobackpack "DDOPP_X26";
+		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
+		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
 		player addPrimaryWeaponItem "RH_barska_rds";
+		player addPrimaryWeaponItem "hlc_30rnd_556x45_EPR";
 		player addHeadgear "PRPG_Helmet_Sheriff";
 		player addgoggles "Mask_M40";
 		player addItemToUniform "ACE_Flashlight_XL50";
