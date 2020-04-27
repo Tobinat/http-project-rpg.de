@@ -26,7 +26,9 @@ clearMagazineCargoGlobal _vehicle;
 clearWeaponCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;
 
-[_vehicle, player] remoteExecCall ["disableCollisionWith", 0, _vehicle];
+{
+	_vehicle disableCollisionWith _x;
+}foreach allplayers;
 
 _vehicle setvariable ["tracker1",objNull,true];
 _vehicle setvariable ["tracker2",objNull,true];

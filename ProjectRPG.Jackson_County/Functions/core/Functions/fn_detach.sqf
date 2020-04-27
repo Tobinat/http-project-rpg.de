@@ -8,9 +8,12 @@ _chairs = ["big_chair_civ","sofagris_civ","sillamedico2_civ","sillademedico_civ"
 if(attachedcar) then {
 	attachedcar = false;
 	{
-		_x allowdamage true;
-		_pia = attachedCarArray find _x;
+		_vehicle = _x;
+		_vehicle allowdamage true;
+		_pia = attachedCarArray find _vehicle;
     	attachedCarArray deleteAt _pia;
-		[_x, player] remoteExecCall ["enableCollisionWith", 0, _x];
+		{
+			_vehicle enableCollisionWith _x;
+		}foreach allplayers;
 	}forEach attachedCarArray;
 };
