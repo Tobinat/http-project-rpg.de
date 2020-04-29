@@ -37,7 +37,7 @@ if(_condition == "rarefish") then {
 			["platinum_fishing_rod",nil,50,1],
 			["epic_fishing_rod",nil,80,1],
 			["legendary_fishing_rod",nil,100,1],
-			["prpg_workbench_normal_kit",nil,5,1],
+			["prpg_workbench_normal_kit",nil,2,1],
 			//clothes
 			["U_B_Wetsuit",nil,10,3,1],
 			["cg_horsehead",nil,20,3,5],

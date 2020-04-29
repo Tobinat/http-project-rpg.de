@@ -14,6 +14,8 @@ _mainMenus = ["Waffen"];
 
 _materials = ["NP_Wood","prpg_item_kupfer_bar","prpg_item_eisen_bar","prpg_item_aluminium_bar"];
 
+
+/*
 if (mav_ttm_var_weaponcrafting == 0) then {
 	_WaffenClasses = [
 	];
@@ -87,6 +89,24 @@ if (mav_ttm_var_weaponcrafting == 5) then {
 	"hlc_rifle_SAMR"
 	];
 };
+*/
+
+_WaffenClasses = [
+	"RH_python",
+	"RH_gsh18",
+	"RH_p226",
+	"RH_fn57_t",
+	"RH_tec9",
+	"hlc_smg_mp5k",
+	"hlc_smg_mp5a2",
+	"RH_bull",
+	"hlc_rifleACR_SBR_cliffhanger",
+	"hlc_rifle_honeybadger",
+	"RH_Deagles",
+	"hlc_rifle_bcmblackjack",
+	"hlc_rifle_bcmjack",
+	"hlc_rifle_SAMR"
+	];
 
 _PricesWaffenClasses = [
 	//RH_python

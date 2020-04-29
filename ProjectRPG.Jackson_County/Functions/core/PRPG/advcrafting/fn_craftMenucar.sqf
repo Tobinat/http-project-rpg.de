@@ -54,6 +54,7 @@ _PricesMaterialClasses = [
 	//prpg_item_windschutzscheibe
 	[0,0,2,0,0,0,0,0,4]
 ];
+/*
 if(mav_ttm_var_autocrafting == 0) then {
 	_carClasses = [];
 };
@@ -177,6 +178,43 @@ if (mav_ttm_var_autocrafting == 5) then {
 		//"A3F_Corvette_Stingray_14_Black"
 	];
 };
+*/
+_carClasses = [
+		"vvv_Audi_RS6_Avant_C6",
+		//"Ford_F350_XLT_SuperDuty_Black",
+		//"Ford_Raptor_17_Black",
+		//"A3F_BMW_M5_F10_12_Back",
+		"vvv_Audi_Q7",
+		//"CadillacEldorado1959_Black",
+		//"A3F_X5_11_Black",
+		//"BMW_X6_Black",
+		"ivory_wrx",
+		"ivory_evox",
+		"ivory_supra",
+		"VVV_Aston_Martin_1964_DB5",
+		"ivory_r8",
+		"ivory_r8_spyder",
+		//"A3F_911_GT2_Black",
+		//"Porsche_Cayenne_12_Black",
+		//"A3F_Benz_G65_AMG_Black",
+		//"Nissan_370Z_Black",
+		//"A3F_Nissan_GTR_12_Black",
+		//"Mercedes_Benz_SL65_Black",
+		"red_vanquish_13_black",
+		"vvv_Aston_Martin_DB9",
+		"red_venomgt_11_black",
+		//"Rolls_Roxce_Dawn_Black",
+		//"Chevrolet_Camaro_ZL1_13_Black",
+		"ivory_lp560",
+		"ivory_mp4",
+		"ivory_f1",
+		"ivory_rev",
+		"ivory_ccx",
+		//"ivory_veryon",
+		//"Aston_Martin_Vanquish_13_Black",
+		"vvv_Aston_Martin_Rapide"	//KOMMA!!!!!!!
+		//"A3F_Corvette_Stingray_14_Black"
+	];
 
 _PricesCarClasses = [
 	//motor,smotor,karosse,reifen,auspuss,airbag,batterie,stoffsi,ledersi,tür,schutzscheibe,glas,eisenstange
