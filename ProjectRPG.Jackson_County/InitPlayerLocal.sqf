@@ -34,8 +34,10 @@ player setVariable["loaded", nil, false];
 
 
 waitUntil {!(isNull (findDisplay 46))};
-/* waitUntil {!(isNull (findDisplay 49))};
-((findDisplay 49) displayCtrl 1010) ctrlEnable false; */
+
+//Disable Respawn Button
+/*waitUntil {!(isNull (findDisplay 49))};
+((findDisplay 49) displayCtrl 1010) ctrlEnable false;*/
 
 _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 [_vehicle, ["black","matte"], "black", 1, 1] call client_fnc_IvoryInitVehicle;
@@ -43,6 +45,7 @@ _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 
 uisleep 0.05;
 deletevehicle _vehicle;
+
 // if(myhealth > 0.99) exitwith {
 	// ["Du wurdest aufgrund von Combat Logging getötet.", true] spawn domsg;
 	// [player,objNull,3,format ["%1 wurde wegen CombatLogging getötet", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];

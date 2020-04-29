@@ -55,7 +55,7 @@ for "_i" from 0 to 1 step 0 do {
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
 					_ticket = 2500;
-					["Remove","license",1] call client_fnc_sustain;
+					//["Remove","license",1] call client_fnc_sustain;
 				};
 				if(_vel > 129) then {
 					"colorCorrections" ppEffectEnable true;
@@ -77,7 +77,7 @@ for "_i" from 0 to 1 step 0 do {
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
 					_ticket = 5000;
-					["Remove","license",1] call client_fnc_sustain;
+					//["Remove","license",1] call client_fnc_sustain;
 				};
 				uiSleep 4;
 			};
@@ -124,7 +124,7 @@ for "_i" from 0 to 1 step 0 do {
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
 					_ticket = 2000;
-					["Remove","license",1] call client_fnc_sustain
+					//["Remove","license",1] call client_fnc_sustain
 				};
 				if(_vel > 255) then {
 					"colorCorrections" ppEffectEnable true;
@@ -146,7 +146,7 @@ for "_i" from 0 to 1 step 0 do {
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
 					_ticket = 2500;
-					["Remove","license",1] call client_fnc_sustain;
+					//["Remove","license",1] call client_fnc_sustain;
 				};
 				uiSleep 4;
 			};
