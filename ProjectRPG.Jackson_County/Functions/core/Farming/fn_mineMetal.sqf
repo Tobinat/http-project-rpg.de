@@ -39,8 +39,9 @@ if (str _rock find "stone_small_w" > -1 && player distance [2260.54,9707.35,0.00
 };
 */
 
-if (str _rock find "rock" > -1 || str _rock find "stone" > -1 ) exitwith {
+if (str _rock find "rock" > -1 || str _rock find "stone" > -1) exitwith {
 	//if(_rock IN mymetal) exitwith { ["Es gibt kein Rohmaterial mehr in diesem Stein", true] spawn domsg;  };
+	if (player distance [3945.32,2708.63,0.00210762] > 225) exitWith { hint "In den Steinen hier findest du keine Metalle, fahre in den Steinbruch!"; };
 	_sound = round(random 5);
 	switch(_sound) do {
 		case 0: {
@@ -72,8 +73,12 @@ if (str _rock find "rock" > -1 || str _rock find "stone" > -1 ) exitwith {
 		if(_findchance == 19 || _findchance == 20 || _findchance == 21) then { _myOre = "prpg_item_kupfer_ore"; };
 		if(_findchance == 22 || _findchance == 23) then { _myOre = "prpg_item_eisen_ore"; };
 		if(_findchance == 24) then { _myOre = "prpg_item_silber_ore"; };
-		player additem _myOre;
-		["Du hast etwas Erz gefunden", true] spawn domsg;
-		["OreGathered"] spawn mav_ttm_fnc_addExp;
+		if (player canAdd _myOre) then {
+			player additem _myOre;
+			["Du hast etwas Erz gefunden", true] spawn domsg;
+			["OreGathered"] spawn mav_ttm_fnc_addExp;
+		} else {
+			["Dein inventar ist zu voll!", true] spawn domsg;
+		};
 	};
 };

@@ -3,7 +3,7 @@ Pack Logs trees by koil
 */
 
 	if( vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) exitwith { hint "Dein LKW ist zu weit weg."; }; 
-	if(totalLogs == 23) exitwith { hint "Du kannst nicht mehr Laden."; };
+	if(totalLogs == 23) exitwith { hint "Dein LKW ist Voll hör auf!"; };
 	mylog = createVehicle ["vvv_tronco", position player, [], 0, "NONE"];
 
 	totalLogs = totalLogs + 1;

@@ -8,7 +8,7 @@ switch (_code) do
 {
 
 
-
+	//Leertaste
 	case 57:
 	{
 		if(!ClientInterrupted) then {
@@ -28,12 +28,12 @@ switch (_code) do
 	};
 	
 	//Bild Hoch   Schranke öffnen 
-	
 	case 201:	
 	{
 		if (!_shift && !_alt && !_ctrlKey && (myJob == "EMS" || myJob == "Cop")) then {[] call client_fnc_copOpener;};
 	};
-	
+
+	//Bild Runter
 	case 209:	
 	{
 		if (!_shift && !_alt && !_ctrlKey && (myJob == "EMS" || myJob == "Cop")) then {
@@ -42,13 +42,15 @@ switch (_code) do
 			} forEach attachedObjects player;
 		};
 	};
-	
+
+	//R Key
 	case 19:
 	{
 		if(_shift && (driver (vehicle player) isEqualTo player) && (vehicle player) != player) then {
 		[] spawn client_fnc_itemNOS;
 		};
 	};
+
 	//U Key
 	case 22:
 	{
@@ -95,9 +97,6 @@ switch (_code) do
 			};
 		};
 	};
-
-
-
 
 	// Q Key
 	case 16:
@@ -268,10 +267,6 @@ switch (_code) do
 	    };
 	}; */
 
-
-
-
-
 	// 5 Key
 	case 6:
 	{
@@ -302,8 +297,8 @@ switch (_code) do
 	// 6 Key
 	case 7:
 	{
+		/*
 		if (_shift) then { _handle = true; };
-
 		if (_shift) then
 		{
 			if (isNull objectParent player && !busyPlayer && (animationState player) != "Incapacitated" ) then
@@ -318,7 +313,7 @@ switch (_code) do
 				};
 			};
 		};
-
+		*/
 		if(_ctrlKey) then {
 			if (isNull objectParent player && !busyPlayer && !imRestrained) then
 			{

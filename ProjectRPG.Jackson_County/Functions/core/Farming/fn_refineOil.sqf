@@ -1,7 +1,7 @@
 private["_n","_i","_localprotection"];
 _oreArray = ["CG_OilBarrel"];
 _barArray = ["CG_OilCanister"];
-_farmingVehicles = ["Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2","prpg_kamaz_6550"];
+_farmingVehicles = ["VVV_Chevrolet_Cone0","VVV_Chevrolet_Cone0_1","VVV_Chevrolet_Cone0_2","Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2","prpg_kamaz_6550"];
 
 
 playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 31, 1, 15];

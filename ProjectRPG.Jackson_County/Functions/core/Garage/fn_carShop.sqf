@@ -6,7 +6,7 @@ _textures = ["airforceblue", "aliceblue", "alizarincrimson", "almond", "amaranth
 
 _finishes = [["Glossy",0], ["Metallic",500], ["Matte",2500], ["Chrome",5000]];
 
-_farmingVehicles = ["Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2"];
+_farmingVehicles = ["VVV_Chevrolet_Cone0","VVV_Chevrolet_Cone0_1","VVV_Chevrolet_Cone0_2","Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2"];
 _doughnuts = player getVariable ["doughnutsLevel", 0];
 //remember to use this array in the mafia selling script & ALSO THE CAR UPDATE SCRIPT.
 _civilianVehicle = [
@@ -14,9 +14,9 @@ _civilianVehicle = [
 	["Jonzie_Mini_Cooper",3300],
 	["Jonzie_Ceed",6400],
 	["ivory_190e",5600],
-	["vvv_Chevrolet_Cone0",7000],
+	["vvv_Chevrolet_Cone0",7000], //can farm
 	["jonzie_30CSL",8200],
-	["vvv_Abarth_695",10000],
+	["vvv_Abarth_695",10000], 
 	["ivory_gti",20000],
 	["red_cvpi_06_black",17000],
 	["Jonzie_Transit",12400], //can farm
@@ -256,25 +256,28 @@ if(_whatdo == "CAR" || isNil "spawnedvehicle") then {
 	};
 
 	player allowdamage false;
-	_dir = 180;
 
 	if(_SELECTEDVEHICLE iskindof "car") then {
-		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [8729.93,6875.65,0.9];
-		spawnedvehicle setpos [8729.93,6875.65,0.9];
+		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [0,0,0];
+		spawnedvehicle allowDamage false;
+		spawnedvehicle setpos [1996.36,8832.23,0.00143909];
+		_dir = 87;
 		spawnedvehicle setdir _dir;
 	};
 
 	if(_SELECTEDVEHICLE iskindof "ship") then {
-		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [696.876,416.723,3.13335];
+		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [0,0,0];
+		spawnedvehicle allowDamage false;
 		spawnedvehicle setpos [696.876,419.723,3.13335];
 		_dir = 180;
 		spawnedvehicle setdir _dir;
 	};
 
 	if(_SELECTEDVEHICLE iskindof "air") then {
-		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [2879.1,892.441,0.01];
-		spawnedvehicle setpos [2879.1,892.441,0.01];
-		_dir = 180;
+		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [0,0,0];
+		spawnedvehicle allowDamage false;
+		spawnedvehicle setpos [1998.43,8779.96,0.00143909];
+		_dir = 87;
 		spawnedvehicle setdir _dir;
 	};
 

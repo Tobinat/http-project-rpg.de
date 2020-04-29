@@ -1,10 +1,10 @@
 private["_n","_i","_localprotection"];
 _oreArray = ["prpg_item_garn"];
 _barArray = ["prpg_item_stoff"];
-_farmingVehicles = ["Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2"];
+_farmingVehicles = ["VVV_Chevrolet_Cone0","VVV_Chevrolet_Cone0_1","VVV_Chevrolet_Cone0_2","Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2"];
 
 
-playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 31, 1, 15];
+playSound3D ["PRPG_Data\sounds\blindfold.ogg", player, false, getPosasl player, 31, 1, 15];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] call domsg; };
