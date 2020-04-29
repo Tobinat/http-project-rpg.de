@@ -21,7 +21,7 @@ if(!taskrunning) then {
 		while{taskrunning && myjob == "security"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
-				hint "Sie haben derzeit keine Aufgabe, patrouilliere die Stadt und sichere Geschäfte!";
+				hint "Sie haben derzeit keine Aufgabe, patrouilliere die Stadt und sichere Geschäfte und den Hafen!";
 				uisleep 60;
 			} else {
 
