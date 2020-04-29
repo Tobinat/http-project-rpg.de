@@ -34,7 +34,7 @@ _PricesMaterialClasses = [
 	//prpg_item_motor
 	[20,0,10,8,0,0,0,0,0],
 	//prpg_item_sportmotor
-	[50,0,20,12,0,0,0,0,0],
+	[30,0,15,12,0,0,0,0,0],
 	//prpg_item_karosserie
 	[5,15,0,0,0,0,0,0,0],
 	//prpg_item_reifen

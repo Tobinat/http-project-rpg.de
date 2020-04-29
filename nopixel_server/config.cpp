@@ -14,6 +14,7 @@ class CfgFunctions {
             class setupVariablesServer {};
             class resetConnected {};
             class cleanup {};
+			class time {};
             class resetRespawn {};
         };
         class Save {
