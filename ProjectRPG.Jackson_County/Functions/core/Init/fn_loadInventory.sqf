@@ -161,7 +161,7 @@ if(count(_prisonArray) > 0) then {
 		player setpos _containerpos;
 	};
 	if(_houselevel == 3) then {
-		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];
+		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F"], 30];
 		_containerpos = (_nobject select 0) getrelpos [8,0];
 		player setpos _containerpos;
 	};

@@ -21,7 +21,7 @@ if(!taskrunning) then {
 		while{taskrunning && myjob == "security"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
-				hint "Sie haben derzeit keine Aufgabe, patrouilliere die Stadt und sichere Geschäfte und den Hafen!";
+				hint "Sie haben derzeit keine Aufgabe, patroulliere die Stadt und sichere Geschäfte und den Hafen1!";
 				uisleep 60;
 			} else {
 
@@ -32,7 +32,7 @@ if(!taskrunning) then {
 					uisleep 3;
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
-					hint "Ein Laden wurde ausgeraubt!: Job Typ - Security";	
+					hint "Verdächtige aktivitäten!: Job Typ - Security";	
 					[((playertasks select 0) select 0),"security"] call client_fnc_jobMarker;			
 					uisleep 3;
 				};

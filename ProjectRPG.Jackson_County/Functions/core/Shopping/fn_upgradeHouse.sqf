@@ -1,8 +1,8 @@
 _houseLevel = player getvariable "houselevel";
 
-_cashCheck = [2,50000] call Client_fnc_sl_checkMoney_secure;
+_cashCheck = [2,20000] call Client_fnc_sl_checkMoney_secure;
 
-if!(_cashCheck) exitwith { hint "Du brauchst 50.000$"; };
+if!(_cashCheck) exitwith { ["Du brauchst 30.000$", false] call domsg; };
 
 if(_houselevel == 1) then { ["Erfolreich","Du hast dein Haus auf Stufe 2 aufgerüstet, die Änderung wird nach Server neustart wirksam.",[0,255,0,1],""] call Client_fnc_showNotification; player setvariable ["houselevel",2,false]; [2,getplayeruid player] remoteExec ["server_fnc_synchouselevel",2]; [player,objNull,2,format ["%1 rüstete das Haus auf die zweite Stufe nach 50000$", name player],"50000", "", "2"] remoteExec ["server_fnc_economyLog", 2]; };
 if(_houselevel == 2) then { ["Erfolreich","Du hast dein Haus auf Stufe 3 aufgerüstet, die Änderung wird nach Server neustart wirksam.",[0,255,0,1],""] call Client_fnc_showNotification; player setvariable ["houselevel",3,false]; [3,getplayeruid player] remoteExec ["server_fnc_synchouselevel",2]; [player,objNull,2,format ["%1 rüstete das Haus auf die dritte Stufe nach 50000$", name player],"50000", "", "3"] remoteExec ["server_fnc_economyLog", 2];};
@@ -14,7 +14,7 @@ if(_houselevel == 7) then { ["Erfolreich","Du hast dein Haus auf Stufe 8 aufger�
 if(_houselevel == 8) then { ["Erfolreich","Du hast dein Haus auf Stufe 9 aufgerüstet, die Änderung wird nach Server neustart wirksam.",[0,255,0,1],""] call Client_fnc_showNotification; player setvariable ["houselevel",9,false]; [9,getplayeruid player] remoteExec ["server_fnc_synchouselevel",2]; [player,objNull,2,format ["%1 rüstete das Haus auf die neunte Stufe nach 50000$", name player],"50000", "", "9"] remoteExec ["server_fnc_economyLog", 2];};
 if(_houselevel == 9) then { ["Information","Du hast dein Haus auf Max. Stufe",[255,69,0,1],""] call Client_fnc_showNotification; };
 
-[50000] call Client_fnc_sl_removeBank_secure;
+[20000] call Client_fnc_sl_removeBank_secure;
 ["HouseLvlUp"] spawn mav_ttm_fnc_addExp;
 
 _chance = round (random 100);

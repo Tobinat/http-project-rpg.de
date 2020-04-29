@@ -551,7 +551,7 @@ NoPixel_InteractionMenuItems = [
 		["player distance myshop < 3"],
 		["Ladeninventar", "[""shop""] spawn client_fnc_retreiveCargo;",3]
 	],
-
+//Cop Aservatenkammer
 	/*[
 		["myjob == ""Cop""", "client_dtu_actions > 0", "typeof CurrentCursorTarget == ""Land_PoliceStation"""],
 		["Skonfiskowane rzeczy", "[""dtu""] spawn client_fnc_retreiveCargo;",3]
@@ -841,7 +841,7 @@ NoPixel_InteractionMenuItems = [
 */
 	[
 		["((player distance (getMarkerPos ""houseUpgrades"")) < 20)"],
-		["Haus verbessern (50k)", "[] spawn client_fnc_UpgradeHouse",3]
+		["Haus verbessern (20k)", "[] spawn client_fnc_UpgradeHouse",3]
 	],
 
 	[
