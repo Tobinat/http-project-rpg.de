@@ -359,10 +359,11 @@ switch (_code) do
 	//G Key
 	case 34:
 	{
-		if(_shift && !_ctrlKey && !_alt && myjob == "Cop") then {
+		if(_shift && !_ctrlKey && !_alt && myjob == "Cop" && (getPlayerUID player) in ["76561198124199916","76561198061326977"] && vehicle player != player ) then {
 			[] spawn ivory_fnc_policeComputer;
 		};
-		if(!_shift && !_ctrlKey && !_al && myjob == "Cop") then {
+
+		if(!_shift && !_ctrlKey && !_alt && myjob == "Cop" && (getPlayerUID player) in ["76561198124199916","76561198061326977"] && vehicle player != player ) then {
 			[cursorObject] spawn ivory_fnc_vehicleData;
 		};
 	};
