@@ -134,16 +134,12 @@ if (_vehicle isKindOf "Car") then {
 		if (str _className find "vory_" > -1) then {
 			[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 			//[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
-			_licenseivory = toUpper(_numberPlate);
-			_vehicle setPlateNumber _licenseivory;
 			_vehicle setVariable ["kennzeichen",_numberplate,true];
 		};
 
 		if (str _className find "red_" > -1) then {
 			[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
 			//[_vehicle, _numberPlate, "red"] remoteexec ["client_fnc_numberPlate",2];
-			_licensered = toUpper(_numberPlate);
-			_vehicle setPlateNumber _licensered;
 			_vehicle setVariable ["kennzeichen",_numberplate,true];
 		};
 
@@ -179,6 +175,8 @@ if (_vehicle isKindOf "Car") then {
 	_vehicle setFuel _fuel;
 	_vehicle setDamage _damage;
 	["ACE_Wheel", _vehicle, 1] call ace_cargo_fnc_removeCargoItem;
+	_license = toUpper(_numberPlate);
+	_vehicle setPlateNumber _license;
 };
 
 [_vehicle] call client_fnc_spawnvehicle;
