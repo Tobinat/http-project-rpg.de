@@ -260,7 +260,7 @@ if(_whatdo == "CAR" || isNil "spawnedvehicle") then {
 	if(_SELECTEDVEHICLE iskindof "car") then {
 		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [0,0,0];
 		spawnedvehicle allowDamage false;
-		spawnedvehicle setpos [1996.36,8832.23,0.00143909];
+		spawnedvehicle setpos [1996.36,8832.23,0.2];
 		_dir = 87;
 		spawnedvehicle setdir _dir;
 	};
@@ -276,7 +276,7 @@ if(_whatdo == "CAR" || isNil "spawnedvehicle") then {
 	if(_SELECTEDVEHICLE iskindof "air") then {
 		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [0,0,0];
 		spawnedvehicle allowDamage false;
-		spawnedvehicle setpos [1998.43,8779.96,0.00143909];
+		spawnedvehicle setpos [1998.43,8779.96,0.1];
 		_dir = 87;
 		spawnedvehicle setdir _dir;
 	};
