@@ -356,6 +356,16 @@ switch (_code) do
 			player execVM "AdminTool\AdminToolMenu.sqf";
 		};
 	};
+	//G Key
+	case 34:
+	{
+		if(_shift && !_ctrlKey && !_alt && myjob == "Cop") then {
+			[] spawn ivory_fnc_policeComputer;
+		};
+		if(!_shift && !_ctrlKey && !_al && myjob == "Cop") then {
+			[cursorObject] spawn ivory_fnc_vehicleData;
+		};
+	};
 };
 
 _handle;
