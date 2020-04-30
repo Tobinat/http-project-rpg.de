@@ -10,17 +10,25 @@ _licenseNumericArray 	= ["0","1","2","3","4","5","6","7","8","9"];
 
 _licenseSelections = [];
 
-if(_vehType == "ivory") then {
-	_licenseSelections = [4,6,8,10,12,14,16];
+if(_vehType == "ivory") exitWith {
+	_licenseivory = toUpper(_license);
+	_car setPlateNumber _licenseivory;
+	_puid = getPlayerUID player;
+	_car setVariable ["carOwnerId",]
 };
 
 if(_vehType == "jonzie") then {
 	_licenseSelections = [1,2,3,4,5,6,7];
+	_car setPlateNumber _license;
+	_puid = getPlayerUID player;
+	_car setVariable ["carOwnerId",]
 };
 
 if(_vehType == "red") exitWith {
 	_licensered = toUpper(_license);
 	_car setPlateNumber _licensered;
+	_puid = getPlayerUID player;
+	_car setVariable ["carOwnerId",]
 };
 
 

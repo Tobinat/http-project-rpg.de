@@ -74,15 +74,15 @@ if (_jobType == "repairman") exitwith {
 };
 
 if (_jobType == "security") exitwith {
-	_veharr = ["np_rs4_security","np_isf_security"];
+	_veharr = ["ivory_rs4_security","ivory_isf_security"];
 	_veh = _veharr call BIS_fnc_selectRandom;
 	vehspawned = createVehicle [_veh, [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[_vehicle, ["black","metallic"], "black", 10, 10] call client_fnc_IvoryInitVehicle;
 	//[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
-	vehspawned addItemCargo ["vvv_character_agente_473",1];
-	hint "Da liegen sachen im Auto, benutze sie.";
+	//vehspawned addItemCargo ["vvv_character_agente_473",1];
+	hint "Mit T kanns du die Lightbar nutzen.";
 };
 
 if (_jobType == "towtruck") exitwith {

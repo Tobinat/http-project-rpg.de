@@ -79,7 +79,7 @@ if((_this select 0) == 1) exitwith {
 		[_vehicle, ["darkjunglegreen","metallic"], "black", 10, 10] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "red_" > -1) then {
-
+		[_vehicle, "", "red"] remoteexec ["client_fnc_numberPlate",2];
 		if (str _className find "_p_u_bla" > -1 || str _className find "_p_f_cus" > -1 ) then {
 			_colorarray = ["black","blue","red","green","orange","purple","white","wildstrawberry","darkred","dimgray","sunglow","brandeisblue","darkjunglegreen"];
 			_color = _colorarray call BIS_fnc_selectRandom;
@@ -139,9 +139,7 @@ if (_vehicle isKindOf "Car") then {
 
 		if (str _className find "red_" > -1) then {
 			[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
-			//[_vehicle, _numberPlate, "red"] remoteexec ["client_fnc_numberPlate",2];
-			_numberplatered = toUpper(_numberplate);
-			_vehicle setPlateNumber _numberplatered;
+			[_vehicle, _numberPlate, "red"] remoteexec ["client_fnc_numberPlate",2];
 			_vehicle setVariable ["kennzeichen",_numberplate,true];
 		};
 
