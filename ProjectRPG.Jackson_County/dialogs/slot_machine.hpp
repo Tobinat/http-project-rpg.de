@@ -45,7 +45,7 @@ class SlotMachineGUI
 			idc = 5774;
 			text = "Winnings: $"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
-			y = 21 * GUI_GRID_H + GUI_GRID_Y;
+			y = 18.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};
@@ -136,7 +136,7 @@ class SlotMachineGUI
 			idc = 5775;
 			test = "";
 			x = 18.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 18 * GUI_GRID_H + GUI_GRID_Y;
+			y = 18.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};

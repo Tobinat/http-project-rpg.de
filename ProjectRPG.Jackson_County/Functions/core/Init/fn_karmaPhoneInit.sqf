@@ -57,4 +57,4 @@ if(karma_level > 80) then {
 	karma_level = 80;
 };
 
-[format["Dein Karma Level beträgt: %1",karma_level], true] spawn domsg;
+[format["Dein Karma Level beträgt: %1 (%2 Karma)",karma_level,client_karma], true] spawn domsg;

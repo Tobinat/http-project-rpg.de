@@ -104,6 +104,7 @@ switch (_slot) do
 _slotcash = _winnings * ( _betamt / 1000 );
 
 [_slotcash] call Client_fnc_sl_addCash_secure;
+[format["Du hast %1 $ Gewonnen!",_slotcash], true] spawn domsg;
 _winningsText ctrlSetStructuredText parseText format["<t size='2.6px' color='#0099ff'>%1$</t>",_slotcash];
 
 _bet1 ctrlEnable true;
