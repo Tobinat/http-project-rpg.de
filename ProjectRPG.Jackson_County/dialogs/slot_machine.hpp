@@ -106,8 +106,8 @@ class SlotMachineGUI
 		class SLOT_1: client_RscPicture
 		{
 			idc = 5771;
-			text = "#(argb,8,8,3)color(1,1,1,1)";
-			x = 8 * GUI_GRID_W + GUI_GRID_X;
+			text = "PRPG_Data\textures\scripts\SlotMachine\slot_empty.paa";
+			x = 7 * GUI_GRID_W + GUI_GRID_X;
 			y = 6 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8 * GUI_GRID_W;
 			h = 9 * GUI_GRID_H;
@@ -115,8 +115,8 @@ class SlotMachineGUI
 		class SLOT_2: client_RscPicture
 		{
 			idc = 5772;
-			text = "#(argb,8,8,3)color(1,1,1,1)";
-			x = 14 * GUI_GRID_W + GUI_GRID_X;
+			text = "PRPG_Data\textures\scripts\SlotMachine\slot_empty.paa";
+			x = 15 * GUI_GRID_W + GUI_GRID_X;
 			y = 6 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8 * GUI_GRID_W;
 			h = 9 * GUI_GRID_H;
@@ -124,7 +124,7 @@ class SlotMachineGUI
 		class SLOT_3: client_RscPicture
 		{
 			idc = 5773;
-			text = "#(argb,8,8,3)color(1,1,1,1)";
+			text = "PRPG_Data\textures\scripts\SlotMachine\slot_empty.paa";
 			x = 22 * GUI_GRID_W + GUI_GRID_X;
 			y = 6 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8 * GUI_GRID_W;
@@ -147,8 +147,8 @@ class SlotMachineGUI
 			text = "EXIT"; //--- ToDo: Localize;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "closeDialog 0;";
-			x = 35.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
+			x = 30 * GUI_GRID_W + GUI_GRID_X;
+			y = 5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3.5 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
