@@ -36,7 +36,7 @@ class SlotMachineGUI
 			text = "Winnings: $"; //--- ToDo: Localize;
 			x = 13 * GUI_GRID_W + GUI_GRID_X;
 			y = 21 * GUI_GRID_H + GUI_GRID_Y;
-			w = 5 * GUI_GRID_W;
+			w = 8 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};
 		
@@ -147,7 +147,7 @@ class SlotMachineGUI
 			idc = 5778;
 			text = "25"; //--- ToDo: Localize;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[25] spawn client_fnc_slotSpin;";
+			onButtonClick = "[25] spawn client_fnc_spinSLot;";
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4 * GUI_GRID_W;
@@ -158,7 +158,7 @@ class SlotMachineGUI
 			idc = 5779;
 			text = "1000"; //--- ToDo: Localize;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[1000] spawn client_fnc_slotSpin;";
+			onButtonClick = "[1000] spawn client_fnc_spinSLot;";
 			x = 31 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4 * GUI_GRID_W;
@@ -169,7 +169,7 @@ class SlotMachineGUI
 			idc = 5781;
 			text = "450"; //--- ToDo: Localize;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[450] spawn client_fnc_slotSpin;";
+			onButtonClick = "[450] spawn client_fnc_spinSLot;";
 			x = 22 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4 * GUI_GRID_W;
@@ -180,7 +180,7 @@ class SlotMachineGUI
 			idc = 5782;
 			text = "100"; //--- ToDo: Localize;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[100] spawn client_fnc_slotSpin;";
+			onButtonClick = "[100] spawn client_fnc_spinSLot;";
 			x = 14 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4 * GUI_GRID_W;
