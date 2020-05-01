@@ -113,12 +113,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(licensearray select 2) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Bergbau Zertifikat $700", "_cashcheck = [1,700] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",3] call client_fnc_sustain; [700] call Client_fnc_sl_removeCash_secure; ",1]
+		["Bergbauschein $700", "_cashcheck = [1,700] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",3] call client_fnc_sustain; [700] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 
 	[
 		["(licensearray select 3) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Forstwirtschaftsschein $700", "_cashcheck = [1,700] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",4] call client_fnc_sustain; [700] call Client_fnc_sl_removeCash_secure;",1]
+		["Försterschein $700", "_cashcheck = [1,700] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",4] call client_fnc_sustain; [700] call Client_fnc_sl_removeCash_secure;",1]
 	],
 
 	[
@@ -546,6 +546,11 @@ NoPixel_InteractionMenuItems = [
 		["Inhaftieren", " createdialog ""jailprocess"";",2]
 	],
 
+	[
+		["getpos player distance [6804.4,4635.98,0.00143957] < 20"],
+		["Slotautomat", "createdialog ""SlotMachineGUI"";",2]
+	],
+
 //shops and offices garages etc
 	[
 		["player distance myshop < 3"],
@@ -656,11 +661,6 @@ NoPixel_InteractionMenuItems = [
 	[
 		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_Coffee_DED_Coffee_01_F""]"],
 		["Kleidungsladen", "closedialog 0; createdialog ""Clothing_Menu""; [""clothing""] spawn client_fnc_LoadStore;",3]
-	],
-
-	[
-		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_Coffee_DED_Coffee_01_F""]"],
-		["Kopfbedeckungen", "closedialog 0; createdialog ""Clothing_Menu""; [""masks""] spawn client_fnc_LoadStore;",3]
 	],
 
 	[

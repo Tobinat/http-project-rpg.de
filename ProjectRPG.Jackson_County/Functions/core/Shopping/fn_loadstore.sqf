@@ -555,8 +555,8 @@ if(_condition == "backpack") then {
 		["TAC_BP_KAR_L",nil,75,4,2],
 		["TAC_BP_KAR_R",nil,75,4,2],
 		
-		["c_kitbag_cbr",nil,100,4,2],
-		["c_kitbag_rgr",nil,100,4,2],
+		//["c_kitbag_cbr",nil,100,4,2],
+		//["c_kitbag_rgr",nil,100,4,2],
 
 		["B_carryall_cbr",nil,110,4,2],
 		["B_carryall_khk",nil,110,4,2],
@@ -950,7 +950,7 @@ if(_condition == "general") then {
 		["CG_wheel",nil,150,3],
 		["ACE_fieldDressing",nil,5,3],
 		["ACE_CableTie",nil,5,3],
-		["CG_Pro_Item_i",nil,350,1],
+		//["CG_Pro_Item_i",nil,350,1],
 		["kif_nitro",nil,2000,3],
 		["ItemMap",nil,1,3],
 		["ItemCompass",nil,10,3],
