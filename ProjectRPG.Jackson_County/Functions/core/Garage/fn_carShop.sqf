@@ -177,8 +177,8 @@ if((typeOF cursorTarget) find "Hangar_F" > -1) then {
 	_type = "PLANE";
 	_civilianVehicle = [
 		["gnt_c185",120000],
-		["Ivory_t6a_1",160000],
-		["C_Plane_Civil_01_F", 200000]
+		//["Ivory_t6a_1",160000],
+		["C_Plane_Civil_01_F", 160000]
 	];
 };
 
