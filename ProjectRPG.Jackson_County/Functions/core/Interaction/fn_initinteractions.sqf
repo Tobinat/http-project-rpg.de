@@ -795,7 +795,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob != ""Cop""", "myjob != ""EMS""", "myjob != ""Fire""", "myjob != ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1 || str CurrentCursorTarget find ""embarcadero"" > -1"],
+		["myjob != ""Cop""", "myjob != ""EMS""", "myjob != ""Fire""", "myjob != ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 10 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom"",""Land_rmair_ParkingBooth""] || (typeOF cursorTarget) find ""Hangar_F"" > -1 || str CurrentCursorTarget find ""embarcadero"" > -1"],
 		["Garage", "[CurrentCursorTarget] call Client_fnc_openGarage",3]
 	],
 
