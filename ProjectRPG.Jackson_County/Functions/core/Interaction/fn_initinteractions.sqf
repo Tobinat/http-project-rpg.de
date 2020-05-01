@@ -290,7 +290,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"""],
-		["Geschlechtsverwandlung", " if(female) then {female = false; hint ""You are now male""; } else {female = true; hint ""You are now female""; }; [""NA"",""sex"",0] call client_fnc_sustain;",1]
+		["Geschlechtsumwandlung", " if(female) then {female = false; hint ""You are now male""; } else {female = true; hint ""You are now female""; }; [""NA"",""sex"",0] call client_fnc_sustain;",1]
 	],
 
 	// [
@@ -311,7 +311,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["currentcursortarget in current_cars || myjob IN [""Cop"",""Fire"",""EMS""] "],
+		["currentcursortarget in current_cars || myjob IN [""Cop"",""Fire"",""EMS""] && vehicle player == player && cursorobject iskindof ""car"" "],
 		["Aus Fahrzeug ziehen", " ['Spieler herausziehen',10,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; ",2]
 	],
 
@@ -322,7 +322,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(myjob == ""Cop"" || myjob == ""EMS"") && currentcursortarget isKindOf ""Car"""],
-		["Verschwinden lassen($20)", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2];  paycheck = paycheck + 20; hint ""Das Auto wurde von Aliens eingesammelt, der Lohn wird gutgeschrieben."";",2]
+		["Verschwinden lassen", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2]; hint ""Das Auto wurde von Aliens eingesammelt."";",2]
 	],
 
 	[
@@ -341,7 +341,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(vehicle player) == player && CurrentCursorTarget in Current_Cars"],
+		["(vehicle player) == player && CurrentCursorTarget in Current_Cars && cursorObject iskindof ""Car"" "],
 		["Schlüssel Benutzen", "[CurrentCursorTarget] call Client_fnc_useKey",2]
 	],
 

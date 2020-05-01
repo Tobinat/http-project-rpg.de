@@ -367,6 +367,17 @@ switch (_code) do
 			[cursorObject] spawn ivory_fnc_vehicleData;
 		};
 	};
+	//X Key
+	case 45:
+	{
+		if(vehicle player != player) then{
+			if(client_seatbelt) then {
+				client_seatbelt = false;
+			} else {
+				client_seatbelt = true;
+			};
+		};
+	};
 };
 
 _handle;
