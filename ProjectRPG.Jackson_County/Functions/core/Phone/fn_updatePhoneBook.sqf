@@ -285,9 +285,9 @@ disableSerialization;
 
 _allJobs = [
 
-	["Silver Lake Police Department",_currentPoliceDispatch],
-	["Silver Lake Medical Department",_currentMedicDispatch],
-	["Sicherheitsdienst",_currentSecurity],
+	["Sherrifs Department",_currentPoliceDispatch],
+	["Fire Department",_currentMedicDispatch],
+	["Security",_currentSecurity],
 	["Mechaniker",_currentRepairmen],
 	["Richter",_currentJudges],
 	["Saatanwalt",_currentProsecutor],
