@@ -44,3 +44,6 @@
 
 //admin dialogs
 #include "adminDialogs.hpp"
+
+//Slot Machine
+#include "slot_machine.hpp"
