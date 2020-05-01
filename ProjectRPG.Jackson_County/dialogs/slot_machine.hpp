@@ -54,8 +54,8 @@ class SlotMachineGUI
 		{
 			idc = 5783;
 			text = "BET"; //--- ToDo: Localize;
-			x = 6 * GUI_GRID_W + GUI_GRID_X;
-			y = 14 * GUI_GRID_H + GUI_GRID_Y;
+			x = 10 * GUI_GRID_W + GUI_GRID_X;
+			y = 16 * GUI_GRID_H + GUI_GRID_Y;
 			w = 2 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
@@ -64,7 +64,7 @@ class SlotMachineGUI
 			idc = 5784;
 			text = "BET"; //--- ToDo: Localize;
 			x = 15 * GUI_GRID_W + GUI_GRID_X;
-			y = 14 * GUI_GRID_H + GUI_GRID_Y;
+			y = 16 * GUI_GRID_H + GUI_GRID_Y;
 			w = 2 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
@@ -73,7 +73,7 @@ class SlotMachineGUI
 			idc = 5786;
 			text = "BET"; //--- ToDo: Localize;
 			x = 23 * GUI_GRID_W + GUI_GRID_X;
-			y = 14 * GUI_GRID_H + GUI_GRID_Y;
+			y = 16 * GUI_GRID_H + GUI_GRID_Y;
 			w = 2 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
@@ -81,8 +81,8 @@ class SlotMachineGUI
 		{
 			idc = 5787;
 			text = "BET"; //--- ToDo: Localize;
-			x = 32 * GUI_GRID_W + GUI_GRID_X;
-			y = 14 * GUI_GRID_H + GUI_GRID_Y;
+			x = 28 * GUI_GRID_W + GUI_GRID_X;
+			y = 16 * GUI_GRID_H + GUI_GRID_Y;
 			w = 2 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};		
@@ -107,8 +107,8 @@ class SlotMachineGUI
 		{
 			idc = 5771;
 			text = "#(argb,8,8,3)color(1,1,1,1)";
-			x = 4 * GUI_GRID_W + GUI_GRID_X;
-			y = 4 * GUI_GRID_H + GUI_GRID_Y;
+			x = 8 * GUI_GRID_W + GUI_GRID_X;
+			y = 6 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8 * GUI_GRID_W;
 			h = 9 * GUI_GRID_H;
 		};
@@ -116,8 +116,8 @@ class SlotMachineGUI
 		{
 			idc = 5772;
 			text = "#(argb,8,8,3)color(1,1,1,1)";
-			x = 16 * GUI_GRID_W + GUI_GRID_X;
-			y = 4 * GUI_GRID_H + GUI_GRID_Y;
+			x = 14 * GUI_GRID_W + GUI_GRID_X;
+			y = 6 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8 * GUI_GRID_W;
 			h = 9 * GUI_GRID_H;
 		};
@@ -125,8 +125,8 @@ class SlotMachineGUI
 		{
 			idc = 5773;
 			text = "#(argb,8,8,3)color(1,1,1,1)";
-			x = 28 * GUI_GRID_W + GUI_GRID_X;
-			y = 4 * GUI_GRID_H + GUI_GRID_Y;
+			x = 22 * GUI_GRID_W + GUI_GRID_X;
+			y = 6 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8 * GUI_GRID_W;
 			h = 9 * GUI_GRID_H;
 		};
@@ -136,7 +136,7 @@ class SlotMachineGUI
 			idc = 5775;
 			test = "";
 			x = 18.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 21 * GUI_GRID_H + GUI_GRID_Y;
+			y = 18 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};
@@ -158,8 +158,8 @@ class SlotMachineGUI
 			text = "25"; //--- ToDo: Localize;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[25] spawn client_fnc_spinSLot;";
-			x = 5 * GUI_GRID_W + GUI_GRID_X;
-			y = 15 * GUI_GRID_H + GUI_GRID_Y;
+			x = 9 * GUI_GRID_W + GUI_GRID_X;
+			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};
@@ -169,8 +169,8 @@ class SlotMachineGUI
 			text = "1000"; //--- ToDo: Localize;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[1000] spawn client_fnc_spinSLot;";
-			x = 31 * GUI_GRID_W + GUI_GRID_X;
-			y = 15 * GUI_GRID_H + GUI_GRID_Y;
+			x = 27 * GUI_GRID_W + GUI_GRID_X;
+			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};
@@ -181,7 +181,7 @@ class SlotMachineGUI
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[450] spawn client_fnc_spinSLot;";
 			x = 22 * GUI_GRID_W + GUI_GRID_X;
-			y = 15 * GUI_GRID_H + GUI_GRID_Y;
+			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};
@@ -192,7 +192,7 @@ class SlotMachineGUI
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[100] spawn client_fnc_spinSLot;";
 			x = 14 * GUI_GRID_W + GUI_GRID_X;
-			y = 15 * GUI_GRID_H + GUI_GRID_Y;
+			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};
