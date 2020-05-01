@@ -1,6 +1,6 @@
 disableSerialization;
 
-if (typeof currentcursortarget != "Land_Market_DED_Market_03_F") exitwith { ["Sie müssen das im Verifon Shop machen!", false] spawn domsg;  };
+if (typeof currentcursortarget != "Land_Market_DED_Market_03_F") exitwith { ["Sie müssen das im Verizon Shop machen!", false] spawn domsg;  };
 _selectedBG = lbData[912,lbCurSel (912)];
 _selectedBG = call compile format["%1", _selectedBG];
 
@@ -14,7 +14,7 @@ trackedby = [];
 
 phoneSkin = _selectedBG;
 
-if(isNil "phoneSkin") exitwith { hint "Schreibfehler"; };
+if(isNil "phoneSkin") exitwith {};
 
 _bg = [phoneBackground,phoneskin];
 

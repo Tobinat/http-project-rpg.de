@@ -69,7 +69,7 @@ sleep 5;
 // Öl in LKW & XP an spieler
 _chance = random (200);
 if (_chance > 2) then {
-	_pumpe addItemCargo ["CG_OilBarrel", 6];
+	_pumpe addItemCargoGlobal ["CG_OilBarrel", 6];
 	["OreGathered"] spawn mav_ttm_fnc_addExp;
 	["Du hast Öl gesammelt, schau in den LKW!",false] call domsg;
 	} else {
