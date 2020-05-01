@@ -9,15 +9,13 @@ _availableHeadgear = [
 	"PRPG_Cap_Sheriff_1",
 	"PRPG_Cap_Sheriff_2",
 	"PRPG_Beanie_Sheriff",
-	//"pmc_earpiece",
-	"G_squares_tinted",
-	"G_Spectacles_tinted"
+	//"pmc_earpiece"
 	
 ];
     if (player getvariable ["cop", 0] > 4) then {
     _availableHeadgearTwo = [
 		"PRPG_Helmet_Sheriff",
-		"TRYK_H_TACEARMUFF_H",
+		//"TYRK_H_TACEARMUFF_H",
 		"TYRK_R_CAP_BLK",
 		"TYRK_R_CAP_TAN",
 		"TYRK_R_CAP_OD_US",
@@ -35,7 +33,9 @@ _availableHeadgear = [
  
 _availableGoggles = [
 	"G_aviator",
-	"G_Squares"
+	"G_Squares",
+	"G_squares_tinted",
+	"G_Spectacles_tinted"
 ];
 
  
