@@ -19,7 +19,7 @@ class SlotMachineGUI
 	
 	class controlsBackground
 	{
-	
+		/*
 		class RscFrame_1800: client_RscText
 		{
 			idc = 5770;
@@ -29,7 +29,17 @@ class SlotMachineGUI
 			w = 40 * GUI_GRID_W;
 			h = 25 * GUI_GRID_H;
 		};
-		
+		*/
+		class spin_bg : RscPicture
+		{
+			idc = 5770;
+			text = "PRPG_Data\textures\scripts\SlotMachine\background.paa";
+			style = 2096;
+			x = 0 * GUI_GRID_W + GUI_GRID_X;
+			y = 0 * GUI_GRID_H + GUI_GRID_Y;
+			w = 40 * GUI_GRID_W;
+			h = 25 * GUI_GRID_H;
+		}
 		class RscText_1000: client_RscText
 		{
 			idc = 5774;
@@ -75,8 +85,8 @@ class SlotMachineGUI
 			y = 14 * GUI_GRID_H + GUI_GRID_Y;
 			w = 2 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-		};
-		
+		};		
+		/*
 		class RscText_1002: client_RscText
 		{
 			idc = 5776;
@@ -87,7 +97,7 @@ class SlotMachineGUI
 			h = 3.5 * GUI_GRID_H;
 			sizeEx = 4 * GUI_GRID_H;
 		};
-		
+		*/
 	};
 	
 	class controls
