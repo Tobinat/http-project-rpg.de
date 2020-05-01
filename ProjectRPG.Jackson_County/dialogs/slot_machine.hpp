@@ -107,7 +107,7 @@ class SlotMachineGUI
 		{
 			idc = 5771;
 			text = "PRPG_Data\textures\scripts\SlotMachine\slot_empty.paa";
-			x = 7 * GUI_GRID_W + GUI_GRID_X;
+			x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 6 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8 * GUI_GRID_W;
 			h = 9 * GUI_GRID_H;
@@ -147,8 +147,8 @@ class SlotMachineGUI
 			text = "EXIT"; //--- ToDo: Localize;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "closeDialog 0;";
-			x = 30 * GUI_GRID_W + GUI_GRID_X;
-			y = 5 * GUI_GRID_H + GUI_GRID_Y;
+			x = 28.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 4.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3.5 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
