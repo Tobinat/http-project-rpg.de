@@ -64,7 +64,12 @@ cutText ["", "BLACK"];
 
 player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened;}];
 player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
-["ace_arsenal_displayOpened", {[] call client_fnc_arsenalopened}] call CBA_fnc_addEventHandler;
+["ace_arsenal_displayOpened", {
+	if !( myjob in ["ems","cop"] ) then {
+		_this select 0 closedisplay 1;
+		["Du hast hier keinen Zugriff!",true] spawn domsg;
+	};
+}] call CBA_fnc_addEventHandler;
 //player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
 [ missionNamespace, "arsenalOpened", {
     disableSerialization;
