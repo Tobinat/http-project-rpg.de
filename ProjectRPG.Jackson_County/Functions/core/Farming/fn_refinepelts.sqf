@@ -8,10 +8,10 @@ playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player
 
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] call domsg; };
+if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] spawn domsg; };
 _localProtection = 0;
 
-["Du Verarbeitest Pelze, bleibe kurz stehen!",false] call domsg;
+["Du Verarbeitest Pelze, bleibe kurz stehen!",false] spawn domsg;
 
 _n = 0;
 {

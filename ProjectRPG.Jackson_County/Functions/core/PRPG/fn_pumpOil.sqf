@@ -17,7 +17,7 @@ if !("CG_OilBarrel" in MagazineCargo cursorTarget) then {
 _pumpe = cursorTarget;
 _fuel = fuel _pumpe;
 if (_fuel < 0.4) exitWith {
-["Du hast nicht genug Benzin im LKW!",false] call domsg;
+["Du hast nicht genug Benzin im LKW!",false] spawn domsg;
 };
 
 [_pumpe,0] remoteExec ["client_fnc_setFuel",_pumpe];
@@ -26,7 +26,7 @@ if (_fuel < 0.4) exitWith {
 _pumpe animate ["bort_r", 1];
 _pumpe animate ["bort_l", 1];
 
-["Dein LKW Bohrt nun nach Öl, das dauert ein wenig!",false] call domsg;
+["Dein LKW Bohrt nun nach Öl, das dauert ein wenig!",false] spawn domsg;
 
 sleep 1;
 
@@ -71,9 +71,9 @@ _chance = random (200);
 if (_chance > 2) then {
 	_pumpe addItemCargoGlobal ["CG_OilBarrel", 6];
 	["OreGathered"] spawn mav_ttm_fnc_addExp;
-	["Du hast Öl gesammelt, schau in den LKW!",false] call domsg;
+	["Du hast Öl gesammelt, schau in den LKW!",false] spawn domsg;
 	} else {
-	["Du hast kein Ölvorkommen gefunden!",false] call domsg;
+	["Du hast kein Ölvorkommen gefunden!",false] spawn domsg;
 };
 
 sleep 2;

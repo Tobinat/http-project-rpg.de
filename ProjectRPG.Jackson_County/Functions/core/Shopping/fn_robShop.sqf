@@ -1,9 +1,9 @@
 _shop = currentCursorTarget;
 _time = time;
 //if(!(typeOf _shop in shopNameList)) exitWith {};
-if (count currencops < 3) then { ["Es sind nicht genug Polizisten im Dienst.",false] call domsg; }; 
+if (count currencops < 3) then { ["Es sind nicht genug Polizisten im Dienst.",false] spawn domsg; }; 
 _lastRobbed = _shop getVariable ["lastRobbed",0];
-if(_time - _lastRobbed < 1) exitWith { ["Dieser Laden wurde kürzlich ausgeraubt", false] call domsg; };
+if(_time - _lastRobbed < 1) exitWith { ["Dieser Laden wurde kürzlich ausgeraubt", false] spawn domsg; };
 disableSerialization;
 
 _pos = getPos _shop;
@@ -44,7 +44,7 @@ if(_error == "") then {
 	_amount = round(random(2500)) + 1500;
 	[_amount] call Client_fnc_sl_addCash_secure;
 
-	[format["Du hast den Laden erfolgreich Überfallen", _amount], false] call domsg;
+	[format["Du hast den Laden erfolgreich Überfallen", _amount], false] spawn domsg;
 	["Remove","Karma",50] call client_fnc_sustain;
 	[player,objNull,19,format ["%1 hat den Laden Überfallen. %2 wurden gestohlen.", name player, _amount],_amount] remoteExec ["server_fnc_actionLog", 2];
 	_shop setVariable ["lastRobbed", time, true];

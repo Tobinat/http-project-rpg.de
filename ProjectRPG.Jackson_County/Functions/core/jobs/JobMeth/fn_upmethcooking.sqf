@@ -21,7 +21,7 @@ if(requiredOutput == _required) then {
 	playSound3D ["CG_Jobs\sounds\meth\drugPressure.ogg", player, false, getPosasl player, 5, 1, 15];
 	if(_randomValue < 3) exitwith { 
 		"R_60mm_HE" createvehicle (getPosatl player);
-		["Das hast du versaut!", false] call domsg;
+		["Das hast du versaut!", false] spawn domsg;
 		cookingMeth = false;
 		[(getpos player)] remoteExec ["server_fnc_firestart",2];
 		player removeaction myAction1;

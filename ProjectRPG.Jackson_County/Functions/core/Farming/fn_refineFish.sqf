@@ -9,7 +9,7 @@ _oreArray = ["Fish_Tuna_1","Fish_Tuna_2","Fish_Tuna_3","Fish_Tuna_4","Fish_Tuna_
 _barArray = ["np_fishmeat"];
 _farmingVehicles = ["POP_Speed_yatch","vvv_NewYacht"];
 
-["Du Filetierst Fisch, bleibe kurz stehen!",false] call domsg;
+["Du Filetierst Fisch, bleibe kurz stehen!",false] spawn domsg;
 
 _n = 0;
 {

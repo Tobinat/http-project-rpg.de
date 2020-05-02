@@ -7,10 +7,10 @@ _farmingVehicles = ["VVV_Chevrolet_Cone0","VVV_Chevrolet_Cone0_1","VVV_Chevrolet
 playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 31, 1, 15];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] call domsg; };
+if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] spawn domsg; };
 _localProtection = 0;
 
-["Du Verarbeitest Öl, bleibe kurz stehen!",false] call domsg;
+["Du Verarbeitest Öl, bleibe kurz stehen!",false] spawn domsg;
 
 _n = 0;
 {

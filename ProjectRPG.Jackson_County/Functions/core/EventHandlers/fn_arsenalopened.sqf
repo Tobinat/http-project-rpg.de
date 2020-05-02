@@ -7,6 +7,7 @@
 	Return: nothing
 */
 if !(myjob IN ["cop","ems","fire"]) then {
-	closedialog 0;
-	["Du hast keinen zugriff auf dieses Arsenal!",true] call domsg;
+	["Du hast keinen zugriff auf dieses Arsenal!",true] spawn domsg;
+	_display = ctrlParent "IDC_menuBarClose";
+	_display closeDisplay 0;
 };

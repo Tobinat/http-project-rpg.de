@@ -8,10 +8,10 @@ _barArray = ["prpg_item_kupfer_bar", "prpg_item_eisen_bar", "prpg_item_silber_ba
 _farmingVehicles = ["VVV_Chevrolet_Cone0","VVV_Chevrolet_Cone0_1","VVV_Chevrolet_Cone0_2","Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2"];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] call domsg; };
+if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] spawn domsg; };
 _localProtection = 0;
 
-["Du Verarbeitest Material, bleibe kurz stehen!",false] call domsg;
+["Du Verarbeitest Material, bleibe kurz stehen!",false] spawn domsg;
 
 _n = 0;
 {

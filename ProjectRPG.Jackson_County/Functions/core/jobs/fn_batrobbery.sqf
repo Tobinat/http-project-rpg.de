@@ -2,8 +2,8 @@ params["_shop"];
 
 if(isNil "robbedStores") then { robbedstores = []; };
 
-if (count currentcop < 3) exitwith { ["Hier gibts nichts zu holen!",false] call domsg; };
-if (_shop IN robbedstores) exitwith { ["Hier gibts nichts zu holen!",false] call domsg; };
+if (count currentcop < 3) exitwith { ["Hier gibts nichts zu holen!",false] spawn domsg; };
+if (_shop IN robbedstores) exitwith { ["Hier gibts nichts zu holen!",false] spawn domsg; };
 
 _chance = random(100);
 

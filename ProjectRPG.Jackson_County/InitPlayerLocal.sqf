@@ -64,7 +64,7 @@ cutText ["", "BLACK"];
 
 player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened;}];
 player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
-player addEventHandler["ace_arsenal_displayOpened", {_this call client_fnc_arsenalopened;}];
+["ace_arsenal_displayOpened", {[] call client_fnc_arsenalopened}] call CBA_fnc_addEventHandler;
 //player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
 [ missionNamespace, "arsenalOpened", {
     disableSerialization;
