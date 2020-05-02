@@ -28,6 +28,12 @@ if(myJob == "Cop") then {
 			"red_challenger_15_p_u_black"
 		];
 		_garage = _garage + _ret;
+		if ((typeOF cursorTarget) find "Air_Garage_Off" > -1 ) then {
+			_retheli = [
+			"MELB_MH6M"
+			];
+			_ret = _ret + _retheli;
+		};
 	};
 	if(_cop > 4) then {
 		_ret = [
