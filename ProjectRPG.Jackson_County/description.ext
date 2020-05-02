@@ -528,7 +528,6 @@ class CfgFunctions
 			class inventoryClosed {};
 			class removeitem {};
 			class fuckyoucgandprorpandothershitmods {};
-            class arsenalopened {};
 		};
 
 		class Misc
