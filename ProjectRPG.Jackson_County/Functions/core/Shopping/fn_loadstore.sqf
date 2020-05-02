@@ -593,10 +593,11 @@ if(_condition == "mcdonalds") then {
 if(_condition == "cops") then {
 	_bulle = [
 		["np_water",nil,1,1],
-		["np_water",nil,1,1],
+		["np_beefsoup",nil,1,1],
 		["NP_PoliceBarrierL",nil,1,1],
 		["NP_PoliceBarrierS",nil,1,1],
-		["CG_wheel",nil,1,1]
+		["CG_wheel",nil,1,1],
+		["np_energydrink",nil,1,1] 
 	];
 	{
 		_storeList pushback _x;
@@ -806,7 +807,8 @@ if(_condition == "medic") then {
 		["np_beefsoup",nil,1,1],
 		["NP_PoliceBarrierL",nil,1,1],
 		["NP_PoliceBarrierS",nil,1,1],
-		["CG_wheel",nil,1,1]
+		["CG_wheel",nil,1,1],
+		["np_energydrink",nil,1,1] 
 	];
 	{
 		_storeList pushback _x;
