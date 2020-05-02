@@ -11,6 +11,6 @@ if("CG_ATF_Bandage_i" in magazines player || myJob IN ["EMS","Fire"]) then {
 
 	if(myJob IN ["EMS","Fire"]) exitwith {};
 
-	 ["CG_ATF_Bandage_i",0] spawn client_fnc_removeitem;
+	["CG_ATF_Bandage_i",0] spawn client_fnc_removeitem;
 
 } else { hint "Du hast keinen verband!"; };
