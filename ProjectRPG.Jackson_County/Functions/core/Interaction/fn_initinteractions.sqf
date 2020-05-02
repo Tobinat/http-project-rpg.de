@@ -1081,11 +1081,12 @@ NoPixel_InteractionMenuItems = [
 		["Austattung Sondereinsatzeinheit", "[""riot""] spawn client_fnc_setGear",4]
 	],
 */
+/*
 	[
 		[" myjob == ""cop"" && typeof cursorobject == ""plp_cts_PlasticBoxBlack"" "], 
 		["Ausrüstung", "[cursortarget] spawn client_fnc_vars"]
 	],
- 
+*/ 
 	/*
 	//Geldtransporte
 	[

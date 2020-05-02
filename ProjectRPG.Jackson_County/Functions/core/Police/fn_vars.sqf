@@ -172,7 +172,7 @@ _availableMagazine = [
 	//kimber night warrior
 	"rh_7rnd_45cal_m1911",
 	//M4A1
-	"hlc_3rnd_556x45_EPR",
+	"hlc_30rnd_556x45_EPR",
 	//MP5
 	"hlc_30rnd_9x19_b_MP5",
 	//MK14
