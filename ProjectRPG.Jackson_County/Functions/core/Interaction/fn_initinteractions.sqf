@@ -669,12 +669,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	//Test
-/*
 	[
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
 		["Cop Ausrüstung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""cops""] spawn client_fnc_LoadStore;",3]
 	],
-
+/*
 	[
 		["myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
 		["Cop Waffenladen", "closedialog 0; createdialog ""Cops_GUN_Menu""; [""copwaffen""] spawn client_fnc_LoadStore;",3]
@@ -694,7 +693,7 @@ NoPixel_InteractionMenuItems = [
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
 		["EMS Ausrüstung", "closedialog 0; createdialog ""GeneralStore_Menu""; [""medic""] spawn client_fnc_LoadStore;",3]
 	],
-
+/*
 	[
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingshospital1"""],
 		["EMS Kleiderkammer", "closedialog 0; createdialog ""Med_Clothing_Menu""; [""medickleidung""] spawn client_fnc_LoadStore;",3]
@@ -709,7 +708,7 @@ NoPixel_InteractionMenuItems = [
 		["(myjob == ""EMS"" || myJob == ""Fire"") && typeof cursorobject == ""Land_buildingsfiredept1"""],
 		["FD Kleiderkammer", "closedialog 0; createdialog ""Med_Clothing_Menu""; [""fdkleidung""] spawn client_fnc_LoadStore;"]
 	],
-
+*/
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"""],
 		["Bäckerrei", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn client_fnc_LoadStore;",3]

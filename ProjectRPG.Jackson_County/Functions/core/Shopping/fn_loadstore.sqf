@@ -596,40 +596,8 @@ if(_condition == "cops") then {
 		["np_water",nil,1,1],
 		["NP_PoliceBarrierL",nil,1,1],
 		["NP_PoliceBarrierS",nil,1,1],
-		["CG_wheel",nil,1,1],
-		["ACE_CableTie",nil,1,1],
-		["ACE_Flashlight_XL50",nil,1,1],
-		["ACE_EarPlugs",nil,1,1],
-		["ACE_fieldDressing",nil,1,1],
-		["RH_M6X",nil,1,1]
+		["CG_wheel",nil,1,1]
 	];
-	if(_cop > 1) then {
-		_ret = [
-			["RH_barska_rds",nil,1,1],
-			["acc_flashlight",nil,1,1],
-			["RH_SFM952V",nil,1,1]
-		];
-		_bulle = _bulle + _ret;
-	};
-	if(_cop > 2) then {
-		_ret = [
-			["RH_ta31rmr",nil,1,1],
-			["RH_compM2",nil,1,1]
-		];
-		_bulle = _bulle + _ret;
-	};
-	if(_cop > 6) then {
-		_ret = [
-			["optic_DMS",nil,1,1]
-		];
-		_bulle = _bulle + _ret;
-	};
-	if(_cop > 7) then {
-		_ret = [
-			["optic_LRPS",nil,1,1]
-		];
-		_bulle = _bulle + _ret;
-	};
 	{
 		_storeList pushback _x;
 	} foreach _bulle;
@@ -838,39 +806,8 @@ if(_condition == "medic") then {
 		["np_beefsoup",nil,1,1],
 		["NP_PoliceBarrierL",nil,1,1],
 		["NP_PoliceBarrierS",nil,1,1],
-		["CG_wheel",nil,1,1],
-		["ACE_Flashlight_XL50",nil,1,1],
-		["ACE_EarPlugs",nil,1,1],
-		["ACE_bodyBag",nil,1,1],
-		["ACE_tourniquet",nil,1,1],
-		["ACE_packingBandage",nil,1,1],
-		["ACE_elasticBandage",nil,1,1],
-		["ACE_quikclot",nil,1,1],
-		["ACE_salineIV_500",nil,1,1],
-		["ACE_salineIV",nil,1,1],
-		["ACE_surgicalKit",nil,1,1],
-		["ACE_morphine",nil,1,1],
-		["ACE_epinephrine",nil,1,1],
-		["ACE_atropine",nil,1,1],
-		["ACE_Splint",nil,1,1]
+		["CG_wheel",nil,1,1]
 	];
-	if(_EMS > 1) then {
-		_ret = [
-		];
-		_medic = _medic + _ret;
-	};
-	if(_EMS > 4) then {
-		_ret = [
-			["FSGm_ItemMedicBag",nil,1,1]
-		];
-		_medic = _medic + _ret;
-	};
-	if(_EMS > 5) then {
-		_ret = [
-			["ACE_personalAidKit",nil,1,1]
-		];
-		_medic = _medic + _ret;
-	};
 	{
 		_storeList pushback _x;
 	} foreach _medic;
