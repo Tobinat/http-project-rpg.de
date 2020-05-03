@@ -1,4 +1,3 @@
-//init_player_test = 0;
 if(!hasInterface) exitWith {}; //This is a headless client, he doesn't need to do anything but keep being headless..
 Np_ProfileVars = profilenamespace getvariable "Nopix_Profile";
 if(isnil "Np_ProfileVars") then {
@@ -83,8 +82,11 @@ player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed
 	_display displayAddEventHandler ["KeyDown", "if ((_this select 1) in [19,29,24]) then {true}"];
 } ] call BIS_fnc_addScriptedEventHandler;
 
+player setVariable ["tfcheck",true,true];
+
 [Client_fnc_HudEffects, 3] execFSM "call.fsm";
 [Client_fnc_Survival, 300] execFSM "call.fsm";
+[Client_fnc_checktaskforce, 5] execFSM "call.fsm";
 
 if(uniform player == "" && female) then {
 	player forceadduniform "vvv_character_protibanador";
@@ -114,5 +116,3 @@ sleep 2;
 [] call client_fnc_checktaskforce;
 ["Windowstaste oder Use Action 10 öffnet das Interaktionsmenü.", true] spawn domsg;
 driver_test = false;
-
-[] spawn client_fnc_checkRadio;
