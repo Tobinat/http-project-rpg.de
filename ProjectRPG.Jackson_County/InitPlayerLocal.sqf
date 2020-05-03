@@ -94,7 +94,6 @@ client_seatwarn = false;
 client_seatbelt = false;
 [] spawn client_fnc_seatbelts;
 [] spawn client_fnc_gunholster;
-[] spawn client_fnc_checkRadio;
 //[] spawn client_fnc_forceFirstPerson;
 [] spawn client_fnc_speedMeters;
 //_respawn = player getVariable "respawn";
@@ -115,3 +114,5 @@ sleep 2;
 [] call client_fnc_checktaskforce;
 ["Windowstaste oder Use Action 10 öffnet das Interaktionsmenü.", true] spawn domsg;
 driver_test = false;
+
+[] call client_fnc_checkRadio;
