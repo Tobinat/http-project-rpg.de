@@ -27,7 +27,8 @@ Dvid_TFEnabled = true;
 Dvid_onTsServer = "PRPG" == (call TFAR_fnc_getTeamSpeakServerName);
 Dvid_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
 titleText ["Task Force Radio loaded succesfully","BLACK IN"];
-
+_playeruid = player getPlayerUID;
+if (_playeruid in in ["76561198124199916","76561198061326977"] ) then { _isadmin = true;} else { _isadmin = false; };
 [] spawn {
 	while {true} do {
 		_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
