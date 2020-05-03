@@ -27,7 +27,7 @@ Dvid_TFEnabled = true;
 Dvid_onTsServer = "PRPG" == (call TFAR_fnc_getTeamSpeakServerName);
 Dvid_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
 titleText ["Task Force Radio loaded succesfully","BLACK IN"];
-_playeruid = player getPlayerUID;
+_playeruid = getPlayerUID player;
 if (_playeruid in in ["76561198124199916","76561198061326977"] ) then { _isadmin = true;} else { _isadmin = false; };
 [] spawn {
 	while {true} do {
@@ -42,7 +42,7 @@ if (_playeruid in in ["76561198124199916","76561198061326977"] ) then { _isadmin
 			};
 		};
 
-		_onTsServer = "PRPG " == (call TFAR_fnc_getTeamSpeakServerName);
+		_onTsServer = "PRPG" == (call TFAR_fnc_getTeamSpeakServerName);
 		if (!(_onTsServer)) then {
 			if (!(_isadmin)) then {
 				titleText ["Komm auf den TS3 Server! IP: ts.project-rpg.de", "BLACK"];
