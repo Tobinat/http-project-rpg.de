@@ -24,7 +24,7 @@ if (!(_TFenabled)) then {
 };
 
 Dvid_TFEnabled = true;
-Dvid_onTsServer = "PRPG" == (call TFAR_fnc_getTeamSpeakServerName); ///////////////////////Edit This line (the channel at the top of your TS (where you right click and "Edit Virtual Server"), yes, get the name of that goes here)
+Dvid_onTsServer = "PRPG" == (call TFAR_fnc_getTeamSpeakServerName);
 Dvid_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
 titleText ["Task Force Radio loaded succesfully","BLACK IN"];
 
@@ -41,7 +41,7 @@ titleText ["Task Force Radio loaded succesfully","BLACK IN"];
 			};
 		};
 
-		_onTsServer = "PRPG " == (call TFAR_fnc_getTeamSpeakServerName); //////////////////////Edit too pls, or dont but it wont work if you dont
+		_onTsServer = "PRPG " == (call TFAR_fnc_getTeamSpeakServerName);
 		if (!(_onTsServer)) then {
 			if (!(_isadmin)) then {
 				titleText ["Komm auf den TS3 Server! IP: ts.project-rpg.de", "BLACK"];
