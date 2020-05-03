@@ -86,7 +86,9 @@ player setVariable ["tfcheck",true,true];
 
 [Client_fnc_HudEffects, 3] execFSM "call.fsm";
 [Client_fnc_Survival, 300] execFSM "call.fsm";
-[Client_fnc_checktaskforce, 5] execFSM "call.fsm";
+
+// Task Force Arrowhead Radio //
+//[Client_fnc_checktaskforce, 5] execFSM "call.fsm";
 
 if(uniform player == "" && female) then {
 	player forceadduniform "vvv_character_protibanador";
