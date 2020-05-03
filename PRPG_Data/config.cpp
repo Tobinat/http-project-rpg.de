@@ -2,7 +2,7 @@
 
 class cfgPatches
 {
-	class UGC_Data
+	class PRPG_Data
 	{
 		units[] = {};
 		weapons[] = {};
