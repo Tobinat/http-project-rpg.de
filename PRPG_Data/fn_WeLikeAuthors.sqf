@@ -1,4 +1,4 @@
-/* [] spawn {
+[] spawn {
 	waitUntil {alive player && {!isnull (findDisplay 46)}};
 
 	sleep 2;
@@ -24,13 +24,12 @@
 		while {isNil "a9ec2a59c630de5b27603e8ecd9fb153"} do {
 		any=[
 			[
-				["Besuchen Sie unsere Webseite prpg.de :)","<t align = 'center' size = '0.7'>%1</t><br/>"]
+				["Besuchen Sie unsere Webseite project-rpg.de :)","<t align = 'center' size = '0.7'>%1</t><br/>"]
 			]
 		] spawn BIS_fnc_typeText;
 
-			cutText ["Besuchen Sie unsere Webseite prpg.de :)","PLAIN",1];
-			//titleText["We don't like copying mods! Visit our page StanLakeside.pl and ask authors :)","PLAIN"];
-			hint "Besuchen Sie unsere Webseite prpg.de :)";
+			cutText ["Besuchen Sie unsere Webseite project-rpg.de :)","PLAIN",1];
+			hint "Besuchen Sie unsere Webseite project-rpg.de :)";
 			sleep 10;
 		};
 	};
@@ -39,4 +38,4 @@
 			["NotVersion",false,true] call BIS_fnc_endMission;
 			};
 	};
-}; */
+}; 
