@@ -199,6 +199,7 @@ class CfgFunctions
 			class pumpOil {};
 			class takeashit {};
 			class poop {};
+            class checktaskforce {};
 		};
 
 		class JobPizza {
