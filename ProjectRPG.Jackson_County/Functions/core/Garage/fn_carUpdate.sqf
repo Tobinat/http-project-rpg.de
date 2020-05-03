@@ -4,16 +4,12 @@ _PROCESS = vehicle player;
 _civilianVehicle = [
 	["Jonzie_XB",3900],
 	["vvv_Chevrolet_Cone0",4000],
-	["ADM_1969_Camaro",6200],
 	["Jonzie_Mini_Cooper",5300],
 	["Jonzie_Ceed",9400],
-	["ADM_1964_Impala",10500],
 	["ivory_190e",9600],
 	["jonzie_30CSL",18200],
-	["ADM_1969_Charger",25500],
 	["vvv_Abarth_695",25000],
 	["ivory_rs4",10000],
-	["ADM_GMC_Vandura",5100], // can farm
 	["ivory_gti",6000],
 	["Jonzie_Transit",6400], //can farm
 	["vvv_Chevrolet_Bel_Air",7000],
@@ -21,7 +17,6 @@ _civilianVehicle = [
 	["vvv_Alfa_Romeo_Spider_Duetto",8000],
 	["vvv_Chevrolet_Camaro_RS",9000],
 	["Jonzie_Mini_Cooper_r_spec",9000],
-	["ADM_Ford_F100",9500], // can farm
 	["nopixel_GMC_Campervan",9999],
 	["nopixel_Box_Default",9999],
 	["vvv_Chevrolet_Blazer",10000],

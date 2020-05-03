@@ -241,12 +241,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" !client_seatbelt && vehicle player != player "],
-		["Anschnallen", "client_seatbelt = true;",1]
+		["Anschnallen", "client_seatbelt = true; playsound ""seatbelt""; ",1]
 	],
 
 	[
 		[" client_seatbelt && vehicle player != player "],
-		["Abschnallen", "client_seatbelt = false;",1]
+		["Abschnallen", "client_seatbelt = false; playsound ""seatbelt""; ",1]
 	],
 // healing
 /*
@@ -655,7 +655,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["currentcursortarget == fishTrader"],
-		["Haut abziehen", "closedialog 0; [] spawn client_fnc_rarePelt;",3]
+		["Pelze öffnen", "closedialog 0; [] spawn client_fnc_rarePelt;",3]
 	],
 
 	[

@@ -282,7 +282,7 @@ switch (_code) do
 						spikeAntispam = false;
 					};
 					deletevehicle _spikeStrips;
-					["SpikeStrips gelegt", false] spawn domsg;
+					["SpikeStrips entfernt", false] spawn domsg;
 					player additem "CG_Spikes_Collapsed";
 			};
 
@@ -359,11 +359,11 @@ switch (_code) do
 	//G Key
 	case 34:
 	{
-		if(_shift && !_ctrlKey && !_alt && myjob == "Cop" && (getPlayerUID player) in ["76561198124199916","76561198061326977"] && vehicle player != player ) then {
+		if(_shift && !_ctrlKey && !_alt && myjob == "Cop" && vehicle player != player ) then {
 			[] spawn ivory_fnc_policeComputer;
 		};
 
-		if(!_shift && !_ctrlKey && !_alt && myjob == "Cop" && (getPlayerUID player) in ["76561198124199916","76561198061326977"] && vehicle player != player ) then {
+		if(!_shift && !_ctrlKey && !_alt && myjob == "Cop" && vehicle player != player ) then {
 			[cursorObject] spawn ivory_fnc_vehicleData;
 		};
 	};
@@ -373,8 +373,11 @@ switch (_code) do
 		if(vehicle player != player) then{
 			if(client_seatbelt) then {
 				client_seatbelt = false;
+				playsound "seatbelt";
+				427 cutRsc ["HUDseat","PLAIN"];
 			} else {
 				client_seatbelt = true;
+				playsound "seatbelt";
 			};
 		};
 	};

@@ -32,7 +32,7 @@ if(myJob == "Cop") then {
 			_retheli = [
 			"MELB_MH6M"
 			];
-			_ret = _ret + _retheli;
+			_garage = _garage + _retheli;
 		};
 	};
 	if(_cop > 4) then {

@@ -47,6 +47,7 @@ closedialog 0;
 	player setVariable ["sl_wallet_silverlake", 0, false];
 	player setvariable["playerInjuries",[0,0,0,0,0,0,0,0,0,0,0],true];
 	player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false];
+	player setVariable ["corona",0,true];
 	player setVariable ["evidence",[],true];
 	[player,""] remoteExec ["client_fnc_animSync"];
 	["set",0] call Client_Fnc_DoHealth;
