@@ -115,4 +115,4 @@ sleep 2;
 ["Windowstaste oder Use Action 10 öffnet das Interaktionsmenü.", true] spawn domsg;
 driver_test = false;
 
-[] call client_fnc_checkRadio;
+[] spawn client_fnc_checkRadio;
