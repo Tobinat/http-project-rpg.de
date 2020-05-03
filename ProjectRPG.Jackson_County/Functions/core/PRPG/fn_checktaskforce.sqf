@@ -8,7 +8,13 @@
 		_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
 
 		if !(_onTsServer && _onChannel && _isadmin) then {
-            titleText ["Stelle sicher das du im Richtigen Channel und TS-Server bist!","BLACK IN"];
+            titleText ["Stelle sicher das du im Richtigen Channel und TS-Server bist!","BLACK"];
+			taskforcefail = true;
+		};
+		
+		if (_onTsServer && _onChannel && taskforcefail) then {
+			titleText ["TaskForceRadio läuft!","BLACK IN"];
+			taskforcefail = false;
 		};
 		sleep 5;
 	};
