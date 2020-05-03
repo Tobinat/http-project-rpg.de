@@ -52,7 +52,7 @@ switch (_type) do {
     case 10: {_type = "ZabranieWiertła";};
     case 11: {_type = "NamierzenieRozmowy";};
     case 12: {_type = "Nasikanie";};
-    case 13: {_type = "Synchronizacja";};
+    case 13: {_type = "Synchronisiert";};
     case 14: {_type = "NaprawienieWiertła";};
     case 15: {_type = "UkradniecieKasyZBanku";};
     case 16: {_type = "ZabezpieczeniePieniedzyWBanku";};

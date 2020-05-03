@@ -7,7 +7,7 @@ class cfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"prpg_data"};
+		requiredAddons[] = {"PRPG_Data"};
 		version = 1;
 	};
 };
