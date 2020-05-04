@@ -272,7 +272,12 @@ NoPixel_InteractionMenuItems = [
 */
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 1)"],
-		["Behandeln lassen", "[] spawn client_fnc_fullheal;",1]
+		["Selbstheilung", "[] spawn client_fnc_fullheal;",1]
+	],
+
+	[
+		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 1)"],
+		["Fremdheilung", "[] spawn client_fnc_healnear;",1]
 	],
 
 	//Temporärer Workaround um Krankheiten zu Behandeln vielleicht auch einfach permanent, who gives a fuck
