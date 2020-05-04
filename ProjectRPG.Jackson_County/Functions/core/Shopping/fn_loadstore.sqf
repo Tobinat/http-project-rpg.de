@@ -1033,14 +1033,6 @@ if(_condition == "head") then {
 			["H_Hat_checker",nil,120,3,5],
 			["H_KermitMask",nil,120,3,5],
 			
-			["acj_casco_ammerica",nil,120,3,5],
-			["acj_casco_calavera",nil,120,3,5],
-			["acj_casco_camo",nil,120,3,5],
-			["acj_casco_espider",nil,120,3,5],
-			["acj_casco_germani",nil,120,3,5],
-			["acj_casco_gris",nil,120,3,5],
-			["acj_casco_negro",nil,120,3,5],
-			["acj_casco_rojo",nil,120,3,5],
 			["Casque_Moto",nil,120,3,5],
 			["H_RacingHelmet_1_white_F",nil,120,3,5],
 			//head items
