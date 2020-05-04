@@ -212,7 +212,6 @@ class prpg_item_ruby : ItemCore {
 	descriptionShort="Oh ein Rubin.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\cg_banktowermainvault\moneyjewls\cg_gem_ruby.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_sapphire : ItemCore {
@@ -222,7 +221,6 @@ class prpg_item_sapphire : ItemCore {
 	descriptionShort="Oh ein Sapphire.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\cg_banktowermainvault\moneyjewls\cg_gem_sapphire.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_diamond : ItemCore {
@@ -232,7 +230,6 @@ class prpg_item_diamond : ItemCore {
 	descriptionShort="Oh ein Diamond.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\cg_banktowermainvault\moneyjewls\cg_gem_diamond.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_emerald : ItemCore {
@@ -242,7 +239,6 @@ class prpg_item_emerald : ItemCore {
 	descriptionShort="Oh ein Smaragd.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\cg_banktowermainvault\moneyjewls\cg_gem_emerald.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_garn : ItemCore {
@@ -252,7 +248,6 @@ class prpg_item_garn : ItemCore {
 	descriptionShort="Ein Stück Garn.";
 	picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Rope_01_F.jpg";
 	model="\A3\Structures_F_Heli\Items\Tools\Rope_01_F.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_gold_ore : ItemCore {
@@ -262,7 +257,6 @@ class prpg_item_gold_ore : ItemCore {
 	descriptionShort="Ein Stück Gold Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\gold_ore.p3d";
-	allowedSlots[]={901};
 	mass=30;
 };
 class prpg_item_aluminium_ore : ItemCore {
@@ -272,7 +266,6 @@ class prpg_item_aluminium_ore : ItemCore {
 	descriptionShort="Ein Stück Aluminium Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\aluminium_ore.p3d";
-	allowedSlots[]={901};
 	mass=30;
 };
 class prpg_item_schwefel_ore : ItemCore {
@@ -282,7 +275,6 @@ class prpg_item_schwefel_ore : ItemCore {
 	descriptionShort="Ein Stück Schwefel Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\schwefel_ore.p3d";
-	allowedSlots[]={901};
 	mass=15;
 };
 class prpg_item_blei_ore : ItemCore {
@@ -292,7 +284,6 @@ class prpg_item_blei_ore : ItemCore {
 	descriptionShort="Ein Stück Blei Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\blei_ore.p3d";
-	allowedSlots[]={901};
 	mass=30;
 };
 class prpg_item_eisen_ore : ItemCore {
@@ -302,7 +293,6 @@ class prpg_item_eisen_ore : ItemCore {
 	descriptionShort="Ein Stück Eisen Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\blei_ore.p3d";
-	allowedSlots[]={901};
 	mass=30;
 };
 class prpg_item_silber_ore : ItemCore {
@@ -312,7 +302,6 @@ class prpg_item_silber_ore : ItemCore {
 	descriptionShort="Ein Stück Silber Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\blei_ore.p3d";
-	allowedSlots[]={901};
 	mass=30;
 };
 class prpg_item_kupfer_ore : ItemCore {
@@ -322,7 +311,6 @@ class prpg_item_kupfer_ore : ItemCore {
 	descriptionShort="Ein Stück Kupfer Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\ore\blei_ore.p3d";
-	allowedSlots[]={901};
 	mass=30;
 };
 class prpg_item_eisen_bar : ItemCore {
@@ -332,7 +320,6 @@ class prpg_item_eisen_bar : ItemCore {
 	descriptionShort="Ein Eisen Barren.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\bar\blei_bar.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_silber_bar : ItemCore {
@@ -342,7 +329,6 @@ class prpg_item_silber_bar : ItemCore {
 	descriptionShort="Ein Silber Barren.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\bar\blei_bar.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_kupfer_bar : ItemCore {
@@ -352,7 +338,6 @@ class prpg_item_kupfer_bar : ItemCore {
 	descriptionShort="Ein Kupfer Barren.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\bar\blei_bar.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_aluminium_bar : ItemCore {
@@ -362,7 +347,6 @@ class prpg_item_aluminium_bar : ItemCore {
 	descriptionShort="Ein Aluminium Baren.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\bar\aluminium_bar.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_blei_bar : ItemCore {
@@ -372,7 +356,6 @@ class prpg_item_blei_bar : ItemCore {
 	descriptionShort="Ein Blei Baren.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model="\PRPG_Data\models\bar\blei_bar.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_batterie : ItemCore {
@@ -402,7 +385,6 @@ class prpg_item_glas : ItemCore {
 	descriptionShort="Ein Stück Glas.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcMisc\plp_ctm_DisplayShelfGlass.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_reifen : ItemCore {
@@ -421,7 +403,6 @@ class prpg_item_nails : ItemCore {
 	author="PRPG";
 	descriptionShort="Nägel.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model = "\PRPG_Data\models\nails\Nail.p3d";
 	allowedSlots[]={901};
 	mass=1;
 };
@@ -432,7 +413,6 @@ class prpg_item_stoff : ItemCore {
 	descriptionShort="Stoff";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "@ace\addons\ace_medical\z\ace\addons\medical\data\littergeneric_clean.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_elektronik : ItemCore {
@@ -442,7 +422,6 @@ class prpg_item_elektronik : ItemCore {
 	descriptionShort="Elektronik";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcCartons\plp_cts_CartonDarkSmall.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_kabel : ItemCore {
@@ -452,7 +431,6 @@ class prpg_item_kabel : ItemCore {
 	descriptionShort="Kabel";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcCartons\plp_cts_CartonDarkSmall.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_ledersitz : ItemCore {
@@ -482,7 +460,6 @@ class prpg_item_airbag  : ItemCore {
 	descriptionShort="Airbag";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcCartons\plp_cts_CartonRottenMedium.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_auspuff  : ItemCore {
@@ -492,7 +469,6 @@ class prpg_item_auspuff  : ItemCore {
 	descriptionShort="Auspuff";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcCartons\plp_cts_CartonLightMedium.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_autotur  : ItemCore {
@@ -532,7 +508,6 @@ class prpg_item_motor  : ItemCore {
 	descriptionShort="Motor";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcCartons\plp_cts_CartonLightBig.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_sportmotor  : ItemCore {
@@ -542,7 +517,6 @@ class prpg_item_sportmotor  : ItemCore {
 	descriptionShort="Sportmotor";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcCartons\plp_cts_CartonLightBig.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_gummi  : ItemCore {
@@ -552,7 +526,6 @@ class prpg_item_gummi  : ItemCore {
 	descriptionShort="Gummi";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcCartons\plp_cts_CartonLightFlat.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_item_eisenstange  : ItemCore {
@@ -562,7 +535,6 @@ class prpg_item_eisenstange  : ItemCore {
 	descriptionShort="Eisenstange";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	model = "\plp_containers\StcCartons\plp_cts_CartonLightFlat.p3d";
-	allowedSlots[]={901};
 	mass=1;
 };
 class prpg_workbench_normal_kit: ItemCore {

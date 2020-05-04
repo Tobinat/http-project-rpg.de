@@ -722,7 +722,6 @@ if(_condition == "copvests") then {
 
 if(_condition == "copbackpack") then {
 	_bulle = [
-		["AM_PoliceBelt",nil,1,1],
 		["invisible_carryall",nil,1,1]
 	];
 	{
@@ -1033,43 +1032,7 @@ if(_condition == "head") then {
 			["H_Hat_camo",nil,120,3,5],
 			["H_Hat_checker",nil,120,3,5],
 			["H_KermitMask",nil,120,3,5],
-			/*
-			["sab_wwiplanes_ger_cap",nil,120,3,5],
-			["sab_wwiplanes_fr_cap",nil,120,3,5],
-			["nigga_platok",nil,500,3,5],
-			["nigga_platok4",nil,500,3,5],
-			["nigga_platok3",nil,500,3,5],
-			["nigga_platok6",nil,500,3,5],
-			["nigga_platok5",nil,500,3,5],
-			["nigga_platok2",nil,500,3,5],
-			["nigga_gog",nil,500,3,5],
-			["nigga_platok7",nil,500,3,5],
-			["nigga_platok10",nil,500,3,5],
-			["nigga_platok9",nil,500,3,5],
-			["nigga_platok12",nil,500,3,5],
-			["nigga_platok11",nil,500,3,5],
-			["nigga_platok8",nil,500,3,5],
-			["pat_cap4_nigga",nil,250,3,5],
-			["pat_cap4_nigga_back_low",nil,250,3,5],
-			["pat_cap4_front",nil,250,3,5],
-			["pat_cap10_front",nil,250,3,5],
-			["pat_cap4_nigga_back",nil,250,3,5],
-			["pat_cap4_back",nil,250,3,5],
-			["pat_cap10_back",nil,250,3,5],
-			["pat_cap6_nigga",nil,250,3,5],
-			["pat_cap6_nigga_back_low",nil,250,3,5],
-			["pat_cap6_front",nil,250,3,5],
-			["pat_durag_white",nil,250,3,5],
-			["pat_durag_black",nil,250,3,5],
-			["pat_cap2_nigga",nil,250,3,5],
-			["pat_cap2_nigga_back_low",nil,250,3,5],
-			["pat_cap2_front",nil,250,3,5],
-			["pat_cap5_nigg",nil,250,3,5],
-			["pat_cap5_front",nil,250,3,5],
-			["pat_cap5_back",nil,250,3,5],
-			["pat_cap_nigga",nil,250,3,5],
-			["pat_cap_nigga_back_low",nil,250,3,5],
-			*/
+			
 			["acj_casco_ammerica",nil,120,3,5],
 			["acj_casco_calavera",nil,120,3,5],
 			["acj_casco_camo",nil,120,3,5],

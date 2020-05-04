@@ -84,10 +84,7 @@ _civilianVehicle = [
 	["shelbycobra_car_azul", 600000],
 	["ivory_supra_topsecret", 700000],
 	["vvv_steyrmulti_civ", 25000],
-	["Acj_Harley_Davidson_Sons_Of_Anarchy",15000],
-	["Acj_HarleyDavidson_Sholvehead",20000],
-	["vvv_HarleyDavidson_CustomBobber1",25000],
-	["Acj_BMWR_75",35000]
+	["vvv_HarleyDavidson_CustomBobber1",25000]
 ];
 _num = 0;
 _reprocess = false;
