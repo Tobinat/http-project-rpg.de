@@ -86,7 +86,7 @@ class CfgVehicles {
 };
 
 #include "\PRPG_Data\cfgSounds.hpp"
-#include "\PRPG_Data\cfgMainMenu.hpp"
+//#include "\PRPG_Data\cfgMainMenu.hpp"
 
 class cfgWeapons {
 	class ItemCore;

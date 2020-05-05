@@ -1051,14 +1051,14 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"")) || myJob == ""Mafia"" && player distance myhouse < 20 "],
-		["Grundausstattung", "[""basic""] spawn client_fnc_setGear",4]
+		["Grundausstattung", "[""highthreat""] spawn client_fnc_setGear",4]
 	],
-
+/*
 	[
 		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"")) || myJob == ""Mafia"" && player distance myhouse < 20 "],
 		["High Threat Loadout", "[""highthreat""] spawn client_fnc_setGear",4]
 	],
-
+*/
 	[
 		["(myjob == ""EMS"" && (typeof cursorobject == ""Land_buildingshospital1"" || typeof cursorobject == ""Land_buildingsfiredept1""))"],
 		["EMS Loadout", "[""basic""] spawn client_fnc_setGear",4]
