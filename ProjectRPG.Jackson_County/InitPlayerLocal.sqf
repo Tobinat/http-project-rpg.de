@@ -115,6 +115,5 @@ sleep 2;
 437 cutfadeout 1;
 
 [] call client_fnc_initWelcome;
-[] call client_fnc_checktaskforce;
 ["Windowstaste oder Use Action 10 öffnet das Interaktionsmenü.", true] spawn domsg;
 driver_test = false;
