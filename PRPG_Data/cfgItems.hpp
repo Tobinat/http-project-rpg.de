@@ -292,7 +292,7 @@ class prpg_item_eisen_ore : ItemCore {
 	author="PRPG";
 	descriptionShort="Ein Stück Eisen Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\PRPG_Data\models\ore\blei_ore.p3d";
+	model="\PRPG_Data\models\ore\iron_ore.p3d";
 	mass=30;
 };
 class prpg_item_silber_ore : ItemCore {
@@ -301,7 +301,7 @@ class prpg_item_silber_ore : ItemCore {
 	author="PRPG";
 	descriptionShort="Ein Stück Silber Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\PRPG_Data\models\ore\blei_ore.p3d";
+	model="\PRPG_Data\models\ore\silver_ore.p3d";
 	mass=30;
 };
 class prpg_item_kupfer_ore : ItemCore {
@@ -310,7 +310,7 @@ class prpg_item_kupfer_ore : ItemCore {
 	author="PRPG";
 	descriptionShort="Ein Stück Kupfer Erz.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\PRPG_Data\models\ore\blei_ore.p3d";
+	model="\PRPG_Data\models\ore\copper_ore.p3d";
 	mass=30;
 };
 class prpg_item_eisen_bar : ItemCore {
@@ -319,7 +319,7 @@ class prpg_item_eisen_bar : ItemCore {
 	author="PRPG";
 	descriptionShort="Ein Eisen Barren.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\PRPG_Data\models\bar\blei_bar.p3d";
+	model="\PRPG_Data\models\bar\iron_bar.p3d";
 	mass=1;
 };
 class prpg_item_silber_bar : ItemCore {
@@ -328,7 +328,7 @@ class prpg_item_silber_bar : ItemCore {
 	author="PRPG";
 	descriptionShort="Ein Silber Barren.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\PRPG_Data\models\bar\blei_bar.p3d";
+	model="\PRPG_Data\models\bar\silver_bar.p3d";
 	mass=1;
 };
 class prpg_item_kupfer_bar : ItemCore {
@@ -337,7 +337,7 @@ class prpg_item_kupfer_bar : ItemCore {
 	author="PRPG";
 	descriptionShort="Ein Kupfer Barren.";
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\PRPG_Data\models\bar\blei_bar.p3d";
+	model="\PRPG_Data\models\bar\copper_bar.p3d";
 	mass=1;
 };
 class prpg_item_aluminium_bar : ItemCore {

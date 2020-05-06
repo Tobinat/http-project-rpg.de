@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="sl_impala\rvmat\skin_nohq.paa";
+	texture="Jonzie_Carpack\tex\env_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="sl_impala\rvmat\skin_smdi.paa";
+	texture="Jonzie_Carpack\tex\env_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -80,7 +80,7 @@ class Stage6
 };
 class Stage7
 {
-	texture="sl_impala\rvmat\env_land_co.paa";
+	texture="Jonzie_Carpack\tex\env_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{
