@@ -163,7 +163,8 @@ class CfgFunctions
 			class raidshop {};
 			class raidhouse {};
 			class copmapmarkers {};
-			class copOpener{};
+			class copOpener {};
+            class prpg_police_license {};
 		};
 
 		class Wanted {

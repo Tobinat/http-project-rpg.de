@@ -16,6 +16,7 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 		if ("ItemGPS" in assignedItems _x) then {
 			//					 && driver (vehicle _x) == _x
 			_playeruid = getplayerUid _x;
+			/*
 			if ( _playeruid in currentcop) then {
 				_marker = createMarkerLocal [format["%1_PD_UNIT",name _x],visiblePosition _x];
 				_marker setMarkerColorLocal "ColorBlue";
@@ -23,8 +24,9 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 				_marker setMarkerTextLocal format["%1",name _x];
 				_markers pushBack [_marker,_x];
 			};
+			*/
 			//					 && driver (vehicle _x) == _x
-			if ( _playeruid in currentems) then {
+			if ( _playeruid in currentEMS) then {
 				_marker = createMarkerLocal [format["%1_EMS_UNIT",name _x],visiblePosition _x];
 				_marker setMarkerColorLocal "ColorGreen";
 				_marker setMarkerTypeLocal "hd_dot";

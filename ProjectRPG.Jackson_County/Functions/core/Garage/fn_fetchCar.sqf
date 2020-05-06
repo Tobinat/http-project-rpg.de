@@ -86,8 +86,17 @@ if((_this select 0) == 1) exitwith {
 			_materialarray = ["metallic","matte"];
 			_material = _materialarray call BIS_fnc_selectRandom;
 			[_vehicle, [_color,_material]] call client_fnc_initVehicle;
+			_vehicle setvariable ["slpdcar",objNull,true];
 		} else {
 			_vehicle setObjectMaterialGlobal  [0, "ivory_data\data\metallic.rvmat" ];
+			if (myJob == "Cop") then {
+				_coplicense = round(random 100);
+				_vehicle setPlateNumber format["SLSD-%1",_coplicense];
+				_vehicle setvariable ["slpdcar",_coplicense,true];
+			} else {
+				_medlicense = round(random 100);
+				_vehicle setPlateNumber format["SLFD-%1",_coplicense];
+			};
 		};
 	}; 
 	[_vehicle] call client_fnc_spawnvehicle;
@@ -195,3 +204,4 @@ _vehicle setvariable ["tracker3",objNull,true];
 _vehicle setvariable ["tracker1c",objNull,true];
 _vehicle setvariable ["tracker2c",objNull,true];
 _vehicle setvariable ["tracker3c",objNull,true];
+_vehicle setvariable ["slpdcar",objNull,true];

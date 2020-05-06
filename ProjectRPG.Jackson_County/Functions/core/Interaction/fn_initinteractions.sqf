@@ -547,6 +547,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		[" myJob == ""Cop"" && cursorTarget in Current_Cars && getpos player distance [8295.29,2992.31,0.00143814] < 50"],
+		["Streifenwagen", " createdialog ""prpg_slsd_license""; ",2]
+	],
+
+	[
 		[" myJob == ""Cop"" && CurrentCursorTarget isKindOf 'Man' && getpos player distance [5553.52,6236.29,0.00143433] < 100"],
 		["Inhaftieren", " createdialog ""jailprocess"";",2]
 	],

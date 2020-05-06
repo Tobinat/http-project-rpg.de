@@ -14,7 +14,7 @@ if (_status isEqualTo 0) then {
 	 _carowner = _information select 8;
 	 _className = typeOf _object;
 	 _vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
-	 if (_playeruid in currentCop) then {
+	 if ((_playeruid in currentCop) || (_playeruid in currentEMS)) then {
 		[_player,objNull,18,format ["%1 hat %2 abgeschleppt (%3)", name _player, _vehicleName, _className],_className] call server_fnc_copLog;
 	 } else {
 		[_player,4,format ["%1 verschrottet einen %2", name _player, _vehicleName],"",_className,_vehicleName] call server_fnc_vehiclelog;

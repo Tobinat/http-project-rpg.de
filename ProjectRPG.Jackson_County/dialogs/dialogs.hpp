@@ -37,6 +37,7 @@
 //policedialogs
 #include "kruk_slpd_computer.hpp"
 #include "kruk_slpd_ticket.hpp"
+#include "PRPG_slsd_license.hpp"
 
 
 #include "vehSetPrice.hpp"
