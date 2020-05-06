@@ -95,7 +95,7 @@ if((_this select 0) == 1) exitwith {
 				_vehicle setvariable ["slpdcar",_coplicense,true];
 			} else {
 				_medlicense = round(random 100);
-				_vehicle setPlateNumber format["SLFD-%1",_coplicense];
+				_vehicle setPlateNumber format["SLFD-%1",_medlicense];
 			};
 		};
 	}; 

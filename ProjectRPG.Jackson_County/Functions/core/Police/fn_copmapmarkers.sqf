@@ -69,7 +69,7 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 		_marker setMarkerTypeLocal "hd_dot";
 		_return = getText(configFile >> "CfgVehicles" >> typeof _x >> "displayName");
 		_slpdlicense = _x getVariable "slpdcar";
-		_marker setMarkerTextLocal format["SLPD - %1",_slpdlicense];
+		_marker setMarkerTextLocal format["SLSD - %1",_slpdlicense];
 		_markers pushBack [_marker,_x];	
 	};   
 	if( _x getVariable["trackingCop",FALSE] ) then  
