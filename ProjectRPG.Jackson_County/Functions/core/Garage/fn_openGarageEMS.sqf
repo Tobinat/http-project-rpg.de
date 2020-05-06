@@ -7,8 +7,8 @@ _garage = [];
 if(myJob == "EMS" || myJob == "Fire") then {
 	_garage = [
 				//"jonzie_ambulance"
-				"NP_Jonzie_Ambulance1",
-				"NP_Jonzie_Ambulance2"
+				"PRPG_Jonzie_Ambulance1",
+				"PRPG_Jonzie_Ambulance2"
 			];
 			if(_EMS > 1) then {
 				_ret = [

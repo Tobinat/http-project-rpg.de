@@ -24,6 +24,7 @@ class CfgVehicles {
 	class Jonzie_Raptor;
 	class Jonzie_Escalade;
 	class Jonzie_Viper;
+	class Jonzie_Ambulance;
 	class Jonzie_XB_1 : Jonzie_XB {
 		maxSpeed = 194;
 		enginePower = 315;
@@ -121,4 +122,18 @@ class CfgVehicles {
 		maxOmega = 1246.17;
 		enginePower = 354;
 	};
+	class PRPG_Jonzie_Ambulance1 : Jonzie_Ambulance {
+		displayName = "Ambulance Red";
+		class eventhandlers
+		{
+			init = "(_this select 0) setobjecttexture [0,""\PRPG_Cars\data\ems\ambulance1.paa""],[_this select 0] execVM ""\Jonzie_Code\functions\Ambulance\Init_Ambulance.sqf""";
+		};
+	};
+	class PRPG_Jonzie_Ambulance2 : Jonzie_Ambulance {
+		displayName = "Ambulance Blue";
+		class eventhandlers
+		{
+			init = "(_this select 0) setobjecttexture [0,""\PRPG_Cars\data\ems\ambulance2.paa""],[_this select 0] execVM ""\Jonzie_Code\functions\Ambulance\Init_Ambulance.sqf""";
+		};
+	};	
 };
