@@ -12,18 +12,11 @@ if(myJob == "EMS" || myJob == "Fire") then {
 			];
 			if(_EMS > 1) then {
 				_ret = [
-					//"Ford_Raptor_17_FireTruck_V1",
-					//"Ford_Raptor_17_FireTruck_V2",
-					//"Ford_Raptor_17_FireTruck_V3"
 				];
 				_garage = _garage + _ret;
 			};
 			if(_EMS > 2) then {
 				_ret = [
-					//"Ford_Crown_Medic_V1",
-					//"Ford_Crown_Medic_V2",
-					//"Ford_Crown_Medic_V3",
-					//"PRPG_Durango_EMS_01",
 					"red_explorer_16_e_custom1",
 					"vvv_fire_truck"
 				];
@@ -31,13 +24,6 @@ if(myJob == "EMS" || myJob == "Fire") then {
 			};
 			if(_EMS > 3) then {
 				_ret = [
-					//"Dodge_Charger_06_Medic_V1",
-					//"Dodge_Charger_06_Medic_V2",
-					//"Dodge_Charger_06_Medic_V3",
-					//"Dodge_Charger_SRT8_2016_Medic_V1",
-					//"Dodge_Charger_SRT8_2016_Medic_V2",
-					//"Dodge_Charger_SRT8_2016_Medic_V3",
-					//"EC635_SAR"
 					];
 					if ((typeOF cursorTarget) find "Air_Garage_Off" > -1 ) then {
 					_retheli = [
@@ -49,18 +35,11 @@ if(myJob == "EMS" || myJob == "Fire") then {
 			};
 			if(_EMS > 4) then {
 				_ret = [
-					//"Ford_Raptor_Medic_V1",
-					//"Ford_Raptor_Medic_V2",
-					//"Ford_Raptor_Medic_V3"
 				];
 				_garage = _garage + _ret;
 			};
 			if(_EMS > 5) then {
 				_ret = [
-					//"Chevrolet_Tahoe_2015_Medic_V1",
-					//"Chevrolet_Tahoe_2015_Medic_V2",
-					//"Chevrolet_Tahoe_2015_Medic_V3"
-					//"PRPG_Charger_EMS_01"
 					"red_suburban_15_e_ems",
 					"red_suburban_15_e_ems2",
 					"red_suburban_15_e_custom2"
@@ -69,12 +48,6 @@ if(myJob == "EMS" || myJob == "Fire") then {
 			};
 			if(_EMS > 6) then {
 				_ret = [
-					//"Porsche_Cayenne_12_Medic_slicktop_V1",
-					//"Porsche_Cayenne_12_Medic_slicktop_V2",
-					//"Porsche_Cayenne_12_Medic_slicktop_V3",
-					//"Porsche_Cayenne_12_Medic_V1",
-					//"Porsche_Cayenne_12_Medic_V2",
-					//"Porsche_Cayenne_12_Medic_V3"
 				];
 				_garage = _garage + _ret;
 			};
