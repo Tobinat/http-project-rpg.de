@@ -764,7 +764,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 && (getpos player) distance [7600.76,6316.81,0.00143814] < 20"],
+		["str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 && getpos player distance [7600.76,6316.81,0.00143814] < 30"],
 		["Abschlepphof", "[CurrentCursorTarget] call Client_fnc_openCarYard",3]
 	],
 
@@ -774,7 +774,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"" && !attachedcar"],
+		["myjob == ""Cop""", "typeof cursorobject == ""Land_FuelStation_01_workshop_F"" && !attachedcar"],
+		["Polizeigarage", "[] spawn client_fnc_openGaragePolice;",3]
+	],
+
+	[
+		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"" && !attachedcar && getpos player distance [5579.38,6205.82,0.00143433] < 50"],
 		["Polizeigarage", "[] spawn client_fnc_openGaragePolice;",3]
 	],
 

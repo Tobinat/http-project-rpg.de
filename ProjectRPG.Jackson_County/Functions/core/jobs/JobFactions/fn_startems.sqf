@@ -10,5 +10,5 @@ player setVariable ["ace_medical_medicClass", 2, true];
 
 _items = getunitloadout player;
 player setvariable ["lastsave",_items, false];
-[] call client_fnc_ChangePolice;
+//[] call client_fnc_ChangePolice;
 //[] call client_fnc_jobEnd;

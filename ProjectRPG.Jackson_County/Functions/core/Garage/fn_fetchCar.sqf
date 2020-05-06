@@ -55,6 +55,10 @@ if((_this select 0) == 1) exitwith {
 	_vehicle allowdamage true;
 	Current_Cars pushBack _vehicle;
 	["ACE_Wheel", _vehicle, 1] call ace_cargo_fnc_removeCargoItem;
+	if (myJob = "EMS") then {
+		for "_i" from 1 to 2 do {_vehicle addItemCargoGlobal "Manguera_magazine";};
+		_vehicle addWeaponCargoGlobal "fireextinguisher";
+	};
 };
 
 _numberPlate = _car select 0;
