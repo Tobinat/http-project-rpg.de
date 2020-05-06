@@ -61,7 +61,7 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 
 
 {  
-	if !(isnil(_x getVariable "slpdcar")) then  
+	if (_x getVariable "slpdcar" != 0) then  
 	{	 
 		_rand = round (random(999));
 		_marker = createMarkerLocal [format["%1_TRACKING",_rand],visiblePosition _x];

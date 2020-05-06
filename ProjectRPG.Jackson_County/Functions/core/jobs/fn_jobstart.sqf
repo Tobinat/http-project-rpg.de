@@ -7,7 +7,7 @@ if (str _jobtype find "Cop" > -1 || str _jobtype == "Cop") exitwith {
 	[] call client_fnc_startCop;
 	currentCop pushback getplayerUid _player;
 	publicvariable "currentCop";
-	["basic"] spawn client_fnc_setGear;
+	["highthreat"] spawn client_fnc_setGear;
 	//[player,objNull,10,format ["%1 begann seinen Polizeidienst", name player],""] remoteExec ["server_fnc_copLog", 2];
 };
 
