@@ -12,6 +12,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 			];
 			if(_EMS > 1) then {
 				_ret = [
+					"Jonzie_Tow_Truck"
 				];
 				_garage = _garage + _ret;
 			};
