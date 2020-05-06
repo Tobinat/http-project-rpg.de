@@ -7,6 +7,9 @@ _oldPlate = _vehicle select 0;
 _countPlate = count _plate;
 
 if (_countPlate > 7) exitWith {diag_log "License letters have more than 7";};
+_plateUP = toupper _plate;
+if (str _plateUP find "SLSD" > -1) exitWith { ["Dieses Kenzeichen ist für das SLSD reserviert!", false] remoteexec ["domsg",_player]; };
+if (str _plateUP find "SLFD" > -1) exitWith { ["Dieses Kenzeichen ist für das SLFD reserviert!", false] remoteexec ["domsg",_player]; };
 _string = _plate splitString " " joinString "";
 _string = _string splitString "#" joinString "";
 _string = _string splitString "*" joinString "";
