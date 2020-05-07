@@ -20,4 +20,4 @@ _query = format ["getSLPDWantedVehicle_plate:%1", _plate];
 _wanted = [_query,2] call ExternalS_fnc_ExtDBasync;
 */
 
-_return;
+_return
