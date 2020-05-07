@@ -2,7 +2,7 @@ _receiver = _this select 0;
 _message = _this select 1; 
 _player = _this select 2; 
 _player = name _player; 
-_title = format ["SMS from %1",_player]; 
+_title = format ["SMS von %1",_player]; 
 _receiver = getplayeruid _receiver; 
  
  

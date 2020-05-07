@@ -31,7 +31,7 @@ while{_loop} do
 		}; 
 	} else { 
 		if (_queryResult isEqualTo "[3]") then { 
-			uisleep 0.1; 
+			//uisleep 0.1; 
 		} else { 
 			_loop = false; 
 		}; 
