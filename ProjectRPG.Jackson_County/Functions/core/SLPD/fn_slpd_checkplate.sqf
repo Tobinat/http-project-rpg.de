@@ -1,5 +1,29 @@
 params ["_vehinfo"];
 
+set_text = {
+    _text = param [0, "", [""]];
+
+    show = format["%1<br/>",_text] + format["%1",show];
+
+    _computer = (findDisplay 9154) displayCtrl 4110;
+    _computer ctrlSetStructuredText parseText format["<br/>%1",show];
+    _computer ctrlCommit 0;
+
+    _textHeight = ctrltextheight _computer;
+    if(_textHeight > 1) then {
+        _controlPos = ctrlposition _computer;
+        _controlPos set [3,_textHeight];
+        _computer ctrlsetposition _controlPos;
+        _computer ctrlcommit 0;
+    } else {
+        _controlPos = ctrlposition _computer;
+        _controlPos set [3,1];
+        _computer ctrlsetposition _controlPos;
+        _computer ctrlcommit 0;
+    };
+    
+};
+
 _car = _vehinfo selet 1;
 
 _name = getText(configfile >> "CfgVehicles" >> _car >> "displayName");
