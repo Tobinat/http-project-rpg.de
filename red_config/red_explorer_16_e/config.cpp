@@ -307,6 +307,11 @@ class cfgVehicles
 				initPhase=0;
 				animPeriod=3;
 			};
+			class spotlight_rot
+			{
+				initPhase=0;
+				animPeriod=1;
+			};
 			class board_1_rot
 			{
 				source="user";
