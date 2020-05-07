@@ -19,7 +19,6 @@ if(myjob == "Cop") exitwith {
 		player linkItem "Itemwatch";
 		player linkItem "ItemGPS";
 		player linkitem "tf_anprc152";
-		[] call client_fnc_ChangePolice;
 		player addBackpack "invisible_carryall";
 		player linkItem "pmc_earpiece";
 		player additemtobackpack "RH_m9";
@@ -111,11 +110,12 @@ if(myjob == "Cop") exitwith {
 				player addVest "PRPG_Sheriff_Belt";
 				player addHeadgear "PRPG_Cap_Sheriff_2";
 			};
-			player additemtobackpack "np_water";
-			player additemtobackpack "np_beefsoup";
-			player addItemToUniform "ACE_Flashlight_XL50";
-			player addItemToUniform "ACE_EarPlugs";
-		};
+		};	
+		player additemtobackpack "np_water";
+		player additemtobackpack "np_beefsoup";
+		player addItemToUniform "ACE_Flashlight_XL50";
+		player addItemToUniform "ACE_EarPlugs";	
+		[] call client_fnc_ChangePolice;
 	};
 
 	if(_type == "highthreat") then {
@@ -133,7 +133,6 @@ if(myjob == "Cop") exitwith {
 		player linkItem "Itemwatch";
 		player linkItem "ItemGPS";
 		player linkitem "tf_anprc152";
-		[] call client_fnc_ChangePolice;
 		player addBackpack "invisible_carryall";
 		player linkItem "pmc_earpiece";
 		player additemtobackpack "RH_m9";
@@ -225,11 +224,12 @@ if(myjob == "Cop") exitwith {
 				player addVest "PRPG_Sheriff_W_2_Y";
 				player addHeadgear "PRPG_Cap_Sheriff_2";
 			};
-			player additemtobackpack "np_water";
-			player additemtobackpack "np_beefsoup";
-			player addItemToUniform "ACE_Flashlight_XL50";
-			player addItemToUniform "ACE_EarPlugs";
 		};
+		player additemtobackpack "np_water";
+		player additemtobackpack "np_beefsoup";
+		player addItemToUniform "ACE_Flashlight_XL50";
+		player addItemToUniform "ACE_EarPlugs";
+		[] call client_fnc_ChangePolice;
 	};
 
 	if(_type == "riot") then {
@@ -262,9 +262,9 @@ if(myjob == "Cop") exitwith {
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
 		player linkItem "tf_anprc152";
-		[] call client_fnc_ChangePolice;
 		player linkItem "ItemGPS";
 		player linkItem "pmc_earpiece";
+		[] call client_fnc_ChangePolice;
 	};
 };
 
@@ -286,7 +286,6 @@ if(myjob == "EMS") exitwith {
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
 		player linkitem "tf_anprc152";
-		[] call client_fnc_ChangePolice;
 		player linkItem "ItemGPS";
 		player linkItem "pmc_earpiece";
 
@@ -372,7 +371,8 @@ if(myjob == "EMS") exitwith {
 		};
 		player addItemToUniform "ACE_Flashlight_XL50";
 		player addItemToUniform "ACE_EarPlugs";
-		player addItemToUniform "ACE_surgicalKit";
+		player addItemToUniform "ACE_surgicalKit";		
+		[] call client_fnc_ChangePolice;
 	};
 
 	if(_type == "doktor") then {	
@@ -390,7 +390,6 @@ if(myjob == "EMS") exitwith {
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
 		player linkitem "tf_anprc152";
-		[] call client_fnc_ChangePolice;
 		player linkItem "ItemGPS";
 		player linkItem "pmc_earpiece";
 
@@ -454,6 +453,7 @@ if(myjob == "EMS") exitwith {
 		for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
 		for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
 		for "_i" from 1 to 4 do {player addItemToBackpack "ACE_Splint";};
+		[] call client_fnc_ChangePolice;
 	};
 
 	if(_type == "cdc") then {
@@ -471,7 +471,6 @@ if(myjob == "EMS") exitwith {
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
 		player linkitem "tf_anprc152";
-		[] call client_fnc_ChangePolice;
 		player linkItem "ItemGPS";
 		player linkItem "pmc_earpiece";
 
@@ -490,6 +489,7 @@ if(myjob == "EMS") exitwith {
 		for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
 		for "_i" from 1 to 4 do {player addItemToBackpack "ACE_Splint";};
+		[] call client_fnc_ChangePolice;
 	};
 
 	if(_type == "tac") then {
@@ -507,7 +507,6 @@ if(myjob == "EMS") exitwith {
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
 		player linkitem "tf_anprc152";
-		[] call client_fnc_ChangePolice;
 		player linkItem "ItemGPS";
 		player linkItem "pmc_earpiece";
 
@@ -538,6 +537,7 @@ if(myjob == "EMS") exitwith {
 		player addItemToUniform "ACE_Flashlight_XL50";
 		player addItemToUniform "ACE_EarPlugs";
 		player addItemToUniform "ACE_surgicalKit";
+		[] call client_fnc_ChangePolice;
 	};
 };
 
