@@ -61,7 +61,7 @@ if((_this select 0) == 1) exitwith {
 	};
 	if (myJob == "Cop") then {
 		_vehicle addItemCargoGlobal ["hlc_30rnd_9x19_b_MP5",3];
-		_vehicle addWeaponCargoGlobal ["hlc_smg_mp5a4"];
+		_vehicle addWeaponCargoGlobal ["hlc_smg_mp5a4",1];
 	};
 	[_vehicle,2] remoteExecCall ["client_fnc_lock",_vehicle];
 };
