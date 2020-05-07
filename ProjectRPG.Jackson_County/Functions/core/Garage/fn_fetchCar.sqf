@@ -50,7 +50,7 @@ if((_this select 0) == 1) exitwith {
 			[_vehicle, [_color,_material]] call client_fnc_initVehicle;
 			_vehicle setvariable ["slpdcar",0,true];
 		} else {
-			//_vehicle setObjectMaterialGlobal  [0, "ivory_data\data\metallic.rvmat" ];
+			_vehicle setObjectMaterialGlobal  [0, "ivory_data\data\metallic.rvmat" ];
 			if (myJob == "Cop") then {
 				_coplicense = round(random 100);
 				_vehicle setPlateNumber format["SLSD-%1",_coplicense];

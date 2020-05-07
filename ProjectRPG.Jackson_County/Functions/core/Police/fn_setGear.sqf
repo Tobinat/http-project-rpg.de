@@ -292,7 +292,7 @@ if(myjob == "EMS") exitwith {
 		_emslevel = player getVariable "ems";
 
 		player addgoggles "Masque_Chirurgical";
-		player addVest "PRPG_EMS_Belt";
+		player addVest "EF_BLT_MEMS";
 
 		player addBackpack "invisible_carryall";
 		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];

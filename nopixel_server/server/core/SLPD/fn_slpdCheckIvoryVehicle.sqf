@@ -20,4 +20,4 @@ _query = format ["getSLPDWantedVehicle_plate:%1", _plate];
 _wanted = [_query,2] call ExternalS_fnc_ExtDBasync;
 */
 
-[_vehInfo] remoteexec ["fn_slpd_checkplate",_player];
+[_vehInfo] remoteexec ["client_fnc_slpd_checkplate",_player];
