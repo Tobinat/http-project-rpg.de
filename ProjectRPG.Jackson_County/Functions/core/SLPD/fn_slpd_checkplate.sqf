@@ -24,7 +24,7 @@ set_text = {
     
 };
 
-_car = _vehinfo selet 1;
+_car = _vehinfo select 1;
 
 _name = getText(configfile >> "CfgVehicles" >> _car >> "displayName");
 _maxspeed = round(getNumber(configfile >> "CfgVehicles" >> _car >> "maxSpeed"));
