@@ -12,9 +12,12 @@ if(isNull _player) exitWith {};
 
 _query = format["getSLPDVehicle_plate:%1", _plate];
 _vehInfo = [_query,2] call ExternalS_fnc_ExtDBasync;
-_vehInfo = _vehInfo select 0;
+_return = _vehInfo select 0;
+
 
 /*
 _query = format ["getSLPDWantedVehicle_plate:%1", _plate];
 _wanted = [_query,2] call ExternalS_fnc_ExtDBasync;
 */
+
+_return
