@@ -56,9 +56,14 @@ if((_this select 0) == 1) exitwith {
 	Current_Cars pushBack _vehicle;
 	["ACE_Wheel", _vehicle, 1] call ace_cargo_fnc_removeCargoItem;
 	if (myJob == "EMS") then {
-		for "_i" from 1 to 2 do {_vehicle addItemCargoGlobal "Manguera_magazine";};
-		_vehicle addWeaponCargoGlobal "fireextinguisher";
+		_vehicle addItemCargoGlobal ["Manguera_magazine",1];
+		_vehicle addWeaponCargoGlobal ["fireextinguisher",1];
 	};
+	if (myJob == "Cop") then {
+		_vehicle addItemCargoGlobal ["hlc_30rnd_9x19_b_MP5",3];
+		_vehicle addWeaponCargoGlobal ["hlc_smg_mp5a4"];
+	};
+	[_vehicle,2] remoteExecCall ["client_fnc_lock",_vehicle];
 };
 
 _numberPlate = _car select 0;
@@ -161,3 +166,4 @@ _vehicle setvariable ["tracker1c",objNull,true];
 _vehicle setvariable ["tracker2c",objNull,true];
 _vehicle setvariable ["tracker3c",objNull,true];
 _vehicle setvariable ["slpdcar",0,true];
+[_vehicle,2] remoteExecCall ["client_fnc_lock",_vehicle];

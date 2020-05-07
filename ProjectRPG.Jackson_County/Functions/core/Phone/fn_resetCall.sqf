@@ -1,5 +1,5 @@
-//if(myjob == "Cop") exitwith { [] call client_fnc_ChangePolice; };
-if(myjob in ["Cop","EMS","Fire"]) exitwith { [] call client_fnc_ChangePolice; };
+//if(myjob == "Cop") exitwith { [] spawn client_fnc_ChangePolice; };
+if(myjob in ["Cop","EMS","Fire"]) exitwith { [] spawn client_fnc_ChangePolice; };
 playSound "cgphone_hangup";
 player setvariable["PhoneCallNumber",0,true];
 player setvariable["PhoneID",0,true];
