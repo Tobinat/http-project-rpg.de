@@ -1,5 +1,7 @@
 params ["_vehinfo"];
 
+private ["_car","_name","_maxspeed","_redline","_enginePower","_peaktorque"]
+
 _car = _vehinfo select 1;
 
 _name = getText(configfile >> "CfgVehicles" >> _car >> "displayName");
@@ -8,6 +10,7 @@ _redline = round(getNumber(configfile >> "CfgVehicles" >> _car >> "redRpm"));
 _enginePower = round(round(getNumber(configfile >> "CfgVehicles" >> _car >> "enginePower")*1.341));
 _peaktorque = round(getNumber(configfile >> "CfgVehicles" >> _car >> "peakTorque"));
 _plate = _vehinfo select 0;
+_plate = toupper _plate;
 _body = getText(configfile >> "CfgIvoryTextures" >> (_vehinfo select 2) >> "displayName");
 _bodyFinish = getText(configfile >> "CfgIvoryMaterials" >> (_vehinfo select 3) >> "displayName");
 _seats = getNumber(configfile >> "CfgVehicles" >> _car >> "transportSoldier")+1;
@@ -15,6 +18,7 @@ _owner = _vehinfo select 5;
 _rims = "N/A";
 
 _text = format["
+>> plate %6 <br/>
 <img image='%10' size='22' align='center'/><br/><br/>
 Model | %1<br/>
 Plate | %6 <br/>
@@ -39,7 +43,7 @@ Owner | %11",
 	_owner
 ];
 
-show = format["%1<br/>",_text] + format["%1",show];
+show = format["%1<br/><br/>",_text] + format["%1",show];
 
 _computer = (findDisplay 9154) displayCtrl 4110;
 _computer ctrlSetStructuredText parseText format["<br/>%1",show];
