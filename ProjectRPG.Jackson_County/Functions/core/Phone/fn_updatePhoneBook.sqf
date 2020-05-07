@@ -290,7 +290,7 @@ _allJobs = [
 	["Security",_currentSecurity],
 	["Mechaniker",_currentRepairmen],
 	["Richter",_currentJudges],
-	["Saatanwalt",_currentProsecutor],
+	["Staatsanwalt",_currentProsecutor],
 	["Anwalt",_currentLawyers],
 	["Postbote",_currentMailmen],
 	["Reporter",_currentNewsMan],

@@ -27,8 +27,18 @@ if((_this select 0) == 1) exitwith {
 	_vehicle allowdamage false;
 	_className = toLower(_car);
 	if (str _className find "onzie_" > -1) then {
-		[_vehicle, "SLPD", "jonzie"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["burntorange","Glossy"]] call client_fnc_initVehicle;
+		if (myJob == "Cop") then {
+			_coplicense = round(random 100);
+			_plate = format ["SLSD - %1",_coplicense];
+			[_vehicle, _plate, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
+		} else {
+			_medlicense = round(random 100);
+			_plate = format ["SLFD - %1",_medlicense];
+			[_vehicle, _plate, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
+		};
+		if (str _className find "Tow_Truck" > -1) then {	
+			[_vehicle, ["burntorange","Glossy"]] call client_fnc_initVehicle;
+		};
 	};
 	if (str _className find "red_" > -1) then {
 		[_vehicle, "", "red"] remoteexec ["client_fnc_numberPlate",2];
@@ -61,7 +71,7 @@ if((_this select 0) == 1) exitwith {
 	};
 	if (myJob == "Cop") then {
 		_vehicle addItemCargoGlobal ["hlc_30rnd_9x19_b_MP5",3];
-		_vehicle addWeaponWithAttachmentsCargo [["hlc_smg_mp5a4", "", "", "RH_barska_rds", ["hlc_30rnd_9x19_b_MP5", 30], [], ""], 1];
+		_vehicle addWeaponWithAttachmentsCargoGlobal [["hlc_smg_mp5a4", "", "", "RH_barska_rds", ["hlc_30rnd_9x19_b_MP5", 30], [], ""], 1];
 	};
 	[_vehicle,2] remoteExecCall ["client_fnc_lock",_vehicle];
 };

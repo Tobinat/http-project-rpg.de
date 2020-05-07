@@ -42,9 +42,9 @@ class client_PhoneCallPP_Menu
 			text = "Anrufen";
 			colorBackground[] = {0,0.535294117647059,0.2725490196078431,0.7};
 			onButtonClick = "[1] spawn client_fnc_CallSomebody;";
-			x = 0.52;
+			x = 0.5;
 			y = 0.75;
-			w = 0.1;
+			w = 0.12;
 			h = 0.05;
 		};
 	};
@@ -104,9 +104,9 @@ class client_PhoneCall_Menu
 			text = "Anrufen";
 			colorBackground[] = {0,0.535294117647059,0.2725490196078431,0.7};
 			onButtonClick = "[0] spawn client_fnc_CallSomebody;";
-			x = 0.52;
+			x = 0.5;
 			y = 0.75;
-			w = 0.1;
+			w = 0.12;
 			h = 0.05;
 		};
 

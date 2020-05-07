@@ -115,7 +115,7 @@ class client_CurrentPhoneCall_Menu
 		class CallButton : client_RscButtonMenu {
 
 			idc = -1;
-			text = "Hinzufuegen";
+			text = "Hinzufügen";
 			colorBackground[] = {0,0.535294117647059,0.2725490196078431,0.7};
 			onButtonClick = "[] spawn client_fnc_CallMenu;";
 			x = 0.52;

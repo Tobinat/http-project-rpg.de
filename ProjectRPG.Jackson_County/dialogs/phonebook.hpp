@@ -63,7 +63,7 @@ class phoneBook {
 			onButtonClick = "[0] spawn client_fnc_CallSomebody;";
 			x = 0.75;
 			y = 0.75;
-			w = 0.1;
+			w = 0.12;
 			h = 0.05;
 		};	
 

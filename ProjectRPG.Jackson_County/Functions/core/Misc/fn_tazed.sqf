@@ -19,30 +19,6 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 	{
 		client_istazed = true;
 		[] spawn KK_fnc_forceRagdoll;
-
-		_pwItems = primaryWeaponItems player;
-		_swItems = secondaryWeaponItems player;
-		_hgitems = handGunItems player;
-		{
-			if (!(_x in _safeItems)) then
-			{
-			player removeWeapon _x;
-			_weps pushBack _x;
-			};
-		}forEach (weapons player);
-
-		_holder = createVehicle [ "GroundWeaponHolder", getPosATL player, [], 0, "CAN_COLLIDE" ];
-
-		{
-		_items = _x;
-			{
-				_holder addItemCargoGlobal [_x,1];
-			}forEach _items;
-		}forEach [_hgItems, _pwItems, _swItems];
-		{
-			_holder addWeaponCargoGlobal [_x,1];
-		}forEach _weps;
-
 		disableUserInput true;
 		player setVariable ["tf_voiceVolume", 0, true];
 

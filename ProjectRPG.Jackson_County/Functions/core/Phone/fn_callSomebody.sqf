@@ -6,8 +6,8 @@ closedialog 0;
 if(isNil "_unit") exitwith {};
 if(isNull _unit) exitWith {};
 
-if(tryingcall) exitwith { ["Bitte warten Sie, bevor sie jemanden hinzufügen wollen - Sie werden verbunden!", false] spawn domsg; };
-if(PhonesRinging) exitwith { ["Bitte warten Sie, bevor sie jemanden hinzufügen wollen - Sie werden verbunden!", false] spawn domsg; };
+if(tryingcall) exitwith { ["Bitte warten Sie, bevor sie jemanden anrufen wollen - Sie werden verbunden!", false] spawn domsg; };
+if(PhonesRinging) exitwith { ["Du wirst grade angerufen, geh erstmal ran!", false] spawn domsg; };
 
 [] spawn client_fnc_checkCall;
 [myCallOwner,_type] remoteExec ["client_fnc_ringPlayer",_unit];
