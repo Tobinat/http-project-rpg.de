@@ -1,6 +1,6 @@
 params ["_vehinfo"];
 
-private ["_car","_name","_maxspeed","_redline","_enginePower","_peaktorque"]
+private ["_car","_name","_maxspeed","_redline","_enginePower","_peaktorque","_plate","_body","_bodyFinish","_seats","_owner","_editorPreview","_text","_computer","_textHeight","_controlPos"]
 
 _car = _vehinfo select 1;
 
@@ -15,7 +15,7 @@ _body = getText(configfile >> "CfgIvoryTextures" >> (_vehinfo select 2) >> "disp
 _bodyFinish = getText(configfile >> "CfgIvoryMaterials" >> (_vehinfo select 3) >> "displayName");
 _seats = getNumber(configfile >> "CfgVehicles" >> _car >> "transportSoldier")+1;
 _owner = _vehinfo select 5;
-_rims = "N/A";
+_editorPreview = getText(configFile >> "cfgVehicles" >> _car >> "editorPreview");
 
 _text = format["
 >> plate %6 <br/>
