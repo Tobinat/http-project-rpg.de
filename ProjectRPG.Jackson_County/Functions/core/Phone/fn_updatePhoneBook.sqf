@@ -285,7 +285,7 @@ disableSerialization;
 
 _allJobs = [
 
-	["Sherrifs Department",_currentPoliceDispatch],
+	["Sheriffs Department",_currentPoliceDispatch],
 	["Fire Department",_currentMedicDispatch],
 	["Security",_currentSecurity],
 	["Mechaniker",_currentRepairmen],

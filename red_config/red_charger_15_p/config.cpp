@@ -276,7 +276,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=2;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') < 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') < 0.5)";
 				statement="this animate [""pushbar_1_hide"",1]";
 			};
 			class remove_pullbar
@@ -285,7 +285,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=2;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') > 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') > 0.5)";
 				statement="this animate [""pushbar_1_hide"",0]";
 			};
 			class lower_laptop
@@ -294,7 +294,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'laptop_1_rot') < 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'laptop_1_rot') < 0.5)";
 				statement="this animate [""laptop_1_rot"",1]";
 			};
 			class raise_laptop
@@ -303,7 +303,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'laptop_1_rot') > 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'laptop_1_rot') > 0.5)";
 				statement="this animate [""laptop_1_rot"",0]";
 			};
 			class rotate_mount
@@ -312,7 +312,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'mount_1_rot') < 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'mount_1_rot') < 0.5)";
 				statement="this animate [""mount_1_rot"",1]";
 			};
 			class rotate_mount2
@@ -321,7 +321,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'mount_1_rot') > 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'mount_1_rot') > 0.5)";
 				statement="this animate [""mount_1_rot"",0]";
 			};
 		};
@@ -1761,7 +1761,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=2;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') < 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') < 0.5)";
 				statement="this animate [""pushbar_1_hide"",1]";
 			};
 			class remove_pullbar
@@ -1770,7 +1770,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=2;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') > 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') > 0.5)";
 				statement="this animate [""pushbar_1_hide"",0]";
 			};
 			class lower_laptop
@@ -1779,7 +1779,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'laptop_1_rot') < 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'laptop_1_rot') < 0.5)";
 				statement="this animate [""laptop_1_rot"",1]";
 			};
 			class raise_laptop
@@ -1788,7 +1788,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'laptop_1_rot') > 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'laptop_1_rot') > 0.5)";
 				statement="this animate [""laptop_1_rot"",0]";
 			};
 			class rotate_mount
@@ -1797,7 +1797,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'mount_1_rot') < 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'mount_1_rot') < 0.5)";
 				statement="this animate [""mount_1_rot"",1]";
 			};
 			class rotate_mount2
@@ -1806,7 +1806,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'mount_1_rot') > 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'mount_1_rot') > 0.5)";
 				statement="this animate [""mount_1_rot"",0]";
 			};
 		};
@@ -1930,7 +1930,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=2;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') < 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') < 0.5)";
 				statement="this animate [""pushbar_1_hide"",1]";
 			};
 			class remove_pullbar
@@ -1939,7 +1939,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=2;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') > 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'pushbar_1_hide') > 0.5)";
 				statement="this animate [""pushbar_1_hide"",0]";
 			};
 			class lower_laptop
@@ -1948,7 +1948,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'laptop_1_rot') < 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'laptop_1_rot') < 0.5)";
 				statement="this animate [""laptop_1_rot"",1]";
 			};
 			class raise_laptop
@@ -1957,7 +1957,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'laptop_1_rot') > 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'laptop_1_rot') > 0.5)";
 				statement="this animate [""laptop_1_rot"",0]";
 			};
 			class rotate_mount
@@ -1966,7 +1966,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'mount_1_rot') < 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'mount_1_rot') < 0.5)";
 				statement="this animate [""mount_1_rot"",1]";
 			};
 			class rotate_mount2
@@ -1975,7 +1975,7 @@ class cfgVehicles
 				position="drivewheel";
 				radius=10;
 				onlyForplayer="true";
-				condition="myjob == 'cop' && driver this == player && ((this animationPhase 'mount_1_rot') > 0.5)";
+				condition="myJob == 'Cop' && driver this == player && ((this animationPhase 'mount_1_rot') > 0.5)";
 				statement="this animate [""mount_1_rot"",0]";
 			};
 		};

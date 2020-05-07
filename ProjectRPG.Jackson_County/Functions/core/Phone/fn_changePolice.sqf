@@ -13,7 +13,7 @@ call TFAR_fnc_HideHint;
 ["Sie sind verbunden mit der Notrufzentralle des SLPD!", false] spawn domsg;
 */
 
-sleep 5;
+sleep 2;
 
 if (myjob =="EMS") then {
 	player setvariable["PhoneCallNumber",33.1,true];

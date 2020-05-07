@@ -18,7 +18,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 			};
 			if(_EMS > 2) then {
 				_ret = [
-					"red_explorer_16_e_custom1",
+					"red_explorer_16_e_ems",
 					"vvv_fire_truck"
 				];
 				_garage = _garage + _ret;
@@ -43,7 +43,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				_ret = [
 					"red_suburban_15_e_ems",
 					"red_suburban_15_e_ems2",
-					"red_suburban_15_e_custom2"
+					"red_suburban_15_e_custom1"
 				];
 				_garage = _garage + _ret;
 			};
