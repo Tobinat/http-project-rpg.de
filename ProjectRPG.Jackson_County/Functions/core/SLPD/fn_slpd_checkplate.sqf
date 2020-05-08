@@ -2,7 +2,7 @@ params ["_vehinfo"];
 
 private ["_car","_name","_maxspeed","_redline","_enginePower","_peaktorque","_plate","_body","_bodyFinish","_seats","_owner","_editorPreview","_text","_computer","_textHeight","_controlPos"];
 
-if (isNull _vehinfo) exitWith {};
+//if (isNull _vehinfo) exitWith {};
 
 _car = _vehinfo select 1;
 
