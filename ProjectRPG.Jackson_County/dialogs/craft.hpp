@@ -205,7 +205,7 @@ class client_Craft_Menu {
 			fadein=1;
 		  	fadeout=1;
 			font="PuristaLight";
-			text = "Wähle etwas aus fuer mehr Informationen!";
+			text = "Wähle etwas aus für mehr Informationen!";
 			size = 0.035;
 			sizeEx = 0.05;
 			x = 0.521649 * safezoneW + safezoneX;
@@ -499,7 +499,7 @@ class client_Craft_Menu_weapon {
 			fadein=1;
 		  	fadeout=1;
 			font="PuristaLight";
-			text = "Wähle etwas aus fuer mehr Informationen!";
+			text = "Wähle etwas aus für mehr Informationen!";
 			size = 0.035;
 			sizeEx = 0.05;
 			x = 0.521649 * safezoneW + safezoneX;
@@ -646,7 +646,7 @@ class client_Craft_Menu_clothing {
 			fadein=1;
 		  	fadeout=1;
 			font="PuristaLight";
-			text = "Wähle etwas aus fuer mehr Informationen!";
+			text = "Wähle etwas aus für mehr Informationen!";
 			size = 0.035;
 			sizeEx = 0.05;
 			x = 0.521649 * safezoneW + safezoneX;

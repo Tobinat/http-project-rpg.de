@@ -44,22 +44,6 @@ if((_this select 0) == "REFRESH") exitwith {
 
 	if(isNil "_status") exitwith {};
 
-	if(_status IN _kleidung) then {
-
-		_mySelect = 0;
-		{
-			if(_status == _x) exitwith {};
-			_mySelect = _myselect + 1;
-		} foreach _clothing1;
-
-		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
-		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
-
-		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %3 <t color='#ffffff'> <br/> Stoff: %1 </br> Eisen: %2 ",_costKleidung select 0, _costKleidung select 1,_selectedWeapon];
-		_btn4 ctrlCommit 0;
-	};
-
 	if(_status IN _vests) then {
 
 		_mySelect = 0;
@@ -75,6 +59,24 @@ if((_this select 0) == "REFRESH") exitwith {
 		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %3 <t color='#ffffff'> <br/> Stoff: %1 </br> Eisen: %2 ",_costVest select 0, _costVest select 1,_selectedWeapon];
 		_btn4 ctrlCommit 0;
 	};
+
+	/*
+	if(_status IN _kleidung) then {
+
+		_mySelect = 0;
+		{
+			if(_status == _x) exitwith {};
+			_mySelect = _myselect + 1;
+		} foreach _clothing1;
+
+		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
+		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
+
+		_Btn4 = _display displayCtrl 1110;
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %3 <t color='#ffffff'> <br/> Stoff: %1 </br> Eisen: %2 ",_costKleidung select 0, _costKleidung select 1,_selectedWeapon];
+		_btn4 ctrlCommit 0;
+	};
+	*/
 };
 
 _Btn2 = _display displayCtrl 1116;
