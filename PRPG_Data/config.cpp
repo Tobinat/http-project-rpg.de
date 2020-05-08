@@ -84,7 +84,7 @@ class CfgVehicles {
 	class Billboard_04_base_F;
     #include "\PRPG_Data\cfgHouseStorages.hpp"
 	#include "\PRPG_Data\cfgBuildings.hpp"
-	#include "\PRPG_Data\cfgBilboards.hpp"
+	#include "\PRPG_Data\cfgBillboards.hpp"
 };
 
 #include "\PRPG_Data\cfgSounds.hpp"
