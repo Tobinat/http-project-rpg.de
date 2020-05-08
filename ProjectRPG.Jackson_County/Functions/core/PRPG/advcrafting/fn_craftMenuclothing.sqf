@@ -56,7 +56,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %3 <t color='#ffffff'> <br/> Stoff: %1 </br> Eisen: %2 ",_costVest select 0, _costVest select 1,_selectedWeapon];
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Stoff: %2 <br/> Eisen: %3 <br/> ",_selectedWeapon,_costVest select 0, _costVest select 1];
 		_btn4 ctrlCommit 0;
 	};
 
@@ -73,7 +73,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
 
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %3 <t color='#ffffff'> <br/> Stoff: %1 </br> Eisen: %2 ",_costKleidung select 0, _costKleidung select 1,_selectedWeapon];
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %3 <t color='#ffffff'> <br/> Stoff: %1 <br/> Eisen: %2 <br/> ",_costKleidung select 0, _costKleidung select 1,_selectedWeapon];
 		_btn4 ctrlCommit 0;
 	};
 	*/
