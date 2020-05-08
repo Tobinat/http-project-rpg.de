@@ -23886,7 +23886,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="CG_wheel";
+													value="prpg_item_wheel_kit";
 												};
 											};
 											class Item207

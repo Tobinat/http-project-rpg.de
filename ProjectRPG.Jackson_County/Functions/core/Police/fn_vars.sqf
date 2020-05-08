@@ -269,7 +269,7 @@ _availableItems = [
 	"NP_PoliceBarrierL",
 	"NP_PoliceBarrierS",
 	"CG_Spikes_Collapsed",
-	"CG_wheel",
+	"prpg_item_wheel_kit",
 	//"cg_atf_bandage_i",
 	"kif_gopro",
 	//"kif_panicbutton"

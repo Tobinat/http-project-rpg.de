@@ -596,7 +596,7 @@ if(_condition == "cops") then {
 		["np_beefsoup",nil,1,1],
 		["NP_PoliceBarrierL",nil,1,1],
 		["NP_PoliceBarrierS",nil,1,1],
-		["CG_wheel",nil,1,1],
+		["prpg_item_wheel_kit",nil,1,1],
 		["np_energydrink",nil,1,1] 
 	];
 	{
@@ -806,7 +806,7 @@ if(_condition == "medic") then {
 		["np_beefsoup",nil,1,1],
 		["NP_PoliceBarrierL",nil,1,1],
 		["NP_PoliceBarrierS",nil,1,1],
-		["CG_wheel",nil,1,1],
+		["prpg_item_wheel_kit",nil,1,1],
 		["np_energydrink",nil,1,1] 
 	];
 	{
@@ -843,7 +843,7 @@ if(_condition == "fd") then {
 		["np_beefsoup",nil,2,1],
 		["NP_PoliceBarrierL",nil,2,1],
 		["NP_PoliceBarrierS",nil,2,1],
-		["CG_wheel",nil,2,1],
+		["prpg_item_wheel_kit",nil,2,1],
 		["ACE_Flashlight_XL50",nil,2,1],
 		["ACE_EarPlugs",nil,2,1],
 		["ACE_bodyBag",nil,2,1],
@@ -885,7 +885,7 @@ if(_condition == "hotdogs") then {
 if(_condition == "general") then {
 	_generalGroceries = [
 		["prpg_tablet",nil,50,3],
-		["CG_wheel",nil,150,3],
+		["prpg_item_wheel_kit",nil,150,3],
 		["ACE_fieldDressing",nil,5,3],
 		["ACE_CableTie",nil,5,3],
 		//["CG_Pro_Item_i",nil,350,1],

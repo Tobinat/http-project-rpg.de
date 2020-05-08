@@ -341,7 +341,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat') && ( ({_x == ""cg_wheel""} count magazines player) != 0 || myjob == ""EMS"" || myjob == ""repairman"" || ({_x == ""cg_engine""} count magazines player) != 0)"],
+		["(CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat') && ( ({_x == ""prpg_item_wheel_kit""} count magazines player) != 0 || myjob == ""EMS"" || myjob == ""repairman"" || ({_x == ""prpg_item_engine_kit""} count magazines player) != 0)"],
 		["Reperatur", "['Reparieren',(30 - mav_ttm_var_repairToReduce),client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",100] spawn client_fnc_dotask;",2]
 	],
 
@@ -876,7 +876,12 @@ NoPixel_InteractionMenuItems = [
 // jobs / situational
 
 	[
-		[" (myjob == ""Cop"" || (player getvariable ""legal"") > 7) && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
+		[" myjob == ""Cop"" && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
+		["Polizeicomputer", "createdialog ""kruk_slpd_computer"";",4]
+	],
+
+	[
+		[" (player getvariable ""legal"") > 1 && (( typeof cursorobject == ""Land_PoliceStation"") || ( typeof cursorobject == ""Land_prpg_courthouse"") || player distance myhouse < 15 ) "],
 		["Polizeicomputer", "createdialog ""kruk_slpd_computer"";",4]
 	],
 
@@ -901,7 +906,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["typeof currentcursortarget == ""prpg_courthouse"" && (myjob == ""Cop"" || myjob == ""Judge"")"],
+		["typeof currentcursortarget == ""Land_prpg_courthouse"" && (myjob == ""Judge"")"],
 		["Jury einberufen", "  [] spawn client_fnc_startJury; ",4]
 	],
 
@@ -1160,12 +1165,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
+		["myjob == ""none"" && ((player getvariable ""legal"") == 3 || (player getvariable ""legal"") == 10)"],
 		["Als Richter Arbeiten", "[player,""Judge""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
-		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
+		["myjob == ""none"" && ((player getvariable ""legal"") == 2 || (player getvariable ""legal"") == 9)"],
 		["Als Staatsanwalt Arbeiten", "[player,""Prosecutor""] spawn client_fnc_jobstart;",4]
 	],
 
@@ -1175,7 +1180,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""none"" && (player getvariable ""legal"") > 0"],
+		["myjob == ""none"" && (player getvariable ""legal"") == 1"],
 		["Als Anwalt Arbeiten", "[player,""Lawyer""] spawn client_fnc_jobstart;",4]
 	],
 

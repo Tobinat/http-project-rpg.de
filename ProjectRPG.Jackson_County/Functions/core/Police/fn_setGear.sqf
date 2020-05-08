@@ -26,7 +26,7 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
 		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
 		for "_i" from 1 to 5 do {player addItemToBackPack "ACE_CableTie"; };
-		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
+		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","prpg_item_wheel_kit"];
 
 		for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
 		_level = player getvariable ["cop", 0];
@@ -140,7 +140,7 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_15Rnd_9x19_M9"; };
 		for "_i" from 1 to 8 do {player addItemToBackPack "DDOPP_1Rnd_X26"; };
 		for "_i" from 1 to 5 do {player addItemToBackPack "ACE_CableTie"; };
-		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
+		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","prpg_item_wheel_kit"];
 
 		for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
 		_level = player getvariable ["cop", 0];
@@ -257,7 +257,7 @@ if(myjob == "Cop") exitwith {
 		player addgoggles "Mask_M40";
 		player addItemToUniform "ACE_Flashlight_XL50";
 		player addItemToUniform "ACE_EarPlugs";
-		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel"];
+		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","prpg_item_wheel_kit"];
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
@@ -295,7 +295,7 @@ if(myjob == "EMS") exitwith {
 		player addVest "EF_BLT_MEMS";
 
 		player addBackpack "invisible_carryall";
-		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
+		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","prpg_item_wheel_kit"];
 		player addItemToUniform "ACE_Flashlight_XL50";
 		player addItemToUniform "ACE_EarPlugs";
 		player addItemToUniform "ACE_surgicalKit";
@@ -442,7 +442,7 @@ if(myjob == "EMS") exitwith {
 		player forceAddUniform "vvv_traje_bombero";
 		player addBackpack "invisible_carryall";
 		player addgoggles "Mask_M40";
-		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
+		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","prpg_item_wheel_kit"];
 
 		for "_i" from 1 to 2 do {player addItemToBackPack "Manguera_magazine";};
 		player addweapon "fireextinguisher";
@@ -517,7 +517,7 @@ if(myjob == "EMS") exitwith {
 		player addVest "PRPG_EMS_BallistX";
 		player addBackpack "invisible_carryall";
 
-		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel"];
+		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","prpg_item_wheel_kit"];
 		player addItemToUniform "ACE_Flashlight_XL50";
 		player addItemToUniform "ACE_EarPlugs";
 		player addItemToUniform "ACE_surgicalKit";

@@ -163,84 +163,6 @@ class kif_gold_bar: ItemCore {
 	allowedSlots[]={901};
 	mass=15;
 };
-class kif_item_barrierPlastic : ItemCore {
-	scope=2;
-	displayName="Plastic Barrier Orange";
-	model="\A3\structures_f\civ\constructions\Bricks_V1_F";
-	allowedSlots[]={901};
-	mass=1;
-};
-class kif_item_barrierBollard : ItemCore {
-	scope=2;
-	displayName="Bollard Barrier Orange";
-	model="\A3\structures_f\civ\constructions\Bricks_V1_F";
-	allowedSlots[]={901};
-	mass=1;
-};
-class kif_item_trafficCone : ItemCore {
-	scope=2;
-	displayName="Traffic Cone Orange";
-	model="\A3\structures_f\civ\constructions\Bricks_V1_F";
-	allowedSlots[]={901};
-	mass=1;
-};
-class kif_item_roadCone : ItemCore {
-	scope=2;
-	displayName="Road Cone";
-	model="\A3\structures_f\civ\constructions\Bricks_V1_F";
-	allowedSlots[]={901};
-	mass=1;
-};
-class kif_item_roadConeLight : ItemCore {
-	scope=2;
-	displayName="Road Cone with light";
-	model="\A3\structures_f\civ\constructions\Bricks_V1_F";
-	allowedSlots[]={901};
-	mass=1;
-};
-class kif_item_barGate : ItemCore {
-	scope=2;
-	displayName="Bar Gate";
-	model="\A3\structures_f\civ\constructions\Bricks_V1_F";
-	allowedSlots[]={901};
-	mass=1;
-};
-class prpg_item_ruby : ItemCore {
-	scope=2;
-	displayName="Rubin";
-	author="PRPG";
-	descriptionShort="Oh ein Rubin.";
-	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\cg_banktowermainvault\moneyjewls\cg_gem_ruby.p3d";
-	mass=1;
-};
-class prpg_item_sapphire : ItemCore {
-	scope=2;
-	displayName="Sapphire";
-	author="PRPG";
-	descriptionShort="Oh ein Sapphire.";
-	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\cg_banktowermainvault\moneyjewls\cg_gem_sapphire.p3d";
-	mass=1;
-};
-class prpg_item_diamond : ItemCore {
-	scope=2;
-	displayName="Diamond";
-	author="PRPG";
-	descriptionShort="Oh ein Diamond.";
-	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\cg_banktowermainvault\moneyjewls\cg_gem_diamond.p3d";
-	mass=1;
-};
-class prpg_item_emerald : ItemCore {
-	scope=2;
-	displayName="Smaragd";
-	author="PRPG";
-	descriptionShort="Oh ein Smaragd.";
-	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model="\cg_banktowermainvault\moneyjewls\cg_gem_emerald.p3d";
-	mass=1;
-};
 class prpg_item_garn : ItemCore {
 	scope=2;
 	displayName="Garn";
@@ -621,4 +543,22 @@ class prpg_bottle_bluecorazol: ItemCore {
 	picture="\plp_beachobjects\Inventory\pic_BottleBlueCorazol_ca.paa";
 	model="\plp_beachobjects\Inventory\plp_bo_inv_BottleBlueCorazol.p3d";
 	mass=2;
+};
+
+class prpg_item_wheel_kit: ItemCore {
+	scope=2;
+	displayName="Werkzeugkasten (Reifen)";
+	descriptionShort="Mit diesem Werkzeugkasten kannst du einen kaputten Reifen flicken.";
+	picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Screwdriver_V2_F.jpg";
+	model="\plp_containers\StcToolboxes\plp_cts_ToolboxRedClean.p3d";
+	mass=15;
+};
+
+class prpg_item_engine_kit: ItemCore {
+	scope=2;
+	displayName="Werkzeugkasten (Motor)";
+	descriptionShort="Mit diesem Werkzeugkasten kannst du einen kaputten Motor reparieren.";
+	picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Screwdriver_V2_F.jpg";
+	model="\plp_containers\StcToolboxes\plp_cts_ToolboxBlackClean.p3d";
+	mass=15;
 };

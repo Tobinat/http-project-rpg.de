@@ -117,7 +117,7 @@ _availableItems = [
 	"NP_1mPoliceLine",
 	"NP_PoliceBarrierL",
 	"NP_PoliceBarrierS",
-	"CG_wheel",
+	"prpg_item_wheel_kit",
 	"ACE_Flashlight_XL50",
 	"ACE_EarPlugs",
 	"ACE_fieldDressing",

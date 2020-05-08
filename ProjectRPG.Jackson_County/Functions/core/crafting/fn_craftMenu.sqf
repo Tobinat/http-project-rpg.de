@@ -20,8 +20,8 @@ _itemList = [
 	"prpg_item_eisenstange",
 	"NP_DrugTable",
 	"NP_GrowingPlot",
-	"CG_Engine",
-	"CG_wheel",
+	"prpg_item_engine_kit",
+	"prpg_item_wheel_kit",
 	"CG_HackingTool",
 	"CG_Lockpick",
 	"NP_drillitem"
