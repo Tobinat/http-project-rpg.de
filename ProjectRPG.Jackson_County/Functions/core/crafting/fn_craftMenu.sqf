@@ -42,15 +42,15 @@ _PricesItemList = [
 _werlbankList = [
 	"prpg_workbench_normal_kit",
 	"prpg_workbench_car_kit",
-	"prpg_workbench_weapon_kit"	//KOMMA!!!!!!!
-	//"prpg_workbench_clothing_kit"
+	"prpg_workbench_weapon_kit",
+	"prpg_workbench_clothing_kit"
 ];
 
 _PriceswerlbankList = [
 	[20,10],
 	[20,10],
-	[20,10]	//KOMMA!!!!!!!
-	//[20,10]
+	[20,10],
+	[20,10]
 ];
 
 uisleep 0.05;
