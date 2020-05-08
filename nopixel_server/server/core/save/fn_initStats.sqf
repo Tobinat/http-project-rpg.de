@@ -191,16 +191,11 @@ if (_booli) then {
 } else {
 	_name = name _player;
 	_items = getunitloadout _player;
-	/*
-
-	Für Testzwecke mehr Geld für alle und COP + MED Level
-	Standart _cash = 25; _bank = 1500;
-
-	*/
-	_cash = 50000;
-	_bank = 10000000;
-	_cop = 3;
-	_ems = 3;
+	
+	_cash = 25;
+	_bank = 2500;
+	_cop = 0;
+	_ems = 0;
 	_mafia = 0;
 	_fire = 0;
 	_legal = 0;

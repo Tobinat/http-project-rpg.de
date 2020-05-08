@@ -101,11 +101,6 @@ switch (_code) do
 	// Q Key
 	case 16:
 	{
-		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then
-		{
-			[2] spawn client_fnc_rotateLight;
-		};
-
 		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then
 		{
 			[] spawn client_fnc_raisebasket;
@@ -114,10 +109,6 @@ switch (_code) do
 	// E Key
 	case 18:
 	{
-		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then
-		{
-			[1] spawn client_fnc_rotateLight;
-		};
 		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then
 		{
 			[] spawn client_fnc_lowerbasket;
@@ -190,8 +181,6 @@ switch (_code) do
 	// 1 Key
 	case 2:
 	{
-
-
 		if (_ctrlKey && myjob == "Cop") then {
 			if(handgunweapon player == "DDOPP_X26") then {
 				_weapon = handgunweapon player;
@@ -246,31 +235,9 @@ switch (_code) do
 		};
 	};
 
-	/* case 25:
-	{
-	    if(_shift && !_alt && !_ctrlKey && !busyPlayer) then
-	    {
-	 		[] spawn client_fnc_keyBusyPlayer;
-			if (!client_fadeSound) then
-			{
-				1 fadeSound 0.1;
-				["Die Lautstärke wurde gesenkt.", false] spawn domsg;
-				client_fadesound = true;
-			}
-			else
-			{
-				1 fadeSound 1;
-				["Die Lautstärke ist wieder normal.", false] spawn domsg;
-				client_fadesound = false;
-			};
-	        _handle = true;
-	    };
-	}; */
-
 	// 5 Key
 	case 6:
 	{
-
 		if (_shift) then { _handle = true; };
 		if (_shift) then
 			{
@@ -297,23 +264,6 @@ switch (_code) do
 	// 6 Key
 	case 7:
 	{
-		/*
-		if (_shift) then { _handle = true; };
-		if (_shift) then
-		{
-			if (isNull objectParent player && !busyPlayer && (animationState player) != "Incapacitated" ) then
-			{
-				[] spawn client_fnc_keyBusyPlayer;
-				if (player getVariable ["surrender", false]) then
-				{
-					player setVariable ["surrender", nil, false];
-				} else
-				{
-					[] spawn client_fnc_surrender;
-				};
-			};
-		};
-		*/
 		if(_ctrlKey) then {
 			if (isNull objectParent player && !busyPlayer && !imRestrained) then
 			{
