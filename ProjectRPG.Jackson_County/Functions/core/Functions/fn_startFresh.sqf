@@ -44,6 +44,7 @@ closedialog 0;
 	sleep 3;
 	im_dead = false;
 	imrestrained = false;
+	disableUserInput false;
 	player setVariable ["sl_wallet_silverlake", 0, false];
 	player setvariable["playerInjuries",[0,0,0,0,0,0,0,0,0,0,0],true];
 	player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false];

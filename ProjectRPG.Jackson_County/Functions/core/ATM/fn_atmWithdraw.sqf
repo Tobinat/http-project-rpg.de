@@ -18,7 +18,7 @@ if (_amount > 0) then
 			[_amount] call Client_fnc_sl_addCash_secure;
 			["Erledigt!","Du hast dein Geld entnommen!",[0,255,0,1],""] call Client_fnc_showNotification;
 			//["Du hast dein Geld entnommen!.", false] spawn domsg;
-			[player,objNull,1,format ["%1 bezahlt %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
+			[player,objNull,1,format ["%1 hebt %2 ab.", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
 			//hint "Bitte entnehmen Sie Ihr Geld!";
 		} else {
 			["Verdammt!","Ihr Konto ist nicht ausreichend gedeckt!",[255,0,0,1],""] call Client_fnc_showNotification;
@@ -34,7 +34,7 @@ if (_amount > 0) then
 			[_amount] call Client_fnc_sl_addCash_secure;
 			["Erledigt!","Du hast Geld vom Mafiakonto abgehoben!",[0,255,0,1],""] call Client_fnc_showNotification;
 			//["Du hast das Geld vom Mafiakonto abgehoben.", false] spawn domsg;
-			[player,objNull,2,format ["%1 bezahlt %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
+			[player,objNull,2,format ["%1 hebt %2 ab.", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
 			//hint "Entnehmen Sie bitte Ihr Kriminelles Geld!";
 		} else {
 			["Verdammt!","Ihr Konto ist nicht ausreichend Gedeckt!",[255,0,0,1],""] call Client_fnc_showNotification;
