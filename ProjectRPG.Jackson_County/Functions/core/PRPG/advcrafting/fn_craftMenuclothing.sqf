@@ -33,8 +33,8 @@ _vests = [
 
 _costVest = [8,4];
 
-_kleidung = [];
-_costKleidung = [4,0];
+//_kleidung = [];
+//_costKleidung = [4,0];
 
 uisleep 0.05;
 
@@ -109,7 +109,7 @@ if(_status == "Westen") exitwith {
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
 		_list lbAdd _selectedweapon;
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
-	} foreach _clothing1;
+	} foreach _vests;
 
 };
 /*
@@ -119,7 +119,7 @@ if(_status == "Kleidung") exitwith {
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
 		_list lbAdd _selectedweapon;
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
-	} foreach _clothing2;
+	} foreach _kleidung;
 
 };
 */
