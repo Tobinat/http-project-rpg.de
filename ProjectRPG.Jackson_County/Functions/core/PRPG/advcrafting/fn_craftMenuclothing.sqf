@@ -50,7 +50,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		{
 			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
-		} foreach _clothing2;
+		} foreach _vests;
 
 		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
@@ -136,9 +136,11 @@ if((_this select 0) == "CRAFT") exitwith {
 		_cost = _costVest;
 	};
 
+	/*
 	if(_status IN _kelidung) then {
 		_cost = _costKleidung;
 	};
+	*/
 
 	_error = false;
 	_n = 0;
