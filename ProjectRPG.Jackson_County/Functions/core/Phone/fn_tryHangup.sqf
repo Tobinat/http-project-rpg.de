@@ -10,7 +10,7 @@ if(tryingCall) exitwith {
 };
 if(myCallOwner == player) exitwith {
 	["Aufgelegt.", false] spawn domsg; 
-	[] call client_fnc_resetcall;
+	//[] call client_fnc_resetcall;
 	cidhu = player getVariable "PhoneID";
 	{
 		_phonetargetid = _x getVariable "PhoneID";

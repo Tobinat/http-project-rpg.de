@@ -963,7 +963,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["count (player call TFAR_fnc_radiosList) > 0 && !imrestrained"],
+		["count (player call TFAR_fnc_radiosList) > 0 && !imrestrained && !(player getVariable [""ace_captives_isHandcuffed"",false])"],
 		["Telefon", "createdialog ""phoneHUD""",4]
 	],
 

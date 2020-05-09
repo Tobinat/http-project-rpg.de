@@ -8,7 +8,7 @@ class EditorData
 	toggles=1034;
 	class ItemIDProvider
 	{
-		nextID=3654;
+		nextID=3655;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9735.3867,26.536974,793.07117};
-		dir[]={-0.031038227,-0.47092438,0.88171136};
-		up[]={-0.016567556,0.88214368,0.47069135};
-		aside[]={0.99945128,-1.2135888e-007,0.035183776};
+		pos[]={9605.7891,45.548149,8578.9453};
+		dir[]={-0.10266142,-0.46547341,0.87909567};
+		up[]={-0.05399197,0.88505971,0.46233565};
+		aside[]={0.99325728,-1.3865065e-007,0.11599349};
 	};
 };
 binarizationWanted=0;
@@ -331,6 +331,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -345,24 +363,6 @@ class CustomAttributes
 						};
 					};
 					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -26398,7 +26398,7 @@ class Mission
 										};
 										class value
 										{
-											items=56;
+											items=82;
 											class Item0
 											{
 												class data
@@ -27183,6 +27183,370 @@ class Mission
 													value="EF_BLT_MEMS";
 												};
 											};
+											class Item56
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_R_CAP_BLK";
+												};
+											};
+											class Item57
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_R_CAP_TAN";
+												};
+											};
+											class Item58
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_R_CAP_OD_US";
+												};
+											};
+											class Item59
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_r_cap_blk_Glasses";
+												};
+											};
+											class Item60
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_r_cap_od_Glasses";
+												};
+											};
+											class Item61
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_r_cap_tan_Glasses";
+												};
+											};
+											class Item62
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_woolhat";
+												};
+											};
+											class Item63
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_woolhat_br";
+												};
+											};
+											class Item64
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_woolhat_cu";
+												};
+											};
+											class Item65
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_woolhat_CW";
+												};
+											};
+											class Item66
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_woolhat_tan";
+												};
+											};
+											class Item67
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_woolhat_WH";
+												};
+											};
+											class Item68
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_headsetcap";
+												};
+											};
+											class Item69
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_headsetcap_od";
+												};
+											};
+											class Item70
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_headsetcap_blk";
+												};
+											};
+											class Item71
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_headsetcap_blk_Glasses";
+												};
+											};
+											class Item72
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_headsetcap_Glasses";
+												};
+											};
+											class Item73
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TRYK_H_headsetcap_od_Glasses";
+												};
+											};
+											class Item74
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="H_Cap_blk";
+												};
+											};
+											class Item75
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="H_Cap_grn";
+												};
+											};
+											class Item76
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="H_Cap_oli";
+												};
+											};
+											class Item77
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="H_Cap_usblack";
+												};
+											};
+											class Item78
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="H_Cap_tan_specops_US";
+												};
+											};
+											class Item79
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="H_Beret_blk";
+												};
+											};
+											class Item80
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="H_Watchcap_blk";
+												};
+											};
+											class Item81
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="H_Watchcap_khk";
+												};
+											};
 										};
 									};
 								};
@@ -27204,7 +27568,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item478
@@ -34859,7 +35242,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8269.9893,26.228413,2972.6189};
+				position[]={8270.1973,26.228413,2972.4751};
 				angles[]={0,3.9982176,0};
 			};
 			side="Empty";
@@ -34898,7 +35281,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8277.9268,26.228413,2963.564};
+				position[]={8277.96,26.228413,2963.5864};
 				angles[]={0,3.9982176,0};
 			};
 			side="Empty";
@@ -34937,8 +35320,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8242.9941,26.228413,3028.2107};
-				angles[]={0,0.83328998,0};
+				position[]={8241.9336,26.228413,3028.0176};
+				angles[]={0,6.197597,0};
 			};
 			side="Empty";
 			flags=4;
@@ -34976,8 +35359,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8248.8311,26.228413,3021.7605};
-				angles[]={0,0.83328998,0};
+				position[]={8248.6729,26.228413,3020.7949};
+				angles[]={0,1.8525089,0};
 			};
 			side="Empty";
 			flags=4;
@@ -35720,17 +36103,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9599.4531,27.352497,4121.7798};
+				position[]={9599.4531,27.410496,4121.7798};
 				angles[]={0,1.341687,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
+				disableSimulation=1;
 			};
 			id=3473;
 			type="Land_elementsPlantersLamp1";
-			atlOffset=0.38400078;
+			atlOffset=0.44199944;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -35760,17 +36144,41 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9604.1768,27.302933,4100.7588};
-				angles[]={0,1.3336676,0};
+				position[]={9604.1768,27.444496,4100.7588};
+				angles[]={0,1.3336759,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
+				disableSimulation=1;
 			};
 			id=3474;
 			type="Land_elementsPlantersLamp1";
-			atlOffset=0.33443642;
+			atlOffset=0.0046977997;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item754
 		{
@@ -36774,8 +37182,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9544.3232,26.7099,4112.3467};
-				angles[]={0,1.3461671,0};
+				position[]={9543.6797,26.7099,4113.1475};
+				angles[]={0,6.06532,0};
 			};
 			side="Empty";
 			class Attributes
@@ -36790,8 +37198,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9545.1533,26.710764,4109.0469};
-				angles[]={0,1.3461671,0};
+				position[]={9545.7578,26.710764,4099.0171};
+				angles[]={0,1.5197177,0};
 			};
 			side="Empty";
 			class Attributes
@@ -36806,8 +37214,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9546.042,26.698143,4104.6685};
-				angles[]={0,1.3461671,0};
+				position[]={9546.4092,26.698143,4101.7837};
+				angles[]={0,2.2438123,0};
 			};
 			side="Empty";
 			class Attributes

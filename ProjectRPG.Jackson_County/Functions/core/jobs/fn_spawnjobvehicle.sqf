@@ -52,9 +52,12 @@ if (_jobType == "trashman") exitwith {
 };
 
 if (_jobType == "pizza") exitwith {
-	vehspawned = createVehicle ["GMC_Vandura_83_Pizza_COSTUM_V1", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	vehspawned = createVehicle ["Jonzie_Transit", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
+	[vehspawned, ["white","Glossy"]] call client_fnc_initVehicle;
+	vehspawned addItemCargo ["PRPG_Cap_Pizza",1];
+	hint "Da liegt zeug in dem Auto, benutze es!";
 };
 
 if (_jobType == "busdriver") exitwith {
