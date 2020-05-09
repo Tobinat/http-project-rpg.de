@@ -35,8 +35,8 @@ player setVariable["loaded", nil, false];
 waitUntil {!(isNull (findDisplay 46))};
 
 //Disable Respawn Button
-/*waitUntil {!(isNull (findDisplay 49))};
-((findDisplay 49) displayCtrl 1010) ctrlEnable false;*/
+waitUntil {!(isNull (findDisplay 49))};
+((findDisplay 49) displayCtrl 1010) ctrlEnable false;
 
 _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 [_vehicle, ["black","matte"], "black", 1, 1] call client_fnc_IvoryInitVehicle;
@@ -88,7 +88,7 @@ player setVariable ["tfcheck",true,true];
 [Client_fnc_Survival, 300] execFSM "call.fsm";
 
 // Task Force Arrowhead Radio //
-//[Client_fnc_checktaskforce, 5] execFSM "call.fsm";
+[Client_fnc_checktaskforce, 5] execFSM "call.fsm";
 
 if(uniform player == "" && female) then {
 	player forceadduniform "vvv_character_protibanador";
