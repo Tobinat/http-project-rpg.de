@@ -126,6 +126,7 @@ NoPixel_InteractionMenuItems = [
 		["Angelschein $400", "_cashcheck = [1,400] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Du hast kein Geld!""; }; [""Add"",""license"",5] call client_fnc_sustain; [400] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 
+	/*
 	[
 		["paintballing "],
 		["Respawnen", " paintballhit = true; hint ""Respawned"";",1]
@@ -140,6 +141,7 @@ NoPixel_InteractionMenuItems = [
 		[" player distance [3370.36,1436.92,0.00147247] < 225 && !paintballing"],
 		["Starte Paintball", " [player] remoteexec [""server_fnc_paintball"",2]; ",1]
 	],
+	*/
 
 	[
 		[" myJob != ""cop""", " myJob == ""Mafia"" && currentcursortarget == missionVehicle && !isNull missionVehicle && player distance endOfmission < 25"],
