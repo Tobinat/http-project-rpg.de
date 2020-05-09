@@ -15,14 +15,16 @@ if(myCallOwner == player) exitwith {
 	{
 		_phonetargetid = _x getVariable "PhoneID";
 		if (_phonetargetid == cidhu) then {
-			[] remoteexec ["client_fnc_hangup",_x];
+			//[] remoteexec ["client_fnc_hangup",_x];
+			[] remoteexec ["client_fnc_resetcall",_x];
 		};
 	} foreach playableUnits;
 	cidhu = nil;
 };
 if(callInProgress) exitwith { 
 	["Aufgelegt.", false] spawn domsg; 
-	[] call client_fnc_hangup;
+	//[] call client_fnc_hangup;
+	[] call client_fnc_resetcall;
 	[] remoteexec ["client_fnc_resetcall",myCallOwner];
 };
 
