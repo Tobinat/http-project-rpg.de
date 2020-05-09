@@ -5,7 +5,7 @@ petroleo < string to object
 private["_n","_i"];
 
 _barArray = ["np_fishmeat"];
-_priceArray = [12];
+_priceArray = [45];
 
 
 if(isNil "globalProtection") then { globalProtection = 0; };
@@ -42,6 +42,6 @@ _cashTotal = 0;
 
 globalProtection = 0;
 
-["Verarbeite",format["Du hast Fisch verkauft fuer: $%1", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
-[player,objNull,3,format ["%1 Fisch verkauft in einer Menge von: %2 fuer %3 $", name player, _total, _cashTotal],_cashTotal, "RYBY", _total] remoteExec ["server_fnc_economyLog", 2];
+["Verarbeite",format["Du hast Fischfilet für $%1 verkauft", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
+[player,objNull,3,format ["%1 verkauft %2 Fischfilets für $%3", name player, _total, _cashTotal],_cashTotal, "RYBY", _total] remoteExec ["server_fnc_economyLog", 2];
 //hint format["Zarobiłeś $%1",_cashTotal];

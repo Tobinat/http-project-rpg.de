@@ -16,7 +16,6 @@ if(isnil "Np_ProfileVars") then {
 
 waitUntil {sleep 0.05; !(isNil {player}) && player == player && alive player};
 
-
 [] call Client_fnc_miscVariables;
 player allowdamage false;
 [player] remoteexec ["Server_fnc_initStats",2];
@@ -25,7 +24,6 @@ player allowdamage true;
 [] call client_fnc_initInteractions;
 [] spawn client_fnc_escInterupt;
 waituntil {(player getvariable "loaded") == 2};
-
 
 [] call client_fnc_karmaPhoneInit;
 
