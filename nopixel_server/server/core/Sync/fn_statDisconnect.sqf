@@ -14,9 +14,44 @@ _position = position _player;
 _syncInfo = _player getVariable "sync";
 if(isNil "_syncInfo") then { _syncinfo = 1; };
 
-if(_syncInfo == 0 || _uid in currentCop || _uid in currentEMS || _uid in currentFire) then { 
+if(_syncInfo == 0 || _uid in currentCop || _uid in currentEMS || _uid in currentFire) then {
+
 	_updatestr = format ["updatePlayerInfoNoGearNoShopNoHouse:%1:%2:%3:%4:%5", _cash, _bank, _position, _messages, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+
+	if (_uid IN currentPoliceDispatch) then {
+		_pia = currentPoliceDispatch find _uid;
+		currentPoliceDispatch deleteAt _pia;
+		publicvariable "currentPoliceDispatch";
+	};
+
+	if (_uid IN currentMedicDispatch) then { 
+		_pia = currentMedicDispatch find _uid;
+		currentMedicDispatch deleteAt _pia;
+		publicvariable "currentMedicDispatch";
+	};
+
+	if (getplayeruid _player IN currentFireDispatch) then { 
+		_pia = currentFireDispatch find _uid;
+		currentFireDispatch deleteAt _pia;
+		publicvariable "currentFireDispatch";
+	};
+
+
+	if (_uid IN currentCop) exitwith {
+    	_pia = currentCop find _uid;
+    	currentCop deleteAt _pia;
+    	publicvariable "currentCop";
+		//currentCop ="";
+	};
+
+	if (_uid IN currentEMS) exitwith {
+    	_pia = currentEMS find _uid;
+    	currentEMS deleteAt _pia;
+    	publicvariable "currentEMS";
+   		//currentEMS ="";
+	};
+
 } else { 
 	_updatestr = format ["updatePlayerInfoNoShopNoHouse:%1:%2:%3:%4:%5:%6", _items, _cash, _bank, _position, _messages, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;

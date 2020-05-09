@@ -5,17 +5,26 @@ if(PhonesRinging) exitwith {
 };
 if(tryingCall) exitwith {
 	tryingcall = FALSE;
-	["Verbindung beenden.", false] spawn domsg; 
+	["Aufgelegt.", false] spawn domsg; 
 	[] call client_fnc_resetcall;
 };
 if(myCallOwner == player) exitwith {
-	["Verbindung beenden.", false] spawn domsg; 
-	[] call client_fnc_resetcall;	
+	["Aufgelegt.", false] spawn domsg; 
+	[] call client_fnc_resetcall;
+	cidhu = player getVariable "PhoneID";
+	{
+		_phonetargetid = _x getVariable "PhoneID";
+		if (_phonetargetid == cidhu) then {
+			[] remoteexec ["client_fnc_hangup",_x];
+		};
+	} foreach playableUnits;
+	cidhu = nil;
 };
 if(callInProgress) exitwith { 
-	["Verbindung getrennt.", false] spawn domsg; 
-	[] call client_fnc_hangup; 
+	["Aufgelegt.", false] spawn domsg; 
+	[] call client_fnc_hangup;
+	[] remoteexec ["client_fnc_resetcall",myCallOwner];
 };
 
-["Konversationen löschen.", false] spawn domsg; 
-[] call client_fnc_resetcall; 
+["Aufgelegt.", false] spawn domsg; 
+[] call client_fnc_resetcall;

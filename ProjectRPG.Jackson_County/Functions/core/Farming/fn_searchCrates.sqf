@@ -59,7 +59,7 @@ if (_chanceloot > 400) then {
 			player addItem _rarefishselected;
 			["Du zwei Seltene Fische gefunden, der Mann in der Oase gibt dir was für diese!", true] spawn domsg;
 		};
-	case "8": { for "_i" from 1 to 5 do { player addItem "np_energydrink"; }; ["Du hast einen Container mit Energydrinks geöffnet, du nimmst dir 10!", true] spawn domsg; };
+	case "8": { for "_i" from 1 to 5 do { player addItem "np_energydrink"; }; ["Du hast einen Container mit Energydrinks geöffnet, du nimmst dir 5!", true] spawn domsg; };
 	case "9": { 
 		for "_i" from 1 to 20 do { player addItem "ACE_fieldDressing"; }; 
 		for "_i" from 1 to 5 do { player addItem "ACE_tourniquet"; };

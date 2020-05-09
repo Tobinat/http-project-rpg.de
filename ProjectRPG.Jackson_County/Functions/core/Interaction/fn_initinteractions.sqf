@@ -776,12 +776,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Cop""", "typeof cursorobject == ""Land_FuelStation_01_workshop_F"" && !attachedcar"],
+		["myjob == ""Cop""", "typeof cursorobject == ""Land_FuelStation_01_workshop_F"" && !attachedcar && vehicle player == player"],
 		["Polizeigarage", "[] spawn client_fnc_openGaragePolice;",3]
 	],
 
 	[
-		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"" && !attachedcar && getpos player distance [5579.38,6205.82,0.00143433] < 50"],
+		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"" && !attachedcar && getpos player distance [5579.38,6205.82,0.00143433] < 50 && vehicle player == player"],
 		["Polizeigarage", "[] spawn client_fnc_openGaragePolice;",3]
 	],
 

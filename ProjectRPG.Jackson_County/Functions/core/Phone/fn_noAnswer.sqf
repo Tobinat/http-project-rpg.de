@@ -1,2 +1,2 @@
 	playSound "cgphone_hangup";
-	["Die Person hat aufgelegt!", false] spawn domsg; 
+	["Die Person ist nicht ans Handy gegangen!", false] spawn domsg; 
