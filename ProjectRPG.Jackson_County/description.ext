@@ -28,14 +28,15 @@ class Header {
 
 showHUD[] = {
 	1,  // Scripted HUD (same as showHUD command)
-	1,  // Vehicle + soldier info
-	1,  // Vehicle radar [HIDDEN]
-	1,  // Vehicle compass [HIDDEN]
+	0,  // Vehicle + soldier info
+	0,  // Vehicle radar [HIDDEN]
+	0,  // Vehicle compass [HIDDEN]
 	0,  // Tank direction indicator
 	0,  // Commanding menu
 	0,  // Group Bar
-	1,  // HUD Weapon Cursors
-	0   // HUD Squad Radar
+	0,  // HUD Weapon Cursors
+	1,   // HUD Squad Radar
+    0
 };
 
 #include "dialogs\Dialogs.hpp"

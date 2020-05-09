@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9076.665,145.91385,3108.2834};
-		dir[]={0.11611956,-0.25040308,-0.96119052};
-		up[]={0.030038353,0.9681282,-0.2486504};
-		aside[]={-0.99281561,4.212925e-007,-0.11994129};
+		pos[]={9735.3867,26.536974,793.07117};
+		dir[]={-0.031038227,-0.47092438,0.88171136};
+		up[]={-0.016567556,0.88214368,0.47069135};
+		aside[]={0.99945128,-1.2135888e-007,0.035183776};
 	};
 };
 binarizationWanted=0;
@@ -331,24 +331,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -363,6 +345,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -416,7 +416,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=113;
+									items=114;
 									class Item0
 									{
 										class data
@@ -1999,6 +1999,20 @@ class CustomAttributes
 											value="ace_common_checkpboswhitelist";
 										};
 									};
+									class Item113
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="tfar_samesrfrequenciesforside";
+										};
+									};
 								};
 							};
 						};
@@ -2015,7 +2029,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=113;
+									items=114;
 									class Item0
 									{
 										class data
@@ -6690,7 +6704,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -7141,6 +7155,51 @@ class CustomAttributes
 															};
 														};
 														value="[""nopixel_server"",""extdb3""]";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item113
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
 													};
 												};
 												class Item1
@@ -14371,7 +14430,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9729.8467,1.1274705,824.76166};
+						position[]={9729.8467,1.1277231,824.76196};
 					};
 					side="Civilian";
 					flags=7;
@@ -14383,10 +14442,29 @@ class Mission
 					};
 					id=328;
 					type="C_man_shorts_1_F";
-					atlOffset=0.026749492;
+					atlOffset=0.02699995;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -14405,7 +14483,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -14413,7 +14491,7 @@ class Mission
 			{
 			};
 			id=327;
-			atlOffset=0.026749492;
+			atlOffset=0.02699995;
 		};
 		class Item177
 		{

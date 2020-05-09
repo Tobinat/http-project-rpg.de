@@ -34,10 +34,6 @@ player setVariable["loaded", nil, false];
 
 waitUntil {!(isNull (findDisplay 46))};
 
-//Disable Respawn Button
-waitUntil {!(isNull (findDisplay 49))};
-((findDisplay 49) displayCtrl 1010) ctrlEnable false;
-
 _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 [_vehicle, ["black","matte"], "black", 1, 1] call client_fnc_IvoryInitVehicle;
 [_vehicle, "FuckYou", "ivory"] call client_fnc_numberPlate;
@@ -117,3 +113,8 @@ sleep 2;
 [] call client_fnc_initWelcome;
 ["Windowstaste oder Use Action 10 öffnet das Interaktionsmenü.", true] spawn domsg;
 driver_test = false;
+
+/*
+waitUntil {!(isNull (findDisplay 49))};
+((findDisplay 49) displayCtrl 1010) ctrlEnable false;
+*/
