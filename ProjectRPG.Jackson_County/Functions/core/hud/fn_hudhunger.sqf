@@ -1,5 +1,5 @@
 disableSerialization;
-	422 cutfadeout 1; 
+	422 cutfadeout 1;
 if(client_hunger < 70) then {
 	422 cutRsc ["HUDFood","PLAIN"]; 
 	if(client_hunger < 10) exitwith {};
