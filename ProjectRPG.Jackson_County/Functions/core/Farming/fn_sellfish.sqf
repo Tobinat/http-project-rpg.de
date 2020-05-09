@@ -11,7 +11,7 @@ _priceArray = [45];
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { hint "Du verarbeitest."; };
 _localProtection = 0;
-
+["Du Verkaufst Fischfilets, das kann kurz dauern, bleibe Stehen.",true] spawn domsg;
 
 
 _n = 0;

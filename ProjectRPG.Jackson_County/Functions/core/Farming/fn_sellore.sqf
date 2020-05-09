@@ -11,7 +11,7 @@ _barArray = ["prpg_item_kupfer_bar","prpg_item_eisen_bar","prpg_item_silber_bar"
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { hint "Du verarbeitest."; };
 _localProtection = 0;
-
+["Du Verkaufst Materialien, das kann kurz dauern, bleibe Stehen.",true] spawn domsg;
 
 _n = 0;
 _cashTotal = 0;
@@ -41,6 +41,6 @@ _cashTotal = 0;
 
 globalProtection = 0;
 
-["Verarbeite",format["Du hast Rohstoffe verkauft für: $%1", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
+["Verkaufe",format["Du hast Rohstoffe verkauft für: $%1", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
 //[player,objNull,3,format ["%1 hat Rohstoffe verkauft in einer Menge von: %2 fuer %3 $", name player, _total, _cashTotal],_cashTotal, "SUROWIEC", _total] remoteExec ["server_fnc_economyLog", 2];
 //hint format["Zarobiłeś $%1",_cashTotal];
