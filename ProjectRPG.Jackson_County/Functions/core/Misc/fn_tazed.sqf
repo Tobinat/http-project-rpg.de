@@ -17,7 +17,6 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 {
 	if(!client_istazed) then
 	{
-		player setVariable ["ACE_isUnconscious",true];
 		client_istazed = true;
 		[] spawn KK_fnc_forceRagdoll;
 		disableUserInput true;
@@ -36,7 +35,6 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 			disableUserInput false;
 			[player,""] remoteExecCall ["client_fnc_animSync"];
 			player setVariable ["tf_voiceVolume", 1, true];
-			player setVariable ["ACE_isUnconscious",false];
 		};
 	};
 } else {

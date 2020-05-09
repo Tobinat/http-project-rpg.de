@@ -29,15 +29,19 @@ if((_this select 0) == 1) exitwith {
 	if (str _className find "onzie_" > -1) then {
 		if (myJob == "Cop") then {
 			_coplicense = round(random 100);
-			_plate = format ["SLSD - %1",_coplicense];
+			_plate = format ["SLSD %1",_coplicense];
 			[_vehicle, _plate, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
+			_vehicle setvariable ["slpdcar",_coplicense,true];
+			if (str _className find "Tow_Truck" > -1) then {	
+				[_vehicle, ["burntorange","Glossy"]] call client_fnc_initVehicle;
+			};
 		} else {
 			_medlicense = round(random 100);
-			_plate = format ["SLFD - %1",_medlicense];
+			_plate = format ["SLFD %1",_medlicense];
 			[_vehicle, _plate, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
-		};
-		if (str _className find "Tow_Truck" > -1) then {	
-			[_vehicle, ["burntorange","Glossy"]] call client_fnc_initVehicle;
+			if (str _className find "Tow_Truck" > -1) then {	
+				[_vehicle, ["burntorange","Glossy"]] call client_fnc_initVehicle;
+			};
 		};
 	};
 	if (str _className find "red_" > -1) then {
