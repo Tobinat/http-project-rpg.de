@@ -592,12 +592,12 @@ if(_condition == "mcdonalds") then {
 
 if(_condition == "cops") then {
 	_bulle = [
-		["np_water",nil,1,1],
-		["np_beefsoup",nil,1,1],
-		["NP_PoliceBarrierL",nil,1,1],
-		["NP_PoliceBarrierS",nil,1,1],
-		["prpg_item_wheel_kit",nil,1,1],
-		["np_energydrink",nil,1,1] 
+		["np_water",nil,1,3],
+		["np_beefsoup",nil,1,3],
+		["NP_PoliceBarrierL",nil,1,3],
+		["NP_PoliceBarrierS",nil,1,3],
+		["prpg_item_wheel_kit",nil,1,3],
+		["np_energydrink",nil,1,3] 
 	];
 	{
 		_storeList pushback _x;
@@ -802,12 +802,12 @@ if(_condition == "EMSbackpack") then {
 
 if(_condition == "medic") then {
 	_medic = [
-		["np_water",nil,1,1],
-		["np_beefsoup",nil,1,1],
-		["NP_PoliceBarrierL",nil,1,1],
-		["NP_PoliceBarrierS",nil,1,1],
-		["prpg_item_wheel_kit",nil,1,1],
-		["np_energydrink",nil,1,1] 
+		["np_water",nil,1,3],
+		["np_beefsoup",nil,1,3],
+		["NP_PoliceBarrierL",nil,1,3],
+		["NP_PoliceBarrierS",nil,1,3],
+		["prpg_item_wheel_kit",nil,1,3],
+		["np_energydrink",nil,1,3] 
 	];
 	{
 		_storeList pushback _x;
