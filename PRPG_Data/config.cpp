@@ -96,4 +96,51 @@ class cfgWeapons {
 	class ItemRadio;
 	#include "\PRPG_Data\cfgItemsWeapons.hpp"
 	#include "\PRPG_Data\CfgRadio.hpp"
+	
+	
+	class VestItem;
+	class V_HarnessO_brn;
+	class PRPG_Vest_1: V_HarnessO_brn
+	{
+		scope = 2;
+		displayName = "PRPG Sheriff Weste";
+		picture = "\A3\characters_f\Data\UI\icon_V_plate_carrier_1_CA.paa";
+		model = "PRPG_Data\models\vest\sl_vest.p3d";
+		author = "PRPG";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {"PRPG_Data\models\vest\texture\traffic.paa"};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "PRPG_Data\models\vest\sl_vest.p3d";
+			containerClass = "Supply40";
+			mass = 20;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 10;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 10;
+					passThrough = 0.5;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+				};
+			};
+			hiddenSelections[] = {};
+		};
+	};
 };
