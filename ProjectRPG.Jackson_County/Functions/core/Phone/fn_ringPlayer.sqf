@@ -4,11 +4,11 @@
 	_radios = player call TFAR_fnc_radiosList;
 	if(count _radios > 0) then {
 		if(_type == 1) then {
-			if( phoneDisabled ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["%1 hat versucht dich anzurufen! (Telefon ausgeschaltet)","Anonymous"], false] spawn domsg; };	
+			if( phoneDisabled ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["%1 hat versucht dich anzurufen! (Lautlos)","Anonymous"], false] spawn domsg; };	
 			if( callInProgress || PhonesRinging ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["%1 hat versucht dich anzurufen! (Besetzt) ","Anonymous"], false] spawn domsg; };	
 			if( client_battery < 5 ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["%1 hat versucht dich anzurufen! (Ihr Akku ist fast leer) ","Anonymous"], false] spawn domsg; };
 		} else {
-			if( phoneDisabled ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["%1 hat versucht dich anzurufen! (Telefon ausgeschaltet)",name CurrentCaller], false] spawn domsg; };	
+			if( phoneDisabled ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["%1 hat versucht dich anzurufen! (Lautlos)",name CurrentCaller], false] spawn domsg; };	
 			if( callInProgress || PhonesRinging ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["%1 hat versucht dich anzurufen! (Besetzt) ",name CurrentCaller], false] spawn domsg; };	
 			if( client_battery < 5 ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["%1 hat versucht dich anzurufen! (Ihr Akku ist fast leer) ",name CurrentCaller], false] spawn domsg; };
 		};

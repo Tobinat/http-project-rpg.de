@@ -544,7 +544,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["CurrentCursorTarget isKindOf 'Man' && (myjob == ""Mafia"" || myjob == ""Fire"" || myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Judge"" || myjob == ""Lawyer"" || myjob == ""Prosecutor"")"],
+		["CurrentCursorTarget isKindOf 'Man' && (myjob == ""Mafia"" || myjob == ""Fire"" || myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Judge"" || myjob == ""Prosecutor"")"],
 		["Befördern", "[CurrentCursorTarget] spawn client_fnc_promotionStart",2]
 	],
 
@@ -1172,12 +1172,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""none"" && ((player getvariable ""legal"") == 3 || (player getvariable ""legal"") == 10)"],
+		["myjob == ""none"" && ((player getvariable ""legal"") == 6 || (player getvariable ""legal"") == 10) && vehicle Player == player"],
 		["Als Richter Arbeiten", "[player,""Judge""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
-		["myjob == ""none"" && ((player getvariable ""legal"") == 2 || (player getvariable ""legal"") == 9)"],
+		["myjob == ""none"" && ((player getvariable ""legal"") == 2 || (player getvariable ""legal"") == 9) && vehicle Player == player"],
 		["Als Staatsanwalt Arbeiten", "[player,""Prosecutor""] spawn client_fnc_jobstart;",4]
 	],
 

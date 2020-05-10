@@ -12,7 +12,7 @@ for "_i" from 0 to 1 step 0 do {
 			_text = "";
 			_wanted_level = 1;
 			_handle = false;
-			if((player distance (getMarkerPos "speed_cam_1")) < 30 || (player distance (getMarkerPos "speed_cam_2")) < 30 || (player distance (getMarkerPos "speed_cam_3")) < 30 || (player distance (getMarkerPos "speed_cam_4")) < 30) then {
+			if((player distance (getMarkerPos "speed_cam_1")) < 20 || (player distance (getMarkerPos "speed_cam_2")) < 20 || (player distance (getMarkerPos "speed_cam_3")) < 20 || (player distance (getMarkerPos "speed_cam_4")) < 20) then {
 				_text = " in bebauten Gebieten";
 				if(_vel > 74 && _vel < 85) then {
 					"colorCorrections" ppEffectEnable true;
@@ -81,7 +81,7 @@ for "_i" from 0 to 1 step 0 do {
 				};
 				uiSleep 4;
 			};
-			if((player distance (getMarkerPos "speed_cam_5")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_10")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30) then {
+			if((player distance (getMarkerPos "speed_cam_5")) < 20 || (player distance (getMarkerPos "speed_cam_6")) < 20 || (player distance (getMarkerPos "speed_cam_7")) < 20 || (player distance (getMarkerPos "speed_cam_8")) < 20 || (player distance (getMarkerPos "speed_cam_9")) < 20 || (player distance (getMarkerPos "speed_cam_10")) < 20 || (player distance (getMarkerPos "speed_cam_11")) < 20 || (player distance (getMarkerPos "speed_cam_12")) < 20 || (player distance (getMarkerPos "speed_cam_13")) < 20 || (player distance (getMarkerPos "speed_cam_14")) < 20 || (player distance (getMarkerPos "speed_cam_15")) < 20 || (player distance (getMarkerPos "speed_cam_16")) < 20 || (player distance (getMarkerPos "speed_cam_17")) < 20) then {
 				_text = " außerhalb bebauter Gebiete.";
 				if(_vel > 164 && _vel < 185) then {
 					"colorCorrections" ppEffectEnable true;

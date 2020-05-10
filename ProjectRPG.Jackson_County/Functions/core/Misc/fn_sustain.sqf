@@ -95,7 +95,7 @@ if(_type == "unhealthiness") then {
 
 //8 left open for licenses
 
-//LICENSES [0,0,0,0,0,0] -- groundvehicle / gun / mining / woodlogging / fishing / 
+//LICENSES [0,0,0,0,0,0,0] -- groundvehicle / gun / mining / woodlogging / fishing / LKW
 
 
 if(_type == "license") then {

@@ -17,7 +17,7 @@ if(!taskrunning) then {
 		_warnings = 0;
 		while{taskrunning && myjob == "Judge"} do {
 			uisleep 180;
-			paycheck = paycheck + 200;
+			//paycheck = paycheck + 200;
 		};
 		if(myjob == "Judge") then { [] call client_fnc_jobEnd; };
 	};

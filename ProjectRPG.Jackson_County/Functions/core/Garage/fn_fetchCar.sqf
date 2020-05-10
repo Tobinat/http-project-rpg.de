@@ -70,12 +70,14 @@ if((_this select 0) == 1) exitwith {
 	Current_Cars pushBack _vehicle;
 	["ACE_Wheel", _vehicle, 1] call ace_cargo_fnc_removeCargoItem;
 	if (myJob == "EMS") then {
-		_vehicle addItemCargoGlobal ["Manguera_magazine",1];
-		_vehicle addWeaponCargoGlobal ["fireextinguisher",1];
+		_vehicle addItemCargoGlobal ["Manguera_magazine",6];
+		_vehicle addWeaponCargoGlobal ["fireextinguisher",2];
+		_vehicle addItemCargoGlobal ["Mask_M40",2];
 	};
 	if (myJob == "Cop") then {
 		_vehicle addItemCargoGlobal ["hlc_30rnd_9x19_b_MP5",3];
 		_vehicle addWeaponWithAttachmentsCargoGlobal [["hlc_smg_mp5a4", "", "", "RH_barska_rds", ["hlc_30rnd_9x19_b_MP5", 30], [], ""], 1];
+		_vehicle addItemCargoGlobal ["PRPG_Helmet_Sheriff",1];
 	};
 	[_vehicle,2] remoteExecCall ["client_fnc_lock",_vehicle];
 };

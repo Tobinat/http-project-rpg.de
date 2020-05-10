@@ -11,10 +11,10 @@ if(tryingCall) exitwith {
 if(myCallOwner == player) exitwith {
 	["Aufgelegt.", false] spawn domsg; 
 	//[] call client_fnc_resetcall;
-	cidhu = player getVariable "PhoneID";
 	{
+		_playerphoneid = player getVariable "PhoneID";
 		_phonetargetid = _x getVariable "PhoneID";
-		if (_phonetargetid == cidhu) then {
+		if (_phonetargetid == _playerphoneid) then {
 			//[] remoteexec ["client_fnc_hangup",_x];
 			[] remoteexec ["client_fnc_resetcall",_x];
 		};

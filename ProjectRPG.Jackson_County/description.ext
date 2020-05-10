@@ -28,7 +28,7 @@ class Header {
 
 showHUD[] = {
     1,	// Scripted HUD (same as showHUD command)
-	0,	// Vehicle and unit info
+	1,	// Vehicle and unit info
 	0,	// Vehicle radar [HIDDEN]
 	0,	// Vehicle compass [HIDDEN]
 	0,	// Tank direction indicator

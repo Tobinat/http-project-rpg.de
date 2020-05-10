@@ -17,9 +17,9 @@ waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
 [] spawn server_fnc_resetRespawn; //resetuje licznik zgonów do 3
 [] spawn server_fnc_huntingzone; //Spawnt Tiere in der Hunting Zone
 
-[server_fnc_addJob, 120] execFSM "\nopixel_server\call.fsm";
+//[server_fnc_addJob, 120] execFSM "\nopixel_server\call.fsm";
 [Server_fnc_cleanup, 1800] execFSM "\nopixel_server\call.fsm";
-[server_fnc_time, 900] execFSM "\nopixel_server\call.fsm";
+[server_fnc_time, 450] execFSM "\nopixel_server\call.fsm";
 
 [] spawn {
 	_tier1 = ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"];

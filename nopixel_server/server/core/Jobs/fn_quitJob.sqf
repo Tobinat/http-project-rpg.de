@@ -1,6 +1,6 @@
 _player = _this select 0;
 
-diag_log["leave job % 1", _player];
+//diag_log["leave job % 1", _player];
 
 
 /*

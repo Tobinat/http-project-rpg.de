@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9605.7891,45.548149,8578.9453};
+		pos[]={9603.3545,69.56282,8546.1113};
 		dir[]={-0.10266142,-0.46547341,0.87909567};
 		up[]={-0.05399197,0.88505971,0.46233565};
 		aside[]={0.99325728,-1.3865065e-007,0.11599349};
@@ -331,24 +331,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -363,6 +345,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -7259,8 +7259,8 @@ class Mission
 		wavesForced=1;
 		windForced=1;
 		year=2020;
-		month=7;
-		day=20;
+		month=6;
+		day=25;
 		hour=6;
 		minute=-30;
 		startFogBase=-1000;
@@ -37207,7 +37207,7 @@ class Mission
 			};
 			id=3557;
 			type="cg_bench1";
-			atlOffset=0.4823513;
+			atlOffset=0.48357582;
 		};
 		class Item789
 		{

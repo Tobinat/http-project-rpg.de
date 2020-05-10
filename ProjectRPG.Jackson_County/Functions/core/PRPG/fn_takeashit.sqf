@@ -21,14 +21,14 @@ player switchmove "";
 client_poop = 0;
  
 if(_currentuniform != "") then {
-	 ["Diggah...mit Klamotten ? Ich rieche und fühle mich wie Scheiße...", false] spawn domsg;
+	 ["Diggah...mit Klamotten? Ich rieche und fühle mich wie Scheiße...", false] spawn domsg;
 	// life_dirt = 100;
 	 client_poop = 50;
-	 player setfatigue 1;	
+	 player setfatigue 1;
 };
 
 //life_action_inUse = false;
 disableUserInput false;
-uisleep 5;
+uisleep 10;
 deletevehicle _poopvehicle;
 

@@ -81,10 +81,64 @@ if(_pia != -1) then {
 	MafiaLoan2 DELETEAT _pia;
 };
 
-if (_uid IN currentTowTruckDrivers) then {
-	_pia = currentTowTruckDrivers find _uid;
-	currentTowTruckDrivers deleteAt _pia;
-	publicvariable "currentTowTruckDrivers";
+if (_uid in currentsecurity || _uid in currentTowTruckDrivers || _uid in currentRepairmen || _uid in currentJudges || _uid in currentProsecutor || _uid in currentLawyers || _uid in currentTaxiDrivers || _uid in currentMailmen || _uid in currentNewsMan || _uid in currentTrashman || _uid in currentPizzaFicker) then {
+
+	if (_uid IN currentsecurity) then {
+		_pia = currentsecurity find _uid;
+		currentsecurity deleteAt _pia;
+		publicvariable "currentsecurity";
+	};
+	if (_uid IN currentTowTruckDrivers) then {
+		_pia = currentTowTruckDrivers find _uid;
+		currentTowTruckDrivers deleteAt _pia;
+		publicvariable "currentTowTruckDrivers";
+	};
+	if (_uid IN currentRepairmen) then {
+		_pia = currentRepairmen find _uid;
+		currentRepairmen deleteAt _pia;
+		publicvariable "currentRepairmen";
+	};
+	if (_uid IN currentJudges) then {
+		_pia = currentJudges find _uid;
+		currentJudges deleteAt _pia;
+		publicvariable "currentJudges";
+	};
+	if (_uid IN currentProsecutor) then {
+		_pia = currentProsecutor find _uid;
+		currentProsecutor deleteAt _pia;
+		publicvariable "currentProsecutor";
+	};
+	if (_uid IN currentLawyers) then {
+		_pia = currentLawyers find _uid;
+		currentLawyers deleteAt _pia;
+		publicvariable "currentLawyers";
+	};
+	if (_uid IN currentTaxiDrivers) then {
+		_pia = currentTaxiDrivers find _uid;
+		currentTaxiDrivers deleteAt _pia;
+		publicvariable "currentTaxiDrivers";
+	};
+	if (_uid IN currentMailmen) then {
+		_pia = currentMailmen find _uid;
+		currentMailmen deleteAt _pia;
+		publicvariable "currentMailmen";
+	};
+	if (_uid IN currentNewsMan) then {
+		_pia = currentNewsMan find _uid;
+		currentNewsMan deleteAt _pia;
+		publicvariable "currentNewsMan";
+	};
+	if (_uid IN currentTrashman) then {
+		_pia = currentTrashman find _uid;
+		currentTrashman deleteAt _pia;
+		publicvariable "currentTrashman";
+	};
+	if (_uid IN currentPizzaFicker) then {
+		_pia = currentPizzaFicker find _uid;
+		currentPizzaFicker deleteAt _pia;
+		publicvariable "currentPizzaFicker";
+	};
+
 };
 
 _player setvariable ["getunitloadout",nil,false];

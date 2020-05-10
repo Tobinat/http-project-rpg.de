@@ -296,16 +296,12 @@ if(myjob == "EMS") exitwith {
 
 		player addBackpack "invisible_carryall";
 		{ player additemtobackpack _x; } foreach ["NP_PoliceBarrierL","NP_PoliceBarrierS","prpg_item_wheel_kit"];
-		player addItemToUniform "ACE_Flashlight_XL50";
-		player addItemToUniform "ACE_EarPlugs";
-		player addItemToUniform "ACE_surgicalKit";
 		for "_i" from 1 to 8 do {player addItemToBackpack "ACE_salineIV";};
 		for "_i" from 1 to 6 do {player addItemToBackpack "ACE_tourniquet";};
 		for "_i" from 1 to 10 do {player addItemToBackpack "ACE_salineIV_500";};
 		for "_i" from 1 to 25 do {player addItemToBackpack "ACE_packingBandage";};
 		for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
 		for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
-		for "_i" from 1 to 5 do {player addItemToUniform "ACE_bodyBag";};
 		for "_i" from 1 to 30 do {player addItemToBackpack "ACE_quikclot";};
 		for "_i" from 1 to 25 do {player addItemToBackpack "ACE_elasticBandage";};
 		for "_i" from 1 to 10 do {player addItemToBackpack "ACE_atropine";};
@@ -318,21 +314,25 @@ if(myjob == "EMS") exitwith {
 			if(_emslevel == 1) then {
 				player forceAddUniform "PRPG_FD_Uniform_Firefighter1";
 				player addHeadgear "PRPG_Cap_ems_2";
+				player addItemToVest "FSGm_ItemMedicBag";
 			};
 			//Firefighter
 			if(_emslevel == 2) then {
 				player forceAddUniform "PRPG_FD_Uniform_Firefighter1";
 				player addHeadgear "PRPG_Cap_ems_2";
+				player addItemToVest "FSGm_ItemMedicBag";
 			};
 			//Lieutenant
 			if(_emslevel == 3) then {
 				player forceAddUniform "PRPG_FD_Uniform_Lieutenant1";
 				player addHeadgear "PRPG_Cap_ems_2";
+				player addItemToVest "FSGm_ItemMedicBag";
 			};
 			//Captain
 			if(_emslevel == 4) then {
 				player forceAddUniform "PRPG_FD_Uniform_Captain1";
 				player addHeadgear "PRPG_Cap_ems_2";
+				player addItemToVest "FSGm_ItemMedicBag";
 			};
 			//Battalion Chief
 			if(_emslevel == 5) then {
@@ -372,6 +372,7 @@ if(myjob == "EMS") exitwith {
 		player addItemToUniform "ACE_Flashlight_XL50";
 		player addItemToUniform "ACE_EarPlugs";
 		player addItemToUniform "ACE_surgicalKit";
+		for "_i" from 1 to 5 do {player addItemToUniform "ACE_bodyBag";};
 		[] spawn client_fnc_ChangePolice;
 	};
 

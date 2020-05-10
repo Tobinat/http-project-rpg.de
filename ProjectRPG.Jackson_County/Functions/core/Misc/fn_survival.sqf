@@ -17,6 +17,7 @@ if(!taskrunning) then {
 	if(myJob == "Fire") then { _addition = player getvariable "Fire"; paycheck = paycheck + (35*_addition); };
 	if(myJob == "EMS") then { _addition = player getvariable "EMS"; paycheck = paycheck + (35*_addition); };
 	if(myJob == "Cop") then { _addition = player getvariable "Cop"; paycheck = paycheck + (30*_addition); };
+	if(myJob == "Judge") then { _addition = player getVariable "legal"; paycheck = paycheck + (40*_addition); }
 	_str = format["Du hast $75 erhalten plus %1 an Boni.",paycheck];
 	["Paycheck"] spawn mav_ttm_fnc_addExp;
 	[_str, true] spawn domsg;
@@ -65,6 +66,9 @@ if(!ClientArrested) then {
 	if(_chance > 25 && vehicle player == player) then {
 		["Remove","battery",5] call client_fnc_sustain;
 	};
+	if(_chance > 75 && vehicle player != player) then {
+		["Add","battery",5] call client_fnc_sustain;
+	};
 };
 if(client_intox > 0.6) then {
 	//["Add",10] spawn client_fnc_dohealth;
@@ -77,36 +81,3 @@ if(client_intox > 0.6) then {
 if (!paintballing) then {
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
 };
-
-/*
-	if(player getVariable  "ACE_isUnconscious" && !life_unconscious) then {
-
-		_action = [
-			format["Du bist Ohnmächtig. Mit letzter kraft kannst du dein Handy ziehen. Möchtest du das S.L.F.D. über deine Lage informieren?"],
-			"Ohnmächtig",
-			"Ja",
-			"Nein"
-		] call BIS_fnc_guiMessage;
-
-		life_corpse = player;
-		if(!isNil "_action" && {_action}) then {
-
-			[] call client_fnc_requestMedic;
-
-			_medicsOnline = {_x != player && {side _x == independent} && {alive _x}} count playableUnits > 0;
-			if(!_medicsOnline) then {
-				_action = [
-				format["Kein Notarzt hat auf deine Nachricht geantwortet."],
-				"Niemand da",
-				"Ok"
-				] call BIS_fnc_guiMessage;
-			};
-
-		};
-		life_unconscious = true;
-	};
-
-	if(!(player getVariable "ACE_isUnconscious") && life_unconscious) then {
-		life_unconscious = false;
-	};
-*/	
