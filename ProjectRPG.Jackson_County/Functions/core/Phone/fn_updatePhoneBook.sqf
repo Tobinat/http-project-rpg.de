@@ -4,7 +4,7 @@ disableSerialization;
 
 	for "_i" from 0 to 20 step 1 do {
 		_pia = currentPoliceDispatch FIND objNull;  
-		currentPoliceDispatch deleteAT _pia;  
+		currentPoliceDispatch deleteAT _pia;
 	};
 
 	if!(_old isEqualTo currentpolicedispatch) then { publicvariable "currentPoliceDispatch"; };
@@ -135,7 +135,7 @@ disableSerialization;
 
 	for "_i" from 0 to 20 step 1 do {
 		_pia =  currentTowTruckDrivers FIND objNull;  
-		 currentTowTruckDrivers deleteAT _pia;  
+		 currentTowTruckDrivers deleteAT _pia;
 	};
 
 	if!(_old isEqualTo  currentTowTruckDrivers) then { publicvariable "currentTowTruckDrivers"; };

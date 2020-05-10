@@ -4,7 +4,7 @@ Survival Koil
 if(isNil "paycheck") then { paycheck = 0; };
 //[] spawn client_fnc_unHaxMe;
 //[] spawn client_fnc_randomCheck; -- dopoki nie ma tu wszystkich poprawnych zmiennych to jest to tylko bezuzyteczny spam. oddalam do setVariable.txt
-if(paycheck > 300) then { paycheck = 300; };
+if(paycheck > 450) then { paycheck = 450; };
 
 paycheck = paycheck * mav_ttm_var_paycheckMultiplier;
 
@@ -14,10 +14,9 @@ if(!taskrunning) then {
 	paycheck = paycheck + 35;
 	["Paycheck"] spawn mav_ttm_fnc_addExp;
 } else {
-	if(myJob == "Fire") then { _addition = player getvariable "Fire"; _addition = _addition + 2; paycheck = paycheck + (40*_addition); };
-	if(myJob == "EMS") then { _addition = player getvariable "EMS"; _addition = _addition + 2; paycheck = paycheck + (40*_addition); };
-	if(myJob == "Cop") then { _addition = player getvariable "Cop"; _addition = _addition + 2; paycheck = paycheck + (35*_addition); };
-	if(myJob == "Mafia") then { _addition = player getvariable "Mafia"; _addition = _addition + 2; paycheck = paycheck + (5*_addition); };
+	if(myJob == "Fire") then { _addition = player getvariable "Fire"; paycheck = paycheck + (35*_addition); };
+	if(myJob == "EMS") then { _addition = player getvariable "EMS"; paycheck = paycheck + (35*_addition); };
+	if(myJob == "Cop") then { _addition = player getvariable "Cop"; paycheck = paycheck + (30*_addition); };
 	_str = format["Du hast $75 erhalten plus %1 an Boni.",paycheck];
 	["Paycheck"] spawn mav_ttm_fnc_addExp;
 	[_str, true] spawn domsg;

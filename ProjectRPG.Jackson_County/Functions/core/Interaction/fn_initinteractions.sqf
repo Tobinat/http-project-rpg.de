@@ -328,8 +328,13 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(myjob == ""Cop"" || myjob == ""EMS"") && currentcursortarget isKindOf ""Car"""],
+		["(myjob == ""Cop"" || myjob == ""EMS"") && currentcursortarget isKindOf ""Car"" && count currentTowTruckDrivers < 1"],
 		["Verschwinden lassen", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2]; hint ""Das Auto wurde von Aliens eingesammelt."";",2]
+	],
+
+	[
+		["(myjob == ""Cop"" || myjob == ""EMS"") && currentcursortarget isKindOf ""Car"" && count currentTowTruckDrivers > 0"],
+		["Abschlepper Rufen", "[getpos player, ""Tow"", ""Abschleppen""] remoteexec [""server_fnc_giveTask"",2]; hint ""Abschlepper wurde gerufen."";",2]
 	],
 
 	[

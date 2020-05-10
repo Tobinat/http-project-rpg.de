@@ -24,7 +24,7 @@ if(!taskrunning) then {
 
 				if(player distance ((playertasks select 0) select 0) < 15) then {
 					hint "Hier bist du richtig, jetzt ran an die Arbeit!";
-					paycheck = paycheck + 250;
+					paycheck = paycheck + 150;
 					playertasks deleteat 0;
 					["ReporterArrived"] spawn mav_ttm_fnc_addExp;
 					uisleep 3;

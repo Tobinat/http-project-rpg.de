@@ -46,13 +46,13 @@ _you = name _unit;
 
 if(_fuck != _you) then {
 	if(_fuck find "Error: " > -1) then {
-		[getpos player, "Nachrichten", "VU"] remoteexec ["server_fnc_giveTask",2];
+		[getpos player, "News", "VU"] remoteexec ["server_fnc_giveTask",2];
 
 		[format["%1 ist schwer verletzt!", _you], false] spawn domsg;
 		shooting_death = false;
 		[_killer, player, "vehicleKill"] spawn client_fnc_createEvidence;
 	} else {
-		[getpos player, "Nachrichten", "Schießerrei"] remoteexec ["server_fnc_giveTask",2];
+		[getpos player, "News", "Schießerrei"] remoteexec ["server_fnc_giveTask",2];
 		if(_headshot == 1) then { [format["%1 schoss %2 aus einer Distanz von %3 Metern mit einer %4 in den Kopf.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 erschoss %2 aus einer Distanz von %3 Metern mit einer %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
 		client_kcCamera  = "CAMERA" camCreate (getPosATL _killer);
 		showCinemaBorder false;
@@ -69,7 +69,7 @@ if(_fuck != _you) then {
 	[player,_killer,1,format ["%1 tötete %2 aus der Distanz von %3 Metern mit einer %4",_fuck, name player, _killdistance, _killweapon],_killweapon, _killdistance] remoteExec ["server_fnc_deathLog", 2];
 } else {
 	shooting_death = false;
-	[getpos player, "Nachrichten", "Unbekannter Todesgrund"] remoteexec ["server_fnc_giveTask",2];
+	[getpos player, "News", "Unbekannter Todesgrund"] remoteexec ["server_fnc_giveTask",2];
 	[format["%1 ist verstorben!", _fuck], false] spawn domsg;
 	[player,objNull,2,format ["%1 starb",name player],"",""] remoteExec ["server_fnc_deathLog", 2];
 };

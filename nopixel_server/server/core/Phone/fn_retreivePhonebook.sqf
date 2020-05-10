@@ -81,7 +81,7 @@ _information = [
 	["Anwalt",_currentLegalAid],
 	["Mechaniker",_currentRepairmen],
 	["Richter",_currentJudges],
-	["Prokuratorzy",_currentProsecutor],
+	["Staatsanwalt",_currentProsecutor],
 	["Anwalt",_currentLawyers],
 	["Postbote",_currentMailmen],
 	["Abschleppwagen",_currentTowTruckDrivers],

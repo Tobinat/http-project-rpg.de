@@ -6,6 +6,9 @@
 
 private ["_playeruid","_player"];
 
+if !(str Cursorobject find "cargo" > -1) exitWith {hint "Du musst den Container auch anschauen!"};
+if (getpos player distance getpos cursorobject >= 8) exitWith {hint "Du bist zu weit von dem Angeschauten Container entfernt!"};
+
 if (isNil "searchedcrates") then { searchedcrates = []; };
 
 if (({_x == "cg_lockpick"} count magazines player) == 0) exitWith {["Du brauchst einen Lockpick um den Container zu öffnen!", true] spawn domsg;};
@@ -18,7 +21,7 @@ _chancelockpick = random(1000);
 _chancepolice = random(1000);
 _chanceloot = random(1000);
 
-if (_chancelockpick > 750) then {player removeItem "cg_lockpick"; ["Dein Dietrich ist abgebrochen!", true] spawn domsg;};
+if (_chancelockpick > 825) then {player removeItem "cg_lockpick"; ["Dein Dietrich ist abgebrochen!", true] spawn domsg;};
 if (_chancepolice > 875) then {
 	if (_chancepolice > 925) then {
 		{
@@ -28,15 +31,17 @@ if (_chancepolice > 875) then {
 		} foreach currentCop;
 		_playeruid = currentsecurity call BIS_fnc_selectRandom;
 		_player = _playeruid call BIS_fnc_getUnitByUid;
-		[getpos _target,"cop"] remoteexec ["client_fnc_jobMarker", _player];
+		[getpos player,"cop"] remoteexec ["client_fnc_jobMarker", _player];
 		["Dispatch: Ein unbekannter wurde beim Aufbrechen eines Containers am Silver Lake Hafen gesichtet!", false] remoteExec ["domsg", _player];
 		["Du wurdest entdeckt!", true] spawn domsg;
+		playSound3D ["PRPG_Data\sounds\shopAlarm.ogg", cursorobject, false, getpos player, 5, 1, 150];
 	} else {
 		_playeruid = currentsecurity call BIS_fnc_selectRandom;
 		_player = _playeruid call BIS_fnc_getUnitByUid;
-		[getpos _target,"cop"] remoteexec ["client_fnc_jobMarker", _player];
+		[getpos player,"cop"] remoteexec ["client_fnc_jobMarker", _player];
 		["Dispatch: Ein unbekannter wurde beim Aufbrechen eines Containers am Silver Lake Hafen gesichtet!", false] remoteExec ["domsg", _player];
 		["Du wurdest entdeckt!", true] spawn domsg;
+		playSound3D ["PRPG_Data\sounds\shopAlarm.ogg", cursorobject, false, getpos player, 5, 1, 150];
 	};
 };
 

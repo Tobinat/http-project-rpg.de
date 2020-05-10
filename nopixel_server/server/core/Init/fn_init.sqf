@@ -42,9 +42,9 @@ waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
 	shops = [];
 	{ shops pushback _x; } foreach nearestObjects [[0,0,0], _shops, 35500];
 
-	uisleep 28650;
+	uisleep 25040;
 	[] remoteExec ["client_fnc_survival",-2];
-	uisleep 30;
+	uisleep 20;
 	["seagull"] remoteExec ["client_fnc_createvehicle",-2];
 };
 

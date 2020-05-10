@@ -23,12 +23,12 @@ _marker setMarkerTextlocal "Ort der Aufgabe";
 */
 		
 if (_type == "Feuer") then {
-	[_pos,"Feuer!","Job"] spawn client_fnc_hudHelper;
+	[_pos,"Feuer","Job"] spawn client_fnc_hudHelper;
 	playSound "fireAlarm";
 };
 
 if (_type == "Cop") then {
-	[_pos,"Alarm aktiviert!","Job"] spawn client_fnc_hudHelper;
+	[_pos,"Alarm aktiviert","Job"] spawn client_fnc_hudHelper;
 };
 
 if (_type == "driver") then {

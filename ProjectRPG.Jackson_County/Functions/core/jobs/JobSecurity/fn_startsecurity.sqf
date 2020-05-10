@@ -21,13 +21,13 @@ if(!taskrunning) then {
 		while{taskrunning && myjob == "security"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
-				hint "Sie haben derzeit keine Aufgabe, patroulliere die Stadt und sichere Geschäfte und den Hafen!";
+				hint "Sie haben derzeit keine Aufgabe, patroulliere die Stadt, sichere Geschäfte und den Hafen!";
 				uisleep 60;
 			} else {
 
 				if(player distance ((playertasks select 0) select 0) < 15) then {
 					hint "Du bist an deinem Einsatzort, halte ausschau nach verdächtigen!";
-					paycheck = paycheck + 10;
+					paycheck = paycheck + 35;
 					playertasks deleteat 0;
 					uisleep 3;
 					deletemarkerlocal format["job%1",getPlayerUID player];
