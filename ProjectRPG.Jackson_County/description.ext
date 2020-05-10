@@ -174,9 +174,6 @@ class CfgFunctions
 			class revokeupdate {};
 			class revoke {};
 			class revokelicense {};
-			class licenseCheck {};
-			class licenseReturn {};
-			class licenseRead {};
 			class searchlicense {};
 			class questionPlayer {};
 			class jurycall {};
