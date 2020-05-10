@@ -81,6 +81,12 @@ if(_pia != -1) then {
 	MafiaLoan2 DELETEAT _pia;
 };
 
+if (_uid IN currentTowTruckDrivers) then {
+	_pia = currentTowTruckDrivers find _uid;
+	currentTowTruckDrivers deleteAt _pia;
+	publicvariable "currentTowTruckDrivers";
+};
+
 _player setvariable ["getunitloadout",nil,false];
 _player setVariable ["sync", nil, false];
 _player setVariable ["sl_wallet_silverlake", nil, false];
