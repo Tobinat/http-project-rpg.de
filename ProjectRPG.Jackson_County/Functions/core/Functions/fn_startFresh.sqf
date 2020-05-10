@@ -60,8 +60,10 @@ closedialog 0;
 	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
 
-
-	[player,objNull,4,format ["%1 stirbt und beendet seine arbeit als %2", name player, myjob],myjob] remoteExec ["server_fnc_jobLog", 2];
+	if(myjob != "none") then {
+		[player,objNull,4,format ["%1 stirbt und beendet seine arbeit als %2", name player, myjob],myjob] remoteExec ["server_fnc_jobLog", 2];
+	};
+	
 	myjob = "none";
 	taskrunning = false;
 	dispatch = false;

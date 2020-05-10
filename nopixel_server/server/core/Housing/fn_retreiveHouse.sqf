@@ -8,7 +8,7 @@ diag_log["retreive house: %1", _player];
 
 
 _uid = getPlayerUID _player;
-[_player,objNull,21,format ["%1 öffnete die Schachtel zu Hause", name _player],""] call server_fnc_actionLog;
+[_player,objNull,21,format ["%1 öffnet das Hausinventar.", name _player],""] call server_fnc_actionLog;
 
 if (_uid in activecrates) exitwith {};
 activecrates pushback _uid;
@@ -19,43 +19,43 @@ activecrates pushback _uid;
 _houseLevel = _player getvariable "houselevel";
 if (_houselevel == 1) then {
     _holder = createVehicle["kif_storage_sack", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Dein Sack verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 2) then {
     _holder = createVehicle["kif_storage_cartondarkmedium", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Dein Karton verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 3) then {
     _holder = createVehicle["kif_storage_travelbag", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Deine Tasche verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 4) then {
     _holder = createVehicle["kif_storage_suitcase", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Dein Koffer verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 5) then {
     _holder = createVehicle["kif_storage_cartonlightbig", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Dein Karton verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 6) then {
     _holder = createVehicle["kif_storage_wood", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Deine Kiste verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 7) then {
     _holder = createVehicle["kif_storage_woodbarrel", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Dein Fass verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 8) then {
     _holder = createVehicle["kif_storage_woodbox", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Deine Kiste verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 9) then {
     _holder = createVehicle["kif_storage_cargobox", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Deine Kiste verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 10) then {
     _holder = createVehicle["kif_storage_cargobox10", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
-	["Die Aufzeichnung wird gemacht, nachdem die Errichtung verschwunden ist", false] remoteExec ["domsg",_player];
+	["Deine Kiste verschwindet nach 2 Minuten, dann speichert das Inventar.", false] remoteExec ["domsg",_player];
 };
 
 

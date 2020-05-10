@@ -15,6 +15,7 @@ _localProtection = 0;
 
 _n = 0;
 _cashTotal = 0;
+_total = 0;
 {
 	_total = {_x == (_barArray select _n)} count magazines player;
 	_i = _total;
@@ -42,5 +43,5 @@ _cashTotal = 0;
 globalProtection = 0;
 
 ["Verkaufe",format["Du hast Rohstoffe verkauft für: $%1", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
-//[player,objNull,3,format ["%1 hat Rohstoffe verkauft in einer Menge von: %2 fuer %3 $", name player, _total, _cashTotal],_cashTotal, "SUROWIEC", _total] remoteExec ["server_fnc_economyLog", 2];
+[player,objNull,3,format ["%1 hat %2  Materialien für $%3 verkauft.", name player, _total, _cashTotal],_cashTotal, "SUROWIEC", _total] remoteExec ["server_fnc_economyLog", 2];
 //hint format["Zarobiłeś $%1",_cashTotal];

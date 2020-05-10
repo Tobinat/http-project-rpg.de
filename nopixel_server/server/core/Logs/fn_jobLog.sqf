@@ -43,7 +43,7 @@ switch (_type) do {
     case 1: {_type = "Awans";};
     case 2: {_type = "Wyposażenie";};
     case 3: {_type = "RozpoczęciePracy";};
-    case 4: {_type = "ZakończeniePracy";};
+    case 4: {_type = "JobBeendet";};
     case 5: {_type = "Skucie";};
     case 6: {_type = "Rozkucie";};
     case 7: {_type = "OkradniecieZKasy";};

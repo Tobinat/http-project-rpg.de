@@ -16,6 +16,7 @@ _localProtection = 0;
 
 _n = 0;
 _cashTotal = 0;
+_total = 0;
 {
 	_total = {_x == (_barArray select _n)} count magazines player;
 	_i = _total;
