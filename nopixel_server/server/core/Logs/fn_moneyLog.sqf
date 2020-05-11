@@ -40,13 +40,13 @@ if (isNull _unit) then {
 };
 
 switch (_type) do {
-    case 1: {_type = "Wyplata";};
-    case 2: {_type = "WyplataMafia";};
-    case 3: {_type = "Wplata";};
-    case 4: {_type = "WplataMafia";};
-    case 5: {_type = "DalKase";};
+    case 1: {_type = "Abheben";};
+    case 2: {_type = "AbhebenMafia";};
+    case 3: {_type = "Einzahlen";};
+    case 4: {_type = "EinzahlenMafia";};
+    case 5: {_type = "Geben";};
     case 6: {_type = "Transfer";};
-    case 7: {_type = "PranieKasy";};
+    case 7: {_type = "DumpMoney";};
     //case 8: {_type = "";};
 };
 

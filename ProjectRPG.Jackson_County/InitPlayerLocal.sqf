@@ -57,6 +57,10 @@ cutText ["", "BLACK"];
 
 player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened;}];
 player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
+player addEventHandler["Respawn", {
+	params["_unit","_corpse"];
+	[_unit,_corpse] call client_fnc_startfresh;
+}];
 ["ace_arsenal_displayOpened", {
 	if !( myjob in ["EMS","Cop"] ) then {
 		_this select 0 closedisplay 1;

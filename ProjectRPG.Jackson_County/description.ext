@@ -609,6 +609,7 @@ class CfgFunctions
 			class sl_removeBank_secure {};
 			class sl_removeCash_secure {};
 			class takeDrill {};
+            class takeCorpseMoney {};
 		};
 		class Vehicle
 		{

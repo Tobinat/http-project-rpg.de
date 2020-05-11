@@ -16,7 +16,7 @@ if (_amount > 0) then
 			[_amount] call Client_fnc_sl_removeCash_secure;
 			[_amount] call Client_fnc_sl_addBank_secure;
 			["Erledigt!","Sie haben erfolgreich Geld eingezahlt!",[0,255,0,1],""] call Client_fnc_showNotification;
-			[player,objNull,3,format ["%1 wpłacił %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
+			[player,objNull,3,format ["%1 zahlt %2 ein.", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
 			//hint "Sie haben Ihr Geld erfolgreich eingezahlt!";
 			
 		} else {
@@ -34,7 +34,7 @@ if (_amount > 0) then
 			["Add",_amount] remoteexec ["server_fnc_updateMafiaBank",2];
 			[_amount] call Client_fnc_sl_removeCash_secure;
 			["Erledigt!","Das gewaschene Geld wurde eingezahlt!",[0,255,0,1],""] call Client_fnc_showNotification;
-			[player,objNull,4,format ["%1 wpłacił %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
+			[player,objNull,4,format ["%1 zahlt %2 ein.", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
 			//hint "Das Geld wurde erfolgreich eingezahlt!";
 			
 		} else {

@@ -17,7 +17,7 @@ if (_amount > 0) then
 		_name = name _giver;
 		_text = format ["%1 gibt dir %2 $", _name, _amount];
 		[_text, false] remoteExec ["domsg",_target];
-		//[_giver,_target,5,format ["%1 er gab %2 dollar.", name _giver, _amount, name _target],_amount] remoteExec ["server_fnc_moneyLog", 2];
+		[_giver,_target,5,format ["%1 gibt %2$.", name _giver, _amount, name _target],_amount] remoteExec ["server_fnc_moneyLog", 2];
 	} else {
 		hint "Du hast nicht genug Geld dabei!";
 	};

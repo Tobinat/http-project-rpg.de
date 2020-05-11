@@ -1,6 +1,13 @@
 /*
 Start Fresh when you completely die
 */
+
+params["_unit","_corpse"];
+
+//Geld an in die Leiche packen
+_cash = player getVariable "sl_wallet_silverlake";
+_corpse setVariable ["sl_wallet_silverlake",_cash,true];
+
 ClientArrested = false;
 
 removeAllItems player;
