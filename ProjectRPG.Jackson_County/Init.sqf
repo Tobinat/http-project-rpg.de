@@ -1,17 +1,7 @@
 waitUntil {!(isNull (findDisplay 46))};
 enableSaving [false, false];
-//a9ec2a59c630de5b27603e8ecd9fb153 = true;
-//prpg_client_v = 0.60;
-
-/*
-0 enableChannel false;
-1 enableChannel false;
-2 enableChannel false;
-3 enableChannel false;
-4 enableChannel false;
-0 enableChannel false;
-6 enableChannel false;
-*/
+da39a3ee5e6b4b0d3255bfef95601890afd80709 = true;
+prpg_client_v = 0.61;
 
 shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_02_F","Land_buildingBar1","Land_Market_DED_Market_01_F","land_cg_dexters","Land_Coffee_DED_Coffee_02_F","Land_Coffee_DED_Coffee_01_F","Land_buildingGunStore1","land_cg_dunkinbronuts"];
 

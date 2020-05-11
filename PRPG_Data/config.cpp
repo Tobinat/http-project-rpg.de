@@ -11,10 +11,13 @@ class cfgPatches
 		version = 1;
 	};
 };
-class cfgMods
+
+class Extended_PostInit_Eventhandlers
 {
-	author = "76561198141517593";
-	timepacked = "1461584614";
+	class PRPG_Data
+	{
+		init = "execVM 'PRPG_Data\fn_WeLikeAuthors.sqf'";
+	};
 };
 
 class CfgMagazines

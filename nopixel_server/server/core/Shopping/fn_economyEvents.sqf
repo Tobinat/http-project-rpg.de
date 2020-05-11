@@ -25,7 +25,7 @@ if (_debug == 1) then {diag_log " (fn_economyEvents.sqf)";};
         
 _numbers = ["0","1","2","3","4","5","6","7","8"];
 _selected = _numbers call BIS_fnc_selectRandom;
-if (_debug == 1) then {diag_log "Ich habe kein Problem gefunden"; diag_log format["Die gezeichnete Nummer ist: %1", _selected];};
+if (_debug == 1) then {diag_log "Ich habe kein Problem gefunden"; diag_log format["Die gezeichnete Nummer ist: %1", _selected]; };
 
 switch (_selected) do {
     case "0": {priceArrayOre = [120,90,150,20,230,60,70,40,240]; publicVariable "priceArrayOre"; ["Wirtschaft","Bergleute machen einen Streik, in Fabriken fehlt Kupfer für die Produktion!",[255,192,203,1],""] remoteExec ["Client_fnc_showNotification", -2];};

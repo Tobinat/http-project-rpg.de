@@ -244,12 +244,12 @@ if(_error) exitwith {};
 	playSound3D ["CG_Jobs\sounds\sawing\saw.ogg", player, false, getPosasl player, 4, 1, 15];
 	if !(_status IN ["prpg_item_nails","prpg_item_eisenstange"]) then {
 		shopholder additemCargoGlobal [_status,1];
+	} else {
+		if (_status == "prpg_item_nails") then {
+			shopholder additemCargoGlobal ["prpg_item_nails",20];
 		} else {
-			if (_status == "prpg_item_nails") then {
-				for "_i" from 1 to 20 do {shopholder additemCargoGlobal "prpg_item_nails"; };
-			} else {
-				for "_i" from 1 to 4 do {shopholder additemCargoGlobal "prpg_item_eisenstange"; };
-			};
+			shopholder additemCargoGlobal ["prpg_item_eisenstange",4];
+		};
 	};
 	_classStatus = _status;
 	_status = (configfile >> "CfgMagazines" >> _status >> "displayName") call BIS_fnc_getCfgData;
