@@ -290,16 +290,7 @@ class prpg_item_batterie : ItemCore {
 	allowedSlots[]={901};
 	mass=1;
 };
-class prpg_item_sandsack : ItemCore {
-	scope=2;
-	displayName="Sandsack";
-	author="PRPG";
-	descriptionShort="Ein Sandsack.";
-	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
-	model = "@prpg_ace\addons\ace_sandbag\data\ace_sandbag_build.p3d";
-	allowedSlots[]={901};
-	mass=1;
-};
+
 class prpg_item_glas : ItemCore {
 	scope=2;
 	displayName="Glas";
@@ -551,7 +542,7 @@ class prpg_item_wheel_kit: ItemCore {
 	descriptionShort="Mit diesem Werkzeugkasten kannst du einen kaputten Reifen flicken.";
 	picture="\A3\EditorPreviews_F\Data\CfgVehicles\Land_Screwdriver_V2_F.jpg";
 	model="\plp_containers\StcToolboxes\plp_cts_ToolboxRedClean.p3d";
-	mass=15;
+	mass=10;
 };
 
 class prpg_item_engine_kit: ItemCore {
