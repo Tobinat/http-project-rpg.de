@@ -1,3 +1,4 @@
 	tryingcall = false;
 	playSound "cgphone_hangup";
-	["Die Person die Sie erreichen wollen ist gerade nicht erreichbar.", false] spawn domsg; 
+	["Die Person ist nicht erreichbar.", false] spawn domsg;
+	[] call client_fnc_resetcall;

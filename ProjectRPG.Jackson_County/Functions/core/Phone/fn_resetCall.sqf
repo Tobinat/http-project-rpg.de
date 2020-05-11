@@ -6,6 +6,7 @@ playSound "cgphone_hangup";
 player setvariable["PhoneCallNumber",0,true];
 player setvariable["PhoneID",0,true];
 callInProgress = false;
+tryingcall = false;
 myCallOwner = player;
 _mynumber = getPlayerUID player;
 if(myjob != "Cop" && myjob != "EMS" && myjob != "Fire") then {

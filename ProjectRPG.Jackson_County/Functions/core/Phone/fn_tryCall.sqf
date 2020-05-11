@@ -10,9 +10,4 @@ if(TryingCall) exitwith {
 	["Warten Sie, bis der Anruf beendet ist!", false] spawn domsg; 
 };
 ["Sie starten einen neuen Anruf!", false] spawn domsg; 
-[] call client_fnc_callMenu; 
-
-
-
-
-
+[] call client_fnc_callMenu;

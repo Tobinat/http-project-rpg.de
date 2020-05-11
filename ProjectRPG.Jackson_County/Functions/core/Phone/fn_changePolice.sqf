@@ -1,19 +1,9 @@
 params["_channel"];
 
-/*
-player setvariable["PhoneCallNumber",33.3,true];
-player setvariable["PhoneID",33.3,true];
-_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
-_channel = _channel + 1;
-[(call TFAR_fnc_activeSwRadio), _channel, 33.3] call TFAR_fnc_SetChannelFrequency;
-callInProgress = false;
-myCallOwner = player;
-player setVariable ["tf_unable_to_use_radio", false];
-call TFAR_fnc_HideHint;
-["Sie sind verbunden mit der Notrufzentralle des SLPD!", false] spawn domsg;
-*/
-
 sleep 2;
+
+if (myCallOwner != player) then { [] remoteexec ["client_fnc_resetcall",myCallOwner]; };
+if !(isNil calledplayer) then { [] remoteexec ["client_fnc_resetcall",calledplayer]; calledplayer = nil; };
 
 if (myjob =="EMS") then {
 	player setvariable["PhoneCallNumber",33.1,true];
@@ -22,6 +12,7 @@ if (myjob =="EMS") then {
 	_channel = _channel + 1;
 	[(call TFAR_fnc_activeSwRadio), 1, 33.1] call TFAR_fnc_SetChannelFrequency;
 	callInProgress = false;
+	tryingcall = false;
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;
@@ -34,6 +25,7 @@ if (myjob =="Fire") then {
 	_channel = _channel + 1;
 	[(call TFAR_fnc_activeSwRadio), 1, 33.1] call TFAR_fnc_SetChannelFrequency;
 	callInProgress = false;
+	tryingcall = false;
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;
@@ -46,6 +38,7 @@ if (myjob =="Cop") then {
 	_channel = _channel + 1;
 	[(call TFAR_fnc_activeSwRadio), 1, 33.3] call TFAR_fnc_SetChannelFrequency;
 	callInProgress = false;
+	tryingcall = false;
 	myCallOwner = player;
 	player setVariable ["tf_unable_to_use_radio", false];
 	call TFAR_fnc_HideHint;

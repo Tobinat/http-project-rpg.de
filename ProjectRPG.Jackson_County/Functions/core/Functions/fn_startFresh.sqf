@@ -79,7 +79,7 @@ closedialog 0;
 
 	player setVariable ["coplevel", 0, false];
 	player setVariable ["ace_medical_medicClass", 0, true];
-
+	
 	[player] remoteExec ["server_fnc_quitJob",2];
 
 	if(!isNil "vehspawned") then {
@@ -95,15 +95,12 @@ closedialog 0;
 		};
 	};
 	[] call client_fnc_hudwork;
-	[] spawn client_fnc_tryhangup;
 
 	[getpos player,"text to display","destroy"] spawn client_fnc_hudHelper;
 
+	if (myCallOwner != player) then { [] remoteexec ["client_fnc_resetcall",myCallOwner]; [] call client_fnc_resetcall; };
+	if !(isNil calledplayer) then { [] remoteexec ["client_fnc_resetcall",calledplayer]; calledplayer = nil; };
 
-	//_respawn = player getVariable "respawn";
-	//_respawn = _respawn - 1;
-	//player setVariable ["respawn", _respawn, false];
-	//[_respawn,getplayeruid player] remoteExec ["server_fnc_syncRespawn",2];
 	[] spawn client_fnc_syncData;
 	[player,objNull,4,format ["%1 ist respawned.",name player],"",""] remoteExec ["server_fnc_deathLog", 2];
 };

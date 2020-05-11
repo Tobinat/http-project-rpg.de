@@ -11,17 +11,14 @@ if(PhonesRinging) exitwith { ["Du wirst grade angerufen, geh erstmal ran!", fals
 
 [] spawn client_fnc_checkCall;
 [myCallOwner,_type] remoteExec ["client_fnc_ringPlayer",_unit];
-
+calledplayer = _unit;
 
 if(_type == 1) then {
-
 	[] spawn {
 		_mypos = getpos player;
 		while { TryingCall || CallInProgress } do {
 			if(player distance _mypos > 5) exitwith { [] spawn client_fnc_hangup; };
 			uisleep 1;
 		};	
-
 	};
-
 };
