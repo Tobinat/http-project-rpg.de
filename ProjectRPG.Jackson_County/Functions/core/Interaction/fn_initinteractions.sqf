@@ -446,12 +446,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(CurrentCursorTarget isKindOf 'Man') && !(myjob == ""Cop"" || myjob == ""Fire"" || myjob == ""EMS"") && Alive cursortarget && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
+		["(CurrentCursorTarget isKindOf 'Man') && !(myjob == ""Cop"" || myjob == ""Fire"" || myjob == ""EMS"") && Alive CurrentCursorTarget && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
 		["Geld Aufnehmen", " ['Sammle Geld',10,client_fnc_takePlayerMoney,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""PRPG_Data\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
-		["(CurrentCursorTarget isKindOf 'Man') && !(myjob == ""Cop"" || myjob == ""Fire"" || myjob == ""EMS"") && !(Alive cursortarget)"],
+		["(CurrentCursorTarget isKindOf 'Man') && !(myjob == ""Cop"" || myjob == ""Fire"" || myjob == ""EMS"") && !(Alive CurrentCursorTarget)"],
 		["Geld Aufnehmen", " ['Sammle Geld',10,client_fnc_takecorpseMoney,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""PRPG_Data\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
@@ -481,7 +481,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["CurrentCursorTarget isKindOf 'Man' && bankrobber == 1"],
+		["CurrentCursorTarget isKindOf 'Man' && bankrobber == 1 && Alive CurrentCursorTarget"],
 		["Geld geben", "[CurrentCursorTarget] call Client_fnc_sl_giveCash_secure",2]
 	],
 
