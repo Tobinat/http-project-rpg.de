@@ -17,7 +17,7 @@ if(!taskrunning) then {
 	if(myJob == "Fire") then { _addition = player getvariable "Fire"; paycheck = paycheck + (35*_addition); };
 	if(myJob == "EMS") then { _addition = player getvariable "EMS"; paycheck = paycheck + (35*_addition); };
 	if(myJob == "Cop") then { _addition = player getvariable "Cop"; paycheck = paycheck + (30*_addition); };
-	if(myJob == "Judge") then { _addition = player getVariable "legal"; paycheck = paycheck + (40*_addition); }
+	if(myJob == "Judge") then { _addition = player getVariable "legal"; paycheck = paycheck + (40*_addition); };
 	_str = format["Du hast $75 erhalten plus %1 an Boni.",paycheck];
 	["Paycheck"] spawn mav_ttm_fnc_addExp;
 	[_str, true] spawn domsg;
