@@ -16,7 +16,7 @@ pole fishing by koil
 	sleep 2.5;
 
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		hint "Du hast Dynamit geworfen";
+		hint "Das hat nicht geklappt!";
 		deletevehicle _vehicle;
 	};
 

@@ -33,7 +33,7 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
-					_ticket = 1500;
+					_ticket = 500;
 				};
 				if(_vel > 84 && _vel < 130) then {
 					"colorCorrections" ppEffectEnable true;
@@ -54,7 +54,7 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
-					_ticket = 2500;
+					_ticket = 750;
 					//["Remove","license",1] call client_fnc_sustain;
 				};
 				if(_vel > 129) then {
@@ -76,7 +76,7 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
-					_ticket = 5000;
+					_ticket = 1000;
 					//["Remove","license",1] call client_fnc_sustain;
 				};
 				uiSleep 4;
@@ -102,7 +102,7 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
-					_ticket = 1000;
+					_ticket = 500;
 				};
 				if(_vel > 184 && _vel < 254) then {
 					"colorCorrections" ppEffectEnable true;
@@ -123,7 +123,7 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
-					_ticket = 2000;
+					_ticket = 750;
 					//["Remove","license",1] call client_fnc_sustain
 				};
 				if(_vel > 255) then {
@@ -145,7 +145,7 @@ for "_i" from 0 to 1 step 0 do {
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 					_handle = true;
-					_ticket = 2500;
+					_ticket = 1000;
 					//["Remove","license",1] call client_fnc_sustain;
 				};
 				uiSleep 4;

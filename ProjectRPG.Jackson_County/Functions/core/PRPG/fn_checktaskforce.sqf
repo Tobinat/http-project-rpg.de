@@ -1,7 +1,4 @@
-_playeruid = getPlayerUID player;
-if ( _playeruid in ["76561198124199916","76561198061326977"] ) then { _isadmin = true;} else { _isadmin = false; };
-
-if (_isadmin) exitWith {};
+if ( getPlayerUID player in ["76561198124199916","76561198061326977"] ) exitWith {};
 
 _onTsServer = "PRPG" == (call TFAR_fnc_getTeamSpeakServerName);
 _onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);

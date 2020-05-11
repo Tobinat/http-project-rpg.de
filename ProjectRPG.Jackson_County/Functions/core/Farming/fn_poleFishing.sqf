@@ -2,7 +2,7 @@
 pole fishing by koil
 */
 private["_chance"];
-	if(imfishing) exitwith {};
+	if(imfishing) exitwith { hint "Du warst zu schnell warte ein Wenig bevor du wieder auswirst!"; };
 	imfishing = true;
 	player playMoveNow "AwopPercMstpSgthWrflDnon_Throw1";
 	sleep 1;
@@ -92,32 +92,28 @@ private["_chance"];
 
     if(mouseMovement == 3) then {
     	_curWep = currentWeapon player;
-    	   _chance = round (random 200);
+    	_chance = round (random 200);
 
-	    	if(_curWep IN ["gold_fishing_rod","platinum_fishing_rod","epic_fishing_rod"]) then { _chance = round (random 202); };
+		if(_curWep == "gold_fishing_rod") then { _chance = round (random 220); };
 
-	    	if(_curWep == "legendary_fishing_rod") then { _chance = round (random 240); };
+		if(_curWep == "platinum_fishing_rod") then { _chance = round (random 240); };
 
-	    	if(vehicle player != player) then { _chance = _chance + 30; };
+		if(_curWep == "epic_fishing_rod") then { _chance = round (random 260); };
 
-    	    if(_chance > 198) then {
+		if(_curWep == "legendary_fishing_rod") then { _chance = round (random 280); };
+
+		if(vehicle player != player) then { _chance = _chance + 30; };
+
+        if(_chance > 196) then {
     		_myFish = _rareFish call BIS_fnc_selectRandom;
-	    } else {
+	 	} else {
 	    	_myFish = _standardFish call BIS_fnc_selectRandom;
 		};
 		hint "Du hast etwas gefangen";
 		Player additemtobackpack _myFish;
 		["FishCaught"] spawn mav_ttm_fnc_addExp;
-
-		_chance = round (random 100);
-		if(vehicle player != player) then { _chance = _chance + 10; };
-		if(_curWep == "gold_fishing_rod" && _chance > 80) then { Player additemtobackpack _myFish; };
-		if(_curWep == "platinum_fishing_rod" && _chance > 60) then { Player additemtobackpack _myFish; };
-		if(_curWep == "epic_fishing_rod" && _chance > 40) then { Player additemtobackpack _myFish; };
-		if(_curWep == "legendary_fishing_rod") then { Player additemtobackpack _myFish; };
-
 	} else {
 		hint "Du warst zu Lahmarschig";
 	};
-
+	sleep 10;
 	imfishing = false;
