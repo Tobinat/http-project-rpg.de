@@ -68,6 +68,9 @@ closedialog 0;
 	player setVariable ["tf_voiceVolume", 1, true];
 	lastsync = time;
 	["add","battery",200] call client_fnc_sustain;
+	["add","Food",75] call client_fnc_sustain;
+	["add","Drink",75] call client_fnc_sustain;
+	["remove","poop",100] call client_fnc_sustain;
 	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
 

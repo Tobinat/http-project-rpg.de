@@ -44,7 +44,7 @@ if( client_hunger < 2 || client_thirst < 2 ) exitwith {
 			["Wenn ich nicht langsam etwas Esse bin ich bald Tot!", true] spawn domsg;
 		};
 		if (counthungerdeath == 3) exitWith {
-			["Du bist einen elenden Hungertod gestorben!",true] spawn domgs;
+			["Du bist einen elenden Hungertod gestorben!",true] spawn domsg;
 			player setDamage 1;
 			counthungerdeath = nil;
 		};
