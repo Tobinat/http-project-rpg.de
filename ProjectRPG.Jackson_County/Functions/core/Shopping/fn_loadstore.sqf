@@ -886,7 +886,6 @@ if(_condition == "general") then {
 	_generalGroceries = [
 		["prpg_tablet",nil,50,3],
 		["prpg_item_wheel_kit",nil,150,3],
-		["prpg_item_engine_kit",nil,300,3], //To be removed in the future
 		["ACE_fieldDressing",nil,5,3],
 		["ACE_tourniquet",nil,5,1],
 		["ACE_CableTie",nil,5,3],

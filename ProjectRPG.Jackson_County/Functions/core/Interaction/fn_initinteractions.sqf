@@ -348,7 +348,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat') && (damage cursortarget) != 1 && ( ({_x == ""prpg_item_wheel_kit""} count magazines player) != 0 || myjob == ""EMS"" || myjob == ""repairman"" || ({_x == ""prpg_item_engine_kit""} count magazines player) != 0)"],
+		["(CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat') && (damage cursortarget) != 1 && ( ({_x == ""prpg_item_wheel_kit""} count magazines player) != 0 || myjob == ""EMS"" || myjob == ""repairman"" )"],
 		["Reperatur", "['Reparieren',(30 - mav_ttm_var_repairToReduce),client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\repair.ogg"",100] spawn client_fnc_dotask;",2]
 	],
 
