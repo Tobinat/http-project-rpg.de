@@ -19,7 +19,7 @@ if(_case == 1) then {
 
 _text = format["
 >> plate %6 <br/>
-<img image='%10' size='22' align='center'/><br/><br/>
+<img image='%10' size='22' align='center'/><br/>
 Model | %1<br/>
 Plate | %6 <br/>
 Color | %8 (%7) <br/>
@@ -43,7 +43,7 @@ Owner | %11",
 	_owner
 ];
 
-	show = format["%1<br/><br/>",_text] + format["%1",show];
+	show = format["%1<br/>",_text] + format["%1",show];
 
 	_computer = (findDisplay 9154) displayCtrl 4110;
 	_computer ctrlSetStructuredText parseText format["<br/>%1",show];
@@ -65,13 +65,13 @@ Owner | %11",
 } else {
 
 	_text = format["
->> plate %1 <br/><br/>
+>> plate %1 <br/>
 Kennzeichen Existiert nicht",
 
 	_vehinfo
 ];
 	
-	show = format["%1<br/><br/>",_text] + format["%1",show];
+	show = format["%1<br/>",_text] + format["%1",show];
 
 	_computer = (findDisplay 9154) displayCtrl 4110;
 	_computer ctrlSetStructuredText parseText format["<br/>%1",show];

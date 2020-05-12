@@ -486,7 +486,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["CurrentCursorTarget isKindOf 'Man' && (myjob == ""Mafia"" || myjob == ""Fire"" || myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Judge"" || myjob == ""Prosecutor"")"],
+		["CurrentCursorTarget isKindOf 'Man' && (myjob == ""Mafia"" || myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Judge"" || myjob == ""Prosecutor"")"],
 		["Befördern", "[CurrentCursorTarget] spawn client_fnc_promotionStart",2]
 	],
 

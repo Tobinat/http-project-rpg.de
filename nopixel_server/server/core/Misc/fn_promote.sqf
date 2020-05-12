@@ -12,6 +12,8 @@ if(_rank > 1) then {
 		case "fire": {_updateSQL = "promoteFire";};
 		case "legal": {_updateSQL = "promoteLegal";};
 		case "mafia": {_updateSQL = "promoteMafia";};
+		case "judge": {_updateSQL = "promoteLegal";};
+		case "prosecutor": {_updateSQL = "promoteLegal";};
 		default {_updateSQL = "";};
 	};
 	if(_updateSQL != "") then {
