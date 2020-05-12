@@ -51,7 +51,7 @@ if( client_hunger < 2 || client_thirst < 2 ) exitwith {
 	};
 };
 
-if (!(isNil counthungerdeath) && client_hunger > 15 && client_thirst > 15) then { counthungerdeath = nil; };
+if (!(isNil "counthungerdeath") && client_hunger > 15 && client_thirst > 15) then { counthungerdeath = nil; };
 
 if( client_hunger < 15 || client_thirst < 15 ) then {
 	player allowSprint false;
