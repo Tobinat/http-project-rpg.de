@@ -29,7 +29,7 @@
 		};
 	};
 	if (isMultiplayer) then {
-		if !(prpg_client_v == 0.61) then {
+		if !(prpg_client_v == 0.70) then {
 			["NotVersion",false,true] call BIS_fnc_endMission;
 		};
 	};

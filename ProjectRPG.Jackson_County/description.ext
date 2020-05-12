@@ -1,7 +1,7 @@
 respawn = "BASE";
 disabledAI = 1;
 author = "Koil | Edited by project-rpg.de";
-onLoadName = "Project-RPG v0.6";
+onLoadName = "Project-RPG v0.7";
 onLoadMission = "Webseite: http://project-rpg.de";
 onLoadIntro = "PRPG Life ist am laden...";
 //loadScreen =  "PRPG_Data\textures\loading\load.paa";
