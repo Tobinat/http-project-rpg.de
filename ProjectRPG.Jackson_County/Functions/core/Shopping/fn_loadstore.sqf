@@ -889,7 +889,7 @@ if(_condition == "general") then {
 		["ACE_fieldDressing",nil,5,3],
 		["ACE_CableTie",nil,5,3],
 		["ACE_EarPlugs",nil,5,1],
-		//["CG_Pro_Item_i",nil,350,1],
+		["ItemGPS",nil,400,1],
 		["kif_nitro",nil,2000,3],
 		["ItemMap",nil,1,3],
 		["ItemCompass",nil,10,3],

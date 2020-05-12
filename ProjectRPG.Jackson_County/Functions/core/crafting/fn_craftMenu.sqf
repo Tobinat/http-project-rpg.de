@@ -73,7 +73,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		_myArray = _PricesItemList select _myselect;
 
 		_Btn4 = _display displayCtrl 1110;
-		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Eisen: %2 <br/> Silber: %3 <br/> Aluminium: %4 <br/> Kupfer: %5 <br/> Glas: %6 <br/> Gummi: %6",_selectedweapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_myArray select 4),(_myArray select 5)];
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Eisen: %2 <br/> Silber: %3 <br/> Aluminium: %4 <br/> Kupfer: %5 <br/> Glas: %6 <br/> Gummi: %7",_selectedweapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_myArray select 4),(_myArray select 5)];
 		_btn4 ctrlCommit 0;
 	};
 

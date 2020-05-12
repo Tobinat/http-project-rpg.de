@@ -20,5 +20,5 @@ class prpg_item_sandsack : ACE_Sandbag_empty {
 	picture="\PRPG_Data\models\prpg_logo_crafting.paa";
 	//model = "@prpg_ace\addons\ace_sandbag\data\ace_sandbag_build.p3d";
 	allowedSlots[]={901};
-	mass=30;
+	mass=60;
 };

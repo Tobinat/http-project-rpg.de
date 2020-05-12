@@ -4,12 +4,12 @@ if(PhonesRinging) exitwith {
 	[] call client_fnc_hangup; 
 };
 if(tryingCall) exitwith {
-	tryingcall = FALSE;
+	tryingcall = false;
 	["Aufgelegt.", false] spawn domsg; 
 	[] call client_fnc_resetcall;
 };
 if(myCallOwner == player) exitwith {
-	["Aufgelegt.", false] spawn domsg;
+	["Aufgelegt.", false] spawn domsg;	
 	[] remoteexec ["client_fnc_resetcall",calledplayer];
 	[] call client_fnc_resetcall;
 	calledplayer = nil;

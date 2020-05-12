@@ -16,6 +16,7 @@ _localProtection = 0;
 _n = 0;
 {
 	_total = {_x == (_oreArray select _n)} count magazines player;
+	_total = _total + {_x == (oreArray select _n)} count items player;
 	_i = _total;
 
 	while{ _i > 0 } do {
