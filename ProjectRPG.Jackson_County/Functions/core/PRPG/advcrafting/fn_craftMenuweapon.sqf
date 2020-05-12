@@ -347,8 +347,11 @@ if((_this select 0) == "CRAFT") exitwith {
 	if(_error) exitwith {};
 
 	playSound3D ["CG_Jobs\sounds\sawing\saw.ogg", player, false, getPosasl player, 4, 1, 15];
-
-	shopholder addWeaponCargoGlobal [_status,1];
+	if (_status IN _WaffenClasses) then {
+		shopholder addWeaponCargoGlobal [_status,1];
+	} else {
+		shopholder addItemCargoGlobal [_status,1];
+	};
 	_classStatus = _status;
 	_status = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
 
