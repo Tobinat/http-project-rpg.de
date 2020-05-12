@@ -62,7 +62,7 @@ player addEventHandler["Respawn", {
 	[_unit,_corpse] call client_fnc_startfresh;
 }];
 ["ace_arsenal_displayOpened", {
-	if !( myjob in ["EMS","Cop"] ) then {
+	if !( myjob in ["EMS","Cop"] || prpg_aaa == 1) then {
 		_this select 0 closedisplay 1;
 		["Du hast hier keinen Zugriff!",true] spawn domsg;
 	};

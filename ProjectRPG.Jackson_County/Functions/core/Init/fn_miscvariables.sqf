@@ -117,6 +117,10 @@ if (getplayerUID player IN ["76561198124199916","76561198061326977","76561198152
 	TRAN
 */
 if (getplayerUID player IN ["","",""]) then { client_tran=1; };
+/*
+ACE-Arsenal Zugriff
+*/
+if (getplayerUID player IN ["76561198124199916","76561198061326977","76561198152696230"]) then { prpg_aaa=1; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "

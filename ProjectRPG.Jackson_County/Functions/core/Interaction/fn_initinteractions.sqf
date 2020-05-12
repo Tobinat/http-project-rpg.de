@@ -81,7 +81,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" ((lastforcesync + 300) < time) && client_canSync "],
+		[" ((lastforcesync + 200) < time) && client_canSync "],
 		["Daten Speichern", " [] spawn client_fnc_syncData; ",5]
 	],
 
