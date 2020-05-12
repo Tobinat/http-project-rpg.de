@@ -10,9 +10,10 @@ private["_cost","_error","_materials","_n","_i","_WaffenClasses","_PricesWaffenC
 _status = lbData[1113,lbCurSel (1113)];
 _status = call compile format["%1", _status];
 
-_mainMenus = ["Waffen"];
+_mainMenus = ["Waffen","Visiere"];
 
 _materials = ["NP_Wood","prpg_item_kupfer_bar","prpg_item_eisen_bar","prpg_item_aluminium_bar"];
+_scopematerials = ["prpg_item_glas","prpg_item_kupfer_bar","prpg_item_eisen_bar"];
 
 
 /*
@@ -141,6 +142,32 @@ _PricesWaffenClasses = [
 
 _WaffenMags = [0,2,2,0];
 
+_ScopeClasses = [
+	"RH_barska_rds",
+	"rh_compm2",
+	"rh_compm4s",
+	"optic_arco_blk_f",
+	"rh_ta31rco",
+	"rh_eotech553mag",
+	"rh_eothhs1",
+	"rh_shortdot",
+	"hlc_optic_atacr",
+	"hlc_optic_atacr_offset"
+];
+
+_scopecosts = [
+	[1,1,1],	//RH_barska_rds
+	[1,1,1],	//rh_compm2
+	[1,1,1],	//rh_compm4s
+	[1,1,2],	//optic_arco_blk_f
+	[1,1,2],	//rh_ta31rco
+	[2,2,2],	//rh_shortdot	
+	[3,2,2],	//rh_eotech553mag
+	[3,2,2],	//rh_eothhs1
+	[3,2,2],	//hlc_optic_atacr
+	[3,2,2]		//hlc_optic_atacr_offset
+];
+
 uisleep 0.05;
 
 _display = findDisplay 1111;
@@ -166,6 +193,23 @@ if((_this select 0) == "REFRESH") exitwith {
 		_mags = _WaffenMags;
 		_Btn4 = _display displayCtrl 1110;
 		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Holz: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/> Aluminium: %5 <br/><t color='#33CC33'>Magazin Kosten <t color='#ffffff'> <br/> Holz: %6 <br/> Kupfer: %7 <br/> Eisen: %8 <br/> Aluminium: %9",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2),(_myArray select 3),(_Mags select 0),(_Mags select 1),(_Mags select 2),(_Mags select 3)];
+		_btn4 ctrlCommit 0;
+	};
+
+	if(_status IN _ScopeClasses) then {
+		_mySelect = 0;
+		{
+			if(_status == _x) exitwith {};
+			_mySelect = _myselect + 1;
+		} foreach _WaffenClasses;
+		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
+		
+		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
+
+		_myArray = _scopecosts select _mySelect;
+		//_mags = _WaffenMags;
+		_Btn4 = _display displayCtrl 1110;
+		_Btn4 ctrlSetStructuredText parsetext format["<t color='#33CC33'> %1 <t color='#ffffff'> <br/> Glas: %2 <br/> Kupfer: %3 <br/> Eisen: %4 <br/>",_selectedWeapon,(_myArray select 0),(_myArray select 1),(_myArray select 2)];
 		_btn4 ctrlCommit 0;
 	};
 
@@ -212,6 +256,16 @@ if(_status == "Waffen") exitwith {
 
 };
 
+if(_status == "Visiere") exitwith {
+
+	{
+		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
+		_list lbAdd _selectedweapon;
+		_list lbSetdata [(lbSize _list)-1,str(_x)];
+	} foreach _ScopeClasses;
+
+};
+
 if(isNil "shopholder") then {
 	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal [0,0,0];
 };
@@ -223,36 +277,74 @@ if((_this select 0) == "CRAFT") exitwith {
 		_cost = _PricesWaffenClasses select _count;
 	};
 
-	_error = false;
-	_n = 0;
-	{
+	if(_status IN _ScopeClasses) then {
+		_count = _ScopeClasses FIND _status;
+		_cost = _scopecosts select _count;
+	};
 
-		_materialCheck = _materials select _n;
-		_checkCost = _cost select _n;
+	if (_status IN _WaffenClasses) then {
+		_error = false;
+		_n = 0;
+		{
 
-		_amountcurrent = {_x == (_materials select _n)} count magazines player;
-		if(_amountcurrent < _checkCost) exitwith { ["Dir fehlen Ressourcen!", false] spawn domsg; _error = true; };
-		_n = _n + 1;
+			_materialCheck = _materials select _n;
+			_checkCost = _cost select _n;
 
-	} foreach _cost;
+			_amountcurrent = {_x == (_materials select _n)} count magazines player;
+			if(_amountcurrent < _checkCost) exitwith { ["Dir fehlen Ressourcen!", false] spawn domsg; _error = true; };
+			_n = _n + 1;
+
+		} foreach _cost;
+
+		if(_error) exitwith {};
+
+
+		_n = 0;
+		{
+			_checkCost = _cost select _n;
+			_i = _checkCost;
+
+			while{ _i > 0 } do {
+				player removeitem (_materials select _n);
+				_i = _i - 1;
+			};
+
+			_n = _n + 1;
+		} foreach _cost;
+
+	} else {
+
+		_error = false;
+		_n = 0;
+		{
+
+			_materialCheck = _scopematerials select _n;
+			_checkCost = _cost select _n;
+
+			_amountcurrent = {_x == (_scopematerials select _n)} count magazines player;
+			if(_amountcurrent < _checkCost) exitwith { ["Dir fehlen Ressourcen!", false] spawn domsg; _error = true; };
+			_n = _n + 1;
+
+		} foreach _cost;
+
+		if(_error) exitwith {};
+
+
+		_n = 0;
+		{
+			_checkCost = _cost select _n;
+			_i = _checkCost;
+
+			while{ _i > 0 } do {
+				player removeitem (_scopematerials select _n);
+				_i = _i - 1;
+			};
+
+			_n = _n + 1;
+		} foreach _cost;
+	};
 
 	if(_error) exitwith {};
-
-
-	_n = 0;
-	{
-		_checkCost = _cost select _n;
-		_i = _checkCost;
-
-		while{ _i > 0 } do {
-			player removeitem (_materials select _n);
-			_i = _i - 1;
-		};
-
-		_n = _n + 1;
-	} foreach _cost;
-
-if(_error) exitwith {};
 
 	playSound3D ["CG_Jobs\sounds\sawing\saw.ogg", player, false, getPosasl player, 4, 1, 15];
 
@@ -275,6 +367,12 @@ if((_this select 0) == "CRAFTMAG") exitwith {
 		_count = _WaffenClasses FIND _status;
 		_cost = _WaffenMags;
 	};
+
+	if(_status IN _ScopeClasses) exitwith {
+		["Magazine für ein Visir? Überleg dir das nochmal!", false] spawn domsg;
+		closedialog 0;
+	};
+
 	_error = false;
 	_n = 0;
 	{
