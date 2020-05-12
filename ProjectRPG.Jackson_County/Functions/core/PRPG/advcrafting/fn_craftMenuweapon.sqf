@@ -201,7 +201,7 @@ if((_this select 0) == "REFRESH") exitwith {
 		{
 			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
-		} foreach _WaffenClasses;
+		} foreach _ScopeClasses;
 		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		
 		if(isNil "_selectedWeapon") exitwith {}; //? how did we even get here.
