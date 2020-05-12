@@ -35,12 +35,15 @@ if( client_hunger < 2 || client_thirst < 2 ) exitwith {
 	["Remove","Drink",2] call client_fnc_sustain;
 	["Remove","Food",2] call client_fnc_sustain;
 	playSound3D ["PRPG_data\sounds\hungry.ogg", player, false, getPosASL player, 3, 1, 45];
-	hint "Scheiße bin ich hungrig ich sollte schnellstens was Essen!";
 	if (isNil "counthungerdeath") then {
 		counthungerdeath = 1;
+		["Scheiße bin ich Hungrig. Ich sollte schnellstens etwas essen sonst verhungere ich!", true] spawn domsg;
 	} else {
 		counthungerdeath = counthungerdeath + 1;
 		if (counthungerdeath == 2) then {
+			["Wenn ich nicht langsam etwas Esse bin ich bald Tot!", true] spawn domsg;
+		};
+		if (counthungerdeath == 3) exitWith {
 			["Du bist einen elenden Hungertod gestorben!",true] spawn domgs;
 			player setDamage 1;
 			counthungerdeath = nil;

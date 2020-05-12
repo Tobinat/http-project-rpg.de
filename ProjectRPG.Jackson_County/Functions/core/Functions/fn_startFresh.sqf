@@ -57,6 +57,8 @@ closedialog 0;
 	player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false];
 	player setVariable ["corona",0,true];
 	counthungerdeath = nil;
+	player allowSprint true;
+	player forceWalk false;
 	life_unconscious = false;
 	player setVariable ["evidence",[],true];
 	[player,""] remoteExec ["client_fnc_animSync"];
