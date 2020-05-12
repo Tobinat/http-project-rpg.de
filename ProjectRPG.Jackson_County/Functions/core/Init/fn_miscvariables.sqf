@@ -112,7 +112,7 @@ if (getplayerUID player IN ["","","","","",""]) then { client_aiad_actions=2; };
 	Geldtransport erlaubnis
 */
 if (getplayerUID player IN [""]) then { teczka_allowed=1; };
-if (getplayerUID player IN ["76561198124199916","76561198061326977","","",""]) then { teczka_allowed=2; };
+if (getplayerUID player IN ["76561198124199916","76561198061326977","76561198152696230","",""]) then { teczka_allowed=2; };
 /*
 	TRAN
 */

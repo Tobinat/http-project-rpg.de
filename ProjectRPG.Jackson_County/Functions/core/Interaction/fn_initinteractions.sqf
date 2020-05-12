@@ -152,12 +152,12 @@ NoPixel_InteractionMenuItems = [
 		[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
 		["Drogen Verkaufen", " ['Verkaufe',30,client_fnc_dumpDrugs,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""prpg_data\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
 	],
-/*
+
 	[
 		[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
 		["Wasche dein Geld", " ['Ich wasche Geld',60,client_fnc_dumpMoney,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""PRPG_Data\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",1]
 	],
-*/
+
 	//[
 	//	[" myJob == ""Mafia"" && (player getVariable ""Mafia"") > 5 "],
 	//	["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
@@ -1074,7 +1074,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""plp_cts_PlasticBoxBlack"") && teczka_allowed == 2 "],
-		["Transport 250K", "[1] spawn client_fnc_takeSuitcase"]
+		["Transport 25K", "[1] spawn client_fnc_takeSuitcase"]
 	],
 
 	[

@@ -17,6 +17,7 @@ _cashout = 0;
 
 } forEach magazines player;
 
+if (_total == 0 ) exitWith {hint "Du hast keine Geldkoffer dabei!"; };
 
 [_cashout] call Client_fnc_sl_addCash_secure;
 

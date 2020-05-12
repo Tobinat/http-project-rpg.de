@@ -12,14 +12,14 @@ _cashout = 0;
 
 {
 	_mag = _x;
-	if(_mag IN _class1) then { _cashout = _cashout + 175; player removeMagazine _mag; _total = _total + 1; };
-	if(_mag IN _class2) then { _cashout = _cashout + 150; player removeMagazine _mag; _total = _total + 1; };
-	if(_mag IN _class3) then { _cashout = _cashout + 125; player removeMagazine _mag; _total = _total + 1; };
-	if(_mag IN _class4) then { _cashout = _cashout + 105; player removeMagazine _mag; _total = _total + 1; };
-	if(_mag IN _class5) then { _cashout = _cashout + 90; player removeMagazine _mag; _total = _total + 1; };  
-	if(_mag IN _class6) then { _cashout = _cashout + 80; player removeMagazine _mag; _total = _total + 1; }; 
-	if(_mag IN _class7) then { _cashout = _cashout + 70; player removeMagazine _mag; _total = _total + 1; }; 
-	if(_mag IN _class8) then { _cashout = _cashout + 60; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class1) then { _cashout = _cashout + 350; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class2) then { _cashout = _cashout + 300; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class3) then { _cashout = _cashout + 250; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class4) then { _cashout = _cashout + 210; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class5) then { _cashout = _cashout + 180; player removeMagazine _mag; _total = _total + 1; };  
+	if(_mag IN _class6) then { _cashout = _cashout + 160; player removeMagazine _mag; _total = _total + 1; }; 
+	if(_mag IN _class7) then { _cashout = _cashout + 140; player removeMagazine _mag; _total = _total + 1; }; 
+	if(_mag IN _class8) then { _cashout = _cashout + 120; player removeMagazine _mag; _total = _total + 1; };
 
 } forEach magazines player;
 
@@ -29,9 +29,7 @@ if(myjob == "Mafia" && _mafia >= 4) then { _cashout = _cashout * 2.25 };
 [_cashout] call Client_fnc_sl_addCash_secure;
 
 ["Erfolgreich",format["Du hast Drogen für $%1 verkauft.", _cashout],[0,255,0,1],""] call Client_fnc_showNotification;
-[player,objNull,3,format ["%1 er verkaufte DROGEN in Mengen: %2 fuer %3 $", name player, _total, _cashout],_cashout, "DROGEN", _total] remoteExec ["server_fnc_economyLog", 2];
-//hint format["Zarobiłeś $%1.",_cashout];
-
+[player,objNull,3,format ["%1 er verkauft %2 päckchen drogen für %3$", name player, _total, _cashout],_cashout, "DROGEN", _total] remoteExec ["server_fnc_economyLog", 2];
 
 [player, getunitloadout player, getPlayerUID player] remoteExec ["Server_fnc_invSave", 2];
 if(myJob != "Mafia") exitwith {};
