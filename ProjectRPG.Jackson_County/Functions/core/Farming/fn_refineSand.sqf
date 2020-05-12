@@ -3,19 +3,19 @@ petroleo < string to object
 */
 private["_n","_i","_localprotection"];
 
-_oreArray = ["prpg_item_kupfer_ore", "prpg_item_eisen_ore", "prpg_item_silber_ore","prpg_item_aluminium_ore","prpg_item_blei_ore"];
-_barArray = ["prpg_item_kupfer_bar", "prpg_item_eisen_bar", "prpg_item_silber_bar","prpg_item_aluminium_bar","prpg_item_blei_bar"];
+//_oreArray = ["prpg_item_kupfer_ore", "prpg_item_eisen_ore", "prpg_item_silber_ore","prpg_item_aluminium_ore","prpg_item_blei_ore","prpg_item_sandsack"];
+//_barArray = ["prpg_item_kupfer_bar", "prpg_item_eisen_bar", "prpg_item_silber_bar","prpg_item_aluminium_bar","prpg_item_blei_bar","prpg_item_glas"];
 _farmingVehicles = ["VVV_Chevrolet_Cone0","VVV_Chevrolet_Cone0_1","VVV_Chevrolet_Cone0_2","Jonzie_Transit","Jonzie_Transit_1","Jonzie_Transit_2","Jonzie_Raptor","Jonzie_Raptor_1","Jonzie_Raptor_2"];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { ["Eins nach dem anderen!",false] spawn domsg; };
 _localProtection = 0;
 
-["Du Verarbeitest Erze, bleibe kurz stehen!",false] spawn domsg;
+["Du Verarbeitest Sand, bleibe kurz stehen!",false] spawn domsg;
 
 _n = 0;
 {
-	_total = {_x == (_oreArray select _n)} count magazines player;
+	_total = {_x == "prpg_item_sandsack"} count items player;
 	_i = _total;
 
 	while{ _i > 0 } do {
@@ -26,8 +26,8 @@ _n = 0;
 		if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn client_fnc_anticheat; };
 
 
-		player removeitem (_oreArray select _n);
-		player additem (_barArray select _n);
+		player removeitem "prpg_item_sandsack";
+		player additem "prpg_item_glas";
 		_i = _i - 1;
 		playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];
 		uisleep 0.25;

@@ -885,12 +885,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && myjob == ""Cop"" && player getvariable ""cop"" > 5"],
+		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && myjob == ""Cop"" && player getvariable ""cop"" > 3"],
 		["Haus durchsuchen", " [player] remoteexec [""client_fnc_raidhouse"",currentcursortarget]; ",4]
 	],
 
 	[
-		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && myjob == ""Cop"" && player getvariable ""cop"" > 5"],
+		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && myjob == ""Cop"" && player getvariable ""cop"" > 3"],
  		["Geschäft durchsuchen ", " [player] remoteexec [""client_fnc_raidshop"",currentcursortarget]; ",4]
 	],
 
@@ -1060,33 +1060,32 @@ NoPixel_InteractionMenuItems = [
 		["Ausrüstung", "[cursortarget] spawn client_fnc_vars"]
 	],
 */ 
-	/*
+
 	//Geldtransporte
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""plp_cts_PlasticBoxBlack"") && teczka_allowed >= 1 "],
 		["Transport 100K", "[2] spawn client_fnc_takeSuitcase"]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""plp_cts_PlasticBoxBlack"") && teczka_allowed >= 1 "],
 		["Transport 50K", "[3] spawn client_fnc_takeSuitcase"]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed == 2 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""plp_cts_PlasticBoxBlack"") && teczka_allowed == 2 "],
 		["Transport 250K", "[1] spawn client_fnc_takeSuitcase"]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""plp_cts_PlasticBoxBlack"") && teczka_allowed >= 1 "],
 		["Transport 10K", "[4] spawn client_fnc_takeSuitcase"]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""plp_cts_PlasticBoxBlack"") && teczka_allowed >= 1 "],
 		["Transport 5K", "[5] spawn client_fnc_takeSuitcase"]
 	],
-*/
 /*
 	[
 		[" (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") && player getvariable ""ems"" > 1 "],
@@ -1189,8 +1188,13 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["((player distance (getMarkerPos ""OreRefinery"")) < 30)"],
+		["((player distance (getMarkerPos ""OreRefinery"")) < 30) ( ({_x == ""prpg_item_kupfer_ore""} count magazines player) != 0 || ({_x == ""prpg_item_eisen_ore""} count magazines player) != 0  || ({_x == ""prpg_item_aluminium_ore""} count magazines player) != 0 || ({_x == ""prpg_item_silber_ore""} count magazines player) != 0|| ({_x == ""prpg_item_blei_ore""} count magazines player) != 0 )"],
 		["Erze verarbeiten", "closedialog 0; [] spawn client_fnc_refinemetal1;",4]
+	],
+
+	[
+		["((player distance (getMarkerPos ""OreRefinery"")) < 30) && ({_x == ""prpg_item_sandsack""} count items player) != 0"],
+		["Sand verarbeiten", "closedialog 0; [] spawn client_fnc_refinesand;",4]
 	],
 	
 	[

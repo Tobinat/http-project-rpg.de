@@ -3,7 +3,7 @@ params["_channel"];
 sleep 2;
 
 if (myCallOwner != player) then { [] remoteexec ["client_fnc_resetcall",myCallOwner]; };
-if !(isNil calledplayer) then { [] remoteexec ["client_fnc_resetcall",calledplayer]; calledplayer = nil; };
+if !(isNil "calledplayer") then { [] remoteexec ["client_fnc_resetcall",calledplayer]; calledplayer = nil; };
 
 if (myjob =="EMS") then {
 	player setvariable["PhoneCallNumber",33.1,true];

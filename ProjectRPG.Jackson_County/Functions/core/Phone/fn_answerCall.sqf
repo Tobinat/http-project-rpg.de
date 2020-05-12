@@ -1,5 +1,5 @@
 PhonesRinging = false;	
-myCallOwner = _this;
+myCallOwner = _this select 0;
 myPhoneCall = getPlayerUID myCallOwner;
 player setvariable["PhoneID",myPhoneCall,true];
 player setVariable ["tf_unable_to_use_radio", false];

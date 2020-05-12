@@ -1,5 +1,5 @@
 if(surfacetype getpos player != "#k_sand") exitwith {};
-
+if(myJob != "none") exitWith { hint "Du hast einen andern Job, gehe dem Nach!"; };
 
 _findchance = round(random 20);
 if(_findchance > 5) then {

@@ -5,4 +5,6 @@ if (5 < _dateHour && _dateHour < 19) then {
     setTimeMultiplier 36;
 };
 
+2 setFog 0;
+
 diag_log "fn_time.sqf has been called";

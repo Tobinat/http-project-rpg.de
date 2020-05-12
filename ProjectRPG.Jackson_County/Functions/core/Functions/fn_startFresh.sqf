@@ -56,6 +56,8 @@ closedialog 0;
 	player setvariable["playerInjuries",[0,0,0,0,0,0,0,0,0,0,0],true];
 	player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false];
 	player setVariable ["corona",0,true];
+	counthungerdeath = nil;
+	life_unconscious = false;
 	player setVariable ["evidence",[],true];
 	[player,""] remoteExec ["client_fnc_animSync"];
 	["set",0] call Client_Fnc_DoHealth;
@@ -99,7 +101,7 @@ closedialog 0;
 	[getpos player,"text to display","destroy"] spawn client_fnc_hudHelper;
 
 	if (myCallOwner != player) then { [] remoteexec ["client_fnc_resetcall",myCallOwner]; [] call client_fnc_resetcall; };
-	if !(isNil calledplayer) then { [] remoteexec ["client_fnc_resetcall",calledplayer]; calledplayer = nil; };
+	if !(isNil "calledplayer") then { [] remoteexec ["client_fnc_resetcall",calledplayer]; calledplayer = nil; };
 
 	[] spawn client_fnc_syncData;
 	[player,objNull,4,format ["%1 ist respawned.",name player],"",""] remoteExec ["server_fnc_deathLog", 2];

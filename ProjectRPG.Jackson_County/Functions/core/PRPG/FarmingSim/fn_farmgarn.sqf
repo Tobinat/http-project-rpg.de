@@ -1,4 +1,5 @@
 if!((str (nearestObjects [player, [], 3]) find "arundod") > -1 ) exitWith {};
+if(myJob != "none") exitWith { hint "Du hast einen anderen Job, gehe diesem Nach!"; };
 
 _findchance = round(random 20);
 if(_findchance > 10) then {

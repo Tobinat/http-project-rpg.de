@@ -75,12 +75,9 @@ switch(_stage) do {
 	case 7: {
 		 "colorCorrections" ppEffectEnable true;                  
 		 "colorCorrections" ppEffectAdjust [0, 0.4, -0.003, [1, 1, 1, 1], [0.1, 0.1, 0, 0.6],  [1, 1, 1, 0.5]];               
-		 "colorCorrections" ppEffectCommit 0.45;               
-		 player forceWalk true;                   
-		 uisleep 0.15;                  
+		 "colorCorrections" ppEffectCommit 0.45;                                  
+		 uisleep 0.15;           
 		 "colorCorrections" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]];               
-		 "colorCorrections" ppEffectCommit 0.7;            
-		 player forceWalk false;  
+		 "colorCorrections" ppEffectCommit 0.7;
 	};
-
 };

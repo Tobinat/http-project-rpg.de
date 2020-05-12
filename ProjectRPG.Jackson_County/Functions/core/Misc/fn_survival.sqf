@@ -28,20 +28,41 @@ paycheck = 0;
 if(client_marijuana > 0 || client_cocaine > 0 || client_meth > 0 || client_heroin > 0  || client_energy > 0) then { ["Remove","drug",1] call client_fnc_sustain; };
 
 if( client_hunger < 2 || client_thirst < 2 ) exitwith {
+	player allowSprint false;
+	player forceWalk true;
+	[] spawn KK_fnc_forceRagdoll;
 	[7] spawn client_fnc_HudElements;
 	["Remove","Drink",2] call client_fnc_sustain;
 	["Remove","Food",2] call client_fnc_sustain;
 	playSound3D ["PRPG_data\sounds\hungry.ogg", player, false, getPosASL player, 3, 1, 45];
+	hint "Scheiße bin ich hungrig ich sollte schnellstens was Essen!";
+	if (isNil "counthungerdeath") then {
+		counthungerdeath = 1;
+	} else {
+		counthungerdeath = counthungerdeath + 1;
+		if (counthungerdeath == 2) then {
+			["Du bist einen elenden Hungertod gestorben!",true] spawn domgs;
+			player setDamage 1;
+			counthungerdeath = nil;
+		};
+	};
 };
 
+if (!(isNil counthungerdeath) client_hunger > 15 && client_thirst > 15) then { counthungerdeath = nil; };
+
 if( client_hunger < 15 || client_thirst < 15 ) then {
+	player allowSprint false;
 	[7] spawn client_fnc_HudElements;
-	if( client_hunger < 15 || client_thirst < 15 ) then {
-		playSound3D ["PRPG_data\sounds\hungry.ogg", player, false, getPosASL player, 3, 1, 45];
-	};
-	if( client_poop > 80 ) then {
+	playSound3D ["PRPG_data\sounds\hungry.ogg", player, false, getPosASL player, 3, 1, 45];
+};
+
+if (!(isSprintAllowed player) && client_hunger > 15 && client_thirst > 15) then {
+	player allowSprint true;
+	player forceWalk false;
+};
+
+if( client_poop > 80 ) then {
 		playSound3D ["PRPG_data\sounds\fart2.ogg", player, false, getPosASL player, 3, 1, 45];
-	};
 };
 
 if(!ClientArrested) then {

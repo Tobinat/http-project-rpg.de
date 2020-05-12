@@ -4,7 +4,7 @@ if(callInProgress) exitwith {
 };
 if(PhonesRinging) exitwith { 
 	["Verbinde..!", false] spawn domsg;
-	CurrentCaller spawn client_fnc_answerCall;
+	[CurrentCaller] spawn client_fnc_answerCall;
 };
 if(TryingCall) exitwith { 
 	["Warten Sie, bis der Anruf beendet ist!", false] spawn domsg; 

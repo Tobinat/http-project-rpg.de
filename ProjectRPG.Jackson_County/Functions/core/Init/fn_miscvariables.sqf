@@ -43,6 +43,7 @@ DeadPlayer = false;
 client_firstCombatActive = false;
 imfishing = false;
 myHealth = 0;
+counthungerdeath = nil;
 player setVariable["loaded", 0, false];
 player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false];
 has_job = false;
@@ -108,10 +109,10 @@ if (getplayerUID player IN ["",""]) then { kif_admin=5; };
 if (getplayerUID player IN ["","","","","","",""]) then { client_aiad_actions=1; };
 if (getplayerUID player IN ["","","","","",""]) then { client_aiad_actions=2; };
 /*
-	TECZKA ALLOWED
+	Geldtransport erlaubnis
 */
 if (getplayerUID player IN [""]) then { teczka_allowed=1; };
-if (getplayerUID player IN ["","","","",""]) then { teczka_allowed=2; };
+if (getplayerUID player IN ["76561198124199916","76561198061326977","","",""]) then { teczka_allowed=2; };
 /*
 	TRAN
 */

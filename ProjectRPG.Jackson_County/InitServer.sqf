@@ -26,7 +26,6 @@ deletevehicle _vehicle;
 
 
 setTimeMultiplier 8;
-[] execVM "functions\core\prpg\removeFog.sqf";
 /*
 0 setovercast 0;
 0 setrain 0;

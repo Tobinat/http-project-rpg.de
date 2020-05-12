@@ -503,6 +503,7 @@ class CfgFunctions
 			class refinepelts {};
 			class refineOil {};
 			class refineMetal1 {};
+            class refinesand {};
 			class mineMetal {};
 			class sellore {};
 			class searchCrates {};
