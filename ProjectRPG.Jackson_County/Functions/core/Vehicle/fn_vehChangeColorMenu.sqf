@@ -27,48 +27,31 @@ if((count _information) == 0) exitWith { hint "Informations about my car is coun
 if(isNull spawnedVehicle) exitWith { hint "My vehicle is null (1), i'm not looking on car?"; closeDialog 0; };
 _classname = typeOf spawnedvehicle;
 
-if (str _classname find "vory_" > -1) then {
-		_texturesIvory = ["kif_all_blueongray","kif_all_blueongreen","kif_all_blueonred","kif_all_blueonyellow","kif_all_grayonblue","kif_all_grayongreen","kif_all_grayonred","kif_all_grayonyellow","kif_all_greenonblue","kif_all_greenongray","kif_all_greenonred","kif_all_greenonyellow","kif_all_redonblue","kif_all_redongray","kif_all_redongreen","kif_all_redonyellow","kif_all_yellowonblue","kif_all_yellowongray","kif_all_yellowongreen","kif_all_yellowonred","kif_all_minecraft"];
+
+
+if (str _classname find "vory" > -1) then {
+		_texturesIvory = ["ivory_all_blueongray","ivory_all_blueongreen","ivory_all_blueonred","ivory_all_blueonyellow","ivory_all_grayonblue","ivory_all_grayongreen","ivory_all_grayonred","ivory_all_grayonyellow","ivory_all_greenonblue","ivory_all_greenongray","ivory_all_greenonred","ivory_all_greenonyellow","ivory_all_redonblue","ivory_all_redongray","ivory_all_redongreen","ivory_all_redonyellow","ivory_all_yellowonblue","ivory_all_yellowongray","ivory_all_yellowongreen","ivory_all_yellowonred","ivory_all_minecraft1","ivory_all_minecraft2","ivory_all_oceansky","ivory_all_cottonsky","ivory_all_galaxy","ivory_all_starburstgalaxy"];
 		_texturesBody = _texturesBody + _texturesIvory;
 };
+
 if (str _classname find "vory_evox" > -1) then {
-		_texturesIvory = ["ivory_evox_brightlime","ivory_evox_cleanwhite","ivory_evox_forsakenteal","ivory_evox_reckfulred","ivory_evox_koyama"];
+		_texturesIvory = ["ivory_evox_brightlime","ivory_evox_cleanwhite","ivory_evox_forsakenteal","ivory_evox_reckfulred","ivory_evox_koyama","ivory_evox_motors"];
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_c" > -1) then {
-		_texturesIvory = ["kif_veyron_carillo","kif_veyron_8","kif_veyron_revo","kif_veyron_ksport","kif_veyron_camo","kif_veyron_gee","kif_veyron_goldee","kif_veyron_race","kif_veyron_velvet","ivory_veyron_blue","ivory_veyron_bw","ivory_veyron_century","ivory_veyron_classic","ivory_veyron_dark","ivory_veyron_lafinale","ivory_veyron_sport"];
-		_texturesBody = _texturesBody + _texturesIvory;
-};
-if (str _classname find "vory_gt500" > -1) then {
-		_texturesIvory = ["kif_gt500_bg","kif_gt500_wb","kif_gt500_rw","kif_gt500_gb"];
+		_texturesIvory = ["ivory_veyron_blue","ivory_veyron_bw","ivory_veyron_century","ivory_veyron_classic","ivory_veyron_dark","ivory_veyron_lafinale","ivory_veyron_sport"];
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_lfa" > -1) then {
-		_texturesIvory = ["kif_lfa_deuce","kif_lfa_monty","kif_lfa_nyan","kif_lfa_wb","kif_lfa_tokyos","kif_lfa_spacegrey","kif_lfa_bibc","kif_lfa_speedhunters","kif_lfa_falken","kif_lfa_gready","kif_lfa_hotchkis","kif_lfa_falkentire","kif_lfa_rid","ivory_lfa_neon"];
-		_texturesBody = _texturesBody + _texturesIvory;
-};
-if (str _classname find "vory_lp560" > -1) then {
-		_texturesIvory = ["kif_lp560_25","kif_lp560_br","kif_lp560_carbon","kif_lp560_batman","kif_lp560_galaxy","kif_lp560_italia","kif_lp560_fidanza","kif_lp560_carillo","kif_lp560_kw","kif_lp560_recaro","kif_lp560_nyan","kif_lp560_redsavage"];
-		_texturesBody = _texturesBody + _texturesIvory;
-};
-if (str _classname find "vory_m3" > -1) then {
-		_texturesIvory = ["kif_m3_c9","kif_m3_candyred","kif_m3_crispyblue","kif_m3_deluxeblue","kif_m3_icywhite","kif_m3_special"];
-		_texturesBody = _texturesBody + _texturesIvory;
-};
-if (str _classname find "vory_r8" > -1) then {
-		_texturesIvory = ["kif_r8_sports1","kif_r8_sports2","kif_r8_sports3","kif_r8_sports4"];
-		_texturesBody = _texturesBody + _texturesIvory;
-};
-if (str _classname find "vory_rev" > -1) then {
-		_texturesIvory = ["kif_rev_sports1","kif_rev_sports2","kif_rev_sports3","kif_rev_sports4"];
+		_texturesIvory = ["ivory_lfa_neon","ivory_lfa_nyan","ivory_lfa_tokyo"];
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_supra" > -1) then {
-		_texturesIvory = ["kif_supra_walker","ivory_supra_electricblue","ivory_supra_electricred"," ivory_supra_electricwhite","ivory_supra_lastride","ivory_supra_shadowgray"];
+		_texturesIvory = ["ivory_supra_electricblue","ivory_supra_electricred"," ivory_supra_electricwhite","ivory_supra_lastride","ivory_supra_shadowgray"];
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_wrx" > -1) then {
-		_texturesIvory = ["kif_wrx_blackgray","kif_wrx_bluecamo","kif_wrx_camel9","kif_wrx_candy","kif_wrx_nyan","kif_wrx_redblack","kif_wrx_rpd","kif_wrx_sportorange","ivory_wrx_andy","ivory_wrx_sparco"];
+		_texturesIvory = ["ivory_wrx_andy","ivory_wrx_sparco","ivory_wrx_candy","ivory_wrx_nyan"];
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_e36" > -1) then {
@@ -84,7 +67,11 @@ if (str _classname find "vory_r34" > -1) then {
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_ccx" > -1) then {
-		_texturesIvory = ["ivory_ccx_champion"];
+		_texturesIvory = ["ivory_ccx_champion","ivory_ccx_imbatman","ivory_ccx_racingyellow","ivory_ccx_slime"];
+		_texturesBody = _texturesBody + _texturesIvory;
+};
+if (str _classname find "vory_m3" > -1) then {
+		_texturesIvory = ["ivory_m3_monster","ivory_m3_fnatic","ivory_m3_cvc"];
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 

@@ -480,7 +480,7 @@ if(_error) exitwith {};
 	if(_status IN _MaterialClasses) then {
 		shopholder additemCargoGlobal [_status,1];
 		_classStatus = _status;
-		_namendings = (configfile >> "CfgMagazines" >> _status >> "displayName") call BIS_fnc_getCfgData;
+		_namendings = (configfile >> "CfgVehicles" >> _status >> "displayName") call BIS_fnc_getCfgData;
 
 		player disablecollisionwith shopholder;
 		shopholder setpos (getposATL player);

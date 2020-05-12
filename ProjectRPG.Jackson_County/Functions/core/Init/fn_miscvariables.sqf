@@ -98,29 +98,30 @@ client_poop = 0;
 /*
 	Admin
 */
-if (getplayerUID player IN [""]) then { kif_admin=1; };
-if (getplayerUID player IN ["",""]) then { kif_admin=2; };
-if (getplayerUID player IN ["","",""]) then { kif_admin=3; };
-if (getplayerUID player IN ["","",""]) then { kif_admin=4; };
-if (getplayerUID player IN ["",""]) then { kif_admin=5; };
+if (getplayerUID player IN [""] ) then { kif_admin=1; };
+if (getplayerUID player IN [""] ) then { kif_admin=2; };
+if (getplayerUID player IN [""] ) then { kif_admin=3; };
+if (getplayerUID player IN [""] ) then { kif_admin=4; };
+if (getplayerUID player IN [""] ) then { kif_admin=5; };
 /*
 	AIAD Sondereinheit???
 */
-if (getplayerUID player IN ["","","","","","",""]) then { client_aiad_actions=1; };
-if (getplayerUID player IN ["","","","","",""]) then { client_aiad_actions=2; };
+if (getplayerUID player IN [""] ) then { client_aiad_actions=1; };
+if (getplayerUID player IN [""] ) then { client_aiad_actions=2; };
 /*
 	Geldtransport erlaubnis
 */
-if (getplayerUID player IN [""]) then { teczka_allowed=1; };
-if (getplayerUID player IN ["76561198124199916","76561198061326977","76561198152696230","",""]) then { teczka_allowed=2; };
+if (getplayerUID player IN [""] ) then { teczka_allowed=1; };
+                              //Leonard           //Kevin              //Hank
+if (getplayerUID player IN ["76561198124199916","76561198061326977","76561198152696230"] ) then { teczka_allowed=2; };
 /*
 	TRAN
 */
-if (getplayerUID player IN ["","",""]) then { client_tran=1; };
+if (getplayerUID player IN [""] ) then { client_tran=1; };
 /*
 ACE-Arsenal Zugriff
-*/
-if (getplayerUID player IN ["76561198124199916","76561198061326977","76561198152696230"]) then { prpg_aaa=1; };
+*/                           //Leonard             //Kevin               
+if (getplayerUID player IN ["76561198124199916","76561198061326977"] ) then { prpg_aaa=1; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "

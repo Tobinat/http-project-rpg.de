@@ -499,6 +499,11 @@ NoPixel_InteractionMenuItems = [
 		[" myJob == ""Cop"" && cursorTarget in Current_Cars && getpos player distance [8262.96,3046.85,0.00143814] < 50"],
 		["Streifenwagen", " createdialog ""prpg_slsd_license""; ",2]
 	],
+	
+	[
+		[" myJob == ""Cop"" && cursorTarget in Current_Cars && getpos player distance [8262.96,3046.85,0.00143814] < 50 && ( str typeof cursortarget find ""_p_u_bla"" > -1 )"],
+		["Farbe", " [] spawn client_fnc_copcolormenu; ",2]
+	],
 
 	[
 		[" myJob == ""Cop"" && CurrentCursorTarget isKindOf 'Man' && getpos player distance [5553.52,6236.29,0.00143433] < 100"],

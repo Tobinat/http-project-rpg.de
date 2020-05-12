@@ -166,6 +166,7 @@ class CfgFunctions
 			class copmapmarkers {};
 			class copOpener {};
             class prpg_police_license {};
+            class copcolormenu {};
 		};
 
 		class Wanted {
