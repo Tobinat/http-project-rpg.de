@@ -222,11 +222,10 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 		
 		
 		if(player getVariable  "ACE_isUnconscious" && !life_unconscious) then {
+			life_unconscious = true;
 			if (count currentEMS > 0) then {
 				0 spawn {
-					life_unconscious = true;
 					_action = ["Du bist Ohnmächtig. Mit letzter kraft kannst du dein Handy ziehen. Möchtest du das S.L.F.D. über deine Lage informieren?","Ohnmächtig","Ja","Nein"] call BIS_fnc_guiMessage;
-					life_corpse = player;
 					if(_action) then {
 						[] call client_fnc_requestMedic;
 					};
@@ -234,11 +233,9 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 			} else {
 				["Es sind keine Sanitäter im Dienst, nach 2 Minuten kannst du Respawnen.",true] spawn domsg;
 				sleep 120;
-				if!(player getVariable  "ACE_isUnconscious") exitWith {};
+				if!(player getVariable  "ACE_isUnconscious" && life_unconscious) exitWith {};
 				0 spawn {
-					life_unconscious = true;
 					_action = ["Du bist seit 2 Minuten Ohnmächtig. Es ist aber kein Sanitäter im Dienst. Willst du respawnen?","Ohnmächtig","Ja","Nein"] call BIS_fnc_guiMessage;
-					life_corpse = player;
 					if(_action) then {
 						player setDamage 1;
 					};
