@@ -324,7 +324,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(getpos player) distance [7604.3,6321.99,0.00143814] < 30 && (vehicle player) == player && CurrentCursorTarget in Current_Cars "],
-		["Verschrotten", "[""who cares"",0,CurrentCursorTarget,player] remoteExec [""Server_fnc_updateCarStatus"",2]; paycheck = paycheck + 500; hint ""Fahrzeug wurde verschrottet, das Geld wird gutgeschrieben."";",2]
+		["Verschrotten", "[""who cares"",5,CurrentCursorTarget,player] remoteExec [""Server_fnc_updateCarStatus"",2]; paycheck = paycheck + 500; hint ""Fahrzeug wurde verschrottet, das Geld wird gutgeschrieben."";",2]
 	],
 
 	[

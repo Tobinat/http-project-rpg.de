@@ -9,6 +9,19 @@ _information = _object getVariable "information";
 diag_log format["DEBUG - server_fnc_updateCarStatus: %1",_this];
 
 _exit = false;
+if(_status isEqualTo 5) exitWith {
+	_license = _information select 0;
+	_carowner = _information select 8;
+	if (_carowner != _playeruid) exitWith {};
+	_className = typeOf _object;
+	_vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
+	_updatestr = format ["deleteGarage:%1", _license];
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+
+	[_player,4,format ["%1 verschrottet einen %2", name _player, _vehicleName],"",_className,_vehicleName] call server_fnc_vehiclelog;
+	deleteVehicle _object;
+};
+
 if (_status isEqualTo 0) then {
 	 _license = _information select 0;
 	 _carowner = _information select 8;
@@ -23,6 +36,7 @@ if (_status isEqualTo 0) then {
 	 {if (getplayeruid _x isEqualTo _carowner) exitwith { _player = _x; }; } foreach playableunits;
 	 deleteVehicle _object;
 };
+
 if (_exit) exitwith { deleteVehicle _object; };
 _updatestr = format["updateCarStatus:%1:%2", _status, _license];
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
