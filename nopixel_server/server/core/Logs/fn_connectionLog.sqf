@@ -22,7 +22,6 @@ if(isNull _player) exitWith {diag_log "ConnectionLog: _player is Null (3)";};
 if (isNil "_text") then {_text = "";};
 if (isNil "_uid") then {_uid = "";};
 
-//_playerName = name _player;
 _playerCash = _player getVariable ["sl_wallet_silverlake",-1];
 _playerBank = _player getVariable ["sl_atm_silverlake",-1];
 _items = getUnitLoadout _player;

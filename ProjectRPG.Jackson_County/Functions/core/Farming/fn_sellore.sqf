@@ -5,7 +5,7 @@ petroleo < string to object
 private["_n","_i","_localProtection"];
 
 _barArray = ["prpg_item_kupfer_bar","prpg_item_eisen_bar","prpg_item_silber_bar","NP_Wood","CG_OilCanister","prpg_item_aluminium_bar","prpg_item_blei_bar","prpg_item_glas","prpg_item_gummi"];
-//priceArrayOre = [60,90,150,20,230,60,70,30,240];
+//priceArrayOre = [50,80,130,20,200,50,60,30,220];
 //publicVariable priceArrayOre;
 
 if(isNil "globalProtection") then { globalProtection = 0; };

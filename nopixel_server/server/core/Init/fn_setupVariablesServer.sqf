@@ -62,7 +62,7 @@ publicvariable "currentRepairmen";
 publicvariable "currentTaxiDrivers";
 publicvariable "mafiaBank";
 
-priceArrayOre = [60,90,150,20,230,60,70,30,240];;
+priceArrayOre = [50,80,130,20,200,50,60,30,220];
 publicVariable "priceArrayOre";
 diag_log "SERVER: Rohstoffpreise erfolgreich eingerichtet";
 //publicVariable "TaxRate";

@@ -1,25 +1,25 @@
-_class1 = ["CG_Heroin"];  
-_class2 = ["CG_MethBag100","CG_MethBag90"]; 
-_class3 = ["CG_Cocaine"]; 
-_class4 = ["CG_WeedBag4"]; 
-_class5 = ["CG_MethBag80","CG_WeedBag3"]; 
-_class6 = ["CG_MethBag70","CG_WeedBag2"]; 
-_class7 = ["CG_MethBag60"]; 
-_class8 = ["CG_MethBag50","CG_WeedBag1"]; 
+_class1 = ["CG_Cocaine"];
+_class2 = ["CG_MethBag100","CG_MethBag90"];
+_class3 = ["CG_Heroin"];
+_class4 = ["CG_WeedBag4"];
+_class5 = ["CG_MethBag80","CG_WeedBag3"];
+_class6 = ["CG_MethBag70","CG_WeedBag2"];
+_class7 = ["CG_MethBag60"];
+_class8 = ["CG_MethBag50","CG_WeedBag1"];
 _mafia = player getVariable ["Mafia",0];
 _total = 0;
 _cashout = 0;
 
 {
 	_mag = _x;
-	if(_mag IN _class1) then { _cashout = _cashout + 350; player removeMagazine _mag; _total = _total + 1; };
-	if(_mag IN _class2) then { _cashout = _cashout + 300; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class1) then { _cashout = _cashout + 300; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class2) then { _cashout = _cashout + 270; player removeMagazine _mag; _total = _total + 1; };
 	if(_mag IN _class3) then { _cashout = _cashout + 250; player removeMagazine _mag; _total = _total + 1; };
-	if(_mag IN _class4) then { _cashout = _cashout + 210; player removeMagazine _mag; _total = _total + 1; };
-	if(_mag IN _class5) then { _cashout = _cashout + 180; player removeMagazine _mag; _total = _total + 1; };  
-	if(_mag IN _class6) then { _cashout = _cashout + 160; player removeMagazine _mag; _total = _total + 1; }; 
-	if(_mag IN _class7) then { _cashout = _cashout + 140; player removeMagazine _mag; _total = _total + 1; }; 
-	if(_mag IN _class8) then { _cashout = _cashout + 120; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class4) then { _cashout = _cashout + 230; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class5) then { _cashout = _cashout + 200; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class6) then { _cashout = _cashout + 180; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class7) then { _cashout = _cashout + 160; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class8) then { _cashout = _cashout + 140; player removeMagazine _mag; _total = _total + 1; };
 
 } forEach magazines player;
 
