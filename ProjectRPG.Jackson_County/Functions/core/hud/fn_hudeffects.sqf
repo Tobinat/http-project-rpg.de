@@ -232,9 +232,9 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 				};
 			} else {
 				["Es sind keine Sanitäter im Dienst, nach 2 Minuten kannst du Respawnen.",true] spawn domsg;
-				sleep 120;
-				if!(player getVariable  "ACE_isUnconscious") exitWith {life_unconscious = false;};
 				0 spawn {
+					sleep 120;
+					if!(player getVariable  "ACE_isUnconscious") exitWith {life_unconscious = false;};
 					_action = ["Du bist seit 2 Minuten Ohnmächtig. Es ist aber kein Sanitäter im Dienst. Willst du respawnen?","Ohnmächtig","Ja","Nein"] call BIS_fnc_guiMessage;
 					if(_action) then {
 						player setDamage 1;
