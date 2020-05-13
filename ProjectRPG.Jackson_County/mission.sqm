@@ -45613,12 +45613,14 @@ class Mission
 			angle=0.72026241;
 			class Attributes
 			{
-				condition="call{this}";
+				condition="call{this && (local player) && (vehicle player in thisList)}";
 				onActivation="call{[] call client_fnc_silentpdalarm;}";
 				sizeA=3.1889999;
 				sizeB=4.8299999;
 				sizeC=1.1390001;
+				repeatable=1;
 				isRectangle=1;
+				activationBy="ANYPLAYER";
 			};
 			id=4071;
 			type="EmptyDetectorArea10x10";
@@ -45631,13 +45633,14 @@ class Mission
 			angle=5.5431304;
 			class Attributes
 			{
-				condition="call{this}";
+				condition="call{this && (local player) && (vehicle player in thisList)}";
 				onActivation="call{[] spawn client_fnc_silentpdalarm;}";
 				sizeA=3.1889999;
 				sizeB=4.8299999;
 				sizeC=1.235;
 				repeatable=1;
 				isRectangle=1;
+				activationBy="ANYPLAYER";
 			};
 			id=4072;
 			type="EmptyDetectorArea10x10";

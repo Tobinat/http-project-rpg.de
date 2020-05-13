@@ -2,7 +2,7 @@
 pole fishing by koil
 */
 private["_chance"];
-	if(imfishing) exitwith { hint "Du warst zu schnell warte ein Wenig bevor du wieder auswirst!"; player addmagazine "cebos"; };
+	if(imfishing) exitwith {};
 	imfishing = true;
 	player playMoveNow "AwopPercMstpSgthWrflDnon_Throw1";
 	sleep 1;
@@ -115,5 +115,4 @@ private["_chance"];
 	} else {
 		hint "Du warst zu Lahmarschig";
 	};
-	sleep 10;
 	imfishing = false;
