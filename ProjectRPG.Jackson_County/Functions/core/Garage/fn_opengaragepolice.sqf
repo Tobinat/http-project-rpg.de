@@ -25,7 +25,10 @@ if(myJob == "Cop") then {
 			"red_charger_12_p_sheriff",
 			"red_charger_12_p_u_sheriff",
 			"red_camaro_12_p_u_black",
-			"red_challenger_15_p_u_black"
+			"red_challenger_15_p_u_black",
+			"ivory_wrx_unmarkednorb",
+			"ivory_rs4_unmarkednorb",
+			"ivory_evox_unmarkednorb"
 		];
 		_garage = _garage + _ret;
 		if ((typeOF cursorTarget) find "Air_Garage_Off" > -1 ) then {

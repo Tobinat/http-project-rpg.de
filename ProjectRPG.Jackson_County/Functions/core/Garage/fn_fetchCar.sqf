@@ -64,7 +64,15 @@ if((_this select 0) == 1) exitwith {
 				_vehicle setPlateNumber format["SLFD-%1",_medlicense];
 			};
 		};
-	}; 
+	};
+	if (str _className find "_unmarkednor" > -1) then {
+		_colorarray = ["black","blue","red","green","orange","purple","white","wildstrawberry","darkred","dimgray","sunglow","brandeisblue","darkjunglegreen"];
+		_color = _colorarray call BIS_fnc_selectRandom;
+		_materialarray = ["metallic","matte"];
+		_material = _materialarray call BIS_fnc_selectRandom;
+		[_vehicle, [_color,_material]] call client_fnc_initVehicle;
+		_vehicle setvariable ["slpdcar",0,true];
+	};
 	[_vehicle] call client_fnc_spawnvehicle;
 	_vehicle allowdamage true;
 	Current_Cars pushBack _vehicle;
