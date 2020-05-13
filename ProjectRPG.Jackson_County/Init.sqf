@@ -29,10 +29,3 @@ shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_0
 
 
 [] execVM "AdminTool\loop.sqf";
-
-
-force ace_advanced_ballistics_ammoTemperatureEnabled = false;
-force ace_advanced_ballistics_barrelLengthInfluenceEnabled = false;
-force ace_advanced_ballistics_bulletTraceEnabled = false;
-force ace_advanced_ballistics_enabled = false;
-force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;
