@@ -15,7 +15,7 @@ if(_player getVariable  "ACE_isUnconscious") then {
 	diag_log "hat sich ausgeloggt, während er Bewusstlos war!"; 
 	[_player,3,format ["%1 hat sich während er Bewustlos war ausgeloggt!", _name],_uid,"",_name] call server_fnc_connectionLog;
 } else {
-	[_player,2,format ["%1 vom Server getrennt", _name],_uid,"",_name] call server_fnc_connectionLog;
+	//[_player,2,format ["%1 vom Server getrennt", _name],_uid,"",_name] call server_fnc_connectionLog;
 };
 
 _position = position _player;

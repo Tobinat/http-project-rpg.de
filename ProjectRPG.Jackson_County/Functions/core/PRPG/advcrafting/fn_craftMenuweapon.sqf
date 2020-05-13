@@ -106,7 +106,9 @@ _WaffenClasses = [
 	"RH_Deagles",
 	"hlc_rifle_bcmblackjack",
 	"hlc_rifle_bcmjack",
-	"hlc_rifle_SAMR"
+	"hlc_rifle_SAMR",
+	"hlc_rifle_Bushmaster300",
+	"hlc_rifle_vendimus"
 	];
 
 _PricesWaffenClasses = [
@@ -137,7 +139,11 @@ _PricesWaffenClasses = [
 	//hlc_rifle_bcmjack
 	[4,8,10,8],
 	//hlc_rifle_SAMR
-	[4,8,10,8]
+	[4,8,10,8],
+	//hlc_rifle_Bushmaster300
+	[4,8,16,12],
+	//hlc_rifle_vendimus
+	[4,8,16,12]
 ];
 
 _WaffenMags = [0,2,2,0];
