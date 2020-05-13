@@ -13,7 +13,7 @@
  */
 params["_player","_type","_text","_uid","_items","_name"];
 private["_playerUID","_playerName","_playerCash","_playerBank"];
-diag_log "CONNECTIONLOG:TEST1";
+
 if(isNil "_player" || isNil "_type") exitWith {diag_log "ConnectionLog: nil (1)";};
 if("_type" == "") exitWith {diag_log "ConnectionLog: _type is empty (2)";};
 if(isNull _player) exitWith {diag_log "ConnectionLog: _player is Null (3)";};
@@ -22,7 +22,6 @@ if(isNull _player) exitWith {diag_log "ConnectionLog: _player is Null (3)";};
 if (isNil "_text") then {_text = "";};
 if (isNil "_uid") then {_uid = "";};
 
-diag_log "CONNECTIONLOG:TEST2";
 //_playerName = name _player;
 _playerCash = _player getVariable ["sl_wallet_silverlake",-1];
 _playerBank = _player getVariable ["sl_atm_silverlake",-1];
@@ -33,8 +32,6 @@ switch (_type) do {
     case 2: {_type = "Trennt";};
     case 3: {_type = "COMBAT LOG";};
 };
-
-diag_log "CONNECTIONLOG:TEST3";
 
 _insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7", _uid, _name, _playerCash, _playerBank, _items, _type, _text];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;

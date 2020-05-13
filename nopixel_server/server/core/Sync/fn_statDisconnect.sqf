@@ -9,7 +9,14 @@ deletemarker format["%1",_uid];
 _cash = _player getVariable "sl_wallet_silverlake";
 _bank = _player getVariable "sl_atm_silverlake";
 
-if(_player getVariable  "ACE_isUnconscious") then { diag_log "COMBAT LOG:"; diag_log _name; diag_log "hat sich ausgeloggt, während er Bewusstlos war!"; };
+if(_player getVariable  "ACE_isUnconscious") then {
+	diag_log "COMBAT LOG:";
+	diag_log _name; 
+	diag_log "hat sich ausgeloggt, während er Bewusstlos war!"; 
+	[_player,3,format ["%1 hat sich während er Bewustlos war ausgeloggt!", _name],_uid,"",_name] call server_fnc_connectionLog;
+} else {
+	[_player,2,format ["%1 vom Server getrennt", _name],_uid,"",_name] call server_fnc_connectionLog;
+};
 
 _position = position _player;
 
@@ -60,7 +67,6 @@ if(_syncInfo == 0 || _uid in currentCop || _uid in currentEMS || _uid in current
 }; 
 
 [_uid,"disconnected"] spawn Server_fnc_connected;
-[_player,2,format ["%1 vom Server getrennt", _name],_uid,"",_name] call server_fnc_connectionLog;
 
 [] spawn server_fnc_refreshjobs;
 
