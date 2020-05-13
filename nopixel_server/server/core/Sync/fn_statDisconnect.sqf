@@ -33,7 +33,7 @@ if(_syncInfo == 0 || _uid in currentCop || _uid in currentEMS || _uid in current
 		publicvariable "currentMedicDispatch";
 	};
 
-	if (getplayeruid _player IN currentFireDispatch) then { 
+	if (_uid IN currentFireDispatch) then { 
 		_pia = currentFireDispatch find _uid;
 		currentFireDispatch deleteAt _pia;
 		publicvariable "currentFireDispatch";
@@ -60,7 +60,7 @@ if(_syncInfo == 0 || _uid in currentCop || _uid in currentEMS || _uid in current
 }; 
 
 [_uid,"disconnected"] spawn Server_fnc_connected;
-[_player,2,format ["%1 vom Server getrennt", name _player],_uid,""] call server_fnc_connectionLog;
+[_player,2,format ["%1 vom Server getrennt", _name],_uid,"",_name] call server_fnc_connectionLog;
 
 [] spawn server_fnc_refreshjobs;
 
