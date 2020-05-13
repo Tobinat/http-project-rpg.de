@@ -9,6 +9,8 @@ deletemarker format["%1",_uid];
 _cash = _player getVariable "sl_wallet_silverlake";
 _bank = _player getVariable "sl_atm_silverlake";
 
+if(_player getVariable  "ACE_isUnconscious") then { diag_log "COMBAT LOG:"; diag_log _name; diag_log "hat sich ausgeloggt, während er Bewusstlos war!"; };
+
 _position = position _player;
 
 _syncInfo = _player getVariable "sync";
@@ -38,14 +40,14 @@ if(_syncInfo == 0 || _uid in currentCop || _uid in currentEMS || _uid in current
 	};
 
 
-	if (_uid IN currentCop) exitwith {
+	if (_uid IN currentCop) then {
     	_pia = currentCop find _uid;
     	currentCop deleteAt _pia;
     	publicvariable "currentCop";
 		//currentCop ="";
 	};
 
-	if (_uid IN currentEMS) exitwith {
+	if (_uid IN currentEMS) then {
     	_pia = currentEMS find _uid;
     	currentEMS deleteAt _pia;
     	publicvariable "currentEMS";
