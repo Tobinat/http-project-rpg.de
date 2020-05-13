@@ -200,6 +200,7 @@ class CfgFunctions
 			class takeashit {};
 			class poop {};
             class checktaskforce {};
+            class silentpdalarm {};
 		};
 
 		class JobPizza {
