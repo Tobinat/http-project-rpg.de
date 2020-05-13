@@ -1,10 +1,12 @@
 if(myJob IN ["Fire","EMS"]) then {
 	_playerGear = player getVariable "lastSave";
+	removeGoggles player;
 	player setunitloadout _playerGear;
 	player setVariable ["ace_medical_medicClass", 0, true];
 };
 if (myjob == "Cop") then {
 	_playerGear = player getVariable "lastSave";
+	removeGoggles player;
 	player setunitloadout _playerGear;
 	//[player,objNull,11,format ["%1 beendete seinen Dienst", name player],""] remoteExec ["server_fnc_copLog", 2];
 };

@@ -40,7 +40,7 @@ class GivenTicket {
 
 class MethGathered {
     exptoAdd = 6;
-    message = "Methamphetamin wurde hergestellt";
+    message = "Methamphetamin hergestellt";
 };
 
 class CraftedSth {

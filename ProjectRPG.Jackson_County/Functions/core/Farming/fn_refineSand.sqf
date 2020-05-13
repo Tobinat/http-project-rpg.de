@@ -1,5 +1,5 @@
 /*
-petroleo < string to object
+Sand verarbeiten
 */
 private["_n","_i","_localprotection"];
 
@@ -41,7 +41,7 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 
 	_thecargo = getItemCargo (vehicle player);
 
-	clearItemcargoGlobal (vehicle player);
+	clearitemcargoGlobal (vehicle player);
 
 	_holder = (vehicle player);
 
@@ -50,13 +50,28 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 
 
 	if(!isnil "_process") then {
-		_number = _process find "prpg_item_sandsack";
-		_howmany = _ItemCount select _number;
+		_count = 0;
+		{
 
-		vehicle player addItemCargoGlobal ["prpg_item_sandsack",_howmany];
-		playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];
-		if(dialog) then { closedialog 0; };
-		["Processed"] spawn mav_ttm_fnc_addExp;
+			_localProtection = _localprotection + 1;
+			globalProtection = globalProtection + 1;
+			if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn client_fnc_anticheat; };
+
+			_itemNumber = _ItemCount select _count;
+			 if !(_x IN _oreArray) then {
+				_holder additemCargoGlobal [_x,_itemnumber];
+				_count = _count + 1;
+				uisleep 0.05;
+			} else {
+				_n = _oreArray FIND _x;
+				_holder addItemCargoGlobal [(_barArray select _n),_itemNumber];
+				_count = _count + 1;
+				playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];
+				uisleep 0.25;
+				if(dialog) then { closedialog 0; };
+			};
+			["Processed"] spawn mav_ttm_fnc_addExp;
+		} foreach _process;
 	};
 };
 globalProtection = 0;

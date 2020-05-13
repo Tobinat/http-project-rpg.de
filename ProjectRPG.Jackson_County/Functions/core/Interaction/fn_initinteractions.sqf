@@ -1193,12 +1193,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["((player distance (getMarkerPos ""OreRefinery"")) < 30) && ( ({_x == ""prpg_item_kupfer_ore""} count magazines player) != 0 || ({_x == ""prpg_item_eisen_ore""} count magazines player) != 0  || ({_x == ""prpg_item_aluminium_ore""} count magazines player) != 0 || ({_x == ""prpg_item_silber_ore""} count magazines player) != 0|| ({_x == ""prpg_item_blei_ore""} count magazines player) != 0 )"],
+		["((player distance (getMarkerPos ""OreRefinery"")) < 30)"],
 		["Erze verarbeiten", "closedialog 0; [] spawn client_fnc_refinemetal1;",4]
 	],
 
 	[
-		["((player distance (getMarkerPos ""OreRefinery"")) < 30) && ({_x == ""prpg_item_sandsack""} count items player) != 0"],
+		["((player distance (getMarkerPos ""OreRefinery"")) < 30)"],
 		["Sand verarbeiten", "closedialog 0; [] spawn client_fnc_refinesand;",4]
 	],
 	

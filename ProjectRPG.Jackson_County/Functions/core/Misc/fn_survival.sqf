@@ -12,7 +12,7 @@ if(!taskrunning) then {
 	paycheck = paycheck + 35;
 	["Paycheck"] spawn mav_ttm_fnc_addExp;
 } else {
-	if(myJob == "Fire") then { _addition = player getvariable "Fire"; paycheck = paycheck + (35*_addition); };
+	//if(myJob == "Fire") then { _addition = player getvariable "Fire"; paycheck = paycheck + (35*_addition); };
 	if(myJob == "EMS") then { _addition = player getvariable "EMS"; paycheck = paycheck + (35*_addition); };
 	if(myJob == "Cop") then { _addition = player getvariable "Cop"; paycheck = paycheck + (30*_addition); };
 	if(myJob == "Judge") then { _addition = player getVariable "legal"; paycheck = paycheck + (40*_addition); };

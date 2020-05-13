@@ -2,7 +2,7 @@ _houseLevel = player getvariable "houselevel";
 
 _cashCheck = [2,20000] call Client_fnc_sl_checkMoney_secure;
 
-if!(_cashCheck) exitwith { ["Du brauchst 30.000$", false] spawn domsg; };
+if!(_cashCheck) exitwith { ["Du brauchst 20.000$", false] spawn domsg; };
 
 if(_houselevel == 1) then { ["Erfolreich","Du hast dein Haus auf Stufe 2 aufgerüstet, die Änderung wird nach Server neustart wirksam.",[0,255,0,1],""] call Client_fnc_showNotification; player setvariable ["houselevel",2,false]; [2,getplayeruid player] remoteExec ["server_fnc_synchouselevel",2]; [player,objNull,2,format ["%1 rüstete das Haus auf die zweite Stufe nach 50000$", name player],"50000", "", "2"] remoteExec ["server_fnc_economyLog", 2]; };
 if(_houselevel == 2) then { ["Erfolreich","Du hast dein Haus auf Stufe 3 aufgerüstet, die Änderung wird nach Server neustart wirksam.",[0,255,0,1],""] call Client_fnc_showNotification; player setvariable ["houselevel",3,false]; [3,getplayeruid player] remoteExec ["server_fnc_synchouselevel",2]; [player,objNull,2,format ["%1 rüstete das Haus auf die dritte Stufe nach 50000$", name player],"50000", "", "3"] remoteExec ["server_fnc_economyLog", 2];};

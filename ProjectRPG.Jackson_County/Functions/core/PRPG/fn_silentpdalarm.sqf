@@ -4,5 +4,3 @@ if (myjob in ["Cop","EMS"] ) exitWith {};
 	[getPos player,"cop"] remoteexec ["client_fnc_jobMarker", _unit];
 	["911: Stiller Alarm, jemand versucht in eine Dienststelle einzudringen!", false] remoteExec ["domsg", _unit];
 } foreach currentCop;
-
-hint "FUNKTIONIERT";
