@@ -257,17 +257,6 @@ class cop_vehicle_colors {
             colorBackground[] = {0,0,0,0.7};
             ColorText[] = {1,1,1,1};
         };
-        class title_price: client_RscText
-        {
-            idc = 1001;
-            text = "Preis: 1000$";
-            x = 0.408451 * safezoneW + safezoneX;
-            y = 0.639769 * safezoneH + safezoneY;
-            w = 0.174632 * safezoneW;
-            h = 0.027058 * safezoneH;
-            colorBackground[] = {0,0,0,0.7};
-            ColorText[] = {1,1,1,1};
-        };
         class button_confirm: RscButton
         {
             idc = 1601;

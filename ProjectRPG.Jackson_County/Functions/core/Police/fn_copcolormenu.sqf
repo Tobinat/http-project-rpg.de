@@ -20,6 +20,9 @@ _finishes = ["Glossy", "Metallic", "Matte", "Chrome"];
 if(isNull spawnedVehicle) exitWith { hint "Schau den Streifenwagen an!"; closeDialog 0; };
 _classname = typeOf spawnedvehicle;
 
+_color = "airforceblue";
+_finish = "Metallic";
+
 lbClear _colorsCtrl;
 lbClear _finishCtrl;
 
@@ -38,8 +41,8 @@ _selectedFinishDialog = 0;
 	_FinishDisplayName = getText(configFile >> "CfgIvoryMaterials" >> _x >> "displayName");
 	_finishCtrl lbAdd format["%1",_FinishDisplayName];
 	_index = (lbSize _finishCtrl) - 1;
-	if(_finish == _class) then { _selectedFinishDialog = _index; };
-	_finishCtrl lbSetdata [_index, str([_class, _cost])];
+	if(_x == _finish) then { _selectedFinishDialog = _index; };
+	_finishCtrl lbSetdata [_index, str(_x)];
 } foreach _finishes;
 lbSetCurSel [1502, _selectedFinishDialog];
 
@@ -77,5 +80,7 @@ if(isNil "client_fnc_copColorButtonAccept") then {
 		[spawnedVehicle, [_selectedColor,_selectedFinish]] remoteexec ["client_fnc_initVehicle",2];
 		
 		spawnedVehicle = objNull;
+
+		closedialog 0;
 	};
 };
