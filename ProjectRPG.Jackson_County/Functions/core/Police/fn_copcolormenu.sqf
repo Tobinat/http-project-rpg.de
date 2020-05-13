@@ -58,7 +58,6 @@ if(isNil "client_fnc_copcolorOnLbChange") then {
 		
 		_status = lbData[1502, (lbCurSel (1502))];
 		_selectedFinish = call compile format["%1", _status];
-		_selectedFinish = _selectedFinish select 0;
 
 		[spawnedVehicle, [_selectedColor,_selectedFinish]] remoteexec ["client_fnc_initVehicle",2];
 	};
