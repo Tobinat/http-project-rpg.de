@@ -18,7 +18,11 @@ wreckRemovalMinTime = 10;
 
 forceRotorLibSimulation = 2;
 
-enableDebugConsole[] = {"76561198124199916","76561198061326977"};
+enableDebugConsole[] = {
+"76561198124199916",    //Leonard
+"76561198061326977",    //Kevin
+"76561198152696230"     //Andreas Kunz (Wohnhaft in Bayern)
+};
 
 class Header {
     gameType = RPG;
