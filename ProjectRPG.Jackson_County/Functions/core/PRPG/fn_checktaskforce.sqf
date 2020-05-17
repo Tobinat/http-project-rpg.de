@@ -1,4 +1,5 @@
-if ( getPlayerUID player in ["76561198124199916","76561198061326977"] ) exitWith {};
+								//Leonard			//Kevin				//Andreas Kunz
+if ( getPlayerUID player in ["76561198124199916","76561198061326977","76561198152696230"] ) exitWith {};
 
 _onTsServer = "PRPG" == (call TFAR_fnc_getTeamSpeakServerName);
 _onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
