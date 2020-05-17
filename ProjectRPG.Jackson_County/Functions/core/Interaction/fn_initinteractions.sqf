@@ -501,7 +501,7 @@ NoPixel_InteractionMenuItems = [
 	],
 	
 	[
-		[" myJob == ""Cop"" && cursorTarget in Current_Cars && getpos player distance [8262.96,3046.85,0.00143814] < 50 && ( str typeof cursortarget find ""_p_u_bla"" > -1 )"],
+		[" myJob == ""Cop"" && cursorTarget in Current_Cars && getpos player distance [8262.96,3046.85,0.00143814] < 50 && ( str typeof cursortarget find ""_p_u_bla"" > -1 ||  str typeof cursortarget find ""_unmarked_nor"" > -1)"],
 		["Farbe", " [] spawn client_fnc_copcolormenu; ",2]
 	],
 
