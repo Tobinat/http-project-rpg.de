@@ -103,20 +103,25 @@ if(_mayor) then{ _houselevel = 3; _player setVariable ["houselevel", _houselevel
 
 
 _house = [0,0,0];
-if(_houseLevel == 1) then {
+if(_houseLevel == 1 || _houseLevel == 2) then {
 _house = tier1housing call BIS_fnc_selectRandom;
 _pia = tier1housing find _house;
 tier1housing deleteAt _pia;
 };
-if(_houseLevel == 2) then {
+if(_houseLevel == 3 || _houseLevel == 4 || _houseLevel == 5) then {
 _house = tier2housing call BIS_fnc_selectRandom;
 _pia = tier2housing find _house;
 tier2housing deleteAt _pia;
 };
-if(_houseLevel == 3) then {
+if(_houseLevel == 6 || _houseLevel == 7 || _houseLevel == 8 || _houseLevel == 9) then {
 _house = tier3housing call BIS_fnc_selectRandom;
 _pia = tier3housing find _house;
 tier3housing deleteAt _pia;
+};
+if(_houseLevel == 10) then {
+_house = tier4housing call BIS_fnc_selectRandom;
+_pia = tier4housing find _house;
+tier4housing deleteAt _pia;
 };
 
 _shop = shops call BIS_fnc_selectRandom;

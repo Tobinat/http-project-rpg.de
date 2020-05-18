@@ -2,9 +2,11 @@ MapBuildings = ["Land_buildingsfiredept1","Land_Market_DED_Market_02_F","Land_Pl
 
 
 _tier1 = ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"];
-_tier2 = ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"];
-_tier3 = ["Land_HouseDoubleAL","Land_HouseDoubleAL2"];
+_tier2 = ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F"];
+_tier3 = ["Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"];
+_tier4 = ["Land_HouseDoubleAL2","Land_HouseDoubleAL"];
 
 tier1housing1 = []; { tier1housing1 pushback _x; } foreach nearestObjects [[0,0,0], [_tier1], 22200];
 tier1housing2 = []; { tier1housing2 pushback _x; } foreach nearestObjects [[0,0,0], [_tier2], 22200];
 tier1housing3 = []; { tier1housing3 pushback _x; } foreach nearestObjects [[0,0,0], [_tier3], 22200];
+tier1housing4 = []; { tier1housing4 pushback _x; } foreach nearestObjects [[0,0,0], [_tier4], 22200];
