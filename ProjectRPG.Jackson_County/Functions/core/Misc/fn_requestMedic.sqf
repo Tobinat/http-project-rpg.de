@@ -1,5 +1,5 @@
 disableSerialization;
-player say "racebeep1";
+player say "satdisable";
 hint "Die Mediziner wurden Informiert.";
 
 {

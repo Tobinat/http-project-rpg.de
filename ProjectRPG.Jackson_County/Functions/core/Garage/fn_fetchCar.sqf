@@ -89,6 +89,7 @@ if((_this select 0) == 1) exitwith {
 		_vehicle addItemCargoGlobal ["PRPG_Vest_1",1];
 	};
 	[_vehicle,2] remoteExecCall ["client_fnc_lock",_vehicle];
+	_vehicle setVariable ["ace_cookoff_enable", false, true];
 };
 
 _numberPlate = _car select 0;
@@ -192,3 +193,4 @@ _vehicle setvariable ["tracker2c",objNull,true];
 _vehicle setvariable ["tracker3c",objNull,true];
 _vehicle setvariable ["slpdcar",0,true];
 [_vehicle,2] remoteExecCall ["client_fnc_lock",_vehicle];
+_vehicle setVariable ["ace_cookoff_enable", false, true];

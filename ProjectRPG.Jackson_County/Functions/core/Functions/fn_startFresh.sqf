@@ -56,6 +56,14 @@ closedialog 0;
 	player setvariable["playerInjuries",[0,0,0,0,0,0,0,0,0,0,0],true];
 	player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false];
 	player setVariable ["corona",0,true];
+
+	// DRUGS //
+	client_marijuana = 0;
+	client_cocaine = 0;
+	client_heroin = 0;
+	client_meth = 0;
+	client_energy = 0;
+
 	counthungerdeath = nil;
 	player allowSprint true;
 	player forceWalk false;

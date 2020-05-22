@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5595.0347,311.28003,6286.5317};
-		dir[]={-0.78852302,-0.58889163,-0.17741734};
-		up[]={-0.57454377,0.80820256,-0.12927172};
-		aside[]={-0.21951671,3.9144652e-008,0.97562999};
+		pos[]={5568.3613,311.13031,6283.4248};
+		dir[]={-0.83131152,-0.54967618,-0.082587197};
+		up[]={-0.5470022,0.83536589,-0.054341976};
+		aside[]={-0.09886162,7.2541297e-008,0.99512267};
 	};
 };
 binarizationWanted=0;
@@ -332,6 +332,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -346,24 +364,6 @@ class CustomAttributes
 						};
 					};
 					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -45610,7 +45610,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5568.5,302.11084,6218.5371};
-			angle=0.72026241;
+			angle=0.72026235;
 			class Attributes
 			{
 				condition="call{this && (local player) && (vehicle player in thisList)}";
@@ -45619,8 +45619,8 @@ class Mission
 				sizeB=4.8299999;
 				sizeC=1.1390001;
 				repeatable=1;
-				isRectangle=1;
 				activationBy="ANYPLAYER";
+				isRectangle=1;
 			};
 			id=4071;
 			type="EmptyDetectorArea10x10";
@@ -45630,7 +45630,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8270.4814,30.149,3003.3391};
-			angle=5.5431304;
+			angle=5.5431299;
 			class Attributes
 			{
 				condition="call{this && (local player) && (vehicle player in thisList)}";
@@ -45639,8 +45639,8 @@ class Mission
 				sizeB=4.8299999;
 				sizeC=1.235;
 				repeatable=1;
-				isRectangle=1;
 				activationBy="ANYPLAYER";
+				isRectangle=1;
 			};
 			id=4072;
 			type="EmptyDetectorArea10x10";
